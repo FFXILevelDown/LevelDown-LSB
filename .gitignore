@@ -271,3 +271,4 @@ clang_tidy_summary.md
 # YAML codegen
 *.codegen.json
 *.codegen.lua
+/modules/LevelDown Custom Modules
