@@ -274,3 +274,6 @@ clang_tidy_summary.md
 /modules/LevelDown Custom Modules
 modules/init.txt
 *.py
+community_dev_patches.py
+cpp_patches/gemini-code-1780195377106.py
+cpp_patches/prevent_sleep_LD.py
