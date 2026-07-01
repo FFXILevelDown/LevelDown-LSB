@@ -8,7 +8,7 @@ import struct
 #               CONFIGURATION
 # ==========================================
 # This is a Bot Token, NOT a Webhook URL!
-DISCORD_BOT_TOKEN = ""
+DISCORD_BOT_TOKEN = "MTQ4MDkzMzE5ODY0NDExNzY4OA.Gaf10r.cG5wCsFWoc4LKeBHAwc2MkrMlB6Hi38lI62GyA"
 
 # The exact name of the channel the bot should listen to
 LISTEN_CHANNEL_NAME = "99-ls-chat" 
