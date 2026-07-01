@@ -35,9 +35,8 @@
 # Will load only custom/cpp/custom_module.cpp and custom/lua/claim_shield.lua.
 #
 # Live example:
-
+LevelDown Custom Modules/lua/enums/
 LevelDown Custom Modules/content/LD Shattered Domain/additive_override/utils/
-LevelDown Custom Modules/lua/globals/ld_items.lua
 LevelDown Custom Modules/Command_bot/
 LevelDown Custom Modules/lua/utils
 LevelDown Custom Modules/content/LD Shattered Domain/enum/
