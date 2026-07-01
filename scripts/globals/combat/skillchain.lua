@@ -91,7 +91,10 @@ xi.combat.skillchain.calculateSkillchainDamage = function(actor, target, baseDam
 
     -- Calculate base damage and multipliers.
     local finalDamage          = math.abs(baseDamage) -- Damage from skillchain, no matter if absorbed or not.
-    local levelMultiplier      = chainMultipliers[skillchainLevel][skillchainCount - 1] -- We substract 1 because the minimal ammount of WSs needed for a SC is 2.
+    
+    -- FIXED: Removed the "- 1" to prevent index 0 nil crash on first skillchain link
+    local levelMultiplier      = chainMultipliers[skillchainLevel][skillchainCount] 
+    
     local bonusMultiplier      = 1 + actor:getMod(xi.mod.SKILLCHAINBONUS) / 100
     local damageMultiplier     = 1 + actor:getMod(xi.mod.SKILLCHAINDMG) / 10000
     local dayWeatherMultiplier = xi.spells.damage.calculateDayAndWeather(actor, skillchainElement, false)
@@ -130,7 +133,7 @@ xi.combat.skillchain.calculateSkillchainDamage = function(actor, target, baseDam
 
         target:takeDamage(finalDamage, actor, xi.attackType.SPECIAL, xi.damageType.ELEMENTAL + skillchainElement)
 
-    -- Handle absorbption.
+    -- Handle absorption.
     else
         target:addHP(-finalDamage)
     end
