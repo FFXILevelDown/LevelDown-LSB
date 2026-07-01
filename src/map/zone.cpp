@@ -247,6 +247,17 @@ void CZone::SetBackgroundMusicNight(uint16 music)
     m_zoneMusic.m_songNight = music;
 }
 
+void CZone::SetPreventSleep(bool value)
+{
+    m_preventSleep = value;
+
+    if (m_preventSleep && !zoneTimerToken_.has_value())
+    {
+        createZoneTimers();
+        ShowInfoFmt("Zone {} ({}) forced awake by SetPreventSleep.", GetID(), getName());
+    }
+}
+
 /**
  * Queries for entities (mobs or npcs) which name match the given pattern.
  *
@@ -961,7 +972,7 @@ auto CZone::ZoneServer(timer::time_point tick) -> Task<void>
         m_BattlefieldHandler->HandleBattlefields(tick);
     }
 
-    if (zoneTimerToken_.has_value() && m_zoneEntities->CharListEmpty() && m_timeZoneEmpty + 5s < timer::now() && CheckMobsPathedBack())
+    if (!m_preventSleep && zoneTimerToken_.has_value() && m_zoneEntities->CharListEmpty() && m_timeZoneEmpty + 5s < timer::now() && CheckMobsPathedBack())
     {
         zoneTimerToken_.reset();
         zoneTimerTriggerAreasToken_.reset();

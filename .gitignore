@@ -272,3 +272,4 @@ clang_tidy_summary.md
 *.codegen.json
 *.codegen.lua
 /modules/LevelDown Custom Modules
+modules/init.txt
