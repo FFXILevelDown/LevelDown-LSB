@@ -35,6 +35,7 @@
 # Will load only custom/cpp/custom_module.cpp and custom/lua/claim_shield.lua.
 #
 # Live example:
+<<<<<<< HEAD
 LevelDown Custom Modules/content/LD Shattered Domain/additive_override/utils/
 LevelDown Custom Modules/Command_bot/
 LevelDown Custom Modules/lua/utils
@@ -61,3 +62,8 @@ LevelDown Custom Modules/content/LD Unity
 LevelDown Custom Modules/content/LD Void Watch NM
 LevelDown Custom Modules/content/LD Custom HTBF
 #LevelDown Custom Modules/content/LD Walk of Augments
+=======
+
+custom/commands/
+custom/lua/test_npcs_in_gm_home.lua
+>>>>>>> parent of 361ad8b771 (mix-in fixes)
