@@ -36,6 +36,7 @@
 #
 # Live example:
 LevelDown Custom Modules/content/LD Shattered Domain/additive_override/utils/
+LevelDown Custom Modules/Command_bot/
 LevelDown Custom Modules/lua/utils
 LevelDown Custom Modules/content/LD Shattered Domain/enum/
 LevelDown Custom Modules/lua/globals/
