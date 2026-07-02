@@ -2,6 +2,9 @@
 -- xi.effect.HEALING
 -- Activated through the /heal command
 -----------------------------------
+require('scripts/quests/adoulin/Dances_with_Luopans')
+-----------------------------------
+
 ---@type TEffect
 local effectObject = {}
 
@@ -22,9 +25,7 @@ effectObject.onEffectGain = function(target, effect)
     end
 
     -- Dances with Luopans: charge the luopan while resting at an Ergon Locus
-    if xi.dancesWithLuopans then
-        xi.dancesWithLuopans.onHealing(target)
-    end
+    xi.dancesWithLuopans.onHealing(target)
 
     if target:getObjType() == xi.objType.PC then
         xi.voidwalker.onHealing(target)
@@ -89,9 +90,7 @@ effectObject.onEffectLose = function(target, effect)
     target:delStatusEffectSilent(xi.effect.LEAVEGAME)
 
     -- Dances with Luopans: stopping the rest cancels the luopan charge
-    if xi.dancesWithLuopans then
-        xi.dancesWithLuopans.onEffectLose(target)
-    end
+    xi.dancesWithLuopans.onEffectLose(target)
 end
 
 return effectObject
