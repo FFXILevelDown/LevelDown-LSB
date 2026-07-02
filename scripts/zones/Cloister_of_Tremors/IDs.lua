@@ -32,10 +32,11 @@ zones[xi.zone.CLOISTER_OF_TREMORS] =
         POWER_STYMIES                    = 7744, -- An unseen power stymies your efforts to attach <item> to the protocrystal.
     },
     mob =
-    {
-        GALGALIM          = GetFirstID('Galgalim'),
-        TITAN_PRIME_ASA   = GetFirstID('Titan_Prime_ASA'),
-    },
+        {
+            GALGALIM          = GetFirstID('Galgalim'),
+            TITAN_PRIME_ASA   = GetFirstID('Titan_Prime_ASA'),
+            TITAN_PRIME_HTBF  = GetFirstID('Titan_Prime_HTBF'),
+        },
     npc =
     {
     },

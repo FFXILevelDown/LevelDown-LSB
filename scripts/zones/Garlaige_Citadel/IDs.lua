@@ -54,17 +54,18 @@ zones[xi.zone.GARLAIGE_CITADEL] =
         UNITY_WANTED_BATTLE_INTERACT  = 11644, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        HAZMAT              = GetFirstID('Hazmat'),
-        HOVERING_HOTPOT     = GetFirstID('Hovering_Hotpot'),
-        OLD_TWO_WINGS       = GetFirstID('Old_Two-Wings'),
-        SKEWER_SAM          = GetFirstID('Skewer_Sam'),
-        CHANDELIER          = GetFirstID('Chandelier'),
-        GUARDIAN_STATUE     = GetFirstID('Guardian_Statue'),
-        SERKET              = GetFirstID('Serket'),
-        MIMIC               = GetFirstID('Mimic'),
-        APPARATUS_ELEMENTAL = GetFirstID('Light_Elemental'),
-    },
+        {
+            HAZMAT              = GetFirstID('Hazmat'),
+            HOVERING_HOTPOT     = GetFirstID('Hovering_Hotpot'),
+            OLD_TWO_WINGS       = GetFirstID('Old_Two-Wings'),
+            SKEWER_SAM          = GetFirstID('Skewer_Sam'),
+            CHANDELIER          = GetFirstID('Chandelier'),
+            GUARDIAN_STATUE     = GetFirstID('Guardian_Statue'),
+            SERKET              = GetFirstID('Serket'),
+            MIMIC               = GetFirstID('Mimic'),
+            APPARATUS_ELEMENTAL = GetFirstID('Light_Elemental'),
+            VOIDWATCH           = GetTableOfIDs('Roly-Poly'),
+        },
     npc =
     {
         BANISHING_GATE_OFFSET = 17596762,

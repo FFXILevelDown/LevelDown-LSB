@@ -62,16 +62,17 @@ zones[xi.zone.VALKURM_DUNES] =
     },
 
     mob =
-    {
-        BEACH_MONK          = GetFirstID('Beach_Monk'),
-        DOMAN               = GetFirstID('Doman'),
-        GOLDEN_BAT          = GetFirstID('Golden_Bat'),
-        HEIKE_CRAB          = GetFirstID('Heike_Crab'),
-        HOUU_THE_SHOALWADER = GetFirstID('Houu_the_Shoalwader'),
-        MARCHELUTE          = GetFirstID('Marchelute'),
-        ONRYO               = GetFirstID('Onryo'),
-        VALKURM_EMPEROR     = GetFirstID('Valkurm_Emperor'),
-    },
+        {
+            BEACH_MONK          = GetFirstID('Beach_Monk'),
+            DOMAN               = GetFirstID('Doman'),
+            GOLDEN_BAT          = GetFirstID('Golden_Bat'),
+            HEIKE_CRAB          = GetFirstID('Heike_Crab'),
+            HOUU_THE_SHOALWADER = GetFirstID('Houu_the_Shoalwader'),
+            MARCHELUTE          = GetFirstID('Marchelute'),
+            ONRYO               = GetFirstID('Onryo'),
+            VALKURM_EMPEROR     = GetFirstID('Valkurm_Emperor'),
+            VOIDWATCH           = GetTableOfIDs('Ig-Alima'),
+        },
 
     npc =
     {

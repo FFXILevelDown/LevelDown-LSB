@@ -56,41 +56,42 @@ zones[xi.zone.EAST_RONFAURE] =
     },
 
     mob =
-    {
-        BIGMOUTH_BILLY = GetFirstID('Bigmouth_Billy'),
-        SWAMFISK       = GetTableOfIDs('Swamfisk'), -- 2 NMs
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17191334, -- Sunderclaw
-                17191333, -- Sunderclaw
-                17191332, -- Sunderclaw
-                17191331, -- Sunderclaw
-                17191330,  -- Quagmire Pugil
-                17191329,  -- Quagmire Pugil
-                17191328,  -- Quagmire Pugil
-                17191327,  -- Quagmire Pugil
-            },
+            BIGMOUTH_BILLY = GetFirstID('Bigmouth_Billy'),
+            SWAMFISK       = GetTableOfIDs('Swamfisk'), -- 2 NMs
+            VOIDWATCH      = GetTableOfIDs('Sarimanok'), -- 3 NMs
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17191326, -- Capricornus
-                17191325  -- Yacumama
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17191334, -- Sunderclaw
+                    17191333, -- Sunderclaw
+                    17191332, -- Sunderclaw
+                    17191331, -- Sunderclaw
+                    17191330,  -- Quagmire Pugil
+                    17191329,  -- Quagmire Pugil
+                    17191328,  -- Quagmire Pugil
+                    17191327,  -- Quagmire Pugil
+                },
 
-            [xi.keyItem.BLUE_ABYSSITE] =
-            {
-                17191324  -- Krabkatoa
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17191326, -- Capricornus
+                    17191325  -- Yacumama
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17191323  -- Yilbegan
+                [xi.keyItem.BLUE_ABYSSITE] =
+                {
+                    17191324  -- Krabkatoa
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17191323  -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

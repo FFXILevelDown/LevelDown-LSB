@@ -30,12 +30,13 @@ zones[xi.zone.GRAUBERG_S] =
         COMMON_SENSE_SURVIVAL         = 9316, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        KOTAN_KOR_KAMUY      = GetFirstID('Kotan-kor_Kamuy'),
-        SCITALIS             = GetFirstID('Scitalis'),
-        MIGRATORY_HIPPOGRYPH = GetFirstID('Migratory_Hippogryph'),
-        VASILICERATOPS       = GetFirstID('Vasiliceratops'),
-    },
+        {
+            KOTAN_KOR_KAMUY      = GetFirstID('Kotan-kor_Kamuy'),
+            SCITALIS             = GetFirstID('Scitalis'),
+            MIGRATORY_HIPPOGRYPH = GetFirstID('Migratory_Hippogryph'),
+            VASILICERATOPS       = GetFirstID('Vasiliceratops'),
+            VOIDWATCH            = GetTableOfIDs('Ocythoe'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Ulaciont_RK'), -- San, Bas, Win, Flag +4, CA

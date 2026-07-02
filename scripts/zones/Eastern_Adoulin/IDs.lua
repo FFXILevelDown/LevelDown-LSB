@@ -35,8 +35,8 @@ zones[xi.zone.EASTERN_ADOULIN] =
         COMMON_SENSE_SURVIVAL         = 13901, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

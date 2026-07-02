@@ -30,10 +30,12 @@ zones[xi.zone.EMPYREAL_PARADOX] =
         AIR_WARPED_AND_DISTORTED      = 7824, -- The air before you appears warped and distorted...
     },
     mob =
-    {
-        KAMLANAUT = GetFirstID('Kamlanaut'),
-        PROMATHIA = GetFirstID('Promathia'),
-    },
+        {
+            KAMLANAUT         = GetFirstID('Kamlanaut'),
+            PROMATHIA         = GetFirstID('Promathia'),
+            PROMATHIA_HTBF    = GetFirstID('Promathia_htbf'),
+            PROMATHIA_HTBF_2  = GetFirstID('Promathia_htbf_2'),
+        },
     npc =
     {
     },

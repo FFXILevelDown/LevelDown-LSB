@@ -58,21 +58,21 @@ zones[xi.zone.QUBIA_ARENA] =
     },
 
     mob =
-    {
-        ARCHLICH_TABERQUOAN      = GetFirstID('Archlich_Taberquoan'),
-        ATORI_TUTORI             = GetFirstID('Atori-Tutori_qm'),
-        CAPELTHWAITE             = GetFirstID('Capelthwaite'),
-        CHAHNAMEEDS_STOMACH      = GetFirstID('Chahnameeds_Stomach'),
-        DOLL_FACTORY             = GetFirstID('Doll_Factory'),
-        FIRE_POT                 = GetFirstID('Fire_Pot'),
-        GHUL_I_BEABAN            = GetFirstID('Ghul-I-Beaban_DRK'),
-        GLADIATORIAL_WEAPON      = GetFirstID('Gladiatorial_Weapon'),
-        MAAT                     = GetFirstID('Maat_pld'),
-        NEPHIYL_RAMPARTBREACHER  = GetFirstID('Nephiyl_Rampartbreacher'),
-        SEED_ORC                 = GetFirstID('Seed_Orc'),
-        VAICOLIAUX_B_DAURPHE     = GetFirstID('Vaicoliaux_B_DAurphe'),
-        WARLORD_ROJGNOJ          = GetFirstID('Warlord_Rojgnoj'),
-    },
+        {
+            ARCHLICH_TABERQUOAN      = GetFirstID('Archlich_Taberquoan'),
+            ATORI_TUTORI             = GetFirstID('Atori-Tutori_qm'),
+            CAPELTHWAITE             = GetFirstID('Capelthwaite'),
+            CHAHNAMEEDS_STOMACH      = GetFirstID('Chahnameeds_Stomach'),
+            DOLL_FACTORY             = GetFirstID('Doll_Factory'),
+            FIRE_POT                 = GetFirstID('Fire_Pot'),
+            GHUL_I_BEABAN            = GetFirstID('Ghul-I-Beaban_DRK'),
+            GLADIATORIAL_WEAPON      = GetFirstID('Gladiatorial_Weapon'),
+            MAAT                     = GetFirstID('Maat_pld'),
+            NEPHIYL_RAMPARTBREACHER  = GetFirstID('Nephiyl_Rampartbreacher'),
+            SEED_ORC                 = GetFirstID('Seed_Orc'),
+            VAICOLIAUX_B_DAURPHE     = GetFirstID('Vaicoliaux_B_DAurphe'),
+            WARLORD_ROJGNOJ          = GetFirstID('Warlord_Rojgnoj'),
+        },
 
     npc =
     {

@@ -42,20 +42,20 @@ zones[xi.zone.BHAFLAU_THICKETS] =
         HOMEPOINT_SET                 = 7720, -- Home point set!
     },
     mob =
-    {
-        CHIGOES              =
         {
-            ['Marid']        = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
-            ['Grand_Marid']  = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
+            CHIGOES              =
+            {
+                ['Marid']        = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
+                ['Grand_Marid']  = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
+            },
+            DEA                = GetFirstID('Dea'),
+            EMERGENT_ELM       = GetFirstID('Emergent_Elm'),
+            HARVESTMAN         = GetFirstID('Harvestman'),
+            LIVIDROOT_AMOOSHAH = GetFirstID('Lividroot_Amooshah'),
+            MAHISHASURA        = GetFirstID('Mahishasura'),
+            NIS_PUK            = GetFirstID('Nis_Puk'),
+            PLAGUE_CHIGOE      = GetFirstID('Plague_Chigoe'),
         },
-        DEA                = GetFirstID('Dea'),
-        EMERGENT_ELM       = GetFirstID('Emergent_Elm'),
-        HARVESTMAN         = GetFirstID('Harvestman'),
-        LIVIDROOT_AMOOSHAH = GetFirstID('Lividroot_Amooshah'),
-        MAHISHASURA        = GetFirstID('Mahishasura'),
-        NIS_PUK            = GetFirstID('Nis_Puk'),
-        PLAGUE_CHIGOE      = GetFirstID('Plague_Chigoe'),
-    },
     npc =
     {
         HARVESTING = GetTableOfIDs('Harvesting_Point'),

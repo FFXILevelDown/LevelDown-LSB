@@ -31,9 +31,10 @@ zones[xi.zone.CLOISTER_OF_TIDES] =
         POWER_STYMIES                    = 7739, -- An unseen power stymies your efforts to attach <item> to the protocrystal.
     },
     mob =
-    {
-        LEVIATHAN_PRIME_ASA   = GetFirstID('Leviathan_Prime_ASA'),
-    },
+        {
+            LEVIATHAN_PRIME_ASA   = GetFirstID('Leviathan_Prime_ASA'),
+            LEVIATHAN_PRIME_HTBF  = GetFirstID('Leviathan_Prime_HTBF'),
+        },
     npc =
     {
     },

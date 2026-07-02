@@ -51,44 +51,45 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS] =
     },
 
     mob =
-    {
-        NAA_ZEKU_THE_UNWAITING = GetFirstID('Naa_Zeku_the_Unwaiting'),
-        PATRIPATAN             = GetFirstID('Patripatan'),
-        DAGGERCLAW_DRACOS      = GetFirstID('Daggerclaw_Dracos'),
-        WARAXE_BEAK            = GetFirstID('Waraxe_Beak'),
-        COO_KEJA_THE_UNSEEN    = GetFirstID('Coo_Keja_the_Unseen'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17265129, -- Raker bee
-                17265128, -- Raker bee
-                17265127, -- Raker bee
-                17265126, -- Raker bee
-                17265125, -- Rummager beetle
-                17265124, -- Rummager beetle
-                17265123, -- Rummager beetle
-                17265122, -- Rummager beetle
-            },
+            NAA_ZEKU_THE_UNWAITING = GetFirstID('Naa_Zeku_the_Unwaiting'),
+            PATRIPATAN             = GetFirstID('Patripatan'),
+            DAGGERCLAW_DRACOS      = GetFirstID('Daggerclaw_Dracos'),
+            WARAXE_BEAK            = GetFirstID('Waraxe_Beak'),
+            COO_KEJA_THE_UNSEEN    = GetFirstID('Coo_Keja_the_Unseen'),
+            VOIDWATCH              = GetTableOfIDs('Lord_Asag'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17265121, -- Jyeshtha
-                17265120, -- Farruca Fly
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17265129, -- Raker bee
+                    17265128, -- Raker bee
+                    17265127, -- Raker bee
+                    17265126, -- Raker bee
+                    17265125, -- Rummager beetle
+                    17265124, -- Rummager beetle
+                    17265123, -- Rummager beetle
+                    17265122, -- Rummager beetle
+                },
 
-            [xi.keyItem.BROWN_ABYSSITE] =
-            {
-                17265119, -- Orcus
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17265121, -- Jyeshtha
+                    17265120, -- Farruca Fly
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17265118, -- Yilbegan
+                [xi.keyItem.BROWN_ABYSSITE] =
+                {
+                    17265119, -- Orcus
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17265118, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

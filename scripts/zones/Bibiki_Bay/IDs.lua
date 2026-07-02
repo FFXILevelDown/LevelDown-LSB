@@ -50,12 +50,13 @@ zones[xi.zone.BIBIKI_BAY] =
         NEWS_BILLET                   = 8684, -- <item> has been [added to your list of favorites/removed from your list of favorites].
     },
     mob =
-    {
-        INTULO     = GetFirstID('Intulo'),
-        PEERIFOOL  = GetFirstID('Peerifool'),
-        SERRA      = GetFirstID('Serra'),
-        SPLACKNUCK = GetFirstID('Splacknuck'),
-    },
+        {
+            INTULO     = GetFirstID('Intulo'),
+            PEERIFOOL  = GetFirstID('Peerifool'),
+            SERRA      = GetFirstID('Serra'),
+            SPLACKNUCK = GetFirstID('Splacknuck'),
+            VOIDWATCH  = GetTableOfIDs('Bismarck'),
+        },
     npc =
     {
     },

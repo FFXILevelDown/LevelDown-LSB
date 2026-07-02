@@ -38,8 +38,8 @@ zones[xi.zone.MHAURA] =
         RETRIEVE_DIALOG_ID            = 7824, -- You retrieve <item> from the porter moogle's care.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         LAUGHING_BISON  = GetFirstID('Laughing_Bison'),

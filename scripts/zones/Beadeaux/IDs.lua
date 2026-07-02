@@ -37,16 +37,16 @@ zones[xi.zone.BEADEAUX] =
         COMMON_SENSE_SURVIVAL              = 7810, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BI_GHO_HEADTAKER    = GetFirstID('BiGho_Headtaker'),
-        DA_DHA_HUNDREDMASK  = GetFirstID('DaDha_Hundredmask'),
-        GA_BHU_UNVANQUISHED = GetFirstID('GaBhu_Unvanquished'),
-        GE_DHA_EVILEYE      = GetFirstID('GeDha_Evileye'),
-        MAGNES_QUADAV_NM    = GetFirstID('Magnes_Quadav_NM'),
-        NICKEL_QUADAV_NM    = GetFirstID('Nickel_Quadav_NM'),
-        MIMIC               = GetFirstID('Mimic'),
-        ZO_KHU_BLACKCLOUD   = GetFirstID('ZoKhu_Blackcloud'),
-    },
+        {
+            BI_GHO_HEADTAKER    = GetFirstID('BiGho_Headtaker'),
+            DA_DHA_HUNDREDMASK  = GetFirstID('DaDha_Hundredmask'),
+            GA_BHU_UNVANQUISHED = GetFirstID('GaBhu_Unvanquished'),
+            GE_DHA_EVILEYE      = GetFirstID('GeDha_Evileye'),
+            MAGNES_QUADAV_NM    = GetFirstID('Magnes_Quadav_NM'),
+            NICKEL_QUADAV_NM    = GetFirstID('Nickel_Quadav_NM'),
+            MIMIC               = GetFirstID('Mimic'),
+            ZO_KHU_BLACKCLOUD   = GetFirstID('ZoKhu_Blackcloud'),
+        },
     npc =
     {
         AFFLICTOR_BASE  = GetFirstID('The_Afflictor'),

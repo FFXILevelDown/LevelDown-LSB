@@ -33,9 +33,9 @@ zones[xi.zone.MORIMAR_BASALT_FIELDS] =
         HOMEPOINT_SET                 = 8190, -- Home point set!
     },
     mob =
-    {
-        REIVE_MOB_OFFSET = GetFirstID('Bedrock_Crag'),
-    },
+        {
+            REIVE_MOB_OFFSET = GetFirstID('Bedrock_Crag'),
+        },
     npc =
     {
         CASTOFF_POINT_OFFSET   = GetFirstID('Castoff_Point'),

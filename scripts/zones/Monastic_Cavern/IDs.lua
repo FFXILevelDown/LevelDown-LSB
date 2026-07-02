@@ -27,12 +27,12 @@ zones[xi.zone.MONASTIC_CAVERN] =
         ORC_KING_DEATH                = 7324, -- Unghh... Foolish children of Altana. Defeating me won't change anything. There will be others from the north...
     },
     mob =
-    {
-        ORCISH_OVERLORD               = GetTableOfIDs('Orcish_Overlord')[1], -- NM
-        UNDERSTANDING_OVERLORD_OFFSET = GetTableOfIDs('Orcish_Overlord')[2], -- Quest NM
-        BUGABOO                       = GetFirstID('Bugaboo'),
-        MIMIC                         = GetFirstID('Mimic'),
-    },
+        {
+            ORCISH_OVERLORD               = GetTableOfIDs('Orcish_Overlord')[1], -- NM
+            UNDERSTANDING_OVERLORD_OFFSET = GetTableOfIDs('Orcish_Overlord')[2], -- Quest NM
+            BUGABOO                       = GetFirstID('Bugaboo'),
+            MIMIC                         = GetFirstID('Mimic'),
+        },
     npc =
     {
         TREASURE_COFFER = GetFirstID('Treasure_Coffer'),

@@ -40,13 +40,14 @@ zones[xi.zone.BEHEMOTHS_DOMINION] =
         COMMON_SENSE_SURVIVAL         = 11551, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BEHEMOTH                = GetFirstID('Behemoth'),
-        KING_BEHEMOTH           = GetFirstID('King_Behemoth'),
-        ANCIENT_WEAPON          = GetFirstID('Ancient_Weapon'),
-        LEGENDARY_WEAPON        = GetFirstID('Legendary_Weapon'),
-        TALEKEEPERS_GIFT_OFFSET = GetFirstID('Picklix_Longindex'),
-    },
+        {
+            BEHEMOTH                = GetFirstID('Behemoth'),
+            KING_BEHEMOTH           = GetFirstID('King_Behemoth'),
+            ANCIENT_WEAPON          = GetFirstID('Ancient_Weapon'),
+            LEGENDARY_WEAPON        = GetFirstID('Legendary_Weapon'),
+            TALEKEEPERS_GIFT_OFFSET = GetFirstID('Picklix_Longindex'),
+            VOIDWATCH               = GetTableOfIDs('Pil'),
+        },
     npc =
     {
         BEHEMOTH_QM      = GetFirstID('qm2'),

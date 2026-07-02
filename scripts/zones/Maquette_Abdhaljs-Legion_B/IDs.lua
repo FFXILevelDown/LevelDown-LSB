@@ -13,9 +13,9 @@ zones[xi.zone.MAQUETTE_ABDHALJS_LEGION_B] =
         MEMBERS_LEVELS_ARE_RESTRICTED = 7027, -- Your party is unable to participate because certain members' levels are restricted.
     },
     mob =
-    {
-        17952867,
-    },
+        {
+            17952867,
+        },
     npc =
     {
     },

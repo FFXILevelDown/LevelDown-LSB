@@ -49,16 +49,17 @@ zones[xi.zone.MAZE_OF_SHAKHRAMI] =
         COMMON_SENSE_SURVIVAL         = 11444, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        TREMBLER_TABITHA    = GetFirstID('Trembler_Tabitha'),
-        ICHOROUS_IRE        = GetFirstID('Ichorous_Ire'),
-        ARGUS               = GetFirstID('Argus'),
-        LEECH_KING          = GetFirstID('Leech_King'),
-        WYRMFLY_OFFSET      = GetFirstID('Wyrmfly'),
-        APPARATUS_ELEMENTAL = GetFirstID('Dark_Elemental'),
-        AROMA_CRAWLER       = GetFirstID('Aroma_Crawler'),
-        LOST_SOUL           = GetFirstID('Lost_Soul'),
-    },
+        {
+            TREMBLER_TABITHA    = GetFirstID('Trembler_Tabitha'),
+            ICHOROUS_IRE        = GetFirstID('Ichorous_Ire'),
+            ARGUS               = GetFirstID('Argus'),
+            LEECH_KING          = GetFirstID('Leech_King'),
+            WYRMFLY_OFFSET      = GetFirstID('Wyrmfly'),
+            APPARATUS_ELEMENTAL = GetFirstID('Dark_Elemental'),
+            AROMA_CRAWLER       = GetFirstID('Aroma_Crawler'),
+            LOST_SOUL           = GetFirstID('Lost_Soul'),
+            VOIDWATCH           = GetTableOfIDs('Ogbunabali'),
+        },
     npc =
     {
         FOSSIL_ROCK_OFFSET = GetFirstID('Fossil_Rock'),

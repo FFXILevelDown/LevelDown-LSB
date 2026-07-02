@@ -70,23 +70,23 @@ zones[xi.zone.ABYSSEA_TAHRONGI] =
         USE_KI                        = 7600, -- Use the [key item/key items]? Yes. No.
     },
     mob =
-    {
-        HALIMEDE        = GetFirstID('Halimede'),
-        VETEHINEN       = GetFirstID('Vetehinen'),
-        OPHANIM         = GetFirstID('Ophanim'),
-        CANNERED_NOZ    = GetFirstID('Cannered_Noz'),
-        TREBLE_NOCTULES = GetFirstID('Treble_Noctules'),
-        GANCANAGH       = GetFirstID('Gancanagh'),
-        HEDETET         = GetFirstID('Hedetet'),
-        ABAS            = GetFirstID('Abas'),
-        ALECTRYON       = GetFirstID('Alectryon'),
-        TEFENET         = GetFirstID('Tefenet'),
-        MUSCALIET       = GetFirstID('Muscaliet'),
-        LACHRYMATER     = GetFirstID('Lachrymater'),
-        CHLORIS_OFFSET  = GetFirstID('Chloris'), -- 3 Copies: +0, +17, +20
-        GLAVOID_OFFSET  = GetFirstID('Glavoid'), -- 3 Copies: +0, +17, +20
-        LACOVIE_OFFSET  = GetFirstID('Lacovie'), -- 3 Copies: +0, +17, +20
-    },
+        {
+            HALIMEDE        = GetFirstID('Halimede'),
+            VETEHINEN       = GetFirstID('Vetehinen'),
+            OPHANIM         = GetFirstID('Ophanim'),
+            CANNERED_NOZ    = GetFirstID('Cannered_Noz'),
+            TREBLE_NOCTULES = GetFirstID('Treble_Noctules'),
+            GANCANAGH       = GetFirstID('Gancanagh'),
+            HEDETET         = GetFirstID('Hedetet'),
+            ABAS            = GetFirstID('Abas'),
+            ALECTRYON       = GetFirstID('Alectryon'),
+            TEFENET         = GetFirstID('Tefenet'),
+            MUSCALIET       = GetFirstID('Muscaliet'),
+            LACHRYMATER     = GetFirstID('Lachrymater'),
+            CHLORIS_OFFSET  = GetFirstID('Chloris'), -- 3 Copies: +0, +17, +20
+            GLAVOID_OFFSET  = GetFirstID('Glavoid'), -- 3 Copies: +0, +17, +20
+            LACOVIE_OFFSET  = GetFirstID('Lacovie'), -- 3 Copies: +0, +17, +20
+        },
 }
 
 return zones[xi.zone.ABYSSEA_TAHRONGI]

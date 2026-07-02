@@ -28,12 +28,12 @@ zones[xi.zone.GIDDEUS] =
         HOMEPOINT_SET                 = 7465, -- Home point set!
     },
     mob =
-    {
-        HOO_MJUU_THE_TORRENT   = GetFirstID('Hoo_Mjuu_the_Torrent'),
-        JUU_DUZU_THE_WHIRLWIND = GetFirstID('Juu_Duzu_the_Whirlwind'),
-        VUU_PUQU_THE_BEGUILER  = GetFirstID('Vuu_Puqu_the_Beguiler'),
-        VAA_HUJA_THE_ERUDITE   = GetFirstID('Vaa_Huja_the_Erudite'),
-    },
+        {
+            HOO_MJUU_THE_TORRENT   = GetFirstID('Hoo_Mjuu_the_Torrent'),
+            JUU_DUZU_THE_WHIRLWIND = GetFirstID('Juu_Duzu_the_Whirlwind'),
+            VUU_PUQU_THE_BEGUILER  = GetFirstID('Vuu_Puqu_the_Beguiler'),
+            VAA_HUJA_THE_ERUDITE   = GetFirstID('Vaa_Huja_the_Erudite'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

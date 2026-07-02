@@ -20,8 +20,8 @@ zones[xi.zone.DESUETIA_EMPYREAL_PARADOX] =
         THE_PARTY_WILL_BE_REMOVED     = 7689, -- If all party members' HP are still zero after # minute[/s], the party will be removed from the battlefield.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

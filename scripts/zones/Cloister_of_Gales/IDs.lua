@@ -29,10 +29,11 @@ zones[xi.zone.CLOISTER_OF_GALES] =
         POWER_STYMIES                    = 7776, -- An unseen power stymies your efforts to attach <item> to the protocrystal.
     },
     mob =
-    {
-        GARUDA_PRIME_ASA   = GetFirstID('Garuda_Prime_ASA'),
-        OGMIOS             = GetFirstID('Ogmios'),
-    },
+        {
+            GARUDA_PRIME_ASA   = GetFirstID('Garuda_Prime_ASA'),
+            OGMIOS             = GetFirstID('Ogmios'),
+            GARUDA_PRIME_HTBF  = GetFirstID('Garuda_Prime_HTBF'),
+        },
     npc =
     {
     },

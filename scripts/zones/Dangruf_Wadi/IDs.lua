@@ -45,12 +45,13 @@ zones[xi.zone.DANGRUF_WADI] =
         COMMON_SENSE_SURVIVAL         = 11546, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        TEPORINGO           = GetFirstID('Teporingo'),
-        GEYSER_LIZARD       = GetFirstID('Geyser_Lizard'),
-        CHOCOBOLEECH        = GetFirstID('Chocoboleech'),
-        APPARATUS_ELEMENTAL = GetFirstID('Fire_Elemental'),
-    },
+        {
+            TEPORINGO           = GetFirstID('Teporingo'),
+            GEYSER_LIZARD       = GetFirstID('Geyser_Lizard'),
+            CHOCOBOLEECH        = GetFirstID('Chocoboleech'),
+            APPARATUS_ELEMENTAL = GetFirstID('Fire_Elemental'),
+            VOIDWATCH           = GetTableOfIDs('Celaeno'),
+        },
     npc =
     {
         GEYSER_OFFSET      = GetFirstID('blank'),

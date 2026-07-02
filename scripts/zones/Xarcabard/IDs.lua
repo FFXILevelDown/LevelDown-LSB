@@ -58,44 +58,44 @@ zones[xi.zone.XARCABARD] =
         COMMON_SENSE_SURVIVAL          = 11555, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BARBARIC_WEAPON  = GetFirstID('Barbaric_Weapon'),
-        BOREAL_HOUND     = GetFirstID('Boreal_Hound'),
-        BOREAL_COEURL    = GetFirstID('Boreal_Coeurl'),
-        BOREAL_TIGER     = GetFirstID('Boreal_Tiger'),
-        CHAOS_ELEMENTAL  = GetFirstID('Chaos_Elemental'),
-        ERESHKIGAL       = GetFirstID('Ereshkigal'),
-        KOENIGSTIGER     = GetFirstID('Koenigstiger'),
-        SHADOW_EYE       = GetFirstID('Shadow_Eye'),
-        TIMEWORN_WARRIOR = GetFirstID('Timeworn_Warrior'),
-        VOIDWALKER       =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
+            BARBARIC_WEAPON  = GetFirstID('Barbaric_Weapon'),
+            BOREAL_HOUND     = GetFirstID('Boreal_Hound'),
+            BOREAL_COEURL    = GetFirstID('Boreal_Coeurl'),
+            BOREAL_TIGER     = GetFirstID('Boreal_Tiger'),
+            CHAOS_ELEMENTAL  = GetFirstID('Chaos_Elemental'),
+            ERESHKIGAL       = GetFirstID('Ereshkigal'),
+            KOENIGSTIGER     = GetFirstID('Koenigstiger'),
+            SHADOW_EYE       = GetFirstID('Shadow_Eye'),
+            TIMEWORN_WARRIOR = GetFirstID('Timeworn_Warrior'),
+            VOIDWALKER       =
             {
-                17236241, -- Gorehound
-                17236240, -- Gorehound
-                17236239, -- Gorehound
-                17236238, -- Gorehound
-                17236237, -- Gjenganger
-                17236236, -- Gjenganger
-                17236235, -- Gjenganger
-                17236234, -- Gjenganger
-            },
-            [xi.keyItem.COLORFUL_ABYSSITE] =
-            {
-                17236233, -- Erebus
-                17236232  -- Feuerunke
-            },
-            [xi.keyItem.PURPLE_ABYSSITE] =
-            {
-                17236231  -- Lord Ruthven
-            },
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17236230  -- Yilbegan
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17236241, -- Gorehound
+                    17236240, -- Gorehound
+                    17236239, -- Gorehound
+                    17236238, -- Gorehound
+                    17236237, -- Gjenganger
+                    17236236, -- Gjenganger
+                    17236235, -- Gjenganger
+                    17236234, -- Gjenganger
+                },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17236233, -- Erebus
+                    17236232  -- Feuerunke
+                },
+                [xi.keyItem.PURPLE_ABYSSITE] =
+                {
+                    17236231  -- Lord Ruthven
+                },
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17236230  -- Yilbegan
+                }
             }
-        }
-    },
+        },
     npc =
     {
         OVERSEER_BASE    = GetFirstID('Jeantelas_RK'),

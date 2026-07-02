@@ -31,14 +31,14 @@ zones[xi.zone.HALVUNG] =
         COMMON_SENSE_SURVIVAL         = 8143, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        WAMOURA_OFFSET         = GetTableOfIDs('Wamoura'),
-        BIG_BOMB               = GetFirstID('Big_Bomb'),
-        GURFURLUR_THE_MENACING = GetFirstID('Gurfurlur_the_Menacing'),
-        DEXTROSE               = GetFirstID('Dextrose'),
-        REACTON                = GetFirstID('Reacton'),
-        ACHAMOTH               = GetFirstID('Achamoth'),
-    },
+        {
+            WAMOURA_OFFSET         = GetTableOfIDs('Wamoura'),
+            BIG_BOMB               = GetFirstID('Big_Bomb'),
+            GURFURLUR_THE_MENACING = GetFirstID('Gurfurlur_the_Menacing'),
+            DEXTROSE               = GetFirstID('Dextrose'),
+            REACTON                = GetFirstID('Reacton'),
+            ACHAMOTH               = GetFirstID('Achamoth'),
+        },
     npc =
     {
         LEVER_AB_DOOR = GetFirstID('_1qf'),

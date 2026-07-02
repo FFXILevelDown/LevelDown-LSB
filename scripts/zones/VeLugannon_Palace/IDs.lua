@@ -30,13 +30,14 @@ zones[xi.zone.VELUGANNON_PALACE] =
         NO_COMBINATION                = 11242, -- You were unable to enter a combination.
     },
     mob =
-    {
-        BRIGANDISH_BLADE = GetFirstID('Brigandish_Blade'),
-        DETECTOR         = GetTableOfIDs('Detector'),
-        MIMIC            = GetFirstID('Mimic'),
-        STEAM_CLEANER    = GetFirstID('Steam_Cleaner'),
-        ZIPACNA          = GetFirstID('Zipacna'),
-    },
+        {
+            BRIGANDISH_BLADE = GetFirstID('Brigandish_Blade'),
+            DETECTOR         = GetTableOfIDs('Detector'),
+            MIMIC            = GetFirstID('Mimic'),
+            STEAM_CLEANER    = GetFirstID('Steam_Cleaner'),
+            ZIPACNA          = GetFirstID('Zipacna'),
+            VOIDWATCH        = GetTableOfIDs('Uptala'),
+        },
     npc =
     {
         QM1             = GetFirstID('qm1'),

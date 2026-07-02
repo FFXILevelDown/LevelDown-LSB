@@ -34,17 +34,17 @@ zones[xi.zone.INNER_HORUTOTO_RUINS] =
         COMMON_SENSE_SURVIVAL         = 10558, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        SLENDLIX_SPINDLETHUMB = GetFirstID('Slendlix_Spindlethumb'),
-        NOCUOUS_WEAPON        = GetFirstID('Nocuous_Weapon'),
-        MAGICKED_BONES        = GetFirstID('Magicked_Bones'),
-        --[[
-            -2    Goblin Thug
-            -1    Goblin Weaver
-             0    Magicked Bones (with club)
-            +1    Magicked Bones (with knife)
-        ]]
-    },
+        {
+            SLENDLIX_SPINDLETHUMB = GetFirstID('Slendlix_Spindlethumb'),
+            NOCUOUS_WEAPON        = GetFirstID('Nocuous_Weapon'),
+            MAGICKED_BONES        = GetFirstID('Magicked_Bones'),
+            --[[
+                -2    Goblin Thug
+                -1    Goblin Weaver
+                 0    Magicked Bones (with club)
+                +1    Magicked Bones (with knife)
+            ]]
+        },
     npc =
     {
         PORTAL_CIRCLE_BASE = GetFirstID('_5cm'),

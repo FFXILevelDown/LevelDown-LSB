@@ -37,16 +37,16 @@ zones[xi.zone.BOSTAUNIEUX_OUBLIETTE] =
         UNITY_WANTED_BATTLE_INTERACT  = 10713, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        ARIOCH                  = GetFirstID('Arioch'),
-        BLOODSUCKER             = GetFirstID('Bloodsucker_NM'),
-        BODACH                  = GetFirstID('Bodach'),
-        DREXERION_THE_CONDEMNED = GetFirstID('Drexerion_the_Condemned'),
-        MANES                   = GetFirstID('Manes'),
-        PHANDURON_THE_CONDEMNED = GetFirstID('Phanduron_the_Condemned'),
-        SEWER_SYRUP             = GetFirstID('Sewer_Syrup'),
-        SHII                    = GetFirstID('Shii'),
-    },
+        {
+            ARIOCH                  = GetFirstID('Arioch'),
+            BLOODSUCKER             = GetFirstID('Bloodsucker_NM'),
+            BODACH                  = GetFirstID('Bodach'),
+            DREXERION_THE_CONDEMNED = GetFirstID('Drexerion_the_Condemned'),
+            MANES                   = GetFirstID('Manes'),
+            PHANDURON_THE_CONDEMNED = GetFirstID('Phanduron_the_Condemned'),
+            SEWER_SYRUP             = GetFirstID('Sewer_Syrup'),
+            SHII                    = GetFirstID('Shii'),
+        },
     npc =
     {
     },

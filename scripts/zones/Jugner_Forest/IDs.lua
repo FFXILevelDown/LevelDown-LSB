@@ -58,48 +58,49 @@ zones[xi.zone.JUGNER_FOREST] =
     },
 
     mob =
-    {
-        CERNUNNOS          = GetFirstID('Cernunnos'),
-        FRAELISSA          = GetFirstID('Fraelissa'),
-        FRADUBIO           = GetFirstID('Fradubio'),
-        GIOLLEMITTE        = GetFirstID('Giollemitte_B_Feroun'),
-        KING_ARTHRO        = GetFirstID('King_Arthro'),
-        METEORMAULER       = GetFirstID('Meteormauler_Zhagtegg'),
-        PANZER_PERCIVAL    = GetTableOfIDs('Panzer_Percival'), -- 2 NMs
-        SUPPLESPINE_MUJWUJ = GetFirstID('Supplespine_Mujwuj'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
+            CERNUNNOS          = GetFirstID('Cernunnos'),
+            FRAELISSA          = GetFirstID('Fraelissa'),
+            FRADUBIO           = GetFirstID('Fradubio'),
+            GIOLLEMITTE        = GetFirstID('Giollemitte_B_Feroun'),
+            KING_ARTHRO        = GetFirstID('King_Arthro'),
+            METEORMAULER       = GetFirstID('Meteormauler_Zhagtegg'),
+            PANZER_PERCIVAL    = GetTableOfIDs('Panzer_Percival'), -- 2 NMs
+            SUPPLESPINE_MUJWUJ = GetFirstID('Supplespine_Mujwuj'),
+            VOIDWATCH          = GetTableOfIDs('Belphoebe'),
+
+            VOIDWALKER =
             {
-                17203695, -- Sunderclaw
-                17203694, -- Sunderclaw
-                17203693, -- Sunderclaw
-                17203692, -- Sunderclaw
-                17203691, -- Quagmire Pugil
-                17203690, -- Quagmire Pugil
-                17203689, -- Quagmire Pugil
-                17203688, -- Quagmire Pugil
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17203695, -- Sunderclaw
+                    17203694, -- Sunderclaw
+                    17203693, -- Sunderclaw
+                    17203692, -- Sunderclaw
+                    17203691, -- Quagmire Pugil
+                    17203690, -- Quagmire Pugil
+                    17203689, -- Quagmire Pugil
+                    17203688, -- Quagmire Pugil
+                },
+
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17203687, -- Capricornus
+                    17203686, -- Yacumama
+                },
+
+                [xi.keyItem.BLUE_ABYSSITE] =
+                {
+                    17203685, -- Krabkatoa
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17203684, -- Yilbegan
+                }
             },
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
-            {
-                17203687, -- Capricornus
-                17203686, -- Yacumama
-            },
-
-            [xi.keyItem.BLUE_ABYSSITE] =
-            {
-                17203685, -- Krabkatoa
-            },
-
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17203684, -- Yilbegan
-            }
         },
-
-    },
 
     npc =
     {

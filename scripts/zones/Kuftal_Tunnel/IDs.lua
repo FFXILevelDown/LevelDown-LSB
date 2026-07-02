@@ -35,20 +35,21 @@ zones[xi.zone.KUFTAL_TUNNEL] =
         UNITY_WANTED_BATTLE_INTERACT  = 11507, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        AMEMET               = GetFirstID('Amemet'),
-        ARACHNE              = GetFirstID('Arachne'),
-        BLOODTHIRSTER_MADKIX = GetFirstID('Bloodthirster_Madkix'),
-        PELICAN              = GetFirstID('Pelican'),
-        SABOTENDER_MARIACHI  = GetFirstID('Sabotender_Mariachi'),
-        YOWIE                = GetFirstID('Yowie'),
-        TALEKEEPER_OFFSET    = GetFirstID('Gordovs_Ghost'),
-        MIMIC                = GetFirstID('Mimic'),
-        CANCER               = GetFirstID('Cancer'),
-        PHANTOM_WORM         = GetFirstID('Phantom_Worm'),
-        GUIVRE               = GetFirstID('Guivre'),
-        KETTENKAEFER         = GetFirstID('Kettenkaefer'),
-    },
+        {
+            AMEMET               = GetFirstID('Amemet'),
+            ARACHNE              = GetFirstID('Arachne'),
+            BLOODTHIRSTER_MADKIX = GetFirstID('Bloodthirster_Madkix'),
+            PELICAN              = GetFirstID('Pelican'),
+            SABOTENDER_MARIACHI  = GetFirstID('Sabotender_Mariachi'),
+            YOWIE                = GetFirstID('Yowie'),
+            TALEKEEPER_OFFSET    = GetFirstID('Gordovs_Ghost'),
+            MIMIC                = GetFirstID('Mimic'),
+            CANCER               = GetFirstID('Cancer'),
+            PHANTOM_WORM         = GetFirstID('Phantom_Worm'),
+            GUIVRE               = GetFirstID('Guivre'),
+            KETTENKAEFER         = GetFirstID('Kettenkaefer'),
+            VOIDWATCH            = GetTableOfIDs('Tangaroa'),
+        },
     npc =
     {
         PHANTOM_WORM_QM = GetFirstID('qm1'),

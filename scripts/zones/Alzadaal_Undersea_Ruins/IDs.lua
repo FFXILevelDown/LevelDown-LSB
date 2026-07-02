@@ -39,15 +39,15 @@ zones[xi.zone.ALZADAAL_UNDERSEA_RUINS] =
         UNITY_WANTED_BATTLE_INTERACT  = 7946, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        ALEXANDER               = GetFirstID('Alexander'),
-        ARMED_GEARS             = GetFirstID('Armed_Gears'),
-        CHEESE_HOARDER_GIGIROON = GetFirstID('Cheese_Hoarder_Gigiroon'),
-        COOKIEDUSTER_LIPIROON   = GetFirstID('Cookieduster_Lipiroon'),
-        NEPIONIC_SOULFLAYER     = GetFirstID('Nepionic_Soulflayer'),
-        OB                      = GetFirstID('Ob'),
-        WULGARU                 = GetFirstID('Wulgaru'),
-    },
+        {
+            NEPIONIC_SOULFLAYER     = GetFirstID('Nepionic_Soulflayer'),
+            COOKIEDUSTER_LIPIROON   = GetFirstID('Cookieduster_Lipiroon'),
+            OB                      = GetFirstID('Ob'),
+            CHEESE_HOARDER_GIGIROON = GetFirstID('Cheese_Hoarder_Gigiroon'),
+            ARMED_GEARS             = GetFirstID('Armed_Gears'),
+            WULGARU                 = GetFirstID('Wulgaru'),
+
+        },
     npc =
     {
         NEPIONIC_QM              = GetFirstID('blank_transformations'),

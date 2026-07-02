@@ -18,8 +18,8 @@ zones[xi.zone.CHOCOBO_CIRCUIT] =
         MEMBERS_LEVELS_ARE_RESTRICTED = 7027, -- Your party is unable to participate because certain members' levels are restricted.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         RUNGAGA = GetFirstID('Rungaga'),

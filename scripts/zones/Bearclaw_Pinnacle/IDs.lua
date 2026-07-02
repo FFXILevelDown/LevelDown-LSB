@@ -33,11 +33,10 @@ zones[xi.zone.BEARCLAW_PINNACLE] =
         SHOOK_SALT                    = 7691, -- The Snoll Tzar shakes off the salt!
     },
     mob =
-    {
-        BEARCLAW_RABBIT   = GetFirstID('Bearclaw_Rabbit'),
-        SNOW_DEVIL        = GetFirstID('Snow_Devil_war'),
-        SNOLL_TZAR_OFFSET = GetFirstID('Snoll_Tzar'),
-    },
+        {
+            SNOW_DEVIL        = GetFirstID('Snow_Devil_war'),
+            SNOLL_TZAR_OFFSET = GetFirstID('Snoll_Tzar'),
+        },
     npc =
     {
         ENTRANCE_OFFSET = GetFirstID('Wind_Pillar_1'),

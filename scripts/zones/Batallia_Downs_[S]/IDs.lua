@@ -35,43 +35,44 @@ zones[xi.zone.BATALLIA_DOWNS_S] =
     },
 
     mob =
-    {
-        BURLIBIX_BRAWNBACK = GetFirstID('Burlibix_Brawnback'),
-        HABERGOASS         = GetFirstID('Habergoass'),
-        LA_VELUE           = GetFirstID('La_Velue'),
-        MENECHME           = GetFirstID('Menechme'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17121722,  -- Lacus
-                17121721,  -- Thunor
-                17121720, -- Beorht
-                17121719, -- Pruina
-                17121718,  -- Puretos
-                17121717,  -- Eorthe
-                17121716, -- Deorc
-                17121715, -- Aither
-            },
+            BURLIBIX_BRAWNBACK = GetFirstID('Burlibix_Brawnback'),
+            HABERGOASS         = GetFirstID('Habergoass'),
+            LA_VELUE           = GetFirstID('La_Velue'),
+            MENECHME           = GetFirstID('Menechme'),
+            VOIDWATCH          = GetTableOfIDs('Taweret'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17121714, -- Skuld
-                17121713  -- Urd
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17121722,  -- Lacus
+                    17121721,  -- Thunor
+                    17121720, -- Beorht
+                    17121719, -- Pruina
+                    17121718,  -- Puretos
+                    17121717,  -- Eorthe
+                    17121716, -- Deorc
+                    17121715, -- Aither
+                },
 
-            [xi.keyItem.YELLOW_ABYSSITE] =
-            {
-                17121712  -- Verthandi
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17121714, -- Skuld
+                    17121713  -- Urd
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17121711  -- Yilbegan
+                [xi.keyItem.YELLOW_ABYSSITE] =
+                {
+                    17121712  -- Verthandi
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17121711  -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

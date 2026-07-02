@@ -37,17 +37,18 @@ zones[xi.zone.KING_RANPERRES_TOMB] =
         COMMON_SENSE_SURVIVAL         = 11441, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        GWYLLGI               = GetFirstID('Gwyllgi'),
-        CRYPT_GHOST           = GetFirstID('Crypt_Ghost'),
-        BARBASTELLE           = GetFirstID('Barbastelle'),
-        CHERRY_SAPLING_OFFSET = GetFirstID('Cherry_Sapling'),
-        VRTRA                 = GetFirstID('Vrtra'),
-        CORRUPTED_YORGOS      = GetFirstID('Corrupted_Yorgos'),
-        CORRUPTED_SOFFEIL     = GetFirstID('Corrupted_Soffeil'),
-        CORRUPTED_ULBRIG      = GetFirstID('Corrupted_Ulbrig'),
-        ANKOU                 = GetFirstID('Ankou'),
-    },
+        {
+            GWYLLGI               = GetFirstID('Gwyllgi'),
+            CRYPT_GHOST           = GetFirstID('Crypt_Ghost'),
+            BARBASTELLE           = GetFirstID('Barbastelle'),
+            CHERRY_SAPLING_OFFSET = GetFirstID('Cherry_Sapling'),
+            VRTRA                 = GetFirstID('Vrtra'),
+            CORRUPTED_YORGOS      = GetFirstID('Corrupted_Yorgos'),
+            CORRUPTED_SOFFEIL     = GetFirstID('Corrupted_Soffeil'),
+            CORRUPTED_ULBRIG      = GetFirstID('Corrupted_Ulbrig'),
+            ANKOU                 = GetFirstID('Ankou'),
+            VOIDWATCH             = GetTableOfIDs('Hahava'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

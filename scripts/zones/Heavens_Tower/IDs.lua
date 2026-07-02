@@ -29,8 +29,8 @@ zones[xi.zone.HEAVENS_TOWER] =
         NOT_ACQUAINTED                = 9203, -- I'm sorry, but I don't believe we're acquainted. Please leave me be.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

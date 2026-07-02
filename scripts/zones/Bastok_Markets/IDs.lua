@@ -78,8 +78,8 @@ zones[xi.zone.BASTOK_MARKETS] =
         HAVE_ALREADY_CHANGED_UNITY    = 14762, -- You have already changed Unities. Please wait until the next tabulation period.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         AQUILLINA = GetFirstID('Aquillina'),

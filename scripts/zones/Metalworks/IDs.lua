@@ -53,8 +53,8 @@ zones[xi.zone.METALWORKS] =
         HOMEPOINT_SET                 = 11042, -- Home point set!
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

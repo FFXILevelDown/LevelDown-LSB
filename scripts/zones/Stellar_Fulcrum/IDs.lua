@@ -27,9 +27,11 @@ zones[xi.zone.STELLAR_FULCRUM] =
         NO_BATTLEFIELD_ENTRY          = 7611, -- The door will not budge.
     },
     mob =
-    {
-        KAMLANAUT = GetFirstID('Kamlanaut'),
-    },
+        {
+            KAMLANAUT = GetFirstID('Kamlanaut'),
+    		KAMLANAUT_HTBF = GetFirstID('Kamlanaut_HTBF'),
+    		ESOTERIC_SCRIVENING = GetFirstID('Esoteric_Scrivening'),
+        },
     npc =
     {
     },

@@ -20,8 +20,8 @@ zones[xi.zone.DYNAMIS_BASTOK_D] =
         CONQUEST_BASE                 = 7068, -- Tallying conquest results...
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

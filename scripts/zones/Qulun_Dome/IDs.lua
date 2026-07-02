@@ -28,9 +28,9 @@ zones[xi.zone.QULUN_DOME] =
         QUADAV_KING_DEATH                       = 7279, -- I a-am fini-ished. Hear me, wa-arriors of the Quadav! The throne of the Adamantking and the line of Za'Dha pa-asses to my bro-other...
     },
     mob =
-    {
-        DIAMOND_QUADAV             = GetFirstID('Diamond_Quadav'), -- Also used for An Affable Adamantking? offset
-    },
+        {
+            DIAMOND_QUADAV             = GetFirstID('Diamond_Quadav'), -- Also used for An Affable Adamantking? offset
+        },
     npc =
     {
     },

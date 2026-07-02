@@ -33,9 +33,9 @@ zones[xi.zone.FORET_DE_HENNETIEL] =
         HOMEPOINT_SET                 = 8021, -- Home point set!
     },
     mob =
-    {
-        REIVE_MOB_OFFSET = GetFirstID('Broadleaf_Palm'),
-    },
+        {
+            REIVE_MOB_OFFSET = GetFirstID('Broadleaf_Palm'),
+        },
     npc =
     {
         CASTOFF_POINT_OFFSET   = GetFirstID('Castoff_Point_0'),

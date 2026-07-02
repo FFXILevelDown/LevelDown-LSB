@@ -19,8 +19,8 @@ zones[xi.zone.GWORA_THRONE_ROOM] =
         CONQUEST_BASE                 = 7068, -- Tallying conquest results...
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

@@ -36,10 +36,11 @@ zones[xi.zone.CLOISTER_OF_FROST] =
         POWER_STYMIES                    = 7791, -- An unseen power stymies your efforts to attach <item> to the protocrystal.
     },
     mob =
-    {
-        DRYAD             = GetFirstID('Dryad'),
-        SHIVA_PRIME_ASA   = GetFirstID('Shiva_Prime_ASA')
-    },
+        {
+            DRYAD             = GetFirstID('Dryad'),
+            SHIVA_PRIME_ASA   = GetFirstID('Shiva_Prime_ASA'),
+            SHIVA_PRIME_HTBF  = GetFirstID('Shiva_Prime_HTBF'),
+        },
     npc =
     {
     },

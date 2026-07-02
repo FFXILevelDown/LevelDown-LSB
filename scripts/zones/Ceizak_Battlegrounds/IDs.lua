@@ -34,14 +34,14 @@ zones[xi.zone.CEIZAK_BATTLEGROUNDS] =
         MYSTICAL_WARMTH               = 8054, -- You feel a mystical warmth welling up inside you!
     },
     mob =
-    {
-        UNFETTERED_TWITHERYM    = GetFirstID('Unfettered_Twitherym'),
-        SUPERNAL_CHAPULI        = GetFirstID('Supernal_Chapuli'),
-        TRANSCENDENT_SCORPION   = GetFirstID('Transcendent_Scorpion'),
-        MASTOP                  = GetFirstID('Mastop'),
-        TAXET                   = GetFirstID('Taxet'),
-        REIVE_MOB_OFFSET        = GetFirstID('Knotted_Root'),
-    },
+        {
+            UNFETTERED_TWITHERYM    = GetFirstID('Unfettered_Twitherym'),
+            SUPERNAL_CHAPULI        = GetFirstID('Supernal_Chapuli'),
+            TRANSCENDENT_SCORPION   = GetFirstID('Transcendent_Scorpion'),
+            MASTOP                  = GetFirstID('Mastop'),
+            TAXET                   = GetFirstID('Taxet'),
+            REIVE_MOB_OFFSET        = GetFirstID('Knotted_Root'),
+        },
     npc =
     {
         REIVE_COLLISION_OFFSET = GetFirstID('_790'),

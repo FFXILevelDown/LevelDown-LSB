@@ -28,8 +28,8 @@ zones[xi.zone.ABYSSEA_EMPYREAL_PARADOX] =
         ENTERING_THE_BATTLEFIELD_FOR  = 8095, -- Entering the battlefield for [The Wyrm God/★The Wyrm God/]!
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

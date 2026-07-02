@@ -18,8 +18,8 @@ zones[xi.zone.ABDHALJS_ISLE_PURGONORGO] =
         FISHING_MESSAGE_OFFSET        = 7072, -- You can't fish here.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

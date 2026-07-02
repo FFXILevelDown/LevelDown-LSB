@@ -31,41 +31,42 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS_S] =
     },
 
     mob =
-    {
-        CENTIPEDAL_CENTRUROIDES = GetFirstID('Centipedal_Centruroides'),
-        BLOODLAPPER             = GetFirstID('Bloodlapper'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17174917, -- Raker bee
-                17174916, -- Raker bee
-                17174915, -- Raker bee
-                17174914, -- Raker bee
-                17174913, -- Rummager beetle
-                17174912, -- Rummager beetle
-                17174911, -- Rummager beetle
-                17174910, -- Rummager beetle
-            },
+            CENTIPEDAL_CENTRUROIDES = GetFirstID('Centipedal_Centruroides'),
+            BLOODLAPPER             = GetFirstID('Bloodlapper'),
+            VOIDWATCH               = GetTableOfIDs('Akupara'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17174909,  -- Jyeshtha
-                17174908, -- Farruca Fly
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17174917, -- Raker bee
+                    17174916, -- Raker bee
+                    17174915, -- Raker bee
+                    17174914, -- Raker bee
+                    17174913, -- Rummager beetle
+                    17174912, -- Rummager beetle
+                    17174911, -- Rummager beetle
+                    17174910, -- Rummager beetle
+                },
 
-            [xi.keyItem.BROWN_ABYSSITE] =
-            {
-                17174907  -- Orcus
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17174909,  -- Jyeshtha
+                    17174908, -- Farruca Fly
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17174906  -- Yilbegan
+                [xi.keyItem.BROWN_ABYSSITE] =
+                {
+                    17174907  -- Orcus
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17174906  -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

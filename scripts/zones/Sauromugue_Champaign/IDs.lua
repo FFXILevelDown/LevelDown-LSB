@@ -51,46 +51,47 @@ zones[xi.zone.SAUROMUGUE_CHAMPAIGN] =
         COMMON_SENSE_SURVIVAL         = 12520, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        DEADLY_DODO        = GetFirstID('Deadly_Dodo'),
-        BLIGHTING_BRAND    = GetFirstID('Blighting_Brand'),
-        BASHE              = GetFirstID('Bashe'),
-        OLD_SABERTOOTH     = GetFirstID('Old_Sabertooth'),
-        ROC                = GetFirstID('Roc'),
-        CLIMBPIX_HIGHRISE  = GetFirstID('Climbpix_Highrise'),
-        DRIBBLIX_GREASEMAW = GetFirstID('Dribblix_Greasemaw'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17269126,  -- Lacus
-                17269125,  -- Thunor
-                17269124, -- Beorht
-                17269123, -- Pruina
-                17269122,  -- Puretos
-                17269121,  -- Eorthe
-                17269120, -- Deorc
-                17269119, -- Aither
-            },
+            DEADLY_DODO        = GetFirstID('Deadly_Dodo'),
+            BLIGHTING_BRAND    = GetFirstID('Blighting_Brand'),
+            BASHE              = GetFirstID('Bashe'),
+            OLD_SABERTOOTH     = GetFirstID('Old_Sabertooth'),
+            ROC                = GetFirstID('Roc'),
+            CLIMBPIX_HIGHRISE  = GetFirstID('Climbpix_Highrise'),
+            DRIBBLIX_GREASEMAW = GetFirstID('Dribblix_Greasemaw'),
+            VOIDWATCH          = GetTableOfIDs('Goji'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17269118, -- Skuld
-                17269117, -- Urd
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17269126,  -- Lacus
+                    17269125,  -- Thunor
+                    17269124, -- Beorht
+                    17269123, -- Pruina
+                    17269122,  -- Puretos
+                    17269121,  -- Eorthe
+                    17269120, -- Deorc
+                    17269119, -- Aither
+                },
 
-            [xi.keyItem.YELLOW_ABYSSITE] =
-            {
-                17269116, -- Verthandi
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17269118, -- Skuld
+                    17269117, -- Urd
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17269115, -- Yilbegan
+                [xi.keyItem.YELLOW_ABYSSITE] =
+                {
+                    17269116, -- Verthandi
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17269115, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

@@ -56,16 +56,17 @@ zones[xi.zone.YUHTUNGA_JUNGLE] =
         COMMON_SENSE_SURVIVAL         = 12065, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BAYAWAK              = GetFirstID('Bayawak'),
-        CARTHI               = GetFirstID('Carthi'),
-        MISCHIEVOUS_MICHOLAS = GetFirstID('Mischievous_Micholas'),
-        NASUS_OFFSET         = GetFirstID('Nasus'),
-        TIPHA                = GetFirstID('Tipha'),
-        ROSE_GARDEN          = GetFirstID('Rose_Garden'),
-        SIREN                = GetFirstID('Siren'),
-        VOLUPTUOUS_VILMA     = GetFirstID('Voluptuous_Vilma'),
-    },
+        {
+            BAYAWAK              = GetFirstID('Bayawak'),
+            CARTHI               = GetFirstID('Carthi'),
+            MISCHIEVOUS_MICHOLAS = GetFirstID('Mischievous_Micholas'),
+            NASUS_OFFSET         = GetFirstID('Nasus'),
+            TIPHA                = GetFirstID('Tipha'),
+            ROSE_GARDEN          = GetFirstID('Rose_Garden'),
+            SIREN                = GetFirstID('Siren'),
+            VOLUPTUOUS_VILMA     = GetFirstID('Voluptuous_Vilma'),
+            VOIDWATCH            = GetTableOfIDs('Holy_Moly'),
+        },
     npc =
     {
         BLUE_RAFFLESIA_OFFSET    = GetFirstID('Blue_Rafflesia'),

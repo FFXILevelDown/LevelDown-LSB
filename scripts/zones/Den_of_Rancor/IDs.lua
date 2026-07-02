@@ -37,19 +37,19 @@ zones[xi.zone.DEN_OF_RANCOR] =
         UNITY_WANTED_BATTLE_INTERACT  = 10619, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        AZRAEL                  = GetFirstID('Azrael'),
-        BISTRE_HEARTED_MALBERRY = GetFirstID('Bistre-hearted_Malberry'),
-        CARMINE_TAILED_JANBERRY = GetFirstID('Carmine-tailed_Janberry'),
-        CELESTE_EYED_TOZBERRY   = GetFirstID('Celeste-eyed_Tozberry'),
-        FRIAR_RUSH              = GetFirstID('Friar_Rush'),
-        HAKUTAKU                = GetFirstID('Hakutaku'),
-        MIMIC                   = GetFirstID('Mimic'),
-        MOKUMOKUREN             = GetFirstID('Mokumokuren'),
-        OGAMA                   = GetFirstID('Ogama'),
-        RANCOR_TORCH            = GetFirstID('Rancor_Torch'),
-        TAWNY_FINGERED_MUGBERRY = GetFirstID('Tawny-fingered_Mugberry'),
-    },
+        {
+            AZRAEL                  = GetFirstID('Azrael'),
+            BISTRE_HEARTED_MALBERRY = GetFirstID('Bistre-hearted_Malberry'),
+            CARMINE_TAILED_JANBERRY = GetFirstID('Carmine-tailed_Janberry'),
+            CELESTE_EYED_TOZBERRY   = GetFirstID('Celeste-eyed_Tozberry'),
+            FRIAR_RUSH              = GetFirstID('Friar_Rush'),
+            HAKUTAKU                = GetFirstID('Hakutaku'),
+            MIMIC                   = GetFirstID('Mimic'),
+            MOKUMOKUREN             = GetFirstID('Mokumokuren'),
+            OGAMA                   = GetFirstID('Ogama'),
+            RANCOR_TORCH            = GetFirstID('Rancor_Torch'),
+            TAWNY_FINGERED_MUGBERRY = GetFirstID('Tawny-fingered_Mugberry'),
+        },
     npc =
     {
         DROP_GATE       = GetFirstID('_4g0'),

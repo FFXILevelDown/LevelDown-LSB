@@ -36,15 +36,15 @@ zones[xi.zone.GHELSBA_OUTPOST] =
         YOU_CAN_NOW_BECOME_A_DRAGOON     = 7806, -- You can now become a dragoon!
     },
     mob =
-    {
-        CARRION_DRAGON        = GetFirstID('Carrion_Dragon'),
-        COLO_COLO             = GetFirstID('Colo-colo'),
-        CYRANUCE_M_CUTAULEON  = GetFirstID('Cyranuce_M_Cutauleon'),
-        FODDERCHIEF_VOKDEK    = GetFirstID('Fodderchief_Vokdek'),
-        KALAMAINU             = GetFirstID('Kalamainu'),
-        THOUSANDARM_DESHGLESH = GetFirstID('Thousandarm_Deshglesh'),
-        TOADPILLOW            = GetFirstID('Toadpillow'),
-    },
+        {
+            CARRION_DRAGON        = GetFirstID('Carrion_Dragon'),
+            COLO_COLO             = GetFirstID('Colo-colo'),
+            CYRANUCE_M_CUTAULEON  = GetFirstID('Cyranuce_M_Cutauleon'),
+            FODDERCHIEF_VOKDEK    = GetFirstID('Fodderchief_Vokdek'),
+            KALAMAINU             = GetFirstID('Kalamainu'),
+            THOUSANDARM_DESHGLESH = GetFirstID('Thousandarm_Deshglesh'),
+            TOADPILLOW            = GetFirstID('Toadpillow'),
+        },
     npc =
     {
         LOGGING = GetTableOfIDs('Logging_Point'),

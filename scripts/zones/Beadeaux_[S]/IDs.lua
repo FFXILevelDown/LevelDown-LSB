@@ -20,11 +20,11 @@ zones[xi.zone.BEADEAUX_S] =
         THE_PARTY_WILL_BE_REMOVED     = 7951, -- If all party members' HP are still zero after # minute[/s], the party will be removed from the battlefield.
     },
     mob =
-    {
-        BATHO_MERCIFULHEART = GetFirstID('BaTho_Mercifulheart'),
-        DA_DHA_HUNDREDMASK  = GetFirstID('DaDha_Hundredmask'),
-        EATHO_CRUELHEART    = GetFirstID('EaTho_Cruelheart'),
-    },
+        {
+            BATHO_MERCIFULHEART = GetFirstID('BaTho_Mercifulheart'),
+            DA_DHA_HUNDREDMASK  = GetFirstID('DaDha_Hundredmask'),
+            EATHO_CRUELHEART    = GetFirstID('EaTho_Cruelheart'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Rouquillot_TK'), -- San, Bas, Win, Flag +4, CA

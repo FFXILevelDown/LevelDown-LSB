@@ -44,16 +44,15 @@ zones[xi.zone.CARPENTERS_LANDING] =
         COMMON_SENSE_SURVIVAL         = 7581, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BULLHEADED_GROSVEZ    = GetFirstID('Bullheaded_Grosvez'),
-        CRYPTONBERRY_EXECUTOR = GetFirstID('Cryptonberry_Executor'),
-        HERCULES_BEETLE       = GetFirstID('Hercules_Beetle'),
-        MYCOPHILE             = GetFirstID('Mycophile'),
-        ORCTRAP               = GetFirstID('Orctrap'),
-        OVERGROWN_IVY         = GetFirstID('Overgrown_Ivy'),
-        PARA                  = GetFirstID('Para'),
-        TEMPEST_TIGON         = GetFirstID('Tempest_Tigon'),
-    },
+        {
+            ORCTRAP               = GetFirstID('Orctrap'),
+            TEMPEST_TIGON         = GetFirstID('Tempest_Tigon'),
+            OVERGROWN_IVY         = GetFirstID('Overgrown_Ivy'),
+            CRYPTONBERRY_EXECUTOR = GetFirstID('Cryptonberry_Executor'),
+            MYCOPHILE             = GetFirstID('Mycophile'),
+            HERCULES_BEETLE       = GetFirstID('Hercules_Beetle'),
+            PARA                  = GetFirstID('Para'),
+        },
     npc =
     {
         HERCULES_BEETLE_TREES = GetTableOfIDs('qm_hercules_beetle'),

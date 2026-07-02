@@ -30,15 +30,15 @@ zones[xi.zone.MIDDLE_DELKFUTTS_TOWER] =
         REGIME_REGISTERED             = 9478, -- New training regime registered!
     },
     mob =
-    {
-        BLADE_OF_EVIL_OFFSET     = GetFirstID('Gerwitzs_Scythe'),
-        EURYTOS                  = GetFirstID('Eurytos'),
-        OGYGOS                   = GetFirstID('Ogygos'),
-        OPHION                   = GetFirstID('Ophion'),
-        POLYBOTES                = GetFirstID('Polybotes'),
-        RHOIKOS                  = GetFirstID('Rhoikos'),
-        RHOITOS                  = GetFirstID('Rhoitos'),
-    },
+        {
+            BLADE_OF_EVIL_OFFSET     = GetFirstID('Gerwitzs_Scythe'),
+            EURYTOS                  = GetFirstID('Eurytos'),
+            OGYGOS                   = GetFirstID('Ogygos'),
+            OPHION                   = GetFirstID('Ophion'),
+            POLYBOTES                = GetFirstID('Polybotes'),
+            RHOIKOS                  = GetFirstID('Rhoikos'),
+            RHOITOS                  = GetFirstID('Rhoitos'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

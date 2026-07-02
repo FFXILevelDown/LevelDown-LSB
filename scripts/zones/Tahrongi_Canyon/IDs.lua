@@ -62,43 +62,44 @@ zones[xi.zone.TAHRONGI_CANYON] =
         COMMON_SENSE_SURVIVAL         = 11959, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        SERPOPARD_ISHTAR = GetTableOfIDs('Serpopard_Ishtar'),
-        HERBAGE_HUNTER   = GetFirstID('Herbage_Hunter'),
-        HABROK           = GetFirstID('Habrok'),
-        YARA_MA_YHA_WHO  = GetFirstID('Yara_Ma_Yha_Who'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17256918, -- Prickly Sheep
-                17256917, -- Prickly Sheep
-                17256916, -- Prickly Sheep
-                17256915, -- Prickly Sheep
-                17256914,  -- Void Hare
-                17256913,  -- Void Hare
-                17256912,  -- Void Hare
-                17256911,  -- Void Hare
-            },
+            SERPOPARD_ISHTAR = GetTableOfIDs('Serpopard_Ishtar'),
+            HERBAGE_HUNTER   = GetFirstID('Herbage_Hunter'),
+            HABROK           = GetFirstID('Habrok'),
+            YARA_MA_YHA_WHO  = GetFirstID('Yara_Ma_Yha_Who'),
+            VOIDWATCH        = GetTableOfIDs('Smierc'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17256910, -- Chesma
-                17256909, -- Tammuz
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17256918, -- Prickly Sheep
+                    17256917, -- Prickly Sheep
+                    17256916, -- Prickly Sheep
+                    17256915, -- Prickly Sheep
+                    17256914,  -- Void Hare
+                    17256913,  -- Void Hare
+                    17256912,  -- Void Hare
+                    17256911,  -- Void Hare
+                },
 
-            [xi.keyItem.GREY_ABYSSITE] =
-            {
-                17256908, -- Dawon
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17256910, -- Chesma
+                    17256909, -- Tammuz
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17256907, -- Yilbegan
+                [xi.keyItem.GREY_ABYSSITE] =
+                {
+                    17256908, -- Dawon
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17256907, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

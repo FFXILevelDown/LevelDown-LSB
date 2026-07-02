@@ -56,7 +56,7 @@ zones[xi.zone.TEMPLE_OF_UGGALEPIH] =
         UNITY_WANTED_BATTLE_INTERACT  = 11671, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
+        {
         BERYL_FOOTED_MOLBERRY    = GetFirstID('Beryl-footed_Molberry'),
         CLEUVARION_M_RESOAIX     = GetFirstID('Cleuvarion_M_Resoaix'),
         COOK_OFFSET              = GetFirstID('Cook_Solberry'),
@@ -76,7 +76,8 @@ zones[xi.zone.TEMPLE_OF_UGGALEPIH] =
         TEMPLE_GUARDIAN          = GetFirstID('Temple_Guardian'),
         TONBERRY_KINQ            = GetFirstID('Tonberry_Kinq'),
         YALLERY_BROWN            = GetFirstID('Yallery_Brown')
-    },
+        VOIDWATCH                = GetTableOfIDs('Neith'),
+        },
     npc =
     {
         BOOK_OFFSET          = GetFirstID('Worn_Book'),

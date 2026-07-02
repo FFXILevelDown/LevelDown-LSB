@@ -20,8 +20,8 @@ zones[xi.zone.DYNAMIS_JEUNO_D] =
         CONQUEST_BASE                 = 7068, -- Tallying conquest results...
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

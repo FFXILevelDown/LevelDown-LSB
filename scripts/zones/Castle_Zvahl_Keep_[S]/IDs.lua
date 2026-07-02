@@ -20,9 +20,8 @@ zones[xi.zone.CASTLE_ZVAHL_KEEP_S] =
         HOMEPOINT_SET                 = 7885, -- Home point set!
     },
     mob =
-    {
-        GARGOUILLE_WARDEN             = GetFirstID('Gargouille_Warden'),
-    },
+        {
+        },
     npc =
     {
     },

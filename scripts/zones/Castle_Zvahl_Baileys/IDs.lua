@@ -27,17 +27,17 @@ zones[xi.zone.CASTLE_ZVAHL_BAILEYS] =
         COMMON_SENSE_SURVIVAL         = 7621, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        MARQUIS_SABNOCK    = GetFirstID('Marquis_Sabnock'),
-        LIKHO              = GetFirstID('Likho'),
-        MARQUIS_ALLOCEN    = GetFirstID('Marquis_Allocen'),
-        MARQUIS_AMON       = GetFirstID('Marquis_Amon'),
-        DUKE_HABORYM       = GetFirstID('Duke_Haborym'),
-        GRAND_DUKE_BATYM   = GetFirstID('Grand_Duke_Batym'),
-        DARK_SPARK         = GetFirstID('Dark_Spark'),
-        MIMIC              = GetFirstID('Mimic'),
-        MARQUIS_ANDREALPUS = GetFirstID('Marquis_Andrealphus'),
-    },
+        {
+            MARQUIS_SABNOCK    = GetFirstID('Marquis_Sabnock'),
+            LIKHO              = GetFirstID('Likho'),
+            MARQUIS_ALLOCEN    = GetFirstID('Marquis_Allocen'),
+            MARQUIS_AMON       = GetFirstID('Marquis_Amon'),
+            DUKE_HABORYM       = GetFirstID('Duke_Haborym'),
+            GRAND_DUKE_BATYM   = GetFirstID('Grand_Duke_Batym'),
+            DARK_SPARK         = GetFirstID('Dark_Spark'),
+            MIMIC              = GetFirstID('Mimic'),
+            MARQUIS_ANDREALPUS = GetFirstID('Marquis_Andrealphus'),
+        },
     npc =
     {
         TORCH_OFFSET    = GetFirstID('Torch'),

@@ -19,8 +19,8 @@ zones[xi.zone.GWORA_CORRIDOR] =
         CONQUEST_BASE                 = 7068, -- Tallying conquest results...
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

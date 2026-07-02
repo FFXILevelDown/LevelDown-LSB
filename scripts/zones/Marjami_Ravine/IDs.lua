@@ -34,9 +34,9 @@ zones[xi.zone.MARJAMI_RAVINE] =
         UNCANNY_SENSATION             = 8195, -- You are assaulted by an uncanny sensation.
     },
     mob =
-    {
-        REIVE_MOB_OFFSET = GetFirstID('Monolithic_Boulder'),
-    },
+        {
+            REIVE_MOB_OFFSET = GetFirstID('Monolithic_Boulder'),
+        },
     npc =
     {
         REIVE_COLLISION_OFFSET = GetFirstID('_7e0'),

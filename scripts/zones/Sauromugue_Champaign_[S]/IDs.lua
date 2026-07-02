@@ -32,41 +32,42 @@ zones[xi.zone.SAUROMUGUE_CHAMPAIGN_S] =
         COMMON_SENSE_SURVIVAL         = 10081, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BALAM_QUITZ = GetFirstID('Balam-Quitz'),
-        COQUECIGRUE = GetFirstID('Coquecigrue'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17178932,  -- Lacus
-                17178931,  -- Thunor
-                17178930, -- Beorht
-                17178929, -- Pruina
-                17178928,  -- Puretos
-                17178927,  -- Eorthe
-                17178926, -- Deorc
-                17178925, -- Aither
-            },
+            BALAM_QUITZ = GetFirstID('Balam-Quitz'),
+            COQUECIGRUE = GetFirstID('Coquecigrue'),
+            VOIDWATCH   = GetTableOfIDs('Gugalanna'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17178924, -- Skuld
-                17178923, -- Urd
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17178932,  -- Lacus
+                    17178931,  -- Thunor
+                    17178930, -- Beorht
+                    17178929, -- Pruina
+                    17178928,  -- Puretos
+                    17178927,  -- Eorthe
+                    17178926, -- Deorc
+                    17178925, -- Aither
+                },
 
-            [xi.keyItem.YELLOW_ABYSSITE] =
-            {
-                17178922, -- Verthandi
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17178924, -- Skuld
+                    17178923, -- Urd
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17178921, -- Yilbegan
+                [xi.keyItem.YELLOW_ABYSSITE] =
+                {
+                    17178922, -- Verthandi
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17178921, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

@@ -38,11 +38,19 @@ zones[xi.zone.FULL_MOON_FOUNTAIN] =
         DECEPTIVE_APPEARANCES         = 7843, -- Deceptive appearances... These are what...have truly been...your downfall...
     },
     mob =
-    {
-        FENRIR_PRIME    = GetFirstID('Fenrir_Prime'),
-        CARBUNCLE_PRIME = GetFirstID('Carbuncle_Prime'),
-        ACE_OF_CUPS     = GetFirstID('Ace_of_Cups'),
-    },
+        {
+            FENRIR_PRIME    = GetFirstID('Fenrir_Prime'),
+            CARBUNCLE_PRIME = GetFirstID('Carbuncle_Prime'),
+            ACE_OF_CUPS     = GetFirstID('Ace_of_Cups'),
+            FENRIR_PRIME_HTBF    = GetFirstID('Fenrir_Prime_HTBF'),
+            CARBUNCLE_PRIME_HTBF = GetFirstID('Carbuncle_Prime_HTBF'),
+            IFRIT_PRIME_HTBF     = GetFirstID('Ifrit_Prime_HTBF'),
+            SHIVA_PRIME_HTBF     = GetFirstID('Shiva_Prime_HTBF'),
+            GARUDA_PRIME_HTBF    = GetFirstID('Garuda_Prime_HTBF'),
+            TITAN_PRIME_HTBF     = GetFirstID('Titan_Prime_HTBF'),
+            RAMUH_PRIME_HTBF     = GetFirstID('Ramuh_Prime_HTBF'),
+            LEVIATHAN_PRIME_HTBF = GetFirstID('Leviathan_Prime_HTBF'),
+        },
     npc =
     {
     },

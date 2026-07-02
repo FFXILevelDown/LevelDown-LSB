@@ -24,8 +24,8 @@ zones[xi.zone.MOG_GARDEN] =
         RETRIEVE_DIALOG_ID            = 8587, -- You retrieve <item> from the porter moogle's care.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         GREEN_THUMB_MOOGLE = GetFirstID('Green_Thumb_Moogle'),

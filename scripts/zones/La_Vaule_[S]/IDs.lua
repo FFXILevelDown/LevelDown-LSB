@@ -31,11 +31,11 @@ zones[xi.zone.LA_VAULE_S] =
         RETRACED_ALL_JUNCTIONS        = 8361, -- You have retraced all junctions of eventualities. Hasten back to where Cait Sith and Lilisette await.
     },
     mob =
-    {
-        ASHMAKER_GOTBLUT = GetFirstID('Ashmaker_Gotblut'),
-        HAWKEYED_DNATBAT = GetFirstID('Hawkeyed_Dnatbat'),
-        GALARHIGG        = GetFirstID('Galarhigg'),
-    },
+        {
+            ASHMAKER_GOTBLUT = GetFirstID('Ashmaker_Gotblut'),
+            HAWKEYED_DNATBAT = GetFirstID('Hawkeyed_Dnatbat'),
+            GALARHIGG        = GetFirstID('Galarhigg'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Framaraix_TK'), -- San, Bas, Win, Flag +4, CA

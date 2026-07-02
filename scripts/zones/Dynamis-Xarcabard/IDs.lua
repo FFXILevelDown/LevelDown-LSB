@@ -41,78 +41,78 @@ zones[xi.zone.DYNAMIS_XARCABARD] =
         PRISON_OF_SOULS_HAS_SET_FREE  = 7833, -- The prison of souls has set free its captive spirits!
     },
     mob =
-    {
-        TIME_EXTENSION =
         {
-            { minutes = 10, ki = xi.ki.CRIMSON_GRANULES_OF_TIME,   mob = 17330531 },
-            { minutes = 10, ki = xi.ki.AZURE_GRANULES_OF_TIME,     mob = 17330532 },
-            { minutes = 10, ki = xi.ki.AMBER_GRANULES_OF_TIME,     mob = 17330533 },
-            { minutes = 10, ki = xi.ki.ALABASTER_GRANULES_OF_TIME, mob = 17330534 },
-            { minutes = 20, ki = xi.ki.OBSIDIAN_GRANULES_OF_TIME,  mob = 17330535 },
+            TIME_EXTENSION =
+            {
+                { minutes = 10, ki = xi.ki.CRIMSON_GRANULES_OF_TIME,   mob = 17330531 },
+                { minutes = 10, ki = xi.ki.AZURE_GRANULES_OF_TIME,     mob = 17330532 },
+                { minutes = 10, ki = xi.ki.AMBER_GRANULES_OF_TIME,     mob = 17330533 },
+                { minutes = 10, ki = xi.ki.ALABASTER_GRANULES_OF_TIME, mob = 17330534 },
+                { minutes = 20, ki = xi.ki.OBSIDIAN_GRANULES_OF_TIME,  mob = 17330535 },
+            },
+
+            REFILL_STATUE =
+            {
+                {
+                    { mob = 17330230, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                    { mob = 17330231, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 17330240, eye = xi.dynamis.eye.RED  }, -- Adamantking_Effigy
+                    { mob = 17330241, eye = xi.dynamis.eye.BLUE },
+                },
+
+                {
+                    { mob = 17330248, eye = xi.dynamis.eye.RED   }, -- Serjeant_Tombstone
+                    { mob = 17330249, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 17330256, eye = xi.dynamis.eye.RED  }, -- Serjeant_Tombstone
+                    { mob = 17330257, eye = xi.dynamis.eye.BLUE },
+                },
+
+                {
+                    { mob = 17330273, eye = xi.dynamis.eye.RED   }, -- Avatar_Icon
+                    { mob = 17330274, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 17330285, eye = xi.dynamis.eye.RED  }, -- Avatar_Icon
+                    { mob = 17330286, eye = xi.dynamis.eye.BLUE },
+                },
+
+                {
+                    { mob = 17330471, eye = xi.dynamis.eye.RED   }, -- Goblin_Replica
+                    { mob = 17330472, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 17330483, eye = xi.dynamis.eye.RED  }, -- Goblin_Replica
+                    { mob = 17330484, eye = xi.dynamis.eye.BLUE },
+                },
+            },
+
+            DYNAMIS_LORD      = 17330177,
+            YING              = 17330183,
+            YANG              = 17330184,
+            COUNT_ZAEBOS      = GetFirstID('Count_Zaebos'),
+            DUKE_GOMORY       = GetFirstID('Duke_Gomory'),
+            PRINCE_SEERE      = GetFirstID('Prince_Seere'),
+            MARQUIS_ORIAS     = GetFirstID('Marquis_Orias'),
+            DUKE_BERITH       = GetFirstID('Duke_Berith'),
+            COUNT_RAUM        = GetFirstID('Count_Raum'),
+            MARQUIS_SABNAK    = GetFirstID('Marquis_Sabnak'),
+            DUKE_SCOX         = GetFirstID('Duke_Scox'),
+            MARQUIS_ANDRAS    = GetFirstID('Marquis_Andras'),
+            MARQUIS_DECARABIA = GetFirstID('Marquis_Decarabia'),
+            MARQUIS_CIMERIES  = GetFirstID('Marquis_Cimeries'),
+            COUNT_VINE        = GetFirstID('Count_Vine'),
+            MARQUIS_GAMYGYN   = GetFirstID('Marquis_Gamygyn'),
+            KING_ZAGAN        = GetFirstID('King_Zagan'),
+            MARQUIS_NEBIROS   = GetFirstID('Marquis_Nebiros'),
         },
-
-        REFILL_STATUE =
-        {
-            {
-                { mob = 17330230, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                { mob = 17330231, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 17330240, eye = xi.dynamis.eye.RED  }, -- Adamantking_Effigy
-                { mob = 17330241, eye = xi.dynamis.eye.BLUE },
-            },
-
-            {
-                { mob = 17330248, eye = xi.dynamis.eye.RED   }, -- Serjeant_Tombstone
-                { mob = 17330249, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 17330256, eye = xi.dynamis.eye.RED  }, -- Serjeant_Tombstone
-                { mob = 17330257, eye = xi.dynamis.eye.BLUE },
-            },
-
-            {
-                { mob = 17330273, eye = xi.dynamis.eye.RED   }, -- Avatar_Icon
-                { mob = 17330274, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 17330285, eye = xi.dynamis.eye.RED  }, -- Avatar_Icon
-                { mob = 17330286, eye = xi.dynamis.eye.BLUE },
-            },
-
-            {
-                { mob = 17330471, eye = xi.dynamis.eye.RED   }, -- Goblin_Replica
-                { mob = 17330472, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 17330483, eye = xi.dynamis.eye.RED  }, -- Goblin_Replica
-                { mob = 17330484, eye = xi.dynamis.eye.BLUE },
-            },
-        },
-
-        DYNAMIS_LORD      = 17330177,
-        YING              = 17330183,
-        YANG              = 17330184,
-        COUNT_ZAEBOS      = GetFirstID('Count_Zaebos'),
-        DUKE_GOMORY       = GetFirstID('Duke_Gomory'),
-        PRINCE_SEERE      = GetFirstID('Prince_Seere'),
-        MARQUIS_ORIAS     = GetFirstID('Marquis_Orias'),
-        DUKE_BERITH       = GetFirstID('Duke_Berith'),
-        COUNT_RAUM        = GetFirstID('Count_Raum'),
-        MARQUIS_SABNAK    = GetFirstID('Marquis_Sabnak'),
-        DUKE_SCOX         = GetFirstID('Duke_Scox'),
-        MARQUIS_ANDRAS    = GetFirstID('Marquis_Andras'),
-        MARQUIS_DECARABIA = GetFirstID('Marquis_Decarabia'),
-        MARQUIS_CIMERIES  = GetFirstID('Marquis_Cimeries'),
-        COUNT_VINE        = GetFirstID('Count_Vine'),
-        MARQUIS_GAMYGYN   = GetFirstID('Marquis_Gamygyn'),
-        KING_ZAGAN        = GetFirstID('King_Zagan'),
-        MARQUIS_NEBIROS   = GetFirstID('Marquis_Nebiros'),
-    },
     npc =
     {
         QM =

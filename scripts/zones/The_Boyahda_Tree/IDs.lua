@@ -37,17 +37,17 @@ zones[xi.zone.THE_BOYAHDA_TREE] =
         UNITY_WANTED_BATTLE_INTERACT  = 11516, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        AGAS              = GetFirstID('Agas'),
-        AQUARIUS          = GetFirstID('Aquarius'),
-        BEET_LEAFHOPPER   = GetFirstID('Beet_Leafhopper'),
-        ELLYLLON          = GetFirstID('Ellyllon'),
-        FAFNIR            = GetFirstID('Fafnir'),
-        LESHONKI          = GetFirstID('Leshonki'),
-        MIMIC             = GetFirstID('Mimic'),
-        UNUT              = GetFirstID('Unut'),
-        VOLUPTUOUS_VIVIAN = GetFirstID('Voluptuous_Vivian'),
-    },
+        {
+            ELLYLLON          = GetFirstID('Ellyllon'),
+            AQUARIUS          = GetFirstID('Aquarius'),
+            UNUT              = GetFirstID('Unut'),
+            LESHONKI          = GetFirstID('Leshonki'),
+            VOLUPTUOUS_VIVIAN = GetFirstID('Voluptuous_Vivian'),
+            MIMIC             = GetFirstID('Mimic'),
+            AGAS              = GetFirstID('Agas'),
+            BEET_LEAFHOPPER   = GetFirstID('Beet_Leafhopper'),
+            VOIDWATCH         = GetTableOfIDs('Modron'),
+        },
     npc =
     {
         STRANGE_HAPPENINGS_CHEST = GetFirstID('Treasure_Chest'),

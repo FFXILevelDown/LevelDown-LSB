@@ -21,8 +21,8 @@ zones[xi.zone.KAZHAM_JEUNO_AIRSHIP] =
         IN_KAZHAM_MOMENTARILY         = 7075, -- We will be arriving in Kazham momentarily.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

@@ -39,11 +39,12 @@ zones[xi.zone.EAST_SARUTABARUTA] =
         REGIME_REGISTERED             = 9947, -- New training regime registered!
     },
     mob =
-    {
-        SHARP_EARED_ROPIPI = GetFirstID('Sharp-Eared_Ropipi'),
-        SPINY_SPIPI        = GetFirstID('Spiny_Spipi'),
-        DUKE_DECAPOD       = GetFirstID('Duke_Decapod'),
-    },
+        {
+            SHARP_EARED_ROPIPI = GetFirstID('Sharp-Eared_Ropipi'),
+            SPINY_SPIPI        = GetFirstID('Spiny_Spipi'),
+            DUKE_DECAPOD       = GetFirstID('Duke_Decapod'),
+            VOIDWATCH          = GetTableOfIDs('Rw_Nw_Prt_M_Hrw'),
+        },
     npc =
     {
     },

@@ -20,8 +20,8 @@ zones[xi.zone.MORDION_GAOL] =
         PROHIBITED_ACTIVITIES         = 7243, -- Your character has been jailed due to prohibited activities. Your account will soon be suspended due to this violation.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

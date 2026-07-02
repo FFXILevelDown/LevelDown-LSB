@@ -41,18 +41,19 @@ zones[xi.zone.IFRITS_CAULDRON] =
         COMMON_SENSE_SURVIVAL         = 11611, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        TYRANNIC_TUNNOK  = GetFirstID('Tyrannic_Tunnok'),
-        LINDWURM         = GetFirstID('Lindwurm'),
-        FORESEER_ORAMIX  = GetFirstID('Foreseer_Oramix'),
-        VOUIVRE          = GetFirstID('Vouivre'),
-        PIRATES_COVE_NMS = GetFirstID('Salamander'),
-        ASH_DRAGON       = GetFirstID('Ash_Dragon'),
-        MIMIC            = GetFirstID('Mimic'),
-        BOMB_QUEEN       = GetFirstID('Bomb_Queen'),
-        TARASQUE         = GetFirstID('Tarasque'),
-        CAILLEACH_BHEUR  = GetFirstID('Cailleach_Bheur'),
-    },
+        {
+            TYRANNIC_TUNNOK  = GetFirstID('Tyrannic_Tunnok'),
+            LINDWURM         = GetFirstID('Lindwurm'),
+            FORESEER_ORAMIX  = GetFirstID('Foreseer_Oramix'),
+            VOUIVRE          = GetFirstID('Vouivre'),
+            PIRATES_COVE_NMS = GetFirstID('Salamander'),
+            ASH_DRAGON       = GetFirstID('Ash_Dragon'),
+            MIMIC            = GetFirstID('Mimic'),
+            BOMB_QUEEN       = GetFirstID('Bomb_Queen'),
+            TARASQUE         = GetFirstID('Tarasque'),
+            CAILLEACH_BHEUR  = GetFirstID('Cailleach_Bheur'),
+            VOIDWATCH        = GetTableOfIDs('Ildebrann'),
+        },
     npc =
     {
         FLAME_SPOUT_OFFSET = GetFirstID('Flame_Spout'),

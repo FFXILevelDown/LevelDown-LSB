@@ -34,12 +34,13 @@ zones[xi.zone.ROMAEVE] =
         COMMON_SENSE_SURVIVAL         = 11646, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        NIGHTMARE_VASE   = GetTableOfIDs('Nightmare_Vase'), -- 2 NMs
-        ROGUE_RECEPTACLE = GetFirstID('Rogue_Receptacle'),
-        ELDHRIMNIR       = GetFirstID('Eldhrimnir'),
-        MOKKURKALFI      = GetFirstID('Mokkurkalfi'),
-    },
+        {
+            NIGHTMARE_VASE   = GetTableOfIDs('Nightmare_Vase'), -- 2 NMs
+            ROGUE_RECEPTACLE = GetFirstID('Rogue_Receptacle'),
+            ELDHRIMNIR       = GetFirstID('Eldhrimnir'),
+            MOKKURKALFI      = GetFirstID('Mokkurkalfi'),
+            VOIDWATCH        = GetTableOfIDs('Mimic_King'),
+        },
     npc =
     {
         BASTOK_7_1_QM_POS =

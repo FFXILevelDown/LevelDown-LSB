@@ -22,8 +22,8 @@ zones[xi.zone.LEAFALLIA] =
         RINGS_TOO_NUMEROUS            = 7419, -- The rings on this stump are too numerous to count.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

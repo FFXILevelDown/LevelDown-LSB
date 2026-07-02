@@ -95,8 +95,8 @@ zones[xi.zone.BASTOK_MINES] =
         LINK_CONCIERGE_LS_TAKEN        = 17025, -- Another member of that linkshell currently has an active registration. Please wait until that registration expires and try again.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         HALLOWEEN_SKINS =

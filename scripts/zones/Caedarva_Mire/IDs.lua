@@ -50,27 +50,28 @@ zones[xi.zone.CAEDARVA_MIRE] =
         COMMON_SENSE_SURVIVAL         = 9082, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        AYNU_KAYSEY           = GetFirstID('Aynu-kaysey'),
-        CAEDARVA_TOAD         = GetFirstID('Caedarva_Toad'),
-        CHIGOES =
         {
-            ['Wild_Karakul'] = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
-            ['Mosshorn']     = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Shared Chigoes with Karakul
-            ['Peallaidh']    = utils.slice(GetTableOfIDs('Chigoe'), 6, 10), -- Peallaidh's own pool, ids xxx11-15
+            AYNU_KAYSEY           = GetFirstID('Aynu-kaysey'),
+            CAEDARVA_TOAD         = GetFirstID('Caedarva_Toad'),
+            CHIGOES =
+            {
+                ['Wild_Karakul'] = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
+                ['Mosshorn']     = utils.slice(GetTableOfIDs('Chigoe'), 1, 5), -- Shared Chigoes with Karakul
+                ['Peallaidh']    = utils.slice(GetTableOfIDs('Chigoe'), 6, 10), -- Peallaidh's own pool, ids xxx11-15
+            },
+            EXPERIMENTAL_LAMIA    = GetFirstID('Experimental_Lamia'),
+            JAZARAAT              = GetFirstID('Jazaraat'),
+            KHIMAIRA              = GetFirstID('Khimaira'),
+            LAMIA_NO27            = GetFirstID('Lamia_No27'),
+            MAHJLAEF_THE_PAINTORN = GetFirstID('Mahjlaef_the_Paintorn'),
+            MOSHDAHN              = GetFirstID('Moshdahn'),
+            PEALLAIDH             = GetFirstID('Peallaidh'),
+            PEALLAIDH_PH_OFFSET   = GetFirstID('Wild_Karakul'), -- These are 270IDs away. Use offset in case of weird shift.
+            TYGER                 = GetFirstID('Tyger'),
+            VERDELET              = GetFirstID('Verdelet'),
+            ZIKKO                 = GetFirstID('Zikko'),
+            VOIDWATCH             = GetTableOfIDs('Brekekekex'),
         },
-        EXPERIMENTAL_LAMIA    = GetFirstID('Experimental_Lamia'),
-        JAZARAAT              = GetFirstID('Jazaraat'),
-        KHIMAIRA              = GetFirstID('Khimaira'),
-        LAMIA_NO27            = GetFirstID('Lamia_No27'),
-        MAHJLAEF_THE_PAINTORN = GetFirstID('Mahjlaef_the_Paintorn'),
-        MOSHDAHN              = GetFirstID('Moshdahn'),
-        PEALLAIDH             = GetFirstID('Peallaidh'),
-        PEALLAIDH_PH_OFFSET   = GetFirstID('Wild_Karakul'), -- These are 270IDs away. Use offset in case of weird shift.
-        TYGER                 = GetFirstID('Tyger'),
-        VERDELET              = GetFirstID('Verdelet'),
-        ZIKKO                 = GetFirstID('Zikko'),
-    },
     npc =
     {
         HOOFPRINT           = GetFirstID('Warhorse_Hoofprint'),

@@ -20,8 +20,8 @@ zones[xi.zone.MOUNT_KAMIHR] =
         MEMBERS_LEVELS_ARE_RESTRICTED = 7027, -- Your party is unable to participate because certain members' levels are restricted.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

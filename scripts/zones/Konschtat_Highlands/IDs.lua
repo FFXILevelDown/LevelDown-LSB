@@ -59,46 +59,47 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
         COMMON_SENSE_SURVIVAL         = 11930, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        STRAY_MARY     = GetTableOfIDs('Stray_Mary'), -- 2 NMs
-        RAMPAGING_RAM  = GetFirstID('Rampaging_Ram'),
-        STEELFLEECE    = GetFirstID('Steelfleece_Baldarich'),
-        TREMOR_RAM     = GetTableOfIDs('Tremor_Ram'),
-        FORGER         = GetFirstID('Forger'),
-        HATY           = GetFirstID('Haty'),
-        BENDIGEIT_VRAN = GetFirstID('Bendigeit_Vran'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17220019, -- Prickly Sheep
-                17220018, -- Prickly Sheep
-                17220017, -- Prickly Sheep
-                17220016, -- Prickly Sheep
-                17220015,  -- Void Hare
-                17220014,  -- Void Hare
-                17220013,  -- Void Hare
-                17220012,  -- Void Hare
-            },
+            STRAY_MARY     = GetTableOfIDs('Stray_Mary'), -- 2 NMs
+            RAMPAGING_RAM  = GetFirstID('Rampaging_Ram'),
+            STEELFLEECE    = GetFirstID('Steelfleece_Baldarich'),
+            TREMOR_RAM     = GetTableOfIDs('Tremor_Ram'),
+            FORGER         = GetFirstID('Forger'),
+            HATY           = GetFirstID('Haty'),
+            BENDIGEIT_VRAN = GetFirstID('Bendigeit_Vran'),
+            VOIDWATCH      = GetTableOfIDs('Gwynn_ap_Nudd'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17220011,  -- Chesma
-                17220010, -- Tammuz
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17220019, -- Prickly Sheep
+                    17220018, -- Prickly Sheep
+                    17220017, -- Prickly Sheep
+                    17220016, -- Prickly Sheep
+                    17220015,  -- Void Hare
+                    17220014,  -- Void Hare
+                    17220013,  -- Void Hare
+                    17220012,  -- Void Hare
+                },
 
-            [xi.keyItem.GREY_ABYSSITE] =
-            {
-                17220009, -- Dawon
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17220011,  -- Chesma
+                    17220010, -- Tammuz
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17220008, -- Yilbegan
+                [xi.keyItem.GREY_ABYSSITE] =
+                {
+                    17220009, -- Dawon
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17220008, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

@@ -32,9 +32,9 @@ zones[xi.zone.KAMIHR_DRIFTS] =
         SNOW_DUSTED_CRAG_BLOCKS       = 8511, -- A snow-dusted crag blocks your path.
     },
     mob =
-    {
-        REIVE_MOB_OFFSET = GetFirstID('Icy_Palisade'),
-    },
+        {
+            REIVE_MOB_OFFSET = GetFirstID('Icy_Palisade'),
+        },
     npc =
     {
         REIVE_COLLISION_OFFSET = GetFirstID('_7f0'),

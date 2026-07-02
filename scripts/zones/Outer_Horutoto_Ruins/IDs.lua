@@ -47,15 +47,16 @@ zones[xi.zone.OUTER_HORUTOTO_RUINS] =
     },
 
     mob =
-    {
-        AH_PUCH                    = GetFirstID('Ah_Puch'),
-        APPARATUS_ELEMENTAL        = GetFirstID('Thunder_Elemental'),
-        CUSTOM_CARDIAN_OFFSET      = GetFirstID('Custom_Cardian'),
-        BALLOON_NM_OFFSET          = GetTableOfIDs('Balloon')[2], -- TODO: NM Needs audit. This only uses 2 of the NMs
-        DESMODONT                  = GetFirstID('Desmodont'),
-        FULL_MOON_FOUNTAIN_OFFSET  = GetFirstID('Jack_of_Cups'),
-        JESTER_WHOD_BE_KING_OFFSET = GetFirstID('Queen_of_Swords'),
-    },
+        {
+            AH_PUCH                    = GetFirstID('Ah_Puch'),
+            APPARATUS_ELEMENTAL        = GetFirstID('Thunder_Elemental'),
+            CUSTOM_CARDIAN_OFFSET      = GetFirstID('Custom_Cardian'),
+            BALLOON_NM_OFFSET          = GetTableOfIDs('Balloon')[2], -- TODO: NM Needs audit. This only uses 2 of the NMs
+            DESMODONT                  = GetFirstID('Desmodont'),
+            FULL_MOON_FOUNTAIN_OFFSET  = GetFirstID('Jack_of_Cups'),
+            JESTER_WHOD_BE_KING_OFFSET = GetFirstID('Queen_of_Swords'),
+            VOIDWATCH                  = GetTableOfIDs('Voidwrought'),
+        },
     npc =
     {
         GATE_MAGICAL_GIZMO = GetFirstID('_5e9'),

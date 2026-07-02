@@ -67,8 +67,8 @@ zones[xi.zone.LOWER_JEUNO] =
         SURPLUS_LOST_TO_AETHER        = 10382, -- A surplus of <number> kinetic unit[/s] has been lost to the aether.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         VHANA_EHGAKLYWHA  = GetFirstID('Vhana_Ehgaklywha'),

@@ -26,67 +26,67 @@ zones[xi.zone.DYNAMIS_TAVNAZIA] =
         OMINOUS_PRESENCE              = 7355, -- You feel an ominous presence, as if something might happen if you possessed <item>.
     },
     mob =
-    {
-        TIME_EXTENSION =
         {
-            { minutes = 10, ki = xi.ki.CRIMSON_GRANULES_OF_TIME,   mob = 16949272 },
-            { minutes = 10, ki = xi.ki.AZURE_GRANULES_OF_TIME,     mob = 16949292 },
-            { minutes = 10, ki = xi.ki.AMBER_GRANULES_OF_TIME,     mob = 16949306 },
-            { minutes = 10, ki = xi.ki.ALABASTER_GRANULES_OF_TIME, mob = 16949325 },
-            { minutes = 20, ki = xi.ki.OBSIDIAN_GRANULES_OF_TIME,  mob = 16949380 },
+            TIME_EXTENSION =
+            {
+                { minutes = 10, ki = xi.ki.CRIMSON_GRANULES_OF_TIME,   mob = 16949272 },
+                { minutes = 10, ki = xi.ki.AZURE_GRANULES_OF_TIME,     mob = 16949292 },
+                { minutes = 10, ki = xi.ki.AMBER_GRANULES_OF_TIME,     mob = 16949306 },
+                { minutes = 10, ki = xi.ki.ALABASTER_GRANULES_OF_TIME, mob = 16949325 },
+                { minutes = 20, ki = xi.ki.OBSIDIAN_GRANULES_OF_TIME,  mob = 16949380 },
+            },
+
+            REFILL_STATUE =
+            {
+                {
+                    { mob = 16949269, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                    { mob = 16949270, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949271, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949289, eye = xi.dynamis.eye.RED   }, -- Serjeant_Tombstone
+                    { mob = 16949290, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949291, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949303, eye = xi.dynamis.eye.RED   }, -- Manifest_Icon
+                    { mob = 16949304, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949305, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949322, eye = xi.dynamis.eye.RED   }, -- Goblin_Replica
+                    { mob = 16949323, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949324, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949356, eye = xi.dynamis.eye.RED   }, -- Goblin_Replica
+                    { mob = 16949357, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949358, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949362, eye = xi.dynamis.eye.RED   }, -- Manifest_Icon
+                    { mob = 16949363, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949364, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949369, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                    { mob = 16949370, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949371, eye = xi.dynamis.eye.GREEN },
+                },
+
+                {
+                    { mob = 16949376, eye = xi.dynamis.eye.RED   }, -- Serjeant_Tombstone
+                    { mob = 16949377, eye = xi.dynamis.eye.BLUE  },
+                    { mob = 16949378, eye = xi.dynamis.eye.GREEN },
+                },
+            },
         },
-
-        REFILL_STATUE =
-        {
-            {
-                { mob = 16949269, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                { mob = 16949270, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949271, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949289, eye = xi.dynamis.eye.RED   }, -- Serjeant_Tombstone
-                { mob = 16949290, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949291, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949303, eye = xi.dynamis.eye.RED   }, -- Manifest_Icon
-                { mob = 16949304, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949305, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949322, eye = xi.dynamis.eye.RED   }, -- Goblin_Replica
-                { mob = 16949323, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949324, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949356, eye = xi.dynamis.eye.RED   }, -- Goblin_Replica
-                { mob = 16949357, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949358, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949362, eye = xi.dynamis.eye.RED   }, -- Manifest_Icon
-                { mob = 16949363, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949364, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949369, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                { mob = 16949370, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949371, eye = xi.dynamis.eye.GREEN },
-            },
-
-            {
-                { mob = 16949376, eye = xi.dynamis.eye.RED   }, -- Serjeant_Tombstone
-                { mob = 16949377, eye = xi.dynamis.eye.BLUE  },
-                { mob = 16949378, eye = xi.dynamis.eye.GREEN },
-            },
-        },
-    },
 
     npc =
     {

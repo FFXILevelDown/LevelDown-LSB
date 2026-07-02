@@ -52,17 +52,17 @@ zones[xi.zone.ARRAPAGO_REEF] =
         COMMON_SENSE_SURVIVAL         = 9823, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        APKALLU_NPC           = GetFirstID('Arrapago_Apkallu'),
-        BLOODY_BONES          = GetFirstID('Bloody_Bones'),
-        BUKKI                 = GetFirstID('Bukki'),
-        LAMIA_NO19            = GetFirstID('Lamia_No19'),
-        LIL_APKALLU           = GetFirstID('Lil_Apkallu'),
-        MEDUSA                = GetFirstID('Medusa'),
-        NUHN                  = GetFirstID('Nuhn'),
-        VELIONIS              = GetFirstID('Velionis'),
-        ZAREEHKL_THE_JUBILANT = GetFirstID('Zareehkl_the_Jubilant'),
-    },
+        {
+            APKALLU_NPC           = GetFirstID('Arrapago_Apkallu'),
+            BLOODY_BONES          = GetFirstID('Bloody_Bones'),
+            BUKKI                 = GetFirstID('Bukki'),
+            MEDUSA                = GetFirstID('Medusa'),
+            LIL_APKALLU           = GetFirstID('Lil_Apkallu'),
+            VELIONIS              = GetFirstID('Velionis'),
+            ZAREEHKL_THE_JUBILANT = GetFirstID('Zareehkl_the_Jubilant'),
+            NUHN                  = GetFirstID('Nuhn'),
+            VOIDWATCH             = GetTableOfIDs('Dimgruzub'),
+        },
     npc =
     {
     },

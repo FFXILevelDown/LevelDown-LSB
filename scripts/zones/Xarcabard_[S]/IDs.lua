@@ -38,40 +38,42 @@ zones[xi.zone.XARCABARD_S] =
         HOMEPOINT_SET                 = 8772, -- Home point set!
     },
     mob =
-    {
-        GRAOULLY = GetFirstID('Graoully'),
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17338607, -- Gorehound
-                17338606, -- Gorehound
-                17338605, -- Gorehound
-                17338604, -- Gorehound
-                17338603, -- Gjenganger
-                17338602, -- Gjenganger
-                17338601, -- Gjenganger
-                17338600, -- Gjenganger
-            },
+            GRAOULLY = GetFirstID('Graoully'),
+            PRINCE_OROBAS = GetFirstID('Prince_Orobas'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17338599, -- Erebus
-                17338598, -- Feuerunke
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17338607, -- Gorehound
+                    17338606, -- Gorehound
+                    17338605, -- Gorehound
+                    17338604, -- Gorehound
+                    17338603, -- Gjenganger
+                    17338602, -- Gjenganger
+                    17338601, -- Gjenganger
+                    17338600, -- Gjenganger
+                },
 
-            [xi.keyItem.PURPLE_ABYSSITE] =
-            {
-                17338597, -- Lord Ruthven
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17338599, -- Erebus
+                    17338598, -- Feuerunke
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17338596, -- Yilbegan
-            }
+                [xi.keyItem.PURPLE_ABYSSITE] =
+                {
+                    17338597, -- Lord Ruthven
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17338596, -- Yilbegan
+                }
+            },
+            ZIRNITRA = GetFirstID('Zirnitra'),
         },
-        ZIRNITRA = GetFirstID('Zirnitra'),
-    },
 
     npc =
     {

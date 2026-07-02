@@ -31,10 +31,11 @@ zones[xi.zone.CLOISTER_OF_STORMS] =
         POWER_STYMIES                    = 7773, -- An unseen power stymies your efforts to attach <item> to the protocrystal.
     },
     mob =
-    {
-        LIGHTNING_GREMLIN = GetFirstID('Lightning_Gremlin'),
-        RAMUH_PRIME_ASA   = GetFirstID('Ramuh_Prime_ASA'),
-    },
+        {
+            LIGHTNING_GREMLIN = GetFirstID('Lightning_Gremlin'),
+            RAMUH_PRIME_ASA   = GetFirstID('Ramuh_Prime_ASA'),
+            RAMUH_PRIME_HTBF  = GetFirstID('Ramuh_Prime_HTBF'),
+        },
     npc =
     {
     },

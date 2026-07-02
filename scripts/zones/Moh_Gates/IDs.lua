@@ -18,9 +18,9 @@ zones[xi.zone.MOH_GATES] =
         SHARP_THORNS_PROTRUDE         = 7736, -- Sharp thorns protrude from the surface.
     },
     mob =
-    {
-        REIVE_MOB_OFFSET = GetFirstID('Knotted_Root'),
-    },
+        {
+            REIVE_MOB_OFFSET = GetFirstID('Knotted_Root'),
+        },
     npc =
     {
         REIVE_COLLISION_OFFSET = GetFirstID('_7h0'),

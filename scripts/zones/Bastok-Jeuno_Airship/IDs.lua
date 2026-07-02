@@ -21,8 +21,8 @@ zones[xi.zone.BASTOK_JEUNO_AIRSHIP] =
         IN_BASTOK_MOMENTARILY         = 7234, -- We will be arriving in Bastok momentarily.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

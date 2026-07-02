@@ -51,45 +51,46 @@ zones[xi.zone.ROLANBERRY_FIELDS] =
     },
 
     mob =
-    {
-        BLACK_TRIPLE_STARS = GetTableOfIDs('Black_Triple_Stars'), -- 2 NMs
-        DROOLING_DAISY     = GetFirstID('Drooling_Daisy'),
-        ELDRITCH_EDGE      = GetFirstID('Eldritch_Edge'),
-        SILK_CATERPILLAR   = GetFirstID('Silk_Caterpillar'),
-        SIMURGH            = GetFirstID('Simurgh'),
-        CHUGLIX_BERRYPAWS  = GetFirstID('Chuglix_Berrypaws'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17228261,  -- Lacus
-                17228260,  -- Thunor
-                17228259, -- Beorht
-                17228258, -- Pruina
-                17228257,  -- Puretos
-                17228256,  -- Eorthe
-                17228255, -- Deorc
-                17228254, -- Aither
-            },
+            BLACK_TRIPLE_STARS = GetTableOfIDs('Black_Triple_Stars'), -- 2 NMs
+            DROOLING_DAISY     = GetFirstID('Drooling_Daisy'),
+            ELDRITCH_EDGE      = GetFirstID('Eldritch_Edge'),
+            SILK_CATERPILLAR   = GetFirstID('Silk_Caterpillar'),
+            SIMURGH            = GetFirstID('Simurgh'),
+            CHUGLIX_BERRYPAWS  = GetFirstID('Chuglix_Berrypaws'),
+            VOIDWATCH          = GetTableOfIDs('Yatagarasu'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17228253, -- Skuld
-                17228252, -- Urd
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17228261,  -- Lacus
+                    17228260,  -- Thunor
+                    17228259, -- Beorht
+                    17228258, -- Pruina
+                    17228257,  -- Puretos
+                    17228256,  -- Eorthe
+                    17228255, -- Deorc
+                    17228254, -- Aither
+                },
 
-            [xi.keyItem.YELLOW_ABYSSITE] =
-            {
-                17228251, -- Verthandi
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17228253, -- Skuld
+                    17228252, -- Urd
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17228250, -- Yilbegan
+                [xi.keyItem.YELLOW_ABYSSITE] =
+                {
+                    17228251, -- Verthandi
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17228250, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

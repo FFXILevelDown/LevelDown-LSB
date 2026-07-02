@@ -29,14 +29,13 @@ zones[xi.zone.MONARCH_LINN] =
         KNOCKED_OUT_OF_BATTLEFIELD    = 7657, -- The blast wave from Razon's Self-Destruct knocks you out of the battlefield!
     },
     mob =
-    {
-        HOTUPUKU          = GetFirstID('Hotupuku'),
-        MAMMET_19_EPSILON = GetFirstID('Mammet-19_Epsilon'),
-        MAMMET_800        = GetFirstID('Mammet-800'),
-        OURYU             = GetFirstID('Ouryu'),
-        RAZON             = GetFirstID('Razon'),
-        WATCH_HIPPOGRYPH  = GetFirstID('Watch_Hippogryph'),
-    },
+        {
+            MAMMET_19_EPSILON = GetFirstID('Mammet-19_Epsilon'),
+            MAMMET_800        = GetFirstID('Mammet-800'),
+            OURYU             = GetFirstID('Ouryu'),
+            RAZON             = GetFirstID('Razon'),
+            WATCH_HIPPOGRYPH  = GetFirstID('Watch_Hippogryph'),
+        },
     npc =
     {
     },

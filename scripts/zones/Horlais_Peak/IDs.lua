@@ -52,13 +52,13 @@ zones[xi.zone.HORLAIS_PEAK] =
         WHATS_THE_MATTARU             = 7983, -- <Pant, wheeze>... What's the mattaru, <name>? Too much of a pansy-wansy to fight fair?
     },
     mob =
-    {
-        ARMSMASTER_DEKBUK       = GetFirstID('Armsmaster_Dekbuk'),
-        ATORI_TUTORI            = GetFirstID('Atori-Tutori_qm'),
-        DAROKBOK_OF_CLAN_REAPER = GetFirstID('Darokbok_of_Clan_Reaper'),
-        HELLTAIL_HARRY          = GetFirstID('Helltail_Harry'),
-        MAAT                    = GetFirstID('Maat_war'),
-    },
+        {
+            ARMSMASTER_DEKBUK       = GetFirstID('Armsmaster_Dekbuk'),
+            ATORI_TUTORI            = GetFirstID('Atori-Tutori_qm'),
+            DAROKBOK_OF_CLAN_REAPER = GetFirstID('Darokbok_of_Clan_Reaper'),
+            HELLTAIL_HARRY          = GetFirstID('Helltail_Harry'),
+            MAAT                    = GetFirstID('Maat_war'),
+        },
     npc =
     {
     },

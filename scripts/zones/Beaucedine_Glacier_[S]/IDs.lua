@@ -38,41 +38,41 @@ zones[xi.zone.BEAUCEDINE_GLACIER_S] =
     },
 
     mob =
-    {
-        GRANDGOULE         = GetFirstID('GrandGoule'),
-        ORCISH_BLOODLETTER = GetFirstID('Orcish_Bloodletter'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17334561, -- Gorehound
-                17334560, -- Gorehound
-                17334559, -- Gorehound
-                17334558, -- Gorehound
-                17334557, -- Gjenganger
-                17334556, -- Gjenganger
-                17334555, -- Gjenganger
-                17334554, -- Gjenganger
-            },
+            GRANDGOULE         = GetFirstID('GrandGoule'),
+            ORCISH_BLOODLETTER = GetFirstID('Orcish_Bloodletter'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17334555, -- Erebus
-                17334556, -- Feuerunke
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17334561, -- Gorehound
+                    17334560, -- Gorehound
+                    17334559, -- Gorehound
+                    17334558, -- Gorehound
+                    17334557, -- Gjenganger
+                    17334556, -- Gjenganger
+                    17334555, -- Gjenganger
+                    17334554, -- Gjenganger
+                },
 
-            [xi.keyItem.PURPLE_ABYSSITE] =
-            {
-                17334557  -- Lord Ruthven
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17334553, -- Erebus
+                    17334552, -- Feuerunke
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17334558, -- Yilbegan
-            },
-        }
-    },
+                [xi.keyItem.PURPLE_ABYSSITE] =
+                {
+                    17334551  -- Lord Ruthven
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17334550, -- Yilbegan
+                },
+            }
+        },
 
     npc =
     {

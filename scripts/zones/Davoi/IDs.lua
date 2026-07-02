@@ -45,21 +45,21 @@ zones[xi.zone.DAVOI] =
         COMMON_SENSE_SURVIVAL         = 7996, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        HAWKEYED_DNATBAT    = GetFirstID('Hawkeyed_Dnatbat'),
-        STEELBITER_GUDRUD   = GetFirstID('Steelbiter_Gudrud'),
-        TIGERBANE_BAKDAK    = GetFirstID('Tigerbane_Bakdak'),
-        POISONHAND_GNADGAD  = GetFirstID('Poisonhand_Gnadgad'),
-        BLUBBERY_BULGE      = GetFirstID('Blubbery_Bulge'),
-        GAVOTVUT            = GetFirstID('Gavotvut'),
-        BARAKBOK            = GetFirstID('Barakbok'),
-        BILOPDOP            = GetFirstID('Bilopdop'),
-        DELOKNOK            = GetFirstID('Deloknok'),
-        PURPLEFLASH_BRUKDOK = GetFirstID('Purpleflash_Brukdok'),
-        ONE_EYED_GWAJBOJ    = GetFirstID('One-eyed_Gwajboj'),
-        THREE_EYED_PROZPUZ  = GetFirstID('Three-eyed_Prozpuz'),
-        HEMATIC_CYST        = GetFirstID('Hematic_Cyst'),
-    },
+        {
+            HAWKEYED_DNATBAT    = GetFirstID('Hawkeyed_Dnatbat'),
+            STEELBITER_GUDRUD   = GetFirstID('Steelbiter_Gudrud'),
+            TIGERBANE_BAKDAK    = GetFirstID('Tigerbane_Bakdak'),
+            POISONHAND_GNADGAD  = GetFirstID('Poisonhand_Gnadgad'),
+            BLUBBERY_BULGE      = GetFirstID('Blubbery_Bulge'),
+            GAVOTVUT            = GetFirstID('Gavotvut'),
+            BARAKBOK            = GetFirstID('Barakbok'),
+            BILOPDOP            = GetFirstID('Bilopdop'),
+            DELOKNOK            = GetFirstID('Deloknok'),
+            PURPLEFLASH_BRUKDOK = GetFirstID('Purpleflash_Brukdok'),
+            ONE_EYED_GWAJBOJ    = GetFirstID('One-eyed_Gwajboj'),
+            THREE_EYED_PROZPUZ  = GetFirstID('Three-eyed_Prozpuz'),
+            HEMATIC_CYST        = GetFirstID('Hematic_Cyst'),
+        },
     npc =
     {
         JAR              = GetFirstID('Jar'),

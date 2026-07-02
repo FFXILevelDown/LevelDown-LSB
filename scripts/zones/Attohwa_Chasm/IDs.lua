@@ -31,16 +31,17 @@ zones[xi.zone.ATTOHWA_CHASM] =
         UNITY_WANTED_BATTLE_INTERACT  = 8312, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        LIOUMERE            = GetFirstID('Lioumere'),
-        CITIPATI            = GetFirstID('Citipati'),
-        TIAMAT              = GetFirstID('Tiamat'),
-        FEELER_ANTLION      = GetFirstID('Feeler_Antlion'),
-        AMBUSHER_ANTLION    = GetFirstID('Ambusher_Antlion'),
-        ALASTOR_ANTLION     = GetFirstID('Alastor_Antlion'),
-        EXECUTIONER_ANTLION = GetTableOfIDs('Executioner_Antlion'),
-        XOLOTL              = GetFirstID('Xolotl'),
-    },
+        {
+            LIOUMERE            = GetFirstID('Lioumere'),
+            CITIPATI            = GetFirstID('Citipati'),
+            TIAMAT              = GetFirstID('Tiamat'),
+            FEELER_ANTLION      = GetFirstID('Feeler_Antlion'),
+            AMBUSHER_ANTLION    = GetFirstID('Ambusher_Antlion'),
+            ALASTOR_ANTLION     = GetFirstID('Alastor_Antlion'),
+            EXECUTIONER_ANTLION = GetTableOfIDs('Executioner_Antlion'),
+            XOLOTL              = GetFirstID('Xolotl'),
+            VOIDWATCH           = GetTableOfIDs('Fjalar'),
+        },
     npc =
     {
         MIASMA_OFFSET     = GetFirstID('_071'),

@@ -47,18 +47,18 @@ zones[xi.zone.FEIYIN] =
         UNITY_WANTED_BATTLE_INTERACT       = 10774, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        MIND_HOARDER        = GetFirstID('Mind_Hoarder'),
-        GOLIATH             = GetFirstID('Goliath'),
-        NORTHERN_SHADOW     = GetFirstID('Northern_Shadow'),
-        EASTERN_SHADOW      = GetFirstID('Eastern_Shadow'),
-        SOUTHERN_SHADOW     = GetFirstID('Southern_Shadow'),
-        WESTERN_SHADOW      = GetFirstID('Western_Shadow'),
-        ALTEDOUR_I_TAVNAZIA = GetFirstID('Altedour_I_Tavnazia'),
-        MISER_MURPHY        = GetFirstID('Miser_Murphy'),
-        DABOTZS_GHOST       = GetFirstID('Dabotzs_Ghost'),
-        CAPRICIOUS_CASSIE   = GetFirstID('Capricious_Cassie'),
-    },
+        {
+            MIND_HOARDER        = GetFirstID('Mind_Hoarder'),
+            GOLIATH             = GetFirstID('Goliath'),
+            NORTHERN_SHADOW     = GetFirstID('Northern_Shadow'),
+            EASTERN_SHADOW      = GetFirstID('Eastern_Shadow'),
+            SOUTHERN_SHADOW     = GetFirstID('Southern_Shadow'),
+            WESTERN_SHADOW      = GetFirstID('Western_Shadow'),
+            ALTEDOUR_I_TAVNAZIA = GetFirstID('Altedour_I_Tavnazia'),
+            MISER_MURPHY        = GetFirstID('Miser_Murphy'),
+            DABOTZS_GHOST       = GetFirstID('Dabotzs_Ghost'),
+            CAPRICIOUS_CASSIE   = GetFirstID('Capricious_Cassie'),
+        },
     npc =
     {
         AFTERGRLOW_OFFSET       = GetFirstID('Seed_Afterglow'),

@@ -21,10 +21,10 @@ zones[xi.zone.FORT_GHELSBA] =
         COMMON_SENSE_SURVIVAL         = 7387, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        HUNDREDSCAR_HAJWAJ = GetFirstID('Hundredscar_Hajwaj'),
-        ORCISH_PANZER      = GetFirstID('Orcish_Panzer'),
-    },
+        {
+            HUNDREDSCAR_HAJWAJ = GetFirstID('Hundredscar_Hajwaj'),
+            ORCISH_PANZER      = GetFirstID('Orcish_Panzer'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

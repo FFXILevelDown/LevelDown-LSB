@@ -28,10 +28,11 @@ zones[xi.zone.THE_SHROUDED_MAW] =
         ENTERING_THE_BATTLEFIELD_FOR  = 7609, -- Entering the battlefield for [Darkness Named/Test Your Mite/Waking Dreams/★Waking Dreams]!
     },
     mob =
-    {
-        DIABOLOS      = GetFirstID('Diabolos_DN'),
-        DIABOLOS_WD   = GetFirstID('Diabolos_WD'),
-    },
+        {
+            DIABOLOS      = GetFirstID('Diabolos_DN'),
+            DIABOLOS_WD   = GetFirstID('Diabolos_WD'),
+            DIABOLOS_PRIME_HTBF = GetFirstID('Diabolos_Prime_HTBF'),
+        },
     npc =
     {
         DARKNESS_NAMED_TILE_OFFSET = GetFirstID('_0a0'),

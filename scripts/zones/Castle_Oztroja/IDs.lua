@@ -57,15 +57,15 @@ zones[xi.zone.CASTLE_OZTROJA] =
         COMMON_SENSE_SURVIVAL              = 8322, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        MEE_DEGGI_THE_PUNISHER  = GetFirstID('Mee_Deggi_the_Punisher'),
-        MOO_OUZI_THE_SWIFTBLADE = GetFirstID('Moo_Ouzi_the_Swiftblade'),
-        QUU_DOMI_THE_GALLANT    = GetFirstID('Quu_Domi_the_Gallant'),
-        YAA_HAQA_THE_PROFANE    = GetFirstID('Yaa_Haqa_the_Profane'),
-        YAGUDO_AVATAR           = GetFirstID('Yagudo_Avatar'),
-        HUU_XALMO_THE_SAVAGE    = GetFirstID('Huu_Xalmo_the_Savage'),
-        MIMIC                   = GetFirstID('Mimic'),
-    },
+        {
+            MEE_DEGGI_THE_PUNISHER  = GetFirstID('Mee_Deggi_the_Punisher'),
+            MOO_OUZI_THE_SWIFTBLADE = GetFirstID('Moo_Ouzi_the_Swiftblade'),
+            QUU_DOMI_THE_GALLANT    = GetFirstID('Quu_Domi_the_Gallant'),
+            YAA_HAQA_THE_PROFANE    = GetFirstID('Yaa_Haqa_the_Profane'),
+            YAGUDO_AVATAR           = GetFirstID('Yagudo_Avatar'),
+            HUU_XALMO_THE_SAVAGE    = GetFirstID('Huu_Xalmo_the_Savage'),
+            MIMIC                   = GetFirstID('Mimic'),
+        },
     npc =
     {
         HANDLE_DOOR_FLOOR_2    = GetFirstID('_471'),

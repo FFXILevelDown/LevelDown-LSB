@@ -65,40 +65,41 @@ zones[xi.zone.WEST_SARUTABARUTA] =
     },
 
     mob =
-    {
-        NUNYENUNC   = GetFirstID('Nunyenunc'),
-        TOM_TIT_TAT = GetTableOfIDs('Tom_Tit_Tat'),
-        VOIDWALKER  =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
+            NUNYENUNC   = GetFirstID('Nunyenunc'),
+            TOM_TIT_TAT = GetFirstID('Tom_Tit_Tat'),
+            VOIDWATCH   = GetTableOfIDs('Virvatuli'),
+            VOIDWALKER  =
             {
-                17248624, -- Raker bee
-                17248623, -- Raker bee
-                17248622, -- Raker bee
-                17248621, -- Raker bee
-                17248620,  -- Rummager beetle
-                17248619,  -- Rummager beetle
-                17248618,  -- Rummager beetle
-                17248617,  -- Rummager beetle
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17248624, -- Raker bee
+                    17248623, -- Raker bee
+                    17248622, -- Raker bee
+                    17248621, -- Raker bee
+                    17248620,  -- Rummager beetle
+                    17248619,  -- Rummager beetle
+                    17248618,  -- Rummager beetle
+                    17248617,  -- Rummager beetle
+                },
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
-            {
-                17248616,  -- Jyeshtha
-                17248615, -- Farruca Fly
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17248616,  -- Jyeshtha
+                    17248615, -- Farruca Fly
+                },
 
-            [xi.keyItem.BROWN_ABYSSITE] =
-            {
-                17248614, -- Orcus
-            },
+                [xi.keyItem.BROWN_ABYSSITE] =
+                {
+                    17248614, -- Orcus
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17248613, -- Yilbegan
-            },
-        }
-    },
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17248613, -- Yilbegan
+                },
+            }
+        },
 
     npc =
     {

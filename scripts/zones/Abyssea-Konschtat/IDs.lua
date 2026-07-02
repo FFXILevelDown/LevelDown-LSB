@@ -72,24 +72,24 @@ zones[xi.zone.ABYSSEA_KONSCHTAT] =
         USE_KI                        = 7600, -- Use the [key item/key items]? Yes. No.
     },
     mob =
-    {
-        ASHTAERH_THE_GALLVEXED    = GetFirstID('Ashtaerh_the_Gallvexed'),
-        SARCOPHILUS               = GetFirstID('Sarcophilus'),
-        BOMBADEEL                 = GetFirstID('Bombadeel'),
-        HEXENPILZ                 = GetFirstID('Hexenpilz'),
-        KERATYRANNOS              = GetFirstID('Keratyrannos'),
-        KUKULKAN_OFFSET           = GetFirstID('Kukulkan'), -- 3 Copies: +0, +98, +101
-        LENTOR                    = GetFirstID('Lentor'),
-        BLOODGUZZLER              = GetFirstID('Bloodguzzler'),
-        GUIMAUVE                  = GetFirstID('Guimauve'),
-        CLINGY_CLARE              = GetFirstID('Clingy_Clare'),
-        SIRANPA_KAMUY             = GetFirstID('Siranpa-kamuy'),
-        ALKONOST                  = GetFirstID('Alkonost'),
-        ARIMASPI                  = GetFirstID('Arimaspi'),
-        ECCENTRIC_EVE_OFFSET      = GetFirstID('Eccentric_Eve'), -- 3 Copies: +0, +62 +65
-        FEAR_GORTA                = GetFirstID('Fear_Gorta'),
-        BLOODEYE_VILEBERRY_OFFSET = GetFirstID('Bloodeye_Vileberry'), --  3 Copies: +0, +3, +6
-    },
+        {
+            ASHTAERH_THE_GALLVEXED    = GetFirstID('Ashtaerh_the_Gallvexed'),
+            SARCOPHILUS               = GetFirstID('Sarcophilus'),
+            BOMBADEEL                 = GetFirstID('Bombadeel'),
+            HEXENPILZ                 = GetFirstID('Hexenpilz'),
+            KERATYRANNOS              = GetFirstID('Keratyrannos'),
+            KUKULKAN_OFFSET           = GetFirstID('Kukulkan'), -- 3 Copies: +0, +98, +101
+            LENTOR                    = GetFirstID('Lentor'),
+            BLOODGUZZLER              = GetFirstID('Bloodguzzler'),
+            GUIMAUVE                  = GetFirstID('Guimauve'),
+            CLINGY_CLARE              = GetFirstID('Clingy_Clare'),
+            SIRANPA_KAMUY             = GetFirstID('Siranpa-kamuy'),
+            ALKONOST                  = GetFirstID('Alkonost'),
+            ARIMASPI                  = GetFirstID('Arimaspi'),
+            ECCENTRIC_EVE_OFFSET      = GetFirstID('Eccentric_Eve'), -- 3 Copies: +0, +62 +65
+            FEAR_GORTA                = GetFirstID('Fear_Gorta'),
+            BLOODEYE_VILEBERRY_OFFSET = GetFirstID('Bloodeye_Vileberry'), --  3 Copies: +0, +3, +6
+        },
     npc =
     {
     },

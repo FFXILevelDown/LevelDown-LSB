@@ -41,15 +41,15 @@ zones[xi.zone.EASTERN_ALTEPA_DESERT] =
         COMMON_SENSE_SURVIVAL         = 11105, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        DUNE_WIDOW        = GetFirstID('Dune_Widow'),
-        DONNERGUGI        = GetFirstID('Donnergugi'),
-        CENTURIO_XII_I    = GetFirstID('Centurio_XII-I'),
-        NANDI             = GetFirstID('Nandi'),
-        DECURIO_I_III     = GetFirstID('Decurio_I-III'),
-        TSUCHIGUMO_OFFSET = GetFirstID('Tsuchigumo'),
-        CACTROT_RAPIDO    = GetFirstID('Cactrot_Rapido'),
-    },
+        {
+            DUNE_WIDOW        = GetFirstID('Dune_Widow'),
+            DONNERGUGI        = GetFirstID('Donnergugi'),
+            CENTURIO_XII_I    = GetFirstID('Centurio_XII-I'),
+            NANDI             = GetFirstID('Nandi'),
+            DECURIO_I_III     = GetFirstID('Decurio_I-III'),
+            TSUCHIGUMO_OFFSET = GetFirstID('Tsuchigumo'),
+            CACTROT_RAPIDO    = GetFirstID('Cactrot_Rapido'),
+        },
     npc =
     {
         OVERSEER_BASE = GetFirstID('Eaulevisat_RK'),

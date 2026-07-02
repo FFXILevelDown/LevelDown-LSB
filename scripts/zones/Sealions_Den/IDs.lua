@@ -32,13 +32,19 @@ zones[xi.zone.SEALIONS_DEN] =
         CHERUKIKI_OFFSET              = 7951, -- We're doomed!
     },
     mob =
-    {
-        CHERUKIKI      = GetFirstID('Cherukiki'),
-        KUKKI_CHEBUKKI = GetFirstID('Kukki-Chebukki'),
-        MAKKI_CHEBUKKI = GetFirstID('Makki-Chebukki'),
-        MAMMET_22_ZETA = GetFirstID('Mammet-22_Zeta'),
-        TENZEN         = GetFirstID('Tenzen'),
-    },
+        {
+            CHERUKIKI      = GetFirstID('Cherukiki'),
+            KUKKI_CHEBUKKI = GetFirstID('Kukki-Chebukki'),
+            MAKKI_CHEBUKKI = GetFirstID('Makki-Chebukki'),
+            MAMMET_22_ZETA = GetFirstID('Mammet-22_Zeta'),
+            TENZEN         = GetFirstID('Tenzen'),
+            TENZEN_HTBF          = GetFirstID('Tenzen_HTBF'),
+            CHERUKIKI_HTBF       = GetFirstID('Cherukiki_HTBF'),
+            KUKKI_CHEBUKKI_HTBF  = GetFirstID('Kukki-Chebukki_HTBF'),
+            MAKKI_CHEBUKKI_HTBF  = GetFirstID('Makki-Chebukki_HTBF'),
+            OMEGA_HTBF           = GetFirstID('Omega_HTBF'),
+            ULTIMA_HTBF          = GetFirstID('Ultima_HTBF'),
+        },
     npc =
     {
         AIRSHIP_DOOR_OFFSET = GetFirstID('Airship_Door'),

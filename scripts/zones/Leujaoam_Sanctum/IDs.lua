@@ -31,10 +31,27 @@ zones[xi.zone.LEUJAOAM_SANCTUM] =
     },
 
     mob =
-    {
-        LEUJAOAM_WORM = GetFirstID('Leujaoam_Worm'),
-        QIQIRN_MINER  = GetFirstID('Qiqirn_Miner'),
-    },
+        {
+            [xi.assault.mission.LEUJAOAM_CLEANSING] =
+            {
+                MOBS_START =
+                {
+                    17059841, 17059842, 17059843, 17059844, 17059845, 17059846, 17059847, 17059848,
+                    17059849, 17059850, 17059851, 17059852, 17059853, 17059854, 17059855,
+                },
+            },
+            [xi.assault.mission.ORICHALCUM_SURVEY] =
+            {
+                MOBS_START =
+                {
+                    17059856, 17059857, 17059858, 17059859, 17059860, 17059861, 17059862, 17059863,
+                },
+                MINING_POINTS =
+                {
+                    17060016, 17060017, 17060018, 17060019, 17060020, 17060021, 17060022, 17060023, 17060024, 17060025,
+                },
+            },
+        },
 
     npc =
     {

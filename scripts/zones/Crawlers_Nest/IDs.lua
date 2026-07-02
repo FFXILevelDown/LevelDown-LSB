@@ -41,14 +41,15 @@ zones[xi.zone.CRAWLERS_NEST] =
         COMMON_SENSE_SURVIVAL         = 11403, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        DEMONIC_TIPHIA      = GetFirstID('Demonic_Tiphia'),
-        AWD_GOGGIE          = GetFirstID('Awd_Goggie'),
-        DYNAST_BEETLE       = GetFirstID('Dynast_Beetle'),
-        DREADBUG            = GetFirstID('Dreadbug'),
-        MIMIC               = GetFirstID('Mimic'),
-        APPARATUS_ELEMENTAL = GetTableOfIDs('Water_Elemental')[9], -- 9th Water Elemental
-    },
+        {
+            DEMONIC_TIPHIA      = GetFirstID('Demonic_Tiphia'),
+            AWD_GOGGIE          = GetFirstID('Awd_Goggie'),
+            DYNAST_BEETLE       = GetFirstID('Dynast_Beetle'),
+            DREADBUG            = GetFirstID('Dreadbug'),
+            MIMIC               = GetFirstID('Mimic'),
+            APPARATUS_ELEMENTAL = GetTableOfIDs('Water_Elemental')[9], -- 9th Water Elemental
+            VOIDWATCH           = GetTableOfIDs('Mellonia'),
+        },
     npc =
     {
         TREASURE_CHEST  = GetFirstID('Treasure_Chest'),

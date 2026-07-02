@@ -45,14 +45,14 @@ zones[xi.zone.CAPE_TERIGGAN] =
         HOMEPOINT_SET                 = 11277, -- Home point set!
     },
     mob =
-    {
-        FROSTMANE              = GetFirstID('Frostmane'),
-        KILLER_JONNY           = GetFirstID('Killer_Jonny'),
-        KREUTZET               = GetFirstID('Kreutzet'),
-        AXESARION_THE_WANDERER = GetFirstID('Axesarion_the_Wanderer'),
-        STOLAS                 = GetFirstID('Stolas'),
-        ZMEY_GORYNYCH          = GetFirstID('Zmey_Gorynych')
-    },
+        {
+            FROSTMANE              = GetFirstID('Frostmane'),
+            KILLER_JONNY           = GetFirstID('Killer_Jonny'),
+            KREUTZET               = GetFirstID('Kreutzet'),
+            AXESARION_THE_WANDERER = GetFirstID('Axesarion_the_Wanderer'),
+            STOLAS                 = GetFirstID('Stolas'),
+            ZMEY_GORYNYCH          = GetFirstID('Zmey_Gorynych')
+        },
     npc =
     {
         OVERSEER_BASE    = GetFirstID('Salimardi_RK'),

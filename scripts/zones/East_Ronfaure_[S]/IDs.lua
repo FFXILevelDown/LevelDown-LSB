@@ -32,42 +32,43 @@ zones[xi.zone.EAST_RONFAURE_S] =
     },
 
     mob =
-    {
-        GOBLINTRAP = GetFirstID('Goblintrap'),
-        SKOGS_FRU  = GetFirstID('Skogs_Fru'),
-        MYRADROSH  = GetFirstID('Myradrosh'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17109393, -- Sunderclaw
-                17109392, -- Sunderclaw
-                17109391, -- Sunderclaw
-                17109390, -- Sunderclaw
-                17109389, -- Quagmire Pugil
-                17109388, -- Quagmire Pugil
-                17109387, -- Quagmire Pugil
-                17109386, -- Quagmire Pugil
-            },
+            GOBLINTRAP = GetFirstID('Goblintrap'),
+            SKOGS_FRU  = GetFirstID('Skogs_Fru'),
+            MYRADROSH  = GetFirstID('Myradrosh'),
+            VOIDWATCH  = GetTableOfIDs('Cottus'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17109385, -- Capricornus
-                17109384, -- Yacumama
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17109393, -- Sunderclaw
+                    17109392, -- Sunderclaw
+                    17109391, -- Sunderclaw
+                    17109390, -- Sunderclaw
+                    17109389, -- Quagmire Pugil
+                    17109388, -- Quagmire Pugil
+                    17109387, -- Quagmire Pugil
+                    17109386, -- Quagmire Pugil
+                },
 
-            [xi.keyItem.BLUE_ABYSSITE] =
-            {
-                17109383, -- Krabkatoa
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17109385, -- Capricornus
+                    17109384, -- Yacumama
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17109382, -- Yilbegan
+                [xi.keyItem.BLUE_ABYSSITE] =
+                {
+                    17109383, -- Krabkatoa
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17109382, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

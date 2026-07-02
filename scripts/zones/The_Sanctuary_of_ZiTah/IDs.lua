@@ -56,14 +56,15 @@ zones[xi.zone.THE_SANCTUARY_OF_ZITAH] =
         COMMON_SENSE_SURVIVAL         = 12276, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        KEEPER_OF_HALIDOM = GetFirstID('Keeper_of_Halidom'),
-        NOBLE_MOLD        = GetFirstID('Noble_Mold'),
-        GUARDIAN_TREANT   = GetFirstID('Guardian_Treant'),
-        DOOMED_PILGRIMS   = GetFirstID('Doomed_Pilgrims'),
-        ISONADE           = GetFirstID('Isonade'),
-        GREENMAN          = GetFirstID('Greenman'),
-    },
+        {
+            KEEPER_OF_HALIDOM = GetFirstID('Keeper_of_Halidom'),
+            NOBLE_MOLD        = GetFirstID('Noble_Mold'),
+            GUARDIAN_TREANT   = GetFirstID('Guardian_Treant'),
+            DOOMED_PILGRIMS   = GetFirstID('Doomed_Pilgrims'),
+            ISONADE           = GetFirstID('Isonade'),
+            GREENMAN          = GetFirstID('Greenman'),
+            VOIDWATCH         = GetTableOfIDs('Cath_Palug'),
+        },
     npc =
     {
         OVERSEER_BASE     = GetFirstID('Credaurion_RK'),

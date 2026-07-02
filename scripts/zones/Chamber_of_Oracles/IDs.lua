@@ -44,12 +44,12 @@ zones[xi.zone.CHAMBER_OF_ORACLES] =
         THAT_LL_HURT_IN_THE_MORNING      = 7671, -- Ungh... That'll hurt in the morning...
     },
     mob =
-    {
-        CENTURIO_V_III   = GetFirstID('Centurio_V-III'),
-        MAAT             = GetFirstID('Maat_sam'),
-        NANAA_MIHGO      = GetFirstID('Nanaa_Mihgo'),
-        SECUTOR_XI_XXXII = GetFirstID('Secutor_XI-XXXII'),
-    },
+        {
+            CENTURIO_V_III   = GetFirstID('Centurio_V-III'),
+            MAAT             = GetFirstID('Maat'),
+            NANAA_MIHGO      = GetFirstID('Nanaa_Mihgo'),
+            SECUTOR_XI_XXXII = GetFirstID('Secutor_XI-XXXII'),
+        },
     npc =
     {
     },

@@ -60,11 +60,12 @@ zones[xi.zone.BUBURIMU_PENINSULA] =
         COMMON_SENSE_SURVIVAL          = 12331, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BACKOO     = GetFirstID('Backoo'),
-        BUBURIMBOO = GetFirstID('Buburimboo'),
-        HELLDIVER  = GetFirstID('Helldiver'),
-    },
+        {
+            BACKOO     = GetFirstID('Backoo'),
+            BUBURIMBOO = GetFirstID('Buburimboo'),
+            HELLDIVER  = GetFirstID('Helldiver'),
+            VOIDWATCH  = GetTableOfIDs('Botulus_Rex'),
+        },
     npc =
     {
         BRIGAND_CHART_HUME = GetFirstID('Brigand_Chart_Hume'),

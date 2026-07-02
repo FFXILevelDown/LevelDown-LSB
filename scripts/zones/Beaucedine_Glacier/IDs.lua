@@ -49,43 +49,43 @@ zones[xi.zone.BEAUCEDINE_GLACIER] =
         COMMON_SENSE_SURVIVAL          = 12794, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        GARGANTUA = GetFirstID('Gargantua'),
-        HUMBABA   = GetFirstID('Humbaba'),
-        KIRATA    = GetFirstID('Kirata'),
-        NUE       = GetFirstID('Nue'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17232159, -- Gorehound
-                17232158, -- Gorehound
-                17232157, -- Gorehound
-                17232156, -- Gorehound
-                17232155, -- Gjenganger
-                17232154, -- Gjenganger
-                17232153, -- Gjenganger
-                17232152, -- Gjenganger
-            },
+            GARGANTUA = GetFirstID('Gargantua'),
+            HUMBABA   = GetFirstID('Humbaba'),
+            KIRATA    = GetFirstID('Kirata'),
+            NUE       = GetFirstID('Nue'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17232151, -- Erebus
-                17232150, -- Feuerunke
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17232159, -- Gorehound
+                    17232158, -- Gorehound
+                    17232157, -- Gorehound
+                    17232156, -- Gorehound
+                    17232155, -- Gjenganger
+                    17232154, -- Gjenganger
+                    17232153, -- Gjenganger
+                    17232152, -- Gjenganger
+                },
 
-            [xi.keyItem.PURPLE_ABYSSITE] =
-            {
-                17232149, -- Lord Ruthven
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17232151, -- Erebus
+                    17232150, -- Feuerunke
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17232148, -- Yilbegan
+                [xi.keyItem.PURPLE_ABYSSITE] =
+                {
+                    17232149, -- Lord Ruthven
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17232148, -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

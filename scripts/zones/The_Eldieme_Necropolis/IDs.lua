@@ -61,17 +61,18 @@ zones[xi.zone.THE_ELDIEME_NECROPOLIS] =
     },
 
     mob =
-    {
-        CWN_CYRFF           = GetFirstID('Cwn_Cyrff'),
-        LICH_C_MAGNUS       = GetFirstID('Lich_C_Magnus'),
-        YUM_KIMIL           = GetFirstID('Yum_Kimil'),
-        STURM               = GetFirstID('Sturm'),
-        TAIFUN              = GetFirstID('Taifun'),
-        TROMBE              = GetFirstID('Trombe'),
-        MIMIC               = GetFirstID('Mimic'),
-        APPARATUS_ELEMENTAL = 17576271,
-        NAMORODO            = GetFirstID('Namorodo'),
-    },
+        {
+            CWN_CYRFF           = GetFirstID('Cwn_Cyrff'),
+            LICH_C_MAGNUS       = GetFirstID('Lich_C_Magnus'),
+            YUM_KIMIL           = GetFirstID('Yum_Kimil'),
+            STURM               = GetFirstID('Sturm'),
+            TAIFUN              = GetFirstID('Taifun'),
+            TROMBE              = GetFirstID('Trombe'),
+            MIMIC               = GetFirstID('Mimic'),
+            APPARATUS_ELEMENTAL = 17576271,
+            NAMORODO            = GetFirstID('Namorodo'),
+            VOIDWATCH           = GetTableOfIDs('Gasha'),
+        },
 
     npc =
     {

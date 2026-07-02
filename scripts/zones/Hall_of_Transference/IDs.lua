@@ -20,8 +20,8 @@ zones[xi.zone.HALL_OF_TRANSFERENCE] =
         YOU_MUST_MOVE_CLOSER          = 7269, -- You must move closer to inspect the device.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

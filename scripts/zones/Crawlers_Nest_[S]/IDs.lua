@@ -20,9 +20,10 @@ zones[xi.zone.CRAWLERS_NEST_S] =
         COMMON_SENSE_SURVIVAL         = 8665, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        MORILLE_MORTELLE = GetFirstID('Morille_Mortelle'),
-    },
+        {
+            MORILLE_MORTELLE = GetFirstID('Morille_Mortelle'),
+            VOIDWATCH        = GetTableOfIDs('Nympha_Eunomia'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Chefroucauld_TK') -- San, Bas, Win, Flag +4, CA

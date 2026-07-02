@@ -31,9 +31,10 @@ zones[xi.zone.CLOISTER_OF_FLAMES] =
         POWER_STYMIES                    = 7739, -- An unseen power stymies your efforts to attach <item> to the protocrystal.
     },
     mob =
-    {
-        IFRIT_PRIME_ASA   = GetFirstID('Ifrit_Prime_ASA'),
-    },
+        {
+            IFRIT_PRIME_ASA   = GetFirstID('Ifrit_Prime_ASA'),
+            IFRIT_PRIME_HTBF = GetFirstID('Ifrit_Prime_HTBF'),
+        },
     npc =
     {
     },

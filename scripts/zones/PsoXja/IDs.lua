@@ -32,12 +32,12 @@ zones[xi.zone.PSOXJA] =
         HOMEPOINT_SET                 = 7499, -- Home point set!
     },
     mob =
-    {
-        GYRE_CARLIN             = GetFirstID('Gyre-Carlin'),
-        GARGOYLE_OFFSET         = GetFirstID('Gargoyle'),
-        NUNYUNUWI               = GetFirstID('Nunyunuwi'),
-        GOLDEN_TONGUED_CULBERRY = GetFirstID('Golden-Tongued_Culberry'),
-    },
+        {
+            GYRE_CARLIN             = GetFirstID('Gyre-Carlin'),
+            GARGOYLE_OFFSET         = GetFirstID('Gargoyle'),
+            NUNYUNUWI               = GetFirstID('Nunyunuwi'),
+            GOLDEN_TONGUED_CULBERRY = GetFirstID('Golden-Tongued_Culberry'),
+        },
     npc =
     {
         STONE_DOOR_OFFSET       = GetFirstID('_090'),

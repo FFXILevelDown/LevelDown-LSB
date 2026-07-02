@@ -48,19 +48,18 @@ zones[xi.zone.BALGAS_DAIS] =
         WHATS_THE_MATTARU             = 7705, -- <Pant, wheeze>... What's the mattaru, <name>? Too much of a pansy-wansy to fight fair?
     },
     mob =
-    {
-        ATORI_TUTORI            = GetFirstID('Atori-Tutori_qm'),
-        BUU_XOLO_THE_BLOODFACED = GetFirstID('Buu_Xolo_the_Bloodfaced'),
-        DROMICEIOMIMUS          = GetFirstID('Dromiceiomimus'),
-        DVOROVOI                = GetFirstID('Dvorovoi'),
-        GILAGOGE_TLUGVI         = GetFirstID('Gilagoge_Tlugvi'),
-        KING_OF_BATONS          = GetFirstID('King_of_Batons'),
-        KING_OF_COINS           = GetFirstID('King_of_Coins'),
-        KING_OF_CUPS            = GetFirstID('King_of_Cups'),
-        KING_OF_SWORDS          = GetFirstID('King_of_Swords'),
-        MAAT                    = GetFirstID('Maat_mnk'),
-        VOO_TOLU_THE_GHOSTFIST  = GetFirstID('Voo_Tolu_the_Ghostfist'),
-    },
+        {
+            ATORI_TUTORI            = GetFirstID('Atori-Tutori_qm'),
+            BUU_XOLO_THE_BLOODFACED = GetFirstID('Buu_Xolo_the_Bloodfaced'),
+            DVOROVOI                = GetFirstID('Dvorovoi'),
+            GILAGOGE_TLUGVI         = GetFirstID('Gilagoge_Tlugvi'),
+            KING_OF_BATONS          = GetFirstID('King_of_Batons'),
+            KING_OF_COINS           = GetFirstID('King_of_Coins'),
+            KING_OF_CUPS            = GetFirstID('King_of_Cups'),
+            KING_OF_SWORDS          = GetFirstID('King_of_Swords'),
+            MAAT                    = GetFirstID('Maat'),
+            VOO_TOLU_THE_GHOSTFIST  = GetFirstID('Voo_Tolu_the_Ghostfist'),
+        },
     npc =
     {
     },

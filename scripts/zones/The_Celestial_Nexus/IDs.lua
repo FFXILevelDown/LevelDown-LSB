@@ -24,9 +24,13 @@ zones[xi.zone.THE_CELESTIAL_NEXUS] =
         ENTERING_THE_BATTLEFIELD_FOR  = 7609, -- Entering the battlefield for [The Celestial Nexus/★The Celestial Nexus/Crystal Paradise]!
     },
     mob =
-    {
-        EALDNARCHE = GetFirstID('Ealdnarche'),
-    },
+        {
+            EALDNARCHE = GetFirstID('Ealdnarche'),
+            EALDNARCHE_HTBF = GetFirstID('Ealdnarche_HTBF'),
+            EALDNARCHE_2_HTBF = GetFirstID('Ealdnarche_2_HTBF'),
+            ORBITAL_HTBF = GetFirstID('Orbital_HTBF'),
+            EXOPLATES_HTBF = GetFirstID('Exoplates_HTBF'),
+        },
     npc =
     {
     },

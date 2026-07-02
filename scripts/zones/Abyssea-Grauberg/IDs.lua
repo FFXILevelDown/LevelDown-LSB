@@ -74,22 +74,22 @@ zones[xi.zone.ABYSSEA_GRAUBERG] =
         CANCELED_OBJECTIVE            = 10426, -- You have canceled your objective.
     },
     mob =
-    {
-        IRONCLAD_SUNDERER   = GetFirstID('Ironclad_Sunderer'),
-        NINGISHZIDA         = GetFirstID('Ningishzida'),
-        TEUGGHIA            = GetFirstID('Teugghia'),
-        BOMBLIX_FLAMEFINGER = GetFirstID('Bomblix_Flamefinger'),
-        TEEKESSELCHEN       = GetFirstID('Teekesselchen'),
-        MINARUJA            = GetFirstID('Minaruja'),
-        XIBALBA             = GetFirstID('Xibalba'),
-        IKA_ROA             = GetFirstID('Ika-Roa'),
-        LORELEI             = GetFirstID('Lorelei'),
-        BURSTROX_POWDERPATE = GetFirstID('Burstrox_Powderpate'),
-        RAJA_OFFSET         = GetFirstID('Raja'),
-        ALFARD_OFFSET       = GetFirstID('Alfard'),
-        AZDAJA_OFFSET       = GetFirstID('Azdaja'),
-        AMPHITRITE_OFFSET   = GetFirstID('Amphitrite'),
-    },
+        {
+            IRONCLAD_SUNDERER   = GetFirstID('Ironclad_Sunderer'),
+            NINGISHZIDA         = GetFirstID('Ningishzida'),
+            TEUGGHIA            = GetFirstID('Teugghia'),
+            BOMBLIX_FLAMEFINGER = GetFirstID('Bomblix_Flamefinger'),
+            TEEKESSELCHEN       = GetFirstID('Teekesselchen'),
+            MINARUJA            = GetFirstID('Minaruja'),
+            XIBALBA             = GetFirstID('Xibalba'),
+            IKA_ROA             = GetFirstID('Ika-Roa'),
+            LORELEI             = GetFirstID('Lorelei'),
+            BURSTROX_POWDERPATE = GetFirstID('Burstrox_Powderpate'),
+            RAJA_OFFSET         = GetFirstID('Raja'),
+            ALFARD_OFFSET       = GetFirstID('Alfard'),
+            AZDAJA_OFFSET       = GetFirstID('Azdaja'),
+            AMPHITRITE_OFFSET   = GetFirstID('Amphitrite'),
+        },
     npc =
     {
         HARVESTING = GetTableOfIDs('Harvesting_Point'),

@@ -30,173 +30,173 @@ zones[xi.zone.ARRAPAGO_REMNANTS] =
         DOOR_IS_SEALED_MYSTERIOUS     = 7483, -- The door is sealed by some mysterious force...
     },
     mob =
-    {
-        [1] =
         {
-            [2] =
-            {
-                mobs_start = 17080323,
-                mobs_end   = 17080395,
-                rampart    = 17080321,
-                sabotender = 17080322,
-            }
-        },
-
-        [2] =
-        {
-            [0] =
-            {
-                astrologer = 17080431,
-            },
-
             [1] =
             {
-                mobs_start = 17080421,
-                mobs_end   = 17080430,
+                [2] =
+                {
+                    mobs_start = 17080323,
+                    mobs_end   = 17080395,
+                    rampart    = 17080321,
+                    sabotender = 17080322,
+                }
             },
 
             [2] =
             {
-                mobs_start = 17080413,
-                mobs_end   = 17080420,
-                princess   = 17080597,
+                [0] =
+                {
+                    astrologer = 17080431,
+                },
+
+                [1] =
+                {
+                    mobs_start = 17080421,
+                    mobs_end   = 17080430,
+                },
+
+                [2] =
+                {
+                    mobs_start = 17080413,
+                    mobs_end   = 17080420,
+                    princess   = 17080597,
+                },
+
+                [3] =
+                {
+                    mobs_start = 17080404,
+                    mobs_end   = 17080412,
+                    wahzil     = 17080596,
+                },
+
+                [4] =
+                {
+                    mobs_start = 17080396,
+                    mobs_end   = 17080403,
+                },
             },
 
             [3] =
             {
-                mobs_start = 17080404,
-                mobs_end   = 17080412,
-                wahzil     = 17080596,
+                [1] =
+                {
+                    mobs_start = 17080432,
+                    mobs_end   = 17080451,
+                },
+
+                [2] =
+                {
+                    mobs_start = 17080454,
+                    mobs_end   = 17080474,
+                },
+
+                treasure_hunter1 = 17080452,
+                qiqirn_mine_1    = 17080453,
+                treasure_hunter2 = 17080475,
+                qiqirn_mine_2    = 17080476,
             },
 
             [4] =
             {
-                mobs_start = 17080396,
-                mobs_end   = 17080403,
-            },
-        },
-
-        [3] =
-        {
-            [1] =
-            {
-                mobs_start = 17080432,
-                mobs_end   = 17080451,
-            },
-
-            [2] =
-            {
-                mobs_start = 17080454,
-                mobs_end   = 17080474,
-            },
-
-            treasure_hunter1 = 17080452,
-            qiqirn_mine_1    = 17080453,
-            treasure_hunter2 = 17080475,
-            qiqirn_mine_2    = 17080476,
-        },
-
-        [4] =
-        {
-            [1] =
-            {
-                mobs_start = 17080477,
-                mobs_end   = 17080489,
-                rampart2   = 17080492,
-            },
-
-            [2] =
-            {
-                mobs_start = 17080497,
-                mobs_end   = 17080509,
-                rampart2   = 17080512,
-            },
-
-            treasure_hunter1 = 17080514,
-            qiqirn_mine_1    = 17080515,
-            treasure_hunter2 = 17080495,
-            qiqirn_mine_2    = 17080496,
-        },
-
-        [5] =
-        {
-            [1] =
-            {
                 [1] =
                 {
-                mobs_start = 17080516,
-                mobs_end   = 17080519,
+                    mobs_start = 17080477,
+                    mobs_end   = 17080489,
+                    rampart2   = 17080492,
                 },
 
                 [2] =
                 {
-                mobs_start = 17080521,
-                mobs_end   = 17080522,
+                    mobs_start = 17080497,
+                    mobs_end   = 17080509,
+                    rampart2   = 17080512,
                 },
 
-                [3] =
-                {
-                mobs_start = 17080526,
-                mobs_end   = 17080530,
-                },
-
-                astrologer = 17080520,
-                rampart1   = 17080523,
-                rampart2   = 17080533,
-                chariot    = 17080537,
+                treasure_hunter1 = 17080514,
+                qiqirn_mine_1    = 17080515,
+                treasure_hunter2 = 17080495,
+                qiqirn_mine_2    = 17080496,
             },
-            [2] =
+
+            [5] =
             {
                 [1] =
                 {
-                mobs_start = 17080538,
-                mobs_end   = 17080541,
-                },
+                    [1] =
+                    {
+                    mobs_start = 17080516,
+                    mobs_end   = 17080519,
+                    },
 
+                    [2] =
+                    {
+                    mobs_start = 17080521,
+                    mobs_end   = 17080522,
+                    },
+
+                    [3] =
+                    {
+                    mobs_start = 17080526,
+                    mobs_end   = 17080530,
+                    },
+
+                    astrologer = 17080520,
+                    rampart1   = 17080523,
+                    rampart2   = 17080533,
+                    chariot    = 17080537,
+                },
                 [2] =
                 {
-                mobs_start = 17080543,
-                mobs_end   = 17080544,
-                },
+                    [1] =
+                    {
+                    mobs_start = 17080538,
+                    mobs_end   = 17080541,
+                    },
 
-                [3] =
+                    [2] =
+                    {
+                    mobs_start = 17080543,
+                    mobs_end   = 17080544,
+                    },
+
+                    [3] =
+                    {
+                    mobs_start = 17080549,
+                    mobs_end   = 17080553,
+                    },
+
+                    astrologer = 17080542,
+                    rampart1   = 17080545,
+                    chariot    = 17080558,
+                },
+            },
+
+            [6] =
+            {
+                [1] =
                 {
-                mobs_start = 17080549,
-                mobs_end   = 17080553,
+                    mobs_start = 17080562,
+                    mobs_end   = 17080569,
                 },
 
-                astrologer = 17080542,
-                rampart1   = 17080545,
-                chariot    = 17080558,
+                rampart1 = 17080559,
+                rampart2 = 17080570,
+                rampart3 = 17080577,
+                rampart4 = 17080581,
+                treasure_hunter1 = 17080573,
+                qiqirn_mine_1    = 17080574,
+                treasure_hunter2 = 17080575,
+                qiqirn_mine_2    = 17080576,
             },
-        },
 
-        [6] =
-        {
-            [1] =
+            [7] =
             {
-                mobs_start = 17080562,
-                mobs_end   = 17080569,
-            },
-
-            rampart1 = 17080559,
-            rampart2 = 17080570,
-            rampart3 = 17080577,
-            rampart4 = 17080581,
-            treasure_hunter1 = 17080573,
-            qiqirn_mine_1    = 17080574,
-            treasure_hunter2 = 17080575,
-            qiqirn_mine_2    = 17080576,
-        },
-
-        [7] =
-        {
-            [1] =
-            {
-                chariot = 17080585,
+                [1] =
+                {
+                    chariot = 17080585,
+                },
             },
         },
-    },
 
     npc =
     {

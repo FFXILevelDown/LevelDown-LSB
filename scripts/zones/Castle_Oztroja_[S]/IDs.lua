@@ -21,19 +21,19 @@ zones[xi.zone.CASTLE_OZTROJA_S] =
         THE_PARTY_WILL_BE_REMOVED     = 8052, -- If all party members' HP are still zero after # minute[/s], the party will be removed from the battlefield.
     },
     mob =
-    {
-        AA_XALMO_THE_SAVAGE    = GetFirstID('Aa_Xalmo_the_Savage'),
-        ZHUU_BUXU_THE_SILENT   = GetFirstID('Zhuu_Buxu_the_Silent'),
-        DUU_MASA_THE_ONECUT    = GetFirstID('Duu_Masa_the_Onecut'),
-        DEE_ZELKO_THE_ESOTERIC = GetFirstID('Dee_Zelko_the_Esoteric'),
-        MARQUIS_FORNEUS        = GetFirstID('Marquis_Forneus'),
-        LOO_KUTTO_THE_PENSIVE  = GetFirstID('Loo_Kutto_the_Pensive'),
-        FLESHGNASHER           = GetFirstID('Fleshgnasher'),
-        VEE_LADU_THE_TITTERER  = GetFirstID('Vee_Ladu_the_Titterer'),
-        MAA_ILLMU_THE_BESTOWER = GetFirstID('Maa_Illmu_the_Bestower'),
-        ASTERION               = GetFirstID('Asterion'),
-        SUU_XICU_THE_CANTABILE = GetFirstID('Suu_Xicu_the_Cantabile'),
-    },
+        {
+            AA_XALMO_THE_SAVAGE    = GetFirstID('Aa_Xalmo_the_Savage'),
+            ZHUU_BUXU_THE_SILENT   = GetFirstID('Zhuu_Buxu_the_Silent'),
+            DUU_MASA_THE_ONECUT    = GetFirstID('Duu_Masa_the_Onecut'),
+            DEE_ZELKO_THE_ESOTERIC = GetFirstID('Dee_Zelko_the_Esoteric'),
+            MARQUIS_FORNEUS        = GetFirstID('Marquis_Forneus'),
+            LOO_KUTTO_THE_PENSIVE  = GetFirstID('Loo_Kutto_the_Pensive'),
+            FLESHGNASHER           = GetFirstID('Fleshgnasher'),
+            VEE_LADU_THE_TITTERER  = GetFirstID('Vee_Ladu_the_Titterer'),
+            MAA_ILLMU_THE_BESTOWER = GetFirstID('Maa_Illmu_the_Bestower'),
+            ASTERION               = GetFirstID('Asterion'),
+            SUU_XICU_THE_CANTABILE = GetFirstID('Suu_Xicu_the_Cantabile'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Yaibroux_TK'), -- San, Bas, Win, Flag +4, CA

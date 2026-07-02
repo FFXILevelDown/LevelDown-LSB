@@ -57,11 +57,12 @@ zones[xi.zone.WEST_RONFAURE] =
         COMMON_SENSE_SURVIVAL         = 12450, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        FUNGUS_BEETLE      = GetFirstID('Fungus_Beetle'),
-        JAGGEDY_EARED_JACK = GetFirstID('Jaggedy-Eared_Jack'),
-        MARAUDER_DVOGZOG   = GetFirstID('Marauder_Dvogzog'),
-    },
+        {
+            FUNGUS_BEETLE      = GetFirstID('Fungus_Beetle'),
+            JAGGEDY_EARED_JACK = GetFirstID('Jaggedy-Eared_Jack'),
+            MARAUDER_DVOGZOG   = GetFirstID('Marauder_Dvogzog'),
+            VOIDWATCH          = GetTableOfIDs('Lancing_Lamorak'),
+        },
     npc =
     {
         SIGNPOST_OFFSET = GetFirstID('Signpost'),

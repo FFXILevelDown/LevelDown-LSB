@@ -36,8 +36,8 @@ zones[xi.zone.CHATEAU_DORAGUILLE] =
         CELEBRATORY_GOODS             = 8475, -- An assortment of celebratory goods is available for purchase.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

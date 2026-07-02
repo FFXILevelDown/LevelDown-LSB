@@ -32,40 +32,41 @@ zones[xi.zone.WEST_SARUTABARUTA_S] =
     },
 
     mob =
-    {
-        JEDUAH = GetFirstID('Jeduah'),
-        RAMPONNEAU = GetFirstID('Ramponneau'),
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
+            JEDUAH     = GetFirstID('Jeduah'),
+            RAMPONNEAU = GetFirstID('Ramponneau'),
+            VOIDWATCH  = GetTableOfIDs('Pancimanci'),
+            VOIDWALKER =
             {
-                17166778, -- Raker bee
-                17166777, -- Raker bee
-                17166776, -- Raker bee
-                17166775, -- Raker bee
-                17166774, -- Rummager beetle
-                17166773, -- Rummager beetle
-                17166772, -- Rummager beetle
-                17166771, -- Rummager beetle
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17166778, -- Raker bee
+                    17166777, -- Raker bee
+                    17166776, -- Raker bee
+                    17166775, -- Raker bee
+                    17166774, -- Rummager beetle
+                    17166773, -- Rummager beetle
+                    17166772, -- Rummager beetle
+                    17166771, -- Rummager beetle
+                },
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
-            {
-                17166770,  -- Jyeshtha
-                17166769, -- Farruca Fly
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17166770,  -- Jyeshtha
+                    17166769, -- Farruca Fly
+                },
 
-            [xi.keyItem.BROWN_ABYSSITE] =
-            {
-                17166768, -- Orcus
-            },
+                [xi.keyItem.BROWN_ABYSSITE] =
+                {
+                    17166768, -- Orcus
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17166767, -- Yilbegan
-            },
-        }
-    },
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17166767, -- Yilbegan
+                },
+            }
+        },
 
     npc =
     {

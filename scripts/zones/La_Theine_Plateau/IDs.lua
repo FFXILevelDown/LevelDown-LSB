@@ -65,44 +65,45 @@ zones[xi.zone.LA_THEINE_PLATEAU] =
         COMMON_SENSE_SURVIVAL         = 12350, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        TUMBLING_TRUFFLE  = GetFirstID('Tumbling_Truffle'),
-        LUMBERING_LAMBERT = GetFirstID('Lumbering_Lambert'),
-        BLOODTEAR         = GetFirstID('Bloodtear_Baldurf'),
-        BATTERING_RAM     = GetTableOfIDs('Battering_Ram'),
-        NIHNIKNOOVI       = GetFirstID('Nihniknoovi'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17195493, -- Prickly Sheep
-                17195492, -- Prickly Sheep
-                17195491, -- Prickly Sheep
-                17195490, -- Prickly Sheep
-                17195489,  -- Void Hare
-                17195488,  -- Void Hare
-                17195487,  -- Void Hare
-                17195486,  -- Void Hare
-            },
+            TUMBLING_TRUFFLE  = GetFirstID('Tumbling_Truffle'),
+            LUMBERING_LAMBERT = GetFirstID('Lumbering_Lambert'),
+            BLOODTEAR         = GetFirstID('Bloodtear_Baldurf'),
+            BATTERING_RAM     = GetTableOfIDs('Battering_Ram'),
+            NIHNIKNOOVI       = GetFirstID('Nihniknoovi'),
+            VOIDWATCH         = GetTableOfIDs('Stachysaurus'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17195485,  -- Chesma
-                17195484, -- Tammuz
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17195493, -- Prickly Sheep
+                    17195492, -- Prickly Sheep
+                    17195491, -- Prickly Sheep
+                    17195490, -- Prickly Sheep
+                    17195489,  -- Void Hare
+                    17195488,  -- Void Hare
+                    17195487,  -- Void Hare
+                    17195486,  -- Void Hare
+                },
 
-            [xi.keyItem.GREY_ABYSSITE] =
-            {
-                17195483  -- Dawon
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17195485,  -- Chesma
+                    17195484, -- Tammuz
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17195482  -- Yilbegan
+                [xi.keyItem.GREY_ABYSSITE] =
+                {
+                    17195483  -- Dawon
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17195482  -- Yilbegan
+                }
             }
-        }
-    },
+        },
 
     npc =
     {

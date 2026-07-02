@@ -24,12 +24,12 @@ zones[xi.zone.CASTLE_ZVAHL_KEEP] =
         HOMEPOINT_SET                 = 7304, -- Home point set!
     },
     mob =
-    {
-        BARON_VAPULA   = GetFirstID('Baron_Vapula'),
-        BARONET_ROMWE  = GetFirstID('Baronet_Romwe'),
-        COUNT_BIFRONS  = GetFirstID('Count_Bifrons'),
-        VISCOUNT_MORAX = GetFirstID('Viscount_Morax'),
-    },
+        {
+            BARON_VAPULA   = GetFirstID('Baron_Vapula'),
+            BARONET_ROMWE  = GetFirstID('Baronet_Romwe'),
+            COUNT_BIFRONS  = GetFirstID('Count_Bifrons'),
+            VISCOUNT_MORAX = GetFirstID('Viscount_Morax'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

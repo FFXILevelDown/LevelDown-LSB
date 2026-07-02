@@ -44,44 +44,44 @@ zones[xi.zone.JUGNER_FOREST_S] =
     },
 
     mob =
-    {
-        DRUMSKULL_ZOGDREGG    = GetFirstID('Drumskull_Zogdregg'),
-        FINGERFILCHER_DRADZAD = GetFirstID('Fingerfilcher_Dradzad'),
-        COBRACLAW_BUCHZVOTCH  = GetFirstID('Cobraclaw_Buchzvotch'),
-        VULKODLAC             = GetFirstID('Vulkodlac'),
-        VOIRLOUP              = GetFirstID('Voirloup'),
-
-        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] =
-            {
-                17113500, -- Sunderclaw
-                17113499, -- Sunderclaw
-                17113498, -- Sunderclaw
-                17113497, -- Sunderclaw
-                17113496, -- Quagmire Pugil
-                17113495, -- Quagmire Pugil
-                17113494, -- Quagmire Pugil
-                17113493, -- Quagmire Pugil
-            },
+            DRUMSKULL_ZOGDREGG    = GetFirstID('Drumskull_Zogdregg'),
+            FINGERFILCHER_DRADZAD = GetFirstID('Fingerfilcher_Dradzad'),
+            COBRACLAW_BUCHZVOTCH  = GetFirstID('Cobraclaw_Buchzvotch'),
+            VULKODLAC             = GetFirstID('Vulkodlac'),
+            VOIDWATCH             = GetTableOfIDs('Kholomodumo'),
 
-            [xi.keyItem.COLORFUL_ABYSSITE] =
+            VOIDWALKER =
             {
-                17113492, -- Capricornus
-                17113491, -- Yacumama
-            },
+                [xi.keyItem.CLEAR_ABYSSITE] =
+                {
+                    17113500, -- Sunderclaw
+                    17113499, -- Sunderclaw
+                    17113498, -- Sunderclaw
+                    17113497, -- Sunderclaw
+                    17113496, -- Quagmire Pugil
+                    17113495, -- Quagmire Pugil
+                    17113494, -- Quagmire Pugil
+                    17113493, -- Quagmire Pugil
+                },
 
-            [xi.keyItem.BLUE_ABYSSITE] =
-            {
-                17113490, -- Krabkatoa
-            },
+                [xi.keyItem.COLORFUL_ABYSSITE] =
+                {
+                    17113492, -- Capricornus
+                    17113491, -- Yacumama
+                },
 
-            [xi.keyItem.BLACK_ABYSSITE] =
-            {
-                17113489, -- Yilbegan
-            }
+                [xi.keyItem.BLUE_ABYSSITE] =
+                {
+                    17113490, -- Krabkatoa
+                },
+
+                [xi.keyItem.BLACK_ABYSSITE] =
+                {
+                    17113489, -- Yilbegan
+                }
+            },
         },
-    },
 
     npc =
     {

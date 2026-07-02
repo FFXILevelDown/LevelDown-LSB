@@ -20,8 +20,8 @@ zones[xi.zone.HALL_OF_THE_GODS] =
         DEPRESSION_A_CLUE             = 7376, -- The depression in the center of the grate must be a clue...
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

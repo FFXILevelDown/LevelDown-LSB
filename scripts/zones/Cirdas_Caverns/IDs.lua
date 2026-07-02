@@ -19,9 +19,9 @@ zones[xi.zone.CIRDAS_CAVERNS] =
         SHARP_THORNS_PROTRUDE         = 7881, -- Sharp thorns protrude from the surface.
     },
     mob =
-    {
-        REIVE_MOB_OFFSET = GetFirstID('Knotted_Root'),
-    },
+        {
+            REIVE_MOB_OFFSET = GetFirstID('Knotted_Root'),
+        },
     npc =
     {
         CASTOFF_POINT_OFFSET   = GetFirstID('Castoff_Point'),

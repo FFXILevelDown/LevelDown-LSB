@@ -37,14 +37,14 @@ zones[xi.zone.GRAND_PALACE_OF_HUXZOI] =
         HOMEPOINT_SET                 = 7476, -- Home point set!
     },
     mob =
-    {
-        JAILER_OF_TEMPERANCE_PH = utils.slice(GetTableOfIDs('Eozdei_Still'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
-        IXGHRAH                 = GetFirstID('Ixghrah'),
-        JAILER_OF_TEMPERANCE    = GetFirstID('Jailer_of_Temperance'),
-        IXAERN_MNK              = GetFirstID('Ixaern_MNK'),
-        EOGHRAH_BIRD            = utils.slice(GetTableOfIDs('Eoghrah'), 1, 38),
-        EOGHRAH_SPIDER          = utils.slice(GetTableOfIDs('Eoghrah'), 39),
-    },
+        {
+            JAILER_OF_TEMPERANCE_PH = utils.slice(GetTableOfIDs('Eozdei_Still'), 1, 5), -- Entries 1-5 of the table (1-indexed, inclusive)
+            IXGHRAH                 = GetFirstID('Ixghrah'),
+            JAILER_OF_TEMPERANCE    = GetFirstID('Jailer_of_Temperance'),
+            IXAERN_MNK              = GetFirstID('Ixaern_MNK'),
+            EOGHRAH_BIRD            = utils.slice(GetTableOfIDs('Eoghrah'), 1, 38),
+            EOGHRAH_SPIDER          = utils.slice(GetTableOfIDs('Eoghrah'), 39),
+        },
     npc =
     {
         QM_IXAERN_MNK        = GetFirstID('qm_ixaern_mnk'),

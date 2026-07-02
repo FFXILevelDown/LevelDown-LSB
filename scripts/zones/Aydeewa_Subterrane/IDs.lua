@@ -40,15 +40,15 @@ zones[xi.zone.AYDEEWA_SUBTERRANE] =
         UNITY_WANTED_BATTLE_INTERACT  = 8994, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        BLUESTREAK_GYUGYUROON = GetFirstID('Bluestreak_Gyugyuroon'),
-        CHIGRE                = GetFirstID('Chigre'),
-        CRYSTAL_EATER         = GetFirstID('Crystal_Eater'),
-        NOSFERATU             = GetFirstID('Nosferatu'),
-        PANDEMONIUM_WARDEN    = GetFirstID('Pandemonium_Warden'),
-        PANDEMONIUM_LAMPS     = GetTableOfIDs('Pandemonium_Lamp'),
-        PANDEMONIUM_AVATARS   = GetTableOfIDs('Pandemonium_Lamp_Avatar'),
-    },
+        {
+            BLUESTREAK_GYUGYUROON = GetFirstID('Bluestreak_Gyugyuroon'),
+            CHIGRE                = GetFirstID('Chigre'),
+            NOSFERATU             = GetFirstID('Nosferatu'),
+            PANDEMONIUM_WARDEN    = GetFirstID('Pandemonium_Warden'),
+            PANDEMONIUM_LAMPS     = GetTableOfIDs('Pandemonium_Lamp'),
+            PANDEMONIUM_AVATARS   = GetTableOfIDs('Pandemonium_Lamp_Avatar'),
+            VOIDWATCH             = GetTableOfIDs('Morta'),
+        },
     npc =
     {
         DAMPSOIL       = GetFirstID('Dampsoil'),

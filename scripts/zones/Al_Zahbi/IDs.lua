@@ -37,8 +37,8 @@ zones[xi.zone.AL_ZAHBI] =
         SANCTION                      = 7998, -- You have received the Empire's Sanction.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

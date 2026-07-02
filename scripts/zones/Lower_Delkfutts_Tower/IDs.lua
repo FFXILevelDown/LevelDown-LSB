@@ -33,12 +33,13 @@ zones[xi.zone.LOWER_DELKFUTTS_TOWER] =
         COMMON_SENSE_SURVIVAL            = 11788, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        HIPPOLYTOS    = GetFirstID('Hippolytos'),
-        EPIALTES      = GetFirstID('Epialtes'),
-        EURYMEDON     = GetFirstID('Eurymedon'),
-        DISASTER_IDOL = GetFirstID('Disaster_Idol'),
-    },
+        {
+            HIPPOLYTOS    = GetFirstID('Hippolytos'),
+            EPIALTES      = GetFirstID('Epialtes'),
+            EURYMEDON     = GetFirstID('Eurymedon'),
+            DISASTER_IDOL = GetFirstID('Disaster_Idol'),
+            VOIDWATCH     = GetTableOfIDs('Akvan'),
+        },
     npc =
     {
         TALES_BEGINNING = GetFirstID('Tales_Beginning'), -- CoP 1-1 mission script uses this

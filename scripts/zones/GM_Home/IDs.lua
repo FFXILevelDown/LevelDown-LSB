@@ -17,8 +17,8 @@ zones[xi.zone.GM_HOME] =
         MEMBERS_LEVELS_ARE_RESTRICTED = 7027, -- Your party is unable to participate because certain members' levels are restricted.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

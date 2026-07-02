@@ -23,12 +23,13 @@ zones[xi.zone.FORT_KARUGO_NARUGO_S] =
         COMMON_SENSE_SURVIVAL         = 9213, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        RATATOSKR                = GetFirstID('Ratatoskr'),
-        KIRTIMUKHA               = GetFirstID('Kirtimukha'),
-        DEMOISELLE_DESOLEE       = GetFirstID('Demoiselle_Desolee'),
-        TIGRESS_STRIKES_WAR_LYNX = GetFirstID('War_Lynx'),
-    },
+        {
+            RATATOSKR                = GetFirstID('Ratatoskr'),
+            KIRTIMUKHA               = GetFirstID('Kirtimukha'),
+            DEMOISELLE_DESOLEE       = GetFirstID('Demoiselle_Desolee'),
+            TIGRESS_STRIKES_WAR_LYNX = GetFirstID('War_Lynx'),
+            VOIDWATCH                = GetTableOfIDs('Kalasutrax'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Caulaise_RK'), -- San, Bas, Win, Flag +4, CA

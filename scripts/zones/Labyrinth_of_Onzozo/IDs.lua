@@ -33,17 +33,17 @@ zones[xi.zone.LABYRINTH_OF_ONZOZO] =
         UNITY_WANTED_BATTLE_INTERACT  = 10560, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-    {
-        LORD_OF_ONZOZO       = GetFirstID('Lord_of_Onzozo'),
-        OSE                  = GetFirstID('Ose'),
-        SOULSTEALER_SKULLNIX = GetFirstID('Soulstealer_Skullnix'),
-        NARASIMHA            = GetFirstID('Narasimha'),
-        HELLION              = GetFirstID('Hellion'),
-        PEG_POWLER           = GetFirstID('Peg_Powler'),
-        MYSTICMAKER_PROFBLIX = GetFirstID('Mysticmaker_Profblix'),
-        UBUME                = GetFirstID('Ubume'),
-        MEGAPOD_MEGALOPS     = GetFirstID('Megapod_Megalops'),
-    },
+        {
+            LORD_OF_ONZOZO       = GetFirstID('Lord_of_Onzozo'),
+            OSE                  = GetFirstID('Ose'),
+            SOULSTEALER_SKULLNIX = GetFirstID('Soulstealer_Skullnix'),
+            NARASIMHA            = GetFirstID('Narasimha'),
+            HELLION              = GetFirstID('Hellion'),
+            PEG_POWLER           = GetFirstID('Peg_Powler'),
+            MYSTICMAKER_PROFBLIX = GetFirstID('Mysticmaker_Profblix'),
+            UBUME                = GetFirstID('Ubume'),
+            MEGAPOD_MEGALOPS     = GetFirstID('Megapod_Megalops'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

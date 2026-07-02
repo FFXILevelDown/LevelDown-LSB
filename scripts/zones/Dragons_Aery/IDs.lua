@@ -23,10 +23,10 @@ zones[xi.zone.DRAGONS_AERY] =
         COMMON_SENSE_SURVIVAL         = 7519, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        FAFNIR  = GetFirstID('Fafnir'),
-        NIDHOGG = GetFirstID('Nidhogg'),
-    },
+        {
+            FAFNIR  = GetFirstID('Fafnir'),
+            NIDHOGG = GetFirstID('Nidhogg'),
+        },
     npc =
     {
         FAFNIR_QM = GetFirstID('qm0'),

@@ -21,8 +21,8 @@ zones[xi.zone.FERETORY] =
         MAY_POSSESS_BEES              = 7394, -- You may now possess bees!
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
     },

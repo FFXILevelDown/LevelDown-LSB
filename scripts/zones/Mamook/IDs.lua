@@ -29,21 +29,21 @@ zones[xi.zone.MAMOOK] =
         COMMON_SENSE_SURVIVAL         = 9579, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        ZIZZY_ZILLAH           = GetFirstID('Zizzy_Zillah'),
-        FIREDANCE_MAGMAAL_JA   = GetFirstID('Firedance_Magmaal_Ja'),
-        GULOOL_JA_JA           = GetFirstID('Gulool_Ja_Ja'),
-        CHAMROSH               = GetFirstID('Chamrosh'),
-        IRIRI_SAMARIRI         = GetFirstID('Iriri_Samariri'),
-        POROGGO_CASANOVA       = GetFirstID('Poroggo_Casanova'),
-        MAMOOL_JA              = GetFirstID('Mamool_Ja'),
-        MIKILULU               = GetFirstID('Mikilulu'),
-        MIKIRURU               = GetFirstID('Mikiruru'),
-        NIKILULU               = GetFirstID('Nikilulu'),
-        MIKILURU               = GetFirstID('Mikiluru'),
-        MIKIRULU               = GetFirstID('Mikirulu'),
-        HUNDRED_FACE_HAPOOL_JA = GetFirstID('Hundredfaced_Hapool_Ja'),
-    },
+        {
+            ZIZZY_ZILLAH         = GetFirstID('Zizzy_Zillah'),
+            FIREDANCE_MAGMAAL_JA = GetFirstID('Firedance_Magmaal_Ja'),
+            GULOOL_JA_JA         = GetFirstID('Gulool_Ja_Ja'),
+            CHAMROSH             = GetFirstID('Chamrosh'),
+            IRIRI_SAMARIRI       = GetFirstID('Iriri_Samariri'),
+            POROGGO_CASANOVA     = GetFirstID('Poroggo_Casanova'),
+            MAMOOL_JA            = GetFirstID('Mamool_Ja'),
+            MIKILULU             = GetFirstID('Mikilulu'),
+            MIKIRURU             = GetFirstID('Mikiruru'),
+            NIKILULU             = GetFirstID('Nikilulu'),
+            MIKILURU             = GetFirstID('Mikiluru'),
+            MIKIRULU             = GetFirstID('Mikirulu'),
+            VOIDWATCH            = GetTableOfIDs('Yalungur'),
+        },
     npc =
     {
         LOGGING      = GetTableOfIDs('Logging_Point'),

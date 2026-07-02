@@ -19,8 +19,16 @@ zones[xi.zone.PROVENANCE] =
         THE_PARTY_WILL_BE_REMOVED     = 7351, -- All party members have fallen in battle. Leaving the battlefield in # minute[/s].
     },
     mob =
-    {
-    },
+        {
+            PROVENANCE_WATCHER                = GetFirstID('Provenance_Watcher'),
+            CRYSTAL_FETTER                    = GetFirstID('Crystal_Fetter'),
+            PIL                               = GetFirstID('Pil'),
+            ASB                               = GetFirstID('Asb'),
+            RUKH                              = GetFirstID('Rukh'),
+            SARBAZ                            = GetFirstID('Sarbaz'),
+            SHAH                              = GetFirstID('Shah'),
+            WAZIR                             = GetFirstID('Wazir'),
+        },
     npc =
     {
     },

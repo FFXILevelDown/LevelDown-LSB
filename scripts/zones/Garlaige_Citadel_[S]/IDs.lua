@@ -20,8 +20,9 @@ zones[xi.zone.GARLAIGE_CITADEL_S] =
         COMMON_SENSE_SURVIVAL         = 8902, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-    },
+        {
+            VOIDWATCH = GetTableOfIDs('Laidly_Laurence'),
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Lidaise_TK'), -- San, Bas, Win, Flag +4, CA

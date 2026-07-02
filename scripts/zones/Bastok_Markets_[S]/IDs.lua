@@ -41,8 +41,8 @@ zones[xi.zone.BASTOK_MARKETS_S] =
         COMMON_SENSE_SURVIVAL         = 14816, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-    },
+        {
+        },
     npc =
     {
         CAMPAIGN_NPC_OFFSET = GetFirstID('Hostarfaux_TK'), -- San, Bas, Win, Flag +4, CA

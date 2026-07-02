@@ -70,23 +70,23 @@ zones[xi.zone.ABYSSEA_LA_THEINE] =
         USE_KI                        = 7600, -- Use the [key item/key items]? Yes. No.
     },
     mob =
-    {
-        DOZING_DORIAN    = GetFirstID('Dozing_Dorian'),
-        TRUDGING_THOMAS  = GetFirstID('Trudging_Thomas'),
-        MEGANTEREON      = GetFirstID('Megantereon'),
-        ADAMASTOR        = GetFirstID('Adamastor'),
-        PANTAGRUEL       = GetFirstID('Pantagruel'),
-        GRANDGOUSIER     = GetFirstID('Grandgousier'),
-        LA_THEINE_LIEGE  = GetFirstID('La_Theine_Liege'),
-        BABA_YAGA        = GetFirstID('Baba_Yaga'),
-        NGURUVILU        = GetFirstID('Nguruvilu'),
-        POROGGO_DOM_JUAN = GetFirstID('Poroggo_Dom_Juan'),
-        TOPPLING_TUBER   = GetFirstID('Toppling_Tuber'),
-        LUGARHOO         = GetFirstID('Lugarhoo'),
-        BRIAREUS_OFFSET  = GetFirstID('Briareus'), -- 3 Copies: +0, +10, +13
-        CARABOSSE_OFFSET = GetFirstID('Carabosse'), -- 3 Copies: +0, +10, +13
-        HADHAYOSH_OFFSET = GetFirstID('Hadhayosh'), -- 3 Copies: +0, +10, +13
-    },
+        {
+            DOZING_DORIAN    = GetFirstID('Dozing_Dorian'),
+            TRUDGING_THOMAS  = GetFirstID('Trudging_Thomas'),
+            MEGANTEREON      = GetFirstID('Megantereon'),
+            ADAMASTOR        = GetFirstID('Adamastor'),
+            PANTAGRUEL       = GetFirstID('Pantagruel'),
+            GRANDGOUSIER     = GetFirstID('Grandgousier'),
+            LA_THEINE_LIEGE  = GetFirstID('La_Theine_Liege'),
+            BABA_YAGA        = GetFirstID('Baba_Yaga'),
+            NGURUVILU        = GetFirstID('Nguruvilu'),
+            POROGGO_DOM_JUAN = GetFirstID('Poroggo_Dom_Juan'),
+            TOPPLING_TUBER   = GetFirstID('Toppling_Tuber'),
+            LUGARHOO         = GetFirstID('Lugarhoo'),
+            BRIAREUS_OFFSET  = GetFirstID('Briareus'), -- 3 Copies: +0, +10, +13
+            CARABOSSE_OFFSET = GetFirstID('Carabosse'), -- 3 Copies: +0, +10, +13
+            HADHAYOSH_OFFSET = GetFirstID('Hadhayosh'), -- 3 Copies: +0, +10, +13
+        },
     npc =
     {
     },

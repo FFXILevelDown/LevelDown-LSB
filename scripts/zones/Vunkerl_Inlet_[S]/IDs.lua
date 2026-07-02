@@ -22,10 +22,11 @@ zones[xi.zone.VUNKERL_INLET_S] =
         COMMON_SENSE_SURVIVAL         = 9042, -- It appears that you have arrived at a new survival guide provided by the Servicemen's Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BIG_BANG = GetFirstID('Big_Bang'),
-        PALLAS   = GetFirstID('Pallas'),
-    },
+        {
+            BIG_BANG  = GetFirstID('Big_Bang'),
+            PALLAS    = GetFirstID('Pallas'),
+            VOIDWATCH = GetTableOfIDs('Gaunab'),
+        },
     npc =
     {
         INDESCRIPT_MARKINGS = GetFirstID('Indescript_Markings'),

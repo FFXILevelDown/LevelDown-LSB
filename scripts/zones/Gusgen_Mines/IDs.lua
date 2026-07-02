@@ -46,19 +46,20 @@ zones[xi.zone.GUSGEN_MINES] =
         COMMON_SENSE_SURVIVAL         = 11492, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        BLIND_MOBY          = GetFirstID('Blind_Moby'),
-        WANDERING_GHOST     = GetFirstID('Wandering_Ghost'),
-        PUDDING_OFFSET      = GetFirstID('Pudding'),
-        AROMA_FLY           = GetFirstID('Aroma_Fly'),
-        ASPHYXIATED_AMSEL   = GetFirstID('Asphyxiated_Amsel'),
-        BURNED_BERGMANN     = GetFirstID('Burned_Bergmann'),
-        CRUSHED_KRAUSE      = GetFirstID('Crushed_Krause'),
-        PULVERIZED_PFEFFER  = GetFirstID('Pulverized_Pfeffer'),
-        SMOTHERED_SCHMIDT   = GetFirstID('Smothered_Schmidt'),
-        WOUNDED_WURFEL      = GetFirstID('Wounded_Wurfel'),
-        APPARATUS_ELEMENTAL = GetTableOfIDs('Earth_Elemental')[3], -- Last elemental in the list
-    },
+        {
+            BLIND_MOBY          = GetFirstID('Blind_Moby'),
+            WANDERING_GHOST     = GetFirstID('Wandering_Ghost'),
+            PUDDING_OFFSET      = GetFirstID('Pudding'),
+            AROMA_FLY           = GetFirstID('Aroma_Fly'),
+            ASPHYXIATED_AMSEL   = GetFirstID('Asphyxiated_Amsel'),
+            BURNED_BERGMANN     = GetFirstID('Burned_Bergmann'),
+            CRUSHED_KRAUSE      = GetFirstID('Crushed_Krause'),
+            PULVERIZED_PFEFFER  = GetFirstID('Pulverized_Pfeffer'),
+            SMOTHERED_SCHMIDT   = GetFirstID('Smothered_Schmidt'),
+            WOUNDED_WURFEL      = GetFirstID('Wounded_Wurfel'),
+            APPARATUS_ELEMENTAL = GetTableOfIDs('Earth_Elemental')[3], -- Last elemental in the list
+            VOIDWATCH           = GetTableOfIDs('Lorbulcrud'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

@@ -43,16 +43,17 @@ zones[xi.zone.ORDELLES_CAVES] =
         COMMON_SENSE_SURVIVAL         = 11563, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        DONGGU              = GetFirstID('Donggu'),
-        AGAR_AGAR           = GetFirstID('Agar_Agar'),
-        MORBOLGER           = GetFirstID('Morbolger'),
-        POLEVIK             = GetFirstID('Polevik'),
-        DARK_PUPPET_OFFSET  = GetFirstID('Gerwitzs_Axe'),
-        NECROPLASM          = GetFirstID('Necroplasm'),
-        APPARATUS_ELEMENTAL = GetTableOfIDs('Air_Elemental')[2], -- Second elemental in the list
-        AROMA_LEECH         = GetFirstID('Aroma_Leech'),
-    },
+        {
+            DONGGU              = GetFirstID('Donggu'),
+            AGAR_AGAR           = GetFirstID('Agar_Agar'),
+            MORBOLGER           = GetFirstID('Morbolger'),
+            POLEVIK             = GetFirstID('Polevik'),
+            DARK_PUPPET_OFFSET  = GetFirstID('Gerwitzs_Axe'),
+            NECROPLASM          = GetFirstID('Necroplasm'),
+            APPARATUS_ELEMENTAL = GetTableOfIDs('Air_Elemental')[2], -- Second elemental in the list
+            AROMA_LEECH         = GetFirstID('Aroma_Leech'),
+            VOIDWATCH           = GetTableOfIDs('Krabimanjaro'),
+        },
     npc =
     {
         TREASURE_CHEST = GetFirstID('Treasure_Chest'),

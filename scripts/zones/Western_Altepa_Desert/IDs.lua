@@ -47,18 +47,19 @@ zones[xi.zone.WESTERN_ALTEPA_DESERT] =
         COMMON_SENSE_SURVIVAL         = 11827, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
-    {
-        CACTUAR_CANTAUTOR    = GetFirstID('Cactuar_Cantautor'),
-        CALCHAS              = GetFirstID('Calchas'),
-        CELPHIE              = GetFirstID('Celphie'),
-        DAHU                 = GetFirstID('Dahu'),
-        EASTERN_SPHINX       = GetFirstID('Eastern_Sphinx'),
-        KING_VINEGARROON     = GetFirstID('King_Vinegarroon'),
-        MAHARAJA             = GetFirstID('Maharaja'),
-        PICOLATON            = GetFirstID('Picolaton'),
-        SABOTENDER_ENAMORADO = GetFirstID('Sabotender_Enamorado'),
-        WESTERN_SPHINX       = GetFirstID('Western_Sphinx'),
-    },
+        {
+            CACTUAR_CANTAUTOR    = GetFirstID('Cactuar_Cantautor'),
+            CALCHAS              = GetFirstID('Calchas'),
+            CELPHIE              = GetFirstID('Celphie'),
+            DAHU                 = GetFirstID('Dahu'),
+            EASTERN_SPHINX       = GetFirstID('Eastern_Sphinx'),
+            KING_VINEGARROON     = GetFirstID('King_Vinegarroon'),
+            MAHARAJA             = GetFirstID('Maharaja'),
+            PICOLATON            = GetFirstID('Picolaton'),
+            SABOTENDER_ENAMORADO = GetFirstID('Sabotender_Enamorado'),
+            WESTERN_SPHINX       = GetFirstID('Western_Sphinx'),
+            VOIDWATCH            = GetTableOfIDs('Sabotender_Campeador'),
+        },
     npc =
     {
         ALTEPA_GATE              = GetFirstID('_3h0'),

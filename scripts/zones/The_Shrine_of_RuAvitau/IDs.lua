@@ -29,12 +29,13 @@ zones[xi.zone.THE_SHRINE_OF_RUAVITAU] =
         HOMEPOINT_SET                 = 11449, -- Home point set!
     },
     mob =
-    {
-        ULLIKUMMI       = GetFirstID('Ullikummi'),
-        OLLAS_OFFSET    = GetFirstID('Olla_Pequena'),
-        KIRIN           = GetFirstID('Kirin'),
-        MOTHER_GLOBE    = GetFirstID('Mother_Globe'),
-    },
+        {
+            ULLIKUMMI     = GetFirstID('Ullikummi'),
+            OLLAS_OFFSET  = GetFirstID('Olla_Pequena'),
+            KIRIN         = GetFirstID('Kirin'),
+            MOTHER_GLOBE  = GetFirstID('Mother_Globe'),
+            VOIDWATCH     = GetTableOfIDs('Qilin'),
+        },
     npc =
     {
         OLLAS_QM        = GetFirstID('qm1'),
