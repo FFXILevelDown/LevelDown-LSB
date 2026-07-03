@@ -6,13 +6,12 @@ trace_<year>_<month>_<day>_<hour>_<minute>_<second>.tracy, then extracts a CSV o
 zone statistics next to it with the same base name (via tracy-csvexport).
 
 Equivalent to:
-    tracy-capture(.exe) -o <stamp>.tracy -f -s <seconds> -p <port>
-    tracy-csvexport(.exe) <stamp>.tracy > <stamp>.csv
+    tracy-capture(.exe)   -o <stamp>.tracy -f -s <seconds>
+    tracy-csvexport(.exe)    <stamp>.tracy            > <stamp>.csv
 
 Examples:
     python ./tools/capture.py
     ./tools/capture.py --seconds 120 --out-dir traces
-    ./tools/capture.py --port 8087     # capture a process running TRACY_PORT=8087
     ./tools/capture.py --self          # self-times CSV (tracy-csvexport -e)
     ./tools/capture.py --no-csv        # capture only, skip extraction
 """
@@ -43,14 +42,6 @@ def main() -> int:
         type=int,
         default=60,
         help="Capture duration in seconds (tracy-capture -s). Default: 60.",
-    )
-    parser.add_argument(
-        "-p",
-        "--port",
-        type=int,
-        default=8086,
-        help="Port to connect to (tracy-capture -p), matching the profiled "
-        "process's TRACY_PORT. Default: 8086.",
     )
     parser.add_argument(
         "-o",
@@ -84,11 +75,10 @@ def main() -> int:
     stamp = dt.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
     trace_file = args.out_dir / f"trace_{stamp}.tracy"
 
-    # -f: overwrite if it exists, -s: capture duration in seconds, -p: data port
-    print(f"Capturing {args.seconds}s on port {args.port} -> {trace_file}")
+    # -f: overwrite if it exists, -s: capture duration in seconds
+    print(f"Capturing {args.seconds}s -> {trace_file}")
     rc = subprocess.run(
-        [str(capture), "-o", str(trace_file), "-f",
-         "-s", str(args.seconds), "-p", str(args.port)]
+        [str(capture), "-o", str(trace_file), "-f", "-s", str(args.seconds)]
     ).returncode
     if rc != 0:
         return rc

@@ -42,6 +42,9 @@ public:
     auto hasAttachment(uint8 attachment) const -> bool;
     void setEquip(const AutomatonEquip& equip);
 
+    auto elementMax(uint8 element) const -> uint8;
+    auto elementCapacity(uint8 element) const -> uint8;
+
     void burdenTick();
     auto burden() const -> const std::array<uint8, 8>&;
     void setAllBurden(uint8 burden);
@@ -65,5 +68,7 @@ public:
 
 private:
     AutomatonEquip       equip_{};
+    std::array<uint8, 8> elementMax_{};
+    std::array<uint8, 8> elementEquip_{};
     std::array<uint8, 8> burden_{};
 };

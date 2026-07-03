@@ -1,5 +1,6 @@
 # add_subdirectory(lua) # Handled globally
 # add_subdirectory(mariadb) # Handled globally
+# add_subdirectory(mariadbcpp) # Handled globally
 # add_subdirectory(zmq) # Handled globally
 # add_subdirectory(openssl) # Handled globally
 add_subdirectory(concurrentqueue)
@@ -41,48 +42,24 @@ if(TRACY_ENABLE)
                 tar xvf "${CMAKE_SOURCE_DIR}/tracy.tar.gz"
                 WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/
         )
-    else() # UNIX (Linux / macOS)
-        include(ExternalProject)
+    else() # UNIX
+        # TODO: Auto-build Tracy and capture executables on Linux
+        # sudo apt-get -y install libglfw3-dev libdbus-1-dev libcapstone-dev libtbb-dev libdebuginfod-dev libfreetype-dev
 
-        # target name:source subdirectory
-        set(TRACY_TOOLS
-            "tracy-capture:capture"
-            "tracy-csvexport:csvexport"
-        )
+        # execute_process(COMMAND "make"
+        #     WORKING_DIRECTORY ${tracy_SOURCE_DIR}/profiler/build/unix
+        # )
 
-        foreach(_tracy_tool ${TRACY_TOOLS})
-            string(REPLACE ":" ";" _tracy_tool "${_tracy_tool}")
-            list(GET _tracy_tool 0 _tracy_tool_name)
-            list(GET _tracy_tool 1 _tracy_tool_dir)
-
-            message(STATUS "Configuring Tracy tool: ${_tracy_tool_name}")
-
-            set(_tracy_tool_bindir ${CMAKE_BINARY_DIR}/tracy-tools/${_tracy_tool_name})
-
-            ExternalProject_Add(${_tracy_tool_name}
-                SOURCE_DIR ${TracyClient_SOURCE_DIR}/${_tracy_tool_dir}
-                BINARY_DIR ${_tracy_tool_bindir}
-                CMAKE_ARGS
-                    -DCMAKE_BUILD_TYPE=Release
-                    -DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}
-                    -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
-                    -DCMAKE_OSX_ARCHITECTURES=${CMAKE_OSX_ARCHITECTURES}
-                    -DCMAKE_OSX_DEPLOYMENT_TARGET=${CMAKE_OSX_DEPLOYMENT_TARGET}
-                    -DCMAKE_OSX_SYSROOT=${CMAKE_OSX_SYSROOT}
-                    -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=${_tracy_tool_bindir}
-                BUILD_ALWAYS TRUE
-                INSTALL_COMMAND ${CMAKE_COMMAND} -E copy_if_different
-                    ${_tracy_tool_bindir}/${_tracy_tool_name}
-                    ${CMAKE_SOURCE_DIR}/${_tracy_tool_name}
-            )
-        endforeach()
+        # execute_process(COMMAND "make"
+        #     WORKING_DIRECTORY ${tracy_SOURCE_DIR}/capture/build/unix
+        # )
     endif()
 endif(TRACY_ENABLE)
 
 CPMAddPackage(
     NAME fmt
     GITHUB_REPOSITORY fmtlib/fmt
-    GIT_TAG 12.2.0
+    GIT_TAG 12.1.0
     SYSTEM ON
 ) # defines: fmt::fmt
 
@@ -131,7 +108,7 @@ endif()
 CPMAddPackage(
     NAME rapidyaml
     GITHUB_REPOSITORY biojppm/rapidyaml
-    GIT_TAG v0.15.2
+    GIT_TAG v0.12.0
     SYSTEM ON
     OPTIONS
         "RYML_BUILD_TOOLS OFF"
@@ -170,7 +147,7 @@ CPMAddPackage(
 CPMAddPackage(
     NAME cpp-httplib
     GITHUB_REPOSITORY yhirose/cpp-httplib
-    GIT_TAG v0.49.0
+    GIT_TAG v0.18.3
     SYSTEM ON
     OPTIONS
         "HTTPLIB_REQUIRE_ZLIB OFF"
@@ -180,7 +157,7 @@ CPMAddPackage(
 CPMAddPackage(
     NAME json
     GITHUB_REPOSITORY nlohmann/json
-    GIT_TAG v3.12.0
+    GIT_TAG 9f60e855576bb1e95f39ab23b3821982cccb0bab
     SYSTEM ON
 ) # defines: nlohmann_json::nlohmann_json
 
@@ -196,9 +173,9 @@ endif()
 
 CPMAddPackage(
     NAME asio
-    VERSION 1.38.0
+    VERSION 1.36.0
     GITHUB_REPOSITORY chriskohlhoff/asio
-    GIT_TAG asio-1-38-0 # asio uses non-standard version tag, we must specify GIT_TAG
+    GIT_TAG asio-1-36-0 # asio uses non-standard version tag, we must specify GIT_TAG
 ) #defines asio
 
 # ASIO doesn't use CMake, we have to configure it manually. Extra notes for using on Windows:
@@ -280,7 +257,7 @@ CPMAddPackage(
 CPMAddPackage(
     NAME magic_enum
     GITHUB_REPOSITORY Neargye/magic_enum
-    GIT_TAG v0.9.8
+    GIT_TAG 1a1824df7ac798177a521eed952720681b0bf482
     SYSTEM ON
 ) # defines: magic_enum
 
@@ -294,7 +271,7 @@ CPMAddPackage(
 CPMAddPackage(
     NAME unordered_dense
     GITHUB_REPOSITORY martinus/unordered_dense
-    GIT_TAG v4.8.1
+    GIT_TAG v4.4.0
     SYSTEM ON
 ) # defines: unordered_dense::unordered_dense (aliased to FlatHashMap, see src/common/flat_hash_map.h)
 
@@ -303,6 +280,7 @@ set(SHARED_EXTERNAL_LIBS
     spdlog
     concurrentqueue
     mariadbclient
+    mariadbcpp
     sol2_single
     argparse
     efsw
