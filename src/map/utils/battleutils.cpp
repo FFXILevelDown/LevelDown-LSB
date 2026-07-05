@@ -1903,10 +1903,14 @@ auto CalculateTPFromDamageTaken(CBattleEntity* PAttacker, CBattleEntity* PDefend
 
 bool TryInterruptSpell(CBattleEntity* PAttacker, CBattleEntity* PDefender, CSpell* PSpell)
 {
-    // Exceptions.
-    if (PDefender->objtype == TYPE_TRUST ||                                              // Caster is a trust.
-        PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Manafont) || // Caster has Manafont.
-        (SKILLTYPE)PSpell->getSkillType() == SKILL_SINGING)                              // Spell is a song.
+    // Early return: Spell can't be interrupted.
+    if ((SKILLTYPE)PSpell->getSkillType() == SKILL_SINGING)
+    {
+        return false;
+    }
+
+    // Early return: Manafont prevents interruptions.
+    if (PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Manafont))
     {
         return false;
     }
@@ -1962,24 +1966,27 @@ bool TryInterruptSpell(CBattleEntity* PAttacker, CBattleEntity* PDefender, CSpel
     // SIRDRatio:   No limits. Can be negative. A negative value will guarantee NOT being interrupted.
     float finalRatio = levelRatio * skillRatio * SIRDRatio; // TL;DR Higher = Worse = More chances to get interrupted.
 
-    // You get interrupted. Handle aquaveil.
-    if (chance < finalRatio)
+    // Early return: You don't get interrupted.
+    if (chance >= finalRatio)
     {
-        if (PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Aquaveil))
-        {
-            auto aquaCount = PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Aquaveil)->GetPower();
-            if (aquaCount - 1 == 0) // removes the status, but still prevents the interrupt
-            {
-                PDefender->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Aquaveil);
-            }
-            else
-            {
-                PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Aquaveil)->SetPower(aquaCount - 1);
-            }
-            return false;
-        }
+        return false;
+    }
 
+    // Early return: You can't prevent interruption via Aquaveil effect.
+    if (!PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Aquaveil))
+    {
         return true;
+    }
+
+    // Handle aquaveil.
+    auto aquaCount = PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Aquaveil)->GetPower();
+    if (aquaCount - 1 == 0) // removes the status, but still prevents the interrupt
+    {
+        PDefender->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Aquaveil);
+    }
+    else
+    {
+        PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Aquaveil)->SetPower(aquaCount - 1);
     }
 
     return false;
@@ -2508,14 +2515,17 @@ uint8 GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 att
     }
     return static_cast<uint8>(hitrate);
 }
+
 uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
 {
     return GetHitRateEx(PAttacker, PDefender, 0, 0); // assume attack 0(main)
 }
+
 uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber)
 {
     return GetHitRateEx(PAttacker, PDefender, attackNumber, 0);
 }
+
 uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber, int16 offsetAccuracy)
 {
     return GetHitRateEx(PAttacker, PDefender, attackNumber, offsetAccuracy);
@@ -3923,6 +3933,7 @@ void handleSecondaryTargetEnmity(CBattleEntity* PAttacker, CBattleEntity* PTarge
         }
     }
 }
+
 /************************************************************************
  *                                                                       *
  *  Transfer Enmity (used with ACCOMPLICE & COLLABORATOR ability type)   *
@@ -5123,7 +5134,7 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         if (activeCooldownList.size() > 1)
         {
             // Shuffle active cooldowns and take first (loaded deck)
-            std::shuffle(std::begin(activeCooldownList), std::end(activeCooldownList), xirand::rng());
+            xirand::ShuffleInPlace(activeCooldownList);
             loadedDeckChance = 100;
         }
 
@@ -5155,7 +5166,7 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         if (resetCandidateList.size() > 1)
         {
             // Shuffle if more than 1 ability
-            std::shuffle(std::begin(resetCandidateList), std::end(resetCandidateList), xirand::rng());
+            xirand::ShuffleInPlace(resetCandidateList);
         }
 
         // Reset first ability (shuffled or only)
@@ -6270,4 +6281,5 @@ void addEcosystemKillerEffects(CBattleEntity* PBattleEntity)
             break;
     }
 }
+
 }; // namespace battleutils
