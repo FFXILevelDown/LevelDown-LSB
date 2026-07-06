@@ -21,16 +21,16 @@
 
 #include "battleutils.h"
 
-#include "common/database.h"
 #include "common/logging.h"
 #include "common/settings.h"
 #include "common/timer.h"
 #include "common/utils.h"
 
+#include <common/types/hash_map.h>
+
 #include <algorithm>
 #include <array>
 #include <cstring>
-#include <unordered_map>
 
 #include "packets/char_status.h"
 #include "packets/s2c/0x01d_item_same.h"
@@ -50,16 +50,12 @@
 #include "entities/mob_entity.h"
 #include "entities/pet_entity.h"
 #include "entities/trust_entity.h"
-#include "enums/action/hit_distortion.h"
-#include "enums/action/info.h"
 #include "enums/msg_std.h"
 #include "enums/weather.h"
 #include "item_container.h"
 #include "items.h"
 #include "items/item_weapon.h"
 #include "job_points.h"
-#include "map/navmesh/navmesh.h"
-#include "map_engine.h"
 #include "mob_modifier.h"
 #include "mobskill.h"
 #include "modifier.h"
@@ -80,8 +76,6 @@
 #include "weapon_skill.h"
 #include "zoneutils.h"
 
-#include <map/ximesh/ximesh.h>
-
 /************************************************************************
  *                                                                       *
  *  Lists used in battleutils                                            *
@@ -94,10 +88,10 @@ std::array<std::array<uint16, MAX_SKILLCHAIN_COUNT + 1>, MAX_SKILLCHAIN_LEVEL + 
 
 std::array<CWeaponSkill*, MAX_WEAPONSKILL_ID> g_PWeaponSkillList; // Holds all Weapon skills
 std::array<CMobSkill*, MAX_MOBSKILL_ID>       g_PMobSkillList;    // List of mob skills
-std::unordered_map<uint32, CPetSkill*>        g_PPetSkillList;    // List of pet skills
+HashMap<uint32, CPetSkill*>                   g_PPetSkillList;    // List of pet skills
 
 std::array<std::list<CWeaponSkill*>, MAX_SKILLTYPE> g_PWeaponSkillsList;
-std::unordered_map<uint16, std::vector<uint16>>     g_PMobSkillLists; // List of mob skills defined from mob_skill_lists.sql
+HashMap<uint16, std::vector<uint16>>                g_PMobSkillLists; // List of mob skills defined from mob_skill_lists.sql
 
 namespace battleutils
 {
@@ -956,7 +950,7 @@ auto HandleSpikesDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, acti
                 case SPIKE_BLAZE:
                 case SPIKE_ICE:
                 case SPIKE_SHOCK:
-                    PAttacker->takeDamage(spikesDamage, PDefender, ATTACK_TYPE::MAGICAL, GetSpikesDamageType(Action->spikesEffect));
+                    PAttacker->takeDamage(spikesDamage, PDefender, xi::AttackType::Magical, GetSpikesDamageType(Action->spikesEffect));
                     break;
 
                 case SPIKE_DREAD:
@@ -994,14 +988,14 @@ auto HandleSpikesDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, acti
                                 PDefender->addHP(spikesDamage);
                             }
                         }
-                        PAttacker->takeDamage(spikesDamage, PDefender, ATTACK_TYPE::MAGICAL, xi::DamageType::Dark);
+                        PAttacker->takeDamage(spikesDamage, PDefender, xi::AttackType::Magical, xi::DamageType::Dark);
                     }
                     break;
 
                 case SPIKE_REPRISAL:
                     if (Action->resolution == ActionResolution::Block)
                     {
-                        PAttacker->takeDamage(spikesDamage, PDefender, ATTACK_TYPE::MAGICAL, xi::DamageType::Light);
+                        PAttacker->takeDamage(spikesDamage, PDefender, xi::AttackType::Magical, xi::DamageType::Light);
                     }
                     else
                     {
@@ -1096,7 +1090,7 @@ auto HandleParrySpikesDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender,
             Action->spikesParam = static_cast<uint16>(spikesDamage);
         }
 
-        PAttacker->takeDamage(spikesDamage, PDefender, ATTACK_TYPE::MAGICAL, GetSpikesDamageType(Action->spikesEffect));
+        PAttacker->takeDamage(spikesDamage, PDefender, xi::AttackType::Magical, GetSpikesDamageType(Action->spikesEffect));
 
         battleutils::DirtyExp(PAttacker, PDefender);
         if (PAttacker->isDead())
@@ -1149,7 +1143,7 @@ auto HandleSpikesEquip(CBattleEntity* PAttacker, CBattleEntity* PDefender, actio
                 Action->spikesParam = static_cast<uint16>(spikesDamage);
             }
 
-            PAttacker->takeDamage(spikesDamage, PDefender, ATTACK_TYPE::MAGICAL, GetSpikesDamageType(spikesType));
+            PAttacker->takeDamage(spikesDamage, PDefender, xi::AttackType::Magical, GetSpikesDamageType(spikesType));
         }
 
         // Temp till moved to script.
@@ -1481,7 +1475,7 @@ void HandleEnspell(CBattleEntity* PAttacker, CBattleEntity* PDefender, action_re
                 Action->addEffectMessage = MsgBasic::AddEffectAdditionalDamage;
             }
 
-            PDefender->takeDamage(Action->addEffectParam, PAttacker, ATTACK_TYPE::MAGICAL, damageType);
+            PDefender->takeDamage(Action->addEffectParam, PAttacker, xi::AttackType::Magical, damageType);
         }
         else if (enspell == ENSPELL_AUSPICE && isFirstSwing)
         {
@@ -1495,7 +1489,7 @@ void HandleEnspell(CBattleEntity* PAttacker, CBattleEntity* PDefender, action_re
                 Action->addEffectMessage = MsgBasic::AddEffectRecoversHP;
             }
 
-            PDefender->takeDamage(Action->addEffectParam, PAttacker, ATTACK_TYPE::MAGICAL, GetEnspellDamageType((ENSPELL)enspell));
+            PDefender->takeDamage(Action->addEffectParam, PAttacker, xi::AttackType::Magical, GetEnspellDamageType((ENSPELL)enspell));
         }
         else if (enspell <= ENSPELL_II_DARK) // Elemental enspells
         {
@@ -1530,7 +1524,7 @@ void HandleEnspell(CBattleEntity* PAttacker, CBattleEntity* PDefender, action_re
                     Action->addEffectMessage = MsgBasic::AddEffectAdditionalDamage;
                 }
 
-                PDefender->takeDamage(Action->addEffectParam, PAttacker, ATTACK_TYPE::MAGICAL, GetEnspellDamageType((ENSPELL)enspell));
+                PDefender->takeDamage(Action->addEffectParam, PAttacker, xi::AttackType::Magical, GetEnspellDamageType((ENSPELL)enspell));
             }
         }
     }
@@ -2005,11 +1999,11 @@ auto TakePhysicalDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, PHYS
     giveTPtoVictim            = giveTPtoVictim && physicalAttackType != PHYSICAL_ATTACK_TYPE::DAKEN;
     bool           isRanged   = (slot == SLOT_AMMO || slot == SLOT_RANGED);
     int32          baseDamage = damage;
-    ATTACK_TYPE    attackType = ATTACK_TYPE::PHYSICAL;
+    xi::AttackType attackType = xi::AttackType::Physical;
     xi::DamageType damageType = xi::DamageType::None;
     if (PAttacker->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::FormlessStrikes) && !isCounter)
     {
-        attackType        = ATTACK_TYPE::SPECIAL;
+        attackType        = xi::AttackType::Special;
         uint8 formlessMod = 55; // Start at 55
 
         // https://www.bg-wiki.com/ffxi/Formless_Strikes
@@ -2057,7 +2051,7 @@ auto TakePhysicalDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, PHYS
 
         if (isRanged)
         {
-            attackType = ATTACK_TYPE::RANGED;
+            attackType = xi::AttackType::Ranged;
             damage     = RangedDmgTaken(PDefender, damage, damageType, isCovered);
         }
         else
@@ -2292,11 +2286,11 @@ auto TakePhysicalDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, PHYS
  *                                                                       *
  ************************************************************************/
 
-auto TakeWeaponskillDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, int32 damage, ATTACK_TYPE attackType, xi::DamageType damageType, uint8 slot, bool primary, float tpMultiplier, uint16 bonusTP, float targetTPMultiplier) -> int32
+auto TakeWeaponskillDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, int32 damage, xi::AttackType attackType, xi::DamageType damageType, uint8 slot, bool primary, float tpMultiplier, uint16 bonusTP, float targetTPMultiplier) -> int32
 {
     bool isRanged = (slot == SLOT_AMMO || slot == SLOT_RANGED);
 
-    if (attackType == ATTACK_TYPE::PHYSICAL &&
+    if (attackType == xi::AttackType::Physical &&
         PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::DefenseBoost) &&
         PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::DefenseBoost)->GetSubPower() != 0 &&
         infront(PAttacker->loc.p, PDefender->loc.p, PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::DefenseBoost)->GetSubPower()))
@@ -2305,11 +2299,11 @@ auto TakeWeaponskillDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, i
     }
 
     // Handle damage nullification.
-    if (attackType == ATTACK_TYPE::RANGED && xirand::GetRandomNumber(100) < PDefender->getMod(Mod::NULL_RANGED_DAMAGE))
+    if (attackType == xi::AttackType::Ranged && xirand::GetRandomNumber(100) < PDefender->getMod(Mod::NULL_RANGED_DAMAGE))
     {
         damage = 0;
     }
-    else if (attackType == ATTACK_TYPE::PHYSICAL && xirand::GetRandomNumber(100) < PDefender->getMod(Mod::NULL_PHYSICAL_DAMAGE))
+    else if (attackType == xi::AttackType::Physical && xirand::GetRandomNumber(100) < PDefender->getMod(Mod::NULL_PHYSICAL_DAMAGE))
     {
         damage = 0;
     }
@@ -2428,7 +2422,7 @@ auto TakeWeaponskillDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, i
  *                                                                       *
  ************************************************************************/
 
-void TakeSpellDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, CSpell* PSpell, int32 damage, ATTACK_TYPE attackType, xi::DamageType damageType)
+void TakeSpellDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, CSpell* PSpell, int32 damage, xi::AttackType attackType, xi::DamageType damageType)
 {
     // Scarlet Delirium: Updates status effect power with damage bonus
     battleutils::HandleScarletDelirium(PDefender, damage);
@@ -2465,7 +2459,7 @@ void TakeSpellDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, CSpell*
  *                                                                       *
  ************************************************************************/
 
-auto TakeSwipeLungeDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, int32 damage, ATTACK_TYPE attackType, xi::DamageType damageType) -> int32
+auto TakeSwipeLungeDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, int32 damage, xi::AttackType attackType, xi::DamageType damageType) -> int32
 {
     damage = CheckAndApplyDamageCap(damage, PDefender);
 
@@ -3472,7 +3466,7 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
 
 std::vector<ELEMENT> GetSkillchainMagicElement(SKILLCHAIN_ELEMENT skillchain)
 {
-    static const std::unordered_map<SKILLCHAIN_ELEMENT, std::vector<ELEMENT>> resonanceToElement = {
+    static const HashMap<SKILLCHAIN_ELEMENT, std::vector<ELEMENT>> resonanceToElement = {
         { SC_NONE, {} },
         { SC_TRANSFIXION, { ELEMENT_LIGHT } },
         { SC_COMPRESSION, { ELEMENT_DARK } },
@@ -3499,7 +3493,7 @@ std::vector<ELEMENT> GetSkillchainMagicElement(SKILLCHAIN_ELEMENT skillchain)
 
 Mod GetResistanceRankModFromElement(ELEMENT& element)
 {
-    static const std::unordered_map<ELEMENT, Mod> elementToMod = {
+    static const HashMap<ELEMENT, Mod> elementToMod = {
         { ELEMENT_FIRE, Mod::FIRE_RES_RANK },
         { ELEMENT_WATER, Mod::WATER_RES_RANK },
         { ELEMENT_WIND, Mod::WIND_RES_RANK },
@@ -4246,7 +4240,7 @@ void ClaimMob(CBattleEntity* PDefender, CBattleEntity* PAttacker, bool passing)
             mob->PEnmityContainer->UpdateEnmity(original, 0, 0, true, true);
         }
 
-        if (mob->getMobMod(MOBMOD_CLAIM_TYPE) == static_cast<int16>(ClaimType::Unclaimable))
+        if (mob->getMobMod(MOBMOD_CLAIM_TYPE) == static_cast<int16>(xi::ClaimType::Unclaimable))
         {
             return;
         }

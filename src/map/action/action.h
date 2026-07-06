@@ -32,15 +32,13 @@
 #include "enums/action/proc_kind.h"
 #include "enums/action/react_kind.h"
 #include "enums/action/resolution.h"
-#include "enums/four_cc.h"
 #include "spell.h"
-#include "zone.h"
 
 #define MAX_ACTION_TARGETS 64
 
 struct attack_outcome_t
 {
-    ATTACK_TYPE    atkType{ ATTACK_TYPE::PHYSICAL };
+    xi::AttackType atkType{ xi::AttackType::Physical };
     int32          damage{ 0 };
     CBattleEntity* target{ nullptr };
     bool           isCritical{ false };

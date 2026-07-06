@@ -27,12 +27,7 @@
 
 #include "battlefield.h"
 #include "instance.h"
-#include "map/navmesh/navmesh.h"
 #include "zone.h"
-
-#include <map/ximesh/ximesh.h>
-
-#include <cstring>
 
 CBaseEntity::CBaseEntity()
 : id(0)
@@ -49,7 +44,7 @@ CBaseEntity::CBaseEntity()
 , priorityRender(false)
 , isRenamed(false)
 , m_bReleaseTargIDOnDisappear(false)
-, spawnAnimation(SPAWN_ANIMATION::NORMAL)
+, spawnAnimation(xi::SpawnAnimation::Normal)
 , PAI(nullptr)
 , PBattlefield(nullptr)
 , PInstance(nullptr)

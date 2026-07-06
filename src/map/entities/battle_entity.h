@@ -22,8 +22,10 @@
 #ifndef _BATTLEENTITY_H
 #define _BATTLEENTITY_H
 
+#include "common/types/hash_map.h"
+
 #include <set>
-#include <unordered_map>
+#include <type_traits>
 #include <vector>
 
 #include "alliance.h"
@@ -31,6 +33,7 @@
 #include "enums/msg_basic.h"
 #include "modifier.h"
 
+#include "data/enums/attack_type.h"
 #include "data/enums/damage_type.h"
 #include "data/enums/ecosystem.h"
 #include "party.h"
@@ -178,17 +181,6 @@ enum SLOTTYPE : uint8
 #define MAX_SLOTTYPE 18
 DECLARE_FORMAT_AS_UNDERLYING(SLOTTYPE);
 
-enum class ATTACK_TYPE : uint8
-{
-    NONE     = 0,
-    PHYSICAL = 1,
-    MAGICAL  = 2,
-    RANGED   = 3,
-    BREATH   = 4,
-    SPECIAL  = 5,
-};
-DECLARE_FORMAT_AS_UNDERLYING(ATTACK_TYPE);
-
 enum TARGETTYPE : uint16
 {
     TARGET_NONE                    = 0x0000,
@@ -263,7 +255,7 @@ DECLARE_FORMAT_AS_UNDERLYING(IMMUNITY);
 
 struct battlehistory_t
 {
-    ATTACK_TYPE lastHitTaken_atkType;
+    xi::AttackType lastHitTaken_atkType;
 };
 
 class CModifier;
@@ -356,7 +348,7 @@ public:
     virtual int32 addMP(int32 mp); // increase/decrease the amount of mp
 
     // Deals damage and updates the last attacker which is used when sending a player death message
-    virtual auto takeDamage(int32 amount, CBattleEntity* attacker = nullptr, ATTACK_TYPE attackType = ATTACK_TYPE::NONE, xi::DamageType damageType = xi::DamageType::None, bool isSkillchainDamage = false) -> int32;
+    virtual auto takeDamage(int32 amount, CBattleEntity* attacker = nullptr, xi::AttackType attackType = xi::AttackType::None, xi::DamageType damageType = xi::DamageType::None, bool isSkillchainDamage = false) -> int32;
 
     int16 getMod(Mod modID);
     int16 getMaxGearMod(Mod modID);
@@ -532,9 +524,15 @@ private:
     timer::time_point m_battleStartTime;
     uint16            m_battleID = 0; // Current battle the entity is participating in. Battle ID must match in order for entities to interact with each other.
 
-    std::unordered_map<Mod, int16, EnumClassHash>                                                m_modStat;     // array of modifiers
-    std::unordered_map<Mod, int16, EnumClassHash>                                                m_modStatSave; // saved state
-    std::unordered_map<PetModType, std::unordered_map<Mod, int16, EnumClassHash>, EnumClassHash> m_petMod;
+    HashMap<Mod, int16, EnumClassHash>                                     m_modStat;     // array of modifiers
+    HashMap<Mod, int16, EnumClassHash>                                     m_modStatSave; // saved state
+    HashMap<PetModType, HashMap<Mod, int16, EnumClassHash>, EnumClassHash> m_petMod;
+
+    // The mod maps MUST be node-based (HashMap): references into them are held while
+    // other entries are inserted, and a flat/dense map relocates its storage on growth.
+    static_assert(std::is_same_v<decltype(m_modStat), HashMap<Mod, int16, EnumClassHash>>);
+    static_assert(std::is_same_v<decltype(m_modStatSave), HashMap<Mod, int16, EnumClassHash>>);
+    static_assert(std::is_same_v<decltype(m_petMod), HashMap<PetModType, HashMap<Mod, int16, EnumClassHash>, EnumClassHash>>);
 };
 
 #endif

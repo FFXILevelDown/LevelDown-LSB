@@ -28,7 +28,6 @@
 #include "ai/states/inactive_state.h"
 #include "ai/states/magic_state.h"
 #include "ai/states/weaponskill_state.h"
-#include "battlefield.h"
 #include "common/utils.h"
 #include "enmity_container.h"
 #include "entities/mob_entity.h"
@@ -1518,7 +1517,7 @@ auto CMobController::CanAggroTarget(CBattleEntity* PTarget) const -> bool
         }
 
         // Do not aggro if a normal CoP Fomor and the player has low enough fomor hate
-        if (PMob->m_Family == 172 && !(PMob->m_Type & MOBTYPE_NOTORIOUS) &&
+        if (PMob->m_Family == 172 && !((PMob->m_Type & xi::MobType::Notorious) != xi::MobType::Normal) &&
             (PMob->getZone() >= ZONE_LUFAISE_MEADOWS && PMob->getZone() <= ZONE_SACRARIUM) &&
             PTarget->objtype == TYPE_PC)
         {
