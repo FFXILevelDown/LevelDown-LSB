@@ -136,8 +136,8 @@ public:
     // AI and Control
     void  initNpcAi();
     void  resetAI();
-    uint8 getStatus();
-    void  setStatus(uint8 status);
+    auto  getStatus() -> xi::Status;
+    void  setStatus(xi::Status status);
     uint8 getCurrentAction();
     bool  canUseAbilities();
 
@@ -177,13 +177,13 @@ public:
     void setWeather(Weather weatherType); // Set Weather condition (GM COMMAND)
 
     // PC Instructions
-    void changeMusic(MusicSlot slotId, uint16 trackId) const;                             // Sets the specified music Track for specified music block.
-    void sendMenu(uint32 menu);                                                           // Displays a menu (AH,Raise,Tractor,MH etc)
-    auto sendGuild(uint16 guildId, uint8 open, uint8 close, uint8 holiday) const -> bool; // Sends guild shop menu
-    auto openGuildShop(CLuaBaseEntity* PNpc, uint8 open, uint8 close) const -> bool;      // Opens a lua guild shop and remembers the NPC the PC opened it with
-    void clearGuildShop() const;                                                          // Clears the PC's open guild shop handle
-    void sendGuildClose(uint8 open, uint8 close) const;                                   // Sends the guild-open packet with a Close status
-    void openSendBox() const;                                                             // Opens send box (to deliver items)
+    void changeMusic(MusicSlot slotId, uint16 trackId) const;                                                      // Sets the specified music Track for specified music block.
+    void sendMenu(uint32 menu);                                                                                    // Displays a menu (AH,Raise,Tractor,MH etc)
+    auto sendGuild(uint16 guildId, uint8 open, uint8 close, uint8 holiday) const -> bool;                          // Sends guild shop menu
+    auto openGuildShop(CLuaBaseEntity* PNpc, uint8 open, uint8 close, sol::optional<uint8> holiday) const -> bool; // Opens a lua guild shop and remembers the NPC the PC opened it with
+    void clearGuildShop() const;                                                                                   // Clears the PC's open guild shop handle
+    void sendGuildClose(uint8 open, uint8 close) const;                                                            // Sends the guild-open packet with a Close status
+    void openSendBox() const;                                                                                      // Opens send box (to deliver items)
     void leaveGame();
     void sendEmote(const CLuaBaseEntity* target, uint8 emID, uint8 emMode, bool othersOnly) const;
 
@@ -212,7 +212,7 @@ public:
     void onPlayerTriggerAreaLeave(uint32 triggerAreaId);
     void clearPlayerTriggerAreas();
 
-    void updateToEntireZone(uint8 statusID, uint8 animation, const sol::object& matchTime); // Forces an update packet to update the NPC entity zone-wide
+    void updateToEntireZone(xi::Status statusID, uint8 animation, const sol::object& matchTime); // Forces an update packet to update the NPC entity zone-wide
     void sendEntityUpdateToPlayer(CLuaBaseEntity* entityToUpdate, uint8 entityUpdate, uint8 updateMask);
     void sendEmptyEntityUpdateToPlayer(CLuaBaseEntity* entityToUpdate);
 
@@ -335,8 +335,8 @@ public:
     // Player Status
     uint8 getNation();
     void  setNation(uint8 nation);
-    uint8 getAllegiance();
-    void  setAllegiance(uint8 allegiance);
+    auto  getAllegiance() -> xi::Allegiance;
+    void  setAllegiance(xi::Allegiance allegiance);
 
     uint8 getCampaignAllegiance();
     void  setCampaignAllegiance(uint8 allegiance);
@@ -492,6 +492,7 @@ public:
     int32 getCP(); // Conquest points, not to be confused with Capacity Points
     void  addCP(int32 cp);
     void  delCP(int32 cp);
+    void  gainConquestInfluence(int32 points);
 
     int32 getSeals(uint8 sealType);
     void  addSeals(int32 points, uint8 sealType);

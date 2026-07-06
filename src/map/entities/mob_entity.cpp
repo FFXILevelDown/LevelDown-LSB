@@ -151,7 +151,7 @@ CMobEntity::CMobEntity()
     TracyZoneScoped;
 
     objtype     = ENTITYTYPE::TYPE_MOB;
-    allegiance  = ALLEGIANCE_TYPE::MOB;
+    allegiance  = xi::Allegiance::Mob;
     m_EcoSystem = xi::Ecosystem::Unclassified;
 
     m_SpellListContainer = nullptr;
@@ -236,6 +236,16 @@ void CMobEntity::SetSpawnSlot(SpawnSlot* sharedSpawn)
 SpawnSlot* CMobEntity::GetSpawnSlot()
 {
     return this->spawnSlot;
+}
+
+auto CMobEntity::spawnWindow() const -> const Maybe<SpawnWindow>&
+{
+    return spawnWindow_;
+}
+
+void CMobEntity::setSpawnWindow(uint8 spawnHour, uint8 despawnHour)
+{
+    spawnWindow_ = SpawnWindow{ spawnHour, despawnHour };
 }
 
 bool CMobEntity::TrySpawn()
