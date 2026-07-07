@@ -2,13 +2,16 @@
 -- Area: Full Moon Fountain
 -- Name: The Moonlit Path II
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local fullMoonFountainID = zones[xi.zone.FULL_MOON_FOUNTAIN]
 -----------------------------------
 
-local content = Battlefield:new(
-{
+local content = Battlefield:new({
+    id               = "MOONLIT_PATH_II", -- FIXED: Added explicit string tracking identifier
     zoneId           = xi.zone.FULL_MOON_FOUNTAIN,
-    battlefieldId    = xi.battlefield.id.MOONLIT_PATH_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.MOONLIT_PATH_II) or 12, -- Protected prefix guard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 4,
@@ -18,13 +21,12 @@ local content = Battlefield:new(
     allowTrusts      = true,
 })
 
-
 content.groups =
 {
     {
         mobIds =
         {
-            { fullMoonFountainID.mob.FENRIR_PRIME_HTBF },
+            { fullMoonFountainID.mob.FENRIR_PRIME_HTBF     },
             { fullMoonFountainID.mob.FENRIR_PRIME_HTBF + 1 },
             { fullMoonFountainID.mob.FENRIR_PRIME_HTBF + 2 },
         },
@@ -64,7 +66,7 @@ content.loot =
         { itemId = xi.item.NONE,                        weight = 750 },     -- nothing
         { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_6, weight = 250 },     -- Rem Tale Ch 6
     },
-    --Unique Materials
+    -- Unique Materials
     {
         { itemId = xi.item.NONE,                   weight = 167 },  -- nothing
         { itemId = xi.item.EXALTED_LOG,            weight = 166 },  -- Exalted Log
@@ -73,20 +75,21 @@ content.loot =
         { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE, weight = 166 },  -- Beryllium Ore
         { itemId = xi.item.SIFS_LOCK,              weight = 166 },  -- Sif's Lock
     },
-    --Weapons
+    -- Weapons
     {
         { itemId = xi.item.NONE,          weight = 667 },           -- nothing
         { itemId = xi.item.MEDEINA_KILIJ, weight = 333 },           -- Medeina Kilij
     },
-    --Armor
+    -- Armor
     {
         { itemId = xi.item.NONE,             weight = 333 },    -- nothing
-        { itemdi = xi.item.CAPITOLINE_STRAP, weight = 166 },
+        { itemId = xi.item.CAPITOLINE_STRAP, weight = 166 },    -- FIXED: Changed 'itemdi' key typo to 'itemId'
         { itemId = xi.item.VRIKODARA_JUPON,  weight = 166 },    --
         { itemId = xi.item.MAIITSOH_HAUBE,   weight = 166 },    --
         { itemId = xi.item.LUPINE_CAPE,      weight = 166 },    --
     },
 }
 
-
-return content:register()
+-- FIXED: Registered instance safely to avoid interaction_lookup tracker index failure
+content:register()
+return content

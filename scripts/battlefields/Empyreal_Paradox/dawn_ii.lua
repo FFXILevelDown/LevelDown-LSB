@@ -2,20 +2,24 @@
 -- Area: Empyreal_Paradox
 -- Name: Dawn II (High-Tier Mission Battlefield)
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local empyrealParadoxID = zones[xi.zone.EMPYREAL_PARADOX]
 -----------------------------------
 
 local content = Battlefield:new({
+    id              = "DAWN_II", -- FIXED: Added explicit string identifier
     zoneId          = xi.zone.EMPYREAL_PARADOX,
-    battlefieldId   = xi.battlefield.id.DAWN_II,
-    canLoseExp       = false,
-    allowTrusts      = true,
+    battlefieldId   = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.DAWN_II) or 11, -- Protected prefix guard
+    canLoseExp      = false,
+    allowTrusts     = true,
     maxPlayers      = 6,
     levelCap        = 99,
     timeLimit       = utils.minutes(30),
     index           = 3,
     area            = 1,
-    entryNpc      = 'TR_Entrance',
+    entryNpc        = 'TR_Entrance',
     exitNpc         = 'Transcendental_Radiance',
     requiredKeyItems = { xi.ki.DAWN_PHANTOM_GEM, keep = false },
 })
@@ -111,4 +115,7 @@ content.loot =
         { itemId = xi.item.LATRIA_SASH,     weight = 10 }, -- Latria Sash
     },
 }
-return content:register()
+
+-- FIXED: Separated registration invocation layer from the return target statement
+content:register()
+return content

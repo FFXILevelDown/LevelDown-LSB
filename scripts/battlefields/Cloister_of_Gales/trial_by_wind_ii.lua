@@ -2,12 +2,16 @@
 -- Area: Cloister of Gales
 -- BCNM: Trial by Wind II HTBF
 -----------------------------------
+require("scripts/globals/battlefield")
+require("scripts/globals/npc_util")
+-----------------------------------
 local cloisterOfGalesID = zones[xi.zone.CLOISTER_OF_GALES]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "TRIAL_BY_WIND_II",
     zoneId           = xi.zone.CLOISTER_OF_GALES,
-    battlefieldId    = xi.battlefield.id.TRIAL_BY_WIND_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.TRIAL_BY_WIND_II) or 6, -- Prefix guard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 5,
@@ -22,6 +26,7 @@ content.groups =
     {
         mobIds =
         {
+            -- FIXED: Reverted to addition math because GARUDA_PRIME_HTBF is a raw number in this specific zone
             { cloisterOfGalesID.mob.GARUDA_PRIME_HTBF     },
             { cloisterOfGalesID.mob.GARUDA_PRIME_HTBF + 1 },
             { cloisterOfGalesID.mob.GARUDA_PRIME_HTBF + 2 },
@@ -38,7 +43,7 @@ content.groups =
             end
 
             if #players > 0 then
-                players[1]:timer(7000, function(p) -- timer to drop loot
+                players[1]:timer(7000, function(p) -- loot drop timer
                     local selectedLoot = utils.selectFromLootGroups(p, content.loot)
                     for _, item in ipairs(selectedLoot) do
                         if item.itemId ~= xi.item.NONE then
@@ -62,22 +67,22 @@ content.loot =
         { itemId = xi.item.NONE,                            weight = 750 }, -- nothing
         { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_6,     weight = 250}, 
     },
-    --Unique Materials
+    -- Unique Materials
     {
         { itemId = xi.item.NONE,                    weight = 167 }, -- nothing
-        { itemId = xi.item.EXALTED_LOG,             weight = 166 }, -- Exalted Log
-        { itemId = xi.item.HEPATIZON_ORE,           weight = 166 }, -- Hepatizon Ore
-        { itemId = xi.item.MALIYAKALEYA_ORB,        weight = 166 }, -- Maliyakaleya Coral
-        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,  weight = 166 }, -- Beryllium Ore
-        { itemId = xi.item.SIFS_LOCK,               weight = 166 }, -- Sif's Lock
+        { itemId = xi.item.EXALTED_LOG,             weight = 166 }, 
+        { itemId = xi.item.HEPATIZON_ORE,           weight = 166 }, 
+        { itemId = xi.item.MALIYAKALEYA_ORB,        weight = 166 }, 
+        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,  weight = 166 }, 
+        { itemId = xi.item.SIFS_LOCK,               weight = 166 }, 
     },
-    --Weapons
+    -- Weapons
     {
         { itemId = xi.item.NONE,                   	weight = 667 }, -- nothing
         { itemId = xi.item.LEVANTE_DAGGER,        	weight = 167 },
         { itemId = xi.item.TRAMONTANE_AXE,        	weight = 166 },  
     },
-    --Armor
+    -- Armor
     {
         { itemId = xi.item.NONE,                    weight = 333 }, -- nothing
         { itemId = xi.item.LEBECHE_RING,            weight = 167 },
@@ -86,4 +91,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- Separate registration layer from the return statement
+content:register()
+return content

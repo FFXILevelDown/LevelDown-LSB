@@ -2,12 +2,16 @@
 -- Area: Cloister of Flames
 -- BCNM: Trial by Fire II HTBF
 -----------------------------------
+require("scripts/globals/battlefield")
+require("scripts/globals/npc_util")
+-----------------------------------
 local cloisterOfFlamesID = zones[xi.zone.CLOISTER_OF_FLAMES]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "TRIAL_BY_FIRE_II",
     zoneId           = xi.zone.CLOISTER_OF_FLAMES,
-    battlefieldId    = xi.battlefield.id.TRIAL_BY_FIRE_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.TRIAL_BY_FIRE_II) or 4, 
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 4,
@@ -22,9 +26,10 @@ content.groups =
     {
         mobIds =
         {
-            { cloisterOfFlamesID.mob.IFRIT_PRIME_HTBF     },
-            { cloisterOfFlamesID.mob.IFRIT_PRIME_HTBF + 1 },
-            { cloisterOfFlamesID.mob.IFRIT_PRIME_HTBF + 2 },
+            -- FIXED: Indexed the table elements explicitly instead of performing arithmetic on the table object
+            { cloisterOfFlamesID.mob.IFRIT_PRIME_HTBF[1] },
+            { cloisterOfFlamesID.mob.IFRIT_PRIME_HTBF[2] },
+            { cloisterOfFlamesID.mob.IFRIT_PRIME_HTBF[3] },
         },
 
         allDeath = function(battlefield, mob)
@@ -73,9 +78,9 @@ content.loot =
     },
     --Weapons
     {
-        { itemId = xi.item.NONE,                   	weight = 667 }, -- nothing
-        { itemId = xi.item.PERFERVID_SWORD,        	weight = 167 },
-        { itemId = xi.item.ATAKIGIRI,        	    weight = 166 }, 
+        { itemId = xi.item.NONE,                    weight = 667 }, -- nothing
+        { itemId = xi.item.PERFERVID_SWORD,         weight = 167 },
+        { itemId = xi.item.ATAKIGIRI,               weight = 166 }, 
     },
     --Armor
     {
@@ -85,4 +90,5 @@ content.loot =
     },
 }
 
-return content:register()
+content:register()
+return content

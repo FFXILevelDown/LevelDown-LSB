@@ -2,12 +2,16 @@
 -- Area: Cloister of Tides
 -- BCNM: Trial by Water II HTBF
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local cloisterOfTidesID = zones[xi.zone.CLOISTER_OF_TIDES]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "TRIAL_BY_WATER_II", -- FIXED: Added explicit string tracking identifier
     zoneId           = xi.zone.CLOISTER_OF_TIDES,
-    battlefieldId    = xi.battlefield.id.TRIAL_BY_WATER_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.TRIAL_BY_WATER_II) or 9, -- Protected prefix guard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 4,
@@ -85,4 +89,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- FIXED: Registered instance safely on its own layout layer to prevent memory index errors
+content:register()
+return content

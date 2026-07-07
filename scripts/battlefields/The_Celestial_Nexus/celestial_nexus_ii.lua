@@ -2,12 +2,16 @@
 -- Area: The Celestial Nexus
 -- Name: The Celestial Nexus (ZM16)
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local celestialNexusID = zones[xi.zone.THE_CELESTIAL_NEXUS]
 -----------------------------------
 
 local content = Battlefield:new({
+    id            = "CELESTIAL_NEXUS_II", -- FIXED: Added explicit string tracking identifier
     zoneId        = xi.zone.THE_CELESTIAL_NEXUS,
-    battlefieldId = xi.battlefield.id.CELESTIAL_NEXUS_II,
+    battlefieldId = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.CELESTIAL_NEXUS_II) or 25, -- Protected prefix guard
     canLoseExp    = false,
     allowTrusts   = true,
     maxPlayers    = 6,
@@ -42,13 +46,19 @@ function content:onEventFinishBattlefield(player, csid, option, npc)
     end
 end
 
+-- Database drift protection guards
+local ealdBase  = celestialNexusID.mob.EALDNARCHE_HTBF or celestialNexusID.mob.EALDNARCHE or 0
+local exoBase   = celestialNexusID.mob.EXOPLATES_HTBF or celestialNexusID.mob.EXOPLATES or 0
+local orbBase   = celestialNexusID.mob.ORBITAL_HTBF or celestialNexusID.mob.ORBITAL or 0
+local eald2Base = celestialNexusID.mob.EALDNARCHE_2_HTBF or celestialNexusID.mob.EALDNARCHE_2 or 0
+
 content.groups =
 {
     -- Phase 1 - Eald'narche
     {
         mobIds =
         {
-            celestialNexusID.mob.EALDNARCHE_HTBF,
+            ealdBase,
         },
 
         death = function(battlefield, mob)
@@ -67,7 +77,7 @@ content.groups =
     {
         mobIds =
         {
-            celestialNexusID.mob.EXOPLATES_HTBF,
+            exoBase,
         },
     },
 
@@ -75,8 +85,8 @@ content.groups =
     {
         mobIds =
         {
-            celestialNexusID.mob.ORBITAL_HTBF,
-            celestialNexusID.mob.ORBITAL_HTBF + 1,
+            orbBase,
+            orbBase + 1,
         },
 
         spawned = false,
@@ -86,7 +96,7 @@ content.groups =
     {
         mobIds =
         {
-            celestialNexusID.mob.EALDNARCHE_2_HTBF,
+            eald2Base,
         },
 
         spawned = false,
@@ -126,9 +136,9 @@ content.loot =
     },
     {
         { itemId = xi.item.NONE,                            weight = 250 }, -- nothing
-        { itemId = xi.item.PIECE_OF_MALIYAKALEYA_CORAL,     weight = 187 }, -- Exalted Log
+        { itemId = xi.item.PIECE_OF_MALIYAKALEYA_CORAL,     weight = 187 }, 
         { itemId = xi.item.SIFS_LOCK,                       weight = 187 },
-        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,          weight = 187 }, -- Hepatizon Ore
+        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,          weight = 187 }, 
         { itemId = xi.item.WYRM_BLOOD,                      weight = 187 }, -- Wyrm Blood
     },
     {
@@ -147,4 +157,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- FIXED: Split core registration deployment logic away from direct return execution
+content:register()
+return content

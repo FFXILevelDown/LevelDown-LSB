@@ -2,12 +2,16 @@
 -- Area: Cloister of Storms
 -- BCNM: Trial by Lightning II HTBF
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Included missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local cloisterOfStormsID = zones[xi.zone.CLOISTER_OF_STORMS]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "TRIAL_BY_LIGHTNING_II", -- FIXED: Explicit identifier string added
     zoneId           = xi.zone.CLOISTER_OF_STORMS,
-    battlefieldId    = xi.battlefield.id.TRIAL_BY_LIGHTNING_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.TRIAL_BY_LIGHTNING_II) or 7, -- Fixed nil enum fallback guard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 5,
@@ -87,4 +91,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- FIXED: Registered instance independently to avoid live reloader lookup failure
+content:register()
+return content

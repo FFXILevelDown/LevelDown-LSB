@@ -2,12 +2,16 @@
 -- Area: LaLoff Amphitheater
 -- Name: Ark Angels HTBF (Galka)
 -----------------------------------
+require("scripts/globals/battlefield")
+require("scripts/globals/npc_util")
+-----------------------------------
 local laLoffID = zones[xi.zone.LALOFF_AMPHITHEATER]
 -----------------------------------
 
 local content = Battlefield:new({
+    id                    = "ARK_ANGELS_GK_II",
     zoneId                = xi.zone.LALOFF_AMPHITHEATER,
-    battlefieldId         = xi.battlefield.id.ARK_ANGELS_GK_II,
+    battlefieldId         = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.ARK_ANGELS_GK_II) or 17,
     allowTrusts           = true,
     maxPlayers            = 6,
     timeLimit             = utils.minutes(30),
@@ -17,14 +21,18 @@ local content = Battlefield:new({
     requiredKeyItems      = { xi.ki.PHANTOM_GEM_OF_RAGE, keep = false },
 })
 
+-- Database drift protection guards
+local baseId = laLoffID.mob.ARK_ANGEL_GK_HTBF or laLoffID.mob.ARK_ANGEL_GK or 0
+local petId  = laLoffID.mob.ARK_ANGEL_GK or laLoffID.mob.ARK_ANGEL_GK_HTBF or 0
+
 content.groups =
 {
     {
         mobIds =
         {
-            { laLoffID.mob.ARK_ANGEL_GK_HTBF     },
-            { laLoffID.mob.ARK_ANGEL_GK_HTBF + 1 },
-            { laLoffID.mob.ARK_ANGEL_GK_HTBF + 2 },
+            { baseId     },
+            { baseId + 1 },
+            { baseId + 2 },
         },
 
         allDeath = function(battlefield, mob)
@@ -37,13 +45,11 @@ content.groups =
                 npcUtil.giveItem(player, randomItem)
             end
 
-
             if #players > 0 then
-                players[1]:timer(7000, function(p) -- timer to drop loot
+                players[1]:timer(7000, function(p)
                     local selectedLoot = utils.selectFromLootGroups(p, content.loot)
                     for _, item in ipairs(selectedLoot) do
                         if item.itemId ~= xi.item.NONE then
-                            -- Add to treasure pool of the first player (shared with party)
                             p:addTreasure(item.itemId, mob)
                         end
                     end
@@ -52,13 +58,13 @@ content.groups =
         end,
     },
 
-    -- Wyvern
+    -- Wyvern Group
     {
         mobIds =
         {
-            { laLoffID.mob.ARK_ANGEL_GK + 3 },
-            { laLoffID.mob.ARK_ANGEL_GK + 4 },
-            { laLoffID.mob.ARK_ANGEL_GK + 5 },
+            { petId + 3 },
+            { petId + 4 },
+            { petId + 5 },
         },
 
         spawned = false,
@@ -76,23 +82,24 @@ content.loot =
     },
     --Unique Materials
     {
-        { itemId = xi.item.NONE,                           weight = 250 }, -- nothing
-        { itemId = xi.item.VESTIGE_OF_A_BURIED_TRAIT,      weight = 375 }, -- Exalted Log
-        { itemId = xi.item.SIFS_LOCK,                      weight = 375 }, -- Sif's Lock
+        { itemId = xi.item.NONE,                           weight = 250 },
+        { itemId = xi.item.VESTIGE_OF_A_BURIED_TRAIT,      weight = 375 },
+        { itemId = xi.item.SIFS_LOCK,                      weight = 375 },
     },
     --Weapons
     {
-        { itemId = xi.item.NONE,                weight = 500 }, -- nothing
+        { itemId = xi.item.NONE,                weight = 500 },
         { itemId = xi.item.ANAHERA_BLADE,       weight = 250 },
         { itemId = xi.item.TUNGLMYRKVI,        	weight = 250 },  
     },
     --Armor
     {
-        { itemId = xi.item.NONE,                   weight = 333 }, -- nothing
+        { itemId = xi.item.NONE,                   weight = 333 },
         { itemId = xi.item.AGITATORS_COLLAR,       weight = 250 },
         { itemId = xi.item.LURID_MITTS,            weight = 250 }, 
         { itemId = xi.item.DAIHANSHI_HABAKI,       weight = 167 }, 
     },
 }
 
-return content:register()
+content:register()
+return content

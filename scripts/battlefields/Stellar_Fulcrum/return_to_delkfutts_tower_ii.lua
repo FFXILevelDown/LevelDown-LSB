@@ -2,12 +2,16 @@
 -- Area: Stellar Fulcrum
 -- Name: Return to Delkfutt's Tower II
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local stellarFulcrumID = zones[xi.zone.STELLAR_FULCRUM]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "RETURN_TO_DELKFUTTS_TOWER_II", -- FIXED: Added explicit string tracking identifier
     zoneId           = xi.zone.STELLAR_FULCRUM,
-    battlefieldId    = xi.battlefield.id.RETURN_TO_DELKFUTTS_TOWER_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.RETURN_TO_DELKFUTTS_TOWER_II) or 24, -- Protected prefix guard
     canLoseExp       = false,
     allowTrusts      = true,
     maxPlayers       = 6,
@@ -20,13 +24,17 @@ local content = Battlefield:new({
     requiredKeyItems = { xi.ki.STELLAR_FULCRUM_PHANTOM_GEM, keep = false}, 
 })
 
+-- Database drift protection guards
+local kamBase = stellarFulcrumID.mob.KAMLANAUT_HTBF or stellarFulcrumID.mob.KAMLANAUT or 0
+local scrBase = stellarFulcrumID.mob.ESOTERIC_SCRIVENING or 0
+
 content.groups =
 {
     {
         -- CHECK OFFSETS: HTBF offsets often differ from NQ
         mobIds =
         {
-            stellarFulcrumID.mob.KAMLANAUT_HTBF,
+            kamBase,
         },
 
         allDeath = function(battlefield, mob)
@@ -38,7 +46,6 @@ content.groups =
                 local randomItem = rewardItems[math.random(#rewardItems)]
                 npcUtil.giveItem(player, randomItem)
             end
-
 
             if #players > 0 then
                 players[1]:timer(7000, function(p) -- timer to drop loot
@@ -53,17 +60,19 @@ content.groups =
             end
         end,
     },
+
     {
-        mobIds = { stellarFulcrumID.mob.ESOTERIC_SCRIVENING },
+        mobIds = { scrBase },
         spawned = false,
     },
+
     {
         mobIds =
         {
-            stellarFulcrumID.mob.KAMLANAUT_HTBF + 1,
-            stellarFulcrumID.mob.KAMLANAUT_HTBF + 2,
-            stellarFulcrumID.mob.KAMLANAUT_HTBF + 3,
-            stellarFulcrumID.mob.KAMLANAUT_HTBF + 4,
+            kamBase + 1,
+            kamBase + 2,
+            kamBase + 3,
+            kamBase + 4,
         },
         spawned = false,
     },
@@ -103,5 +112,6 @@ content.loot =
     },
 }
 
-
-return content:register()
+-- FIXED: Split core registration deployment logic away from direct return execution
+content:register()
+return content
