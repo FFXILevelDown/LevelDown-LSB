@@ -417,11 +417,11 @@ function CBaseEntity:resetAI()
 end
 
 ---@nodiscard
----@return integer
+---@return xi.status
 function CBaseEntity:getStatus()
 end
 
----@param status integer
+---@param status xi.status
 ---@return nil
 function CBaseEntity:setStatus(status)
 end
@@ -633,8 +633,9 @@ end
 ---@param npc CBaseEntity
 ---@param open integer
 ---@param close integer
+---@param holiday? integer Weekday the shop is closed (0-7); omit for none
 ---@return boolean
-function CBaseEntity:openGuildShop(npc, open, close)
+function CBaseEntity:openGuildShop(npc, open, close, holiday)
 end
 
 ---@return nil
@@ -782,7 +783,7 @@ end
 function CBaseEntity:clearPlayerTriggerAreas()
 end
 
----@param statusID integer
+---@param statusID xi.status
 ---@param animation integer
 ---@param matchTime boolean?
 ---@return nil
@@ -1345,7 +1346,7 @@ end
 function CBaseEntity:setAnimationSub(animationsub, sendUpdate)
 end
 
----@param spawnAnimation integer
+---@param spawnAnimation xi.spawnAnimation
 ---@return nil
 function CBaseEntity:setSpawnAnimation(spawnAnimation)
 end
@@ -1381,11 +1382,11 @@ function CBaseEntity:setNation(nation)
 end
 
 ---@nodiscard
----@return integer
+---@return xi.allegiance
 function CBaseEntity:getAllegiance()
 end
 
----@param allegiance integer
+---@param allegiance xi.allegiance
 ---@return nil
 function CBaseEntity:setAllegiance(allegiance)
 end
@@ -3698,7 +3699,7 @@ function CBaseEntity:getSpecies()
 end
 
 ---@nodiscard
----@param mobType integer
+---@param mobType xi.mobType
 ---@return boolean
 function CBaseEntity:isMobType(mobType)
 end
@@ -3934,6 +3935,20 @@ end
 ---@param value integer
 ---@return nil
 function CBaseEntity:delMobMod(mobModID, value)
+end
+
+---@nodiscard
+---@param skillId integer
+---@return number[]|nil
+function CBaseEntity:getfTPModifierOverride(skillId)
+end
+
+---@param skillId integer
+---@param ftp1 number
+---@param ftp2 number
+---@param ftp3 number
+---@return nil
+function CBaseEntity:setfTPModifierOverride(skillId, ftp1, ftp2, ftp3)
 end
 
 ---@nodiscard

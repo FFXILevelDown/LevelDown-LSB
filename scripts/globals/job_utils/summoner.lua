@@ -2,8 +2,6 @@
 -- Summoner Job Utilities
 -----------------------------------
 require('scripts/globals/ability')
-require('scripts/globals/jobpoints')
-require('scripts/globals/combat/tp')
 -----------------------------------
 xi = xi or {}
 xi.job_utils = xi.job_utils or {}
@@ -158,8 +156,8 @@ local function getMPCost(baseMPCost, player, petskill)
     if petskill:getAddType() ~= xi.addType.ADDTYPE_ASTRAL_FLOW then
         local bloodBoonRate = player:getMod(xi.mod.BLOOD_BOON)
         -- assuming it works like Conserve MP... https://www.bg-wiki.com/ffxi/Conserve_MP
-        if math.random(1, 100) <= bloodBoonRate then
-            mpCost = mpCost * math.random(8, 15) / 16
+        if math.randomInt(1, 100) <= bloodBoonRate then
+            mpCost = mpCost * math.randomInt(8, 15) / 16
         end
     end
 
@@ -293,7 +291,7 @@ xi.job_utils.summoner.useSoothingRuby = function(target, pet, petskill, summoner
 
     if effectsErased > 0 then
         for i = 1, effectsErased do
-            local index = math.random(1, #erasableEffectTable)
+            local index = math.randomInt(1, #erasableEffectTable)
 
             target:delStatusEffect(erasableEffectTable[index])
             table.remove(erasableEffectTable, index)

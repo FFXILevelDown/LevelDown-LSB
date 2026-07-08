@@ -22,8 +22,9 @@
 #include "login_helpers.h"
 
 #include "common/md52.h"
-
 #include <common/lua.h>
+
+#include <common/types/hash_map.h>
 
 #include <array>
 #include <cstring>
@@ -237,9 +238,9 @@ Maybe<std::string> validateCharacterName(const std::string& name)
 }
 
 // [ip_addr][session_hash] = session
-std::unordered_map<std::string, std::map<std::string, session_t>> authenticatedSessions_;
+HashMap<std::string, std::map<std::string, session_t>> authenticatedSessions_;
 
-std::unordered_map<std::string, std::map<std::string, session_t>>& getAuthenticatedSessions()
+HashMap<std::string, std::map<std::string, session_t>>& getAuthenticatedSessions()
 {
     return authenticatedSessions_;
 }
@@ -353,12 +354,11 @@ uint16 generateExpansionBitmask()
     return mask;
 }
 
-uint16 generateFeatureBitmask()
+uint16 generateFeatureBitmask(const bool& needsOTP)
 {
     uint16 mask = 0;
 
     std::map<std::string, uint16> features = {
-        { "login.SECURE_TOKEN", FEATURE_DISPLAY::SECURE_TOKEN }, // This needs to be broken out into auth calls once TOTP is supported
         { "login.MOG_WARDROBE_3", FEATURE_DISPLAY::MOG_WARDROBE_3 },
         { "login.MOG_WARDROBE_4", FEATURE_DISPLAY::MOG_WARDROBE_4 },
         { "login.MOG_WARDROBE_5", FEATURE_DISPLAY::MOG_WARDROBE_5 },
@@ -374,6 +374,11 @@ uint16 generateFeatureBitmask()
         {
             mask |= feature.second;
         }
+    }
+
+    if (needsOTP)
+    {
+        mask |= FEATURE_DISPLAY::SECURE_TOKEN;
     }
 
     return mask;

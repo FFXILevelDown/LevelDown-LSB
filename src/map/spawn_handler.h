@@ -26,11 +26,12 @@
 #include <common/types/maybe.h>
 #include <common/vana_time.h>
 
+#include <common/types/flat_hash_map.h>
+
 #include "map_constants.h"
 
 #include <map>
 #include <memory>
-#include <unordered_map>
 
 enum class Weather : uint16_t;
 
@@ -61,15 +62,15 @@ public:
     void unregister(CMobEntity* PMob);
     auto isRegistered(CMobEntity* PMob) const -> bool;
     auto getRemainingRespawnTime(CMobEntity* PMob) const -> Maybe<timer::duration>;
-    void onTOTDChange(vanadiel_time::TOTD totd) const;
+    void onGameHour(uint32 hour) const;
     void onWeatherChange(Weather weather) const;
     auto canSpawnNow(const CMobEntity* PMob) const -> bool;
 
 private:
     CZone* zone_;
 
-    timer::duration                                    spawnWindow_{ kSpawnHandlerWindow };
-    std::unordered_map<uint32, timer::time_point>      pendingRespawns_;     // Non-slotted mobs: mobId -> respawnAt timestamp
-    std::unordered_map<SpawnSlot*, PendingSlotRespawn> pendingSlotRespawns_; // Slotted mobs: slot pointer -> respawn info
-    std::map<uint32_t, std::unique_ptr<SpawnSlot>>     spawnSlots_;          // Owns this zone's spawn slots, keyed by slot id
+    timer::duration                                spawnWindow_{ kSpawnHandlerWindow };
+    FlatHashMap<uint32, timer::time_point>         pendingRespawns_;     // Non-slotted mobs: mobId -> respawnAt timestamp
+    FlatHashMap<SpawnSlot*, PendingSlotRespawn>    pendingSlotRespawns_; // Slotted mobs: slot pointer -> respawn info
+    std::map<uint32_t, std::unique_ptr<SpawnSlot>> spawnSlots_;          // Owns this zone's spawn slots, keyed by slot id
 };

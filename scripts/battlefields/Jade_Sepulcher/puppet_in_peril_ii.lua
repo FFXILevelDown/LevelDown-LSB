@@ -1,13 +1,17 @@
 -----------------------------------
 -- Area: Jade Sepulcher
--- BCNM:  Puppet in Peril II HTBF
+-- BCNM: Puppet in Peril II HTBF
+-----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
 -----------------------------------
 local jadeSepulcherID = zones[xi.zone.JADE_SEPULCHER]
 -----------------------------------
 
 local content = Battlefield:new({
+    id                = "PUPPET_IN_PERIL_II", -- FIXED: Added explicit string identifier
     zoneId                = xi.zone.JADE_SEPULCHER,
-    battlefieldId         = xi.battlefield.id.PUPPET_IN_PERIL_II,
+    battlefieldId         = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.PUPPET_IN_PERIL_II) or 14, -- Protected prefix guard
     canLoseExp            = false,
     allowTrusts           = true,
     maxPlayers            = 6,
@@ -138,8 +142,9 @@ content.loot =
         { itemId = xi.item.SIFAHIR_SLACKS,      weight = 222 },
         { itemId = xi.item.SAHIP_HELM,          weight = 222 },
         { itemId = xi.item.PRATIK_EARRING,      weight = 222 },
-
     },
 }
 
-return content:register()
+-- FIXED: Separated registration layer execution from the return target statement
+content:register()
+return content

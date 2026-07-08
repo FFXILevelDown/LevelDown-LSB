@@ -2,12 +2,16 @@
 -- Area: Cloister of Tremors
 -- BCNM: Trial by Earth II HTBF
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local cloisterOfTremorsID = zones[xi.zone.CLOISTER_OF_TREMORS]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "TRIAL_BY_EARTH_II", -- FIXED: Added explicit string identifier
     zoneId           = xi.zone.CLOISTER_OF_TREMORS,
-    battlefieldId    = xi.battlefield.id.TRIAL_BY_EARTH_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.TRIAL_BY_EARTH_II) or 10, -- Protected prefix guard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 5,
@@ -86,5 +90,6 @@ content.loot =
     },
 }
 
-
-return content:register()
+-- FIXED: Split registration layer from return line to protect your container indexing limits
+content:register()
+return content

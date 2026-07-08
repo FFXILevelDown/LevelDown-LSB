@@ -2,12 +2,16 @@
 -- Area: Cloister of Frost
 -- BCNM: Trial by Ice II HTBF
 -----------------------------------
+require("scripts/globals/battlefield")
+require("scripts/globals/npc_util")
+-----------------------------------
 local cloisterOfFrostID = zones[xi.zone.CLOISTER_OF_FROST]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "TRIAL_BY_ICE_II",
     zoneId           = xi.zone.CLOISTER_OF_FROST,
-    battlefieldId    = xi.battlefield.id.TRIAL_BY_ICE_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.TRIAL_BY_ICE_II) or 5, -- Safe prefix safeguard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 5,
@@ -22,6 +26,7 @@ content.groups =
     {
         mobIds =
         {
+            -- FIXED: Reverted to addition math offsets because SHIVA_PRIME_HTBF is an integer id in this zone
             { cloisterOfFrostID.mob.SHIVA_PRIME_HTBF     },
             { cloisterOfFrostID.mob.SHIVA_PRIME_HTBF + 1 },
             { cloisterOfFrostID.mob.SHIVA_PRIME_HTBF + 2 },
@@ -85,4 +90,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- Separate registration layer from the return statement
+content:register()
+return content

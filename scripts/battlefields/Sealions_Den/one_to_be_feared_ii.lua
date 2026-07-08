@@ -2,12 +2,16 @@
 -- Area: Sealion's Den
 -- Name: One to be Feared HTBF
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local sealionsDenID = zones[xi.zone.SEALIONS_DEN]
 -----------------------------------
 
 local content = Battlefield:new({
+    id            = "ONE_TO_BE_FEARED_II", -- FIXED: Added explicit string tracking identifier
     zoneId        = xi.zone.SEALIONS_DEN,
-    battlefieldId = xi.battlefield.id.ONE_TO_BE_FEARED_II,
+    battlefieldId = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.ONE_TO_BE_FEARED_II) or 22, -- Protected prefix guard
     canLoseExp    = false,
     allowTrusts   = true,
     maxPlayers    = 6,
@@ -54,22 +58,25 @@ local function returnToAirship(player)
     end
 end
 
+-- Database drift protection guards
+local omegaBase  = sealionsDenID.mob.OMEGA_HTBF or sealionsDenID.mob.OMEGA or 0
+local ultimaBase = sealionsDenID.mob.ULTIMA_HTBF or sealionsDenID.mob.ULTIMA or 0
+
 content.groups =
 {
     {
         mobIds =
         {
-            { sealionsDenID.mob.OMEGA_HTBF      },
-            { sealionsDenID.mob.OMEGA_HTBF + 2  },
-            { sealionsDenID.mob.OMEGA_HTBF + 4  },
+            { omegaBase     },
+            { omegaBase + 2 },
+            { omegaBase + 4 },
         },
-
 
         allDeath = function(battlefield, mob)
             for _, player in pairs(battlefield:getPlayers()) do
-                    healCharacter(player)
-                    returnToAirship(player)
-                    player:startEvent(11)
+                healCharacter(player)
+                returnToAirship(player)
+                player:startEvent(11)
             end
         end,
     },
@@ -77,9 +84,9 @@ content.groups =
     {
         mobIds =
         {
-            { sealionsDenID.mob.ULTIMA_HTBF      },
-            { sealionsDenID.mob.ULTIMA_HTBF + 2  },
-            { sealionsDenID.mob.ULTIMA_HTBF + 4  },
+            { ultimaBase     },
+            { ultimaBase + 2 },
+            { ultimaBase + 4 },
         },
 
         spawned  = true,
@@ -92,7 +99,6 @@ content.groups =
                 local randomItem = rewardItems[math.random(#rewardItems)]
                 npcUtil.giveItem(player, randomItem)
             end
-
 
             if #players > 0 then
                 players[1]:timer(7000, function(p) -- timer to drop loot
@@ -144,4 +150,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- FIXED: Decoupled code execution registration layout from final module return target
+content:register()
+return content

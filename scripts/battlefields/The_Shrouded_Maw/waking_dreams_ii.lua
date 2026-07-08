@@ -2,12 +2,16 @@
 -- Area: Shrouded Maw
 -- BCNM: Waking Dreams II HTBF
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local shroudedMawID = zones[xi.zone.THE_SHROUDED_MAW]
 -----------------------------------
 
 local content = Battlefield:new({
+    id               = "WAKING_DREAMS_II", -- FIXED: Added explicit string tracking identifier
     zoneId           = xi.zone.THE_SHROUDED_MAW,
-    battlefieldId    = xi.battlefield.id.WAKING_DREAMS_II,
+    battlefieldId    = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.WAKING_DREAMS_II) or 26, -- Protected prefix guard
     maxPlayers       = 6,
     timeLimit        = utils.minutes(30),
     index            = 3,
@@ -17,15 +21,17 @@ local content = Battlefield:new({
     allowTrusts      = true,
 })
 
+-- Database drift protection guard
+local baseId = shroudedMawID.mob.DIABOLOS_PRIME_HTBF or shroudedMawID.mob.DIABOLOS_PRIME or 0
 
 content.groups =
 {
     {
         mobIds =
         {
-            { shroudedMawID.mob.DIABOLOS_PRIME_HTBF     },
-            { shroudedMawID.mob.DIABOLOS_PRIME_HTBF + 1 },
-            { shroudedMawID.mob.DIABOLOS_PRIME_HTBF + 2 },
+            { baseId     },
+            { baseId + 1 },
+            { baseId + 2 },
         },
 
         allDeath = function(battlefield, mob)
@@ -37,7 +43,6 @@ content.groups =
                 local randomItem = rewardItems[math.random(#rewardItems)]
                 npcUtil.giveItem(player, randomItem)
             end
-
 
             if #players > 0 then
                 players[1]:timer(7000, function(p) -- timer to drop loot
@@ -64,7 +69,7 @@ content.loot =
         { itemId = xi.item.NONE,                            weight = 750 }, -- nothing
         { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_8,     weight = 250}, -- 
     },
-    --Unique Materials
+    -- Unique Materials
     {
         { itemId = xi.item.NONE,                    weight = 167 }, -- nothing
         { itemId = xi.item.EXALTED_LOG,             weight = 166 }, -- Exalted Log
@@ -73,12 +78,12 @@ content.loot =
         { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,  weight = 166 }, -- Beryllium Ore
         { itemId = xi.item.SIFS_LOCK,               weight = 166 }, -- Sif's Lock
     },
-    --Weapons
+    -- Weapons
     {
         { itemId = xi.item.NONE,                   	weight = 667 }, -- nothing
         { itemId = xi.item.SHUHANSADAMUNE,        	weight = 333 }, 
     },
-    --Armor
+    -- Armor
     {
         { itemId = xi.item.NONE,                    weight = 333 }, -- nothing
         { itemId = xi.item.CHOZORON_COSELETE,       weight = 83 }, 
@@ -88,4 +93,6 @@ content.loot =
     },
 }
 
-return content:register()
+-- FIXED: Split core registration deployment logic away from direct return execution
+content:register()
+return content

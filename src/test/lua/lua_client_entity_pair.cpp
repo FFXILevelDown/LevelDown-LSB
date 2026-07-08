@@ -20,7 +20,6 @@
 */
 
 #include "lua_client_entity_pair.h"
-#include "common/lua.h"
 #include "enums/tick_type.h"
 #include "map/entities/base_entity.h"
 #include "map/entities/char_entity.h"
@@ -29,16 +28,12 @@
 #include "map/lua/lua_base_entity.h"
 #include "map/lua/sol_bindings.h"
 #include "map/utils/charutils.h"
-#include "map/utils/zoneutils.h"
 #include "map/zone.h"
 #include "map_engine.h"
 #include "map_networking.h"
 #include "test/lua/lua_simulation.h"
-#include "test/lua/lua_spy.h"
 #include "test_char.h"
 #include "test_common.h"
-
-#include <unordered_map>
 
 // A test player that combines client and player entity functionality
 // Common test patterns are exposed as properties
@@ -90,6 +85,23 @@ void CLuaClientEntityPair::tick()
 
 void CLuaClientEntityPair::gotoZone(ZONEID zoneId, sol::optional<sol::table> pos)
 {
+    doGotoZone(zoneId, std::move(pos), false);
+}
+
+/************************************************************************
+ *  Function: gotoMogHouse()
+ *  Purpose : Zone the player into their own Mog House in the given zone.
+ *  Example : player:gotoMogHouse(xi.zone.WINDURST_WOODS)
+ *  Notes   : Errors if the player is in an event.
+ ************************************************************************/
+
+void CLuaClientEntityPair::gotoMogHouse(ZONEID zoneId)
+{
+    doGotoZone(zoneId, sol::nullopt, true);
+}
+
+void CLuaClientEntityPair::doGotoZone(ZONEID zoneId, sol::optional<sol::table> pos, bool mogHouse)
+{
     // Check if player is in an event
     if (testChar_->entity()->isInEvent())
     {
@@ -103,12 +115,15 @@ void CLuaClientEntityPair::gotoZone(ZONEID zoneId, sol::optional<sol::table> pos
 
     // SendToZone _only_ prepares the character for zoning.
     testChar_->entity()->loc.destination = zoneId;
-    testChar_->entity()->status          = STATUS_TYPE::DISAPPEAR;
+    testChar_->entity()->status          = xi::Status::Disappear;
     charutils::SendToZone(testChar_->entity(), zoneId);
     charutils::removeCharFromZone(testChar_->entity());
     packets().sendZonePackets(); // Send zone in packets, reload PChar
 
-    // If position provided, set it and tick
+    // Set on the reloaded entity so it sticks through the zone-in.
+    testChar_->entity()->m_moghouseID = mogHouse ? testChar_->entity()->id : 0;
+
+    // If position provided, set it
     if (pos.has_value())
     {
         auto*      entity   = GetBaseEntity();
@@ -124,9 +139,12 @@ void CLuaClientEntityPair::gotoZone(ZONEID zoneId, sol::optional<sol::table> pos
         entity->loc.p.y        = y;
         entity->loc.p.z        = z;
         entity->loc.p.rotation = rot;
+    }
 
-        // After setting position on zone-in, we MUST perform these ticks in sequence
-        // Events will not be set if we don't!
+    // After zone-in we MUST perform these ticks in sequence, or events won't be
+    // set and the Mog House state won't settle.
+    if (pos.has_value() || mogHouse)
+    {
         simulation_->tick(TickType::ZoneTick);
         simulation_->tick(TickType::TriggerAreas);
     }
@@ -343,6 +361,7 @@ void CLuaClientEntityPair::Register()
     SOL_USERTYPE_INHERIT("CClientEntityPair", CLuaClientEntityPair, CLuaTestEntity, CLuaBaseEntity);
     SOL_REGISTER("tick", CLuaClientEntityPair::tick);
     SOL_REGISTER("gotoZone", CLuaClientEntityPair::gotoZone);
+    SOL_REGISTER("gotoMogHouse", CLuaClientEntityPair::gotoMogHouse);
     SOL_REGISTER("isPendingZone", CLuaClientEntityPair::isPendingZone);
     SOL_REGISTER("getItemInvSlot", CLuaClientEntityPair::getItemInvSlot);
     SOL_REGISTER("claimAndKillMob", CLuaClientEntityPair::claimAndKillMob);

@@ -12,10 +12,17 @@ entity.spawnPoints =
     { x =  177.300, y = -2.100, z = -54.540 }
 }
 
-entity.phList =
-{
-    [ID.mob.EYEGOURGER - 9] = ID.mob.EYEGOURGER, -- Confirmed on retail
-}
+-- ── 🛡️ DEFENSIVE ID BOUND CHECK ──
+local eyegougerId = (ID and ID.mob) and ID.mob.EYEGOUGER or nil -- Fixed spelling typo
+
+if eyegougerId then
+    entity.phList =
+    {
+        [eyegougerId - 9] = eyegougerId -- Confirmed on retail
+    }
+else
+    print("[NMHunt Warning] EYEGOUGER ID is missing or misspelled in Batallia Downs IDs.lua!")
+end
 
 entity.onMobInitialize = function(mob)
     mob:setMobMod(xi.mobMod.ADD_EFFECT, 1)

@@ -20,7 +20,8 @@
 */
 
 #include "zone_entities.h"
-#include "common/utils.h"
+
+#include "common/logging_context.h"
 #include "enmity_container.h"
 #include "instance.h"
 #include "latent_effect_container.h"
@@ -31,6 +32,13 @@
 #include "status_effect_container.h"
 #include "trade_container.h"
 #include "treasure_pool.h"
+
+#include "common/utils.h"
+
+#include <common/types/hash_map.h>
+#include <common/types/heap.h>
+
+#include <tuple>
 
 #include "ai/ai_container.h"
 #include "ai/controllers/mob_controller.h"
@@ -324,7 +332,7 @@ void CZoneEntities::InsertPET(CBaseEntity* PPet)
 
     TryAddToNearbySpawnLists(PPet);
 
-    PPet->spawnAnimation = SPAWN_ANIMATION::NORMAL; // Turn off special spawn animation
+    PPet->spawnAnimation = xi::SpawnAnimation::Normal; // Turn off special spawn animation
 }
 
 void CZoneEntities::InsertTRUST(CBaseEntity* PTrust)
@@ -350,7 +358,7 @@ void CZoneEntities::InsertTRUST(CBaseEntity* PTrust)
 
     TryAddToNearbySpawnLists(PTrust);
 
-    PTrust->spawnAnimation = SPAWN_ANIMATION::NORMAL; // Turn off special spawn animation
+    PTrust->spawnAnimation = xi::SpawnAnimation::Normal; // Turn off special spawn animation
 }
 
 void CZoneEntities::FindPartyForMob(CBaseEntity* PEntity)
@@ -514,7 +522,7 @@ void CZoneEntities::DecreaseZoneCounter(CCharEntity* PChar)
         }
         else
         {
-            PChar->PPet->status = STATUS_TYPE::DISAPPEAR;
+            PChar->PPet->status = xi::Status::Disappear;
             if (static_cast<CPetEntity*>(PChar->PPet)->getPetType() == PET_TYPE::AVATAR)
             {
                 PChar->setModifier(Mod::AVATAR_PERPETUATION, 0);
@@ -701,7 +709,7 @@ bool CZoneEntities::CharListEmpty() const
     return m_charList.empty();
 }
 
-void CZoneEntities::ForEachChar(const std::function<void(CCharEntity*)>& func)
+void CZoneEntities::ForEachChar(FnRef<void(CCharEntity*)> func)
 {
     FOR_EACH_PAIR_CAST_SECOND(CCharEntity*, PChar, m_charList)
     {
@@ -709,7 +717,7 @@ void CZoneEntities::ForEachChar(const std::function<void(CCharEntity*)>& func)
     }
 }
 
-void CZoneEntities::ForEachMob(const std::function<void(CMobEntity*)>& func)
+void CZoneEntities::ForEachMob(FnRef<void(CMobEntity*)> func)
 {
     FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PMob, m_mobList)
     {
@@ -717,7 +725,7 @@ void CZoneEntities::ForEachMob(const std::function<void(CMobEntity*)>& func)
     }
 }
 
-void CZoneEntities::ForEachNpc(const std::function<void(CNpcEntity*)>& func)
+void CZoneEntities::ForEachNpc(FnRef<void(CNpcEntity*)> func)
 {
     FOR_EACH_PAIR_CAST_SECOND(CNpcEntity*, PNpc, m_npcList)
     {
@@ -725,7 +733,7 @@ void CZoneEntities::ForEachNpc(const std::function<void(CNpcEntity*)>& func)
     }
 }
 
-void CZoneEntities::ForEachTrust(const std::function<void(CTrustEntity*)>& func)
+void CZoneEntities::ForEachTrust(FnRef<void(CTrustEntity*)> func)
 {
     FOR_EACH_PAIR_CAST_SECOND(CTrustEntity*, PTrust, m_trustList)
     {
@@ -733,7 +741,7 @@ void CZoneEntities::ForEachTrust(const std::function<void(CTrustEntity*)>& func)
     }
 }
 
-void CZoneEntities::ForEachPet(const std::function<void(CPetEntity*)>& func)
+void CZoneEntities::ForEachPet(FnRef<void(CPetEntity*)> func)
 {
     FOR_EACH_PAIR_CAST_SECOND(CPetEntity*, PPet, m_petList)
     {
@@ -741,7 +749,7 @@ void CZoneEntities::ForEachPet(const std::function<void(CPetEntity*)>& func)
     }
 }
 
-void CZoneEntities::ForEachAlly(const std::function<void(CMobEntity*)>& func)
+void CZoneEntities::ForEachAlly(FnRef<void(CMobEntity*)> func)
 {
     FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PAlly, m_allyList)
     {
@@ -853,9 +861,9 @@ void CZoneEntities::syncSpawnListWithGrid(CCharEntity*                     PChar
                                           SpawnIDList_t&                   spawnList,
                                           uint8                            objtype,
                                           uint8                            spawnFlag,
-                                          const EntityFn&                  visible,
-                                          const EntityCallback&            onAdd,
-                                          const EntityCallback&            onUpdate,
+                                          EntityFn                         visible,
+                                          EntityCallback                   onAdd,
+                                          EntityCallback                   onUpdate,
                                           const std::vector<CBaseEntity*>* alwaysInclude)
 {
     // Remove pass: anything currently shown that is no longer visible.
@@ -927,7 +935,7 @@ void CZoneEntities::SpawnMOBs(CCharEntity* PChar)
         UPDATE_ALL_MOB,
         /*Fn: visible*/ [&](CBaseEntity* entity)
         {
-            return entity->status != STATUS_TYPE::DISAPPEAR &&
+            return entity->status != xi::Status::Disappear &&
                    isWithinVerticalDistance(PChar, entity) &&
                    isWithinDistance(PChar->loc.p, entity->loc.p, ENTITY_RENDER_DISTANCE);
         },
@@ -954,7 +962,7 @@ void CZoneEntities::SpawnPETs(CCharEntity* PChar)
         UPDATE_ALL_MOB,
         /*Fn: visible*/ [&](CBaseEntity* entity)
         {
-            return (entity->status == STATUS_TYPE::NORMAL || entity->status == STATUS_TYPE::UPDATE) &&
+            return (entity->status == xi::Status::Normal || entity->status == xi::Status::Update) &&
                    isWithinVerticalDistance(PChar, entity) &&
                    isWithinDistance(PChar->loc.p, entity->loc.p, ENTITY_RENDER_DISTANCE);
         });
@@ -987,7 +995,7 @@ void CZoneEntities::SpawnNPCs(CCharEntity* PChar)
                        isWithinDistance(PChar->loc.p, PEntity->loc.p, ENTITY_RENDER_DISTANCE);
             }
 
-            const bool visibleStatus = PEntity->status == STATUS_TYPE::NORMAL || PEntity->status == STATUS_TYPE::UPDATE;
+            const bool visibleStatus = PEntity->status == xi::Status::Normal || PEntity->status == xi::Status::Update;
             const bool inRange       = isWithinDistance(PChar->loc.p, PEntity->loc.p, ENTITY_RENDER_DISTANCE);
             const bool alwaysRel     = static_cast<CNpcEntity*>(PEntity)->alwaysRelevant();
             return visibleStatus && (inRange || alwaysRel);
@@ -1008,7 +1016,7 @@ void CZoneEntities::SpawnTRUSTs(CCharEntity* PChar)
         UPDATE_ALL_MOB,
         /*Fn: visible*/ [&](CBaseEntity* entity)
         {
-            return (entity->status == STATUS_TYPE::NORMAL || entity->status == STATUS_TYPE::UPDATE) &&
+            return (entity->status == xi::Status::Normal || entity->status == xi::Status::Update) &&
                    isWithinVerticalDistance(PChar, entity) &&
                    isWithinDistance(PChar->loc.p, entity->loc.p, ENTITY_RENDER_DISTANCE);
         });
@@ -1049,7 +1057,7 @@ void CZoneEntities::SpawnPCs(CCharEntity* PChar)
     }
 
     // Provide bonus score to characters targeted by spawned mobs or other conflict players, if in conflict
-    std::unordered_map<uint32, float> scoreBonus = std::unordered_map<uint32, float>();
+    HashMap<uint32, float> scoreBonus = HashMap<uint32, float>();
 
     FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PMob, PChar->SpawnMOBList)
     {
@@ -1106,7 +1114,7 @@ void CZoneEntities::SpawnPCs(CCharEntity* PChar)
             else if (!spawnedCharacters.empty() && spawnedCharacters.top().first < totalScore)
             {
                 spawnedCharacters.emplace(std::make_pair(totalScore, PCurrentChar));
-                spawnedCharacters.pop();
+                std::ignore = spawnedCharacters.pop();
             }
         }
     }
@@ -1150,7 +1158,7 @@ void CZoneEntities::SpawnPCs(CCharEntity* PChar)
                 candidateCharacters.emplace(totalScore, PCurrentChar);
                 if (candidateCharacters.size() > CHARACTER_SYNC_LIMIT_MAX)
                 {
-                    candidateCharacters.pop();
+                    std::ignore = candidateCharacters.pop();
                 }
             }
         }
@@ -1174,8 +1182,7 @@ void CZoneEntities::SpawnPCs(CCharEntity* PChar)
         std::vector<CharScorePair> candidates;
         while (!candidateCharacters.empty())
         {
-            candidates.emplace_back(candidateCharacters.top());
-            candidateCharacters.pop();
+            candidates.emplace_back(candidateCharacters.pop());
         }
         std::reverse(candidates.begin(), candidates.end());
 
@@ -1203,10 +1210,9 @@ void CZoneEntities::SpawnPCs(CCharEntity* PChar)
                 // to avoid causing a lot of spawn/despawns all the time as people move around.
                 if (candidateScore > spawnedCharacters.top().first)
                 {
-                    CCharEntity* spawnedChar = spawnedCharacters.top().second;
+                    CCharEntity* spawnedChar = spawnedCharacters.pop().second;
                     PChar->SpawnPCList.erase(spawnedChar->id);
                     PChar->updateEntityPacket(spawnedChar, ENTITY_DESPAWN, UPDATE_NONE);
-                    spawnedCharacters.pop();
                     ++swapCount;
                 }
                 else
@@ -1254,15 +1260,15 @@ void CZoneEntities::SpawnConditionalNPCs(CCharEntity* PChar)
     {
         if (visible)
         {
-            PEntity->status = STATUS_TYPE::NORMAL;
+            PEntity->status = xi::Status::Normal;
         }
         else
         {
-            PEntity->status = STATUS_TYPE::DISAPPEAR;
+            PEntity->status = xi::Status::Disappear;
         }
 
         PChar->updateEntityPacket(PEntity, ENTITY_SPAWN, UPDATE_ALL_MOB);
-        PEntity->status = STATUS_TYPE::DISAPPEAR;
+        PEntity->status = xi::Status::Disappear;
     };
 
     for (const auto& [_, PCurrentEntity] : m_npcList)
@@ -1383,13 +1389,6 @@ CBaseEntity* CZoneEntities::GetEntity(uint16 targid, uint8 filter)
     }
 
     return nullptr;
-}
-
-void CZoneEntities::TOTDChange(vanadiel_time::TOTD TOTD)
-{
-    TracyZoneScoped;
-
-    m_zone->spawnHandler().onTOTDChange(TOTD);
 }
 
 void CZoneEntities::SavePlayTime()
@@ -1690,7 +1689,7 @@ auto CZoneEntities::mobTick(CMobEntity* PMob, timer::time_point tick) -> Task<vo
     co_await PMob->PAI->Tick(tick);
 
     // This is only valid for dynamic entities
-    if (PMob->status == STATUS_TYPE::DISAPPEAR && PMob->m_bReleaseTargIDOnDisappear)
+    if (PMob->status == xi::Status::Disappear && PMob->m_bReleaseTargIDOnDisappear)
     {
         if (PMob->PPet != nullptr)
         {
@@ -1734,7 +1733,7 @@ auto CZoneEntities::mobTick(CMobEntity* PMob, timer::time_point tick) -> Task<vo
         co_return;
     }
 
-    if (PMob->allegiance == ALLEGIANCE_TYPE::PLAYER && PMob->m_isAggroable)
+    if (PMob->allegiance == xi::Allegiance::Player && PMob->m_isAggroable)
     {
         m_aggroableMobs.emplace_back(PMob);
     }
@@ -1789,7 +1788,7 @@ auto CZoneEntities::npcTick(CNpcEntity* PNpc, timer::time_point tick) -> Task<vo
     co_await PNpc->PAI->Tick(tick);
 
     // This is only valid for dynamic entities
-    if (PNpc->status == STATUS_TYPE::DISAPPEAR && PNpc->m_bReleaseTargIDOnDisappear)
+    if (PNpc->status == xi::Status::Disappear && PNpc->m_bReleaseTargIDOnDisappear)
     {
         FOR_EACH_PAIR_CAST_SECOND(CCharEntity*, PChar, m_charList)
         {
@@ -1819,7 +1818,7 @@ auto CZoneEntities::petTick(CPetEntity* PPet, timer::time_point tick) -> Task<vo
 
     // Pets specifically need to have their AI tick skipped if they're marked for deletion
     // to prevent a number of issues which can result from a pet having a deleted/nullptr'd PMaster
-    if (PPet->status == STATUS_TYPE::DISAPPEAR)
+    if (PPet->status == xi::Status::Disappear)
     {
         FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PCurrentMob, m_mobList)
         {
@@ -1868,7 +1867,7 @@ auto CZoneEntities::trustTick(CTrustEntity* PTrust, timer::time_point tick) -> T
 
     co_await PTrust->PAI->Tick(tick);
 
-    if (PTrust->status == STATUS_TYPE::DISAPPEAR)
+    if (PTrust->status == xi::Status::Disappear)
     {
         FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PCurrentMob, m_mobList)
         {
@@ -1897,7 +1896,7 @@ auto CZoneEntities::charTick(CCharEntity* PChar, timer::time_point tick) -> Task
 
     ShowTraceFmt("CZoneEntities::ZoneServer: Char: {} ({})", PChar->getName(), PChar->id);
 
-    if (PChar->status != STATUS_TYPE::SHUTDOWN)
+    if (PChar->status != xi::Status::Shutdown)
     {
         PChar->PRecastContainer->Check();
 
@@ -1916,7 +1915,7 @@ auto CZoneEntities::charTick(CCharEntity* PChar, timer::time_point tick) -> Task
         }
     }
 
-    if (PChar->requestedZoneChange || PChar->requestedWarp || PChar->status == STATUS_TYPE::SHUTDOWN)
+    if (PChar->requestedZoneChange || PChar->requestedWarp || PChar->status == xi::Status::Shutdown)
     {
         m_charsToChangeZone.insert(PChar);
     }
@@ -2084,12 +2083,12 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
         bool  shouldErase = false;
 
         auto ipp = zoneutils::GetZoneIPP(PChar->loc.destination);
-        if (ipp == 0 && PChar->status != STATUS_TYPE::SHUTDOWN)
+        if (ipp == 0 && PChar->status != xi::Status::Shutdown)
         {
             ShowWarning(fmt::format("Char {} requested zone ({}) returned IPP of 0", PChar->name, PChar->loc.destination));
             shouldErase = true;
         }
-        else if (PChar->status == STATUS_TYPE::SHUTDOWN)
+        else if (PChar->status == xi::Status::Shutdown)
         {
             PChar->clearPacketList();
             charutils::ForceLogout(PChar);

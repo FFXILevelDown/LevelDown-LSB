@@ -32,7 +32,7 @@ entity.onMobInitialize = function(mob)
 end
 
 entity.onMobSpawn = function(mob)
-    mob:setSpawnAnimation(1)
+    mob:setSpawnAnimation(xi.spawnAnimation.SPECIAL)
     mob:setMobSkillAttack(0)
     mob:setAnimationSub(0)
     mob:setMod(xi.mod.ACC, 361)
@@ -159,7 +159,7 @@ entity.onMobMobskillChoose = function(mob, target, skillId)
         table.insert(skillList, xi.mobSkill.HORRID_ROAR_3)
     end
 
-    return skillList[math.random(1, #skillList)]
+    return skillList[math.randomInt(1, #skillList)]
 end
 
 entity.onMobSpellChoose = function(mob, target, spellId)

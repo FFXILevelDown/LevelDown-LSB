@@ -24,16 +24,10 @@
 #include "common/logging.h"
 #include "common/timer.h"
 
-#include "entities/char_entity.h"
 #include "entities/npc_entity.h"
 #include "lua_base_entity.h"
-#include "map/navmesh/navmesh.h"
 #include "trigger_area.h"
-#include "utils/mobutils.h"
 #include "zone.h"
-#include "zone_entities.h"
-
-#include <map/ximesh/ximesh.h>
 
 CLuaZone::CLuaZone(CZone* PZone)
 : m_pLuaZone(PZone)
@@ -80,7 +74,7 @@ auto CLuaZone::getLocalVars() -> sol::table
 /************************************************************************
  *  Function: setLocalVar()
  *  Purpose : Assigns a local variable to a zone
- *  Example : zone:setLocalVar("pop", GetSystemTime() + math.random(1200,7200));
+ *  Example : zone:setLocalVar("pop", GetSystemTime() + math.randomInt(1200, 7200));
  *  Notes   :
  ************************************************************************/
 

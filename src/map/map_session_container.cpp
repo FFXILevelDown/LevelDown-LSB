@@ -21,13 +21,8 @@
 
 #include "map_session_container.h"
 
-#include "map_networking.h"
 #include "map_session.h"
 #include "status_effect_container.h"
-
-#include "common/database.h"
-#include "common/scheduler.h"
-#include "common/xi.h"
 
 #include "entities/char_entity.h"
 
@@ -221,7 +216,7 @@ void MapSessionContainer::cleanupSessions(IPP mapIPP)
                 PChar->updatemask |= UPDATE_HP;
 
                 // Is this unintentionally sending extra packets when a player is disconnecting?
-                if (PChar->status == STATUS_TYPE::NORMAL)
+                if (PChar->status == xi::Status::Normal)
                 {
                     PChar->loc.zone->SpawnPCs(PChar);
                 }
@@ -269,7 +264,7 @@ void MapSessionContainer::cleanupSessions(IPP mapIPP)
                         petutils::DespawnPet(PChar);
                     }
 
-                    PChar->status = STATUS_TYPE::SHUTDOWN;
+                    PChar->status = xi::Status::Shutdown;
 
                     charutils::removeCharFromZone(PChar);
 
@@ -298,7 +293,7 @@ void MapSessionContainer::cleanupSessions(IPP mapIPP)
             PChar->isLinkDead = false;
             PChar->updatemask |= UPDATE_HP;
 
-            if (PChar->status == STATUS_TYPE::NORMAL)
+            if (PChar->status == xi::Status::Normal)
             {
                 PChar->loc.zone->SpawnPCs(PChar);
             }

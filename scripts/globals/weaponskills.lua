@@ -10,10 +10,9 @@
 -- applications of damage mods ('Damage varies with TP.')
 -- performance of the actual WS (rand numbers, etc)
 -----------------------------------
-require('scripts/globals/magicburst')
 require('scripts/globals/ability')
 require('scripts/globals/magic')
-require('scripts/globals/combat/physical_utilities')
+require('scripts/globals/spells/damage_spell')
 -----------------------------------
 xi = xi or {}
 xi.weaponskills = xi.weaponskills or {}
@@ -23,7 +22,7 @@ local function shadowAbsorb(target)
     local shadowType    = xi.mod.UTSUSEMI
 
     if targetShadows == 0 then
-        if math.random(1, 100) <= 80 then
+        if math.randomInt(1, 100) <= 80 then
             targetShadows = target:getMod(xi.mod.BLINK)
             shadowType    = xi.mod.BLINK
         end
@@ -75,15 +74,15 @@ local function getMultiAttacks(attacker, target, wsParams, firstHit, offHand)
     -- The logic here wasnt actually checking for the augment.
     -- Also, it was in a completely different scale, making triple attack trigger always.
 
-    if math.random(1, 100) <= quadRate then
+    if math.randomInt(1, 100) <= quadRate then
         bonusHits = bonusHits + 3
-    elseif math.random(1, 100) <= tripleRate then
+    elseif math.randomInt(1, 100) <= tripleRate then
         bonusHits = bonusHits + 2
-    elseif math.random(1, 100) <= doubleRate then
+    elseif math.randomInt(1, 100) <= doubleRate then
         bonusHits = bonusHits + 1
-    elseif firstHit and math.random(1, 100) <= oaThriceRate then -- Can only proc on first hit
+    elseif firstHit and math.randomInt(1, 100) <= oaThriceRate then -- Can only proc on first hit
         bonusHits = bonusHits + 2
-    elseif firstHit and math.random(1, 100) <= oaTwiceRate then  -- Can only proc on first hit
+    elseif firstHit and math.randomInt(1, 100) <= oaTwiceRate then  -- Can only proc on first hit
         bonusHits = bonusHits + 1
     end
 
@@ -129,7 +128,7 @@ local function getSingleHitDamage(attacker, target, dmg, ftp, wsParams, calcPara
     -- evade > parry > shadow/blink > guard/block
 
     -- check evasion
-    local missChance = math.random()
+    local missChance = math.randomFloat(0, 1)
     if
         (missChance > calcParams.hitRate and
         not calcParams.guaranteedHit) or
@@ -160,7 +159,7 @@ local function getSingleHitDamage(attacker, target, dmg, ftp, wsParams, calcPara
         return hitDamage, calcParams
     end
 
-    local critChance = math.random() -- See if we land a critical hit
+    local critChance = math.randomFloat(0, 1) -- See if we land a critical hit
     criticalHit = (wsParams.critVaries and critChance <= calcParams.critRate) or
         calcParams.forcedFirstCrit or
         calcParams.mightyStrikesApplicable

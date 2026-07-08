@@ -20,6 +20,7 @@
 */
 
 #include "mobskill_state.h"
+
 #include "action/action.h"
 #include "action/interrupts.h"
 #include "ai/ai_container.h"
@@ -28,6 +29,7 @@
 #include "entities/battle_entity.h"
 #include "entities/mob_entity.h"
 #include "enums/action/category.h"
+#include "enums/four_cc.h"
 #include "lua/luautils.h"
 #include "mobskill.h"
 #include "packets/s2c/0x028_battle2.h"
@@ -216,7 +218,7 @@ bool CMobSkillState::Update(timer::time_point tick)
     if (IsCompleted() && tick > m_finishTime)
     {
         auto* PTarget = GetTarget();
-        if (m_skillSuccess && PTarget && PTarget->objtype == TYPE_MOB && PTarget != m_PEntity && m_PEntity->allegiance == ALLEGIANCE_TYPE::PLAYER)
+        if (m_skillSuccess && PTarget && PTarget->objtype == TYPE_MOB && PTarget != m_PEntity && m_PEntity->allegiance == xi::Allegiance::Player)
         {
             bool withMaster = m_PEntity->objtype == TYPE_PET || (m_PEntity->objtype == TYPE_MOB && m_PEntity->isCharmed);
             static_cast<CMobEntity*>(PTarget)->PEnmityContainer->UpdateEnmity(m_PEntity, 0, 0, withMaster);

@@ -33,7 +33,7 @@ entity.onMobInitialize = function(mob)
 end
 
 entity.onMobSpawn = function(mob)
-    mob:setSpawnAnimation(1)
+    mob:setSpawnAnimation(xi.spawnAnimation.SPECIAL)
     mob:setMobSkillAttack(0)
     mob:setAnimationSub(0)
     mob:setMod(xi.mod.ATT, 322)
@@ -142,7 +142,7 @@ entity.onMobMobskillChoose = function(mob, target, skillId)
         table.insert(skillList, xi.mobSkill.HORRID_ROAR_4)
     end
 
-    return skillList[math.random(1, #skillList)]
+    return skillList[math.randomInt(1, #skillList)]
 end
 
 -- If under 25% HP, uses Horrid Roar 3 times in a row.

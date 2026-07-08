@@ -26,8 +26,6 @@
 #include "ai/helpers/pathfind.h"
 #include "ai/helpers/targetfind.h"
 #include "ai/states/attack_state.h"
-#include "ai/states/mobskill_state.h"
-#include "ai/states/weaponskill_state.h"
 #include "battlefield.h"
 #include "common/timer.h"
 #include "common/utils.h"
@@ -37,13 +35,10 @@
 #include "enums/loot_recast.h"
 #include "enums/weather.h"
 #include "items.h"
-#include "lua/lua_loot.h"
 #include "lua/luautils.h"
 #include "mob_modifier.h"
 #include "mob_spell_container.h"
-#include "mob_spell_list.h"
 #include "mobskill.h"
-#include "packets/entity_update.h"
 #include "packets/pet_sync.h"
 #include "packets/s2c/0x029_battle_message.h"
 #include "recast_container.h"
@@ -58,9 +53,6 @@
 #include "utils/mobutils.h"
 #include "utils/petutils.h"
 #include "utils/zoneutils.h"
-#include "weapon_skill.h"
-
-#include <cstring>
 
 namespace
 {
@@ -121,7 +113,7 @@ CMobEntity::CMobEntity()
 , m_dmgMult(100)
 , m_disableScent(false)
 , m_maxRoamDistance(50.0f)
-, m_Type(MOBTYPE_NORMAL)
+, m_Type(xi::MobType::Normal)
 , m_Aggro(false)
 , m_TrueDetection(false)
 , m_Link(0)
@@ -151,7 +143,7 @@ CMobEntity::CMobEntity()
     TracyZoneScoped;
 
     objtype     = ENTITYTYPE::TYPE_MOB;
-    allegiance  = ALLEGIANCE_TYPE::MOB;
+    allegiance  = xi::Allegiance::Mob;
     m_EcoSystem = xi::Ecosystem::Unclassified;
 
     m_SpellListContainer = nullptr;
@@ -236,6 +228,16 @@ void CMobEntity::SetSpawnSlot(SpawnSlot* sharedSpawn)
 SpawnSlot* CMobEntity::GetSpawnSlot()
 {
     return this->spawnSlot;
+}
+
+auto CMobEntity::spawnWindow() const -> const Maybe<SpawnWindow>&
+{
+    return spawnWindow_;
+}
+
+void CMobEntity::setSpawnWindow(uint8 spawnHour, uint8 despawnHour)
+{
+    spawnWindow_ = SpawnWindow{ spawnHour, despawnHour };
 }
 
 bool CMobEntity::TrySpawn()
@@ -437,7 +439,7 @@ bool CMobEntity::ShouldForceLink()
         return true;
     }
 
-    if (m_Type & MOBTYPE_BATTLEFIELD)
+    if ((m_Type & xi::MobType::Battlefield) != xi::MobType::Normal)
     {
         return true;
     }
@@ -452,7 +454,7 @@ bool CMobEntity::ShouldForceLink()
 
 bool CMobEntity::CanDeaggro() const
 {
-    return !(m_Type & MOBTYPE_NOTORIOUS || m_Type & MOBTYPE_BATTLEFIELD);
+    return !((m_Type & xi::MobType::Notorious) != xi::MobType::Normal || (m_Type & xi::MobType::Battlefield) != xi::MobType::Normal);
 }
 
 bool CMobEntity::IsFarFromHome()
@@ -462,7 +464,7 @@ bool CMobEntity::IsFarFromHome()
 
 bool CMobEntity::CanBeNeutral() const
 {
-    return !(m_Type & MOBTYPE_NOTORIOUS);
+    return !((m_Type & xi::MobType::Notorious) != xi::MobType::Normal);
 }
 
 bool CMobEntity::shouldUseTPMove(uint16 tpThreshold)
@@ -524,6 +526,21 @@ void CMobEntity::saveMobModifiers()
 void CMobEntity::restoreMobModifiers()
 {
     m_mobModStat = m_mobModStatSave;
+}
+
+auto CMobEntity::getfTPModifierOverride(uint16 skillId) -> Maybe<std::array<float, 3>>
+{
+    if (const auto it = m_fTPModifierOverrides.find(skillId); it != m_fTPModifierOverrides.end())
+    {
+        return it->second;
+    }
+
+    return std::nullopt;
+}
+
+void CMobEntity::setfTPModifierOverride(uint16 skillId, float ftp1, float ftp2, float ftp3)
+{
+    m_fTPModifierOverrides[skillId] = { ftp1, ftp2, ftp3 };
 }
 
 void CMobEntity::HideHP(bool hide)
@@ -660,7 +677,7 @@ void CMobEntity::Spawn()
     TracyZoneScoped;
 
     // Reset stolen item always for battlefields or only if HP was 0 (mob died)
-    if (this->m_Type & MOBTYPE_BATTLEFIELD || health.hp == 0)
+    if ((this->m_Type & xi::MobType::Battlefield) != xi::MobType::Normal || health.hp == 0)
     {
         m_ItemStolen    = false;
         m_ItemDespoiled = false;
@@ -1030,7 +1047,7 @@ void CMobEntity::DropItems(CCharEntity* PChar)
     }
 
     ZONE_TYPE zoneType  = zoneutils::GetZone(PChar->getZone())->GetTypeMask();
-    bool      validZone = !(this->m_Type & MOBTYPE_BATTLEFIELD) && !(zoneType & ZONE_TYPE::DYNAMIS);
+    bool      validZone = !((this->m_Type & xi::MobType::Battlefield) != xi::MobType::Normal) && !(zoneType & ZONE_TYPE::DYNAMIS);
 
     // Check if mob can drop seals -- mobmod to disable drops, zone type isnt battlefield/dynamis, mob is stronger than Too Weak, or mobmod for EXP bonus is -100 or lower (-100% exp)
     if (!getMobMod(MOBMOD_NO_DROPS) && validZone && charutils::CheckMob(m_HiPCLvl, this) > EMobDifficulty::TooWeak && getMobMod(MOBMOD_EXP_BONUS) > -100)

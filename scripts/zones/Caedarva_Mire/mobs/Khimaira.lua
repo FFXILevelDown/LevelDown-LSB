@@ -73,8 +73,8 @@ entity.onMobInitialize = function(mob)
     mob:addImmunity(xi.immunity.TERROR)
     mob:addImmunity(xi.immunity.PLAGUE)
 
-    mob:setMobMod(xi.mobMod.GIL_MIN, 30000)
-    mob:setMobMod(xi.mobMod.GIL_MAX, 30000)
+    mob:setMobMod(xi.mobMod.GIL_MIN, 20000)
+    mob:setMobMod(xi.mobMod.GIL_MAX, 20000)
 end
 
 entity.onMobRoam = function(mob)
@@ -89,7 +89,7 @@ entity.onMobRoam = function(mob)
     end
 
     mob:useMobAbility(xi.mobSkill.ROAR_KHIMAIRA)
-    mob:setLocalVar('roarTimer', currentTime + math.random(150, 210))
+    mob:setLocalVar('roarTimer', currentTime + math.randomInt(150, 210))
 end
 
 entity.onMobSpawn = function(mob)
@@ -104,8 +104,16 @@ entity.onMobSpawn = function(mob)
     mob:setMod(xi.mod.UDMGBREATH, -5000)
     mob:setMod(xi.mod.UDMGMAGIC, -2500)
 
+    mob:setMod(xi.mod.SILENCE_RES_RANK, 7)
+    mob:setMod(xi.mod.POISON_RES_RANK, 7)
+    mob:setMod(xi.mod.SLOW_RES_RANK, 7)
+    mob:setMod(xi.mod.PARALYZE_RES_RANK, 7)
+    mob:setMod(xi.mod.BLIND_RES_RANK, 7)
+    mob:setMod(xi.mod.BIND_RES_RANK, 7)
+    mob:setMod(xi.mod.GRAVITY_MEVA, 100) -- Needs to be RES Rank
+
     mob:setMod(xi.mod.CURSE_MEVA, 1000)
-    mob:setLocalVar('roarTimer', GetSystemTime() + math.random(150, 210))
+    mob:setLocalVar('roarTimer', GetSystemTime() + math.randomInt(150, 210))
 end
 
 entity.onMobFight = function(mob, target)
@@ -165,7 +173,7 @@ entity.onMobMobskillChoose = function(mob, target, skillId)
         table.insert(skillList, xi.mobSkill.FULMINATION)
     end
 
-    return skillList[math.random(1, #skillList)]
+    return skillList[math.randomInt(1, #skillList)]
 end
 
 entity.onMobDisengage = function(mob)
@@ -179,7 +187,7 @@ entity.onMobDeath = function(mob, player, optParams)
 end
 
 entity.onMobDespawn = function(mob)
-    mob:setRespawnTime(math.random(48, 72) * 3600) -- 48 to 72 hours, in 1-hour increments
+    mob:setRespawnTime(math.randomInt(48, 72) * 3600) -- 48 to 72 hours, in 1-hour increments
     xi.mob.updateNMSpawnPoint(mob)
 end
 

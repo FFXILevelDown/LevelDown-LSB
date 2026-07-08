@@ -21,14 +21,12 @@
 
 #include "fishingutils.h"
 
-#include "common/database.h"
 #include "common/logging.h"
 #include "common/utils.h"
 #include "common/vana_time.h"
 
 #include "packets/char_status.h"
 #include "packets/char_sync.h"
-#include "packets/s2c/0x009_message.h"
 #include "packets/s2c/0x017_chat_std.h"
 #include "packets/s2c/0x01d_item_same.h"
 #include "packets/s2c/0x027_talknumwork2.h"
@@ -56,7 +54,6 @@
 #include "enums/weather.h"
 #include "item_container.h"
 #include "itemutils.h"
-#include "map_engine.h"
 #include "mob_modifier.h"
 #include "packets/c2s/0x110_fishing_2.h"
 #include "packets/s2c/0x029_battle_message.h"
@@ -1407,7 +1404,7 @@ bool CanFishMob(CMobEntity* PMob)
         return false;
     }
 
-    if (PMob->status != STATUS_TYPE::DISAPPEAR)
+    if (PMob->status != xi::Status::Disappear)
     {
         return false;
     }
@@ -1651,7 +1648,7 @@ int32 CatchChest(CCharEntity* PChar, uint32 NpcID, uint8 distance, int8 angle)
     m.rotation         = p.rotation; // getangle(m, p);
 
     Chest->loc.p  = m;
-    Chest->status = STATUS_TYPE::NORMAL;
+    Chest->status = xi::Status::Normal;
     Chest->SetLocalVar("owner", PChar->id);
     Chest->updatemask |= UPDATE_COMBAT;
     return 1;

@@ -21,16 +21,11 @@
 
 #include "lua_base_entity.h"
 
-#include "lua_battlefield.h"
 #include "lua_instance.h"
-#include "lua_item.h"
-#include "lua_item_puppet.h"
 
 #include "items/exdata/worn_item.h"
 #include "lua_spell.h"
 #include "lua_statuseffect.h"
-#include "lua_trade_container.h"
-#include "lua_zone.h"
 #include "luautils.h"
 
 #include "common/logging.h"
@@ -42,14 +37,13 @@
 #include "alliance.h"
 #include "aman.h"
 #include "battlefield.h"
-#include "daily_system.h"
+#include "conquest_system.h"
 #include "enmity_container.h"
 #include "fishingcontest.h"
 #include "guild.h"
 #include "instance.h"
 #include "ipc_client.h"
 #include "item_container.h"
-#include "items.h"
 #include "job_points.h"
 #include "latent_effect_container.h"
 #include "linkshell.h"
@@ -67,7 +61,6 @@
 #include "timetriggers.h"
 #include "trade_container.h"
 #include "transport.h"
-#include "treasure_pool.h"
 #include "weapon_skill.h"
 #include "zone.h"
 
@@ -93,7 +86,6 @@
 
 #include "entities/automaton_entity.h"
 #include "entities/char_entity.h"
-#include "entities/fellow_entity.h"
 #include "entities/mob_entity.h"
 #include "entities/npc_entity.h"
 #include "entities/pet_entity.h"
@@ -136,7 +128,6 @@
 #include "packets/s2c/0x052_eventucoff.h"
 #include "packets/s2c/0x053_systemmes.h"
 #include "packets/s2c/0x055_scenarioitem.h"
-#include "packets/s2c/0x056_mission.h"
 #include "packets/s2c/0x05a_motionmes.h"
 #include "packets/s2c/0x05b_wpos.h"
 #include "packets/s2c/0x05c_pendingnum.h"
@@ -150,10 +141,6 @@
 #include "packets/s2c/0x063_miscdata_monstrosity.h"
 #include "packets/s2c/0x075_battlefield.h"
 #include "packets/s2c/0x077_entity_vis.h"
-#include "packets/s2c/0x082_guild_buy.h"
-#include "packets/s2c/0x083_guild_buylist.h"
-#include "packets/s2c/0x084_guild_sell.h"
-#include "packets/s2c/0x085_guild_selllist.h"
 #include "packets/s2c/0x086_guild_open.h"
 #include "packets/s2c/0x0aa_magic_data.h"
 #include "packets/s2c/0x0ac_command_data.h"
@@ -810,7 +797,7 @@ uint32 CLuaBaseEntity::getLocalVar(const std::string& var)
 /************************************************************************
  *  Function: setLocalVar()
  *  Purpose : Assigns a local variable to an entity
- *  Example : mob:setLocalVar("pop", GetSystemTime() + math.random(1200,7200));
+ *  Example : mob:setLocalVar("pop", GetSystemTime() + math.randomInt(1200, 7200));
  *  Notes   :
  ************************************************************************/
 
@@ -1077,8 +1064,8 @@ void CLuaBaseEntity::sendLinkshellConcierge(const sol::table& data) const
         return;
     }
 
-    const auto           yourSlotRaw = data.get<sol::optional<uint8>>("yourSlot");
-    std::optional<uint8> yourSlot;
+    const auto   yourSlotRaw = data.get<sol::optional<uint8>>("yourSlot");
+    Maybe<uint8> yourSlot;
     if (yourSlotRaw)
     {
         yourSlot = *yourSlotRaw;
@@ -1737,7 +1724,7 @@ bool CLuaBaseEntity::isFellow() const
 bool CLuaBaseEntity::isAlly() const
 {
     const auto isMob          = m_PBaseEntity->objtype == TYPE_MOB;
-    const auto playerAlliance = m_PBaseEntity->allegiance == ALLEGIANCE_TYPE::PLAYER;
+    const auto playerAlliance = m_PBaseEntity->allegiance == xi::Allegiance::Player;
     return isMob && playerAlliance;
 }
 
@@ -1778,9 +1765,9 @@ void CLuaBaseEntity::resetAI()
  *  Notes   :
  ************************************************************************/
 
-uint8 CLuaBaseEntity::getStatus()
+auto CLuaBaseEntity::getStatus() -> xi::Status
 {
-    return static_cast<uint8>(m_PBaseEntity->status);
+    return m_PBaseEntity->status;
 }
 
 /************************************************************************
@@ -1790,9 +1777,9 @@ uint8 CLuaBaseEntity::getStatus()
  *  Notes   :
  ************************************************************************/
 
-void CLuaBaseEntity::setStatus(uint8 status)
+void CLuaBaseEntity::setStatus(xi::Status status)
 {
-    m_PBaseEntity->status = static_cast<STATUS_TYPE>(status);
+    m_PBaseEntity->status = status;
     m_PBaseEntity->updatemask |= UPDATE_HP;
 }
 
@@ -2527,13 +2514,13 @@ void CLuaBaseEntity::showNPC(const sol::object& seconds)
 
     uint32 showTime = (seconds != sol::lua_nil) ? seconds.as<uint32>() * 1000 : 15000;
 
-    m_PBaseEntity->status = STATUS_TYPE::NORMAL;
+    m_PBaseEntity->status = xi::Status::Normal;
     m_PBaseEntity->loc.zone->UpdateEntityPacket(m_PBaseEntity, ENTITY_UPDATE, UPDATE_COMBAT);
 
     // clang-format off
     m_PBaseEntity->PAI->QueueAction(queueAction_t(std::chrono::milliseconds(showTime), false, [](CBaseEntity* PNpc)
     {
-        PNpc->status = STATUS_TYPE::DISAPPEAR;
+        PNpc->status = xi::Status::Disappear;
         if (PNpc->loc.zone)
         {
             PNpc->loc.zone->UpdateEntityPacket(PNpc, ENTITY_DESPAWN, UPDATE_NONE);
@@ -2562,17 +2549,17 @@ void CLuaBaseEntity::hideNPC(const sol::object& seconds)
         return;
     }
 
-    if (m_PBaseEntity->status == STATUS_TYPE::NORMAL)
+    if (m_PBaseEntity->status == xi::Status::Normal)
     {
         uint32 hideTime = (seconds != sol::lua_nil) ? seconds.as<uint32>() * 1000 : 15000;
 
-        m_PBaseEntity->status = STATUS_TYPE::DISAPPEAR;
+        m_PBaseEntity->status = xi::Status::Disappear;
         m_PBaseEntity->loc.zone->UpdateEntityPacket(m_PBaseEntity, ENTITY_DESPAWN, UPDATE_NONE);
 
         // clang-format off
         m_PBaseEntity->PAI->QueueAction(queueAction_t(std::chrono::milliseconds(hideTime), false, [](CBaseEntity* PNpc)
         {
-            PNpc->status = STATUS_TYPE::NORMAL;
+            PNpc->status = xi::Status::Normal;
             if (PNpc->loc.zone)
             {
                 PNpc->loc.zone->UpdateEntityPacket(PNpc, ENTITY_UPDATE, UPDATE_COMBAT);
@@ -2597,14 +2584,14 @@ void CLuaBaseEntity::updateNPCHideTime(const sol::object& seconds)
         return;
     }
 
-    if (m_PBaseEntity->status == STATUS_TYPE::DISAPPEAR)
+    if (m_PBaseEntity->status == xi::Status::Disappear)
     {
         uint32 hideTime = (seconds != sol::lua_nil) ? seconds.as<uint32>() * 1000 : 15000;
 
         // clang-format off
         m_PBaseEntity->PAI->QueueAction(queueAction_t(std::chrono::milliseconds(hideTime), false, [](CBaseEntity* PNpc)
         {
-            PNpc->status = STATUS_TYPE::NORMAL;
+            PNpc->status = xi::Status::Normal;
             if (PNpc->loc.zone)
             {
                 PNpc->loc.zone->UpdateEntityPacket(PNpc, ENTITY_UPDATE, UPDATE_COMBAT);
@@ -2712,7 +2699,7 @@ void CLuaBaseEntity::sendMenu(uint32 menu)
  *  Example : if player:openGuildShop(npc, 8, 23) then
  ************************************************************************/
 
-auto CLuaBaseEntity::openGuildShop(CLuaBaseEntity* PNpc, uint8 open, uint8 close) const -> bool
+auto CLuaBaseEntity::openGuildShop(CLuaBaseEntity* PNpc, uint8 open, uint8 close, sol::optional<uint8> holiday) const -> bool
 {
     auto* PChar = dynamic_cast<CCharEntity*>(m_PBaseEntity);
     if (!PChar)
@@ -2727,15 +2714,26 @@ auto CLuaBaseEntity::openGuildShop(CLuaBaseEntity* PNpc, uint8 open, uint8 close
         return false;
     }
 
+    const bool isHoliday = holiday.has_value() && holiday.value() == vanadiel_time::get_weekday(vanadiel_time::now());
+
     const uint8 vanadielHour = static_cast<uint8>(vanadiel_time::get_hour(vanadiel_time::now()));
-    const bool  isOpen       = vanadielHour >= open && vanadielHour < close;
-    const auto  status       = isOpen ? GP_SERV_COMMAND_GUILD_OPEN_STAT::Open : GP_SERV_COMMAND_GUILD_OPEN_STAT::Close;
+    const bool  isOpen       = !isHoliday && vanadielHour >= open && vanadielHour < close;
+
+    auto status = GP_SERV_COMMAND_GUILD_OPEN_STAT::Close;
+    if (isHoliday)
+    {
+        status = GP_SERV_COMMAND_GUILD_OPEN_STAT::Holiday;
+    }
+    else if (isOpen)
+    {
+        status = GP_SERV_COMMAND_GUILD_OPEN_STAT::Open;
+    }
 
     const auto* PNpcEntity = PNpc->GetBaseEntity();
 
     PChar->guildShopNpc_.id     = PNpcEntity->id;
     PChar->guildShopNpc_.targid = PNpcEntity->targid;
-    PChar->pushPacket<GP_SERV_COMMAND_GUILD_OPEN>(status, open, close, 0);
+    PChar->pushPacket<GP_SERV_COMMAND_GUILD_OPEN>(status, open, close, holiday.value_or(0));
 
     return isOpen;
 }
@@ -2810,7 +2808,7 @@ void CLuaBaseEntity::leaveGame()
     {
         // Because we can't detect if this is happening in the middle of an effect wearing off or not,
         // this can be processed after player tick in CZoneEntities::ZoneServer
-        PChar->status = STATUS_TYPE::SHUTDOWN;
+        PChar->status = xi::Status::Shutdown;
     }
 }
 
@@ -3231,7 +3229,7 @@ void CLuaBaseEntity::clearPlayerTriggerAreas()
 *  Notes   : Currently only used for port bastok drawbridge as
              setAnimation() only updates for chars in range.
 ************************************************************************/
-void CLuaBaseEntity::updateToEntireZone(uint8 statusID, uint8 animation, const sol::object& matchTime)
+void CLuaBaseEntity::updateToEntireZone(xi::Status statusID, uint8 animation, const sol::object& matchTime)
 {
     if (m_PBaseEntity->objtype != TYPE_NPC)
     {
@@ -3242,7 +3240,7 @@ void CLuaBaseEntity::updateToEntireZone(uint8 statusID, uint8 animation, const s
     auto* PNpc          = static_cast<CNpcEntity*>(m_PBaseEntity);
     bool  updateForTime = (matchTime != sol::lua_nil) ? matchTime.as<bool>() : false;
 
-    PNpc->status    = static_cast<STATUS_TYPE>(statusID);
+    PNpc->status    = statusID;
     PNpc->animation = animation;
 
     // If this flag is high, update the NPC's name to match the current time
@@ -3480,7 +3478,7 @@ void CLuaBaseEntity::setPos(sol::variadic_args va)
     if (m_PBaseEntity->objtype == TYPE_PC)
     {
         auto* PChar = ((CCharEntity*)m_PBaseEntity);
-        if (va[4].is<uint8>() && PChar->status == STATUS_TYPE::DISAPPEAR)
+        if (va[4].is<uint8>() && PChar->status == xi::Status::Disappear)
         {
             // do not modify zone/position if the character is already zoning
             return;
@@ -3508,7 +3506,7 @@ void CLuaBaseEntity::setPos(sol::variadic_args va)
             }
 
             PChar->loc.destination     = zoneid;
-            PChar->status              = STATUS_TYPE::DISAPPEAR;
+            PChar->status              = xi::Status::Disappear;
             PChar->loc.boundary        = 0;
             PChar->m_moghouseID        = 0;
             PChar->requestedZoneChange = true;
@@ -3519,7 +3517,7 @@ void CLuaBaseEntity::setPos(sol::variadic_args va)
                 PChar->setPetZoningInfo();
             }
         }
-        else if (PChar->status != STATUS_TYPE::DISAPPEAR)
+        else if (PChar->status != xi::Status::Disappear)
         {
             PChar->pushPacket<GP_SERV_COMMAND_WPOS>(PChar, PChar->loc.p);
         }
@@ -6064,7 +6062,7 @@ void CLuaBaseEntity::setCostume(uint16 costume)
 
     auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
 
-    if (PChar->m_Costume != costume && PChar->status != STATUS_TYPE::SHUTDOWN && PChar->status != STATUS_TYPE::DISAPPEAR)
+    if (PChar->m_Costume != costume && PChar->status != xi::Status::Shutdown && PChar->status != xi::Status::Disappear)
     {
         PChar->m_Costume = costume;
         PChar->updatemask |= UPDATE_LOOK;
@@ -6107,7 +6105,7 @@ void CLuaBaseEntity::setCostume2(uint16 costume)
 
     auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
 
-    if (PChar->m_Costume2 != costume && PChar->status != STATUS_TYPE::SHUTDOWN && PChar->status != STATUS_TYPE::DISAPPEAR)
+    if (PChar->m_Costume2 != costume && PChar->status != xi::Status::Shutdown && PChar->status != xi::Status::Disappear)
     {
         PChar->m_Costume2 = costume;
         PChar->updatemask |= UPDATE_LOOK;
@@ -6184,9 +6182,9 @@ void CLuaBaseEntity::setAnimationSub(uint8 animationsub, const sol::object& send
     }
 }
 
-void CLuaBaseEntity::setSpawnAnimation(uint8 spawnAnimation)
+void CLuaBaseEntity::setSpawnAnimation(xi::SpawnAnimation spawnAnimation)
 {
-    m_PBaseEntity->spawnAnimation = static_cast<SPAWN_ANIMATION>(spawnAnimation);
+    m_PBaseEntity->spawnAnimation = spawnAnimation;
 }
 
 /************************************************************************
@@ -6302,9 +6300,9 @@ void CLuaBaseEntity::setNation(uint8 nation)
  *  Example : if target:getAllegiance() == caster:getAllegiance() then
  ************************************************************************/
 
-uint8 CLuaBaseEntity::getAllegiance()
+auto CLuaBaseEntity::getAllegiance() -> xi::Allegiance
 {
-    return static_cast<uint8>(m_PBaseEntity->allegiance);
+    return m_PBaseEntity->allegiance;
 }
 
 /************************************************************************
@@ -6313,9 +6311,9 @@ uint8 CLuaBaseEntity::getAllegiance()
  *  Example : target:setAllegiance(???)
  ************************************************************************/
 
-void CLuaBaseEntity::setAllegiance(uint8 allegiance)
+void CLuaBaseEntity::setAllegiance(xi::Allegiance allegiance)
 {
-    m_PBaseEntity->allegiance = static_cast<ALLEGIANCE_TYPE>(allegiance);
+    m_PBaseEntity->allegiance = allegiance;
     m_PBaseEntity->updatemask |= UPDATE_HP | UPDATE_NAME;
 }
 
@@ -7360,7 +7358,7 @@ uint8 CLuaBaseEntity::levelRestriction(const sol::object& level)
             // Update the character's Automaton capacity bonus regardless if the pet is out or not
             PChar->setAutomatonElementalCapacityBonus(PChar->getMod(Mod::AUTO_ELEM_CAPACITY));
 
-            if (PChar->status != STATUS_TYPE::DISAPPEAR)
+            if (PChar->status != xi::Status::Disappear)
             {
                 PChar->pushPacket<GP_SERV_COMMAND_JOB_INFO>(PChar);
                 PChar->pushPacket<GP_SERV_COMMAND_CLISTATUS>(PChar);
@@ -9250,7 +9248,7 @@ void CLuaBaseEntity::unseenKeyItem(const KeyItem keyItemID) const
 /************************************************************************
  *  Function: addExp()
  *  Purpose : Adds a set amount of XP to the player
- *  Example : player:addExp(math.random(500,1000))
+ *  Example : player:addExp(math.randomInt(500, 1000))
  *  Notes   : Used in Dynamis Pages, etc
  ************************************************************************/
 
@@ -9813,6 +9811,32 @@ void CLuaBaseEntity::delCP(int32 cp)
 }
 
 /************************************************************************
+ *  Function: gainConquestInfluence()
+ *  Purpose : Adds conquest influence to the player's nation and current region
+ *  Example : player:gainConquestInfluence(50)
+ *  Notes   : Applies the player's Moghancement region bonus.
+ ************************************************************************/
+
+void CLuaBaseEntity::gainConquestInfluence(int32 points)
+{
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return;
+    }
+
+    if (points <= 0)
+    {
+        ShowWarning("gainConquestInfluence: non-positive amount (%d) ignored.", points);
+        return;
+    }
+
+    auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
+
+    conquest::GainInfluencePoints(PChar, static_cast<uint32>(points));
+}
+
+/************************************************************************
  *  Function: getSeals()
  *  Purpose : Returns the current seal balance for a player
  *  Example : player:getSeals(type)
@@ -10365,7 +10389,7 @@ void CLuaBaseEntity::takeDamage(int32 damage, const sol::object& attacker, const
         removePetrify = true;
     }
 
-    ATTACK_TYPE    attackType = (atkType != sol::lua_nil) ? static_cast<ATTACK_TYPE>(atkType.as<uint8>()) : ATTACK_TYPE::NONE;
+    xi::AttackType attackType = (atkType != sol::lua_nil) ? static_cast<xi::AttackType>(atkType.as<uint8>()) : xi::AttackType::None;
     xi::DamageType damageType = (dmgType != sol::lua_nil) ? static_cast<xi::DamageType>(dmgType.as<uint8>()) : xi::DamageType::None;
 
     PDefender->takeDamage(damage, PAttacker, attackType, damageType);
@@ -12831,6 +12855,31 @@ void CLuaBaseEntity::disengage()
     }
 }
 
+namespace
+{
+
+// Adapts a Lua function into an action-queue callable, adding the
+// invoke-and-log-errors boilerplate.
+auto wrapLuaAction(sol::function func) -> queueAction_t::EntityFunc_t
+{
+    return [func = std::move(func)](CBaseEntity* PEntity)
+    {
+        if (!func.valid())
+        {
+            return;
+        }
+
+        auto result = func(PEntity);
+        if (!result.valid())
+        {
+            sol::error err = result;
+            ShowError("CAIActionQueue Lua action for %s (%i): %s", PEntity->name, PEntity->id, err.what());
+        }
+    };
+}
+
+} // namespace
+
 /************************************************************************
  *  Function: timer()
  *  Purpose : Inserts a pre-defined Lua fuction into the queue and executes
@@ -12841,7 +12890,7 @@ void CLuaBaseEntity::disengage()
 
 void CLuaBaseEntity::timer(int ms, sol::function func)
 {
-    m_PBaseEntity->PAI->QueueAction(queueAction_t(ms, false, std::move(func)));
+    m_PBaseEntity->PAI->QueueAction(queueAction_t(std::chrono::milliseconds(ms), false, wrapLuaAction(std::move(func))));
 }
 
 /************************************************************************
@@ -12856,7 +12905,7 @@ void CLuaBaseEntity::timer(int ms, sol::function func)
 
 void CLuaBaseEntity::queue(int ms, sol::function func)
 {
-    m_PBaseEntity->PAI->QueueAction(queueAction_t(ms, true, std::move(func)));
+    m_PBaseEntity->PAI->QueueAction(queueAction_t(std::chrono::milliseconds(ms), true, wrapLuaAction(std::move(func))));
 }
 
 /************************************************************************
@@ -15737,7 +15786,7 @@ auto CLuaBaseEntity::takeWeaponskillDamage(CLuaBaseEntity* attacker, int32 damag
         return 0;
     }
 
-    ATTACK_TYPE attackType = static_cast<ATTACK_TYPE>(atkType);
+    xi::AttackType attackType = static_cast<xi::AttackType>(atkType);
 
     return battleutils::TakeWeaponskillDamage(PBattleAttacker, PBattleDefender, damage, attackType, dmgType, slot, primary, tpMultiplier, bonusTP, targetTPMultiplier);
 }
@@ -15766,7 +15815,7 @@ void CLuaBaseEntity::takeSpellDamage(CLuaBaseEntity* caster, CLuaSpell* spell, i
     }
 
     auto*          PSpell     = spell->GetSpell();
-    ATTACK_TYPE    attackType = static_cast<ATTACK_TYPE>(atkType);
+    xi::AttackType attackType = static_cast<xi::AttackType>(atkType);
     xi::DamageType damageType = static_cast<xi::DamageType>(dmgType);
 
     battleutils::TakeSpellDamage(PBattleDefender, PBattleAttacker, PSpell, damage, attackType, damageType);
@@ -15795,7 +15844,7 @@ auto CLuaBaseEntity::takeSwipeLungeDamage(CLuaBaseEntity* caster, int32 damage, 
         return 0;
     }
 
-    ATTACK_TYPE attackType = static_cast<ATTACK_TYPE>(atkType);
+    xi::AttackType attackType = static_cast<xi::AttackType>(atkType);
 
     return battleutils::TakeSwipeLungeDamage(PBattleDefender, PBattleAttacker, damage, attackType, dmgType);
 }
@@ -16233,7 +16282,7 @@ bool CLuaBaseEntity::hasPet()
 
     auto* PTarget = static_cast<CBattleEntity*>(m_PBaseEntity);
 
-    return PTarget->PPet != nullptr && PTarget->PPet->status != STATUS_TYPE::DISAPPEAR;
+    return PTarget->PPet != nullptr && PTarget->PPet->status != xi::Status::Disappear;
 }
 
 /************************************************************************
@@ -16253,7 +16302,7 @@ bool CLuaBaseEntity::hasJugPet()
 
     auto* PBattle = static_cast<CBattleEntity*>(m_PBaseEntity);
 
-    if (auto* PPet = dynamic_cast<CPetEntity*>(PBattle->PPet); PPet && PPet->status != STATUS_TYPE::DISAPPEAR)
+    if (auto* PPet = dynamic_cast<CPetEntity*>(PBattle->PPet); PPet && PPet->status != xi::Status::Disappear)
     {
         return PPet->getPetType() == PET_TYPE::JUG_PET;
     }
@@ -17462,12 +17511,12 @@ uint16 CLuaBaseEntity::getSpecies()
 /************************************************************************
  *  Function: isMobType()
  *  Purpose : Returns true if a Mob is of a specified type (if !Mob->false)
- *  Example : if mob:isMobType(MOBTYPE_NOTORIOUS) then
+ *  Example : if mob:isMobType(xi.mobType.NOTORIOUS) then
  *  Notes   : Oddly, this is only being used to check if Mob is NM...?
  *  Notes   : To Do: This isn't the intended function for NM checks...
  ************************************************************************/
 
-auto CLuaBaseEntity::isMobType(const uint8 mobType) const -> bool
+auto CLuaBaseEntity::isMobType(const xi::MobType mobType) const -> bool
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
@@ -17476,13 +17525,13 @@ auto CLuaBaseEntity::isMobType(const uint8 mobType) const -> bool
 
     const auto* PMob = static_cast<CMobEntity*>(m_PBaseEntity);
 
-    // Special case for isMobType(MOBTYPE_NORMAL), else 0 & 0 returns false.
-    if (mobType == MOBTYPE_NORMAL)
+    // Special case for isMobType(xi.mobType.NORMAL), else 0 & 0 returns false.
+    if (mobType == xi::MobType::Normal)
     {
-        return PMob->m_Type == MOBTYPE_NORMAL;
+        return PMob->m_Type == xi::MobType::Normal;
     }
 
-    return PMob->m_Type & mobType;
+    return (PMob->m_Type & mobType) != xi::MobType::Normal;
 }
 
 /************************************************************************
@@ -17510,7 +17559,7 @@ auto CLuaBaseEntity::isUndead() -> bool
 
 bool CLuaBaseEntity::isNM()
 {
-    if (m_PBaseEntity->objtype == TYPE_MOB && static_cast<CMobEntity*>(m_PBaseEntity)->m_Type & MOBTYPE_NOTORIOUS)
+    if (m_PBaseEntity->objtype == TYPE_MOB && (static_cast<CMobEntity*>(m_PBaseEntity)->m_Type & xi::MobType::Notorious) != xi::MobType::Normal)
     {
         return true;
     }
@@ -17791,7 +17840,7 @@ bool CLuaBaseEntity::isSpawned()
     }
     else if (CNpcEntity* PNpcEntity = dynamic_cast<CNpcEntity*>(m_PBaseEntity))
     {
-        return PNpcEntity->status != STATUS_TYPE::DISAPPEAR;
+        return PNpcEntity->status != xi::Status::Disappear;
     }
     else
     {
@@ -17878,7 +17927,7 @@ auto CLuaBaseEntity::getRespawnTime() const -> uint32
 /************************************************************************
  *  Function: setRespawnTime()
  *  Purpose : Setting the respawn time for a Mob
- *  Example : mob:setRespawnTime(math.random(3600, 7200))
+ *  Example : mob:setRespawnTime(math.randomInt(3600, 7200))
  *  Notes   : 0 disables respawn.
  ************************************************************************/
 
@@ -18423,6 +18472,52 @@ void CLuaBaseEntity::delMobMod(uint16 mobModID, int16 value)
     }
 
     static_cast<CMobEntity*>(m_PBaseEntity)->addMobMod(mobModID, -value);
+}
+
+/************************************************************************
+ *  Function: getfTPModifierOverride()
+ *  Purpose : Returns the fTP modifier override table set for a mob skill, or nil if none is set
+ *  Example : mob:getfTPModifierOverride(xi.mobSkill.FLYING_HIP_PRESS)
+ *  Notes   :
+ ************************************************************************/
+
+auto CLuaBaseEntity::getfTPModifierOverride(uint16 skillId) -> sol::object
+{
+    if (m_PBaseEntity->objtype & TYPE_NPC || m_PBaseEntity->objtype & TYPE_PC)
+    {
+        ShowError("function call on invalid entity! (name: %s type: %d)", m_PBaseEntity->name, m_PBaseEntity->objtype);
+        return sol::lua_nil;
+    }
+
+    if (const auto fTPModifierOverride = static_cast<CMobEntity*>(m_PBaseEntity)->getfTPModifierOverride(skillId))
+    {
+        auto table = lua.create_table();
+        table.add((*fTPModifierOverride)[0]);
+        table.add((*fTPModifierOverride)[1]);
+        table.add((*fTPModifierOverride)[2]);
+
+        return table;
+    }
+
+    return sol::lua_nil;
+}
+
+/************************************************************************
+ *  Function: setfTPModifierOverride()
+ *  Purpose : Sets an fTP modifier override table for a mob skill, replacing the skill's default fTP scaling
+ *  Example : mob:setfTPModifierOverride(xi.mobSkill.FLYING_HIP_PRESS, 7.0, 9.0, 11.0)
+ *  Notes   : Needs to be added to the mob skill to be consumed. params.fTP = mob:getfTPModifierOverride(skill:getID()) or params.fTP
+ ************************************************************************/
+
+void CLuaBaseEntity::setfTPModifierOverride(uint16 skillId, float ftp1, float ftp2, float ftp3)
+{
+    if (m_PBaseEntity->objtype & TYPE_NPC || m_PBaseEntity->objtype & TYPE_PC)
+    {
+        ShowError("function call on invalid entity! (name: %s type: %d)", m_PBaseEntity->name, m_PBaseEntity->objtype);
+        return;
+    }
+
+    static_cast<CMobEntity*>(m_PBaseEntity)->setfTPModifierOverride(skillId, ftp1, ftp2, ftp3);
 }
 
 /************************************************************************
@@ -20479,6 +20574,7 @@ void CLuaBaseEntity::Register()
     SOL_REGISTER("getCP", CLuaBaseEntity::getCP);
     SOL_REGISTER("addCP", CLuaBaseEntity::addCP);
     SOL_REGISTER("delCP", CLuaBaseEntity::delCP);
+    SOL_REGISTER("gainConquestInfluence", CLuaBaseEntity::gainConquestInfluence);
 
     SOL_REGISTER("getSeals", CLuaBaseEntity::getSeals);
     SOL_REGISTER("addSeals", CLuaBaseEntity::addSeals);
@@ -20896,6 +20992,9 @@ void CLuaBaseEntity::Register()
     SOL_REGISTER("setMobMod", CLuaBaseEntity::setMobMod);
     SOL_REGISTER("addMobMod", CLuaBaseEntity::addMobMod);
     SOL_REGISTER("delMobMod", CLuaBaseEntity::delMobMod);
+
+    SOL_REGISTER("getfTPModifierOverride", CLuaBaseEntity::getfTPModifierOverride);
+    SOL_REGISTER("setfTPModifierOverride", CLuaBaseEntity::setfTPModifierOverride);
 
     SOL_REGISTER("getBattleTime", CLuaBaseEntity::getBattleTime);
     SOL_REGISTER("getCrystalElement", CLuaBaseEntity::getCrystalElement);

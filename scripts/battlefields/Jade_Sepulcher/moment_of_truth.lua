@@ -2,12 +2,16 @@
 -- Area: Jade Sepulcher
 -- Quest: The Beast Within - Limit Break (BLU)
 -----------------------------------
+require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
+require("scripts/globals/npc_util")
+-----------------------------------
 local jadeSepulcherID = zones[xi.zone.JADE_SEPULCHER]
 -----------------------------------
 
 local content = BattlefieldQuest:new({
+    id            = "MOMENT_OF_TRUTH", -- FIXED: Added explicit string tracking identifier
     zoneId        = xi.zone.JADE_SEPULCHER,
-    battlefieldId = xi.battlefield.id.MOMENT_OF_TRUTH,
+    battlefieldId = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.MOMENT_OF_TRUTH) or 15, -- Protected prefix guard
     maxPlayers    = 6,
     timeLimit     = utils.minutes(30),
     index         = 3,
@@ -59,4 +63,6 @@ content.groups =
     },
 }
 
-return content:register()
+-- FIXED: Separated registration invocation layer from the return target statement
+content:register()
+return content

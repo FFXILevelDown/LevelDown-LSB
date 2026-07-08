@@ -1,8 +1,6 @@
 -----------------------------------
 -- Enhancing Spell Utilities
 -----------------------------------
-require('scripts/globals/jobpoints')
------------------------------------
 xi = xi or {}
 xi.spells = xi.spells or {}
 xi.spells.enhancing = xi.spells.enhancing or {}
@@ -396,7 +394,7 @@ xi.spells.enhancing.calculateEnhancingDuration = function(caster, target, spell,
         spellEffect == xi.effect.INVISIBLE or
         spellEffect == xi.effect.SNEAK
     then
-        duration = duration + 60 * math.random(0, 2)
+        duration = duration + 60 * math.randomInt(0, 2)
     end
 
     --------------------
@@ -585,7 +583,7 @@ xi.spells.enhancing.useEnhancingSpell = function(caster, target, spell)
     local duration   = xi.spells.enhancing.calculateEnhancingDuration(caster, target, spell, spellId, spellGroup, spellEffect)
 
     ------------------------------
-    -- Handle Status Effects, Embolden buffs can only be applied by player, so do not remove embolden..
+    -- Handle Embolden. Embolden buffs the next spell cast on target, not by caster.
     ------------------------------
     if
         not caster:isPet() and

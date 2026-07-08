@@ -21,7 +21,6 @@
 
 #include "map_networking.h"
 
-#include <common/arguments.h>
 #include <common/md52.h>
 #include <common/tracy.h>
 #include <common/zlib.h>
@@ -34,14 +33,9 @@
 #include "utils/charutils.h"
 
 #include "ipc_client.h"
-#include "job_points.h"
 #include "latent_effect_container.h"
-#include "map_engine.h"
 #include "map_session.h"
 #include "map_statistics.h"
-#include "roe.h"
-#include "status_effect_container.h"
-#include "transport.h"
 #include "zone.h"
 #include "zone_entities.h"
 
@@ -69,7 +63,7 @@ MapNetworking::MapNetworking(Scheduler& scheduler, MapStatistics& mapStatistics,
     try
     {
         const auto udpPort = mapIPP_.getPort() == 0 ? settings::get<uint16>("network.MAP_PORT") : mapIPP_.getPort();
-        socket_            = std::make_unique<MapSocket>(scheduler_, udpPort, std::bind(&MapNetworking::handle_incoming_packet, this, std::placeholders::_1, std::placeholders::_2));
+        socket_            = std::make_unique<MapSocket>(scheduler_, mapStatistics_, udpPort, std::bind(&MapNetworking::handle_incoming_packet, this, std::placeholders::_1, std::placeholders::_2));
     }
     catch (const std::exception& e)
     {
@@ -762,6 +756,12 @@ void MapNetworking::flushStatistics()
 
     // This also zeroes out all the stats
     mapStatistics_.flush();
+
+    // Null on test servers, which don't open a socket
+    if (socket_)
+    {
+        socket_->flushDiagnostics();
+    }
 }
 
 auto MapNetworking::ipp() const -> IPP

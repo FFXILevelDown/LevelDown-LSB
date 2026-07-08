@@ -22,8 +22,6 @@
 #include "common/timer.h"
 #include "common/utils.h"
 
-#include <vector>
-
 #include "ability.h"
 #include "battleutils.h"
 #include "charutils.h"
@@ -39,10 +37,8 @@
 #include "notoriety_container.h"
 #include "petutils.h"
 
-#include "map_engine.h"
 #include "puppetutils.h"
 #include "status_effect_container.h"
-#include "zone_instance.h"
 
 #include "ai/ai_container.h"
 #include "ai/controllers/automaton_controller.h"
@@ -1284,7 +1280,7 @@ void SpawnPet(CBattleEntity* PMaster, uint32 PetID, bool spawningFromZone)
 
         if (spawningFromZone)
         {
-            PPet->spawnAnimation = SPAWN_ANIMATION::NORMAL; // Don't play special spawn animation on zone in
+            PPet->spawnAnimation = xi::SpawnAnimation::Normal; // Don't play special spawn animation on zone in
         }
 
         PMaster->loc.zone->InsertPET(PPet);
@@ -1444,7 +1440,7 @@ void DetachPet(CBattleEntity* PMaster)
         }
 
         PMob->isCharmed  = false;
-        PMob->allegiance = ALLEGIANCE_TYPE::MOB;
+        PMob->allegiance = xi::Allegiance::Mob;
         PMob->charmTime  = timer::time_point::min();
         PMob->PMaster    = nullptr;
 
@@ -1938,7 +1934,7 @@ void LoadPet(CBattleEntity* PMaster, uint32 PetID, bool spawningFromZone)
     }
 
     PPet->setSpawnLevel(PPet->GetMLevel());
-    PPet->status          = STATUS_TYPE::NORMAL;
+    PPet->status          = xi::Status::Normal;
     PPet->modelSize       = PPetData->modelSize;
     PPet->modelHitboxSize = PPetData->modelHitboxSize;
     PPet->m_EcoSystem     = PPetData->EcoSystem;

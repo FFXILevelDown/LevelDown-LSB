@@ -21,14 +21,10 @@
 
 #include "lua_simulation.h"
 
-#include "common/lua.h"
 #include "common/vana_time.h"
-#include "enums/packet_c2s.h"
 #include "enums/tick_type.h"
 #include "helpers/lua_client_entity_pair_packets.h"
-#include "in_memory_sink.h"
 #include "lua_client_entity_pair.h"
-#include "lua_spy.h"
 #include "lua_test_entity.h"
 #include "map/ai/ai_container.h"
 #include "map/conquest_data.h"
@@ -40,10 +36,8 @@
 #include "map/map_constants.h"
 #include "map/map_engine.h"
 #include "map/map_networking.h"
-#include "map/packets/c2s/0x00a_login.h"
 #include "map/spawn_slot.h"
 #include "map/time_server.h"
-#include "map/utils/charutils.h"
 #include "map/utils/zoneutils.h"
 #include "map/zone.h"
 #include "map/zone_entities.h"
@@ -52,7 +46,6 @@
 #include "test_common.h"
 
 #include <algorithm>
-#include <array>
 #include <ranges>
 
 namespace
@@ -203,6 +196,20 @@ void CLuaSimulation::setVanaDay(const uint8 day) const
 void CLuaSimulation::skipToNextVanaDay() const
 {
     setVanaDay((vanadiel_time::get_weekday() + 1) % 8);
+}
+
+/************************************************************************
+ *  Function: skipVanaDays()
+ *  Purpose : Advances Vana'diel time by whole days.
+ *  Example : sim:skipVanaDays(30)
+ *  Notes   : Vana'diel time only (like setVanaTime); does not tick.
+ ************************************************************************/
+
+void CLuaSimulation::skipVanaDays(const uint32 days) const
+{
+    ShowInfoFmt("Skipping {} Vana'diel days", days);
+
+    earth_time::add_offset(std::chrono::duration_cast<earth_time::duration>(xi::vanadiel_clock::days(days)));
 }
 
 /************************************************************************
@@ -615,6 +622,7 @@ void CLuaSimulation::Register()
     SOL_REGISTER("setVanaTime", CLuaSimulation::setVanaTime);
     SOL_REGISTER("setVanaDay", CLuaSimulation::setVanaDay);
     SOL_REGISTER("skipToNextVanaDay", CLuaSimulation::skipToNextVanaDay);
+    SOL_REGISTER("skipVanaDays", CLuaSimulation::skipVanaDays);
     SOL_REGISTER("setRegionOwner", CLuaSimulation::setRegionOwner);
     SOL_REGISTER("setSeed", CLuaSimulation::setSeed);
     SOL_REGISTER("seed", CLuaSimulation::seed);

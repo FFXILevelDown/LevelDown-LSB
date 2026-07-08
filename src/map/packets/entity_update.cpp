@@ -19,9 +19,7 @@
 ===========================================================================
 */
 
-#include "common/timer.h"
 #include "common/utils.h"
-#include "common/vana_time.h"
 
 #include <cstring>
 
@@ -30,8 +28,6 @@
 #include "entities/base_entity.h"
 #include "entities/mob_entity.h"
 #include "entities/npc_entity.h"
-#include "entities/pet_entity.h"
-#include "entities/trust_entity.h"
 #include "status_effect_container.h"
 #include "zone.h"
 
@@ -298,7 +294,7 @@ void CEntityUpdatePacket::updateWith(CBaseEntity* PEntity, ENTITYUPDATE type, ui
             {
                 ref<uint8>(0x2A) = 4;
             }
-            if (PEntity->spawnAnimation == SPAWN_ANIMATION::SPECIAL)
+            if (PEntity->spawnAnimation == xi::SpawnAnimation::Special)
             {
                 ref<uint8>(0x28) |= 0x04;
             }
@@ -323,9 +319,9 @@ void CEntityUpdatePacket::updateWith(CBaseEntity* PEntity, ENTITYUPDATE type, ui
         ref<uint8>(0x1D)  = PEntity->animationSpeed;
     }
 
-    if (PEntity->allegiance == ALLEGIANCE_TYPE::PLAYER && PEntity->status == STATUS_TYPE::UPDATE)
+    if (PEntity->allegiance == xi::Allegiance::Player && PEntity->status == xi::Status::Update)
     {
-        ref<uint8>(0x20) = static_cast<uint8>(STATUS_TYPE::NORMAL);
+        ref<uint8>(0x20) = static_cast<uint8>(xi::Status::Normal);
     }
     else
     {
@@ -403,7 +399,7 @@ void CEntityUpdatePacket::updateWith(CBaseEntity* PEntity, ENTITYUPDATE type, ui
                 }
 
                 ref<uint8>(0x28) |= PMob->health.hp > 0 && PMob->animation == ANIMATION_DEATH ? 0x08 : 0;
-                ref<uint8>(0x28) |= PMob->status == STATUS_TYPE::NORMAL && PMob->objtype == TYPE_MOB ? 0x40 : 0; // Make the entity triggerable if a mob and normal status
+                ref<uint8>(0x28) |= PMob->status == xi::Status::Normal && PMob->objtype == TYPE_MOB ? 0x40 : 0; // Make the entity triggerable if a mob and normal status
                 ref<uint8>(0x29) = static_cast<uint8>(PEntity->allegiance);
                 ref<uint8>(0x2B) = PEntity->namevis;
             }

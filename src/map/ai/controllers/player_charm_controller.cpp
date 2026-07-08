@@ -23,7 +23,6 @@
 
 #include "ai/ai_container.h"
 #include "common/utils.h"
-#include "entities/char_entity.h"
 #include "status_effect_container.h"
 
 CPlayerCharmController::CPlayerCharmController(CCharEntity* PChar)
@@ -39,7 +38,7 @@ CPlayerCharmController::~CPlayerCharmController()
         POwner->PAI->Internal_Disengage();
     }
     POwner->PAI->PathFind.reset();
-    POwner->allegiance = ALLEGIANCE_TYPE::PLAYER;
+    POwner->allegiance = xi::Allegiance::Player;
 }
 
 auto CPlayerCharmController::Tick(timer::time_point tick) -> Task<void>

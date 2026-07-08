@@ -60,8 +60,6 @@ public:
 
     virtual void TransportDepart(uint16 boundary, uint16 prevZoneId, uint16 transportId) override; // ship/boat is leaving, passengers need to be collected
 
-    virtual void TOTDChange(vanadiel_time::TOTD TOTD) override; // process the world's reactions to changing time of day
-
     virtual void PushPacket(CBaseEntity*, GLOBAL_MESSAGE_TYPE, const std::unique_ptr<CBasicPacket>&) override; // send a global package within the zone
 
     virtual void UpdateEntityPacket(CBaseEntity* PEntity, ENTITYUPDATE type, uint8 updatemask, bool alwaysInclude = false) override;
@@ -69,18 +67,18 @@ public:
     virtual auto ZoneServer(timer::time_point tick) -> Task<void> override;
     virtual auto CheckTriggerAreas() -> Task<void> override;
 
-    void ForEachChar(const std::function<void(CCharEntity*)>& func) override;
-    void ForEachCharInstance(CBaseEntity* PEntity, const std::function<void(CCharEntity*)>& func) override;
-    void ForEachMob(const std::function<void(CMobEntity*)>& func) override;
-    void ForEachMobInstance(CBaseEntity* PEntity, const std::function<void(CMobEntity*)>& func) override;
-    void ForEachNpc(const std::function<void(CNpcEntity*)>& func) override;
-    void ForEachNpcInstance(CBaseEntity* PEntity, const std::function<void(CNpcEntity*)>& func) override;
-    void ForEachTrust(const std::function<void(CTrustEntity*)>& func) override;
-    void ForEachTrustInstance(CBaseEntity* PEntity, const std::function<void(CTrustEntity*)>& func) override;
-    void ForEachPet(const std::function<void(CPetEntity*)>& func) override;
-    void ForEachPetInstance(CBaseEntity* PEntity, const std::function<void(CPetEntity*)>& func) override;
-    void ForEachAlly(const std::function<void(CMobEntity*)>& func) override;
-    void ForEachAllyInstance(CBaseEntity* PEntity, const std::function<void(CMobEntity*)>& func) override;
+    void ForEachChar(FnRef<void(CCharEntity*)> func) override;
+    void ForEachCharInstance(CBaseEntity* PEntity, FnRef<void(CCharEntity*)> func) override;
+    void ForEachMob(FnRef<void(CMobEntity*)> func) override;
+    void ForEachMobInstance(CBaseEntity* PEntity, FnRef<void(CMobEntity*)> func) override;
+    void ForEachNpc(FnRef<void(CNpcEntity*)> func) override;
+    void ForEachNpcInstance(CBaseEntity* PEntity, FnRef<void(CNpcEntity*)> func) override;
+    void ForEachTrust(FnRef<void(CTrustEntity*)> func) override;
+    void ForEachTrustInstance(CBaseEntity* PEntity, FnRef<void(CTrustEntity*)> func) override;
+    void ForEachPet(FnRef<void(CPetEntity*)> func) override;
+    void ForEachPetInstance(CBaseEntity* PEntity, FnRef<void(CPetEntity*)> func) override;
+    void ForEachAlly(FnRef<void(CMobEntity*)> func) override;
+    void ForEachAllyInstance(CBaseEntity* PEntity, FnRef<void(CMobEntity*)> func) override;
 
 private:
     typedef std::vector<std::unique_ptr<CInstance>> instanceList_t;

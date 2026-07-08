@@ -1,7 +1,6 @@
 -----------------------------------
 -- Dancer Job Utilities
 -----------------------------------
-require('scripts/globals/jobpoints')
 require('scripts/globals/magic')
 require('scripts/globals/weaponskills')
 -----------------------------------
@@ -267,7 +266,7 @@ xi.job_utils.dancer.useStepAbility = function(player, target, ability, action, s
         player:delTP(100 + player:getMod(xi.mod.STEP_TP_CONSUMED))
     end
 
-    if math.random() <= hitRate then
+    if math.randomFloat(0, 1) <= hitRate then
         local maxSteps         = player:getMainJob() == xi.job.DNC and 10 or 5
         local debuffEffect     = target:getStatusEffect(stepEffect)
         local origDebuffStacks = 0
@@ -384,7 +383,7 @@ xi.job_utils.dancer.useDesperateFlourishAbility = function(player, target, abili
     setFinishingMoves(player, numMoves - 1)
 
     if
-        math.random() <= xi.weaponskills.getHitRate(player, target, player:getJobPointLevel(xi.jp.FLOURISH_I_EFFECT), xi.attackAnimation.LEFT_ATTACK) or
+        math.randomFloat(0, 1) <= xi.weaponskills.getHitRate(player, target, player:getJobPointLevel(xi.jp.FLOURISH_I_EFFECT), xi.attackAnimation.LEFT_ATTACK) or
         (player:hasStatusEffect(xi.effect.SNEAK_ATTACK) and player:isBehind(target))
     then
         infoValue = actionInfo[ability:getID()][2]
@@ -422,7 +421,7 @@ xi.job_utils.dancer.useViolentFlourishAbility = function(player, target, ability
     setFinishingMoves(player, numMoves - 1)
 
     if
-        math.random() <= hitRate or
+        math.randomFloat(0, 1) <= hitRate or
         (player:hasStatusEffect(xi.effect.SNEAK_ATTACK) and player:isBehind(target))
     then
         infoValue          = actionInfo[ability:getID()][2]

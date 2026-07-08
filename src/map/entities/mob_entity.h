@@ -23,9 +23,17 @@
 #define _MOBENTITY_H
 
 #include "battle_entity.h"
-#include <unordered_map>
+
+#include <array>
+
+#include <common/types/hash_map.h>
+#include <common/types/maybe.h>
+
+#include "data/enums/claim_type.h"
+#include "data/enums/mob_type.h"
 
 enum class MsgBasic : uint16_t;
+
 // forward declaration
 class CMobSpellContainer;
 class CMobSpellList;
@@ -43,6 +51,13 @@ enum SPAWNTYPE
     SPAWNTYPE_LOTTERY   = 0x20,
     SPAWNTYPE_WINDOWED  = 0x40,
     SPAWNTYPE_SCRIPTED  = 0x80 // scripted spawn
+};
+
+// Per-mob spawn window in Vana'diel hours; the mob spawns only within [spawnHour, despawnHour) (wraps past midnight).
+struct SpawnWindow
+{
+    uint8 spawnHour;
+    uint8 despawnHour;
 };
 
 enum SPECIALFLAG
@@ -66,17 +81,6 @@ enum ROAMFLAG : uint16
     ROAMFLAG_IGNORE   = 0x200, // ignore all hate, except linking hate
     ROAMFLAG_STEALTH  = 0x400, // stays name hidden and untargetable until someone comes close (chigoe)
     ROAMFLAG_FOLLOW   = 0x800, // follows a player when sighted for a little while
-};
-
-enum MOBTYPE
-{
-    MOBTYPE_NORMAL      = 0x00,
-    MOBTYPE_0X01        = 0x01, // available for use
-    MOBTYPE_NOTORIOUS   = 0x02,
-    MOBTYPE_FISHED      = 0x04,
-    MOBTYPE_CALLED      = 0x08,
-    MOBTYPE_BATTLEFIELD = 0x10,
-    MOBTYPE_EVENT       = 0x20
 };
 
 enum DETECT : uint16
@@ -104,13 +108,6 @@ enum BEHAVIOR : uint16
     BEHAVIOR_NO_TURN      = 0x400  // mob does not turn to face target
 };
 
-enum class ClaimType : uint8
-{
-    Exclusive    = 0, // Regular exclusive claim behavior. Only one entity and related group can attack.
-    NonExclusive = 1, // Regular claim behavior but multiple unrelated entities can attack and compete for claim. Rewards distributed to last claiming entity.
-    Unclaimable  = 2, // Mob cannot be claimed. Multiple unrelated entities can attack. Rewards will not be distributed.
-};
-
 class CMobSkillState;
 
 class CMobEntity : public CBattleEntity
@@ -132,7 +129,12 @@ public:
     void              SetDespawnTime(timer::duration _duration);
     void              SetSpawnSlot(SpawnSlot* sharedSpawn);
     SpawnSlot*        GetSpawnSlot();
-    bool              TrySpawn();
+
+    // Optional per-mob spawn window; overrides the SPAWNTYPE time flags when set.
+    auto spawnWindow() const -> const Maybe<SpawnWindow>&;
+    void setSpawnWindow(uint8 spawnHour, uint8 despawnHour);
+
+    bool TrySpawn();
 
     uint32 GetRandomGil();   // returns a random amount of gil
     bool   CanRoamHome();    // is it possible for me to walk back?
@@ -173,6 +175,9 @@ public:
     }
 
     virtual void Die() override;
+
+    auto getfTPModifierOverride(uint16 skillId) -> Maybe<std::array<float, 3>>;
+    void setfTPModifierOverride(uint16 skillId, float ftp1, float ftp2, float ftp3);
 
     virtual void OnWeaponSkillFinished(CWeaponSkillState&, action_t&) override;
     virtual void OnMobSkillFinished(CMobSkillState&, action_t&) override;
@@ -229,13 +234,13 @@ public:
     bool  m_disableScent;    // stop detecting by scent
     float m_maxRoamDistance; // maximum distance mob can be from spawn before despawning
 
-    uint8     m_Type; // mob type
-    bool      m_Aggro;
-    bool      m_TrueDetection; // Has true sight or sound
-    uint8     m_Link;          // link with mobs of it's family
-    bool      m_isAggroable;   // Can be aggroed by other monsters when in the player allegiance
-    uint16    m_Behavior;      // mob behavior
-    SPAWNTYPE m_SpawnType;     // condition for mob to spawn
+    xi::MobType m_Type; // mob type
+    bool        m_Aggro;
+    bool        m_TrueDetection; // Has true sight or sound
+    uint8       m_Link;          // link with mobs of it's family
+    bool        m_isAggroable;   // Can be aggroed by other monsters when in the player allegiance
+    uint16      m_Behavior;      // mob behavior
+    SPAWNTYPE   m_SpawnType;     // condition for mob to spawn
 
     int8   m_battlefieldID; // battlefield belonging to
     uint16 m_bcnmID;        // belongs to which battlefield
@@ -279,11 +284,13 @@ protected:
     void DropItems(CCharEntity* PChar);
 
 private:
-    timer::time_point              m_DespawnTimer{ timer::time_point::min() }; // Despawn Timer to despawn mob after set duration
-    std::unordered_map<int, int16> m_mobModStat;
-    std::unordered_map<int, int16> m_mobModStatSave;
-    static constexpr float         roam_home_distance{ 60.f };
-    SpawnSlot*                     spawnSlot = nullptr;
+    timer::time_point                     m_DespawnTimer{ timer::time_point::min() }; // Despawn Timer to despawn mob after set duration
+    HashMap<int, int16>                   m_mobModStat;
+    HashMap<int, int16>                   m_mobModStatSave;
+    HashMap<uint16, std::array<float, 3>> m_fTPModifierOverrides;
+    static constexpr float                roam_home_distance{ 60.f };
+    SpawnSlot*                            spawnSlot = nullptr;
+    Maybe<SpawnWindow>                    spawnWindow_;
 };
 
 #endif

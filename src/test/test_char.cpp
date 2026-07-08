@@ -22,10 +22,7 @@
 #include "test_char.h"
 
 #include "common/cbasetypes.h"
-#include "common/database.h"
-#include "common/lua.h"
 #include "login/login_helpers.h"
-#include "lua/lua_spy.h"
 #include "map/entities/base_entity.h"
 #include "map/entities/char_entity.h"
 #include "test_common.h"
@@ -210,7 +207,7 @@ void TestChar::setEntity(std::unique_ptr<CCharEntity> entity) const
         session_->charID          = entity->id;
         session_->PChar           = std::move(entity);
         session_->PChar->PSession = session();
-        session_->PChar->status   = STATUS_TYPE::NORMAL;
+        session_->PChar->status   = xi::Status::Normal;
     }
 }
 

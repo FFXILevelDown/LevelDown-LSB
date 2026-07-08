@@ -4,6 +4,7 @@
 xi = xi or {}
 xi.job_utils = xi.job_utils or {}
 xi.job_utils.ninja = xi.job_utils.ninja or {}
+-----------------------------------
 
 -----------------------------------
 -- Ability Check Functions
