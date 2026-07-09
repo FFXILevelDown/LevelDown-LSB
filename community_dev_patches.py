@@ -253,6 +253,112 @@ def main():
         ]
     )
 
+    # 13. Boost Treasure Hunter Cap to 25 & Strip Main-Job Restrictions
+    patch_file(
+        os.path.join("src", "map", "enmity_container.cpp"),
+        "/* CUSTOM 25 TH CAP */",
+        [
+            ('''    // Apply TH only if this was a direct action
+    if (directAction)
+    {
+        int16 THlevel = std::min<int16>(8, PEntity->getMod(Mod::TREASURE_HUNTER));
+        int16 GFlevel = PEntity->getMod(Mod::GILFINDER); // Is there a cap? Theoretical GF level cap could be GF 8 for 128/256 + 8*16 = 256/256
+
+        // Enforce TH8 as max for THF main and TH4 as non-THF main
+        if (PEntity->GetMJob() != JOB_THF)
+        {
+            THlevel = std::min<int16>(4, PEntity->getMod(Mod::TREASURE_HUNTER));
+        }''',
+             '''    // Apply TH only if this was a direct action
+    if (directAction)
+    {
+        int16 THlevel = std::min<int16>(25, PEntity->getMod(Mod::TREASURE_HUNTER)); /* CUSTOM 25 TH CAP */
+        int16 GFlevel = PEntity->getMod(Mod::GILFINDER); // Is there a cap? Theoretical GF level cap could be GF 8 for 128/256 + 8*16 = 256/256''')
+        ]
+    )
+
+    # 14. Infinite Capacity Band Allowance Cap (-1 Lockout Bypass)
+    patch_file(
+        os.path.join("src", "map", "utils", "charutils.cpp"),
+        "/* CUSTOM INFINITE COMMITMENT CAP */",
+        [
+            ('''    if (PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment) && PChar->loc.zone->GetRegionID() != REGION_TYPE::ABYSSEA)
+    {
+        CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
+        int16          percentage = commitment->GetPower();
+        int16          cap        = commitment->GetSubPower();
+        rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+        commitment->SetSubPower(cap -= rawBonus);
+
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+        }
+    }''',
+             '''    if (PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment) && PChar->loc.zone->GetRegionID() != REGION_TYPE::ABYSSEA)
+    {
+        CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
+        int16          percentage = commitment->GetPower();
+        int16          cap        = commitment->GetSubPower();
+        if (cap == -1)
+        {
+            rawBonus += std::max<int32>(((capacityPoints * percentage) / 100), 0);
+        }
+        else
+        {
+            rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+            commitment->SetSubPower(cap -= rawBonus);
+
+            if (cap <= 0)
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+            }
+        } /* CUSTOM INFINITE COMMITMENT CAP */
+    }''')
+        ]
+    )
+
+    # 15. Infinite Experience Band Allowance Cap (-1 Lockout Bypass)
+    patch_file(
+        os.path.join("src", "map", "utils", "charutils.cpp"),
+        "/* CUSTOM INFINITE DEDICATION CAP */",
+        [
+            ('''    if (PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication) && PChar->loc.zone->GetRegionID() != REGION_TYPE::ABYSSEA)
+    {
+        CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
+        int16          percentage = dedication->GetPower();
+        int16          cap        = dedication->GetSubPower();
+        bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+        dedication->SetSubPower(cap -= bonus);
+
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+        }
+    }''',
+             '''    if (PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication) && PChar->loc.zone->GetRegionID() != REGION_TYPE::ABYSSEA)
+    {
+        CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
+        int16          percentage = dedication->GetPower();
+        int16          cap        = dedication->GetSubPower();
+        if (cap == -1)
+        {
+            bonus += std::max<int32>((int32)((exp * percentage) / 100), 0);
+        }
+        else
+        {
+            bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+            dedication->SetSubPower(cap -= bonus);
+
+            if (cap <= 0)
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+            }
+        } /* CUSTOM INFINITE DEDICATION CAP */
+    }''')
+        ]
+    )
+
     print("\n=======================================================================")
     print("  Execution complete. Check your results above!")
     print("=======================================================================")

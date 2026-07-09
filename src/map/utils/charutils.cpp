@@ -5433,13 +5433,20 @@ uint16 AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints)
         CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
         int16          percentage = commitment->GetPower();
         int16          cap        = commitment->GetSubPower();
-        rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
-        commitment->SetSubPower(cap -= rawBonus);
-
-        if (cap <= 0)
+        if (cap == -1)
         {
-            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+            rawBonus += std::max<int32>(((capacityPoints * percentage) / 100), 0);
         }
+        else
+        {
+            rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+            commitment->SetSubPower(cap -= rawBonus);
+
+            if (cap <= 0)
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+            }
+        } /* CUSTOM INFINITE COMMITMENT CAP */
     }
 
     // Mod::CAPACITY_BONUS is currently used for JP Gifts, and can easily be used elsewhere
@@ -6772,13 +6779,20 @@ float AddExpBonus(CCharEntity* PChar, float exp)
         CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
         int16          percentage = dedication->GetPower();
         int16          cap        = dedication->GetSubPower();
-        bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
-        dedication->SetSubPower(cap -= bonus);
-
-        if (cap <= 0)
+        if (cap == -1)
         {
-            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+            bonus += std::max<int32>((int32)((exp * percentage) / 100), 0);
         }
+        else
+        {
+            bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+            dedication->SetSubPower(cap -= bonus);
+
+            if (cap <= 0)
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+            }
+        } /* CUSTOM INFINITE DEDICATION CAP */
     }
 
     int16 rovBonus = 0;
