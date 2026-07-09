@@ -1,13 +1,12 @@
 -----------------------------------
--- Area: North Gustaberg
---  Mob: Huge Hornet
+-- Area: King Ranperres Tomb
+--  Mob: Pey
 -----------------------------------
 ---@type TMobEntity
 local entity = {}
 
 entity.onMobSpawn = function(mob)
-    mob:setMod(xi.mod.ATT, 1)
-    mob:setMod(xi.mod.EXP_LVL_MOD, -2) -- Subtract 2 levels for /check and exp purposes
+    mob:setSpawnAnimation(xi.spawnAnimation.SPECIAL)
 end
 
 return entity

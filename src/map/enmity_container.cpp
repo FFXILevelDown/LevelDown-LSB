@@ -179,7 +179,6 @@ void CEnmityContainer::UpdateEnmity(CBattleEntity* PEntity, int32 CE, int32 VE, 
         int16 THlevel = std::min<int16>(25, PEntity->getMod(Mod::TREASURE_HUNTER)); /* CUSTOM 25 TH CAP */
         int16 GFlevel = PEntity->getMod(Mod::GILFINDER); // Is there a cap? Theoretical GF level cap could be GF 8 for 128/256 + 8*16 = 256/256
 
-
         if (m_EnmityHolder->m_THLvl < THlevel)
         {
             m_EnmityHolder->m_THLvl = THlevel;
