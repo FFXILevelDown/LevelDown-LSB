@@ -17,7 +17,7 @@ commandObj.onTrigger = function(player)
         return
     end
 
-    player:sendMenu(1)
+    player:sendMenu(3)
 end
 
 return commandObj
