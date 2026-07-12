@@ -69,7 +69,8 @@ UPDATE merits SET value = 20 WHERE name = 'arcane_circle_recast';
 UPDATE abilities SET recastTime = 300 WHERE name = 'weapon_bash';
 
 -- Weapon Bash merit: Revert value to 10 seconds per level
-UPDATE merits SET value = 10 WHERE name = 'weapon_bash_recast';
+-- Note: merit is named weapon_bash_effect (provides both recast reduction and effect)
+UPDATE merits SET value = 10 WHERE name = 'weapon_bash_effect';
 
 -- Dark Seal: Revert recast from 5 to 15 minutes
 -- Source: https://www.bg-wiki.com/ffxi/Version_Update_(03/26/2012)
@@ -250,6 +251,14 @@ UPDATE abilities SET recastTime = 900 WHERE name = 'deep_breathing';
 
 -- Deep Breathing merit: Revert value to 150 seconds per level
 UPDATE merits SET value = 150 WHERE name = 'deep_breathing';
+
+-----------------------------------
+-- Summoner
+-----------------------------------
+
+-- Summoning Magic Casting Time Merit: Repurposed to Spirit MP cost merit. Revert merit value from 5 to 1 per level.
+-- Source: https://forum.square-enix.com/ffxi/threads/22099-March-27-2012-%28JST%29-Version-Update
+UPDATE merits SET value = 1 WHERE name = 'summoning_magic_cast_time';
 
 -----------------------------------
 -- Corsair

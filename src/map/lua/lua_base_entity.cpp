@@ -1150,27 +1150,7 @@ void CLuaBaseEntity::sendChocoboRace(const sol::table& race) const
 
         for (size_t idx = 1; idx <= count; ++idx)
         {
-            auto&      entry = entries[idx - 1];
-            const auto data  = chocobos->get<sol::table>(idx);
-
-            entry.Item        = data.get_or<uint8>("item", 0);   // equipped item (sectionEvent)
-            entry.Orders      = data.get_or<uint8>("orders", 0); // jockey orders
-            entry.Size        = data.get_or<uint8>("size", 0);   // jockey (jockeySize)
-            entry.Color       = data.get_or<uint8>("color", 0);  // plumage colour
-            entry.Gender      = data.get_or<uint8>("gender", 0);
-            entry.Weather     = data.get_or<uint8>("weather", 0);     // preferred weather (xi.chocoboRaising.weather)
-            entry.Temperament = data.get_or<uint8>("temperament", 0); // display/raising trait; no race effect
-            entry.Ability1    = data.get_or<uint8>("ability1", 0);    // xi.chocoboRaising.ability (Gallop/Canter/...)
-            entry.Ability2    = data.get_or<uint8>("ability2", 0);
-
-            // Racing stats (chococard ranks 0-7 = F..SS): STR/END/DSC/RCP.
-            if (const auto stats = data.get<sol::optional<sol::table>>("stats"))
-            {
-                entry.STR.Rank = stats->get_or<uint8>("str", 0);
-                entry.END.Rank = stats->get_or<uint8>("end", 0);
-                entry.DSC.Rank = stats->get_or<uint8>("dsc", 0);
-                entry.RCP.Rank = stats->get_or<uint8>("rcp", 0);
-            }
+            entries[idx - 1] = GP_SERV_COMMAND_CHOCOBO_RACING::ChocoboParam::fromLua(chocobos->get<sol::table>(idx));
         }
 
         PChar->pushPacket<GP_SERV_COMMAND_CHOCOBO_RACING::CHOCOBOPARAMS>(entries);
@@ -2716,7 +2696,7 @@ void CLuaBaseEntity::updateNPCHideTime(const sol::object& seconds)
 
 auto CLuaBaseEntity::getWeather(const sol::object& ignoreScholar) const -> uint8
 {
-    auto weather = Weather::None;
+    auto weather = xi::Weather::None;
 
     if (m_PBaseEntity->objtype & TYPE_PC || m_PBaseEntity->objtype & TYPE_MOB)
     {
@@ -2738,9 +2718,9 @@ auto CLuaBaseEntity::getWeather(const sol::object& ignoreScholar) const -> uint8
  *  Notes   : Only used for GM command: scripts/commands/setweather.lua
  ************************************************************************/
 
-void CLuaBaseEntity::setWeather(Weather weatherType)
+void CLuaBaseEntity::setWeather(xi::Weather weatherType)
 {
-    if (magic_enum::enum_contains<Weather>(weatherType))
+    if (magic_enum::enum_contains<xi::Weather>(weatherType))
     {
         zoneutils::GetZone(m_PBaseEntity->getZone())->SetWeather(weatherType);
         luautils::OnZoneWeatherChange(m_PBaseEntity->getZone(), weatherType);
@@ -6791,7 +6771,7 @@ void CLuaBaseEntity::jail()
  *  Notes   : Checks if specified MISC flag is set in current zone
  ************************************************************************/
 
-bool CLuaBaseEntity::canUseMisc(uint16 misc)
+bool CLuaBaseEntity::canUseMisc(xi::ZoneMisc misc)
 {
     if (m_PBaseEntity->loc.zone == nullptr)
     {
@@ -18117,7 +18097,7 @@ bool CLuaBaseEntity::hasTrait(uint16 traitID)
  *  Notes   : Arguments are dec to bin, so powers of 2 (max 256) -- Listed in mobentity.h
  ************************************************************************/
 
-bool CLuaBaseEntity::hasImmunity(uint32 immunityID)
+bool CLuaBaseEntity::hasImmunity(xi::Immunity immunityID)
 {
     auto* PEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
     if (!PEntity)
@@ -18135,7 +18115,7 @@ bool CLuaBaseEntity::hasImmunity(uint32 immunityID)
  *  Example : mob:addImmunity(xi.immunity.SILENCE)
  ************************************************************************/
 
-void CLuaBaseEntity::addImmunity(uint32 immunityID)
+void CLuaBaseEntity::addImmunity(xi::Immunity immunityID)
 {
     auto PEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
     if (PEntity)
@@ -18150,7 +18130,7 @@ void CLuaBaseEntity::addImmunity(uint32 immunityID)
  *  Example : mob:delImmunity(xi.immunity.SILENCE)
  ************************************************************************/
 
-void CLuaBaseEntity::delImmunity(uint32 immunityID)
+void CLuaBaseEntity::delImmunity(xi::Immunity immunityID)
 {
     auto PEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
     if (PEntity)
@@ -18691,12 +18671,12 @@ void CLuaBaseEntity::setCrystalElement(ELEMENT crystalElement)
  *  Notes   : Currently used in bitwise calculations for high-tier NM's
  ************************************************************************/
 
-uint16 CLuaBaseEntity::getBehavior()
+auto CLuaBaseEntity::getBehavior() -> xi::Behavior
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
         ShowWarning("Attempting to get behavior for invalid entity type (%s).", m_PBaseEntity->getName());
-        return 0;
+        return xi::Behavior::None;
     }
 
     return static_cast<CMobEntity*>(m_PBaseEntity)->m_Behavior;
@@ -18709,7 +18689,7 @@ uint16 CLuaBaseEntity::getBehavior()
  *  Notes   : Currently used in bitwise calculations for high-tier NM's
  ************************************************************************/
 
-void CLuaBaseEntity::setBehavior(uint16 behavior)
+void CLuaBaseEntity::setBehavior(xi::Behavior behavior)
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
@@ -18762,12 +18742,12 @@ void CLuaBaseEntity::setLink(uint8 link)
  *  Example : mob:getRoamFlags()
  ************************************************************************/
 
-uint16 CLuaBaseEntity::getRoamFlags()
+auto CLuaBaseEntity::getRoamFlags() -> xi::RoamFlag
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
         ShowWarning("Attempting to get roam flags for invalid entity type (%s).", m_PBaseEntity->getName());
-        return 0;
+        return xi::RoamFlag::None;
     }
 
     return static_cast<CMobEntity*>(m_PBaseEntity)->m_roamFlags;
@@ -18779,7 +18759,7 @@ uint16 CLuaBaseEntity::getRoamFlags()
  *  Example : mob:setRoamFlags(bit.bor(mob:getRoamFlags(), xi.roamFlag.STEALTH))
  ************************************************************************/
 
-void CLuaBaseEntity::setRoamFlags(uint16 newRoamFlags)
+void CLuaBaseEntity::setRoamFlags(xi::RoamFlag newRoamFlags)
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {

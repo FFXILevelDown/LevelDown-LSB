@@ -250,7 +250,7 @@ xi.spells.blue.usePhysicalSpell = function(caster, target, spell, params)
     wsc       = wsc + wsc * bonusWSC -- Bonus WSC from AF3/CA
 
     -- Monster correlation
-    local correlationMultiplier = xi.combat.damage.ecosystemMultiplier(caster, target, params.ecosystem)
+    local correlationMultiplier = xi.combat.damage.ecosystemMultiplier(caster, target, params.ecosystem or 0)
 
     -- Azure Lore
     if caster:getStatusEffect(xi.effect.AZURE_LORE) then
@@ -396,7 +396,7 @@ xi.spells.blue.useMagicalSpell = function(caster, target, spell, params)
     end
 
     -- Monster correlation
-    local correlationMultiplier = xi.combat.damage.ecosystemMultiplier(caster, target, params.ecosystem)
+    local correlationMultiplier = xi.combat.damage.ecosystemMultiplier(caster, target, params.ecosystem or 0)
 
     -- Data
     local spellId         = spell:getID()
@@ -443,8 +443,8 @@ xi.spells.blue.useDrainSpell = function(caster, target, spell, params, damageCap
 
     -- Early returns
     if
-        xi.spells.damage.calculateAbsorption(target, spell:getElement(), true) ~= 1 or
-        xi.spells.damage.calculateNullification(target, spell:getElement(), true, false) ~= 1 or
+        xi.spells.damage.calculateAbsorption(target, spell:getElement(), false, true, false, false) ~= 1 or
+        xi.spells.damage.calculateNullification(target, spell:getElement(), false, true, false, false) ~= 1 or
         target:isUndead()
     then
         spell:setMsg(xi.msg.basic.MAGIC_NO_EFFECT)
@@ -547,10 +547,10 @@ xi.spells.blue.useBreathSpell = function(caster, target, spell, params)
     local damageType   = params.damageType or xi.damageType.NONE
 
     -- Multipliers
-    local correlationMultiplier       = xi.combat.damage.ecosystemMultiplier(caster, target, params.ecosystem)
+    local correlationMultiplier       = xi.combat.damage.ecosystemMultiplier(caster, target, params.ecosystem or 0)
     local breathSDT                   = 1 + caster:getMod(xi.mod.BREATH_DMG_DEALT) / 100
-    local absorb                      = xi.spells.damage.calculateAbsorption(target, spellElement, false)
-    local nullify                     = xi.spells.damage.calculateNullification(target, spellElement, false, true)
+    local absorb                      = xi.spells.damage.calculateAbsorption(target, spellElement, false, true, false, true)
+    local nullify                     = xi.spells.damage.calculateNullification(target, spellElement, false, true, false, true)
     local targetMagicDamageAdjustment = xi.combat.damage.calculateDamageAdjustment(target, false, false, false, true)
     local elementalStaffBonus         = xi.spells.damage.calculateElementalStaffBonus(caster, spellElement)
     local elementalAffinityBonus      = xi.spells.damage.calculateElementalAffinityBonus(caster, spellElement)
@@ -629,8 +629,8 @@ xi.spells.blue.applySpellDamage = function(caster, target, spell, dmg, params, t
 
     -- handle MDT, One For All, Liement
     if attackType == xi.attackType.MAGICAL then
-        local absorb   = xi.spells.damage.calculateAbsorption(target, spell:getElement(), true)
-        local nullify  = xi.spells.damage.calculateNullification(target, spell:getElement(), true, false)
+        local absorb   = xi.spells.damage.calculateAbsorption(target, spell:getElement(), false, true, false, false)
+        local nullify  = xi.spells.damage.calculateNullification(target, spell:getElement(), false, true, false, false)
         dmg            = math.floor(dmg * absorb * nullify)
 
         if dmg < 0 then
