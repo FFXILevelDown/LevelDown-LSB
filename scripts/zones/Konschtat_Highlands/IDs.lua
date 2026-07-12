@@ -69,6 +69,7 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
         STEELFLEECE    = GetFirstID('Steelfleece_Baldarich'),
         STRAY_MARY     = GetTableOfIDs('Stray_Mary'), -- 2 NMs
         TREMOR_RAM     = GetTableOfIDs('Tremor_Ram'),
+        VOIDWATCH      = GetTableOfIDs('Gwynn_ap_Nudd'),
 
         VOIDWALKER =
         {
