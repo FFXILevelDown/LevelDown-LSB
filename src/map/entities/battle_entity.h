@@ -36,6 +36,8 @@
 #include "data/enums/attack_type.h"
 #include "data/enums/damage_type.h"
 #include "data/enums/ecosystem.h"
+#include "data/enums/immunity.h"
+#include "data/enums/skill_type.h"
 #include "party.h"
 #include "trait.h"
 
@@ -82,63 +84,7 @@ enum JOBTYPE : uint8
 #define MAX_JOBTYPE 24
 DECLARE_FORMAT_AS_UNDERLYING(JOBTYPE);
 
-enum SKILLTYPE : uint8
-{
-    SKILL_NONE         = 0,
-    SKILL_HAND_TO_HAND = 1,
-    SKILL_DAGGER       = 2,
-    SKILL_SWORD        = 3,
-    SKILL_GREAT_SWORD  = 4,
-    SKILL_AXE          = 5,
-    SKILL_GREAT_AXE    = 6,
-    SKILL_SCYTHE       = 7,
-    SKILL_POLEARM      = 8,
-    SKILL_KATANA       = 9,
-    SKILL_GREAT_KATANA = 10,
-    SKILL_CLUB         = 11,
-    SKILL_STAFF        = 12,
-    // 13~21 unused
-    SKILL_AUTOMATON_MELEE   = 22,
-    SKILL_AUTOMATON_RANGED  = 23,
-    SKILL_AUTOMATON_MAGIC   = 24,
-    SKILL_ARCHERY           = 25,
-    SKILL_MARKSMANSHIP      = 26,
-    SKILL_THROWING          = 27,
-    SKILL_GUARD             = 28,
-    SKILL_EVASION           = 29,
-    SKILL_SHIELD            = 30,
-    SKILL_PARRY             = 31,
-    SKILL_DIVINE_MAGIC      = 32,
-    SKILL_HEALING_MAGIC     = 33,
-    SKILL_ENHANCING_MAGIC   = 34,
-    SKILL_ENFEEBLING_MAGIC  = 35,
-    SKILL_ELEMENTAL_MAGIC   = 36,
-    SKILL_DARK_MAGIC        = 37,
-    SKILL_SUMMONING_MAGIC   = 38,
-    SKILL_NINJUTSU          = 39,
-    SKILL_SINGING           = 40,
-    SKILL_STRING_INSTRUMENT = 41,
-    SKILL_WIND_INSTRUMENT   = 42,
-    SKILL_BLUE_MAGIC        = 43,
-    SKILL_GEOMANCY          = 44,
-    SKILL_HANDBELL          = 45,
-    // 46-47 unused
-    SKILL_FISHING      = 48,
-    SKILL_WOODWORKING  = 49,
-    SKILL_SMITHING     = 50,
-    SKILL_GOLDSMITHING = 51,
-    SKILL_CLOTHCRAFT   = 52,
-    SKILL_LEATHERCRAFT = 53,
-    SKILL_BONECRAFT    = 54,
-    SKILL_ALCHEMY      = 55,
-    SKILL_COOKING      = 56,
-    SKILL_SYNERGY      = 57,
-    SKILL_RID          = 58,
-    SKILL_DIG          = 59,
-};
-
 #define MAX_SKILLTYPE 64
-DECLARE_FORMAT_AS_UNDERLYING(SKILLTYPE);
 
 enum SUBSKILLTYPE : uint8
 {
@@ -226,31 +172,6 @@ enum SKILLCHAIN_ELEMENT : uint8
 
 DECLARE_FORMAT_AS_UNDERLYING(SKILLCHAIN_ELEMENT);
 
-enum IMMUNITY : uint32
-{
-    IMMUNITY_NONE        = 0x00000000, //      0
-    IMMUNITY_ADDLE       = 0x00000001, //      1
-    IMMUNITY_GRAVITY     = 0x00000002, //      2
-    IMMUNITY_BIND        = 0x00000004, //      4
-    IMMUNITY_STUN        = 0x00000008, //      8
-    IMMUNITY_SILENCE     = 0x00000010, //     16
-    IMMUNITY_PARALYZE    = 0x00000020, //     32
-    IMMUNITY_BLIND       = 0x00000040, //     64
-    IMMUNITY_SLOW        = 0x00000080, //    128
-    IMMUNITY_POISON      = 0x00000100, //    256
-    IMMUNITY_ELEGY       = 0x00000200, //    512
-    IMMUNITY_REQUIEM     = 0x00000400, //   1024
-    IMMUNITY_LIGHT_SLEEP = 0x00000800, //   2048
-    IMMUNITY_DARK_SLEEP  = 0x00001000, //   4096
-    IMMUNITY_ASPIR       = 0x00002000, //   8192
-    IMMUNITY_TERROR      = 0x00004000, //  16384
-    IMMUNITY_DISPEL      = 0x00008000, //  32768
-    IMMUNITY_PETRIFY     = 0x00010000, //  65536
-    IMMUNITY_PLAGUE      = 0x00020000, // 131064
-};
-
-DECLARE_FORMAT_AS_UNDERLYING(IMMUNITY);
-
 struct battlehistory_t
 {
     xi::AttackType lastHitTaken_atkType;
@@ -301,7 +222,7 @@ public:
     bool isInDynamis();
     bool isInGarrison();
     bool inMogHouse();
-    bool hasImmunity(uint32 imID);
+    bool hasImmunity(xi::Immunity imID);
     bool isAsleep();
     auto isMounted() const -> bool;
     bool isSitting();
@@ -339,7 +260,7 @@ public:
     uint16        GetSubWeaponRank();                               // returns total sub weapon DMG Rank
     uint16        GetRangedWeaponRank();                            // returns total ranged weapon DMG Rank
 
-    uint16 GetSkill(uint16 SkillID); // the current value of the skill (not the maximum, but limited by the level)
+    uint16 GetSkill(xi::SkillType SkillID); // the current value of the skill (not the maximum, but limited by the level)
 
     virtual int16 addTP(int16 tp); // increase/decrease the amount of tp
     virtual int32 addHP(int32 hp); // increase/decrease the amount of hp
@@ -482,12 +403,12 @@ public:
     virtual auto Tick(timer::time_point) -> Task<void> override;
     virtual void PostTick() override;
 
-    Health   health{}; // hp, mp, tp, etc.
-    stats_t  stats{};
-    skills_t WorkingSkills{};
-    uint32   m_Immunity;     // Mob immunity
-    uint16   m_magicEvasion; // store this so it can be removed easily
-    bool     m_unkillable;   // entity is not able to die (probably until some action removes this flag)
+    Health       health{}; // hp, mp, tp, etc.
+    stats_t      stats{};
+    skills_t     WorkingSkills{};
+    xi::Immunity m_Immunity;     // Mob immunity
+    uint16       m_magicEvasion; // store this so it can be removed easily
+    bool         m_unkillable;   // entity is not able to die (probably until some action removes this flag)
 
     timer::time_point charmTime; // to hold the time entity is charmed
     bool              isCharmed; // is the battle entity charmed?

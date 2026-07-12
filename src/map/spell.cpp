@@ -123,12 +123,12 @@ void CSpell::setSpellFamily(SPELLFAMILY SpellFamily)
     m_spellFamily = SpellFamily;
 }
 
-uint8 CSpell::getSkillType() const
+auto CSpell::getSkillType() const -> xi::SkillType
 {
     return m_skillType;
 }
 
-void CSpell::setSkillType(uint8 SkillType)
+void CSpell::setSkillType(xi::SkillType SkillType)
 {
     m_skillType = SkillType;
 }
@@ -150,7 +150,7 @@ bool CSpell::hasMPCost()
 
 bool CSpell::isHeal()
 {
-    return ((getValidTarget() & TARGET_SELF) && getSkillType() == SKILL_HEALING_MAGIC) || m_ID == SpellID::Pollen || m_ID == SpellID::Wild_Carrot ||
+    return ((getValidTarget() & TARGET_SELF) && getSkillType() == xi::SkillType::HealingMagic) || m_ID == SpellID::Pollen || m_ID == SpellID::Wild_Carrot ||
            m_ID == SpellID::Healing_Breeze || m_ID == SpellID::Magic_Fruit;
 }
 
@@ -162,7 +162,7 @@ bool CSpell::isCure()
 
 bool CSpell::isDebuff()
 {
-    return ((getValidTarget() & TARGET_ENEMY) && getSkillType() == SKILL_ENFEEBLING_MAGIC) || m_spellFamily == SPELLFAMILY_ELE_DOT ||
+    return ((getValidTarget() & TARGET_ENEMY) && getSkillType() == xi::SkillType::EnfeeblingMagic) || m_spellFamily == SPELLFAMILY_ELE_DOT ||
            m_spellFamily == SPELLFAMILY_BIO || m_ID == SpellID::Stun || m_ID == SpellID::Curse;
 }
 
@@ -197,12 +197,12 @@ float CSpell::getRadius() const
     return m_radius;
 }
 
-uint16 CSpell::getZoneMisc() const
+xi::ZoneMisc CSpell::getZoneMisc() const
 {
     return m_zoneMisc;
 }
 
-void CSpell::setZoneMisc(uint16 Misc)
+void CSpell::setZoneMisc(xi::ZoneMisc Misc)
 {
     m_zoneMisc = Misc;
 }
@@ -494,7 +494,7 @@ void LoadSpellList()
         PSpell->setSpellGroup(rset->get<SPELLGROUP>("group"));
         PSpell->setSpellFamily(rset->get<SPELLFAMILY>("family"));
         PSpell->setValidTarget(rset->get<uint16>("validTargets"));
-        PSpell->setSkillType(rset->get<uint8>("skill"));
+        PSpell->setSkillType(rset->get<xi::SkillType>("skill"));
         PSpell->setCastTime(std::chrono::milliseconds(rset->get<uint32>("castTime")));
         PSpell->setRecastTime(std::chrono::milliseconds(rset->get<uint32>("recastTime")));
         PSpell->setAnimationID(rset->get<uint16>("animation"));
@@ -503,7 +503,7 @@ void LoadSpellList()
         PSpell->setAOE(rset->get<uint8>("AOE"));
         PSpell->setBase(rset->get<uint16>("base"));
         PSpell->setElement(rset->get<uint16>("element"));
-        PSpell->setZoneMisc(rset->get<uint16>("zonemisc"));
+        PSpell->setZoneMisc(rset->get<xi::ZoneMisc>("zonemisc"));
         PSpell->setMultiplier(rset->get<float>("multiplier"));
         PSpell->setMessage(rset->get<MsgBasic>("message"));
         PSpell->setMagicBurstMessage(rset->get<MsgBasic>("magicBurstMessage"));

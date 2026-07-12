@@ -33,7 +33,9 @@ def patch_file(filepath, search_str, replacements):
         print(f"[-] Failed to patch {filepath}. No changes saved.")
 
 def main():
-    print("Starting Complete Zone Awake Auto-Patcher...\n")
+    print("=======================================================================")
+    print("  Starting Complete Zone Awake Auto-Patcher... ")
+    print("=======================================================================\n")
 
     # 1. Patch zone.h
     patch_file(
@@ -47,13 +49,13 @@ def main():
         ]
     )
 
-    # 2. Patch lua_zone.h
+    # 2. Patch lua_zone.h (Fixed alignment spacing and indentation tokens)
     patch_file(
         os.path.join("src", "map", "lua", "lua_zone.h"),
         "setPreventSleep",
         [
-            ("auto        insertDynamicEntity(sol::table table) -> CBaseEntity*;", 
-             "auto        insertDynamicEntity(sol::table table) -> CBaseEntity*;\n    void        setPreventSleep(bool value);")
+            ("    auto         insertDynamicEntity(sol::table table) -> CBaseEntity*;", 
+             "    auto         insertDynamicEntity(sol::table table) -> CBaseEntity*;\n    void         setPreventSleep(bool value);")
         ]
     )
 
@@ -85,3 +87,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    if os.name == "nt":
+        input("\nPress ENTER to close...")

@@ -24,17 +24,19 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
         FIND_NOTHING                  = 7250,  -- You dig and you dig, but find nothing.
         AMK_DIGGING_OFFSET            = 7316,  -- You spot some familiar footprints. You are convinced that your moogle friend has been digging in the immediate vicinity.
         FOUND_ITEM_WITH_EASE          = 7325,  -- It appears your chocobo found this item with ease.
-        SIGNPOST3                     = 7407,  -- North: Valkurm Dunes South: North Gustaberg East: Gusgen Mines, Pashhow Marshlands
+        SIGNPOST                      = 7407,  -- North: Valkurm Dunes South: North Gustaberg East: Gusgen Mines, Pashhow Marshlands
         SIGNPOST2                     = 7408,  -- North: Pashhow Marshlands West: Valkurm Dunes, North Gustaberg Southeast: Gusgen Mines
-        SIGNPOST_DIALOG_1             = 7409,  -- North: Valkurm Dunes South: To Gustaberg
-        SIGNPOST_DIALOG_2             = 7410,  -- You see something stuck behind the signpost.
+        SIGNPOST3_DIALOG_1            = 7409,  -- North: Valkurm Dunes South: To Gustaberg
+        SIGNPOST3_DIALOG_2            = 7410,  -- You see something stuck behind the signpost.
         SOMETHING_BURIED_HERE         = 7411,  -- Something has been buried here.
+        THOUGHT_YOU_SAW_SOMETHING     = 7412,  -- You thought you saw something, but find nothing.
         BLACKENED_SPOT_ON_GROUND      = 7460,  -- There is a blackened spot on the ground...
         BLACKENED_SHOULD_PLACE        = 7461,  -- This is the blackened spot you were told about. You should place <item> here.
         PLACE_BLACKENED_SPOT          = 7462,  -- You place <item> on the blackened spot.
         BLACKENED_NOTHING_HAPPENS     = 7463,  -- You place <item> on the blackened spot, but nothing happens.
         BLACKENED_MUST_BE_CLOSER      = 7464,  -- You have to be closer to place anything on the blackened spot.
         NOT_THE_TIME_FOR_THAT         = 7473,  -- This is not the time for that!
+        GIMME_EVERYTHING_YA_GOT       = 7474,  -- Gimme everything ya got in your bag.
         TELEPOINT_HAS_BEEN_SHATTERED  = 7500,  -- The telepoint has been shattered into a thousand pieces...
         TIME_ELAPSED                  = 7556,  -- Time elapsed: <number> [hour/hours] (Vana'diel time) <number> [minute/minutes] and <number> [second/seconds] (Earth time)
         MEMORIES_SEALED_OFF           = 7613,  -- A portion of your memories has been sealed off.
@@ -59,47 +61,47 @@ zones[xi.zone.KONSCHTAT_HIGHLANDS] =
         COMMON_SENSE_SURVIVAL         = 11930, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
     },
     mob =
+    {
+        BENDIGEIT_VRAN = GetFirstID('Bendigeit_Vran'),
+        FORGER         = GetFirstID('Forger'),
+        HATY           = GetFirstID('Haty'),
+        RAMPAGING_RAM  = GetFirstID('Rampaging_Ram'),
+        STEELFLEECE    = GetFirstID('Steelfleece_Baldarich'),
+        STRAY_MARY     = GetTableOfIDs('Stray_Mary'), -- 2 NMs
+        TREMOR_RAM     = GetTableOfIDs('Tremor_Ram'),
+        VOIDWATCH      = GetTableOfIDs('Gwynn_ap_Nudd'),
+
+        VOIDWALKER =
         {
-            STRAY_MARY     = GetTableOfIDs('Stray_Mary'), -- 2 NMs
-            RAMPAGING_RAM  = GetFirstID('Rampaging_Ram'),
-            STEELFLEECE    = GetFirstID('Steelfleece_Baldarich'),
-            TREMOR_RAM     = GetTableOfIDs('Tremor_Ram'),
-            FORGER         = GetFirstID('Forger'),
-            HATY           = GetFirstID('Haty'),
-            BENDIGEIT_VRAN = GetFirstID('Bendigeit_Vran'),
-            VOIDWATCH      = GetTableOfIDs('Gwynn_ap_Nudd'),
-
-            VOIDWALKER =
+            [xi.keyItem.CLEAR_ABYSSITE] =
             {
-                [xi.keyItem.CLEAR_ABYSSITE] =
-                {
-                    17220019, -- Prickly Sheep
-                    17220018, -- Prickly Sheep
-                    17220017, -- Prickly Sheep
-                    17220016, -- Prickly Sheep
-                    17220015,  -- Void Hare
-                    17220014,  -- Void Hare
-                    17220013,  -- Void Hare
-                    17220012,  -- Void Hare
-                },
+                17220019, -- Prickly Sheep
+                17220018, -- Prickly Sheep
+                17220017, -- Prickly Sheep
+                17220016, -- Prickly Sheep
+                17220015, -- Void Hare
+                17220014, -- Void Hare
+                17220013, -- Void Hare
+                17220012, -- Void Hare
+            },
 
-                [xi.keyItem.COLORFUL_ABYSSITE] =
-                {
-                    17220011,  -- Chesma
-                    17220010, -- Tammuz
-                },
+            [xi.keyItem.COLORFUL_ABYSSITE] =
+            {
+                17220011, -- Chesma
+                17220010, -- Tammuz
+            },
 
-                [xi.keyItem.GREY_ABYSSITE] =
-                {
-                    17220009, -- Dawon
-                },
+            [xi.keyItem.GREY_ABYSSITE] =
+            {
+                17220009, -- Dawon
+            },
 
-                [xi.keyItem.BLACK_ABYSSITE] =
-                {
-                    17220008, -- Yilbegan
-                }
+            [xi.keyItem.BLACK_ABYSSITE] =
+            {
+                17220008, -- Yilbegan
             }
-        },
+        }
+    },
 
     npc =
     {

@@ -366,7 +366,7 @@ void IPCClient::handleMessage_ChatMessageYell(const IPP& ipp, const ipc::ChatMes
     // clang-format off
     zoneutils::ForEachZone([&](CZone* PZone)
     {
-        if (PZone->CanUseMisc(MISC_YELL))
+        if (PZone->CanUseMisc(xi::ZoneMisc::Yell))
         {
             PZone->ForEachChar([&](CCharEntity* PChar)
             {
@@ -388,7 +388,7 @@ void IPCClient::handleMessage_ChatMessageAssist(const IPP& ipp, const ipc::ChatM
     // clang-format off
     zoneutils::ForEachZone([&](CZone* PZone)
     {
-        if (PZone->CanUseMisc(MISC_ASSIST))
+        if (PZone->CanUseMisc(xi::ZoneMisc::Assist))
         {
             PZone->ForEachChar([&](CCharEntity* PChar)
             {
@@ -950,7 +950,7 @@ void IPCClient::handleMessage_SendPlayerToLocation(const IPP& ipp, const ipc::Se
 
         PChar->clearPacketList();
 
-        PChar->requestedWarp = true;
+        PChar->requestedZoneChange = true;
 
         // Save pet if any
         if (PChar->shouldPetPersistThroughZoning())

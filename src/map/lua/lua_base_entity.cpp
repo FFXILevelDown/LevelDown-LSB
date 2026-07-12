@@ -1150,27 +1150,7 @@ void CLuaBaseEntity::sendChocoboRace(const sol::table& race) const
 
         for (size_t idx = 1; idx <= count; ++idx)
         {
-            auto&      entry = entries[idx - 1];
-            const auto data  = chocobos->get<sol::table>(idx);
-
-            entry.Item        = data.get_or<uint8>("item", 0);   // equipped item (sectionEvent)
-            entry.Orders      = data.get_or<uint8>("orders", 0); // jockey orders
-            entry.Size        = data.get_or<uint8>("size", 0);   // jockey (jockeySize)
-            entry.Color       = data.get_or<uint8>("color", 0);  // plumage colour
-            entry.Gender      = data.get_or<uint8>("gender", 0);
-            entry.Weather     = data.get_or<uint8>("weather", 0);     // preferred weather (xi.chocoboRaising.weather)
-            entry.Temperament = data.get_or<uint8>("temperament", 0); // display/raising trait; no race effect
-            entry.Ability1    = data.get_or<uint8>("ability1", 0);    // xi.chocoboRaising.ability (Gallop/Canter/...)
-            entry.Ability2    = data.get_or<uint8>("ability2", 0);
-
-            // Racing stats (chococard ranks 0-7 = F..SS): STR/END/DSC/RCP.
-            if (const auto stats = data.get<sol::optional<sol::table>>("stats"))
-            {
-                entry.STR.Rank = stats->get_or<uint8>("str", 0);
-                entry.END.Rank = stats->get_or<uint8>("end", 0);
-                entry.DSC.Rank = stats->get_or<uint8>("dsc", 0);
-                entry.RCP.Rank = stats->get_or<uint8>("rcp", 0);
-            }
+            entries[idx - 1] = GP_SERV_COMMAND_CHOCOBO_RACING::ChocoboParam::fromLua(chocobos->get<sol::table>(idx));
         }
 
         PChar->pushPacket<GP_SERV_COMMAND_CHOCOBO_RACING::CHOCOBOPARAMS>(entries);
@@ -2716,7 +2696,7 @@ void CLuaBaseEntity::updateNPCHideTime(const sol::object& seconds)
 
 auto CLuaBaseEntity::getWeather(const sol::object& ignoreScholar) const -> uint8
 {
-    auto weather = Weather::None;
+    auto weather = xi::Weather::None;
 
     if (m_PBaseEntity->objtype & TYPE_PC || m_PBaseEntity->objtype & TYPE_MOB)
     {
@@ -2738,9 +2718,9 @@ auto CLuaBaseEntity::getWeather(const sol::object& ignoreScholar) const -> uint8
  *  Notes   : Only used for GM command: scripts/commands/setweather.lua
  ************************************************************************/
 
-void CLuaBaseEntity::setWeather(Weather weatherType)
+void CLuaBaseEntity::setWeather(xi::Weather weatherType)
 {
-    if (magic_enum::enum_contains<Weather>(weatherType))
+    if (magic_enum::enum_contains<xi::Weather>(weatherType))
     {
         zoneutils::GetZone(m_PBaseEntity->getZone())->SetWeather(weatherType);
         luautils::OnZoneWeatherChange(m_PBaseEntity->getZone(), weatherType);
@@ -6791,7 +6771,7 @@ void CLuaBaseEntity::jail()
  *  Notes   : Checks if specified MISC flag is set in current zone
  ************************************************************************/
 
-bool CLuaBaseEntity::canUseMisc(uint16 misc)
+bool CLuaBaseEntity::canUseMisc(xi::ZoneMisc misc)
 {
     if (m_PBaseEntity->loc.zone == nullptr)
     {
@@ -7041,7 +7021,7 @@ void CLuaBaseEntity::changeJob(uint8 newJob)
         {
             case JOB_MNK:
             case JOB_PUP:
-                PWeapon->setSkillType(SKILL_HAND_TO_HAND);
+                PWeapon->setSkillType(xi::SkillType::HandToHand);
                 PWeapon->setBaseDelay(480);
                 PWeapon->setDelay(480);
                 break;
@@ -7049,47 +7029,47 @@ void CLuaBaseEntity::changeJob(uint8 newJob)
             case JOB_BRD:
             case JOB_RNG:
             case JOB_COR:
-                PWeapon->setSkillType(SKILL_DAGGER);
+                PWeapon->setSkillType(xi::SkillType::Dagger);
                 break;
             case JOB_RDM:
             case JOB_PLD:
             case JOB_BLU:
-                PWeapon->setSkillType(SKILL_SWORD);
+                PWeapon->setSkillType(xi::SkillType::Sword);
                 break;
             case JOB_RUN:
-                PWeapon->setSkillType(SKILL_GREAT_SWORD);
+                PWeapon->setSkillType(xi::SkillType::GreatSword);
                 PWeapon->setDelay(480);
                 PWeapon->setBaseDelay(480);
                 break;
             case JOB_WAR:
             case JOB_BST:
-                PWeapon->setSkillType(SKILL_AXE);
+                PWeapon->setSkillType(xi::SkillType::Axe);
                 break;
             case JOB_DRK:
-                PWeapon->setSkillType(SKILL_SCYTHE);
+                PWeapon->setSkillType(xi::SkillType::Scythe);
                 PWeapon->setDelay(480);
                 PWeapon->setBaseDelay(480);
                 break;
             case JOB_DRG:
-                PWeapon->setSkillType(SKILL_POLEARM);
+                PWeapon->setSkillType(xi::SkillType::Polearm);
                 PWeapon->setDelay(480);
                 PWeapon->setBaseDelay(480);
                 break;
             case JOB_NIN:
-                PWeapon->setSkillType(SKILL_KATANA);
+                PWeapon->setSkillType(xi::SkillType::Katana);
                 break;
             case JOB_SAM:
-                PWeapon->setSkillType(SKILL_GREAT_KATANA);
+                PWeapon->setSkillType(xi::SkillType::GreatKatana);
                 PWeapon->setDelay(480);
                 PWeapon->setBaseDelay(480);
                 break;
             case JOB_WHM:
             case JOB_BLM:
             case JOB_GEO:
-                PWeapon->setSkillType(SKILL_CLUB);
+                PWeapon->setSkillType(xi::SkillType::Club);
                 break;
             case JOB_SMN:
-                PWeapon->setSkillType(SKILL_STAFF);
+                PWeapon->setSkillType(xi::SkillType::Staff);
                 PWeapon->setDelay(480);
                 PWeapon->setBaseDelay(480);
                 break;
@@ -10850,12 +10830,12 @@ void CLuaBaseEntity::capSkill(uint8 skill)
         // CItemWeapon* PItem = ((CBattleEntity*)m_PBaseEntity)->m_Weapons[SLOT_MAIN];
         /* let's just ignore this part for the moment
         //remove modifiers if valid
-        if(skill>=1 && skill<=12 && PItem!=nullptr && PItem->getSkillType()==skill){
+        if(skill>=1 && skill<=12 && PItem!=nullptr && static_cast<uint8>(PItem->getSkillType())==skill){
             PChar->delModifier(Mod::ATT, PChar->GetSkill(skill));
             PChar->delModifier(Mod::ACC, PChar->GetSkill(skill));
         }
         */
-        uint16 maxSkill                   = 10 * battleutils::GetMaxSkill((SKILLTYPE)skill, PChar->GetMJob(), PChar->GetMLevel());
+        uint16 maxSkill                   = 10 * battleutils::GetMaxSkill((xi::SkillType)skill, PChar->GetMJob(), PChar->GetMLevel());
         PChar->RealSkills.skill[skill]    = maxSkill; // set to capped
         PChar->WorkingSkills.skill[skill] = maxSkill / 10;
         PChar->WorkingSkills.skill[skill] |= 0x8000; // set blue capped flag
@@ -10863,7 +10843,7 @@ void CLuaBaseEntity::capSkill(uint8 skill)
         charutils::CheckWeaponSkill(PChar, skill);
         /* and ignore this part
         //reapply modifiers if valid
-        if(skill>=1 && skill<=12 && PItem!=nullptr && PItem->getSkillType()==skill){
+        if(skill>=1 && skill<=12 && PItem!=nullptr && static_cast<uint8>(PItem->getSkillType())==skill){
             PChar->addModifier(Mod::ATT, PChar->GetSkill(skill));
             PChar->addModifier(Mod::ACC, PChar->GetSkill(skill));
         }
@@ -10883,7 +10863,7 @@ void CLuaBaseEntity::capAllSkills() const
 {
     if (auto* PChar = dynamic_cast<CCharEntity*>(m_PBaseEntity))
     {
-        for (uint8 i = SKILL_HAND_TO_HAND; i <= SKILL_HANDBELL; ++i) // For SKILL_HAND_TO_HAND (1) - SKILL_HANDBELL (46)
+        for (uint8 i = static_cast<uint8>(xi::SkillType::HandToHand); i <= static_cast<uint8>(xi::SkillType::Handbell); ++i) // For xi::SkillType::HandToHand (1) - xi::SkillType::Handbell (45)
         {
             const char* Query = "INSERT INTO char_skills "
                                 "SET "
@@ -10895,13 +10875,13 @@ void CLuaBaseEntity::capAllSkills() const
 
             db::preparedStmt(Query, PChar->id, i, 5000, PChar->RealSkills.rank[i], 5000, PChar->RealSkills.rank[i]);
 
-            uint16 maxSkill               = 10 * battleutils::GetMaxSkill(static_cast<SKILLTYPE>(i), PChar->GetMJob(), PChar->GetMLevel());
+            uint16 maxSkill               = 10 * battleutils::GetMaxSkill(static_cast<xi::SkillType>(i), PChar->GetMJob(), PChar->GetMLevel());
             PChar->RealSkills.skill[i]    = maxSkill; // set to capped
             PChar->WorkingSkills.skill[i] = maxSkill / 10;
             PChar->WorkingSkills.skill[i] |= 0x8000; // set blue capped flag
         }
 
-        charutils::CheckWeaponSkill(PChar, SKILL_NONE);
+        charutils::CheckWeaponSkill(PChar, static_cast<uint8>(xi::SkillType::None));
         PChar->pushPacket<GP_SERV_COMMAND_CLISTATUS2>(PChar);
         return;
     }
@@ -10930,7 +10910,7 @@ uint16 CLuaBaseEntity::getSkillLevel(uint16 skillId)
         return 0;
     }
 
-    return static_cast<CBattleEntity*>(m_PBaseEntity)->GetSkill(skillId);
+    return static_cast<CBattleEntity*>(m_PBaseEntity)->GetSkill(static_cast<xi::SkillType>(skillId));
 }
 
 /************************************************************************
@@ -10970,7 +10950,7 @@ void CLuaBaseEntity::setSkillLevel(uint8 SkillID, uint16 SkillAmount)
 
 uint16 CLuaBaseEntity::getMaxSkillLevel(uint8 level, uint8 jobId, uint8 skillId)
 {
-    auto skill = static_cast<SKILLTYPE>(skillId);
+    auto skill = static_cast<xi::SkillType>(skillId);
     auto job   = static_cast<JOBTYPE>(jobId);
 
     return battleutils::GetMaxSkill(skill, job, level);
@@ -11117,7 +11097,7 @@ void CLuaBaseEntity::trySkillUp(uint8 skill, uint8 level, const sol::object& for
     bool useSubSkill  = (useSubSkillObj != sol::lua_nil) ? forceSkillUpObj.as<bool>() : false;
 
     auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
-    charutils::TrySkillUP(PChar, static_cast<SKILLTYPE>(skill), level, forceSkillUp, useSubSkill);
+    charutils::TrySkillUP(PChar, static_cast<xi::SkillType>(skill), level, forceSkillUp, useSubSkill);
 }
 
 /************************************************************************
@@ -13360,7 +13340,7 @@ bool CLuaBaseEntity::isUsingH2H()
 
         if (PMainWeapon)
         {
-            if (PMainWeapon->getSkillType() == SKILLTYPE::SKILL_HAND_TO_HAND)
+            if (PMainWeapon->getSkillType() == xi::SkillType::HandToHand)
             {
                 return true;
             }
@@ -13373,7 +13353,7 @@ bool CLuaBaseEntity::isUsingH2H()
     else if (PBattleEntity)
     {
         CItemWeapon* PWeapon = dynamic_cast<CItemWeapon*>(PBattleEntity->m_Weapons[SLOT_MAIN]);
-        if (PWeapon && PWeapon->getSkillType() == SKILLTYPE::SKILL_HAND_TO_HAND)
+        if (PWeapon && PWeapon->getSkillType() == xi::SkillType::HandToHand)
         {
             return true;
         }
@@ -15049,7 +15029,7 @@ auto CLuaBaseEntity::addBardSong(CLuaBaseEntity* PEntity, xi::StatusEffect effec
         CItemWeapon* PItem   = static_cast<CItemWeapon*>(PCaster->getEquip(SLOT_RANGED));
 
         if (PItem == nullptr || PItem->getID() == 65535 ||
-            !(PItem->getSkillType() == SKILL_STRING_INSTRUMENT || PItem->getSkillType() == SKILL_WIND_INSTRUMENT))
+            !(PItem->getSkillType() == xi::SkillType::StringInstrument || PItem->getSkillType() == xi::SkillType::WindInstrument))
         {
             maxSongs = 1;
         }
@@ -15791,7 +15771,7 @@ uint8 CLuaBaseEntity::getWeaponSkillType(uint8 slotID)
 
         if (PWeapon)
         {
-            return PWeapon->getSkillType();
+            return static_cast<uint8>(PWeapon->getSkillType());
         }
         else
         {
@@ -17783,7 +17763,7 @@ float CLuaBaseEntity::getMeleeRange(CLuaBaseEntity* target)
  *  Notes   : Used for changing Ul'xzomit babies' size and through !setmobflags command
  ************************************************************************/
 
-void CLuaBaseEntity::setMobFlags(uint32 flags, const sol::object& mobId)
+void CLuaBaseEntity::setMobFlags(xi::EntityFlags flags, const sol::object& mobId)
 {
     if (m_PBaseEntity->objtype != TYPE_MOB && m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -17830,12 +17810,12 @@ void CLuaBaseEntity::setMobFlags(uint32 flags, const sol::object& mobId)
  *  Example : Not in use in scripts
  *  Notes   : Currently only used through !getMobFlags command
  ************************************************************************/
-uint32 CLuaBaseEntity::getMobFlags()
+auto CLuaBaseEntity::getMobFlags() -> xi::EntityFlags
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
         ShowWarning("Attempting to get mob flags for invalid entity type (%s).", m_PBaseEntity->getName());
-        return 0;
+        return xi::EntityFlags::None;
     }
 
     if (auto* PMob = dynamic_cast<CMobEntity*>(m_PBaseEntity))
@@ -17843,7 +17823,7 @@ uint32 CLuaBaseEntity::getMobFlags()
         return PMob->getEntityFlags();
     }
 
-    return 0;
+    return xi::EntityFlags::None;
 }
 
 /************************************************************************
@@ -17853,7 +17833,7 @@ uint32 CLuaBaseEntity::getMobFlags()
  *  Notes   :
  ************************************************************************/
 
-void CLuaBaseEntity::setNpcFlags(uint32 flags)
+void CLuaBaseEntity::setNpcFlags(xi::EntityFlags flags)
 {
     if (m_PBaseEntity->objtype != TYPE_NPC)
     {
@@ -18117,7 +18097,7 @@ bool CLuaBaseEntity::hasTrait(uint16 traitID)
  *  Notes   : Arguments are dec to bin, so powers of 2 (max 256) -- Listed in mobentity.h
  ************************************************************************/
 
-bool CLuaBaseEntity::hasImmunity(uint32 immunityID)
+bool CLuaBaseEntity::hasImmunity(xi::Immunity immunityID)
 {
     auto* PEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
     if (!PEntity)
@@ -18135,7 +18115,7 @@ bool CLuaBaseEntity::hasImmunity(uint32 immunityID)
  *  Example : mob:addImmunity(xi.immunity.SILENCE)
  ************************************************************************/
 
-void CLuaBaseEntity::addImmunity(uint32 immunityID)
+void CLuaBaseEntity::addImmunity(xi::Immunity immunityID)
 {
     auto PEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
     if (PEntity)
@@ -18150,7 +18130,7 @@ void CLuaBaseEntity::addImmunity(uint32 immunityID)
  *  Example : mob:delImmunity(xi.immunity.SILENCE)
  ************************************************************************/
 
-void CLuaBaseEntity::delImmunity(uint32 immunityID)
+void CLuaBaseEntity::delImmunity(xi::Immunity immunityID)
 {
     auto PEntity = dynamic_cast<CBattleEntity*>(m_PBaseEntity);
     if (PEntity)
@@ -18691,12 +18671,12 @@ void CLuaBaseEntity::setCrystalElement(ELEMENT crystalElement)
  *  Notes   : Currently used in bitwise calculations for high-tier NM's
  ************************************************************************/
 
-uint16 CLuaBaseEntity::getBehavior()
+auto CLuaBaseEntity::getBehavior() -> xi::Behavior
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
         ShowWarning("Attempting to get behavior for invalid entity type (%s).", m_PBaseEntity->getName());
-        return 0;
+        return xi::Behavior::None;
     }
 
     return static_cast<CMobEntity*>(m_PBaseEntity)->m_Behavior;
@@ -18709,7 +18689,7 @@ uint16 CLuaBaseEntity::getBehavior()
  *  Notes   : Currently used in bitwise calculations for high-tier NM's
  ************************************************************************/
 
-void CLuaBaseEntity::setBehavior(uint16 behavior)
+void CLuaBaseEntity::setBehavior(xi::Behavior behavior)
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
@@ -18762,12 +18742,12 @@ void CLuaBaseEntity::setLink(uint8 link)
  *  Example : mob:getRoamFlags()
  ************************************************************************/
 
-uint16 CLuaBaseEntity::getRoamFlags()
+auto CLuaBaseEntity::getRoamFlags() -> xi::RoamFlag
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {
         ShowWarning("Attempting to get roam flags for invalid entity type (%s).", m_PBaseEntity->getName());
-        return 0;
+        return xi::RoamFlag::None;
     }
 
     return static_cast<CMobEntity*>(m_PBaseEntity)->m_roamFlags;
@@ -18779,7 +18759,7 @@ uint16 CLuaBaseEntity::getRoamFlags()
  *  Example : mob:setRoamFlags(bit.bor(mob:getRoamFlags(), xi.roamFlag.STEALTH))
  ************************************************************************/
 
-void CLuaBaseEntity::setRoamFlags(uint16 newRoamFlags)
+void CLuaBaseEntity::setRoamFlags(xi::RoamFlag newRoamFlags)
 {
     if (m_PBaseEntity->objtype != TYPE_MOB)
     {

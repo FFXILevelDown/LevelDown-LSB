@@ -21,10 +21,11 @@
 
 #include "spawn_handler.h"
 
+#include "ai/ai_container.h"
 #include "common/timer.h"
 #include "common/vana_time.h"
+#include "data/enums/weather.h"
 #include "entities/mob_entity.h"
-#include "enums/weather.h"
 #include "lua/luautils.h"
 #include "spawn_slot.h"
 #include "utils/zoneutils.h"
@@ -51,12 +52,12 @@ auto spawnWindowOf(const CMobEntity* PMob) -> Maybe<SpawnWindow>
         return PMob->spawnWindow();
     }
 
-    if (PMob->m_SpawnType & SPAWNTYPE_ATNIGHT)
+    if ((PMob->m_SpawnType & xi::SpawnType::AtNight) != xi::SpawnType::Normal)
     {
         return SpawnWindow{ 20, 4 };
     }
 
-    if (PMob->m_SpawnType & SPAWNTYPE_ATEVENING)
+    if ((PMob->m_SpawnType & xi::SpawnType::AtEvening) != xi::SpawnType::Normal)
     {
         return SpawnWindow{ 18, 6 };
     }
@@ -240,35 +241,45 @@ void SpawnHandler::Tick(const timer::time_point now)
 // Despawn mobs now outside their spawn window. Not tied to 30s task.
 void SpawnHandler::onGameHour(const uint32 hour) const
 {
+    const bool zoneActive = zone_->IsZoneActive();
+
     zone_->ForEachMob(
-        [hour](CMobEntity* PMob)
+        [zoneActive, hour](CMobEntity* PMob)
         {
             const auto window = spawnWindowOf(PMob);
             if (window.has_value() && PMob->isAlive() && !hourInWindow(hour, window->spawnHour, window->despawnHour))
             {
-                PMob->SetDespawnTime(1ms);
+                if (zoneActive)
+                {
+                    PMob->SetDespawnTime(1ms);
+                }
+                else
+                {
+                    // Sleeping zone -> process the despawn immediately since AI doesnt tick on its own
+                    PMob->PAI->Despawn();
+                }
             }
         });
 }
 
 // On Weather change, process all relevant despawns.
 // This is not tied to the 30s task.
-void SpawnHandler::onWeatherChange(Weather weather) const
+void SpawnHandler::onWeatherChange(xi::Weather weather) const
 {
     const auto element = zoneutils::GetWeatherElement(weather);
     zone_->ForEachMob(
         [weather, element](CMobEntity* PMob)
         {
-            if (PMob->m_EcoSystem == xi::Ecosystem::Elemental && PMob->PMaster == nullptr && PMob->m_SpawnType & SPAWNTYPE_WEATHER)
+            if (PMob->m_EcoSystem == xi::Ecosystem::Elemental && PMob->PMaster == nullptr && (PMob->m_SpawnType & xi::SpawnType::Weather) != xi::SpawnType::Normal)
             {
                 if (PMob->m_Element != element)
                 {
                     PMob->SetDespawnTime(1s);
                 }
             }
-            else if (PMob->m_SpawnType & SPAWNTYPE_FOG)
+            else if ((PMob->m_SpawnType & xi::SpawnType::Fog) != xi::SpawnType::Normal)
             {
-                if (weather != Weather::Fog)
+                if (weather != xi::Weather::Fog)
                 {
                     PMob->SetDespawnTime(1s);
                 }
@@ -294,15 +305,15 @@ auto SpawnHandler::canSpawnNow(const CMobEntity* PMob) const -> bool
     }
 
     // Weather-based spawn conditions
-    if (PMob->m_SpawnType & SPAWNTYPE_FOG)
+    if ((PMob->m_SpawnType & xi::SpawnType::Fog) != xi::SpawnType::Normal)
     {
-        if (zone_->weather().current() != Weather::Fog)
+        if (zone_->weather().current() != xi::Weather::Fog)
         {
             return false;
         }
     }
 
-    if (PMob->m_SpawnType & SPAWNTYPE_WEATHER)
+    if ((PMob->m_SpawnType & xi::SpawnType::Weather) != xi::SpawnType::Normal)
     {
         // Only for elementals without a master
         if (PMob->m_EcoSystem == xi::Ecosystem::Elemental && PMob->PMaster == nullptr)

@@ -430,13 +430,13 @@ local overseerOffsets =
         { offset =  1, nation = xi.nation.BASTOK   }, -- Tsunashige, I.M.
         { offset =  8, nation = xi.nation.BASTOK   }, -- Fighting Ant, I.M.
         { offset =  4, nation = xi.nation.BASTOK   }, -- flag
-        { offset = 13, nation = xi.nation.BASTOK   }, -- flag
+        { offset = 12, nation = xi.nation.BASTOK   }, -- flag
         { offset =  2, nation = xi.nation.WINDURST }, -- Nyata-Mobuta, W.W.
         { offset =  9, nation = xi.nation.WINDURST }, -- Tebubu, W.W.
         { offset =  5, nation = xi.nation.WINDURST }, -- flag
-        { offset = 14, nation = xi.nation.WINDURST }, -- flag
+        { offset = 13, nation = xi.nation.WINDURST }, -- flag
         { offset =  6, nation = xi.nation.BEASTMEN }, -- flag
-        { offset = 15, nation = xi.nation.BEASTMEN }, -- flag
+        { offset = 14, nation = xi.nation.BEASTMEN }, -- flag
         { offset = 10, nation = xi.nation.OTHER    }, -- Medicine Axe
     },
     [xi.region.NORVALLEN] =
@@ -727,22 +727,22 @@ local overseerOffsets =
 
 local crystals =
 {
-    [xi.item.FIRE_CRYSTAL]      = 12,
-    [xi.item.ICE_CRYSTAL]       = 12,
-    [xi.item.WIND_CRYSTAL]      = 12,
-    [xi.item.EARTH_CRYSTAL]     = 12,
+    [xi.item.FIRE_CRYSTAL     ] = 12,
+    [xi.item.ICE_CRYSTAL      ] = 12,
+    [xi.item.WIND_CRYSTAL     ] = 12,
+    [xi.item.EARTH_CRYSTAL    ] = 12,
     [xi.item.LIGHTNING_CRYSTAL] = 12,
-    [xi.item.WATER_CRYSTAL]     = 12,
-    [xi.item.LIGHT_CRYSTAL]     = 16,
-    [xi.item.DARK_CRYSTAL]      = 16,
-    [xi.item.INFERNO_CRYSTAL]   = 12,
-    [xi.item.GLACIER_CRYSTAL]   = 12,
-    [xi.item.CYCLONE_CRYSTAL]   = 12,
-    [xi.item.TERRA_CRYSTAL]     = 12,
-    [xi.item.PLASMA_CRYSTAL]    = 12,
-    [xi.item.TORRENT_CRYSTAL]   = 12,
-    [xi.item.AURORA_CRYSTAL]    = 16,
-    [xi.item.TWILIGHT_CRYSTAL]  = 16,
+    [xi.item.WATER_CRYSTAL    ] = 12,
+    [xi.item.LIGHT_CRYSTAL    ] = 16,
+    [xi.item.DARK_CRYSTAL     ] = 16,
+    [xi.item.INFERNO_CRYSTAL  ] = 12,
+    [xi.item.GLACIER_CRYSTAL  ] = 12,
+    [xi.item.CYCLONE_CRYSTAL  ] = 12,
+    [xi.item.TERRA_CRYSTAL    ] = 12,
+    [xi.item.PLASMA_CRYSTAL   ] = 12,
+    [xi.item.TORRENT_CRYSTAL  ] = 12,
+    [xi.item.AURORA_CRYSTAL   ] = 16,
+    [xi.item.TWILIGHT_CRYSTAL ] = 16,
 }
 
 local expRings =
@@ -1237,10 +1237,10 @@ xi.conquest.setRegionalConquestOverseers = function(region)
                     end
 
                     if v.nation == xi.nation.OTHER then
-                        if owner ~= xi.nation.BEASTMEN then
-                            npc:setStatus(xi.status.NORMAL)
-                        else
+                        if owner == xi.nation.BEASTMEN or owner == xi.nation.NEUTRAL then
                             npc:setStatus(xi.status.DISAPPEAR)
+                        else
+                            npc:setStatus(xi.status.NORMAL)
                         end
                     end
                 end
@@ -1288,7 +1288,7 @@ xi.conquest.overseerOnTrade = function(player, npc, trade, guardNation, guardTyp
             if addPoints > 0 and pRank ~= 1 and pRankPoints < 4000 then
                 if pRankPoints + addPoints >= 4000 then
                     player:setRankPoints(4000)
-                    player:addCP(pRankPoints + addPoints - 4000)
+                    player:addCP(utils.clamp(pRankPoints + addPoints - 4000, 0, 1000))
                     player:showText(npc, mOffset + 44) -- 'Your rank points are full. We've added the excess to your conquest points.'
                 else
                     player:addRankPoints(addPoints)
@@ -1826,10 +1826,10 @@ xi.conquest.sendConquestTallyEndMessage = function(player, messageBase, owner, r
     -- Tallying conquest results...
     player:messageText(player, messageBase + 1, 5)
 
-    if owner <= 3 then
-        player:messageText(player, messageBase + 2 + owner, 5) -- This region is currently under <nation> control.
+    if owner == xi.nation.NEUTRAL then
+        player:messageText(player, messageBase + 6, 5) -- This region is currently neutral.
     else
-        player:messageText(player, messageBase + 6, 5) -- This region is currently under beastman control.
+        player:messageText(player, messageBase + 2 + owner, 5) -- This region is currently under <nation> control.
     end
 
     -- Global balance of power message
@@ -1888,15 +1888,10 @@ xi.conquest.sendBalanceOfPowerMessage = function(player, messageBase, ranking, i
 end
 
 xi.conquest.sendConquestTallyUpdateMessage = function(player, messageBase, owner, ranking, influence, isConquestAlliance)
-    -- don't send regional influence for city zones -- nobody can gain influence here.
-    if owner == 255 then
-        return
-    end
-
-    if owner <= 3 then
-        player:messageText(player, messageBase + 32 + owner, 5) -- This region is currently under <nation> control.
+    if owner == xi.nation.NEUTRAL then
+        player:messageText(player, messageBase + 31, 5) -- Conquest update: This region is currently neutral.
     else
-        player:messageText(player, messageBase + 31, 5) -- This region is currently under beastman control.
+        player:messageText(player, messageBase + 32 + owner, 5) -- Conquest update: This region is currently under <nation> control.
     end
 
     if influence >= 64 then
