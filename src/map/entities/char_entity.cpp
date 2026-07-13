@@ -115,10 +115,10 @@ CCharEntity::CCharEntity()
     eventPreparation = new EventPrep();
     currentEvent     = new EventInfo();
 
-    inSequence       = false;
-    gotMessage       = false;
-    m_Locked         = false;
-    m_zoneInCutscene = false;
+    inSequence   = false;
+    gotMessage   = false;
+    m_Locked     = false;
+    m_isPCHidden = false;
 
     accid        = 0;
     m_GMlevel    = 0;
@@ -1801,6 +1801,11 @@ void CCharEntity::OnAbility(CAbilityState& state, action_t& action)
         if (PAbility->getMeritModID() > 0 && !(PAbility->getAddType() & ADDTYPE_MERIT))
         {
             recastReduction = std::chrono::seconds(PMeritPoints->GetMeritValue((MERIT_TYPE)PAbility->getMeritModID(), this));
+
+            if (PAbility->getID() == ABILITY_THIRD_EYE && StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Seigan))
+            {
+                recastReduction = recastReduction / 2;
+            }
         }
 
         auto* charge         = ability::GetCharge(this, static_cast<uint16>(PAbility->getRecastId()));
@@ -2916,8 +2921,8 @@ void CCharEntity::endCurrentEvent()
     currentEvent->reset();
     eventPreparation->reset();
     setLocked(false);
-    m_zoneInCutscene = false;
-    m_Substate       = CHAR_SUBSTATE::SUBSTATE_NONE;
+    m_isPCHidden = false;
+    m_Substate   = CHAR_SUBSTATE::SUBSTATE_NONE;
     tryStartNextEvent();
 }
 
@@ -2998,6 +3003,9 @@ void CCharEntity::tryStartNextEvent()
 
     // If it's a cutscene, we lock the player immediately
     setLocked(currentEvent->type == CUTSCENE);
+
+    // Set hidden status based on event data
+    m_isPCHidden = currentEvent->isHidden;
 
     if (currentEvent->strings.empty())
     {
