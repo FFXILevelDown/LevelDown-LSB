@@ -75,6 +75,7 @@ zones[xi.zone.THE_SANCTUARY_OF_ZITAH] =
         ISONADE               = GetFirstID('Isonade'),
         KEEPER_OF_HALIDOM     = GetFirstID('Keeper_of_Halidom'),
         NOBLE_MOLD            = GetFirstID('Noble_Mold'),
+		VOIDWATCH             = GetTableOfIDs('Cath_Palug'),
     },
     npc =
     {

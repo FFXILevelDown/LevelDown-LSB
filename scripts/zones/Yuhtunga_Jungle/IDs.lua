@@ -81,6 +81,7 @@ zones[xi.zone.YUHTUNGA_JUNGLE] =
         SIREN                  = GetFirstID('Siren'),
         TIPHA                  = GetFirstID('Tipha'),
         VOLUPTUOUS_VILMA       = GetFirstID('Voluptuous_Vilma'),
+        VOIDWATCH              = GetTableOfIDs('Holy_Moly'),
     },
     npc =
     {

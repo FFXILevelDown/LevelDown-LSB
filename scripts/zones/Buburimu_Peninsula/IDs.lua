@@ -83,6 +83,7 @@ zones[xi.zone.BUBURIMU_PENINSULA] =
         THEOYAGUDO_SAMURAI    = GetFirstID('Theoyagudo_Samurai'),
         THEOYAGUDO_SUMMONER   = GetFirstID('Theoyagudo_Summoner'),
         THEOYAGUDO_WHITE_MAGE = GetFirstID('Theoyagudo_White_Mage'),
+		VOIDWATCH             = GetTableOfIDs('Botulus_Rex'),
     },
     npc =
     {

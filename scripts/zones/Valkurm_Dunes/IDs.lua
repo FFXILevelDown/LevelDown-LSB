@@ -97,6 +97,7 @@ zones[xi.zone.VALKURM_DUNES] =
         METAQUADAV_WHITE_MAGE  = GetFirstID('Metaquadav_White_Mage'),
         ONRYO                  = GetFirstID('Onryo'),
         VALKURM_EMPEROR        = GetFirstID('Valkurm_Emperor'),
+		VOIDWATCH              = GetTableOfIDs('Ig-Alima'),
     },
 
     npc =
