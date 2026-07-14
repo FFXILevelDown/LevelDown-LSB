@@ -72,6 +72,7 @@ zones[xi.zone.THE_ELDIEME_NECROPOLIS] =
         TAIFUN              = GetFirstID('Taifun'),
         TROMBE              = GetFirstID('Trombe'),
         YUM_KIMIL           = GetFirstID('Yum_Kimil'),
+		VOIDWATCH           = GetTableOfIDs('Gasha'),
     },
 
     npc =

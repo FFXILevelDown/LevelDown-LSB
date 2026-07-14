@@ -65,6 +65,7 @@ zones[xi.zone.GARLAIGE_CITADEL] =
         MIMIC               = GetFirstID('Mimic'),
         SERKET              = GetFirstID('Serket'),
         SKEWER_SAM          = GetFirstID('Skewer_Sam'),
+		VOIDWATCH           = GetTableOfIDs('Roly-Poly'),
     },
     npc =
     {
