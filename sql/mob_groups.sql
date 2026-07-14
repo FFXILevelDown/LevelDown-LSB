@@ -970,7 +970,7 @@ INSERT INTO `mob_groups` VALUES (55,1573,24,'Gigas_Martialist',300,0,981,0,0,0,N
 INSERT INTO `mob_groups` VALUES (56,1555,24,'Gigas_Catapulter',300,0,981,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (57,6276,24,'Orcish_Bowshooter',300,0,3257,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (58,6278,24,'Orcish_Footsoldier',300,0,3257,0,0,0,NULL);
-INSERT INTO `mob_groups` VALUES (59,3015,24,'Orcish_Gladiator',300,0,3257,0,0,0,NULL);
+INSERT INTO `mob_groups` VALUES (59,3052,24,'Orcish_Gladiator',300,0,3257,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (60,3039,24,'Orcish_Trooper',300,0,3257,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (61,1397,24,'Fomor_Thief',300,1,858,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (62,2392,24,'Leshachikha',300,0,2463,0,0,0,NULL);
@@ -16645,9 +16645,9 @@ INSERT INTO `mob_groups` VALUES (92,6992,289,'Ark_Angels_Wyvern',0,128,0,0,0,0,N
 INSERT INTO `mob_groups` VALUES (93,5697,289,'Warder_of_Courage',0,128,0,0,99999,0,NULL);
 INSERT INTO `mob_groups` VALUES (94,5698,289,'Warders_Wynav',0,128,0,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (95,5631,289,'Balamor',0,128,0,0,0,0,NULL);
-INSERT INTO `mob_groups` VALUES (96,5634,289,'Naga_Raja',0,128,0,0,0,0,NULL);
-INSERT INTO `mob_groups` VALUES (97,5635,289,'Naga_Rajas_Lamia_1',0,128,0,0,0,0,NULL);
-INSERT INTO `mob_groups` VALUES (98,5636,289,'Naga_Rajas_Lamia_2',0,128,0,0,0,0,NULL);
+INSERT INTO `mob_groups` VALUES (96,5634,289,'Naga_Raja',0,128,0,3400000,0,0,NULL);
+INSERT INTO `mob_groups` VALUES (97,5635,289,'Naga_Rajas_Lamia_1',0,128,0,18000,0,0,NULL);
+INSERT INTO `mob_groups` VALUES (98,5636,289,'Naga_Rajas_Lamia_2',0,128,0,18000,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (99,0,289,'Mireu',0,128,0,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (100,6227,289,'Eschan_Ilaern_brd',180,0,0,0,0,0,NULL);
 INSERT INTO `mob_groups` VALUES (101,6230,289,'Eschan_Ilaern_nin',180,0,0,0,0,0,NULL);
