@@ -3,7 +3,7 @@
 --  Mob: Cherukiki
 -----------------------------------
 local ID = zones[xi.zone.SEALIONS_DEN]
-mixins = { require('modules/LevelDown Custom Modules/content/LD Custom HTBF/mobs/mixins/warriors_path_taru_HTBF') }
+mixins = { require('scripts/zones/mixins/mobs/warriors_path_taru_HTBF') }
 -----------------------------------
 local entity = {}
 
@@ -103,3 +103,4 @@ entity.onMobDisengage = function(mob)
 end
 
 return entity
+

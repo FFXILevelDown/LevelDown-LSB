@@ -3,7 +3,7 @@
 --  Mob: Tenzen
 -----------------------------------
 local ID = zones[xi.zone.SEALIONS_DEN]
-local tenzenFunctions = require('modules/LevelDown Custom Modules/content/LD Custom HTBF/mobs/Sealions_Den/TenzenFunctionsHTBF')
+local tenzenFunctions = require('scripts/zones/Sealions_Den/mobs/TenzenFunctionsHTBF')
 -----------------------------------
 local entity = {}
 
@@ -129,3 +129,4 @@ entity.onMobDeath = function(mob, player, optParams)
 end
 
 return entity
+
