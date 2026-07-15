@@ -19,6 +19,7 @@ zones[xi.zone.THE_CELESTIAL_NEXUS] =
         MEMBERS_OF_YOUR_PARTY         = 7542, -- Currently, <number> members of your party (including yourself) have clearance to enter the battlefield.
         MEMBERS_OF_YOUR_ALLIANCE      = 7543, -- Currently, # members of your alliance (including yourself) have clearance to enter the battlefield.
         TIME_LIMIT_FOR_THIS_BATTLE_IS = 7545, -- The time limit for this battle is <number> minutes.
+        TIME_IN_THE_BATTLEFIELD_IS_UP = 7236, -- Your time in the battlefield is up! Now exiting...
         PARTY_MEMBERS_HAVE_FALLEN     = 7581, -- All party members have fallen in battle. Now leaving the battlefield.
         THE_PARTY_WILL_BE_REMOVED     = 7588, -- If all party members' HP are still zero after # minute[/s], the party will be removed from the battlefield.
         ENTERING_THE_BATTLEFIELD_FOR  = 7609, -- Entering the battlefield for [The Celestial Nexus/★The Celestial Nexus/Crystal Paradise]!
