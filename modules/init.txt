@@ -58,7 +58,7 @@ LevelDown Custom Modules/content/LD Campaign Battles
 LevelDown Custom Modules/content/LD Custom Quest
 #LevelDown Custom Modules/content/LD Disabled_Content
 LevelDown Custom Modules/content/LD NM Hunt Campaign
-#LevelDown Custom Modules/content/LD Shattered Domain
+LevelDown Custom Modules/content/LD Shattered Domain
 LevelDown Custom Modules/content/LD Unity
 LevelDown Custom Modules/content/LD Void Watch NM
 #LevelDown Custom Modules/content/LD Custom HTBF
