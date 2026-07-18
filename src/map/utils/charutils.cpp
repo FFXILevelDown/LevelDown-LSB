@@ -2014,8 +2014,12 @@ uint32 UpdateItem(CCharEntity* PChar, uint8 LocationID, uint8 slotID, int32 quan
 
         luautils::OnItemDrop(PChar, PItem);
 
-        // Remove soon to be stale PItem pointer from sync state
-        PChar->inventorySyncState().removeEquipChange(PItem);
+        // Equipped item consumed to 0: resync equipment.
+        if (PChar->inventorySyncState().hasEquipChange(PItem))
+        {
+            PChar->inventorySyncState().clearEquipChanges();
+            PChar->resyncEquipment();
+        }
     }
     return ItemID;
 }
@@ -2740,7 +2744,15 @@ void UpdateWeaponStyle(CCharEntity* PChar, uint8 equipSlotID, CItemEquipment* PI
                     switch (PWeapon->getSkillType())
                     {
                         case xi::SkillType::HandToHand:
-                            PChar->mainlook.sub = appearanceModel + 0x1000;
+                            if (hasValidStyle(PChar, PItem, appearance))
+                            {
+                                PChar->mainlook.sub = appearanceModel + 0x1000;
+                            }
+                            else
+                            {
+                                PChar->mainlook.sub = PChar->look.sub;
+                            }
+
                             break;
                         case xi::SkillType::GreatSword:
                         case xi::SkillType::GreatAxe:
