@@ -99,20 +99,6 @@ CZone::CZone(Scheduler& scheduler, MapConfig config, ZONEID ZoneID, REGION_TYPE 
 
     LoadZoneLines();
     LoadZoneWeather();
-
-    if (config_.isTestServer)
-    {
-        return;
-    }
-
-    // This must run continually, regardless of if the zone is awake
-    spawnHandlerTimerToken_ = scheduler.intervalOnMainThread(
-        kSpawnHandlerInterval,
-        [this]() -> Task<void>
-        {
-            this->spawnHandler().Tick(timer::now());
-            co_return;
-        });
 }
 
 CZone::~CZone()
@@ -250,17 +236,6 @@ void CZone::SetBackgroundMusicDay(uint16 music)
 void CZone::SetBackgroundMusicNight(uint16 music)
 {
     m_zoneMusic.m_songNight = music;
-}
-
-void CZone::SetPreventSleep(bool value)
-{
-    m_preventSleep = value;
-
-    if (m_preventSleep && !zoneTimerToken_.has_value())
-    {
-        createZoneTimers();
-        ShowInfoFmt("Zone {} ({}) forced awake by SetPreventSleep.", GetID(), getName());
-    }
 }
 
 /**
@@ -781,32 +756,9 @@ void CZone::UpdateWeather()
         });
 }
 
-bool CZone::CheckMobsPathedBack()
-{
-    bool allMobsHomeAndHealed = true;
-    if (m_zoneEntities && m_zoneEntities->GetMobList().size() > 0)
-    {
-        const auto& mobListMap = m_zoneEntities->GetMobList();
-        for (const auto& pair : mobListMap)
-        {
-            CMobEntity* mob = dynamic_cast<CMobEntity*>(pair.second);
-            // if the mob is (not dead/despawned AND it is not fully healed) OR it is pathing home
-            if (mob && ((!mob->isDead() && !mob->isFullyHealed()) || mob->m_IsPathingHome))
-            {
-                // at least one mob is away from home or not fully healed
-                allMobsHomeAndHealed = false;
-                break;
-            }
-        }
-    }
-
-    return allMobsHomeAndHealed;
-}
-
 /************************************************************************
  *                                                                       *
- *  Remove a character from the zone. If ZoneServer and character are    *
- *  online, and there is no more left in the zone, then stop zone        *
+ *  Remove a character from the zone.                                     *
  *                                                                       *
  ************************************************************************/
 
@@ -816,11 +768,7 @@ void CZone::DecreaseZoneCounter(CCharEntity* PChar)
 
     m_zoneEntities->DecreaseZoneCounter(PChar);
 
-    if (m_zoneEntities->CharListEmpty())
-    {
-        m_timeZoneEmpty = timer::now();
-    }
-    else
+    if (!m_zoneEntities->CharListEmpty())
     {
         m_zoneEntities->DespawnPC(PChar);
     }
@@ -830,7 +778,7 @@ void CZone::DecreaseZoneCounter(CCharEntity* PChar)
 
 /************************************************************************
  *                                                                       *
- *  Add a character to the zone. If zone isn't running, then load zone.  *
+ *  Add a character to the zone.                                         *
  *  Be sure to check the number of characters in the zone.               *
  *  The maximum number of characters in one zone is 768                  *
  *                                                                       *
@@ -855,11 +803,6 @@ void CZone::IncreaseZoneCounter(CCharEntity* PChar)
     }
 
     m_zoneEntities->InsertPC(PChar);
-
-    if (!zoneTimerToken_.has_value() && !m_zoneEntities->CharListEmpty())
-    {
-        createZoneTimers();
-    }
 
     PChar->StatusEffectContainer->DelStatusEffectsByFlag(xi::StatusEffectFlag::OnZonePathos, EffectNotice::Silent);
 
@@ -975,12 +918,6 @@ auto CZone::ZoneServer(timer::time_point tick) -> Task<void>
         m_BattlefieldHandler->HandleBattlefields(tick);
     }
 
-    if (!m_preventSleep && zoneTimerToken_.has_value() && m_zoneEntities->CharListEmpty() && m_timeZoneEmpty + 5s < timer::now() && CheckMobsPathedBack())
-    {
-        zoneTimerToken_.reset();
-        zoneTimerTriggerAreasToken_.reset();
-    }
-
     co_return;
 }
 
@@ -1072,11 +1009,19 @@ void CZone::createZoneTimers()
 {
     TracyZoneScoped;
 
-    // We'll manually tick on while testing, don't install the timers
+    // We'll manually tick while testing, don't install the timers.
     if (config_.isTestServer)
     {
         return;
     }
+
+    spawnHandlerTimerToken_ = scheduler_.intervalOnMainThread(
+        kSpawnHandlerInterval,
+        [this]() -> Task<void>
+        {
+            this->spawnHandler().Tick(timer::now());
+            co_return;
+        });
 
     zoneTimerToken_ = scheduler_.intervalOnMainThread(
         kLogicUpdateInterval,
@@ -1311,11 +1256,6 @@ void CZone::CharZoneOut(CCharEntity* PChar)
     }
 
     charutils::WriteHistory(PChar);
-}
-
-bool CZone::IsZoneActive() const
-{
-    return zoneTimerToken_.has_value();
 }
 
 CZoneEntities* CZone::GetZoneEntities()

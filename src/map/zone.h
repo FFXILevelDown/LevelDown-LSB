@@ -577,7 +577,6 @@ public:
     bool CanUseMisc(xi::ZoneMisc misc) const;
     void SetWeather(xi::Weather weather);
     void UpdateWeather();
-    bool CheckMobsPathedBack();
 
     virtual void SpawnPCs(CCharEntity* PChar);
     virtual void SpawnMOBs(CCharEntity* PChar);
@@ -615,8 +614,9 @@ public:
 
     virtual void UpdateEntityPacket(CBaseEntity* PEntity, ENTITYUPDATE type, uint8 updatemask, bool alwaysInclude = false);
 
-    bool           IsZoneActive() const;
     CZoneEntities* GetZoneEntities();
+
+    void createZoneTimers();
 
     virtual auto ZoneServer(timer::time_point tick) -> Task<void>;
     virtual auto CheckTriggerAreas() -> Task<void>;
@@ -648,7 +648,6 @@ public:
     void LoadXiMesh();
 
 protected:
-    void createZoneTimers();
     void CharZoneIn(CCharEntity* PChar);
     void CharZoneOut(CCharEntity* PChar);
 
@@ -693,8 +692,6 @@ private:
     zoneLineList_t m_zoneLineList;
 
     CTreasurePool* m_TreasurePool;
-
-    timer::time_point m_timeZoneEmpty; // The time point when the last player left the zone
 
     HashMap<std::string, QueryByNameResult_t> m_queryByNameResults;
 
