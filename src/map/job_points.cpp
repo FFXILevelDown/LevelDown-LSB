@@ -21,6 +21,8 @@
 #include "packets/s2c/0x0aa_magic_data.h"
 #include "spell.h"
 #include "utils/charutils.h"
+#include "lua/luautils.h"
+
 
 CJobPoints::CJobPoints(CCharEntity* PChar)
 {
@@ -294,6 +296,17 @@ void RefreshGiftMods(CCharEntity* PChar)
     {
         PChar->delModifiers(currentGifts);
         currentGifts->clear();
+    }
+
+    // === RAW SOL2 LUA MODULE HOOK ===
+    if (PChar->GetMLevel() < 99)
+    {
+        sol::protected_function customGifts = lua["xi"]["custom_mastery"]["onRefreshGiftMods"];
+        if (customGifts.valid())
+        {
+            customGifts(PChar);
+        }
+        return; // Stops here so level 75s bypass the level 99 loop below
     }
 
     for (auto&& gift : jpGifts[jobId])
