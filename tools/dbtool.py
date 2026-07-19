@@ -8,6 +8,8 @@ import fileinput
 import shutil
 import importlib
 import pathlib
+import socket
+import urllib.request
 
 import platform
 
@@ -839,18 +841,62 @@ def set_external_ip(ip_str):
     _ = db_query(query)
 
 
-def set_external_ip_dialog():
-    import urllib.request
+def find_local_network_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        # No packets are actually sent; this just picks the interface the
+        # kernel would use to reach an external host.
+        s.connect(("8.8.8.8", 80))
+        return s.getsockname()[0]
+    finally:
+        s.close()
 
-    if input("Make server public-facing? [y/N] ").lower() == "y":
-        external_ip = urllib.request.urlopen("https://ident.me").read().decode("utf8")
-        print_green(f"Detected your public-facing IP as: {external_ip}")
-        if input("Is this correct? [y/N] ").lower() == "y":
-            set_external_ip(external_ip)
-        else:
-            external_ip = input("Please enter your public-facing IP: ")
-            if len(external_ip.strip()) > 0:
-                set_external_ip(external_ip)
+
+def find_public_ip():
+    return urllib.request.urlopen("https://ident.me").read().decode("utf8")
+
+
+def set_local_only_ip():
+    set_external_ip("127.0.0.1")
+
+
+def set_local_network_ip():
+    try:
+        detected_ip = find_local_network_ip()
+    except Exception as e:
+        print_red(f"Could not detect local network IP: {e}")
+        return
+    print_green(f"Detected your local network IP as: {detected_ip}")
+    set_external_ip(detected_ip)
+
+
+def set_public_ip():
+    try:
+        detected_ip = find_public_ip()
+    except Exception as e:
+        print_red(f"Could not detect public IP: {e}")
+        return
+    print_green(f"Detected your public-facing IP as: {detected_ip}")
+    set_external_ip(detected_ip)
+
+
+def set_manual_ip():
+    external_ip = input("Please enter the zone IP: ")
+    if len(external_ip.strip()) > 0:
+        set_external_ip(external_ip.strip())
+
+
+def set_external_ip_dialog():
+    present_menu(
+        "Set Zone IP Addresses",
+        {
+            "1": ["Local only (127.0.0.1)", set_local_only_ip],
+            "2": ["Local network (auto-detect LAN IP)", set_local_network_ip],
+            "3": ["Public IP (via ident.me)", set_public_ip],
+            "m": ["Manual entry", set_manual_ip],
+            "q": ["Quit to tasks menu", NOOP],
+        },
+    )
 
 
 def print_db_tables_by_size():
@@ -1372,6 +1418,53 @@ def validate_yaml_data():
         print_red("YAML validation failed.")
 
 
+def add_windows_defender_exclusions():
+    if platform.system() != "Windows":
+        print_red("Windows Defender exclusions are only applicable on Windows.")
+        return
+
+    # Excluding the whole server directory stops Defender from scanning the thousands of
+    # Lua/data files that are opened during start-up, and excluding the map process stops it
+    # scanning on every file access the process makes. On Windows this is the single biggest
+    # contributor to slow start-up (each CreateFile otherwise triggers a synchronous AV scan).
+    exclusion_path = server_dir_path
+    exclusion_process = f"xi_map{exe}"
+
+    print_red(
+        "This will add Windows Defender exclusions so it stops scanning the server's\n"
+        "files and the map process. This can dramatically reduce server start-up time.\n"
+    )
+    print("The following will be run (requires an Administrator terminal):\n")
+    print(f'  Add-MpPreference -ExclusionPath "{exclusion_path}"')
+    print(f'  Add-MpPreference -ExclusionProcess "{exclusion_process}"\n')
+
+    if input('Type "yes" to continue.\n> ').strip().lower() != "yes":
+        print_red("Aborted.")
+        return
+
+    command = (
+        f'Add-MpPreference -ExclusionPath "{exclusion_path}"; '
+        f'Add-MpPreference -ExclusionProcess "{exclusion_process}"'
+    )
+
+    result = subprocess.run(
+        ["powershell", "-NoProfile", "-Command", command],
+        capture_output=True,
+        text=True,
+    )
+
+    if result.returncode == 0:
+        print_green("Windows Defender exclusions added successfully.")
+    else:
+        print_red("Failed to add Windows Defender exclusions.")
+        print_red(
+            "This usually means dbtool is not running as Administrator.\n"
+            "You can launch Powershell as Administrator and paste in the following commands:\n"
+            f'    Add-MpPreference -ExclusionPath "{exclusion_path}"\n'
+            f'    Add-MpPreference -ExclusionProcess "{exclusion_process}"'
+        )
+
+
 def tasks_menu():
     present_menu(
         "Maintenance Tasks",
@@ -1399,6 +1492,7 @@ def tasks_menu():
             ],
             "d": ["Dump Table", dump_table],
             "a": ["Dump All Tables", dump_all_tables],
+            "w": ["Add Windows Defender exclusions (speeds up start-up)", add_windows_defender_exclusions],
             "q": ["Quit to main menu", NOOP],
         },
     )

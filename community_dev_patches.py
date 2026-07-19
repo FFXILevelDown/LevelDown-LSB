@@ -358,6 +358,64 @@ def main():
     }''')
         ]
     )
+    
+    # 16. Enlight / Endark Depletion Bugfix
+    patch_file(
+        os.path.join("src", "map", "utils", "battleutils.cpp"),
+        "/* CUSTOM ENLIGHT DEPLETION BUGFIX */",
+        [
+            (
+                """        if (damage > 1)
+        {
+            PAttacker->delModifier(Mod::ENSPELL_DMG, 1);
+        }
+        else
+        {
+            if (element == ELEMENT_DARK)
+            {
+                PAttacker->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Endark);
+            }
+            else
+            {
+                PAttacker->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Enlight);
+            }
+        }""",
+                """        if (element != ELEMENT_DARK)
+        {
+            if (damage > 1)
+            {
+                auto* PEffect = PAttacker->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Enlight);
+
+                if (PEffect)
+                {
+                    int16 currentMod = 0;
+                    for (auto& mod : PEffect->modList())
+                    {
+                        if (mod.getModID() == Mod::ENSPELL_DMG)
+                        {
+                            currentMod = mod.getModAmount();
+                            break;
+                        }
+                    }
+
+                    if (currentMod > 0)
+                    {
+                        PEffect->setMod(Mod::ENSPELL_DMG, currentMod - 1);
+                    }
+                }
+                else
+                {
+                    PAttacker->delModifier(Mod::ENSPELL_DMG, 1);
+                }
+            }
+            else
+            {
+                PAttacker->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Enlight);
+            }
+        } /* CUSTOM ENLIGHT DEPLETION BUGFIX */""",
+            )
+        ],
+    )
 
     print("\n=======================================================================")
     print("  Execution complete. Check your results above!")
