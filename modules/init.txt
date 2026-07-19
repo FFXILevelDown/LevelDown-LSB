@@ -61,6 +61,7 @@ LevelDown Custom Modules/content/LD NM Hunt Campaign
 LevelDown Custom Modules/content/LD Shattered Domain
 LevelDown Custom Modules/content/LD Unity
 LevelDown Custom Modules/content/LD Void Watch NM
-#LevelDown Custom Modules/content/LD Custom HTBF
+LevelDown Custom Modules/content/LD Custom HTBF
+LevelDown Custom Modules/content/LD Battle Hub
 #LevelDown Custom Modules/content/LD Walk of Augments
 
