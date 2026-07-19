@@ -304,10 +304,12 @@ void RefreshGiftMods(CCharEntity* PChar)
         sol::protected_function customGifts = lua["xi"]["custom_mastery"]["onRefreshGiftMods"];
         if (customGifts.valid())
         {
-            customGifts(PChar);
+            customGifts(PChar, totalJpSpent);
         }
         return; // Stops here so level 75s bypass the level 99 loop below
     }
+
+    
 
     for (auto&& gift : jpGifts[jobId])
     {
