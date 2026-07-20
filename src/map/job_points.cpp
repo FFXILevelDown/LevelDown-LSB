@@ -21,8 +21,6 @@
 #include "packets/s2c/0x0aa_magic_data.h"
 #include "spell.h"
 #include "utils/charutils.h"
-#include "lua/luautils.h"
-
 
 CJobPoints::CJobPoints(CCharEntity* PChar)
 {
@@ -255,7 +253,7 @@ void CJobPoints::SetCapacityPoints(uint16 amount)
 
 uint8 CJobPoints::GetJobPointValue(JOBPOINT_TYPE jpType)
 {
-    if (IsJobPointExist(jpType) && m_PChar->GetMLevel() >= 75 && m_PChar->GetMJob() == JobPointsCategoryIndexByJpType(jpType))
+    if (IsJobPointExist(jpType) && m_PChar->GetMLevel() >= 99 && m_PChar->GetMJob() == JobPointsCategoryIndexByJpType(jpType))
     {
         return GetJobPointType(jpType)->value;
     }
@@ -298,22 +296,9 @@ void RefreshGiftMods(CCharEntity* PChar)
         currentGifts->clear();
     }
 
-    // === RAW SOL2 LUA MODULE HOOK ===
-    if (PChar->GetMLevel() < 99)
-    {
-        sol::protected_function customGifts = lua["xi"]["custom_mastery"]["onRefreshGiftMods"];
-        if (customGifts.valid())
-        {
-            customGifts(PChar, totalJpSpent);
-        }
-        return; // Stops here so level 75s bypass the level 99 loop below
-    }
-
-    
-
     for (auto&& gift : jpGifts[jobId])
     {
-        if (gift.jpRequired > totalJpSpent || PChar->GetMLevel() < 75)
+        if (gift.jpRequired > totalJpSpent || PChar->GetMLevel() < 99)
         {
             break;
         }

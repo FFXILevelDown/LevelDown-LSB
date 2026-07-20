@@ -561,39 +561,21 @@ int32 CalculateEnspellDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender,
     {
         damage = PAttacker->getMod(Mod::ENSPELL_DMG);
 
-        if (element != ELEMENT_DARK)
+        if (damage > 1)
         {
-            if (damage > 1)
+            PAttacker->delModifier(Mod::ENSPELL_DMG, 1);
+        }
+        else
+        {
+            if (element == ELEMENT_DARK)
             {
-                auto* PEffect = PAttacker->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Enlight);
-
-                if (PEffect)
-                {
-                    int16 currentMod = 0;
-                    for (auto& mod : PEffect->modList())
-                    {
-                        if (mod.getModID() == Mod::ENSPELL_DMG)
-                        {
-                            currentMod = mod.getModAmount();
-                            break;
-                        }
-                    }
-
-                    if (currentMod > 0)
-                    {
-                        PEffect->setMod(Mod::ENSPELL_DMG, currentMod - 1);
-                    }
-                }
-                else
-                {
-                    PAttacker->delModifier(Mod::ENSPELL_DMG, 1);
-                }
+                PAttacker->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Endark);
             }
             else
             {
                 PAttacker->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Enlight);
             }
-        } /* CUSTOM ENLIGHT DEPLETION BUGFIX */
+        }
 
         damage += bonus;
     }
@@ -3611,7 +3593,7 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
 
         if (ERROR_SLOTID == (SlotID = PChar->getStorage(LOC_INVENTORY)->SearchItem(toolID)))
         {
-            if (PChar->GetMJob() == JOB_NIN || PChar->GetSJob() == JOB_NIN) /* CUSTOM NIN TOOL UTILITY */
+            if (PChar->GetMJob() == JOB_NIN)
             {
                 switch (toolID)
                 {

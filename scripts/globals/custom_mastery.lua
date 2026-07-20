@@ -147,10 +147,13 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
         player:addMod(xi.mod.ATT,  questTier * 3)
         player:addMod(xi.mod.MACC, questTier * 2)
         player:addMod(xi.mod.MATT, questTier * 2)
-
+        -- 3. CAPACITY POINTS PROGRESSION BONUS 
+        -- Values scale as: Tier 1 = +10%, Tier 2 = +20% ... Tier 5 = +50%
+        player:addMod(xi.mod.CAPACITY_BONUS, questTier * 90)
         -- JOB SPECIFIC STATS
         if jobBonusMatrix[mjob] then
             jobBonusMatrix[mjob](player, questTier)
         end
     end
 end
+

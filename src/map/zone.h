@@ -559,7 +559,6 @@ public:
     void SetPartyBattleMusic(uint16 music);
     void SetBackgroundMusicDay(uint16 music);
     void SetBackgroundMusicNight(uint16 music);
-    void   SetPreventSleep(bool value);
 
     auto queryEntitiesByName(const std::string& pattern) -> const QueryByNameResult_t&;
 
@@ -678,7 +677,6 @@ private:
     std::string    m_zoneName;
     uint16         m_zonePort{};
     uint32         m_zoneIP{};
-    bool           m_preventSleep{false};
 
     WeatherContainer weather_;
 

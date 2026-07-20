@@ -20,7 +20,6 @@
 */
 
 #include "char_status.h"
-#include "job_points.h"
 
 #include "aman.h"
 
@@ -321,14 +320,7 @@ CCharStatusPacket::CCharStatusPacket(CCharEntity* PChar)
     flags4.GeoIndiElement = 0;
     flags4.GeoIndiSize    = 1;
     flags4.GeoIndiFlag    = 0;
-    // === CUSTOM DUAL-ERA MASTER STAR INJECTION SYSTEM ===
-    const char* cm_jobNames[] = { "", "WAR", "MNK", "WHM", "BLM", "RDM", "THF", "PLD", "DRK", "BST", "BRD", "RNG", "SAM", "NIN", "DRG", "SMN", "BLU", "COR", "PUP", "DNC", "SCH", "GEO", "RUN" };
-    bool cm_is99Master = PChar->getMod(Mod::SUPERIOR_LEVEL) == 5;
-    bool cm_is75Master = PChar->GetMJob() < 23 && 
-                         (PChar->getCharVar("[CQ]MASTERY_" + std::string(cm_jobNames[PChar->GetMJob()])) == 5 || 
-                          PChar->PJobPoints->GetJobPointsSpent() >= 2100);
-    
-    flags4.JobMasterFlag = (cm_is99Master || cm_is75Master) && PChar->m_jobMasterDisplay;
+    flags4.JobMasterFlag  = PChar->getMod(Mod::SUPERIOR_LEVEL) == 5 && PChar->m_jobMasterDisplay;
 
     // GEO bubble effects, changes bubble effect depending on what effect is activated.
     if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ColureActive))

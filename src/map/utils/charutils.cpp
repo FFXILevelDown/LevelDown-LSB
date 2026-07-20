@@ -2043,10 +2043,6 @@ void DropItem(CCharEntity* PChar, uint8 container, uint8 slotID, int32 quantity,
 
 bool CanTrade(CCharEntity* PChar, CCharEntity* PTarget)
 {
-    if (PChar && PTarget && PChar->getCharVar("[LevelRatio]Restriction") != PTarget->getCharVar("[LevelRatio]Restriction"))
-    {
-        return false;
-    } /* CUSTOM BRACKET TRADE RESTRICTION */
     if (PChar->m_PMonstrosity != nullptr || PTarget->m_PMonstrosity != nullptr)
     {
         return false;
@@ -5357,20 +5353,20 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 75)
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99)
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - 75; // Passed previous 99 check, no need to calculate
+            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
 
             // Capacity Chains are only granted for Mobs level 100+
             // Ref: https://www.bg-wiki.com/ffxi/Job_Points
             float capacityPoints = 0;
 
-            if (mobLevel > 75)
+            if (mobLevel > 99)
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
@@ -5423,20 +5419,13 @@ uint16 AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints)
         CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
         int16          percentage = commitment->GetPower();
         int16          cap        = commitment->GetSubPower();
-        if (cap == -1)
-        {
-            rawBonus += std::max<int32>(((capacityPoints * percentage) / 100), 0);
-        }
-        else
-        {
-            rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
-            commitment->SetSubPower(cap -= rawBonus);
+        rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+        commitment->SetSubPower(cap -= rawBonus);
 
-            if (cap <= 0)
-            {
-                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
-            }
-        } /* CUSTOM INFINITE COMMITMENT CAP */
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+        }
     }
 
     // Mod::CAPACITY_BONUS is currently used for JP Gifts, and can easily be used elsewhere
@@ -6769,20 +6758,13 @@ float AddExpBonus(CCharEntity* PChar, float exp)
         CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
         int16          percentage = dedication->GetPower();
         int16          cap        = dedication->GetSubPower();
-        if (cap == -1)
-        {
-            bonus += std::max<int32>((int32)((exp * percentage) / 100), 0);
-        }
-        else
-        {
-            bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
-            dedication->SetSubPower(cap -= bonus);
+        bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+        dedication->SetSubPower(cap -= bonus);
 
-            if (cap <= 0)
-            {
-                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
-            }
-        } /* CUSTOM INFINITE DEDICATION CAP */
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+        }
     }
 
     int16 rovBonus = 0;
