@@ -1,122 +1,53 @@
 xi = xi or {}
 xi.custom_mastery = xi.custom_mastery or {}
 
-local jobBonusMatrix = {
-    [1]  = function(player, tier) -- WARRIOR
-        player:addMod(xi.mod.STR, tier * 2)
-        player:addMod(xi.mod.DOUBLE_ATTACK, tier * 1)
-        player:addMod(xi.mod.WAR_CRY_DURATION, tier * 3)
-    end,
-    [2]  = function(player, tier) -- MONK
-        player:addMod(xi.mod.VIT, tier * 2)
-        player:addMod(xi.mod.COUNTER, tier * 1)
-        player:addMod(xi.mod.KICK_ATTACK_RATE, tier * 2)
-    end,
-    [3]  = function(player, tier) -- WHITE MAGE
-        player:addMod(xi.mod.MND, tier * 2)
-        player:addMod(xi.mod.CURE_POTENCY, tier * 2)
-        player:addMod(xi.mod.ENMITY, tier * -1)
-    end,
-    [4]  = function(player, tier) -- BLACK MAGE
-        player:addMod(xi.mod.INT, tier * 2)
-        player:addMod(xi.mod.MAGIC_DAMAGE, tier * 5)
-        player:addMod(xi.mod.ELEMENTAL_BURST_DMG, tier * 2)
-    end,
-    [5]  = function(player, tier) -- RED MAGE
-        player:addMod(xi.mod.INT, tier * 1)
-        player:addMod(xi.mod.MND, tier * 1)
-        player:addMod(xi.mod.FAST_CAST, tier * 2)
-        player:addMod(xi.mod.ENSPELL_DMG, tier * 3)
-    end,
-    [6]  = function(player, tier) -- THIEF
-        player:addMod(xi.mod.DEX, tier * 2)
-        player:addMod(xi.mod.TRIPLE_ATTACK, tier * 1)
-        player:addMod(xi.mod.STEAL, tier * 2)
-    end,
-    [7]  = function(player, tier) -- PALADIN
-        player:addMod(xi.mod.VIT, tier * 2)
-        player:addMod(xi.mod.DEF, tier * 4)
-        player:addMod(xi.mod.SHIELD_BLOCK_RATE, tier * 1)
-        player:addMod(xi.mod.ENMITY, tier * 2)
-    end,
-    [8]  = function(player, tier) -- DARK KNIGHT
-        player:addMod(xi.mod.STR, tier * 2)
-        player:addMod(xi.mod.ATT, tier * 5)
-        player:addMod(xi.mod.WEAPON_SKILL_DAMAGE, tier * 1)
-    end,
-    [9]  = function(player, tier) -- BEASTMASTER
-        player:addMod(xi.mod.CHR, tier * 2)
-        player:addMod(xi.mod.PET_ACC, tier * 3)
-        player:addMod(xi.mod.PET_ATT, tier * 3)
-    end,
-    [10] = function(player, tier) -- BARD
-        player:addMod(xi.mod.CHR, tier * 2)
-        player:addMod(xi.mod.SONG_DURATION_BONUS, tier * 2)
-        player:addMod(xi.mod.ENMITY, tier * -1)
-    end,
-    [11] = function(player, tier) -- RANGER
-        player:addMod(xi.mod.AGI, tier * 2)
-        player:addMod(xi.mod.RACC, tier * 4)
-        player:addMod(xi.mod.RATT, tier * 4)
-    end,
-    [12] = function(player, tier) -- SAMURAI
-        player:addMod(xi.mod.STR, tier * 2)
-        player:addMod(xi.mod.STORE_TP, tier * 2)
-        player:addMod(xi.mod.MEDITATE_DURATION, tier * 2)
-    end,
-    [13] = function(player, tier) -- NINJA
-        player:addMod(xi.mod.DEX, tier * 2)
-        player:addMod(xi.mod.DUAL_WIELD, tier * -1)
-        player:addMod(xi.mod.SUBTLE_BLOW, tier * 2)
-    end,
-    [14] = function(player, tier) -- DRAGOON
-        player:addMod(xi.mod.STR, tier * 2)
-        player:addMod(xi.mod.HASTE_ABILITY, tier * 100)
-        player:addMod(xi.mod.PET_ACC, tier * 3)          
-    end,
-    [15] = function(player, tier) -- SMN
-        player:addMod(xi.mod.MP, tier * 10)
-        player:addMod(xi.mod.AVATAR_TP_GAIN_BONUS, tier * 20)
-        player:addMod(xi.mod.BLOOD_PACT_DAMAGE, tier * 2)
-    end,
-    [16] = function(player, tier) -- BLUE MAGE
-        player:addMod(xi.mod.STR, tier * 1)
-        player:addMod(xi.mod.DEX, tier * 1)
-        player:addMod(xi.mod.BLUE_MAGIC_SKILL, tier * 3)
-    end,
-    [17] = function(player, tier) -- CORSAIR
-        player:addMod(xi.mod.AGI, tier * 2)
-        player:addMod(xi.mod.PHANTOM_DURATION, tier * 12)
-        player:addMod(xi.mod.RACC, tier * 3)
-    end,
-    [18] = function(player, tier) -- PUPPETMASTER
-        player:addMod(xi.mod.DEX, tier * 2)
-        player:addMod(xi.mod.PET_HASTE, tier * 100)
-        player:addMod(xi.mod.PET_REGEN, tier * 2)
-    end,
-    [19] = function(player, tier) -- DANCER
-        player:addMod(xi.mod.DEX, tier * 2)
-        player:addMod(xi.mod.WALTZ_POTENCY, tier * 2)
-        player:addMod(xi.mod.REVERSE_FLOURISH, tier * 5)
-    end,
-    [20] = function(player, tier) -- SCHOLAR
-        player:addMod(xi.mod.INT, tier * 1)
-        player:addMod(xi.mod.MND, tier * 1)
-        player:addMod(xi.mod.CONSERVE_MP, tier * 2)
-    end,
-    [21] = function(player, tier) -- GEOMANCER
-        player:addMod(xi.mod.INT, tier * 2)
-        player:addMod(xi.mod.LUOPAN_DT, tier * -100)
-        player:addMod(xi.mod.GEOMANCY_SKILL, tier * 3)
-    end,
-    [22] = function(player, tier) -- RUNEFENCER
-        player:addMod(xi.mod.VIT, tier * 2)
-        player:addMod(xi.mod.MAGIC_EVASION, tier * 4)
-        player:addMod(xi.mod.PARRY, tier * 2)
-    end
+-- =========================================================================
+-- MASTERY BASELINE CONFIGURATION
+-- =========================================================================
+local HP_PER_TIER       = 100  -- +100 HP per tier (+500 max at Tier V)
+local MP_PER_TIER       = 100  -- +100 MP per tier (+500 max at Tier V)
+local CP_BONUS_PER_TIER = 120  -- +120% Capacity Bonus per tier (+600% max at Tier V)
+
+-- Base offset for each job's 10 retail JP categories (from scripts/enum/job_points.lua)
+local jobCategoryBase = {
+    [1]  = 0x020, -- WAR
+    [2]  = 0x040, -- MNK
+    [3]  = 0x060, -- WHM
+    [4]  = 0x080, -- BLM
+    [5]  = 0x0A0, -- RDM
+    [6]  = 0x0C0, -- THF
+    [7]  = 0x0E0, -- PLD
+    [8]  = 0x100, -- DRK
+    [9]  = 0x120, -- BST
+    [10] = 0x140, -- BRD
+    [11] = 0x160, -- RNG
+    [12] = 0x180, -- SAM
+    [13] = 0x1A0, -- NIN
+    [14] = 0x1C0, -- DRG
+    [15] = 0x1E0, -- SMN
+    [16] = 0x200, -- BLU
+    [17] = 0x220, -- COR
+    [18] = 0x240, -- PUP
+    [19] = 0x260, -- DNC
+    [20] = 0x280, -- SCH
+    [21] = 0x2A0, -- GEO
+    [22] = 0x2C0, -- RUN
 }
 
--- The C++ core now feeds player AND totalJpSpent straight into this method!
+local jpThresholds = { 420, 840, 1260, 1680, 2100 }
+
+-- Helper function to set or clear all 10 retail JP categories for a job
+local function applyRetailJpCategories(player, mjob, targetRank)
+    local baseID = jobCategoryBase[mjob]
+    if not baseID then return end
+
+    -- Set all 10 category offsets (0x00 through 0x09) to the target rank
+    for offset = 0, 9 do
+        local catID = baseID + offset
+        player:setJobPointLevel(catID, targetRank)
+    end
+end
+
 xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
     local jobShortNames = {
         [1] = "WAR", [2] = "MNK", [3] = "WHM", [4] = "BLM", [5] = "RDM",
@@ -130,30 +61,69 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
     local jobName = jobShortNames[mjob]
     if not jobName then return end
 
-    local questTier = player:getCharVar("[CQ]MASTERY_" .. jobName)
-    
-    -- Safe C++ Parameter Fallback: No unbound function errors can happen here anymore!
-    if questTier == 0 and totalJpSpent and totalJpSpent >= 2100 then
-        questTier = 5
-    end
-    
-    if questTier > 0 and questTier <= 5 then
-        player:setMod(xi.mod.SUPERIOR_LEVEL, questTier)
+    local mainLvl = player:getMainLvl()
 
-        -- UNIVERSAL STATS
-        player:addMod(xi.mod.HP,   questTier * 15)
-		player:addMod(xi.mod.MP,   questTier * 15)
-        player:addMod(xi.mod.ACC,  questTier * 3)
-        player:addMod(xi.mod.ATT,  questTier * 3)
-        player:addMod(xi.mod.MACC, questTier * 2)
-        player:addMod(xi.mod.MATT, questTier * 2)
-        -- 3. CAPACITY POINTS PROGRESSION BONUS 
-        -- Values scale as: Tier 1 = +10%, Tier 2 = +20% ... Tier 5 = +50%
-        player:addMod(xi.mod.CAPACITY_BONUS, questTier * 90)
-        -- JOB SPECIFIC STATS
-        if jobBonusMatrix[mjob] then
-            jobBonusMatrix[mjob](player, questTier)
+    -- HARD BLOCK: Level 99s get no custom 75 mastery mods/categories
+    if mainLvl > 75 then
+        local prevTier = player:getLocalVar("[CQ]APPLIED_TIER") or 0
+        if prevTier > 0 then
+            -- Strip baseline mods
+            player:delMod(xi.mod.HP,             prevTier * HP_PER_TIER)
+            player:delMod(xi.mod.MP,             prevTier * MP_PER_TIER)
+            player:delMod(xi.mod.CAPACITY_BONUS, prevTier * CP_BONUS_PER_TIER)
+
+            -- Clear retail category ranks
+            applyRetailJpCategories(player, mjob, 0)
+            player:setLocalVar("[CQ]APPLIED_TIER", 0)
         end
+        return
+    end
+
+    totalJpSpent = totalJpSpent or 0
+
+    -- Calculate Tiers 1-5 every 420 JP
+    local activeTier = math.min(5, math.floor(totalJpSpent / 420))
+
+    -- CLEANUP PASS: Strip previously applied tier stats
+    local prevTier = player:getLocalVar("[CQ]APPLIED_TIER") or 0
+    if prevTier > 0 and prevTier <= 5 then
+        player:delMod(xi.mod.HP,             prevTier * HP_PER_TIER)
+        player:delMod(xi.mod.MP,             prevTier * MP_PER_TIER)
+        player:delMod(xi.mod.CAPACITY_BONUS, prevTier * CP_BONUS_PER_TIER)
+    end
+
+    -- APPLY NEW TIER REWARDS (For Level <= 75)
+    if activeTier > 0 and activeTier <= 5 then
+        player:setLocalVar("[CQ]APPLIED_TIER", activeTier)
+
+        -- 1. Apply Baseline HP, MP, and Capacity Bonus Modifiers
+        player:addMod(xi.mod.HP,             activeTier * HP_PER_TIER)
+        player:addMod(xi.mod.MP,             activeTier * MP_PER_TIER)
+        player:addMod(xi.mod.CAPACITY_BONUS, activeTier * CP_BONUS_PER_TIER)
+
+        -- 2. Automatically grant Stock Retail Category Ranks (4 Ranks per Tier)
+        local targetRank = activeTier * 4
+        applyRetailJpCategories(player, mjob, targetRank)
+
+        -- VISUAL & CHAT NOTIFICATION PASS
+        local lastNotified = player:getCharVar("[CQ]NOTIFIED_TIER_" .. jobName) or 0
+        if activeTier > lastNotified then
+            player:setCharVar("[CQ]NOTIFIED_TIER_" .. jobName, activeTier)
+
+            player:showAnimation(171)
+
+            local currentCpBonus = activeTier * CP_BONUS_PER_TIER
+            if activeTier < 5 then
+                local nextReq = jpThresholds[activeTier + 1]
+                local remaining = nextReq - totalJpSpent
+                player:printToPlayer(string.format("[Mastery] Tier %d Unlocked for %s! (+%d%% CP Bonus). Spend %d more JP for Tier %d.", activeTier, jobName, currentCpBonus, remaining, activeTier + 1), 29)
+            else
+                player:printToPlayer(string.format("[Mastery] ★ JOB MASTER ★ You have fully mastered %s at Level 75! (+%d%% CP Bonus & 20/20 Categories)!", jobName, currentCpBonus), 30)
+            end
+        end
+    else
+        -- 0 JP spent: Ensure category ranks are cleared
+        applyRetailJpCategories(player, mjob, 0)
+        player:setLocalVar("[CQ]APPLIED_TIER", 0)
     end
 end
-
