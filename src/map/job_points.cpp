@@ -15,6 +15,7 @@
 */
 
 #include "job_points.h"
+#include "lua/luautils.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
 
@@ -286,6 +287,17 @@ void LoadGifts()
 
 void RefreshGiftMods(CCharEntity* PChar)
 {
+    // === RAW SOL2 LUA MODULE HOOK ===
+    if (PChar->GetMLevel() < 99)
+    {
+        uint16 totalJpSpent = PChar->PJobPoints->GetJobPointsSpent();
+        sol::protected_function customGifts = lua["xi"]["custom_mastery"]["onRefreshGiftMods"];
+        if (customGifts.valid())
+        {
+            customGifts(PChar, totalJpSpent);
+        }
+        return; // Diverts level 75 processing cleanly to Lua
+    }
     uint16 totalJpSpent = PChar->PJobPoints->GetJobPointsSpent();
     uint8  jobId        = static_cast<uint8>(PChar->GetMJob());
 
