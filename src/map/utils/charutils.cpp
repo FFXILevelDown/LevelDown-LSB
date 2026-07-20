@@ -5357,20 +5357,24 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99)
+            // === DUAL-ERA CP FORMULA MODIFICATION ===
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER))
             {
-                // Do not grant Capacity points without Job Breaker or Level 99
+                return;
+            }
+
+            uint8 referenceLevel = PMember->GetMLevel();
+            if (referenceLevel != 75 && referenceLevel != 99)
+            {
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
-
-            // Capacity Chains are only granted for Mobs level 100+
-            // Ref: https://www.bg-wiki.com/ffxi/Job_Points
+            int16 levelDiff   = mobLevel - referenceLevel;
             float capacityPoints = 0;
 
-            if (mobLevel > 99)
+            if (mobLevel > referenceLevel)
+            // === END DUAL-ERA CP FORMULA ===
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
