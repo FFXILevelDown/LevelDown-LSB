@@ -1739,27 +1739,31 @@ void CBattleEntity::SetSLevel(uint8 slvl)
     {
         // 1. Get the global server setting first
         auto ratio = settings::get<uint8>("map.SUBJOB_RATIO");
+        uint8 tierBonus = 0; // Subjob Cap Bonus (+1 Level per bonus count, max +5)
 
         // 2. CHECK FOR PLAYER OVERRIDE
         if (this->objtype == TYPE_PC)
         {
-            // Cast this generic BattleEntity into a CharEntity so we can access player variables
+            // Cast generic BattleEntity to CharEntity to access player vars
             auto* PChar = static_cast<CCharEntity*>(this);
-            
-            // First, look for the specialized bracket level ratio constraint
+
+            // Check specialized bracket level ratio constraint
             uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");
-            
-            // Fallback: If the specialized bracket isn't set, check your standard "Ratio" variable
+
+            // Fallback: Check standard "Ratio" variable
             if (customRatio == 0)
             {
                 customRatio = charutils::GetCharVar(PChar, "Ratio");
             }
-            
-            // If any custom override ratio was found in the database, intercept the global map configuration
+
+            // Override global map configuration if a custom ratio exists
             if (customRatio > 0)
             {
-                ratio = customRatio;
+                ratio = static_cast<uint8>(customRatio);
             }
+
+            // Read Global Subjob Bonus (0 to 5)
+            tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]GLOBAL_SUBJOB_BONUS"));
         }
 
         // 3. Continue with the normal math based on the final ratio
@@ -1768,17 +1772,33 @@ void CBattleEntity::SetSLevel(uint8 slvl)
             case 0: // no SJ
                 m_slvl = 0;
                 break;
-            case 1: // 1/2 (75/37, 99/49)
-                m_slvl = (slvl > (m_mlvl >> 1) ? (m_mlvl == 1 ? 1 : (m_mlvl >> 1)) : slvl);
+
+            case 1: // 1/2 (75/37 + Global Subjob Bonus at Level 75)
+            {
+                // Standard half-level formula (at Level 1: 1 >> 1 = 0, so no subjob at Lvl 1)
+                uint8 baseMax = static_cast<uint8>(m_mlvl >> 1);
+                uint8 maxCap  = baseMax;
+
+                // Only apply the +1 to +5 bonus cap when Main Level is 75 or higher!
+                if (m_mlvl >= 75)
+                {
+                    maxCap = std::min<uint8>(static_cast<uint8>(37 + tierBonus), 50);
+                }
+
+                m_slvl = (slvl > maxCap ? maxCap : slvl);
                 break;
+            }
+
             case 2: // 2/3 (75/50, 99/66)
-                m_slvl = (slvl > (m_mlvl * 2) / 3 ? (m_mlvl == 1 ? 1 : (m_mlvl * 2) / 3) : slvl);
+                m_slvl = (slvl > (m_mlvl * 2) / 3 ? (m_mlvl == 1 ? 1 : static_cast<uint8>((m_mlvl * 2) / 3)) : slvl);
                 break;
+
             case 3: // equal (75/75, 99/99)
                 m_slvl = (slvl > m_mlvl ? (m_mlvl == 1 ? 1 : m_mlvl) : slvl);
                 break;
+
             default: // Error
-                ShowError("Error setting subjob level: Invalid ratio '%s' check your settings file!", ratio);
+                ShowError("Error setting subjob level: Invalid ratio '%d' check your settings file!", ratio);
                 break;
         }
     }
@@ -1787,7 +1807,7 @@ void CBattleEntity::SetSLevel(uint8 slvl)
     {
         db::preparedStmt("UPDATE char_stats SET slvl = ? WHERE charid = ? LIMIT 1", m_slvl, this->id);
     }
-} /* CUSTOM DYNAMIC SUBJOB BRACKETS */
+}
 
 void CBattleEntity::SetDeathType(uint8 type)
 {

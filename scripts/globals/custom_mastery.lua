@@ -2,13 +2,32 @@ xi = xi or {}
 xi.custom_mastery = xi.custom_mastery or {}
 
 -- =========================================================================
--- MASTERY BASELINE CONFIGURATION
+-- CONFIGURATION
 -- =========================================================================
 local HP_PER_TIER       = 100  -- +100 HP per tier (+500 max at Tier V)
 local MP_PER_TIER       = 100  -- +100 MP per tier (+500 max at Tier V)
 local CP_BONUS_PER_TIER = 120  -- +120% Capacity Bonus per tier (+600% max at Tier V)
 
--- Base offset for each job's 10 retail JP categories (from scripts/enum/job_points.lua)
+-- All Primary Attributes (+2 per Tier -> +10 max at Tier V)
+local baseStats = {
+    xi.mod.STR, xi.mod.DEX, xi.mod.VIT, xi.mod.AGI,
+    xi.mod.INT, xi.mod.MND, xi.mod.CHR
+}
+
+-- All Combat & Magic Skills (+20 per Tier -> +100 max at Tier V)
+local allSkills = {
+    -- Combat Skills
+    xi.mod.HTH, xi.mod.DAGGER, xi.mod.SWORD, xi.mod.GREATSWORD,
+    xi.mod.AXE, xi.mod.GREATAXE, xi.mod.SCYTHE, xi.mod.POLEARM,
+    xi.mod.KATANA, xi.mod.GREATKATANA, xi.mod.CLUB, xi.mod.STAFF,
+    xi.mod.ARCHERY, xi.mod.MARKSMANSHIP, xi.mod.THROWING, xi.mod.SHIELD, xi.mod.PARRY,
+    -- Magic Skills
+    xi.mod.DIVINE_MAGIC_SKILL, xi.mod.HEALING_MAGIC_SKILL, xi.mod.ENFEELBING_MAGIC_SKILL,
+    xi.mod.ELEMENTAL_MAGIC_SKILL, xi.mod.DARK_MAGIC_SKILL, xi.mod.SUMMONING_MAGIC_SKILL,
+    xi.mod.NINJUTSU_SKILL, xi.mod.SINGING_SKILL, xi.mod.BLUE_MAGIC_SKILL, xi.mod.GEOMANCY_SKILL
+}
+
+-- Base offset for each job's 10 retail JP categories
 local jobCategoryBase = {
     [1]  = 0x020, -- WAR
     [2]  = 0x040, -- MNK
@@ -36,12 +55,10 @@ local jobCategoryBase = {
 
 local jpThresholds = { 420, 840, 1260, 1680, 2100 }
 
--- Helper function to set or clear all 10 retail JP categories for a job
 local function applyRetailJpCategories(player, mjob, targetRank)
     local baseID = jobCategoryBase[mjob]
     if not baseID then return end
 
-    -- Set all 10 category offsets (0x00 through 0x09) to the target rank
     for offset = 0, 9 do
         local catID = baseID + offset
         player:setJobPointLevel(catID, targetRank)
@@ -49,6 +66,24 @@ local function applyRetailJpCategories(player, mjob, targetRank)
 end
 
 xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
+    -------------------------------------------------------------------------
+    -- 1. ACCOUNT-WIDE PERMANENT SUBJOB STATS
+    -- (+35 HP, +10 MP, +5 Base Stats per +1 Subjob Level unlocked)
+    -------------------------------------------------------------------------
+    local globalSjBonus = player:getCharVar("[CQ]GLOBAL_SUBJOB_BONUS") or 0
+
+    if globalSjBonus > 0 then
+        player:addMod(xi.mod.HP, globalSjBonus * 7)
+        player:addMod(xi.mod.MP, globalSjBonus * 2)
+
+        for _, statMod in ipairs(baseStats) do
+            player:addMod(statMod, globalSjBonus * 1)
+        end
+    end
+
+    -------------------------------------------------------------------------
+    -- 2. JOB-SPECIFIC JP MASTERY (Gifts, Categories & Job-Specific Mods)
+    -------------------------------------------------------------------------
     local jobShortNames = {
         [1] = "WAR", [2] = "MNK", [3] = "WHM", [4] = "BLM", [5] = "RDM",
         [6] = "THF", [7] = "PLD", [8] = "DRK", [9] = "BST", [10] = "BRD",
@@ -65,16 +100,10 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
 
     -- HARD BLOCK: Level 99s get no custom 75 mastery mods/categories
     if mainLvl > 75 then
-        local prevTier = player:getLocalVar("[CQ]APPLIED_TIER") or 0
+        local prevTier = player:getCharVar("[CQ]APPLIED_TIER") or 0
         if prevTier > 0 then
-            -- Strip baseline mods
-            player:delMod(xi.mod.HP,             prevTier * HP_PER_TIER)
-            player:delMod(xi.mod.MP,             prevTier * MP_PER_TIER)
-            player:delMod(xi.mod.CAPACITY_BONUS, prevTier * CP_BONUS_PER_TIER)
-
-            -- Clear retail category ranks
             applyRetailJpCategories(player, mjob, 0)
-            player:setLocalVar("[CQ]APPLIED_TIER", 0)
+            player:setCharVar("[CQ]APPLIED_TIER", 0)
         end
         return
     end
@@ -84,24 +113,24 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
     -- Calculate Tiers 1-5 every 420 JP
     local activeTier = math.min(5, math.floor(totalJpSpent / 420))
 
-    -- CLEANUP PASS: Strip previously applied tier stats
-    local prevTier = player:getLocalVar("[CQ]APPLIED_TIER") or 0
-    if prevTier > 0 and prevTier <= 5 then
-        player:delMod(xi.mod.HP,             prevTier * HP_PER_TIER)
-        player:delMod(xi.mod.MP,             prevTier * MP_PER_TIER)
-        player:delMod(xi.mod.CAPACITY_BONUS, prevTier * CP_BONUS_PER_TIER)
-    end
-
-    -- APPLY NEW TIER REWARDS (For Level <= 75)
+    -- APPLY TIER REWARDS
     if activeTier > 0 and activeTier <= 5 then
-        player:setLocalVar("[CQ]APPLIED_TIER", activeTier)
+        player:setCharVar("[CQ]APPLIED_TIER", activeTier)
 
-        -- 1. Apply Baseline HP, MP, and Capacity Bonus Modifiers
+        -- Apply Baseline HP, MP, Capacity Bonus, Stats, and Skills
         player:addMod(xi.mod.HP,             activeTier * HP_PER_TIER)
         player:addMod(xi.mod.MP,             activeTier * MP_PER_TIER)
         player:addMod(xi.mod.CAPACITY_BONUS, activeTier * CP_BONUS_PER_TIER)
 
-        -- 2. Automatically grant Stock Retail Category Ranks (4 Ranks per Tier)
+        for _, statMod in ipairs(baseStats) do
+            player:addMod(statMod, activeTier * 2)
+        end
+
+        for _, skillMod in ipairs(allSkills) do
+            player:addMod(skillMod, activeTier * 20)
+        end
+
+        -- Grant Stock Retail Category Ranks (4 Ranks per Tier)
         local targetRank = activeTier * 4
         applyRetailJpCategories(player, mjob, targetRank)
 
@@ -113,17 +142,19 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
             player:showAnimation(171)
 
             local currentCpBonus = activeTier * CP_BONUS_PER_TIER
+            local effectiveSubCap = 37 + globalSjBonus
+            local totalStatBoost = activeTier * 2
+
             if activeTier < 5 then
-                local nextReq = jpThresholds[activeTier + 1]
+                local nextReq   = jpThresholds[activeTier + 1]
                 local remaining = nextReq - totalJpSpent
-                player:printToPlayer(string.format("[Mastery] Tier %d Unlocked for %s! (+%d%% CP Bonus). Spend %d more JP for Tier %d.", activeTier, jobName, currentCpBonus, remaining, activeTier + 1), 29)
+                player:printToPlayer(string.format("[Mastery] Tier %d Unlocked for %s! (+%d%% CP, Subjob Cap: Lvl %d). Spend %d more JP for Tier %d.", activeTier, jobName, currentCpBonus, effectiveSubCap, remaining, activeTier + 1), 29)
             else
-                player:printToPlayer(string.format("[Mastery] ★ JOB MASTER ★ You have fully mastered %s at Level 75! (+%d%% CP Bonus & 20/20 Categories)!", jobName, currentCpBonus), 30)
+                player:printToPlayer(string.format("[Mastery] ★ JOB MASTER ★ You have fully mastered %s at Level 75! (+%d%% CP, Subjob Cap: Lvl %d, Job Stats +%d)!", jobName, currentCpBonus, effectiveSubCap, totalStatBoost), 30)
             end
         end
     else
-        -- 0 JP spent: Ensure category ranks are cleared
         applyRetailJpCategories(player, mjob, 0)
-        player:setLocalVar("[CQ]APPLIED_TIER", 0)
+        player:setCharVar("[CQ]APPLIED_TIER", 0)
     end
 end
