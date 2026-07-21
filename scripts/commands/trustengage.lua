@@ -26,6 +26,12 @@ local function error(player)
 end
 
 commandObj.onTrigger = function(player, type)
+    -- LOCKOUT: Traditional Path (Ratio == 1) disabled
+    if player:getCharVar("Ratio") == 1 then
+        player:printToPlayer("Custom trust engagement conditions are disabled for Traditional Path players.", xi.msg.channel.SYSTEM_3)
+        return
+    end
+
     if xi.settings.main.ENABLE_TRUST_CUSTOM_ENGAGEMENT ~= 1 then
         player:printToPlayer('Trust custom engage conditions are disabled.')
         return
@@ -33,6 +39,7 @@ commandObj.onTrigger = function(player, type)
 
     if type == nil or type < 0 or type > 1 then
         error(player)
+        return
     end
 
     player:setCharVar('TrustEngageType', type)
