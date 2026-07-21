@@ -2,26 +2,27 @@
 -- Area: The Celestial Nexus
 -- Name: The Celestial Nexus (ZM16)
 -----------------------------------
-require("scripts/globals/battlefield") -- FIXED: Added missing dependencies
-require("scripts/globals/npc_util")
+require('scripts/globals/battlefield') -- FIXED: Added missing dependencies
+require('scripts/globals/npc_util')
 -----------------------------------
 local celestialNexusID = zones[xi.zone.THE_CELESTIAL_NEXUS]
 -----------------------------------
 
-local content = Battlefield:new({
-    id            = "CELESTIAL_NEXUS_II", -- FIXED: Added explicit string tracking identifier
-    zoneId        = xi.zone.THE_CELESTIAL_NEXUS,
-    battlefieldId = (xi.battlefield and xi.battlefield.id and xi.battlefield.id.CELESTIAL_NEXUS_II) or 25, -- Protected prefix guard
-    canLoseExp    = false,
-    allowTrusts   = true,
-    maxPlayers    = 6,
-    levelCap      = 99,
-    timeLimit     = utils.minutes(30),
-    index         = 1,
-    area          = 1,
-    entryNpc      = '_513',
-    exitNpcs      = { '_514', '_515' },
-    requiredKeyItems = { xi.ki.CELESTIAL_NEXUS_PHANTOM_GEM, keep = false }, 
+local content = Battlefield:new(
+{
+    id               = 'CELESTIAL_NEXUS_II', -- FIXED: Added explicit string tracking identifier
+    zoneId           = xi.zone.THE_CELESTIAL_NEXUS,
+    battlefieldId    = xi.battlefield.id.CELESTIAL_NEXUS_II,
+    canLoseExp       = false,
+    allowTrusts      = true,
+    maxPlayers       = 6,
+    levelCap         = 99,
+    timeLimit        = utils.minutes(30),
+    index            = 1,
+    area             = 1,
+    entryNpc         = '_513',
+    exitNpcs         = { '_514', '_515' },
+    requiredKeyItems = { xi.ki.CELESTIAL_NEXUS_PHANTOM_GEM, keep = false },
 })
 
 function content:onEventFinishBattlefield(player, csid, option, npc)
@@ -52,7 +53,7 @@ local exoBase   = celestialNexusID.mob.EXOPLATES_HTBF or celestialNexusID.mob.EX
 local orbBase   = celestialNexusID.mob.ORBITAL_HTBF or celestialNexusID.mob.ORBITAL or 0
 local eald2Base = celestialNexusID.mob.EALDNARCHE_2_HTBF or celestialNexusID.mob.EALDNARCHE_2 or 0
 
-content.groups =
+content.groups  =
 {
     -- Phase 1 - Eald'narche
     {
@@ -70,7 +71,7 @@ content.groups =
             for _, player in pairs(players) do
                 player:startEvent(32004, battlefield:getArea())
             end
-        end
+        end,
     },
 
     -- Phase 1 - Exoplates
@@ -121,39 +122,39 @@ content.groups =
                     end
                 end)
             end
-        end
+        end,
     },
 }
 
-content.loot =
+content.loot    =
 {
     {
-        { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_7,     weight =  1000}, -- Rem Tale Ch 7 
+        { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_7, weight = 1000 },     -- Rem Tale Ch 7
     },
     {
-        { itemId = xi.item.NONE,                            weight = 750 }, -- nothing
-        { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_7,     weight =  50}, -- Rem Tale Ch 7 
+        { itemId = xi.item.NONE,                        weight = 750 },     -- nothing
+        { itemId = xi.item.COPY_OF_REMS_TALE_CHAPTER_7, weight = 50 },      -- Rem Tale Ch 7
     },
     {
-        { itemId = xi.item.NONE,                            weight = 250 }, -- nothing
-        { itemId = xi.item.PIECE_OF_MALIYAKALEYA_CORAL,     weight = 187 }, 
-        { itemId = xi.item.SIFS_LOCK,                       weight = 187 },
-        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,          weight = 187 }, 
-        { itemId = xi.item.WYRM_BLOOD,                      weight = 187 }, -- Wyrm Blood
+        { itemId = xi.item.NONE,                        weight = 250 },     -- nothing
+        { itemId = xi.item.PIECE_OF_MALIYAKALEYA_CORAL, weight = 187 },
+        { itemId = xi.item.SIFS_LOCK,                   weight = 187 },
+        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,      weight = 187 },
+        { itemId = xi.item.WYRM_BLOOD,                  weight = 187 },     -- Wyrm Blood
     },
     {
-        { itemId = xi.item.NONE,                    weight = 50 }, -- nothing
-        { itemId = xi.item.VANIR_KNIFE,             weight = 10 }, -- 
-        { itemId = xi.item.VANIR_GUN,               weight = 10 }, -- 
-        { itemId = xi.item.SERAPHICALLER,           weight = 10 }, -- Seraphicaller
-        { itemId = xi.item.DIVINATOR,               weight = 10 }, -- Divinator
-        { itemId = xi.item.DIVINATOR_II,            weight = 10 }, -- Divinator II
+        { itemId = xi.item.NONE,          weight = 50 },           -- nothing
+        { itemId = xi.item.VANIR_KNIFE,   weight = 10 },           --
+        { itemId = xi.item.VANIR_GUN,     weight = 10 },           --
+        { itemId = xi.item.SERAPHICALLER, weight = 10 },           -- Seraphicaller
+        { itemId = xi.item.DIVINATOR,     weight = 10 },           -- Divinator
+        { itemId = xi.item.DIVINATOR_II,  weight = 10 },           -- Divinator II
     },
     {
-        { itemId = xi.item.NONE,                    weight = 50 }, -- nothing
-        { itemId = xi.item.VANIR_COTEHARDIE,        weight = 2 }, -- 
-        { itemId = xi.item.VANIR_BATTERY,           weight = 10 }, 
-        { itemId = xi.item.VANIR_BOOTS,             weight = 10 },
+        { itemId = xi.item.NONE,             weight = 50 },        -- nothing
+        { itemId = xi.item.VANIR_COTEHARDIE, weight = 2 },         --
+        { itemId = xi.item.VANIR_BATTERY,    weight = 10 },
+        { itemId = xi.item.VANIR_BOOTS,      weight = 10 },
     },
 }
 
