@@ -2257,7 +2257,12 @@ void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, Recalculate recalculate)
                     PChar->look.ranged = 0;
                 }
                 PChar->m_Weapons[SLOT_RANGED] = nullptr;
-                if (((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::StringInstrument && ((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::WindInstrument)
+
+                // Instruments and Handbells being unequipped does not necessarily mean TP must be reset.
+                // The incoming item (or lack of) decides it.
+                const auto rangedSkill        = static_cast<CItemWeapon*>(PItem)->getSkillType();
+                const bool isRangedInstrument = rangedSkill == xi::SkillType::StringInstrument || rangedSkill == xi::SkillType::WindInstrument || rangedSkill == xi::SkillType::Handbell;
+                if (recalculate || !isRangedInstrument)
                 {
                     PChar->health.tp = 0;
                     PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Aftermath);
@@ -3349,6 +3354,8 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
         }
     }
 
+    bool equipSucceeded = false;
+
     if (slotID == 0)
     {
         CItemEquipment* PSubItem = PChar->getEquip(SLOT_SUB);
@@ -3366,6 +3373,8 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
         {
             if (!PItem->isSubType(ITEM_LOCKED) && EquipArmor(PChar, slotID, equipSlotID, containerID))
             {
+                equipSucceeded = true;
+
                 if (PItem->getScriptType() & SCRIPT_EQUIP)
                 {
                     PChar->m_EquipFlag |= PItem->getScriptType();
@@ -3412,10 +3421,16 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
 
     if (equipSlotID == SLOT_MAIN || equipSlotID == SLOT_RANGED || equipSlotID == SLOT_SUB)
     {
-        if (!PItem || !PItem->isType(ITEM_EQUIPMENT) ||
-            (((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::StringInstrument && ((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::WindInstrument))
+        // Instruments and Handbells swapping keeps TP.
+        // The outgoing instruments should have saved the TP in UnequipItem before getting here.
+        const bool isRangedInstrument =
+            PItem && PItem->isType(ITEM_EQUIPMENT) &&
+            (static_cast<CItemWeapon*>(PItem)->getSkillType() == xi::SkillType::StringInstrument ||
+             static_cast<CItemWeapon*>(PItem)->getSkillType() == xi::SkillType::WindInstrument ||
+             static_cast<CItemWeapon*>(PItem)->getSkillType() == xi::SkillType::Handbell);
+
+        if (equipSucceeded && !isRangedInstrument)
         {
-            // If the weapon ISN'T a wind based instrument or a string based instrument
             PChar->health.tp = 0;
             PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Aftermath);
         }
