@@ -189,8 +189,7 @@ void CZoneEntities::TryAddToNearbySpawnLists(CBaseEntity* PEntity)
                         {
                             continue;
                         }
-                        
-                        // Custom Bracket Visibility Filter Added
+
                         if (PChar->getCharVar("[LevelRatio]Restriction") != PCurrentChar->getCharVar("[LevelRatio]Restriction"))
                         {
                             continue;
@@ -1440,6 +1439,14 @@ void CZoneEntities::UpdateEntityPacket(CBaseEntity* PEntity, ENTITYUPDATE type, 
         if (PChar->m_isGMHidden && type != ENTITY_DESPAWN)
         {
             return;
+        }
+    }
+
+    if (PEntity->objtype == TYPE_NPC)
+    {
+        if (static_cast<CNpcEntity*>(PEntity)->alwaysRelevant())
+        {
+            alwaysInclude = true;
         }
     }
 

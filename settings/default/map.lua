@@ -87,6 +87,9 @@ xi.settings.map =
     -- Minimum level at which experience points can be lost
     EXP_LOSS_LEVEL = 31,
 
+    -- Enable/Disable pre-Abyssea experience point loss tiers. set true with EXP_LOSS_LEVEL = 4, for pre-Abyssea experience point loss behavior. https://wiki.ffo.jp/html/15196.html
+    USE_PRE_ABYSSEA_EXP_LOSS_TIERS = false,
+
     -- Minimum level at which regional influence is lost in conquest when a player dies
     -- Level 5 and below don't lose influence: http://wiki.ffo.jp/html/498.html
     MINIMUM_LEVEL_CONQUEST_INFUENCE_LOSS = 6,
@@ -259,6 +262,10 @@ xi.settings.map =
 
     -- Prevent players from performing WS while unengaged using packet injection.
     PREVENT_UNENGAGED_WS = false,
+
+    -- Don't leak the target of non PCs readying items/casting spells/using mobskills. Essentially, server side kills the info the targetlines addon uses.
+    -- This will also make battlemod/simplelog show self target on spells
+    HIDE_READIES_TARGET = false,
 
     -- Command Audit [logging] commands with lower permission than this will not be logged.
     -- Zero for no logging at all. Commands given to non GMs are not logged.

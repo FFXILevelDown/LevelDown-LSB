@@ -96,6 +96,13 @@ CMagicState::CMagicState(CBattleEntity* PEntity, uint16 targid, SpellID spellid,
     m_castTime = battleutils::CalculateSpellCastTime(m_PEntity, this);
     m_startPos = m_PEntity->loc.p;
 
+    auto targetID = PTarget->id;
+
+    if (m_PEntity->objtype != TYPE_PC && settings::get<bool>("map.HIDE_READIES_TARGET"))
+    {
+        targetID = m_PEntity->id;
+    }
+
     action_t action{
         .actorId    = m_PEntity->id,
         .actiontype = ActionCategory::MagicStart,
@@ -103,7 +110,7 @@ CMagicState::CMagicState(CBattleEntity* PEntity, uint16 targid, SpellID spellid,
         .spellgroup = m_PSpell->getSpellGroup(),
         .targets    = {
             {
-                .actorId = PTarget->id,
+                .actorId = targetID,
                 .results = {
                     {
                         .param     = static_cast<int32_t>(m_PSpell->getID()),
@@ -344,7 +351,7 @@ bool CMagicState::CanCastSpell(CBattleEntity* PTarget, bool isEndOfCast)
 
     if (!m_PEntity->loc.zone->CanUseMisc(m_PSpell->getZoneMisc()))
     {
-        m_errorMsg = std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, m_PEntity, static_cast<uint16>(m_PSpell->getID()), 0, MsgBasic::CannotUseInArea);
+        m_errorMsg = std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, m_PEntity, static_cast<uint16>(m_PSpell->getID()), 0, MsgBasic::CannotInThisArea);
         return false;
     }
 

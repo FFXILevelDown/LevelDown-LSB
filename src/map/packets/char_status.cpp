@@ -20,6 +20,7 @@
 */
 
 #include "char_status.h"
+#include "job_points.h"
 
 #include "aman.h"
 
@@ -242,10 +243,10 @@ CCharStatusPacket::CCharStatusPacket(CCharEntity* PChar)
     // flags 0 starts at 0x28
     charStatusFlags::flags0_t flags0 = {};
 
-    flags0.HideFlag        = false; // This hides your UI. Probably used for the Live Vanadiel streams.
-    flags0.SleepFlag       = false; // Hides the player, probably also used for Live Vanadiel
-    flags0.GroundFlag      = false; // Do not ignore collision
-    flags0.CliPosInitFlag  = false; // Ready to render?
+    flags0.HideFlag        = PChar->m_isPCHidden; // Hides the player from themselves.
+    flags0.SleepFlag       = false;               // Hides the player, probably also used for Live Vanadiel
+    flags0.GroundFlag      = false;               // Do not ignore collision
+    flags0.CliPosInitFlag  = false;               // Ready to render?
     flags0.LfgFlag         = PChar->isSeekingParty();
     flags0.CfhFlag         = false; // Orange name for CFH, players don't currently use this?
     flags0.AwayFlag        = PChar->isAway();
@@ -320,7 +321,10 @@ CCharStatusPacket::CCharStatusPacket(CCharEntity* PChar)
     flags4.GeoIndiElement = 0;
     flags4.GeoIndiSize    = 1;
     flags4.GeoIndiFlag    = 0;
-    flags4.JobMasterFlag  = PChar->getMod(Mod::SUPERIOR_LEVEL) == 5 && PChar->m_jobMasterDisplay;
+    // === CUSTOM DUAL-ERA MASTER STAR INJECTION SYSTEM ===
+    bool cm_is99Master = PChar->getMod(Mod::SUPERIOR_LEVEL) == 5;
+    bool cm_is75Master = PChar->GetMJob() < 23 && PChar->PJobPoints->GetJobPointsSpent() >= 2100;
+    flags4.JobMasterFlag = (cm_is99Master || cm_is75Master) && PChar->m_jobMasterDisplay;
 
     // GEO bubble effects, changes bubble effect depending on what effect is activated.
     if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ColureActive))

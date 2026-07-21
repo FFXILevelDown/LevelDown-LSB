@@ -2014,8 +2014,12 @@ uint32 UpdateItem(CCharEntity* PChar, uint8 LocationID, uint8 slotID, int32 quan
 
         luautils::OnItemDrop(PChar, PItem);
 
-        // Remove soon to be stale PItem pointer from sync state
-        PChar->inventorySyncState().removeEquipChange(PItem);
+        // Equipped item consumed to 0: resync equipment.
+        if (PChar->inventorySyncState().hasEquipChange(PItem))
+        {
+            PChar->inventorySyncState().clearEquipChanges();
+            PChar->resyncEquipment();
+        }
     }
     return ItemID;
 }
@@ -2253,7 +2257,12 @@ void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, Recalculate recalculate)
                     PChar->look.ranged = 0;
                 }
                 PChar->m_Weapons[SLOT_RANGED] = nullptr;
-                if (((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::StringInstrument && ((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::WindInstrument)
+
+                // Instruments and Handbells being unequipped does not necessarily mean TP must be reset.
+                // The incoming item (or lack of) decides it.
+                const auto rangedSkill        = static_cast<CItemWeapon*>(PItem)->getSkillType();
+                const bool isRangedInstrument = rangedSkill == xi::SkillType::StringInstrument || rangedSkill == xi::SkillType::WindInstrument || rangedSkill == xi::SkillType::Handbell;
+                if (recalculate || !isRangedInstrument)
                 {
                     PChar->health.tp = 0;
                     PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Aftermath);
@@ -2740,7 +2749,15 @@ void UpdateWeaponStyle(CCharEntity* PChar, uint8 equipSlotID, CItemEquipment* PI
                     switch (PWeapon->getSkillType())
                     {
                         case xi::SkillType::HandToHand:
-                            PChar->mainlook.sub = appearanceModel + 0x1000;
+                            if (hasValidStyle(PChar, PItem, appearance))
+                            {
+                                PChar->mainlook.sub = appearanceModel + 0x1000;
+                            }
+                            else
+                            {
+                                PChar->mainlook.sub = PChar->look.sub;
+                            }
+
                             break;
                         case xi::SkillType::GreatSword:
                         case xi::SkillType::GreatAxe:
@@ -3337,6 +3354,8 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
         }
     }
 
+    bool equipSucceeded = false;
+
     if (slotID == 0)
     {
         CItemEquipment* PSubItem = PChar->getEquip(SLOT_SUB);
@@ -3354,6 +3373,8 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
         {
             if (!PItem->isSubType(ITEM_LOCKED) && EquipArmor(PChar, slotID, equipSlotID, containerID))
             {
+                equipSucceeded = true;
+
                 if (PItem->getScriptType() & SCRIPT_EQUIP)
                 {
                     PChar->m_EquipFlag |= PItem->getScriptType();
@@ -3400,10 +3421,16 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
 
     if (equipSlotID == SLOT_MAIN || equipSlotID == SLOT_RANGED || equipSlotID == SLOT_SUB)
     {
-        if (!PItem || !PItem->isType(ITEM_EQUIPMENT) ||
-            (((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::StringInstrument && ((CItemWeapon*)PItem)->getSkillType() != xi::SkillType::WindInstrument))
+        // Instruments and Handbells swapping keeps TP.
+        // The outgoing instruments should have saved the TP in UnequipItem before getting here.
+        const bool isRangedInstrument =
+            PItem && PItem->isType(ITEM_EQUIPMENT) &&
+            (static_cast<CItemWeapon*>(PItem)->getSkillType() == xi::SkillType::StringInstrument ||
+             static_cast<CItemWeapon*>(PItem)->getSkillType() == xi::SkillType::WindInstrument ||
+             static_cast<CItemWeapon*>(PItem)->getSkillType() == xi::SkillType::Handbell);
+
+        if (equipSucceeded && !isRangedInstrument)
         {
-            // If the weapon ISN'T a wind based instrument or a string based instrument
             PChar->health.tp = 0;
             PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Aftermath);
         }
@@ -5345,20 +5372,24 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99)
+            // === DUAL-ERA CP FORMULA MODIFICATION ===
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER))
             {
-                // Do not grant Capacity points without Job Breaker or Level 99
+                return;
+            }
+
+            uint8 referenceLevel = PMember->GetMLevel();
+            if (referenceLevel != 75 && referenceLevel != 99)
+            {
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
-
-            // Capacity Chains are only granted for Mobs level 100+
-            // Ref: https://www.bg-wiki.com/ffxi/Job_Points
+            int16 levelDiff   = mobLevel - referenceLevel;
             float capacityPoints = 0;
 
-            if (mobLevel > 99)
+            if (mobLevel > referenceLevel)
+            // === END DUAL-ERA CP FORMULA ===
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
@@ -5548,6 +5579,11 @@ void DelExperiencePoints(CCharEntity* PChar, float retainPercent, uint16 forcedX
 
     uint8  mLevel  = (PChar->m_LevelRestriction != 0 && PChar->m_LevelRestriction < PChar->GetMLevel()) ? PChar->m_LevelRestriction : PChar->GetMLevel();
     uint16 exploss = mLevel <= 67 ? (GetExpNEXTLevel(mLevel) * 8) / 100 : 2400;
+
+    if (mLevel <= 24 && settings::get<bool>("map.USE_PRE_ABYSSEA_EXP_LOSS_TIERS"))
+    {
+        exploss = (GetExpNEXTLevel(mLevel) * 10) / 100;
+    }
 
     if (forcedXpLoss > 0)
     {

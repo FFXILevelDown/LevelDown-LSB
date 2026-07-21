@@ -29,7 +29,7 @@ zoneObject.onEventFinish = function(player, csid, option, npc)
 end
 
 zoneObject.onZoneTick = function(zone)
-xi.skynet.check()
+-- xi.skynet.check()
 end
 
 return zoneObject

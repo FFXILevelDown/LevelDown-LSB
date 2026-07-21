@@ -126,13 +126,20 @@ CItemState::CItemState(CCharEntity* PEntity, const uint16 targid, const uint8 lo
     m_castTime      = m_PItem->getActivationTime();
     m_animationTime = m_PItem->getAnimationTime();
 
+    auto targetID = PTarget->id;
+
+    if (m_PEntity->objtype != TYPE_PC && settings::get<bool>("map.HIDE_READIES_TARGET"))
+    {
+        targetID = m_PEntity->id;
+    }
+
     action_t action{
         .actorId    = m_PEntity->id,
         .actiontype = ActionCategory::ItemStart,
         .actionid   = static_cast<uint32_t>(FourCC::ItemUse),
         .targets    = {
             {
-                .actorId = PTarget->id,
+                .actorId = targetID,
                 .results = {
                     {
                         .param     = m_PItem->getID(),
@@ -241,6 +248,13 @@ auto CItemState::Update(const timer::time_point tick) -> bool
 
 void CItemState::Cleanup(timer::time_point tick)
 {
+    if (!IsCompleted() && !m_interrupted && m_PItem)
+    {
+        ActionInterrupts::ItemInterrupt(m_PEntity);
+        m_PEntity->pushPacket<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, m_PEntity, m_PItem->getID(), 0, MsgBasic::ItemFailsToActivate);
+        m_interrupted = true;
+    }
+
     m_PEntity->UContainer->Clean();
 
     if (tx_ && tx_->isOpen())

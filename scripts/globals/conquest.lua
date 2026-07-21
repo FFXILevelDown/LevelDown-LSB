@@ -22,11 +22,11 @@ local conquestConstants =
 }
 
 -----------------------------------
--- (LOCAL) Signet
+-- (GLOBAL) Signet
 -----------------------------------
 
 -- Bestow the nation's Signet.
-local function bestowSignet(player, pNation, pRank, mOffset)
+xi.conquest.bestowSignet = function(player, pNation, pRank, mOffset)
     local duration = (pRank + GetNationRank(pNation) + 3) * 3600
 
     player:delStatusEffectsByFlag(xi.effectFlag.INFLUENCE, true)
@@ -704,6 +704,7 @@ local overseerOffsets =
         { offset =  1, nation = xi.nation.BASTOK   }, -- flag
         { offset =  2, nation = xi.nation.WINDURST }, -- flag
         { offset =  3, nation = xi.nation.BEASTMEN }, -- flag
+        { offset =  4, nation = xi.nation.OTHER    }, -- Bartabaq
     },
     [xi.region.TAVNAZIANARCH] =
     {
@@ -1590,7 +1591,7 @@ xi.conquest.overseerOnEventFinish = function(player, csid, option, guardNation, 
 
     -- Signet -> Grant.
     if option == 1 then
-        bestowSignet(player, pNation, pRank, mOffset)
+        xi.conquest.bestowSignet(player, pNation, pRank, mOffset)
 
     -- Supply Run -> Finish.
     elseif option == 2 then
@@ -1644,7 +1645,7 @@ xi.conquest.overseerOnEventFinish = function(player, csid, option, guardNation, 
             player:setCharVar('[ExpForce]NextConquestTally', NextConquestTally())
         end
 
-        bestowSignet(player, pNation, pRank, mOffset)
+        xi.conquest.bestowSignet(player, pNation, pRank, mOffset)
 
         -- Replace badge with key item
         player:delStatusEffect(xi.effect.EF_BADGE)

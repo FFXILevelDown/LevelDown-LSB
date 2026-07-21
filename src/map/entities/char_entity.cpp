@@ -41,6 +41,7 @@
 #include "packets/s2c/0x033_eventstr.h"
 #include "packets/s2c/0x034_eventnum.h"
 #include "packets/s2c/0x036_talknum.h"
+#include "packets/s2c/0x04f_equip_clear.h"
 #include "packets/s2c/0x050_equip_list.h"
 #include "packets/s2c/0x051_grap_list.h"
 #include "packets/s2c/0x052_eventucoff.h"
@@ -1277,6 +1278,20 @@ void CCharEntity::flushEquipChanges()
     pushPacket<GP_SERV_COMMAND_COMMAND_DATA>(this);
 
     inventorySyncState_.clearEquipChanges();
+}
+
+void CCharEntity::resyncEquipment()
+{
+    // EQUIP_CLEAR + re-assert every equipped slot.
+    pushPacket<GP_SERV_COMMAND_EQUIP_CLEAR>();
+
+    for (uint8 slotID = 0; slotID < EquipSlotCount; ++slotID)
+    {
+        if (auto loc = equipLocation(slotID))
+        {
+            pushPacket<GP_SERV_COMMAND_EQUIP_LIST>(loc->Slot, static_cast<SLOTTYPE>(slotID), loc->Container);
+        }
+    }
 }
 
 auto CCharEntity::inventorySyncState() -> InventorySyncState&
@@ -3070,6 +3085,11 @@ void CCharEntity::setLocked(bool locked)
 
 auto CCharEntity::getCharVar(const std::string& varName) const -> int32
 {
+    if (varName.length() > 64)
+    {
+        ShowErrorFmt("CCharEntity::getCharVar: Charvar '{}' longer than 60 characters. Please shorten your variable name.", varName);
+    }
+
     if (auto charVar = charVarCache.find(varName); charVar != charVarCache.end())
     {
         std::pair cachedVarData = charVar->second;
@@ -3148,6 +3168,11 @@ auto CCharEntity::getCharVarsWithSuffix(const std::string& suffix) -> std::vecto
 
 void CCharEntity::setCharVar(const std::string& charVarName, int32 value, uint32 expiry /* = 0 */)
 {
+    if (charVarName.length() > 64)
+    {
+        ShowErrorFmt("CCharEntity::setCharVar: Charvar '{}' longer than 60 characters. Please shorten your variable name.", charVarName);
+    }
+
     charVarCache[charVarName] = { value, expiry };
     charutils::PersistCharVar(this->id, charVarName, value, expiry);
 }
