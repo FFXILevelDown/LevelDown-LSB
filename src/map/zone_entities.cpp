@@ -189,8 +189,7 @@ void CZoneEntities::TryAddToNearbySpawnLists(CBaseEntity* PEntity)
                         {
                             continue;
                         }
-                        
-                        // Custom Bracket Visibility Filter Added
+
                         if (PChar->getCharVar("[LevelRatio]Restriction") != PCurrentChar->getCharVar("[LevelRatio]Restriction"))
                         {
                             continue;
