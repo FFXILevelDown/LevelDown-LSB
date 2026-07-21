@@ -124,11 +124,11 @@ content.loot =
     { 
         { itemId = xi.item.NONE,                        weight = 250 },
         { itemId = xi.item.VESTIGE_OF_A_BURIED_TRAIT,   weight = 125 },
-        { itemId = xi.item.EXALTED_LOG,                 weight = 125 },
-        { itemId = xi.item.HEPATIZON_ORE,               weight = 125 },
-        { itemId = xi.item.MALIYAKALEYA_ORB,            weight = 125 },
-        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,      weight = 125 },
-        { itemId = xi.item.SIFS_LOCK,                   weight = 125 },
+        { itemId = ld.item.EXALTED_LOG,                 weight = 125 },
+        { itemId = ld.item.HEPATIZON_ORE,               weight = 125 },
+        { itemId = ld.item.MALIYAKALEYA_ORB,            weight = 125 },
+        { itemId = ld.item.CHUNK_OF_BERYLLIUM_ORE,      weight = 125 },
+        { itemId = ld.item.SIFS_LOCK,                   weight = 125 },
     },
     --Weapons
     {

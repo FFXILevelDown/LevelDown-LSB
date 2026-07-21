@@ -96,7 +96,7 @@ content.loot =
     {
         { itemId = xi.item.NONE,                           weight = 250 },
         { itemId = xi.item.VESTIGE_OF_A_BURIED_TRAIT,      weight = 375 }, 
-        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,         weight = 375 }, 
+        { itemId = ld.item.CHUNK_OF_BERYLLIUM_ORE,         weight = 375 }, 
     },
     --Weapons
     {

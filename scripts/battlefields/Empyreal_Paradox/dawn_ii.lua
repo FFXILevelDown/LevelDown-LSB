@@ -94,11 +94,11 @@ content.loot =
     --Unique Materials
     {
         { itemId = xi.item.NONE,                    weight = 150 }, -- nothing
-        { itemId = xi.item.EXALTED_LOG,             weight = 150 }, -- Exalted Log
-        { itemId = xi.item.HEPATIZON_ORE,           weight = 150 }, -- Hepatizon Ore
-        { itemId = xi.item.MALIYAKALEYA_ORB,        weight = 150 }, -- Maliyakaleya Coral
-        { itemId = xi.item.CHUNK_OF_BERYLLIUM_ORE,  weight = 150 }, -- Beryllium Ore
-        { itemId = xi.item.SIFS_LOCK,               weight = 150 }, -- Sif's Lock
+        { itemId = ld.item.EXALTED_LOG,             weight = 150 }, -- Exalted Log
+        { itemId = ld.item.HEPATIZON_ORE,           weight = 150 }, -- Hepatizon Ore
+        { itemId = ld.item.MALIYAKALEYA_ORB,        weight = 150 }, -- Maliyakaleya Coral
+        { itemId = ld.item.CHUNK_OF_BERYLLIUM_ORE,  weight = 150 }, -- Beryllium Ore
+        { itemId = ld.item.SIFS_LOCK,               weight = 150 }, -- Sif's Lock
     },
     --Weapons
     {

@@ -71,7 +71,7 @@ content.loot =
     {
         { itemId = xi.item.NONE,                           weight = 250 },
         { itemId = xi.item.VESTIGE_OF_A_BURIED_TRAIT,      weight = 375 },
-        { itemId = xi.item.HEPATIZON_ORE,                  weight = 375 },
+        { itemId = ld.item.HEPATIZON_ORE,                  weight = 375 },
     },
     --Weapons
     {
