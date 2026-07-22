@@ -66,6 +66,7 @@
 #include "ability.h"
 #include "alliance.h"
 #include "conquest_system.h"
+#include "data/enums/mob_mod.h"
 #include "grades.h"
 #include "ipc_client.h"
 #include "item_container.h"
@@ -73,7 +74,6 @@
 #include "latent_effect_container.h"
 #include "linkshell.h"
 #include "map_networking.h"
-#include "mob_modifier.h"
 #include "nominate_manager.h"
 #include "recast_container.h"
 #include "roe.h"
@@ -966,7 +966,7 @@ auto LoadChar(Scheduler& scheduler, MapConfig config, const uint32 charId) -> st
     // Order matters as this uses merits and JP gifts.
     puppetutils::LoadAutomaton(PChar);
 
-    PChar->animation = (HP == 0 ? ANIMATION_DEATH : ANIMATION_NONE);
+    PChar->animation = (HP == 0 ? xi::Animation::Death : xi::Animation::None);
 
     PChar->StatusEffectContainer->LoadStatusEffects();
 
@@ -5057,9 +5057,9 @@ void DistributeExperiencePoints(CCharEntity* PChar, CMobEntity* PMob)
 
                     exp *= GetPlayerShareMultiplier(pcinzone, isInSignetZone || isInSanctionZone);
 
-                    if (PMob->getMobMod(MOBMOD_EXP_BONUS))
+                    if (PMob->getMobMod(xi::MobMod::ExpBonus))
                     {
-                        const float monsterbonus = 1.0f + PMob->getMobMod(MOBMOD_EXP_BONUS) / 100.0f;
+                        const float monsterbonus = 1.0f + PMob->getMobMod(xi::MobMod::ExpBonus) / 100.0f;
                         exp *= monsterbonus;
                     }
 
@@ -7419,7 +7419,7 @@ auto SendToZone(CCharEntity* PChar, uint16 zoneId) -> bool
     }
 
     PChar->requestedZoneChange = true;
-    PChar->requestedWarp       = false; // a previous warp can get us here, which could infinitely loop. So un-request warp.
+    PChar->requestedWarp       = WarpRequest::None; // a previous warp can get us here, which could infinitely loop. So un-request warp.
 
     PChar->PSession->zone_ipp = {};
     PChar->pushPacket<GP_SERV_COMMAND_LOGOUT>(GP_GAME_LOGOUT_STATE::ZONECHANGE, IPP(ipp));
@@ -7485,7 +7485,7 @@ auto HomePoint(CCharEntity* PChar, bool resetHPMP) -> bool
     if (zoneutils::IsZoneAtPlayerCap(PChar->profile.home_point.destination, PChar->m_GMlevel > 0))
     {
         PChar->pushPacket<GP_SERV_COMMAND_SYSTEMMES>(0, 0, MsgStd::CouldNotEnter);
-        PChar->requestedWarp = false;
+        PChar->requestedWarp = WarpRequest::None;
         return false;
     }
 
@@ -7507,7 +7507,7 @@ auto HomePoint(CCharEntity* PChar, bool resetHPMP) -> bool
     PChar->loc.destination = PChar->profile.home_point.destination;
 
     PChar->status    = xi::Status::Disappear;
-    PChar->animation = ANIMATION_NONE;
+    PChar->animation = xi::Animation::None;
     PChar->updatemask |= UPDATE_HP;
 
     PChar->clearPacketList();
@@ -8109,9 +8109,9 @@ void removeCharFromZone(CCharEntity* PChar)
 
     PChar->WideScanTarget = std::nullopt;
 
-    if (PChar->animation == ANIMATION_ATTACK)
+    if (PChar->animation == xi::Animation::Attack)
     {
-        PChar->animation = ANIMATION_NONE;
+        PChar->animation = xi::Animation::None;
         PChar->updatemask |= UPDATE_HP;
     }
 

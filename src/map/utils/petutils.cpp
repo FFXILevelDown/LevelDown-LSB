@@ -46,8 +46,8 @@
 #include "ai/controllers/pet_controller.h"
 #include "ai/states/ability_state.h"
 
+#include "data/enums/mob_mod.h"
 #include "enums/automaton.h"
-#include "mob_modifier.h"
 #include "packets/char_status.h"
 #include "packets/entity_update.h"
 #include "packets/pet_sync.h"
@@ -1030,7 +1030,7 @@ void CalculateWyvernStats(CBattleEntity* PMaster, CPetEntity* PPet)
     PPet->setModifier(Mod::SUBTLE_BLOW, 40);
 
     // Wyverns can parry... yes really.
-    PPet->setMobMod(MOBMOD_CAN_PARRY, 1);
+    PPet->setMobMod(xi::MobMod::CanParry, 1);
 
     // Job Point: Wyvern Max HP
     if (PMaster->objtype == TYPE_PC)
@@ -1416,7 +1416,7 @@ void DetachPet(CBattleEntity* PMaster)
             {
                 PMob->PEnmityContainer->UpdateEnmity(PChar, 0, 0);
                 // need to set battle target to prevent mob enmity clear if in attack state when uncharming
-                PMob->SetBattleTargetID(PChar->targid);
+                PMob->setBattleTarget(PChar->entityId());
             }
             else
             {
@@ -1432,7 +1432,7 @@ void DetachPet(CBattleEntity* PMaster)
             if ((state && state->GetAbility()->getID() == ABILITY_LEAVE) || PChar->isDead())
             {
                 PMob->PEnmityContainer->Clear();
-                PMob->SetBattleTargetID(0);
+                PMob->setBattleTarget(std::nullopt);
                 PMob->m_OwnerID.clean();
                 PMob->updatemask |= UPDATE_STATUS;
             }
@@ -1448,7 +1448,7 @@ void DetachPet(CBattleEntity* PMaster)
         PMob->charmTime  = timer::time_point::min();
         PMob->PMaster    = nullptr;
 
-        PMob->setMobMod(MOBMOD_BODYGUARD, 0);
+        PMob->setMobMod(xi::MobMod::Bodyguard, 0);
 
         PMob->PAI->SetController(std::make_unique<CMobController>(PMob));
 

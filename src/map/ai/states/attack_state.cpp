@@ -33,13 +33,13 @@ CAttackState::CAttackState(CBattleEntity* PEntity, uint16 targid)
 : CState(PEntity, targid)
 , m_PEntity(PEntity)
 {
-    PEntity->SetBattleTargetID(targid);
+    PEntity->setBattleTarget(EntityID_t(PEntity->GetEntity(targid)));
     PEntity->SetBattleStartTime(timer::now());
     CAttackState::UpdateTarget();
 
     if (!GetTarget() || m_errorMsg)
     {
-        PEntity->SetBattleTargetID(0);
+        PEntity->setBattleTarget(std::nullopt);
         if (this->HasErrorMsg())
         {
             throw CStateInitException(m_errorMsg->copy());
@@ -138,7 +138,7 @@ void CAttackState::UpdateTarget(uint16 targid)
             {
                 for (auto&& PPotentialTarget : PChar->SpawnMOBList)
                 {
-                    if (PPotentialTarget.second->animation == ANIMATION_ATTACK && facing(PChar->loc.p, PPotentialTarget.second->loc.p, 64) &&
+                    if (PPotentialTarget.second->animation == xi::Animation::Attack && facing(PChar->loc.p, PPotentialTarget.second->loc.p, 64) &&
                         distance(PChar->loc.p, PPotentialTarget.second->loc.p) <= 10)
                     {
                         std::unique_ptr<CBasicPacket> errMsg;
