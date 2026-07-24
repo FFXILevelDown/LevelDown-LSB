@@ -15,6 +15,7 @@
 */
 
 #include "job_points.h"
+#include "lua/luautils.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
 
@@ -253,7 +254,7 @@ void CJobPoints::SetCapacityPoints(uint16 amount)
 
 uint8 CJobPoints::GetJobPointValue(JOBPOINT_TYPE jpType)
 {
-    if (IsJobPointExist(jpType) && m_PChar->GetMLevel() >= 99 && static_cast<uint8>(m_PChar->GetMJob()) == JobPointsCategoryIndexByJpType(jpType))
+    if (IsJobPointExist(jpType) && (m_PChar->GetMLevel() == 75 || m_PChar->GetMLevel() >= 99) && static_cast<uint8>(m_PChar->GetMJob()) == JobPointsCategoryIndexByJpType(jpType))
     {
         return GetJobPointType(jpType)->value;
     }
@@ -286,6 +287,17 @@ void LoadGifts()
 
 void RefreshGiftMods(CCharEntity* PChar)
 {
+    // === RAW SOL2 LUA MODULE HOOK ===
+    if (PChar->GetMLevel() < 99)
+    {
+        sol::protected_function customGifts = lua["xi"]["custom_mastery"]["onRefreshGiftMods"];
+        if (customGifts.valid())
+        {
+            customGifts(PChar, PChar->PJobPoints->GetJobPointsSpent());
+        }
+    }
+    // === END RAW SOL2 LUA MODULE HOOK ===
+
     uint16 totalJpSpent = PChar->PJobPoints->GetJobPointsSpent();
     uint8  jobId        = static_cast<uint8>(PChar->GetMJob());
 
@@ -296,9 +308,10 @@ void RefreshGiftMods(CCharEntity* PChar)
         currentGifts->clear();
     }
 
+    // === DUAL-ERA MULTI-TIER GIFT SYSTEM ===
     for (auto&& gift : jpGifts[jobId])
     {
-        if (gift.jpRequired > totalJpSpent || PChar->GetMLevel() < 99)
+        if (gift.jpRequired > totalJpSpent || (PChar->GetMLevel() != 75 && PChar->GetMLevel() < 99))
         {
             break;
         }
