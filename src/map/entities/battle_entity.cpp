@@ -1738,6 +1738,14 @@ void CBattleEntity::SetSLevel(uint8 slvl)
     {
         // 1. Get the global server setting first
         auto ratio = settings::get<uint8>("map.SUBJOB_RATIO");
+        // CHECK FOR PLAYER OVERRIDE
+        if (this->objtype == TYPE_PC)
+        {
+            auto* PChar = static_cast<CCharEntity*>(this);
+            uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");
+            if (customRatio == 0) { customRatio = charutils::GetCharVar(PChar, "Ratio"); }
+            if (customRatio > 0) { ratio = customRatio; }
+        } /* CUSTOM DYNAMIC SUBJOB BRACKETS */
         uint8 tierBonus = 0; // Subjob Cap Bonus (+1 Level per bonus count, max +5)
 
         // 2. CHECK FOR PLAYER OVERRIDE
@@ -1779,7 +1787,7 @@ void CBattleEntity::SetSLevel(uint8 slvl)
                 uint8 maxCap  = baseMax;
 
                 // Only apply the +1 to +5 bonus cap when Main Level is 75 or higher!
-                if (m_mlvl >= 75)
+                if (m_mlvl >= 75) /* CUSTOM 75 MASTER SUBJOB BONUS */
                 {
                     maxCap = std::min<uint8>(static_cast<uint8>(37 + tierBonus), 50);
                 }

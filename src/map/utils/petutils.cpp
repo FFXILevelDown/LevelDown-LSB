@@ -1781,7 +1781,7 @@ void LoadPet(CBattleEntity* PMaster, uint32 PetID, bool spawningFromZone)
 
     auto* PPetData = *maybePetData;
 
-    if (PMaster->GetMJob() != xi::Job::DRG && PetID == PETID_WYVERN)
+    if (PMaster->GetMJob() != xi::Job::DRG && PMaster->GetSJob() != xi::Job::DRG && PetID == PETID_WYVERN) /* CUSTOM DRG SUBJOB CALL */
     {
         return;
     }

@@ -5378,7 +5378,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            uint8 referenceLevel = PMember->GetMLevel();
+            uint8 referenceLevel = PMember->GetMLevel(); /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
             if (referenceLevel != 75 && referenceLevel != 99)
             {
                 return;

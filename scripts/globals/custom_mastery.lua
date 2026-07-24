@@ -67,7 +67,21 @@ end
 
 xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
     -------------------------------------------------------------------------
-    -- 1. ACCOUNT-WIDE PERMANENT SUBJOB STATS
+    -- 1. FUFUROON'S TEMPORARY CP BOOST
+    -------------------------------------------------------------------------
+    local cpExpiry = player:getCharVar("[CQ]CP_BUFF_EXPIRY")
+    
+    if cpExpiry > os.time() then
+        local cpAmount = player:getCharVar("[CQ]CP_BUFF_AMOUNT")
+        player:addMod(xi.mod.CAPACITY_BONUS, cpAmount)
+    elseif cpExpiry > 0 then
+        -- Clean up expired buff variables
+        player:setCharVar("[CQ]CP_BUFF_EXPIRY", 0)
+        player:setCharVar("[CQ]CP_BUFF_AMOUNT", 0)
+    end
+
+    -------------------------------------------------------------------------
+    -- 2. ACCOUNT-WIDE PERMANENT SUBJOB STATS
     -- (+35 HP, +10 MP, +5 Base Stats per +1 Subjob Level unlocked)
     -------------------------------------------------------------------------
     local globalSjBonus = player:getCharVar("[CQ]GLOBAL_SUBJOB_BONUS") or 0
@@ -82,7 +96,7 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
     end
 
     -------------------------------------------------------------------------
-    -- 2. JOB-SPECIFIC JP MASTERY (Gifts, Categories & Job-Specific Mods)
+    -- 3. JOB-SPECIFIC JP MASTERY (Gifts, Categories & Job-Specific Mods)
     -------------------------------------------------------------------------
     local jobShortNames = {
         [1] = "WAR", [2] = "MNK", [3] = "WHM", [4] = "BLM", [5] = "RDM",
@@ -138,8 +152,6 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
         local lastNotified = player:getCharVar("[CQ]NOTIFIED_TIER_" .. jobName) or 0
         if activeTier > lastNotified then
             player:setCharVar("[CQ]NOTIFIED_TIER_" .. jobName, activeTier)
-
-            player:showAnimation(171)
 
             local currentCpBonus = activeTier * CP_BONUS_PER_TIER
             local effectiveSubCap = 37 + globalSjBonus
