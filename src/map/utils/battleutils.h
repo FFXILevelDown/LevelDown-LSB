@@ -116,8 +116,8 @@ int16 GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay);
 int32 GetRangedAttackBonuses(CBattleEntity* battleEntity);
 int32 GetRangedAccuracyBonuses(CBattleEntity* battleEntity);
 
-uint8  GetSkillRank(xi::SkillType SkillID, JOBTYPE JobID);
-uint16 GetMaxSkill(xi::SkillType SkillID, JOBTYPE JobID, uint8 level);
+uint8  GetSkillRank(xi::SkillType SkillID, xi::Job JobID);
+auto   GetMaxSkill(xi::SkillType SkillID, xi::Job JobID, uint8 level) -> uint16;
 uint16 GetMaxSkill(uint8 rank, uint8 level);
 
 CWeaponSkill* GetWeaponSkill(uint16 WSkillID);
@@ -260,7 +260,7 @@ int16           CalculateWeaponSkillTP(CBattleEntity*, CWeaponSkill*, int16);
 bool            RemoveAmmo(CCharEntity*, int quantity = 1);
 int32           GetMeritValue(CBattleEntity*, MERIT_TYPE);
 
-int32 GetScaledItemModifier(CBattleEntity*, CItemEquipment*, Mod);
+int32 GetScaledItemModifier(CBattleEntity*, CItemEquipment*, xi::Mod);
 auto  GetSpikesDamageType(ActionReactKind spikesType) -> xi::DamageType;
 auto  GetEnspellDamageType(ENSPELL enspellType) -> xi::DamageType;
 auto  GetRuneEnhancementDamageType(xi::StatusEffect runeEffect) -> xi::DamageType;

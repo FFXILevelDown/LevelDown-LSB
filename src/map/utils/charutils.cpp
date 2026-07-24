@@ -220,15 +220,15 @@ void CalculateStats(CCharEntity* PChar)
 
     uint8      mlvl        = PChar->GetMLevel();
     uint8      slvl        = PChar->GetSLevel();
-    JOBTYPE    mjob        = PChar->GetMJob();
-    JOBTYPE    sjob        = PChar->GetSJob();
+    xi::Job    mjob        = PChar->GetMJob();
+    xi::Job    sjob        = PChar->GetSJob();
     MERIT_TYPE statMerit[] = { MERIT_STR, MERIT_DEX, MERIT_VIT, MERIT_AGI, MERIT_INT, MERIT_MND, MERIT_CHR };
 
     // We have to make sure we don't leave the job as JOB_MON - we CANNOT generate stats for it.
-    if (mjob == JOB_MON || sjob == JOB_MON)
+    if (mjob == xi::Job::MON || sjob == xi::Job::MON)
     {
-        mjob = JOB_WAR;
-        sjob = JOB_WAR;
+        mjob = xi::Job::WAR;
+        sjob = xi::Job::WAR;
     }
 
     // NOTE: Monstrosity (MON) is treated as its own job, but each species is it's own
@@ -714,28 +714,28 @@ auto LoadChar(Scheduler& scheduler, MapConfig config, const uint32 charId) -> st
         PChar->jobs.unlocked = rset->get<uint32>("unlocked");
         PChar->jobs.genkai   = rset->get<uint8>("genkai");
 
-        PChar->jobs.job[JOB_WAR] = rset->get<uint8>("war");
-        PChar->jobs.job[JOB_MNK] = rset->get<uint8>("mnk");
-        PChar->jobs.job[JOB_WHM] = rset->get<uint8>("whm");
-        PChar->jobs.job[JOB_BLM] = rset->get<uint8>("blm");
-        PChar->jobs.job[JOB_RDM] = rset->get<uint8>("rdm");
-        PChar->jobs.job[JOB_THF] = rset->get<uint8>("thf");
-        PChar->jobs.job[JOB_PLD] = rset->get<uint8>("pld");
-        PChar->jobs.job[JOB_DRK] = rset->get<uint8>("drk");
-        PChar->jobs.job[JOB_BST] = rset->get<uint8>("bst");
-        PChar->jobs.job[JOB_BRD] = rset->get<uint8>("brd");
-        PChar->jobs.job[JOB_RNG] = rset->get<uint8>("rng");
-        PChar->jobs.job[JOB_SAM] = rset->get<uint8>("sam");
-        PChar->jobs.job[JOB_NIN] = rset->get<uint8>("nin");
-        PChar->jobs.job[JOB_DRG] = rset->get<uint8>("drg");
-        PChar->jobs.job[JOB_SMN] = rset->get<uint8>("smn");
-        PChar->jobs.job[JOB_BLU] = rset->get<uint8>("blu");
-        PChar->jobs.job[JOB_COR] = rset->get<uint8>("cor");
-        PChar->jobs.job[JOB_PUP] = rset->get<uint8>("pup");
-        PChar->jobs.job[JOB_DNC] = rset->get<uint8>("dnc");
-        PChar->jobs.job[JOB_SCH] = rset->get<uint8>("sch");
-        PChar->jobs.job[JOB_GEO] = rset->get<uint8>("geo");
-        PChar->jobs.job[JOB_RUN] = rset->get<uint8>("run");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::WAR)] = rset->get<uint8>("war");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::MNK)] = rset->get<uint8>("mnk");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::WHM)] = rset->get<uint8>("whm");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::BLM)] = rset->get<uint8>("blm");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::RDM)] = rset->get<uint8>("rdm");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::THF)] = rset->get<uint8>("thf");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::PLD)] = rset->get<uint8>("pld");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::DRK)] = rset->get<uint8>("drk");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::BST)] = rset->get<uint8>("bst");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::BRD)] = rset->get<uint8>("brd");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::RNG)] = rset->get<uint8>("rng");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::SAM)] = rset->get<uint8>("sam");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::NIN)] = rset->get<uint8>("nin");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::DRG)] = rset->get<uint8>("drg");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::SMN)] = rset->get<uint8>("smn");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::BLU)] = rset->get<uint8>("blu");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::COR)] = rset->get<uint8>("cor");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::PUP)] = rset->get<uint8>("pup");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::DNC)] = rset->get<uint8>("dnc");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::SCH)] = rset->get<uint8>("sch");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::GEO)] = rset->get<uint8>("geo");
+        PChar->jobs.job[static_cast<uint8>(xi::Job::RUN)] = rset->get<uint8>("run");
     }
 
     // LoadFromCharExpSQL
@@ -748,28 +748,28 @@ auto LoadChar(Scheduler& scheduler, MapConfig config, const uint32 charId) -> st
     {
         PChar->MeritMode = rset->get<uint8>("mode");
 
-        PChar->jobs.exp[JOB_WAR] = rset->get<uint16>("war");
-        PChar->jobs.exp[JOB_MNK] = rset->get<uint16>("mnk");
-        PChar->jobs.exp[JOB_WHM] = rset->get<uint16>("whm");
-        PChar->jobs.exp[JOB_BLM] = rset->get<uint16>("blm");
-        PChar->jobs.exp[JOB_RDM] = rset->get<uint16>("rdm");
-        PChar->jobs.exp[JOB_THF] = rset->get<uint16>("thf");
-        PChar->jobs.exp[JOB_PLD] = rset->get<uint16>("pld");
-        PChar->jobs.exp[JOB_DRK] = rset->get<uint16>("drk");
-        PChar->jobs.exp[JOB_BST] = rset->get<uint16>("bst");
-        PChar->jobs.exp[JOB_BRD] = rset->get<uint16>("brd");
-        PChar->jobs.exp[JOB_RNG] = rset->get<uint16>("rng");
-        PChar->jobs.exp[JOB_SAM] = rset->get<uint16>("sam");
-        PChar->jobs.exp[JOB_NIN] = rset->get<uint16>("nin");
-        PChar->jobs.exp[JOB_DRG] = rset->get<uint16>("drg");
-        PChar->jobs.exp[JOB_SMN] = rset->get<uint16>("smn");
-        PChar->jobs.exp[JOB_BLU] = rset->get<uint16>("blu");
-        PChar->jobs.exp[JOB_COR] = rset->get<uint16>("cor");
-        PChar->jobs.exp[JOB_PUP] = rset->get<uint16>("pup");
-        PChar->jobs.exp[JOB_DNC] = rset->get<uint16>("dnc");
-        PChar->jobs.exp[JOB_SCH] = rset->get<uint16>("sch");
-        PChar->jobs.exp[JOB_GEO] = rset->get<uint16>("geo");
-        PChar->jobs.exp[JOB_RUN] = rset->get<uint16>("run");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::WAR)] = rset->get<uint16>("war");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::MNK)] = rset->get<uint16>("mnk");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::WHM)] = rset->get<uint16>("whm");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::BLM)] = rset->get<uint16>("blm");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::RDM)] = rset->get<uint16>("rdm");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::THF)] = rset->get<uint16>("thf");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::PLD)] = rset->get<uint16>("pld");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::DRK)] = rset->get<uint16>("drk");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::BST)] = rset->get<uint16>("bst");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::BRD)] = rset->get<uint16>("brd");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::RNG)] = rset->get<uint16>("rng");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::SAM)] = rset->get<uint16>("sam");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::NIN)] = rset->get<uint16>("nin");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::DRG)] = rset->get<uint16>("drg");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::SMN)] = rset->get<uint16>("smn");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::BLU)] = rset->get<uint16>("blu");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::COR)] = rset->get<uint16>("cor");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::PUP)] = rset->get<uint16>("pup");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::DNC)] = rset->get<uint16>("dnc");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::SCH)] = rset->get<uint16>("sch");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::GEO)] = rset->get<uint16>("geo");
+        PChar->jobs.exp[static_cast<uint8>(xi::Job::RUN)] = rset->get<uint16>("run");
 
         meritPoints = rset->get<uint8>("merits");
         limitPoints = rset->get<uint16>("limits");
@@ -837,8 +837,8 @@ auto LoadChar(Scheduler& scheduler, MapConfig config, const uint32 charId) -> st
         PChar->SetLocalVar("gameLogin", 1);
     }
 
-    PChar->SetMLevel(PChar->jobs.job[PChar->GetMJob()]);
-    PChar->SetSLevel(PChar->jobs.job[PChar->GetSJob()]);
+    PChar->SetMLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]);
+    PChar->SetSLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetSJob())]);
 
     // TODO: LoadFromCharRecastSQL
     fmtQuery = "SELECT id, time, recast FROM char_recast WHERE charid = ?";
@@ -1663,12 +1663,12 @@ void SendExtendedJobPackets(CCharEntity* PChar)
     {
         switch (PChar->GetMJob())
         {
-            case JOB_PUP:
+            case xi::Job::PUP:
             {
                 PChar->pushPacket<GP_SERV_COMMAND_EXTENDED_JOB::PUP>(PChar, true);
                 break;
             }
-            case JOB_BLU:
+            case xi::Job::BLU:
             {
                 PChar->pushPacket<GP_SERV_COMMAND_EXTENDED_JOB::BLU>(PChar, true);
                 break;
@@ -1680,12 +1680,12 @@ void SendExtendedJobPackets(CCharEntity* PChar)
 
         switch (PChar->GetSJob())
         {
-            case JOB_PUP:
+            case xi::Job::PUP:
             {
                 PChar->pushPacket<GP_SERV_COMMAND_EXTENDED_JOB::PUP>(PChar, false);
                 break;
             }
-            case JOB_BLU:
+            case xi::Job::BLU:
             {
                 PChar->pushPacket<GP_SERV_COMMAND_EXTENDED_JOB::BLU>(PChar, false);
                 break;
@@ -2357,9 +2357,9 @@ bool EquipArmor(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 conta
         return false;
     }
 
-    if ((PChar->m_EquipBlock & (1 << equipSlotID)) || !(PItem->getJobs() & (1 << (PChar->GetMJob() - 1))) ||
-        (PItem->getSuperiorLevel() > PChar->getMod(Mod::SUPERIOR_LEVEL)) ||
-        (PItem->getReqLvl() > (settings::get<bool>("map.DISABLE_GEAR_SCALING") ? PChar->GetMLevel() : PChar->jobs.job[PChar->GetMJob()])) ||
+    if ((PChar->m_EquipBlock & (1 << equipSlotID)) || !(PItem->getJobs() & (1 << (static_cast<uint8>(PChar->GetMJob()) - 1))) ||
+        (PItem->getSuperiorLevel() > PChar->getMod(xi::Mod::SUPERIOR_LEVEL)) ||
+        (PItem->getReqLvl() > (settings::get<bool>("map.DISABLE_GEAR_SCALING") ? PChar->GetMLevel() : PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())])) ||
         !PItem->isEquippableByRace(PChar->look.race))
     {
         return false;
@@ -3469,7 +3469,7 @@ void CheckValidEquipment(CCharEntity* PChar)
             continue;
         }
 
-        if (PItem->getReqLvl() > (settings::get<bool>("map.DISABLE_GEAR_SCALING") ? PChar->GetMLevel() : PChar->jobs.job[PChar->GetMJob()]))
+        if (PItem->getReqLvl() > (settings::get<bool>("map.DISABLE_GEAR_SCALING") ? PChar->GetMLevel() : PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]))
         {
             UnequipItem(PChar, slotID);
             continue;
@@ -3485,7 +3485,7 @@ void CheckValidEquipment(CCharEntity* PChar)
             }
         }
 
-        if ((PItem->getJobs() & (1 << (PChar->GetMJob() - 1))) && (PItem->getEquipSlotId() & (1 << slotID)))
+        if ((PItem->getJobs() & (1 << (static_cast<uint8>(PChar->GetMJob()) - 1))) && (PItem->getEquipSlotId() & (1 << slotID)))
         {
             continue;
         }
@@ -3545,7 +3545,7 @@ void BuildingCharWeaponSkills(CCharEntity* PChar)
             // As of writing, the only unlockable weapons are: wsnm, ksnm, nyzul vigil weapons
             if (PItem && (!PItem->isUnlockable() || PItem->isUnlocked()))
             {
-                std::get<1>(slot) = battleutils::GetScaledItemModifier(PChar, PItem, Mod::ADDS_WEAPONSKILL);
+                std::get<1>(slot) = battleutils::GetScaledItemModifier(PChar, PItem, xi::Mod::ADDS_WEAPONSKILL);
             }
         }
     }
@@ -3595,9 +3595,9 @@ void BuildingCharPetAbilityTable(CCharEntity* PChar, CPetEntity* PPet, uint32 Pe
         return;
     }
 
-    if (PChar->GetMJob() == JOB_SMN || PChar->GetSJob() == JOB_SMN)
+    if (PChar->GetMJob() == xi::Job::SMN || PChar->GetSJob() == xi::Job::SMN)
     {
-        std::vector<CAbility*> AbilitiesList = ability::GetAbilities(JOB_SMN);
+        std::vector<CAbility*> AbilitiesList = ability::GetAbilities(xi::Job::SMN);
 
         for (auto PAbility : AbilitiesList)
         {
@@ -3708,7 +3708,7 @@ void BuildingCharAbilityTable(CCharEntity* PChar)
     }
 
     // To stop a character with no SJob to receive the traits with job = 0 in the DB.
-    if (PChar->GetSJob() == JOB_NON)
+    if (PChar->GetSJob() == xi::Job::NONE)
     {
         return;
     }
@@ -3766,9 +3766,9 @@ int16 ArtsBonusSkill(CCharEntity* PChar, xi::SkillType SkillID)
     uint16 maxMainSkill = battleutils::GetMaxSkill(SkillID, PChar->GetMJob(), PChar->GetMLevel());
     uint16 maxSubSkill  = battleutils::GetMaxSkill(SkillID, PChar->GetSJob(), PChar->GetSLevel());
 
-    uint16 artsSkill    = battleutils::GetMaxSkill(xi::SkillType::EnhancingMagic, JOB_RDM, PChar->GetMLevel());                       // B+ skill
-    uint16 skillCapD    = battleutils::GetMaxSkill(SkillID, JOB_SCH, PChar->GetMLevel());                                             // D skill cap
-    uint16 skillCapE    = battleutils::GetMaxSkill(xi::SkillType::DarkMagic, JOB_RDM, PChar->GetMLevel());                            // E skill cap
+    uint16 artsSkill    = battleutils::GetMaxSkill(xi::SkillType::EnhancingMagic, xi::Job::RDM, PChar->GetMLevel());                  // B+ skill
+    uint16 skillCapD    = battleutils::GetMaxSkill(SkillID, xi::Job::SCH, PChar->GetMLevel());                                        // D skill cap
+    uint16 skillCapE    = battleutils::GetMaxSkill(xi::SkillType::DarkMagic, xi::Job::RDM, PChar->GetMLevel());                       // E skill cap
     auto   currentSkill = std::clamp<uint16>((PChar->RealSkills.skill[(int32)SkillID] / 10), 0, std::max(maxMainSkill, maxSubSkill)); // working skill before bonuses
     uint16 artsBaseline = 0;                                                                                                          // Level based baseline to which to raise skills
     uint8  mLevel       = PChar->GetMLevel();
@@ -3815,11 +3815,11 @@ int16 ArtsBonusSkill(CCharEntity* PChar, xi::SkillType SkillID)
 
     if (PChar->StatusEffectContainer->HasStatusEffect({ xi::StatusEffect::LightArts, xi::StatusEffect::AddendumWhite }))
     {
-        skillBonus += PChar->getMod(Mod::LIGHT_ARTS_SKILL);
+        skillBonus += PChar->getMod(xi::Mod::LIGHT_ARTS_SKILL);
     }
     else
     {
-        skillBonus += PChar->getMod(Mod::DARK_ARTS_SKILL);
+        skillBonus += PChar->getMod(xi::Mod::DARK_ARTS_SKILL);
     }
 
     return skillBonus;
@@ -3904,7 +3904,7 @@ void BuildingCharSkillsTable(CCharEntity* PChar)
         meritIndex++;
 
         // Add 79 to get the modifier ID
-        skillBonus += PChar->getMod(static_cast<Mod>(i + 79)); // This can be a negative value. Example: Shiva's Shotel.
+        skillBonus += PChar->getMod(static_cast<xi::Mod>(i + 79)); // This can be a negative value. Example: Shiva's Shotel.
 
         uint8 mainSkillRank = battleutils::GetSkillRank((xi::SkillType)i, PChar->GetMJob());
         uint8 subSkillRank  = battleutils::GetSkillRank((xi::SkillType)i, PChar->GetSJob());
@@ -4053,15 +4053,15 @@ void BuildingCharTraitsTable(CCharEntity* PChar)
     battleutils::AddTraits(PChar, traits::GetTraits(mjob), mlvl);
     battleutils::AddTraits(PChar, traits::GetTraits(sjob), slvl);
 
-    if (mjob == JOB_BLU || sjob == JOB_BLU)
+    if (mjob == xi::Job::BLU || sjob == xi::Job::BLU)
     {
         blueutils::CalculateTraits(PChar);
     }
 
-    PChar->delModifier(Mod::MEVA, PChar->m_magicEvasion);
+    PChar->delModifier(xi::Mod::MEVA, PChar->m_magicEvasion);
 
     PChar->m_magicEvasion = battleutils::GetMaxSkill(12, mlvl); // Player MEVA is Rank G
-    PChar->addModifier(Mod::MEVA, PChar->m_magicEvasion);
+    PChar->addModifier(xi::Mod::MEVA, PChar->m_magicEvasion);
 }
 
 /************************************************************************
@@ -4128,11 +4128,11 @@ void TrySkillUP(CCharEntity* PChar, xi::SkillType SkillID, uint8 lvl, bool force
         if ((rawSkillID >= 1 && rawSkillID <= 12) || (rawSkillID >= 25 && rawSkillID <= 31))
         // if should effect automaton replace the above with: (SkillID >= 1 && SkillID <= 31)
         {
-            SkillUpChance *= ((100.0f + PChar->getMod(Mod::COMBAT_SKILLUP_RATE)) / 100.0f);
+            SkillUpChance *= ((100.0f + PChar->getMod(xi::Mod::COMBAT_SKILLUP_RATE)) / 100.0f);
         }
         else if (rawSkillID >= 32 && rawSkillID <= 44)
         {
-            SkillUpChance *= ((100.0f + PChar->getMod(Mod::MAGIC_SKILLUP_RATE)) / 100.0f);
+            SkillUpChance *= ((100.0f + PChar->getMod(xi::Mod::MAGIC_SKILLUP_RATE)) / 100.0f);
         }
 
         if (Diff > 0 && (random < SkillUpChance || forceSkillUp))
@@ -4697,7 +4697,7 @@ void SetExpDifficultyCurve(std::vector<std::pair<uint16, EMobDifficulty>>& curve
 
 EMobDifficulty CheckMob(uint8 charlvl, CBattleEntity* PMob)
 {
-    auto moblvl = PMob ? PMob->GetMLevel() + PMob->getMod(Mod::EXP_LVL_MOD) : -1;
+    auto moblvl = PMob ? PMob->GetMLevel() + PMob->getMod(xi::Mod::EXP_LVL_MOD) : -1;
 
     uint32 baseExp = GetBaseExp(charlvl, moblvl);
 
@@ -4777,7 +4777,7 @@ uint8 GetExpLevel(CBattleEntity* PMember)
         CStatusEffect* PRestriction = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::LevelRestriction);
         if (PRestriction && PRestriction->GetSubPower() == 1) // subPower 1 means EXP rate based on the player's true level
         {
-            return PChar->jobs.job[PChar->GetMJob()];
+            return PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())];
         }
     }
 
@@ -4821,7 +4821,7 @@ void DistributeGil(CCharEntity* PChar, CMobEntity* PMob)
         gil = gil * multiplier;
     }
 
-    int16 killshotBonus = PChar->getMod(Mod::MOGHANCEMENT_GIL_BONUS_P);
+    int16 killshotBonus = PChar->getMod(xi::Mod::MOGHANCEMENT_GIL_BONUS_P);
     if (killshotBonus > 0)
     {
         double multiplier = (100.0 + killshotBonus) / 100.0;
@@ -5017,7 +5017,7 @@ void DistributeExperiencePoints(CCharEntity* PChar, CMobEntity* PMob)
 
             bool chainactive = false;
 
-            const int16 moblevel    = PMob->GetMLevel() + PMob->getMod(Mod::EXP_LVL_MOD);
+            const int16 moblevel    = PMob->GetMLevel() + PMob->getMod(xi::Mod::EXP_LVL_MOD);
             const uint8 memberlevel = GetExpLevel(PMember);
 
             EMobDifficulty mobCheck = CheckMob(maxlevel, PMob);
@@ -5460,7 +5460,7 @@ uint16 AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints)
 
     // Mod::CAPACITY_BONUS is currently used for JP Gifts, and can easily be used elsewhere
     // This value is stored as uint, as a whole number percentage value
-    rawBonus += PChar->getMod(Mod::CAPACITY_BONUS);
+    rawBonus += PChar->getMod(xi::Mod::CAPACITY_BONUS);
 
     // Unity Concord Ranking: 2 * (Unity Ranking - 1)
     uint8 unity = PChar->profile.unity_leader;
@@ -5601,20 +5601,20 @@ void DelExperiencePoints(CCharEntity* PChar, float retainPercent, uint16 forcedX
     PChar->setCharVar("expLost", exploss);
 
     // Handle deleveling
-    if (PChar->jobs.exp[PChar->GetMJob()] < exploss)
+    if (PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] < exploss)
     {
-        if (PChar->jobs.job[PChar->GetMJob()] > 1)
+        if (PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] > 1)
         {
             // de-level!
-            int32 lowerLevelMaxExp = GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()] - 1);
-            exploss -= PChar->jobs.exp[PChar->GetMJob()];
-            PChar->jobs.exp[PChar->GetMJob()] = std::max(0, lowerLevelMaxExp - exploss);
-            PChar->jobs.job[PChar->GetMJob()] -= 1;
+            int32 lowerLevelMaxExp = GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] - 1);
+            exploss -= PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())];
+            PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] = std::max(0, lowerLevelMaxExp - exploss);
+            PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] -= 1;
 
-            if (PChar->m_LevelRestriction == 0 || PChar->jobs.job[PChar->GetMJob()] < PChar->m_LevelRestriction)
+            if (PChar->m_LevelRestriction == 0 || PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] < PChar->m_LevelRestriction)
             {
-                PChar->SetMLevel(PChar->jobs.job[PChar->GetMJob()]);
-                PChar->SetSLevel(PChar->jobs.job[PChar->GetSJob()]);
+                PChar->SetMLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]);
+                PChar->SetSLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetSJob())]);
             }
 
             jobpointutils::RefreshGiftMods(PChar);
@@ -5651,18 +5651,18 @@ void DelExperiencePoints(CCharEntity* PChar, float retainPercent, uint16 forcedX
                 PChar->PParty->ReloadParty();
             }
 
-            PChar->loc.zone->PushPacket(PChar, CHAR_INRANGE_SELF, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE2>(PChar, PChar, PChar->jobs.job[PChar->GetMJob()], 0, MsgBasic::LevelDown));
+            PChar->loc.zone->PushPacket(PChar, CHAR_INRANGE_SELF, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE2>(PChar, PChar, PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())], 0, MsgBasic::LevelDown));
             luautils::OnPlayerLevelDown(PChar);
             PChar->updatemask |= UPDATE_HP;
         }
         else
         {
-            PChar->jobs.exp[PChar->GetMJob()] = 0;
+            PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] = 0;
         }
     }
     else
     {
-        PChar->jobs.exp[PChar->GetMJob()] -= exploss;
+        PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] -= exploss;
     }
 
     SaveCharExp(PChar, PChar->GetMJob());
@@ -5689,18 +5689,18 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
     {
         exp = (uint32)(exp * settings::get<float>("map.EXP_RATE"));
     }
-    uint16 currentExp  = PChar->jobs.exp[PChar->GetMJob()];
+    uint16 currentExp  = PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())];
     bool   onLimitMode = false;
 
     // Incase player de-levels to 74 on the field
-    if (PChar->MeritMode && PChar->jobs.job[PChar->GetMJob()] > 74 && !expFromRaise)
+    if (PChar->MeritMode && PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] > 74 && !expFromRaise)
     {
         onLimitMode = true;
     }
 
     // we check if the player is level capped and max exp..
-    if (PChar->jobs.job[PChar->GetMJob()] > 74 && PChar->jobs.job[PChar->GetMJob()] >= PChar->jobs.genkai &&
-        PChar->jobs.exp[PChar->GetMJob()] == GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()]) - 1)
+    if (PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] > 74 && PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] >= PChar->jobs.genkai &&
+        PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] == GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]) - 1)
     {
         onLimitMode = true;
     }
@@ -5758,7 +5758,7 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
     else
     {
         // add normal exp
-        PChar->jobs.exp[PChar->GetMJob()] += exp;
+        PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] += exp;
     }
 
     if (!expFromRaise && !fromScripts && awardRegionPoints)
@@ -5806,11 +5806,11 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
     PChar->PAI->EventHandler.triggerListener("EXPERIENCE_POINTS", PChar, PMob, exp);
 
     // Player levels up
-    if ((currentExp + exp) >= GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()]) && !onLimitMode)
+    if ((currentExp + exp) >= GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]) && !onLimitMode)
     {
-        if (PChar->jobs.job[PChar->GetMJob()] >= PChar->jobs.genkai)
+        if (PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] >= PChar->jobs.genkai)
         {
-            PChar->jobs.exp[PChar->GetMJob()] = GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()]) - 1;
+            PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] = GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]) - 1;
             if (PChar->PParty && PChar->PParty->GetSyncTarget() == PChar)
             {
                 PChar->PParty->SetSyncTarget("", MsgStd::LevelSyncRemoveIneligibleExp);
@@ -5818,17 +5818,17 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
         }
         else
         {
-            PChar->jobs.exp[PChar->GetMJob()] -= GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()]);
-            if (PChar->jobs.exp[PChar->GetMJob()] >= GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()] + 1))
+            PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] -= GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]);
+            if (PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] >= GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] + 1))
             {
-                PChar->jobs.exp[PChar->GetMJob()] = GetExpNEXTLevel(PChar->jobs.job[PChar->GetMJob()] + 1) - 1;
+                PChar->jobs.exp[static_cast<uint8>(PChar->GetMJob())] = GetExpNEXTLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] + 1) - 1;
             }
-            PChar->jobs.job[PChar->GetMJob()] += 1;
+            PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())] += 1;
 
             if (PChar->m_LevelRestriction == 0 || PChar->m_LevelRestriction > PChar->GetMLevel())
             {
-                PChar->SetMLevel(PChar->jobs.job[PChar->GetMJob()]);
-                PChar->SetSLevel(PChar->jobs.job[PChar->GetSJob()]);
+                PChar->SetMLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())]);
+                PChar->SetSLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetSJob())]);
 
                 jobpointutils::RefreshGiftMods(PChar);
                 BuildingCharSkillsTable(PChar);
@@ -5854,7 +5854,7 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
             if (!expFromRaise)
             {
                 // Level up animation and message
-                PChar->loc.zone->PushPacket(PChar, CHAR_INRANGE_SELF, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE2>(PChar, PMob, PChar->jobs.job[PChar->GetMJob()], 0, MsgBasic::LevelUp));
+                PChar->loc.zone->PushPacket(PChar, CHAR_INRANGE_SELF, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE2>(PChar, PMob, PChar->jobs.job[static_cast<uint8>(PChar->GetMJob())], 0, MsgBasic::LevelUp));
                 // Set HP and MP to max range
                 PChar->health.hp = PChar->GetMaxHP();
                 PChar->health.mp = PChar->GetMaxMP();
@@ -6441,18 +6441,18 @@ void SaveCharMoghancement(const CCharEntity* PChar)
  *                                                                       *
  ************************************************************************/
 
-void SaveCharJob(const CCharEntity* PChar, const JOBTYPE job)
+void SaveCharJob(const CCharEntity* PChar, const xi::Job job)
 {
     TracyZoneScoped;
 
-    if (job == JOB_NON || job >= MAX_JOBTYPE)
+    if (job == xi::Job::NONE || static_cast<uint8>(job) >= MAX_JOBTYPE)
     {
-        ShowWarningFmt("Attempt to save Invalid Job with JOBTYPE {}.", job);
+        ShowWarningFmt("Attempt to save Invalid Job with JOBTYPE {}.", static_cast<uint8>(job));
         return;
     }
 
     // Monstrosity job and level data is handled elsewhere, bail out now
-    if (job == JOB_MON)
+    if (job == xi::Job::MON)
     {
         return;
     }
@@ -6461,70 +6461,70 @@ void SaveCharJob(const CCharEntity* PChar, const JOBTYPE job)
 
     switch (job)
     {
-        case JOB_WAR:
+        case xi::Job::WAR:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, war = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_MNK:
+        case xi::Job::MNK:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, mnk = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_WHM:
+        case xi::Job::WHM:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, whm = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_BLM:
+        case xi::Job::BLM:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, blm = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_RDM:
+        case xi::Job::RDM:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, rdm = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_THF:
+        case xi::Job::THF:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, thf = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_PLD:
+        case xi::Job::PLD:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, pld = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_DRK:
+        case xi::Job::DRK:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, drk = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_BST:
+        case xi::Job::BST:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, bst = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_BRD:
+        case xi::Job::BRD:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, brd = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_RNG:
+        case xi::Job::RNG:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, rng = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_SAM:
+        case xi::Job::SAM:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, sam = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_NIN:
+        case xi::Job::NIN:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, nin = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_DRG:
+        case xi::Job::DRG:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, drg = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_SMN:
+        case xi::Job::SMN:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, smn = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_BLU:
+        case xi::Job::BLU:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, blu = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_COR:
+        case xi::Job::COR:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, cor = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_PUP:
+        case xi::Job::PUP:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, pup = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_DNC:
+        case xi::Job::DNC:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, dnc = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_SCH:
+        case xi::Job::SCH:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, sch = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_GEO:
+        case xi::Job::GEO:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, geo = ? WHERE charid = ? LIMIT 1";
             break;
-        case JOB_RUN:
+        case xi::Job::RUN:
             fmtQuery = "UPDATE char_jobs SET unlocked = ?, run = ? WHERE charid = ? LIMIT 1";
             break;
         default:
@@ -6532,21 +6532,21 @@ void SaveCharJob(const CCharEntity* PChar, const JOBTYPE job)
             break;
     }
 
-    db::preparedStmt(fmtQuery, PChar->jobs.unlocked, PChar->jobs.job[job], PChar->id);
+    db::preparedStmt(fmtQuery, PChar->jobs.unlocked, PChar->jobs.job[static_cast<uint8>(job)], PChar->id);
 }
 
-void SaveCharExp(const CCharEntity* PChar, const JOBTYPE job)
+void SaveCharExp(const CCharEntity* PChar, const xi::Job job)
 {
     TracyZoneScoped;
 
-    if (job == JOB_NON || job >= MAX_JOBTYPE)
+    if (job == xi::Job::NONE || static_cast<uint8>(job) >= MAX_JOBTYPE)
     {
-        ShowWarningFmt("Attempt to save Char XP with invalid JOBTYPE {}.", job);
+        ShowWarningFmt("Attempt to save Char XP with invalid JOBTYPE {}.", static_cast<uint8>(job));
         return;
     }
 
     // Monstrosity exp data is handled elsewhere, bail out now
-    if (job == JOB_MON)
+    if (job == xi::Job::MON)
     {
         return;
     }
@@ -6555,70 +6555,70 @@ void SaveCharExp(const CCharEntity* PChar, const JOBTYPE job)
 
     switch (job)
     {
-        case JOB_WAR:
+        case xi::Job::WAR:
             query = "UPDATE char_exp SET war = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_MNK:
+        case xi::Job::MNK:
             query = "UPDATE char_exp SET mnk = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_WHM:
+        case xi::Job::WHM:
             query = "UPDATE char_exp SET whm = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_BLM:
+        case xi::Job::BLM:
             query = "UPDATE char_exp SET blm = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_RDM:
+        case xi::Job::RDM:
             query = "UPDATE char_exp SET rdm = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_THF:
+        case xi::Job::THF:
             query = "UPDATE char_exp SET thf = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_PLD:
+        case xi::Job::PLD:
             query = "UPDATE char_exp SET pld = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_DRK:
+        case xi::Job::DRK:
             query = "UPDATE char_exp SET drk = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_BST:
+        case xi::Job::BST:
             query = "UPDATE char_exp SET bst = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_BRD:
+        case xi::Job::BRD:
             query = "UPDATE char_exp SET brd = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_RNG:
+        case xi::Job::RNG:
             query = "UPDATE char_exp SET rng = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_SAM:
+        case xi::Job::SAM:
             query = "UPDATE char_exp SET sam = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_NIN:
+        case xi::Job::NIN:
             query = "UPDATE char_exp SET nin = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_DRG:
+        case xi::Job::DRG:
             query = "UPDATE char_exp SET drg = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_SMN:
+        case xi::Job::SMN:
             query = "UPDATE char_exp SET smn = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_BLU:
+        case xi::Job::BLU:
             query = "UPDATE char_exp SET blu = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_COR:
+        case xi::Job::COR:
             query = "UPDATE char_exp SET cor = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_PUP:
+        case xi::Job::PUP:
             query = "UPDATE char_exp SET pup = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_DNC:
+        case xi::Job::DNC:
             query = "UPDATE char_exp SET dnc = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_SCH:
+        case xi::Job::SCH:
             query = "UPDATE char_exp SET sch = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_GEO:
+        case xi::Job::GEO:
             query = "UPDATE char_exp SET geo = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
-        case JOB_RUN:
+        case xi::Job::RUN:
             query = "UPDATE char_exp SET run = ?, merits = ?, limits = ? WHERE charid = ?";
             break;
         default:
@@ -6626,7 +6626,7 @@ void SaveCharExp(const CCharEntity* PChar, const JOBTYPE job)
             break;
     }
 
-    db::preparedStmt(query, PChar->jobs.exp[job], PChar->PMeritPoints->GetMeritPoints(), PChar->PMeritPoints->GetLimitPoints(), PChar->id);
+    db::preparedStmt(query, PChar->jobs.exp[static_cast<uint8>(job)], PChar->PMeritPoints->GetMeritPoints(), PChar->PMeritPoints->GetLimitPoints(), PChar->id);
 }
 
 void SaveCharSkills(const CCharEntity* PChar, const uint8 skillID)
@@ -6818,7 +6818,7 @@ float AddExpBonus(CCharEntity* PChar, float exp)
         }
     }
 
-    bonus += (int32)(exp * ((PChar->getMod(Mod::EXP_BONUS) + rovBonus) / 100.0f));
+    bonus += (int32)(exp * ((PChar->getMod(xi::Mod::EXP_BONUS) + rovBonus) / 100.0f));
 
     if (bonus + (int32)exp < 0)
     {
@@ -7654,7 +7654,7 @@ void PersistCharVar(uint32 charId, const std::string& var, int32 value, uint32 e
     }
 }
 
-uint16 getWideScanRange(JOBTYPE job, uint8 level)
+auto getWideScanRange(xi::Job job, uint8 level) -> uint16
 {
     // Set Widescan range
     // Distances need verified, based current values off what we had in traits.sql and data at http://wiki.ffxiclopedia.org/wiki/Wide_Scan
@@ -7662,7 +7662,7 @@ uint16 getWideScanRange(JOBTYPE job, uint8 level)
     // characters trait menu.
 
     // Limit to BST and RNG, and try to use old distance values for tiers
-    if (job == JOB_RNG)
+    if (job == xi::Job::RNG)
     {
         // Range for RNG >=80 needs verification.
         if (level >= 80)
@@ -7686,7 +7686,7 @@ uint16 getWideScanRange(JOBTYPE job, uint8 level)
             return 150;
         }
     }
-    else if (job == JOB_BST)
+    else if (job == xi::Job::BST)
     {
         if (level >= 80)
         {

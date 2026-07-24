@@ -298,7 +298,7 @@ public:
     int8  getShieldSize();
     int16 getShieldDefense();
 
-    void addGearSetMod(uint8 setId, Mod modId, uint16 modValue);
+    void addGearSetMod(uint8 setId, xi::Mod modId, uint16 modValue);
     void clearGearSetMods();
 
     // Storing
@@ -374,12 +374,12 @@ public:
     uint32 getTimeCreated();
 
     // Player Jobs and Levels
-    uint8 getMainJob();
-    uint8 getSubJob();
-    void  changeJob(uint8 newJob);
-    void  changesJob(uint8 subJob);
-    void  unlockJob(uint8 JobID);
-    bool  hasJob(uint8 job);
+    auto getMainJob() -> xi::Job;
+    auto getSubJob() -> xi::Job;
+    void changeJob(uint8 newJob);
+    void changesJob(uint8 subJob);
+    void unlockJob(uint8 JobID);
+    bool hasJob(uint8 job);
 
     uint8 getMainLvl();
     uint8 getSubLvl();
@@ -478,7 +478,7 @@ public:
     void   setJobPoints(uint16 amount);
     void   addJobPoints(uint8 jobID, uint16 amount);
     void   delJobPoints(uint8 jobID, uint16 amount);
-    uint16 getJobPoints(JOBTYPE jobID);
+    auto   getJobPoints(xi::Job jobID) -> uint16;
     void   setCapacityPoints(uint16 amount);
     void   masterJob();
 
@@ -721,8 +721,8 @@ public:
     void  setMod(uint16 modID, int16 value);
     void  delMod(uint16 modID, int16 value);
     void  printAllMods();
-    int16 getMaxGearMod(Mod modId);
-    int16 getGearModFromSlot(uint8 slot, Mod modId);
+    int16 getMaxGearMod(xi::Mod modId);
+    int16 getGearModFromSlot(uint8 slot, xi::Mod modId);
 
     void addLatent(uint16 condID, uint16 conditionValue, uint16 mID, int16 modValue);
     auto delLatent(uint16 condID, uint16 conditionValue, uint16 mID, int16 modValue) -> bool;

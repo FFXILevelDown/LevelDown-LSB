@@ -38,6 +38,7 @@
 #include "data/enums/damage_type.h"
 #include "data/enums/ecosystem.h"
 #include "data/enums/immunity.h"
+#include "data/enums/job.h"
 #include "data/enums/skill_type.h"
 #include "party.h"
 #include "trait.h"
@@ -54,36 +55,7 @@ enum class DEATH_TYPE : uint8
 };
 DECLARE_FORMAT_AS_UNDERLYING(DEATH_TYPE);
 
-enum JOBTYPE : uint8
-{
-    JOB_NON = 0,
-    JOB_WAR = 1,
-    JOB_MNK = 2,
-    JOB_WHM = 3,
-    JOB_BLM = 4,
-    JOB_RDM = 5,
-    JOB_THF = 6,
-    JOB_PLD = 7,
-    JOB_DRK = 8,
-    JOB_BST = 9,
-    JOB_BRD = 10,
-    JOB_RNG = 11,
-    JOB_SAM = 12,
-    JOB_NIN = 13,
-    JOB_DRG = 14,
-    JOB_SMN = 15,
-    JOB_BLU = 16,
-    JOB_COR = 17,
-    JOB_PUP = 18,
-    JOB_DNC = 19,
-    JOB_SCH = 20,
-    JOB_GEO = 21,
-    JOB_RUN = 22,
-    JOB_MON = 23, // NOTE: MON is not a full job
-};
-
 #define MAX_JOBTYPE 24
-DECLARE_FORMAT_AS_UNDERLYING(JOBTYPE);
 
 #define MAX_SKILLTYPE 64
 
@@ -228,10 +200,10 @@ public:
     auto isMounted() const -> bool;
     bool isSitting();
 
-    JOBTYPE GetMJob() const;
-    JOBTYPE GetSJob(bool ignoreRestriction = false) const;
-    uint8   GetMLevel() const;
-    uint8   GetSLevel() const;
+    auto  GetMJob() const -> xi::Job;
+    auto  GetSJob(bool ignoreRestriction = false) const -> xi::Job;
+    uint8 GetMLevel() const;
+    uint8 GetSLevel() const;
 
     void SetMJob(uint8 mjob);
     void SetSJob(uint8 sjob);
@@ -270,15 +242,15 @@ public:
     // Deals damage and updates the last attacker which is used when sending a player death message
     virtual auto takeDamage(int32 amount, CBattleEntity* attacker = nullptr, xi::AttackType attackType = xi::AttackType::None, xi::DamageType damageType = xi::DamageType::None, bool isSkillchainDamage = false) -> int32;
 
-    int16 getMod(Mod modID);
-    int16 getMaxGearMod(Mod modID);
+    int16 getMod(xi::Mod modID);
+    int16 getMaxGearMod(xi::Mod modID);
 
     bool CanRest();        // checks if able to heal
     bool Rest(float rate); // heal an amount of hp / mp
 
-    void addModifier(Mod type, int16 amount);
-    void setModifier(Mod type, int16 amount);
-    void delModifier(Mod type, int16 amount);
+    void addModifier(xi::Mod type, int16 amount);
+    void setModifier(xi::Mod type, int16 amount);
+    void delModifier(xi::Mod type, int16 amount);
     void addModifiers(std::vector<CModifier>* modList);
     void addEquipModifiers(std::vector<CModifier>* modList, uint8 itemLevel, uint8 slotid);
     void setModifiers(std::vector<CModifier>* modList);
@@ -288,9 +260,9 @@ public:
     void restoreModifiers(); // restore to saved state
     void savePetModifiers(); // saves dynamic pet modifiers
 
-    void addPetModifier(Mod type, PetModType, int16 amount);
-    void setPetModifier(Mod type, PetModType, int16 amount);
-    void delPetModifier(Mod type, PetModType, int16 amount);
+    void addPetModifier(xi::Mod type, PetModType, int16 amount);
+    void setPetModifier(xi::Mod type, PetModType, int16 amount);
+    void delPetModifier(xi::Mod type, PetModType, int16 amount);
     void addPetModifiers(std::vector<CPetModifier>* modList);
     void delPetModifiers(std::vector<CPetModifier>* modList);
     void applyPetModifiers(CPetEntity* PPet);
@@ -436,23 +408,23 @@ public:
     std::unique_ptr<CNotorietyContainer>    PNotorietyContainer;
 
 private:
-    JOBTYPE           m_mjob;
-    JOBTYPE           m_sjob;
+    xi::Job           m_mjob;
+    xi::Job           m_sjob;
     uint8             m_mlvl; // CURRENT level of the main job
     uint8             m_slvl; // CURRENT level of the sub job
     EntityID_t        battleTarget_{};
     timer::time_point m_battleStartTime;
     uint16            m_battleID = 0; // Current battle the entity is participating in. Battle ID must match in order for entities to interact with each other.
 
-    HashMap<Mod, int16, EnumClassHash>                                     m_modStat;     // array of modifiers
-    HashMap<Mod, int16, EnumClassHash>                                     m_modStatSave; // saved state
-    HashMap<PetModType, HashMap<Mod, int16, EnumClassHash>, EnumClassHash> m_petMod;
+    HashMap<xi::Mod, int16, EnumClassHash>                                     m_modStat;     // array of modifiers
+    HashMap<xi::Mod, int16, EnumClassHash>                                     m_modStatSave; // saved state
+    HashMap<PetModType, HashMap<xi::Mod, int16, EnumClassHash>, EnumClassHash> m_petMod;
 
     // The mod maps MUST be node-based (HashMap): references into them are held while
     // other entries are inserted, and a flat/dense map relocates its storage on growth.
-    static_assert(std::is_same_v<decltype(m_modStat), HashMap<Mod, int16, EnumClassHash>>);
-    static_assert(std::is_same_v<decltype(m_modStatSave), HashMap<Mod, int16, EnumClassHash>>);
-    static_assert(std::is_same_v<decltype(m_petMod), HashMap<PetModType, HashMap<Mod, int16, EnumClassHash>, EnumClassHash>>);
+    static_assert(std::is_same_v<decltype(m_modStat), HashMap<xi::Mod, int16, EnumClassHash>>);
+    static_assert(std::is_same_v<decltype(m_modStatSave), HashMap<xi::Mod, int16, EnumClassHash>>);
+    static_assert(std::is_same_v<decltype(m_petMod), HashMap<PetModType, HashMap<xi::Mod, int16, EnumClassHash>, EnumClassHash>>);
 };
 
 #endif

@@ -484,16 +484,16 @@ void LoadTrustStatsAndSkills(CTrustEntity* PTrust)
 {
     if (settings::get<uint8>("main.ENABLE_TRUST_ALTER_EGO_EXPO") > 0) // Alter Ego Expo HPP/MPP +50%, All Status Resistance +25%
     {
-        PTrust->addModifier(Mod::HPP, 50);
-        PTrust->addModifier(Mod::MPP, 50);
-        PTrust->addModifier(Mod::STATUSRES, 25);
+        PTrust->addModifier(xi::Mod::HPP, 50);
+        PTrust->addModifier(xi::Mod::MPP, 50);
+        PTrust->addModifier(xi::Mod::STATUSRES, 25);
     }
 
     // add mob pool mods ahead of applying stats
     mobutils::AddSqlModifiers(PTrust);
 
-    JOBTYPE mJob = PTrust->GetMJob();
-    JOBTYPE sJob = PTrust->GetSJob();
+    xi::Job mJob = PTrust->GetMJob();
+    xi::Job sJob = PTrust->GetSJob();
     uint8   mLvl = PTrust->GetMLevel();
     uint8   sLvl = PTrust->GetSLevel();
 
@@ -706,16 +706,16 @@ void LoadTrustStatsAndSkills(CTrustEntity* PTrust)
         }
     }
 
-    PTrust->addModifier(Mod::DEF, mobutils::GetBaseSkill(PTrust, PTrust->defRank));
-    PTrust->addModifier(Mod::EVA, mobutils::GetBaseSkill(PTrust, PTrust->evaRank));
-    PTrust->addModifier(Mod::ATT, mobutils::GetBaseSkill(PTrust, PTrust->attRank));
-    PTrust->addModifier(Mod::ACC, mobutils::GetBaseSkill(PTrust, PTrust->accRank));
+    PTrust->addModifier(xi::Mod::DEF, mobutils::GetBaseSkill(PTrust, PTrust->defRank));
+    PTrust->addModifier(xi::Mod::EVA, mobutils::GetBaseSkill(PTrust, PTrust->evaRank));
+    PTrust->addModifier(xi::Mod::ATT, mobutils::GetBaseSkill(PTrust, PTrust->attRank));
+    PTrust->addModifier(xi::Mod::ACC, mobutils::GetBaseSkill(PTrust, PTrust->accRank));
 
-    PTrust->addModifier(Mod::RATT, mobutils::GetBaseSkill(PTrust, PTrust->attRank));
-    PTrust->addModifier(Mod::RACC, mobutils::GetBaseSkill(PTrust, PTrust->accRank));
+    PTrust->addModifier(xi::Mod::RATT, mobutils::GetBaseSkill(PTrust, PTrust->attRank));
+    PTrust->addModifier(xi::Mod::RACC, mobutils::GetBaseSkill(PTrust, PTrust->accRank));
 
     // Natural magic evasion
-    PTrust->addModifier(Mod::MEVA, mobutils::GetMagicEvasion(PTrust));
+    PTrust->addModifier(xi::Mod::MEVA, mobutils::GetMagicEvasion(PTrust));
 
     // Add traits for sub and main
     battleutils::AddTraits(PTrust, traits::GetTraits(mJob), mLvl);

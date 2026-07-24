@@ -186,15 +186,15 @@ uint16 GetBaseSkill(CMobEntity* PMob, uint8 rank)
     switch (rank)
     {
         case 1:
-            return battleutils::GetMaxSkill(xi::SkillType::GreatAxe, JOB_WAR, mlvl); // A+ Skill (1)
+            return battleutils::GetMaxSkill(xi::SkillType::GreatAxe, xi::Job::WAR, mlvl); // A+ Skill (1)
         case 2:
-            return battleutils::GetMaxSkill(xi::SkillType::Staff, JOB_WAR, mlvl); // B Skill (2)
+            return battleutils::GetMaxSkill(xi::SkillType::Staff, xi::Job::WAR, mlvl); // B Skill (2)
         case 3:
-            return battleutils::GetMaxSkill(xi::SkillType::Evasion, JOB_WAR, mlvl); // C Skill (3)
+            return battleutils::GetMaxSkill(xi::SkillType::Evasion, xi::Job::WAR, mlvl); // C Skill (3)
         case 4:
-            return battleutils::GetMaxSkill(xi::SkillType::Archery, JOB_WAR, mlvl); // D Skill (4)
+            return battleutils::GetMaxSkill(xi::SkillType::Archery, xi::Job::WAR, mlvl); // D Skill (4)
         case 5:
-            return battleutils::GetMaxSkill(xi::SkillType::Throwing, JOB_MNK, mlvl); // E Skill (5)
+            return battleutils::GetMaxSkill(xi::SkillType::Throwing, xi::Job::MNK, mlvl); // E Skill (5)
     }
 
     ShowError("mobutils::GetBaseSkill rank (%d) is out of bounds for mob (%u) ", rank, PMob->id);
@@ -671,8 +671,8 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
     }
 
     bool         isNM     = (PMob->m_Type & xi::MobType::Notorious) != xi::MobType::Normal;
-    JOBTYPE      mJob     = PMob->GetMJob();
-    JOBTYPE      sJob     = PMob->GetSJob();
+    xi::Job      mJob     = PMob->GetMJob();
+    xi::Job      sJob     = PMob->GetSJob();
     uint8        mLvl     = PMob->GetMLevel();
     uint8        sLvl     = PMob->GetSLevel();
     xi::ZoneType zoneType = PMob->loc.zone->GetTypeMask();
@@ -739,14 +739,14 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
 
         switch (mJob)
         {
-            case JOB_PLD:
-            case JOB_WHM:
-            case JOB_BLM:
-            case JOB_RDM:
-            case JOB_DRK:
-            case JOB_BLU:
-            case JOB_SCH:
-            case JOB_SMN:
+            case xi::Job::PLD:
+            case xi::Job::WHM:
+            case xi::Job::BLM:
+            case xi::Job::RDM:
+            case xi::Job::DRK:
+            case xi::Job::BLU:
+            case xi::Job::SCH:
+            case xi::Job::SMN:
                 hasMp = true;
                 break;
             default:
@@ -755,14 +755,14 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
 
         switch (sJob)
         {
-            case JOB_PLD:
-            case JOB_WHM:
-            case JOB_BLM:
-            case JOB_RDM:
-            case JOB_DRK:
-            case JOB_BLU:
-            case JOB_SCH:
-            case JOB_SMN:
+            case xi::Job::PLD:
+            case xi::Job::WHM:
+            case xi::Job::BLM:
+            case xi::Job::RDM:
+            case xi::Job::DRK:
+            case xi::Job::BLU:
+            case xi::Job::SCH:
+            case xi::Job::SMN:
                 hasMp = true;
                 break;
             default:
@@ -811,7 +811,7 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
     ((CItemWeapon*)PMob->m_Weapons[SLOT_RANGED])->setDamage(GetBaseWeaponDamage(PMob, SLOT_RANGED));
 
     // reduce weapon delay of MNK
-    if (PMob->GetMJob() == JOB_MNK)
+    if (PMob->GetMJob() == xi::Job::MNK)
     {
         ((CItemWeapon*)PMob->m_Weapons[SLOT_MAIN])->resetDelay();
     }
@@ -927,12 +927,12 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
         }
     }
 
-    PMob->addModifier(Mod::DEF, GetBaseDefEva(PMob, PMob->defRank));                         // Base Defense for all mobs
-    PMob->addModifier(Mod::EVA, GetBaseDefEva(PMob, JobSkillRankToBaseEvaRank(mJob, sJob))); // Evasion is based off the highest job rank. // TODO: add family bonuses (colibri has static evasion+ porrogos have % boost.)
-    PMob->addModifier(Mod::ATT, GetBaseSkill(PMob, PMob->attRank));                          // Base Attack for all mobs is Rank A+ but pull from DB for specific cases
-    PMob->addModifier(Mod::ACC, GetBaseSkill(PMob, PMob->accRank));                          // Base Accuracy for all mobs is Rank A+ but pull from DB for specific cases
-    PMob->addModifier(Mod::RATT, GetBaseSkill(PMob, PMob->attRank));                         // Base Ranged Attack for all mobs is Rank A+ but pull from DB for specific cases
-    PMob->addModifier(Mod::RACC, GetBaseSkill(PMob, PMob->accRank));                         // Base Ranged Accuracy for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::DEF, GetBaseDefEva(PMob, PMob->defRank));                         // Base Defense for all mobs
+    PMob->addModifier(xi::Mod::EVA, GetBaseDefEva(PMob, JobSkillRankToBaseEvaRank(mJob, sJob))); // Evasion is based off the highest job rank. // TODO: add family bonuses (colibri has static evasion+ porrogos have % boost.)
+    PMob->addModifier(xi::Mod::ATT, GetBaseSkill(PMob, PMob->attRank));                          // Base Attack for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::ACC, GetBaseSkill(PMob, PMob->accRank));                          // Base Accuracy for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::RATT, GetBaseSkill(PMob, PMob->attRank));                         // Base Ranged Attack for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::RACC, GetBaseSkill(PMob, PMob->accRank));                         // Base Ranged Accuracy for all mobs is Rank A+ but pull from DB for specific cases
 
     // Known Base Parry for all mobs is Rank C
     // xi::MobMod::CanParry uses the mod value as the rank, unknown if mobs in current retail or somewhere else have a different parry rank
@@ -945,13 +945,13 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
     }
 
     // Assume base guard for MNK and PUP mobs is the same as parry (Rank C)
-    if ((PMob->GetMJob() == JOB_MNK || PMob->GetMJob() == JOB_PUP) && PMob->getMobMod(xi::MobMod::CannotGuard) == 0)
+    if ((PMob->GetMJob() == xi::Job::MNK || PMob->GetMJob() == xi::Job::PUP) && PMob->getMobMod(xi::MobMod::CannotGuard) == 0)
     {
         PMob->WorkingSkills.skill[static_cast<uint8>(xi::SkillType::Guard)] = GetBaseSkill(PMob, 3);
     }
 
     // natural magic evasion
-    PMob->addModifier(Mod::MEVA, GetMagicEvasion(PMob));
+    PMob->addModifier(xi::Mod::MEVA, GetMagicEvasion(PMob));
 
     // add traits for sub and main
     battleutils::AddTraits(PMob, traits::GetTraits(mJob), mLvl);
@@ -1042,11 +1042,11 @@ void SetupRangedAttack(CMobEntity* PMob)
 
 void SetupJob(CMobEntity* PMob)
 {
-    JOBTYPE mJob = PMob->GetMJob();
-    JOBTYPE sJob = PMob->GetSJob();
-    JOBTYPE job{};
+    xi::Job mJob = PMob->GetMJob();
+    xi::Job sJob = PMob->GetSJob();
+    xi::Job job{};
 
-    if (grade::GetJobGrade(mJob, 1) > 0 || mJob == JOB_NIN || mJob == JOB_BRD) // Check if main job is a caster.
+    if (grade::GetJobGrade(mJob, 1) > 0 || mJob == xi::Job::NIN || mJob == xi::Job::BRD) // Check if main job is a caster.
     {
         job = mJob;
     }
@@ -1058,56 +1058,56 @@ void SetupJob(CMobEntity* PMob)
     // This switch falls back to a subjob if a mainjob isn't matched, and is mainly magic stuff
     switch (job)
     {
-        case JOB_BLM:
+        case xi::Job::BLM:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::GaChance, 40);
             PMob->defaultMobMod(xi::MobMod::BuffChance, 15);
             PMob->defaultMobMod(xi::MobMod::SevereSpellChance, 20);
             break;
-        case JOB_PLD:
+        case xi::Job::PLD:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::MagicDelay, 7);
             break;
-        case JOB_DRK:
+        case xi::Job::DRK:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::MagicDelay, 7);
             break;
-        case JOB_WHM:
+        case xi::Job::WHM:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::MagicDelay, 10);
             break;
-        case JOB_BRD:
+        case xi::Job::BRD:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::GaChance, 25);
             PMob->defaultMobMod(xi::MobMod::BuffChance, 60);
             PMob->defaultMobMod(xi::MobMod::MagicDelay, 10);
             break;
-        case JOB_RDM:
+        case xi::Job::RDM:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::GaChance, 15);
             PMob->defaultMobMod(xi::MobMod::BuffChance, 40);
             PMob->defaultMobMod(xi::MobMod::MagicDelay, 10);
             break;
-        case JOB_SMN:
+        case xi::Job::SMN:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 70);
             PMob->defaultMobMod(xi::MobMod::BuffChance, 100); // SMN only has "buffs"
             break;
-        case JOB_NIN:
+        case xi::Job::NIN:
             PMob->defaultMobMod(xi::MobMod::SpecialCool, 9);
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             PMob->defaultMobMod(xi::MobMod::BuffChance, 20);
             PMob->defaultMobMod(xi::MobMod::MagicDelay, 7);
             break;
-        case JOB_BLU:
+        case xi::Job::BLU:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             break;
-        case JOB_SCH:
+        case xi::Job::SCH:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             break;
-        case JOB_GEO:
+        case xi::Job::GEO:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             break;
-        case JOB_RUN:
+        case xi::Job::RUN:
             PMob->defaultMobMod(xi::MobMod::MagicCool, 35);
             break;
         default:
@@ -1117,7 +1117,7 @@ void SetupJob(CMobEntity* PMob)
     // This switch is mainjob only and contains mainly non magic related stuff
     switch (mJob)
     {
-        case JOB_THF:
+        case xi::Job::THF:
             // thfs drop more gil
             if (PMob->m_EcoSystem == xi::Ecosystem::Beastmen)
             {
@@ -1125,7 +1125,7 @@ void SetupJob(CMobEntity* PMob)
                 PMob->defaultMobMod(xi::MobMod::GilBonus, 150);
             }
             break;
-        case JOB_RNG:
+        case xi::Job::RNG:
             if (PMob->m_Family == 57) // Gigas
             {
                 PMob->defaultMobMod(xi::MobMod::SpecialSkill, 658); // Catapult only used while at range
@@ -1164,7 +1164,7 @@ void SetupJob(CMobEntity* PMob)
             PMob->defaultMobMod(xi::MobMod::SpecialCool, 12);
             PMob->defaultMobMod(xi::MobMod::HpStandback, 70);
             break;
-        case JOB_NIN:
+        case xi::Job::NIN:
             if (PMob->m_Family == 131) // Aern
             {
                 PMob->defaultMobMod(xi::MobMod::SpecialSkill, 1388);
@@ -1191,15 +1191,15 @@ void SetupJob(CMobEntity* PMob)
 
             PMob->defaultMobMod(xi::MobMod::HpStandback, 70);
             break;
-        case JOB_BST:
+        case xi::Job::BST:
             PMob->defaultMobMod(xi::MobMod::SpecialCool, 70);
             PMob->defaultMobMod(xi::MobMod::SpecialSkill, 1017);
             break;
-        case JOB_PUP:
+        case xi::Job::PUP:
             PMob->defaultMobMod(xi::MobMod::SpecialSkill, 1901);
             PMob->defaultMobMod(xi::MobMod::SpecialCool, 720);
             break;
-        case JOB_BLM:
+        case xi::Job::BLM:
             // We don't want to do the mages stand-back part from subjob, so we have it here
             PMob->defaultMobMod(xi::MobMod::StandbackCool, 12);
             PMob->defaultMobMod(xi::MobMod::HpStandback, 70);
@@ -1279,14 +1279,14 @@ void SetupPetSkills(CMobEntity* PMob)
     }
 }
 
-uint8 JobSkillRankToBaseEvaRank(JOBTYPE mjob, JOBTYPE sjob)
+auto JobSkillRankToBaseEvaRank(xi::Job mjob, xi::Job sjob) -> uint8
 {
     // Pick the best rank between the two jobs
     // Lower is better
     uint8 mainEvasionSkillRank = battleutils::GetSkillRank(xi::SkillType::Evasion, mjob);
     uint8 subEvasionSkillRank  = battleutils::GetSkillRank(xi::SkillType::Evasion, sjob);
 
-    if (sjob == JOB_NON)
+    if (sjob == xi::Job::NONE)
     {
         subEvasionSkillRank = mainEvasionSkillRank;
     }
@@ -1463,7 +1463,7 @@ void LoadSqlModifiers()
     {
         ModsList_t* speciesMods = GetMobSpeciesMods(rset->get<uint16>("speciesid"), true);
 
-        auto* mod = new CModifier(rset->get<Mod>("modid"));
+        auto* mod = new CModifier(rset->get<xi::Mod>("modid"));
         mod->setModAmount(rset->get<int16>("value"));
 
         if (rset->get<bool>("is_mob_mod"))
@@ -1484,7 +1484,7 @@ void LoadSqlModifiers()
         const auto  pool     = rset->get<uint16>("poolid");
         ModsList_t* poolMods = GetMobPoolMods(pool, true);
 
-        const auto id = rset->get<Mod>("modid");
+        const auto id = rset->get<xi::Mod>("modid");
 
         auto* mod = new CModifier(id);
         mod->setModAmount(rset->get<int16>("value"));
@@ -1759,41 +1759,41 @@ auto InstantiateAlly(uint32 groupid, uint16 zoneID, CInstance* instance) -> CMob
         PMob->attRank = rset->get<uint8>("ATT");
         PMob->accRank = rset->get<uint8>("ACC");
 
-        PMob->setModifier(Mod::SLASH_SDT, rset->get<int16>("slash_sdt"));
-        PMob->setModifier(Mod::PIERCE_SDT, rset->get<int16>("pierce_sdt"));
-        PMob->setModifier(Mod::HTH_SDT, rset->get<int16>("h2h_sdt"));
-        PMob->setModifier(Mod::IMPACT_SDT, rset->get<int16>("impact_sdt"));
+        PMob->setModifier(xi::Mod::SLASH_SDT, rset->get<int16>("slash_sdt"));
+        PMob->setModifier(xi::Mod::PIERCE_SDT, rset->get<int16>("pierce_sdt"));
+        PMob->setModifier(xi::Mod::HTH_SDT, rset->get<int16>("h2h_sdt"));
+        PMob->setModifier(xi::Mod::IMPACT_SDT, rset->get<int16>("impact_sdt"));
 
-        PMob->setModifier(Mod::UDMGMAGIC, rset->get<int16>("magical_sdt")); // Modifier 389, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::UDMGMAGIC, rset->get<int16>("magical_sdt")); // Modifier 389, base 10000 stored as signed integer. Positives signify less damage.
 
-        PMob->setModifier(Mod::FIRE_SDT, rset->get<int16>("fire_sdt"));         // Modifier 54, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::ICE_SDT, rset->get<int16>("ice_sdt"));           // Modifier 55, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::WIND_SDT, rset->get<int16>("wind_sdt"));         // Modifier 56, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::EARTH_SDT, rset->get<int16>("earth_sdt"));       // Modifier 57, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::THUNDER_SDT, rset->get<int16>("lightning_sdt")); // Modifier 58, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::WATER_SDT, rset->get<int16>("water_sdt"));       // Modifier 59, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::LIGHT_SDT, rset->get<int16>("light_sdt"));       // Modifier 60, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::DARK_SDT, rset->get<int16>("dark_sdt"));         // Modifier 61, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::FIRE_SDT, rset->get<int16>("fire_sdt"));         // Modifier 54, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::ICE_SDT, rset->get<int16>("ice_sdt"));           // Modifier 55, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::WIND_SDT, rset->get<int16>("wind_sdt"));         // Modifier 56, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::EARTH_SDT, rset->get<int16>("earth_sdt"));       // Modifier 57, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::THUNDER_SDT, rset->get<int16>("lightning_sdt")); // Modifier 58, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::WATER_SDT, rset->get<int16>("water_sdt"));       // Modifier 59, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::LIGHT_SDT, rset->get<int16>("light_sdt"));       // Modifier 60, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::DARK_SDT, rset->get<int16>("dark_sdt"));         // Modifier 61, base 10000 stored as signed integer. Positives signify less damage.
 
-        PMob->setModifier(Mod::FIRE_RES_RANK, rset->get<int8>("fire_res_rank"));
-        PMob->setModifier(Mod::ICE_RES_RANK, rset->get<int8>("ice_res_rank"));
-        PMob->setModifier(Mod::WIND_RES_RANK, rset->get<int8>("wind_res_rank"));
-        PMob->setModifier(Mod::EARTH_RES_RANK, rset->get<int8>("earth_res_rank"));
-        PMob->setModifier(Mod::THUNDER_RES_RANK, rset->get<int8>("lightning_res_rank"));
-        PMob->setModifier(Mod::WATER_RES_RANK, rset->get<int8>("water_res_rank"));
-        PMob->setModifier(Mod::LIGHT_RES_RANK, rset->get<int8>("light_res_rank"));
-        PMob->setModifier(Mod::DARK_RES_RANK, rset->get<int8>("dark_res_rank"));
+        PMob->setModifier(xi::Mod::FIRE_RES_RANK, rset->get<int8>("fire_res_rank"));
+        PMob->setModifier(xi::Mod::ICE_RES_RANK, rset->get<int8>("ice_res_rank"));
+        PMob->setModifier(xi::Mod::WIND_RES_RANK, rset->get<int8>("wind_res_rank"));
+        PMob->setModifier(xi::Mod::EARTH_RES_RANK, rset->get<int8>("earth_res_rank"));
+        PMob->setModifier(xi::Mod::THUNDER_RES_RANK, rset->get<int8>("lightning_res_rank"));
+        PMob->setModifier(xi::Mod::WATER_RES_RANK, rset->get<int8>("water_res_rank"));
+        PMob->setModifier(xi::Mod::LIGHT_RES_RANK, rset->get<int8>("light_res_rank"));
+        PMob->setModifier(xi::Mod::DARK_RES_RANK, rset->get<int8>("dark_res_rank"));
 
-        PMob->setModifier(Mod::PARALYZE_RES_RANK, rset->get<int8>("paralyze_res_rank"));
-        PMob->setModifier(Mod::BIND_RES_RANK, rset->get<int8>("bind_res_rank"));
-        PMob->setModifier(Mod::SILENCE_RES_RANK, rset->get<int8>("silence_res_rank"));
-        PMob->setModifier(Mod::SLOW_RES_RANK, rset->get<int8>("slow_res_rank"));
-        PMob->setModifier(Mod::POISON_RES_RANK, rset->get<int8>("poison_res_rank"));
-        PMob->setModifier(Mod::LIGHT_SLEEP_RES_RANK, rset->get<int8>("light_sleep_res_rank"));
-        PMob->setModifier(Mod::DARK_SLEEP_RES_RANK, rset->get<int8>("dark_sleep_res_rank"));
-        PMob->setModifier(Mod::BLIND_RES_RANK, rset->get<int8>("blind_res_rank"));
-        PMob->setModifier(Mod::STUN_RES_RANK, rset->get<int8>("stun_res_rank"));
-        PMob->setModifier(Mod::GRAVITY_RES_RANK, rset->get<int8>("gravity_res_rank"));
+        PMob->setModifier(xi::Mod::PARALYZE_RES_RANK, rset->get<int8>("paralyze_res_rank"));
+        PMob->setModifier(xi::Mod::BIND_RES_RANK, rset->get<int8>("bind_res_rank"));
+        PMob->setModifier(xi::Mod::SILENCE_RES_RANK, rset->get<int8>("silence_res_rank"));
+        PMob->setModifier(xi::Mod::SLOW_RES_RANK, rset->get<int8>("slow_res_rank"));
+        PMob->setModifier(xi::Mod::POISON_RES_RANK, rset->get<int8>("poison_res_rank"));
+        PMob->setModifier(xi::Mod::LIGHT_SLEEP_RES_RANK, rset->get<int8>("light_sleep_res_rank"));
+        PMob->setModifier(xi::Mod::DARK_SLEEP_RES_RANK, rset->get<int8>("dark_sleep_res_rank"));
+        PMob->setModifier(xi::Mod::BLIND_RES_RANK, rset->get<int8>("blind_res_rank"));
+        PMob->setModifier(xi::Mod::STUN_RES_RANK, rset->get<int8>("stun_res_rank"));
+        PMob->setModifier(xi::Mod::GRAVITY_RES_RANK, rset->get<int8>("gravity_res_rank"));
 
         PMob->m_Element     = rset->get<uint8>("Element");
         PMob->m_Species     = rset->get<uint16>("speciesid");
@@ -1936,30 +1936,30 @@ auto InstantiateDynamicMob(uint32 groupid, uint16 groupZoneId, uint16 targetZone
         PMob->attRank = rset->get<uint8>("ATT");
         PMob->accRank = rset->get<uint8>("ACC");
 
-        PMob->setModifier(Mod::SLASH_SDT, rset->get<int16>("slash_sdt"));
-        PMob->setModifier(Mod::PIERCE_SDT, rset->get<int16>("pierce_sdt"));
-        PMob->setModifier(Mod::HTH_SDT, rset->get<int16>("h2h_sdt"));
-        PMob->setModifier(Mod::IMPACT_SDT, rset->get<int16>("impact_sdt"));
+        PMob->setModifier(xi::Mod::SLASH_SDT, rset->get<int16>("slash_sdt"));
+        PMob->setModifier(xi::Mod::PIERCE_SDT, rset->get<int16>("pierce_sdt"));
+        PMob->setModifier(xi::Mod::HTH_SDT, rset->get<int16>("h2h_sdt"));
+        PMob->setModifier(xi::Mod::IMPACT_SDT, rset->get<int16>("impact_sdt"));
 
-        PMob->setModifier(Mod::UDMGMAGIC, rset->get<int16>("magical_sdt")); // Modifier 389, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::UDMGMAGIC, rset->get<int16>("magical_sdt")); // Modifier 389, base 10000 stored as signed integer. Positives signify less damage.
 
-        PMob->setModifier(Mod::FIRE_SDT, rset->get<int16>("fire_sdt"));         // Modifier 54, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::ICE_SDT, rset->get<int16>("ice_sdt"));           // Modifier 55, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::WIND_SDT, rset->get<int16>("wind_sdt"));         // Modifier 56, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::EARTH_SDT, rset->get<int16>("earth_sdt"));       // Modifier 57, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::THUNDER_SDT, rset->get<int16>("lightning_sdt")); // Modifier 58, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::WATER_SDT, rset->get<int16>("water_sdt"));       // Modifier 59, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::LIGHT_SDT, rset->get<int16>("light_sdt"));       // Modifier 60, base 10000 stored as signed integer. Positives signify less damage.
-        PMob->setModifier(Mod::DARK_SDT, rset->get<int16>("dark_sdt"));         // Modifier 61, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::FIRE_SDT, rset->get<int16>("fire_sdt"));         // Modifier 54, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::ICE_SDT, rset->get<int16>("ice_sdt"));           // Modifier 55, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::WIND_SDT, rset->get<int16>("wind_sdt"));         // Modifier 56, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::EARTH_SDT, rset->get<int16>("earth_sdt"));       // Modifier 57, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::THUNDER_SDT, rset->get<int16>("lightning_sdt")); // Modifier 58, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::WATER_SDT, rset->get<int16>("water_sdt"));       // Modifier 59, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::LIGHT_SDT, rset->get<int16>("light_sdt"));       // Modifier 60, base 10000 stored as signed integer. Positives signify less damage.
+        PMob->setModifier(xi::Mod::DARK_SDT, rset->get<int16>("dark_sdt"));         // Modifier 61, base 10000 stored as signed integer. Positives signify less damage.
 
-        PMob->setModifier(Mod::FIRE_RES_RANK, rset->get<int8>("fire_res_rank"));
-        PMob->setModifier(Mod::ICE_RES_RANK, rset->get<int8>("ice_res_rank"));
-        PMob->setModifier(Mod::WIND_RES_RANK, rset->get<int8>("wind_res_rank"));
-        PMob->setModifier(Mod::EARTH_RES_RANK, rset->get<int8>("earth_res_rank"));
-        PMob->setModifier(Mod::THUNDER_RES_RANK, rset->get<int8>("lightning_res_rank"));
-        PMob->setModifier(Mod::WATER_RES_RANK, rset->get<int8>("water_res_rank"));
-        PMob->setModifier(Mod::LIGHT_RES_RANK, rset->get<int8>("light_res_rank"));
-        PMob->setModifier(Mod::DARK_RES_RANK, rset->get<int8>("dark_res_rank"));
+        PMob->setModifier(xi::Mod::FIRE_RES_RANK, rset->get<int8>("fire_res_rank"));
+        PMob->setModifier(xi::Mod::ICE_RES_RANK, rset->get<int8>("ice_res_rank"));
+        PMob->setModifier(xi::Mod::WIND_RES_RANK, rset->get<int8>("wind_res_rank"));
+        PMob->setModifier(xi::Mod::EARTH_RES_RANK, rset->get<int8>("earth_res_rank"));
+        PMob->setModifier(xi::Mod::THUNDER_RES_RANK, rset->get<int8>("lightning_res_rank"));
+        PMob->setModifier(xi::Mod::WATER_RES_RANK, rset->get<int8>("water_res_rank"));
+        PMob->setModifier(xi::Mod::LIGHT_RES_RANK, rset->get<int8>("light_res_rank"));
+        PMob->setModifier(xi::Mod::DARK_RES_RANK, rset->get<int8>("dark_res_rank"));
 
         PMob->m_Element     = rset->get<uint8>("Element");
         PMob->m_Species     = rset->get<uint16>("speciesid");

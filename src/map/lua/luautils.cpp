@@ -1576,22 +1576,35 @@ uint8 GetNationRank(uint8 nation)
 {
     TracyZoneScoped;
 
-    uint8 balance = conquest::GetBalance();
+    const uint8 balance  = conquest::GetBalance();
+    const uint8 sandoria = balance & 0x3U;
+    const uint8 bastok   = (balance >> 2) & 0x3U;
+    const uint8 windurst = (balance >> 4) & 0x3U;
+
+    uint8 rank = 0;
     switch (nation)
     {
         case NATION_SANDORIA:
-            balance &= 0x3U;
-            return balance;
+            rank = sandoria;
+            break;
         case NATION_BASTOK:
-            balance &= 0xCU;
-            balance >>= 2;
-            return balance;
+            rank = bastok;
+            break;
         case NATION_WINDURST:
-            balance >>= 4;
-            return balance;
+            rank = windurst;
+            break;
         default:
             return 0;
     }
+
+    // If two nations are tied for first, they are both read as second.
+    // If all three nations are tied for first, they all register as third.
+    if (rank == 1)
+    {
+        rank = static_cast<uint8>((sandoria == 1) + (bastok == 1) + (windurst == 1));
+    }
+
+    return rank;
 }
 
 uint8 GetConquestBalance()
@@ -4635,7 +4648,7 @@ int32 OnPetAbility(CBaseEntity* PTarget, CBaseEntity* PMob, CMobSkill* PMobSkill
         if (PPet->getPetType() == PET_TYPE::AVATAR && PPet->PMaster->objtype == TYPE_PC)
         {
             CCharEntity* PMaster = (CCharEntity*)PPet->PMaster;
-            if (PMaster->GetMJob() == JOB_SMN)
+            if (PMaster->GetMJob() == xi::Job::SMN)
             {
                 charutils::TrySkillUP(PMaster, xi::SkillType::SummoningMagic, PMaster->GetMLevel());
             }
@@ -4668,7 +4681,7 @@ int32 OnPetAbility(CBaseEntity* PTarget, CPetEntity* PPet, CPetSkill* PPetSkill,
     if (PPet->getPetType() == PET_TYPE::AVATAR && PPet->PMaster->objtype == TYPE_PC)
     {
         CCharEntity* PMaster = (CCharEntity*)PPet->PMaster;
-        if (PMaster->GetMJob() == JOB_SMN)
+        if (PMaster->GetMJob() == xi::Job::SMN)
         {
             charutils::TrySkillUP(PMaster, xi::SkillType::SummoningMagic, PMaster->GetMLevel());
         }

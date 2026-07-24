@@ -195,11 +195,11 @@ Maybe<SpellID> CMobSpellContainer::GetBestIndiSpell(CBattleEntity* PTarget)
     auto mTarget       = PTarget->GetBattleTarget();
     auto hitrate       = battleutils::GetHitRate(PTarget, mTarget);
     bool accBuffNeeded = hitrate < 65 ? true : false;
-    auto mInt          = PTarget->getMod(Mod::INT);
-    auto tInt          = mTarget->getMod(Mod::INT);
+    auto mInt          = PTarget->getMod(xi::Mod::INT);
+    auto tInt          = mTarget->getMod(xi::Mod::INT);
     auto intDiff       = mInt - tInt + 10;
-    auto macc          = PTarget->getMod(Mod::MACC);
-    auto tMaeva        = mTarget->getMod(Mod::MEVA);
+    auto macc          = PTarget->getMod(xi::Mod::MACC);
+    auto tMaeva        = mTarget->getMod(xi::Mod::MEVA);
     auto mSkill        = PTarget->GetSkill(xi::SkillType::ElementalMagic);
     auto maccFromInt   = mInt;
 
@@ -217,18 +217,18 @@ Maybe<SpellID> CMobSpellContainer::GetBestIndiSpell(CBattleEntity* PTarget)
 
     switch (mJob)
     {
-        case JOB_WAR:
-        case JOB_MNK:
-        case JOB_THF:
-        case JOB_DRK:
-        case JOB_BST:
-        case JOB_RNG:
-        case JOB_SAM:
-        case JOB_DRG:
-        case JOB_BLU:
-        case JOB_COR:
-        case JOB_PUP:
-        case JOB_DNC:
+        case xi::Job::WAR:
+        case xi::Job::MNK:
+        case xi::Job::THF:
+        case xi::Job::DRK:
+        case xi::Job::BST:
+        case xi::Job::RNG:
+        case xi::Job::SAM:
+        case xi::Job::DRG:
+        case xi::Job::BLU:
+        case xi::Job::COR:
+        case xi::Job::PUP:
+        case xi::Job::DNC:
         {
             if (accBuffNeeded)
             {
@@ -241,18 +241,18 @@ Maybe<SpellID> CMobSpellContainer::GetBestIndiSpell(CBattleEntity* PTarget)
             subChoice = SpellID::Indi_Regen;
             break;
         }
-        case JOB_WHM:
-        case JOB_BRD:
-        case JOB_SMN:
-        case JOB_GEO:
+        case xi::Job::WHM:
+        case xi::Job::BRD:
+        case xi::Job::SMN:
+        case xi::Job::GEO:
         {
             choice    = SpellID::Indi_Refresh;
             subChoice = SpellID::Indi_Refresh;
             break;
         }
-        case JOB_BLM:
-        case JOB_RDM:
-        case JOB_SCH:
+        case xi::Job::BLM:
+        case xi::Job::RDM:
+        case xi::Job::SCH:
         {
             if (mAccBuffNeeded)
             {
@@ -265,9 +265,9 @@ Maybe<SpellID> CMobSpellContainer::GetBestIndiSpell(CBattleEntity* PTarget)
             subChoice = SpellID::Indi_Refresh;
             break;
         }
-        case JOB_PLD:
-        case JOB_RUN:
-        case JOB_NIN:
+        case xi::Job::PLD:
+        case xi::Job::RUN:
+        case xi::Job::NIN:
         {
             choice    = SpellID::Indi_Haste;
             subChoice = SpellID::Indi_Regen;
@@ -300,36 +300,36 @@ Maybe<SpellID> CMobSpellContainer::GetBestEntrustedSpell(CBattleEntity* PTarget)
 
     switch (mastersJob)
     {
-        case JOB_WAR:
-        case JOB_MNK:
-        case JOB_THF:
-        case JOB_DRK:
-        case JOB_BST:
-        case JOB_RNG:
-        case JOB_SAM:
-        case JOB_DRG:
-        case JOB_BLU:
-        case JOB_COR:
-        case JOB_PUP:
-        case JOB_DNC:
+        case xi::Job::WAR:
+        case xi::Job::MNK:
+        case xi::Job::THF:
+        case xi::Job::DRK:
+        case xi::Job::BST:
+        case xi::Job::RNG:
+        case xi::Job::SAM:
+        case xi::Job::DRG:
+        case xi::Job::BLU:
+        case xi::Job::COR:
+        case xi::Job::PUP:
+        case xi::Job::DNC:
             choice = SpellID::Indi_Frailty;
             break;
-        case JOB_WHM:
-        case JOB_BRD:
-        case JOB_SMN:
+        case xi::Job::WHM:
+        case xi::Job::BRD:
+        case xi::Job::SMN:
             choice = SpellID::Indi_Acumen;
             break;
-        case JOB_BLM:
-        case JOB_RDM:
-        case JOB_SCH:
-        case JOB_PLD:
-        case JOB_RUN:
+        case xi::Job::BLM:
+        case xi::Job::RDM:
+        case xi::Job::SCH:
+        case xi::Job::PLD:
+        case xi::Job::RUN:
             choice = SpellID::Indi_Refresh;
             break;
-        case JOB_NIN:
+        case xi::Job::NIN:
             choice = SpellID::Indi_Regen;
             break;
-        case JOB_GEO:
+        case xi::Job::GEO:
             break;
         default:
             break;
@@ -344,14 +344,14 @@ Maybe<SpellID> CMobSpellContainer::GetBestAgainstTargetWeakness(CBattleEntity* P
     // clang-format off
     std::vector<int16> resistances
     {
-        PTarget->getMod(Mod::FIRE_RES_RANK),
-        PTarget->getMod(Mod::ICE_RES_RANK),
-        PTarget->getMod(Mod::WIND_RES_RANK),
-        PTarget->getMod(Mod::EARTH_RES_RANK),
-        PTarget->getMod(Mod::THUNDER_RES_RANK),
-        PTarget->getMod(Mod::WATER_RES_RANK),
-        PTarget->getMod(Mod::LIGHT_RES_RANK),
-        PTarget->getMod(Mod::DARK_RES_RANK),
+        PTarget->getMod(xi::Mod::FIRE_RES_RANK),
+        PTarget->getMod(xi::Mod::ICE_RES_RANK),
+        PTarget->getMod(xi::Mod::WIND_RES_RANK),
+        PTarget->getMod(xi::Mod::EARTH_RES_RANK),
+        PTarget->getMod(xi::Mod::THUNDER_RES_RANK),
+        PTarget->getMod(xi::Mod::WATER_RES_RANK),
+        PTarget->getMod(xi::Mod::LIGHT_RES_RANK),
+        PTarget->getMod(xi::Mod::DARK_RES_RANK),
     };
     // clang-format on
 
@@ -419,14 +419,14 @@ Maybe<SpellID> CMobSpellContainer::EnSpellAgainstTargetWeakness(CBattleEntity* P
     // clang-format off
     std::vector<int16> resistances
     {
-        PTarget->getMod(Mod::FIRE_RES_RANK),
-        PTarget->getMod(Mod::ICE_RES_RANK),
-        PTarget->getMod(Mod::WIND_RES_RANK),
-        PTarget->getMod(Mod::EARTH_RES_RANK),
-        PTarget->getMod(Mod::THUNDER_RES_RANK),
-        PTarget->getMod(Mod::WATER_RES_RANK),
-        PTarget->getMod(Mod::LIGHT_RES_RANK),
-        PTarget->getMod(Mod::DARK_RES_RANK),
+        PTarget->getMod(xi::Mod::FIRE_RES_RANK),
+        PTarget->getMod(xi::Mod::ICE_RES_RANK),
+        PTarget->getMod(xi::Mod::WIND_RES_RANK),
+        PTarget->getMod(xi::Mod::EARTH_RES_RANK),
+        PTarget->getMod(xi::Mod::THUNDER_RES_RANK),
+        PTarget->getMod(xi::Mod::WATER_RES_RANK),
+        PTarget->getMod(xi::Mod::LIGHT_RES_RANK),
+        PTarget->getMod(xi::Mod::DARK_RES_RANK),
     };
     // clang-format on
 
@@ -476,14 +476,14 @@ Maybe<SpellID> CMobSpellContainer::StormDayAgainstTargetWeakness(CBattleEntity* 
     // clang-format off
     std::vector<int16> resistances
     {
-        PTarget->getMod(Mod::FIRE_RES_RANK),
-        PTarget->getMod(Mod::ICE_RES_RANK),
-        PTarget->getMod(Mod::WIND_RES_RANK),
-        PTarget->getMod(Mod::EARTH_RES_RANK),
-        PTarget->getMod(Mod::THUNDER_RES_RANK),
-        PTarget->getMod(Mod::WATER_RES_RANK),
-        PTarget->getMod(Mod::LIGHT_RES_RANK),
-        PTarget->getMod(Mod::DARK_RES_RANK),
+        PTarget->getMod(xi::Mod::FIRE_RES_RANK),
+        PTarget->getMod(xi::Mod::ICE_RES_RANK),
+        PTarget->getMod(xi::Mod::WIND_RES_RANK),
+        PTarget->getMod(xi::Mod::EARTH_RES_RANK),
+        PTarget->getMod(xi::Mod::THUNDER_RES_RANK),
+        PTarget->getMod(xi::Mod::WATER_RES_RANK),
+        PTarget->getMod(xi::Mod::LIGHT_RES_RANK),
+        PTarget->getMod(xi::Mod::DARK_RES_RANK),
     };
     // clang-format on
 
@@ -543,14 +543,14 @@ Maybe<SpellID> CMobSpellContainer::HelixAgainstTargetWeakness(CBattleEntity* PTa
     // clang-format off
     std::vector<int16> resistances
     {
-        PTarget->getMod(Mod::FIRE_RES_RANK),
-        PTarget->getMod(Mod::ICE_RES_RANK),
-        PTarget->getMod(Mod::WIND_RES_RANK),
-        PTarget->getMod(Mod::EARTH_RES_RANK),
-        PTarget->getMod(Mod::THUNDER_RES_RANK),
-        PTarget->getMod(Mod::WATER_RES_RANK),
-        PTarget->getMod(Mod::LIGHT_RES_RANK),
-        PTarget->getMod(Mod::DARK_RES_RANK),
+        PTarget->getMod(xi::Mod::FIRE_RES_RANK),
+        PTarget->getMod(xi::Mod::ICE_RES_RANK),
+        PTarget->getMod(xi::Mod::WIND_RES_RANK),
+        PTarget->getMod(xi::Mod::EARTH_RES_RANK),
+        PTarget->getMod(xi::Mod::THUNDER_RES_RANK),
+        PTarget->getMod(xi::Mod::WATER_RES_RANK),
+        PTarget->getMod(xi::Mod::LIGHT_RES_RANK),
+        PTarget->getMod(xi::Mod::DARK_RES_RANK),
     };
     // clang-format on
 
