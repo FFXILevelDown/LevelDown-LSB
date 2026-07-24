@@ -1,7 +1,7 @@
-﻿/*
+/*
 ===========================================================================
 
-  Copyright (c) 2010-2015 Darkstar Dev Teams
+  Copyright (c) 2026 LandSandBoat Dev Teams
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -21,18 +21,38 @@
 
 #pragma once
 
-#include "state.h"
+#include "common/cbasetypes.h"
+#include "luautils.h"
+#include "modifier.h"
 
-class CDespawnState : public CState
+class CTrait;
+
+class CLuaTrait
 {
-public:
-    CDespawnState(CBaseEntity* PEntity, bool instantDespawn);
-    auto Update(timer::time_point tick) -> bool override;
-    void Cleanup(timer::time_point tick) override;
-    auto CanChangeState() -> bool override;
-    auto CanFollowPath() -> bool override;
-    auto CanInterrupt() -> bool override;
+    CTrait* trait_;
 
-private:
-    timer::time_point despawnTime_;
+public:
+    CLuaTrait(CTrait*);
+
+    auto trait() const -> CTrait*
+    {
+        return trait_;
+    }
+
+    friend auto operator<<(std::ostream& out, const CLuaTrait& trait) -> std::ostream&;
+
+    auto getID() const -> uint16;
+    auto getJob() const -> uint8;
+    auto getLevel() const -> uint8;
+    auto getMod() const -> Mod;
+    auto getValue() const -> int16;
+    auto getRank() const -> uint8;
+    auto getMeritID() const -> uint32;
+
+    auto operator==(const CLuaTrait& other) const -> bool
+    {
+        return trait_ == other.trait_;
+    }
+
+    static void Register();
 };
