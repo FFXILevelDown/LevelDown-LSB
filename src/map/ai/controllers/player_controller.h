@@ -33,14 +33,14 @@ public:
     virtual ~CPlayerController();
 
     auto Tick(timer::time_point tick) -> Task<void> override;
-    auto Cast(uint16 targid, SpellID spellid) -> bool override;
+    auto Cast(EntityId target, SpellID spellid) -> bool override;
     auto Engage(uint16 targid) -> bool override;
     auto ChangeTarget(uint16 targid) -> bool override;
     auto Disengage() -> bool override;
-    auto WeaponSkill(uint16 targid, uint16 wsid) -> bool override;
-    auto Ability(uint16 targid, uint16 abilityid) -> bool override;
-    auto RangedAttack(uint16 targid) -> bool override;
-    auto UseItem(uint16 targid, uint8 loc, uint8 slotid) -> bool;
+    auto WeaponSkill(EntityId target, uint16 wsid) -> bool override;
+    auto Ability(EntityId target, uint16 abilityid) -> bool override;
+    auto RangedAttack(EntityId target) -> bool override;
+    auto UseItem(const EntityId& target, uint8 loc, uint8 slotid) -> bool;
 
     auto getLastAttackTime() -> timer::time_point;
     void setLastAttackTime(timer::time_point);

@@ -166,21 +166,21 @@ void CMobController::Reset()
     ClearFollowTarget();
 }
 
-auto CMobController::MobSkill(const uint16 targid, uint16 wsid, const Maybe<timer::duration> castTimeOverride) -> bool
+auto CMobController::MobSkill(const EntityId target, uint16 wsid, const Maybe<timer::duration> castTimeOverride) -> bool
 {
     TracyZoneScoped;
 
     if (POwner)
     {
-        FaceTarget(targid);
+        FaceTarget(target);
         PMob->PAI->EventHandler.triggerListener("WEAPONSKILL_BEFORE_USE", PMob, wsid);
-        return POwner->PAI->Internal_MobSkill(targid, wsid, castTimeOverride);
+        return POwner->PAI->Internal_MobSkill(target, wsid, castTimeOverride);
     }
 
     return false;
 }
 
-auto CMobController::Ability(const uint16 targid, uint16 abilityid) -> bool
+auto CMobController::Ability(const EntityId target, uint16 abilityid) -> bool
 {
     if (PMob->PRecastContainer->HasRecast(RECAST_ABILITY, static_cast<Recast>(abilityid), 0s))
     {
@@ -189,7 +189,7 @@ auto CMobController::Ability(const uint16 targid, uint16 abilityid) -> bool
 
     if (POwner->PAI->CanChangeState())
     {
-        return POwner->PAI->Internal_Ability(targid, abilityid);
+        return POwner->PAI->Internal_Ability(target, abilityid);
     }
 
     return false;
@@ -258,7 +258,7 @@ auto CMobController::MobSkill(int listId) -> bool
         const float currentDistance = distance(PMob->loc.p, PActionTarget->loc.p);
         if (currentDistance <= PMobSkill->getDistance())
         {
-            return MobSkill(PActionTarget->targid, PMobSkill->getID(), mobSkillReadyTime);
+            return MobSkill(PActionTarget->entityId(), PMobSkill->getID(), mobSkillReadyTime);
         }
     }
 
@@ -363,7 +363,7 @@ auto CMobController::TryCastSpell() -> bool
     // We need this because CastSpell has its own targetfind and PCastTarget is not used for it.
     if (maybeTargetOverride.has_value() && PCastTarget)
     {
-        Cast(PCastTarget->targid, chosenSpellId.value());
+        Cast(PCastTarget->entityId(), chosenSpellId.value());
     }
     else
     {
@@ -421,7 +421,7 @@ auto CMobController::TrySpecialSkill() -> bool
 
     if (luautils::OnMobSkillCheck(PAbilityTarget, PMob, PSpecialSkill) == 0)
     {
-        if (MobSkill(PAbilityTarget->targid, PSpecialSkill->getID(), std::nullopt))
+        if (MobSkill(PAbilityTarget->entityId(), PSpecialSkill->getID(), std::nullopt))
         {
             m_LastSpecialTime = m_Tick;
             return true;
@@ -499,12 +499,12 @@ void CMobController::TapDeclaimTime()
     m_DeclaimTime = m_Tick;
 }
 
-auto CMobController::Cast(const uint16 targid, const SpellID spellid) -> bool
+auto CMobController::Cast(const EntityId target, const SpellID spellid) -> bool
 {
     TracyZoneScoped;
 
-    FaceTarget(targid);
-    return CController::Cast(targid, spellid);
+    FaceTarget(target);
+    return CController::Cast(target, spellid);
 }
 
 void CMobController::SetFollowTarget(CBaseEntity* PTarget, const FollowType followType)
@@ -955,7 +955,7 @@ void CMobController::CastSpell(SpellID spellid)
 
         if (PCastTarget)
         {
-            Cast(PCastTarget->targid, spellid);
+            Cast(PCastTarget->entityId(), spellid);
         }
     }
 }
@@ -1031,7 +1031,7 @@ void CMobController::Move()
                 if (const CMobSkill* teleportBegin = battleutils::GetMobSkill(PMob->getMobMod(xi::MobMod::TeleportStart)))
                 {
                     m_LastSpecialTime = m_Tick;
-                    MobSkill(PMob->targid, teleportBegin->getID(), std::nullopt);
+                    MobSkill(PMob->entityId(), teleportBegin->getID(), std::nullopt);
                 }
             }
         }
@@ -1047,7 +1047,7 @@ void CMobController::Move()
 
                     if (teleportBegin && currentDistance <= teleportBegin->getDistance())
                     {
-                        MobSkill(PMob->targid, teleportBegin->getID(), std::nullopt);
+                        MobSkill(PMob->entityId(), teleportBegin->getID(), std::nullopt);
                         m_LastSpecialTime = m_Tick;
                         return;
                     }
@@ -1212,8 +1212,9 @@ auto CMobController::DoCombatTick(timer::time_point tick) -> Task<void>
         {
             if (PTarget != nullptr)
             {
-                FaceTarget(PTarget->targid);
-                if (POwner->PAI->Internal_RangedAttack(PTarget->targid))
+                const auto entityId = PTarget->entityId();
+                FaceTarget(entityId);
+                if (POwner->PAI->Internal_RangedAttack(entityId))
                 {
                     TapDeaggroTime();
                     PMob->m_LastRangedAttackTime = m_Tick;
@@ -1243,15 +1244,14 @@ auto CMobController::DoBuffTick() -> bool
     return TryCastSpell();
 }
 
-void CMobController::FaceTarget(const uint16 targid) const
+void CMobController::FaceTarget(const EntityId& target) const
 {
     TracyZoneScoped;
 
-    const uint16 resolvedTargid = targid != 0 ? targid : PMob->GetBattleTargetID();
-    const auto*  maybeTarget    = PMob->GetEntity(resolvedTargid);
-    if ((PMob->m_Behavior & xi::Behavior::NoTurn) == xi::Behavior::None && maybeTarget)
+    const auto* PTarget = target.isSet() ? target.resolve() : PMob->GetBattleTarget();
+    if ((PMob->m_Behavior & xi::Behavior::NoTurn) == xi::Behavior::None && PTarget)
     {
-        PMob->PAI->PathFind->LookAt(maybeTarget->loc.p);
+        PMob->PAI->PathFind->LookAt(PTarget->loc.p);
     }
 
     PMob->UpdateSpeed();
@@ -1326,7 +1326,7 @@ void CMobController::HandleEnmity()
 
         if (PTarget)
         {
-            FaceTarget(PTarget->targid);
+            FaceTarget(PTarget->entityId());
         }
     }
 }

@@ -1964,18 +1964,18 @@ void CCharEntity::OnAbility(CAbilityState& state, action_t& action)
                 actionResult.animation        = ActionAnimation::PetSkillStart;
                 actionResult.resolution       = ActionResolution::Hit;
 
-                auto PPetTarget = PTarget->targid;
+                auto PPetTarget = PTarget->entityId();
 
                 // set primary target for jug ready abilities (JA targets the player, but the pet acts like a mob and makes its own decision on the skill target)
                 if (PPetEntity->getPetType() == PET_TYPE::JUG_PET)
                 {
                     if (PPetSkill->getValidTargets() & TARGET_ENEMY)
                     {
-                        PPetTarget = PPetEntity->GetBattleTargetID();
+                        PPetTarget = PPetEntity->battleTarget();
                     }
                     else
                     {
-                        PPetTarget = PPetEntity->targid;
+                        PPetTarget = PPetEntity->entityId();
                     }
                 }
 
@@ -2350,7 +2350,7 @@ auto CCharEntity::IsValidTarget(uint16 targid, uint16 validTargetFlags, std::uni
     return applyTargetRestrictions(GetEntity(targid, TYPE_MOB | TYPE_PC | TYPE_PET | TYPE_TRUST), validTargetFlags, errMsg);
 }
 
-auto CCharEntity::IsValidTarget(EntityID_t target, uint16 validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
+auto CCharEntity::IsValidTarget(EntityId target, uint16 validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
 {
     TracyZoneScoped;
 
