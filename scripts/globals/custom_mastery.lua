@@ -89,6 +89,7 @@ xi.custom_mastery.onRefreshGiftMods = function(player, totalJpSpent)
     if globalSjBonus > 0 then
         player:addMod(xi.mod.HP, globalSjBonus * 7)
         player:addMod(xi.mod.MP, globalSjBonus * 2)
+		player:addMod(xi.mod.CAPACITY_BONUS, globalSjBonus * 250)
 
         for _, statMod in ipairs(baseStats) do
             player:addMod(statMod, globalSjBonus * 1)

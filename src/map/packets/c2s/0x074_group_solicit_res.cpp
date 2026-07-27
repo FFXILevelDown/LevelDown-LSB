@@ -48,7 +48,9 @@ void GP_CLI_COMMAND_GROUP_SOLICIT_RES::process(MapSession* PSession, CCharEntity
             return;
         }
     } /* CUSTOM BRACKET INVITE RESTRICTION */
-    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.id, PChar->InvitePending.targid); PInviter != nullptr)
+
+    // FIX: Updated .id and .targid to .UniqueNo and .ActIndex to match EntityId struct refactor
+    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.UniqueNo, PChar->InvitePending.ActIndex); PInviter != nullptr)
     {
         // This switch statement only occurs when both the invitee and inviter are on the same process
         switch (static_cast<GP_CLI_COMMAND_GROUP_SOLICIT_RES_RES>(this->Res))
@@ -117,7 +119,6 @@ void GP_CLI_COMMAND_GROUP_SOLICIT_RES::process(MapSession* PSession, CCharEntity
                         {
                             if (PInviter->PParty->IsFull())
                             { // someone else accepted invitation
-                                // PInviter->pushPacket<GP_SERV_COMMAND_MESSAGE>(PInviter, 0, 0, 14); Don't think retail sends error packet to inviter on full pt
                                 ShowDebug("Someone else accepted party invite, %s cannot be added to party", PChar->getName());
                                 PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);
                             }

@@ -160,7 +160,7 @@ def main():
         "/* CUSTOM BRACKET INVITE RESTRICTION */",
         [
             (r'(void\s+GP_CLI_COMMAND_GROUP_SOLICIT_RES::process\(MapSession\*\s+PSession,\s+CCharEntity\*\s+PChar\)\s+const\s*\{)',
-             r'\1\n    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.id, PChar->InvitePending.targid); PInviter != nullptr)\n    {\n        if (PChar->getCharVar("[LevelRatio]Restriction") != PInviter->getCharVar("[LevelRatio]Restriction"))\n        {\n            PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);\n            PChar->InvitePending.clean();\n            return;\n        }\n    } /* CUSTOM BRACKET INVITE RESTRICTION */')
+             r'\1\n    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.UniqueNo, PChar->InvitePending.ActIndex); PInviter != nullptr)\n    {\n        if (PChar->getCharVar("[LevelRatio]Restriction") != PInviter->getCharVar("[LevelRatio]Restriction"))\n        {\n            PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);\n            PChar->InvitePending.clean();\n            return;\n        }\n    } /* CUSTOM BRACKET INVITE RESTRICTION */')
         ]
     )
 
@@ -180,7 +180,7 @@ def main():
         "/* CUSTOM BRACKET BAZAAR RESTRICTION */",
         [
             (r'(void\s+GP_CLI_COMMAND_BAZAAR_BUY::process\(MapSession\*\s+PSession,\s+CCharEntity\*\s+PChar\)\s+const\s*\{)',
-             r'\1\n    auto* PBracketCheckEntity = PChar->GetEntity(PChar->BazaarID.targid, TYPE_PC);\n    if (PBracketCheckEntity && PChar) {\n        auto* PBracketCheckTarget = static_cast<CCharEntity*>(PBracketCheckEntity);\n        if (PChar->getCharVar("[LevelRatio]Restriction") != PBracketCheckTarget->getCharVar("[LevelRatio]Restriction")) {\n            return;\n        }\n    } /* CUSTOM BRACKET BAZAAR RESTRICTION */')
+             r'\1\n    auto* PBracketCheckEntity = PChar->GetEntity(PChar->BazaarID.ActIndex, TYPE_PC);\n    if (PBracketCheckEntity && PChar) {\n        auto* PBracketCheckTarget = static_cast<CCharEntity*>(PBracketCheckEntity);\n        if (PChar->getCharVar("[LevelRatio]Restriction") != PBracketCheckTarget->getCharVar("[LevelRatio]Restriction")) {\n            return;\n        }\n    } /* CUSTOM BRACKET BAZAAR RESTRICTION */')
         ]
     )
 
