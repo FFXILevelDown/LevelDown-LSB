@@ -39,7 +39,7 @@ auto GP_CLI_COMMAND_GROUP_SOLICIT_RES::validate(MapSession* PSession, const CCha
 
 void GP_CLI_COMMAND_GROUP_SOLICIT_RES::process(MapSession* PSession, CCharEntity* PChar) const
 {
-    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.id, PChar->InvitePending.targid); PInviter != nullptr)
+    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.UniqueNo, PChar->InvitePending.ActIndex); PInviter != nullptr)
     {
         if (PChar->getCharVar("[LevelRatio]Restriction") != PInviter->getCharVar("[LevelRatio]Restriction"))
         {
@@ -144,8 +144,8 @@ void GP_CLI_COMMAND_GROUP_SOLICIT_RES::process(MapSession* PSession, CCharEntity
         message::send(ipc::PartyInviteResponse{
             .inviteeId     = PChar->id,
             .inviteeTargId = PChar->targid,
-            .inviterId     = PChar->InvitePending.id,
-            .inviterTargId = PChar->InvitePending.targid,
+            .inviterId     = PChar->InvitePending.UniqueNo,
+            .inviterTargId = PChar->InvitePending.ActIndex,
             .inviteAnswer  = this->Res,
         });
     }
