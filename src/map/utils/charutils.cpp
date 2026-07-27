@@ -5508,6 +5508,12 @@ void AddCapacityPoints(CCharEntity* PChar, CBaseEntity* PMob, uint32 capacityPoi
 
     capacityPoints = (uint32)(capacityPoints * settings::get<float>("map.EXP_RATE"));
 
+    // Custom 75 Only CP Per Kill Cap
+    if (PChar->GetMLevel() == 75)
+    {
+        capacityPoints = std::min<uint32>(capacityPoints, 5000);
+    } /* CUSTOM 75 CP PER KILL CAP */
+
     if (capacityPoints > 0)
     {
         // Capacity Chains start at lv100 mobs

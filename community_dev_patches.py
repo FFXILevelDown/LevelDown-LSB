@@ -256,6 +256,22 @@ def main():
             }''')
         ]
     )
+    
+    # 17. Level 75 Only CP Per-Kill Cap (5000 CP Cap)
+    patch_file(
+        os.path.join("src", "map", "utils", "charutils.cpp"),
+        "/* CUSTOM 75 CP PER KILL CAP */",
+        [
+            (r'(capacityPoints\s*=\s*\(uint32\)\(capacityPoints\s*\*\s*settings::get<float>\("map\.EXP_RATE"\)\);)',
+             r'''\1
+
+    // Custom 75 Only CP Per Kill Cap
+    if (PChar->GetMLevel() == 75)
+    {
+        capacityPoints = std::min<uint32>(capacityPoints, 5000);
+    } /* CUSTOM 75 CP PER KILL CAP */''')
+        ]
+    )
 
     print("\n=======================================================================")
     print("  Execution complete. Check your results above!")
