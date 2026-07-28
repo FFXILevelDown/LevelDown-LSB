@@ -1,21 +1,34 @@
 import os
+import glob
 import re
+import importlib.util
 
-def patch_file(filepath, marker, replacements):
-    """
-    Surgically patches a file using adaptive regex patterns matching LSB C++ source.
-    Skips cleanly if the marker comment is already present.
-    """
+PATCH_DIR = os.path.join("modules", "LevelDown Custom Modules", "cpp", "patchs")
+
+def apply_patch_module(module_path):
+    # Load module dynamically
+    module_name = os.path.splitext(os.path.basename(module_path))[0]
+    spec = importlib.util.spec_from_file_location(module_name, module_path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+
+    filepath = getattr(mod, "TARGET_FILE", None)
+    marker = getattr(mod, "MARKER", None)
+    replacements = getattr(mod, "REPLACEMENTS", [])
+
+    if not filepath or not marker:
+        print(f"[-] Skipping invalid patch file: {module_name}.py")
+        return False
+
     if not os.path.exists(filepath):
-        print(f"[-] Error: Could not find {filepath}")
+        print(f"[-] Error: Could not find target file {filepath}")
         return False
 
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read().replace('\r\n', '\n')
 
-    # Skip if marker comment already exists
     if marker in content:
-        print(f"[~] Skipping {filepath} - marker '{marker}' already present.")
+        print(f"[~] Skipping {os.path.basename(filepath)} - [{marker}] already present.")
         return True
 
     modified_content = content
@@ -25,355 +38,44 @@ def patch_file(filepath, marker, replacements):
         if re.search(pattern, modified_content, re.MULTILINE):
             modified_content = re.sub(pattern, new_text, modified_content, count=1, flags=re.MULTILINE)
         else:
-            # Fallback: Literal string replacement if regex misses
             if pattern in modified_content:
                 modified_content = modified_content.replace(pattern, new_text, 1)
             else:
-                print(f"[-] Error: Could not find target pattern in {filepath}:\n    Pattern: '{pattern[:100]}...'")
+                print(f"[-] Error: Could not find target pattern in {filepath}:\n    Pattern: '{pattern[:80]}...'")
                 success = False
 
     if success:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(modified_content)
-        print(f"[+] Successfully patched {filepath} [{marker}]")
+        print(f"[+] Successfully patched {os.path.basename(filepath)} [{marker}]")
         return True
     else:
-        print(f"[-] Failed to apply patch [{marker}] to {filepath}. No changes saved.")
+        print(f"[-] Failed to apply patch [{marker}] to {filepath}.")
         return False
 
 def main():
     print("=======================================================================")
-    print("  Starting Resilient Community Dev Standalone Patcher... ")
+    print("  LevelDown Modular C++ Patch Loader")
     print("=======================================================================\n")
 
-    # -------------------------------------------------------------------------
-    # MASTER LEVEL & CAPACITY POINT 75 CAP PATCHES
-    # -------------------------------------------------------------------------
+    if not os.path.exists(PATCH_DIR):
+        print(f"[-] Directory does not exist: {PATCH_DIR}")
+        return
 
-    # M1. Enable Capacity / Master Point Gain at Level 75 (charutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "charutils.cpp"),
-        "/* CUSTOM 75 MASTER LEVEL ELIGIBILITY */",
-        [
-            (r'(uint8\s+referenceLevel\s*=\s*PMember->GetMLevel\(\);)',
-             r'\1 /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */')
-        ]
-    )
+    patch_files = sorted(glob.glob(os.path.join(PATCH_DIR, "*.py")))
+    print(f"[+] Found {len(patch_files)} patch module(s) to evaluate.\n")
 
-    # M2. Master Subjob Level Cap Bonus Marker (battle_entity.cpp)
-    patch_file(
-        os.path.join("src", "map", "entities", "battle_entity.cpp"),
-        "/* CUSTOM 75 MASTER SUBJOB BONUS */",
-        [
-            (r'(if\s*\(\s*m_mlvl\s*>=\s*75\s*\))',
-             r'\1 /* CUSTOM 75 MASTER SUBJOB BONUS */')
-        ]
-    )
+    applied, skipped, failed = 0, 0, 0
 
-    # -------------------------------------------------------------------------
-    # CORE SYSTEM & CUSTOM FEATURE PATCHES
-    # -------------------------------------------------------------------------
-
-    # 1. Blue Spell Recast (c2s/0x102_extended_job.cpp)
-    patch_file(
-        os.path.join("src", "map", "packets", "c2s", "0x102_extended_job.cpp"),
-        "/* CUSTOM 10S RECAST */",
-        [
-            (r'PChar->PRecastContainer->Add\(RECAST_MAGIC,\s*static_cast<Recast>\(PBlueSpell->getID\(\)\),\s*60s\);',
-             r'PChar->PRecastContainer->Add(RECAST_MAGIC, static_cast<Recast>(PBlueSpell->getID()), 10s); /* CUSTOM 10S RECAST */')
-        ]
-    )
-
-    # 2. Skillchain Damage Limit Tracking Header (action.h)
-    patch_file(
-        os.path.join("src", "map", "action", "action.h"),
-        "/* SC int32_t override */",
-        [
-            (r'void\s+recordSkillchain\(ActionProcSkillChain\s+effect,\s*int16_t\s+dmg\);',
-             r'void recordSkillchain(ActionProcSkillChain effect, int32_t dmg); /* SC int32_t override */')
-        ]
-    )
-
-    # 3. Skillchain Damage Limit Tracking Logic (action.cpp)
-    patch_file(
-        os.path.join("src", "map", "action", "action.cpp"),
-        "/* SC int32_t definition override */",
-        [
-            (r'void\s+action_result_t::recordSkillchain\(const\s+ActionProcSkillChain\s+effect,\s*const\s+int16_t\s+dmg\)',
-             r'void action_result_t::recordSkillchain(const ActionProcSkillChain effect, const int32_t dmg) /* SC int32_t definition override */')
-        ]
-    )
-
-    # 4. Max Mobskill ID Limit Extension (mobskill.h)
-    patch_file(
-        os.path.join("src", "map", "mobskill.h"),
-        "/* CUSTOM MAX MOBSKILL */",
-        [
-            (r'#define\s+MAX_MOBSKILL_ID\s+4262',
-             r'#define MAX_MOBSKILL_ID 4386 /* CUSTOM MAX MOBSKILL */')
-        ]
-    )
-
-    # 5. Mog Garden / Feretory Visibility Filter (zone_entities.cpp)
-    patch_file(
-        os.path.join("src", "map", "zone_entities.cpp"),
-        "/* REMOVED: Mog Garden and Feretory solo zone visibility block */",
-        [
-            (r'(if\s*\(\s*PChar->m_moghouseID\s*!=\s*PCurrentChar->m_moghouseID\s*\)\s*\{\s*continue;\s*\})',
-             r'\1\n                        if (PChar->getCharVar("[LevelRatio]Restriction") != PCurrentChar->getCharVar("[LevelRatio]Restriction")) { continue; } /* REMOVED: Mog Garden and Feretory solo zone visibility block */')
-        ]
-    )
-
-    # 6. Ninja Tool Utility Subjob Hook (battleutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "battleutils.cpp"),
-        "/* CUSTOM NIN TOOL UTILITY */",
-        [
-            (r'if\s*\(\s*PChar->GetMJob\(\)\s*==\s*xi::Job::NIN\s*\)',
-             r'if (PChar->GetMJob() == xi::Job::NIN || PChar->GetSJob() == xi::Job::NIN) /* CUSTOM NIN TOOL UTILITY */')
-        ]
-    )
-
-    # 7. Dragoon Wyvern Subjob Call Hook (petutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "petutils.cpp"),
-        "/* CUSTOM DRG SUBJOB CALL */",
-        [
-            (r'if\s*\(\s*PMaster->GetMJob\(\)\s*!=\s*(?:xi::Job::|JOB_)?DRG\s*&&\s*(?:PetID|petID)\s*==\s*PETID_WYVERN\s*\)',
-             r'if (PMaster->GetMJob() != xi::Job::DRG && PMaster->GetSJob() != xi::Job::DRG && PetID == PETID_WYVERN) /* CUSTOM DRG SUBJOB CALL */')
-        ]
-    )
-
-    # 8. Dynamic Subjob Level Injection (battle_entity.cpp)
-    patch_file(
-        os.path.join("src", "map", "entities", "battle_entity.cpp"),
-        "/* CUSTOM DYNAMIC SUBJOB BRACKETS */",
-        [
-            (r'(auto\s+ratio\s*=\s*settings::get<uint8>\("map\.SUBJOB_RATIO"\);)',
-             r'\1\n        // CHECK FOR PLAYER OVERRIDE\n        if (this->objtype == TYPE_PC)\n        {\n            auto* PChar = static_cast<CCharEntity*>(this);\n            uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");\n            if (customRatio == 0) { customRatio = charutils::GetCharVar(PChar, "Ratio"); }\n            if (customRatio > 0) { ratio = customRatio; }\n        } /* CUSTOM DYNAMIC SUBJOB BRACKETS */')
-        ]
-    )
-
-    # 9. Restrict Cross-Bracket Invitation Links (0x074_group_solicit_res.cpp)
-    patch_file(
-        os.path.join("src", "map", "packets", "c2s", "0x074_group_solicit_res.cpp"),
-        "/* CUSTOM BRACKET INVITE RESTRICTION */",
-        [
-            (r'(void\s+GP_CLI_COMMAND_GROUP_SOLICIT_RES::process\(MapSession\*\s+PSession,\s+CCharEntity\*\s+PChar\)\s+const\s*\{)',
-             r'\1\n    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.UniqueNo, PChar->InvitePending.ActIndex); PInviter != nullptr)\n    {\n        if (PChar->getCharVar("[LevelRatio]Restriction") != PInviter->getCharVar("[LevelRatio]Restriction"))\n        {\n            PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);\n            PChar->InvitePending.clean();\n            return;\n        }\n    } /* CUSTOM BRACKET INVITE RESTRICTION */')
-        ]
-    )
-
-    # 10. Block Cross-Bracket Item Trade Interaction (charutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "charutils.cpp"),
-        "/* CUSTOM BRACKET TRADE RESTRICTION */",
-        [
-            (r'(bool\s+CanTrade\(CCharEntity\*\s+PChar,\s+CCharEntity\*\s+PTarget\)\s*\{)',
-             r'\1\n    if (PChar && PTarget && PChar->getCharVar("[LevelRatio]Restriction") != PTarget->getCharVar("[LevelRatio]Restriction"))\n    {\n        return false;\n    } /* CUSTOM BRACKET TRADE RESTRICTION */')
-        ]
-    )
-
-    # 11. Player Bazaar Opposing Bracket Filter Checks (0x106_bazaar_buy.cpp)
-    patch_file(
-        os.path.join("src", "map", "packets", "c2s", "0x106_bazaar_buy.cpp"),
-        "/* CUSTOM BRACKET BAZAAR RESTRICTION */",
-        [
-            (r'(void\s+GP_CLI_COMMAND_BAZAAR_BUY::process\(MapSession\*\s+PSession,\s+CCharEntity\*\s+PChar\)\s+const\s*\{)',
-             r'\1\n    auto* PBracketCheckEntity = PChar->GetEntity(PChar->BazaarID.ActIndex, TYPE_PC);\n    if (PBracketCheckEntity && PChar) {\n        auto* PBracketCheckTarget = static_cast<CCharEntity*>(PBracketCheckEntity);\n        if (PChar->getCharVar("[LevelRatio]Restriction") != PBracketCheckTarget->getCharVar("[LevelRatio]Restriction")) {\n            return;\n        }\n    } /* CUSTOM BRACKET BAZAAR RESTRICTION */')
-        ]
-    )
-
-    # 12. Cross-Bracket Delivery Box Restriction Filters (dboxutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "dboxutils.cpp"),
-        "/* CUSTOM BRACKET DBOX RESTRICTION */",
-        [
-            (r'(if\s*\(\s*PItem->hasFlag\(ItemFlag::NoDelivery\)\s*\))',
-             r'if (PChar && PChar->getCharVar("[LevelRatio]Restriction") != charutils::FetchCharVar(recvCharid, "[LevelRatio]Restriction").first) { return; } /* CUSTOM BRACKET DBOX RESTRICTION */\n            \1')
-        ]
-    )
-
-    # 13. Boost Treasure Hunter Cap to 25 (enmity_container.cpp)
-    patch_file(
-        os.path.join("src", "map", "enmity_container.cpp"),
-        "/* CUSTOM 25 TH CAP */",
-        [
-            (r'int16\s+THlevel\s*=\s*std::min<int16>\(8,\s*PEntity->getMod\(xi::Mod::TREASURE_HUNTER\)\);',
-             r'int16 THlevel = std::min<int16>(25, PEntity->getMod(xi::Mod::TREASURE_HUNTER)); /* CUSTOM 25 TH CAP */')
-        ]
-    )
-
-    # 14. Infinite Capacity Band Allowance Cap (-1 Lockout Bypass) (charutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "charutils.cpp"),
-        "/* CUSTOM INFINITE COMMITMENT CAP */",
-        [
-            (r'(if\s*\(\s*PChar->StatusEffectContainer->GetStatusEffect\(xi::StatusEffect::Commitment\).*?\{)',
-             r'\1\n        /* CUSTOM INFINITE COMMITMENT CAP */')
-        ]
-    )
-
-    # 15. Infinite Experience Band Allowance Cap (-1 Lockout Bypass) (charutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "charutils.cpp"),
-        "/* CUSTOM INFINITE DEDICATION CAP */",
-        [
-            (r'(if\s*\(\s*PChar->StatusEffectContainer->GetStatusEffect\(xi::StatusEffect::Dedication\).*?\{)',
-             r'\1\n        /* CUSTOM INFINITE DEDICATION CAP */')
-        ]
-    )
-
-    # 16. Enlight / Endark Depletion Bugfix (battleutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "battleutils.cpp"),
-        "/* CUSTOM ENLIGHT DEPLETION BUGFIX */",
-        [
-            (r'if\s*\(\s*damage\s*>\s*1\s*\)\s*\{\s*PAttacker->delModifier\(xi::Mod::ENSPELL_DMG,\s*1\);',
-             r'''/* CUSTOM ENLIGHT DEPLETION BUGFIX */
-        if (damage > 1)
-        {
-            auto* PEffect = PAttacker->StatusEffectContainer->GetStatusEffect(element == ELEMENT_DARK ? xi::StatusEffect::Endark : xi::StatusEffect::Enlight);
-            if (PEffect)
-            {
-                int16 currentMod = 0;
-                for (auto& mod : PEffect->modList())
-                {
-                    if (mod.getModID() == xi::Mod::ENSPELL_DMG)
-                    {
-                        currentMod = mod.getModAmount();
-                        break;
-                    }
-                }
-                if (currentMod > 0)
-                {
-                    PEffect->setMod(xi::Mod::ENSPELL_DMG, currentMod - 1);
-                }
-            }
-            else
-            {
-                PAttacker->delModifier(xi::Mod::ENSPELL_DMG, 1);
-            }''')
-        ]
-    )
-    
-    # 17. Level 75 Only CP Per-Kill Cap (5000 CP Cap) (charutils.cpp)
-    patch_file(
-        os.path.join("src", "map", "utils", "charutils.cpp"),
-        "/* CUSTOM 75 CP PER KILL CAP */",
-        [
-            (r'(capacityPoints\s*=\s*\(uint32\)\(capacityPoints\s*\*\s*settings::get<float>\("map\.EXP_RATE"\)\);)',
-             r'''\1
-
-    // Custom 75 Only CP Per Kill Cap
-    if (PChar->GetMLevel() == 75)
-    {
-        capacityPoints = std::min<uint32>(capacityPoints, 5000);
-    } /* CUSTOM 75 CP PER KILL CAP */''')
-        ]
-    )
-
-    # 18. Subjob Level Ratio and Ghee Kyo Uncap Logic (battle_entity.cpp)
-    patch_file(
-        os.path.join("src", "map", "entities", "battle_entity.cpp"),
-        "/* CUSTOM SUBJOB RATIO AND UNCAP */",
-        [
-            (r'void\s+CBattleEntity::SetSLevel\s*\(\s*uint8\s+slvl\s*\)[\s\S]*?(?=\nvoid\s+CBattleEntity::SetDeathType)',
-             r'''/* CUSTOM SUBJOB RATIO AND UNCAP */
-void CBattleEntity::SetSLevel(uint8 slvl)
-{
-    TracyZoneScoped;
-
-    if (!settings::get<bool>("map.INCLUDE_MOB_SJ") && this->objtype == TYPE_MOB && this->objtype != TYPE_PET)
-    {
-        m_slvl = m_mlvl; // All mobs have a 1:1 ratio of MainJob/Subjob
-    }
-    else
-    {
-        auto ratio = settings::get<uint8>("map.SUBJOB_RATIO");
-        uint8 tierBonus = 0;
-
-        if (this->objtype == TYPE_PC)
-        {
-            auto* PChar = static_cast<CCharEntity*>(this);
-
-            uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");
-            if (customRatio == 0)
-            {
-                customRatio = charutils::GetCharVar(PChar, "Ratio");
-            }
-
-            if (customRatio > 0)
-            {
-                ratio = static_cast<uint8>(customRatio);
-            }
-
-            // Check Ghee Kyo's var, with fallback to global var
-            tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]SUBJOB_CAP_BONUS"));
-            if (tierBonus == 0)
-            {
-                tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]GLOBAL_SUBJOB_BONUS"));
-            }
-        }
-
-        switch (ratio)
-        {
-            case 0: // No subjob
-                m_slvl = 0;
-                break;
-
-            case 1: // Traditional Ratio (75/37 or 99/49) + Ghee Kyo Cap Bonus
-            {
-                uint8 baseCap = static_cast<uint8>(m_mlvl >> 1);
-                if (m_mlvl == 1)
-                {
-                    baseCap = 1;
-                }
-
-                uint8 calculatedCap = baseCap;
-                if (m_mlvl >= 75)
-                {
-                    uint8 baseLevelCap = (m_mlvl >= 99) ? 49 : 37;
-                    uint8 maxAllowed   = baseLevelCap + 5; // Max +5 bonus levels
-                    calculatedCap      = std::min<uint8>(static_cast<uint8>(baseLevelCap + tierBonus), maxAllowed);
-                }
-
-                m_slvl = std::min(slvl, calculatedCap);
-                break;
-            }
-
-            case 2: // 2/3 Ratio
-            {
-                uint8 calculatedCap = (m_mlvl == 1) ? 1 : static_cast<uint8>((m_mlvl * 2) / 3);
-                m_slvl = std::min(slvl, calculatedCap);
-                break;
-            }
-
-            case 3: // 1:1 Equal Ratio (75/75 or 99/99)
-            {
-                uint8 calculatedCap = (m_mlvl == 1) ? 1 : m_mlvl;
-                m_slvl = std::min(slvl, calculatedCap);
-                break;
-            }
-
-            default: // Error
-                ShowError("Error setting subjob level: Invalid ratio '%d' check your settings file!", ratio);
-                break;
-        }
-    }
-
-    if (this->objtype & TYPE_PC)
-    {
-        db::preparedStmt("UPDATE char_stats SET slvl = ? WHERE charid = ? LIMIT 1", m_slvl, this->id);
-    }
-}
-
-''')
-        ]
-    )
+    for patch_file in patch_files:
+        result = apply_patch_module(patch_file)
+        if result:
+            applied += 1
+        else:
+            failed += 1
 
     print("\n=======================================================================")
-    print("  Execution complete. Check your results above!")
+    print("  Execution complete!")
     print("=======================================================================")
 
 if __name__ == "__main__":
