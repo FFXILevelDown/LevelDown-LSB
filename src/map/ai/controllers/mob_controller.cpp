@@ -484,7 +484,7 @@ auto CMobController::CanAggroTarget(CBattleEntity* PTarget) const -> bool
 
         // Do not aggro if a normal CoP Fomor and the player has low enough fomor hate
         if (PMob->m_Family == 172 && (PMob->m_Type & xi::MobType::Notorious) == xi::MobType::Normal &&
-            (PMob->getZone() >= ZONE_LUFAISE_MEADOWS && PMob->getZone() <= ZONE_SACRARIUM) &&
+            (PMob->getZone() >= xi::ZoneId::LufaiseMeadows && PMob->getZone() <= xi::ZoneId::Sacrarium) &&
             PTarget->objtype == TYPE_PC)
         {
             if (static_cast<CCharEntity*>(PTarget)->getCharVar("FOMOR_HATE") < 8)
@@ -811,12 +811,8 @@ auto CMobController::CanDetectTarget(CBattleEntity* PTarget, const bool forceSig
         return isTargetAndInRange || PMob->CanSeeTarget(PTarget);
     }
 
-    if (((detects & xi::Detects::Weaponskill) != xi::Detects::None) && PTarget->PAI->IsCurrentState<CWeaponSkillState>())
-    {
-        return isTargetAndInRange || PMob->CanSeeTarget(PTarget);
-    }
-
-    if (((detects & xi::Detects::Jobability) != xi::Detects::None) && PTarget->PAI->IsCurrentState<CAbilityState>())
+    if (((detects & xi::Detects::Ability) != xi::Detects::None) &&
+        (PTarget->PAI->IsCurrentState<CWeaponSkillState>() || PTarget->PAI->IsCurrentState<CAbilityState>()))
     {
         return isTargetAndInRange || PMob->CanSeeTarget(PTarget);
     }

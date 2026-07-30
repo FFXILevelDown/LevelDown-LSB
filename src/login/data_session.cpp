@@ -335,7 +335,7 @@ void data_session::read_func()
 
             uint32 ZoneIP   = 0;
             uint16 ZonePort = 0;
-            uint16 ZoneID   = 0;
+            auto   ZoneID   = xi::ZoneId::Unknown;
             uint16 PrevZone = 0;
             uint16 gmlevel  = 0;
 
@@ -348,7 +348,7 @@ void data_session::read_func()
 
             if (rset && rset->rowsCount() && rset->next())
             {
-                ZoneID   = rset->get<uint16>("zoneid");
+                ZoneID   = rset->get<xi::ZoneId>("zoneid");
                 PrevZone = rset->get<uint16>("pos_prevzone");
                 gmlevel  = rset->get<uint16>("gmlevel");
 
@@ -559,8 +559,9 @@ void data_session::read_func()
                 viewSession->socket_.lowest_layer().close(closeEc);
                 session.view_session = nullptr;
 
-                session.incrementKeyValue = 0;     // Reset incremented key after inserting into db
-                generatedCharInfo         = false; // Reset this so next time we log out it regenerates the char info
+                session.incrementKeyValue  = 0;     // Reset incremented key after inserting into db
+                session.justCreatedNewChar = false; // The client only advances its key for character creation once
+                generatedCharInfo          = false; // Reset this so next time we log out it regenerates the char info
 
                 const auto payload = ipc::toBytesWithHeader(ipc::CharZone{
                     .charId            = charid,
