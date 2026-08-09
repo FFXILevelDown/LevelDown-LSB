@@ -143,7 +143,11 @@ quest.sections =
         {
             onZoneIn = function(player, prevZone)
                 if quest:getVar(player, 'Prog') == 5 then
+<<<<<<< HEAD
                     return { 1101, -1, bit.bor(xi.cutsceneFlag.RESET_CAMERA, xi.cutsceneFlag.NO_PCS, xi.cutsceneFlag.NO_NPCS) }
+=======
+                    return { 1101, -1, bit.bor(xi.cutsceneFlag.UNKNOWN_1, xi.cutsceneFlag.NO_PCS, xi.cutsceneFlag.NO_NPCS) }
+>>>>>>> parent of e4b52b4f10 (Revert "Merge remote-tracking branch 'upstream/base' into base")
                 end
             end,
 
