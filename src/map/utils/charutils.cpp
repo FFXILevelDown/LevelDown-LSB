@@ -28,10 +28,14 @@
 #include "common/vana_time.h"
 #include <fmt/ranges.h>
 
+#include <common/database.h>
 #include <common/types/hash_map.h>
 
 #include <array>
 #include <chrono>
+
+#include "map_constants.h"
+#include "persist_batch.h"
 
 #include "lua/luautils.h"
 
@@ -2044,10 +2048,6 @@ void DropItem(CCharEntity* PChar, uint8 container, uint8 slotID, int32 quantity,
 
 bool CanTrade(CCharEntity* PChar, CCharEntity* PTarget)
 {
-    if (PChar && PTarget && PChar->getCharVar("[LevelRatio]Restriction") != PTarget->getCharVar("[LevelRatio]Restriction"))
-    {
-        return false;
-    } /* CUSTOM BRACKET TRADE RESTRICTION */
     if (PChar->m_PMonstrosity != nullptr || PTarget->m_PMonstrosity != nullptr)
     {
         return false;
@@ -2314,6 +2314,8 @@ void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, Recalculate recalculate)
         luautils::OnItemUnequip(PChar, PItem);
 
         PChar->inventorySyncState().queueEquipChange(LOC_INVENTORY, 0, static_cast<SLOTTYPE>(equipSlotID), PItem, Equipping::No);
+
+        PChar->setPersist(CharPersist::Equip | CharPersist::Look);
 
         if (recalculate)
         {
@@ -2786,6 +2788,20 @@ void UpdateWeaponStyle(CCharEntity* PChar, uint8 equipSlotID, CItemEquipment* PI
             else
             {
                 PChar->mainlook.ranged = PChar->look.ranged;
+            }
+
+            break;
+        case SLOT_AMMO:
+            if (!PChar->getEquip(SLOT_RANGED))
+            {
+                if (hasValidStyle(PChar, PItem, appearance))
+                {
+                    PChar->mainlook.ranged = appearanceModel;
+                }
+                else
+                {
+                    PChar->mainlook.ranged = PChar->look.ranged;
+                }
             }
 
             break;
@@ -3444,6 +3460,8 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
 
     PChar->updatemask |= UPDATE_HP;
     PChar->updatemask |= UPDATE_LOOK;
+
+    PChar->setPersist(CharPersist::Equip | CharPersist::Look);
 }
 
 /************************************************************************
@@ -3494,7 +3512,6 @@ void CheckValidEquipment(CCharEntity* PChar)
     }
 
     BuildingCharWeaponSkills(PChar);
-    PChar->RequestPersist(CHAR_PERSIST::EQUIP);
 }
 
 void RemoveAllEquipment(CCharEntity* PChar)
@@ -3514,7 +3531,6 @@ void RemoveAllEquipment(CCharEntity* PChar)
     CheckUnarmedWeapon(PChar);
 
     BuildingCharWeaponSkills(PChar);
-    PChar->RequestPersist(CHAR_PERSIST::EQUIP);
 }
 
 /************************************************************************
@@ -5367,24 +5383,20 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            // === DUAL-ERA CP FORMULA MODIFICATION ===
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER))
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99)
             {
-                return;
-            }
-
-            uint8 referenceLevel = PMember->GetMLevel(); /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
-            if (referenceLevel != 75 && referenceLevel != 99)
-            {
+                // Do not grant Capacity points without Job Breaker or Level 99
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - referenceLevel;
+            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
+
+            // Capacity Chains are only granted for Mobs level 100+
+            // Ref: https://www.bg-wiki.com/ffxi/Job_Points
             float capacityPoints = 0;
 
-            if (mobLevel > referenceLevel)
-            // === END DUAL-ERA CP FORMULA ===
+            if (mobLevel > 99)
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
@@ -5437,20 +5449,13 @@ uint16 AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints)
         CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
         int16          percentage = commitment->GetPower();
         int16          cap        = commitment->GetSubPower();
-        if (cap == -1)
-        {
-            rawBonus += std::max<int32>(((capacityPoints * percentage) / 100), 0);
-        }
-        else
-        {
-            rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
-            commitment->SetSubPower(cap -= rawBonus);
+        rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+        commitment->SetSubPower(cap -= rawBonus);
 
-            if (cap <= 0)
-            {
-                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
-            }
-        } /* CUSTOM INFINITE COMMITMENT CAP */
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+        }
     }
 
     // Mod::CAPACITY_BONUS is currently used for JP Gifts, and can easily be used elsewhere
@@ -5502,12 +5507,6 @@ void AddCapacityPoints(CCharEntity* PChar, CBaseEntity* PMob, uint32 capacityPoi
     }
 
     capacityPoints = (uint32)(capacityPoints * settings::get<float>("map.EXP_RATE"));
-
-    // Custom 75 Only CP Per Kill Cap
-    if (PChar->GetMLevel() == 75)
-    {
-        capacityPoints = std::min<uint32>(capacityPoints, 5000);
-    } /* CUSTOM 75 CP PER KILL CAP */
 
     if (capacityPoints > 0)
     {
@@ -5937,6 +5936,48 @@ void SaveCharPosition(CCharEntity* PChar)
                      PChar->id);
 }
 
+void PersistCharVars(const std::vector<CharVarChange>& rows)
+{
+    TracyZoneScoped;
+
+    if (rows.empty())
+    {
+        return;
+    }
+
+    db::transaction(
+        [&]()
+        {
+            for (const auto& row : rows)
+            {
+                PersistCharVar(row.charid, row.name, row.value, row.expiry);
+            }
+        });
+}
+
+void SaveCharPositions(const std::vector<CharPosition>& rows)
+{
+    TracyZoneScoped;
+
+    if (rows.empty())
+    {
+        return;
+    }
+
+    db::transaction(
+        [&]()
+        {
+            // not an upsert: `chars` has a BEFORE INSERT trigger that fires even on update
+            db::executeBulk(
+                "UPDATE chars SET pos_rot = ?, pos_x = ?, pos_y = ?, pos_z = ?, boundary = ? WHERE charid = ?",
+                rows,
+                [](const CharPosition& row)
+                {
+                    return std::make_tuple(row.rotation, row.x, row.y, row.z, row.boundary, row.charid);
+                });
+        });
+}
+
 /* TODO: Move linkshell persistence here
 void SaveCharLinkshells(CCharEntity* PChar)
 {
@@ -6192,66 +6233,124 @@ void SavePrevZoneLineID(CCharEntity* PChar, uint32 ZoneLineID)
                      PChar->id);
 }
 
+auto BuildCharEquipSlots(const CCharEntity* PChar) -> std::vector<CharEquipSlot>
+{
+    std::vector<CharEquipSlot> rows;
+
+    for (uint8 i = 0; i < 18; ++i)
+    {
+        if (const auto eloc = PChar->equipLocation(i))
+        {
+            rows.push_back({ .charid = PChar->id, .equipSlotId = i, .slotId = eloc->Slot, .containerId = static_cast<uint8>(eloc->Container) });
+        }
+    }
+
+    return rows;
+}
+
 void SaveCharEquip(CCharEntity* PChar)
 {
     TracyZoneScoped;
 
-    for (uint8 i = 0; i < 18; ++i)
-    {
-        auto eloc = PChar->equipLocation(i);
-        if (!eloc)
-        {
-            db::preparedStmt("DELETE FROM char_equip WHERE charid = ? AND equipslotid = ? LIMIT 1", PChar->id, i);
-        }
-        else
-        {
-            db::preparedStmt("INSERT INTO char_equip "
-                             "SET charid = ?, equipslotid = ?, slotid = ?, containerid = ? "
-                             "ON DUPLICATE KEY UPDATE slotid  = ?, containerid = ?",
-                             PChar->id,
-                             i,
-                             eloc->Slot,
-                             static_cast<uint8>(eloc->Container),
-                             eloc->Slot,
-                             static_cast<uint8>(eloc->Container));
-        }
-    }
+    SaveCharEquips({ PChar->id }, BuildCharEquipSlots(PChar));
 }
 
-void SaveCharLook(CCharEntity* PChar)
+void SaveCharEquips(const std::vector<uint32>& replaceFor, const std::vector<CharEquipSlot>& rows)
 {
     TracyZoneScoped;
 
-    look_t* look = (PChar->getStyleLocked() ? &PChar->mainlook : &PChar->look);
-    db::preparedStmt("UPDATE char_look "
-                     "SET head = ?, body = ?, hands = ?, legs = ?, feet = ?, main = ?, sub = ?, ranged = ? "
-                     "WHERE charid = ?",
-                     look->head,
-                     look->body,
-                     look->hands,
-                     look->legs,
-                     look->feet,
-                     look->main,
-                     look->sub,
-                     look->ranged,
-                     PChar->id);
+    if (replaceFor.empty())
+    {
+        return;
+    }
 
-    db::preparedStmt("UPDATE chars SET isstylelocked = ? WHERE charid = ?", PChar->getStyleLocked() ? 1 : 0, PChar->id);
+    db::transaction(
+        [&]()
+        {
+            db::executeBulk(
+                "DELETE FROM char_equip WHERE charid = ?",
+                replaceFor,
+                [](uint32 charid)
+                {
+                    return std::make_tuple(charid);
+                });
 
-    db::preparedStmt("INSERT INTO char_style (charid, head, body, hands, legs, feet, main, sub, ranged) "
-                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE "
-                     "charid = VALUES(charid), head = VALUES(head), body = VALUES(body), "
-                     "hands = VALUES(hands), legs = VALUES(legs), feet = VALUES(feet), "
-                     "main = VALUES(main), sub = VALUES(sub), ranged = VALUES(ranged)",
-                     PChar->id,
-                     PChar->styleItems[SLOT_HEAD],
-                     PChar->styleItems[SLOT_BODY],
-                     PChar->styleItems[SLOT_HANDS],
-                     PChar->styleItems[SLOT_LEGS],
-                     PChar->styleItems[SLOT_FEET],
-                     PChar->styleItems[SLOT_MAIN],
-                     PChar->styleItems[SLOT_SUB],
-                     PChar->styleItems[SLOT_RANGED]);
+            db::executeBulk(
+                "INSERT INTO char_equip (charid, equipslotid, slotid, containerid) VALUES (?,?,?,?)",
+                rows,
+                [](const CharEquipSlot& row)
+                {
+                    return std::make_tuple(row.charid, row.equipSlotId, row.slotId, row.containerId);
+                });
+        });
+}
+
+auto BuildCharAppearance(const CCharEntity* PChar) -> CharAppearance
+{
+    const look_t* look = [&]()
+    {
+        if (PChar->getStyleLocked())
+        {
+            return &PChar->mainlook;
+        }
+
+        return &PChar->look;
+    }();
+
+    return {
+        .charid      = PChar->id,
+        .look        = { look->head, look->body, look->hands, look->legs, look->feet, look->main, look->sub, look->ranged },
+        .styleItems  = { PChar->styleItems[SLOT_HEAD], PChar->styleItems[SLOT_BODY], PChar->styleItems[SLOT_HANDS], PChar->styleItems[SLOT_LEGS], PChar->styleItems[SLOT_FEET], PChar->styleItems[SLOT_MAIN], PChar->styleItems[SLOT_SUB], PChar->styleItems[SLOT_RANGED] },
+        .styleLocked = PChar->getStyleLocked(),
+    };
+}
+
+void SaveCharAppearances(const std::vector<CharAppearance>& rows)
+{
+    TracyZoneScoped;
+
+    if (rows.empty())
+    {
+        return;
+    }
+
+    const auto slotRow = [](uint32 charid, const std::array<uint16, 8>& slots)
+    {
+        return std::make_tuple(charid, slots[0], slots[1], slots[2], slots[3], slots[4], slots[5], slots[6], slots[7]);
+    };
+
+    db::transaction(
+        [&]()
+        {
+            // upsert, not update: char_look rows aren't created by the char_insert trigger
+            db::executeBulk(
+                "INSERT INTO char_look (charid, head, body, hands, legs, feet, main, sub, ranged) VALUES (?,?,?,?,?,?,?,?,?) "
+                "ON DUPLICATE KEY UPDATE head = VALUES(head), body = VALUES(body), hands = VALUES(hands), "
+                "legs = VALUES(legs), feet = VALUES(feet), main = VALUES(main), sub = VALUES(sub), ranged = VALUES(ranged)",
+                rows,
+                [&](const CharAppearance& row)
+                {
+                    return slotRow(row.charid, row.look);
+                });
+
+            db::executeBulk(
+                "UPDATE chars SET isstylelocked = ? WHERE charid = ?",
+                rows,
+                [](const CharAppearance& row)
+                {
+                    return std::make_tuple(row.styleLocked, row.charid);
+                });
+
+            db::executeBulk(
+                "INSERT INTO char_style (charid, head, body, hands, legs, feet, main, sub, ranged) VALUES (?,?,?,?,?,?,?,?,?) "
+                "ON DUPLICATE KEY UPDATE head = VALUES(head), body = VALUES(body), hands = VALUES(hands), "
+                "legs = VALUES(legs), feet = VALUES(feet), main = VALUES(main), sub = VALUES(sub), ranged = VALUES(ranged)",
+                rows,
+                [&](const CharAppearance& row)
+                {
+                    return slotRow(row.charid, row.styleItems);
+                });
+        });
 }
 
 /************************************************************************
@@ -6792,20 +6891,13 @@ float AddExpBonus(CCharEntity* PChar, float exp)
         CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
         int16          percentage = dedication->GetPower();
         int16          cap        = dedication->GetSubPower();
-        if (cap == -1)
-        {
-            bonus += std::max<int32>((int32)((exp * percentage) / 100), 0);
-        }
-        else
-        {
-            bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
-            dedication->SetSubPower(cap -= bonus);
+        bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+        dedication->SetSubPower(cap -= bonus);
 
-            if (cap <= 0)
-            {
-                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
-            }
-        } /* CUSTOM INFINITE DEDICATION CAP */
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+        }
     }
 
     int16 rovBonus = 0;
@@ -8178,8 +8270,7 @@ void removeCharFromZone(CCharEntity* PChar)
         PChar->loc.zone->DecreaseZoneCounter(PChar);
     }
 
-    PChar->StatusEffectContainer->SaveStatusEffects(PChar->PSession->shuttingDown == 1);
-    PChar->PersistData();
+    persist::flush(PChar, IsLogout(PChar->PSession->shuttingDown == 1));
     charutils::SavePlayTime(PChar);
     charutils::SaveCharStats(PChar);
     charutils::SaveCharExp(PChar, PChar->GetMJob());

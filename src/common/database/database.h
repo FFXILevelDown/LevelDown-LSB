@@ -30,9 +30,14 @@
 #include <common/database/bound_value.h>
 #include <common/database/result_set.h>
 
+#include <fmt/format.h>
+
 #include <memory>
+#include <stdexcept>
 #include <string>
 #include <string_view>
+#include <tuple>
+#include <type_traits>
 #include <utility>
 
 // @note Everything in sql:: database-land is 1-indexed, not 0-indexed.
@@ -49,6 +54,11 @@ public:
     // UPDATE-like queries, or nullptr if the query is invalid.
     virtual auto execute(const std::string& query, const std::vector<BoundValue>& params) -> std::unique_ptr<ResultSet> = 0;
 
+    // As execute, but sends every row of `params` in one round trip.
+    //
+    // Row width comes from the statement's own placeholder count, so `params` must be a whole number of rows.
+    virtual auto executeBulk(const std::string& query, const std::vector<BoundValue>& params) -> std::unique_ptr<ResultSet> = 0;
+
     // The database name, ie. xidb.
     virtual auto getSchema() -> std::string = 0;
 
@@ -57,6 +67,11 @@ public:
 
     // The version of the database driver, ie. MariaDB Connector/C++ 1.0.3.
     virtual auto getDriverVersion() -> std::string = 0;
+
+    // suppresses the reconnect-and-retry path while a transaction is open
+    virtual void setInTransaction(bool)
+    {
+    }
 };
 
 // Get the active database backend.
@@ -77,6 +92,16 @@ auto preparedStmt(const std::string& rawQuery, Args&&... args) -> std::unique_pt
 
 template <typename... Args>
 auto preparedStmt(Scheduler& scheduler, const std::string& rawQuery, Args&&... args) -> Task<std::unique_ptr<ResultSet>>;
+
+// Send every row of `rows` through `query` in one round trip.
+//
+// `project` turns one row into a tuple of values, one per placeholder, and every row must yield the same types.
+// Numeric columns only.
+//
+// Throws if the statement fails.
+// Call it inside db::transaction, which turns the throw into a rollback.
+template <typename T, typename ProjectFn>
+void executeBulk(const std::string& query, const std::vector<T>& rows, ProjectFn project);
 
 auto escapeString(std::string_view str) -> std::string;
 auto escapeString(const std::string& str) -> std::string;
@@ -102,10 +127,9 @@ auto enableTimers() -> void;
 
 // Execute a transaction with the given transaction function.
 //
-// Will handle maintenance of the autocommit state and rollback the transaction if the transaction
-// function throws. Otherwise will commit the transaction on successful completion of the function.
+// Rolls back if the transaction function throws, otherwise commits.
 //
-// Returns true if the transaction was successful and committed or false if it was rolled back.
+// Returns true only if the COMMIT itself succeeded.
 auto transaction(const Fn<void() const>& transactionFn) -> bool;
 
 auto getTableColumnNames(const std::string& tableName) -> std::vector<std::string>;
@@ -122,6 +146,37 @@ auto preparedStmt(const std::string& rawQuery, Args&&... args) -> std::unique_pt
 
     const auto params = detail::lowerBoundValues(std::forward<Args>(args)...);
     return getDatabase().execute(rawQuery, params);
+}
+
+template <typename T, typename ProjectFn>
+void executeBulk(const std::string& query, const std::vector<T>& rows, ProjectFn project)
+{
+    TracyZoneScoped;
+
+    if (rows.empty())
+    {
+        return;
+    }
+
+    using Row = std::remove_cvref_t<decltype(project(rows.front()))>;
+
+    std::vector<BoundValue> params;
+    params.reserve(rows.size() * std::tuple_size_v<Row>);
+
+    for (const auto& row : rows)
+    {
+        std::apply(
+            [&](const auto&... values)
+            {
+                (detail::lowerBoundValue(params, values), ...);
+            },
+            project(row));
+    }
+
+    if (!getDatabase().executeBulk(query, params))
+    {
+        throw std::runtime_error(fmt::format("bulk statement failed after {} rows: {}", rows.size(), query));
+    }
 }
 
 template <typename... Args>
