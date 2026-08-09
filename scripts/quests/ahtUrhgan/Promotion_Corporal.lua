@@ -9,7 +9,6 @@ local quest = Quest:new(xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.PROMOTION_
 quest.reward =
 {
     keyItem = xi.ki.C_WILDCAT_BADGE,
-    title   = xi.title.CORPORAL,
 }
 
 quest.sections =
