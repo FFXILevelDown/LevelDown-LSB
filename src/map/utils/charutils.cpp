@@ -1167,7 +1167,7 @@ void LoadInventory(CCharEntity* PChar)
                 if (PItem != nullptr && ((PItem->isType(ITEM_EQUIPMENT) || PItem->isType(ITEM_WEAPON)) && !PItem->isSubType(ITEM_CHARGED)))
                 {
                     // check if there are any valid augments to be applied to the item
-                    for (uint8 j = 0; j < 4; ++j)
+                    for (uint8 j = 0; j < 5; ++j) /* CUSTOM 5 AUGMENT SUPPORT */
                     {
                         // found a match, apply the augment
                         if (((CItemEquipment*)PItem)->getAugment(j) != 0)
