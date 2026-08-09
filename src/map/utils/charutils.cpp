@@ -2048,6 +2048,10 @@ void DropItem(CCharEntity* PChar, uint8 container, uint8 slotID, int32 quantity,
 
 bool CanTrade(CCharEntity* PChar, CCharEntity* PTarget)
 {
+    if (PChar && PTarget && PChar->getCharVar("[LevelRatio]Restriction") != PTarget->getCharVar("[LevelRatio]Restriction"))
+    {
+        return false;
+    } /* CUSTOM BRACKET TRADE RESTRICTION */
     if (PChar->m_PMonstrosity != nullptr || PTarget->m_PMonstrosity != nullptr)
     {
         return false;
@@ -5383,20 +5387,24 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99)
+            // === DUAL-ERA CP FORMULA MODIFICATION ===
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER))
             {
-                // Do not grant Capacity points without Job Breaker or Level 99
+                return;
+            }
+
+            uint8 referenceLevel = PMember->GetMLevel(); /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
+            if (referenceLevel != 75 && referenceLevel != 99)
+            {
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
-
-            // Capacity Chains are only granted for Mobs level 100+
-            // Ref: https://www.bg-wiki.com/ffxi/Job_Points
+            int16 levelDiff   = mobLevel - referenceLevel;
             float capacityPoints = 0;
 
-            if (mobLevel > 99)
+            if (mobLevel > referenceLevel)
+            // === END DUAL-ERA CP FORMULA ===
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
@@ -5449,13 +5457,20 @@ uint16 AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints)
         CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
         int16          percentage = commitment->GetPower();
         int16          cap        = commitment->GetSubPower();
-        rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
-        commitment->SetSubPower(cap -= rawBonus);
-
-        if (cap <= 0)
+        if (cap == -1)
         {
-            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+            rawBonus += std::max<int32>(((capacityPoints * percentage) / 100), 0);
         }
+        else
+        {
+            rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+            commitment->SetSubPower(cap -= rawBonus);
+
+            if (cap <= 0)
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+            }
+        } /* CUSTOM INFINITE COMMITMENT CAP */
     }
 
     // Mod::CAPACITY_BONUS is currently used for JP Gifts, and can easily be used elsewhere
@@ -5507,6 +5522,12 @@ void AddCapacityPoints(CCharEntity* PChar, CBaseEntity* PMob, uint32 capacityPoi
     }
 
     capacityPoints = (uint32)(capacityPoints * settings::get<float>("map.EXP_RATE"));
+
+    // Custom 75 Only CP Per Kill Cap
+    if (PChar->GetMLevel() == 75)
+    {
+        capacityPoints = std::min<uint32>(capacityPoints, 5000);
+    } /* CUSTOM 75 CP PER KILL CAP */
 
     if (capacityPoints > 0)
     {
@@ -5959,24 +5980,6 @@ void SaveCharPositions(const std::vector<CharPosition>& rows)
 {
     TracyZoneScoped;
 
-<<<<<<< HEAD
-    if (rows.empty())
-    {
-        return;
-    }
-
-    db::transaction(
-        [&]()
-        {
-            // not an upsert: `chars` has a BEFORE INSERT trigger that fires even on update
-            db::executeBulk(
-                "UPDATE chars SET pos_rot = ?, pos_x = ?, pos_y = ?, pos_z = ?, boundary = ? WHERE charid = ?",
-                rows,
-                [](const CharPosition& row)
-                {
-                    return std::make_tuple(row.rotation, row.x, row.y, row.z, row.boundary, row.charid);
-                });
-=======
     // not an upsert: `chars` has a BEFORE INSERT trigger that fires even on update
     db::executeBulk(
         "UPDATE chars SET pos_rot = ?, pos_x = ?, pos_y = ?, pos_z = ?, boundary = ? WHERE charid = ?",
@@ -5984,7 +5987,6 @@ void SaveCharPositions(const std::vector<CharPosition>& rows)
         [](const CharPosition& row)
         {
             return std::make_tuple(row.rotation, row.x, row.y, row.z, row.boundary, row.charid);
->>>>>>> parent of 6e2fbcaa3d (Revert "Merge remote-tracking branch 'upstream/base' into base")
         });
 }
 
@@ -6901,13 +6903,20 @@ float AddExpBonus(CCharEntity* PChar, float exp)
         CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
         int16          percentage = dedication->GetPower();
         int16          cap        = dedication->GetSubPower();
-        bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
-        dedication->SetSubPower(cap -= bonus);
-
-        if (cap <= 0)
+        if (cap == -1)
         {
-            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+            bonus += std::max<int32>((int32)((exp * percentage) / 100), 0);
         }
+        else
+        {
+            bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+            dedication->SetSubPower(cap -= bonus);
+
+            if (cap <= 0)
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+            }
+        } /* CUSTOM INFINITE DEDICATION CAP */
     }
 
     int16 rovBonus = 0;

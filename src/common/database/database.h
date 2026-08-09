@@ -33,7 +33,6 @@
 #include <fmt/format.h>
 
 #include <memory>
-#include <stdexcept>
 #include <string>
 #include <string_view>
 #include <tuple>
@@ -67,11 +66,6 @@ public:
 
     // The version of the database driver, ie. MariaDB Connector/C++ 1.0.3.
     virtual auto getDriverVersion() -> std::string = 0;
-
-    // suppresses the reconnect-and-retry path while a transaction is open
-    virtual void setInTransaction(bool)
-    {
-    }
 };
 
 // Get the active database backend.
@@ -97,12 +91,6 @@ auto preparedStmt(Scheduler& scheduler, const std::string& rawQuery, Args&&... a
 //
 // `project` turns one row into a tuple of values, one per placeholder, and every row must yield the same types.
 // Numeric columns only.
-<<<<<<< HEAD
-//
-// Throws if the statement fails.
-// Call it inside db::transaction, which turns the throw into a rollback.
-=======
->>>>>>> parent of 6e2fbcaa3d (Revert "Merge remote-tracking branch 'upstream/base' into base")
 template <typename T, typename ProjectFn>
 void executeBulk(const std::string& query, const std::vector<T>& rows, ProjectFn project);
 
@@ -130,9 +118,10 @@ auto enableTimers() -> void;
 
 // Execute a transaction with the given transaction function.
 //
-// Rolls back if the transaction function throws, otherwise commits.
+// Will handle maintenance of the autocommit state and rollback the transaction if the transaction
+// function throws. Otherwise will commit the transaction on successful completion of the function.
 //
-// Returns true only if the COMMIT itself succeeded.
+// Returns true if the transaction was successful and committed or false if it was rolled back.
 auto transaction(const Fn<void() const>& transactionFn) -> bool;
 
 auto getTableColumnNames(const std::string& tableName) -> std::vector<std::string>;
@@ -176,14 +165,7 @@ void executeBulk(const std::string& query, const std::vector<T>& rows, ProjectFn
             project(row));
     }
 
-<<<<<<< HEAD
-    if (!getDatabase().executeBulk(query, params))
-    {
-        throw std::runtime_error(fmt::format("bulk statement failed after {} rows: {}", rows.size(), query));
-    }
-=======
     getDatabase().executeBulk(query, params);
->>>>>>> parent of 6e2fbcaa3d (Revert "Merge remote-tracking branch 'upstream/base' into base")
 }
 
 template <typename... Args>

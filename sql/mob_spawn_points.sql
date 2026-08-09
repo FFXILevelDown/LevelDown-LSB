@@ -6640,22 +6640,22 @@ INSERT INTO `mob_spawn_points` VALUES (16908290,0,'Mammet-22_Zeta','Mammet-22 Ze
 INSERT INTO `mob_spawn_points` VALUES (16908291,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,-642.548,-231.348,510.748,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908292,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,-644.464,-231.148,511.386,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908293,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,-635.540,-231.148,511.712,191,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (16908294,0,'Omega','Omega',2,63,64,-640.000,-231.847,514.000,192,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (16908295,0,'Ultima','Ultima',3,63,64,-640.000,-231.847,514.000,192,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (16908294,0,'Omega','Omega',2,63,64,-640.000,-231.000,516.000,191,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (16908295,0,'Ultima','Ultima',3,63,64,-640.000,-231.000,516.000,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908296,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,-0.050,-151.348,150.723,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908297,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,2.574,-151.605,150.495,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908298,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,-2.567,-151.348,150.699,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908299,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,-4.483,-151.148,151.337,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908300,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,4.441,-151.148,151.663,191,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (16908301,0,'Omega','Omega',2,63,64,0.000,-151.847,154.000,192,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (16908302,0,'Ultima','Ultima',3,63,64,0.000,-151.847,154.000,192,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (16908301,0,'Omega','Omega',2,63,64,-0.019,-151.000,155.951,191,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (16908302,0,'Ultima','Ultima',3,63,64,-0.019,-151.000,155.951,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908303,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,639.926,-71.348,-209.201,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908304,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,642.550,-71.605,-209.429,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908305,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,637.409,-71.348,-209.225,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908306,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,635.493,-71.148,-208.587,191,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (16908307,0,'Mammet-22_Zeta','Mammet-22 Zeta',1,55,56,644.417,-71.148,-208.261,191,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (16908308,0,'Omega','Omega',2,63,64,640.000,-71.847,-206.000,192,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (16908309,0,'Ultima','Ultima',3,63,64,640.000,-71.847,-206.000,192,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (16908308,0,'Omega','Omega',2,63,64,639.957,-71.000,-203.973,191,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (16908309,0,'Ultima','Ultima',3,63,64,639.957,-71.000,-203.973,191,NULL,NULL);
 
 -- The Warrior's Path
 INSERT INTO `mob_spawn_points` VALUES (16908310,0,'Tenzen','Tenzen',4,70,70,-639.985,-231.347,525.910,65,NULL,NULL);
@@ -38993,7 +38993,7 @@ INSERT INTO `mob_spawn_points` VALUES (17215491,0,'Land_Crab','Land Crab',3,5,8,
 INSERT INTO `mob_spawn_points` VALUES (17215492,0,'Mole_Crab','Mole Crab',4,7,8,1.000,1.000,1.000,0,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17215493,0,'Passage_Crab','Passage Crab',5,9,10,1.000,1.000,1.000,0,NULL,NULL);
 
-INSERT INTO `mob_spawn_points` VALUES (17215494,0,'Bubbly_Bernie','Bubbly Bernie',6,9,10,758.276,-1.579,-688.066,22,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (17215494,0,'Bubbly_Bernie','Bubbly Bernie',6,9,10,745.000,-2.000,-671.000,22,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17215495,1,'Huge_Hornet','Huge Hornet',7,1,1,519.620,-1.317,-330.270,37,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17215496,2,'Huge_Hornet','Huge Hornet',7,1,1,540.734,-0.629,-333.375,127,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17215497,0,'Huge_Hornet','Huge Hornet',7,1,1,566.213,2.295,-374.238,98,NULL,NULL);

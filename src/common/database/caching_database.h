@@ -43,9 +43,6 @@ struct ConnectionState
 {
     std::unique_ptr<Connection>                              connection;
     HashMap<std::string, std::unique_ptr<PreparedStatement>> statements;
-
-    // open transaction on this connection
-    bool inTransaction{ false };
 };
 
 } // namespace detail
@@ -55,8 +52,6 @@ class CachingDatabase : public Database
 public:
     auto execute(const std::string& query, const std::vector<BoundValue>& params) -> std::unique_ptr<ResultSet> override;
     auto executeBulk(const std::string& query, const std::vector<BoundValue>& params) -> std::unique_ptr<ResultSet> override;
-
-    void setInTransaction(bool value) override;
 
     auto getSchema() -> std::string override;
     auto getVersion() -> std::string override;
