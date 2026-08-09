@@ -35,9 +35,5 @@ CREATE TABLE `accounts_sessions` (
   `seacom_message` TINYBLOB NULL DEFAULT NULL,
   `last_zoneout_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`charid`),
-  UNIQUE KEY `accid` (`accid`),
-  KEY `idx_accounts_sessions_client_addr` (`client_addr`),
-  KEY `idx_accounts_sessions_linkshellid1` (`linkshellid1`),
-  KEY `idx_accounts_sessions_linkshellid2` (`linkshellid2`),
-  KEY `idx_accounts_sessions_unitychat` (`unitychat`)
+  UNIQUE KEY `accid` (`accid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

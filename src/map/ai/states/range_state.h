@@ -23,8 +23,6 @@
 
 #include "state.h"
 
-struct action_t;
-
 class CRangeState : public CState
 {
 public:
@@ -43,7 +41,6 @@ protected:
     auto Update(timer::time_point tick) -> bool override;
     void Cleanup(timer::time_point tick) override;
     auto CanUseRangedAttack(CBattleEntity* PTarget, bool isEndOfAttack) -> bool;
-    void InterruptRangedAttack(action_t& action);
     auto HasMoved() const -> bool;
 
     // This will likely need to be re-adjusted when states tick more precisely. Changed in 2012. https://wiki.ffo.jp/html/1734.html

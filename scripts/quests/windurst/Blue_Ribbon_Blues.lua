@@ -25,7 +25,7 @@ quest.sections =
             return status == xi.questStatus.QUEST_AVAILABLE and
                 player:hasCompletedQuest(xi.questLog.WINDURST, xi.quest.id.windurst.WATER_WAY_TO_GO) and
                 player:getFameLevel(xi.fameArea.WINDURST) >= 5 and
-                not xi.quest.getMustZone(player, xi.questLog.WINDURST, xi.quest.id.windurst.WATER_WAY_TO_GO)
+                not quest:getMustZone(player)
         end,
 
         [xi.zone.WINDURST_WATERS] =

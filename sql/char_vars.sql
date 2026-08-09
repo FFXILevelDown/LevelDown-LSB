@@ -15,7 +15,5 @@ CREATE TABLE IF NOT EXISTS `char_vars` (
   `varname` varchar(64) NOT NULL,
   `value` int(11) NOT NULL,
   `expiry` int(11) NOT NULL DEFAULT 0,
-  PRIMARY KEY (`charid`,`varname`),
-  KEY `idx_char_vars_varname` (`varname`),
-  KEY `idx_char_vars_expiry` (`expiry`)
+  PRIMARY KEY (`charid`,`varname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

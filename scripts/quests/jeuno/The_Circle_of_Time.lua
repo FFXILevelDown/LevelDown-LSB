@@ -1,5 +1,5 @@
 -----------------------------------
--- The Circle of Time (BRD AF3)
+-- The Circle of Time
 -----------------------------------
 -- Log ID: 3, Quest ID: 65
 -- !addquest 3 65

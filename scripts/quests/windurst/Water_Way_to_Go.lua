@@ -4,13 +4,14 @@
 -- !addquest 2 16
 -- Ohbiru-Dohbiru : !pos 23 -5 -193 238
 -- Giddeus Spring : !pos -258 -2 -249 145
+-- TODO: Wikis claim that this can be repeated. However, captures don't indicate this. Needs testing/verifying.
 -----------------------------------
 
 local quest = Quest:new(xi.questLog.WINDURST, xi.quest.id.windurst.WATER_WAY_TO_GO)
 
 quest.reward =
 {
-    fame     = 16,
+    fame = 16,
     fameArea = xi.fameArea.WINDURST,
 }
 
@@ -21,7 +22,7 @@ quest.sections =
             return status == xi.questStatus.QUEST_AVAILABLE and
                 player:hasCompletedQuest(xi.questLog.WINDURST, xi.quest.id.windurst.OVERNIGHT_DELIVERY) and
                 player:getFameLevel(xi.fameArea.WINDURST) >= 3 and
-                not xi.quest.getMustZone(player, xi.questLog.WINDURST, xi.quest.id.windurst.OVERNIGHT_DELIVERY)
+                not quest:getMustZone(player)
         end,
 
         [xi.zone.WINDURST_WATERS] =
@@ -52,7 +53,7 @@ quest.sections =
             ['Giddeus_Spring'] =
             {
                 onTrade = function(player, npc, trade)
-                    if npcUtil.tradeMatches(trade, { { xi.item.RHINOSTERY_CANTEEN, 1 } }) then
+                    if npcUtil.tradeHasExactly(trade, xi.item.RHINOSTERY_CANTEEN) then
                         return quest:progressEvent(55)
                     end
                 end,
@@ -62,7 +63,7 @@ quest.sections =
             {
                 [55] = function(player, csid, option, npc)
                     if npcUtil.giveItem(player, xi.item.CANTEEN_OF_GIDDEUS_WATER) then
-                        player:tradeComplete()
+                        player:confirmTrade()
                     end
                 end,
             },
@@ -73,7 +74,7 @@ quest.sections =
             ['Ohbiru-Dohbiru'] =
             {
                 onTrade = function(player, npc, trade)
-                    if npcUtil.tradeMatches(trade, { { xi.item.CANTEEN_OF_GIDDEUS_WATER, 1 } }) then
+                    if npcUtil.tradeHasExactly(trade, xi.item.CANTEEN_OF_GIDDEUS_WATER) then
                         return quest:progressEvent(355, 900)
                     end
                 end,
@@ -85,7 +86,7 @@ quest.sections =
                     then
                         return quest:progressEvent(354)
                     else
-                        return quest:event(353)
+                        return quest:progressEvent(353)
                     end
                 end,
             },
@@ -98,9 +99,10 @@ quest.sections =
 
                 [355] = function(player, csid, option, npc)
                     if quest:complete(player) then
-                        player:tradeComplete()
+                        player:confirmTrade()
                         -- Note: Message display for gil reward is handled by the event
                         player:addGil(900)
+                        player:setLocalVar('Quest[2][17]mustZone', 1)
                         quest:setMustZone(player)
                     end
                 end,
@@ -108,98 +110,15 @@ quest.sections =
         },
     },
 
-    -- Quest complete section.
     {
         check = function(player, status, vars)
-            return status == xi.questStatus.QUEST_COMPLETED
+            return status == xi.questStatus.QUEST_COMPLETED and
+                quest:getMustZone(player)
         end,
-
-        [xi.zone.GIDDEUS] =
-        {
-            ['Giddeus_Spring'] =
-            {
-                onTrade = function(player, npc, trade)
-                    if
-                        quest:getVar(player, 'Prog') == 1 and
-                        npcUtil.tradeMatches(trade, { { xi.item.RHINOSTERY_CANTEEN, 1 } })
-                    then
-                        return quest:progressEvent(55)
-                    end
-                end,
-            },
-
-            onEventFinish =
-            {
-                [55] = function(player, csid, option, npc)
-                    if npcUtil.giveItem(player, xi.item.CANTEEN_OF_GIDDEUS_WATER) then
-                        player:tradeComplete()
-                    end
-                end,
-            },
-        },
 
         [xi.zone.WINDURST_WATERS] =
         {
-            ['Ohbiru-Dohbiru'] =
-            {
-                onTrade = function(player, npc, trade)
-                    if npcUtil.tradeMatches(trade, { { xi.item.CANTEEN_OF_GIDDEUS_WATER, 1 } }) then
-                        return quest:progressEvent(355, 900)
-                    end
-                end,
-
-                onTrigger = function(player, npc)
-                    -- Default after completing without zoning.
-                    if quest:getMustZone(player) then
-                        return quest:event(356, 0, xi.item.CANTEEN_OF_GIDDEUS_WATER)
-                    end
-
-                    local questProgress = quest:getVar(player, 'Prog')
-
-                    -- Re-start quest.
-                    if questProgress == 0 then
-                        if player:getFameLevel(xi.fameArea.WINDURST) < 5 then
-                            return quest:progressEvent(352, 0, xi.item.CANTEEN_OF_GIDDEUS_WATER)
-                        end
-
-                    -- Quest re-started.
-                    elseif questProgress == 1 then
-                        if
-                            not player:findItem(xi.item.RHINOSTERY_CANTEEN) and
-                            not player:findItem(xi.item.CANTEEN_OF_GIDDEUS_WATER)
-                        then
-                            return quest:progressEvent(354)
-                        else
-                            return quest:event(353)
-                        end
-                    end
-                end,
-            },
-
-            onEventFinish =
-            {
-                [352] = function(player, csid, option, npc)
-                    if
-                        option == 0 and
-                        npcUtil.giveItem(player, xi.item.RHINOSTERY_CANTEEN)
-                    then
-                        quest:begin(player)
-                        quest:setVar(player, 'Prog', 1)
-                    end
-                end,
-
-                [354] = function(player, csid, option, npc)
-                    npcUtil.giveItem(player, xi.item.RHINOSTERY_CANTEEN)
-                end,
-
-                [355] = function(player, csid, option, npc)
-                    if quest:complete(player) then
-                        player:tradeComplete()
-                        player:addGil(900)
-                        quest:setMustZone(player)
-                    end
-                end,
-            },
+            ['Ohbiru-Dohbiru'] = quest:progressEvent(356, 0, xi.item.CANTEEN_OF_GIDDEUS_WATER)
         },
     },
 }
