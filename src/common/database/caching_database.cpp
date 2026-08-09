@@ -201,11 +201,14 @@ auto db::CachingDatabase::executeBulk(const std::string& rawQuery, const std::ve
     return runWithRetry(rawQuery, operation);
 }
 
+<<<<<<< HEAD
 void db::CachingDatabase::setInTransaction(bool value)
 {
     getState().inTransaction = value;
 }
 
+=======
+>>>>>>> parent of 6e2fbcaa3d (Revert "Merge remote-tracking branch 'upstream/base' into base")
 auto db::CachingDatabase::getSchema() -> std::string
 {
     TracyZoneScoped;

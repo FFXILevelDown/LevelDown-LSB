@@ -97,9 +97,12 @@ auto preparedStmt(Scheduler& scheduler, const std::string& rawQuery, Args&&... a
 //
 // `project` turns one row into a tuple of values, one per placeholder, and every row must yield the same types.
 // Numeric columns only.
+<<<<<<< HEAD
 //
 // Throws if the statement fails.
 // Call it inside db::transaction, which turns the throw into a rollback.
+=======
+>>>>>>> parent of 6e2fbcaa3d (Revert "Merge remote-tracking branch 'upstream/base' into base")
 template <typename T, typename ProjectFn>
 void executeBulk(const std::string& query, const std::vector<T>& rows, ProjectFn project);
 
@@ -173,10 +176,14 @@ void executeBulk(const std::string& query, const std::vector<T>& rows, ProjectFn
             project(row));
     }
 
+<<<<<<< HEAD
     if (!getDatabase().executeBulk(query, params))
     {
         throw std::runtime_error(fmt::format("bulk statement failed after {} rows: {}", rows.size(), query));
     }
+=======
+    getDatabase().executeBulk(query, params);
+>>>>>>> parent of 6e2fbcaa3d (Revert "Merge remote-tracking branch 'upstream/base' into base")
 }
 
 template <typename... Args>
