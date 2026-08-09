@@ -24,8 +24,6 @@
 #include "entities/char_entity.h"
 #include "status_effect.h"
 
-class CAutomatonEntity;
-
 namespace puppetutils
 {
 

@@ -22,7 +22,6 @@
 #pragma once
 
 #include "aman.h"
-#include "enums/char_persist.h"
 #include "event_info.h"
 #include "gmcall_container.h"
 #include "inventory_sync_state.h"
@@ -41,15 +40,18 @@
 #include <common/types/maybe.h>
 
 #include <array>
+#include <bitset>
 #include <deque>
+#include <map>
 #include <memory>
+#include <set>
 #include <unordered_set>
 
-#include "persist_batch.h"
-
+#include "automaton_entity.h"
 #include "battle_entity.h"
 #include "linkshell.h"
 #include "maze.h"
+#include "packets/s2c/base.h"
 #include "pet_entity.h"
 
 #include <map/entities/types/automaton_info.h>
@@ -61,6 +63,8 @@
 #define MAX_MISSIONAREA  15
 #define MAX_MISSIONID    851
 #define MAX_ABYSSEAZONES 9
+
+#define TIME_BETWEEN_PERSIST 2min
 
 class CItemWeapon;
 class CTrustEntity;
@@ -234,6 +238,13 @@ enum CHAR_SUBSTATE
     SUBSTATE_NONE = 0,
     SUBSTATE_IN_CS,
     SUBSTATE_LAST,
+};
+
+enum CHAR_PERSIST : uint8
+{
+    EQUIP    = 0x01,
+    POSITION = 0x02,
+    EFFECTS  = 0x04,
 };
 
 enum class WarpRequest : uint8
@@ -687,10 +698,9 @@ public:
     void ClearTrusts();
     void RemoveTrust(CTrustEntity*);
 
-    auto persist() const -> CharPersist;
-    void setPersist(CharPersist toPersist);
-    void clearPersist(CharPersist toPersist);
-    void takeCharVarChanges(std::vector<CharVarChange>& out);
+    void RequestPersist(CHAR_PERSIST toPersist);
+    bool PersistData();
+    bool PersistData(timer::time_point tick);
 
     auto Tick(timer::time_point) -> Task<void> override;
     void PostTick() override;
@@ -818,7 +828,8 @@ private:
     std::unordered_set<std::string>                        charVarChanges;
     std::unordered_set<uint32>                             charTriggerAreaIDs; // Holds any TriggerArea IDs that the player is currently within the bounds of
 
-    CharPersist persist_{};
+    uint8             dataToPersist = 0;
+    timer::time_point nextDataPersistTime{};
 
     // TODO: Don't use raw ptrs for this, but don't duplicate whole packets with unique_ptr either.
     std::deque<std::unique_ptr<CBasicPacket>> PacketList;          // The list of packets to be sent to the character during the next network cycle

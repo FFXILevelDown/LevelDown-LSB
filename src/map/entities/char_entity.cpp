@@ -1071,32 +1071,71 @@ void CCharEntity::ClearTrusts()
     ReloadPartyInc();
 }
 
-auto CCharEntity::persist() const -> CharPersist
+void CCharEntity::RequestPersist(CHAR_PERSIST toPersist)
 {
-    return persist_;
+    dataToPersist |= toPersist;
 }
 
-void CCharEntity::setPersist(CharPersist toPersist)
+bool CCharEntity::PersistData()
 {
-    persist_ |= toPersist;
-}
+    bool didPersist = false;
 
-void CCharEntity::clearPersist(CharPersist toPersist)
-{
-    persist_ &= ~toPersist;
-}
-
-void CCharEntity::takeCharVarChanges(std::vector<CharVarChange>& out)
-{
-    out.reserve(out.size() + charVarChanges.size());
-
-    for (const auto& charVarName : charVarChanges)
+    if (!charVarChanges.empty())
     {
-        const auto& cached = charVarCache[charVarName];
-        out.push_back({ id, charVarName, cached.first, cached.second });
+        for (auto&& charVarName : charVarChanges)
+        {
+            charutils::PersistCharVar(this->id, charVarName.c_str(), charVarCache[charVarName].first, charVarCache[charVarName].second);
+        }
+
+        charVarChanges.clear();
+        didPersist = true;
     }
 
-    charVarChanges.clear();
+    if (!dataToPersist)
+    {
+        return didPersist;
+    }
+    else
+    {
+        didPersist = true;
+    }
+
+    if (dataToPersist & CHAR_PERSIST::EQUIP)
+    {
+        charutils::SaveCharEquip(this);
+        charutils::SaveCharLook(this);
+    }
+
+    if (dataToPersist & CHAR_PERSIST::POSITION)
+    {
+        charutils::SaveCharPosition(this);
+    }
+
+    if (dataToPersist & CHAR_PERSIST::EFFECTS)
+    {
+        StatusEffectContainer->SaveStatusEffects(true);
+    }
+
+    /* TODO
+    if (dataToPersist & CHAR_PERSIST::LINKSHELL)
+    {
+        charutils::SaveCharLinkshells(this);
+    }
+    */
+
+    dataToPersist = 0;
+    return didPersist;
+}
+
+bool CCharEntity::PersistData(timer::time_point tick)
+{
+    if (tick < nextDataPersistTime || !PersistData())
+    {
+        return false;
+    }
+
+    nextDataPersistTime = tick + TIME_BETWEEN_PERSIST;
+    return true;
 }
 
 auto CCharEntity::Tick(timer::time_point tick) -> Task<void>

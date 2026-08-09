@@ -68,8 +68,6 @@ public:
     void sessionCleanup() const;
     void garbageCollect() const;
 
-    auto persistSweep() -> Task<void>;
-
     //
     // Commands callbacks
     //
@@ -100,7 +98,6 @@ private:
     Maybe<Scheduler::Token> persistVolatileServerVarsToken_;
     Maybe<Scheduler::Token> pumpIPCToken_;
     Maybe<Scheduler::Token> flushStatisticsToken_;
-    Maybe<Scheduler::Token> persistSweepToken_;
 
     std::unique_ptr<MapStatistics> mapStatistics_;
     std::unique_ptr<MapNetworking> networking_;

@@ -26,7 +26,6 @@
 #include <common/database/database.h>
 #include <common/database/prepared_statement.h>
 
-#include <common/types/fn.h>
 #include <common/types/hash_map.h>
 
 #include <memory>
@@ -51,7 +50,6 @@ class CachingDatabase : public Database
 {
 public:
     auto execute(const std::string& query, const std::vector<BoundValue>& params) -> std::unique_ptr<ResultSet> override;
-    auto executeBulk(const std::string& query, const std::vector<BoundValue>& params) -> std::unique_ptr<ResultSet> override;
 
     auto getSchema() -> std::string override;
     auto getVersion() -> std::string override;
@@ -63,14 +61,6 @@ protected:
 private:
     // The calling thread's connection state for this backend, connecting lazily on first use.
     auto getState() -> detail::ConnectionState&;
-
-    // Find-or-prepare the cached statement for this query on the given connection.
-    auto prepareCached(detail::ConnectionState& connState, const std::string& query) -> PreparedStatement&;
-
-    // Validate the query, then run `operation` on this thread's connection, retrying on connection loss.
-    //
-    // Terminates if the connection can't be re-established.
-    auto runWithRetry(const std::string& query, const Fn<std::unique_ptr<ResultSet>(detail::ConnectionState&) const>& operation) -> std::unique_ptr<ResultSet>;
 };
 
 } // namespace db

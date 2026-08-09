@@ -23,7 +23,6 @@
 #include "ai/ai_container.h"
 #include "attackround.h"
 #include "data/enums/mob_mod.h"
-#include "entities/automaton_entity.h"
 #include "entities/battle_entity.h"
 #include "items/item_weapon.h"
 #include "job_points.h"
