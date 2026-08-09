@@ -1167,7 +1167,7 @@ void LoadInventory(CCharEntity* PChar)
                 if (PItem != nullptr && ((PItem->isType(ITEM_EQUIPMENT) || PItem->isType(ITEM_WEAPON)) && !PItem->isSubType(ITEM_CHARGED)))
                 {
                     // check if there are any valid augments to be applied to the item
-                    for (uint8 j = 0; j < 4; ++j)
+                    for (uint8 j = 0; j < 5; ++j) /* CUSTOM 5 AUGMENT SUPPORT */
                     {
                         // found a match, apply the augment
                         if (((CItemEquipment*)PItem)->getAugment(j) != 0)
@@ -5387,24 +5387,20 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            // === DUAL-ERA CP FORMULA MODIFICATION ===
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER))
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99) /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
             {
-                return;
-            }
-
-            uint8 referenceLevel = PMember->GetMLevel(); /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
-            if (referenceLevel != 75 && referenceLevel != 99)
-            {
+                // Do not grant Capacity points without Job Breaker or Level 99
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - referenceLevel;
+            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
+
+            // Capacity Chains are only granted for Mobs level 100+
+            // Ref: https://www.bg-wiki.com/ffxi/Job_Points
             float capacityPoints = 0;
 
-            if (mobLevel > referenceLevel)
-            // === END DUAL-ERA CP FORMULA ===
+            if (mobLevel > 99)
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
@@ -5457,20 +5453,13 @@ uint16 AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints)
         CStatusEffect* commitment = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Commitment);
         int16          percentage = commitment->GetPower();
         int16          cap        = commitment->GetSubPower();
-        if (cap == -1)
-        {
-            rawBonus += std::max<int32>(((capacityPoints * percentage) / 100), 0);
-        }
-        else
-        {
-            rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
-            commitment->SetSubPower(cap -= rawBonus);
+        rawBonus += std::clamp<int32>(((capacityPoints * percentage) / 100), 0, cap);
+        commitment->SetSubPower(cap -= rawBonus);
 
-            if (cap <= 0)
-            {
-                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
-            }
-        } /* CUSTOM INFINITE COMMITMENT CAP */
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Commitment);
+        }
     }
 
     // Mod::CAPACITY_BONUS is currently used for JP Gifts, and can easily be used elsewhere
@@ -5980,13 +5969,22 @@ void SaveCharPositions(const std::vector<CharPosition>& rows)
 {
     TracyZoneScoped;
 
-    // not an upsert: `chars` has a BEFORE INSERT trigger that fires even on update
-    db::executeBulk(
-        "UPDATE chars SET pos_rot = ?, pos_x = ?, pos_y = ?, pos_z = ?, boundary = ? WHERE charid = ?",
-        rows,
-        [](const CharPosition& row)
+    if (rows.empty())
+    {
+        return;
+    }
+
+    db::transaction(
+        [&]()
         {
-            return std::make_tuple(row.rotation, row.x, row.y, row.z, row.boundary, row.charid);
+            // not an upsert: `chars` has a BEFORE INSERT trigger that fires even on update
+            db::executeBulk(
+                "UPDATE chars SET pos_rot = ?, pos_x = ?, pos_y = ?, pos_z = ?, boundary = ? WHERE charid = ?",
+                rows,
+                [](const CharPosition& row)
+                {
+                    return std::make_tuple(row.rotation, row.x, row.y, row.z, row.boundary, row.charid);
+                });
         });
 }
 
@@ -6903,20 +6901,13 @@ float AddExpBonus(CCharEntity* PChar, float exp)
         CStatusEffect* dedication = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Dedication);
         int16          percentage = dedication->GetPower();
         int16          cap        = dedication->GetSubPower();
-        if (cap == -1)
-        {
-            bonus += std::max<int32>((int32)((exp * percentage) / 100), 0);
-        }
-        else
-        {
-            bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
-            dedication->SetSubPower(cap -= bonus);
+        bonus += std::clamp<int32>((int32)((exp * percentage) / 100), 0, cap);
+        dedication->SetSubPower(cap -= bonus);
 
-            if (cap <= 0)
-            {
-                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
-            }
-        } /* CUSTOM INFINITE DEDICATION CAP */
+        if (cap <= 0)
+        {
+            PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Dedication);
+        }
     }
 
     int16 rovBonus = 0;

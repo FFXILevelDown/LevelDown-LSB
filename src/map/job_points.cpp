@@ -15,7 +15,6 @@
 */
 
 #include "job_points.h"
-#include "lua/luautils.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
 
@@ -308,9 +307,9 @@ void RefreshGiftMods(CCharEntity* PChar)
         currentGifts->clear();
     }
 
-    // === DUAL-ERA MULTI-TIER GIFT SYSTEM ===
     for (auto&& gift : jpGifts[jobId])
     {
+        // === DUAL-ERA MULTI-TIER GIFT SYSTEM ===
         if (gift.jpRequired > totalJpSpent || (PChar->GetMLevel() != 75 && PChar->GetMLevel() < 99))
         {
             break;

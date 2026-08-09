@@ -20,7 +20,6 @@
 */
 
 #include "char_status.h"
-#include "job_points.h"
 
 #include "aman.h"
 

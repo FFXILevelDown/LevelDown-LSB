@@ -44,7 +44,6 @@ auto GP_CLI_COMMAND_BAZAAR_BUY::validate(MapSession* PSession, const CCharEntity
 
 void GP_CLI_COMMAND_BAZAAR_BUY::process(MapSession* PSession, CCharEntity* PChar) const
 {
-    // FIX: Updated .targid to .ActIndex to match EntityId struct refactor
     auto* PBracketCheckEntity = PChar->GetEntity(PChar->BazaarID.ActIndex, TYPE_PC);
     if (PBracketCheckEntity && PChar) {
         auto* PBracketCheckTarget = static_cast<CCharEntity*>(PBracketCheckEntity);
@@ -52,7 +51,6 @@ void GP_CLI_COMMAND_BAZAAR_BUY::process(MapSession* PSession, CCharEntity* PChar
             return;
         }
     } /* CUSTOM BRACKET BAZAAR RESTRICTION */
-
     auto* PEntity = PChar->BazaarID.resolve<CCharEntity>();
     if (!PEntity)
     {
