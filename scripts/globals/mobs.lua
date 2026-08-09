@@ -211,17 +211,9 @@ xi.mob.phOnDespawn = function(ph, phNmId, chance, cooldown, params)
         return false
     end
 
-    -- On an NMs PH death we need to disable every mob that is inside the slot so it doesnt re-roll and pop the other mob in the slot
-    local phSlotMobs = ph:getSpawnSlotMobs()
-    if #phSlotMobs == 0 then
-        phSlotMobs = { phId } -- Set the ph to the only mob in the list if it is just a single slotted mob (aka no slot)
-    end
-
-    -- Disallow the entire slot to spawn
-    for _, slotMemberId in ipairs(phSlotMobs) do
-        DisallowRespawn(slotMemberId, true)
-    end
-
+    -- on PH death, replace PH repop with NM repop
+    -- TODO, fetch phId's spawn slot and disable respawn for all mobs in that spawn slot
+    DisallowRespawn(phId, true)
     DisallowRespawn(nmId, false)
 
     -- Update mob's spawn position, if available
@@ -236,12 +228,7 @@ xi.mob.phOnDespawn = function(ph, phNmId, chance, cooldown, params)
         -- on NM death, replace NM repop with PH repop
         DisallowRespawn(nmId, true)
         if not params.doNotEnablePhSpawn then
-            for _, slotMemberId in ipairs(phSlotMobs) do
-                if slotMemberId ~= nmId then
-                    DisallowRespawn(slotMemberId, false)
-                end
-            end
-
+            DisallowRespawn(phId, false)
             local phMob = GetMobByID(phId)
             if phMob then
                 phMob:setRespawnTime(GetMobRespawnTime(phId))

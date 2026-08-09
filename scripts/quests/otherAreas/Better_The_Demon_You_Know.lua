@@ -12,8 +12,7 @@ local quest = Quest:new(xi.questLog.OTHER_AREAS, xi.quest.id.otherAreas.BETTER_T
 
 quest.reward =
 {
-    item  = xi.item.GOBLIN_GRENADE,
-    title = xi.title.APOSTATE_FOR_HIRE,
+    item = xi.item.GOBLIN_GRENADE,
 }
 
 quest.sections =
