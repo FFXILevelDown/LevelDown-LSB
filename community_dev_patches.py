@@ -3,7 +3,17 @@ import glob
 import re
 import importlib.util
 
-PATCH_DIR = os.path.join("modules", "LevelDown Custom Modules", "cpp", "patchs")
+# 1. Automatically find the project root directory containing the 'src' folder
+def find_project_root():
+    current_dir = os.path.abspath(os.path.dirname(__file__))
+    while current_dir != os.path.dirname(current_dir):
+        if os.path.exists(os.path.join(current_dir, "src", "map")):
+            return current_dir
+        current_dir = os.path.dirname(current_dir)
+    return os.getcwd() # Fallback to current working directory
+
+PROJECT_ROOT = find_project_root()
+PATCH_DIR = os.path.join(PROJECT_ROOT, "modules", "LevelDown Custom Modules", "cpp", "patchs")
 
 def apply_patch_module(module_path):
     # Load module dynamically
@@ -19,6 +29,10 @@ def apply_patch_module(module_path):
     if not filepath or not marker:
         print(f"[-] Skipping invalid patch file: {module_name}.py")
         return False
+
+    # 2. Convert relative TARGET_FILE path into an absolute path anchored at server root
+    if not os.path.isabs(filepath):
+        filepath = os.path.join(PROJECT_ROOT, filepath)
 
     if not os.path.exists(filepath):
         print(f"[-] Error: Could not find target file {filepath}")
@@ -56,7 +70,8 @@ def apply_patch_module(module_path):
 def main():
     print("=======================================================================")
     print("  LevelDown Modular C++ Patch Loader")
-    print("=======================================================================\n")
+    print("=======================================================================")
+    print(f"[+] Server Root Detected: {PROJECT_ROOT}\n")
 
     if not os.path.exists(PATCH_DIR):
         print(f"[-] Directory does not exist: {PATCH_DIR}")

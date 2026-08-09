@@ -1,0 +1,355 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "ecosystems.schema.json",
+   "title": "Ecosystems",
+   "description": "The ecosystem, family, and species tree with inherited mob attributes at every level.",
+   "type": "object",
+   "properties": {
+      "ecosystems": {
+         "type": "object",
+         "additionalProperties": {
+            "type": "object",
+            "properties": {
+               "attributes": {
+                  "anyOf": [
+                     {
+                        "$ref": "#/$defs/mob_attributes"
+                     },
+                     {
+                        "type": "null"
+                     }
+                  ],
+                  "description": "Attribute overrides inherited by families in this ecosystem."
+               },
+               "families": {
+                  "anyOf": [
+                     {
+                        "type": "object",
+                        "additionalProperties": {
+                           "type": "object",
+                           "properties": {
+                              "attributes": {
+                                 "anyOf": [
+                                    {
+                                       "$ref": "#/$defs/mob_attributes"
+                                    },
+                                    {
+                                       "type": "null"
+                                    }
+                                 ],
+                                 "description": "Attribute overrides inherited by species in this family."
+                              },
+                              "id": {
+                                 "$ref": "#/$defs/uint16_t",
+                                 "description": "Unique family ID. To be deprecated.",
+                                 "minimum": 1,
+                                 "maximum": 65535
+                              },
+                              "species": {
+                                 "anyOf": [
+                                    {
+                                       "type": "object",
+                                       "additionalProperties": {
+                                          "type": "object",
+                                          "properties": {
+                                             "attributes": {
+                                                "anyOf": [
+                                                   {
+                                                      "$ref": "#/$defs/mob_attributes"
+                                                   },
+                                                   {
+                                                      "type": "null"
+                                                   }
+                                                ],
+                                                "description": "Attribute overrides for this species."
+                                             },
+                                             "id": {
+                                                "$ref": "#/$defs/uint16_t",
+                                                "description": "Unique species ID. To be deprecated.",
+                                                "minimum": 1,
+                                                "maximum": 65535
+                                             }
+                                          },
+                                          "additionalProperties": false,
+                                          "required": [
+                                             "id"
+                                          ]
+                                       }
+                                    },
+                                    {
+                                       "type": "null"
+                                    }
+                                 ],
+                                 "description": "Species in this family, keyed by name. Names must be unique across all ecosystems."
+                              }
+                           },
+                           "additionalProperties": false,
+                           "required": [
+                              "id"
+                           ]
+                        }
+                     },
+                     {
+                        "type": "null"
+                     }
+                  ],
+                  "description": "Families in this ecosystem, keyed by name. Names must be unique across all ecosystems."
+               },
+               "id": {
+                  "$ref": "#/$defs/uint8_t",
+                  "description": "Unique ecosystem ID. To be deprecated.",
+                  "minimum": 0,
+                  "maximum": 255
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "id"
+            ]
+         },
+         "description": "Ecosystems keyed by name."
+      },
+      "meta": {
+         "$ref": "_meta.schema.json"
+      }
+   },
+   "additionalProperties": false,
+   "$defs": {
+      "StatRank": {
+         "type": "string",
+         "title": "StatRank",
+         "enum": [
+            "none",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+         ]
+      },
+      "mob_attributes": {
+         "type": "object",
+         "properties": {
+            "charmable": {
+               "type": [
+                  "boolean",
+                  "null"
+               ],
+               "description": "Whether the entity can be charmed. Omitted values inherit; defaults to false."
+            },
+            "detects": {
+               "anyOf": [
+                  {
+                     "type": "array",
+                     "items": {
+                        "type": "string",
+                        "title": "Detects",
+                        "enum": [
+                           "none",
+                           "sight",
+                           "hearing",
+                           "lowhp",
+                           "magic",
+                           "ability",
+                           "scent"
+                        ]
+                     }
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Detection mechanisms. Omitted values inherit; defaults to an empty list. Redefine the entire list when overriding.",
+               "uniqueItems": true
+            },
+            "element": {
+               "anyOf": [
+                  {
+                     "type": "string",
+                     "title": "Element",
+                     "enum": [
+                        "none",
+                        "fire",
+                        "ice",
+                        "wind",
+                        "earth",
+                        "thunder",
+                        "water",
+                        "light",
+                        "dark"
+                     ]
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Elemental affinity override. Omitted values inherit; defaults to none."
+            },
+            "speed": {
+               "anyOf": [
+                  {
+                     "$ref": "#/$defs/uint8_t"
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Movement and animation speed override. Omitted values inherit; defaults to 40. 0 is immobile.",
+               "minimum": 0,
+               "maximum": 255
+            },
+            "stats": {
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "acc": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to a."
+                        },
+                        "agi": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "att": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to a."
+                        },
+                        "chr": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "def": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "dex": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "eva": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "int": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "mnd": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "str": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        },
+                        "vit": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/StatRank"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Inherits when omitted; defaults to c."
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Stat rank overrides from a-g. Lower is better; attack and accuracy only handle a-e. Omitted ranks inherit."
+            }
+         },
+         "additionalProperties": false
+      },
+      "uint16_t": {
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 65535
+      },
+      "uint8_t": {
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 255
+      }
+   },
+   "required": [
+      "ecosystems"
+   ]
+}

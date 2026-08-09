@@ -24,7 +24,8 @@
 #include "enums/four_cc.h"
 #include "utils/battleutils.h"
 
-void action_result_t::recordSkillchain(const ActionProcSkillChain effect, const int16_t dmg)
+// Change 'const int16_t dmg' to 'const int32_t dmg'
+void action_result_t::recordSkillchain(const ActionProcSkillChain effect, const int32_t dmg)
 {
     if (dmg < 0)
     {
