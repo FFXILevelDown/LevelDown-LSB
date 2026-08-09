@@ -66,8 +66,6 @@ void GP_CLI_COMMAND_POS::process(MapSession* PSession, CCharEntity* PChar) const
         PChar->loc.p.rotation = newRotation;
 
         PChar->m_TargID = newTargID;
-
-        PChar->m_lastMoveDistance = distance(PChar->m_previousLocation.p, PChar->loc.p, true);
     }
 
     if (moved)

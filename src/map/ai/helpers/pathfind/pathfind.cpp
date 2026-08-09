@@ -401,10 +401,12 @@ auto CPathFind::FindRandomPath(const position_t& start, float maxRadius, uint8 m
     turnPoints_ = std::move(*turnPoints);
 
     // Path to the first turn only; later turns chain in FinishedPath().
-    // Turns are sampled around the anchor, but the walk starts from wherever the owner is.
     if (!turnPoints_.empty())
     {
-        FindPathInternal(owner_->position(), turnPoints_[0]);
+        if (auto result = navMesh().findPath(start, turnPoints_[0]))
+        {
+            path_.assign(std::move(result->points), false);
+        }
     }
 
     return !path_.empty();

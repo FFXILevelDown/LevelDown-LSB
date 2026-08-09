@@ -16,7 +16,6 @@
 
 #include "spawn_slot.h"
 
-#include "ai/ai_container.h"
 #include "entities/mob_entity.h"
 #include "spawn_handler.h"
 #include "zone.h"
@@ -57,7 +56,7 @@ auto SpawnSlot::TrySpawn(const Maybe<uint32> specificMobId) -> bool
             return false;
         }
 
-        if (!it->mob->PAI->IsSpawned() && (!spawnHandler || spawnHandler->canSpawnNow(it->mob)))
+        if (!it->mob->isAlive() && (!spawnHandler || spawnHandler->canSpawnNow(it->mob)))
         {
             it->mob->m_AllowRespawn = true;
             it->mob->Spawn();
@@ -77,7 +76,7 @@ auto SpawnSlot::TrySpawn(const Maybe<uint32> specificMobId) -> bool
 
     for (auto&& entry : entries)
     {
-        if (entry.mob->PAI->IsSpawned())
+        if (entry.mob->isAlive())
         {
             allowedSpawn = entry.mob;
             break;

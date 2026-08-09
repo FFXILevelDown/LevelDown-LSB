@@ -184,10 +184,10 @@ g_mixins.families.aern = function(aernMob)
 
         if target then
             targetID = target:getID()
+        end
 
-            if target:isPet() and target:getMaster() then
-                masterID = target:getMaster():getID()
-            end
+        if target:isPet() and target:getMaster() then
+            masterID = target:getMaster():getID()
         end
 
         mob:timer(12000, function(mobArg)

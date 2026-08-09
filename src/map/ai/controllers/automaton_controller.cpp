@@ -1584,17 +1584,10 @@ auto CAutomatonController::TryTPMove() -> bool
 
         bool attemptChain = (PAutomaton->getMod(xi::Mod::AUTO_TP_EFFICIENCY) != 0);
 
-        const CStatusEffect* PSCEffect = PTarget->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Skillchain, 0);
-
-        // Skillchain has been started, wait 4 seconds until skillchain window is open before executing weaponskill.
-        if (attemptChain && PSCEffect && PSCEffect->GetStartTime() + 4s >= timer::now())
-        {
-            return false;
-        }
-
         if (attemptChain)
         {
-            if (PSCEffect)
+            const CStatusEffect* PSCEffect = PTarget->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Skillchain, 0);
+            if (PSCEffect && PSCEffect->GetStartTime() + 3s < timer::now())
             {
                 std::list<SKILLCHAIN_ELEMENT> resonanceProperties;
 

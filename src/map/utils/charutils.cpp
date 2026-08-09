@@ -2789,20 +2789,6 @@ void UpdateWeaponStyle(CCharEntity* PChar, uint8 equipSlotID, CItemEquipment* PI
             }
 
             break;
-        case SLOT_AMMO:
-            if (!PChar->getEquip(SLOT_RANGED))
-            {
-                if (hasValidStyle(PChar, PItem, appearance))
-                {
-                    PChar->mainlook.ranged = appearanceModel;
-                }
-                else
-                {
-                    PChar->mainlook.ranged = PChar->look.ranged;
-                }
-            }
-
-            break;
         default:
             break;
     }

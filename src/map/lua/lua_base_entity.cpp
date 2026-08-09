@@ -5003,7 +5003,6 @@ void CLuaBaseEntity::createShop(uint8 size, const sol::object& arg1)
     if (arg1 != sol::lua_nil && arg1.is<double>())
     {
         PChar->Container->setType(arg1.as<uint8>());
-        PChar->Container->setShopFameArea(arg1.as<uint8>());
     }
 }
 
@@ -5266,10 +5265,9 @@ void CLuaBaseEntity::confirmTrade() const
                 uint32 confirmedItems = PChar->TradeContainer->getConfirmedStatus(slotID);
                 auto   quantity       = (int32)std::min<uint32>(PChar->TradeContainer->getQuantity(slotID), confirmedItems);
 
+                PItem->setReserve(PItem->getReserve() - quantity);
                 if (confirmedItems > 0)
                 {
-                    PItem->setReserve(PItem->getReserve() - quantity);
-
                     uint8 invSlotID = PChar->TradeContainer->getInvSlotID(slotID);
                     if (static_cast<uint32>(quantity) >= PChar->TradeContainer->getItem(slotID)->getQuantity())
                     {
@@ -5278,10 +5276,6 @@ void CLuaBaseEntity::confirmTrade() const
                     }
 
                     charutils::UpdateItem(PChar, LOC_INVENTORY, invSlotID, -quantity);
-                }
-                else
-                {
-                    PItem->setReserve(0);
                 }
             }
         }
