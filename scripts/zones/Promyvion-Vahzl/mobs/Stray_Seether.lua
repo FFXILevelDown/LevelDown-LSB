@@ -1,14 +1,14 @@
 -----------------------------------
--- Area: Promyvion - Vahzl
---   NM: Solicitor
+-- Area: Promyvion-Vahzl
+--  Mob: Stray (Seether Model)
 -----------------------------------
 mixins = { require('scripts/mixins/families/empty_terroanima') }
 -----------------------------------
 ---@type TMobEntity
 local entity = {}
 
-entity.onMobInitialize = function(mob)
-    mob:setMobMod(xi.mobMod.IDLE_DESPAWN, 240)
+entity.onMobSpawn = function(mob)
+    xi.promyvion.emptyOnMobSpawn(mob, xi.promyvion.mobType.SEETHER)
 end
 
 return entity
