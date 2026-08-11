@@ -5045,6 +5045,11 @@ void DistributeExperiencePoints(CCharEntity* PChar, CMobEntity* PMob)
                     if (settings::get<bool>("map.EXP_PARTY_GAP_PENALTIES"))
                     {
                         uint8 partyGapNoExp = settings::get<uint8>("map.EXP_PARTY_GAP_NO_EXP");
+                        /* CUSTOM RATIO EXP GAP OVERRIDE */
+                        if (PMember->getCharVar("Ratio") == 1)
+                        {
+                            partyGapNoExp = 10;
+                        }
 
                         if (partyGapNoExp > 0 && maxlevel >= (memberlevel + partyGapNoExp))
                         {
