@@ -1,0 +1,285 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$id": "merits.schema.json",
+   "title": "Merits",
+   "description": "Merit categories, their merits, and the point cost of each upgrade.",
+   "type": "object",
+   "properties": {
+      "merits": {
+         "type": "object",
+         "properties": {
+            "categories": {
+               "type": "object",
+               "additionalProperties": {
+                  "type": "object",
+                  "properties": {
+                     "id": {
+                        "$ref": "#/$defs/uint16_t",
+                        "description": "Client-facing category ID. Must be a multiple of 64.",
+                        "minimum": 64,
+                        "maximum": 65535
+                     },
+                     "jobs": {
+                        "anyOf": [
+                           {
+                              "$ref": "#/$defs/std::vector<Job>"
+                           },
+                           {
+                              "type": "null"
+                           }
+                        ],
+                        "description": "Jobs every merit here applies to, unless a merit says otherwise.",
+                        "uniqueItems": true
+                     },
+                     "max_upgrades": {
+                        "$ref": "#/$defs/uint8_t",
+                        "description": "How many upgrades can be bought across this category.",
+                        "minimum": 0,
+                        "maximum": 255
+                     },
+                     "merits": {
+                        "type": "object",
+                        "additionalProperties": {
+                           "type": "object",
+                           "properties": {
+                              "id": {
+                                 "$ref": "#/$defs/uint16_t",
+                                 "description": "Client-facing merit ID. Its category ID plus an even offset.",
+                                 "minimum": 64,
+                                 "maximum": 65535
+                              },
+                              "jobs": {
+                                 "anyOf": [
+                                    {
+                                       "$ref": "#/$defs/std::vector<Job>"
+                                    },
+                                    {
+                                       "type": "null"
+                                    }
+                                 ],
+                                 "description": "Jobs this merit applies to. Falls back to the category's list, then to every job.",
+                                 "uniqueItems": true
+                              },
+                              "max_upgrades": {
+                                 "anyOf": [
+                                    {
+                                       "$ref": "#/$defs/uint8_t"
+                                    },
+                                    {
+                                       "type": "null"
+                                    }
+                                 ],
+                                 "description": "How far this merit can be upgraded. Defaults to the cost table's length and cannot exceed it; zero leaves it visible but unbuyable.",
+                                 "minimum": 0,
+                                 "maximum": 255
+                              },
+                              "skills": {
+                                 "anyOf": [
+                                    {
+                                       "type": "array",
+                                       "items": {
+                                          "type": "string",
+                                          "title": "SkillType",
+                                          "enum": [
+                                             "none",
+                                             "hand_to_hand",
+                                             "dagger",
+                                             "sword",
+                                             "great_sword",
+                                             "axe",
+                                             "great_axe",
+                                             "scythe",
+                                             "polearm",
+                                             "katana",
+                                             "great_katana",
+                                             "club",
+                                             "staff",
+                                             "automaton_melee",
+                                             "automaton_ranged",
+                                             "automaton_magic",
+                                             "archery",
+                                             "marksmanship",
+                                             "throwing",
+                                             "guard",
+                                             "evasion",
+                                             "shield",
+                                             "parry",
+                                             "divine_magic",
+                                             "healing_magic",
+                                             "enhancing_magic",
+                                             "enfeebling_magic",
+                                             "elemental_magic",
+                                             "dark_magic",
+                                             "summoning_magic",
+                                             "ninjutsu",
+                                             "singing",
+                                             "string_instrument",
+                                             "wind_instrument",
+                                             "blue_magic",
+                                             "geomancy",
+                                             "handbell",
+                                             "fishing",
+                                             "woodworking",
+                                             "smithing",
+                                             "goldsmithing",
+                                             "clothcraft",
+                                             "leathercraft",
+                                             "bonecraft",
+                                             "alchemy",
+                                             "cooking",
+                                             "synergy",
+                                             "rid",
+                                             "dig"
+                                          ]
+                                       }
+                                    },
+                                    {
+                                       "type": "null"
+                                    }
+                                 ],
+                                 "description": "Skills this merit raises, each by `value` per upgrade.",
+                                 "uniqueItems": true
+                              },
+                              "spell": {
+                                 "type": [
+                                    "string",
+                                    "null"
+                                 ],
+                                 "description": "Spell in spell_list the character knows while this merit has any upgrades."
+                              },
+                              "upgrade_cost": {
+                                 "type": "string",
+                                 "description": "Upgrade cost table this merit spends from."
+                              },
+                              "value": {
+                                 "$ref": "#/$defs/uint16_t",
+                                 "description": "What one upgrade is worth; the unit depends on the merit.",
+                                 "minimum": 0,
+                                 "maximum": 65535
+                              },
+                              "weapon_skill": {
+                                 "type": [
+                                    "string",
+                                    "null"
+                                 ],
+                                 "description": "Weapon skill in weapon_skills the character has while this merit has any upgrades."
+                              }
+                           },
+                           "additionalProperties": false,
+                           "required": [
+                              "id",
+                              "value",
+                              "upgrade_cost"
+                           ]
+                        },
+                        "description": "Merits keyed by their canonical name, in ascending ID order."
+                     }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                     "id",
+                     "max_upgrades",
+                     "merits"
+                  ]
+               },
+               "description": "Merit categories keyed by their canonical name, in client menu order."
+            },
+            "level_caps": {
+               "type": "array",
+               "items": {
+                  "type": "object",
+                  "properties": {
+                     "cap": {
+                        "$ref": "#/$defs/uint8_t",
+                        "description": "Upgrades that count from this level until the next entry.",
+                        "minimum": 0,
+                        "maximum": 255
+                     },
+                     "level": {
+                        "$ref": "#/$defs/uint8_t",
+                        "description": "Character level this cap starts applying at.",
+                        "minimum": 0,
+                        "maximum": 255
+                     }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                     "level",
+                     "cap"
+                  ]
+               },
+               "description": "How many upgrades of a merit count toward its effect, by character level. Ascending, opening at level 0."
+            },
+            "upgrade_costs": {
+               "type": "object",
+               "additionalProperties": {
+                  "type": "array",
+                  "items": {
+                     "$ref": "#/$defs/uint8_t"
+                  }
+               },
+               "description": "Upgrade cost tables keyed by name. Each entry is what that upgrade costs in merit points."
+            }
+         },
+         "additionalProperties": false,
+         "required": [
+            "upgrade_costs",
+            "level_caps",
+            "categories"
+         ],
+         "description": "Merit categories, plus the cost tables and level caps they reference."
+      },
+      "meta": {
+         "$ref": "_meta.schema.json"
+      }
+   },
+   "additionalProperties": false,
+   "$defs": {
+      "std::vector<Job>": {
+         "type": "array",
+         "items": {
+            "type": "string",
+            "title": "Job",
+            "enum": [
+               "none",
+               "war",
+               "mnk",
+               "whm",
+               "blm",
+               "rdm",
+               "thf",
+               "pld",
+               "drk",
+               "bst",
+               "brd",
+               "rng",
+               "sam",
+               "nin",
+               "drg",
+               "smn",
+               "blu",
+               "cor",
+               "pup",
+               "dnc",
+               "sch",
+               "geo",
+               "run",
+               "mon"
+            ]
+         }
+      },
+      "uint16_t": {
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 65535
+      },
+      "uint8_t": {
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 255
+      }
+   },
+   "required": [
+      "merits"
+   ]
+}

@@ -5002,7 +5002,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 75) /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */ /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 75) /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
@@ -5015,7 +5015,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
             // Ref: https://www.bg-wiki.com/ffxi/Job_Points
             float capacityPoints = 0;
 
-            if (mobLevel >= 70)
+            if (CheckMob(PMember->GetMLevel(), PMob) > EMobDifficulty::TooWeak)
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points
