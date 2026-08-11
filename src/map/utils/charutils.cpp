@@ -5002,7 +5002,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 75) /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */ < 75) /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
