@@ -13,7 +13,7 @@ def find_project_root():
     return os.getcwd() # Fallback to current working directory
 
 PROJECT_ROOT = find_project_root()
-PATCH_DIR = os.path.join(PROJECT_ROOT, "modules", "LevelDown Custom Modules", "cpp", "patchs")
+PATCH_DIR = os.path.join(PROJECT_ROOT, "modules", "LevelDown Custom Modules", "cpp", "patches")
 
 def apply_patch_module(module_path):
     # Load module dynamically
