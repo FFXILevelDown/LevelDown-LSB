@@ -46,6 +46,8 @@ entity.onMobSpawn = function(mob)
 
     -- Tenzen in Warriors Path is a completely scripted encounter once you trigger certain states
     -- Leaving mods here as visuals
+    mob:setMobMod(xi.mobMod.NO_AGGRO, 1)
+    mob:setMobMod(xi.mobMod.NO_MOVE, 1)
     mob:setAnimationSub(0)
     mob:setMobSkillAttack(0)
     mob:setMobAbilityEnabled(true)
@@ -57,6 +59,7 @@ end
 entity.onMobEngage = function(mob, target)
     mob:showText(mob, ID.text.TENZEN_MSG_OFFSET + 1)
     mob:setMobMod(xi.mobMod.NO_MOVE, 0)
+    mob:setMobMod(xi.mobMod.NO_AGGRO, 0)
     -- three tarus fight with tenzen
     local mobId  = mob:getID()
     local offset = mobId - ID.mob.TENZEN_HTBF
