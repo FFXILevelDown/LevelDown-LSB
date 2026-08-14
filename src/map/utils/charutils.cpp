@@ -1,4 +1,4 @@
-/*
+﻿/*
 ===========================================================================
 
   Copyright (c) 2010-2015 Darkstar Dev Teams
@@ -5001,12 +5001,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 // Do not grant Capacity points if null, Dead, or in a different area
                 return;
             }
-
-<<<<<<< HEAD
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */ /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
-=======
             if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */
->>>>>>> parent of cfef5eb33f (Merge remote-tracking branch 'upstream/base' into base)
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
