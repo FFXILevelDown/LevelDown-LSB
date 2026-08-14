@@ -65,3 +65,5 @@ end)
 m:addOverride(string.format('xi.actions.spells.trust.%s.onMobDeath', trustToReplaceName), function(mob)
     -- Intentionally blank
 end)
+
+return m

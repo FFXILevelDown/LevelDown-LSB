@@ -1,4 +1,4 @@
-﻿/*
+/*
 ===========================================================================
 
   Copyright (c) 2010-2015 Darkstar Dev Teams
@@ -100,7 +100,6 @@
 #include "blueutils.h"
 #include "charutils.h"
 #include "enums/item_lockflg.h"
-#include "items/transactions/player_trade.h"
 #include "items/transactions/synth.h"
 #include "itemutils.h"
 #include "job_points.h"
@@ -2033,6 +2032,82 @@ void DropItem(CCharEntity* PChar, uint8 container, uint8 slotID, int32 quantity,
 
 /************************************************************************
  *                                                                       *
+ *  Check the possibility of trade between characters                    *
+ *                                                                       *
+ ************************************************************************/
+
+bool CanTrade(CCharEntity* PChar, CCharEntity* PTarget)
+{
+    if (PChar && PTarget && PChar->getCharVar("[LevelRatio]Restriction") != PTarget->getCharVar("[LevelRatio]Restriction"))
+    {
+        return false;
+    } /* CUSTOM BRACKET TRADE RESTRICTION */
+    if (PChar->m_PMonstrosity != nullptr || PTarget->m_PMonstrosity != nullptr)
+    {
+        return false;
+    }
+
+    if (PTarget->getStorage(LOC_INVENTORY)->GetFreeSlotsCount() < PChar->UContainer->GetItemsCount())
+    {
+        ShowDebug("Unable to trade, %s doesn't have enough inventory space", PTarget->getName());
+        return false;
+    }
+
+    for (uint8 slotid = 0; slotid <= 8; ++slotid)
+    {
+        CItem* PItem = PChar->UContainer->GetItem(slotid);
+
+        if (PItem != nullptr && PItem->hasFlag(ItemFlag::Rare))
+        {
+            if (HasItem(PTarget, PItem->getID()))
+            {
+                ShowDebug("Unable to trade, %s has the rare item already (%s)", PTarget->getName(), PItem->getName());
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+/************************************************************************
+ *                                                                       *
+ *  Do the exchange between characters                                   *
+ *                                                                       *
+ ************************************************************************/
+
+void DoTrade(CCharEntity* PChar, CCharEntity* PTarget)
+{
+    ShowDebug("%s->%s trade item movement started", PChar->getName(), PTarget->getName());
+    for (uint8 slotid = 0; slotid <= 8; ++slotid)
+    {
+        CItem* PItem = PChar->UContainer->GetItem(slotid);
+
+        if (PItem != nullptr)
+        {
+            if (PItem->getStackSize() == 1 && PItem->getReserve() == 1)
+            {
+                auto PNewItem = xi::items::clone(*PItem);
+                ShowDebug("Adding %s to %s inventory stacksize 1", PNewItem->getName(), PTarget->getName());
+                PNewItem->setReserve(0);
+                AddItem(PTarget, LOC_INVENTORY, std::move(PNewItem));
+            }
+            else
+            {
+                ShowDebug("Adding %s to %s inventory", PItem->getName(), PTarget->getName());
+                AddItem(PTarget, LOC_INVENTORY, PItem->getID(), PItem->getReserve());
+            }
+            ShowDebug("Removing %s from %s's inventory", PItem->getName(), PChar->getName());
+            auto amount = PItem->getReserve();
+            PItem->setReserve(0);
+            UpdateItem(PChar, LOC_INVENTORY, PItem->getSlotID(), (int32)(0 - amount));
+            PChar->UContainer->ClearSlot(slotid);
+        }
+    }
+}
+
+/************************************************************************
+ *                                                                       *
  *  Remove equipped item from character without updating the external    *
  *  species (used as an auxiliary function in a bundle with others)      *
  *                                                                       *
@@ -2207,6 +2282,15 @@ void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, Recalculate recalculate)
                     }
                 }
 
+                if (PChar->PAI->IsEngaged())
+                {
+                    auto* state = dynamic_cast<CAttackState*>(PChar->PAI->GetCurrentState());
+                    if (state)
+                    {
+                        state->ResetAttackTimer();
+                    }
+                }
+
                 // If main hand is empty, figure out which UnarmedItem to give the player.
                 if (!PChar->getEquip(SLOT_MAIN) || !PChar->getEquip(SLOT_MAIN)->isType(ITEM_EQUIPMENT))
                 {
@@ -2374,6 +2458,14 @@ bool EquipArmor(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 conta
                             }
                         }
                         break;
+                    }
+                    if (PChar->PAI->IsEngaged())
+                    {
+                        auto* state = dynamic_cast<CAttackState*>(PChar->PAI->GetCurrentState());
+                        if (state)
+                        {
+                            state->ResetAttackTimer();
+                        }
                     }
                     PChar->m_Weapons[SLOT_MAIN] = PItem;
                 }
@@ -3857,14 +3949,9 @@ void BuildingCharSkillsTable(CCharEntity* PChar)
         {
             if (auto PAutomaton = dynamic_cast<CAutomatonEntity*>(PChar->PPet))
             {
-                // Recalculate skills
-                auto& tempSkills = puppetutils::CalculateAutomatonSkills(PChar, PAutomaton->GetMLevel());
-
                 switch (static_cast<xi::SkillType>(i))
                 {
                     case xi::SkillType::AutomatonMagic:
-                        PChar->WorkingSkills.skill[i] = tempSkills.skill[i];
-
                         PAutomaton->WorkingSkills.skill[i] = PChar->WorkingSkills.skill[i];
 
                         PAutomaton->WorkingSkills.skill[static_cast<uint8>(xi::SkillType::HealingMagic)]    = PChar->WorkingSkills.skill[i];
@@ -3875,8 +3962,6 @@ void BuildingCharSkillsTable(CCharEntity* PChar)
                         break;
 
                     default:
-                        PChar->WorkingSkills.skill[i] = tempSkills.skill[i];
-
                         PAutomaton->WorkingSkills.skill[i] = PChar->WorkingSkills.skill[i];
                         break;
                 }
@@ -4917,7 +5002,11 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
+<<<<<<< HEAD
             if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */ /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
+=======
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */
+>>>>>>> parent of cfef5eb33f (Merge remote-tracking branch 'upstream/base' into base)
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
@@ -7089,14 +7178,6 @@ auto HomePoint(CCharEntity* PChar, bool resetHPMP) -> bool
 
         PChar->health.hp = PChar->GetMaxHP();
         PChar->health.mp = PChar->GetMaxMP();
-
-        // Homepointing increases beastmen influence.
-        const REGION_TYPE deathRegion = PChar->loc.zone->GetRegionID();
-        if (deathRegion <= REGION_TYPE::TAVNAZIA &&
-            PChar->GetMLevel() >= settings::get<uint8>("map.MINIMUM_LEVEL_CONQUEST_INFUENCE_LOSS"))
-        {
-            conquest::AddPlayerHomepoints(1, deathRegion);
-        }
     }
 
     PChar->loc.boundary    = 0;
@@ -7694,11 +7775,6 @@ void removeCharFromZone(CCharEntity* PChar)
     if (PChar->PSession)
     {
         PChar->PSession->blowfish.status = BLOWFISH_PENDING_ZONE;
-    }
-
-    if (auto* tradeTransaction = PChar->activePlayerTradeTransaction())
-    {
-        tradeTransaction->abort(PChar);
     }
 
     PChar->TradePending.clean();

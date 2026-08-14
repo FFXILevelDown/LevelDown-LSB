@@ -8,8 +8,13 @@ require('modules/module_utils')
 require('scripts/globals/automaton')
 require('scripts/globals/pets/automaton')
 -----------------------------------
--- These reverts only apply once WOTG content is enabled.
-local m = Module:new('automaton_global', not xi.pre(xi.expansion.WOTG))
+local moduleName = 'automaton_global'
+
+if not xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 local maneuverList =
 {
@@ -99,3 +104,5 @@ m:addOverride('xi.automaton.onUseManeuver', function(player, target, ability, ac
 
     return target:getOverloadChance(element)
 end)
+
+return m

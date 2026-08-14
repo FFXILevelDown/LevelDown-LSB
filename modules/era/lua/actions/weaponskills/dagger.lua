@@ -4,7 +4,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('toau_dagger', xi.pre(xi.expansion.WOTG))
+local moduleName = 'toau_dagger'
+
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Wasp Sting
@@ -313,3 +319,5 @@ m:addOverride('xi.actions.weaponskills.mordant_rime.onUseWeaponSkill', function(
 
     return tpHits, extraHits, criticalHit, damage
 end)
+
+return m

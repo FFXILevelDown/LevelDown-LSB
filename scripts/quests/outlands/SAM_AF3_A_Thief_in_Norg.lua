@@ -1,5 +1,5 @@
 -----------------------------------
--- A Thief in Norg!? (SAM AF3)
+-- Yomi Okuri
 -----------------------------------
 -- Log ID: 5, Quest ID: 142
 -- Jaucribaix      : !pos 91 -7 -8 252
@@ -35,14 +35,7 @@ quest.sections =
             ['Jaucribaix'] =
             {
                 onTrigger = function(player, npc)
-                    if
-                        quest:getMustZone(player) or
-                        GetSystemTime() < quest:getVar(player, 'Timer')
-                    then
-                        return quest:event(157)
-                    end
-
-                    return quest:progressEvent(158)
+                    return quest:progressEvent(quest:getMustZone(player) and 157 or 158)
                 end,
             },
 
@@ -92,9 +85,9 @@ quest.sections =
                     if questProgress == 2 then
                         return quest:progressEvent(301)
                     elseif questProgress == 3 then
-                        return quest:event(303)
+                        return quest:progressEvent(303)
                     elseif questProgress >= 4 then
-                        return quest:event(302)
+                        return quest:progressEvent(302)
                     end
                 end,
             },
@@ -114,7 +107,7 @@ quest.sections =
                 onTrade = function(player, npc, trade)
                     if
                         player:hasKeyItem(xi.ki.CHARRED_HELM) and
-                        npcUtil.tradeMatches(trade, { { xi.item.SPOOL_OF_GOLD_THREAD, 1 } })
+                        npcUtil.tradeHasExactly(trade, xi.item.SPOOL_OF_GOLD_THREAD)
                     then
                         return quest:progressEvent(162)
                     end
@@ -124,28 +117,17 @@ quest.sections =
                     local questProgress = quest:getVar(player, 'Prog')
 
                     if questProgress <= 4 then
-                        return quest:event(159)
+                        return quest:progressEvent(159)
                     elseif questProgress == 5 then
                         return quest:progressEvent(166)
                     elseif questProgress == 6 then
-                        if player:findItem(xi.item.BANISHING_CHARM) then
-                            return quest:event(167)
-                        end
-
-                        return quest:progressEvent(168)
+                        return quest:progressEvent(player:findItem(xi.item.BANISHING_CHARM) and 167 or 168)
                     elseif questProgress == 7 then
                         return quest:progressEvent(160)
                     elseif questProgress == 8 then
-                        return quest:event(161)
+                        return quest:progressEvent(161)
                     elseif questProgress == 9 then
-                        if
-                            quest:getMustZone(player) or
-                            GetSystemTime() < quest:getVar(player, 'Wait')
-                        then
-                            return quest:event(163)
-                        end
-
-                        return quest:progressEvent(164)
+                        return quest:progressEvent(quest:getMustZone(player) and 163 or 164)
                     end
                 end,
             },
@@ -157,11 +139,10 @@ quest.sections =
                 end,
 
                 [162] = function(player, csid, option, npc)
-                    player:tradeComplete()
+                    player:confirmTrade()
                     player:delKeyItem(xi.ki.CHARRED_HELM)
                     quest:setVar(player, 'Prog', 9)
                     quest:setMustZone(player)
-                    quest:setVar(player, 'Wait', GetSystemTime() + 60) -- 1 minute wait time
                 end,
 
                 [164] = function(player, csid, option, npc)
@@ -190,9 +171,9 @@ quest.sections =
                     if questProgress == 1 then
                         return quest:progressEvent(304)
                     elseif questProgress == 2 then
-                        return quest:event(305)
+                        return quest:progressEvent(305)
                     elseif questProgress >= 3 then
-                        return quest:event(306)
+                        return quest:progressEvent(306)
                     end
                 end,
             },

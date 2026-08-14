@@ -6,7 +6,13 @@
 require('modules/module_utils')
 require('scripts/globals/interaction/interaction_global')
 -----------------------------------
-local m = Module:new('homepoint_era_menu', xi.pre(xi.expansion.SOA))
+local moduleName = 'homepoint_era_menu'
+
+if xi.module.isContentEnabled('SOA') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 local function showHomepointCustomMenu(player, npc)
     local triggerTarget = npc
@@ -56,3 +62,5 @@ m:addOverride('xi.homepoint.onTrigger', function(player, csid, index)
     local npc = player:getCursorTarget()
     showHomepointCustomMenu(player, npc)
 end)
+
+return m

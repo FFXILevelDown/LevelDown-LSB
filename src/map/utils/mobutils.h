@@ -105,7 +105,8 @@ void   InitializeMob(CMobEntity* PMob);
 void   LoadSqlModifiers();
 void   Cleanup();
 
-// get modifiers for pool / spawn
+// get modifiers for species / pool / spawn
+ModsList_t* GetMobSpeciesMods(uint16 speciesId, bool create = false);
 ModsList_t* GetMobPoolMods(uint32 poolId, bool create = false);
 ModsList_t* GetMobSpawnMods(uint32 mobId, bool create = false);
 

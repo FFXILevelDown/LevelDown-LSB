@@ -5,9 +5,14 @@
 require('modules/module_utils')
 require('scripts/globals/shop')
 -----------------------------------
-local m = Module:new('valeriano_shop_adjust', xi.pre(xi.expansion.WOTG))
+local moduleName = 'valeriano_shop_adjust'
 
--- TODO: find a patch note or source for this change
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
+
 m:addOverride('xi.shop.handleValerianoShop', function(player, npc)
     local zoneTable =
     {
@@ -39,3 +44,5 @@ m:addOverride('xi.shop.handleValerianoShop', function(player, npc)
     player:showText(npc, zones[zoneId].text.VALERIANO_SHOP_DIALOG)
     xi.shop.general(player, stock, zoneTable[zoneId][2])
 end)
+
+return m

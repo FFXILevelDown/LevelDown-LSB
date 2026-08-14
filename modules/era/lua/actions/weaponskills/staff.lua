@@ -4,7 +4,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('toau_staff', xi.pre(xi.expansion.WOTG))
+local moduleName = 'toau_staff'
+
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Heavy Swing
@@ -283,3 +289,5 @@ m:addOverride('xi.actions.weaponskills.garland_of_bliss.onUseWeaponSkill', funct
 
     return tpHits, extraHits, criticalHit, damage
 end)
+
+return m

@@ -243,3 +243,5 @@ m:addOverride('xi.zones.GM_Home.Zone.onInitialize', function(zone)
         end,
     })
 end)
+
+return m

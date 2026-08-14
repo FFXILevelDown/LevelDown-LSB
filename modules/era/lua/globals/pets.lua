@@ -5,10 +5,18 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('era_globals_pets', xi.pre(xi.expansion.ABYSSEA))
+local moduleName = 'era_globals_pets'
+
+if xi.module.isContentEnabled('ABYSSEA') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 m:addOverride('xi.pet.spawnPet', function(caster, petID, state, target)
     super(caster, petID, state, target)
 
     xi.job_utils.summoner.applySpiritPerpetuationCost(caster)
 end)
+
+return m

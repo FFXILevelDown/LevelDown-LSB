@@ -4,7 +4,13 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('era_signet_duration', xi.pre(xi.expansion.ABYSSEA))
+local moduleName = 'era_signet_duration'
+
+if xi.module.isContentEnabled('ABYSSEA') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 m:addOverride('xi.conquest.bestowSignet', function(player, pNation, pRank, mOffset)
     super(player, pNation, pRank, mOffset)
@@ -15,3 +21,5 @@ m:addOverride('xi.conquest.bestowSignet', function(player, pNation, pRank, mOffs
         signet:setDuration(signet:getDuration() - 3 * 3600 * 1000)
     end
 end)
+
+return m

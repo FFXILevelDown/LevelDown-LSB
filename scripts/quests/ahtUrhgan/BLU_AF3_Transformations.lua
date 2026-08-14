@@ -1,15 +1,10 @@
 -----------------------------------
--- Transformations (BLU AF3)
+-- Transformations
 -----------------------------------
 -- Log ID: 6, Quest ID: 23
 -- Waoud              : !pos 65 -6 -78 50
 -- Imperial Whitegate : !pos 152 -2 0 50
 -- Alzadaal (Blank)   : !pos -529.704 0 649.682 72
------------------------------------
--- The Beast Within opens one minute after this quest completes.
--- The June 7, 2016 version update shortened the wait from one Earth day.
---
--- Source: https://forum.square-enix.com/ffxi/threads/50760-Jun.-7-2016-(JST)-Version-Update
 -----------------------------------
 local alzadaalID  = zones[xi.zone.ALZADAAL_UNDERSEA_RUINS]
 local whitegateID = zones[xi.zone.AHT_URHGAN_WHITEGATE]
@@ -38,17 +33,17 @@ quest.sections =
             ['Waoud'] =
             {
                 onTrigger = function(player, npc)
-                    if
-                        quest:getMustZone(player) or
-                        GetSystemTime() < quest:getVar(player, 'Timer')
-                    then
-                        return
-                    end
+                    local lastDivination = xi.quest.getVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer')
 
-                    if quest:getVar(player, 'Prog') == 0 then
-                        return quest:progressEvent(720, player:getGil())
-                    else
-                        return quest:progressEvent(721, player:getGil())
+                    if
+                        lastDivination <= VanadielUniqueDay() and
+                        not quest:getMustZone(player)
+                    then
+                        if quest:getVar(player, 'Prog') == 0 then
+                            return quest:progressEvent(720, player:getGil())
+                        else
+                            return quest:progressEvent(721, player:getGil())
+                        end
                     end
                 end,
             },
@@ -73,6 +68,7 @@ quest.sections =
                         player:messageSpecial(whitegateID.text.PAY_DIVINATION)
 
                         quest:setVar(player, 'Prog', 1)
+                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer', VanadielUniqueDay() + 1)
                     end
                 end,
 
@@ -83,6 +79,8 @@ quest.sections =
                     then
                         player:delGil(1000)
                         player:messageSpecial(whitegateID.text.PAY_DIVINATION)
+
+                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer', VanadielUniqueDay() + 1)
                     end
                 end,
 
@@ -104,7 +102,11 @@ quest.sections =
             ['Waoud'] =
             {
                 onTrigger = function(player, npc)
-                    return quest:progressEvent(723, player:getGil())
+                    local lastDivination = xi.quest.getVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer')
+
+                    if lastDivination <= VanadielUniqueDay() then
+                        return quest:progressEvent(723, player:getGil())
+                    end
                 end,
             },
 
@@ -117,6 +119,8 @@ quest.sections =
                     then
                         player:delGil(1000)
                         player:messageSpecial(whitegateID.text.PAY_DIVINATION)
+
+                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.BEGINNINGS, 'Timer', VanadielUniqueDay() + 1)
                     end
                 end,
             },
@@ -179,9 +183,7 @@ quest.sections =
                 end,
 
                 [5] = function(player, csid, option, npc)
-                    if quest:complete(player) then
-                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.THE_BEAST_WITHIN, 'Timer', GetSystemTime() + 60) -- 1 minute wait time
-                    end
+                    quest:complete(player)
                 end,
             },
         },

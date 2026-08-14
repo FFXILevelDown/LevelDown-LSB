@@ -88,3 +88,5 @@ for zoneName in pairs(exitZones) do
         super(player, csid, option, npc)
     end)
 end
+
+return m

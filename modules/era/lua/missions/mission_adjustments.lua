@@ -3,10 +3,12 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('era_mission_adjustments')
+local moduleName = 'era_mission_adjustments'
+local m = Module:new(moduleName)
 
-m:addOverrideByEra('xi.server.onServerStart', {
-    [xi.expansion.ROV] = function()
+-- Keep sections in the previous module init order.
+if not xi.module.isContentEnabled('ROV') then
+    m:addOverride('xi.server.onServerStart', function()
         super()
 
         -- Rhapsodies of Vana'diel Era
@@ -130,9 +132,11 @@ m:addOverrideByEra('xi.server.onServerStart', {
                     mission:getVar(player, 'Timer') == 0 -- Module change: Check JST midnight timer
             end
         end)
-    end,
+    end)
+end
 
-    [xi.expansion.SOA] = function()
+if not xi.module.isContentEnabled('SOA') then
+    m:addOverride('xi.server.onServerStart', function()
         super()
 
         -- Seekers of Adoulin Era
@@ -286,5 +290,13 @@ m:addOverrideByEra('xi.server.onServerStart', {
                 end
             end
         end)
-    end,
-})
+    end)
+end
+
+-- Return a real module only when a content gate registered overrides.
+-- Otherwise return a data-only table to avoid a "No overrides found" loader warning.
+if #m.overrides > 0 then
+    return m
+end
+
+return { name = moduleName }

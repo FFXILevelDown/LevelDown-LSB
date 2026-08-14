@@ -4,7 +4,13 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('soa_magic_adjustments', xi.pre(xi.expansion.SOA))
+local moduleName = 'soa_magic_adjustments'
+
+if xi.module.isContentEnabled('SOA') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -- Gravity: Revert weight to apply an evasion down penalty
 -- Source: https://forum.square-enix.com/ffxi/threads/43135-Jul-8-2014-(JST)-Version-Update
@@ -13,3 +19,5 @@ m:addOverride('xi.effects.weight.onEffectGain', function(target, effect)
 
     effect:addMod(xi.mod.EVA, -10)
 end)
+
+return m

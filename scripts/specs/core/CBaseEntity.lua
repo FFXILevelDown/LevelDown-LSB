@@ -173,15 +173,6 @@ end
 function CBaseEntity:resetLocalVars()
 end
 
----@nodiscard
----@return table
-function CBaseEntity:getData()
-end
-
----@return nil
-function CBaseEntity:resetData()
-end
-
 ---@param prefix string
 ---@return nil
 function CBaseEntity:clearVarsWithPrefix(prefix)

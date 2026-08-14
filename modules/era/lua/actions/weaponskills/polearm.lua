@@ -4,7 +4,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('toau_polearm', xi.pre(xi.expansion.WOTG))
+local moduleName = 'toau_polearm'
+
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Double Thrust
@@ -190,3 +196,5 @@ m:addOverride('xi.actions.weaponskills.drakesbane.onUseWeaponSkill', function(pl
     local damage, criticalHit, tpHits, extraHits = xi.weaponskills.doPhysicalWeaponskill(player, target, wsID, params, tp, action, primary, taChar)
     return tpHits, extraHits, criticalHit, damage
 end)
+
+return m

@@ -4,7 +4,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('toau_marksmanship', xi.pre(xi.expansion.WOTG))
+local moduleName = 'toau_marksmanship'
+
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Hot Shot
@@ -187,3 +193,5 @@ m:addOverride('xi.actions.weaponskills.leaden_salute.onUseWeaponSkill', function
     local damage, criticalHit, tpHits, extraHits = xi.weaponskills.doMagicWeaponskill(player, target, wsID, params, tp, action, primary)
     return tpHits, extraHits, criticalHit, damage
 end)
+
+return m

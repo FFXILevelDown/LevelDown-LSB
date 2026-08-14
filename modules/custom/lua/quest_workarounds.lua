@@ -36,3 +36,5 @@ m:addOverride('xi.server.onServerStart', function()
         end
     end)
 end)
+
+return m

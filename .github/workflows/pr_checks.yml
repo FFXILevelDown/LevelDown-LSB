@@ -29,11 +29,9 @@ jobs:
       # $GITHUB_WORKSPACE is the workspace in the container (/__w/server/server)
       - run: git config --global --add safe.directory $GITHUB_WORKSPACE
 
-      # Full history is only needed for the merge base; blobs are fetched on demand.
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          filter: blob:none
 
       - name: Install Python dependencies
         run: |
@@ -88,7 +86,6 @@ jobs:
         if: ${{ steps.check-changes.outputs.lua_changes == 'true' }}
         with:
           fetch-depth: 0
-          filter: blob:none
 
       - name: Install Python dependencies
         if: ${{ steps.check-changes.outputs.lua_changes == 'true' }}
@@ -315,22 +312,6 @@ jobs:
       build_type: ${{ matrix.build_type }}
       build_modules: ${{ matrix.build_modules }}
       upload_artifact: true
-
-  # Compiles modules/*/cpp, which no other job builds. Uploads no artifact:
-  # REGISTER_CPP_MODULE is a static initializer, so a modules-enabled binary
-  # runs those modules regardless of init.txt and must not be tested against.
-  Modules_Build:
-    needs: Sanity_Checks
-    name: Modules Build
-    uses: ./.github/workflows/runner_build.yml
-    with:
-      runner: ubuntu-26.04
-      compiler: gcc
-      compiler_version: 15
-      build_type: Debug
-      build_modules: true
-      upload_artifact: false
-      optional_build: true
 
   Test:
     needs: Build

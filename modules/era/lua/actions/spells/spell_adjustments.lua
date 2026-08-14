@@ -4,7 +4,13 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('rov_spell_adjustments', xi.pre(xi.expansion.ROV))
+local moduleName = 'rov_spell_adjustments'
+
+if xi.module.isContentEnabled('ROV') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Enfeebling Magic
@@ -194,3 +200,5 @@ for _, entry in ipairs(sanSpellOverrides) do
         return damage
     end)
 end
+
+return m

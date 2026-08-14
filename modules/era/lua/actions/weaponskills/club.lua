@@ -4,7 +4,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('toau_club', xi.pre(xi.expansion.WOTG))
+local moduleName = 'toau_club'
+
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Shining Strike
@@ -244,3 +250,5 @@ m:addOverride('xi.actions.weaponskills.mystic_boon.onUseWeaponSkill', function(p
 
     return tpHits, extraHits, criticalHit, damage
 end)
+
+return m

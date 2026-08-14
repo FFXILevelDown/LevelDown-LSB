@@ -11,3 +11,5 @@ m:addOverride('xi.player.charCreate', function(player)
     player:addLinkpearl(lsName, true)
     super(player)
 end)
+
+return m

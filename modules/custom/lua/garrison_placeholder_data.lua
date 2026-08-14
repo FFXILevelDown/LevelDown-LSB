@@ -155,3 +155,5 @@ m:addOverride('xi.garrison.getAllyInfo', function(zoneID, zoneData, nationID)
 
     return allyInfoTable
 end)
+
+return m

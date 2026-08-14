@@ -4,10 +4,18 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('era_silent_oil_duration', xi.pre(xi.expansion.ABYSSEA))
+local moduleName = 'era_silent_oil_duration'
+
+if xi.module.isContentEnabled('ABYSSEA') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 m:addOverride('xi.items.pot_of_silent_oil.onItemUse', function(target, user)
     if not target:hasStatusEffect(xi.effect.SNEAK) then
         target:addStatusEffect(xi.effect.SNEAK, { power = 1, duration = math.floor(math.random(90, 360) * xi.settings.main.SNEAK_INVIS_DURATION_MULTIPLIER), origin = user, tick = 10 })
     end
 end)
+
+return m

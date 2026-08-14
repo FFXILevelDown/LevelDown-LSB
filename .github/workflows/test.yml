@@ -28,7 +28,6 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          filter: blob:none
 
       - name: Run checks
         run: ./tools/ci/sanity_checks.sh
@@ -51,7 +50,6 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          filter: blob:none
 
       - name: Generate codegen Lua enums
         run: python -m tools.codegen "$RUNNER_TEMP/codegen-out"

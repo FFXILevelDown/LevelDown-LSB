@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM busybox:1
+FROM --platform=$BUILDPLATFORM busybox:latest
 
 COPY ./navmeshes/*.nav /navmeshes/
 COPY ./ximeshes/*.ximesh /ximeshes/

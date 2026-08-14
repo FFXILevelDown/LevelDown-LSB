@@ -44,6 +44,5 @@ void EquipAttachments(CAutomatonEntity* PAutomaton);
 void UpdateAttachments(const CCharEntity* PChar);
 void PreLevelRestriction(const CCharEntity* PChar);
 void PostLevelRestriction(const CCharEntity* PChar);
-auto CalculateAutomatonSkills(CCharEntity* PMaster, uint8 mlvl) -> skills_t&;
 
 }; // namespace puppetutils

@@ -1,15 +1,10 @@
 -----------------------------------
--- Omens (BLU AF2)
+-- Omens
 -----------------------------------
 -- Log ID: 6, Quest ID: 22
 -- Waoud           : !pos 65 -6 -78 50
 -- Lathuya         : !pos -95.081 -6 31.638 50
 -- Aydeewa (Blank) : !pos 342.129 36.509 -24.856 68
------------------------------------
--- Transformations opens one minute after this quest completes.
--- The June 7, 2016 version update shortened the wait from one Earth day.
---
--- Source: https://forum.square-enix.com/ffxi/threads/50760-Jun.-7-2016-(JST)-Version-Update
 -----------------------------------
 local whitegateID = zones[xi.zone.AHT_URHGAN_WHITEGATE]
 -----------------------------------
@@ -37,14 +32,14 @@ quest.sections =
             ['Waoud'] =
             {
                 onTrigger = function(player, npc)
-                    if
-                        quest:getMustZone(player) or
-                        GetSystemTime() < quest:getVar(player, 'Timer')
-                    then
-                        return
-                    end
+                    local lastDivination = xi.quest.getVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer')
 
-                    return quest:progressEvent(710)
+                    if
+                        lastDivination <= VanadielUniqueDay() and
+                        not quest:getMustZone(player)
+                    then
+                        return quest:progressEvent(710)
+                    end
                 end,
             },
 
@@ -52,6 +47,8 @@ quest.sections =
             {
                 [710] = function(player, csid, option, npc)
                     quest:begin(player)
+
+                    xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.BEGINNINGS, 'Timer', VanadielUniqueDay() + 1)
                 end,
             },
         },
@@ -68,13 +65,16 @@ quest.sections =
             {
                 onTrigger = function(player, npc)
                     local questProgress = quest:getVar(player, 'Prog')
+                    local lastDivination = xi.quest.getVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer')
 
                     if questProgress == 1 then
                         return quest:progressEvent(712)
-                    elseif questProgress == 0 then
-                        return quest:progressEvent(711, player:getGil())
-                    elseif questProgress == 2 then
-                        return quest:progressEvent(713, player:getGil())
+                    elseif lastDivination <= VanadielUniqueDay() then
+                        if questProgress == 0 then
+                            return quest:progressEvent(711, player:getGil())
+                        elseif questProgress == 2 then
+                            return quest:progressEvent(713, player:getGil())
+                        end
                     end
                 end,
             },
@@ -103,6 +103,8 @@ quest.sections =
                     then
                         player:delGil(1000)
                         player:messageSpecial(whitegateID.text.PAY_DIVINATION)
+
+                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer', VanadielUniqueDay() + 1)
                     end
                 end,
 
@@ -118,6 +120,8 @@ quest.sections =
                     then
                         player:delGil(1000)
                         player:messageSpecial(whitegateID.text.PAY_DIVINATION)
+
+                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer', VanadielUniqueDay() + 1)
                     end
                 end,
 
@@ -129,8 +133,23 @@ quest.sections =
                     if quest:complete(player) then
                         player:delKeyItem(xi.ki.SEALED_IMMORTAL_ENVELOPE)
 
+                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, 'Timer', VanadielUniqueDay() + 1)
                         xi.quest.setMustZone(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.TRANSFORMATIONS)
-                        xi.quest.setVar(player, xi.questLog.AHT_URHGAN, xi.quest.id.ahtUrhgan.TRANSFORMATIONS, 'Timer', GetSystemTime() + 60) -- 1 minute wait time
+                    end
+                end,
+            },
+        },
+
+        [xi.zone.NAVUKGO_EXECUTION_CHAMBER] =
+        {
+            onEventFinish =
+            {
+                [32001] = function(player, csid, option, npc)
+                    if
+                        player:getLocalVar('battlefieldWin') == xi.battlefield.id.OMENS and
+                        quest:getVar(player, 'Prog') == 0
+                    then
+                        quest:setVar(player, 'Prog', 1)
                     end
                 end,
             },
@@ -154,21 +173,6 @@ quest.sections =
                 end,
             },
         },
-
-        [xi.zone.NAVUKGO_EXECUTION_CHAMBER] =
-        {
-            onEventFinish =
-            {
-                [32001] = function(player, csid, option, npc)
-                    if
-                        player:getLocalVar('battlefieldWin') == xi.battlefield.id.OMENS and
-                        quest:getVar(player, 'Prog') == 0
-                    then
-                        quest:setVar(player, 'Prog', 1)
-                    end
-                end,
-            },
-        },
     },
 
     {
@@ -178,7 +182,7 @@ quest.sections =
 
         [xi.zone.AHT_URHGAN_WHITEGATE] =
         {
-            ['Lathuya'] = quest:event(771):replaceDefault(),
+            ['Lathuya'] = quest:event(718):replaceDefault(),
         },
     },
 }

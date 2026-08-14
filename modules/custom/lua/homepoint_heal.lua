@@ -12,3 +12,5 @@ m:addOverride('xi.homepoint.onTrigger', function(player, csid, index)
     player:addMP(player:getMaxMP())
     super(player, csid, index)
 end)
+
+return m

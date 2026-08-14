@@ -4,7 +4,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('toau_great_axe', xi.pre(xi.expansion.WOTG))
+local moduleName = 'toau_great_axe'
+
+if xi.module.isContentEnabled('WOTG') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -- Shield Break
 m:addOverride('xi.actions.weaponskills.shield_break.onUseWeaponSkill', function(player, target, wsID, tp, primary, action, taChar)
@@ -250,3 +256,5 @@ m:addOverride('xi.actions.weaponskills.kings_justice.onUseWeaponSkill', function
     local damage, criticalHit, tpHits, extraHits = xi.weaponskills.doPhysicalWeaponskill(player, target, wsID, params, tp, action, primary, taChar)
     return tpHits, extraHits, criticalHit, damage
 end)
+
+return m

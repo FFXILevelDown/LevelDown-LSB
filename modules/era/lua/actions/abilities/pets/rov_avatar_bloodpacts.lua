@@ -8,7 +8,13 @@
 require('modules/module_utils')
 -----------------------------------
 
-local m = Module:new('rov_avatar_bloodpacts', xi.pre(xi.expansion.ROV))
+local moduleName = 'rov_avatar_bloodpacts'
+
+if xi.module.isContentEnabled('ROV') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 -----------------------------------
 -- Axe Kick
@@ -828,3 +834,5 @@ end)
 -- Volt Strike
 -----------------------------------
 -- TODO: Volt Strike is not currently coded at time of this comment but should be set to 1.0 for fTPSubsequentHits. Loses Crit Scaling.
+
+return m

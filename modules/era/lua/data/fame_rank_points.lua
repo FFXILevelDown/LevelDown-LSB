@@ -5,7 +5,13 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local m = Module:new('old_fame_rank_points', xi.pre(xi.expansion.ROV))
+local moduleName = 'old_fame_rank_points'
+
+if xi.module.isContentEnabled('ROV') then
+    return { name = moduleName }
+end
+
+local m = Module:new(moduleName)
 
 m:addOverride('xi.server.onServerStart', function()
     super()
@@ -23,3 +29,5 @@ m:addOverride('xi.server.onServerStart', function()
         [9] = 2450,
     }
 end)
+
+return m

@@ -332,18 +332,6 @@ bool CStatusEffectContainer::CanGainStatusEffect(CStatusEffect* PStatusEffect)
                 return false;
             }
             break;
-        case xi::StatusEffect::CurseI:
-            if (m_POwner->hasImmunity(xi::Immunity::Curse))
-            {
-                return false;
-            }
-            break;
-        case xi::StatusEffect::CurseIi:
-            if (m_POwner->hasImmunity(xi::Immunity::Curse))
-            {
-                return false;
-            }
-            break;
         case xi::StatusEffect::BlazeSpikes:
         case xi::StatusEffect::IceSpikes:
         case xi::StatusEffect::ShockSpikes:

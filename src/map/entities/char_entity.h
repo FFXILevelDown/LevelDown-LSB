@@ -64,7 +64,6 @@
 
 class CItemWeapon;
 class CTrustEntity;
-class PlayerTradeTransaction;
 
 struct jobs_t
 {
@@ -572,12 +571,6 @@ public:
     {
         transactions_.clear();
     }
-
-    // The transaction is owned by the initiator
-    auto activePlayerTradeTransaction() const -> PlayerTradeTransaction*;
-
-    // Only valid when both sides' TradePending agree
-    auto tradePartner() const -> CCharEntity*;
 
     // TODO: All member instances of EntityID_t should be Maybe<EntityID_t> to allow for them not to be set,
     //     : instead of checking for entityId.id != 0, etc.

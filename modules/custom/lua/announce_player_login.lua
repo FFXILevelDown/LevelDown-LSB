@@ -18,3 +18,5 @@ m:addOverride('xi.player.onGameIn', function(player, firstLogin, zoning)
         end)
     end
 end)
+
+return m

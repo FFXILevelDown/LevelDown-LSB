@@ -41,3 +41,5 @@ m:addOverride('xi.wotg.helpers.meetsMission38Reqs', function(player)
     -- Ignore the quest requirements, just return true
     return true
 end)
+
+return m
