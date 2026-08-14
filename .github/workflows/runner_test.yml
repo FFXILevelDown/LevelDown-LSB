@@ -52,6 +52,8 @@ jobs:
       XI_NETWORK_SQL_DATABASE: xidb
       XI_NETWORK_SQL_LOGIN: xiadmin
       XI_NETWORK_SQL_PASSWORD: 'password'
+      HOMEBREW_NO_AUTO_UPDATE: 1
+      HOMEBREW_NO_INSTALL_CLEANUP: 1
     steps:
       - uses: actions/checkout@v6
         with:
@@ -61,7 +63,7 @@ jobs:
       - name: Install dependencies (macOS)
         if: ${{ runner.os == 'macOS' }}
         run: |
-          brew update && brew install --quiet \
+          brew install --quiet \
             mariadb \
             zeromq \
             luajit \
@@ -156,9 +158,8 @@ jobs:
           python <<EOF
           with open("modules/init.txt", "w") as f:
               f.write("custom\n")
-              f.write("era\n")
+              f.write("era/lua\n")
               f.write("example\n")
-              f.write("renamer\n")
           EOF
 
       - name: Initialize database
