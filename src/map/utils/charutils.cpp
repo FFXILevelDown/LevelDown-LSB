@@ -5001,15 +5001,14 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 // Do not grant Capacity points if null, Dead, or in a different area
                 return;
             }
-
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() != 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */
             {
-                // Do not grant Capacity points without Job Breaker or Level 75/99
+                // Do not grant Capacity points without Job Breaker or Level 99
                 return;
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - PMember->GetMLevel();
+            int16 levelDiff   = mobLevel - PMember->GetMLevel(); // Passed previous 99 check, no need to calculate
 
             // Capacity Chains are only granted for Mobs level 100+
             // Ref: https://www.bg-wiki.com/ffxi/Job_Points

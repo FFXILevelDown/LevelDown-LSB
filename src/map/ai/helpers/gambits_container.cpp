@@ -1,4 +1,4 @@
-﻿/*
+/*
 ===========================================================================
 
   Copyright (c) 2025 LandSandBoat Dev Teams
@@ -36,6 +36,8 @@
 
 #include "ai/controllers/player_controller.h"
 #include "ai/controllers/trust_controller.h"
+
+#include "entities/trust_entity.h" /* CUSTOM PASSIVE TRUST IGNORE */
 
 #include "packets/s2c/0x038_schedulor.h"
 
@@ -148,8 +150,14 @@ auto CGambitsContainer::Tick(timer::time_point tick) -> Task<void>
 
         auto isValidMember = [this](CBattleEntity* PSettableTarget, CBattleEntity* PPartyTarget)
         {
-            return !PSettableTarget && PPartyTarget->isAlive() && POwner->loc.zone == PPartyTarget->loc.zone &&
-                   distance(POwner->loc.p, PPartyTarget->loc.p) <= 15.0f;
+            bool isPassive = false;
+            if (PPartyTarget->objtype == TYPE_TRUST)
+            {
+                isPassive = static_cast<bool>(static_cast<CTrustEntity*>(PPartyTarget)->passiveTrust());
+            }
+
+            return !PSettableTarget && PPartyTarget->isAlive() && !isPassive && POwner->loc.zone == PPartyTarget->loc.zone &&
+                   distance(POwner->loc.p, PPartyTarget->loc.p) <= 15.0f; /* CUSTOM PASSIVE TRUST IGNORE */
         };
 
         G_TARGET targetType = gambit.target_selector;
