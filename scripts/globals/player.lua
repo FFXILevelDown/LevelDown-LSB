@@ -3,6 +3,7 @@ require('scripts/globals/gear_sets')
 require('scripts/globals/quests')
 require('scripts/globals/teleports')
 require('scripts/events/login_campaign')
+require("scripts/globals/matrix_passives")
 -----------------------------------
 require('scripts/quests/full_speed_ahead')
 -----------------------------------
@@ -250,7 +251,7 @@ xi.player.onGameIn = function(player, firstLogin, zoning)
         -- Login Campaign rewards points once daily
         xi.events.loginCampaign.onGameIn(playerArg)
     end)
-
+    xi.matrixPassives.update(player)
     -- Enforce that gameLogin is always set to 0 once this method exits
     -- This assists with ensuring Abyssea visitant status is handled properly on logins
     player:setLocalVar('gameLogin', 0)
@@ -259,7 +260,12 @@ end
 xi.player.onPlayerDeath = function(player)
 end
 
+xi.player.onPlayerLogin = function(player)
+xi.matrixPassives.update(player)
+end
+
 xi.player.onPlayerLevelUp = function(player)
+xi.matrixPassives.update(player)
 end
 
 xi.player.onPlayerLevelDown = function(player)
