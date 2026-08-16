@@ -26,7 +26,7 @@ zones[xi.zone.CIRDAS_CAVERNS] =
     {
         CASTOFF_POINT_OFFSET   = GetFirstID('Castoff_Point'),
         REIVE_COLLISION_OFFSET = GetFirstID('_pim'),
-        SCALABLE_AREA_OFFSET   = GetFirstID('Scalable_Area'),
+        SCALABLE_AREA_OFFSET   = GetFirstID('Scalable_Area_0'),
     },
 }
 

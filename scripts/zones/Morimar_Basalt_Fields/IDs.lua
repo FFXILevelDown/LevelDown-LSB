@@ -40,7 +40,7 @@ zones[xi.zone.MORIMAR_BASALT_FIELDS] =
     {
         CASTOFF_POINT_OFFSET   = GetFirstID('Castoff_Point'),
         REIVE_COLLISION_OFFSET = GetFirstID('_7d0'),
-        SCALABLE_AREA_OFFSET   = GetFirstID('Scalable_Area'),
+        SCALABLE_AREA_OFFSET   = GetFirstID('Scalable_Area_0'),
     },
 }
 

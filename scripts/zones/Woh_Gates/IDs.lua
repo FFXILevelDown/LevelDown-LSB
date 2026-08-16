@@ -24,7 +24,7 @@ zones[xi.zone.WOH_GATES] =
     npc =
     {
         REIVE_COLLISION_OFFSET = GetFirstID('_7l0'),
-        SCALABLE_AREA_OFFSET   = GetFirstID('Scalable_Area'),
+        SCALABLE_AREA_OFFSET   = GetFirstID('Scalable_Area_0'),
     },
 }
 
