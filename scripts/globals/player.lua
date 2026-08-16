@@ -251,7 +251,12 @@ xi.player.onGameIn = function(player, firstLogin, zoning)
         -- Login Campaign rewards points once daily
         xi.events.loginCampaign.onGameIn(playerArg)
     end)
-    xi.matrixPassives.update(player)
+	
+    player:timer(500, function(p)
+        if p then
+            xi.matrixPassives.update(p)
+        end
+    end)
     -- Enforce that gameLogin is always set to 0 once this method exits
     -- This assists with ensuring Abyssea visitant status is handled properly on logins
     player:setLocalVar('gameLogin', 0)
@@ -261,7 +266,11 @@ xi.player.onPlayerDeath = function(player)
 end
 
 xi.player.onPlayerLogin = function(player)
-xi.matrixPassives.update(player)
+    player:timer(1000, function(p)
+        if p then
+            xi.matrixPassives.update(p)
+        end
+    end)
 end
 
 xi.player.onPlayerLevelUp = function(player)

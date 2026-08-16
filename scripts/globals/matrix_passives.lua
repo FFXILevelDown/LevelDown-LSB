@@ -1,33 +1,49 @@
 -----------------------------------
 -- Global Matrix Passives System
--- Replaces !buff command entirely
+-- 100% Mod-Based (No Status Icons / No Expirations)
 -----------------------------------
 xi = xi or {}
 xi.matrixPassives = xi.matrixPassives or {}
 
-local clearPassives = function(player)
-    -- Reset all custom modifiers
-    player:setMod(xi.mod.EXP_BONUS, 0)
-    player:setMod(xi.mod.CAPACITY_BONUS, 0)
-    player:setMod(xi.mod.ACC, 0)
-    player:setMod(xi.mod.ATT, 0)
-    player:setMod(xi.mod.RACC, 0)
-    player:setMod(xi.mod.RATT, 0)
-    player:setMod(xi.mod.MATT, 0)
-    player:setMod(xi.mod.MACC, 0)
-    player:setMod(xi.mod.DEF, 0)
-    player:setMod(xi.mod.MDEF, 0)
-    player:setMod(xi.mod.RDEF, 0)
+-- Safe modifier helper using addMod and delMod
+local applyMod = function(player, modId, targetVal)
+    local varName    = "MatrixMod_" .. tostring(modId)
+    local currentVal = player:getLocalVar(varName)
 
-    -- Remove status effects and visual icons
-    player:delStatusEffect(xi.effect.REGAIN)
-    player:delStatusEffect(xi.effect.REFRESH)
-    player:delStatusEffect(xi.effect.REGEN)
-    player:delStatusEffect(xi.effect.DEDICATION)
-    player:delStatusEffect(xi.effect.COMMITMENT)
+    if currentVal ~= targetVal then
+        if currentVal ~= 0 then
+            player:delMod(modId, currentVal)
+        end
+        if targetVal ~= 0 then
+            player:addMod(modId, targetVal)
+        end
+        player:setLocalVar(varName, targetVal)
+    end
+end
+
+local clearPassives = function(player)
+    -- Remove all custom matrix modifiers cleanly via delMod
+    applyMod(player, xi.mod.EXP_BONUS, 0)
+    applyMod(player, xi.mod.CAPACITY_BONUS, 0)
+    applyMod(player, xi.mod.ACC, 0)
+    applyMod(player, xi.mod.ATT, 0)
+    applyMod(player, xi.mod.RACC, 0)
+    applyMod(player, xi.mod.RATT, 0)
+    applyMod(player, xi.mod.MATT, 0)
+    applyMod(player, xi.mod.MACC, 0)
+    applyMod(player, xi.mod.DEF, 0)
+    applyMod(player, xi.mod.MDEF, 0)
+    applyMod(player, xi.mod.RDEF, 0)
+    applyMod(player, xi.mod.REGEN, 0)
+    applyMod(player, xi.mod.REFRESH, 0)
+    applyMod(player, xi.mod.REGAIN, 0)
+
+    player:recalculateStats()
 end
 
 xi.matrixPassives.update = function(player)
+    if not player or not player:isPC() then return end
+
     -- LOCKOUT 1: Traditionalists (Ratio == 1)
     if player:getCharVar("Ratio") == 1 then
         clearPassives(player)
@@ -48,106 +64,71 @@ xi.matrixPassives.update = function(player)
     local refreshPower = 10
     local regenPower   = 10
     local expPower     = 500
+    local cpPower      = 200
 
     -----------------------------------
     -- LEVEL 99 ENDGAME CAP MODE
     -----------------------------------
     if mainLvl == 99 then
-        player:setMod(xi.mod.CAPACITY_BONUS, 200)
-        player:setMod(xi.mod.EXP_BONUS, expPower)
+        applyMod(player, xi.mod.CAPACITY_BONUS, cpPower)
+        applyMod(player, xi.mod.EXP_BONUS, 0)
 
         -- Clear combat stats & regens for L99 Cap Mode
-        player:setMod(xi.mod.ACC, 0)
-        player:setMod(xi.mod.ATT, 0)
-        player:setMod(xi.mod.RACC, 0)
-        player:setMod(xi.mod.RATT, 0)
-        player:setMod(xi.mod.MATT, 0)
-        player:setMod(xi.mod.MACC, 0)
-        player:setMod(xi.mod.DEF, 0)
-        player:setMod(xi.mod.MDEF, 0)
-        player:setMod(xi.mod.RDEF, 0)
-
-        player:delStatusEffect(xi.effect.REGAIN)
-        player:delStatusEffect(xi.effect.REFRESH)
-        player:delStatusEffect(xi.effect.REGEN)
-        player:delStatusEffect(xi.effect.DEDICATION)
-
-        if not player:hasStatusEffect(xi.effect.COMMITMENT) then
-            xi.itemUtils.addItemExpEffect(player, xi.effect.COMMITMENT, 200, 43200, 30000)
-        end
+        applyMod(player, xi.mod.ACC, 0)
+        applyMod(player, xi.mod.ATT, 0)
+        applyMod(player, xi.mod.RACC, 0)
+        applyMod(player, xi.mod.RATT, 0)
+        applyMod(player, xi.mod.MATT, 0)
+        applyMod(player, xi.mod.MACC, 0)
+        applyMod(player, xi.mod.DEF, 0)
+        applyMod(player, xi.mod.MDEF, 0)
+        applyMod(player, xi.mod.RDEF, 0)
+        applyMod(player, xi.mod.REGEN, 0)
+        applyMod(player, xi.mod.REFRESH, 0)
+        applyMod(player, xi.mod.REGAIN, 0)
 
     -----------------------------------
     -- LEVEL 75 MODE (COMBAT BUFFS + CP)
     -----------------------------------
     elseif mainLvl == 75 then
-        player:setMod(xi.mod.CAPACITY_BONUS, 200)
-        player:setMod(xi.mod.EXP_BONUS, expPower)
+        applyMod(player, xi.mod.CAPACITY_BONUS, cpPower)
+        applyMod(player, xi.mod.EXP_BONUS, expPower)
 
-        -- Apply Full Combat Stats
-        player:setMod(xi.mod.ACC, power)
-        player:setMod(xi.mod.ATT, power)
-        player:setMod(xi.mod.RACC, power)
-        player:setMod(xi.mod.RATT, power)
-        player:setMod(xi.mod.MATT, power)
-        player:setMod(xi.mod.MACC, power)
-        player:setMod(xi.mod.DEF, power)
-        player:setMod(xi.mod.MDEF, power)
-        player:setMod(xi.mod.RDEF, power)
-
-        player:delStatusEffect(xi.effect.DEDICATION)
-
-        -- Apply Regeneratives
-        if not player:hasStatusEffect(xi.effect.REGAIN) then
-            player:addStatusEffect(xi.effect.REGAIN, { power = regainPower, duration = 0, origin = player })
-        end
-
-        if not player:hasStatusEffect(xi.effect.REFRESH) then
-            player:addStatusEffect(xi.effect.REFRESH, { power = refreshPower, duration = 0, origin = player })
-        end
-
-        if not player:hasStatusEffect(xi.effect.REGEN) then
-            player:addStatusEffect(xi.effect.REGEN, { power = regenPower, duration = 0, origin = player })
-        end
-
-        if not player:hasStatusEffect(xi.effect.COMMITMENT) then
-            xi.itemUtils.addItemExpEffect(player, xi.effect.COMMITMENT, 200, 43200, 30000)
-        end
+        -- Apply Combat Stats & Regens via Raw Modifiers
+        applyMod(player, xi.mod.ACC, power)
+        applyMod(player, xi.mod.ATT, power)
+        applyMod(player, xi.mod.RACC, power)
+        applyMod(player, xi.mod.RATT, power)
+        applyMod(player, xi.mod.MATT, power)
+        applyMod(player, xi.mod.MACC, power)
+        applyMod(player, xi.mod.DEF, power)
+        applyMod(player, xi.mod.MDEF, power)
+        applyMod(player, xi.mod.RDEF, power)
+        applyMod(player, xi.mod.REGEN, regenPower)
+        applyMod(player, xi.mod.REFRESH, refreshPower)
+        applyMod(player, xi.mod.REGAIN, regainPower)
 
     -----------------------------------
     -- LEVELING MODE (1–74, 76–98)
     -----------------------------------
     else
-        player:setMod(xi.mod.EXP_BONUS, expPower)
-        player:setMod(xi.mod.CAPACITY_BONUS, 0)
+        applyMod(player, xi.mod.EXP_BONUS, expPower)
+        applyMod(player, xi.mod.CAPACITY_BONUS, 0)
 
-        -- Apply Full Combat Stats
-        player:setMod(xi.mod.ACC, power)
-        player:setMod(xi.mod.ATT, power)
-        player:setMod(xi.mod.RACC, power)
-        player:setMod(xi.mod.RATT, power)
-        player:setMod(xi.mod.MATT, power)
-        player:setMod(xi.mod.MACC, power)
-        player:setMod(xi.mod.DEF, power)
-        player:setMod(xi.mod.MDEF, power)
-        player:setMod(xi.mod.RDEF, power)
-
-        player:delStatusEffect(xi.effect.COMMITMENT)
-
-        -- Apply Regeneratives
-        if not player:hasStatusEffect(xi.effect.REGAIN) then
-            player:addStatusEffect(xi.effect.REGAIN, { power = regainPower, duration = 0, origin = player })
-        end
-
-        if not player:hasStatusEffect(xi.effect.REFRESH) then
-            player:addStatusEffect(xi.effect.REFRESH, { power = refreshPower, duration = 0, origin = player })
-        end
-
-        if not player:hasStatusEffect(xi.effect.REGEN) then
-            player:addStatusEffect(xi.effect.REGEN, { power = regenPower, duration = 0, origin = player })
-        end
-
-        if not player:hasStatusEffect(xi.effect.DEDICATION) then
-            xi.itemUtils.addItemExpEffect(player, xi.effect.DEDICATION, expPower, 43200, 30000)
-        end
+        -- Apply Combat Stats & Regens via Raw Modifiers
+        applyMod(player, xi.mod.ACC, power)
+        applyMod(player, xi.mod.ATT, power)
+        applyMod(player, xi.mod.RACC, power)
+        applyMod(player, xi.mod.RATT, power)
+        applyMod(player, xi.mod.MATT, power)
+        applyMod(player, xi.mod.MACC, power)
+        applyMod(player, xi.mod.DEF, power)
+        applyMod(player, xi.mod.MDEF, power)
+        applyMod(player, xi.mod.RDEF, power)
+        applyMod(player, xi.mod.REGEN, regenPower)
+        applyMod(player, xi.mod.REFRESH, refreshPower)
+        applyMod(player, xi.mod.REGAIN, regainPower)
     end
+
+    player:recalculateStats()
 end

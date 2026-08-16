@@ -27,6 +27,9 @@ local defaultsTable =
 local function validateParameters(actor, target, fedData)
     local params = {}
 
+    -- Target assignment.
+    params.aeTarget        = fedData.aeTarget or target
+
     -- Chance.
     params.chance          = fedData.chance or 100 -- Default: Always proc.
 
@@ -66,7 +69,7 @@ local function validateParameters(actor, target, fedData)
 end
 
 -----------------------------------
--- Global functions called from "emtity.onSpikesDamage()"
+-- Global functions called from "entity.onSpikesDamage()"
 -----------------------------------
 
 -- Disable cyclomatic complexity check for this function:
@@ -85,7 +88,7 @@ xi.combat.action.executeSpikesDamage = function(actor, target, fedData)
     end
 
     -- Early return: Effect is nullified.
-    local nullification = xi.spells.damage.calculateNullification(params.aeTarget, params.magicalElement, params.attackType == xi.attackType.PHYSICAL, params.params.attackType == xi.attackType.MAGICAL, params.attackType == xi.attackType.RANGED, params.attackType == xi.attackType.BREATH)
+    local nullification = xi.spells.damage.calculateNullification(params.aeTarget, params.magicalElement, params.attackType == xi.attackType.PHYSICAL, params.attackType == xi.attackType.MAGICAL, params.attackType == xi.attackType.RANGED, params.attackType == xi.attackType.BREATH)
     if nullification == 0 then
         return 0, 0, 0
     end
