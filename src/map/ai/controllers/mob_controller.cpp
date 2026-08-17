@@ -37,6 +37,7 @@
 #include "mobskill.h"
 #include "party.h"
 #include "recast_container.h"
+#include "roam_region.h"
 #include "spawn_handler.h"
 #include "status_effect_container.h"
 #include "utils/battleutils.h"
@@ -277,35 +278,47 @@ auto CMobController::MobSkill(int listId) -> bool
     }();
 
     auto skillList = battleutils::GetMobSkillList(resolvedListId);
+    std::erase_if(skillList,
+                  [&](const uint16 skillId)
+                  {
+                      if (battleutils::GetMobSkill(skillId) != nullptr)
+                      {
+                          return false;
+                      }
+                      ShowError("Mobskill with ID (%i) [called from skill-list ID (%i)] isn't properly defined in mob_skills.sql", skillId, resolvedListId);
+                      return true;
+                  });
     if (skillList.empty())
     {
         return false;
     }
     std::shuffle(skillList.begin(), skillList.end(), xirand::rng());
 
-    // Pick the first valid mob skill from the shuffled list.
-    const uint16 firstValidSkillId = [&]() -> uint16
+    // Lua may override the skill
+    // We used that isntead of the shuffled list
+    const auto overrideSkill = luautils::OnMobMobskillChoose(PMob, PTarget, skillList.front());
+    if (overrideSkill > 0)
     {
-        for (const auto skillId : skillList)
+        return TryMobSkill(overrideSkill, PTarget);
+    }
+
+    // Start at the top of the list after the shuffle, first one that returns 0 wins
+    for (const auto skillId : skillList)
+    {
+        if (TryMobSkill(skillId, PTarget))
         {
-            if (battleutils::GetMobSkill(skillId) != nullptr)
-            {
-                return skillId;
-            }
-            ShowError("CMobController::MobSkill -> Mobskill with ID (%i) [called from skill-list ID (%i)] isn't properly defined in mob_skills.sql", skillId, resolvedListId);
+            return true;
         }
-        return 0;
-    }();
+    }
 
-    // Lua may override the chosen skill.
-    const uint16 chosenSkillId = [&]() -> uint16
-    {
-        const auto overrideSkill = luautils::OnMobMobskillChoose(PMob, PTarget, firstValidSkillId);
-        return overrideSkill > 0 ? overrideSkill : firstValidSkillId;
-    }();
+    return false;
+}
 
-    auto* PMobSkill = battleutils::GetMobSkill(chosenSkillId);
-    if (!PMobSkill)
+// Try to use the given skill on the target
+auto CMobController::TryMobSkill(const uint16 skillId, CBattleEntity* PTarget) -> bool
+{
+    auto* PMobSkill = battleutils::GetMobSkill(skillId);
+    if (!PMobSkill || PMobSkill->isAstralFlow())
     {
         return false;
     }
@@ -322,10 +335,7 @@ auto CMobController::MobSkill(int listId) -> bool
     }
     PActionTarget = luautils::OnMobSkillTarget(PActionTarget, PMob, PMobSkill);
 
-    // NOTE: OnMobSkillReadyTime runs unconditionally so its Lua side effects still fire.
-    const auto mobSkillReadyTime = luautils::OnMobSkillReadyTime(PActionTarget, PMob, PMobSkill);
-
-    if (!PActionTarget || PMobSkill->isAstralFlow())
+    if (!PActionTarget)
     {
         return false;
     }
@@ -341,6 +351,8 @@ auto CMobController::MobSkill(int listId) -> bool
     {
         return false;
     }
+
+    const auto mobSkillReadyTime = luautils::OnMobSkillReadyTime(PActionTarget, PMob, PMobSkill);
 
     return MobSkill(PActionTarget->entityId(), PMobSkill->getID(), mobSkillReadyTime);
 }
@@ -667,7 +679,7 @@ auto CMobController::ShouldCloseToTarget(const float currentDistance) -> bool
     }
 
     // Spawn leash: don't chase past the configured tether distance.
-    if (PMob->getMobMod(xi::MobMod::SpawnLeash) > 0 && distance(PMob->loc.p, PMob->m_SpawnPoint) > PMob->getMobMod(xi::MobMod::SpawnLeash))
+    if (PMob->getMobMod(xi::MobMod::SpawnLeash) > 0 && PMob->DistanceFromHome() > PMob->getMobMod(xi::MobMod::SpawnLeash))
     {
         return false;
     }
@@ -1694,9 +1706,20 @@ auto CMobController::DoRoamTick(timer::time_point tick) -> Task<void>
             {
                 PMob->m_IsPathingHome = true;
 
-                if (!PMob->PAI->PathFind->IsFollowingPath() && !PMob->PAI->PathFind->PathTo(PMob->m_SpawnPoint))
+                // heading home means the nearest edge of the region, not the spot it happened to spawn on
+                const auto homePoint = [&]
                 {
-                    PMob->PAI->PathFind->PathInRange(PMob->m_SpawnPoint, PMob->m_maxRoamDistance, PATHFLAG_RUN);
+                    if (PMob->roamRegion())
+                    {
+                        return PMob->roamRegion()->closestPoint(PMob->loc.p);
+                    }
+
+                    return PMob->m_SpawnPoint;
+                }();
+
+                if (!PMob->PAI->PathFind->IsFollowingPath() && !PMob->PAI->PathFind->PathTo(homePoint))
+                {
+                    PMob->PAI->PathFind->PathInRange(homePoint, PMob->m_maxRoamDistance, PATHFLAG_RUN);
                 }
 
                 // Cap the path so we re-evaluate every few seconds instead of bee-lining home.
@@ -1791,8 +1814,7 @@ auto CMobController::DoRoamTick(timer::time_point tick) -> Task<void>
                     luautils::OnMobRoamAction(PMob);
                     m_LastActionTime = m_Tick;
                 }
-                else if (!isWormSurfacing &&
-                         PMob->PAI->PathFind->RoamAround(PMob->m_SpawnPoint, PMob->GetRoamDistance(), static_cast<uint8>(PMob->getMobMod(xi::MobMod::RoamTurns)), PMob->m_roamFlags))
+                else if (!isWormSurfacing && PMob->PAI->PathFind->RoamAround(PMob->GetRoamAnchor(), PMob->GetRoamDistance(), static_cast<uint8>(PMob->getMobMod(xi::MobMod::RoamTurns)), PMob->m_roamFlags, PMob->roamRegion()))
                 {
                     if ((PMob->m_roamFlags & xi::RoamFlag::Stealth) != xi::RoamFlag::None)
                     {
@@ -1886,7 +1908,7 @@ void CMobController::FollowRoamPath()
         }
 
         // Snap to spawn rotation after pathing home, for mobs that must face a fixed direction.
-        if (PMob->getMobMod(xi::MobMod::RoamResetFacing) && distance(PMob->loc.p, PMob->m_SpawnPoint) <= PMob->m_maxRoamDistance)
+        if (PMob->getMobMod(xi::MobMod::RoamResetFacing) && PMob->DistanceFromHome() <= PMob->m_maxRoamDistance)
         {
             PMob->loc.p.rotation = PMob->m_SpawnPoint.rotation;
         }
