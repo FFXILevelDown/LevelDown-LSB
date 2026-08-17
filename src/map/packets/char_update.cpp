@@ -24,6 +24,7 @@
 #include "char_update.h"
 
 #include "entities/char_entity.h"
+#include "job_points.h"
 #include "items/item_linkshell.h"
 #include "status_effect_container.h"
 #include "utils/mountutils.h"
@@ -437,6 +438,9 @@ void CCharUpdatePacket::updateWith(CCharEntity* PChar, ENTITYUPDATE type, uint8 
         }
 
         packet->Flags4.TrialFlag     = 0; // Trial accounts not implemented.
-        packet->Flags4.JobMasterFlag = PChar->getMod(xi::Mod::SUPERIOR_LEVEL) == 5 && PChar->m_jobMasterDisplay;
+        // === CUSTOM DUAL-ERA MASTER STAR INJECTION SYSTEM ===
+        bool cm_is99Master = PChar->getMod(xi::Mod::SUPERIOR_LEVEL) == 5;
+        bool cm_is75Master = static_cast<uint8>(PChar->GetMJob()) < 23 && PChar->PJobPoints->GetJobPointsSpent() >= 2100;
+        packet->Flags4.JobMasterFlag = (cm_is99Master || cm_is75Master) && PChar->m_jobMasterDisplay;
     }
 }

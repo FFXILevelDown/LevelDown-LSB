@@ -274,6 +274,23 @@ void CAlliance::addParty(CParty* party)
         return;
     }
 
+    /* CUSTOM RATIO ALLIANCE RESTRICTION */
+    if (!partyList.empty() && party != nullptr)
+    {
+        CBattleEntity* PExistingLead = partyList[0]->GetLeader();
+        CBattleEntity* PIncomingLead = party->GetLeader();
+        if (PExistingLead && PIncomingLead && PExistingLead->objtype == TYPE_PC && PIncomingLead->objtype == TYPE_PC)
+        {
+            auto* PCharExisting = static_cast<CCharEntity*>(PExistingLead);
+            auto* PCharIncoming = static_cast<CCharEntity*>(PIncomingLead);
+            if (PCharExisting->getCharVar("Ratio") != PCharIncoming->getCharVar("Ratio"))
+            {
+                ShowWarning("CAlliance::addParty - Ratio mismatch between alliance leader %s and party leader %s.", PCharExisting->getName(), PCharIncoming->getName());
+                return;
+            }
+        }
+    }
+
     party->m_PAlliance = this;
 
     partyList.emplace_back(party);
@@ -318,6 +335,23 @@ void CAlliance::addParty(CParty* party)
 
 void CAlliance::addParty(uint32 partyid) const
 {
+    /* CUSTOM RATIO ALLIANCE RESTRICTION */
+    if (!partyList.empty())
+    {
+        CBattleEntity* PExistingLead = partyList[0]->GetLeader();
+        if (PExistingLead && PExistingLead->objtype == TYPE_PC)
+        {
+            auto* PCharExisting = static_cast<CCharEntity*>(PExistingLead);
+            int32 existingRatio = PCharExisting->getCharVar("Ratio");
+            int32 incomingRatio = charutils::FetchCharVar(partyid, "Ratio").first;
+            if (existingRatio != incomingRatio)
+            {
+                ShowWarning("CAlliance::addParty(id) - Ratio mismatch for partyid %u.", partyid);
+                return;
+            }
+        }
+    }
+
     int newparty = 0;
 
     const auto rset = db::preparedStmt("SELECT partyflag FROM accounts_parties WHERE allianceid = ? ORDER BY partyflag & ? ASC",
