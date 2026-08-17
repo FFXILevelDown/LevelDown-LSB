@@ -26,7 +26,6 @@
 #include <cstring>
 
 #include "entities/char_entity.h"
-#include "job_points.h"
 #include "items/item_linkshell.h"
 #include "status_effect_container.h"
 #include "utils/mountutils.h"
@@ -321,10 +320,7 @@ CCharStatusPacket::CCharStatusPacket(CCharEntity* PChar)
     flags4.GeoIndiElement = 0;
     flags4.GeoIndiSize    = 1;
     flags4.GeoIndiFlag    = 0;
-    // === CUSTOM DUAL-ERA MASTER STAR INJECTION SYSTEM ===
-    bool cm_is99Master = PChar->getMod(xi::Mod::SUPERIOR_LEVEL) == 5;
-    bool cm_is75Master = static_cast<uint8>(PChar->GetMJob()) < 23 && PChar->PJobPoints->GetJobPointsSpent() >= 2100;
-    flags4.JobMasterFlag  = (cm_is99Master || cm_is75Master) && PChar->m_jobMasterDisplay;
+    flags4.JobMasterFlag  = PChar->getMod(xi::Mod::SUPERIOR_LEVEL) == 5 && PChar->m_jobMasterDisplay;
 
     // GEO bubble effects, changes bubble effect depending on what effect is activated.
     if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ColureActive))
