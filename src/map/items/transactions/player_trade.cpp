@@ -70,9 +70,8 @@ auto PlayerTradeTransaction::start(CCharEntity* initiator, CCharEntity* target) 
     const bool invalidPlayers = !initiator || !target || initiator == target;
     const bool eitherInTrade  = !invalidPlayers && (initiator->activePlayerTradeTransaction() || target->activePlayerTradeTransaction());
     const bool outOfReach     = !invalidPlayers && !withinTradeRange(initiator, target);
-    const bool bracketMismatch = !invalidPlayers && (initiator->getCharVar("[LevelRatio]Restriction") != target->getCharVar("[LevelRatio]Restriction")); /* CUSTOM BRACKET TRADE RESTRICTION */
 
-    if (invalidPlayers || eitherInTrade || outOfReach || bracketMismatch)
+    if (invalidPlayers || eitherInTrade || outOfReach)
     {
         return nullptr;
     }

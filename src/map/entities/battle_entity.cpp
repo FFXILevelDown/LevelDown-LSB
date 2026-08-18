@@ -1727,7 +1727,6 @@ void CBattleEntity::SetMLevel(uint8 mlvl)
     }
 }
 
-/* CUSTOM SUBJOB RATIO AND UNCAP */
 void CBattleEntity::SetSLevel(uint8 slvl)
 {
     TracyZoneScoped;
@@ -1739,73 +1738,22 @@ void CBattleEntity::SetSLevel(uint8 slvl)
     else
     {
         auto ratio = settings::get<uint8>("map.SUBJOB_RATIO");
-        uint8 tierBonus = 0;
-
-        if (this->objtype == TYPE_PC)
-        {
-            auto* PChar = static_cast<CCharEntity*>(this);
-
-            uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");
-            if (customRatio == 0)
-            {
-                customRatio = charutils::GetCharVar(PChar, "Ratio");
-            }
-
-            if (customRatio > 0)
-            {
-                ratio = static_cast<uint8>(customRatio);
-            }
-
-            // Check Ghee Kyo's var, with fallback to global var
-            tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]SUBJOB_CAP_BONUS"));
-            if (tierBonus == 0)
-            {
-                tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]GLOBAL_SUBJOB_BONUS"));
-            }
-        }
-
         switch (ratio)
         {
-            case 0: // No subjob
+            case 0: // no SJ
                 m_slvl = 0;
                 break;
-
-            case 1: // Traditional Ratio (75/37 or 99/49) + Ghee Kyo Cap Bonus
-            {
-                uint8 baseCap = static_cast<uint8>(m_mlvl >> 1);
-                if (m_mlvl == 1)
-                {
-                    baseCap = 1;
-                }
-
-                uint8 calculatedCap = baseCap;
-                if (m_mlvl >= 75)
-                {
-                    uint8 baseLevelCap = (m_mlvl >= 99) ? 49 : 37;
-                    uint8 maxAllowed   = baseLevelCap + 5; // Max +5 bonus levels
-                    calculatedCap      = std::min<uint8>(static_cast<uint8>(baseLevelCap + tierBonus), maxAllowed);
-                }
-
-                m_slvl = std::min(slvl, calculatedCap);
+            case 1: // 1/2 (75/37, 99/49)
+                m_slvl = (slvl > (m_mlvl >> 1) ? (m_mlvl == 1 ? 1 : (m_mlvl >> 1)) : slvl);
                 break;
-            }
-
-            case 2: // 2/3 Ratio
-            {
-                uint8 calculatedCap = (m_mlvl == 1) ? 1 : static_cast<uint8>((m_mlvl * 2) / 3);
-                m_slvl = std::min(slvl, calculatedCap);
+            case 2: // 2/3 (75/50, 99/66)
+                m_slvl = (slvl > (m_mlvl * 2) / 3 ? (m_mlvl == 1 ? 1 : (m_mlvl * 2) / 3) : slvl);
                 break;
-            }
-
-            case 3: // 1:1 Equal Ratio (75/75 or 99/99)
-            {
-                uint8 calculatedCap = (m_mlvl == 1) ? 1 : m_mlvl;
-                m_slvl = std::min(slvl, calculatedCap);
+            case 3: // equal (75/75, 99/99)
+                m_slvl = (slvl > m_mlvl ? (m_mlvl == 1 ? 1 : m_mlvl) : slvl);
                 break;
-            }
-
             default: // Error
-                ShowError("Error setting subjob level: Invalid ratio '%d' check your settings file!", ratio);
+                ShowError("Error setting subjob level: Invalid ratio '%s' check your settings file!", ratio);
                 break;
         }
     }
@@ -1815,7 +1763,6 @@ void CBattleEntity::SetSLevel(uint8 slvl)
         db::preparedStmt("UPDATE char_stats SET slvl = ? WHERE charid = ? LIMIT 1", m_slvl, this->id);
     }
 }
-
 
 void CBattleEntity::SetDeathType(uint8 type)
 {

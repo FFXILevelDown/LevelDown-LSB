@@ -48,7 +48,7 @@ LevelDown Custom Modules/lua/zones/
 LevelDown Custom Modules/lua/actions/
 LevelDown Custom Modules/lua/effects/
 LevelDown Custom Modules/lua/commands/
-LevelDown Custom Modules/cpp/
+# LevelDown Custom Modules/cpp/
 LevelDown Custom Modules/sql/
 #LevelDown Custom Modules/content/custom_besieged
 LevelDown Custom Modules/content/LD 75 Cap
