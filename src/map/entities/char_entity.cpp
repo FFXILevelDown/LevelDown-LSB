@@ -78,6 +78,7 @@
 #include "items/item_furnishing.h"
 #include "items/item_usable.h"
 #include "items/item_weapon.h"
+#include "items/transactions/player_trade.h"
 #include "items/transactions/synth.h"
 #include "job_points.h"
 #include "latent_effect_container.h"
@@ -562,6 +563,32 @@ bool CCharEntity::hasAutoTargetEnabled() const
 auto CCharEntity::isCrafting() const -> bool
 {
     return animation == xi::Animation::Synth || this->activeTransaction<SynthTransaction>();
+}
+
+auto CCharEntity::tradePartner() const -> CCharEntity*
+{
+    auto* other = TradePending.resolve<CCharEntity>();
+    if (!other || other->TradePending.UniqueNo != id)
+    {
+        return nullptr;
+    }
+
+    return other;
+}
+
+auto CCharEntity::activePlayerTradeTransaction() const -> PlayerTradeTransaction*
+{
+    if (auto* local = this->activeTransaction<PlayerTradeTransaction>())
+    {
+        return local;
+    }
+    auto* other = this->tradePartner();
+    if (!other)
+    {
+        return nullptr;
+    }
+
+    return other->activeTransaction<PlayerTradeTransaction>();
 }
 
 auto CCharEntity::isFishing() const -> bool
@@ -2207,7 +2234,7 @@ auto CCharEntity::OnItemFinish(CItemState& state, action_t& action) -> bool
     auto* PTarget = state.target().resolve<CBattleEntity>();
     auto* PItem   = state.GetItem();
 
-    if (!PItem->isType(ITEM_EQUIPMENT) && (PItem->getQuantity() < 1 || PItem->getReserve() > 0))
+    if (!PItem->isType(ITEM_EQUIPMENT) && PItem->getQuantity() < 1)
     {
         ShowWarning("OnItemFinish: %s attempted to use reserved/insufficient %s (%u).", this->getName(), PItem->getName(), PItem->getID());
         this->pushPacket<GP_SERV_COMMAND_BATTLE_MESSAGE>(this, this, PItem->getID(), 0, MsgBasic::ItemFailsToActivate);
@@ -2244,8 +2271,6 @@ auto CCharEntity::OnItemFinish(CItemState& state, action_t& action) -> bool
         actionResult.resolution       = ActionResolution::Hit;
         actionResult.animation        = PItem->getAnimationID();
 
-        // TODO: guard charutils::UpdateItem against InTransaction items so a
-        // Lua delItem inside OnItemUse can't decrement out-of-tx.
         int32 value = luautils::OnItemUse(this, PTargetFound, PItem, action);
 
         actionResult.param = value;
@@ -2387,9 +2412,6 @@ void CCharEntity::Die()
     SetDeathTime(timer::now());
 
     setBlockingAid(false);
-
-    // influence for conquest system
-    conquest::LoseInfluencePoints(this);
 
     if (GetLocalVar("MijinGakure") == 0 &&
         (PBattlefield == nullptr || (PBattlefield->GetRuleMask() & RULES_LOSE_EXP) == RULES_LOSE_EXP) &&

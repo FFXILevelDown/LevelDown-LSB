@@ -56,6 +56,7 @@
 #include "item_container.h"
 #include "items.h"
 #include "items/item_weapon.h"
+#include "items/transactions/item_claim.h"
 #include "job_points.h"
 #include "mobskill.h"
 #include "modifier.h"
@@ -164,7 +165,14 @@ void LoadWeaponSkillsList()
                                        MAX_WEAPONSKILL_ID);
     FOR_DB_MULTIPLE_RESULTS(rset)
     {
-        auto* PWeaponSkill = new CWeaponSkill(rset->get<uint16>("weaponskillid"));
+        const auto weaponSkillId = rset->get<uint16>("weaponskillid");
+        if (weaponSkillId >= MAX_WEAPONSKILL_ID)
+        {
+            ShowErrorFmt("weaponskillid {} is out of range, MAX_WEAPONSKILL_ID is {}. Skipping.", weaponSkillId, MAX_WEAPONSKILL_ID);
+            continue;
+        }
+
+        auto* PWeaponSkill = new CWeaponSkill(weaponSkillId);
 
         PWeaponSkill->setName(rset->get<std::string>("name"));
 
@@ -207,7 +215,14 @@ void LoadMobSkillsList()
                                  "FROM mob_skills");
     FOR_DB_MULTIPLE_RESULTS(rset)
     {
-        auto* PMobSkill = new CMobSkill(rset->get<uint16>("mob_skill_id"));
+        const auto mobSkillId = rset->get<uint16>("mob_skill_id");
+        if (mobSkillId >= MAX_MOBSKILL_ID)
+        {
+            ShowErrorFmt("mob_skill_id {} is out of range, MAX_MOBSKILL_ID is {}. Skipping.", mobSkillId, MAX_MOBSKILL_ID);
+            continue;
+        }
+
+        auto* PMobSkill = new CMobSkill(mobSkillId);
 
         PMobSkill->setAnimationID(rset->get<uint16>("mob_anim_id"));
         PMobSkill->setName(rset->get<std::string>("mob_skill_name"));
@@ -3107,6 +3122,11 @@ bool IsAbsorbByShadow(CBattleEntity* PDefender, CBattleEntity* PAttacker)
     {
         PDefender->setModifier(modShadow, --Shadow);
 
+        if (PDefender->objtype == TYPE_PC)
+        {
+            static_cast<CCharEntity*>(PDefender)->setPersist(CharPersist::Effects);
+        }
+
         if (Shadow == 0)
         {
             switch (modShadow)
@@ -3682,8 +3702,15 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
         if (ConsumeTool && hasFutae && useFutae)
         {
             // Futae Takes 2 of Your Tools
-            charutils::UpdateItem(PChar, LOC_INVENTORY, SlotID, -2);
-            PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+            if (auto transaction = ItemClaimTransaction::start(PChar); !transaction || !transaction->take(LOC_INVENTORY, SlotID, 2) || !transaction->commit())
+            {
+                ShowErrorFmt("battleutils: {} could not spend the tools in slot {}", PChar->getName(), SlotID);
+                return false;
+            }
+            else
+            {
+                PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+            }
         }
         else
         {
@@ -3702,8 +3729,15 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
 
                 if (!expertiseProc)
                 {
-                    charutils::UpdateItem(PChar, LOC_INVENTORY, SlotID, -1);
-                    PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+                    if (auto transaction = ItemClaimTransaction::start(PChar); !transaction || !transaction->take(LOC_INVENTORY, SlotID, 1) || !transaction->commit())
+                    {
+                        ShowErrorFmt("battleutils: {} could not spend the tool in slot {}", PChar->getName(), SlotID);
+                        return false;
+                    }
+                    else
+                    {
+                        PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+                    }
                 }
             }
         }
@@ -5968,15 +6002,29 @@ bool RemoveAmmo(CCharEntity* PChar, int quantity)
             uint8 slot = eloc ? eloc->Slot : 0;
             uint8 loc  = eloc ? static_cast<uint8>(eloc->Container) : 0;
             charutils::UnequipItem(PChar, SLOT_AMMO);
-            charutils::UpdateItem(PChar, loc, slot, -quantity);
-            PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+            if (auto transaction = ItemClaimTransaction::start(PChar); !transaction || !transaction->take(loc, slot, quantity) || !transaction->commit())
+            {
+                ShowErrorFmt("battleutils: {} did not spend {} ammo in slot {}", PChar->getName(), quantity, slot);
+            }
+            else
+            {
+                PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+            }
+
             return true;
         }
         else
         {
             auto ammoLoc = PChar->equipLocation(SLOT_AMMO);
-            charutils::UpdateItem(PChar, static_cast<uint8>(ammoLoc->Container), ammoLoc->Slot, -quantity);
-            PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+            if (auto transaction = ItemClaimTransaction::start(PChar); !transaction || !transaction->take(static_cast<uint8>(ammoLoc->Container), ammoLoc->Slot, quantity) || !transaction->commit())
+            {
+                ShowErrorFmt("battleutils: {} did not spend {} ammo in slot {}", PChar->getName(), quantity, ammoLoc->Slot);
+            }
+            else
+            {
+                PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);
+            }
+
             return false;
         }
     }

@@ -4,14 +4,9 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'nogga_shop_adjust'
+local m = Module:new('nogga_shop_adjust', xi.pre(xi.expansion.WOTG))
 
-if xi.module.isContentEnabled('WOTG') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
-
+-- TODO: find a patch note or source for this change
 m:addOverride('xi.zones.Metalworks.npcs.Nogga.onTrigger', function(player, npc)
     local stock =
     {
@@ -22,5 +17,3 @@ m:addOverride('xi.zones.Metalworks.npcs.Nogga.onTrigger', function(player, npc)
     player:showText(npc, zones[xi.zone.METALWORKS].text.NOGGA_SHOP_DIALOG)
     xi.shop.nation(player, stock, xi.nation.BASTOK)
 end)
-
-return m

@@ -9,13 +9,7 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'era_quest_apocalypse_nigh'
-
-if xi.module.isContentEnabled('TVR') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
+local m = Module:new('era_quest_apocalypse_nigh', xi.pre(xi.expansion.TVR))
 
 m:addOverride('xi.server.onServerStart', function()
     super()
@@ -70,5 +64,3 @@ m:addOverride('xi.server.onServerStart', function()
         end
     end)
 end)
-
-return m

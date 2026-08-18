@@ -7,17 +7,14 @@
 require('modules/module_utils')
 require('scripts/globals/treasure')
 -----------------------------------
-local moduleName = 'pre_rmt_drops'
+local m = Module:new('pre_rmt_drops', xi.pre(xi.expansion.COP))
 
-if xi.module.isContentEnabled('COP') then
-    return { name = moduleName }
-end
+-- Disabled until the new treasure system has been tested for long enough.
+m:setEnabled(false)
 
-return { name = moduleName }
-
---[[
--- This Module is disabled until the new treasure system is tested an appropiate amount of time.
 m:addOverride('xi.zones.Castle_Oztroja.Zone.onInitialize', function(zone)
+    super(zone)
+
     xi.treasure.lootTable[xi.zone.CASTLE_OZTROJA][2] =
     {
         { xi.item.NONE,        690 }, -- Gil
@@ -30,7 +27,5 @@ m:addOverride('xi.zones.Castle_Oztroja.Zone.onInitialize', function(zone)
         { xi.item.PAINITE,      20 },
         { xi.item.SUNSTONE,     20 },
         { xi.item.ZIRCON,       20 },
-    },
-
+    }
 end)
-]]--

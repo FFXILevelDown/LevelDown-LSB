@@ -3,12 +3,12 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'bastok_markets_vendors_adjust'
-local m = Module:new(moduleName)
+local m = Module:new('bastok_markets_vendors_adjust')
 
-if not xi.module.isContentEnabled('ROV') then
-    -- Harmodios: Rework stock for in era items and conquest standing requirements
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Harmodios.onTrigger', function(player, npc)
+-- Harmodios: Rework stock for in era items and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Harmodios.onTrigger', {
+    [xi.expansion.ROV] = function(player, npc)
         local stock =
         {
             { xi.item.GEMSHORN,                    5159, 3 },
@@ -27,12 +27,13 @@ if not xi.module.isContentEnabled('ROV') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.HARMODIOS_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
-end
+    end,
+})
 
-if not xi.module.isContentEnabled('ABYSSEA') then
-    -- Ciqala: Rework inventory for era stock and conquest standing requirements
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Ciqala.onTrigger', function(player, npc)
+-- Ciqala: Rework inventory for era stock and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Ciqala.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.BRONZE_KNUCKLES,   244, 3 },
@@ -52,10 +53,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.CIQALA_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
+    end,
+})
 
-    -- Hortense: Remove OOE Bard spells from stock
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Hortense.onTrigger', function(player, npc)
+-- Hortense: Remove OOE Bard spells from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Hortense.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_FOE_REQUIEM,        71, 3 },
@@ -73,10 +77,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.HORTENSE_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
+    end,
+})
 
-    -- Peritrage: Rework inventory for era stock and conquest standing requirements
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Peritrage.onTrigger', function(player, npc)
+-- Peritrage: Rework inventory for era stock and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Peritrage.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.LIGHT_CROSSBOW,   179, 3 },
@@ -89,10 +96,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.PERITRAGE_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
+    end,
+})
 
-    -- Zhikkom: Rework inventory for era stock and conquest standing requirements
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Zhikkom.onTrigger', function(player, npc)
+-- Zhikkom: Rework inventory for era stock and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Zhikkom.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.BRONZE_SWORD,    268, 3 },
@@ -112,10 +122,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.ZHIKKOM_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
+    end,
+})
 
-    -- Charging Chocobo: Rework inventory for era stock and conquest standing requirements
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Charging_Chocobo.onTrigger', function(player, npc)
+-- Charging Chocobo: Rework inventory for era stock and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Charging_Chocobo.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.BRONZE_SUBLIGAR,    208, 3 },
@@ -133,10 +146,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.CHARGINGCHOCOBO_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
+    end,
+})
 
-    -- Mjoll: Rework inventory for era stock and conquest standing requirements
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Mjoll.onTrigger', function(player, npc)
+-- Mjoll: Rework inventory for era stock and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Mjoll.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.WOODEN_ARROW,               4, 2 },
@@ -148,12 +164,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.MJOLL_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
-end
+    end,
+})
 
 -- Sororo: Remove Repose scroll from stock, add Aquaveil (only sold pre-WOTG)
-if not xi.module.isContentEnabled('WOTG') then
-    m:addOverride('xi.zones.Bastok_Markets.npcs.Sororo.onTrigger', function(player, npc)
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Bastok_Markets.npcs.Sororo.onTrigger', {
+    [xi.expansion.WOTG] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_CURE,        68, 3 },
@@ -176,7 +193,5 @@ if not xi.module.isContentEnabled('WOTG') then
 
         player:showText(npc, zones[xi.zone.BASTOK_MARKETS].text.SORORO_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.BASTOK)
-    end)
-end
-
-return m
+    end,
+})

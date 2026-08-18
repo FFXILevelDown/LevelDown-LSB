@@ -48202,7 +48202,7 @@ INSERT INTO `mob_spawn_points` VALUES (17297446,0,'Picklix_Longindex','Picklix L
 INSERT INTO `mob_spawn_points` VALUES (17297447,0,'Moxnix_Nightgoggle','Moxnix Nightgoggle',12,58,58,204.199,4.025,-78.000,93,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17297448,0,'Doglix_Muttsnout','Doglix Muttsnout',13,58,58,210.899,4.138,-81.648,93,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17297449,0,'Ancient_Weapon','Ancient Weapon',14,66,66,-77.000,-4.000,-92.000,170,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (17297450,0,'Legendary_Weapon','Legendary Weapon',15,65,65,-75.000,-4.000,-92.000,170,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (17297450,0,'Legendary_Weapon','Legendary Weapon',15,66,66,-75.000,-4.000,-92.000,170,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17297451,0,'Gudanna','Gudanna',16,55,60,-279.065,-20.484,-0.456,18,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17297452,0,'Pil','Pil',17,94,95,-210.000,-20.835,70.000,0,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17297453,0,'Pil','Pil',17,94,95,-4.000,-4.331,-33.299,0,NULL,NULL);
@@ -72463,8 +72463,8 @@ INSERT INTO `mob_spawn_points` VALUES (17572197,0,'Jack_of_Cups','Jack of Cups',
 INSERT INTO `mob_spawn_points` VALUES (17572198,0,'Jack_of_Batons','Jack of Batons',61,62,62,-291.000,0.001,-657.000,126,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17572199,0,'Jack_of_Swords','Jack of Swords',62,62,62,-291.000,0.001,-659.000,130,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17572200,0,'Jack_of_Coins','Jack of Coins',63,62,62,-291.000,0.001,-661.000,127,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (17572201,0,'Queen_of_Swords','Queen of Swords',64,72,72,-422.000,0.001,618.000,239,NULL,NULL);
-INSERT INTO `mob_spawn_points` VALUES (17572202,0,'Queen_of_Coins','Queen of Coins',65,72,72,-422.000,0.001,621.000,16,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (17572201,0,'Queen_of_Swords','Queen of Swords',64,72,72,-423.000,-0.500,621.000,0,NULL,NULL);
+INSERT INTO `mob_spawn_points` VALUES (17572202,0,'Queen_of_Coins','Queen of Coins',65,72,72,-423.000,-0.500,619.000,217,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17572203,0,'Thunder_Elemental','Thunder Elemental',66,75,75,-576.613,-1.014,739.999,0,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17572204,0,'Custom_Cardian','Custom Cardian',67,1,1,427.215,-8.021,732.387,27,NULL,NULL);
 INSERT INTO `mob_spawn_points` VALUES (17572205,0,'Custom_Cardian','Custom Cardian',67,1,1,429.615,-8.000,731.649,69,NULL,NULL);

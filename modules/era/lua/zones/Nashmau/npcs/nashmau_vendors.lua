@@ -3,12 +3,12 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'nashmau_vendors_adjust'
-local m = Module:new(moduleName)
+local m = Module:new('nashmau_vendors_adjust')
 
-if not xi.module.isContentEnabled('SOA') then
-    -- Yoyoroon: Removes many PUP attachments
-    m:addOverride('xi.zones.Nashmau.npcs.Yoyoroon.onTrigger', function(player, npc)
+-- Yoyoroon: Removes many PUP attachments
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Nashmau.npcs.Yoyoroon.onTrigger', {
+    [xi.expansion.SOA] = function(player, npc)
         local stock =
         {
             { xi.item.TENSION_SPRING,   4940 },
@@ -31,10 +31,13 @@ if not xi.module.isContentEnabled('SOA') then
 
         player:showText(npc, zones[xi.zone.NASHMAU].text.YOYOROON_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Pipiroon: Remove Nashmau Waystone from stock
-    m:addOverride('xi.zones.Nashmau.npcs.Pipiroon.onTrigger', function(player, npc)
+-- Pipiroon: Remove Nashmau Waystone from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Nashmau.npcs.Pipiroon.onTrigger', {
+    [xi.expansion.SOA] = function(player, npc)
         local stock =
         {
             { xi.item.GRENADE,           1204 },
@@ -44,12 +47,13 @@ if not xi.module.isContentEnabled('SOA') then
 
         player:showText(npc, zones[xi.zone.NASHMAU].text.PIPIROON_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
-end
+    end,
+})
 
-if not xi.module.isContentEnabled('ABYSSEA') then
-    -- Mamaroon: Remove Scroll of Enlight and Scroll of Endark from stock
-    m:addOverride('xi.zones.Nashmau.npcs.Mamaroon.onTrigger', function(player, npc)
+-- Mamaroon: Remove Scroll of Enlight and Scroll of Endark from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Nashmau.npcs.Mamaroon.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_STUN,          27000 },
@@ -66,10 +70,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.NASHMAU].text.MAMAROON_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Jajaroon: Removes Trump Card Case added in Abyssea
-    m:addOverride('xi.zones.Nashmau.npcs.Jajaroon.onTrigger', function(player, npc)
+-- Jajaroon: Removes Trump Card Case added in Abyssea
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Nashmau.npcs.Jajaroon.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.FIRE_CARD,           48 },
@@ -91,7 +98,5 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.NASHMAU].text.JAJAROON_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
-end
-
-return m
+    end,
+})

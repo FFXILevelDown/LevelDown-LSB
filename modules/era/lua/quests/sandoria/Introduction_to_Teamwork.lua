@@ -7,13 +7,7 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'era_quest_introduction_to_teamwork'
-
-if xi.module.isContentEnabled('ROV') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
+local m = Module:new('era_quest_introduction_to_teamwork', xi.pre(xi.expansion.ROV))
 
 m:addOverride('xi.server.onServerStart', function()
     super()
@@ -54,5 +48,3 @@ m:addOverride('xi.server.onServerStart', function()
         end
     end)
 end)
-
-return m

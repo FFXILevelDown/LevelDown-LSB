@@ -8,13 +8,7 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'era_quest_storms_of_fate'
-
-if xi.module.isContentEnabled('SOA') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
+local m = Module:new('era_quest_storms_of_fate', xi.pre(xi.expansion.SOA))
 
 m:addOverride('xi.server.onServerStart', function()
     super()
@@ -30,5 +24,3 @@ m:addOverride('xi.server.onServerStart', function()
         end
     end)
 end)
-
-return m

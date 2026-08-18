@@ -50,6 +50,7 @@
 #include "map/packets/c2s/0x053_lockstyle.h"
 #include "map/packets/c2s/0x06e_group_solicit_req.h"
 #include "map/packets/c2s/0x074_group_solicit_res.h"
+#include "map/packets/c2s/0x083_shop_buy.h"
 #include "map/packets/c2s/0x096_combine_ask.h"
 #include "map/packets/c2s/0x0aa_guild_buy.h"
 #include "map/packets/c2s/0x0ab_guild_buylist.h"
@@ -61,6 +62,9 @@
 #include "map/packets/c2s/0x0fe_myroom_plant_crop.h"
 #include "map/packets/c2s/0x0ff_myroom_plant_stop.h"
 #include "map/packets/c2s/0x102_extended_job.h"
+#include "map/packets/c2s/0x105_bazaar_list.h"
+#include "map/packets/c2s/0x106_bazaar_buy.h"
+#include "map/packets/c2s/0x10a_bazaar_itemset.h"
 #include "map/status_effect_container.h"
 #include "packets/c2s/0x015_pos.h"
 #include "test_char.h"
@@ -364,6 +368,24 @@ auto CLuaClientEntityPairActions::guildSellList() const -> sol::table
 }
 
 /************************************************************************
+ *  Function: shopBuy()
+ *  Purpose : Emits packet 0x083 to buy from the currently open shop.
+ *  Example : p1.actions:shopBuy(0, 1)
+ ************************************************************************/
+
+void CLuaClientEntityPairActions::shopBuy(uint16 shopSlot, uint32 quantity) const
+{
+    const auto packet      = parent_->packets().createPacket<GP_CLI_COMMAND_SHOP_BUY>();
+    auto*      buy         = packet->as<GP_CLI_COMMAND_SHOP_BUY>();
+    buy->ItemNum           = quantity;
+    buy->ShopNo            = 0;
+    buy->ShopItemIndex     = shopSlot;
+    buy->PropertyItemIndex = 0;
+
+    parent_->packets().sendBasicPacket(*packet);
+}
+
+/************************************************************************
  *  Function: inviteToParty()
  *  Purpose : Emits packet to invite a PC.
  *  Example : player.actions:inviteToParty(player2)
@@ -508,6 +530,64 @@ void CLuaClientEntityPairActions::tradeNpc(const sol::object& npcQuery, const so
 }
 
 /************************************************************************
+ *  Function: bazaarPrice()
+ *  Purpose : Emits packet 0x10A to price an inventory slot for the player's bazaar.
+ *  Example : seller.actions:bazaarPrice(item:getSlotID(), 500)
+ *  Notes   : A price of 0 takes the item back off display.
+ ************************************************************************/
+
+void CLuaClientEntityPairActions::bazaarPrice(const uint8 invSlot, const uint32 price) const
+{
+    const auto packet = parent_->packets().createPacket<GP_CLI_COMMAND_BAZAAR_ITEMSET>();
+    auto*      data   = packet->as<GP_CLI_COMMAND_BAZAAR_ITEMSET>();
+
+    data->ItemIndex = invSlot;
+    data->Price     = price;
+
+    parent_->packets().sendBasicPacket(*packet);
+}
+
+/************************************************************************
+ *  Function: bazaarOpen()
+ *  Purpose : Emits packet 0x105 to look inside another player's bazaar.
+ *  Example : buyer.actions:bazaarOpen(seller)
+ ************************************************************************/
+
+void CLuaClientEntityPairActions::bazaarOpen(CLuaBaseEntity* seller) const
+{
+    if (!seller)
+    {
+        TestError("bazaarOpen: Invalid seller");
+        return;
+    }
+
+    const auto packet = parent_->packets().createPacket<GP_CLI_COMMAND_BAZAAR_LIST>();
+    auto*      data   = packet->as<GP_CLI_COMMAND_BAZAAR_LIST>();
+
+    data->UniqueNo = seller->getID();
+    data->ActIndex = seller->getTargID();
+
+    parent_->packets().sendBasicPacket(*packet);
+}
+
+/************************************************************************
+ *  Function: bazaarBuy()
+ *  Purpose : Emits packet 0x106 to buy from the open bazaar.
+ *  Example : buyer.actions:bazaarBuy(item:getSlotID(), 1)
+ ************************************************************************/
+
+void CLuaClientEntityPairActions::bazaarBuy(const uint8 sellerInvSlot, const uint32 quantity) const
+{
+    const auto packet = parent_->packets().createPacket<GP_CLI_COMMAND_BAZAAR_BUY>();
+    auto*      data   = packet->as<GP_CLI_COMMAND_BAZAAR_BUY>();
+
+    data->BazaarItemIndex = sellerInvSlot;
+    data->BuyNum          = quantity;
+
+    parent_->packets().sendBasicPacket(*packet);
+}
+
+/************************************************************************
  *  Function: tradeRequest()
  *  Purpose : Request a trade with another player.
  *  Example : p1.actions:tradeRequest(p2)
@@ -568,13 +648,13 @@ void CLuaClientEntityPairActions::tradeOffer(uint8 tradeIndex, uint8 invSlot, ui
  *  Example : p1.actions:tradeClearSlot(0)
  ************************************************************************/
 
-void CLuaClientEntityPairActions::tradeClearSlot(uint8 tradeIndex) const
+void CLuaClientEntityPairActions::tradeClearSlot(uint8 tradeIndex, uint8 invSlot, uint16 itemId) const
 {
     const auto packet = parent_->packets().createPacket<GP_CLI_COMMAND_TRADE_LIST>();
     auto*      data   = packet->as<GP_CLI_COMMAND_TRADE_LIST>();
     data->TradeIndex  = tradeIndex;
-    data->ItemIndex   = 0;
-    data->ItemNo      = 0;
+    data->ItemIndex   = invSlot;
+    data->ItemNo      = itemId;
     data->ItemNum     = 0;
 
     parent_->packets().sendBasicPacket(*packet);
@@ -889,17 +969,17 @@ auto storageItemNo(CCharEntity* PChar, const uint8 container, const uint8 slot) 
 /************************************************************************
  *  Function: plantAdd()
  *  Purpose : Sow a seed or feed a crystal into a gardening pot.
- *  Notes   : Pot and add item must both be in a mog safe.
+ *  Notes   : Pot and add item must both be in a mog safe. addItemNo overrides the planted item id.
  ************************************************************************/
 
-void CLuaClientEntityPairActions::plantAdd(const uint8 potContainer, const uint8 potSlot, const uint8 addContainer, const uint8 addSlot) const
+void CLuaClientEntityPairActions::plantAdd(const uint8 potContainer, const uint8 potSlot, const uint8 addContainer, const uint8 addSlot, sol::optional<uint16> addItemNo) const
 {
     auto* PChar = parent_->testChar()->entity();
 
     const auto packet       = parent_->packets().createPacket<GP_CLI_COMMAND_MYROOM_PLANT_ADD>();
     auto*      p            = packet->as<GP_CLI_COMMAND_MYROOM_PLANT_ADD>();
     p->MyroomPlantItemNo    = storageItemNo(PChar, potContainer, potSlot);
-    p->MyroomAddItemNo      = storageItemNo(PChar, addContainer, addSlot);
+    p->MyroomAddItemNo      = addItemNo.value_or(storageItemNo(PChar, addContainer, addSlot));
     p->MyroomPlantItemIndex = potSlot;
     p->MyroomAddItemIndex   = addSlot;
     p->MyroomPlantCategory  = potContainer;
@@ -1018,6 +1098,7 @@ void CLuaClientEntityPairActions::Register()
     SOL_REGISTER("guildSell", CLuaClientEntityPairActions::guildSell);
     SOL_REGISTER("guildBuyList", CLuaClientEntityPairActions::guildBuyList);
     SOL_REGISTER("guildSellList", CLuaClientEntityPairActions::guildSellList);
+    SOL_REGISTER("shopBuy", CLuaClientEntityPairActions::shopBuy);
     SOL_REGISTER("inviteToParty", CLuaClientEntityPairActions::inviteToParty);
     SOL_REGISTER("formAlliance", CLuaClientEntityPairActions::formAlliance);
     SOL_REGISTER("acceptPartyInvite", CLuaClientEntityPairActions::acceptPartyInvite);
@@ -1028,6 +1109,9 @@ void CLuaClientEntityPairActions::Register()
     SOL_REGISTER("tradeClearSlot", CLuaClientEntityPairActions::tradeClearSlot);
     SOL_REGISTER("tradeMake", CLuaClientEntityPairActions::tradeMake);
     SOL_REGISTER("tradeCancel", CLuaClientEntityPairActions::tradeCancel);
+    SOL_REGISTER("bazaarPrice", CLuaClientEntityPairActions::bazaarPrice);
+    SOL_REGISTER("bazaarOpen", CLuaClientEntityPairActions::bazaarOpen);
+    SOL_REGISTER("bazaarBuy", CLuaClientEntityPairActions::bazaarBuy);
     SOL_REGISTER("acceptRaise", CLuaClientEntityPairActions::acceptRaise);
     SOL_REGISTER("engage", CLuaClientEntityPairActions::engage);
     SOL_REGISTER("skillchain", CLuaClientEntityPairActions::skillchain);

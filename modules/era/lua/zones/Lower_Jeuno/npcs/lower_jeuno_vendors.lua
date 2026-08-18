@@ -3,12 +3,12 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'lower_jeuno_vendors_adjust'
-local m = Module:new(moduleName)
+local m = Module:new('lower_jeuno_vendors_adjust')
 
-if not xi.module.isContentEnabled('SOA') then
-    -- Pawkrix: Remove Bowl of Goblin Stew 880 from stock
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Pawkrix.onTrigger', function(player, npc)
+-- Pawkrix: Remove Bowl of Goblin Stew 880 from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Pawkrix.onTrigger', {
+    [xi.expansion.SOA] = function(player, npc)
         local stock =
         {
             { xi.item.BAG_OF_HORO_FLOUR,           40 },
@@ -22,12 +22,13 @@ if not xi.module.isContentEnabled('SOA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.PAWKRIX_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
-end
+    end,
+})
 
-if not xi.module.isContentEnabled('ABYSSEA') then
-    -- Creepstix: Removes OOE spell scrolls
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Creepstix.onTrigger', function(player, npc)
+-- Creepstix: Removes OOE spell scrolls
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Creepstix.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_GOBLIN_GAVOTTE, 8160 },
@@ -37,10 +38,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.JUNK_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Hasim: Removes OOE spell scrolls
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Hasim.onTrigger', function(player, npc)
+-- Hasim: Removes OOE spell scrolls
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Hasim.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_CURE_IV,     23400 },
@@ -64,10 +68,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.WAAG_DEEG_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Susu: Removes OOE spell scrolls
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Susu.onTrigger', function(player, npc)
+-- Susu: Removes OOE spell scrolls
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Susu.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_BANISHGA_II,  20000 },
@@ -90,10 +97,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.WAAG_DEEG_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Stinknix: Remove Duchy Waystone
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Stinknix.onTrigger', function(player, npc)
+-- Stinknix: Remove Duchy Waystone
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Stinknix.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.PINCH_OF_POISON_DUST,     320 },
@@ -106,10 +116,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.JUNK_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Taza: Add era-appropriate scroll stock
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Taza.onTrigger', function(player, npc)
+-- Taza: Add era-appropriate scroll stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Taza.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_SLEEPGA,       10304 },
@@ -132,10 +145,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.WAAG_DEEG_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Chetak: Rework Wool Cap and Bracers prices for in era values
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Chetak.onTrigger', function(player, npc)
+-- Chetak: Rework Wool Cap and Bracers prices for in era values
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Chetak.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.RED_CAP,       20000 },
@@ -154,10 +170,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.ORTHONS_GARMENT_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Yoskolo: Removed OOE Sentinels Scherzo from stock
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Yoskolo.onTrigger', function(player, npc)
+-- Yoskolo: Removed OOE Sentinels Scherzo from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Yoskolo.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.FLASK_OF_DISTILLED_WATER,       12 },
@@ -179,12 +198,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.LOWER_JEUNO].text.YOSKOLO_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
-end
+    end,
+})
 
-if not xi.module.isContentEnabled('ROV') then
-    -- Ghebi Damomohe: Remove Chunk of Bronzite from stock, added post-ROV
-    m:addOverride('xi.zones.Lower_Jeuno.npcs.Ghebi_Damomohe.onEventFinish', function(player, csid, option, npc)
+-- Ghebi Damomohe: Remove Chunk of Bronzite from stock, added post-ROV
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Lower_Jeuno.npcs.Ghebi_Damomohe.onEventFinish', {
+    [xi.expansion.ROV] = function(player, csid, option, npc)
         if csid == 106 and option == 0 then
             local stock =
             {
@@ -197,7 +217,5 @@ if not xi.module.isContentEnabled('ROV') then
         else
             super(player, csid, option, npc)
         end
-    end)
-end
-
-return m
+    end,
+})

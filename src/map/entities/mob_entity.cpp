@@ -42,6 +42,7 @@
 #include "packets/pet_sync.h"
 #include "packets/s2c/0x029_battle_message.h"
 #include "recast_container.h"
+#include "roam_region.h"
 #include "roe.h"
 #include "spawn_slot.h"
 #include "status_effect_container.h"
@@ -360,7 +361,47 @@ bool CMobEntity::CanRoamHome()
         return true;
     }
 
-    return distance(m_SpawnPoint, loc.p) < roam_home_distance;
+    // a mob that left its region does not walk back, it despawns and respawns somewhere inside
+    if (roamRegion_)
+    {
+        return false;
+    }
+
+    return DistanceFromHome() < roam_home_distance;
+}
+
+auto CMobEntity::GetRoamAnchor() const -> position_t
+{
+    // inside a region it wanders on from where it stands, so it covers the whole thing instead of a disc around one spot
+    if (roamRegion_)
+    {
+        return loc.p;
+    }
+
+    return m_SpawnPoint;
+}
+
+auto CMobEntity::roamRegion() const -> const RoamRegion*
+{
+    return roamRegion_;
+}
+
+void CMobEntity::setRoamRegion(const RoamRegion* region)
+{
+    roamRegion_ = region;
+
+    // a region has no leeway: its edge is the limit, so nothing outside counts as home
+    m_maxRoamDistance = 0.0f;
+}
+
+auto CMobEntity::DistanceFromHome() const -> float
+{
+    if (roamRegion_)
+    {
+        return roamRegion_->distanceOutside(loc.p);
+    }
+
+    return distance(loc.p, m_SpawnPoint);
 }
 
 bool CMobEntity::CanRoam()
@@ -460,12 +501,7 @@ bool CMobEntity::CanDeaggro() const
 
 bool CMobEntity::IsFarFromHome()
 {
-    return distance(loc.p, m_SpawnPoint) > m_maxRoamDistance;
-}
-
-bool CMobEntity::CanBeNeutral() const
-{
-    return !((m_Type & xi::MobType::Notorious) != xi::MobType::Normal);
+    return DistanceFromHome() > m_maxRoamDistance;
 }
 
 bool CMobEntity::shouldUseTPMove(uint16 tpThreshold)
@@ -605,19 +641,23 @@ void CMobEntity::PostTick()
     TracyZoneScoped;
 
     CBattleEntity::PostTick();
-    timer::time_point now = timer::now();
-    if (loc.zone && updatemask && now > m_nextUpdateTimer)
+
+    if (loc.zone && updatemask)
     {
-        m_nextUpdateTimer = now + 250ms;
-        loc.zone->UpdateEntityPacket(this, ENTITY_UPDATE, updatemask);
-
-        // If this mob is charmed, it should sync with its master
-        if (PMaster && PMaster->PPet == this && PMaster->objtype == TYPE_PC)
+        const auto now = timer::now();
+        if (now > m_nextUpdateTimer)
         {
-            ((CCharEntity*)PMaster)->pushPacket<CPetSyncPacket>((CCharEntity*)PMaster);
-        }
+            m_nextUpdateTimer = now + 250ms;
+            loc.zone->UpdateEntityPacket(this, ENTITY_UPDATE, updatemask);
 
-        updatemask = 0;
+            // If this mob is charmed, it should sync with its master
+            if (PMaster && PMaster->PPet == this && PMaster->objtype == TYPE_PC)
+            {
+                ((CCharEntity*)PMaster)->pushPacket<CPetSyncPacket>((CCharEntity*)PMaster);
+            }
+
+            updatemask = 0;
+        }
     }
 }
 
@@ -710,7 +750,21 @@ void CMobEntity::Spawn()
     mobutils::CalculateMobStats(this);
     mobutils::GetAvailableSpells(this);
 
-    // spawn somewhere around my point
+    // region mobs pick a fresh spawn point every life, and m_SpawnPoint keeps it for the point-based checks
+    if (roamRegion_ && loc.zone)
+    {
+        if (const auto point = roamRegion_->randomPoint(loc.zone->navMesh()))
+        {
+            m_SpawnPoint.x = point->x;
+            m_SpawnPoint.y = point->y;
+            m_SpawnPoint.z = point->z;
+        }
+        else
+        {
+            ShowWarningFmt("Mob {} ({}): roam region has no walkable point to spawn on", name, id);
+        }
+    }
+
     loc.p = m_SpawnPoint;
 
     if ((m_roamFlags & xi::RoamFlag::Stealth) != xi::RoamFlag::None)
@@ -742,6 +796,12 @@ void CMobEntity::Spawn()
     {
         SetDespawnTime(std::chrono::seconds(getMobMod(xi::MobMod::IdleDespawn)));
     }
+
+    // Roam immediately on spawn
+    if (CanRoam() && PAI->PathFind->RoamAround(m_SpawnPoint, GetRoamDistance(), static_cast<uint8>(getMobMod(xi::MobMod::RoamTurns)), m_roamFlags))
+    {
+        PAI->PathFind->FollowPath(timer::now());
+    }
 }
 
 void CMobEntity::OnWeaponSkillFinished(CWeaponSkillState& state, action_t& action)
@@ -772,6 +832,13 @@ void CMobEntity::DistributeRewards()
     {
         StatusEffectContainer->KillAllStatusEffect();
         PChar->m_charHistory.enemiesDefeated++;
+
+        // Add mob kill for Beastmen influence
+        if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Signet) &&
+            loc.zone->GetRegionID() <= REGION_TYPE::TAVNAZIA)
+        {
+            conquest::AddMobKills(1, loc.zone->GetRegionID());
+        }
 
         // NOTE: this is called for all alliance / party members!
         luautils::OnMobDeath(this, PChar);
@@ -819,22 +886,39 @@ void CMobEntity::DistributeRewards()
 }
 
 // Return the list of seals that can drop based on the mob's level.
+// Each tier is exclusive, a mob only rolls between the seals of its own tier.
 // Rules:
 // - Mob  < 50: Beastmen's Seal
 // - Mob >= 50: Beastmen's Seal, Kindred's Seal
-// - Mob >= 70: Beastmen's Seal, Kindred's Seal, Kindred's Crest
-// - Mob >= 80: Beastmen's Seal, Kindred's Seal, Kindred's Crest, High Kindred's Crest
-// If Abyssea is not enabled, pool is limited to Beastmen's Seal and Kindred's Seal.
-auto CMobEntity::GetEligibleSeals() -> std::vector<uint16>
+// - Mob >= 70: Kindred's Seal, Kindred's Crest
+// - Mob >= 80: Kindred's Crest, High Kindred's Crest
+// - Mob >= 100: Kindred's Crest, High Kindred's Crest, Sacred Kindred's Crest
+auto CMobEntity::GetEligibleSeals() const -> std::vector<uint16>
 {
-    if (GetMLevel() >= 80 && luautils::IsContentEnabled("ABYSSEA"))
+    // Using Abyssea being enabled as a marker for """era""" servers to return the old bands.
+    if (!luautils::IsContentEnabled("ABYSSEA"))
     {
-        return { BEASTMENS_SEAL, KINDREDS_SEAL, KINDREDS_CREST, HIGH_KINDREDS_CREST };
+        if (GetMLevel() >= 50)
+        {
+            return { BEASTMENS_SEAL, KINDREDS_SEAL };
+        }
+
+        return { BEASTMENS_SEAL };
     }
 
-    if (GetMLevel() >= 70 && luautils::IsContentEnabled("ABYSSEA"))
+    if (GetMLevel() >= 100)
     {
-        return { BEASTMENS_SEAL, KINDREDS_SEAL, KINDREDS_CREST };
+        return { KINDREDS_CREST, HIGH_KINDREDS_CREST, SACRED_KINDREDS_CREST };
+    }
+
+    if (GetMLevel() >= 80)
+    {
+        return { KINDREDS_CREST, HIGH_KINDREDS_CREST };
+    }
+
+    if (GetMLevel() >= 70)
+    {
+        return { KINDREDS_SEAL, KINDREDS_CREST };
     }
 
     if (GetMLevel() >= 50)
@@ -1049,14 +1133,17 @@ void CMobEntity::DropItems(CCharEntity* PChar)
     }
 
     xi::ZoneType zoneType  = zoneutils::GetZone(PChar->getZone())->GetTypeMask();
-    bool         validZone = !((this->m_Type & xi::MobType::Battlefield) != xi::MobType::Normal) && !((zoneType & xi::ZoneType::Dynamis) != xi::ZoneType::Unknown);
+    bool         validZone = !((this->m_Type & xi::MobType::Battlefield) != xi::MobType::Normal) && !((zoneType & xi::ZoneType::Dynamis) != xi::ZoneType::Unknown) && loc.zone->GetRegionID() != REGION_TYPE::LUMORIA;
 
     // Check if mob can drop seals -- mobmod to disable drops, zone type isnt battlefield/dynamis, mob is stronger than Too Weak, or mobmod for EXP bonus is -100 or lower (-100% exp)
     if (!getMobMod(xi::MobMod::NoDrops) && validZone && charutils::CheckMob(m_HiPCLvl, this) > EMobDifficulty::TooWeak && getMobMod(xi::MobMod::ExpBonus) > -100)
     {
+        // Seals, geodes and avatarites do not drop from notorious monsters. Crystals still do.
+        const bool isNotorious = (m_Type & xi::MobType::Notorious) != xi::MobType::Normal;
+
         // Check for seal drops
         // Only one type of seal can drop per mob
-        if (xirand::GetRandomNumber(100) < 20 && CanAddSpecial(LootRecastID::Seal))
+        if (!isNotorious && xirand::GetRandomNumber(100) < 20 && CanAddSpecial(LootRecastID::Seal))
         {
             const auto seals = GetEligibleSeals();
             AddItemToPool(seals[xirand::GetRandomNumber(seals.size())]);
@@ -1065,7 +1152,7 @@ void CMobEntity::DropItems(CCharEntity* PChar)
 
         // Check for geode/avatarites drops
         // Only one type of geode can drop per mob
-        if (xirand::GetRandomNumber(100) < 20 && CanAddSpecial(LootRecastID::Geode))
+        if (!isNotorious && xirand::GetRandomNumber(100) < 20 && CanAddSpecial(LootRecastID::Geode))
         {
             if (const auto geodes = GetEligibleGeodes(); !geodes.empty())
             {

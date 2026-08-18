@@ -52,9 +52,12 @@ public:
     void tradeRequest(CLuaBaseEntity* target) const;
     void tradeAccept() const;
     void tradeOffer(uint8 tradeIndex, uint8 invSlot, uint16 itemId, uint32 quantity) const;
-    void tradeClearSlot(uint8 tradeIndex) const;
+    void tradeClearSlot(uint8 tradeIndex, uint8 invSlot, uint16 itemId) const;
     void tradeMake() const;
     void tradeCancel() const;
+    void bazaarPrice(uint8 invSlot, uint32 price) const;
+    void bazaarOpen(CLuaBaseEntity* seller) const;
+    void bazaarBuy(uint8 sellerInvSlot, uint32 quantity) const;
     void acceptRaise() const;
     void engage(CLuaBaseEntity* mob) const;
     void skillchain(CLuaBaseEntity* target, sol::variadic_args weaponskillIds) const;
@@ -64,6 +67,8 @@ public:
     auto guildBuyList() const -> sol::table;
     auto guildSellList() const -> sol::table;
 
+    void shopBuy(uint16 shopSlot, uint32 quantity) const;
+
     void moveItem(uint8 srcContainer, uint8 srcSlot, uint8 dstContainer, uint32 quantity, sol::optional<uint8> dstSlot) const;
     void sortContainer(uint8 container) const;
     void dropItem(uint8 container, uint8 slot, uint32 quantity) const;
@@ -71,7 +76,7 @@ public:
     void equipSet(const sol::table& entries) const;
     void craft(uint16 crystalItemId, const sol::table& ingredients) const;
 
-    void plantAdd(uint8 potContainer, uint8 potSlot, uint8 addContainer, uint8 addSlot) const;
+    void plantAdd(uint8 potContainer, uint8 potSlot, uint8 addContainer, uint8 addSlot, sol::optional<uint16> addItemNo = sol::nullopt) const;
     void plantCheck(uint8 potContainer, uint8 potSlot) const;
     void plantHarvest(uint8 potContainer, uint8 potSlot, sol::optional<bool> uproot) const;
     void plantDry(uint8 potContainer, uint8 potSlot) const;

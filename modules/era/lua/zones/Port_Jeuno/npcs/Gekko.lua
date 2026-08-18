@@ -4,14 +4,9 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'gekko_shop_adjust'
+local m = Module:new('gekko_shop_adjust', xi.pre(xi.expansion.WOTG))
 
-if xi.module.isContentEnabled('WOTG') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
-
+-- TODO: find a patch note or source for this change
 m:addOverride('xi.zones.Port_Jeuno.npcs.Gekko.onTrigger', function(player, npc)
     local stock =
     {
@@ -28,5 +23,3 @@ m:addOverride('xi.zones.Port_Jeuno.npcs.Gekko.onTrigger', function(player, npc)
     player:showText(npc, zones[xi.zone.PORT_JEUNO].text.DUTY_FREE_SHOP_DIALOG)
     xi.shop.general(player, stock)
 end)
-
-return m

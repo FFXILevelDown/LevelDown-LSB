@@ -6,13 +6,7 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'the_kuftal_tour'
-
-if xi.module.isContentEnabled('ROV') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
+local m = Module:new('the_kuftal_tour', xi.pre(xi.expansion.ROV))
 
 m:addOverride('xi.server.onServerStart', function()
     super()
@@ -36,5 +30,3 @@ m:addOverride('xi.server.onServerStart', function()
         end
     end)
 end)
-
-return m

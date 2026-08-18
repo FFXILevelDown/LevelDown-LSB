@@ -3,12 +3,12 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'aht_urhgan_whitegate_vendors_adjust'
-local m = Module:new(moduleName)
+local m = Module:new('aht_urhgan_whitegate_vendors_adjust')
 
-if not xi.module.isContentEnabled('ABYSSEA') then
-    -- Gavrie: Remove Automaton Oil +3 from shop inventory
-    m:addOverride('xi.zones.Aht_Urhgan_Whitegate.npcs.Gavrie.onTrigger', function(player, npc)
+-- Gavrie: Remove Automaton Oil +3 from shop inventory
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Aht_Urhgan_Whitegate.npcs.Gavrie.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.FLASK_OF_EYE_DROPS,     2595 },
@@ -25,10 +25,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.AHT_URHGAN_WHITEGATE].text.GAVRIE_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
+    end,
+})
 
-    -- Mazween: Absorb-ACC requires WOTG
-    m:addOverride('xi.zones.Aht_Urhgan_Whitegate.npcs.Mazween.onTrigger', function(player, npc)
+-- Mazween: Absorb-ACC requires WOTG
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Aht_Urhgan_Whitegate.npcs.Mazween.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.SCROLL_OF_SLEEPGA,      11200 },
@@ -47,18 +50,19 @@ if not xi.module.isContentEnabled('ABYSSEA') then
             { xi.item.SCROLL_OF_DREAD_SPIKES, 70560 },
         }
 
-        if xi.module.isContentEnabled('WOTG') then
+        if not xi.pre(xi.expansion.WOTG) then
             table.insert(stock, { xi.item.SCROLL_OF_ABSORB_ACC, 44000 })
         end
 
         player:showText(npc, zones[xi.zone.AHT_URHGAN_WHITEGATE].text.MAZWEEN_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
-end
+    end,
+})
 
-if not xi.module.isContentEnabled('SOA') then
-    -- Khaf Jhifanm: Remove Empire Waystone from stock
-    m:addOverride('xi.zones.Aht_Urhgan_Whitegate.npcs.Khaf_Jhifanm.onTrigger', function(player, npc)
+-- Khaf Jhifanm: Remove Empire Waystone from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Aht_Urhgan_Whitegate.npcs.Khaf_Jhifanm.onTrigger', {
+    [xi.expansion.SOA] = function(player, npc)
         local stock =
         {
             { xi.item.DRIED_DATE,                200 },
@@ -70,7 +74,5 @@ if not xi.module.isContentEnabled('SOA') then
 
         player:showText(npc, zones[xi.zone.AHT_URHGAN_WHITEGATE].text.KHAFJHIFANM_SHOP_DIALOG)
         xi.shop.general(player, stock)
-    end)
-end
-
-return m
+    end,
+})

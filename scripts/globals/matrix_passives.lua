@@ -24,7 +24,6 @@ end
 local clearPassives = function(player)
     -- Remove all custom matrix modifiers cleanly via delMod
     applyMod(player, xi.mod.EXP_BONUS, 0)
-    applyMod(player, xi.mod.CAPACITY_BONUS, 0)
     applyMod(player, xi.mod.ACC, 0)
     applyMod(player, xi.mod.ATT, 0)
     applyMod(player, xi.mod.RACC, 0)
@@ -70,7 +69,6 @@ xi.matrixPassives.update = function(player)
     -- LEVEL 99 ENDGAME CAP MODE
     -----------------------------------
     if mainLvl == 99 then
-        applyMod(player, xi.mod.CAPACITY_BONUS, cpPower)
         applyMod(player, xi.mod.EXP_BONUS, 0)
 
         -- Clear combat stats & regens for L99 Cap Mode
@@ -91,7 +89,6 @@ xi.matrixPassives.update = function(player)
     -- LEVEL 75 MODE (COMBAT BUFFS + CP)
     -----------------------------------
     elseif mainLvl == 75 then
-        applyMod(player, xi.mod.CAPACITY_BONUS, cpPower)
         applyMod(player, xi.mod.EXP_BONUS, expPower)
 
         -- Apply Combat Stats & Regens via Raw Modifiers
@@ -113,7 +110,6 @@ xi.matrixPassives.update = function(player)
     -----------------------------------
     else
         applyMod(player, xi.mod.EXP_BONUS, expPower)
-        applyMod(player, xi.mod.CAPACITY_BONUS, 0)
 
         -- Apply Combat Stats & Regens via Raw Modifiers
         applyMod(player, xi.mod.ACC, power)

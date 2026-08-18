@@ -29,6 +29,7 @@
 
 #include "battlefield.h"
 #include "instance.h"
+#include "lua/luautils.h"
 #include "utils/zoneutils.h"
 #include "zone.h"
 #include "zone_instance.h"
@@ -72,13 +73,23 @@ CBaseEntity::~CBaseEntity()
     {
         PBattlefield->RemoveEntity(this, BATTLEFIELD_LEAVE_CODE_WARPDC);
     }
+
+    // Serials are never reused, so nothing can read this table again. Dropping it is what stops
+    // xi.entityData growing with every entity the process ever made.
+    luautils::resetEntityData(this);
 }
 
 void CBaseEntity::Spawn()
 {
     status = allegiance == xi::Allegiance::Mob ? xi::Status::Update : xi::Status::Normal;
     updatemask |= UPDATE_HP;
+
     ResetLocalVars();
+
+    // Drop the previous life's data before any spawn script runs. CAutomatonEntity::Spawn does
+    // not chain here, but it only ever runs on a freshly allocated entity.
+    luautils::resetEntityData(this);
+
     PAI->Reset();
 }
 
@@ -243,9 +254,15 @@ void CBaseEntity::ResetLocalVars()
     localVars_.clear();
 }
 
-uint32 CBaseEntity::GetLocalVar(const std::string& var)
+uint32 CBaseEntity::GetLocalVar(const std::string& var) const
 {
-    return localVars_[var];
+    const auto it = localVars_.find(var);
+    if (it != localVars_.end())
+    {
+        return it->second;
+    }
+
+    return 0;
 }
 
 std::map<std::string, uint32>& CBaseEntity::GetLocalVars()

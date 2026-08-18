@@ -25,26 +25,58 @@
 #include "entities/char_entity.h"
 #include "enums/msg_std.h"
 #include "enums/packet_c2s.h"
+#include "items/transactions/item_claim.h"
 #include "lua/luautils.h"
 #include "packets/s2c/0x009_message.h"
 #include "packets/s2c/0x01d_item_same.h"
 #include "trade_container.h"
 #include "utils/charutils.h"
+#include "utils/zoneutils.h"
 
 namespace
 {
 
-const auto auditSale = [](Scheduler& scheduler, CCharEntity* PChar, uint32_t itemId, uint32_t quantity, uint32_t basePrice)
+const auto auditSale = [](Scheduler& scheduler, CCharEntity* PChar, uint32_t itemId, uint32_t quantity, uint32_t basePrice, int32_t appliedGil)
 {
     if (settings::get<bool>("map.AUDIT_PLAYER_VENDOR"))
     {
-        scheduler.postToWorkerThread(
-            [itemId, quantity, seller = PChar->id, sellerName = PChar->getName(), basePrice]()
-            {
-                auto totalPrice = quantity * basePrice;
+        const auto* PNpc = zoneutils::GetEntity(PChar->Container->getShopVendorId(), TYPE_NPC);
 
-                const auto query = "INSERT INTO audit_vendor(itemid, quantity, seller, seller_name, baseprice, totalprice, date) VALUES (?, ?, ?, ?, ?, ?, UNIX_TIMESTAMP())";
-                if (!db::preparedStmt(query, itemId, quantity, seller, sellerName, basePrice, totalPrice))
+        const auto npcName = [PNpc]() -> std::string
+        {
+            if (PNpc)
+            {
+                return PNpc->getName();
+            }
+
+            return {};
+        }();
+
+        scheduler.postToWorkerThread(
+            [itemId,
+             quantity,
+             seller     = PChar->id,
+             sellerName = PChar->getName(),
+             basePrice,
+             appliedGil,
+             npcId = PChar->Container->getShopVendorId(),
+             npcName,
+             zoneId = static_cast<uint16>(PChar->getZone())]()
+            {
+                const auto totalPrice = quantity * basePrice;
+
+                if (!db::preparedStmt("INSERT INTO audit_vendor(itemid, quantity, seller, seller_name, direction, npcid, npc_name, zoneid, baseprice, totalprice, applied_gil, date) "
+                                      "VALUES (?, ?, ?, ?, 'sell', ?, ?, ?, ?, ?, ?, UNIX_TIMESTAMP())",
+                                      itemId,
+                                      quantity,
+                                      seller,
+                                      sellerName,
+                                      npcId,
+                                      npcName,
+                                      zoneId,
+                                      basePrice,
+                                      totalPrice,
+                                      appliedGil))
                 {
                     ShowErrorFmt("Failed to log vendor sale (item: {}, quantity: {}, seller: {}, totalprice: {})", itemId, quantity, seller, totalPrice);
                 }
@@ -69,16 +101,16 @@ void GP_CLI_COMMAND_SHOP_SELL_SET::process(MapSession* PSession, CCharEntity* PC
     uint16      itemId   = PChar->Container->getItemID(PChar->Container->getExSize());
     const uint8 slotId   = PChar->Container->getInvSlotID(PChar->Container->getExSize());
 
-    if (const CItem* PGilItem = PChar->getStorage(LOC_INVENTORY)->GetItem(0); !PGilItem || !PGilItem->isType(ITEM_CURRENCY))
+    auto transaction = ItemClaimTransaction::start(PChar);
+    if (!transaction)
     {
-        ShowWarning("GP_CLI_COMMAND_SHOP_SELL_SET: Player %s trying to sell an item without valid gil!", PChar->getName());
         return;
     }
 
-    const CItem* PItem = PChar->getStorage(LOC_INVENTORY)->GetItem(slotId);
+    const CItem* PItem = transaction->claimSlot(LOC_INVENTORY, slotId);
     if (!PItem)
     {
-        ShowWarning("GP_CLI_COMMAND_SHOP_SELL_SET: Player %s trying to sell an invalid item!", PChar->getName());
+        ShowWarning("GP_CLI_COMMAND_SHOP_SELL_SET: Player %s trying to sell an item that is missing or already claimed!", PChar->getName());
         return;
     }
 
@@ -100,30 +132,24 @@ void GP_CLI_COMMAND_SHOP_SELL_SET::process(MapSession* PSession, CCharEntity* PC
         return;
     }
 
-    if (PItem->isSubType(ITEM_LOCKED)) // Possible exploit
-    {
-        ShowWarning("GP_CLI_COMMAND_SHOP_SELL_SET: Player %s trying to sell %u of a LOCKED item! ID %i [to VENDOR] ", PChar->getName(), quantity, PItem->getID());
-        return;
-    }
-
-    if (PItem->getReserve() > 0) // Usually caused by bug during synth, trade, etc. reserving the item. We don't want such items sold in this state.
-    {
-        ShowError("GP_CLI_COMMAND_SHOP_SELL_SET: Player %s trying to sell %u of a RESERVED(%u) item! ID %i [to VENDOR] ", PChar->getName(), quantity, PItem->getReserve(), PItem->getID());
-        return;
-    }
-
     // Fame adjusted price
     const auto unitPrice = luautils::callGlobal<uint32>("xi.shop.onSellPriceCheck", PChar, itemId, PChar->Container->getShopFameArea());
     const auto cost      = quantity * unitPrice;
-    if (charutils::UpdateItem(PChar, LOC_INVENTORY, slotId, -static_cast<int32>(quantity)) == 0)
+
+    // Track the gil the player had before the transaction
+    const uint32 gilBefore = PChar->getStorage(LOC_INVENTORY)->GetItem(0)->getQuantity();
+
+    if (!transaction->take(LOC_INVENTORY, slotId, quantity) || !transaction->earn(cost) || !transaction->commit())
     {
-        ShowWarningFmt("GP_CLI_COMMAND_SHOP_SELL_SET: Player {} failed to remove item ID {} from inventory!", PChar->getName(), PItem->getID());
+        ShowWarningFmt("GP_CLI_COMMAND_SHOP_SELL_SET: Player {} could not sell item ID {}", PChar->getName(), itemId);
         return;
     }
 
-    charutils::UpdateItem(PChar, LOC_INVENTORY, 0, cost);
+    const auto appliedGil = static_cast<int32>(PChar->getStorage(LOC_INVENTORY)->GetItem(0)->getQuantity()) - static_cast<int32>(gilBefore);
+
     // TODO: Don't pass around Scheduler& through PSession
-    auditSale(*PSession->scheduler, PChar, itemId, quantity, unitPrice);
+    auditSale(*PSession->scheduler, PChar, itemId, quantity, unitPrice, appliedGil);
+
     ShowInfo("GP_CLI_COMMAND_SHOP_SELL_SET: Player '%s' sold %u of itemID %u (Total: %u gil) [to VENDOR] ", PChar->getName(), quantity, itemId, cost);
     PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(nullptr, itemId, quantity, MsgStd::Sell);
     PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(PChar);

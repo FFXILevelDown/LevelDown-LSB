@@ -3,12 +3,12 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'southern_san_doria_vendors_adjust'
-local m = Module:new(moduleName)
+local m = Module:new('southern_san_doria_vendors_adjust')
 
-if not xi.module.isContentEnabled('ABYSSEA') then
-    -- Ashene: Rework stock for in era items and conquest standing requirements
-    m:addOverride('xi.zones.Southern_San_dOria.npcs.Ashene.onTrigger', function(player, npc)
+-- Ashene: Rework stock for in era items and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Southern_San_dOria.npcs.Ashene.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.BRONZE_DAGGER,   156, 3 },
@@ -29,10 +29,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.SOUTHERN_SAN_DORIA].text.ASH_THADI_ENE_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.SANDORIA)
-    end)
+    end,
+})
 
-    -- Carautia: Rework stock for in era items and conquest standing requirements
-    m:addOverride('xi.zones.Southern_San_dOria.npcs.Carautia.onTrigger', function(player, npc)
+-- Carautia: Rework stock for in era items and conquest standing requirements
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Southern_San_dOria.npcs.Carautia.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.MAPLE_SHIELD,        605, 3 },
@@ -52,10 +55,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.SOUTHERN_SAN_DORIA].text.CARAUTIA_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.SANDORIA)
-    end)
+    end,
+})
 
-    -- Ferdoulemiont: Remove Scroll of Knight's Minne V from stock
-    m:addOverride('xi.zones.Southern_San_dOria.npcs.Ferdoulemiont.onTrigger', function(player, npc)
+-- Ferdoulemiont: Remove Scroll of Knight's Minne V from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Southern_San_dOria.npcs.Ferdoulemiont.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.BUNCH_OF_GYSAHL_GREENS,         67, 3 },
@@ -77,10 +83,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.SOUTHERN_SAN_DORIA].text.FERDOULEMIONT_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.SANDORIA)
-    end)
+    end,
+})
 
-    -- Ostalie: Rework Living Key price for in era value
-    m:addOverride('xi.zones.Southern_San_dOria.npcs.Ostalie.onTrigger', function(player, npc)
+-- Ostalie: Rework Living Key price for in era value
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Southern_San_dOria.npcs.Ostalie.onTrigger', {
+    [xi.expansion.ABYSSEA] = function(player, npc)
         local stock =
         {
             { xi.item.LEATHER_BELT,          425, 3 },
@@ -117,12 +126,13 @@ if not xi.module.isContentEnabled('ABYSSEA') then
 
         player:showText(npc, zones[xi.zone.SOUTHERN_SAN_DORIA].text.OSTALIE_SHOP_DIALOG)
         xi.shop.nation(player, stock, xi.nation.SANDORIA)
-    end)
-end
+    end,
+})
 
-if not xi.module.isContentEnabled('WOTG') then
-    -- Benaige: Remove Paprika and Zucchini from stock
-    m:addOverride('xi.zones.Southern_San_dOria.npcs.Benaige.onTrigger', function(player, npc)
+-- Benaige: Remove Paprika and Zucchini from stock
+-- TODO: find a patch note or source for this change
+m:addOverrideByEra('xi.zones.Southern_San_dOria.npcs.Benaige.onTrigger', {
+    [xi.expansion.WOTG] = function(player, npc)
         local stock =
         {
             { xi.item.POT_OF_CRYING_MUSTARD,      28, 3 },
@@ -140,7 +150,5 @@ if not xi.module.isContentEnabled('WOTG') then
 
         player:showText(npc, zones[xi.zone.SOUTHERN_SAN_DORIA].text.RAIMBROYS_SHOP_DIALOG + 1)
         xi.shop.nation(player, stock, xi.nation.SANDORIA)
-    end)
-end
-
-return m
+    end,
+})

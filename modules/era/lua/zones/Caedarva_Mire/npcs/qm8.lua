@@ -5,13 +5,7 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'lamian_fang_key_tally_timer'
-
-if xi.module.isContentEnabled('ABYSSEA') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
+local m = Module:new('lamian_fang_key_tally_timer', xi.pre(xi.expansion.ABYSSEA))
 
 m:addOverride('xi.zones.Caedarva_Mire.npcs.qm8.onTrigger', function(player, npc)
     local ID = zones[xi.zone.CAEDARVA_MIRE]
@@ -24,5 +18,3 @@ m:addOverride('xi.zones.Caedarva_Mire.npcs.qm8.onTrigger', function(player, npc)
         player:messageSpecial(ID.text.NOTHING_OUT_OF_ORDINARY)
     end
 end)
-
-return m

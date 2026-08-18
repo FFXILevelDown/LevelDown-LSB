@@ -4,14 +4,9 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'numa_shop_adjust'
+local m = Module:new('numa_shop_adjust', xi.pre(xi.expansion.ABYSSEA))
 
-if xi.module.isContentEnabled('ABYSSEA') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
-
+-- TODO: find a patch note or source for this change
 m:addOverride('xi.zones.Port_Bastok.npcs.Numa.onTrigger', function(player, npc)
     local stock =
     {
@@ -33,5 +28,3 @@ m:addOverride('xi.zones.Port_Bastok.npcs.Numa.onTrigger', function(player, npc)
     player:showText(npc, zones[xi.zone.PORT_BASTOK].text.NUMA_SHOP_DIALOG)
     xi.shop.nation(player, stock, xi.nation.BASTOK)
 end)
-
-return m

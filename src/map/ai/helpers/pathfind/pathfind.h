@@ -30,11 +30,14 @@
 #include <map/ai/helpers/pathfind/path.h>
 #include <map/ai/helpers/pathfind/pathfind_types.h>
 
+#include <array>
+#include <cstddef>
 #include <memory>
 #include <vector>
 
 class CBaseEntity;
 class NavMesh;
+class RoamRegion;
 
 namespace pathfind
 {
@@ -54,8 +57,8 @@ public:
 
     ~CPathFind();
 
-    // Walk to a random point around the given point.
-    auto RoamAround(const position_t& point, float maxRadius, uint8 maxTurns, xi::RoamFlag roamFlags = xi::RoamFlag::None) -> bool;
+    // Walk to a random point around the given point, or inside the region when the owner has one.
+    auto RoamAround(const position_t& point, float maxRadius, uint8 maxTurns, xi::RoamFlag roamFlags = xi::RoamFlag::None, const RoamRegion* region = nullptr) -> bool;
 
     // Find and walk to the given point.
     auto PathTo(const position_t& point, uint8 pathFlags = 0) -> bool;
@@ -131,7 +134,7 @@ private:
     auto BuildDirectPath(const position_t& end) -> bool;
 
     // Find a random path around the given point.
-    auto FindRandomPath(const position_t& start, float maxRadius, uint8 maxTurns, xi::RoamFlag roamFlags) -> bool;
+    auto FindRandomPath(const position_t& start, float maxRadius, uint8 maxTurns, xi::RoamFlag roamFlags, const RoamRegion* region) -> bool;
 
     // Core of StepTo, settling `stopShort` yalms short of `pos`.
     auto StepToInternal(const position_t& pos, bool run, float stopShort) -> void;
@@ -172,6 +175,22 @@ private:
     uint8 currentTurn_;
 
     float distanceMoved_;
+
+    struct ValidPositionEntry
+    {
+        position_t        position{};
+        timer::time_point checkedAt{ timer::time_point::min() };
+        bool              valid{ false };
+    };
+
+    // Small enough that a linear scan beats hashing, and that repeated own-position queries
+    // survive the one-shot candidate probes that share this cache.
+    static constexpr std::size_t kValidPositionCacheSize = 8;
+
+    // Most recently used first; the max age bounds staleness after a navmesh reload we cannot see.
+    mutable std::array<ValidPositionEntry, kValidPositionCacheSize> validPositionCache_{};
+    mutable std::size_t                                             validPositionCacheCount_{ 0 };
+
     float maxDistance_;
 
     // Legs taken by the current PathTo journey (1 = single query, >1 = chunked).

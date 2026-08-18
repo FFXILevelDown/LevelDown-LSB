@@ -4,14 +4,9 @@
 -----------------------------------
 require('modules/module_utils')
 -----------------------------------
-local moduleName = 'orez_ebrez_shop_adjust'
+local m = Module:new('orez_ebrez_shop_adjust', xi.pre(xi.expansion.ABYSSEA))
 
-if xi.module.isContentEnabled('ABYSSEA') then
-    return { name = moduleName }
-end
-
-local m = Module:new(moduleName)
-
+-- TODO: find a patch note or source for this change
 m:addOverride('xi.zones.Windurst_Waters.npcs.Orez-Ebrez.onTrigger', function(player, npc)
     local stock =
     {
@@ -36,5 +31,3 @@ m:addOverride('xi.zones.Windurst_Waters.npcs.Orez-Ebrez.onTrigger', function(pla
     player:showText(npc, zones[xi.zone.WINDURST_WATERS].text.OREZEBREZ_SHOP_DIALOG)
     xi.shop.nation(player, stock, xi.nation.WINDURST)
 end)
-
-return m

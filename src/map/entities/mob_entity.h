@@ -26,6 +26,7 @@
 
 #include <array>
 
+#include <common/types/flat_hash_map.h>
 #include <common/types/hash_map.h>
 #include <common/types/maybe.h>
 
@@ -43,6 +44,7 @@ enum class MsgBasic : uint16_t;
 class CMobSpellContainer;
 class CMobSpellList;
 class CEnmityContainer;
+class RoamRegion;
 class SpawnSlot;
 
 // Per-mob spawn window in Vana'diel hours; the mob spawns only within [spawnHour, despawnHour) (wraps past midnight).
@@ -69,8 +71,12 @@ public:
     auto getEntityFlags() const -> xi::EntityFlags;   // Returns the current value in m_flags
     void setEntityFlags(xi::EntityFlags EntityFlags); // Change the current value in m_flags
 
-    bool IsFarFromHome();      // check if mob is too far from spawn
-    bool CanBeNeutral() const; // check if mob can have killing pause
+    bool IsFarFromHome(); // check if mob is too far from spawn
+
+    auto DistanceFromHome() const -> float;       // how far it strayed: outside its roam region, or from its spawn point when it has none
+    auto GetRoamAnchor() const -> position_t;     // the point roaming is measured from
+    void setRoamRegion(const RoamRegion* region); // assigning a region drops m_maxRoamDistance to 0: its edge is the limit
+    auto roamRegion() const -> const RoamRegion*;
 
     bool shouldUseTPMove(uint16 tpThreshold); // return true to use a TP move, checked on on 400ms tick interval
 
@@ -97,7 +103,7 @@ public:
     bool CanDropGil();    // mob has gil to drop
     bool CanStealGil();   // can steal gil from mob
     void ResetGilPurse(); // reset total gil held
-    auto GetEligibleSeals() -> std::vector<uint16>;
+    auto GetEligibleSeals() const -> std::vector<uint16>;
     auto GetEligibleGeodes() const -> std::vector<uint16>;
 
     void setMobMod(xi::MobMod type, int16 value);
@@ -235,12 +241,13 @@ protected:
 
 private:
     timer::time_point                     m_DespawnTimer{ timer::time_point::min() }; // Despawn Timer to despawn mob after set duration
-    HashMap<xi::MobMod, int16>            m_mobModStat;
-    HashMap<xi::MobMod, int16>            m_mobModStatSave;
+    FlatHashMap<xi::MobMod, int16>        m_mobModStat;
+    FlatHashMap<xi::MobMod, int16>        m_mobModStatSave;
     HashMap<uint16, std::array<float, 3>> m_fTPModifierOverrides;
     static constexpr float                roam_home_distance{ 60.f };
     SpawnSlot*                            spawnSlot = nullptr;
     Maybe<SpawnWindow>                    spawnWindow_;
+    const RoamRegion*                     roamRegion_{ nullptr }; // area it spawns and roams in, owned by the zone
 };
 
 #endif

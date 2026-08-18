@@ -17,10 +17,11 @@
 #include "job_points.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
-#include "lua/luautils.h"
+
 #include "packets/s2c/0x0aa_magic_data.h"
 #include "spell.h"
 #include "utils/charutils.h"
+#include "lua/luautils.h"
 
 CJobPoints::CJobPoints(CCharEntity* PChar)
 {

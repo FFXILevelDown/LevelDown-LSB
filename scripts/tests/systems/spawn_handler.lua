@@ -15,6 +15,20 @@ describe('Spawn Handler', function()
             mob.assert:isSpawned()
         end)
 
+        it('does not inherit queued actions from its previous life', function()
+            local mob = player.entities:moveTo('Forest_Funguar')
+
+            -- deadline well past the despawn, so the only way it can leave the queue is the respawn dropping it
+            mob:queue(60000, function()
+            end)
+
+            assert(not mob:actionQueueEmpty(), 'precondition: the action is queued')
+
+            mob:respawn()
+
+            assert(mob:actionQueueEmpty(), 'a queued action outlived the respawn')
+        end)
+
         it('does not respawn a mob before its timer expires', function()
             local mob = player.entities:moveTo('Forest_Funguar')
             player:claimAndKillMob(mob)
@@ -474,6 +488,71 @@ describe('Spawn Handler', function()
             end
 
             assert(won, 'bat never won its shared slot at night')
+        end)
+    end)
+
+    describe('dynamic entities', function()
+        local deGroupId     = 5
+        local deGroupZoneId = 154
+
+        local function insertDe(name, respawn)
+            local anchor = player.entities:moveTo('Forest_Funguar')
+            local zone   = GetZone(xi.zone.WEST_RONFAURE)
+            assert(zone, 'West Ronfaure not loaded')
+
+            local de = zone:insertDynamicEntity({
+                objtype              = xi.objType.MOB,
+                name                 = name,
+                x                    = anchor:getXPos(),
+                y                    = anchor:getYPos(),
+                z                    = anchor:getZPos(),
+                rotation             = anchor:getRotPos(),
+                groupId              = deGroupId,
+                groupZoneId          = deGroupZoneId,
+                minLevel             = 1,
+                maxLevel             = 1,
+                respawn              = respawn,
+                releaseIdOnDisappear = false,
+            })
+
+            assert(de, 'failed to insert dynamic entity ' .. name)
+
+            local mob = player.entities:moveTo(de:getID())
+            mob:setSpawn(anchor:getXPos(), anchor:getYPos(), anchor:getZPos(), anchor:getRotPos())
+            mob:spawn()
+            xi.test.world:tick()
+            mob.assert:isSpawned()
+
+            return mob
+        end
+
+        it('respawns a killed dynamic entity after its timer expires', function()
+            local mob = insertDe('Respawning_DE', 300)
+            player:claimAndKillMob(mob)
+
+            xi.test.world:skipTime(305)
+            xi.test.world:tick(xi.tick.SPAWN)
+
+            mob.assert:isSpawned()
+        end)
+
+        it('does not respawn a dynamic entity before its timer expires', function()
+            local mob = insertDe('Early_DE', 300)
+            player:claimAndKillMob(mob)
+
+            xi.test.world:tick(xi.tick.SPAWN)
+
+            mob.assert.no:isSpawned()
+        end)
+
+        it('never respawns a dynamic entity created without a respawn time', function()
+            local mob = insertDe('Oneshot_DE', 0)
+            player:claimAndKillMob(mob)
+
+            xi.test.world:skipTime(3600)
+            xi.test.world:tick(xi.tick.SPAWN)
+
+            mob.assert.no:isSpawned()
         end)
     end)
 

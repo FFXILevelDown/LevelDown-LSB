@@ -22,8 +22,9 @@
 #include <cstring>
 
 #include "char_update.h"
-#include "job_points.h"
+
 #include "entities/char_entity.h"
+#include "job_points.h"
 #include "items/item_linkshell.h"
 #include "status_effect_container.h"
 #include "utils/mountutils.h"

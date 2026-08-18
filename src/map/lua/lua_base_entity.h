@@ -28,6 +28,7 @@
 #include "data/enums/mob_mod.h"
 #include "data/enums/music_slot.h"
 #include "enums/mission_log.h"
+#include "lua_trade_container.h"
 #include "luautils.h"
 #include "packets/s2c/0x009_message.h"
 #include "utils/battleutils.h"
@@ -90,6 +91,10 @@ public:
     void   setLocalVar(const std::string& var, uint32 val);
     void   clearLocalVarsWithPrefix(const std::string& prefix);
     void   resetLocalVars();
+
+    auto getData() const -> sol::table;
+    void resetData() const;
+
     void   clearVarsWithPrefix(const std::string& prefix);
     uint32 getLastOnline(); // Returns the unix timestamp of last time the player logged out or zoned
 
@@ -280,9 +285,9 @@ public:
     uint8 getContainerSize(uint8 locationID);
     void  changeContainerSize(uint8 locationID, int8 newSize); // Increase/Decreases container size
     uint8 getFreeSlotsCount(const sol::object& locID);         // Gets value of free slots in Entity inventory
-    void  confirmTrade() const;                                // Complete trade with an npc, only removing confirmed items
-    void  tradeComplete() const;                               // Complete trade with an npc
-    auto  getTrade() -> CTradeContainer*;
+    auto  confirmTrade() const -> bool;                        // Complete trade with an npc, only removing confirmed items. False if any of it was not taken
+    auto  tradeComplete() const -> bool;                       // Complete trade with an npc. False if any of it was not taken
+    auto  getTrade() -> CLuaTradeContainer;
 
     // Equipping
     bool canEquipItem(uint16 itemID, const sol::object& chkLevel);
