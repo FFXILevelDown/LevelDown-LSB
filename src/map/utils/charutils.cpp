@@ -4780,13 +4780,13 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
             }
 
             bool  chainActive = false;
-            int16 levelDiff   = mobLevel - PMember->GetMLevel(); // Passed previous 99 check, no need to calculate
+            int16 levelDiff   = mobLevel - 99; // Passed previous 99 check, no need to calculate
 
             // Capacity Chains are only granted for Mobs level 100+
             // Ref: https://www.bg-wiki.com/ffxi/Job_Points
             float capacityPoints = 0;
 
-            if (CheckMob(PMember->GetMLevel(), PMob) > EMobDifficulty::TooWeak)
+            if (mobLevel > 99)
             {
                 // Base Capacity Point formula derived from the table located at:
                 // https://ffxiclopedia.fandom.com/wiki/Job_Points#Capacity_Points

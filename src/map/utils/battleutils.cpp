@@ -5133,7 +5133,19 @@ void DoWildCardToEntity(CCharEntity* PCaster, CCharEntity* PTarget, const uint8 
             break;
     }
 
-    PTarget->pushPacket<GP_SERV_COMMAND_ABIL_RECAST>(PTarget);
+    // Ensure target is a player before pushing recast packet /* CUSTOM WILD CARD PLAYER CHECK */
+
+
+    if (PTarget != nullptr && PTarget->objtype == TYPE_PC)
+
+
+    {
+
+
+        PTarget->pushPacket<GP_SERV_COMMAND_ABIL_RECAST>(PTarget);
+
+
+    }
 }
 
 /************************************************************************
