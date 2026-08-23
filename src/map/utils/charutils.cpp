@@ -1182,7 +1182,7 @@ void LoadInventory(CCharEntity* PChar)
                 if (PItem != nullptr && ((PItem->isType(ITEM_EQUIPMENT) || PItem->isType(ITEM_WEAPON)) && !PItem->isSubType(ITEM_CHARGED)))
                 {
                     // check if there are any valid augments to be applied to the item
-                    for (uint8 j = 0; j < 4; ++j)
+                    for (uint8 j = 0; j < 5; ++j) /* CUSTOM 5 AUGMENT SUPPORT */
                     {
                         // found a match, apply the augment
                         if (((CItemEquipment*)PItem)->getAugment(j) != 0)
@@ -4727,7 +4727,12 @@ void DistributeExperiencePoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            const uint32 exp         = calcExpResult->exp;
+            uint32 exp = calcExpResult->exp;
+            /* CUSTOM RATIO EXP GAP OVERRIDE */
+            if (PMember->getCharVar("Ratio") == 1 && maxlevel >= (memberlevel + 10))
+            {
+                exp = 0;
+            }
             const bool   wasChained  = calcExpResult->wasChained;
             const uint16 chainWindow = calcExpResult->chainWindow;
 
@@ -4771,7 +4776,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || PMember->GetMLevel() < 99)
+            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */ /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
@@ -4895,6 +4900,12 @@ void AddCapacityPoints(CCharEntity* PChar, CBaseEntity* PMob, uint32 capacityPoi
     }
 
     capacityPoints = (uint32)(capacityPoints * settings::get<float>("map.EXP_RATE"));
+
+    // Custom 75 Only CP Per Kill Cap
+    if (PChar->GetMLevel() == 75)
+    {
+        capacityPoints = std::min<uint32>(capacityPoints, 5000);
+    } /* CUSTOM 75 CP PER KILL CAP */
 
     if (capacityPoints > 0)
     {

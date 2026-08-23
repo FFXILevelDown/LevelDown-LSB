@@ -576,9 +576,30 @@ int32 CalculateEnspellDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender,
     {
         damage = PAttacker->getMod(xi::Mod::ENSPELL_DMG);
 
+        /* CUSTOM ENLIGHT DEPLETION BUGFIX */
         if (damage > 1)
         {
-            PAttacker->delModifier(xi::Mod::ENSPELL_DMG, 1);
+            auto* PEffect = PAttacker->StatusEffectContainer->GetStatusEffect(element == ELEMENT_DARK ? xi::StatusEffect::Endark : xi::StatusEffect::Enlight);
+            if (PEffect)
+            {
+                int16 currentMod = 0;
+                for (auto& mod : PEffect->modList())
+                {
+                    if (mod.getModID() == xi::Mod::ENSPELL_DMG)
+                    {
+                        currentMod = mod.getModAmount();
+                        break;
+                    }
+                }
+                if (currentMod > 0)
+                {
+                    PEffect->setMod(xi::Mod::ENSPELL_DMG, currentMod - 1);
+                }
+            }
+            else
+            {
+                PAttacker->delModifier(xi::Mod::ENSPELL_DMG, 1);
+            }
         }
         else
         {
@@ -3623,7 +3644,7 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
 
         if (ERROR_SLOTID == (SlotID = PChar->getStorage(LOC_INVENTORY)->SearchItem(toolID)))
         {
-            if (PChar->GetMJob() == xi::Job::NIN)
+            if (PChar->GetMJob() == xi::Job::NIN || PChar->GetSJob() == xi::Job::NIN) /* CUSTOM NIN TOOL UTILITY */
             {
                 switch (toolID)
                 {
@@ -5114,7 +5135,19 @@ void DoWildCardToEntity(CCharEntity* PCaster, CCharEntity* PTarget, const uint8 
             break;
     }
 
-    PTarget->pushPacket<GP_SERV_COMMAND_ABIL_RECAST>(PTarget);
+    // Ensure target is a player before pushing recast packet /* CUSTOM WILD CARD PLAYER CHECK */
+
+
+    if (PTarget != nullptr && PTarget->objtype == TYPE_PC)
+
+
+    {
+
+
+        PTarget->pushPacket<GP_SERV_COMMAND_ABIL_RECAST>(PTarget);
+
+
+    }
 }
 
 /************************************************************************

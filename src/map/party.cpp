@@ -611,6 +611,25 @@ void CParty::AddMember(CBattleEntity* PEntity)
         return;
     }
 
+    /* CUSTOM RATIO PARTY RESTRICTION */
+    if (PEntity->objtype == TYPE_PC && m_PartyType == PARTY_PCS)
+    {
+        auto* PChar = static_cast<CCharEntity*>(PEntity);
+        for (auto* PMember : members)
+        {
+            if (PMember->objtype == TYPE_PC)
+            {
+                auto* PCharMember = static_cast<CCharEntity*>(PMember);
+                if (PChar->getCharVar("Ratio") != PCharMember->getCharVar("Ratio"))
+                {
+                    ShowWarning("CParty::AddMember() - Ratio mismatch between %s and %s.", PChar->getName(), PCharMember->getName());
+                    return;
+                }
+                break;
+            }
+        }
+    }
+
     PEntity->PParty = this;
     members.emplace_back(PEntity);
 
@@ -709,6 +728,23 @@ void CParty::AddMember(uint32 id)
         {
             ShowWarning("CParty::AddMember() - Party had summoned trusts when trying to add a member.");
             return;
+        }
+
+        /* CUSTOM RATIO PARTY RESTRICTION */
+        for (auto* PMember : members)
+        {
+            if (PMember->objtype == TYPE_PC)
+            {
+                auto* PCharMember = static_cast<CCharEntity*>(PMember);
+                int32 existingRatio = PCharMember->getCharVar("Ratio");
+                int32 incomingRatio = charutils::FetchCharVar(id, "Ratio").first;
+                if (existingRatio != incomingRatio)
+                {
+                    ShowWarning("CParty::AddMember(id) - Ratio mismatch for charid %u.", id);
+                    return;
+                }
+                break;
+            }
         }
 
         uint32 allianceid = 0;
