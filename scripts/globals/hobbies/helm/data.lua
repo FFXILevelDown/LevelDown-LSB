@@ -14,9 +14,7 @@ xi.helm.dataTable =
     {
         id           = 'HARVESTING',
         animation    = xi.emote.HARVESTING,
-        mod          = xi.mod.HARVESTING_RESULT,
         settingRate  = xi.settings.main.HARVESTING_RATE,
-        settingBreak = xi.settings.main.HARVESTING_BREAK_CHANCE,
         message      = 'HARVESTING_IS_POSSIBLE_HERE',
         tool         = xi.item.SICKLE,
 
@@ -24,6 +22,8 @@ xi.helm.dataTable =
         {
             [xi.zone.WAJAOM_WOODLANDS] =
             {
+                breakRate = 6.61, -- n=10077, 95% CI +/-0.49pp
+
                 drops =
                 {
                     { 1880, xi.item.SPRIG_OF_FRESH_MARJORAM      },
@@ -64,6 +64,8 @@ xi.helm.dataTable =
 
             [xi.zone.BHAFLAU_THICKETS] =
             {
+                breakRate = 7.34, -- n=10011, 95% CI +/-0.51pp
+
                 drops =
                 {
                     { 1510, xi.item.CLUMP_OF_MOHBWA_GRASS        },
@@ -96,6 +98,8 @@ xi.helm.dataTable =
 
             [xi.zone.GRAUBERG_S] =
             {
+                breakRate = 6.46, -- n=11508, 95% CI +/-0.45pp
+
                 drops =
                 {
                     { 1830, xi.item.CLUMP_OF_MOKO_GRASS     },
@@ -121,6 +125,8 @@ xi.helm.dataTable =
 
             [xi.zone.WEST_SARUTABARUTA_S] =
             {
+                breakRate = 6.18, -- n=16341, 95% CI +/-0.37pp
+
                 drops =
                 {
                     { 1630, xi.item.SPRIG_OF_FRESH_MARJORAM },
@@ -150,6 +156,8 @@ xi.helm.dataTable =
 
             [xi.zone.PASHHOW_MARSHLANDS] =
             {
+                breakRate = 25.65, -- n=8426, 95% CI +/-0.93pp - NOTE: Harvesting gear has no effect in this zone!
+
                 drops =
                 {
                     { 1, xi.item.BLAZING_PEPPERS },
@@ -163,6 +171,8 @@ xi.helm.dataTable =
 
             [xi.zone.WEST_SARUTABARUTA] =
             {
+                breakRate = 6.05, -- n=10019, 95% CI +/-0.47pp
+
                 drops =
                 {
                     { 1680, xi.item.CLUMP_OF_MOKO_GRASS             },
@@ -195,6 +205,8 @@ xi.helm.dataTable =
 
             [xi.zone.YUHTUNGA_JUNGLE] =
             {
+                breakRate = 11.87, -- n=3666, 95% CI +/-1.05pp
+
                 drops =
                 {
                     { 4000, xi.item.WOOZYSHROOM     },
@@ -218,6 +230,8 @@ xi.helm.dataTable =
 
             [xi.zone.YHOATOR_JUNGLE] =
             {
+                breakRate = 12.69, -- n=607, 95% CI +/-2.65pp
+
                 drops =
                 {
                     { 4000, xi.item.WOOZYSHROOM     },
@@ -240,6 +254,8 @@ xi.helm.dataTable =
 
             [xi.zone.GIDDEUS] =
             {
+                breakRate = 11.43, -- n=10281, 95% CI +/-0.62pp
+
                 drops =
                 {
                     { 1500, xi.item.CLUMP_OF_RED_MOKO_GRASS         },
@@ -298,6 +314,8 @@ xi.helm.dataTable =
 
             [xi.zone.ABYSSEA_GRAUBERG] =
             {
+                breakRate = 6.03, -- n=2637, 95% CI +/-0.91pp
+
                 drops =
                 {
                     {  970, xi.item.BAG_OF_HERB_SEEDS        },
@@ -323,6 +341,8 @@ xi.helm.dataTable =
 
             [xi.zone.YAHSE_HUNTING_GROUNDS] =
             {
+                breakRate = 50, -- Capture needed
+
                 drops =
                 {
                     -- TODO
@@ -341,9 +361,7 @@ xi.helm.dataTable =
     {
         id           = 'EXCAVATION',
         animation    = xi.emote.EXCAVATION,
-        mod          = nil,
         settingRate  = xi.settings.main.EXCAVATION_RATE,
-        settingBreak = xi.settings.main.EXCAVATION_BREAK_CHANCE,
         message      = 'MINING_IS_POSSIBLE_HERE',
         tool         = xi.item.PICKAXE,
 
@@ -351,6 +369,8 @@ xi.helm.dataTable =
         {
             [xi.zone.ATTOHWA_CHASM] =
             {
+                breakRate = 53.31, -- n=11119, 95% CI +/-0.93pp
+
                 drops =
                 {
                     { 2220, xi.item.BONE_CHIP                   },
@@ -377,6 +397,8 @@ xi.helm.dataTable =
 
             [xi.zone.TAHRONGI_CANYON] =
             {
+                breakRate = 36.69, -- n=9390, 95% CI +/-0.97pp
+
                 drops =
                 {
                     { 2690, xi.item.BONE_CHIP      },
@@ -413,6 +435,8 @@ xi.helm.dataTable =
 
             [xi.zone.KORROLOKA_TUNNEL] =
             {
+                breakRate = 48.63, -- n=12984, 95% CI +/-0.86pp
+
                 drops =
                 {
                     { 2130, xi.item.CHUNK_OF_ROCK_SALT     },
@@ -444,6 +468,8 @@ xi.helm.dataTable =
 
             [xi.zone.MAZE_OF_SHAKHRAMI] =
             {
+                breakRate = 51.35, -- n=10254, 95% CI +/-0.97pp
+
                 drops =
                 {
                     { 2560, xi.item.BONE_CHIP      },
@@ -474,6 +500,36 @@ xi.helm.dataTable =
                     {  405.577,  -0.284,  -44.539 },
                 },
             },
+
+            [xi.zone.ABYSSEA_TAHRONGI] =
+            {
+                breakRate = 36.66, -- n=622, 95% CI +/-3.79pp
+
+                drops =
+                {
+                    -- Capture needed
+                },
+
+                points =
+                {
+                    -- Capture needed
+                },
+            },
+
+            [xi.zone.ABYSSEA_ATTOHWA] =
+            {
+                breakRate = 51.74, -- n=949, 95% CI +/-3.18pp
+
+                drops =
+                {
+                    -- Capture needed
+                },
+
+                points =
+                {
+                    -- Capture needed
+                },
+            },
         },
     },
 
@@ -483,9 +539,7 @@ xi.helm.dataTable =
     {
         id = 'LOGGING',
         animation    = xi.emote.LOGGING,
-        mod          = xi.mod.LOGGING_RESULT,
         settingRate  = xi.settings.main.LOGGING_RATE,
-        settingBreak = xi.settings.main.LOGGING_BREAK_CHANCE,
         message      = 'LOGGING_IS_POSSIBLE_HERE',
         tool         = xi.item.HATCHET,
 
@@ -493,6 +547,8 @@ xi.helm.dataTable =
         {
             [xi.zone.CARPENTERS_LANDING] =
             {
+                breakRate = 12.18, -- n=11561, 95% CI +/-0.6pp
+
                 drops =
                 {
                     { 1750, xi.item.WALNUT_LOG    },
@@ -515,6 +571,8 @@ xi.helm.dataTable =
 
             [xi.zone.LUFAISE_MEADOWS] =
             {
+                breakRate = 17.78, -- n=12620, 95% CI +/-0.67pp
+
                 drops =
                 {
                     { 3330, xi.item.ARROWWOOD_LOG },
@@ -538,6 +596,8 @@ xi.helm.dataTable =
 
             [xi.zone.MISAREAUX_COAST] =
             {
+                breakRate = 18.47, -- n=10273, 95% CI +/-0.75pp
+
                 drops =
                 {
                     { 2220, xi.item.ARROWWOOD_LOG },
@@ -561,6 +621,8 @@ xi.helm.dataTable =
 
             [xi.zone.MAMOOK] =
             {
+                breakRate = 9.23, -- n=10903, 95% CI +/-0.54pp
+
                 drops =
                 {
                     { 1070, xi.item.ARROWWOOD_LOG        },
@@ -587,6 +649,8 @@ xi.helm.dataTable =
 
             [xi.zone.CAEDARVA_MIRE] =
             {
+                breakRate = 7.57, -- n=9335, 95% CI +/-0.54pp
+
                 drops =
                 {
                     { 2200, xi.item.DOGWOOD_LOG          },
@@ -613,6 +677,8 @@ xi.helm.dataTable =
 
             [xi.zone.EAST_RONFAURE_S] =
             {
+                breakRate = 10.15, -- n=12962, 95% CI +/-0.52pp
+
                 drops =
                 {
                     { 1890, xi.item.ARROWWOOD_LOG      },
@@ -641,6 +707,8 @@ xi.helm.dataTable =
 
             [xi.zone.JUGNER_FOREST_S] =
             {
+                breakRate = 13.99, -- n=10089, 95% CI +/-0.68pp
+
                 drops =
                 {
                     { 2000, xi.item.WALNUT        },
@@ -667,6 +735,8 @@ xi.helm.dataTable =
 
             [xi.zone.FORT_KARUGO_NARUGO_S] =
             {
+                breakRate = 7.44, -- n=18304, 95% CI +/-0.38pp
+
                 drops =
                 {
                     { 2910, xi.item.FLASK_OF_HOLY_WATER },
@@ -691,6 +761,8 @@ xi.helm.dataTable =
 
             [xi.zone.EAST_RONFAURE] =
             {
+                breakRate = 7.10, -- n=10069, 95% CI +/-0.5pp
+
                 drops =
                 {
                     { 2610, xi.item.ARROWWOOD_LOG      },
@@ -734,6 +806,8 @@ xi.helm.dataTable =
 
             [xi.zone.JUGNER_FOREST] =
             {
+                breakRate = 12.08, -- n=10058, 95% CI +/-0.64pp
+
                 drops =
                 {
                     { 2040, xi.item.WALNUT_LOG    },
@@ -779,6 +853,8 @@ xi.helm.dataTable =
 
             [xi.zone.BUBURIMU_PENINSULA] =
             {
+                breakRate = 16.78, -- n=10048, 95% CI +/-0.73pp
+
                 drops =
                 {
                     { 2410, xi.item.LAUAN_LOG                },
@@ -832,6 +908,8 @@ xi.helm.dataTable =
 
             [xi.zone.YUHTUNGA_JUNGLE] =
             {
+                breakRate = 15.60, -- n=14613, 95% CI +/-0.59pp
+
                 drops =
                 {
                     { 1900, xi.item.ARROWWOOD_LOG          },
@@ -859,6 +937,8 @@ xi.helm.dataTable =
 
             [xi.zone.YHOATOR_JUNGLE] =
             {
+                breakRate = 18.23, -- n=10001, 95% CI +/-0.76pp
+
                 drops =
                 {
                     { 2220, xi.item.ARROWWOOD_LOG          },
@@ -902,6 +982,8 @@ xi.helm.dataTable =
 
             [xi.zone.GHELSBA_OUTPOST] =
             {
+                breakRate = 7.46, -- n=14616, 95% CI +/-0.43pp
+
                 drops =
                 {
                     { 2950, xi.item.ARROWWOOD_LOG },
@@ -929,6 +1011,36 @@ xi.helm.dataTable =
                     {  23.524, -0.759,  53.766 },
                 },
             },
+
+            [xi.zone.ABYSSEA_LA_THEINE] =
+            {
+                breakRate = 11.17, -- n=797, 95% CI +/-2.19pp
+
+                drops =
+                {
+                    -- Capture needed
+                },
+
+                points =
+                {
+                    -- Capture needed
+                },
+            },
+
+            [xi.zone.ABYSSEA_MISAREAUX] =
+            {
+                breakRate = 16.57, -- n=851, 95% CI +/-2.5pp
+
+                drops =
+                {
+                    -- Capture needed
+                },
+
+                points =
+                {
+                    -- Capture needed
+                },
+            },
         },
     },
 
@@ -938,9 +1050,7 @@ xi.helm.dataTable =
     {
         id           = 'MINING',
         animation    = xi.emote.EXCAVATION,
-        mod          = xi.mod.MINING_RESULT,
         settingRate  = xi.settings.main.MINING_RATE,
-        settingBreak = xi.settings.main.MINING_BREAK_CHANCE,
         message      = 'MINING_IS_POSSIBLE_HERE',
         tool         = xi.item.PICKAXE,
 
@@ -948,6 +1058,8 @@ xi.helm.dataTable =
         {
             [xi.zone.OLDTON_MOVALPOLOS] =
             {
+                breakRate = 41.61, -- n=11630, 95% CI +/-0.9pp
+
                 drops =
                 {
                     { 1150, xi.item.IGNEOUS_ROCK           },
@@ -987,6 +1099,8 @@ xi.helm.dataTable =
 
             [xi.zone.NEWTON_MOVALPOLOS] =
             {
+                breakRate = 56.62, -- n=11963, 95% CI +/-0.89pp
+
                 drops =
                 {
                     { 1660, xi.item.CHUNK_OF_COPPER_ORE    },
@@ -1020,6 +1134,8 @@ xi.helm.dataTable =
 
             [xi.zone.MOUNT_ZHAYOLM] =
             {
+                breakRate = 46.67, -- n=11577, 95% CI +/-0.91pp
+
                 drops =
                 {
                     { 2250, xi.item.PINCH_OF_SULFUR      },
@@ -1067,6 +1183,8 @@ xi.helm.dataTable =
 
             [xi.zone.HALVUNG] =
             {
+                breakRate = 47.98, -- n=17865, 95% CI +/-0.73pp
+
                 drops =
                 {
                     { 2010, xi.item.CHUNK_OF_AHT_URHGAN_BRASS },
@@ -1112,6 +1230,8 @@ xi.helm.dataTable =
 
             [xi.zone.NORTH_GUSTABERG_S] =
             {
+                breakRate = 36.80, -- n=10255, 95% CI +/-0.93pp
+
                 drops =
                 {
                     { 1870, xi.item.CHUNK_OF_COPPER_ORE   },
@@ -1164,6 +1284,8 @@ xi.helm.dataTable =
 
             [xi.zone.YUGHOTT_GROTTO] =
             {
+                breakRate = 50.69, -- n=13195, 95% CI +/-0.85pp
+
                 drops =
                 {
                     { 1460, xi.item.CHUNK_OF_COPPER_ORE    },
@@ -1219,6 +1341,8 @@ xi.helm.dataTable =
 
             [xi.zone.PALBOROUGH_MINES] =
             {
+                breakRate = 46.83, -- n=11346, 95% CI +/-0.92pp
+
                 drops =
                 {
                     { 1130, xi.item.CHUNK_OF_ZINC_ORE     },
@@ -1259,6 +1383,8 @@ xi.helm.dataTable =
 
             [xi.zone.ZERUHN_MINES] =
             {
+                breakRate = 38.32, -- n=12960, 95% CI +/-0.84pp
+
                 drops =
                 {
                     { 2450, xi.item.CHUNK_OF_IRON_ORE      },
@@ -1302,6 +1428,8 @@ xi.helm.dataTable =
 
             [xi.zone.GUSGEN_MINES] =
             {
+                breakRate = 52.36, -- n=12094, 95% CI +/-0.89pp
+
                 drops =
                 {
                     { 1890, xi.item.PEBBLE                 },
@@ -1340,6 +1468,8 @@ xi.helm.dataTable =
 
             [xi.zone.IFRITS_CAULDRON] =
             {
+                breakRate = 55.12, -- n=10602, 95% CI +/-0.95pp
+
                 drops =
                 {
                     { 3260, xi.item.FLINT_STONE             },
