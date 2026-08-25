@@ -12,11 +12,12 @@ xi.helm.dataTable =
 {
     [xi.helmType.HARVESTING] =
     {
-        id           = 'HARVESTING',
-        animation    = xi.emote.HARVESTING,
-        relocateRate = 50,
-        message      = 'HARVESTING_IS_POSSIBLE_HERE',
-        tool         = xi.item.SICKLE,
+        id             = 'HARVESTING',
+        animation      = xi.emote.HARVESTING,
+        relocateRate   = 50,
+        campMultiplier = 2.2,
+        message        = 'HARVESTING_IS_POSSIBLE_HERE',
+        tool           = xi.item.SICKLE,
 
         zone =
         {
@@ -27,17 +28,17 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1880, xi.item.SPRIG_OF_FRESH_MARJORAM      },
-                    { 1060, xi.item.BAG_OF_SIMSIM                },
-                    { 1310, xi.item.CLUMP_OF_MOHBWA_GRASS        },
-                    { 1760, xi.item.PEPHREDO_HIVE_CHIP           },
-                    {  590, xi.item.EGGPLANT                     },
-                    {  960, xi.item.BAG_OF_COFFEE_CHERRIES       },
-                    {  450, xi.item.EASTERN_GINGER_ROOT          },
-                    {  860, xi.item.CLUMP_OF_IMPERIAL_TEA_LEAVES },
-                    {  470, xi.item.CLUMP_OF_RED_MOKO_GRASS      },
-                    {  430, xi.item.SPRIG_OF_FRESH_MUGWORT       },
-                    {  240, xi.item.WIJNRUIT                     },
+                    { 1740, xi.item.SPRIG_OF_FRESH_MARJORAM      }, -- n=1600/9252, 95% CI +/-0.77pp
+                    { 1450, xi.item.PEPHREDO_HIVE_CHIP           }, -- n=1344/9252, 95% CI +/-0.72pp
+                    { 1200, xi.item.CLUMP_OF_MOHBWA_GRASS        }, -- n=1114/9252, 95% CI +/-0.66pp
+                    { 1060, xi.item.EGGPLANT                     }, -- n= 984/9252, 95% CI +/-0.63pp
+                    { 1050, xi.item.BAG_OF_SIMSIM                }, -- n= 970/9252, 95% CI +/-0.62pp
+                    { 1040, xi.item.BAG_OF_COFFEE_CHERRIES       }, -- n= 963/9252, 95% CI +/-0.62pp
+                    {  800, xi.item.CLUMP_OF_IMPERIAL_TEA_LEAVES }, -- n= 743/9252, 95% CI +/-0.55pp
+                    {  560, xi.item.EASTERN_GINGER_ROOT          }, -- n= 516/9252, 95% CI +/-0.47pp
+                    {  450, xi.item.SPRIG_OF_FRESH_MUGWORT       }, -- n= 418/9252, 95% CI +/-0.42pp
+                    {  420, xi.item.CLUMP_OF_RED_MOKO_GRASS      }, -- n= 384/9252, 95% CI +/-0.41pp
+                    {  230, xi.item.WIJNRUIT                     }, -- n= 216/9252, 95% CI +/-0.31pp
                 },
 
                 points =
@@ -78,17 +79,17 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1510, xi.item.CLUMP_OF_MOHBWA_GRASS        },
-                    { 1470, xi.item.SPRIG_OF_FRESH_MARJORAM      },
-                    { 1480, xi.item.PEPHREDO_HIVE_CHIP           },
-                    { 1170, xi.item.BAG_OF_SIMSIM                },
-                    { 1100, xi.item.CLUMP_OF_IMPERIAL_TEA_LEAVES },
-                    { 1000, xi.item.BAG_OF_COFFEE_CHERRIES       },
-                    {  510, xi.item.EGGPLANT                     },
-                    {  580, xi.item.CLUMP_OF_RED_MOKO_GRASS      },
-                    {  460, xi.item.SPRIG_OF_FRESH_MUGWORT       },
-                    {  370, xi.item.WIJNRUIT                     },
-                    {  360, xi.item.EASTERN_GINGER_ROOT          },
+                    { 1460, xi.item.CLUMP_OF_MOHBWA_GRASS        }, -- n=1327/9119, 95% CI +/-0.72pp
+                    { 1450, xi.item.PEPHREDO_HIVE_CHIP           }, -- n=1331/9119, 95% CI +/-0.72pp
+                    { 1370, xi.item.SPRIG_OF_FRESH_MARJORAM      }, -- n=1248/9119, 95% CI +/-0.71pp
+                    { 1090, xi.item.BAG_OF_SIMSIM                }, -- n= 994/9119, 95% CI +/-0.64pp
+                    { 1080, xi.item.CLUMP_OF_IMPERIAL_TEA_LEAVES }, -- n= 986/9119, 95% CI +/-0.64pp
+                    { 1000, xi.item.BAG_OF_COFFEE_CHERRIES       }, -- n= 909/9119, 95% CI +/-0.61pp
+                    {  660, xi.item.EGGPLANT                     }, -- n= 603/9119, 95% CI +/-0.51pp
+                    {  590, xi.item.EASTERN_GINGER_ROOT          }, -- n= 541/9119, 95% CI +/-0.49pp
+                    {  560, xi.item.CLUMP_OF_RED_MOKO_GRASS      }, -- n= 510/9119, 95% CI +/-0.47pp
+                    {  420, xi.item.SPRIG_OF_FRESH_MUGWORT       }, -- n= 381/9119, 95% CI +/-0.41pp
+                    {  320, xi.item.WIJNRUIT                     }, -- n= 289/9119, 95% CI +/-0.36pp
                 },
 
                 points =
@@ -113,14 +114,14 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1830, xi.item.CLUMP_OF_MOKO_GRASS     },
-                    { 1850, xi.item.CLUMP_OF_RED_MOKO_GRASS },
-                    { 1250, xi.item.BAG_OF_VEGETABLE_SEEDS  },
-                    { 1560, xi.item.BURDOCK_ROOT            },
-                    { 1060, xi.item.BAG_OF_GRAIN_SEEDS      },
-                    { 1200, xi.item.BAG_OF_HERB_SEEDS       },
-                    { 1270, xi.item.LESSER_CHIGOE           },
-                    { 1160, xi.item.WINTERFLOWER            },
+                    { 1590, xi.item.BURDOCK_ROOT            }, -- n=1242/7845, 95% CI +/-0.81pp
+                    { 1520, xi.item.CLUMP_OF_MOKO_GRASS     }, -- n=1193/7845, 95% CI +/-0.80pp
+                    { 1470, xi.item.CLUMP_OF_RED_MOKO_GRASS }, -- n=1155/7845, 95% CI +/-0.78pp
+                    { 1210, xi.item.WINTERFLOWER            }, -- n= 952/7845, 95% CI +/-0.72pp
+                    { 1170, xi.item.LESSER_CHIGOE           }, -- n= 919/7845, 95% CI +/-0.71pp
+                    { 1040, xi.item.BAG_OF_GRAIN_SEEDS      }, -- n= 816/7845, 95% CI +/-0.68pp
+                    { 1020, xi.item.BAG_OF_VEGETABLE_SEEDS  }, -- n= 802/7845, 95% CI +/-0.67pp
+                    {  980, xi.item.BAG_OF_HERB_SEEDS       }, -- n= 766/7845, 95% CI +/-0.66pp
                 },
 
                 points =
@@ -167,18 +168,18 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1630, xi.item.SPRIG_OF_FRESH_MARJORAM },
-                    { 1580, xi.item.CLUMP_OF_MOKO_GRASS     },
-                    { 1680, xi.item.BALL_OF_SARUTA_COTTON   },
-                    {  890, xi.item.BURDOCK_ROOT            },
-                    {  830, xi.item.CLUMP_OF_RED_MOKO_GRASS },
-                    {  910, xi.item.FLAX_FLOWER             },
-                    {  540, xi.item.BAG_OF_VEGETABLE_SEEDS  },
-                    {  550, xi.item.SKULL_LOCUST            },
-                    {  390, xi.item.SPRIG_OF_FRESH_MUGWORT  },
-                    {  350, xi.item.KING_LOCUST             },
-                    {  280, xi.item.BAG_OF_HERB_SEEDS       },
-                    {  370, xi.item.BAG_OF_GRAIN_SEEDS      },
+                    { 1580, xi.item.SKULL_LOCUST            }, -- n=1968/12631, 95% CI +/-0.63pp
+                    { 1280, xi.item.KING_LOCUST             }, -- n=1620/12631, 95% CI +/-0.58pp
+                    { 1270, xi.item.BURDOCK_ROOT            }, -- n=1603/12631, 95% CI +/-0.58pp
+                    { 1030, xi.item.SPRIG_OF_FRESH_MUGWORT  }, -- n=1307/12631, 95% CI +/-0.53pp
+                    {  920, xi.item.CLUMP_OF_MOKO_GRASS     }, -- n=1166/12631, 95% CI +/-0.51pp
+                    {  910, xi.item.SPRIG_OF_FRESH_MARJORAM }, -- n=1147/12631, 95% CI +/-0.50pp
+                    {  540, xi.item.BAG_OF_HERB_SEEDS       }, -- n= 688/12631, 95% CI +/-0.40pp
+                    {  530, xi.item.CLUMP_OF_RED_MOKO_GRASS }, -- n= 673/12631, 95% CI +/-0.39pp
+                    {  530, xi.item.BALL_OF_SARUTA_COTTON   }, -- n= 665/12631, 95% CI +/-0.39pp
+                    {  510, xi.item.BAG_OF_GRAIN_SEEDS      }, -- n= 647/12631, 95% CI +/-0.38pp
+                    {  500, xi.item.BAG_OF_VEGETABLE_SEEDS  }, -- n= 637/12631, 95% CI +/-0.38pp
+                    {  400, xi.item.FLAX_FLOWER             }, -- n= 510/12631, 95% CI +/-0.34pp
                 },
 
                 points =
@@ -241,21 +242,21 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1680, xi.item.CLUMP_OF_MOKO_GRASS             },
-                    { 1290, xi.item.BALL_OF_SARUTA_COTTON           },
-                    { 1180, xi.item.SPRIG_OF_FRESH_MARJORAM         },
-                    { 1090, xi.item.CLUMP_OF_RED_MOKO_GRASS         },
-                    {  920, xi.item.FLAX_FLOWER                     },
-                    {  880, xi.item.SPRIG_OF_DYERS_WOAD             },
-                    {  670, xi.item.BUNCH_OF_GYSAHL_GREENS          },
-                    {  650, xi.item.CLUMP_OF_WINDURSTIAN_TEA_LEAVES },
-                    {  480, xi.item.SKULL_LOCUST                    },
-                    {  360, xi.item.WIJNRUIT                        },
-                    {  320, xi.item.BAG_OF_VEGETABLE_SEEDS          },
-                    {  210, xi.item.BAG_OF_HERB_SEEDS               },
-                    {  190, xi.item.BAG_OF_GRAIN_SEEDS              },
-                    {  160, xi.item.PIECE_OF_CRAWLER_COCOON         },
-                    {   10, xi.item.SPRIG_OF_FRESH_MUGWORT          },
+                    { 1570, xi.item.CLUMP_OF_MOKO_GRASS             }, -- n=1467/9313, 95% CI +/-0.74pp
+                    { 1360, xi.item.BALL_OF_SARUTA_COTTON           }, -- n=1270/9313, 95% CI +/-0.70pp
+                    { 1100, xi.item.SPRIG_OF_FRESH_MARJORAM         }, -- n=1027/9313, 95% CI +/-0.64pp
+                    { 1090, xi.item.SPRIG_OF_DYERS_WOAD             }, -- n=1017/9313, 95% CI +/-0.63pp
+                    {  940, xi.item.CLUMP_OF_RED_MOKO_GRASS         }, -- n= 871/9313, 95% CI +/-0.59pp
+                    {  860, xi.item.FLAX_FLOWER                     }, -- n= 802/9313, 95% CI +/-0.57pp
+                    {  550, xi.item.SKULL_LOCUST                    }, -- n= 513/9313, 95% CI +/-0.46pp
+                    {  550, xi.item.CLUMP_OF_WINDURSTIAN_TEA_LEAVES }, -- n= 509/9313, 95% CI +/-0.46pp
+                    {  530, xi.item.WIJNRUIT                        }, -- n= 493/9313, 95% CI +/-0.46pp
+                    {  500, xi.item.BUNCH_OF_GYSAHL_GREENS          }, -- n= 462/9313, 95% CI +/-0.44pp
+                    {  220, xi.item.BAG_OF_HERB_SEEDS               }, -- n= 205/9313, 95% CI +/-0.30pp
+                    {  210, xi.item.BAG_OF_GRAIN_SEEDS              }, -- n= 195/9313, 95% CI +/-0.29pp
+                    {  210, xi.item.BAG_OF_VEGETABLE_SEEDS          }, -- n= 192/9313, 95% CI +/-0.29pp
+                    {  200, xi.item.PIECE_OF_CRAWLER_COCOON         }, -- n= 186/9313, 95% CI +/-0.28pp
+                    {  110, xi.item.SPRIG_OF_FRESH_MUGWORT          }, -- n= 104/9313, 95% CI +/-0.21pp
                 },
 
                 points =
@@ -302,13 +303,13 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 4000, xi.item.WOOZYSHROOM     },
-                    { 2000, xi.item.DANCESHROOM     },
-                    { 2000, xi.item.SLEEPSHROOM     },
-                    {  700, xi.item.SCREAM_FUNGUS   },
-                    {  700, xi.item.PUFFBALL        },
-                    {  300, xi.item.KING_TRUFFLE    },
-                    {  300, xi.item.MUSHROOM_LOCUST },
+                    { 2500, xi.item.WOOZYSHROOM     }, -- n=731/2925, 95% CI +/-1.57pp
+                    { 1920, xi.item.MUSHROOM_LOCUST }, -- n=563/2925, 95% CI +/-1.43pp
+                    { 1820, xi.item.DANCESHROOM     }, -- n=531/2925, 95% CI +/-1.40pp
+                    { 1810, xi.item.SLEEPSHROOM     }, -- n=530/2925, 95% CI +/-1.40pp
+                    { 1040, xi.item.SCREAM_FUNGUS   }, -- n=305/2925, 95% CI +/-1.11pp
+                    {  640, xi.item.PUFFBALL        }, -- n=187/2925, 95% CI +/-0.89pp
+                    {  270, xi.item.KING_TRUFFLE    }, -- n= 78/2925, 95% CI +/-0.59pp
                 },
 
                 points =
@@ -328,13 +329,13 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 4000, xi.item.WOOZYSHROOM     },
-                    { 2000, xi.item.DANCESHROOM     },
-                    { 2000, xi.item.SLEEPSHROOM     },
-                    {  700, xi.item.SCREAM_FUNGUS   },
-                    {  700, xi.item.CORAL_FUNGUS    },
-                    {  300, xi.item.REISHI_MUSHROOM },
-                    {  300, xi.item.MUSHROOM_LOCUST },
+                    { 2580, xi.item.WOOZYSHROOM     }, -- n=123/477, 95% CI +/-3.91pp
+                    { 1870, xi.item.MUSHROOM_LOCUST }, -- n= 89/477, 95% CI +/-3.49pp
+                    { 1820, xi.item.SLEEPSHROOM     }, -- n= 87/477, 95% CI +/-3.46pp
+                    { 1800, xi.item.DANCESHROOM     }, -- n= 86/477, 95% CI +/-3.45pp
+                    {  990, xi.item.SCREAM_FUNGUS   }, -- n= 47/477, 95% CI +/-2.68pp
+                    {  630, xi.item.CORAL_FUNGUS    }, -- n= 30/477, 95% CI +/-2.20pp
+                    {  310, xi.item.REISHI_MUSHROOM }, -- n= 15/477, 95% CI +/-1.60pp
                 },
 
                 points =
@@ -353,21 +354,21 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1500, xi.item.CLUMP_OF_RED_MOKO_GRASS         },
-                    { 1430, xi.item.SPRIG_OF_DYERS_WOAD             },
-                    { 1430, xi.item.FLAX_FLOWER                     },
-                    { 1400, xi.item.BALL_OF_SARUTA_COTTON           },
-                    { 1210, xi.item.SPRIG_OF_FRESH_MARJORAM         },
-                    { 1030, xi.item.CLUMP_OF_MOKO_GRASS             },
-                    {  570, xi.item.CLUMP_OF_WINDURSTIAN_TEA_LEAVES },
-                    {  520, xi.item.BUNCH_OF_GYSAHL_GREENS          },
-                    {  440, xi.item.KING_LOCUST                     },
-                    {  370, xi.item.WIJNRUIT                        },
-                    {  230, xi.item.BAG_OF_GRAIN_SEEDS              },
-                    {  210, xi.item.BAG_OF_HERB_SEEDS               },
-                    {  200, xi.item.SPRIG_OF_FRESH_MUGWORT          },
-                    {  190, xi.item.PIECE_OF_CRAWLER_COCOON         },
-                    {  160, xi.item.BAG_OF_VEGETABLE_SEEDS          },
+                    { 1410, xi.item.BALL_OF_SARUTA_COTTON           }, -- n=1328/9469, 95% CI +/-0.70pp
+                    { 1370, xi.item.CLUMP_OF_RED_MOKO_GRASS         }, -- n=1297/9469, 95% CI +/-0.69pp
+                    { 1350, xi.item.FLAX_FLOWER                     }, -- n=1279/9469, 95% CI +/-0.69pp
+                    { 1150, xi.item.SPRIG_OF_DYERS_WOAD             }, -- n=1088/9469, 95% CI +/-0.64pp
+                    {  900, xi.item.SPRIG_OF_FRESH_MARJORAM         }, -- n= 849/9469, 95% CI +/-0.58pp
+                    {  860, xi.item.CLUMP_OF_MOKO_GRASS             }, -- n= 818/9469, 95% CI +/-0.57pp
+                    {  600, xi.item.CLUMP_OF_WINDURSTIAN_TEA_LEAVES }, -- n= 571/9469, 95% CI +/-0.48pp
+                    {  530, xi.item.BUNCH_OF_GYSAHL_GREENS          }, -- n= 498/9469, 95% CI +/-0.45pp
+                    {  430, xi.item.KING_LOCUST                     }, -- n= 411/9469, 95% CI +/-0.41pp
+                    {  320, xi.item.WIJNRUIT                        }, -- n= 307/9469, 95% CI +/-0.36pp
+                    {  220, xi.item.BAG_OF_GRAIN_SEEDS              }, -- n= 213/9469, 95% CI +/-0.30pp
+                    {  220, xi.item.SPRIG_OF_FRESH_MUGWORT          }, -- n= 207/9469, 95% CI +/-0.30pp
+                    {  220, xi.item.BAG_OF_HERB_SEEDS               }, -- n= 205/9469, 95% CI +/-0.29pp
+                    {  210, xi.item.PIECE_OF_CRAWLER_COCOON         }, -- n= 199/9469, 95% CI +/-0.29pp
+                    {  210, xi.item.BAG_OF_VEGETABLE_SEEDS          }, -- n= 199/9469, 95% CI +/-0.29pp
                 },
 
                 points =
@@ -462,20 +463,6 @@ xi.helm.dataTable =
                 },
             },
 
-            [xi.zone.YAHSE_HUNTING_GROUNDS] =
-            {
-                obtainRate = 50, -- Capture needed
-                breakRate  = 50, -- Capture needed
-
-                drops =
-                {
-                    -- TODO
-                },
-                points =
-                {
-                    -- TODO
-                },
-            },
         },
     },
 
@@ -483,11 +470,12 @@ xi.helm.dataTable =
 
     [xi.helmType.EXCAVATION] =
     {
-        id           = 'EXCAVATION',
-        animation    = xi.emote.EXCAVATION,
-        relocateRate = 50,
-        message      = 'MINING_IS_POSSIBLE_HERE',
-        tool         = xi.item.PICKAXE,
+        id             = 'EXCAVATION',
+        animation      = xi.emote.EXCAVATION,
+        relocateRate   = 50,
+        campMultiplier = 1.6,
+        message        = 'MINING_IS_POSSIBLE_HERE',
+        tool           = xi.item.PICKAXE,
 
         zone =
         {
@@ -498,16 +486,16 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2220, xi.item.BONE_CHIP                   },
-                    { 2220, xi.item.CHICKEN_BONE                },
-                    { 1220, xi.item.BAT_FANG                    },
-                    { 1220, xi.item.LITTLE_WORM                 },
-                    {  720, xi.item.SCORPION_CLAW               },
-                    {  720, xi.item.SCORPION_SHELL              },
-                    {  420, xi.item.ANTLION_JAW                 },
-                    {  420, xi.item.BAG_OF_CACTUS_STEMS         },
-                    {  420, xi.item.HIGH_QUALITY_SCORPION_SHELL },
-                    {  420, xi.item.RED_ROCK                    },
+                    { 2750, xi.item.CHICKEN_BONE                }, -- n=2117/7734, 95% CI +/-0.99pp
+                    { 2440, xi.item.BONE_CHIP                   }, -- n=1888/7734, 95% CI +/-0.96pp
+                    { 1600, xi.item.BAT_FANG                    }, -- n=1234/7734, 95% CI +/-0.82pp
+                    { 1180, xi.item.LITTLE_WORM                 }, -- n= 916/7734, 95% CI +/-0.72pp
+                    {  610, xi.item.SCORPION_CLAW               }, -- n= 475/7734, 95% CI +/-0.54pp
+                    {  600, xi.item.SCORPION_SHELL              }, -- n= 461/7734, 95% CI +/-0.53pp
+                    {  430, xi.item.ANTLION_JAW                 }, -- n= 331/7734, 95% CI +/-0.45pp
+                    {  140, xi.item.BAG_OF_CACTUS_STEMS         }, -- n= 112/7734, 95% CI +/-0.27pp
+                    {  130, xi.item.RED_ROCK                    }, -- n= 104/7734, 95% CI +/-0.26pp
+                    {  120, xi.item.HIGH_QUALITY_SCORPION_SHELL }, -- n=  96/7734, 95% CI +/-0.25pp
                 },
 
                 points =
@@ -532,15 +520,15 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2690, xi.item.BONE_CHIP      },
-                    { 1830, xi.item.CHICKEN_BONE   },
-                    { 1300, xi.item.BAT_FANG       },
-                    { 1440, xi.item.GIANT_FEMUR    },
-                    { 1250, xi.item.LITTLE_WORM    },
-                    {   50, xi.item.SCORPION_CLAW  },
-                    {  290, xi.item.SCORPION_SHELL },
-                    {  240, xi.item.TURTLE_SHELL   },
-                    {  190, xi.item.SACK_OF_SILICA },
+                    { 2720, xi.item.BONE_CHIP      }, -- n=1877/6929, 95% CI +/-1.05pp
+                    { 2090, xi.item.CHICKEN_BONE   }, -- n=1450/6929, 95% CI +/-0.96pp
+                    { 1780, xi.item.GIANT_FEMUR    }, -- n=1232/6929, 95% CI +/-0.90pp
+                    { 1410, xi.item.LITTLE_WORM    }, -- n= 978/6929, 95% CI +/-0.82pp
+                    { 1320, xi.item.BAT_FANG       }, -- n= 915/6929, 95% CI +/-0.80pp
+                    {  260, xi.item.TURTLE_SHELL   }, -- n= 181/6929, 95% CI +/-0.38pp
+                    {  160, xi.item.SCORPION_SHELL }, -- n= 112/6929, 95% CI +/-0.30pp
+                    {  140, xi.item.SCORPION_CLAW  }, -- n=  99/6929, 95% CI +/-0.28pp
+                    {  120, xi.item.SACK_OF_SILICA }, -- n=  85/6929, 95% CI +/-0.26pp
                 },
 
                 points =
@@ -598,17 +586,14 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2130, xi.item.CHUNK_OF_ROCK_SALT     },
-                    { 1700, xi.item.SEASHELL               },
-                    {  430, xi.item.CRAB_SHELL             },
-                    { 1490, xi.item.HANDFUL_OF_FISH_SCALES },
-                    { 2130, xi.item.LUGWORM                },
-                    { 1060, xi.item.SHELL_BUG              },
-                    {  100, xi.item.CORAL_FRAGMENT         },
-                    {  100, xi.item.BAG_OF_VEGETABLE_SEEDS },
-                    {  430, xi.item.TURTLE_SHELL           },
-                    {  100, xi.item.BAG_OF_GRAIN_SEEDS     },
-                    {  640, xi.item.HELMET_MOLE            },
+                    { 1910, xi.item.HELMET_MOLE            }, -- n=1976/10355, 95% CI +/-0.76pp
+                    { 1620, xi.item.CHUNK_OF_ROCK_SALT     }, -- n=1673/10355, 95% CI +/-0.71pp
+                    { 1510, xi.item.SEASHELL               }, -- n=1567/10355, 95% CI +/-0.69pp
+                    { 1260, xi.item.LUGWORM                }, -- n=1306/10355, 95% CI +/-0.64pp
+                    { 1240, xi.item.SHELL_BUG              }, -- n=1283/10355, 95% CI +/-0.63pp
+                    { 1220, xi.item.HANDFUL_OF_FISH_SCALES }, -- n=1260/10355, 95% CI +/-0.63pp
+                    {  850, xi.item.CRAB_SHELL             }, -- n= 881/10355, 95% CI +/-0.54pp
+                    {  390, xi.item.TURTLE_SHELL           }, -- n= 409/10355, 95% CI +/-0.38pp
                 },
 
                 points =
@@ -643,15 +628,15 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2560, xi.item.BONE_CHIP      },
-                    { 2560, xi.item.BAT_FANG       },
-                    { 2330, xi.item.LITTLE_WORM    },
-                    {  930, xi.item.GIANT_FEMUR    },
-                    {  700, xi.item.SCORPION_CLAW  },
-                    {  230, xi.item.SCORPION_SHELL },
-                    {  230, xi.item.PETRIFIED_LOG  },
-                    {  100, xi.item.RED_ROCK       },
-                    {  470, xi.item.SACK_OF_SILICA },
+                    { 2990, xi.item.BONE_CHIP      }, -- n=1995/6666, 95% CI +/-1.10pp
+                    { 2180, xi.item.BAT_FANG       }, -- n=1450/6666, 95% CI +/-0.99pp
+                    { 1520, xi.item.LITTLE_WORM    }, -- n=1015/6666, 95% CI +/-0.86pp
+                    { 1480, xi.item.GIANT_FEMUR    }, -- n= 989/6666, 95% CI +/-0.85pp
+                    {  580, xi.item.SCORPION_CLAW  }, -- n= 384/6666, 95% CI +/-0.56pp
+                    {  460, xi.item.SCORPION_SHELL }, -- n= 307/6666, 95% CI +/-0.50pp
+                    {  330, xi.item.SACK_OF_SILICA }, -- n= 223/6666, 95% CI +/-0.43pp
+                    {  300, xi.item.RED_ROCK       }, -- n= 199/6666, 95% CI +/-0.41pp
+                    {  160, xi.item.PETRIFIED_LOG  }, -- n= 104/6666, 95% CI +/-0.30pp
                 },
 
                 points =
@@ -765,11 +750,12 @@ xi.helm.dataTable =
 
     [xi.helmType.LOGGING] =
     {
-        id = 'LOGGING',
-        animation    = xi.emote.LOGGING,
-        relocateRate = 100,
-        message      = 'LOGGING_IS_POSSIBLE_HERE',
-        tool         = xi.item.HATCHET,
+        id             = 'LOGGING',
+        animation      = xi.emote.LOGGING,
+        relocateRate   = 100,
+        campMultiplier = 2.1,
+        message        = 'LOGGING_IS_POSSIBLE_HERE',
+        tool           = xi.item.HATCHET,
 
         zone =
         {
@@ -780,14 +766,14 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1750, xi.item.WALNUT_LOG    },
-                    { 1750, xi.item.WILLOW_LOG    },
-                    { 1000, xi.item.YEW_LOG       },
-                    {  750, xi.item.ARROWWOOD_LOG },
-                    {  500, xi.item.ASH_LOG       },
-                    {  500, xi.item.DRYAD_ROOT    },
-                    {  250, xi.item.ACORN         },
-                    {  100, xi.item.OAK_LOG       },
+                    { 2110, xi.item.WALNUT_LOG    }, -- n=1709/8122, 95% CI +/-0.89pp
+                    { 2100, xi.item.YEW_LOG       }, -- n=1706/8122, 95% CI +/-0.89pp
+                    { 1490, xi.item.WILLOW_LOG    }, -- n=1214/8122, 95% CI +/-0.78pp
+                    { 1440, xi.item.ARROWWOOD_LOG }, -- n=1168/8122, 95% CI +/-0.76pp
+                    { 1430, xi.item.ASH_LOG       }, -- n=1162/8122, 95% CI +/-0.76pp
+                    {  730, xi.item.ACORN         }, -- n= 594/8122, 95% CI +/-0.57pp
+                    {  580, xi.item.DRYAD_ROOT    }, -- n= 471/8122, 95% CI +/-0.51pp
+                    {  120, xi.item.OAK_LOG       }, -- n=  98/8122, 95% CI +/-0.24pp
                 },
 
                 points =
@@ -882,16 +868,16 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1070, xi.item.ARROWWOOD_LOG        },
-                    { 1070, xi.item.DOGWOOD_LOG          },
-                    { 2300, xi.item.HANDFUL_OF_PINE_NUTS },
-                    { 1070, xi.item.HANDFUL_OF_ALMONDS   },
-                    {  500, xi.item.CHESTNUT_LOG         },
-                    { 2300, xi.item.DATE                 },
-                    {  500, xi.item.EBONY_LOG            },
-                    {  500, xi.item.LAUAN_LOG            },
-                    {  490, xi.item.ROSEWOOD_LOG         },
-                    {  200, xi.item.BLOODWOOD_LOG        },
+                    { 2580, xi.item.DOGWOOD_LOG          }, -- n=2214/8619, 95% CI +/-0.92pp
+                    { 1910, xi.item.ARROWWOOD_LOG        }, -- n=1648/8619, 95% CI +/-0.83pp
+                    { 1400, xi.item.HANDFUL_OF_ALMONDS   }, -- n=1204/8619, 95% CI +/-0.73pp
+                    { 1160, xi.item.HANDFUL_OF_PINE_NUTS }, -- n= 998/8619, 95% CI +/-0.68pp
+                    { 1000, xi.item.DATE                 }, -- n= 866/8619, 95% CI +/-0.63pp
+                    {  520, xi.item.CHESTNUT_LOG         }, -- n= 450/8619, 95% CI +/-0.47pp
+                    {  490, xi.item.EBONY_LOG            }, -- n= 426/8619, 95% CI +/-0.46pp
+                    {  450, xi.item.LAUAN_LOG            }, -- n= 387/8619, 95% CI +/-0.44pp
+                    {  250, xi.item.ROSEWOOD_LOG         }, -- n= 219/8619, 95% CI +/-0.33pp
+                    {  240, xi.item.BLOODWOOD_LOG        }, -- n= 207/8619, 95% CI +/-0.32pp
                 },
 
                 points =
@@ -918,16 +904,16 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2200, xi.item.DOGWOOD_LOG          },
-                    { 1520, xi.item.HANDFUL_OF_ALMONDS   },
-                    { 1260, xi.item.ARROWWOOD_LOG        },
-                    {  470, xi.item.CHESTNUT_LOG         },
-                    {  680, xi.item.DATE                 },
-                    {  940, xi.item.LAUAN_LOG            },
-                    { 1150, xi.item.HANDFUL_OF_PINE_NUTS },
-                    {  680, xi.item.ROSEWOOD_LOG         },
-                    {  260, xi.item.BLOODWOOD_LOG        },
-                    {  310, xi.item.EBONY_LOG            },
+                    { 2690, xi.item.DOGWOOD_LOG          }, -- n=1910/7057, 95% CI +/-1.04pp
+                    { 1550, xi.item.HANDFUL_OF_PINE_NUTS }, -- n=1093/7057, 95% CI +/-0.84pp
+                    { 1300, xi.item.ARROWWOOD_LOG        }, -- n= 915/7057, 95% CI +/-0.78pp
+                    { 1280, xi.item.HANDFUL_OF_ALMONDS   }, -- n= 902/7057, 95% CI +/-0.78pp
+                    { 1140, xi.item.DATE                 }, -- n= 802/7057, 95% CI +/-0.74pp
+                    {  660, xi.item.LAUAN_LOG            }, -- n= 465/7057, 95% CI +/-0.58pp
+                    {  480, xi.item.ROSEWOOD_LOG         }, -- n= 341/7057, 95% CI +/-0.50pp
+                    {  410, xi.item.EBONY_LOG            }, -- n= 288/7057, 95% CI +/-0.46pp
+                    {  380, xi.item.CHESTNUT_LOG         }, -- n= 265/7057, 95% CI +/-0.44pp
+                    {  110, xi.item.BLOODWOOD_LOG        }, -- n=  76/7057, 95% CI +/-0.24pp
                 },
 
                 points =
@@ -1126,13 +1112,13 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2610, xi.item.ARROWWOOD_LOG      },
-                    { 2030, xi.item.ASH_LOG            },
-                    { 2570, xi.item.MAPLE_LOG          },
-                    {  540, xi.item.CHESTNUT_LOG       },
-                    {  580, xi.item.BAG_OF_FRUIT_SEEDS },
-                    {  910, xi.item.YEW_LOG            },
-                    {  410, xi.item.RONFAURE_CHESTNUT  },
+                    { 2740, xi.item.ARROWWOOD_LOG      }, -- n=2026/7373, 95% CI +/-1.02pp
+                    { 2740, xi.item.MAPLE_LOG          }, -- n=2019/7373, 95% CI +/-1.02pp
+                    { 2060, xi.item.ASH_LOG            }, -- n=1521/7373, 95% CI +/-0.92pp
+                    {  960, xi.item.YEW_LOG            }, -- n= 708/7373, 95% CI +/-0.67pp
+                    {  700, xi.item.RONFAURE_CHESTNUT  }, -- n= 514/7373, 95% CI +/-0.58pp
+                    {  400, xi.item.CHESTNUT_LOG       }, -- n= 293/7373, 95% CI +/-0.45pp
+                    {  400, xi.item.BAG_OF_FRUIT_SEEDS }, -- n= 292/7373, 95% CI +/-0.45pp
                 },
 
                 points =
@@ -1177,14 +1163,14 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2040, xi.item.WALNUT_LOG    },
-                    { 1850, xi.item.WILLOW_LOG    },
-                    { 1790, xi.item.YEW_LOG       },
-                    { 1460, xi.item.ARROWWOOD_LOG },
-                    { 1430, xi.item.ASH_LOG       },
-                    {  580, xi.item.ACORN         },
-                    {  550, xi.item.DRYAD_ROOT    },
-                    {   60, xi.item.OAK_LOG       },
+                    { 2190, xi.item.WALNUT_LOG    }, -- n=1556/7075, 95% CI +/-0.97pp
+                    { 2130, xi.item.YEW_LOG       }, -- n=1506/7075, 95% CI +/-0.95pp
+                    { 1440, xi.item.WILLOW_LOG    }, -- n=1019/7075, 95% CI +/-0.82pp
+                    { 1430, xi.item.ARROWWOOD_LOG }, -- n=1010/7075, 95% CI +/-0.82pp
+                    { 1380, xi.item.ASH_LOG       }, -- n= 974/7075, 95% CI +/-0.80pp
+                    {  720, xi.item.ACORN         }, -- n= 510/7075, 95% CI +/-0.60pp
+                    {  570, xi.item.DRYAD_ROOT    }, -- n= 402/7075, 95% CI +/-0.54pp
+                    {  140, xi.item.OAK_LOG       }, -- n=  98/7075, 95% CI +/-0.27pp
                 },
 
                 points =
@@ -1229,16 +1215,16 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2410, xi.item.LAUAN_LOG                },
-                    { 1980, xi.item.ARROWWOOD_LOG            },
-                    { 1550, xi.item.YAGUDO_CHERRY            },
-                    { 1030, xi.item.BUNCH_OF_BUBURIMU_GRAPES },
-                    {  780, xi.item.DRYAD_ROOT               },
-                    {  520, xi.item.BAG_OF_FRUIT_SEEDS       },
-                    {  950, xi.item.HOLLY_LOG                },
-                    {  340, xi.item.EBONY_LOG                },
-                    {  170, xi.item.MAHOGANY_LOG             },
-                    {  260, xi.item.ROSEWOOD_LOG             },
+                    { 2280, xi.item.LAUAN_LOG                }, -- n=1432/6295, 95% CI +/-1.04pp
+                    { 1930, xi.item.YAGUDO_CHERRY            }, -- n=1217/6295, 95% CI +/-0.98pp
+                    { 1600, xi.item.ARROWWOOD_LOG            }, -- n=1008/6295, 95% CI +/-0.91pp
+                    { 1350, xi.item.BUNCH_OF_BUBURIMU_GRAPES }, -- n= 847/6295, 95% CI +/-0.84pp
+                    { 1070, xi.item.DRYAD_ROOT               }, -- n= 676/6295, 95% CI +/-0.76pp
+                    {  790, xi.item.HOLLY_LOG                }, -- n= 498/6295, 95% CI +/-0.67pp
+                    {  510, xi.item.BAG_OF_FRUIT_SEEDS       }, -- n= 319/6295, 95% CI +/-0.54pp
+                    {  180, xi.item.EBONY_LOG                }, -- n= 112/6295, 95% CI +/-0.33pp
+                    {  160, xi.item.ROSEWOOD_LOG             }, -- n= 102/6295, 95% CI +/-0.31pp
+                    {  130, xi.item.MAHOGANY_LOG             }, -- n=  84/6295, 95% CI +/-0.28pp
                 },
 
                 points =
@@ -1295,17 +1281,18 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1900, xi.item.ARROWWOOD_LOG          },
-                    { 1430, xi.item.PIECE_OF_RATTAN_LUMBER },
-                    { 1190, xi.item.LAUAN_LOG              },
-                    { 1190, xi.item.REVIVAL_TREE_ROOT      },
-                    {  950, xi.item.AQUILARIA_LOG          },
-                    {  480, xi.item.BEEHIVE_CHIP           },
-                    {  480, xi.item.BAG_OF_TREE_CUTTINGS   },
-                    {  100, xi.item.DRAGON_FRUIT           },
-                    {  240, xi.item.EBONY_LOG              },
-                    {  100, xi.item.HOLLY_LOG              },
-                    {  100, xi.item.ROSEWOOD_LOG           },
+                    { 1840, xi.item.PIECE_OF_RATTAN_LUMBER }, -- n=2232/12094, 95% CI +/-0.69pp
+                    { 1750, xi.item.ARROWWOOD_LOG          }, -- n=2115/12094, 95% CI +/-0.68pp
+                    { 1160, xi.item.LAUAN_LOG              }, -- n=1407/12094, 95% CI +/-0.57pp
+                    {  970, xi.item.BUTTERPEAR             }, -- n=1176/12094, 95% CI +/-0.53pp
+                    {  870, xi.item.BEEHIVE_CHIP           }, -- n=1051/12094, 95% CI +/-0.50pp
+                    {  860, xi.item.KAPOR_LOG              }, -- n=1038/12094, 95% CI +/-0.50pp
+                    {  850, xi.item.AQUILARIA_LOG          }, -- n=1028/12094, 95% CI +/-0.50pp
+                    {  600, xi.item.REVIVAL_TREE_ROOT      }, -- n= 722/12094, 95% CI +/-0.42pp
+                    {  590, xi.item.HOLLY_LOG              }, -- n= 712/12094, 95% CI +/-0.42pp
+                    {  240, xi.item.ROSEWOOD_LOG           }, -- n= 287/12094, 95% CI +/-0.27pp
+                    {  140, xi.item.EBONY_LOG              }, -- n= 169/12094, 95% CI +/-0.21pp
+                    {  130, xi.item.BAG_OF_TREE_CUTTINGS   }, -- n= 157/12094, 95% CI +/-0.20pp
                 },
 
                 points =
@@ -1345,18 +1332,18 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2220, xi.item.ARROWWOOD_LOG          },
-                    { 2220, xi.item.PIECE_OF_RATTAN_LUMBER },
-                    { 1130, xi.item.LAUAN_LOG              },
-                    {  780, xi.item.BEEHIVE_CHIP           },
-                    {  650, xi.item.DRYAD_ROOT             },
-                    {  650, xi.item.BUTTERPEAR             },
-                    {  610, xi.item.REVIVAL_TREE_ROOT      },
-                    {  610, xi.item.AQUILARIA_LOG          },
-                    {  570, xi.item.KAPOR_LOG              },
-                    {  350, xi.item.MAHOGANY_LOG           },
-                    {  170, xi.item.EBONY_LOG              },
-                    {   90, xi.item.BAG_OF_TREE_CUTTINGS   },
+                    { 1810, xi.item.ARROWWOOD_LOG          }, -- n=1518/8338, 95% CI +/-0.83pp
+                    { 1770, xi.item.PIECE_OF_RATTAN_LUMBER }, -- n=1479/8338, 95% CI +/-0.82pp
+                    { 1190, xi.item.LAUAN_LOG              }, -- n= 996/8338, 95% CI +/-0.70pp
+                    { 1020, xi.item.BUTTERPEAR             }, -- n= 848/8338, 95% CI +/-0.65pp
+                    {  860, xi.item.BEEHIVE_CHIP           }, -- n= 717/8338, 95% CI +/-0.60pp
+                    {  800, xi.item.KAPOR_LOG              }, -- n= 665/8338, 95% CI +/-0.58pp
+                    {  800, xi.item.AQUILARIA_LOG          }, -- n= 664/8338, 95% CI +/-0.58pp
+                    {  650, xi.item.REVIVAL_TREE_ROOT      }, -- n= 538/8338, 95% CI +/-0.53pp
+                    {  600, xi.item.DRYAD_ROOT             }, -- n= 500/8338, 95% CI +/-0.51pp
+                    {  250, xi.item.MAHOGANY_LOG           }, -- n= 206/8338, 95% CI +/-0.33pp
+                    {  130, xi.item.EBONY_LOG              }, -- n= 106/8338, 95% CI +/-0.24pp
+                    {  120, xi.item.BAG_OF_TREE_CUTTINGS   }, -- n= 101/8338, 95% CI +/-0.24pp
                 },
 
                 points =
@@ -1532,11 +1519,12 @@ xi.helm.dataTable =
 
     [xi.helmType.MINING] =
     {
-        id           = 'MINING',
-        animation    = xi.emote.EXCAVATION,
-        relocateRate = 50,
-        message      = 'MINING_IS_POSSIBLE_HERE',
-        tool         = xi.item.PICKAXE,
+        id             = 'MINING',
+        animation      = xi.emote.EXCAVATION,
+        relocateRate   = 50,
+        campMultiplier = 1.6,
+        message        = 'MINING_IS_POSSIBLE_HERE',
+        tool           = xi.item.PICKAXE,
 
         zone =
         {
@@ -1547,21 +1535,21 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1150, xi.item.IGNEOUS_ROCK           },
-                    { 1130, xi.item.CHUNK_OF_ZINC_ORE      },
-                    { 1100, xi.item.CHUNK_OF_COPPER_ORE    },
-                    { 1080, xi.item.CHUNK_OF_TIN_ORE       },
-                    { 1050, xi.item.CHUNK_OF_SILVER_ORE    },
-                    {  970, xi.item.CHUNK_OF_IRON_ORE      },
-                    {  680, xi.item.SUIT_OF_MOBLIN_MAIL    },
-                    {  630, xi.item.MOBLIN_HELM            },
-                    {  600, xi.item.MOBLIN_MASK            },
-                    {  570, xi.item.GOBLIN_DIE             },
-                    {  570, xi.item.SUIT_OF_MOBLIN_ARMOR   },
-                    {   80, xi.item.CHUNK_OF_DARKSTEEL_ORE },
-                    {   80, xi.item.CHUNK_OF_MYTHRIL_ORE   },
-                    {   70, xi.item.CHUNK_OF_GOLD_ORE      },
-                    {   70, xi.item.CHUNK_OF_PLATINUM_ORE  },
+                    { 1230, xi.item.IGNEOUS_ROCK           }, -- n=997/7930, 95% CI +/-0.73pp
+                    { 1230, xi.item.CHUNK_OF_ZINC_ORE      }, -- n=978/7930, 95% CI +/-0.72pp
+                    { 1150, xi.item.CHUNK_OF_TIN_ORE       }, -- n=913/7930, 95% CI +/-0.70pp
+                    { 1130, xi.item.CHUNK_OF_COPPER_ORE    }, -- n=897/7930, 95% CI +/-0.70pp
+                    { 1060, xi.item.CHUNK_OF_IRON_ORE      }, -- n=839/7930, 95% CI +/-0.68pp
+                    { 1060, xi.item.CHUNK_OF_SILVER_ORE    }, -- n=838/7930, 95% CI +/-0.68pp
+                    {  590, xi.item.MOBLIN_MASK            }, -- n=465/7930, 95% CI +/-0.52pp
+                    {  580, xi.item.GOBLIN_DIE             }, -- n=456/7930, 95% CI +/-0.51pp
+                    {  570, xi.item.MOBLIN_HELM            }, -- n=449/7930, 95% CI +/-0.51pp
+                    {  560, xi.item.SUIT_OF_MOBLIN_MAIL    }, -- n=444/7930, 95% CI +/-0.51pp
+                    {  530, xi.item.SUIT_OF_MOBLIN_ARMOR   }, -- n=420/7930, 95% CI +/-0.49pp
+                    {   80, xi.item.CHUNK_OF_PLATINUM_ORE  }, -- n= 61/7930, 95% CI +/-0.19pp
+                    {   80, xi.item.CHUNK_OF_MYTHRIL_ORE   }, -- n= 61/7930, 95% CI +/-0.19pp
+                    {   80, xi.item.CHUNK_OF_DARKSTEEL_ORE }, -- n= 60/7930, 95% CI +/-0.19pp
+                    {   70, xi.item.CHUNK_OF_GOLD_ORE      }, -- n= 52/7930, 95% CI +/-0.18pp
                 },
 
                 points =
@@ -1585,18 +1573,18 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1660, xi.item.CHUNK_OF_COPPER_ORE    },
-                    { 1100, xi.item.CHUNK_OF_TIN_ORE       },
-                    { 1450, xi.item.CHUNK_OF_ZINC_ORE      },
-                    { 1790, xi.item.IGNEOUS_ROCK           },
-                    { 1450, xi.item.CHUNK_OF_SILVER_ORE    },
-                    {  140, xi.item.CHUNK_OF_ALUMINUM_ORE  },
-                    { 1720, xi.item.CHUNK_OF_IRON_ORE      },
-                    {   70, xi.item.CHUNK_OF_DARKSTEEL_ORE },
-                    {  210, xi.item.CHUNK_OF_MYTHRIL_ORE   },
-                    {  140, xi.item.CHUNK_OF_GOLD_ORE      },
-                    {  340, xi.item.CHUNK_OF_PLATINUM_ORE  },
-                    {   70, xi.item.RED_ROCK               },
+                    { 1520, xi.item.CHUNK_OF_COPPER_ORE    }, -- n=1227/8080, 95% CI +/-0.78pp
+                    { 1400, xi.item.IGNEOUS_ROCK           }, -- n=1128/8080, 95% CI +/-0.76pp
+                    { 1360, xi.item.CHUNK_OF_IRON_ORE      }, -- n=1098/8080, 95% CI +/-0.75pp
+                    { 1340, xi.item.CHUNK_OF_SILVER_ORE    }, -- n=1084/8080, 95% CI +/-0.74pp
+                    { 1340, xi.item.CHUNK_OF_ZINC_ORE      }, -- n=1080/8080, 95% CI +/-0.74pp
+                    { 1330, xi.item.CHUNK_OF_TIN_ORE       }, -- n=1076/8080, 95% CI +/-0.74pp
+                    {  770, xi.item.RED_ROCK               }, -- n= 624/8080, 95% CI +/-0.58pp
+                    {  280, xi.item.CHUNK_OF_ALUMINUM_ORE  }, -- n= 230/8080, 95% CI +/-0.36pp
+                    {  220, xi.item.CHUNK_OF_PLATINUM_ORE  }, -- n= 174/8080, 95% CI +/-0.32pp
+                    {  180, xi.item.CHUNK_OF_GOLD_ORE      }, -- n= 149/8080, 95% CI +/-0.29pp
+                    {  130, xi.item.CHUNK_OF_MYTHRIL_ORE   }, -- n= 105/8080, 95% CI +/-0.25pp
+                    {  130, xi.item.CHUNK_OF_DARKSTEEL_ORE }, -- n= 105/8080, 95% CI +/-0.25pp
                 },
 
                 points =
@@ -1714,18 +1702,18 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1870, xi.item.CHUNK_OF_COPPER_ORE   },
-                    { 1930, xi.item.CHUNK_OF_ZINC_ORE     },
-                    { 1500, xi.item.CHUNK_OF_TIN_ORE      },
-                    { 1340, xi.item.PEBBLE                },
-                    {  860, xi.item.CHUNK_OF_SILVER_ORE   },
-                    { 1180, xi.item.CHUNK_OF_IRON_ORE     },
-                    {  750, xi.item.CHUNK_OF_MYTHRIL_ORE  },
-                    {  210, xi.item.MOBLIN_MASK           },
-                    {  110, xi.item.MOBLIN_HELM           },
-                    {  110, xi.item.SUIT_OF_MOBLIN_MAIL   },
-                    {   50, xi.item.SUIT_OF_MOBLIN_ARMOR  },
-                    {  160, xi.item.CHUNK_OF_PLATINUM_ORE },
+                    { 1820, xi.item.CHUNK_OF_ZINC_ORE     }, -- n=1209/6658, 95% CI +/-0.93pp
+                    { 1580, xi.item.CHUNK_OF_TIN_ORE      }, -- n=1055/6658, 95% CI +/-0.88pp
+                    { 1540, xi.item.PEBBLE                }, -- n=1024/6658, 95% CI +/-0.87pp
+                    { 1490, xi.item.CHUNK_OF_COPPER_ORE   }, -- n= 995/6658, 95% CI +/-0.86pp
+                    { 1250, xi.item.CHUNK_OF_IRON_ORE     }, -- n= 831/6658, 95% CI +/-0.79pp
+                    {  890, xi.item.CHUNK_OF_SILVER_ORE   }, -- n= 592/6658, 95% CI +/-0.68pp
+                    {  680, xi.item.CHUNK_OF_MYTHRIL_ORE  }, -- n= 453/6658, 95% CI +/-0.61pp
+                    {  160, xi.item.SUIT_OF_MOBLIN_ARMOR  }, -- n= 106/6658, 95% CI +/-0.30pp
+                    {  150, xi.item.CHUNK_OF_PLATINUM_ORE }, -- n=  99/6658, 95% CI +/-0.29pp
+                    {  150, xi.item.SUIT_OF_MOBLIN_MAIL   }, -- n=  99/6658, 95% CI +/-0.29pp
+                    {  150, xi.item.MOBLIN_MASK           }, -- n=  98/6658, 95% CI +/-0.29pp
+                    {  140, xi.item.MOBLIN_HELM           }, -- n=  97/6658, 95% CI +/-0.29pp
                 },
 
                 points =
@@ -1770,16 +1758,16 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1460, xi.item.CHUNK_OF_COPPER_ORE    },
-                    { 1650, xi.item.CHUNK_OF_IRON_ORE      },
-                    { 1300, xi.item.CHUNK_OF_TIN_ORE       },
-                    { 1140, xi.item.PEBBLE                 },
-                    { 1320, xi.item.CHUNK_OF_ZINC_ORE      },
-                    {  840, xi.item.FLINT_STONE            },
-                    {  360, xi.item.CHUNK_OF_SILVER_ORE    },
-                    {  170, xi.item.RED_ROCK               },
-                    {  150, xi.item.CHUNK_OF_DARKSTEEL_ORE },
-                    {  110, xi.item.CHUNK_OF_GOLD_ORE      },
+                    { 2110, xi.item.CHUNK_OF_IRON_ORE      }, -- n=1854/8831, 95% CI +/-0.85pp
+                    { 1580, xi.item.CHUNK_OF_TIN_ORE       }, -- n=1392/8831, 95% CI +/-0.76pp
+                    { 1510, xi.item.PEBBLE                 }, -- n=1336/8831, 95% CI +/-0.75pp
+                    { 1470, xi.item.CHUNK_OF_COPPER_ORE    }, -- n=1302/8831, 95% CI +/-0.74pp
+                    { 1470, xi.item.CHUNK_OF_ZINC_ORE      }, -- n=1301/8831, 95% CI +/-0.74pp
+                    { 1100, xi.item.FLINT_STONE            }, -- n= 974/8831, 95% CI +/-0.65pp
+                    {  320, xi.item.CHUNK_OF_SILVER_ORE    }, -- n= 283/8831, 95% CI +/-0.37pp
+                    {  160, xi.item.CHUNK_OF_DARKSTEEL_ORE }, -- n= 140/8831, 95% CI +/-0.26pp
+                    {  150, xi.item.RED_ROCK               }, -- n= 133/8831, 95% CI +/-0.25pp
+                    {  130, xi.item.CHUNK_OF_GOLD_ORE      }, -- n= 116/8831, 95% CI +/-0.24pp
                 },
 
                 points =
@@ -1829,14 +1817,14 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 1130, xi.item.CHUNK_OF_ZINC_ORE     },
-                    {  940, xi.item.CHUNK_OF_IRON_ORE     },
-                    { 1040, xi.item.PEBBLE                },
-                    {  970, xi.item.CHUNK_OF_TIN_ORE      },
-                    {  900, xi.item.CHUNK_OF_MYTHRIL_ORE  },
-                    {  900, xi.item.CHUNK_OF_SILVER_ORE   },
-                    {  800, xi.item.CHUNK_OF_COPPER_ORE   },
-                    {  100, xi.item.CHUNK_OF_PLATINUM_ORE },
+                    { 1540, xi.item.PEBBLE                }, -- n=1138/7407, 95% CI +/-0.82pp
+                    { 1520, xi.item.CHUNK_OF_TIN_ORE      }, -- n=1127/7407, 95% CI +/-0.82pp
+                    { 1510, xi.item.CHUNK_OF_COPPER_ORE   }, -- n=1122/7407, 95% CI +/-0.82pp
+                    { 1490, xi.item.CHUNK_OF_ZINC_ORE     }, -- n=1102/7407, 95% CI +/-0.81pp
+                    { 1450, xi.item.CHUNK_OF_IRON_ORE     }, -- n=1075/7407, 95% CI +/-0.80pp
+                    { 1260, xi.item.CHUNK_OF_SILVER_ORE   }, -- n= 935/7407, 95% CI +/-0.76pp
+                    { 1090, xi.item.CHUNK_OF_MYTHRIL_ORE  }, -- n= 806/7407, 95% CI +/-0.71pp
+                    {  140, xi.item.CHUNK_OF_PLATINUM_ORE }, -- n= 102/7407, 95% CI +/-0.27pp
                 },
 
                 points =
@@ -1867,14 +1855,14 @@ xi.helm.dataTable =
 
                 drops =
                 {
-                    { 2450, xi.item.CHUNK_OF_IRON_ORE      },
-                    { 1800, xi.item.PEBBLE                 },
-                    { 1850, xi.item.CHUNK_OF_COPPER_ORE    },
-                    { 1330, xi.item.CHUNK_OF_ZINC_ORE      },
-                    { 1120, xi.item.CHUNK_OF_TIN_ORE       },
-                    {  550, xi.item.SNAPPING_MOLE          },
-                    {  180, xi.item.CHUNK_OF_SILVER_ORE    },
-                    {   40, xi.item.CHUNK_OF_DARKSTEEL_ORE },
+                    { 2260, xi.item.CHUNK_OF_IRON_ORE      }, -- n=2650/11653, 95% CI +/-0.76pp
+                    { 1690, xi.item.SNAPPING_MOLE          }, -- n=1969/11653, 95% CI +/-0.68pp
+                    { 1690, xi.item.CHUNK_OF_COPPER_ORE    }, -- n=1966/11653, 95% CI +/-0.68pp
+                    { 1640, xi.item.PEBBLE                 }, -- n=1909/11653, 95% CI +/-0.67pp
+                    { 1380, xi.item.CHUNK_OF_ZINC_ORE      }, -- n=1606/11653, 95% CI +/-0.63pp
+                    { 1110, xi.item.CHUNK_OF_TIN_ORE       }, -- n=1291/11653, 95% CI +/-0.57pp
+                    {  180, xi.item.CHUNK_OF_SILVER_ORE    }, -- n= 206/11653, 95% CI +/-0.24pp
+                    {   50, xi.item.CHUNK_OF_DARKSTEEL_ORE }, -- n=  56/11653, 95% CI +/-0.13pp
                 },
 
                 points =
