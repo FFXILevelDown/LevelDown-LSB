@@ -1,15 +1,13 @@
 -----------------------------------
 -- Area: Southern San d'Oria
 --  NPC: Arvilauge
--- Optional Involvement in Quest: A Squire's Test II
--- !pos -11 1 -94 230
 -----------------------------------
 ---@type TNpcEntity
 local entity = {}
 
 entity.onTrigger = function(player, npc)
-    -- TODO: Use enum, verify this message is relevant
-    player:showText(npc, 11076)
+    -- param [0] is related to having a chocobo in raising. it adds more help text to the event.
+    player:startEvent(846, { [0] = 0, [1] =  math.floor(player:getCharSkillLevel(xi.skill.DIG) / 10) })
 end
 
 return entity
