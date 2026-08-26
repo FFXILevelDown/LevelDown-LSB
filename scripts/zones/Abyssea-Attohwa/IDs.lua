@@ -92,6 +92,7 @@ zones[xi.zone.ABYSSEA_ATTOHWA] =
         },
     npc =
     {
+        EXCAVATION = GetTableOfIDs('Excavation_Point'),
     },
 }
 

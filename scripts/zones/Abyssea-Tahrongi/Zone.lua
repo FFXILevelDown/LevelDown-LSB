@@ -6,6 +6,7 @@ local zoneObject = {}
 
 zoneObject.onInitialize = function(zone)
     zone:registerCuboidTriggerArea(1, -95, 20, -775, 59.5, 50, -560.1)
+    xi.helm.initZone(zone, xi.helmType.EXCAVATION)
 end
 
 zoneObject.onZoneIn = function(player, prevZone)
@@ -51,6 +52,10 @@ end
 
 zoneObject.onEventFinish = function(player, csid, option, npc)
     xi.abyssea.onEventFinish(player, csid, option, npc)
+end
+
+zoneObject.onZoneOut = function(player)
+    xi.helm.onZoneOut(player)
 end
 
 return zoneObject

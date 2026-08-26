@@ -90,6 +90,7 @@ zones[xi.zone.ABYSSEA_MISAREAUX] =
         },
     npc =
     {
+        LOGGING = GetTableOfIDs('Logging_Point'),
     },
 }
 
