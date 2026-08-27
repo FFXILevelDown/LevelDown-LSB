@@ -1,4 +1,4 @@
-/*
+﻿/*
 ===========================================================================
 
   Copyright (c) 2026 LandSandBoat Dev Teams
@@ -13,9 +13,6 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see http://www.gnu.org/licenses/
-
 ===========================================================================
 */
 
@@ -24,6 +21,7 @@
 #include "common/enum_traits.h"
 #include "common/logging.h"
 #include "data/enums/zone.h"
+#include "data/yaml/merge.h"
 
 #include <cstdlib>
 #include <exception>
@@ -32,7 +30,9 @@
 #include <fstream>
 #include <iterator>
 #include <optional>
+#include <regex>
 #include <string>
+#include <vector>
 
 namespace xi::data
 {
@@ -42,20 +42,66 @@ inline auto zoneFilePath(const xi::ZoneId zoneId, const std::string_view name) -
     return fmt::format("data/zones/{}/{}.yaml", EnumTraits<xi::ZoneId>::toName(zoneId), name);
 }
 
-// Per-zone data file. No file means the zone declares none of this kind.
+inline auto readFileToString(const std::string& path) -> std::string
+{
+    std::ifstream input(path, std::ios::binary);
+    return std::string{ std::istreambuf_iterator<char>(input), std::istreambuf_iterator<char>() };
+}
+
+// Scans active modules for matching zone dataset overlays
+inline auto getZoneModulePaths(const std::string& relativePath) -> std::vector<std::string>
+{
+    std::vector<std::string> paths;
+    if (std::filesystem::exists("modules"))
+    {
+        for (const auto& entry : std::filesystem::directory_iterator("modules"))
+        {
+            if (entry.is_directory())
+            {
+                auto modPath = (entry.path() / "data" / relativePath).string();
+                if (std::filesystem::exists(modPath))
+                {
+                    paths.push_back(modPath);
+                }
+            }
+        }
+    }
+    return paths;
+}
+
+// Unquotes numeric spawn keys created by the YAML emitter ('17657857': -> 17657857:)
+inline auto fixNumericKeys(const std::string& text) -> std::string
+{
+    static const std::regex numericKeyRegex(R"('(\d+)':)");
+    return std::regex_replace(text, numericKeyRegex, "$1:");
+}
+
+// Per-zone data file loader with native deep YAML module merging.
 template <class Dataset>
 auto loadZoneFile(const xi::ZoneId zoneId) -> std::optional<typename Dataset::Records>
 {
-    const auto path = zoneFilePath(zoneId, Dataset::kDataPath);
-    if (!std::filesystem::exists(path))
+    const auto basePath = zoneFilePath(zoneId, Dataset::kDataPath);
+    if (!std::filesystem::exists(basePath))
     {
         return std::nullopt;
     }
 
     try
     {
-        std::ifstream     input(path, std::ios::binary);
-        const std::string text{ std::istreambuf_iterator<char>(input), std::istreambuf_iterator<char>() };
+        const auto relativePath = fmt::format("zones/{}/{}.yaml", EnumTraits<xi::ZoneId>::toName(zoneId), Dataset::kDataPath);
+        const auto modulePaths  = getZoneModulePaths(relativePath);
+
+        std::string text;
+        if (modulePaths.empty())
+        {
+            // Read raw file directly if no module overrides exist
+            text = readFileToString(basePath);
+        }
+        else
+        {
+            // Deep merge module overlay and unquote numeric keys
+            text = fixNumericKeys(loadMergedYaml(basePath, modulePaths));
+        }
 
         auto records = Dataset::decode(text);
         if constexpr (requires { Dataset::verifyZone(records, zoneId); })
@@ -67,8 +113,7 @@ auto loadZoneFile(const xi::ZoneId zoneId) -> std::optional<typename Dataset::Re
     }
     catch (const std::exception& error)
     {
-        // Catch exceptions from workers, report the file and stop deliberately.
-        ShowCriticalFmt("{} is not valid: {}", path, error.what());
+        ShowCriticalFmt("{} is not valid: {}", basePath, error.what());
         std::exit(-1);
     }
 }

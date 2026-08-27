@@ -129,15 +129,192 @@
             "g"
          ]
       },
+      "int16_t": {
+         "type": "integer",
+         "minimum": -32768,
+         "maximum": 32767
+      },
       "mob_attributes": {
          "type": "object",
          "properties": {
+            "animation_speed": {
+               "anyOf": [
+                  {
+                     "$ref": "#/$defs/uint8_t"
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Animation speed. Falls back to speed when unset.",
+               "minimum": 0,
+               "maximum": 255
+            },
+            "behaviors": {
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "aggressive": {
+                           "type": [
+                              "boolean",
+                              "null"
+                           ],
+                           "description": "Whether it aggroes players on sight. Defaults to false."
+                        },
+                        "flags": {
+                           "anyOf": [
+                              {
+                                 "type": "array",
+                                 "items": {
+                                    "type": "string",
+                                    "title": "Behavior",
+                                    "enum": [
+                                       "none",
+                                       "no_despawn",
+                                       "standback",
+                                       "raisable",
+                                       "no_assist",
+                                       "aggro_ambush",
+                                       "no_turn"
+                                    ]
+                                 }
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Combat behaviour switches such as no_turn or raisable. An override replaces the whole list rather than adding to it.",
+                           "uniqueItems": true
+                        },
+                        "links": {
+                           "type": [
+                              "boolean",
+                              "null"
+                           ],
+                           "description": "Whether it links with others of its kind. Defaults to false."
+                        },
+                        "true_detection": {
+                           "type": [
+                              "boolean",
+                              "null"
+                           ],
+                           "description": "Whether it sees through sneak and invisible. Defaults to false."
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "How it reacts to players."
+            },
             "charmable": {
                "type": [
                   "boolean",
                   "null"
                ],
-               "description": "Whether the entity can be charmed. Omitted values inherit; defaults to false."
+               "description": "Whether it can be charmed. Defaults to false, and is forced off for notorious, event, fished and battlefield mobs whatever this says."
+            },
+            "combat": {
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "delay": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint16_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Attack delay. Defaults to 240."
+                        },
+                        "dmg_mult": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint16_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Base damage multiplier as a percentage. Defaults to 100."
+                        },
+                        "skill": {
+                           "anyOf": [
+                              {
+                                 "type": "string",
+                                 "title": "SkillType",
+                                 "enum": [
+                                    "none",
+                                    "hand_to_hand",
+                                    "dagger",
+                                    "sword",
+                                    "great_sword",
+                                    "axe",
+                                    "great_axe",
+                                    "scythe",
+                                    "polearm",
+                                    "katana",
+                                    "great_katana",
+                                    "club",
+                                    "staff",
+                                    "automaton_melee",
+                                    "automaton_ranged",
+                                    "automaton_magic",
+                                    "archery",
+                                    "marksmanship",
+                                    "throwing",
+                                    "guard",
+                                    "evasion",
+                                    "shield",
+                                    "parry",
+                                    "divine_magic",
+                                    "healing_magic",
+                                    "enhancing_magic",
+                                    "enfeebling_magic",
+                                    "elemental_magic",
+                                    "dark_magic",
+                                    "summoning_magic",
+                                    "ninjutsu",
+                                    "singing",
+                                    "string_instrument",
+                                    "wind_instrument",
+                                    "blue_magic",
+                                    "geomancy",
+                                    "handbell",
+                                    "fishing",
+                                    "woodworking",
+                                    "smithing",
+                                    "goldsmithing",
+                                    "clothcraft",
+                                    "leathercraft",
+                                    "bonecraft",
+                                    "alchemy",
+                                    "cooking",
+                                    "synergy",
+                                    "rid",
+                                    "dig"
+                                 ]
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Weapon skill type. Defaults to none."
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Weapon skill, delay and damage multiplier."
             },
             "detects": {
                "anyOf": [
@@ -161,7 +338,7 @@
                      "type": "null"
                   }
                ],
-               "description": "Detection mechanisms. Omitted values inherit; defaults to an empty list. Redefine the entire list when overriding.",
+               "description": "How it notices players. Defaults to an empty list, and an override replaces the whole list rather than adding to it.",
                "uniqueItems": true
             },
             "element": {
@@ -185,7 +362,49 @@
                      "type": "null"
                   }
                ],
-               "description": "Elemental affinity override. Omitted values inherit; defaults to none."
+               "description": "Elemental affinity. Defaults to none."
+            },
+            "jobs": {
+               "anyOf": [
+                  {
+                     "type": "array",
+                     "items": {
+                        "type": "string",
+                        "title": "Job",
+                        "enum": [
+                           "none",
+                           "war",
+                           "mnk",
+                           "whm",
+                           "blm",
+                           "rdm",
+                           "thf",
+                           "pld",
+                           "drk",
+                           "bst",
+                           "brd",
+                           "rng",
+                           "sam",
+                           "nin",
+                           "drg",
+                           "smn",
+                           "blu",
+                           "cor",
+                           "pup",
+                           "dnc",
+                           "sch",
+                           "geo",
+                           "run",
+                           "mon"
+                        ]
+                     },
+                     "maxItems": 2
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Main and support job, in that order. Always written as a pair, so setting one restates the other."
             },
             "mob_mods": {
                "anyOf": [
@@ -694,7 +913,7 @@
                      "type": "null"
                   }
                ],
-               "description": "Mob modifiers keyed by mob_mod.yaml name. Merged key by key with the parent's."
+               "description": "Mob modifiers keyed by mob_mod.yaml name, entry by entry."
             },
             "mods": {
                "anyOf": [
@@ -2751,7 +2970,12 @@
                            "minimum": -32768,
                            "maximum": 32767
                         },
-                        "harvesting_result": {
+                        "harvesting_result_hq": {
+                           "type": "integer",
+                           "minimum": -32768,
+                           "maximum": 32767
+                        },
+                        "harvesting_result_nq": {
                            "type": "integer",
                            "minimum": -32768,
                            "maximum": 32767
@@ -3171,7 +3395,12 @@
                            "minimum": -32768,
                            "maximum": 32767
                         },
-                        "logging_result": {
+                        "logging_result_hq": {
+                           "type": "integer",
+                           "minimum": -32768,
+                           "maximum": 32767
+                        },
+                        "logging_result_nq": {
                            "type": "integer",
                            "minimum": -32768,
                            "maximum": 32767
@@ -3346,7 +3575,12 @@
                            "minimum": -32768,
                            "maximum": 32767
                         },
-                        "mining_result": {
+                        "mining_result_hq": {
+                           "type": "integer",
+                           "minimum": -32768,
+                           "maximum": 32767
+                        },
+                        "mining_result_nq": {
                            "type": "integer",
                            "minimum": -32768,
                            "maximum": 32767
@@ -6618,7 +6852,853 @@
                      "type": "null"
                   }
                ],
-               "description": "Modifiers keyed by mod.yaml name, added on top of the entity's own. Merged key by key with the parent's."
+               "description": "Modifiers keyed by mod.yaml name, entry by entry, added on top of what the entity already has."
+            },
+            "render": {
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "animation": {
+                           "anyOf": [
+                              {
+                                 "type": "string",
+                                 "title": "Animation",
+                                 "enum": [
+                                    "none",
+                                    "attack",
+                                    "despawn",
+                                    "death",
+                                    "event",
+                                    "chocobo",
+                                    "fishing",
+                                    "open_door",
+                                    "close_door",
+                                    "elevator_up",
+                                    "elevator_down",
+                                    "animation_18",
+                                    "animation_19",
+                                    "animation_20",
+                                    "animation_23",
+                                    "animation_25",
+                                    "animation_27",
+                                    "animation_29",
+                                    "fishing_npc",
+                                    "healing",
+                                    "animation_34",
+                                    "fishing_fish",
+                                    "fishing_caught",
+                                    "fishing_rod_break",
+                                    "fishing_line_break",
+                                    "fishing_monster",
+                                    "fishing_stop",
+                                    "synth",
+                                    "sit",
+                                    "ranged",
+                                    "fishing_start",
+                                    "animation_53",
+                                    "animation_55",
+                                    "new_fishing_start",
+                                    "new_fishing_fish",
+                                    "new_fishing_caught",
+                                    "new_fishing_rod_break",
+                                    "new_fishing_line_break",
+                                    "new_fishing_monster",
+                                    "new_fishing_stop",
+                                    "sitchair_0",
+                                    "sitchair_1",
+                                    "sitchair_2",
+                                    "sitchair_3",
+                                    "sitchair_4",
+                                    "sitchair_5",
+                                    "sitchair_6",
+                                    "sitchair_7",
+                                    "sitchair_8",
+                                    "sitchair_9",
+                                    "sitchair_10",
+                                    "mount",
+                                    "trust"
+                                 ]
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Idle animation. Defaults to none."
+                        },
+                        "animation_sub": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint8_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Sub-animation selector. Defaults to 0.",
+                           "minimum": 0,
+                           "maximum": 255
+                        },
+                        "door_id": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint32_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Identity the client reads for a door, elevator or ship. Elevators and ships send it with a timestamp appended. Nothing reads it on a mob."
+                        },
+                        "entity_flags": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint32_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Entity behaviour bitmask sent to the client. Defaults to 0 on a mob and 3 on an npc.",
+                           "minimum": 0,
+                           "maximum": 4294967295
+                        },
+                        "hitbox": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint8_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Hitbox radius in tenths of a yalm. Defaults to 0.",
+                           "minimum": 0,
+                           "maximum": 255
+                        },
+                        "look": {
+                           "anyOf": [
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "body": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped body model. Omitted means empty."
+                                    },
+                                    "face": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint8_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Face, for equipped models."
+                                    },
+                                    "feet": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped feet model. Omitted means empty."
+                                    },
+                                    "hands": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped hands model. Omitted means empty."
+                                    },
+                                    "head": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped head model. Omitted means empty. On a chocobo the slots hold small barding indices, not equipment ids."
+                                    },
+                                    "legs": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped legs model. Omitted means empty."
+                                    },
+                                    "main": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped main weapon model. Omitted means empty."
+                                    },
+                                    "model": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Model id, for standard, misc and automaton."
+                                    },
+                                    "race": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint8_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Race, for equipped models. On a chocobo this pair carries its colour instead."
+                                    },
+                                    "ranged": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped ranged weapon model. Omitted means empty."
+                                    },
+                                    "sub": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Equipped sub weapon model. Omitted means empty."
+                                    },
+                                    "type": {
+                                       "type": "string",
+                                       "description": "Which look fields the client reads, matching the packet's SubKind. door, elevator and ship carry no model: the client names them from the packet. standard, misc and automaton each carry one model id under a different SubKind, so the same id means a different model in each. misc is SubKind 5, which the packet code still calls MODEL_UNK_5, and is used by Fomors; automaton is SubKind 6 and covers trolls, lamia and mamool ja despite the name. chocobo reads the same nine fields as equipped.",
+                                       "enum": [
+                                          "standard",
+                                          "equipped",
+                                          "door",
+                                          "elevator",
+                                          "ship",
+                                          "misc",
+                                          "automaton",
+                                          "chocobo"
+                                       ]
+                                    }
+                                 },
+                                 "additionalProperties": false,
+                                 "required": [
+                                    "type"
+                                 ]
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Appearance. On a mob it inherits through the species chain; on an npc, omitted means an empty look."
+                        },
+                        "model_size": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint8_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Graphic size the client draws the entity at, 0 to 3. Defaults to 0.",
+                           "minimum": 0,
+                           "maximum": 3
+                        },
+                        "moving": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint16_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Movement flag word sent alongside the position. Defaults to 0."
+                        },
+                        "name_prefix": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint8_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Byte 0x27 of the entity update: gender, plus the article the client shows before the name. Defaults to 0.",
+                           "minimum": 0,
+                           "maximum": 255
+                        },
+                        "name_vis": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint8_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Name display bitmask. Defaults to 0.",
+                           "minimum": 0,
+                           "maximum": 255
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "How it is drawn and presented to the client."
+            },
+            "resists": {
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "dmg_magic": {
+                           "anyOf": [
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "all": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Applies on top of every element.",
+                                       "minimum": -10000,
+                                       "maximum": 20000
+                                    },
+                                    "dark": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "earth": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "fire": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "ice": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "light": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "thunder": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "water": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "wind": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    }
+                                 },
+                                 "additionalProperties": false
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Magic damage taken, by element, on the same hundredths-of-a-percent scale as dmg_physical."
+                        },
+                        "dmg_physical": {
+                           "anyOf": [
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "blunt": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "h2h": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "piercing": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "slashing": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    }
+                                 },
+                                 "additionalProperties": false
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Physical damage taken, by weapon type, in hundredths of a percent: 0 leaves it alone, -2500 takes a quarter less, 2500 takes a quarter more."
+                        },
+                        "immune_status": {
+                           "anyOf": [
+                              {
+                                 "type": "array",
+                                 "items": {
+                                    "type": "string",
+                                    "title": "Immunity",
+                                    "enum": [
+                                       "none",
+                                       "addle",
+                                       "gravity",
+                                       "bind",
+                                       "stun",
+                                       "silence",
+                                       "paralyze",
+                                       "blind",
+                                       "slow",
+                                       "poison",
+                                       "elegy",
+                                       "requiem",
+                                       "light_sleep",
+                                       "dark_sleep",
+                                       "aspir",
+                                       "terror",
+                                       "dispel",
+                                       "petrify",
+                                       "plague",
+                                       "curse"
+                                    ]
+                                 }
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Statuses that never land, whatever the resistance rank says.",
+                           "uniqueItems": true
+                        },
+                        "rank_element": {
+                           "anyOf": [
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "dark": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "earth": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "fire": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "ice": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "light": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "thunder": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "water": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "wind": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    }
+                                 },
+                                 "additionalProperties": false
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Resistance to each element. Higher resists more."
+                        },
+                        "rank_status": {
+                           "anyOf": [
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "bind": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "blind": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "dark_sleep": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "gravity": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "light_sleep": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "paralyze": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "poison": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "silence": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "slow": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    },
+                                    "stun": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/int16_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ]
+                                    }
+                                 },
+                                 "additionalProperties": false
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Resistance to each status. Higher resists more."
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "Resistances, entry by entry. Each value replaces the inherited one rather than adding to it."
+            },
+            "spawn": {
+               "anyOf": [
+                  {
+                     "type": "object",
+                     "properties": {
+                        "respawn": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint32_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Seconds before respawning. Defaults to 0."
+                        },
+                        "type": {
+                           "anyOf": [
+                              {
+                                 "type": "array",
+                                 "items": {
+                                    "type": "string",
+                                    "title": "SpawnType",
+                                    "enum": [
+                                       "normal",
+                                       "at_night",
+                                       "at_evening",
+                                       "weather",
+                                       "fog",
+                                       "moonphase",
+                                       "lottery",
+                                       "windowed",
+                                       "scripted"
+                                    ]
+                                 }
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Conditions under which it spawns. Defaults to normal.",
+                           "uniqueItems": true
+                        },
+                        "window": {
+                           "anyOf": [
+                              {
+                                 "type": "object",
+                                 "properties": {
+                                    "end": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint8_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Vana'diel hour it stops.",
+                                       "minimum": 0,
+                                       "maximum": 23
+                                    },
+                                    "start": {
+                                       "anyOf": [
+                                          {
+                                             "$ref": "#/$defs/uint8_t"
+                                          },
+                                          {
+                                             "type": "null"
+                                          }
+                                       ],
+                                       "description": "Vana'diel hour the mob starts spawning.",
+                                       "minimum": 0,
+                                       "maximum": 23
+                                    }
+                                 },
+                                 "additionalProperties": false
+                              },
+                              {
+                                 "type": "null"
+                              }
+                           ],
+                           "description": "Vana'diel hours it may spawn between. Omitted means any hour."
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  {
+                     "type": "null"
+                  }
+               ],
+               "description": "When and how often it spawns."
             },
             "speed": {
                "anyOf": [
@@ -6629,7 +7709,7 @@
                      "type": "null"
                   }
                ],
-               "description": "Movement and animation speed override. Omitted values inherit; defaults to 40. 0 is immobile.",
+               "description": "Movement speed. Defaults to 40, and 0 is immobile.",
                "minimum": 0,
                "maximum": 255
             },
@@ -6646,8 +7726,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to a."
+                           ]
                         },
                         "agi": {
                            "anyOf": [
@@ -6657,8 +7736,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         },
                         "att": {
                            "anyOf": [
@@ -6668,8 +7746,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to a."
+                           ]
                         },
                         "chr": {
                            "anyOf": [
@@ -6679,8 +7756,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         },
                         "def": {
                            "anyOf": [
@@ -6690,8 +7766,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         },
                         "dex": {
                            "anyOf": [
@@ -6701,8 +7776,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         },
                         "eva": {
                            "anyOf": [
@@ -6712,8 +7786,18 @@
                               {
                                  "type": "null"
                               }
+                           ]
+                        },
+                        "hp": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint32_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
                            ],
-                           "description": "Inherits when omitted; defaults to c."
+                           "description": "Flat HP, replacing what the level and job would derive. Defaults to 0, meaning derive it."
                         },
                         "int": {
                            "anyOf": [
@@ -6723,8 +7807,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         },
                         "mnd": {
                            "anyOf": [
@@ -6734,8 +7817,18 @@
                               {
                                  "type": "null"
                               }
+                           ]
+                        },
+                        "mp": {
+                           "anyOf": [
+                              {
+                                 "$ref": "#/$defs/uint32_t"
+                              },
+                              {
+                                 "type": "null"
+                              }
                            ],
-                           "description": "Inherits when omitted; defaults to c."
+                           "description": "Flat MP, replacing what the level and job would derive. Defaults to 0, meaning derive it."
                         },
                         "str": {
                            "anyOf": [
@@ -6745,8 +7838,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         },
                         "vit": {
                            "anyOf": [
@@ -6756,8 +7848,7 @@
                               {
                                  "type": "null"
                               }
-                           ],
-                           "description": "Inherits when omitted; defaults to c."
+                           ]
                         }
                      },
                      "additionalProperties": false
@@ -6766,7 +7857,7 @@
                      "type": "null"
                   }
                ],
-               "description": "Stat rank overrides from a-g. Lower is better; attack and accuracy only handle a-e. Omitted ranks inherit."
+               "description": "Flat HP and MP plus a rank per stat, a to g, where a is best. Everything defaults to c except attack and accuracy, which default to a and only understand a to e."
             }
          },
          "additionalProperties": false
@@ -6775,6 +7866,11 @@
          "type": "integer",
          "minimum": 0,
          "maximum": 65535
+      },
+      "uint32_t": {
+         "type": "integer",
+         "minimum": 0,
+         "maximum": 4294967295
       },
       "uint8_t": {
          "type": "integer",
