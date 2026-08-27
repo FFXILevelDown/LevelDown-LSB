@@ -41,19 +41,20 @@ zones[xi.zone.WAJAOM_WOODLANDS] =
         UNITY_WANTED_BATTLE_INTERACT  = 9726, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
+    {
+        CHIGOES =
         {
-            CHIGOES =
-            {
-                ['Marid'] = GetTableOfIDs('Chigoe', 5),
-            },
-            JADED_JODY             = GetFirstID('Jaded_Jody'),
-            ZORAAL_JAS_PKUUCHA     = GetFirstID('Zoraal_Jas_Pkuucha'),
-            PERCIPIENT_ZORAAL_JA   = GetFirstID('Percipient_Zoraal_Ja'),
-            VULPANGUE              = GetFirstID('Vulpangue'),
-            IRIZ_IMA               = GetFirstID('Iriz_Ima'),
-            GOTOH_ZHA_THE_REDOLENT = GetFirstID('Gotoh_Zha_the_Redolent'),
-            TINNIN                 = GetFirstID('Tinnin'),
+            ['Marid']       = GetTableOfIDs('Chigoe'),
+            ['Grand_Marid'] = GetTableOfIDs('Chigoe'),
         },
+        JADED_JODY             = GetFirstID('Jaded_Jody'),
+        ZORAAL_JAS_PKUUCHA     = GetFirstID('Zoraal_Jas_Pkuucha'),
+        PERCIPIENT_ZORAAL_JA   = GetFirstID('Percipient_Zoraal_Ja'),
+        VULPANGUE              = GetFirstID('Vulpangue'),
+        IRIZ_IMA               = GetFirstID('Iriz_Ima'),
+        GOTOH_ZHA_THE_REDOLENT = GetFirstID('Gotoh_Zha_the_Redolent'),
+        TINNIN                 = GetFirstID('Tinnin'),
+    },
     npc =
     {
         HARVESTING = GetTableOfIDs('Harvesting_Point'),
