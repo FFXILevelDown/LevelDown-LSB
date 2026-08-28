@@ -69,10 +69,11 @@ inline auto getZoneModulePaths(const std::string& relativePath) -> std::vector<s
     return paths;
 }
 
-// Unquotes numeric spawn keys created by the YAML emitter ('17657857': -> 17657857:)
+// Unquotes numeric spawn keys created by the YAML emitter ('17657857': or "17657857": -> 17657857:)
 inline auto fixNumericKeys(const std::string& text) -> std::string
 {
-    static const std::regex numericKeyRegex(R"('(\d+)':)");
+    // Updated to catch both single and double quotes, and handle optional spacing
+    static const std::regex numericKeyRegex(R"(['"](\d+)['"]\s*:)");
     return std::regex_replace(text, numericKeyRegex, "$1:");
 }
 
