@@ -140,7 +140,7 @@ content.loot    =
         { itemId = xi.item.PIECE_OF_MALIYAKALEYA_CORAL, weight = 187 },
         { itemId = ld.item.SIFS_LOCK,                   weight = 187 },
         { itemId = ld.item.CHUNK_OF_BERYLLIUM_ORE,      weight = 187 },
-        { itemId = xi.item.WYRM_BLOOD,                  weight = 187 },     -- Wyrm Blood
+        { itemId = xi.item.VIAL_OF_WYRM_BLOOD,                  weight = 187 },     -- Wyrm Blood
     },
     {
         { itemId = xi.item.NONE,          weight = 50 },           -- nothing

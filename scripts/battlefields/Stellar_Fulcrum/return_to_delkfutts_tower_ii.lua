@@ -93,7 +93,7 @@ content.loot =
         { itemId = xi.item.NONE,            weight = 250 }, -- nothing
         { itemId = ld.item.EXALTED_LOG,     weight = 250 }, -- Exalted Log
         { itemId = ld.item.HEPATIZON_ORE,   weight = 250 }, -- Hepatizon Ore
-        { itemId = xi.item.WYRM_BLOOD,      weight = 250 }, -- Wyrm Blood
+        { itemId = xi.item.VIAL_OF_WYRM_BLOOD,      weight = 250 }, -- Wyrm Blood
     },
 
     {
