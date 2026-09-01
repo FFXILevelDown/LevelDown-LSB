@@ -157,9 +157,9 @@ xi.manaclipper.onZoneIn = function(player, prevZone)
 
         -- game client updates player's position
         if eventId == 13 then
-            return { 13, -1, bit.bor(xi.cutsceneFlag.UNKNOWN_1, xi.cutsceneFlag.NO_PCS) }
+            return { 13, -1, bit.bor(xi.cutsceneFlag.RESET_CAMERA, xi.cutsceneFlag.NO_PCS) }
         else
-            return { 12, -1, bit.bor(xi.cutsceneFlag.UNKNOWN_1, xi.cutsceneFlag.NO_PCS) }
+            return { 12, -1, bit.bor(xi.cutsceneFlag.RESET_CAMERA, xi.cutsceneFlag.NO_PCS) }
         end
     end
 
@@ -175,11 +175,12 @@ xi.manaclipper.onTransportEvent = function(player, prevZoneId, transportName)
         if player:hasKeyItem(xi.ki.MANACLIPPER_TICKET) then
             player:delKeyItem(xi.ki.MANACLIPPER_TICKET)
             player:startEvent(14, {
-                flags = bit.bor(
-                    xi.cutsceneFlag.UNKNOWN_1,
+                isHidden = true,
+                flags    = bit.bor(
+                    xi.cutsceneFlag.RESET_CAMERA,
                     xi.cutsceneFlag.NO_PCS,
-                    xi.cutsceneFlag.UNKNOWN_4,
-                    xi.cutsceneFlag.UNKNOWN_7
+                    xi.cutsceneFlag.UNKNOWN_0008,
+                    xi.cutsceneFlag.NO_IDLE_WAIT
                 ),
             })
         elseif player:hasKeyItem(xi.ki.MANACLIPPER_MULTI_TICKET) then
@@ -195,11 +196,12 @@ xi.manaclipper.onTransportEvent = function(player, prevZoneId, transportName)
 
             player:setCharVar('Manaclipper_Ticket', uses)
             player:startEvent(14, {
-                flags = bit.bor(
-                    xi.cutsceneFlag.UNKNOWN_1,
+                isHidden = true,
+                flags    = bit.bor(
+                    xi.cutsceneFlag.RESET_CAMERA,
                     xi.cutsceneFlag.NO_PCS,
-                    xi.cutsceneFlag.UNKNOWN_4,
-                    xi.cutsceneFlag.UNKNOWN_7
+                    xi.cutsceneFlag.UNKNOWN_0008,
+                    xi.cutsceneFlag.NO_IDLE_WAIT
                 ),
             })
         else
@@ -210,10 +212,11 @@ xi.manaclipper.onTransportEvent = function(player, prevZoneId, transportName)
     -- leaving Purgonorgo Isle. must be standing in trigger area 2. no ticket required.
     elseif aboard == 2 then
         player:startEvent(16, {
-            flags = bit.bor(
-                xi.cutsceneFlag.UNKNOWN_1,
+            isHidden = true,
+            flags    = bit.bor(
+                xi.cutsceneFlag.RESET_CAMERA,
                 xi.cutsceneFlag.NO_PCS,
-                xi.cutsceneFlag.UNKNOWN_7
+                xi.cutsceneFlag.NO_IDLE_WAIT
             ),
         })
     end
