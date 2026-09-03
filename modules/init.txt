@@ -63,5 +63,6 @@ LevelDown Custom Modules/content/LD Unity
 LevelDown Custom Modules/content/LD Void Watch NM
 LevelDown Custom Modules/content/LD Custom HTBF
 #LevelDown Custom Modules/content/LD Walk of Augments
+LevelDown Custom Modules/content/LD Legion
 #LevelDown Custom Modules/content/LD Instances/
 custom/lua/test_npcs_in_gm_home.lua
