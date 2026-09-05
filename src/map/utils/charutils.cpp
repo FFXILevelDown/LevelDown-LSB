@@ -47,6 +47,7 @@
 #include "ai/states/attack_state.h"
 #include "ai/states/item_state.h"
 #include "ai/states/range_state.h"
+#include "ai/states/weaponskill_state.h"
 
 #include "packets/char_status.h"
 #include "packets/char_sync.h"
@@ -1122,7 +1123,7 @@ void LoadEquip(CCharEntity* PChar)
         if (PLinkshell1)
         {
             rset = db::preparedStmt("SELECT broken FROM linkshells WHERE linkshellid = ? LIMIT 1", PLinkshell1->GetLSID());
-            if (rset && rset->rowsCount() && rset->next() && rset->get<uint32>("broken") == 1)
+            if (PLinkshell1->GetLSType() == LSTYPE_BROKEN || (rset && rset->rowsCount() && rset->next() && rset->get<uint32>("broken") == 1))
             { // if the linkshell has been broken, unequip
                 uint8 SlotID     = PLinkshell1->getSlotID();
                 uint8 LocationID = PLinkshell1->getLocationID();
@@ -1141,7 +1142,7 @@ void LoadEquip(CCharEntity* PChar)
         if (PLinkshell2)
         {
             rset = db::preparedStmt("SELECT broken FROM linkshells WHERE linkshellid = ? LIMIT 1", PLinkshell2->GetLSID());
-            if (rset && rset->rowsCount() && rset->next() && rset->get<uint32>("broken") == 1)
+            if (PLinkshell2->GetLSType() == LSTYPE_BROKEN || (rset && rset->rowsCount() && rset->next() && rset->get<uint32>("broken") == 1))
             { // if the linkshell has been broken, unequip
                 uint8 SlotID     = PLinkshell2->getSlotID();
                 uint8 LocationID = PLinkshell2->getLocationID();
@@ -2924,6 +2925,14 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
     if (equipSlotID == SLOT_RANGED || (equipSlotID == SLOT_AMMO && !PChar->getEquip(SLOT_RANGED)))
     {
         if (PChar->PAI && PChar->PAI->IsCurrentState<CRangeState>())
+        {
+            return;
+        }
+    }
+
+    if (equipSlotID == SLOT_MAIN || equipSlotID == SLOT_SUB || equipSlotID == SLOT_RANGED || equipSlotID == SLOT_AMMO)
+    {
+        if (PChar->PAI && PChar->PAI->IsCurrentState<CWeaponSkillState>())
         {
             return;
         }
@@ -6141,9 +6150,9 @@ auto hasMogLockerAccess(const CCharEntity* PChar) -> bool
 {
     TracyZoneScoped;
 
-    const auto tstamp     = static_cast<uint32>(PChar->getCharVar("mog-locker-expiry-timestamp"));
+    const auto tstamp     = PChar->getCharVar("mog-locker-expiry-timestamp");
     const auto accessType = static_cast<uint32>(PChar->getCharVar("mog-locker-access-type"));
-    if (earth_time::vanadiel_timestamp() < tstamp)
+    if (tstamp > 0 && earth_time::vanadiel_timestamp() < static_cast<uint32>(tstamp))
     {
         const auto curZone = PChar->loc.zone;
         switch (accessType)
