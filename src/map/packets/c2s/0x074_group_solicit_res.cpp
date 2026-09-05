@@ -1,4 +1,4 @@
-/*
+﻿/*
 ===========================================================================
 
   Copyright (c) 2025 LandSandBoat Dev Teams
@@ -47,17 +47,16 @@ void GP_CLI_COMMAND_GROUP_SOLICIT_RES::process(MapSession* PSession, CCharEntity
         return;
     }
 
-    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.entity.UniqueNo, PChar->InvitePending.entity.ActIndex); PInviter != nullptr)
+    if (CCharEntity* PInviter = PChar->InvitePending.entity.resolve<CCharEntity>())
     {
-        if (PChar->getCharVar("[LevelRatio]Restriction") != PInviter->getCharVar("[LevelRatio]Restriction"))
+        /* CUSTOM RATIO PARTY RESTRICTION */
+        if (PChar->getCharVar("Ratio") != PInviter->getCharVar("Ratio"))
         {
             PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);
             PChar->InvitePending.clean();
             return;
         }
-    } /* CUSTOM BRACKET INVITE RESTRICTION */
-    if (CCharEntity* PInviter = zoneutils::GetCharFromWorld(PChar->InvitePending.UniqueNo, PChar->InvitePending.ActIndex); PInviter != nullptr)
-    {
+
         // This switch statement only occurs when both the invitee and inviter are on the same process
         switch (static_cast<GP_CLI_COMMAND_GROUP_SOLICIT_RES_RES>(this->Res))
         {

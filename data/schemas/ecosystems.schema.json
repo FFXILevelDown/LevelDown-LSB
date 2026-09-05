@@ -2560,6 +2560,11 @@
                            "minimum": -32768,
                            "maximum": 32767
                         },
+                        "eva_percent": {
+                           "type": "integer",
+                           "minimum": -32768,
+                           "maximum": 32767
+                        },
                         "evasion": {
                            "type": "integer",
                            "minimum": -32768,
@@ -6879,7 +6884,10 @@
                                     "animation_18",
                                     "animation_19",
                                     "animation_20",
+                                    "animation_21",
+                                    "animation_22",
                                     "animation_23",
+                                    "animation_24",
                                     "animation_25",
                                     "animation_27",
                                     "animation_29",
@@ -6975,6 +6983,13 @@
                            "description": "Hitbox radius in tenths of a yalm. Defaults to 0.",
                            "minimum": 0,
                            "maximum": 255
+                        },
+                        "king": {
+                           "type": [
+                              "boolean",
+                              "null"
+                           ],
+                           "description": "Whether the entity stays spawned beyond render range. Defaults to false."
                         },
                         "look": {
                            "anyOf": [
