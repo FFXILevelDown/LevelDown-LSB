@@ -27,6 +27,7 @@
 #include "utils.h"
 
 #include "circular_buffer.h"
+#include "no_destructor.h"
 
 #include "spdlog/common.h"
 
@@ -49,8 +50,8 @@ namespace
 std::string ServerName;
 
 // Split so bulk trace breadcrumbs cannot evict errors. Capacities must stay powers of two.
-CircularBuffer<logging::BacktraceEntry> TraceBuffer(512);
-CircularBuffer<logging::BacktraceEntry> EventBuffer(64);
+NoDestructor<CircularBuffer<logging::BacktraceEntry>> TraceBuffer(512);
+NoDestructor<CircularBuffer<logging::BacktraceEntry>> EventBuffer(64);
 
 // Shared across both rings so a merged read can put the entries back in real order.
 std::atomic<std::uint64_t> BacktraceSequence{ 0 };
@@ -257,12 +258,12 @@ auto logging::detail::scratchBuffer() -> fmt::memory_buffer&
 
 void logging::detail::pushTraceEntry(const char* file, int line, const char* message, std::size_t length)
 {
-    pushEntry(TraceBuffer, file, line, message, length);
+    pushEntry(*TraceBuffer, file, line, message, length);
 }
 
 void logging::detail::pushEventEntry(const char* file, int line, const char* message, std::size_t length)
 {
-    pushEntry(EventBuffer, file, line, message, length);
+    pushEntry(*EventBuffer, file, line, message, length);
 }
 
 void logging::AddTraceString(const char* file, int line, std::string_view message)
@@ -277,8 +278,8 @@ void logging::AddBacktrace(const char* file, int line, std::string_view message)
 
 auto logging::GetBacktrace() -> std::vector<std::string>
 {
-    auto       entries = EventBuffer.snapshot();
-    const auto traces  = TraceBuffer.snapshot();
+    auto       entries = EventBuffer->snapshot();
+    const auto traces  = TraceBuffer->snapshot();
     entries.insert(entries.end(), traces.begin(), traces.end());
 
     std::sort(entries.begin(), entries.end(), [](const BacktraceEntry& lhs, const BacktraceEntry& rhs)

@@ -26,13 +26,22 @@
 #include <fmt/ranges.h>
 
 #include "logging.h"
+#include "no_destructor.h"
 #include "tracy.h"
 
 #include <iostream>
 #include <numeric>
 #include <string>
 
-sol::state lua;
+namespace
+{
+
+// Deliberately constructed once and never destroyed (for now!).
+NoDestructor<sol::state> luaState;
+
+} // namespace
+
+sol::state& lua = *luaState;
 
 /**
  * @brief Load the bare minimum required to use Lua.

@@ -2724,186 +2724,186 @@ spawns:
   16838674:
     template: Pavan_Large
     script:   Pavan
-    at:       [427.536, -11.284, -373.774, 88]
+    region:   s_18
     level:    [78, 88]
   16838675:
     template: Pavan
-    at:       [-459.943, 7.871, 73.088, 1]
+    region:   c_19
     level:    [78, 88]
   16838676:
     template: Pavan_Small
     script:   Pavan
-    at:       [-312.626, 47.529, 466.440, 213]
+    region:   n_20
     level:    [78, 88]
   16838677:
     template: Pavan
-    at:       [536.261, 10.320, 159.130, 147]
+    region:   c_21
     level:    [78, 88]
   16838678:
     template: Pavan
-    at:       [521.848, 31.681, 439.568, 101]
+    region:   ne_22
     level:    [78, 88]
   16838679:
     template: Shadow_Lizard
-    at:       [119.440, -72.442, -682.760, 62]
+    region:   s_23
     level:    [74, 75]
   16838680:
     template: Shadow_Lizard
-    at:       [102.661, -73.113, -617.589, 68]
+    region:   s_23
     level:    [74, 75]
   16838681:
     template: Shadow_Lizard
-    at:       [35.482, -51.553, -502.627, 3]
+    region:   s_25
     level:    [74, 75]
   16838682:
     template: Shadow_Lizard
-    at:       [4.699, -51.712, -502.130, 125]
+    region:   s_25
     level:    [74, 75]
   16838683:
     template: Shadow_Lizard
-    at:       [28.957, -49.920, -500.520, 135]
+    region:   s_25
     level:    [74, 75]
   16838684:
     template: Shadow_Lizard
-    at:       [71.912, -32.469, -383.873, 128]
+    region:   s_28
     level:    [74, 75]
   16838685:
     template: Shadow_Lizard
-    at:       [46.176, -39.752, -342.179, 147]
+    region:   s_28
     level:    [74, 75]
   16838686:
     template: Shadow_Lizard_Small
     script:   Shadow_Lizard
-    at:       [64.156, -35.448, -367.939, 171]
+    region:   s_28
     level:    [74, 75]
   16838687:
     template: Trotting_Sapling
-    at:       [-160.942, -44.715, -422.749, 245]
+    region:   s_31
     level:    [74, 75]
   16838688:
     template: Trotting_Sapling
-    at:       [-157.810, -44.471, -421.489, 244]
+    region:   s_31
     level:    [74, 75]
   16838689:
     template: Trotting_Sapling
-    at:       [-135.828, -48.259, -447.925, 65]
+    region:   s_31
     level:    [74, 75]
   16838690:
     template: Trotting_Sapling_Small
     script:   Trotting_Sapling
-    at:       [-121.703, -44.626, -421.521, 239]
+    region:   s_31
     level:    [74, 75]
   16838691:
     template: Trotting_Sapling
-    at:       [381.036, -0.983, -170.822, 202]
+    region:   e_35
     level:    [74, 75]
   16838692:
     template: Trotting_Sapling
-    at:       [363.011, -0.484, -178.164, 126]
+    region:   e_35
     level:    [74, 75]
   16838693:
     template: Trotting_Sapling
-    at:       [350.182, -1.297, -184.746, 108]
+    region:   e_35
     level:    [74, 75]
   16838694:
     template: Ley_Clionid
-    at:       [419.653, -21.162, -437.375, 172]
+    region:   se_38
     level:    [74, 75]
   16838695:
     template: Ley_Clionid
-    at:       [389.662, -24.104, -472.421, 121]
+    region:   se_38
     level:    [74, 75]
   16838696:
     template: Ley_Clionid
-    at:       [378.820, -20.606, -453.446, 122]
+    region:   se_38
     level:    [74, 75]
   16838697:
     template: Ley_Clionid
-    at:       [378.440, -20.825, -454.356, 133]
+    region:   se_38
     level:    [74, 75]
   16838698:
     template: Ley_Clionid
-    at:       [399.504, -24.155, -451.354, 188]
+    region:   se_38
     level:    [74, 75]
   16838699:
     template: Ley_Clionid
-    at:       [491.171, -16.289, -426.376, 184]
+    region:   se_43
     level:    [74, 75]
   16838700:
     template: Ley_Clionid
-    at:       [434.446, -16.454, -442.457, 178]
+    region:   se_43
     level:    [74, 75]
   16838701:
     template: Ley_Clionid
-    at:       [503.597, -15.952, -428.725, 90]
+    region:   se_43
     level:    [74, 75]
   16838702:
     template: Ley_Clionid
-    at:       [429.036, -17.494, -430.497, 49]
+    region:   se_43
     level:    [74, 75]
   16838703:
     template: Ley_Clionid
-    at:       [430.831, -16.977, -436.803, 47]
+    region:   se_43
     level:    [74, 75]
   16838704:
     template: Ley_Clionid_Small
     script:   Ley_Clionid
-    at:       [432.586, -16.604, -426.497, 198]
+    region:   se_43
     level:    [74, 75]
   16838705:
     template: Ephemeral_Clionid_Small
     script:   Ephemeral_Clionid
-    at:       [410.004, -20.529, -427.720, 170]
+    region:   se_38
     level:    [74, 75]
   16838706:
     template: Sods_Limule
-    at:       [489.407, -16.379, -401.512, 39]
+    region:   se_50
     level:    [74, 75]
   16838707:
     template: Sods_Limule
-    at:       [495.727, -16.484, -399.016, 21]
+    region:   se_50
     level:    [74, 75]
   16838708:
     template: Sods_Limule
-    at:       [471.800, -16.420, -372.939, 216]
+    region:   se_50
     level:    [74, 75]
   16838709:
     template: Sods_Limule
-    at:       [468.902, -16.146, -390.666, 238]
+    region:   se_50
     level:    [74, 75]
   16838710:
     template: Sods_Limule
-    at:       [472.307, -16.111, -391.383, 239]
+    region:   se_50
     level:    [74, 75]
   16838711:
     template: Sods_Limule_Small
     script:   Sods_Limule
-    at:       [510.367, -15.958, -419.437, 146]
+    region:   se_50
     level:    [74, 75]
   16838712:
     template: Sods_Limule
-    at:       [440.960, -9.001, -368.942, 10]
+    region:   se_56
     level:    [74, 75]
   16838713:
     template: Sods_Limule
-    at:       [417.906, -9.409, -370.023, 117]
+    region:   se_56
     level:    [74, 75]
   16838714:
     template: Sods_Limule
-    at:       [438.340, -13.635, -385.721, 40]
+    region:   se_56
     level:    [74, 75]
   16838715:
     template: Sods_Limule
-    at:       [445.505, -9.876, -372.130, 209]
+    region:   se_56
     level:    [74, 75]
   16838716:
     template: Sods_Limule
-    at:       [388.028, -10.410, -371.716, 113]
+    region:   se_56
     level:    [74, 75]
   16838717:
     template: Ephemeral_Limule_XLarge
     script:   Ephemeral_Limule
-    at:       [427.874, -15.336, -395.930, 213]
+    region:   se_56
     level:    [74, 75]
   16838718:
     template: Ashtaerh_the_Gallvexed
@@ -2911,61 +2911,61 @@ spawns:
     level:    [85, 85]
   16838719:
     template: Shadow_Lizard
-    at:       [-162.026, -64.725, -711.160, 106]
+    region:   s_63
     level:    [74, 75]
   16838720:
     template: Shadow_Lizard
-    at:       [-127.425, -57.245, -705.664, 52]
+    region:   s_63
     level:    [74, 75]
   16838721:
     template: Shadow_Lizard
-    at:       [-148.044, -63.702, -700.334, 172]
+    region:   s_63
     level:    [74, 75]
   16838722:
     template: Shadow_Lizard
-    at:       [-127.682, -57.513, -694.676, 166]
+    region:   s_63
     level:    [74, 75]
   16838723:
     template: Shadow_Lizard_Small
     script:   Shadow_Lizard
-    at:       [-158.098, -64.067, -709.385, 114]
+    region:   s_63
     level:    [74, 75]
   16838724:
     template: Shadow_Lizard
-    at:       [-128.854, -60.877, -658.607, 160]
+    region:   s_68
     level:    [74, 75]
   16838725:
     template: Shadow_Lizard
-    at:       [-126.199, -57.187, -675.840, 128]
+    region:   s_68
     level:    [74, 75]
   16838726:
     template: Shadow_Lizard
-    at:       [-117.959, -58.101, -668.298, 65]
+    region:   s_68
     level:    [74, 75]
   16838727:
     template: Shadow_Lizard_Small
     script:   Shadow_Lizard
-    at:       [-108.672, -57.451, -669.602, 15]
+    region:   s_68
     level:    [74, 75]
   16838728:
     template: Shadow_Lizard
-    at:       [-88.567, -57.703, -616.156, 238]
+    region:   s_72
     level:    [74, 75]
   16838729:
     template: Shadow_Lizard
-    at:       [-107.613, -59.547, -620.604, 160]
+    region:   s_72
     level:    [74, 75]
   16838730:
     template: Shadow_Lizard
-    at:       [-93.126, -57.704, -661.668, 20]
+    region:   s_72
     level:    [74, 75]
   16838731:
     template: Shadow_Lizard
-    at:       [-83.344, -56.596, -661.474, 177]
+    region:   s_72
     level:    [74, 75]
   16838732:
     template: Ephemeral_Limule
-    at:       [-131.734, -58.807, -698.269, 74]
+    region:   s_18
     level:    [74, 75]
   16838733:
     template: Trotting_Sapling
@@ -2973,24 +2973,24 @@ spawns:
     level:    [74, 75]
   16838734:
     template: Trotting_Sapling
-    at:       [-308.678, -40.969, -326.414, 176]
+    region:   sw_78
     level:    [74, 75]
   16838735:
     template: Trotting_Sapling
-    at:       [-294.805, -41.373, -345.960, 192]
+    region:   sw_78
     level:    [74, 75]
   16838736:
     template: Trotting_Sapling
-    at:       [-322.437, -48.268, -358.300, 163]
+    region:   sw_78
     level:    [74, 75]
   16838737:
     template: Trotting_Sapling
-    at:       [-306.647, -45.221, -353.898, 233]
+    region:   sw_78
     level:    [74, 75]
   16838738:
     template: Trotting_Sapling_Small
     script:   Trotting_Sapling
-    at:       [-357.151, -34.738, -326.338, 91]
+    region:   sw_78
     level:    [74, 75]
   16838739:
     template: Trotting_Sapling
@@ -2998,20 +2998,20 @@ spawns:
     level:    [74, 75]
   16838740:
     template: Trotting_Sapling
-    at:       [-366.670, -25.301, -254.215, 171]
+    region:   sw_84
     level:    [74, 75]
   16838741:
     template: Trotting_Sapling
-    at:       [-358.720, -27.154, -268.029, 149]
+    region:   sw_84
     level:    [74, 75]
   16838742:
     template: Trotting_Sapling
-    at:       [-393.824, -31.317, -280.317, 247]
+    region:   sw_84
     level:    [74, 75]
   16838743:
     template: Trotting_Sapling_Small
     script:   Trotting_Sapling
-    at:       [-401.978, -27.707, -261.460, 118]
+    region:   sw_84
     level:    [74, 75]
   16838744:
     template: Trotting_Sapling
@@ -3019,29 +3019,29 @@ spawns:
     level:    [74, 75]
   16838745:
     template: Trotting_Sapling
-    at:       [-431.679, -31.361, -243.791, 126]
+    region:   sw_89
     level:    [74, 75]
   16838746:
     template: Trotting_Sapling
-    at:       [-432.826, -18.142, -206.481, 245]
+    region:   sw_89
     level:    [74, 75]
   16838747:
     template: Trotting_Sapling
-    at:       [-435.667, -17.640, -203.766, 147]
+    region:   sw_89
     level:    [74, 75]
   16838748:
     template: Trotting_Sapling
-    at:       [-423.792, -20.719, -210.690, 230]
+    region:   sw_89
     level:    [74, 75]
   16838749:
     template: Trotting_Sapling_Small
     script:   Trotting_Sapling
-    at:       [-422.802, -20.084, -209.275, 70]
+    region:   sw_89
     level:    [74, 75]
   16838750:
     template: Ephemeral_Clionid_XLarge
     script:   Ephemeral_Clionid
-    at:       [-423.524, -20.673, -210.348, 231]
+    region:   sw_94
     level:    [74, 75]
   16838751:
     template: Gangly_Gean
@@ -3049,66 +3049,66 @@ spawns:
     level:    [85, 85]
   16838752:
     template: Razorback
-    at:       [-146.246, -20.715, -173.941, 39]
+    region:   c_96
     level:    [78, 88]
   16838753:
     template: Razorback
-    at:       [-132.596, -26.456, -192.207, 75]
+    region:   c_96
     level:    [78, 88]
   16838754:
     template: Razorback
-    at:       [-175.962, -16.536, -161.570, 55]
+    region:   c_96
     level:    [78, 88]
   16838755:
     template: Razorback
-    at:       [-128.216, -28.745, -194.294, 111]
+    region:   c_96
     level:    [78, 88]
   16838756:
     template: Razorback_Small
     script:   Razorback
-    at:       [-165.460, -16.059, -150.407, 199]
+    region:   c_96
     level:    [78, 88]
   16838757:
     template: Razorback
-    at:       [-161.374, -8.530, -77.974, 146]
+    region:   w_101
     level:    [78, 88]
   16838758:
     template: Razorback
-    at:       [-247.173, -14.753, -144.005, 56]
+    region:   w_101
     level:    [78, 88]
   16838759:
     template: Razorback
-    at:       [-217.100, -15.162, -140.286, 102]
+    region:   w_101
     level:    [78, 88]
   16838760:
     template: Razorback
-    at:       [-194.386, -9.625, -128.237, 130]
+    region:   w_101
     level:    [78, 88]
   16838761:
     template: Razorback_Small
     script:   Razorback
-    at:       [-192.914, -14.694, -144.532, 221]
+    region:   w_101
     level:    [78, 88]
   16838762:
     template: Razorback
-    at:       [-267.476, -7.755, -85.743, 211]
+    region:   w_106
     level:    [78, 88]
   16838763:
     template: Razorback
-    at:       [-297.003, -15.339, -109.626, 179]
+    region:   w_106
     level:    [78, 88]
   16838764:
     template: Razorback
-    at:       [-287.585, -15.816, -131.621, 31]
+    region:   w_106
     level:    [78, 88]
   16838765:
     template: Razorback
-    at:       [-268.250, -7.474, -85.459, 247]
+    region:   w_106
     level:    [78, 88]
   16838766:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [-262.340, -12.456, -103.244, 69]
+    region:   w_110
     level:    [79, 83]
   16838767:
     template: Sarcophilus
@@ -3116,62 +3116,62 @@ spawns:
     level:    [85, 85]
   16838768:
     template: Hoary_Ragwort
-    at:       [-531.289, -2.435, -120.156, 78]
+    region:   w_112
     level:    [78, 88]
   16838769:
     template: Hoary_Ragwort
-    at:       [-527.311, -16.328, -159.002, 4]
+    region:   w_112
     level:    [78, 88]
   16838770:
     template: Hoary_Ragwort
-    at:       [-533.597, -3.361, -121.377, 203]
+    region:   w_112
     level:    [78, 88]
   16838771:
     template: Hoary_Ragwort_Small
     script:   Hoary_Ragwort
-    at:       [-517.826, -10.360, -143.842, 45]
+    region:   w_112
     level:    [78, 88]
   16838772:
     template: Hoary_Ragwort_Small
     script:   Hoary_Ragwort
-    at:       [-534.448, -2.835, -124.521, 255]
+    region:   w_112
     level:    [78, 88]
   16838773:
     template: Hoary_Ragwort
-    at:       [-467.908, -1.795, -137.522, 2]
+    region:   w_117
     level:    [78, 88]
   16838774:
     template: Hoary_Ragwort
-    at:       [-454.736, 0.776, -86.812, 148]
+    region:   w_117
     level:    [78, 88]
   16838775:
     template: Hoary_Ragwort
-    at:       [-455.214, 0.734, -75.799, 8]
+    region:   w_117
     level:    [78, 88]
   16838776:
     template: Hoary_Ragwort
-    at:       [-494.385, 0.381, -60.404, 114]
+    region:   w_117
     level:    [78, 88]
   16838777:
     template: Hoary_Ragwort
-    at:       [-456.109, 7.537, -54.686, 148]
+    region:   w_117
     level:    [78, 88]
   16838778:
     template: Hoary_Ragwort
-    at:       [-406.417, -5.896, -74.191, 200]
+    region:   w_122
     level:    [78, 88]
   16838779:
     template: Hoary_Ragwort
-    at:       [-337.362, -4.701, -76.112, 127]
+    region:   w_122
     level:    [78, 88]
   16838780:
     template: Hoary_Ragwort
-    at:       [-391.125, -7.132, -88.517, 247]
+    region:   w_124
     level:    [78, 88]
   16838781:
     template: Ephemeral_Limule_Small
     script:   Ephemeral_Limule
-    at:       [-346.391, 2.816, -57.427, 87]
+    region:   w_125
     level:    [79, 83]
   16838782:
     template: Bombadeel
@@ -3179,152 +3179,152 @@ spawns:
     level:    [85, 85]
   16838783:
     template: Sods_Limule
-    at:       [-511.539, 7.180, -7.255, 51]
+    region:   w_127
     level:    [79, 80]
   16838784:
     template: Sods_Limule
-    at:       [-555.932, 0.263, 18.232, 14]
+    region:   w_127
     level:    [79, 80]
   16838785:
     template: Sods_Limule
-    at:       [-505.627, 8.018, 10.523, 55]
+    region:   w_127
     level:    [79, 80]
   16838786:
     template: Sods_Limule
-    at:       [-526.560, 2.389, 23.647, 25]
+    region:   w_127
     level:    [79, 80]
   16838787:
     template: Sods_Limule_Small
     script:   Sods_Limule
-    at:       [-542.675, 1.020, 16.257, 77]
+    region:   w_127
     level:    [74, 75]
   16838788:
     template: Sods_Limule
-    at:       [-410.452, 9.837, 15.427, 89]
+    region:   w_132
     level:    [79, 80]
   16838789:
     template: Sods_Limule
-    at:       [-456.539, 13.976, 22.618, 65]
+    region:   w_132
     level:    [79, 80]
   16838790:
     template: Sods_Limule
-    at:       [-458.516, 13.924, 22.158, 32]
+    region:   w_132
     level:    [79, 80]
   16838791:
     template: Sods_Limule
-    at:       [-433.457, 11.436, 27.683, 28]
+    region:   w_132
     level:    [79, 80]
   16838792:
     template: Sods_Limule
-    at:       [-454.818, 13.097, 20.663, 36]
+    region:   w_132
     level:    [79, 80]
   16838793:
     template: Sods_Limule
-    at:       [-352.743, 17.313, 23.214, 18]
+    region:   w_137
     level:    [79, 80]
   16838794:
     template: Sods_Limule
-    at:       [-313.030, 17.286, 23.949, 26]
+    region:   w_137
     level:    [79, 80]
   16838795:
     template: Sods_Limule
-    at:       [-333.957, 16.405, 29.587, 136]
+    region:   w_137
     level:    [79, 80]
   16838796:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [-323.256, 17.541, 19.828, 233]
+    region:   w_140
     level:    [79, 83]
   16838797:
     template: Ley_Clionid
-    at:       [-373.177, 32.198, 376.068, 187]
+    region:   nw_141
     level:    [79, 80]
   16838798:
     template: Ley_Clionid
-    at:       [-358.470, 38.878, 394.709, 35]
+    region:   nw_141
     level:    [79, 80]
   16838799:
     template: Ley_Clionid
-    at:       [-403.888, 23.242, 351.653, 178]
+    region:   nw_141
     level:    [79, 80]
   16838800:
     template: Ley_Clionid_Small
     script:   Ley_Clionid
-    at:       [-372.549, 27.372, 340.225, 59]
+    region:   nw_141
     level:    [74, 75]
   16838801:
     template: Ley_Clionid
-    at:       [-440.602, 23.148, 309.725, 240]
+    region:   w_145
     level:    [79, 80]
   16838802:
     template: Ley_Clionid
-    at:       [-398.593, 24.093, 303.456, 125]
+    region:   w_145
     level:    [79, 80]
   16838803:
     template: Ley_Clionid_Small
     script:   Ley_Clionid
-    at:       [-394.254, 23.513, 297.920, 31]
+    region:   w_145
     level:    [74, 75]
   16838804:
     template: Ley_Clionid
-    at:       [-394.449, 23.681, 312.943, 27]
+    region:   w_145
     level:    [79, 80]
   16838805:
     template: Ley_Clionid
-    at:       [-456.602, 20.959, 308.284, 55]
+    region:   w_149
     level:    [79, 80]
   16838806:
     template: Ley_Clionid
-    at:       [-439.794, 23.332, 259.428, 230]
+    region:   w_149
     level:    [79, 80]
   16838807:
     template: Ley_Clionid
-    at:       [-421.006, 20.563, 245.460, 63]
+    region:   w_149
     level:    [79, 80]
   16838808:
     template: Ley_Clionid
-    at:       [-438.218, 23.936, 289.283, 193]
+    region:   w_149
     level:    [79, 80]
   16838809:
     template: Ephemeral_Clionid_Small
     script:   Ephemeral_Clionid
-    at:       [-439.293, 23.037, 319.684, 126]
+    region:   nw_153
     level:    [74, 75]
   16838810:
     template: Abxzomit
-    at:       [-463.517, 8.115, 97.029, 24]
+    region:   w_154
     level:    [79, 80]
   16838811:
     template: Abxzomit
-    at:       [-437.141, 9.796, 85.445, 60]
+    region:   w_154
     level:    [79, 80]
   16838812:
     template: Abxzomit
-    at:       [-501.128, 2.218, 79.951, 133]
+    region:   w_154
     level:    [79, 80]
   16838813:
     template: Abxzomit
-    at:       [-517.642, 0.355, 73.371, 66]
+    region:   w_154
     level:    [79, 80]
   16838814:
     template: Abxzomit
-    at:       [-496.644, 6.125, 98.193, 34]
+    region:   w_154
     level:    [79, 80]
   16838815:
     template: Abxzomit
-    at:       [-468.779, 10.672, 174.783, 59]
+    region:   w_159
     level:    [79, 80]
   16838816:
     template: Abxzomit
-    at:       [-497.498, 13.476, 214.979, 190]
+    region:   w_159
     level:    [79, 80]
   16838817:
     template: Abxzomit
-    at:       [-487.181, 10.711, 183.055, 155]
+    region:   w_159
     level:    [79, 80]
   16838818:
     template: Abxzomit
-    at:       [-475.428, 8.859, 164.024, 171]
+    region:   w_159
     level:    [79, 80]
   16838819:
     template: Ephemeral_Clionid_Small
@@ -3333,31 +3333,31 @@ spawns:
     level:    [74, 75]
   16838820:
     template: Khalamari
-    at:       [-443.957, 8.120, 80.261, 129]
+    region:   w_164
     level:    [85, 85]
   16838821:
     template: Shadow_Funguar
-    at:       [-251.115, 15.949, 78.415, 196]
+    region:   w_165
     level:    [78, 88]
   16838822:
     template: Shadow_Funguar
-    at:       [-222.553, 17.675, 113.858, 246]
+    region:   w_165
     level:    [78, 88]
   16838823:
     template: Shadow_Funguar
-    at:       [-219.720, 17.946, 127.000, 199]
+    region:   w_165
     level:    [78, 88]
   16838824:
     template: Shadow_Funguar
-    at:       [-180.148, 14.322, 109.922, 68]
+    region:   w_168
     level:    [78, 88]
   16838825:
     template: Shadow_Funguar
-    at:       [-180.361, 15.728, 132.899, 4]
+    region:   w_168
     level:    [78, 88]
   16838826:
     template: Shadow_Funguar
-    at:       [-204.639, 17.449, 140.055, 177]
+    region:   w_168
     level:    [78, 88]
   16838827:
     template: Shadow_Funguar
@@ -3365,41 +3365,41 @@ spawns:
     level:    [78, 88]
   16838828:
     template: Shadow_Funguar
-    at:       [-110.388, 16.110, 159.751, 4]
+    region:   c_172
     level:    [78, 88]
   16838829:
     template: Shadow_Funguar
-    at:       [-100.170, 16.144, 169.425, 224]
+    region:   c_172
     level:    [78, 88]
   16838830:
     template: Shadow_Funguar
-    at:       [-94.030, 15.895, 170.337, 141]
+    region:   c_174
     level:    [78, 88]
   16838831:
     template: Shadow_Funguar
-    at:       [-94.689, 15.789, 154.382, 202]
+    region:   c_175
     level:    [78, 88]
   16838832:
     template: Shadow_Funguar
-    at:       [-62.887, 17.075, 104.544, 5]
+    region:   c_176
     level:    [78, 88]
   16838833:
     template: Shadow_Funguar
-    at:       [-27.646, 23.412, 130.693, 58]
+    region:   c_177
     level:    [78, 88]
   16838834:
     template: Shadow_Funguar
-    at:       [-62.181, 18.564, 120.064, 147]
+    region:   c_176
     level:    [78, 88]
   16838835:
     template: Shadow_Funguar_Small
     script:   Shadow_Funguar
-    at:       [-71.724, 16.333, 111.717, 213]
+    region:   c_176
     level:    [78, 88]
   16838836:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [-249.075, 16.320, 87.828, 7]
+    region:   c_19
     level:    [79, 83]
   16838837:
     template: Hexenpilz
@@ -3407,70 +3407,70 @@ spawns:
     level:    [85, 85]
   16838838:
     template: Highland_Rafflesia
-    at:       [-281.568, 23.506, 206.322, 40]
+    region:   w_182
     level:    [78, 88]
   16838839:
     template: Highland_Rafflesia
-    at:       [-241.000, 21.000, 216.000, 175]
+    region:   w_182
     level:    [78, 88]
   16838840:
     template: Highland_Rafflesia
-    at:       [-225.937, 17.748, 191.201, 74]
+    region:   w_182
     level:    [78, 88]
   16838841:
     template: Highland_Rafflesia_Small
     script:   Highland_Rafflesia
-    at:       [-238.852, 16.060, 188.003, 120]
+    region:   w_182
     level:    [78, 88]
   16838842:
     template: Highland_Rafflesia
-    at:       [-244.575, 34.412, 257.608, 69]
+    region:   w_186
     level:    [78, 88]
   16838843:
     template: Highland_Rafflesia
-    at:       [-292.053, 36.035, 273.315, 20]
+    region:   w_186
     level:    [78, 88]
   16838844:
     template: Highland_Rafflesia
-    at:       [-331.808, 21.114, 237.350, 9]
+    region:   w_186
     level:    [78, 88]
   16838845:
     template: Highland_Rafflesia
-    at:       [-282.914, 36.723, 271.856, 226]
+    region:   w_186
     level:    [78, 88]
   16838846:
     template: Highland_Rafflesia
-    at:       [-341.411, 18.915, 248.142, 204]
+    region:   w_186
     level:    [78, 88]
   16838847:
     template: Highland_Rafflesia
-    at:       [-251.874, 30.676, 252.743, 162]
+    region:   w_186
     level:    [78, 88]
   16838848:
     template: Highland_Rafflesia_Small
     script:   Highland_Rafflesia
-    at:       [-350.302, 16.694, 244.453, 64]
+    region:   w_186
     level:    [78, 88]
   16838849:
     template: Highland_Rafflesia
-    at:       [-229.831, 41.435, 340.298, 138]
+    region:   w_193
     level:    [78, 88]
   16838850:
     template: Highland_Rafflesia
-    at:       [-274.444, 37.220, 295.975, 34]
+    region:   w_193
     level:    [78, 88]
   16838851:
     template: Highland_Rafflesia
-    at:       [-324.219, 30.667, 286.474, 14]
+    region:   w_193
     level:    [78, 88]
   16838852:
     template: Highland_Rafflesia
-    at:       [-288.026, 36.041, 294.667, 191]
+    region:   w_193
     level:    [78, 88]
   16838853:
     template: Highland_Rafflesia_Small
     script:   Highland_Rafflesia
-    at:       [-269.107, 34.994, 308.652, 212]
+    region:   w_197
     level:    [78, 88]
   16838854:
     template: Ephemeral_Clionid
@@ -3486,7 +3486,7 @@ spawns:
     level:    [78, 88]
   16838857:
     template: Mesa_Wivre
-    at:       [1.742, 32.174, 346.106, 98]
+    region:   n_201
     level:    [78, 88]
   16838858:
     template: Mesa_Wivre
@@ -3494,12 +3494,12 @@ spawns:
     level:    [78, 88]
   16838859:
     template: Mesa_Wivre
-    at:       [-138.738, 32.951, 365.756, 242]
+    region:   n_201
     level:    [78, 88]
   16838860:
     template: Mesa_Wivre_Small
     script:   Mesa_Wivre
-    at:       [-77.272, 32.175, 377.354, 157]
+    region:   n_201
     level:    [78, 88]
   16838861:
     template: Mesa_Wivre
@@ -3515,28 +3515,28 @@ spawns:
     level:    [78, 88]
   16838864:
     template: Mesa_Wivre
-    at:       [-19.389, 38.533, 422.797, 57]
+    region:   n_208
     level:    [78, 88]
   16838865:
     template: Mesa_Wivre_Small
     script:   Mesa_Wivre
-    at:       [-70.041, 34.440, 414.713, 56]
+    region:   n_208
     level:    [78, 88]
   16838866:
     template: Mesa_Wivre
-    at:       [-12.179, 47.950, 491.836, 225]
+    region:   n_210
     level:    [78, 88]
   16838867:
     template: Mesa_Wivre
-    at:       [-29.494, 41.281, 472.811, 101]
+    region:   n_210
     level:    [78, 88]
   16838868:
     template: Mesa_Wivre
-    at:       [-70.802, 46.401, 471.095, 31]
+    region:   n_210
     level:    [78, 88]
   16838869:
     template: Mesa_Wivre
-    at:       [-51.894, 41.682, 447.040, 40]
+    region:   n_210
     level:    [78, 88]
   16838870:
     template: Ephemeral_Clionid_XLarge
@@ -3553,54 +3553,54 @@ spawns:
     level:    [90, 90]
   16838873:
     template: Gunge_Slug
-    at:       [-223.137, 46.857, 389.725, 124]
+    region:   nw_217
     level:    [79, 80]
   16838874:
     template: Gunge_Slug
-    at:       [-313.454, 39.452, 385.897, 134]
+    region:   nw_217
     level:    [79, 80]
   16838875:
     template: Gunge_Slug
-    at:       [-229.636, 40.428, 364.556, 253]
+    region:   nw_219
     level:    [79, 80]
   16838876:
     template: Gunge_Slug
-    at:       [-290.299, 46.342, 428.469, 144]
+    region:   nw_220
     level:    [79, 80]
   16838877:
     template: Gunge_Slug
-    at:       [-203.139, 49.574, 419.439, 2]
+    region:   nw_221
     level:    [79, 80]
   16838878:
     template: Gunge_Slug
-    at:       [-276.425, 47.683, 423.267, 189]
+    region:   nw_220
     level:    [79, 80]
   16838879:
     template: Gunge_Slug_Small
     script:   Gunge_Slug
-    at:       [-299.634, 42.290, 409.166, 252]
+    region:   nw_220
     level:    [79, 80]
   16838880:
     template: Gunge_Slug
-    at:       [-216.065, 50.584, 437.931, 166]
+    region:   nw_224
     level:    [79, 80]
   16838881:
     template: Gunge_Slug
-    at:       [-266.043, 49.846, 442.365, 61]
+    region:   nw_224
     level:    [79, 80]
   16838882:
     template: Gunge_Slug
-    at:       [-294.010, 48.741, 460.226, 213]
+    region:   nw_224
     level:    [79, 80]
   16838883:
     template: Gunge_Slug_Small
     script:   Gunge_Slug
-    at:       [-307.350, 44.572, 462.343, 10]
+    region:   nw_224
     level:    [79, 80]
   16838884:
     template: Ephemeral_Limule_XLarge
     script:   Ephemeral_Limule
-    at:       [-288.944, 50.413, 464.276, 129]
+    region:   nw_224
     level:    [74, 75]
   16838885:
     template: Lentor
@@ -3608,52 +3608,52 @@ spawns:
     level:    [85, 85]
   16838886:
     template: Gneiss_Leech
-    at:       [-207.196, 63.588, 558.843, 114]
+    region:   nw_230
     level:    [79, 80]
   16838887:
     template: Gneiss_Leech
-    at:       [-222.750, 59.340, 567.686, 243]
+    region:   nw_230
     level:    [79, 80]
   16838888:
     template: Gneiss_Leech
-    at:       [-229.989, 64.578, 612.890, 253]
+    region:   nw_230
     level:    [79, 80]
   16838889:
     template: Gneiss_Leech
-    at:       [-209.901, 63.076, 553.224, 189]
+    region:   nw_230
     level:    [79, 80]
   16838890:
     template: Gneiss_Leech
-    at:       [-269.014, 62.300, 586.673, 60]
+    region:   nw_230
     level:    [79, 80]
   16838891:
     template: Gneiss_Leech_Small
     script:   Gneiss_Leech
-    at:       [-244.131, 58.707, 576.049, 255]
+    region:   nw_230
     level:    [79, 80]
   16838892:
     template: Gneiss_Leech
-    at:       [-180.671, 66.041, 573.428, 66]
+    region:   n_236
     level:    [79, 80]
   16838893:
     template: Gneiss_Leech
-    at:       [-115.317, 56.028, 564.832, 184]
+    region:   n_236
     level:    [79, 80]
   16838894:
     template: Gneiss_Leech
-    at:       [-163.454, 64.009, 552.968, 217]
+    region:   n_236
     level:    [79, 80]
   16838895:
     template: Gneiss_Leech
-    at:       [-179.399, 65.434, 601.330, 115]
+    region:   n_236
     level:    [79, 80]
   16838896:
     template: Gneiss_Leech
-    at:       [-180.430, 65.583, 587.519, 114]
+    region:   n_236
     level:    [79, 80]
   16838897:
     template: Gneiss_Leech
-    at:       [-174.740, 64.208, 593.599, 25]
+    region:   n_236
     level:    [79, 80]
   16838898:
     template: Ephemeral_Clionid
@@ -3712,7 +3712,7 @@ spawns:
   16838911:
     template: Ephemeral_Clionid_Small
     script:   Ephemeral_Clionid
-    at:       [-162.391, 71.742, 714.755, 178]
+    region:   nw_255
     level:    [74, 75]
   16838912:
     template: Guimauve
@@ -3768,81 +3768,81 @@ spawns:
     level:    [78, 88]
   16838928:
     template: Morboling
-    at:       [48.407, 21.925, 176.940, 61]
+    region:   c_272
     level:    [79, 80]
   16838929:
     template: Morboling
-    at:       [82.447, 15.982, 179.992, 37]
+    region:   c_272
     level:    [79, 80]
   16838930:
     template: Morboling
-    at:       [69.165, 18.694, 210.408, 128]
+    region:   c_272
     level:    [79, 80]
   16838931:
     template: Morboling_Small
     script:   Morboling
-    at:       [81.667, 15.932, 177.116, 22]
+    region:   c_272
     level:    [79, 80]
   16838932:
     template: Morboling
-    at:       [188.012, 24.889, 157.871, 174]
+    region:   c_276
     level:    [79, 80]
   16838933:
     template: Morboling
-    at:       [171.021, 28.437, 144.209, 4]
+    region:   c_276
     level:    [79, 80]
   16838934:
     template: Morboling
-    at:       [168.553, 24.989, 184.735, 205]
+    region:   c_276
     level:    [79, 80]
   16838935:
     template: Morboling_Small
     script:   Morboling
-    at:       [183.738, 22.624, 192.503, 71]
+    region:   c_276
     level:    [79, 80]
   16838936:
     template: Morboling_Small
     script:   Morboling
-    at:       [172.065, 23.795, 197.692, 95]
+    region:   c_276
     level:    [79, 80]
   16838937:
     template: Morboling
-    at:       [278.164, 18.606, 174.693, 71]
+    region:   c_281
     level:    [79, 80]
   16838938:
     template: Morboling
-    at:       [234.542, 23.863, 147.968, 142]
+    region:   c_281
     level:    [79, 80]
   16838939:
     template: Morboling
-    at:       [260.330, 19.912, 159.554, 73]
+    region:   c_281
     level:    [79, 80]
   16838940:
     template: Morboling_Small
     script:   Morboling
-    at:       [260.244, 22.382, 182.975, 88]
+    region:   c_281
     level:    [79, 80]
   16838941:
     template: Morboling_Small
     script:   Morboling
-    at:       [211.542, 23.360, 224.303, 170]
+    region:   c_281
     level:    [79, 80]
   16838942:
     template: Morboling
-    at:       [350.779, 23.421, 210.302, 13]
+    region:   e_286
     level:    [79, 80]
   16838943:
     template: Morboling
-    at:       [292.677, 17.085, 174.205, 174]
+    region:   e_286
     level:    [79, 80]
   16838944:
     template: Morboling_Small
     script:   Morboling
-    at:       [287.902, 23.551, 202.009, 67]
+    region:   e_286
     level:    [79, 80]
   16838945:
     template: Ephemeral_Clionid
-    at:       [308.755, 17.404, 173.713, 147]
+    region:   e_289
     level:    [79, 82]
   16838946:
     template: Clingy_Clare
@@ -3850,66 +3850,66 @@ spawns:
     level:    [85, 85]
   16838947:
     template: Highland_Treant
-    at:       [233.666, 23.541, 119.499, 99]
+    region:   c_291
     level:    [78, 88]
   16838948:
     template: Highland_Treant
-    at:       [187.171, 19.597, 71.704, 156]
+    region:   c_291
     level:    [78, 88]
   16838949:
     template: Highland_Treant
-    at:       [235.736, 16.950, 51.596, 115]
+    region:   c_291
     level:    [78, 88]
   16838950:
     template: Highland_Treant
-    at:       [293.141, 23.984, 110.509, 208]
+    region:   e_294
     level:    [78, 88]
   16838951:
     template: Highland_Treant
-    at:       [289.453, 25.588, 100.522, 130]
+    region:   e_294
     level:    [78, 88]
   16838952:
     template: Highland_Treant
-    at:       [284.267, 23.281, 129.853, 248]
+    region:   e_294
     level:    [78, 88]
   16838953:
     template: Highland_Treant_Small
     script:   Highland_Treant
-    at:       [266.033, 18.032, 59.610, 98]
+    region:   e_294
     level:    [78, 88]
   16838954:
     template: Highland_Treant
-    at:       [325.935, 23.090, 113.955, 83]
+    region:   e_298
     level:    [78, 88]
   16838955:
     template: Highland_Treant
-    at:       [361.511, 17.468, 99.048, 181]
+    region:   e_298
     level:    [78, 88]
   16838956:
     template: Highland_Treant
-    at:       [328.340, 18.345, 69.906, 248]
+    region:   e_298
     level:    [78, 88]
   16838957:
     template: Highland_Treant_Small
     script:   Highland_Treant
-    at:       [355.647, 16.578, 93.562, 92]
+    region:   e_298
     level:    [78, 88]
   16838958:
     template: Highland_Treant
-    at:       [303.832, 13.537, 35.632, 176]
+    region:   e_302
     level:    [78, 88]
   16838959:
     template: Highland_Treant
-    at:       [239.375, 13.604, -8.577, 125]
+    region:   e_302
     level:    [78, 88]
   16838960:
     template: Highland_Treant
-    at:       [346.445, 2.879, 19.579, 40]
+    region:   e_302
     level:    [78, 88]
   16838961:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [255.193, 23.323, 123.656, 155]
+    region:   e_305
     level:    [79, 83]
   16838962:
     template: Siranpa-kamuy
@@ -3917,45 +3917,45 @@ spawns:
     level:    [85, 85]
   16838963:
     template: Ypotryll
-    at:       [108.439, 23.955, 273.898, 152]
+    region:   c_307
     level:    [79, 80]
   16838964:
     template: Ypotryll
-    at:       [130.156, 23.835, 259.661, 9]
+    region:   c_307
     level:    [79, 80]
   16838965:
     template: Ypotryll
-    at:       [160.487, 23.667, 271.848, 205]
+    region:   c_307
     level:    [79, 80]
   16838966:
     template: Ypotryll
-    at:       [91.287, 23.935, 271.489, 166]
+    region:   c_307
     level:    [79, 80]
   16838967:
     template: Ypotryll
-    at:       [160.665, 23.367, 294.007, 235]
+    region:   c_311
     level:    [79, 80]
   16838968:
     template: Ypotryll
-    at:       [113.847, 23.615, 315.410, 143]
+    region:   c_311
     level:    [79, 80]
   16838969:
     template: Ypotryll
-    at:       [38.211, 33.470, 299.461, 87]
+    region:   c_311
     level:    [79, 80]
   16838970:
     template: Ypotryll
-    at:       [128.461, 23.818, 290.219, 122]
+    region:   c_311
     level:    [79, 80]
   16838971:
     template: Ypotryll_Small
     script:   Ypotryll
-    at:       [93.800, 26.153, 326.812, 250]
+    region:   c_311
     level:    [79, 80]
   16838972:
     template: Ypotryll_Small
     script:   Ypotryll
-    at:       [75.558, 25.191, 318.369, 131]
+    region:   c_311
     level:    [79, 80]
   16838973:
     template: Ypotryll
@@ -3988,111 +3988,111 @@ spawns:
     level:    [85, 85]
   16838980:
     template: Deep_Eye
-    at:       [286.242, 23.543, 260.873, 83]
+    region:   e_324
     level:    [79, 80]
   16838981:
     template: Deep_Eye
-    at:       [297.420, 23.854, 297.791, 80]
+    region:   e_324
     level:    [79, 80]
   16838982:
     template: Deep_Eye
-    at:       [404.000, 23.000, 257.000, 59]
+    region:   e_324
     level:    [79, 80]
   16838983:
     template: Deep_Eye
-    at:       [403.000, 24.000, 226.000, 52]
+    region:   e_324
     level:    [79, 80]
   16838984:
     template: Deep_Eye_Small
     script:   Deep_Eye
-    at:       [427.000, 25.000, 220.000, 30]
+    region:   e_324
     level:    [79, 80]
   16838985:
     template: Deep_Eye
-    at:       [367.323, 23.869, 287.852, 218]
+    region:   e_329
     level:    [79, 80]
   16838986:
     template: Deep_Eye
-    at:       [358.949, 23.989, 309.976, 133]
+    region:   e_329
     level:    [79, 80]
   16838987:
     template: Deep_Eye
-    at:       [429.000, 30.000, 269.000, 126]
+    region:   e_329
     level:    [79, 80]
   16838988:
     template: Deep_Eye
-    at:       [353.333, 23.901, 311.007, 20]
+    region:   e_329
     level:    [79, 80]
   16838989:
     template: Deep_Eye
-    at:       [412.880, 25.940, 271.160, 85]
+    region:   e_333
     level:    [79, 80]
   16838990:
     template: Deep_Eye
-    at:       [405.313, 25.553, 289.269, 236]
+    region:   e_333
     level:    [79, 80]
   16838991:
     template: Deep_Eye
-    at:       [416.441, 30.454, 297.165, 31]
+    region:   e_333
     level:    [79, 80]
   16838992:
     template: Ephemeral_Clionid_Small
     script:   Ephemeral_Clionid
-    at:       [418.155, 26.894, 266.124, 73]
+    region:   e_336
     level:    [74, 75]
   16838993:
     template: Arimaspi
-    at:       [439.763, 31.500, 357.652, 243]
+    region:   ne_337
     level:    [85, 85]
   16838994:
     template: Lesser_Arimaspi
-    at:       [440.992, 31.500, 356.828, 179]
+    region:   ne_337
     level:    [78, 88]
   16838995:
     template: Lesser_Arimaspi
-    at:       [438.070, 31.500, 358.230, 4]
+    region:   ne_337
     level:    [78, 88]
   16838996:
     template: Lesser_Arimaspi
-    at:       [442.022, 31.500, 357.704, 134]
+    region:   ne_337
     level:    [78, 88]
   16838997:
     template: Viridis_Wyvern
-    at:       [577.043, 19.222, 164.623, 29]
+    region:   e_341
     level:    [82, 83]
   16838998:
     template: Viridis_Wyvern
-    at:       [594.298, 23.693, 191.651, 17]
+    region:   e_341
     level:    [82, 83]
   16838999:
     template: Viridis_Wyvern
-    at:       [554.710, 22.448, 189.606, 163]
+    region:   e_341
     level:    [82, 83]
   16839000:
     template: Viridis_Wyvern
-    at:       [551.752, 14.937, 160.140, 82]
+    region:   e_341
     level:    [82, 83]
   16839001:
     template: Viridis_Wyvern
-    at:       [605.180, 23.527, 155.872, 9]
+    region:   e_345
     level:    [82, 83]
   16839002:
     template: Viridis_Wyvern
-    at:       [609.455, 15.703, 125.969, 138]
+    region:   e_345
     level:    [82, 83]
   16839003:
     template: Viridis_Wyvern
-    at:       [633.771, 21.175, 144.141, 179]
+    region:   e_345
     level:    [82, 83]
   16839004:
     template: Viridis_Wyvern_Small
     script:   Viridis_Wyvern
-    at:       [635.139, 17.888, 135.927, 247]
+    region:   e_345
     level:    [82, 83]
   16839005:
     template: Ephemeral_Limule_XLarge
     script:   Ephemeral_Limule
-    at:       [526.263, 16.633, 182.158, 49]
+    region:   e_349
     level:    [74, 75]
   16839006:
     template: Balaur
@@ -4104,107 +4104,107 @@ spawns:
     level:    [90, 90]
   16839008:
     template: Dybbuk
-    at:       [362.948, 31.360, 440.147, 169]
+    region:   ne_352
     level:    [79, 80]
   16839009:
     template: Dybbuk
-    at:       [347.636, 29.724, 434.980, 30]
+    region:   ne_352
     level:    [79, 80]
   16839010:
     template: Dybbuk
-    at:       [348.000, 25.000, 409.000, 249]
+    region:   ne_352
     level:    [79, 80]
   16839011:
     template: Dybbuk
-    at:       [367.000, 30.000, 404.000, 10]
+    region:   ne_352
     level:    [79, 80]
   16839012:
     template: Dybbuk
-    at:       [359.932, 31.563, 449.387, 62]
+    region:   ne_352
     level:    [79, 80]
   16839013:
     template: Dybbuk_Small
     script:   Dybbuk
-    at:       [389.000, 31.000, 408.000, 245]
+    region:   ne_352
     level:    [79, 80]
   16839014:
     template: Dybbuk
-    at:       [422.465, 31.895, 393.289, 171]
+    region:   ne_358
     level:    [79, 80]
   16839015:
     template: Dybbuk
-    at:       [380.949, 34.097, 410.844, 191]
+    region:   ne_358
     level:    [79, 80]
   16839016:
     template: Dybbuk
-    at:       [430.721, 31.739, 432.956, 167]
+    region:   ne_358
     level:    [79, 80]
   16839017:
     template: Dybbuk
-    at:       [408.232, 31.868, 432.980, 158]
+    region:   ne_358
     level:    [79, 80]
   16839018:
     template: Dybbuk
-    at:       [402.807, 31.878, 419.249, 212]
+    region:   ne_358
     level:    [79, 80]
   16839019:
     template: Dybbuk
-    at:       [393.609, 31.425, 392.236, 123]
+    region:   ne_358
     level:    [79, 80]
   16839020:
     template: Dybbuk_Small
     script:   Dybbuk
-    at:       [403.625, 31.890, 431.075, 194]
+    region:   ne_358
     level:    [79, 80]
   16839021:
     template: Ephemeral_Limule
-    at:       [370.000, 32.000, 455.000, 14]
+    region:   ne_365
     level:    [79, 83]
   16839022:
     template: Qaitu
-    at:       [579.386, 34.813, 403.858, 30]
+    region:   ne_366
     level:    [78, 88]
   16839023:
     template: Qaitu
-    at:       [526.716, 32.760, 401.001, 233]
+    region:   ne_366
     level:    [78, 88]
   16839024:
     template: Qaitu
-    at:       [546.081, 37.151, 411.192, 107]
+    region:   ne_366
     level:    [78, 88]
   16839025:
     template: Qaitu
-    at:       [553.989, 38.954, 417.084, 230]
+    region:   ne_366
     level:    [78, 88]
   16839026:
     template: Qaitu
-    at:       [541.136, 35.808, 410.529, 25]
+    region:   ne_366
     level:    [78, 88]
   16839027:
     template: Qaitu
-    at:       [519.377, 33.368, 451.135, 87]
+    region:   ne_371
     level:    [78, 88]
   16839028:
     template: Qaitu
-    at:       [562.203, 39.578, 442.672, 85]
+    region:   ne_371
     level:    [78, 88]
   16839029:
     template: Qaitu
-    at:       [575.199, 40.027, 461.361, 167]
+    region:   ne_371
     level:    [78, 88]
   16839030:
     template: Qaitu
-    at:       [537.746, 35.460, 429.397, 235]
+    region:   ne_371
     level:    [78, 88]
   16839031:
     template: Qaitu_Small
     script:   Qaitu
-    at:       [537.512, 39.996, 476.260, 132]
+    region:   ne_371
     level:    [78, 88]
   16839032:
     template: Ephemeral_Clionid_Large
     script:   Ephemeral_Clionid
-    at:       [521.267, 31.964, 424.460, 75]
+    region:   ne_371
     level:    [79, 82]
   16839033:
     template: Fear_Gorta
@@ -4212,94 +4212,94 @@ spawns:
     level:    [80, 85]
   16839034:
     template: Dapifer_Imp
-    at:       [336.823, 30.662, 504.366, 125]
+    region:   ne_378
     level:    [79, 80]
   16839035:
     template: Dapifer_Imp
-    at:       [323.239, 27.212, 496.854, 69]
+    region:   ne_378
     level:    [79, 80]
   16839036:
     template: Dapifer_Imp
-    at:       [353.858, 31.439, 505.457, 2]
+    region:   ne_378
     level:    [79, 80]
   16839037:
     template: Dapifer_Imp
-    at:       [398.360, 31.795, 506.212, 107]
+    region:   ne_381
     level:    [79, 80]
   16839038:
     template: Dapifer_Imp
-    at:       [422.289, 33.870, 494.855, 60]
+    region:   ne_381
     level:    [79, 80]
   16839039:
     template: Dapifer_Imp
-    at:       [393.609, 31.842, 502.120, 212]
+    region:   ne_381
     level:    [79, 80]
   16839040:
     template: Dapifer_Imp_Small
     script:   Dapifer_Imp
-    at:       [331.000, 32.000, 502.000, 203]
+    region:   ne_381
     level:    [79, 80]
   16839041:
     template: Dapifer_Imp
-    at:       [480.962, 38.920, 524.795, 31]
+    region:   ne_385
     level:    [79, 80]
   16839042:
     template: Dapifer_Imp
-    at:       [482.555, 39.526, 526.400, 54]
+    region:   ne_385
     level:    [79, 80]
   16839043:
     template: Dapifer_Imp
-    at:       [486.041, 39.526, 523.723, 123]
+    region:   ne_385
     level:    [79, 80]
   16839044:
     template: Ephemeral_Limule_XLarge
     script:   Ephemeral_Limule
-    at:       [345.515, 31.021, 531.143, 224]
+    region:   ne_22
     level:    [74, 75]
   16839045:
     template: Bakka
-    at:       [440.581, 32.216, 524.624, 194]
+    region:   ne_22
     level:    [85, 85]
   16839046:
     template: Tonberry_Bedeviler
-    at:       [395.046, 31.479, 600.968, 6]
+    region:   ne_390
     level:    [81, 82]
   16839047:
     template: Tonberry_Bedeviler
-    at:       [412.026, 31.133, 625.286, 77]
+    region:   ne_390
     level:    [81, 82]
   16839048:
     template: Tonberry_Bedeviler
-    at:       [407.394, 31.689, 596.068, 174]
+    region:   ne_390
     level:    [81, 82]
   16839049:
     template: Tonberry_Bedeviler
-    at:       [441.809, 35.394, 622.860, 51]
+    region:   ne_393
     level:    [81, 82]
   16839050:
     template: Tonberry_Bedeviler
-    at:       [448.645, 34.395, 618.250, 50]
+    region:   ne_393
     level:    [81, 82]
   16839051:
     template: Tonberry_Bedeviler
-    at:       [418.487, 32.383, 602.666, 69]
+    region:   ne_393
     level:    [81, 82]
   16839052:
     template: Tonberry_Bedeviler_Small
     script:   Tonberry_Bedeviler
-    at:       [429.626, 32.088, 613.102, 79]
+    region:   ne_393
     level:    [81, 82]
   16839053:
     template: Tonberry_Bedeviler
-    at:       [475.984, 31.469, 608.350, 41]
+    region:   ne_397
     level:    [81, 82]
   16839054:
     template: Tonberry_Bedeviler
-    at:       [459.282, 31.798, 602.928, 240]
+    region:   ne_397
     level:    [81, 82]
   16839055:
     template: Tonberry_Bedeviler
-    at:       [472.326, 31.600, 624.568, 140]
+    region:   ne_397
     level:    [81, 82]
   16839056:
     template: Ephemeral_Clionid_Small
@@ -4312,45 +4312,45 @@ spawns:
     level:    [83, 84]
   16839058:
     template: Cryptonberry_Occultist
-    at:       [459.043, 32.127, 671.252, 4]
+    region:   ne_402
     level:    [83, 84]
   16839059:
     template: Cryptonberry_Occultist
-    at:       [451.131, 37.320, 649.238, 202]
+    region:   ne_402
     level:    [83, 84]
   16839060:
     template: Cryptonberry_Occultist
-    at:       [483.924, 31.761, 667.200, 26]
+    region:   ne_404
     level:    [83, 84]
   16839061:
     template: Cryptonberry_Occultist
-    at:       [490.593, 31.828, 665.272, 105]
+    region:   ne_404
     level:    [83, 84]
   16839062:
     template: Cryptonberry_Occultist
-    at:       [491.510, 31.728, 664.107, 121]
+    region:   ne_404
     level:    [83, 84]
   16839063:
     template: Cryptonberry_Occultist
-    at:       [550.851, 29.389, 652.633, 129]
+    region:   ne_407
     level:    [83, 84]
   16839064:
     template: Cryptonberry_Occultist
-    at:       [530.687, 31.340, 651.079, 58]
+    region:   ne_407
     level:    [83, 84]
   16839065:
     template: Cryptonberry_Occultist_Small
     script:   Cryptonberry_Occultist
-    at:       [541.525, 32.134, 637.411, 241]
+    region:   ne_407
     level:    [83, 84]
   16839066:
     template: Ephemeral_Limule_Small
     script:   Ephemeral_Limule
-    at:       [479.382, 32.109, 659.902, 244]
+    region:   ne_410
     level:    [79, 83]
   16839067:
     template: Tonberry_Lieje
-    at:       [552.683, 30.739, 644.965, 129]
+    region:   ne_410
     level:    [85, 85]
   16839068:
     template: Bloodeye_Vileberry

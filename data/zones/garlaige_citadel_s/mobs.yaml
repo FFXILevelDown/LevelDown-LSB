@@ -3043,7 +3043,7 @@ spawns:
   17448961:
     template: Dire_Bat_Garlaige Citadel_S
     script:   Dire_Bat
-    at:       [-98.555, -0.500, -53.809, 63]
+    region:   c_1
     level:    [62, 64]
   17448962:
     template: Yagudo_Zealot_past
@@ -3052,7 +3052,7 @@ spawns:
   17448963:
     template: Incubus_Bats_GCS
     script:   Incubus_Bats
-    at:       [-49.105, -0.500, -61.349, 26]
+    region:   c_3
     level:    [62, 64]
   17448964:
     template: Yagudo_Abbot_outdoor_S
@@ -3076,7 +3076,7 @@ spawns:
   17448968:
     template: Dire_Bat_Garlaige Citadel_S
     script:   Dire_Bat
-    at:       [-62.981, -0.499, 23.591, 139]
+    region:   c_8
     level:    [62, 64]
   17448969:
     template: Yagudo_Prior_past
@@ -3085,7 +3085,7 @@ spawns:
   17448970:
     template: Mousse_SSG
     script:   Mousse
-    at:       [-71.361, -0.500, -9.054, 7]
+    region:   c_10
     level:    [64, 67]
   17448971:
     template: Yagudo_Templar_past
@@ -3102,12 +3102,12 @@ spawns:
   17448974:
     template: Mousse_SSG
     script:   Mousse
-    at:       [-51.283, -0.500, -37.141, 45]
+    region:   c_14
     level:    [64, 67]
   17448975:
     template: Mousse_SSG
     script:   Mousse
-    at:       [-67.123, -0.500, -29.587, 31]
+    region:   c_15
     level:    [64, 67]
   17448976:
     template: Yagudo_Lutenist_past
@@ -3122,65 +3122,65 @@ spawns:
   17448979:
     template: Dire_Bat_Garlaige Citadel_S
     script:   Dire_Bat
-    at:       [-60.974, -0.500, 65.136, 68]
+    region:   c_19
     level:    [62, 64]
   17448980:
     template: Incubus_Bats_GCS
     script:   Incubus_Bats
-    at:       [-68.449, -0.500, 67.946, 167]
+    region:   c_19
     level:    [62, 64]
   17448981:
     template: Mousse_SSG
     script:   Mousse
-    at:       [38.733, 5.582, -98.155, 173]
+    region:   c_21
     level:    [64, 67]
   17448982:
     template: Dire_Bat_Garlaige Citadel_S
     script:   Dire_Bat
-    at:       [59.385, 6.208, -82.647, 65]
+    region:   c_22
     level:    [62, 64]
   17448983:
     template: Yagudo_Abbot_outdoor_S
     script:   Yagudo_Abbot
-    at:       [-50.069, -0.500, -147.351, 193]
+    region:   c_23
     level:    [71, 74]
   17448984:
     template: Yagudo_Prior_past
     script:   Yagudo_Prior
-    at:       [5.113, -0.500, -132.602, 135]
+    region:   c_24
     level:    [71, 74]
   17448985:
     template: Thunder_Elemental
-    at:       [16.929, -0.500, -125.529, 197]
+    region:   c_24
     level:    [75, 75]
   17448986:
     template: Explosure_past
     script:   Explosure
-    at:       [217.320, -5.996, -98.776, 57]
+    region:   e_26
     level:    [64, 65]
   17448987:
     template: Explosure_past
     script:   Explosure
-    at:       [211.123, -6.506, -98.823, 1]
+    region:   e_26
     level:    [64, 65]
   17448988:
     template: Incubus_Bats_GCS
     script:   Incubus_Bats
-    at:       [22.019, 5.578, 21.224, 56]
+    region:   c_28
     level:    [62, 64]
   17448989:
     template: Dire_Bat_Garlaige Citadel_S
     script:   Dire_Bat
-    at:       [25.066, 6.635, 62.899, 23]
+    region:   c_29
     level:    [62, 64]
   17448990:
     template: Citadel_Pipistrelles
-    at:       [11.221, 6.745, 58.851, 237]
+    region:   c_30
     level:    [77, 77]
   17448991:
     template: Incubus_Bats_GCS
     script:   Incubus_Bats
-    at:       [9.805, 0.542, 99.399]
+    region:   c_31
     level:    [62, 64]
   17448992:
     template: Mousse_SSG
@@ -3225,29 +3225,29 @@ spawns:
   17449000:
     template: Yagudo_Templar_past
     script:   Yagudo_Templar
-    at:       [4.764, -0.499, -138.768, 2]
+    region:   c_40
     level:    [71, 74]
   17449001:
     template: Yagudo_Lutenist_past
     script:   Yagudo_Lutenist
-    at:       [-66.648, 0.001, -125.053, 105]
+    region:   c_41
     level:    [71, 74]
   17449002:
     template: Yagudo_Missionary
-    at:       [-69.044, 0.000, -150.321, 161]
+    region:   c_40
     level:    [71, 74]
   17449003:
     template: Yagudo_Pythoness
-    at:       [33.240, 0.000, -124.911, 241]
+    region:   c_40
     level:    [71, 74]
   17449004:
     template: Yagudos_Elemental
-    at:       [30.378, 0.000, -124.870, 255]
+    region:   c_40
     level:    [68, 68]
   17449005:
     template: Yagudo_Zealot_past
     script:   Yagudo_Zealot
-    at:       [34.217, 0.000, -154.224, 18]
+    region:   c_40
     level:    [71, 74]
   17449006:
     template: Explosure_past
@@ -3273,11 +3273,11 @@ spawns:
     level:    [68, 70]
   17449011:
     template: Scolopendrid
-    at:       [102.392, 7.625, -186.074, 81]
+    region:   s_51
     level:    [68, 70]
   17449012:
     template: Scolopendrid
-    at:       [98.908, 5.783, -200.180, 188]
+    region:   s_51
     level:    [68, 70]
   17449013:
     template: Scolopendrid
@@ -3285,19 +3285,19 @@ spawns:
     level:    [68, 70]
   17449014:
     template: Scolopendrid
-    at:       [127.318, 6.471, -119.016, 137]
+    region:   c_54
     level:    [68, 70]
   17449015:
     template: Scolopendrid
-    at:       [127.729, 6.568, -128.553, 66]
+    region:   c_54
     level:    [68, 70]
   17449016:
     template: Earth_Elemental
-    at:       [111.063, 6.583, -125.543, 175]
+    region:   c_54
     level:    [75, 75]
   17449017:
     template: Buarainech
-    at:       [114.154, 6.388, -131.777, 169]
+    region:   c_54
     level:    [80, 81]
   17449018:
     template: Scolopendrid
@@ -3305,12 +3305,12 @@ spawns:
     level:    [68, 70]
   17449019:
     template: Yagudo_Missionary
-    at:       [233.395, -0.500, -181.358, 2]
+    region:   se_59
     level:    [71, 74]
   17449020:
     template: Yagudo_Lutenist_past
     script:   Yagudo_Lutenist
-    at:       [226.570, -0.500, -181.212, 127]
+    region:   se_59
     level:    [71, 74]
   17449021:
     template: Yagudo_Zealot_past
@@ -3324,31 +3324,31 @@ spawns:
     level:    [71, 74]
   17449023:
     template: Yagudo_Pythoness
-    at:       [220.639, -6.500, -127.571, 202]
+    region:   e_63
     level:    [71, 74]
   17449024:
     template: Yagudos_Elemental
-    at:       [220.359, -6.500, -130.026, 200]
+    region:   e_63
     level:    [68, 68]
   17449025:
     template: Yagudo_Abbot_outdoor_S
     script:   Yagudo_Abbot
-    at:       [255.086, -0.500, -218.509, 251]
+    region:   se_65
     level:    [71, 74]
   17449026:
     template: Yagudo_Prior_past
     script:   Yagudo_Prior
-    at:       [254.948, -0.500, -218.468, 253]
+    region:   se_65
     level:    [71, 74]
   17449027:
     template: Explosure_past
     script:   Explosure
-    at:       [218.132, -6.000, -102.384, 186]
+    region:   e_26
     level:    [64, 65]
   17449028:
     template: Explosure_past
     script:   Explosure
-    at:       [217.613, -6.000, -98.583, 184]
+    region:   e_26
     level:    [64, 65]
   17449029:
     template: Yagudo_Transporter
@@ -3733,12 +3733,13 @@ spawns:
     template: Federation_Dispenser
   17449148:
     template: Vee_Qiqa_the_Decreer
-    at:       [-19.110, -0.500, -20.149, 98]
+    region:   c_188
   17449149:
     template: Vee_Qiqas_Elemental
+    region:   c_188
   17449150:
     template: Vee_Qiqas_Elemental
-    at:       [-19.972, -0.500, -19.945, 72]
+    region:   c_188
   17449151:
     template: Vee_Qiqas_Elemental
   17449152:
@@ -3746,30 +3747,39 @@ spawns:
     at:       [-20.087, -0.500, -19.811, 68]
   17449153:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449154:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449155:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449156:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449157:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449158:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449159:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449160:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449161:
     template: Divine_Templar
+    region:   c_188
     level:    [60, 60]
   17449162:
     template: Moo_Ouzi_the_SwiftbladeS
@@ -3807,33 +3817,42 @@ spawns:
     level:    [70, 70]
   17449172:
     template: Muu_Buxu_the_Elusive
-    at:       [39.269, 6.500, 11.108, 182]
+    region:   c_212
   17449173:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449174:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449175:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449176:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449177:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449178:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449179:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449180:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449181:
     template: Divine_Assassin
+    region:   c_212
     level:    [60, 60]
   17449182:
     template: Dee_Xalmo_the_Grim
@@ -3870,64 +3889,74 @@ spawns:
     level:    [70, 70]
   17449192:
     template: Kazan_the_Peerless
+    region:   c_232
   17449193:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449194:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449195:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449196:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449197:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449198:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449199:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449200:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449201:
     template: Plenilune_Ronin
+    region:   c_232
     level:    [60, 60]
   17449202:
     template: Vee_Seju_the_Consumed
-    at:       [-83.813, -0.579, 179.658, 40]
+    region:   c_242
     level:    [70, 70]
   17449203:
     template: Vee_Sejus_Elemental
-    at:       [-18.926, -0.579, 134.009, 254]
+    region:   c_242
     level:    [70, 70]
   17449204:
     template: Vee_Sejus_Elemental
-    at:       [-18.926, -0.579, 134.009, 254]
+    region:   c_242
     level:    [70, 70]
   17449205:
     template: Divine_Martyr
-    at:       [-180.820, -1.293, 84.948, 192]
+    region:   c_242
     level:    [70, 70]
   17449206:
     template: Divine_Martyr
-    at:       [-64.698, -0.499, 172.963, 30]
+    region:   c_242
     level:    [70, 70]
   17449207:
     template: Divine_Martyr
-    at:       [-86.332, -0.500, 178.699, 1]
+    region:   c_242
     level:    [70, 70]
   17449208:
     template: Divine_Martyr
-    at:       [-180.015, -3.413, 99.237, 192]
+    region:   c_242
     level:    [70, 70]
   17449209:
     template: Divine_Martyr
-    at:       [-179.730, -3.477, 99.112, 192]
+    region:   c_242
     level:    [70, 70]
   17449210:
     template: Divine_Martyr
@@ -3939,11 +3968,11 @@ spawns:
     level:    [70, 70]
   17449212:
     template: Divine_Martyr
-    at:       [-156.775, -0.500, 138.811, 255]
+    region:   c_242
     level:    [70, 70]
   17449213:
     template: Divine_Martyr
-    at:       [-178.793, -3.135, 94.477, 191]
+    region:   c_242
     level:    [70, 70]
   17449214:
     template: Divine_Pilgrim
@@ -4049,22 +4078,27 @@ spawns:
     level:    [60, 60]
   17449246:
     template: Fiendish_Leechkeeper
+    region:   c_286
     level:    [75, 80]
   17449247:
     template: Fiendish_Leechkeeper
+    region:   c_286
     level:    [75, 80]
   17449248:
     template: Fiendish_Leechkeeper
+    region:   c_286
     level:    [75, 80]
   17449249:
     template: Fiendish_Leechkeeper
+    region:   c_286
     level:    [75, 80]
   17449250:
     template: Fiendish_Leechkeeper
+    region:   c_286
     level:    [75, 80]
   17449251:
     template: Fiendish_Leechkeeper
-    at:       [69.261, 6.465, -29.193, 50]
+    region:   c_286
     level:    [75, 80]
   17449252:
     template: Shadowhorn

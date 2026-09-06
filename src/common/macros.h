@@ -24,14 +24,7 @@
 #include <cstdlib>
 #include <utility>
 
-// The following definitions are set by CMake based on the architecture
-// #define ENV64BIT
-// #define ENV32BIT
-
-// Ensure one of the definitions is set
-#if !defined(ENV64BIT) && !defined(ENV32BIT)
-#error "Neither ENV64BIT nor ENV32BIT is defined"
-#endif
+static_assert(sizeof(void*) == 8, "Only 64-bit builds are supported");
 
 // Debug mode
 #if defined(_DEBUG) && !defined(DEBUG)
@@ -41,11 +34,6 @@
 // Release mode
 #if !defined(_DEBUG) && !defined(RELEASE)
 #define RELEASE
-#endif
-
-// The configure-time CMAKE_BUILD_TYPE (empty on multi-config generators).
-#ifndef XI_CMAKE_BUILD_TYPE
-#define XI_CMAKE_BUILD_TYPE ""
 #endif
 
 // The config actually compiled ($<CONFIG>).

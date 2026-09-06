@@ -294,70 +294,6 @@ inline uint32 TT(uint32 working, uint32* S)
 
 void blowfish_encipher(uint32* xl, uint32* xr, const uint32* P, uint32* S)
 {
-#if defined(WIN32) && defined(_M_X86)
-
-    uint32 Xr;
-    uint32 i;
-
-    _asm {
-
-        mov        eax,dword ptr [xl]
-        mov        ebx,dword ptr [eax]
-
-        mov        eax,dword ptr [xr]
-        mov        edx,dword ptr [eax]
-        mov        dword ptr [Xr],edx
-
-        xor        ecx,ecx
-cycle:
-        mov        eax,dword ptr [P]
-        xor        ebx,dword ptr [eax+ecx*4]
-        mov        dword ptr [i],ecx
-
-        mov        ecx,dword ptr [S]
-        mov        eax,ebx
-        shr        eax,8
-        and        eax,0FFh
-        mov        eax,dword ptr [ecx+eax*4+400h]
-        and        eax,1
-        xor        eax,20h
-        mov        edx,ebx
-        shr        edx,18h
-        mov        edx,dword ptr [ecx+edx*4+0C00h]
-        and        edx,1
-        xor        edx,20h
-        add        eax,edx
-        mov        edx,ebx
-        shr        edx,10h
-        and        edx,0FFh
-        add        eax,dword ptr [ecx+edx*4+800h]
-        mov        edx,ebx
-        and        edx,0FFh
-        add        eax,dword ptr [ecx+edx*4]
-
-        xor        eax,dword ptr [Xr]
-        xchg    eax,ebx
-        mov        dword ptr [Xr],eax
-
-        mov        ecx,dword ptr [i]
-        inc        ecx
-        cmp        ecx,10h
-        jne        cycle
-
-        mov        ecx,dword ptr [Xr]
-
-        mov        eax,dword ptr [P]
-        xor        ebx,dword ptr [eax+40h]
-        xor        ecx,dword ptr [eax+44h]
-
-        mov        eax,dword ptr [xl]
-        mov        dword ptr [eax],ecx
-        mov        eax,dword ptr [xr]
-        mov        dword ptr [eax],ebx
-    }
-
-#else
-
     uint32 Xl   = 0;
     uint32 Xr   = 0;
     uint32 temp = 0;
@@ -386,76 +322,10 @@ cycle:
 
     *xl = Xl;
     *xr = Xr;
-
-#endif
 }
 
 void blowfish_decipher(uint32* xl, uint32* xr, const uint32* P, uint32* S)
 {
-#if defined(WIN32) && defined(_M_X86)
-
-    uint32 Xr;
-    uint32 i;
-
-    _asm {
-
-        mov        eax,dword ptr [xl]
-        mov        ebx,dword ptr [eax]
-
-        mov        eax,dword ptr [xr]
-        mov        edx,dword ptr [eax]
-        mov        dword ptr [Xr],edx
-
-        mov        ecx,11h
-cycle:
-        mov        eax,dword ptr [P]
-        xor        ebx,dword ptr [eax+ecx*4]
-        mov        dword ptr [i],ecx
-
-        mov        ecx,dword ptr [S]
-        mov        eax,ebx
-        shr        eax,8
-        and        eax,0FFh
-        mov        eax,dword ptr [ecx+eax*4+400h]
-        and        eax,1
-        xor        eax,20h
-        mov        edx,ebx
-        shr        edx,18h
-        mov        edx,dword ptr [ecx+edx*4+0C00h]
-        and        edx,1
-        xor        edx,20h
-        add        eax,edx
-        mov        edx,ebx
-        shr        edx,10h
-        and        edx,0FFh
-        add        eax,dword ptr [ecx+edx*4+800h]
-        mov        edx,ebx
-        and        edx,0FFh
-        add        eax,dword ptr [ecx+edx*4]
-
-        xor        eax,dword ptr [Xr]
-        xchg    eax,ebx
-        mov        dword ptr [Xr],eax
-
-        mov        ecx,dword ptr [i]
-        dec        ecx
-        cmp        ecx,1
-        jne        cycle
-
-        mov        ecx,dword ptr [Xr]
-
-        mov        eax,dword ptr [P]
-        xor        ebx,dword ptr [eax+4]
-        xor        ecx,dword ptr [eax]
-
-        mov        eax,dword ptr [xl]
-        mov        dword ptr [eax],ecx
-        mov        eax,dword ptr [xr]
-        mov        dword ptr [eax],ebx
-    }
-
-#else
-
     uint32 Xl   = 0;
     uint32 Xr   = 0;
     uint32 temp = 0;
@@ -485,14 +355,12 @@ cycle:
 
     *xl = Xl;
     *xr = Xr;
-
-#endif
 }
 
 // Decipher `count` consecutive 64-bit blocks in place (ECB, as the packet path uses them). Four blocks
 // are interleaved through one round loop so their per-block, latency-bound Feistel chains overlap in the
 // CPU's out-of-order window - ~2x throughput vs looping blowfish_decipher, output bit-identical. Any
-// 0-3 block tail is handled by the scalar routine. (The x86 _asm path above is dead on x64 builds.)
+// 0-3 block tail is handled by the scalar routine.
 void blowfish_decipher_blocks(uint32* data, size_t count, const uint32* P, uint32* S)
 {
     size_t b = 0;

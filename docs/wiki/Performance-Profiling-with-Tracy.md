@@ -17,27 +17,29 @@ We can't know how good/bad our performance is until we measure it.
 
 ## Setup
 
-### Command Line
-
-If building on the command line:
-
-- Add `-DTRACY_ENABLE=ON` to your configuration arguments and build as normal.
-
-Useful example commandline setup:
+Use the `tracy` preset. It builds `RelWithDebInfo` with the profiler compiled in, into its own `build-tracy/` directory so it does not disturb your normal build:
 
 ```sh
-cmake -S . -B build -G Ninja -DTRACY_ENABLE=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo
-cmake --build build --config RelWithDebInfo -j32
+cmake --preset tracy
+cmake --build --preset tracy
 ```
+
+The binaries are named `xi_map_tracy` and `xi_test_tracy`.
+
+Profile the `RelWithDebInfo` build. A `Debug` build is many times slower and will not give you a fair measure of runtime performance.
 
 ### Visual Studio
 
-If building from Visual Studio, select one of the `*-Tracy` build configurations and build as normal. To get a fair measure of runtime performance, you probably want to profile the `RelWithDebInfo` variant of the program.
+Select `Tracy profiling (RelWithDebInfo)` in the configuration dropdown and build as normal.
+
+### Other configurations
+
+If you need Tracy on a configuration the preset does not cover, add `-DTRACY_ENABLE=ON` to any configure command.
 
 <img width="395" alt="image" src="https://github.com/user-attachments/assets/aab0f2f8-b693-4112-9523-17005a6f20e8">
 
 ```sh
-1> Working directory: C:\ffxi\server\build\x64-Release-Tracy
+1> Working directory: C:\ffxi\server\build-tracy
 1> [CMake] -- C:/ProgramData/chocolatey/bin/ccache.exe found and enabled
 1> [CMake] -- CMAKE_SOURCE_DIR: C:/ffxi/server
 1> [CMake] -- CMAKE_SIZEOF_VOID_P == 8: 64-bit build
@@ -57,7 +59,7 @@ If building from Visual Studio, select one of the `*-Tracy` build configurations
 ...
 1> [CMake] -- Configuring done
 1> [CMake] -- Generating done
-1> [CMake] -- Build files have been written to: C:/ffxi/server/build/x64-Release-Tracy
+1> [CMake] -- Build files have been written to: C:/ffxi/server/build-tracy
 ```
 
 ## Usage (Windows)

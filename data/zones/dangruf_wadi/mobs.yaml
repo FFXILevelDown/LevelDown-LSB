@@ -1201,1243 +1201,1243 @@ spawns:
     level:    [28, 30]
   17559559:
     template: Rock_Lizard
-    at:       [-70.052, -0.343, 22.079, 14]
+    region:   e_7
     level:    [5, 8]
   17559560:
     template: Rock_Lizard
-    at:       [-76.376, -1.006, 23.138, 9]
+    region:   e_7
     level:    [5, 8]
   17559561:
     template: Rock_Lizard
-    at:       [-57.706, -0.553, 4.435, 122]
+    region:   e_7
     level:    [5, 8]
   17559562:
     template: Goblin_Thug
-    at:       [-69.476, 3.228, -88.717, 127]
+    region:   se_10
     level:    [5, 8]
   17559563:
     template: Goblin_Thug
-    at:       [-82.564, 3.309, -71.077, 127]
+    region:   se_10
     level:    [5, 8]
   17559564:
     template: Goblin_Weaver
-    at:       [-68.894, 2.743, -70.857, 57]
+    region:   se_10
     level:    [5, 8]
   17559565:
     template: Rock_Lizard
-    at:       [-91.287, 2.991, -74.035, 108]
+    region:   se_10
     level:    [5, 8]
   17559566:
     template: Rock_Lizard
-    at:       [-71.016, 2.502, -65.910, 107]
+    region:   se_10
     level:    [5, 8]
   17559567:
     template: Rock_Lizard
-    at:       [-148.000, -0.908, 19.000, 127]
+    region:   e_15
     level:    [5, 8]
   17559568:
     template: Rock_Lizard
-    at:       [-135.000, 0.040, 67.000, 127]
+    region:   e_15
     level:    [5, 8]
   17559569:
     template: Rock_Lizard
-    at:       [-140.450, -1.212, 45.842, 64]
+    region:   e_15
     level:    [5, 8]
   17559570:
     template: Goblin_Thug
-    at:       [-144.859, 1.971, 90.456, 33]
+    region:   e_18
     level:    [5, 8]
   17559571:
     template: Goblin_Weaver
-    at:       [-115.907, 2.991, 106.706, 5]
+    region:   e_18
     level:    [5, 8]
   17559572:
     template: Goblin_Thug
-    at:       [-116.673, 2.695, 130.868, 4]
+    region:   e_18
     level:    [5, 8]
   17559573:
     template: Goblin_Weaver
-    at:       [-127.628, 3.278, 127.378, 55]
+    region:   e_18
     level:    [5, 8]
   17559574:
     template: Hoarder_Hare
-    at:       [-131.000, 3.000, 114.000, 127]
+    region:   e_18
     level:    [6, 8]
   17559575:
     template: Hoarder_Hare
-    at:       [-128.549, 4.003, 131.276, 117]
+    region:   e_18
     level:    [6, 8]
   17559576:
     template: Hoarder_Hare
-    at:       [-109.000, 4.000, 118.000, 127]
+    region:   e_18
     level:    [6, 8]
   17559577:
     template: Goblin_Thug
-    at:       [-191.000, 4.000, 82.000, 100]
+    region:   c_25
     level:    [5, 8]
   17559578:
     template: Goblin_Weaver
-    at:       [-347.000, 3.000, -93.000, 127]
+    region:   c_25
     level:    [5, 8]
   17559579:
     template: Goblin_Thug
-    at:       [-389.000, -0.600, -98.000, 127]
+    region:   c_25
     level:    [5, 8]
   17559580:
     template: Goblin_Weaver
-    at:       [-206.000, 3.886, 86.000, 127]
+    region:   c_25
     level:    [5, 8]
   17559581:
     template: Hoarder_Hare
-    at:       [-193.354, 4.223, 93.049, 127]
+    region:   c_25
     level:    [6, 8]
   17559582:
     template: Hoarder_Hare
-    at:       [-209.536, 3.524, 86.006, 124]
+    region:   c_25
     level:    [6, 8]
   17559583:
     template: Hoarder_Hare
-    at:       [-189.000, 3.000, 79.000, 127]
+    region:   c_25
     level:    [6, 8]
   17559584:
     template: Teporingo
-    at:       [-203.000, 4.000, 81.000, 108]
+    region:   c_25
     level:    [20, 20]
   17559585:
     template: Goblin_Ambusher
-    at:       [-264.175, 2.767, 23.157, 127]
+    region:   c_33
     level:    [12, 16]
   17559586:
     template: Goblin_Ambusher
-    at:       [-273.220, 2.944, -7.446, 37]
+    region:   c_33
     level:    [12, 16]
   17559587:
     template: Goblin_Tinkerer
-    at:       [-280.000, 4.000, 32.000, 127]
+    region:   c_33
     level:    [12, 16]
   17559588:
     template: Goblin_Butcher
-    at:       [-265.142, 3.638, 11.529, 91]
+    region:   c_33
     level:    [12, 16]
   17559589:
     template: Wadi_Hare
-    at:       [-282.000, 4.000, 19.000, 87]
+    region:   c_33
     level:    [11, 14]
   17559590:
     template: Wadi_Hare
-    at:       [-251.779, 4.286, 44.743, 108]
+    region:   c_33
     level:    [11, 14]
   17559591:
     template: Wadi_Hare
-    at:       [-223.276, 3.596, 23.259, 56]
+    region:   c_33
     level:    [11, 14]
   17559592:
     template: Steam_Lizard
-    at:       [-296.000, 3.000, -81.000, 127]
+    region:   c_33
     level:    [16, 20]
   17559593:
     template: Goblin_Ambusher
-    at:       [-253.833, 2.562, 33.486, 16]
+    region:   c_41
     level:    [12, 16]
   17559594:
     template: Goblin_Ambusher
-    at:       [-331.901, 3.953, 8.353, 236]
+    region:   c_41
     level:    [12, 16]
   17559595:
     template: Goblin_Tinkerer
-    at:       [-332.397, 3.861, 8.651, 68]
+    region:   c_41
     level:    [12, 16]
   17559596:
     template: Goblin_Butcher
-    at:       [-310.890, 4.000, 1.750, 115]
+    region:   c_41
     level:    [12, 16]
   17559597:
     template: Wadi_Hare
-    at:       [-331.563, 2.556, 45.812, 69]
+    region:   c_41
     level:    [11, 14]
   17559598:
     template: Wadi_Hare
-    at:       [-290.000, 4.000, 34.000, 127]
+    region:   c_41
     level:    [11, 14]
   17559599:
     template: Wadi_Hare
-    at:       [-310.947, 4.268, 16.451, 93]
+    region:   c_41
     level:    [11, 14]
   17559600:
     template: Steam_Lizard
-    at:       [-269.000, 3.000, -83.000, 127]
+    region:   c_41
     level:    [16, 20]
   17559601:
     template: Wadi_Hare
-    at:       [-323.249, 3.932, -5.855, 85]
+    region:   s_49
     level:    [11, 14]
   17559602:
     template: Wadi_Hare
-    at:       [-324.605, 2.908, 46.643, 127]
+    region:   s_49
     level:    [11, 14]
   17559603:
     template: Rock_Lizard
-    at:       [-315.000, 4.000, 35.000, 127]
+    region:   se_51
     level:    [5, 8]
   17559604:
     template: Rock_Lizard
-    at:       [-315.969, 3.331, 15.094, 127]
+    region:   se_51
     level:    [5, 8]
   17559605:
     template: Rock_Lizard
-    at:       [-219.672, -0.050, -34.149, 127]
+    region:   se_53
     level:    [5, 8]
   17559606:
     template: Goblin_Thug
-    at:       [-173.365, -1.258, -60.782, 24]
+    region:   se_55
     level:    [5, 8]
   17559607:
     template: Goblin_Weaver
-    at:       [-181.926, -1.334, -11.977, 104]
+    region:   se_55
     level:    [5, 8]
   17559608:
     template: Goblin_Fisher
-    at:       [-80.000, 4.000, -219.000, 63]
+    region:   se_55
     level:    [5, 8]
   17559609:
     template: Goblin_Thug
-    at:       [-49.791, 3.631, -222.531, 103]
+    region:   se_55
     level:    [5, 8]
   17559610:
     template: Goblin_Weaver
-    at:       [-41.003, 2.994, -193.217, 69]
+    region:   se_55
     level:    [5, 8]
   17559611:
     template: Goblin_Fisher
-    at:       [-28.016, 4.263, -210.032, 15]
+    region:   se_55
     level:    [5, 8]
   17559612:
     template: Rock_Lizard
-    at:       [-25.000, 3.000, -186.000, 127]
+    region:   se_55
     level:    [5, 8]
   17559613:
     template: Stone_Eater
-    at:       [-59.778, 3.590, -228.729, 127]
+    region:   se_55
     level:    [3, 5]
   17559614:
     template: Stone_Eater
-    at:       [-28.014, 3.265, -202.174, 49]
+    region:   se_55
     level:    [3, 5]
   17559615:
     template: Stone_Eater
-    at:       [-35.111, 3.108, -202.215, 127]
+    region:   se_55
     level:    [3, 5]
   17559616:
     template: Goblin_Thug
-    at:       [-66.000, 3.872, -233.000, 127]
+    region:   se_64
     level:    [5, 8]
   17559617:
     template: Goblin_Weaver
-    at:       [-35.768, 3.158, -213.303, 89]
+    region:   se_64
     level:    [5, 8]
   17559618:
     template: Goblin_Fisher
-    at:       [-48.540, 4.284, -251.446, 127]
+    region:   se_64
     level:    [5, 8]
   17559619:
     template: Goblin_Thug
-    at:       [-51.000, 4.107, -204.000, 127]
+    region:   se_64
     level:    [5, 8]
   17559620:
     template: Goblin_Weaver
-    at:       [-76.000, 4.241, -204.000, 127]
+    region:   se_64
     level:    [5, 8]
   17559621:
     template: Goblin_Fisher
-    at:       [-92.024, 3.039, -243.836, 127]
+    region:   se_64
     level:    [5, 8]
   17559622:
     template: Rock_Lizard
-    at:       [-86.255, 3.689, -248.212, 127]
+    region:   se_64
     level:    [5, 8]
   17559623:
     template: Stone_Eater
-    at:       [-86.703, 3.537, -231.260, 75]
+    region:   se_64
     level:    [3, 5]
   17559624:
     template: Stone_Eater
-    at:       [-91.463, 2.385, -192.755, 127]
+    region:   se_64
     level:    [3, 5]
   17559625:
     template: Stone_Eater
-    at:       [-63.000, 3.000, -193.000, 127]
+    region:   se_64
     level:    [3, 5]
   17559626:
     template: Rock_Lizard
-    at:       [-90.095, 3.931, -206.040, 127]
+    region:   se_74
     level:    [5, 8]
   17559627:
     template: Rock_Lizard
-    at:       [-65.000, 4.000, -251.000, 104]
+    region:   se_74
     level:    [5, 8]
   17559628:
     template: Rock_Lizard
-    at:       [-98.841, 2.869, -222.689, 80]
+    region:   se_74
     level:    [5, 8]
   17559629:
     template: Goblin_Thug
-    at:       [-144.646, -0.927, -219.475, 127]
+    region:   se_78
     level:    [5, 8]
   17559630:
     template: Goblin_Weaver
-    at:       [-209.478, -1.024, -219.290, 127]
+    region:   se_78
     level:    [5, 8]
   17559631:
     template: Goblin_Fisher
-    at:       [-220.000, -1.006, -230.000, 127]
+    region:   se_78
     level:    [5, 8]
   17559632:
     template: Goblin_Thug
-    at:       [-151.558, 3.024, -108.578, 127]
+    region:   se_78
     level:    [5, 8]
   17559633:
     template: Goblin_Weaver
-    at:       [-169.611, 3.513, -143.576, 23]
+    region:   se_78
     level:    [5, 8]
   17559634:
     template: Goblin_Fisher
-    at:       [-172.085, 2.999, -160.264, 127]
+    region:   se_78
     level:    [5, 8]
   17559635:
     template: Rock_Lizard
-    at:       [-169.718, 4.144, -113.064, 73]
+    region:   se_78
     level:    [5, 8]
   17559636:
     template: Wadi_Crab
-    at:       [-157.118, 4.119, -146.662, 48]
+    region:   se_78
     level:    [7, 9]
   17559637:
     template: Wadi_Crab
-    at:       [-197.655, 3.004, -109.342, 127]
+    region:   se_78
     level:    [7, 9]
   17559638:
     template: Wadi_Crab
-    at:       [-202.781, 3.004, -152.500, 127]
+    region:   se_78
     level:    [7, 9]
   17559639:
     template: Goblin_Thug
-    at:       [-195.335, 3.085, -155.813, 22]
+    region:   s_88
     level:    [5, 8]
   17559640:
     template: Goblin_Weaver
-    at:       [-166.618, 3.989, -122.072, 94]
+    region:   s_88
     level:    [5, 8]
   17559641:
     template: Goblin_Fisher
-    at:       [-156.209, 3.038, -172.390, 79]
+    region:   s_88
     level:    [5, 8]
   17559642:
     template: Goblin_Thug
-    at:       [-243.000, 3.198, -128.000, 127]
+    region:   s_88
     level:    [5, 8]
   17559643:
     template: Goblin_Weaver
-    at:       [-212.515, 3.344, -125.240, 26]
+    region:   s_88
     level:    [5, 8]
   17559644:
     template: Goblin_Fisher
-    at:       [-218.823, 3.006, -158.359, 127]
+    region:   s_88
     level:    [5, 8]
   17559645:
     template: Rock_Lizard
-    at:       [-253.000, 3.000, -171.000, 18]
+    region:   s_88
     level:    [5, 8]
   17559646:
     template: Wadi_Crab
-    at:       [-232.126, 2.968, -164.215, 127]
+    region:   s_88
     level:    [7, 9]
   17559647:
     template: Wadi_Crab
-    at:       [-247.893, 2.874, -147.280, 77]
+    region:   s_88
     level:    [7, 9]
   17559648:
     template: Wadi_Crab
-    at:       [-213.000, 3.571, -110.000, 116]
+    region:   s_88
     level:    [7, 9]
   17559649:
     template: Rock_Lizard
-    at:       [-227.734, 2.817, -168.645, 66]
+    region:   s_97
     level:    [5, 8]
   17559650:
     template: Goblin_Thug
-    at:       [-238.334, 4.038, -107.629, 121]
+    region:   s_99
     level:    [5, 8]
   17559651:
     template: Goblin_Weaver
-    at:       [-212.303, 2.938, -161.825, 23]
+    region:   s_99
     level:    [5, 8]
   17559652:
     template: Goblin_Thug
-    at:       [-305.000, 3.234, -142.000, 88]
+    region:   s_99
     level:    [5, 8]
   17559653:
     template: Goblin_Weaver
-    at:       [-325.448, 3.017, -158.420, 54]
+    region:   s_99
     level:    [5, 8]
   17559654:
     template: Rock_Lizard
-    at:       [-311.049, 2.980, -169.857, 127]
+    region:   s_99
     level:    [5, 8]
   17559655:
     template: Wadi_Crab
-    at:       [-345.000, 4.000, -171.000, 32]
+    region:   s_99
     level:    [7, 9]
   17559656:
     template: Goblin_Thug
-    at:       [-309.595, 2.930, -153.633, 127]
+    region:   s_105
     level:    [5, 8]
   17559657:
     template: Goblin_Weaver
-    at:       [-319.505, 2.999, -161.306, 123]
+    region:   s_105
     level:    [5, 8]
   17559658:
     template: Goblin_Thug
-    at:       [-332.129, 3.634, -146.782, 127]
+    region:   s_105
     level:    [5, 8]
   17559659:
     template: Goblin_Weaver
-    at:       [-361.697, 3.500, -152.079, 127]
+    region:   s_105
     level:    [5, 8]
   17559660:
     template: Rock_Lizard
-    at:       [-374.349, 3.788, -151.361, 127]
+    region:   s_105
     level:    [5, 8]
   17559661:
     template: Wadi_Crab
-    at:       [-366.712, 3.274, -148.171, 27]
+    region:   s_105
     level:    [7, 9]
   17559662:
     template: Goblin_Ambusher
-    at:       [-375.000, 3.000, -172.000, 125]
+    region:   s_110
     level:    [12, 16]
   17559663:
     template: Goblin_Ambusher
-    at:       [-345.000, 3.651, -155.000, 127]
+    region:   s_110
     level:    [12, 16]
   17559664:
     template: Goblin_Tinkerer
-    at:       [-351.825, 3.701, -151.196, 81]
+    region:   s_110
     level:    [12, 16]
   17559665:
     template: Goblin_Butcher
-    at:       [-299.046, 3.915, -72.442, 110]
+    region:   s_110
     level:    [12, 16]
   17559666:
     template: Wadi_Leech
-    at:       [-317.389, 3.500, -76.478, 126]
+    region:   s_110
     level:    [12, 14]
   17559667:
     template: Wadi_Leech
-    at:       [-338.000, 4.000, -80.000, 127]
+    region:   s_110
     level:    [11, 14]
   17559668:
     template: Wadi_Leech
-    at:       [-317.077, 3.977, -66.049, 127]
+    region:   s_110
     level:    [11, 14]
   17559669:
     template: Steam_Lizard
-    at:       [-339.000, 3.000, -82.000, 127]
+    region:   s_110
     level:    [16, 20]
   17559670:
     template: Goblin_Ambusher
-    at:       [-264.732, 3.445, -68.226, 127]
+    region:   s_118
     level:    [12, 16]
   17559671:
     template: Goblin_Ambusher
-    at:       [-302.649, 3.894, -89.864, 127]
+    region:   s_118
     level:    [12, 16]
   17559672:
     template: Goblin_Tinkerer
-    at:       [-285.000, 3.952, -86.000, 40]
+    region:   s_118
     level:    [12, 16]
   17559673:
     template: Goblin_Butcher
-    at:       [-378.000, 3.000, -95.000, 127]
+    region:   s_118
     level:    [12, 16]
   17559674:
     template: Wadi_Leech
-    at:       [-345.000, 4.000, -92.000, 93]
+    region:   s_118
     level:    [11, 14]
   17559675:
     template: Wadi_Leech
-    at:       [-383.000, 2.000, -98.000, 127]
+    region:   s_118
     level:    [11, 14]
   17559676:
     template: Wadi_Leech
-    at:       [-356.863, 2.937, -92.540, 127]
+    region:   s_118
     level:    [11, 14]
   17559677:
     template: Steam_Lizard
-    at:       [-320.000, 3.000, -88.000, 127]
+    region:   s_118
     level:    [16, 20]
   17559678:
     template: Goblin_Brigand
-    at:       [-432.000, 4.000, -6.000, 127]
+    region:   c_126
     level:    [86, 87]
   17559679:
     template: Goblin_Headsman
-    at:       [-439.000, 4.000, 38.000, 127]
+    region:   c_126
     level:    [86, 87]
   17559680:
     template: Goblin_Healer
-    at:       [-486.000, 3.000, -59.000, 127]
+    region:   c_126
     level:    [86, 87]
   17559681:
     template: Goblin_Brigand
-    at:       [-266.000, -1.000, 143.000, 127]
+    region:   c_126
     level:    [86, 87]
   17559682:
     template: Goblin_Headsman
-    at:       [-226.000, -1.000, 222.000, 127]
+    region:   c_126
     level:    [86, 87]
   17559683:
     template: Goblin_Healer
-    at:       [-242.000, 3.000, 309.000, 127]
+    region:   c_126
     level:    [86, 87]
   17559684:
     template: Witchetty_Grub
-    at:       [-325.000, 3.000, 202.000, 127]
+    region:   c_126
     level:    [89, 90]
   17559685:
     template: Witchetty_Grub
-    at:       [-309.000, 3.000, 186.000, 127]
+    region:   c_133
     level:    [88, 90]
   17559686:
     template: Goblin_Brigand
-    at:       [-201.000, 3.000, 556.000, 127]
+    region:   e_134
     level:    [86, 87]
   17559687:
     template: Goblin_Headsman
-    at:       [-344.000, -1.000, 91.000, 127]
+    region:   e_134
     level:    [86, 87]
   17559688:
     template: Goblin_Healer
-    at:       [-308.000, 3.000, 397.000, 127]
+    region:   e_134
     level:    [86, 87]
   17559689:
     template: Couloir_Leech
-    at:       [-272.000, 3.000, 328.000, 21]
+    region:   e_134
     level:    [87, 88]
   17559690:
     template: Couloir_Leech
-    at:       [-488.000, 3.000, -6.000, 105]
+    region:   e_134
     level:    [87, 88]
   17559691:
     template: Goblin_Brigand
-    at:       [-133.237, 4.118, 205.484, 127]
+    region:   e_139
     level:    [86, 87]
   17559692:
     template: Goblin_Headsman
-    at:       [-114.533, 3.479, 209.173, 107]
+    region:   e_139
     level:    [86, 87]
   17559693:
     template: Goblin_Healer
-    at:       [-121.262, 3.002, 241.411, 127]
+    region:   e_139
     level:    [86, 87]
   17559694:
     template: Couloir_Leech
-    at:       [-409.000, 4.000, 123.000, 127]
+    region:   e_139
     level:    [87, 88]
   17559695:
     template: Couloir_Leech
-    at:       [-428.000, 3.000, 118.000, 127]
+    region:   e_139
     level:    [87, 88]
   17559696:
     template: Goblin_Brigand
-    at:       [-127.748, 2.807, 252.743, 127]
+    region:   e_144
     level:    [86, 87]
   17559697:
     template: Goblin_Headsman
-    at:       [-117.000, 3.000, 287.000, 127]
+    region:   e_144
     level:    [86, 87]
   17559698:
     template: Goblin_Healer
-    at:       [-230.000, 3.000, 278.000, 127]
+    region:   e_144
     level:    [86, 87]
   17559699:
     template: Couloir_Leech
-    at:       [-401.000, 3.000, -48.000, 52]
+    region:   e_144
     level:    [87, 88]
   17559700:
     template: Couloir_Leech
-    at:       [-468.000, 3.000, -1.000, 46]
+    region:   e_144
     level:    [87, 88]
   17559701:
     template: Goblin_Brigand
-    at:       [-460.000, 3.000, -85.000, 127]
+    region:   e_149
     level:    [86, 87]
   17559702:
     template: Goblin_Brigand
-    at:       [-402.000, 4.000, 2.000, 127]
+    region:   e_149
     level:    [86, 87]
   17559703:
     template: Witchetty_Grub
-    at:       [-462.000, 3.000, 248.000, 89]
+    region:   e_149
     level:    [88, 90]
   17559704:
     template: Witchetty_Grub
-    at:       [-454.000, 3.000, 199.000, 127]
+    region:   e_149
     level:    [88, 90]
   17559705:
     template: Goblin_Brigand
-    at:       [-66.389, 2.981, 240.043, 127]
+    region:   ne_153
     level:    [86, 87]
   17559706:
     template: Goblin_Headsman
-    at:       [-73.054, 3.000, 274.203, 70]
+    region:   ne_153
     level:    [86, 87]
   17559707:
     template: Goblin_Healer
-    at:       [-85.016, 3.001, 272.970, 127]
+    region:   ne_153
     level:    [86, 87]
   17559708:
     template: Prim_Pika
-    at:       [-486.000, 3.000, 14.000, 127]
+    region:   ne_156
     level:    [88, 89]
   17559709:
     template: Prim_Pika
-    at:       [-447.000, 4.000, 17.000, 127]
+    region:   ne_156
     level:    [88, 89]
   17559710:
     template: Prim_Pika
-    at:       [-475.000, 4.000, 238.000, 127]
+    region:   ne_156
     level:    [88, 89]
   17559711:
     template: Goblin_Brigand
-    at:       [-240.000, 3.000, 531.000, 127]
+    region:   ne_159
     level:    [86, 87]
   17559712:
     template: Goblin_Headsman
-    at:       [-108.000, 3.000, 345.000, 127]
+    region:   ne_159
     level:    [86, 87]
   17559713:
     template: Goblin_Healer
-    at:       [-460.000, 3.000, 325.000, 127]
+    region:   ne_159
     level:    [86, 87]
   17559714:
     template: Prim_Pika
-    at:       [-120.436, 2.984, 402.132, 14]
+    region:   ne_159
     level:    [88, 89]
   17559715:
     template: Prim_Pika
-    at:       [-123.230, 2.679, 411.743, 119]
+    region:   ne_159
     level:    [88, 89]
   17559716:
     template: Prim_Pika
-    at:       [-100.657, 3.004, 386.181, 33]
+    region:   ne_159
     level:    [88, 89]
   17559717:
     template: Goblin_Brigand
-    at:       [-83.000, 3.000, 482.000, 127]
+    region:   n_165
     level:    [86, 87]
   17559718:
     template: Goblin_Headsman
-    at:       [-86.000, 3.514, 387.000, 127]
+    region:   n_165
     level:    [86, 87]
   17559719:
     template: Goblin_Healer
-    at:       [-122.580, 2.935, 376.096, 127]
+    region:   n_165
     level:    [86, 87]
   17559720:
     template: Prim_Pika
-    at:       [-307.000, 3.000, 395.000, 127]
+    region:   n_165
     level:    [88, 89]
   17559721:
     template: Prim_Pika
-    at:       [-99.666, 2.906, 408.084, 27]
+    region:   n_165
     level:    [88, 89]
   17559722:
     template: Prim_Pika
-    at:       [-142.521, 3.593, 379.200, 127]
+    region:   n_165
     level:    [88, 89]
   17559723:
     template: Goblin_Brigand
-    at:       [-146.555, 3.003, 359.116, 32]
+    region:   n_171
     level:    [86, 87]
   17559724:
     template: Goblin_Headsman
-    at:       [-159.001, 3.424, 367.912, 113]
+    region:   n_171
     level:    [86, 87]
   17559725:
     template: Goblin_Healer
-    at:       [-196.000, 3.000, 335.000, 127]
+    region:   n_171
     level:    [86, 87]
   17559726:
     template: Prim_Pika
-    at:       [-443.000, 4.000, 200.000, 26]
+    region:   n_171
     level:    [88, 89]
   17559727:
     template: Prim_Pika
-    at:       [-172.308, 2.872, 355.795, 127]
+    region:   n_171
     level:    [88, 89]
   17559728:
     template: Prim_Pika
-    at:       [-168.615, 3.000, 364.416, 86]
+    region:   n_171
     level:    [88, 89]
   17559729:
     template: Goblin_Headsman
-    at:       [-380.000, 3.000, 397.000, 127]
+    region:   ne_177
     level:    [86, 87]
   17559730:
     template: Goblin_Headsman
-    at:       [-434.000, 3.000, -140.000, 127]
+    region:   ne_177
     level:    [86, 87]
   17559731:
     template: Goblin_Headsman
-    at:       [-202.000, 3.000, 362.000, 6]
+    region:   ne_177
     level:    [86, 87]
   17559732:
     template: Witchetty_Grub
-    at:       [-127.000, 3.000, 192.000, 127]
+    region:   ne_177
     level:    [88, 90]
   17559733:
     template: Witchetty_Grub
-    at:       [-433.000, 3.000, 251.000, 127]
+    region:   ne_177
     level:    [88, 90]
   17559734:
     template: Goblin_Healer
-    at:       [-219.288, 2.982, 323.731, 127]
+    region:   ne_182
     level:    [86, 87]
   17559735:
     template: Goblin_Healer
-    at:       [-202.393, 3.004, 348.961, 127]
+    region:   ne_182
     level:    [86, 87]
   17559736:
     template: Goblin_Healer
-    at:       [-203.000, 3.000, 314.000, 127]
+    region:   ne_182
     level:    [86, 87]
   17559737:
     template: Witchetty_Grub
-    at:       [-110.000, 3.000, 186.000, 7]
+    region:   ne_182
     level:    [88, 90]
   17559738:
     template: Witchetty_Grub
-    at:       [-106.000, 3.000, 220.000, 70]
+    region:   ne_182
     level:    [88, 90]
   17559739:
     template: Natty_Gibbon
-    at:       [-19.000, -1.000, 600.000, 127]
+    region:   ne_187
     level:    [92, 93]
   17559740:
     template: Natty_Gibbon
-    at:       [-39.000, -1.000, 579.000, 127]
+    region:   ne_187
     level:    [92, 93]
   17559741:
     template: Natty_Gibbon
-    at:       [-282.000, 4.000, 393.000, 127]
+    region:   ne_187
     level:    [92, 93]
   17559742:
     template: Natty_Gibbon
-    at:       [-173.000, 4.000, 523.000, 40]
+    region:   ne_187
     level:    [92, 93]
   17559743:
     template: Trimmer
-    at:       [-185.000, 3.000, 544.000, 127]
+    region:   ne_187
     level:    [90, 92]
   17559744:
     template: Trimmer
-    at:       [-322.000, 4.000, 427.000, 127]
+    region:   ne_187
     level:    [90, 92]
   17559745:
     template: Trimmer
-    at:       [-290.000, 4.000, 444.000, 127]
+    region:   ne_187
     level:    [90, 92]
   17559746:
     template: Trimmer
-    at:       [-246.000, 4.000, 551.000, 127]
+    region:   ne_187
     level:    [90, 91]
   17559747:
     template: Witchetty_Grub
-    at:       [-313.000, 3.000, 208.000, 108]
+    region:   ne_195
     level:    [88, 90]
   17559748:
     template: Witchetty_Grub
-    at:       [-346.000, 3.000, 230.000, 1]
+    region:   ne_195
     level:    [88, 90]
   17559749:
     template: Witchetty_Grub
-    at:       [-478.000, 3.000, 11.000, 66]
+    region:   ne_195
     level:    [88, 90]
   17559750:
     template: Witchetty_Grub
-    at:       [-424.000, 3.000, -6.000, 69]
+    region:   ne_198
     level:    [88, 89]
   17559751:
     template: Witchetty_Grub
-    at:       [-83.000, 3.000, 259.000, 127]
+    region:   ne_198
     level:    [89, 90]
   17559752:
     template: Witchetty_Grub
-    at:       [-92.000, 3.000, 234.000, 8]
+    region:   ne_198
     level:    [88, 90]
   17559753:
     template: Natty_Gibbon
-    at:       [-197.000, 3.000, 522.000, 127]
+    region:   n_201
     level:    [92, 93]
   17559754:
     template: Natty_Gibbon
-    at:       [-210.000, 3.000, 555.000, 5]
+    region:   n_201
     level:    [92, 93]
   17559755:
     template: Natty_Gibbon
-    at:       [-85.000, 3.000, 526.000, 126]
+    region:   n_201
     level:    [92, 93]
   17559756:
     template: Trimmer
-    at:       [-256.000, 3.000, 297.000, 127]
+    region:   n_201
     level:    [90, 92]
   17559757:
     template: Trimmer
-    at:       [-249.000, 4.000, 325.000, 127]
+    region:   n_201
     level:    [90, 92]
   17559758:
     template: Trimmer
-    at:       [-256.000, 3.000, 423.000, 127]
+    region:   n_201
     level:    [91, 92]
   17559759:
     template: Natty_Gibbon
-    at:       [-237.000, 4.000, 521.000, 127]
+    region:   n_207
     level:    [92, 93]
   17559760:
     template: Natty_Gibbon
-    at:       [-59.000, -1.000, 554.000, 24]
+    region:   n_207
     level:    [92, 93]
   17559761:
     template: Natty_Gibbon
-    at:       [-73.000, 4.000, 519.000, 127]
+    region:   n_207
     level:    [92, 93]
   17559762:
     template: Trimmer
-    at:       [-85.000, 4.000, 510.000, 127]
+    region:   n_207
     level:    [90, 92]
   17559763:
     template: Trimmer
-    at:       [-76.000, 4.000, 489.000, 127]
+    region:   n_207
     level:    [90, 92]
   17559764:
     template: Trimmer
-    at:       [-86.000, 4.000, 407.000, 127]
+    region:   n_207
     level:    [90, 92]
   17559765:
     template: Natty_Gibbon
-    at:       [-79.000, 4.000, 501.000, 127]
+    region:   ne_213
     level:    [92, 93]
   17559766:
     template: Natty_Gibbon
-    at:       [-73.000, 4.000, 470.000, 127]
+    region:   ne_213
     level:    [92, 93]
   17559767:
     template: Natty_Gibbon
-    at:       [-86.000, 3.000, 472.000, 127]
+    region:   ne_213
     level:    [92, 93]
   17559768:
     template: Trimmer
-    at:       [-175.000, 3.000, 345.000, 127]
+    region:   ne_213
     level:    [91, 92]
   17559769:
     template: Trimmer
-    at:       [-322.000, 4.000, 389.000, 127]
+    region:   ne_213
     level:    [90, 91]
   17559770:
     template: Trimmer
-    at:       [-210.000, 4.000, 564.000, 127]
+    region:   ne_213
     level:    [90, 91]
   17559771:
     template: Natty_Gibbon
-    at:       [-278.000, 3.000, 413.000, 127]
+    region:   n_219
     level:    [92, 93]
   17559772:
     template: Natty_Gibbon
-    at:       [-219.000, -1.000, 398.000, 66]
+    region:   n_219
     level:    [92, 93]
   17559773:
     template: Natty_Gibbon
-    at:       [-142.000, -2.000, 462.000, 127]
+    region:   n_219
     level:    [92, 93]
   17559774:
     template: Fume_Lizard
-    at:       [-60.000, -0.880, 574.000, 65]
+    region:   n_219
     level:    [87, 89]
   17559775:
     template: Fume_Lizard
-    at:       [-151.000, 3.000, 515.000, 66]
+    region:   n_219
     level:    [87, 89]
   17559776:
     template: Fume_Lizard
-    at:       [-204.000, 3.000, 521.000, 127]
+    region:   n_219
     level:    [87, 89]
   17559777:
     template: Natty_Gibbon
-    at:       [-139.000, -1.000, 558.000, 61]
+    region:   n_225
     level:    [92, 93]
   17559778:
     template: Natty_Gibbon
-    at:       [-139.000, -1.000, 441.000, 44]
+    region:   n_225
     level:    [92, 93]
   17559779:
     template: Natty_Gibbon
-    at:       [-180.000, -1.000, 412.000, 77]
+    region:   n_225
     level:    [92, 93]
   17559780:
     template: Fume_Lizard
-    at:       [-217.236, 3.222, 572.496, 127]
+    region:   n_225
     level:    [87, 89]
   17559781:
     template: Fume_Lizard
-    at:       [-198.687, 3.500, 543.737, 127]
+    region:   n_225
     level:    [87, 89]
   17559782:
     template: Fume_Lizard
-    at:       [-191.000, 3.000, 563.000, 127]
+    region:   n_225
     level:    [87, 89]
   17559783:
     template: Natty_Gibbon
-    at:       [-277.000, 3.000, 435.000, 55]
+    region:   n_231
     level:    [92, 93]
   17559784:
     template: Natty_Gibbon
-    at:       [-315.000, 4.000, 437.000, 105]
+    region:   n_231
     level:    [92, 93]
   17559785:
     template: Natty_Gibbon
-    at:       [-309.000, 4.000, 410.000, 127]
+    region:   n_231
     level:    [92, 93]
   17559786:
     template: Fume_Lizard
-    at:       [-229.000, 4.000, 514.000, 58]
+    region:   n_231
     level:    [87, 89]
   17559787:
     template: Fume_Lizard
-    at:       [-244.312, 2.973, 515.084, 127]
+    region:   n_231
     level:    [87, 89]
   17559788:
     template: Fume_Lizard
-    at:       [-218.675, 2.973, 524.223, 127]
+    region:   n_231
     level:    [87, 89]
   17559789:
     template: Fume_Lizard
-    at:       [-252.665, 4.351, 527.816, 75]
+    region:   nw_237
     level:    [87, 89]
   17559790:
     template: Fume_Lizard
-    at:       [-236.000, 4.000, 559.000, 61]
+    region:   nw_237
     level:    [87, 89]
   17559791:
     template: Fume_Lizard
-    at:       [-253.000, 3.000, 510.000, 127]
+    region:   nw_239
     level:    [87, 89]
   17559792:
     template: Fume_Lizard
-    at:       [-160.000, 4.000, 523.000, 127]
+    region:   nw_239
     level:    [87, 89]
   17559793:
     template: Fume_Lizard
-    at:       [-210.319, 2.993, 507.866, 43]
+    region:   nw_239
     level:    [87, 89]
   17559794:
     template: Goblin_Conjurer
-    at:       [-76.000, 3.000, 242.000, 127]
+    region:   w_242
     level:    [90, 91]
   17559795:
     template: Goblin_Conjurer
-    at:       [-420.000, 4.000, 353.000, 127]
+    region:   w_242
     level:    [90, 91]
   17559796:
     template: Prim_Pika
-    at:       [-178.332, 2.686, 535.476, 127]
+    region:   w_242
     level:    [89, 90]
   17559797:
     template: Prim_Pika
-    at:       [-404.000, 3.000, -20.000, 127]
+    region:   w_242
     level:    [89, 90]
   17559798:
     template: Prim_Pika
-    at:       [-481.000, 4.000, 203.000, 127]
+    region:   w_242
     level:    [89, 90]
   17559799:
     template: Goblin_Conjurer
-    at:       [-101.000, 3.000, 250.000, 127]
+    region:   w_247
     level:    [90, 91]
   17559800:
     template: Goblin_Conjurer
-    at:       [-180.000, -1.000, 279.000, 127]
+    region:   w_247
     level:    [90, 91]
   17559801:
     template: Prim_Pika
-    at:       [-247.714, 2.994, 440.037, 53]
+    region:   w_247
     level:    [89, 90]
   17559802:
     template: Prim_Pika
-    at:       [-391.000, 3.000, 34.000, 127]
+    region:   w_247
     level:    [89, 90]
   17559803:
     template: Prim_Pika
-    at:       [-263.421, 2.999, 437.599, 82]
+    region:   w_247
     level:    [89, 90]
   17559804:
     template: Goblin_Conjurer
-    at:       [-336.000, -1.000, 147.000, 127]
+    region:   c_252
     level:    [90, 91]
   17559805:
     template: Goblin_Conjurer
-    at:       [-231.000, 4.000, 447.000, 57]
+    region:   c_252
     level:    [90, 91]
   17559806:
     template: Witchetty_Grub
-    at:       [-391.000, 3.000, 51.000, 74]
+    region:   c_252
     level:    [88, 90]
   17559807:
     template: Witchetty_Grub
-    at:       [-309.000, 3.000, 222.000, 127]
+    region:   c_252
     level:    [88, 90]
   17559808:
     template: Witchetty_Grub
-    at:       [-320.000, 3.000, 219.000, 7]
+    region:   c_252
     level:    [88, 90]
   17559809:
     template: Goblin_Bladesmith
-    at:       [-332.031, 3.085, 385.725, 123]
+    region:   c_257
     level:    [90, 91]
   17559810:
     template: Goblin_Bladesmith
-    at:       [-242.000, 4.000, 429.000, 127]
+    region:   c_257
     level:    [90, 91]
   17559811:
     template: Witchetty_Grub
-    at:       [-440.000, 3.000, 189.000, 127]
+    region:   c_257
     level:    [88, 90]
   17559812:
     template: Witchetty_Grub
-    at:       [-429.000, 3.000, 214.000, 127]
+    region:   c_257
     level:    [88, 90]
   17559813:
     template: Witchetty_Grub
-    at:       [-480.000, 3.000, 213.000, 15]
+    region:   c_257
     level:    [88, 90]
   17559814:
     template: Goblin_Bladesmith
-    at:       [-267.636, 2.956, 405.351, 127]
+    region:   c_262
     level:    [90, 91]
   17559815:
     template: Goblin_Bladesmith
-    at:       [-321.716, 3.000, 411.778, 127]
+    region:   c_262
     level:    [90, 91]
   17559816:
     template: Prim_Pika
-    at:       [-292.346, 2.999, 435.594, 37]
+    region:   c_262
     level:    [89, 90]
   17559817:
     template: Prim_Pika
-    at:       [-313.659, 3.000, 449.162, 43]
+    region:   c_262
     level:    [89, 90]
   17559818:
     template: Prim_Pika
-    at:       [-294.000, 4.000, 417.000, 40]
+    region:   c_262
     level:    [89, 90]
   17559819:
     template: Prim_Pika
-    at:       [-316.000, 3.000, 418.000, 118]
+    region:   c_262
     level:    [89, 90]
   17559820:
     template: Prim_Pika
-    at:       [-327.000, 3.000, 452.000, 20]
+    region:   c_262
     level:    [89, 90]
   17559821:
     template: Prim_Pika
-    at:       [-277.000, 3.000, 443.000, 127]
+    region:   c_262
     level:    [89, 90]
   17559822:
     template: Prim_Pika
-    at:       [-435.000, 3.000, 243.000, 127]
+    region:   c_262
     level:    [89, 90]
   17559823:
     template: Prim_Pika
-    at:       [-329.396, 3.527, 428.075, 2]
+    region:   c_262
     level:    [89, 90]
   17559824:
     template: Goblin_Bushwhacker
-    at:       [-400.000, 4.000, 379.000, 63]
+    region:   c_272
     level:    [90, 91]
   17559825:
     template: Goblin_Bushwhacker
-    at:       [-460.000, 4.000, -123.000, 127]
+    region:   c_272
     level:    [90, 91]
   17559826:
     template: Goblin_Bushwhacker
-    at:       [-444.000, 3.000, 339.000, 76]
+    region:   c_272
     level:    [90, 91]
   17559827:
     template: Witchetty_Grub
-    at:       [-80.000, 3.000, 281.000, 127]
+    region:   c_272
     level:    [88, 90]
   17559828:
     template: Witchetty_Grub
-    at:       [-399.000, 3.000, -13.000, 127]
+    region:   c_272
     level:    [88, 90]
   17559829:
     template: Witchetty_Grub
-    at:       [-403.000, 3.000, 31.000, 127]
+    region:   c_272
     level:    [88, 90]
   17559830:
     template: Witchetty_Grub
-    at:       [-311.000, 3.000, 238.000, 127]
+    region:   c_272
     level:    [88, 90]
   17559831:
     template: Goblin_Bushwhacker
-    at:       [-360.000, -1.000, 180.000, 62]
+    region:   region_59
     level:    [90, 91]
   17559832:
     template: Couloir_Leech
-    at:       [-385.000, 3.000, 107.000, 127]
+    region:   w_282
     level:    [87, 88]
   17559833:
     template: Couloir_Leech
-    at:       [-405.000, 3.000, 108.000, 127]
+    region:   w_282
     level:    [87, 88]
   17559834:
     template: Couloir_Leech
-    at:       [-388.000, 3.000, 133.000, 127]
+    region:   w_282
     level:    [87, 88]
   17559835:
     template: Couloir_Leech
-    at:       [-413.000, 3.000, 44.000, 89]
+    region:   w_282
     level:    [87, 88]
   17559836:
     template: Couloir_Leech
-    at:       [-437.000, 3.000, 48.000, 117]
+    region:   w_282
     level:    [87, 88]
   17559837:
     template: Couloir_Leech
-    at:       [-452.000, 3.000, 234.000, 127]
+    region:   w_282
     level:    [87, 88]
   17559838:
     template: Couloir_Leech
-    at:       [-488.000, 3.000, 43.000, 127]
+    region:   w_282
     level:    [87, 88]
   17559839:
     template: Witchetty_Grub
-    at:       [-402.000, 3.000, 16.000, 89]
+    region:   w_287
     level:    [88, 90]
   17559840:
     template: Witchetty_Grub
-    at:       [-414.000, 3.000, -50.000, 75]
+    region:   w_287
     level:    [88, 90]
   17559841:
     template: Goblin_Conjurer
-    at:       [-485.586, 2.945, 246.359, 42]
+    region:   w_289
     level:    [90, 91]
   17559842:
     template: Goblin_Bladesmith
-    at:       [-455.843, 3.284, 208.091, 127]
+    region:   w_289
     level:    [90, 91]
   17559843:
     template: Goblin_Bushwhacker
-    at:       [-123.000, 3.000, 266.000, 127]
+    region:   w_289
     level:    [90, 91]
   17559844:
     template: Couloir_Leech
-    at:       [-433.000, 3.000, 110.000, 77]
+    region:   w_289
     level:    [87, 88]
   17559845:
     template: Couloir_Leech
-    at:       [-449.000, 3.000, 122.000, 21]
+    region:   w_289
     level:    [87, 88]
   17559846:
     template: Goblin_Conjurer
-    at:       [-228.000, -1.000, 169.000, 62]
+    region:   sw_294
     level:    [90, 91]
   17559847:
     template: Goblin_Bladesmith
-    at:       [-483.696, 4.124, 189.013, 32]
+    region:   sw_294
     level:    [90, 91]
   17559848:
     template: Goblin_Bushwhacker
-    at:       [-432.509, 3.882, 201.789, 90]
+    region:   sw_294
     level:    [90, 91]
   17559849:
     template: Couloir_Leech
-    at:       [-334.000, 3.000, 213.000, 105]
+    region:   sw_294
     level:    [87, 88]
   17559850:
     template: Couloir_Leech
-    at:       [-362.000, 3.000, 227.000, 127]
+    region:   sw_294
     level:    [87, 88]
   17559851:
     template: Couloir_Leech
-    at:       [-354.000, 3.000, 252.000, 127]
+    region:   sw_294
     level:    [87, 88]
   17559852:
     template: Goblin_Conjurer
-    at:       [-265.000, 3.000, 308.000, 5]
+    region:   w_300
     level:    [90, 91]
   17559853:
     template: Goblin_Bladesmith
-    at:       [-341.000, -1.000, 292.000, 127]
+    region:   w_300
     level:    [90, 91]
   17559854:
     template: Goblin_Bushwhacker
-    at:       [-78.000, 3.000, 524.000, 3]
+    region:   w_300
     level:    [90, 91]
   17559855:
     template: Couloir_Leech
-    at:       [-485.000, 3.000, 225.000, 127]
+    region:   w_300
     level:    [87, 88]
   17559856:
     template: Couloir_Leech
-    at:       [-216.000, 3.000, 304.000, 9]
+    region:   w_300
     level:    [87, 88]
   17559857:
     template: Couloir_Leech
-    at:       [-225.000, 3.000, 335.000, 127]
+    region:   w_300
     level:    [87, 88]
   17559858:
     template: Goblin_Bladesmith
-    at:       [-266.000, -1.000, 181.000, 105]
+    region:   sw_306
     level:    [90, 91]
   17559859:
     template: Goblin_Bushwhacker
-    at:       [-233.000, 3.000, 295.000, 127]
+    region:   sw_306
     level:    [90, 91]
   17559860:
     template: Couloir_Leech
-    at:       [-467.000, 3.000, 197.000, 127]
+    region:   sw_306
     level:    [87, 88]
   17559861:
     template: Couloir_Leech
-    at:       [-437.000, 3.000, 216.000, 127]
+    region:   sw_306
     level:    [87, 88]
   17559862:
     template: Couloir_Leech
-    at:       [-327.000, 3.000, 239.000, 127]
+    region:   sw_306
     level:    [87, 88]
   17559863:
     template: Witchetty_Grub
-    at:       [-371.000, 3.000, 233.000, 127]
+    region:   sw_311
     level:    [88, 90]
   17559864:
     template: Witchetty_Grub
-    at:       [-349.000, 3.000, 225.000, 91]
+    region:   sw_311
     level:    [88, 90]
   17559865:
     template: Witchetty_Grub
-    at:       [-453.000, 3.000, 42.000, 84]
+    region:   sw_311
     level:    [89, 90]
   17559866:
     template: Witchetty_Grub
-    at:       [-478.000, 3.000, 40.000, 32]
+    region:   sw_314
     level:    [89, 90]
   17559867:
     template: Witchetty_Grub
-    at:       [-353.000, 3.000, 238.000, 78]
+    region:   sw_314
     level:    [89, 90]
   17559868:
     template: Witchetty_Grub
-    at:       [-317.000, 3.000, 248.000, 127]
+    region:   sw_314
     level:    [88, 90]
   17559869:
     template: Chocoboleech
@@ -2445,8 +2445,8 @@ spawns:
     level:    [24, 25]
   17559870:
     template: Fire_Elemental_SA
-    script:   Fire_Elemental
     at:       [-496.638, -5.045, -100.004, 127]
+    script:   Fire_Elemental
     level:    [75, 75]
   17559871:
     template: Celaeno

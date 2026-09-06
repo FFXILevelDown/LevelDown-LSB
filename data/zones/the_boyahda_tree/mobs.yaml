@@ -1360,1726 +1360,1726 @@ spawns:
     level:    [70, 72]
   17403910:
     template: Bark_Spider
-    at:       [405.430, 11.399, -98.606, 135]
+    region:   e_6
     level:    [60, 63]
   17403911:
     template: Bark_Spider
-    at:       [417.910, 11.119, -99.093, 205]
+    region:   e_6
     level:    [60, 63]
   17403912:
     template: Bark_Spider
-    at:       [364.360, 11.605, -99.154, 141]
+    region:   e_8
     level:    [60, 63]
   17403913:
     template: Bark_Spider
-    at:       [345.310, 11.482, -100.750, 27]
+    region:   e_8
     level:    [60, 63]
   17403914:
     template: Death_Cap
-    at:       [319.510, 8.730, -33.245, 38]
+    region:   e_10
     level:    [60, 63]
   17403915:
     template: Death_Cap
-    at:       [309.420, 8.245, -28.330, 174]
+    region:   e_10
     level:    [60, 63]
   17403916:
     template: Death_Cap
-    at:       [320.970, 8.746, -27.215, 174]
+    region:   e_10
     level:    [60, 63]
   17403917:
     template: Death_Cap
-    at:       [320.680, 8.463, -23.569, 199]
+    region:   e_10
     level:    [60, 63]
   17403918:
     template: Death_Cap
-    at:       [320.740, 8.673, -34.479, 119]
+    region:   e_10
     level:    [60, 63]
   17403919:
     template: Bark_Spider
-    at:       [299.610, 8.395, -83.037, 62]
+    region:   region_102
     level:    [60, 63]
   17403920:
     template: Bark_Spider
-    at:       [297.220, 8.540, -73.097, 185]
+    region:   region_102
     level:    [60, 63]
   17403921:
     template: Death_Cap
-    at:       [287.370, 7.759, -102.740, 29]
+    region:   e_17
     level:    [60, 63]
   17403922:
     template: Death_Cap
-    at:       [286.350, 7.090, -99.003, 222]
+    region:   e_17
     level:    [60, 63]
   17403923:
     template: Death_Cap
-    at:       [290.120, 7.994, -105.880, 241]
+    region:   e_17
     level:    [60, 63]
   17403924:
     template: Death_Cap
-    at:       [303.380, 8.358, -102.750, 164]
+    region:   e_17
     level:    [60, 63]
   17403925:
     template: Bark_Spider
-    at:       [277.850, 8.579, -140.900, 122]
+    region:   e_21
     level:    [60, 63]
   17403926:
     template: Bark_Spider
-    at:       [295.150, 7.944, -145.440, 37]
+    region:   e_21
     level:    [60, 63]
   17403927:
     template: Bark_Spider
-    at:       [259.730, 8.201, -167.950, 57]
+    region:   e_23
     level:    [60, 63]
   17403928:
     template: Bark_Spider
-    at:       [264.390, 8.026, -176.690, 24]
+    region:   e_23
     level:    [60, 63]
   17403929:
     template: Bark_Spider
-    at:       [260.160, 8.186, -167.920, 58]
+    region:   e_23
     level:    [60, 63]
   17403930:
     template: Bark_Spider
-    at:       [265.290, 8.547, -100.020, 158]
+    region:   e_26
     level:    [60, 63]
   17403931:
     template: Bark_Spider
-    at:       [264.020, 8.528, -98.125, 42]
+    region:   e_26
     level:    [60, 63]
   17403932:
     template: Death_Cap
-    at:       [246.920, 8.627, -98.999, 238]
+    region:   e_26
     level:    [60, 63]
   17403933:
     template: Death_Cap
-    at:       [260.990, 8.507, -102.200, 253]
+    region:   e_26
     level:    [60, 63]
   17403934:
     template: Death_Cap
-    at:       [211.480, 8.152, -171.300, 213]
+    region:   e_30
     level:    [60, 63]
   17403935:
     template: Death_Cap
-    at:       [216.920, 8.009, -162.590, 54]
+    region:   e_30
     level:    [60, 63]
   17403936:
     template: Death_Cap
-    at:       [201.300, 8.742, -158.080, 237]
+    region:   e_30
     level:    [60, 63]
   17403937:
     template: Death_Cap
-    at:       [206.470, 8.563, -154.450, 49]
+    region:   e_30
     level:    [60, 63]
   17403938:
     template: Death_Cap
-    at:       [192.540, 8.532, -163.410, 217]
+    region:   e_30
     level:    [60, 63]
   17403939:
     template: Ellyllon
-    at:       [216.010, 8.129, -157.100, 45]
+    region:   e_30
     level:    [65, 66]
   17403940:
     template: Bark_Spider
-    at:       [180.840, 8.332, -120.770, 118]
+    region:   c_36
     level:    [60, 63]
   17403941:
     template: Bark_Spider
-    at:       [179.340, 8.555, -122.010, 199]
+    region:   c_36
     level:    [60, 63]
   17403942:
     template: Bark_Spider
-    at:       [298.560, 8.567, -4.452, 78]
+    region:   region_103
     level:    [60, 63]
   17403943:
     template: Bark_Spider
-    at:       [299.420, 8.636, 5.120, 183]
+    region:   region_103
     level:    [60, 63]
   17403944:
     template: Bark_Spider
-    at:       [303.130, 8.506, 20.774, 100]
+    region:   ne_40
     level:    [60, 63]
   17403945:
     template: Bark_Spider
-    at:       [295.040, 8.473, 28.767, 235]
+    region:   ne_40
     level:    [60, 63]
   17403946:
     template: Death_Cap
-    at:       [319.540, 8.647, 23.494, 73]
+    region:   ne_42
     level:    [60, 63]
   17403947:
     template: Death_Cap
-    at:       [335.780, 8.481, 16.539, 36]
+    region:   ne_42
     level:    [60, 63]
   17403948:
     template: Death_Cap
-    at:       [319.000, 8.633, 23.444, 65]
+    region:   ne_42
     level:    [60, 63]
   17403949:
     template: Death_Cap
-    at:       [331.260, 8.601, 18.107, 43]
+    region:   ne_42
     level:    [60, 63]
   17403950:
     template: Death_Cap
-    at:       [263.200, 8.787, 17.770, 250]
+    region:   ne_46
     level:    [60, 63]
   17403951:
     template: Death_Cap
-    at:       [268.030, 8.743, 13.036, 246]
+    region:   ne_46
     level:    [60, 63]
   17403952:
     template: Death_Cap
-    at:       [271.550, 8.571, 16.965, 239]
+    region:   ne_46
     level:    [60, 63]
   17403953:
     template: Death_Cap
-    at:       [253.610, 6.520, -16.163, 124]
+    region:   ne_49
     level:    [60, 63]
   17403954:
     template: Death_Cap
-    at:       [253.630, 6.527, -16.099, 116]
+    region:   ne_49
     level:    [60, 63]
   17403955:
     template: Death_Cap
-    at:       [251.900, 5.985, -19.857, 76]
+    region:   ne_49
     level:    [60, 63]
   17403956:
     template: Death_Cap
-    at:       [251.980, 5.980, -20.007, 76]
+    region:   ne_49
     level:    [60, 63]
   17403957:
     template: Bark_Spider
-    at:       [336.200, -3.536, 101.186, 55]
+    region:   ne_53
     level:    [60, 63]
   17403958:
     template: Bark_Spider
-    at:       [314.460, -3.026, 100.535, 14]
+    region:   ne_53
     level:    [60, 63]
   17403959:
     template: Bark_Spider
-    at:       [299.330, -0.750, 79.557, 120]
+    region:   ne_55
     level:    [60, 63]
   17403960:
     template: Bark_Spider
-    at:       [301.790, 0.513, 70.169, 202]
+    region:   ne_55
     level:    [60, 63]
   17403961:
     template: Bark_Spider
-    at:       [258.300, 5.516, 53.095, 87]
+    region:   region_104
     level:    [60, 63]
   17403962:
     template: Bark_Spider
-    at:       [258.730, 5.567, 54.658, 220]
+    region:   region_104
     level:    [60, 63]
   17403963:
     template: Bark_Spider
-    at:       [260.440, 4.895, 22.701, 227]
+    region:   ne_59
     level:    [60, 63]
   17403964:
     template: Bark_Spider
-    at:       [240.820, 5.335, 19.086, 49]
+    region:   ne_59
     level:    [60, 63]
   17403965:
     template: Bark_Spider
-    at:       [253.860, 4.963, 21.763, 187]
+    region:   ne_59
     level:    [60, 63]
   17403966:
     template: Bark_Spider
-    at:       [222.120, 8.521, -8.940, 210]
+    region:   region_105
     level:    [60, 63]
   17403967:
     template: Bark_Spider
-    at:       [219.620, 8.220, 0.265, 90]
+    region:   region_105
     level:    [60, 63]
   17403968:
     template: Mourioche
-    at:       [206.250, 8.455, -90.176, 167]
+    region:   c_64
     level:    [62, 65]
   17403969:
     template: Mourioche
-    at:       [158.570, 8.794, -72.736, 244]
+    region:   c_64
     level:    [62, 65]
   17403970:
     template: Mourioche
-    at:       [147.110, 8.518, -83.415, 199]
+    region:   c_64
     level:    [62, 65]
   17403971:
     template: Moss_Eater
-    at:       [159.680, 8.230, -96.027, 107]
+    region:   c_64
     level:    [62, 66]
   17403972:
     template: Moss_Eater
-    at:       [161.320, 8.687, -92.767, 11]
+    region:   c_64
     level:    [62, 66]
   17403973:
     template: Mourioche
-    at:       [200.870, 8.784, -63.436, 244]
+    region:   e_69
     level:    [62, 65]
   17403974:
     template: Mourioche
-    at:       [193.160, 8.786, -42.608, 149]
+    region:   e_69
     level:    [62, 65]
   17403975:
     template: Mourioche
-    at:       [214.320, 8.367, -36.633, 174]
+    region:   e_69
     level:    [62, 65]
   17403976:
     template: Mourioche
-    at:       [214.100, 8.104, -32.189, 117]
+    region:   e_69
     level:    [62, 65]
   17403977:
     template: Moss_Eater
-    at:       [203.970, 8.652, -64.116, 255]
+    region:   e_69
     level:    [62, 66]
   17403978:
     template: Moss_Eater
-    at:       [214.590, 8.053, -31.202, 119]
+    region:   e_69
     level:    [62, 66]
   17403979:
     template: Mourioche
-    at:       [214.400, 5.993, -60.035, 37]
+    region:   e_75
     level:    [62, 65]
   17403980:
     template: Mourioche
-    at:       [217.610, 6.427, -69.658, 66]
+    region:   e_75
     level:    [62, 65]
   17403981:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [186.130, 5.681, -66.446, 115]
+    region:   c_77
     level:    [62, 67]
   17403982:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [188.170, 5.842, -60.810, 79]
+    region:   c_77
     level:    [62, 67]
   17403983:
     template: Mourioche
-    at:       [143.980, 8.739, 0.126, 107]
+    region:   n_79
     level:    [62, 65]
   17403984:
     template: Mourioche
-    at:       [146.080, 8.673, -3.004, 88]
+    region:   n_79
     level:    [62, 65]
   17403985:
     template: Mourioche
-    at:       [158.580, 8.717, -35.527, 124]
+    region:   n_79
     level:    [62, 65]
   17403986:
     template: Mourioche
-    at:       [154.740, 8.936, -10.786, 119]
+    region:   n_79
     level:    [62, 65]
   17403987:
     template: Moss_Eater
-    at:       [153.700, 8.690, 2.113, 83]
+    region:   n_79
     level:    [62, 66]
   17403988:
     template: Moss_Eater
-    at:       [150.850, 8.427, 9.696, 20]
+    region:   n_79
     level:    [62, 66]
   17403989:
     template: Moss_Eater
-    at:       [175.310, 9.277, -6.983, 69]
+    region:   n_79
     level:    [62, 66]
   17403990:
     template: Old_Goobbue
-    at:       [152.720, 8.839, -10.498, 2]
+    region:   n_79
     level:    [65, 68]
   17403991:
     template: Mourioche
-    at:       [145.050, 5.987, -25.795, 50]
+    region:   c_87
     level:    [62, 64]
   17403992:
     template: Mourioche
-    at:       [145.480, 6.067, -27.628, 192]
+    region:   c_87
     level:    [63, 66]
   17403993:
     template: Robber_Crab
-    at:       [170.970, 9.414, -12.579, 100]
+    region:   c_89
     level:    [62, 66]
   17403994:
     template: Robber_Crab
-    at:       [174.990, 9.589, -16.718, 13]
+    region:   c_89
     level:    [62, 66]
   17403995:
     template: Robber_Crab
-    at:       [182.400, 8.707, -33.993, 73]
+    region:   c_89
     level:    [62, 66]
   17403996:
     template: Water_Elemental
-    at:       [172.170, 9.358, -11.154, 67]
+    region:   c_89
     level:    [69, 72]
   17403997:
     template: Robber_Crab
-    at:       [163.310, 9.590, -58.550, 86]
+    region:   c_93
     level:    [62, 66]
   17403998:
     template: Robber_Crab
-    at:       [162.880, 9.591, -58.082, 66]
+    region:   c_93
     level:    [62, 66]
   17403999:
     template: Robber_Crab
-    at:       [195.370, 8.972, -73.536, 250]
+    region:   c_93
     level:    [62, 66]
   17404000:
     template: Aquarius
-    at:       [165.930, 9.344, -56.348, 51]
+    region:   c_98
     level:    [69, 71]
   17404001:
     template: Water_Elemental
-    at:       [185.940, 6.115, -70.771, 225]
+    region:   c_93
     level:    [69, 72]
   17404002:
     template: Robber_Crab
-    at:       [149.300, 9.742, -64.239, 4]
+    region:   c_98
     level:    [62, 66]
   17404003:
     template: Robber_Crab
-    at:       [146.140, 9.712, -51.616, 141]
+    region:   c_98
     level:    [62, 66]
   17404004:
     template: Robber_Crab
-    at:       [149.590, 9.765, -61.490, 143]
+    region:   c_98
     level:    [62, 66]
   17404005:
     template: Water_Elemental
-    at:       [144.480, 9.977, -59.077, 164]
+    region:   c_98
     level:    [69, 72]
   17404006:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [180.790, 8.582, 43.675, 189]
+    region:   n_102
     level:    [62, 67]
   17404007:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [182.150, 8.428, 47.235, 208]
+    region:   n_102
     level:    [62, 67]
   17404008:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [181.050, 8.501, 38.691, 60]
+    region:   n_102
     level:    [62, 67]
   17404009:
     template: Thunder_Elemental
-    at:       [174.940, 8.198, 64.972, 221]
+    region:   n_102
     level:    [69, 72]
   17404010:
     template: Mourioche
-    at:       [109.220, 8.474, 37.334, 96]
+    region:   n_106
     level:    [63, 66]
   17404011:
     template: Mourioche
-    at:       [124.180, 8.757, 77.574, 231]
+    region:   n_106
     level:    [63, 66]
   17404012:
     template: Mourioche
-    at:       [121.890, 8.655, 90.493, 174]
+    region:   n_106
     level:    [63, 66]
   17404013:
     template: Mourioche
-    at:       [121.980, 8.510, 51.846, 62]
+    region:   n_106
     level:    [63, 66]
   17404014:
     template: Moss_Eater
-    at:       [112.080, 8.368, 34.423, 215]
+    region:   n_106
     level:    [62, 66]
   17404015:
     template: Moss_Eater
-    at:       [134.440, 7.846, 45.197, 179]
+    region:   n_106
     level:    [62, 66]
   17404016:
     template: Moss_Eater
-    at:       [127.320, 7.768, 93.138, 237]
+    region:   n_106
     level:    [62, 66]
   17404017:
     template: Old_Goobbue
-    at:       [129.280, 10.423, 20.968, 33]
+    region:   n_106
     level:    [65, 68]
   17404018:
     template: Moss_Eater
-    at:       [95.055, 8.132, 71.958, 126]
+    region:   n_114
     level:    [62, 66]
   17404019:
     template: Moss_Eater
-    at:       [108.660, 8.193, 49.643, 190]
+    region:   n_114
     level:    [62, 66]
   17404020:
     template: Moss_Eater
-    at:       [97.774, 7.837, 67.815, 222]
+    region:   n_114
     level:    [62, 66]
   17404021:
     template: Mourioche
-    at:       [76.420, 8.743, 77.058, 180]
+    region:   n_117
     level:    [64, 67]
   17404022:
     template: Mourioche
-    at:       [102.000, 8.409, 91.051, 67]
+    region:   n_117
     level:    [64, 67]
   17404023:
     template: Mourioche
-    at:       [107.920, 8.375, 87.555, 75]
+    region:   n_117
     level:    [64, 67]
   17404024:
     template: Mourioche
-    at:       [55.150, 8.734, 84.262, 161]
+    region:   n_117
     level:    [64, 67]
   17404025:
     template: Moss_Eater
-    at:       [109.550, 8.561, 83.275, 82]
+    region:   n_117
     level:    [62, 66]
   17404026:
     template: Moss_Eater
-    at:       [59.283, 8.700, 78.246, 167]
+    region:   n_117
     level:    [62, 66]
   17404027:
     template: Moss_Eater
-    at:       [60.408, 8.711, 82.500, 188]
+    region:   n_126
     level:    [62, 66]
   17404028:
     template: Old_Goobbue
-    at:       [33.708, 8.771, 76.831, 174]
+    region:   n_117
     level:    [65, 68]
   17404029:
     template: Unut
-    at:       [104.340, 8.423, 81.217, 81]
+    region:   n_117
     level:    [69, 71]
   17404030:
     template: Moss_Eater
-    at:       [70.822, 6.211, 61.711, 64]
+    region:   n_126
     level:    [62, 66]
   17404031:
     template: Moss_Eater
-    at:       [57.942, 8.544, 88.215, 46]
+    region:   n_126
     level:    [62, 66]
   17404032:
     template: Moss_Eater
-    at:       [66.392, 5.884, 66.909, 64]
+    region:   n_126
     level:    [62, 66]
   17404033:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [22.297, 6.253, 90.465, 255]
+    region:   n_129
     level:    [62, 67]
   17404034:
     template: Knight_Crawler_BT
     script:   Knight_Crawler
-    at:       [14.206, 5.548, 109.486, 122]
+    region:   n_129
     level:    [62, 67]
   17404035:
     template: Mourioche
-    at:       [27.326, 5.839, 131.949, 90]
+    region:   n_131
     level:    [64, 67]
   17404036:
     template: Mourioche
-    at:       [30.194, 6.017, 139.783, 218]
+    region:   n_131
     level:    [64, 67]
   17404037:
     template: Mourioche
-    at:       [44.993, 8.335, 132.574, 254]
+    region:   n_133
     level:    [64, 67]
   17404038:
     template: Mourioche
-    at:       [35.255, 8.201, 135.511, 73]
+    region:   n_133
     level:    [64, 67]
   17404039:
     template: Mourioche
-    at:       [56.720, 8.355, 118.922, 237]
+    region:   n_133
     level:    [64, 67]
   17404040:
     template: Mourioche
-    at:       [43.021, 8.539, 129.240, 63]
+    region:   n_136
     level:    [64, 67]
   17404041:
     template: Moss_Eater
-    at:       [51.960, 8.043, 108.568, 108]
+    region:   n_133
     level:    [62, 66]
   17404042:
     template: Moss_Eater
-    at:       [15.310, 8.752, 119.221, 57]
+    region:   n_133
     level:    [62, 66]
   17404043:
     template: Moss_Eater
-    at:       [51.304, 8.562, 137.005, 124]
+    region:   n_133
     level:    [62, 66]
   17404044:
     template: Old_Goobbue
-    at:       [39.273, 8.700, 116.971, 139]
+    region:   n_133
     level:    [65, 68]
   17404045:
     template: Mourioche
-    at:       [-14.520, 6.120, 106.547, 76]
+    region:   n_141
     level:    [64, 67]
   17404046:
     template: Mourioche
-    at:       [-12.580, 6.283, 108.619, 6]
+    region:   n_141
     level:    [64, 67]
   17404047:
     template: Mourioche
-    at:       [3.650, 9.253, 132.746, 214]
+    region:   n_143
     level:    [64, 67]
   17404048:
     template: Mourioche
-    at:       [-9.996, 9.277, 115.156, 184]
+    region:   n_143
     level:    [64, 67]
   17404049:
     template: Mourioche
-    at:       [-7.040, 9.155, 128.449, 176]
+    region:   n_143
     level:    [64, 67]
   17404050:
     template: Mourioche
-    at:       [5.504, 9.448, 123.509, 218]
+    region:   n_143
     level:    [64, 67]
   17404051:
     template: Moss_Eater
-    at:       [-16.880, 8.742, 113.518, 130]
+    region:   n_143
     level:    [62, 66]
   17404052:
     template: Moss_Eater
-    at:       [-6.014, 9.065, 105.453, 156]
+    region:   n_143
     level:    [62, 66]
   17404053:
     template: Moss_Eater
-    at:       [-11.240, 8.889, 126.622, 202]
+    region:   n_143
     level:    [62, 66]
   17404054:
     template: Old_Goobbue
-    at:       [5.044, 9.226, 127.643, 221]
+    region:   n_143
     level:    [65, 68]
   17404055:
     template: Mourioche
-    at:       [2.358, 8.829, 80.650, 142]
+    region:   n_151
     level:    [64, 67]
   17404056:
     template: Mourioche
-    at:       [-4.178, 8.737, 79.499, 177]
+    region:   n_151
     level:    [64, 67]
   17404057:
     template: Mourioche
-    at:       [-13.780, 8.673, 82.066, 218]
+    region:   n_151
     level:    [64, 67]
   17404058:
     template: Moss_Eater
-    at:       [-4.065, 8.796, 85.528, 113]
+    region:   n_151
     level:    [62, 66]
   17404059:
     template: Moss_Eater
-    at:       [6.832, 8.747, 78.160, 127]
+    region:   n_151
     level:    [62, 66]
   17404060:
     template: Moss_Eater
-    at:       [1.725, 8.846, 80.469, 127]
+    region:   n_151
     level:    [62, 66]
   17404061:
     template: Old_Goobbue
-    at:       [-6.919, 8.696, 83.337, 110]
+    region:   n_151
     level:    [65, 68]
   17404062:
     template: Robber_Crab
-    at:       [59.479, 9.457, 97.650, 45]
+    region:   n_158
     level:    [62, 66]
   17404063:
     template: Robber_Crab
-    at:       [63.271, 9.416, 93.876, 26]
+    region:   n_158
     level:    [62, 66]
   17404064:
     template: Water_Elemental
-    at:       [72.518, 9.459, 94.857, 225]
+    region:   n_158
     level:    [69, 72]
   17404065:
     template: Robber_Crab
-    at:       [8.449, 7.821, 101.748, 40]
+    region:   n_161
     level:    [62, 66]
   17404066:
     template: Robber_Crab
-    at:       [8.507, 7.765, 99.953, 20]
+    region:   n_161
     level:    [62, 66]
   17404067:
     template: Robber_Crab
-    at:       [10.760, 6.718, 95.046, 254]
+    region:   n_161
     level:    [62, 66]
   17404068:
     template: Water_Elemental
-    at:       [9.559, 6.728, 103.942, 32]
+    region:   n_161
     level:    [69, 72]
   17404069:
     template: Robber_Crab
-    at:       [25.096, 9.778, 66.566, 19]
+    region:   n_165
     level:    [62, 66]
   17404070:
     template: Robber_Crab
-    at:       [20.808, 9.913, 64.330, 13]
+    region:   n_165
     level:    [62, 66]
   17404071:
     template: Water_Elemental
-    at:       [32.202, 9.329, 63.080, 242]
+    region:   n_165
     level:    [69, 72]
   17404072:
     template: Mourioche
-    at:       [-37.610, 8.684, 141.979]
+    region:   nw_168
     level:    [65, 68]
   17404073:
     template: Thunder_Elemental
-    at:       [-37.120, 8.671, 141.833, 249]
+    region:   nw_168
     level:    [69, 72]
   17404074:
     template: Mourioche
-    at:       [-66.110, 6.019, 104.736, 160]
+    region:   nw_170
     level:    [65, 68]
   17404075:
     template: Mourioche
-    at:       [-68.530, 6.077, 97.528, 82]
+    region:   nw_170
     level:    [65, 68]
   17404076:
     template: Mourioche
-    at:       [-96.610, 6.103, 103.277, 27]
+    region:   nw_172
     level:    [65, 68]
   17404077:
     template: Mourioche
-    at:       [-99.880, 6.243, 105.411, 245]
+    region:   nw_172
     level:    [65, 68]
   17404078:
     template: Mourioche
-    at:       [-103.400, 6.517, 104.733, 9]
+    region:   nw_172
     level:    [65, 68]
   17404079:
     template: Mourioche
-    at:       [-77.140, 8.697, 117.141, 227]
+    region:   nw_175
     level:    [65, 68]
   17404080:
     template: Mourioche
-    at:       [-72.260, 8.125, 135.498, 133]
+    region:   nw_175
     level:    [65, 68]
   17404081:
     template: Mourioche
-    at:       [-79.630, 8.749, 75.482, 147]
+    region:   nw_175
     level:    [65, 68]
   17404082:
     template: Moss_Eater
-    at:       [-67.150, 8.197, 114.166, 81]
+    region:   nw_175
     level:    [62, 66]
   17404083:
     template: Moss_Eater
-    at:       [-77.440, 8.814, 113.877, 67]
+    region:   nw_175
     level:    [62, 66]
   17404084:
     template: Old_Goobbue
-    at:       [-74.830, 7.641, 136.835, 174]
+    region:   nw_175
     level:    [65, 68]
   17404085:
     template: Mourioche
-    at:       [-76.860, 8.888, 94.399, 47]
+    region:   nw_181
     level:    [65, 68]
   17404086:
     template: Mourioche
-    at:       [-79.660, 8.836, 106.248, 226]
+    region:   nw_181
     level:    [65, 68]
   17404087:
     template: Mourioche
-    at:       [-80.860, 8.826, 100.182, 181]
+    region:   nw_181
     level:    [65, 68]
   17404088:
     template: Mourioche
-    at:       [-80.160, 8.798, 112.887, 95]
+    region:   nw_181
     level:    [65, 68]
   17404089:
     template: Morbol_Menace
-    at:       [-75.910, 8.792, 101.047, 94]
+    region:   nw_181
     level:    [67, 70]
   17404090:
     template: Morbol_Menace
-    at:       [-46.700, -19.630, -2.261, 75]
+    region:   nw_181
     level:    [67, 70]
   17404091:
     template: Mourioche
-    at:       [-86.050, 8.720, 82.690, 217]
+    region:   nw_187
     level:    [65, 68]
   17404092:
     template: Mourioche
-    at:       [-87.020, 8.432, 70.198, 134]
+    region:   nw_187
     level:    [65, 68]
   17404093:
     template: Mourioche
-    at:       [-66.750, 7.563, 72.659, 85]
+    region:   nw_187
     level:    [65, 68]
   17404094:
     template: Moss_Eater
-    at:       [-85.320, 8.734, 80.220, 57]
+    region:   nw_187
     level:    [62, 66]
   17404095:
     template: Moss_Eater
-    at:       [-84.830, 8.715, 78.283, 181]
+    region:   nw_187
     level:    [62, 66]
   17404096:
     template: Old_Goobbue
-    at:       [-85.590, 8.719, 83.549, 217]
+    region:   nw_187
     level:    [65, 68]
   17404097:
     template: Mourioche
-    at:       [-111.400, -6.381, 8.333, 94]
+    region:   nw_193
     level:    [65, 68]
   17404098:
     template: Mourioche
-    at:       [-111.300, -6.346, 8.719, 93]
+    region:   nw_193
     level:    [65, 68]
   17404099:
     template: Mourioche
-    at:       [-108.600, -1.082, 22.121, 88]
+    region:   nw_193
     level:    [65, 68]
   17404100:
     template: Thunder_Elemental
-    at:       [177.060, 8.447, 62.542, 52]
+    region:   n_102
     level:    [69, 72]
   17404101:
     template: Moss_Eater
-    at:       [-8.107, -20.530, -10.078, 163]
+    region:   n_197
     level:    [62, 66]
   17404102:
     template: Moss_Eater
-    at:       [-23.180, -19.740, 5.836, 81]
+    region:   n_197
     level:    [62, 66]
   17404103:
     template: Elder_Goobbue
-    at:       [-26.070, -20.000, 10.769, 232]
+    region:   n_197
     level:    [74, 77]
   17404104:
     template: Elder_Goobbue
-    at:       [-7.479, -20.190, 15.305, 19]
+    region:   n_197
     level:    [74, 77]
   17404105:
     template: Moss_Eater
-    at:       [45.443, -20.229, 15.686, 127]
+    region:   n_201
     level:    [62, 66]
   17404106:
     template: Moss_Eater
-    at:       [38.362, -19.736, 3.798, 127]
+    region:   n_201
     level:    [62, 66]
   17404107:
     template: Elder_Goobbue
-    at:       [3.000, -19.000, 9.000, 82]
+    region:   n_201
     level:    [74, 77]
   17404108:
     template: Elder_Goobbue
-    at:       [-15.616, -19.574, -1.819, 98]
+    region:   n_201
     level:    [74, 77]
   17404109:
     template: Moss_Eater
-    at:       [91.942, -19.800, -42.921, 79]
+    region:   c_205
     level:    [62, 66]
   17404110:
     template: Moss_Eater
-    at:       [88.531, -19.637, -38.579, 114]
+    region:   c_205
     level:    [62, 66]
   17404111:
     template: Elder_Goobbue
-    at:       [82.438, -19.734, -29.627, 127]
+    region:   c_205
     level:    [74, 77]
   17404112:
     template: Elder_Goobbue
-    at:       [71.069, -19.774, -49.705, 101]
+    region:   c_205
     level:    [74, 77]
   17404113:
     template: Moss_Eater
-    at:       [84.731, -19.928, -95.847]
+    region:   c_209
     level:    [62, 66]
   17404114:
     template: Moss_Eater
-    at:       [62.780, -19.207, -79.147, 127]
+    region:   c_209
     level:    [62, 66]
   17404115:
     template: Elder_Goobbue
-    at:       [75.000, -19.000, -91.000, 127]
+    region:   c_209
     level:    [74, 77]
   17404116:
     template: Elder_Goobbue
-    at:       [77.967, -19.315, -71.111, 127]
+    region:   c_209
     level:    [74, 77]
   17404117:
     template: Moss_Eater
-    at:       [-48.430, -20.000, -13.972, 250]
+    region:   w_213
     level:    [62, 66]
   17404118:
     template: Moss_Eater
-    at:       [-36.290, -19.660, -39.340, 116]
+    region:   w_213
     level:    [62, 66]
   17404119:
     template: Elder_Goobbue
-    at:       [-27.600, -19.760, -37.349, 83]
+    region:   w_213
     level:    [74, 77]
   17404120:
     template: Elder_Goobbue
-    at:       [-34.150, -20.070, -23.575, 162]
+    region:   w_213
     level:    [74, 77]
   17404121:
     template: Korrigan
-    at:       [-40.370, -19.640, -93.477, 209]
+    region:   w_217
     level:    [72, 75]
   17404122:
     template: Korrigan
-    at:       [-27.860, -20.100, -97.931, 51]
+    region:   w_217
     level:    [72, 75]
   17404123:
     template: Elder_Goobbue
-    at:       [-35.420, -19.397, -106.691, 134]
+    region:   w_217
     level:    [74, 77]
   17404124:
     template: Elder_Goobbue
-    at:       [-38.628, -19.257, -84.437, 51]
+    region:   w_217
     level:    [74, 77]
   17404125:
     template: Elder_Goobbue
-    at:       [-54.550, -19.810, -97.231, 214]
+    region:   w_217
     level:    [74, 77]
   17404126:
     template: Korrigan
-    at:       [7.277, -19.770, -113.930, 55]
+    region:   c_222
     level:    [72, 75]
   17404127:
     template: Korrigan
-    at:       [-6.804, -19.860, -116.110, 45]
+    region:   c_222
     level:    [72, 75]
   17404128:
     template: Elder_Goobbue
-    at:       [-12.160, -20.350, -110.950, 70]
+    region:   c_222
     level:    [74, 77]
   17404129:
     template: Elder_Goobbue
-    at:       [-1.213, -19.820, -130.610, 253]
+    region:   c_222
     level:    [74, 77]
   17404130:
     template: Elder_Goobbue
-    at:       [-11.170, -21.150, -137.620, 247]
+    region:   c_222
     level:    [74, 77]
   17404131:
     template: Moss_Eater
-    at:       [44.828, -19.750, -109.760, 169]
+    region:   c_227
     level:    [62, 66]
   17404132:
     template: Moss_Eater
-    at:       [35.279, -19.640, -133.060, 178]
+    region:   c_227
     level:    [62, 66]
   17404133:
     template: Elder_Goobbue
-    at:       [46.883, -19.940, -141.600, 208]
+    region:   c_227
     level:    [74, 77]
   17404134:
     template: Elder_Goobbue
-    at:       [35.554, -19.740, -103.700, 218]
+    region:   c_227
     level:    [74, 77]
   17404135:
     template: Skimmer
-    at:       [5.586, -20.739, -64.777, 65]
+    region:   c_231
     level:    [72, 74]
   17404136:
     template: Skimmer
-    at:       [-31.340, -18.670, -57.290, 60]
+    region:   c_231
     level:    [72, 74]
   17404137:
     template: Skimmer
-    at:       [5.588, -20.710, -57.208, 16]
+    region:   c_231
     level:    [72, 74]
   17404138:
     template: Skimmer
-    at:       [-41.950, -18.440, -63.250, 182]
+    region:   c_231
     level:    [72, 74]
   17404139:
     template: Skimmer
-    at:       [16.642, -18.670, -9.464, 191]
+    region:   c_235
     level:    [72, 74]
   17404140:
     template: Skimmer
-    at:       [36.412, -18.646, -47.014, 58]
+    region:   c_235
     level:    [72, 74]
   17404141:
     template: Steelshell_2
     script:   Steelshell
-    at:       [15.545, -18.570, -17.527, 99]
+    region:   c_235
     level:    [73, 76]
   17404142:
     template: Steelshell_2
     script:   Steelshell
-    at:       [26.763, -18.580, -32.549, 46]
+    region:   c_235
     level:    [73, 76]
   17404143:
     template: Steelshell_2
     script:   Steelshell
-    at:       [16.000, -18.000, -88.000, 38]
+    region:   c_235
     level:    [73, 76]
   17404144:
     template: Steelshell_2
     script:   Steelshell
-    at:       [7.103, -20.950, -49.950, 27]
+    region:   c_235
     level:    [73, 76]
   17404145:
     template: Water_Elemental
-    at:       [29.784, -18.520, -24.531, 253]
+    region:   c_235
     level:    [69, 72]
   17404146:
     template: Skimmer
-    at:       [50.000, -18.000, -59.000, 1]
+    region:   c_242
     level:    [72, 74]
   17404147:
     template: Skimmer
-    at:       [43.947, -18.571, -85.895, 127]
+    region:   c_242
     level:    [72, 74]
   17404148:
     template: Steelshell_2
     script:   Steelshell
-    at:       [40.000, -18.000, -34.000, 127]
+    region:   c_242
     level:    [73, 76]
   17404149:
     template: Steelshell_2
     script:   Steelshell
-    at:       [21.000, -18.000, -19.000, 127]
+    region:   c_242
     level:    [73, 76]
   17404150:
     template: Water_Elemental
-    at:       [0.351, -18.517, -54.159, 27]
+    region:   c_242
     level:    [69, 72]
   17404151:
     template: Skimmer
-    at:       [-30.740, -18.670, -58.660, 26]
+    region:   c_247
     level:    [72, 74]
   17404152:
     template: Skimmer
-    at:       [-33.990, -18.670, -62.875, 239]
+    region:   c_247
     level:    [72, 74]
   17404153:
     template: Steelshell_2
     script:   Steelshell
-    at:       [-16.760, -18.040, -66.820, 222]
+    region:   c_247
     level:    [73, 76]
   17404154:
     template: Steelshell_2
     script:   Steelshell
-    at:       [-43.500, -18.610, -60.930, 208]
+    region:   c_247
     level:    [73, 76]
   17404155:
     template: Water_Elemental
-    at:       [-4.769, -18.620, -41.430, 169]
+    region:   c_247
     level:    [69, 72]
   17404156:
     template: Skimmer
-    at:       [19.787, -18.670, -109.080, 95]
+    region:   c_252
     level:    [72, 74]
   17404157:
     template: Skimmer
-    at:       [22.735, -18.520, -88.225, 198]
+    region:   c_252
     level:    [72, 74]
   17404158:
     template: Steelshell_2
     script:   Steelshell
-    at:       [21.000, -18.000, -122.000, 127]
+    region:   c_252
     level:    [73, 76]
   17404159:
     template: Steelshell_2
     script:   Steelshell
-    at:       [16.853, -18.350, -99.209, 138]
+    region:   c_252
     level:    [73, 76]
   17404160:
     template: Steelshell_2
     script:   Steelshell
-    at:       [-10.000, -18.000, -82.000, 127]
+    region:   c_252
     level:    [73, 76]
   17404161:
     template: Steelshell_2
     script:   Steelshell
-    at:       [24.826, -18.760, -106.770, 196]
+    region:   c_252
     level:    [73, 76]
   17404162:
     template: Water_Elemental
-    at:       [19.773, -18.520, -77.761, 136]
+    region:   c_252
     level:    [69, 72]
   17404163:
     template: Skimmer
-    at:       [55.773, -18.620, -164.800, 48]
+    region:   c_259
     level:    [72, 74]
   17404164:
     template: Skimmer
-    at:       [42.269, -18.720, -157.350, 101]
+    region:   c_259
     level:    [72, 74]
   17404165:
     template: Water_Elemental
-    at:       [36.740, -18.720, -163.560, 61]
+    region:   c_259
     level:    [69, 72]
   17404166:
     template: Robber_Crab
-    at:       [20.138, -8.412, 36.608, 65]
+    region:   region_106
     level:    [62, 66]
   17404167:
     template: Water_Elemental
-    at:       [20.970, -2.285, 47.504, 70]
+    region:   region_106
     level:    [69, 72]
   17404168:
     template: Robber_Crab
-    at:       [117.610, -7.271, -59.709, 252]
+    region:   region_107
     level:    [62, 66]
   17404169:
     template: Water_Elemental
-    at:       [126.486, -1.464, -58.665, 118]
+    region:   region_107
     level:    [69, 72]
   17404170:
     template: Steelshell
-    at:       [-85.800, -2.989, -58.632, 2]
+    region:   region_108
     level:    [73, 76]
   17404171:
     template: Water_Elemental
-    at:       [-76.350, -6.800, -59.633, 132]
+    region:   region_108
     level:    [69, 72]
   17404172:
     template: Skimmer
-    at:       [63.914, -16.760, -223.700, 101]
+    region:   s_268
     level:    [72, 74]
   17404173:
     template: Skimmer
-    at:       [60.161, -19.430, -203.080, 211]
+    region:   s_268
     level:    [72, 74]
   17404174:
     template: Processionaire
-    at:       [-20.220, -19.380, -179.800, 252]
+    region:   c_270
     level:    [72, 75]
   17404175:
     template: Processionaire
-    at:       [-23.560, -19.540, -177.150, 94]
+    region:   c_270
     level:    [72, 75]
   17404176:
     template: Processionaire
-    at:       [-22.260, -19.790, -209.490, 126]
+    region:   s_272
     level:    [72, 75]
   17404177:
     template: Processionaire
-    at:       [-16.080, -19.620, -205.930, 196]
+    region:   s_272
     level:    [72, 75]
   17404178:
     template: Elder_Goobbue
-    at:       [-22.510, -19.770, -209.210, 98]
+    region:   s_272
     level:    [74, 77]
   17404179:
     template: Processionaire
-    at:       [-55.170, -13.970, -174.880, 24]
+    region:   w_275
     level:    [72, 75]
   17404180:
     template: Processionaire
-    at:       [-69.700, -0.658, -182.930, 47]
+    region:   w_275
     level:    [72, 75]
   17404181:
     template: Processionaire
-    at:       [-69.370, 8.472, -221.950, 100]
+    region:   sw_277
     level:    [72, 75]
   17404182:
     template: Processionaire
-    at:       [-57.830, 8.377, -220.970, 68]
+    region:   sw_277
     level:    [72, 75]
   17404183:
     template: Thunder_Elemental
-    at:       [-63.340, 8.463, -219.690, 250]
+    region:   sw_277
     level:    [70, 72]
   17404184:
     template: Processionaire
-    at:       [-72.030, 8.365, -263.570, 80]
+    region:   sw_280
     level:    [72, 75]
   17404185:
     template: Processionaire
-    at:       [-81.180, 8.456, -261.940, 250]
+    region:   sw_280
     level:    [72, 75]
   17404186:
     template: Processionaire
-    at:       [-22.120, 8.145, -262.510, 141]
+    region:   sw_282
     level:    [72, 75]
   17404187:
     template: Thunder_Elemental
-    at:       [-60.110, 4.671, -265.850, 120]
+    region:   region_109
     level:    [69, 72]
   17404188:
     template: Processionaire
-    at:       [-55.870, 8.555, -301.860, 138]
+    region:   sw_284
     level:    [72, 75]
   17404189:
     template: Thunder_Elemental
-    at:       [-52.620, 8.443, -302.940, 236]
+    region:   sw_284
     level:    [69, 72]
   17404190:
     template: Processionaire
-    at:       [-20.630, 8.422, -302.160, 35]
+    region:   s_286
     level:    [72, 75]
   17404191:
     template: Thunder_Elemental
-    at:       [-16.610, 8.460, -293.570, 226]
+    region:   s_286
     level:    [69, 72]
   17404192:
     template: Korrigan
-    at:       [-104.800, 8.775, -38.509, 69]
+    region:   w_288
     level:    [72, 75]
   17404193:
     template: Korrigan
-    at:       [-143.300, 8.755, -38.283, 127]
+    region:   w_288
     level:    [72, 75]
   17404194:
     template: Elder_Goobbue
-    at:       [-144.400, 8.820, -35.922, 108]
+    region:   w_288
     level:    [74, 77]
   17404195:
     template: Korrigan
-    at:       [-132.200, 6.114, -24.263, 107]
+    region:   w_288
     level:    [72, 75]
   17404196:
     template: Korrigan
-    at:       [-145.800, 6.820, -25.606, 125]
+    region:   w_292
     level:    [72, 75]
   17404197:
     template: Korrigan
-    at:       [-157.300, 8.786, -49.092, 60]
+    region:   w_293
     level:    [72, 75]
   17404198:
     template: Korrigan
-    at:       [-159.500, 8.795, -65.202, 45]
+    region:   w_293
     level:    [72, 75]
   17404199:
     template: Elder_Goobbue
-    at:       [-166.000, 8.566, -32.490, 233]
+    region:   w_293
     level:    [74, 77]
   17404200:
     template: Korrigan
-    at:       [-171.300, 5.931, -51.977, 28]
+    region:   w_296
     level:    [72, 75]
   17404201:
     template: Korrigan
-    at:       [-169.200, 5.284, -59.523, 56]
+    region:   w_296
     level:    [72, 75]
   17404202:
     template: Steelshell
-    at:       [-166.000, 8.601, -109.240, 68]
+    region:   w_298
     level:    [73, 76]
   17404203:
     template: Steelshell
-    at:       [-145.600, 8.492, -122.430, 171]
+    region:   w_298
     level:    [73, 76]
   17404204:
     template: Steelshell
-    at:       [-167.200, 8.514, -92.635, 161]
+    region:   w_298
     level:    [73, 76]
   17404205:
     template: Steelshell
-    at:       [-166.400, 8.473, -106.410, 20]
+    region:   w_298
     level:    [73, 76]
   17404206:
     template: Steelshell
-    at:       [-165.000, 8.745, -76.179]
+    region:   w_298
     level:    [73, 76]
   17404207:
     template: Darter
-    at:       [-169.800, 8.740, -120.670, 32]
+    region:   w_298
     level:    [75, 78]
   17404208:
     template: Darter
-    at:       [-151.300, 8.561, -127.040, 53]
+    region:   w_298
     level:    [75, 78]
   17404209:
     template: Korrigan
-    at:       [-148.800, 5.597, -67.347, 53]
+    region:   w_305
     level:    [72, 75]
   17404210:
     template: Korrigan
-    at:       [-145.500, 5.386, -65.681, 245]
+    region:   w_305
     level:    [72, 75]
   17404211:
     template: Elder_Goobbue
-    at:       [-136.800, 5.515, -57.268, 16]
+    region:   w_305
     level:    [74, 77]
   17404212:
     template: Darter
-    at:       [-129.500, 8.362, -85.393, 34]
+    region:   w_308
     level:    [75, 78]
   17404213:
     template: Darter
-    at:       [-128.500, 8.335, -86.602, 165]
+    region:   w_308
     level:    [75, 78]
   17404214:
     template: Korrigan
-    at:       [-158.700, 8.670, -157.390, 244]
+    region:   w_310
     level:    [72, 75]
   17404215:
     template: Korrigan
-    at:       [-174.600, 8.482, -156.770, 16]
+    region:   w_310
     level:    [72, 75]
   17404216:
     template: Korrigan
-    at:       [-142.300, 8.163, -172.000, 186]
+    region:   w_310
     level:    [72, 75]
   17404217:
     template: Elder_Goobbue
-    at:       [-156.000, 8.672, -156.720, 112]
+    region:   w_310
     level:    [74, 77]
   17404218:
     template: Korrigan
-    at:       [-144.900, 6.476, -129.250, 232]
+    region:   w_314
     level:    [72, 75]
   17404219:
     template: Korrigan
-    at:       [-150.200, 5.656, -134.670, 90]
+    region:   w_314
     level:    [72, 75]
   17404220:
     template: Korrigan
-    at:       [-171.800, 6.487, -149.220, 175]
+    region:   w_310
     level:    [72, 75]
   17404221:
     template: Korrigan
-    at:       [-170.600, 6.546, -135.900, 190]
+    region:   w_310
     level:    [72, 75]
   17404222:
     template: Blood_Ball
-    at:       [-122.100, 9.325, -66.713, 117]
+    region:   w_322
     level:    [75, 78]
   17404223:
     template: Blood_Ball
-    at:       [-106.400, 9.779, -60.973, 154]
+    region:   w_322
     level:    [75, 78]
   17404224:
     template: Darter
-    at:       [-123.100, 9.457, -58.381, 113]
+    region:   w_322
     level:    [75, 78]
   17404225:
     template: Darter
-    at:       [-102.500, 9.505, -46.830, 195]
+    region:   w_322
     level:    [75, 78]
   17404226:
     template: Water_Elemental
-    at:       [-102.900, 9.979, -57.541, 63]
+    region:   w_322
     level:    [69, 72]
   17404227:
     template: Blood_Ball
-    at:       [-151.900, 8.587, -50.266, 110]
+    region:   w_323
     level:    [75, 78]
   17404228:
     template: Darter
-    at:       [-141.400, 8.802, -45.506, 224]
+    region:   w_323
     level:    [75, 78]
   17404229:
     template: Water_Elemental
-    at:       [-146.000, 9.049, -44.967, 242]
+    region:   w_323
     level:    [69, 72]
   17404230:
     template: Blood_Ball
-    at:       [-140.600, 9.540, -85.204, 62]
+    region:   w_326
     level:    [75, 78]
   17404231:
     template: Darter
-    at:       [-139.900, 9.453, -99.531, 20]
+    region:   w_326
     level:    [75, 78]
   17404232:
     template: Water_Elemental
-    at:       [-140.200, 9.506, -100.740, 231]
+    region:   w_326
     level:    [69, 72]
   17404233:
     template: Processionaire
-    at:       [-180.700, 8.558, -189.490, 82]
+    region:   region_110
     level:    [72, 75]
   17404234:
     template: Processionaire
-    at:       [-180.100, 8.481, -188.120, 211]
+    region:   region_110
     level:    [72, 75]
   17404235:
     template: Thunder_Elemental
-    at:       [-179.500, 8.442, -182.860, 83]
+    region:   region_110
     level:    [71, 72]
   17404236:
     template: Mourning_Crawler
-    at:       [-207.000, 8.634, -236.480, 173]
+    region:   sw_332
     level:    [104, 105]
   17404237:
     template: Mourning_Crawler
-    at:       [-204.200, 8.601, -251.140, 193]
+    region:   sw_332
     level:    [104, 105]
   17404238:
     template: Mourning_Crawler
-    at:       [-208.100, 8.673, -240.880, 147]
+    region:   sw_332
     level:    [104, 105]
   17404239:
     template: Snaggletooth_Peapuk
-    at:       [-206.900, 8.632, -236.160, 139]
+    region:   sw_332
     level:    [102, 104]
   17404240:
     template: Snaggletooth_Peapuk
-    at:       [-205.600, 8.733, -239.140, 47]
+    region:   sw_332
     level:    [102, 104]
   17404241:
     template: Mourning_Crawler
-    at:       [-202.100, 8.778, -275.320, 39]
+    region:   sw_337
     level:    [104, 105]
   17404242:
     template: Mourning_Crawler
-    at:       [-196.300, 8.742, -276.480, 173]
+    region:   sw_337
     level:    [104, 105]
   17404243:
     template: Mourning_Crawler
-    at:       [-204.100, 8.774, -272.650, 126]
+    region:   sw_337
     level:    [104, 105]
   17404244:
     template: Snaggletooth_Peapuk
-    at:       [-213.900, 8.829, -276.320, 78]
+    region:   sw_337
     level:    [102, 104]
   17404245:
     template: Mourning_Crawler
-    at:       [-205.000, 8.487, -328.460, 171]
+    region:   sw_341
     level:    [104, 105]
   17404246:
     template: Mourning_Crawler
-    at:       [-200.200, 8.648, -330.490, 168]
+    region:   sw_341
     level:    [104, 105]
   17404247:
     template: Mourning_Crawler
-    at:       [-197.400, 8.611, -327.320, 24]
+    region:   sw_341
     level:    [104, 105]
   17404248:
     template: Snaggletooth_Peapuk
-    at:       [-194.900, 8.678, -320.440, 201]
+    region:   sw_341
     level:    [102, 104]
   17404249:
     template: Snaggletooth_Peapuk
-    at:       [-195.100, 7.463, -338.650, 20]
+    region:   sw_341
     level:    [102, 104]
   17404250:
     template: Viseclaw
-    at:       [-184.300, 9.931, -269.100, 145]
+    region:   sw_346
     level:    [102, 103]
   17404251:
     template: Viseclaw
-    at:       [-185.900, 9.841, -283.240, 156]
+    region:   sw_346
     level:    [102, 103]
   17404252:
     template: Snaggletooth_Peapuk
-    at:       [-180.000, 9.920, -277.320, 151]
+    region:   sw_346
     level:    [102, 104]
   17404253:
     template: Snaggletooth_Peapuk
-    at:       [-179.100, 9.895, -275.700, 47]
+    region:   sw_346
     level:    [102, 104]
   17404254:
     template: Viseclaw
-    at:       [-205.200, 9.706, -258.150, 124]
+    region:   sw_350
     level:    [102, 103]
   17404255:
     template: Viseclaw
-    at:       [-193.500, 9.782, -262.720, 30]
+    region:   sw_350
     level:    [102, 103]
   17404256:
     template: Snaggletooth_Peapuk
-    at:       [-216.600, 9.874, -264.180, 6]
+    region:   sw_350
     level:    [102, 104]
   17404257:
     template: Water_Elemental
-    at:       [-197.700, 9.752, -258.220, 187]
+    region:   sw_350
     level:    [69, 72]
   17404258:
     template: Viseclaw
-    at:       [-195.700, 8.884, -292.240, 107]
+    region:   sw_354
     level:    [102, 103]
   17404259:
     template: Viseclaw
-    at:       [-206.800, 9.724, -300.860, 52]
+    region:   sw_354
     level:    [102, 103]
   17404260:
     template: Snaggletooth_Peapuk
-    at:       [-200.700, 8.908, -292.930, 154]
+    region:   sw_354
     level:    [102, 104]
   17404261:
     template: Water_Elemental
-    at:       [-196.800, 9.580, -295.900, 105]
+    region:   sw_354
     level:    [69, 72]
   17404262:
     template: Viseclaw
-    at:       [-230.600, 9.745, -283.310, 35]
+    region:   sw_358
     level:    [102, 103]
   17404263:
     template: Viseclaw
-    at:       [-239.700, 9.752, -285.190, 200]
+    region:   sw_358
     level:    [102, 103]
   17404264:
     template: Snaggletooth_Peapuk
-    at:       [-251.700, 9.821, -289.960, 127]
+    region:   sw_358
     level:    [102, 104]
   17404265:
     template: Snaggletooth_Peapuk
-    at:       [-232.100, 9.756, -264.350, 251]
+    region:   sw_358
     level:    [102, 104]
   17404266:
     template: Water_Elemental
-    at:       [-252.200, 9.835, -277.190, 54]
+    region:   sw_358
     level:    [69, 72]
   17404267:
     template: Processionaire
-    at:       [-141.900, 8.130, -336.280, 77]
+    region:   sw_363
     level:    [72, 75]
   17404268:
     template: Processionaire
-    at:       [-138.500, 6.088, -326.620, 202]
+    region:   sw_363
     level:    [72, 75]
   17404269:
     template: Thunder_Elemental
-    at:       [-142.300, 5.391, -318.150, 72]
+    region:   sw_363
     level:    [69, 72]
   17404270:
     template: Korrigan
-    at:       [-128.000, 8.519, -301.060, 33]
+    region:   region_111
     level:    [72, 75]
   17404271:
     template: Korrigan
-    at:       [-135.100, 8.664, -298.290, 198]
+    region:   region_111
     level:    [72, 75]
   17404272:
     template: Korrigan
-    at:       [-119.600, 8.025, -301.190, 16]
+    region:   region_111
     level:    [72, 75]
   17404273:
     template: Korrigan
-    at:       [-134.200, 8.771, -293.110, 207]
+    region:   region_111
     level:    [72, 75]
   17404274:
     template: Korrigan
-    at:       [-103.400, 8.651, -299.130, 21]
+    region:   region_111
     level:    [72, 75]
   17404275:
     template: Korrigan
-    at:       [-99.790, 8.188, -308.820, 45]
+    region:   region_111
     level:    [72, 75]
   17404276:
     template: Korrigan
-    at:       [-96.220, 7.808, -337.530, 25]
+    region:   sw_372
     level:    [72, 75]
   17404277:
     template: Korrigan
-    at:       [-94.030, 7.895, -347.350, 75]
+    region:   sw_372
     level:    [72, 75]
   17404278:
     template: Elder_Goobbue
-    at:       [-104.000, 7.660, -345.810, 162]
+    region:   sw_372
     level:    [74, 77]
   17404279:
     template: Elder_Goobbue
-    at:       [-95.470, 7.910, -340.720, 56]
+    region:   sw_372
     level:    [74, 77]
   17404280:
     template: Thunder_Elemental
-    at:       [-98.620, 8.175, -334.790, 164]
+    region:   sw_372
     level:    [71, 72]
   17404281:
     template: Processionaire
-    at:       [-121.000, 8.817, -197.750, 76]
+    region:   sw_377
     level:    [72, 75]
   17404282:
     template: Processionaire
-    at:       [-122.400, 8.806, -188.560, 242]
+    region:   sw_377
     level:    [72, 75]
   17404283:
     template: Elder_Goobbue
-    at:       [-118.900, 8.722, -190.010, 111]
+    region:   sw_377
     level:    [74, 77]
   17404284:
     template: Elder_Goobbue
-    at:       [-128.400, 8.785, -200.310, 102]
+    region:   sw_377
     level:    [74, 77]
   17404285:
     template: Processionaire
-    at:       [-133.300, 6.578, -231.560, 214]
+    region:   sw_381
     level:    [72, 75]
   17404286:
     template: Processionaire
-    at:       [-133.900, 8.606, -238.070, 206]
+    region:   sw_381
     level:    [72, 75]
   17404287:
     template: Elder_Goobbue
-    at:       [-128.400, 8.638, -235.800, 48]
+    region:   sw_381
     level:    [74, 77]
   17404288:
     template: Elder_Goobbue
-    at:       [-107.800, 8.249, -247.840, 246]
+    region:   sw_381
     level:    [74, 77]
   17404289:
     template: Elder_Goobbue
-    at:       [-107.200, 8.429, -229.110, 49]
+    region:   sw_381
     level:    [74, 77]
   17404290:
     template: Ancient_Goobbue
-    at:       [-133.700, 6.347, -230.290]
+    region:   sw_381
     level:    [80, 80]
   17404291:
     template: Boyahda_Sapling
-    at:       [-196.400, 11.498, 19.512, 247]
+    region:   nw_387
     level:    [74, 77]
   17404292:
     template: Boyahda_Sapling
-    at:       [-195.000, 11.553, 20.129, 124]
+    region:   nw_387
     level:    [74, 77]
   17404293:
     template: Boyahda_Sapling
-    at:       [-222.000, 14.380, 25.724, 223]
+    region:   nw_389
     level:    [74, 77]
   17404294:
     template: Boyahda_Sapling
-    at:       [-223.500, 14.430, 23.877, 195]
+    region:   nw_387
     level:    [74, 77]
   17404295:
     template: Boyahda_Sapling
-    at:       [-215.200, 13.585, 68.666, 42]
+    region:   nw_391
     level:    [74, 77]
   17404296:
     template: Boyahda_Sapling
-    at:       [-216.400, 14.317, 56.532, 110]
+    region:   nw_387
     level:    [74, 77]
   17404297:
     template: Bark_Tarantula
-    at:       [-226.500, 14.038, 59.414, 62]
+    region:   nw_391
     level:    [75, 78]
   17404298:
     template: Bark_Tarantula
-    at:       [-209.400, 13.800, 64.683, 222]
+    region:   nw_398
     level:    [75, 78]
   17404299:
     template: Demonic_Rose
-    at:       [-220.000, 13.958, 71.823, 91]
+    region:   nw_391
     level:    [75, 78]
   17404300:
     template: Leshonki
-    at:       [-220.500, 13.621, 73.357, 155]
+    region:   nw_391
     level:    [79, 81]
   17404301:
     template: Boyahda_Sapling
-    at:       [-197.800, 11.135, 100.781, 178]
+    region:   nw_387
     level:    [74, 77]
   17404302:
     template: Boyahda_Sapling
-    at:       [-223.800, 14.267, 96.920, 120]
+    region:   nw_398
     level:    [74, 77]
   17404303:
     template: Bark_Tarantula
-    at:       [-221.400, 14.572, 97.168, 248]
+    region:   nw_398
     level:    [75, 78]
   17404304:
     template: Boyahda_Sapling
-    at:       [-181.700, 11.329, 82.953, 180]
+    region:   nw_387
     level:    [74, 77]
   17404305:
     template: Bark_Tarantula
-    at:       [-187.300, 11.720, 89.707, 154]
+    region:   nw_401
     level:    [75, 78]
   17404306:
     template: Bark_Tarantula
-    at:       [-187.000, 11.590, 87.406, 222]
+    region:   nw_401
     level:    [75, 78]
   17404307:
     template: Demonic_Rose
-    at:       [-192.800, 11.612, 97.210, 96]
+    region:   nw_401
     level:    [75, 78]
   17404308:
     template: Boyahda_Sapling
-    at:       [-137.800, 8.540, 55.204, 232]
+    region:   nw_404
     level:    [74, 77]
   17404309:
     template: Boyahda_Sapling
-    at:       [-137.900, 8.565, 54.097, 62]
+    region:   nw_404
     level:    [74, 77]
   17404310:
     template: Bark_Tarantula
-    at:       [-141.700, 8.245, 38.986, 89]
+    region:   nw_404
     level:    [75, 78]
   17404311:
     template: Boyahda_Sapling
-    at:       [-139.100, 8.324, 80.872, 29]
+    region:   nw_407
     level:    [74, 77]
   17404312:
     template: Boyahda_Sapling
-    at:       [-137.300, 8.630, 92.532, 82]
+    region:   nw_407
     level:    [74, 77]
   17404313:
     template: Bark_Tarantula
-    at:       [-141.300, 8.298, 80.642, 85]
+    region:   nw_407
     level:    [75, 78]
   17404314:
     template: Bark_Tarantula
-    at:       [-135.200, 8.192, 95.120, 224]
+    region:   nw_407
     level:    [75, 78]
   17404315:
     template: Boyahda_Sapling
-    at:       [-179.200, 8.772, 128.783, 41]
+    region:   nw_411
     level:    [74, 77]
   17404316:
     template: Bark_Tarantula
-    at:       [-181.400, 8.890, 134.447, 42]
+    region:   nw_411
     level:    [75, 78]
   17404317:
     template: Bark_Tarantula
-    at:       [-186.600, 8.290, 131.882, 112]
+    region:   nw_411
     level:    [75, 78]
   17404318:
     template: Demonic_Rose
-    at:       [-192.600, 8.437, 134.358, 167]
+    region:   nw_411
     level:    [75, 78]
   17404319:
     template: Boyahda_Sapling
-    at:       [-220.400, 5.593, 162.427, 185]
+    region:   region_112
     level:    [74, 77]
   17404320:
     template: Bark_Tarantula
-    at:       [-220.000, 5.834, 155.761, 213]
+    region:   region_112
     level:    [75, 78]
   17404321:
     template: Bark_Tarantula
-    at:       [-220.700, 5.517, 161.376, 65]
+    region:   region_112
     level:    [75, 78]
   17404322:
     template: Bark_Tarantula
-    at:       [-189.000, 5.390, 204.923, 151]
+    region:   region_113
     level:    [75, 78]
   17404323:
     template: Bark_Tarantula
-    at:       [-185.200, 5.099, 196.555, 139]
+    region:   region_113
     level:    [75, 78]
   17404324:
     template: Bark_Tarantula
-    at:       [-204.100, 5.179, 187.998, 61]
+    region:   region_113
     level:    [75, 78]
   17404325:
     template: Bark_Tarantula
-    at:       [-197.700, 5.804, 195.552, 76]
+    region:   region_113
     level:    [75, 78]
   17404326:
     template: Bark_Tarantula
-    at:       [-185.100, 5.063, 194.016, 91]
+    region:   region_113
     level:    [75, 78]
   17404327:
     template: Boyahda_Sapling
-    at:       [-194.200, 5.053, 207.617, 199]
+    region:   region_113
     level:    [74, 77]
   17404328:
     template: Boyahda_Sapling
-    at:       [-193.100, 4.590, 217.447, 9]
+    region:   region_113
     level:    [74, 77]
   17404329:
     template: Boyahda_Sapling
-    at:       [-201.100, 5.447, 200.813, 48]
+    region:   region_113
     level:    [74, 77]
   17404330:
     template: Demonic_Rose
-    at:       [-195.700, 5.649, 199.960, 213]
+    region:   region_113
     level:    [75, 78]
   17404331:
     template: Voluptuous_Vivian
-    at:       [-208.700, 5.276, 203.289, 56]
+    region:   region_113
     level:    [80, 81]
   17404332:
     template: Bark_Tarantula
-    at:       [-180.200, 4.608, 144.572, 129]
+    region:   region_115
     level:    [75, 78]
   17404333:
     template: Bark_Tarantula
-    at:       [-179.800, 4.814, 145.587, 253]
+    region:   region_115
     level:    [75, 78]
   17404334:
     template: Bark_Tarantula
-    at:       [-142.200, 5.272, 142.462, 245]
+    region:   region_116
     level:    [75, 78]
   17404335:
     template: Bark_Tarantula
-    at:       [-139.100, 5.509, 147.276, 56]
+    region:   region_116
     level:    [75, 78]
   17404336:
     template: Mimic

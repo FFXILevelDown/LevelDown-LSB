@@ -7963,31 +7963,31 @@ spawns:
     level:    [95, 95]
   17326099:
     template: Vanguard_Vindicator
-    at:       [195.654, -0.490, -160.718, 171]
+    region:   se_19
     level:    [75, 77]
   17326100:
     template: Vanguard_Vindicator
-    at:       [167.243, 0.254, -178.698, 122]
+    region:   se_19
     level:    [75, 77]
   17326101:
     template: Vanguard_Protector
-    at:       [170.814, -0.099, -162.073, 116]
+    region:   se_19
     level:    [75, 77]
   17326102:
     template: Vanguard_Protector
-    at:       [189.136, -0.156, -163.876, 237]
+    region:   se_19
     level:    [75, 77]
   17326103:
     template: Vanguard_Beasttender
-    at:       [193.547, -0.247, -175.011, 119]
+    region:   se_19
     level:    [75, 77]
   17326104:
     template: Vanguards_Scorpion
-    at:       [195.925, -0.143, -174.515, 103]
+    region:   se_19
     level:    [75, 77]
   17326105:
     template: Vanguard_Minstrel
-    at:       [180.536, 0.442, -159.418, 202]
+    region:   se_19
     level:    [75, 77]
   17326106:
     template: GuNha_Wallstormer
@@ -7995,23 +7995,23 @@ spawns:
     level:    [80, 81]
   17326107:
     template: Vanguard_Militant
-    at:       [173.206, -0.349, -189.757, 218]
+    region:   se_27
     level:    [75, 77]
   17326108:
     template: Vanguard_Militant
-    at:       [189.921, -0.179, -187.085, 120]
+    region:   se_27
     level:    [75, 77]
   17326109:
     template: Vanguard_Protector
-    at:       [196.472, -0.447, -203.444, 9]
+    region:   se_27
     level:    [75, 77]
   17326110:
     template: Vanguard_Protector
-    at:       [163.942, -0.018, -187.184, 34]
+    region:   se_27
     level:    [75, 77]
   17326111:
     template: Vanguard_Drakekeeper
-    at:       [168.153, -0.491, -192.055, 35]
+    region:   se_27
     level:    [75, 77]
   17326112:
     template: Vanguards_Wyvern
@@ -8019,7 +8019,7 @@ spawns:
     level:    [75, 77]
   17326113:
     template: Vanguard_Minstrel
-    at:       [170.916, -0.223, -200.012, 114]
+    region:   se_27
     level:    [75, 77]
   17326114:
     template: NaHya_Floodmaker
@@ -8027,47 +8027,47 @@ spawns:
     level:    [80, 81]
   17326115:
     template: Vanguard_Constable
-    at:       [212.200, -0.316, -193.265, 79]
+    region:   se_35
     level:    [75, 77]
   17326116:
     template: Vanguard_Defender
-    at:       [219.890, -0.294, -191.721, 198]
+    region:   se_35
     level:    [75, 77]
   17326117:
     template: Vanguard_Protector
-    at:       [218.990, -0.505, -189.960, 226]
+    region:   se_35
     level:    [75, 77]
   17326118:
     template: Vanguard_Hatamoto
-    at:       [261.519, -0.486, -209.069, 232]
+    region:   se_38
     level:    [75, 77]
   17326119:
     template: Vanguard_Kusa
-    at:       [272.572, -0.229, -213.334, 97]
+    region:   se_38
     level:    [75, 77]
   17326120:
     template: Vanguard_Protector
-    at:       [276.849, -0.469, -198.549, 155]
+    region:   se_38
     level:    [75, 77]
   17326121:
     template: Vanguard_Purloiner
-    at:       [283.721, 0.169, -224.091, 203]
+    region:   se_41
     level:    [75, 77]
   17326122:
     template: Vanguard_Mason
-    at:       [311.331, -0.248, -227.724, 118]
+    region:   se_41
     level:    [75, 77]
   17326123:
     template: Vanguard_Mason
-    at:       [311.487, -0.324, -227.976, 28]
+    region:   se_41
     level:    [75, 77]
   17326124:
     template: Vanguard_Undertaker
-    at:       [297.717, 0.322, -236.679, 150]
+    region:   se_41
     level:    [75, 77]
   17326125:
     template: Vanguards_Avatar
-    at:       [299.296, 0.245, -237.447, 145]
+    region:   se_41
     level:    [75, 77]
   17326126:
     template: JiFhu_Infiltrator
@@ -8075,35 +8075,35 @@ spawns:
     level:    [80, 81]
   17326127:
     template: Vanguard_Militant
-    at:       [330.072, 0.003, -230.991, 29]
+    region:   se_47
     level:    [75, 77]
   17326128:
     template: Vanguard_Protector
-    at:       [339.489, -0.447, -250.250, 60]
+    region:   se_47
     level:    [75, 77]
   17326129:
     template: Vanguard_Purloiner
-    at:       [329.387, 0.010, -230.316, 242]
+    region:   se_47
     level:    [75, 77]
   17326130:
     template: Vanguard_Vigilante
-    at:       [330.179, -0.099, -239.546, 30]
+    region:   se_47
     level:    [75, 77]
   17326131:
     template: Vanguard_Vindicator
-    at:       [390.008, 0.018, -267.525, 213]
+    region:   se_51
     level:    [75, 77]
   17326132:
     template: Vanguard_Vindicator
-    at:       [378.536, 0.087, -277.579]
+    region:   se_51
     level:    [75, 77]
   17326133:
     template: Vanguard_Militant
-    at:       [377.831, 0.242, -277.541, 119]
+    region:   se_51
     level:    [75, 77]
   17326134:
     template: Vanguard_Constable
-    at:       [389.436, -0.430, -252.952, 228]
+    region:   se_51
     level:    [75, 77]
   17326135:
     template: GaFho_Venomtouch
@@ -8111,39 +8111,39 @@ spawns:
     level:    [80, 81]
   17326136:
     template: Vanguard_Militant
-    at:       [341.472, -0.520, -251.773, 94]
+    region:   se_47
     level:    [75, 77]
   17326137:
     template: Vanguard_Purloiner
-    at:       [375.481, -0.110, -221.855, 109]
+    region:   se_57
     level:    [75, 77]
   17326138:
     template: Vanguard_Defender
-    at:       [394.765, -0.355, -236.664, 45]
+    region:   se_57
     level:    [75, 77]
   17326139:
     template: Vanguard_Vigilante
-    at:       [394.215, 0.129, -216.238, 45]
+    region:   se_57
     level:    [75, 77]
   17326140:
     template: Vanguard_Vigilante
-    at:       [426.902, -0.219, -206.577, 200]
+    region:   se_60
     level:    [75, 77]
   17326141:
     template: Vanguard_Constable
-    at:       [420.189, 0.366, -199.836, 201]
+    region:   se_60
     level:    [75, 77]
   17326142:
     template: Vanguard_Constable
-    at:       [414.450, -0.439, -211.710, 164]
+    region:   se_60
     level:    [75, 77]
   17326143:
     template: Vanguard_Beasttender
-    at:       [415.990, -0.379, -211.265, 90]
+    region:   se_60
     level:    [75, 77]
   17326144:
     template: Vanguards_Scorpion
-    at:       [418.195, -0.194, -209.088, 95]
+    region:   se_60
     level:    [75, 77]
   17326145:
     template: TaHyu_Gallanthunter
@@ -8151,23 +8151,23 @@ spawns:
     level:    [80, 81]
   17326146:
     template: Vanguard_Undertaker
-    at:       [377.251, 0.320, -195.205, 25]
+    region:   se_66
     level:    [75, 77]
   17326147:
     template: Vanguards_Avatar
-    at:       [375.451, 0.226, -193.596, 26]
+    region:   se_66
     level:    [75, 77]
   17326148:
     template: Vanguard_Vindicator
-    at:       [368.904, -0.386, -187.795, 104]
+    region:   se_66
     level:    [75, 77]
   17326149:
     template: Vanguard_Vindicator
-    at:       [396.163, -0.150, -188.333, 198]
+    region:   se_66
     level:    [75, 77]
   17326150:
     template: Vanguard_Minstrel
-    at:       [402.512, -0.152, -190.040, 185]
+    region:   se_66
     level:    [75, 77]
   17326151:
     template: NuBhi_Spiraleye
@@ -8175,11 +8175,11 @@ spawns:
     level:    [80, 81]
   17326152:
     template: Vanguard_Constable
-    at:       [335.829, -0.389, -183.403, 153]
+    region:   se_72
     level:    [75, 77]
   17326153:
     template: Vanguard_Thaumaturge
-    at:       [331.365, -0.242, -204.987, 132]
+    region:   se_72
     level:    [75, 77]
   17326154:
     template: Vanguard_Thaumaturge
@@ -8187,11 +8187,11 @@ spawns:
     level:    [75, 77]
   17326155:
     template: Vanguard_Protector
-    at:       [321.883, -0.354, -202.498, 43]
+    region:   se_72
     level:    [75, 77]
   17326156:
     template: DeBho_Pyrohand
-    at:       [325.616, -0.345, -189.671, 58]
+    region:   se_72
     level:    [80, 81]
   17326157:
     template: Vanguard_Drakekeeper
@@ -8203,19 +8203,19 @@ spawns:
     level:    [75, 77]
   17326159:
     template: Vanguard_Hatamoto
-    at:       [323.779, -0.034, -144.164, 229]
+    region:   se_79
     level:    [75, 77]
   17326160:
     template: Vanguard_Hatamoto
-    at:       [315.295, -0.495, -159.750, 123]
+    region:   se_79
     level:    [75, 77]
   17326161:
     template: Vanguard_Kusa
-    at:       [323.707, -0.032, -145.076, 229]
+    region:   se_79
     level:    [75, 77]
   17326162:
     template: GoTyo_Magenapper
-    at:       [326.480, 0.390, -134.520, 141]
+    region:   se_79
     level:    [80, 81]
   17326163:
     template: Vanguards_Wyvern
@@ -8223,15 +8223,15 @@ spawns:
     level:    [80, 81]
   17326164:
     template: Vanguard_Thaumaturge
-    at:       [374.444, -0.078, -168.564, 219]
+    region:   se_84
     level:    [75, 77]
   17326165:
     template: Vanguard_Vigilante
-    at:       [351.950, -0.370, -160.780, 186]
+    region:   se_84
     level:    [75, 77]
   17326166:
     template: Vanguard_Militant
-    at:       [367.006, -0.299, -169.067, 126]
+    region:   se_84
     level:    [75, 77]
   17326167:
     template: Vanguard_Militant
@@ -8239,19 +8239,19 @@ spawns:
     level:    [75, 77]
   17326168:
     template: SoZho_Metalbender
-    at:       [376.572, 0.187, -147.550, 193]
+    region:   se_84
     level:    [80, 81]
   17326169:
     template: Vanguard_Vindicator
-    at:       [395.798, 0.369, -179.242, 50]
+    region:   se_89
     level:    [75, 77]
   17326170:
     template: Vanguard_Constable
-    at:       [390.645, -0.256, -155.020, 188]
+    region:   se_89
     level:    [75, 77]
   17326171:
     template: Vanguard_Defender
-    at:       [395.880, -0.358, -167.290, 4]
+    region:   se_89
     level:    [75, 77]
   17326172:
     template: Vanguard_Defender
@@ -8259,19 +8259,19 @@ spawns:
     level:    [75, 77]
   17326173:
     template: MuGha_Legionkiller
-    at:       [396.497, -0.500, -163.925, 48]
+    region:   se_89
     level:    [80, 81]
   17326174:
     template: Vanguard_Purloiner
-    at:       [381.964, 0.323, -123.764, 254]
+    region:   se_94
     level:    [75, 77]
   17326175:
     template: Vanguard_Purloiner
-    at:       [374.327, -0.366, -127.803, 109]
+    region:   se_94
     level:    [75, 77]
   17326176:
     template: Vanguard_Minstrel
-    at:       [381.830, 0.204, -124.456, 82]
+    region:   se_94
     level:    [75, 77]
   17326177:
     template: Vanguard_Beasttender
@@ -8283,23 +8283,23 @@ spawns:
     level:    [75, 77]
   17326179:
     template: SoGho_Adderhandler
-    at:       [396.052, 0.005, -125.784, 193]
+    region:   se_94
     level:    [80, 81]
   17326180:
     template: Vanguards_Scorpion
-    at:       [395.832, -0.047, -121.231, 58]
+    region:   se_94
     level:    [80, 81]
   17326181:
     template: Vanguard_Vigilante
-    at:       [334.714, 0.018, -120.313, 207]
+    region:   se_101
     level:    [75, 77]
   17326182:
     template: Vanguard_Hatamoto
-    at:       [364.393, -0.474, -119.941, 56]
+    region:   se_101
     level:    [75, 77]
   17326183:
     template: Vanguard_Mason
-    at:       [328.133, -0.408, -123.964, 176]
+    region:   se_101
     level:    [75, 77]
   17326184:
     template: Vanguard_Mason
@@ -8307,19 +8307,19 @@ spawns:
     level:    [75, 77]
   17326185:
     template: GuKhu_Dukesniper
-    at:       [352.906, -0.345, -123.037, 154]
+    region:   se_101
     level:    [80, 81]
   17326186:
     template: Vanguard_Constable
-    at:       [363.311, 0.122, -104.536, 61]
+    region:   e_106
     level:    [75, 77]
   17326187:
     template: Vanguard_Thaumaturge
-    at:       [357.692, -0.161, -89.479, 186]
+    region:   e_106
     level:    [75, 77]
   17326188:
     template: Vanguard_Hatamoto
-    at:       [348.181, -0.312, -99.912, 206]
+    region:   e_106
     level:    [75, 77]
   17326189:
     template: Vanguard_Hatamoto
@@ -8327,19 +8327,19 @@ spawns:
     level:    [75, 77]
   17326190:
     template: JiKhu_Towercleaver
-    at:       [355.772, 0.329, -67.318, 249]
+    region:   e_106
     level:    [80, 81]
   17326191:
     template: Vanguard_Protector
-    at:       [332.767, -0.521, -108.559, 222]
+    region:   e_111
     level:    [75, 77]
   17326192:
     template: Vanguard_Militant
-    at:       [336.045, -0.283, -93.448, 57]
+    region:   e_111
     level:    [75, 77]
   17326193:
     template: Vanguard_Kusa
-    at:       [337.574, -0.096, -103.377, 58]
+    region:   e_111
     level:    [75, 77]
   17326194:
     template: Vanguard_Kusa
@@ -8347,19 +8347,19 @@ spawns:
     level:    [75, 77]
   17326195:
     template: MiRhe_Whisperblade
-    at:       [333.961, 0.001, -67.264, 178]
+    region:   e_111
     level:    [80, 81]
   17326196:
     template: Vanguard_Thaumaturge
-    at:       [340.418, -0.025, -70.657, 45]
+    region:   e_116
     level:    [75, 77]
   17326197:
     template: Vanguard_Thaumaturge
-    at:       [349.350, -0.221, -62.058, 97]
+    region:   e_116
     level:    [75, 77]
   17326198:
     template: Vanguard_Thaumaturge
-    at:       [331.517, -0.116, -78.850, 81]
+    region:   e_116
     level:    [75, 77]
   17326199:
     template: Vanguard_Undertaker
@@ -8371,15 +8371,15 @@ spawns:
     level:    [75, 77]
   17326201:
     template: BeZhe_Keeprazer
-    at:       [341.605, 0.535, -75.302, 225]
+    region:   e_116
     level:    [80, 81]
   17326202:
     template: Vanguards_Avatar
-    at:       [341.351, 0.432, -77.707, 214]
+    region:   e_116
     level:    [80, 81]
   17326203:
     template: Adamantking_Effigy
-    at:       [362.154, -0.279, -208.748, 26]
+    region:   se_123
     level:    [70, 70]
   17326204:
     template: Adamantking_Effigy
@@ -8391,7 +8391,7 @@ spawns:
     level:    [70, 70]
   17326206:
     template: Adamantking_Effigy
-    at:       [389.712, 0.266, -225.463, 76]
+    region:   se_123
     level:    [70, 70]
   17326207:
     template: Adamantking_Image
@@ -8399,19 +8399,19 @@ spawns:
     level:    [70, 70]
   17326208:
     template: Vanguard_Trooper
-    at:       [283.962, -0.416, -74.510, 19]
+    region:   e_128
     level:    [75, 77]
   17326209:
     template: Vanguard_Neckchopper
-    at:       [276.774, -0.207, -70.319, 95]
+    region:   e_128
     level:    [75, 77]
   17326210:
     template: Vanguard_Footsoldier
-    at:       [284.870, -0.366, -72.940, 49]
+    region:   e_128
     level:    [75, 77]
   17326211:
     template: Vanguard_Footsoldier
-    at:       [288.019, 0.039, -52.067, 199]
+    region:   e_128
     level:    [75, 77]
   17326212:
     template: Humegutter_Adzjbadj
@@ -8419,15 +8419,15 @@ spawns:
     level:    [80, 81]
   17326213:
     template: Vanguard_Vexer
-    at:       [227.004, -0.456, -27.048, 208]
+    region:   e_133
     level:    [75, 77]
   17326214:
     template: Vanguard_Vexer
-    at:       [227.609, 0.054, -39.424, 83]
+    region:   e_133
     level:    [75, 77]
   17326215:
     template: Vanguard_Backstabber
-    at:       [232.149, -0.267, -36.519, 177]
+    region:   e_133
     level:    [75, 77]
   17326216:
     template: Jeunoraider_Gepkzip
@@ -8435,7 +8435,7 @@ spawns:
     level:    [80, 81]
   17326217:
     template: Vanguard_Grappler
-    at:       [222.106, 0.217, -34.998, 181]
+    region:   e_133
     level:    [75, 77]
   17326218:
     template: Cobraclaw_Buchzvotch
@@ -8443,19 +8443,19 @@ spawns:
     level:    [80, 81]
   17326219:
     template: Vanguard_Footsoldier
-    at:       [296.866, -0.123, -25.938, 108]
+    region:   e_139
     level:    [75, 77]
   17326220:
     template: Vanguard_Gutslasher
-    at:       [304.463, -0.137, -22.917, 239]
+    region:   e_139
     level:    [75, 77]
   17326221:
     template: Vanguard_Amputator
-    at:       [297.630, 0.072, 9.444, 230]
+    region:   e_139
     level:    [75, 77]
   17326222:
     template: Vanguard_Amputator
-    at:       [297.130, 0.075, 10.309, 250]
+    region:   e_139
     level:    [75, 77]
   17326223:
     template: Wraithdancer_Gidbnod
@@ -8463,11 +8463,11 @@ spawns:
     level:    [80, 81]
   17326224:
     template: Vanguard_Backstabber
-    at:       [335.606, 0.169, -4.044, 22]
+    region:   e_144
     level:    [75, 77]
   17326225:
     template: Vanguard_Impaler
-    at:       [359.431, -0.472, -4.424, 254]
+    region:   e_144
     level:    [75, 77]
   17326226:
     template: Vanguards_Wyvern
@@ -8475,11 +8475,11 @@ spawns:
     level:    [75, 77]
   17326227:
     template: Vanguard_Predator
-    at:       [336.507, 0.209, -5.056, 23]
+    region:   e_144
     level:    [75, 77]
   17326228:
     template: Vanguard_Predator
-    at:       [342.892, -0.584, -13.350, 124]
+    region:   e_144
     level:    [75, 77]
   17326229:
     template: Galkarider_Retzpratz
@@ -8487,15 +8487,15 @@ spawns:
     level:    [80, 81]
   17326230:
     template: Vanguard_Grappler
-    at:       [394.133, -0.377, 8.582, 113]
+    region:   e_150
     level:    [75, 77]
   17326231:
     template: Vanguard_Dollmaster
-    at:       [365.905, 0.185, 23.399, 12]
+    region:   e_150
     level:    [75, 77]
   17326232:
     template: Vanguards_Avatar
-    at:       [365.597, 0.131, 25.188, 29]
+    region:   e_150
     level:    [75, 77]
   17326233:
     template: Deathcaller_Bidfbid
@@ -8507,11 +8507,11 @@ spawns:
     level:    [80, 81]
   17326235:
     template: Vanguard_Vexer
-    at:       [385.143, 0.022, 31.384, 150]
+    region:   e_150
     level:    [75, 77]
   17326236:
     template: Vanguard_Vexer
-    at:       [371.683, -0.068, 21.876, 138]
+    region:   e_150
     level:    [75, 77]
   17326237:
     template: Spinalsucker_Galflmall
@@ -8519,23 +8519,23 @@ spawns:
     level:    [80, 81]
   17326238:
     template: Vanguard_Mesmerizer
-    at:       [295.566, 0.043, 38.047, 135]
+    region:   e_158
     level:    [75, 77]
   17326239:
     template: Vanguard_Hawker
-    at:       [308.861, -0.109, 35.126, 11]
+    region:   e_158
     level:    [75, 77]
   17326240:
     template: Vanguards_Hecteyes
-    at:       [307.193, 0.003, 36.009, 12]
+    region:   e_158
     level:    [75, 77]
   17326241:
     template: Vanguard_Pillager
-    at:       [304.564, 0.302, 40.329, 97]
+    region:   e_158
     level:    [75, 77]
   17326242:
     template: Vanguard_Pillager
-    at:       [326.700, -0.363, 40.781, 108]
+    region:   e_158
     level:    [75, 77]
   17326243:
     template: Lockbuster_Zapdjipp
@@ -8543,19 +8543,19 @@ spawns:
     level:    [80, 81]
   17326244:
     template: Vanguard_Pillager
-    at:       [278.824, 0.090, 55.783, 102]
+    region:   e_164
     level:    [75, 77]
   17326245:
     template: Vanguard_Predator
-    at:       [285.193, -0.416, 79.496, 241]
+    region:   e_164
     level:    [75, 77]
   17326246:
     template: Vanguard_Trooper
-    at:       [284.766, 0.062, 66.129, 28]
+    region:   e_164
     level:    [75, 77]
   17326247:
     template: Vanguard_Trooper
-    at:       [279.324, -0.336, 75.085, 182]
+    region:   e_164
     level:    [75, 77]
   17326248:
     template: Heavymail_Djidzbad
@@ -8563,27 +8563,27 @@ spawns:
     level:    [80, 81]
   17326249:
     template: Vanguard_Neckchopper
-    at:       [188.089, -0.223, 102.771, 57]
+    region:   e_169
     level:    [75, 77]
   17326250:
     template: Vanguard_Footsoldier
-    at:       [221.521, -0.293, 94.938, 178]
+    region:   e_169
     level:    [75, 77]
   17326251:
     template: Vanguard_Bugler
-    at:       [182.821, 0.159, 116.965, 43]
+    region:   e_169
     level:    [75, 77]
   17326252:
     template: Vanguard_Dollmaster
-    at:       [179.799, -0.512, 110.925, 170]
+    region:   e_169
     level:    [75, 77]
   17326253:
     template: Vanguards_Avatar
-    at:       [180.872, -0.515, 109.597, 164]
+    region:   e_169
     level:    [75, 77]
   17326254:
     template: Vanguard_Gutslasher
-    at:       [191.346, -0.047, 99.209, 154]
+    region:   e_169
     level:    [75, 77]
   17326255:
     template: Elvaanlopper_Grokdok
@@ -8591,11 +8591,11 @@ spawns:
     level:    [80, 81]
   17326256:
     template: Vanguard_Neckchopper
-    at:       [180.871, 0.334, 118.729, 152]
+    region:   e_169
     level:    [75, 77]
   17326257:
     template: Vanguard_Neckchopper
-    at:       [211.722, -0.175, 100.772, 199]
+    region:   e_169
     level:    [75, 77]
   17326258:
     template: Skinmask_Ugghfogg
@@ -8603,15 +8603,15 @@ spawns:
     level:    [80, 81]
   17326259:
     template: Vanguard_Amputator
-    at:       [256.708, 0.335, 201.614, 227]
+    region:   ne_179
     level:    [75, 77]
   17326260:
     template: Vanguard_Mesmerizer
-    at:       [239.298, -0.217, 230.438, 135]
+    region:   ne_179
     level:    [75, 77]
   17326261:
     template: Vanguard_Mesmerizer
-    at:       [236.176, 0.002, 212.461, 137]
+    region:   ne_179
     level:    [75, 77]
   17326262:
     template: Taruroaster_Biggsjig
@@ -8619,11 +8619,11 @@ spawns:
     level:    [80, 81]
   17326263:
     template: Vanguard_Hawker
-    at:       [248.808, -0.226, 205.199, 45]
+    region:   ne_179
     level:    [75, 77]
   17326264:
     template: Vanguards_Hecteyes
-    at:       [248.107, -0.166, 206.814, 43]
+    region:   ne_179
     level:    [75, 77]
   17326265:
     template: Mithraslaver_Debhabob
@@ -8635,15 +8635,15 @@ spawns:
     level:    [80, 81]
   17326267:
     template: Vanguard_Bugler
-    at:       [281.920, -0.372, 206.712, 117]
+    region:   ne_187
     level:    [75, 77]
   17326268:
     template: Vanguard_Bugler
-    at:       [287.519, -0.615, 206.523, 11]
+    region:   ne_187
     level:    [75, 77]
   17326269:
     template: Vanguard_Bugler
-    at:       [277.640, -0.263, 228.988, 148]
+    region:   ne_187
     level:    [75, 77]
   17326270:
     template: Ultrasonic_Zeknajak
@@ -8659,7 +8659,7 @@ spawns:
     level:    [75, 77]
   17326273:
     template: Drakefeast_Wubmfub
-    at:       [278.297, 0.185, 218.604, 83]
+    region:   ne_187
     level:    [80, 81]
   17326274:
     template: Vanguards_Wyvern
@@ -8671,11 +8671,11 @@ spawns:
     level:    [70, 70]
   17326276:
     template: Serjeant_Tombstone
-    at:       [195.893, 0.302, 95.437, 156]
+    region:   e_169
     level:    [70, 70]
   17326277:
     template: Serjeant_Tombstone
-    at:       [201.857, 0.044, 111.926, 160]
+    region:   e_169
     level:    [70, 70]
   17326278:
     template: Serjeant_Tombstone
@@ -8683,19 +8683,19 @@ spawns:
     level:    [70, 70]
   17326279:
     template: Warchief_Tombstone
-    at:       [260.632, 0.357, 205.003, 118]
+    region:   ne_199
     level:    [70, 70]
   17326280:
     template: Vanguard_Sentinel
-    at:       [70.546, -20.271, -153.205, 73]
+    region:   s_200
     level:    [75, 77]
   17326281:
     template: Vanguard_Assassin
-    at:       [98.137, -20.243, -140.221, 200]
+    region:   s_200
     level:    [75, 77]
   17326282:
     template: Vanguard_Skirmisher
-    at:       [92.105, -20.025, -127.361, 176]
+    region:   s_200
     level:    [75, 77]
   17326283:
     template: Vanguard_Skirmisher
@@ -8707,19 +8707,19 @@ spawns:
     level:    [80, 81]
   17326285:
     template: Vanguard_Visionary
-    at:       [129.409, -20.231, -139.322, 134]
+    region:   s_205
     level:    [75, 77]
   17326286:
     template: Vanguard_Liberator
-    at:       [131.344, -20.576, -132.432, 138]
+    region:   s_205
     level:    [75, 77]
   17326287:
     template: Vanguard_Sentinel
-    at:       [130.885, -20.463, -139.267, 20]
+    region:   s_205
     level:    [75, 77]
   17326288:
     template: Vanguard_Sentinel
-    at:       [125.925, -20.539, -145.680, 48]
+    region:   s_205
     level:    [75, 77]
   17326289:
     template: Xaa_Chau_the_Roctalon
@@ -8727,23 +8727,23 @@ spawns:
     level:    [80, 81]
   17326290:
     template: Vanguard_Exemplar
-    at:       [178.309, -19.810, -113.383, 23]
+    region:   s_210
     level:    [75, 77]
   17326291:
     template: Vanguard_Ogresoother
-    at:       [180.221, -19.750, -117.426, 197]
+    region:   s_210
     level:    [75, 77]
   17326292:
     template: Vanguards_Crow
-    at:       [179.114, -19.797, -120.604, 204]
+    region:   s_210
     level:    [75, 77]
   17326293:
     template: Vanguard_Priest
-    at:       [175.215, -19.782, -122.416, 87]
+    region:   s_210
     level:    [75, 77]
   17326294:
     template: Vanguard_Priest
-    at:       [161.568, -19.700, -101.646, 225]
+    region:   s_210
     level:    [75, 77]
   17326295:
     template: Koo_Saxu_the_Everfast
@@ -8751,19 +8751,19 @@ spawns:
     level:    [80, 81]
   17326296:
     template: Vanguard_Inciter
-    at:       [196.349, -20.342, -124.130, 240]
+    region:   se_216
     level:    [75, 77]
   17326297:
     template: Vanguard_Chanter
-    at:       [218.390, -20.835, -136.507, 73]
+    region:   se_216
     level:    [75, 77]
   17326298:
     template: Vanguard_Prelate
-    at:       [208.878, -20.748, -133.037, 221]
+    region:   se_216
     level:    [75, 77]
   17326299:
     template: Vanguard_Prelate
-    at:       [133.575, -20.411, -139.346, 51]
+    region:   se_216
     level:    [75, 77]
   17326300:
     template: Bhuu_Wjato_the_Firepool
@@ -8771,15 +8771,15 @@ spawns:
     level:    [80, 81]
   17326301:
     template: Vanguard_Skirmisher
-    at:       [245.610, -19.804, -134.482, 88]
+    region:   se_221
     level:    [75, 77]
   17326302:
     template: Vanguard_Visionary
-    at:       [242.314, -20.420, -115.947, 155]
+    region:   se_221
     level:    [75, 77]
   17326303:
     template: Vanguard_Visionary
-    at:       [235.758, -20.072, -137.026, 162]
+    region:   se_221
     level:    [75, 77]
   17326304:
     template: Caa_Xaza_the_Madpiercer
@@ -8787,7 +8787,7 @@ spawns:
     level:    [80, 81]
   17326305:
     template: Vanguard_Partisan
-    at:       [230.417, -20.700, -133.049, 207]
+    region:   se_221
     level:    [75, 77]
   17326306:
     template: Vanguards_Wyvern
@@ -8803,19 +8803,19 @@ spawns:
     level:    [80, 81]
   17326309:
     template: Vanguard_Skirmisher
-    at:       [267.207, -19.875, -159.389, 146]
+    region:   se_229
     level:    [75, 77]
   17326310:
     template: Vanguard_Priest
-    at:       [261.428, -20.329, -152.536, 159]
+    region:   se_229
     level:    [75, 77]
   17326311:
     template: Vanguard_Liberator
-    at:       [284.242, -20.488, -153.927, 100]
+    region:   se_229
     level:    [75, 77]
   17326312:
     template: Vanguard_Liberator
-    at:       [235.200, -20.480, -156.000, 130]
+    region:   se_229
     level:    [75, 77]
   17326313:
     template: Ryy_Qihi_the_Idolrobber
@@ -8823,23 +8823,23 @@ spawns:
     level:    [80, 81]
   17326314:
     template: Vanguard_Salvager
-    at:       [286.198, -19.916, -137.160, 36]
+    region:   se_234
     level:    [75, 77]
   17326315:
     template: Vanguard_Oracle
-    at:       [285.345, -20.343, -125.569, 165]
+    region:   se_234
     level:    [75, 77]
   17326316:
     template: Vanguards_Avatar
-    at:       [286.106, -20.265, -127.309, 167]
+    region:   se_234
     level:    [75, 77]
   17326317:
     template: Vanguard_Exemplar
-    at:       [285.178, -19.910, -137.136, 36]
+    region:   se_234
     level:    [75, 77]
   17326318:
     template: Vanguard_Exemplar
-    at:       [276.159, -19.594, -139.061, 96]
+    region:   se_234
     level:    [75, 77]
   17326319:
     template: Guu_Waji_the_Preacher
@@ -8847,15 +8847,15 @@ spawns:
     level:    [80, 81]
   17326320:
     template: Vanguard_Prelate
-    at:       [186.807, -21.230, -66.937, 189]
+    region:   e_240
     level:    [75, 77]
   17326321:
     template: Vanguard_Inciter
-    at:       [170.971, -20.223, -77.778, 107]
+    region:   e_240
     level:    [75, 77]
   17326322:
     template: Vanguard_Inciter
-    at:       [178.893, -20.415, -69.888, 203]
+    region:   e_240
     level:    [75, 77]
   17326323:
     template: Nee_Huxa_the_Judgmental
@@ -8863,7 +8863,7 @@ spawns:
     level:    [80, 81]
   17326324:
     template: Vanguard_Assassin
-    at:       [180.180, -20.943, -63.000, 250]
+    region:   e_240
     level:    [75, 77]
   17326325:
     template: Kuu_Xuka_the_Nimble
@@ -8871,11 +8871,11 @@ spawns:
     level:    [80, 81]
   17326326:
     template: Vanguard_Ogresoother
-    at:       [162.836, -20.385, 6.170, 98]
+    region:   e_246
     level:    [75, 77]
   17326327:
     template: Vanguards_Crow
-    at:       [165.019, -20.330, 6.970, 102]
+    region:   e_246
     level:    [75, 77]
   17326328:
     template: Soo_Jopo_the_Fiendking
@@ -8887,11 +8887,11 @@ spawns:
     level:    [80, 81]
   17326330:
     template: Vanguard_Persecutor
-    at:       [211.739, -20.887, 6.608, 20]
+    region:   e_250
     level:    [75, 77]
   17326331:
     template: Vanguard_Partisan
-    at:       [200.300, -19.817, 13.437, 199]
+    region:   e_250
     level:    [75, 77]
   17326332:
     template: Vanguards_Wyvern
@@ -8899,11 +8899,11 @@ spawns:
     level:    [75, 77]
   17326333:
     template: Vanguard_Chanter
-    at:       [211.179, -20.891, -0.725, 181]
+    region:   e_250
     level:    [75, 77]
   17326334:
     template: Vanguard_Chanter
-    at:       [215.435, -21.509, 11.488, 1]
+    region:   e_250
     level:    [75, 77]
   17326335:
     template: Xhoo_Fuza_the_Sublime
@@ -8911,19 +8911,19 @@ spawns:
     level:    [80, 81]
   17326336:
     template: Vanguard_Liberator
-    at:       [226.457, -19.353, 52.820, 128]
+    region:   e_256
     level:    [75, 77]
   17326337:
     template: Vanguard_Prelate
-    at:       [223.228, -19.508, 52.516, 121]
+    region:   e_256
     level:    [75, 77]
   17326338:
     template: Vanguard_Salvager
-    at:       [222.445, -21.209, 29.343, 99]
+    region:   e_256
     level:    [75, 77]
   17326339:
     template: Vanguard_Salvager
-    at:       [224.204, -21.792, 25.925, 114]
+    region:   e_256
     level:    [75, 77]
   17326340:
     template: Hee_Mida_the_Meticulous
@@ -8931,15 +8931,15 @@ spawns:
     level:    [80, 81]
   17326341:
     template: Vanguard_Assassin
-    at:       [172.634, -20.417, 49.594, 205]
+    region:   e_261
     level:    [75, 77]
   17326342:
     template: Vanguard_Persecutor
-    at:       [170.980, -19.986, 33.463, 15]
+    region:   e_261
     level:    [75, 77]
   17326343:
     template: Vanguard_Persecutor
-    at:       [172.016, -20.401, 49.095, 204]
+    region:   e_261
     level:    [75, 77]
   17326344:
     template: Knii_Hoqo_the_Bisector
@@ -8947,11 +8947,11 @@ spawns:
     level:    [80, 81]
   17326345:
     template: Vanguard_Oracle
-    at:       [169.799, -20.006, 33.687, 15]
+    region:   e_261
     level:    [75, 77]
   17326346:
     template: Vanguards_Avatar
-    at:       [167.011, -20.188, 37.615, 33]
+    region:   e_261
     level:    [75, 77]
   17326347:
     template: Puu_Timu_the_Phantasmal
@@ -8967,11 +8967,11 @@ spawns:
     level:    [70, 70]
   17326350:
     template: Avatar_Icon
-    at:       [177.414, -19.629, -0.673, 88]
+    region:   e_270
     level:    [70, 70]
   17326351:
     template: Avatar_Icon
-    at:       [197.272, -19.732, -104.563, 176]
+    region:   e_271
     level:    [70, 70]
   17326352:
     template: Avatar_Icon
@@ -8979,87 +8979,87 @@ spawns:
     level:    [70, 70]
   17326353:
     template: Avatar_Idol
-    at:       [96.322, -20.247, -142.377, 206]
+    region:   s_273
     level:    [70, 70]
   17326354:
     template: Vanguard_Smithy
-    at:       [-265.789, -40.255, -352.101, 130]
+    region:   sw_274
     level:    [75, 77]
   17326355:
     template: Vanguard_Pitfighter
-    at:       [-275.487, -40.285, -351.265, 102]
+    region:   sw_274
     level:    [75, 77]
   17326356:
     template: Vanguard_Shaman
-    at:       [-276.602, -40.339, -354.368, 187]
+    region:   sw_274
     level:    [75, 77]
   17326357:
     template: Vanguard_Enchanter
-    at:       [-257.686, -40.311, -341.496, 75]
+    region:   sw_274
     level:    [75, 77]
   17326358:
     template: Vanguard_Pathfinder
-    at:       [-274.907, -40.246, -353.939, 154]
+    region:   sw_274
     level:    [75, 77]
   17326359:
     template: Vanguards_Slime
-    at:       [-272.599, -40.160, -356.400, 160]
+    region:   sw_274
     level:    [75, 77]
   17326360:
     template: Vanguard_Maestro
-    at:       [-264.149, -40.058, -337.239, 215]
+    region:   sw_274
     level:    [75, 77]
   17326361:
     template: Vanguard_Enchanter
-    at:       [-266.410, -40.025, -318.300, 56]
+    region:   sw_281
     level:    [75, 77]
   17326362:
     template: Vanguard_Welldigger
-    at:       [-274.606, -39.844, -305.253, 219]
+    region:   sw_281
     level:    [75, 77]
   17326363:
     template: Vanguard_Armorer
-    at:       [-275.000, -39.900, -306.330, 217]
+    region:   sw_281
     level:    [75, 77]
   17326364:
     template: Vanguard_Shaman
-    at:       [-271.306, -39.931, -304.306, 148]
+    region:   sw_281
     level:    [75, 77]
   17326365:
     template: Vanguard_Armorer
-    at:       [-295.749, -39.837, -283.076, 210]
+    region:   sw_285
     level:    [75, 77]
   17326366:
     template: Vanguard_Maestro
-    at:       [-284.228, -40.348, -287.935, 233]
+    region:   sw_285
     level:    [75, 77]
   17326367:
     template: Vanguard_Ambusher
-    at:       [-291.040, -40.439, -294.195, 141]
+    region:   sw_285
     level:    [75, 77]
   17326368:
     template: Vanguard_Necromancer
-    at:       [-280.364, -39.968, -294.306, 236]
+    region:   sw_285
     level:    [75, 77]
   17326369:
     template: Vanguards_Avatar
-    at:       [-281.880, -40.014, -293.305, 11]
+    region:   sw_285
     level:    [75, 77]
   17326370:
     template: Vanguard_Welldigger
-    at:       [-237.469, -39.902, -179.630, 70]
+    region:   sw_290
     level:    [75, 77]
   17326371:
     template: Vanguard_Armorer
-    at:       [-256.016, -40.487, -170.714, 139]
+    region:   sw_290
     level:    [75, 77]
   17326372:
     template: Vanguard_Smithy
-    at:       [-251.411, -40.191, -163.918, 232]
+    region:   sw_290
     level:    [75, 77]
   17326373:
     template: Vanguard_Smithy
-    at:       [-236.400, -39.810, -175.710, 162]
+    region:   sw_290
     level:    [75, 77]
   17326374:
     template: Moltenox_Stubthumbs
@@ -9067,19 +9067,19 @@ spawns:
     level:    [80, 81]
   17326375:
     template: Vanguard_Ronin
-    at:       [-209.520, -40.377, -191.931, 11]
+    region:   sw_295
     level:    [75, 77]
   17326376:
     template: Vanguard_Hitman
-    at:       [-209.232, -40.388, -193.834, 231]
+    region:   sw_295
     level:    [75, 77]
   17326377:
     template: Vanguard_Pitfighter
-    at:       [-206.067, -40.666, -204.482, 186]
+    region:   sw_295
     level:    [75, 77]
   17326378:
     template: Vanguard_Pitfighter
-    at:       [-217.615, -40.375, -188.501, 2]
+    region:   sw_295
     level:    [75, 77]
   17326379:
     template: Droprix_Granitepalms
@@ -9087,19 +9087,19 @@ spawns:
     level:    [80, 81]
   17326380:
     template: Vanguard_Shaman
-    at:       [-167.776, -40.404, -236.822, 234]
+    region:   sw_300
     level:    [75, 77]
   17326381:
     template: Vanguard_Enchanter
-    at:       [-174.875, -40.340, -243.440, 219]
+    region:   sw_300
     level:    [75, 77]
   17326382:
     template: Vanguard_Welldigger
-    at:       [-166.257, -40.211, -228.061, 118]
+    region:   sw_300
     level:    [75, 77]
   17326383:
     template: Vanguard_Dragontamer
-    at:       [-200.454, -40.495, -227.480, 137]
+    region:   sw_300
     level:    [75, 77]
   17326384:
     template: Vanguards_Wyvern
@@ -9107,11 +9107,11 @@ spawns:
     level:    [75, 77]
   17326385:
     template: Vanguard_Alchemist
-    at:       [-191.600, -40.250, -242.150, 149]
+    region:   sw_300
     level:    [75, 77]
   17326386:
     template: Vanguard_Alchemist
-    at:       [-194.900, -40.630, -230.140, 209]
+    region:   sw_300
     level:    [75, 77]
   17326387:
     template: Brewnix_Bittypupils
@@ -9119,39 +9119,39 @@ spawns:
     level:    [80, 81]
   17326388:
     template: Vanguard_Smithy
-    at:       [-170.889, -40.815, -192.507, 167]
+    region:   sw_308
     level:    [75, 77]
   17326389:
     template: Vanguard_Enchanter
-    at:       [-170.943, -40.827, -192.363, 168]
+    region:   sw_308
     level:    [75, 77]
   17326390:
     template: Vanguard_Alchemist
-    at:       [-160.650, -40.482, -200.396, 242]
+    region:   sw_308
     level:    [75, 77]
   17326391:
     template: Vanguard_Necromancer
-    at:       [-166.200, -40.230, -212.660, 136]
+    region:   sw_308
     level:    [75, 77]
   17326392:
     template: Vanguards_Avatar
-    at:       [-167.443, -40.302, -199.414, 227]
+    region:   sw_308
     level:    [75, 77]
   17326393:
     template: Vanguard_Pitfighter
-    at:       [-71.756, -40.290, -198.169, 156]
+    region:   s_313
     level:    [75, 77]
   17326394:
     template: Vanguard_Ambusher
-    at:       [-43.628, -40.354, -209.509, 247]
+    region:   s_313
     level:    [75, 77]
   17326395:
     template: Vanguard_Shaman
-    at:       [-42.227, -40.186, -210.612, 211]
+    region:   s_313
     level:    [75, 77]
   17326396:
     template: Vanguard_Shaman
-    at:       [-58.083, -39.984, -204.122, 202]
+    region:   s_313
     level:    [75, 77]
   17326397:
     template: Ascetox_Ratgums
@@ -9159,15 +9159,15 @@ spawns:
     level:    [80, 81]
   17326398:
     template: Vanguard_Armorer
-    at:       [-29.792, -40.713, -229.696, 111]
+    region:   s_318
     level:    [75, 77]
   17326399:
     template: Vanguard_Enchanter
-    at:       [-30.053, -40.674, -230.640, 170]
+    region:   s_318
     level:    [75, 77]
   17326400:
     template: Vanguard_Enchanter
-    at:       [-35.798, -39.732, -224.126, 167]
+    region:   s_318
     level:    [75, 77]
   17326401:
     template: Gibberox_Pimplebeak
@@ -9175,15 +9175,15 @@ spawns:
     level:    [80, 81]
   17326402:
     template: Vanguard_Welldigger
-    at:       [-35.494, -40.962, -253.952, 97]
+    region:   s_322
     level:    [75, 77]
   17326403:
     template: Vanguard_Hitman
-    at:       [-24.913, -39.043, -251.954, 113]
+    region:   s_322
     level:    [75, 77]
   17326404:
     template: Vanguard_Hitman
-    at:       [-35.329, -40.763, -254.177, 118]
+    region:   s_322
     level:    [75, 77]
   17326405:
     template: Swypestix_Tigershins
@@ -9191,19 +9191,19 @@ spawns:
     level:    [80, 81]
   17326406:
     template: Vanguard_Pathfinder
-    at:       [-25.601, -39.945, -201.738, 103]
+    region:   s_326
     level:    [75, 77]
   17326407:
     template: Vanguards_Slime
-    at:       [-22.547, -39.789, -199.815, 105]
+    region:   s_326
     level:    [75, 77]
   17326408:
     template: Vanguard_Welldigger
-    at:       [-25.503, -40.017, -198.031, 76]
+    region:   s_326
     level:    [75, 77]
   17326409:
     template: Vanguard_Welldigger
-    at:       [-12.710, -40.209, -201.023, 191]
+    region:   s_326
     level:    [75, 77]
   17326410:
     template: Bordox_Kittyback
@@ -9211,19 +9211,19 @@ spawns:
     level:    [80, 81]
   17326411:
     template: Vanguard_Tinkerer
-    at:       [17.532, -39.573, -208.785, 30]
+    region:   s_331
     level:    [75, 77]
   17326412:
     template: Vanguard_Maestro
-    at:       [3.076, -40.505, -205.185, 200]
+    region:   s_331
     level:    [75, 77]
   17326413:
     template: Vanguard_Armorer
-    at:       [0.897, -40.502, -198.945, 161]
+    region:   s_331
     level:    [75, 77]
   17326414:
     template: Vanguard_Armorer
-    at:       [-3.086, -40.576, -206.359, 167]
+    region:   s_331
     level:    [75, 77]
   17326415:
     template: Ruffbix_Jumbolobes
@@ -9231,19 +9231,19 @@ spawns:
     level:    [80, 81]
   17326416:
     template: Vanguard_Maestro
-    at:       [23.150, -39.888, -159.819, 30]
+    region:   s_336
     level:    [75, 77]
   17326417:
     template: Vanguard_Pathfinder
-    at:       [18.858, -40.373, -156.272, 118]
+    region:   s_336
     level:    [75, 77]
   17326418:
     template: Vanguards_Slime
-    at:       [20.182, -40.368, -155.297, 1]
+    region:   s_336
     level:    [75, 77]
   17326419:
     template: Vanguard_Dragontamer
-    at:       [23.068, -40.038, -155.608, 254]
+    region:   s_336
     level:    [75, 77]
   17326420:
     template: Vanguards_Wyvern
@@ -9259,19 +9259,19 @@ spawns:
     level:    [80, 81]
   17326423:
     template: Vanguard_Smithy
-    at:       [60.145, -40.750, -113.075, 203]
+    region:   s_343
     level:    [75, 77]
   17326424:
     template: Vanguard_Pitfighter
-    at:       [62.153, -40.595, -111.493, 122]
+    region:   s_343
     level:    [75, 77]
   17326425:
     template: Vanguard_Tinkerer
-    at:       [42.781, -40.501, -138.614, 251]
+    region:   s_343
     level:    [75, 77]
   17326426:
     template: Vanguard_Tinkerer
-    at:       [38.395, -40.461, -139.088, 156]
+    region:   s_343
     level:    [75, 77]
   17326427:
     template: Tocktix_Thinlids
@@ -9279,11 +9279,11 @@ spawns:
     level:    [80, 81]
   17326428:
     template: Vanguard_Pitfighter
-    at:       [89.887, -38.911, -110.265, 118]
+    region:   c_348
     level:    [75, 77]
   17326429:
     template: Vanguard_Pitfighter
-    at:       [84.676, -39.843, -104.961, 51]
+    region:   c_348
     level:    [75, 77]
   17326430:
     template: Vanguard_Pitfighter
@@ -9291,23 +9291,23 @@ spawns:
     level:    [75, 77]
   17326431:
     template: Vanguard_Alchemist
-    at:       [94.757, -41.020, -102.967, 202]
+    region:   c_348
     level:    [75, 77]
   17326432:
     template: Vanguard_Alchemist
-    at:       [94.149, -38.480, -109.382, 249]
+    region:   c_348
     level:    [75, 77]
   17326433:
     template: Vanguard_Alchemist
-    at:       [95.706, -40.585, -103.249, 144]
+    region:   c_348
     level:    [75, 77]
   17326434:
     template: Vanguard_Maestro
-    at:       [132.144, -40.641, -77.968, 1]
+    region:   c_354
     level:    [75, 77]
   17326435:
     template: Vanguard_Dragontamer
-    at:       [118.566, -40.498, -86.036, 86]
+    region:   c_354
     level:    [75, 77]
   17326436:
     template: Vanguards_Wyvern
@@ -9315,11 +9315,11 @@ spawns:
     level:    [75, 77]
   17326437:
     template: Vanguard_Pathfinder
-    at:       [124.613, -40.367, -83.764, 23]
+    region:   c_354
     level:    [75, 77]
   17326438:
     template: Vanguards_Slime
-    at:       [131.023, -40.268, -87.488, 49]
+    region:   c_354
     level:    [75, 77]
   17326439:
     template: Routsix_Rubbertendon
@@ -9331,15 +9331,15 @@ spawns:
     level:    [80, 81]
   17326441:
     template: Vanguard_Armorer
-    at:       [144.324, -40.047, -51.513, 149]
+    region:   c_361
     level:    [75, 77]
   17326442:
     template: Vanguard_Shaman
-    at:       [140.135, -41.211, -56.106, 86]
+    region:   c_361
     level:    [75, 77]
   17326443:
     template: Vanguard_Enchanter
-    at:       [135.737, -41.094, -64.587, 90]
+    region:   c_361
     level:    [75, 77]
   17326444:
     template: Vanguard_Necromancer
@@ -9351,23 +9351,23 @@ spawns:
     level:    [75, 77]
   17326446:
     template: Morblox_Chubbychin
-    at:       [138.194, -39.909, -71.004, 125]
+    region:   c_361
     level:    [80, 81]
   17326447:
     template: Vanguards_Avatar
-    at:       [136.847, -40.273, -69.689, 236]
+    region:   c_361
     level:    [80, 81]
   17326448:
     template: Vanguard_Armorer
-    at:       [142.800, -40.901, -27.493, 139]
+    region:   c_368
     level:    [75, 77]
   17326449:
     template: Vanguard_Ronin
-    at:       [149.240, -38.830, -30.693, 57]
+    region:   c_368
     level:    [75, 77]
   17326450:
     template: Vanguard_Maestro
-    at:       [142.388, -40.068, -17.553, 211]
+    region:   c_368
     level:    [75, 77]
   17326451:
     template: Vanguard_Maestro
@@ -9375,15 +9375,15 @@ spawns:
     level:    [75, 77]
   17326452:
     template: Whistrix_Toadthroat
-    at:       [141.064, -40.892, -27.014, 60]
+    region:   c_368
     level:    [80, 81]
   17326453:
     template: Vanguard_Welldigger
-    at:       [104.334, -39.789, 2.270, 134]
+    region:   c_373
     level:    [75, 77]
   17326454:
     template: Vanguard_Dragontamer
-    at:       [102.525, -40.905, -10.869, 36]
+    region:   c_373
     level:    [75, 77]
   17326455:
     template: Vanguards_Wyvern
@@ -9391,11 +9391,11 @@ spawns:
     level:    [75, 77]
   17326456:
     template: Vanguard_Ambusher
-    at:       [108.585, -39.394, 8.879, 225]
+    region:   c_373
     level:    [75, 77]
   17326457:
     template: Vanguard_Ambusher
-    at:       [125.139, -40.082, 4.946, 169]
+    region:   c_373
     level:    [75, 77]
   17326458:
     template: Slinkix_Trufflesniff
@@ -9403,19 +9403,19 @@ spawns:
     level:    [80, 81]
   17326459:
     template: Vanguard_Pitfighter
-    at:       [75.385, -40.305, -2.915, 15]
+    region:   c_379
     level:    [75, 77]
   17326460:
     template: Vanguard_Hitman
-    at:       [70.424, -40.167, -0.025, 29]
+    region:   c_379
     level:    [75, 77]
   17326461:
     template: Vanguard_Ronin
-    at:       [70.848, -40.598, 6.279, 3]
+    region:   c_379
     level:    [75, 77]
   17326462:
     template: Vanguard_Ronin
-    at:       [64.357, -39.558, 7.751, 137]
+    region:   c_379
     level:    [75, 77]
   17326463:
     template: Shisox_Widebrow
@@ -9427,7 +9427,7 @@ spawns:
     level:    [70, 70]
   17326465:
     template: Goblin_Replica
-    at:       [-259.313, -40.483, -308.807, 9]
+    region:   sw_385
     level:    [70, 70]
   17326466:
     template: Goblin_Replica
@@ -9435,39 +9435,39 @@ spawns:
     level:    [70, 70]
   17326467:
     template: Goblin_Replica
-    at:       [51.975, -40.657, -135.049, 131]
+    region:   s_387
     level:    [70, 70]
   17326468:
     template: Goblin_Statue
-    at:       [-36.120, -39.734, -215.946, 5]
+    region:   s_388
     level:    [70, 70]
   17326469:
     template: Hydra_Warrior
-    at:       [54.288, -0.025, -280.419, 144]
+    region:   s_389
     level:    [80, 82]
   17326470:
     template: Hydra_Monk
-    at:       [64.167, -0.301, -298.722, 78]
+    region:   s_389
     level:    [80, 82]
   17326471:
     template: Hydra_White_Mage
-    at:       [66.049, -0.311, -292.289, 199]
+    region:   s_389
     level:    [80, 82]
   17326472:
     template: Hydra_Red_Mage
-    at:       [59.896, 0.391, -286.062, 160]
+    region:   s_389
     level:    [80, 82]
   17326473:
     template: Vanguard_Eye
-    at:       [45.738, -0.040, -287.861, 27]
+    region:   s_393
     level:    [70, 70]
   17326474:
     template: Hydra_Monk
-    at:       [47.340, -0.168, -320.117, 235]
+    region:   s_394
     level:    [80, 82]
   17326475:
     template: Hydra_Black_Mage
-    at:       [58.503, 0.137, -311.307, 184]
+    region:   s_394
     level:    [80, 82]
   17326476:
     template: Hydra_Red_Mage
@@ -9495,31 +9495,31 @@ spawns:
     level:    [80, 82]
   17326482:
     template: Hydra_Beastmaster
-    at:       [86.874, -0.705, -338.563, 12]
+    region:   s_402
     level:    [80, 82]
   17326483:
     template: Hydras_Hound
-    at:       [82.612, -0.312, -338.198, 15]
+    region:   s_402
     level:    [80, 80]
   17326484:
     template: Vanguard_Eye
-    at:       [75.688, -0.484, -357.106, 82]
+    region:   s_402
     level:    [70, 70]
   17326485:
     template: Hydra_Bard
-    at:       [39.353, 0.310, -342.870, 237]
+    region:   s_405
     level:    [80, 82]
   17326486:
     template: Hydra_Ranger
-    at:       [41.482, -0.583, -365.905, 58]
+    region:   s_405
     level:    [80, 82]
   17326487:
     template: Hydra_Samurai
-    at:       [37.389, -0.068, -350.637, 174]
+    region:   s_405
     level:    [80, 82]
   17326488:
     template: Hydra_Samurai
-    at:       [-93.423, 0.100, -365.558, 134]
+    region:   s_408
     level:    [80, 82]
   17326489:
     template: Hydra_Samurai
@@ -9527,15 +9527,15 @@ spawns:
     level:    [80, 82]
   17326490:
     template: Hydra_Ninja
-    at:       [-93.081, 0.131, -364.469, 113]
+    region:   s_408
     level:    [80, 82]
   17326491:
     template: Hydra_Ninja
-    at:       [-77.909, -0.044, -376.083, 168]
+    region:   s_408
     level:    [80, 82]
   17326492:
     template: Hydra_Dragoon
-    at:       [-83.823, 0.237, -384.655, 214]
+    region:   s_408
     level:    [80, 82]
   17326493:
     template: Hydras_Wyvern
@@ -9547,7 +9547,7 @@ spawns:
     level:    [70, 70]
   17326495:
     template: Hydra_Samurai
-    at:       [-112.673, 0.017, -371.343, 6]
+    region:   sw_415
     level:    [80, 82]
   17326496:
     template: Hydra_Samurai
@@ -9555,19 +9555,19 @@ spawns:
     level:    [80, 82]
   17326497:
     template: Hydra_Ninja
-    at:       [-119.004, 0.075, -386.276, 236]
+    region:   sw_415
     level:    [80, 82]
   17326498:
     template: Hydra_Ninja
-    at:       [-116.909, 0.342, -376.967, 252]
+    region:   sw_415
     level:    [80, 82]
   17326499:
     template: Hydra_Summoner
-    at:       [-111.899, 0.011, -369.795, 53]
+    region:   sw_415
     level:    [80, 82]
   17326500:
     template: Hydras_Avatar
-    at:       [-114.270, -0.081, -369.247, 21]
+    region:   sw_415
     level:    [80, 80]
   17326501:
     template: Vanguard_Eye
@@ -9575,11 +9575,11 @@ spawns:
     level:    [70, 70]
   17326502:
     template: Hydra_Warrior
-    at:       [-90.290, -0.173, -395.790, 171]
+    region:   sw_422
     level:    [80, 82]
   17326503:
     template: Hydra_Dragoon
-    at:       [-92.336, 0.011, -399.908, 127]
+    region:   sw_422
     level:    [80, 82]
   17326504:
     template: Hydras_Wyvern
@@ -9587,59 +9587,59 @@ spawns:
     level:    [80, 80]
   17326505:
     template: Hydra_Summoner
-    at:       [-99.162, 0.432, -397.005, 148]
+    region:   sw_422
     level:    [80, 82]
   17326506:
     template: Hydras_Avatar
-    at:       [-96.736, 0.231, -397.374, 137]
+    region:   sw_422
     level:    [80, 80]
   17326507:
     template: Vanguard_Eye
-    at:       [-90.585, -0.335, -391.285, 237]
+    region:   sw_422
     level:    [70, 70]
   17326508:
     template: Hydra_Warrior
-    at:       [-132.081, -20.575, -328.751, 175]
+    region:   sw_428
     level:    [80, 82]
   17326509:
     template: Hydra_Beastmaster
-    at:       [-127.607, -20.207, -341.511, 104]
+    region:   sw_428
     level:    [80, 82]
   17326510:
     template: Hydras_Hound
-    at:       [-126.042, -20.406, -339.504, 95]
+    region:   sw_428
     level:    [80, 80]
   17326511:
     template: Hydra_Samurai
-    at:       [-123.650, -20.630, -330.139, 183]
+    region:   sw_428
     level:    [80, 82]
   17326512:
     template: Hydra_Warrior
-    at:       [-122.205, -20.587, -328.870, 131]
+    region:   sw_428
     level:    [80, 82]
   17326513:
     template: Hydra_Samurai
-    at:       [-131.095, -20.145, -319.874, 165]
+    region:   sw_428
     level:    [80, 82]
   17326514:
     template: Vanguard_Eye
-    at:       [-113.747, -20.649, -329.242, 105]
+    region:   sw_428
     level:    [70, 70]
   17326515:
     template: Hydra_Monk
-    at:       [-86.917, -20.178, -339.703, 64]
+    region:   s_435
     level:    [80, 82]
   17326516:
     template: Hydra_Ranger
-    at:       [-99.139, -19.944, -327.682, 86]
+    region:   s_435
     level:    [80, 82]
   17326517:
     template: Hydra_White_Mage
-    at:       [-75.275, -20.349, -324.712, 203]
+    region:   s_435
     level:    [80, 82]
   17326518:
     template: Hydra_Red_Mage
-    at:       [-94.150, -19.945, -322.681, 164]
+    region:   s_435
     level:    [80, 82]
   17326519:
     template: Vanguard_Eye
@@ -9647,43 +9647,43 @@ spawns:
     level:    [70, 70]
   17326520:
     template: Hydra_Paladin
-    at:       [-84.617, -20.262, -311.430, 9]
+    region:   s_440
     level:    [80, 82]
   17326521:
     template: Hydra_Black_Mage
-    at:       [-78.535, -19.764, -298.999, 62]
+    region:   s_440
     level:    [80, 82]
   17326522:
     template: Hydra_White_Mage
-    at:       [-89.972, -20.466, -310.716, 131]
+    region:   s_440
     level:    [80, 82]
   17326523:
     template: Hydra_Red_Mage
-    at:       [-87.383, -20.578, -301.887, 139]
+    region:   s_440
     level:    [80, 82]
   17326524:
     template: Hydra_Thief
-    at:       [-77.365, -19.689, -299.842, 62]
+    region:   s_440
     level:    [80, 82]
   17326525:
     template: Vanguard_Eye
-    at:       [-37.706, -20.500, -278.342, 228]
+    region:   s_440
     level:    [70, 70]
   17326526:
     template: Hydra_Bard
-    at:       [-5.095, -20.467, -283.565, 212]
+    region:   s_446
     level:    [80, 82]
   17326527:
     template: Hydra_Paladin
-    at:       [-8.424, -20.208, -278.541, 166]
+    region:   s_446
     level:    [80, 82]
   17326528:
     template: Hydra_White_Mage
-    at:       [-4.933, -20.466, -282.972, 212]
+    region:   s_446
     level:    [80, 82]
   17326529:
     template: Hydra_Ninja
-    at:       [-16.533, -19.761, -276.555, 212]
+    region:   s_446
     level:    [80, 82]
   17326530:
     template: Vanguard_Eye
@@ -9691,7 +9691,7 @@ spawns:
     level:    [70, 70]
   17326531:
     template: Hydra_Dragoon
-    at:       [10.060, -20.268, -308.994, 82]
+    region:   s_451
     level:    [80, 82]
   17326532:
     template: Hydras_Wyvern
@@ -9699,39 +9699,39 @@ spawns:
     level:    [80, 80]
   17326533:
     template: Hydra_Bard
-    at:       [3.902, -20.366, -310.914, 116]
+    region:   s_451
     level:    [80, 82]
   17326534:
     template: Hydra_Dark_Knight
-    at:       [14.902, -20.701, -310.544, 46]
+    region:   s_451
     level:    [80, 82]
   17326535:
     template: Hydra_Ninja
-    at:       [9.622, -20.290, -308.741, 93]
+    region:   s_451
     level:    [80, 82]
   17326536:
     template: Vanguard_Eye
-    at:       [-2.799, -19.840, -311.195, 116]
+    region:   s_451
     level:    [70, 70]
   17326537:
     template: Hydra_Paladin
-    at:       [18.753, -21.096, -251.398, 220]
+    region:   s_457
     level:    [80, 82]
   17326538:
     template: Hydra_Warrior
-    at:       [18.354, -20.998, -247.616, 34]
+    region:   s_457
     level:    [80, 82]
   17326539:
     template: Hydra_Monk
-    at:       [-0.887, -20.305, -246.801, 49]
+    region:   s_457
     level:    [80, 82]
   17326540:
     template: Hydra_Summoner
-    at:       [3.612, -20.040, -250.141, 193]
+    region:   s_457
     level:    [80, 82]
   17326541:
     template: Hydras_Avatar
-    at:       [1.829, -20.025, -251.365, 161]
+    region:   s_457
     level:    [80, 80]
   17326542:
     template: Vanguard_Eye
@@ -9771,31 +9771,31 @@ spawns:
     level:    [80, 80]
   17326551:
     template: Hydra_Dark_Knight
-    at:       [81.286, -19.711, -222.057, 58]
+    region:   s_471
     level:    [80, 82]
   17326552:
     template: Hydra_Ranger
-    at:       [119.340, -20.460, -239.193, 121]
+    region:   s_471
     level:    [80, 82]
   17326553:
     template: Vanguard_Eye
-    at:       [119.702, -19.787, -215.127, 93]
+    region:   s_471
     level:    [70, 70]
   17326554:
     template: Hydra_Dark_Knight
-    at:       [99.581, -20.778, -269.396, 179]
+    region:   s_474
     level:    [80, 82]
   17326555:
     template: Hydra_Thief
-    at:       [117.598, -20.394, -270.055, 108]
+    region:   s_474
     level:    [80, 82]
   17326556:
     template: Hydra_Samurai
-    at:       [101.082, -20.306, -250.921, 179]
+    region:   s_474
     level:    [80, 82]
   17326557:
     template: Hydra_Ninja
-    at:       [93.660, -20.594, -249.561, 131]
+    region:   s_474
     level:    [80, 82]
   17326558:
     template: Vanguard_Eye
@@ -9803,15 +9803,15 @@ spawns:
     level:    [70, 70]
   17326559:
     template: Hydra_Warrior
-    at:       [119.383, -20.456, 117.679, 78]
+    region:   c_479
     level:    [80, 82]
   17326560:
     template: Hydra_White_Mage
-    at:       [84.520, -20.588, 115.246, 69]
+    region:   c_479
     level:    [80, 82]
   17326561:
     template: Hydra_Black_Mage
-    at:       [109.790, -19.977, 116.195, 167]
+    region:   c_479
     level:    [80, 82]
   17326562:
     template: Hydra_Warrior
@@ -9819,11 +9819,11 @@ spawns:
     level:    [80, 82]
   17326563:
     template: Hydra_White_Mage
-    at:       [85.665, -20.399, 124.031, 148]
+    region:   c_483
     level:    [80, 82]
   17326564:
     template: Hydra_Black_Mage
-    at:       [148.099, -20.694, 173.112, 219]
+    region:   c_479
     level:    [80, 82]
   17326565:
     template: Vanguard_Eye
@@ -9831,15 +9831,15 @@ spawns:
     level:    [70, 70]
   17326566:
     template: Hydra_Samurai
-    at:       [122.835, -19.923, 137.601, 69]
+    region:   c_486
     level:    [80, 82]
   17326567:
     template: Hydra_Ninja
-    at:       [140.522, -21.085, 149.565, 107]
+    region:   c_486
     level:    [80, 82]
   17326568:
     template: Hydra_Monk
-    at:       [135.913, -21.503, 134.348, 62]
+    region:   c_486
     level:    [80, 82]
   17326569:
     template: Hydra_Samurai
@@ -9847,7 +9847,7 @@ spawns:
     level:    [80, 82]
   17326570:
     template: Hydra_Ninja
-    at:       [127.235, -20.542, 134.206, 20]
+    region:   c_486
     level:    [80, 82]
   17326571:
     template: Hydra_Monk
@@ -9891,11 +9891,11 @@ spawns:
     level:    [80, 82]
   17326581:
     template: Hydra_Dark_Knight
-    at:       [53.174, -40.008, 65.311, 138]
+    region:   c_501
     level:    [80, 82]
   17326582:
     template: Hydra_Thief
-    at:       [67.092, -40.365, 91.173, 96]
+    region:   c_501
     level:    [80, 82]
   17326583:
     template: Hydra_Dark_Knight
@@ -9903,11 +9903,11 @@ spawns:
     level:    [80, 82]
   17326584:
     template: Hydra_Summoner
-    at:       [74.361, -40.391, 40.812, 126]
+    region:   c_501
     level:    [80, 82]
   17326585:
     template: Hydras_Avatar
-    at:       [77.620, -40.425, 39.770, 122]
+    region:   c_501
     level:    [80, 80]
   17326586:
     template: Vanguard_Eye
@@ -9915,11 +9915,11 @@ spawns:
     level:    [70, 70]
   17326587:
     template: Hydra_Beastmaster
-    at:       [103.914, -39.680, 40.463, 112]
+    region:   c_507
     level:    [80, 82]
   17326588:
     template: Hydras_Hound
-    at:       [107.811, -39.914, 41.034, 120]
+    region:   c_507
     level:    [80, 80]
   17326589:
     template: Hydra_Bard
@@ -9927,23 +9927,23 @@ spawns:
     level:    [80, 82]
   17326590:
     template: Hydra_Ranger
-    at:       [105.951, -40.848, 53.218, 151]
+    region:   c_507
     level:    [80, 82]
   17326591:
     template: Hydra_Bard
-    at:       [117.975, -40.698, 56.966, 147]
+    region:   c_507
     level:    [80, 82]
   17326592:
     template: Hydra_Ranger
-    at:       [102.252, -40.644, 55.814, 108]
+    region:   c_507
     level:    [80, 82]
   17326593:
     template: Vanguard_Eye
-    at:       [121.949, -40.525, 42.492, 78]
+    region:   c_507
     level:    [70, 70]
   17326594:
     template: Hydra_Dragoon
-    at:       [53.316, -41.045, 91.788, 149]
+    region:   c_514
     level:    [80, 82]
   17326595:
     template: Hydras_Wyvern
@@ -9955,71 +9955,71 @@ spawns:
     level:    [80, 82]
   17326597:
     template: Hydra_Thief
-    at:       [70.934, -40.624, 91.196, 163]
+    region:   c_514
     level:    [80, 82]
   17326598:
     template: Hydra_Paladin
-    at:       [92.927, -39.323, 92.726, 227]
+    region:   c_514
     level:    [80, 82]
   17326599:
     template: Hydra_Thief
-    at:       [66.767, -40.479, 91.839, 31]
+    region:   c_514
     level:    [80, 82]
   17326600:
     template: Vanguard_Eye
-    at:       [85.923, -39.861, 99.510, 177]
+    region:   c_514
     level:    [70, 70]
   17326601:
     template: Hydra_Beastmaster_HI
     script:   Hydra_Beastmaster
-    at:       [-128.285, -60.090, -178.586, 211]
+    region:   sw_521
     level:    [92, 95]
   17326602:
     template: Hydras_Hound
-    at:       [-129.290, -60.212, -180.609, 208]
+    region:   sw_521
     level:    [92, 92]
   17326603:
     template: Hydra_Beastmaster_HI
     script:   Hydra_Beastmaster
-    at:       [-124.218, -60.032, -184.972, 246]
+    region:   sw_521
     level:    [92, 95]
   17326604:
     template: Hydras_Hound
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_521
     level:    [92, 92]
   17326605:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-122.040, -59.943, -182.889, 75]
+    region:   sw_521
     level:    [92, 95]
   17326606:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [-98.220, -60.129, -198.740, 209]
+    region:   sw_521
     level:    [92, 95]
   17326607:
     template: Vanguard_Eye
-    at:       [-99.630, -59.840, -192.410, 233]
+    region:   sw_521
     level:    [82, 82]
   17326608:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-81.026, -60.263, -151.790, 213]
+    region:   s_528
     level:    [92, 95]
   17326609:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-91.568, -60.214, -156.969, 141]
+    region:   s_528
     level:    [92, 95]
   17326610:
     template: Hydra_Bard_HI
     script:   Hydra_Bard
-    at:       [-96.177, -60.728, -169.824, 247]
+    region:   s_528
     level:    [92, 95]
   17326611:
     template: Hydra_Ranger_HI
     script:   Hydra_Ranger
-    at:       [-84.337, -60.463, -159.021, 255]
+    region:   s_528
     level:    [92, 95]
   17326612:
     template: Vanguard_Eye
@@ -10028,22 +10028,22 @@ spawns:
   17326613:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-39.511, -60.180, -91.857, 181]
+    region:   s_533
     level:    [92, 95]
   17326614:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-16.095, -60.024, -127.646, 136]
+    region:   s_533
     level:    [92, 95]
   17326615:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-24.537, -60.086, -134.996, 99]
+    region:   s_533
     level:    [92, 95]
   17326616:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [-16.008, -60.010, -126.699, 110]
+    region:   s_533
     level:    [92, 95]
   17326617:
     template: Vanguard_Eye
@@ -10052,26 +10052,26 @@ spawns:
   17326618:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [-21.253, -59.709, -155.083, 67]
+    region:   s_538
     level:    [92, 95]
   17326619:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [-14.536, -59.893, -166.154, 89]
+    region:   s_538
     level:    [92, 95]
   17326620:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [-23.708, -59.723, -162.357, 48]
+    region:   s_538
     level:    [92, 95]
   17326621:
     template: Hydra_Summoner_HI
     script:   Hydra_Summoner
-    at:       [-32.283, -60.391, -161.888, 172]
+    region:   s_538
     level:    [92, 95]
   17326622:
     template: Hydras_Avatar
-    at:       [-27.398, -60.130, -164.409, 155]
+    region:   s_538
     level:    [92, 92]
   17326623:
     template: Vanguard_Eye
@@ -10080,22 +10080,22 @@ spawns:
   17326624:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [38.277, -60.059, -91.631, 42]
+    region:   c_544
     level:    [92, 95]
   17326625:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [46.055, -60.372, -84.467, 31]
+    region:   c_544
     level:    [92, 95]
   17326626:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [38.092, -60.473, -80.819, 239]
+    region:   c_544
     level:    [92, 95]
   17326627:
     template: Hydra_Dragoon_HI
     script:   Hydra_Dragoon
-    at:       [55.220, -60.188, -86.543, 198]
+    region:   c_544
     level:    [92, 95]
   17326628:
     template: Hydras_Wyvern
@@ -10108,22 +10108,22 @@ spawns:
   17326630:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [104.504, -60.840, -62.229, 213]
+    region:   c_550
     level:    [92, 95]
   17326631:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [101.931, -59.738, -67.255, 29]
+    region:   c_550
     level:    [92, 95]
   17326632:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [88.841, -60.655, -80.190, 46]
+    region:   c_550
     level:    [92, 95]
   17326633:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [81.897, -59.860, -56.243, 158]
+    region:   c_550
     level:    [92, 95]
   17326634:
     template: Vanguard_Eye
@@ -10132,31 +10132,31 @@ spawns:
   17326635:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [116.003, -60.443, -43.297, 29]
+    region:   c_555
     level:    [92, 95]
   17326636:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [103.244, -59.163, -27.520, 181]
+    region:   c_555
     level:    [92, 95]
   17326637:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [114.168, -60.455, -36.611, 247]
+    region:   c_555
     level:    [92, 95]
   17326638:
     template: Hydra_Samurai_HI
     script:   Hydra_Samurai
-    at:       [72.563, -60.378, -40.825, 91]
+    region:   c_555
     level:    [92, 95]
   17326639:
     template: Vanguard_Eye
-    at:       [89.544, -60.468, -25.856, 209]
+    region:   c_555
     level:    [82, 82]
   17326640:
     template: Hydra_Dragoon_HI
     script:   Hydra_Dragoon
-    at:       [33.324, -60.371, -42.647, 142]
+    region:   c_560
     level:    [92, 95]
   17326641:
     template: Hydras_Wyvern
@@ -10212,22 +10212,22 @@ spawns:
   17326652:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [12.291, -59.195, 15.113, 5]
+    region:   c_572
     level:    [92, 95]
   17326653:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [10.906, -60.261, 27.820, 114]
+    region:   c_572
     level:    [92, 95]
   17326654:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-0.049, -59.619, 17.304, 100]
+    region:   c_572
     level:    [92, 95]
   17326655:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-2.112, -60.436, 3.486, 180]
+    region:   c_572
     level:    [92, 95]
   17326656:
     template: Vanguard_Eye
@@ -10236,22 +10236,22 @@ spawns:
   17326657:
     template: Hydra_Bard_HI
     script:   Hydra_Bard
-    at:       [23.248, -60.087, 79.862, 250]
+    region:   c_577
     level:    [92, 95]
   17326658:
     template: Hydra_Bard_HI
     script:   Hydra_Bard
-    at:       [8.366, -59.937, 61.655, 57]
+    region:   c_577
     level:    [92, 95]
   17326659:
     template: Hydra_Samurai_HI
     script:   Hydra_Samurai
-    at:       [9.186, -60.530, 86.826, 80]
+    region:   c_577
     level:    [92, 95]
   17326660:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [17.366, -59.878, 51.500, 66]
+    region:   c_577
     level:    [92, 95]
   17326661:
     template: Vanguard_Eye
@@ -10260,30 +10260,30 @@ spawns:
   17326662:
     template: Hydra_Summoner_HI
     script:   Hydra_Summoner
-    at:       [30.248, -60.793, 114.133, 120]
+    region:   c_582
     level:    [92, 95]
   17326663:
     template: Hydras_Avatar
-    at:       [33.962, -60.663, 114.956, 120]
+    region:   c_582
     level:    [92, 92]
   17326664:
     template: Hydra_Summoner_HI
     script:   Hydra_Summoner
-    at:       [42.344, -60.517, 119.061, 233]
+    region:   c_582
     level:    [92, 95]
   17326665:
     template: Hydras_Avatar
-    at:       [39.979, -60.605, 117.635, 232]
+    region:   c_582
     level:    [92, 92]
   17326666:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [17.276, -59.612, 123.922, 210]
+    region:   c_582
     level:    [92, 95]
   17326667:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [4.123, -60.360, 118.612, 82]
+    region:   c_582
     level:    [92, 95]
   17326668:
     template: Vanguard_Eye
@@ -10292,22 +10292,22 @@ spawns:
   17326669:
     template: Hydra_Ranger_HI
     script:   Hydra_Ranger
-    at:       [30.898, -60.705, 143.518, 136]
+    region:   c_589
     level:    [92, 95]
   17326670:
     template: Hydra_Ranger_HI
     script:   Hydra_Ranger
-    at:       [39.003, -59.908, 175.668, 148]
+    region:   c_589
     level:    [92, 95]
   17326671:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [55.238, -60.516, 163.497, 31]
+    region:   c_589
     level:    [92, 95]
   17326672:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [47.136, -59.138, 144.417, 194]
+    region:   c_589
     level:    [92, 95]
   17326673:
     template: Vanguard_Eye
@@ -10316,46 +10316,46 @@ spawns:
   17326674:
     template: Hydra_Samurai_HI
     script:   Hydra_Samurai
-    at:       [84.488, -59.996, 182.423, 44]
+    region:   n_594
     level:    [92, 95]
   17326675:
     template: Hydra_Samurai_HI
     script:   Hydra_Samurai
-    at:       [96.687, -58.703, 190.720, 50]
+    region:   n_594
     level:    [92, 95]
   17326676:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [68.030, -61.814, 180.986, 125]
+    region:   n_594
     level:    [92, 95]
   17326677:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [82.696, -60.683, 186.958, 177]
+    region:   n_594
     level:    [92, 95]
   17326678:
     template: Vanguard_Eye
-    at:       [86.785, -61.095, 187.536, 139]
+    region:   n_594
     level:    [82, 82]
   17326679:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [102.267, -60.342, 222.097, 212]
+    region:   n_599
     level:    [92, 95]
   17326680:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [99.308, -60.130, 207.081, 174]
+    region:   n_599
     level:    [92, 95]
   17326681:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [111.830, -60.070, 222.617, 134]
+    region:   n_599
     level:    [92, 95]
   17326682:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [114.344, -60.456, 206.360, 62]
+    region:   n_599
     level:    [92, 95]
   17326683:
     template: Vanguard_Eye
@@ -10364,35 +10364,35 @@ spawns:
   17326684:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-266.391, -80.884, -106.898, 181]
+    region:   w_604
     level:    [92, 95]
   17326685:
     template: Hydra_Beastmaster_HI
     script:   Hydra_Beastmaster
-    at:       [-273.076, -80.097, -109.220, 147]
+    region:   w_604
     level:    [92, 95]
   17326686:
     template: Hydras_Hound
-    at:       [-268.649, -80.250, -112.145, 152]
+    region:   w_604
     level:    [92, 92]
   17326687:
     template: Hydra_Ranger_HI
     script:   Hydra_Ranger
-    at:       [-286.099, -80.317, -95.463, 201]
+    region:   w_604
     level:    [92, 95]
   17326688:
     template: Vanguard_Eye
-    at:       [-213.543, -80.299, -128.540, 252]
+    region:   w_604
     level:    [82, 82]
   17326689:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-244.786, -80.401, -120.640, 13]
+    region:   sw_609
     level:    [92, 95]
   17326690:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [-226.922, -80.044, -120.640, 12]
+    region:   sw_609
     level:    [92, 95]
   17326691:
     template: Hydra_Ninja_HI
@@ -10448,17 +10448,17 @@ spawns:
   17326702:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [-175.562, -79.788, -154.913, 107]
+    region:   sw_622
     level:    [92, 95]
   17326703:
     template: Hydra_Bard_HI
     script:   Hydra_Bard
-    at:       [-171.980, -80.144, -123.641, 28]
+    region:   sw_622
     level:    [92, 95]
   17326704:
     template: Hydra_Dragoon_HI
     script:   Hydra_Dragoon
-    at:       [-162.168, -79.637, -137.765, 56]
+    region:   sw_622
     level:    [92, 95]
   17326705:
     template: Hydras_Wyvern
@@ -10471,71 +10471,71 @@ spawns:
   17326707:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-87.978, -79.597, -68.476, 240]
+    region:   c_627
     level:    [92, 95]
   17326708:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-92.150, -80.955, -65.155, 193]
+    region:   c_627
     level:    [92, 95]
   17326709:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [-47.754, -79.700, -28.126, 26]
+    region:   c_629
     level:    [92, 95]
   17326710:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [-43.656, -79.781, -24.428, 255]
+    region:   c_629
     level:    [92, 95]
   17326711:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-14.672, -80.191, 45.292, 15]
+    region:   c_631
     level:    [92, 95]
   17326712:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-16.663, -79.902, 38.697, 202]
+    region:   c_631
     level:    [92, 95]
   17326713:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [-28.742, -80.830, 75.131, 34]
+    region:   c_633
     level:    [92, 95]
   17326714:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [-66.135, -80.039, 74.159, 20]
+    region:   c_633
     level:    [92, 95]
   17326715:
     template: Hydra_Beastmaster_HI
     script:   Hydra_Beastmaster
-    at:       [-31.988, -80.535, 79.170, 215]
+    region:   c_633
     level:    [92, 95]
   17326716:
     template: Hydras_Hound
-    at:       [-30.908, -80.671, 76.397, 117]
+    region:   c_633
     level:    [92, 92]
   17326717:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-82.427, -80.248, 150.042, 193]
+    region:   w_637
     level:    [92, 95]
   17326718:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-91.699, -80.082, 142.690, 4]
+    region:   w_637
     level:    [92, 95]
   17326719:
     template: Hydra_Bard_HI
     script:   Hydra_Bard
-    at:       [-110.344, -80.346, 152.410, 182]
+    region:   w_637
     level:    [92, 95]
   17326720:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-89.388, -80.085, 141.778, 169]
+    region:   w_637
     level:    [92, 95]
   17326721:
     template: Vanguard_Eye
@@ -10544,26 +10544,26 @@ spawns:
   17326722:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [-49.536, -80.331, 128.376, 94]
+    region:   c_642
     level:    [92, 95]
   17326723:
     template: Hydra_Samurai_HI
     script:   Hydra_Samurai
-    at:       [-69.890, -79.924, 147.332, 56]
+    region:   c_642
     level:    [92, 95]
   17326724:
     template: Hydra_Summoner_HI
     script:   Hydra_Summoner
-    at:       [-43.220, -79.751, 142.917, 203]
+    region:   c_642
     level:    [92, 95]
   17326725:
     template: Hydras_Avatar
-    at:       [-44.021, -79.836, 141.121, 204]
+    region:   c_642
     level:    [92, 92]
   17326726:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [-60.820, -80.110, 145.783, 219]
+    region:   c_642
     level:    [92, 95]
   17326727:
     template: Vanguard_Eye
@@ -10572,22 +10572,22 @@ spawns:
   17326728:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [-136.379, -80.041, 129.196, 13]
+    region:   w_648
     level:    [92, 95]
   17326729:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [-133.273, -80.149, 139.484, 13]
+    region:   w_648
     level:    [92, 95]
   17326730:
     template: Hydra_Ranger_HI
     script:   Hydra_Ranger
-    at:       [-158.925, -79.630, 140.581, 58]
+    region:   w_648
     level:    [92, 95]
   17326731:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-147.727, -79.867, 150.815, 221]
+    region:   w_648
     level:    [92, 95]
   17326732:
     template: Vanguard_Eye
@@ -10596,12 +10596,12 @@ spawns:
   17326733:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [-131.727, -80.361, 179.991, 17]
+    region:   w_653
     level:    [92, 95]
   17326734:
     template: Hydra_Dragoon_HI
     script:   Hydra_Dragoon
-    at:       [-127.638, -80.345, 167.465, 57]
+    region:   w_653
     level:    [92, 95]
   17326735:
     template: Hydras_Wyvern
@@ -10610,31 +10610,31 @@ spawns:
   17326736:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-129.885, -80.154, 179.733, 197]
+    region:   w_653
     level:    [92, 95]
   17326737:
     template: Vanguard_Eye
-    at:       [-134.367, -79.863, 196.215, 34]
+    region:   w_653
     level:    [82, 82]
   17326738:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [-52.200, -100.229, 44.727, 211]
+    region:   c_658
     level:    [92, 95]
   17326739:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-50.364, -100.355, 53.843, 130]
+    region:   c_658
     level:    [92, 95]
   17326740:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-59.011, -99.653, 42.507, 155]
+    region:   c_658
     level:    [92, 95]
   17326741:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-48.896, -100.449, 54.590, 123]
+    region:   c_658
     level:    [92, 95]
   17326742:
     template: Rearguard_Eye
@@ -10681,44 +10681,44 @@ spawns:
   17326751:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [-57.507, -99.707, -2.750, 249]
+    region:   c_671
     level:    [92, 95]
   17326752:
     template: Hydra_Summoner_HI
     script:   Hydra_Summoner
-    at:       [-52.646, -100.576, 12.927, 45]
+    region:   c_671
     level:    [92, 95]
   17326753:
     template: Hydras_Avatar
-    at:       [-51.785, -100.737, 16.728, 54]
+    region:   c_671
     level:    [92, 92]
   17326754:
     template: Rearguard_Eye
-    at:       [-71.132, -100.256, 3.009, 78]
+    region:   c_671
     level:    [82, 82]
   17326755:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-103.893, -100.091, 0.793, 153]
+    region:   w_675
     level:    [92, 95]
   17326756:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-113.472, -99.796, -19.337, 33]
+    region:   w_675
     level:    [92, 95]
   17326757:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [-92.469, -100.114, -35.240, 11]
+    region:   w_675
     level:    [92, 95]
   17326758:
     template: Hydra_Beastmaster_HI
     script:   Hydra_Beastmaster
-    at:       [-111.205, -100.334, -33.862, 94]
+    region:   w_675
     level:    [92, 95]
   17326759:
     template: Hydras_Hound
-    at:       [-103.565, -99.831, -36.295, 30]
+    region:   w_675
     level:    [92, 92]
   17326760:
     template: Rearguard_Eye
@@ -10727,22 +10727,22 @@ spawns:
   17326761:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-139.066, -100.342, -47.744, 221]
+    region:   w_681
     level:    [92, 95]
   17326762:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [-130.348, -100.496, -29.284, 168]
+    region:   w_681
     level:    [92, 95]
   17326763:
     template: Hydra_Ranger_HI
     script:   Hydra_Ranger
-    at:       [-139.367, -100.129, -44.804, 151]
+    region:   w_681
     level:    [92, 95]
   17326764:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [-130.393, -100.445, -46.944, 218]
+    region:   w_681
     level:    [92, 95]
   17326765:
     template: Rearguard_Eye
@@ -10751,22 +10751,22 @@ spawns:
   17326766:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-148.604, -101.832, -88.013, 57]
+    region:   w_686
     level:    [92, 95]
   17326767:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [-135.567, -99.822, -76.699, 117]
+    region:   w_686
     level:    [92, 95]
   17326768:
     template: Hydra_Ninja_HI
     script:   Hydra_Ninja
-    at:       [-150.960, -99.819, -70.201, 245]
+    region:   w_686
     level:    [92, 95]
   17326769:
     template: Hydra_Dragoon_HI
     script:   Hydra_Dragoon
-    at:       [-138.928, -99.761, -78.655, 234]
+    region:   w_686
     level:    [92, 95]
   17326770:
     template: Hydras_Wyvern
@@ -10779,69 +10779,69 @@ spawns:
   17326772:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [-197.930, -100.374, -3.968, 231]
+    region:   w_692
     level:    [92, 95]
   17326773:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-221.495, -100.177, 22.784, 107]
+    region:   w_692
     level:    [92, 95]
   17326774:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-206.370, -99.876, -18.478, 90]
+    region:   w_692
     level:    [92, 95]
   17326775:
     template: Hydra_Summoner_HI
     script:   Hydra_Summoner
-    at:       [-199.547, -100.042, 27.127, 24]
+    region:   w_692
     level:    [92, 95]
   17326776:
     template: Hydras_Avatar
-    at:       [-201.628, -100.089, 28.287, 21]
+    region:   w_692
     level:    [92, 92]
   17326777:
     template: Hydra_Bard_HI
     script:   Hydra_Bard
-    at:       [-199.002, -100.469, -2.101, 19]
+    region:   w_692
     level:    [92, 95]
   17326778:
     template: Hydra_White_Mage_HI
     script:   Hydra_White_Mage
-    at:       [-349.718, -100.421, 99.070, 38]
+    region:   w_698
     level:    [92, 95]
   17326779:
     template: Hydra_Thief_HI
     script:   Hydra_Thief
-    at:       [-342.997, -99.883, 113.145, 9]
+    region:   w_698
     level:    [92, 95]
   17326780:
     template: Hydra_Paladin_HI
     script:   Hydra_Paladin
-    at:       [-363.801, -100.507, 114.197, 186]
+    region:   w_698
     level:    [92, 95]
   17326781:
     template: Vanguard_Eye
-    at:       [-346.900, -99.990, 116.096, 11]
+    region:   w_698
     level:    [82, 82]
   17326782:
     template: Hydra_Warrior_HI
     script:   Hydra_Warrior
-    at:       [-330.027, -100.205, 155.170, 89]
+    region:   w_702
     level:    [92, 95]
   17326783:
     template: Hydra_Beastmaster_HI
     script:   Hydra_Beastmaster
-    at:       [-330.846, -100.515, 160.067, 183]
+    region:   w_702
     level:    [92, 95]
   17326784:
     template: Hydras_Hound
-    at:       [-326.231, -100.344, 158.565, 98]
+    region:   w_702
     level:    [92, 92]
   17326785:
     template: Hydra_Monk_HI
     script:   Hydra_Monk
-    at:       [-323.640, -100.607, 165.450, 238]
+    region:   w_702
     level:    [92, 95]
   17326786:
     template: Vanguard_Eye
@@ -10850,17 +10850,17 @@ spawns:
   17326787:
     template: Hydra_Black_Mage_HI
     script:   Hydra_Black_Mage
-    at:       [-343.300, -101.800, 169.276, 208]
+    region:   w_707
     level:    [92, 95]
   17326788:
     template: Hydra_Red_Mage_HI
     script:   Hydra_Red_Mage
-    at:       [-356.704, -99.540, 139.852, 232]
+    region:   w_707
     level:    [92, 95]
   17326789:
     template: Hydra_Dark_Knight_HI
     script:   Hydra_Dark_Knight
-    at:       [-358.400, -100.500, 160.591, 23]
+    region:   w_707
     level:    [92, 95]
   17326790:
     template: Vanguard_Eye

@@ -4136,260 +4136,260 @@ spawns:
   17141766:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-626.080, 30.997, -793.196, 114]
+    region:   sw_6
     level:    [33, 35]
   17141767:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-621.881, 30.376, -810.801, 229]
+    region:   sw_6
     level:    [33, 35]
   17141768:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-594.173, 30.989, -768.888, 32]
+    region:   sw_6
     level:    [33, 35]
   17141769:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-458.019, 23.357, -722.723, 142]
+    region:   sw_9
     level:    [33, 35]
   17141770:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-497.611, 31.001, -793.536, 32]
+    region:   sw_9
     level:    [33, 35]
   17141771:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-526.400, 24.172, -762.123, 174]
+    region:   sw_9
     level:    [41, 49]
   17141772:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-484.054, 26.809, -775.534, 3]
+    region:   sw_9
     level:    [41, 49]
   17141773:
     template: Air_Elemental
-    at:       [-481.710, 23.724, -750.503, 118]
+    region:   sw_9
     level:    [80, 80]
   17141774:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-413.823, 39.827, -837.820, 47]
+    region:   sw_14
     level:    [41, 49]
   17141775:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-422.735, 41.700, -796.231, 165]
+    region:   sw_14
     level:    [41, 49]
   17141776:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-409.790, 41.369, -824.917, 57]
+    region:   sw_14
     level:    [36, 39]
   17141777:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-401.389, 44.407, -816.907, 165]
+    region:   sw_14
     level:    [36, 39]
   17141778:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-413.661, 21.368, -598.603, 203]
+    region:   sw_18
     level:    [33, 35]
   17141779:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-412.160, 22.318, -606.307, 14]
+    region:   sw_18
     level:    [33, 35]
   17141780:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-439.253, 23.562, -648.407, 72]
+    region:   sw_18
     level:    [33, 35]
   17141781:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-366.729, 23.558, -638.164, 216]
+    region:   sw_18
     level:    [41, 49]
   17141782:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-435.451, 16.300, -604.588, 195]
+    region:   sw_18
     level:    [41, 49]
   17141783:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-345.968, 15.807, -496.663, 43]
+    region:   sw_23
     level:    [33, 35]
   17141784:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-369.128, 23.987, -584.827, 179]
+    region:   sw_23
     level:    [33, 35]
   17141785:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-376.960, 24.045, -567.718, 13]
+    region:   sw_23
     level:    [33, 35]
   17141786:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-342.567, 15.878, -497.059, 70]
+    region:   sw_23
     level:    [41, 49]
   17141787:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-386.543, 23.446, -565.409, 38]
+    region:   sw_23
     level:    [41, 49]
   17141788:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-244.284, -1.790, -469.352, 165]
+    region:   sw_28
     level:    [33, 35]
   17141789:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-265.679, 5.314, -488.536, 83]
+    region:   sw_28
     level:    [33, 35]
   17141790:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-253.576, 29.001, -714.896, 234]
+    region:   sw_30
     level:    [41, 49]
   17141791:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-260.734, 32.356, -744.828, 240]
+    region:   sw_30
     level:    [41, 49]
   17141792:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-264.998, 26.000, -711.517, 113]
+    region:   sw_30
     level:    [36, 39]
   17141793:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-240.881, 31.592, -717.477, 210]
+    region:   sw_30
     level:    [36, 39]
   17141794:
     template: Black_Wolf
-    at:       [-244.134, 35.956, -747.682, 204]
+    region:   sw_30
     level:    [49, 50]
   17141795:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-212.480, 39.246, -677.418, 51]
+    region:   sw_35
     level:    [41, 49]
   17141796:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-211.742, 38.615, -742.322, 70]
+    region:   sw_35
     level:    [36, 39]
   17141797:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-200.991, 40.003, -695.537, 75]
+    region:   sw_35
     level:    [36, 39]
   17141798:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-160.030, 40.353, -696.360, 49]
+    region:   sw_38
     level:    [36, 39]
   17141799:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-164.559, 39.101, -718.947, 214]
+    region:   sw_38
     level:    [36, 39]
   17141800:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-310.160, 37.876, -764.371, 241]
+    region:   sw_40
     level:    [33, 35]
   17141801:
     template: Rock_Eater_past
     script:   Rock_Eater
-    at:       [-321.758, 44.466, -784.836, 232]
+    region:   sw_40
     level:    [33, 35]
   17141802:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-335.872, 22.945, -672.299, 141]
+    region:   sw_42
     level:    [41, 49]
   17141803:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-343.105, 22.974, -672.314, 245]
+    region:   sw_42
     level:    [41, 49]
   17141804:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-40.728, 39.692, -699.882, 242]
+    region:   s_44
     level:    [41, 49]
   17141805:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-78.712, 39.632, -700.116, 254]
+    region:   s_44
     level:    [41, 49]
   17141806:
     template: Wingrats_Grauberg_S
     script:   Wingrats
-    at:       [-73.625, 39.653, -701.139, 140]
+    region:   s_44
     level:    [41, 49]
   17141807:
     template: Wingrats_Grauberg_S
     script:   Wingrats
-    at:       [-37.816, 39.529, -699.047, 104]
+    region:   s_44
     level:    [41, 49]
   17141808:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [14.471, 29.181, -663.421, 110]
+    region:   s_48
     level:    [41, 49]
   17141809:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [44.087, 23.512, -658.801, 128]
+    region:   s_48
     level:    [41, 49]
   17141810:
     template: Wingrats_Grauberg_S
     script:   Wingrats
-    at:       [14.761, 29.161, -664.044, 112]
+    region:   s_48
     level:    [41, 49]
   17141811:
     template: Wingrats_Grauberg_S
     script:   Wingrats
-    at:       [26.240, 25.982, -659.119, 238]
+    region:   s_48
     level:    [41, 49]
   17141812:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [159.965, 23.521, -639.785, 20]
+    region:   s_52
     level:    [41, 49]
   17141813:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [178.368, 23.820, -635.596, 217]
+    region:   s_52
     level:    [41, 49]
   17141814:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [126.165, 23.551, -604.033, 80]
+    region:   s_52
     level:    [36, 39]
   17141815:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [172.883, 23.763, -634.231, 140]
+    region:   s_52
     level:    [36, 39]
   17141816:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [195.793, 23.861, -614.101, 89]
+    region:   s_56
     level:    [41, 49]
   17141817:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [216.864, 25.980, -646.156, 221]
+    region:   s_56
     level:    [41, 49]
   17141818:
     template: Wivre_past
@@ -4399,192 +4399,192 @@ spawns:
   17141819:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [257.640, 30.711, -651.862, 19]
+    region:   s_56
     level:    [36, 39]
   17141820:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [219.503, 26.500, -641.185, 58]
+    region:   s_56
     level:    [36, 39]
   17141821:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [277.379, 24.762, -549.693, 195]
+    region:   s_61
     level:    [41, 49]
   17141822:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [286.583, 26.306, -544.597, 33]
+    region:   s_61
     level:    [41, 49]
   17141823:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [311.847, 29.808, -586.021, 116]
+    region:   s_61
     level:    [36, 39]
   17141824:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [311.567, 29.984, -561.038, 208]
+    region:   s_61
     level:    [36, 39]
   17141825:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [113.459, 14.769, -485.309, 69]
+    region:   s_65
     level:    [36, 39]
   17141826:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [80.814, 7.697, -499.589, 117]
+    region:   s_65
     level:    [36, 39]
   17141827:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [24.154, 5.178, -502.917, 120]
+    region:   s_67
     level:    [36, 39]
   17141828:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-27.421, 7.074, -525.211, 248]
+    region:   s_67
     level:    [36, 39]
   17141829:
     template: Black_Wolf
-    at:       [-66.103, -2.644, -419.749, 157]
+    region:   s_69
     level:    [49, 50]
   17141830:
     template: Knotty_Treant
-    at:       [-106.838, -15.063, -332.355, 245]
+    region:   s_70
     level:    [62, 65]
   17141831:
     template: Goblin_Freesword
-    at:       [-19.385, -4.856, -356.580, 135]
+    region:   s_70
     level:    [61, 64]
   17141832:
     template: Goblin_Corpsman
-    at:       [38.921, -2.133, -393.108, 55]
+    region:   s_70
     level:    [62, 64]
   17141833:
     template: Knotty_Treant
-    at:       [-87.209, -23.429, -261.707, 44]
+    region:   c_73
     level:    [62, 65]
   17141834:
     template: Knotty_Treant
-    at:       [-70.510, -16.532, -285.118, 39]
+    region:   c_73
     level:    [62, 65]
   17141835:
     template: Black_Wolf
-    at:       [-66.103, -2.644, -419.749, 157]
+    region:   c_73
     level:    [49, 50]
   17141836:
     template: Feyweald_Sapling
-    at:       [11.375, -18.090, -312.785, 101]
+    region:   s_76
     level:    [92, 94]
   17141837:
     template: Feyweald_Sapling
-    at:       [18.339, -18.927, -308.303, 36]
+    region:   s_76
     level:    [92, 94]
   17141838:
     template: Feyweald_Sapling
-    at:       [48.997, -10.195, -359.547, 181]
+    region:   s_76
     level:    [92, 94]
   17141839:
     template: Feyweald_Sapling
-    at:       [44.479, -9.388, -353.329, 179]
+    region:   s_76
     level:    [92, 94]
   17141840:
     template: Feyweald_Sapling
-    at:       [37.590, -6.582, -376.555, 148]
+    region:   s_76
     level:    [92, 94]
   17141841:
     template: Feyweald_Sapling
-    at:       [31.039, -15.517, -325.013, 44]
+    region:   s_76
     level:    [92, 94]
   17141842:
     template: Feyweald_Sapling
-    at:       [-15.983, -19.266, -311.410, 39]
+    region:   s_76
     level:    [92, 94]
   17141843:
     template: Feyweald_Sapling
-    at:       [-14.416, -29.243, -273.412, 125]
+    region:   c_83
     level:    [92, 94]
   17141844:
     template: Feyweald_Sapling
-    at:       [-14.571, -28.772, -277.221, 57]
+    region:   c_83
     level:    [92, 94]
   17141845:
     template: Feyweald_Sapling
-    at:       [0.859, -32.317, -255.833, 87]
+    region:   c_83
     level:    [92, 94]
   17141846:
     template: Feyweald_Sapling
-    at:       [46.889, -31.585, -256.078, 253]
+    region:   c_83
     level:    [92, 94]
   17141847:
     template: Feyweald_Sapling
-    at:       [-22.618, -30.439, -254.041, 125]
+    region:   c_83
     level:    [92, 94]
   17141848:
     template: Feyweald_Sapling
-    at:       [-4.910, -31.954, -281.458, 195]
+    region:   c_83
     level:    [92, 94]
   17141849:
     template: Feyweald_Sapling
-    at:       [-36.390, -31.419, -249.588, 24]
+    region:   c_83
     level:    [92, 94]
   17141850:
     template: Feyweald_Sapling
-    at:       [-27.836, -34.488, -224.306, 180]
+    region:   c_90
     level:    [92, 94]
   17141851:
     template: Feyweald_Sapling
-    at:       [-41.043, -38.459, -188.305, 243]
+    region:   c_90
     level:    [92, 94]
   17141852:
     template: Feyweald_Sapling
-    at:       [2.223, -32.063, -180.679, 189]
+    region:   c_90
     level:    [92, 94]
   17141853:
     template: Feyweald_Sapling
-    at:       [12.710, -32.428, -196.622, 31]
+    region:   c_90
     level:    [92, 94]
   17141854:
     template: Feyweald_Sapling
-    at:       [-32.748, -36.622, -182.073, 115]
+    region:   c_90
     level:    [92, 94]
   17141855:
     template: Feyweald_Sapling
-    at:       [-8.451, -33.073, -207.102, 243]
+    region:   c_90
     level:    [92, 94]
   17141856:
     template: Knotty_Treant
-    at:       [117.857, -32.079, -251.119, 189]
+    region:   s_96
     level:    [62, 65]
   17141857:
     template: Goblin_Freesword
-    at:       [110.141, 1.760, -425.353, 61]
+    region:   s_96
     level:    [61, 64]
   17141858:
     template: Goblin_Blastmaster
-    at:       [22.384, -32.998, -246.135, 131]
+    region:   s_96
     level:    [62, 64]
   17141859:
     template: Knotty_Treant
-    at:       [118.079, -31.820, -258.666, 31]
+    region:   s_99
     level:    [62, 65]
   17141860:
     template: Knotty_Treant
-    at:       [99.222, -8.789, -388.519, 86]
+    region:   s_99
     level:    [62, 65]
   17141861:
     template: Thunder_Elemental
-    at:       [89.401, -16.201, -348.476, 76]
+    region:   s_99
     level:    [75, 75]
   17141862:
     template: Goblin_Corpsman
-    at:       [-5.120, -29.179, -290.698, 194]
+    region:   s_99
     level:    [62, 64]
   17141863:
     template: Goblin_Blastmaster
-    at:       [129.505, -9.658, -378.754, 137]
+    region:   s_99
     level:    [62, 64]
   17141864:
     template: Chigoe_past
@@ -4598,19 +4598,19 @@ spawns:
     level:    [43, 46]
   17141866:
     template: Knotty_Treant
-    at:       [91.305, -16.252, -350.532, 94]
+    region:   c_106
     level:    [62, 65]
   17141867:
     template: Knotty_Treant
-    at:       [122.571, -16.345, -324.060, 202]
+    region:   c_106
     level:    [62, 65]
   17141868:
     template: Goblin_Corpsman
-    at:       [146.947, -16.257, -323.659, 200]
+    region:   c_106
     level:    [62, 64]
   17141869:
     template: Goblin_Blastmaster
-    at:       [93.477, -16.060, -346.424, 163]
+    region:   c_106
     level:    [62, 64]
   17141870:
     template: Chigoe_past
@@ -4628,11 +4628,11 @@ spawns:
     level:    [72, 72]
   17141873:
     template: Knotty_Treant
-    at:       [219.147, -14.411, -265.019, 186]
+    region:   c_113
     level:    [62, 65]
   17141874:
     template: Knotty_Treant
-    at:       [228.803, -10.381, -275.488, 242]
+    region:   c_113
     level:    [62, 65]
   17141875:
     template: Chigoe_past
@@ -4646,41 +4646,41 @@ spawns:
     level:    [43, 46]
   17141877:
     template: Knotty_Treant
-    at:       [232.591, 15.887, -405.296, 214]
+    region:   s_117
     level:    [62, 65]
   17141878:
     template: Knotty_Treant
-    at:       [208.860, 11.724, -416.149, 33]
+    region:   s_117
     level:    [62, 65]
   17141879:
     template: Chigoe_past
     script:   Chigoe
-    at:       [186.004, -4.317, -356.497, 166]
+    region:   s_119
     level:    [43, 46]
   17141880:
     template: Chigoe_past
     script:   Chigoe
-    at:       [183.278, -3.263, -366.674, 63]
+    region:   s_119
     level:    [43, 46]
   17141881:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [289.464, 30.017, -467.937, 124]
+    region:   s_121
     level:    [41, 49]
   17141882:
     template: Wivre_past
     script:   Wivre
-    at:       [257.456, 23.519, -440.200, 177]
+    region:   s_121
     level:    [68, 74]
   17141883:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [267.045, 23.768, -442.615, 190]
+    region:   s_121
     level:    [36, 39]
   17141884:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [151.298, -2.351, -392.306, 243]
+    region:   s_121
     level:    [36, 39]
   17141885:
     template: Vasiliceratops
@@ -4689,15 +4689,15 @@ spawns:
   17141886:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [300.944, 4.496, -335.875, 171]
+    region:   s_126
     level:    [36, 39]
   17141887:
     template: Knotty_Treant
-    at:       [278.858, 2.699, -341.175, 212]
+    region:   s_126
     level:    [62, 65]
   17141888:
     template: Knotty_Treant
-    at:       [270.980, 3.333, -345.029, 61]
+    region:   s_126
     level:    [62, 65]
   17141889:
     template: Chigoe_past
@@ -4712,15 +4712,15 @@ spawns:
   17141891:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [354.702, 21.370, -379.554, 34]
+    region:   se_131
     level:    [36, 39]
   17141892:
     template: Knotty_Treant
-    at:       [363.240, 3.950, -304.074, 45]
+    region:   se_131
     level:    [62, 65]
   17141893:
     template: Knotty_Treant
-    at:       [354.401, 10.820, -335.684, 92]
+    region:   se_131
     level:    [62, 65]
   17141894:
     template: Chigoe_past
@@ -4735,51 +4735,51 @@ spawns:
   17141896:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [387.141, 39.429, -441.985, 45]
+    region:   se_136
     level:    [41, 49]
   17141897:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [452.642, 40.544, -425.263, 26]
+    region:   se_136
     level:    [36, 39]
   17141898:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [351.877, 33.948, -423.522, 59]
+    region:   se_136
     level:    [36, 39]
   17141899:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [510.585, 33.665, -453.801, 32]
+    region:   se_139
     level:    [41, 49]
   17141900:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [550.489, 26.307, -416.940, 61]
+    region:   se_139
     level:    [41, 49]
   17141901:
     template: Wivre_past
     script:   Wivre
-    at:       [582.884, 26.636, -439.779, 82]
+    region:   se_139
     level:    [68, 74]
   17141902:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [495.449, 36.071, -459.089, 124]
+    region:   se_139
     level:    [36, 39]
   17141903:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [455.020, 16.289, -306.207, 235]
+    region:   se_143
     level:    [36, 39]
   17141904:
     template: Knotty_Treant
-    at:       [426.054, 36.490, -393.761, 223]
+    region:   se_143
     level:    [62, 65]
   17141905:
     template: Wivre_past
     script:   Wivre
-    at:       [419.664, 29.175, -378.739, 118]
+    region:   se_143
     level:    [68, 74]
   17141906:
     template: Chigoe_past
@@ -4794,52 +4794,52 @@ spawns:
   17141908:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [523.325, 24.066, -360.828, 184]
+    region:   se_148
     level:    [41, 49]
   17141909:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [509.102, 31.593, -379.034, 38]
+    region:   se_148
     level:    [41, 49]
   17141910:
     template: Wivre_past
     script:   Wivre
-    at:       [487.396, 23.578, -349.191, 187]
+    region:   se_148
     level:    [68, 74]
   17141911:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [515.317, 37.851, -396.935, 146]
+    region:   se_148
     level:    [36, 39]
   17141912:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [483.108, 22.097, -311.972, 137]
+    region:   e_152
     level:    [36, 39]
   17141913:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [537.037, 20.999, -332.564, 84]
+    region:   e_152
     level:    [36, 39]
   17141914:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [488.739, 22.409, -331.485, 70]
+    region:   e_152
     level:    [36, 39]
   17141915:
     template: Wivre_past
     script:   Wivre
-    at:       [459.284, 1.045, -219.138, 162]
+    region:   e_155
     level:    [68, 74]
   17141916:
     template: Wivre_past
     script:   Wivre
-    at:       [467.555, 1.163, -235.312, 24]
+    region:   e_155
     level:    [68, 74]
   17141917:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [495.651, 10.578, -268.798, 192]
+    region:   e_155
     level:    [36, 39]
   17141918:
     template: Chigoe_past
@@ -4884,171 +4884,171 @@ spawns:
   17141926:
     template: Wivre_past
     script:   Wivre
-    at:       [357.182, -11.082, -147.263, 242]
+    region:   c_166
     level:    [68, 74]
   17141927:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [359.883, -13.871, -135.322, 234]
+    region:   c_166
     level:    [36, 39]
   17141928:
     template: Vampire_Bat_Grauberg_S
     script:   Vampire_Bat
-    at:       [371.571, -10.329, -148.521, 204]
+    region:   c_166
     level:    [40, 45]
   17141929:
     template: Vampire_Bat_Grauberg_S
     script:   Vampire_Bat
-    at:       [352.026, -12.281, -140.435, 94]
+    region:   c_166
     level:    [40, 45]
   17141930:
     template: Wivre_past
     script:   Wivre
-    at:       [346.876, -27.410, -38.338, 155]
+    region:   c_170
     level:    [68, 74]
   17141931:
     template: Wivre_past
     script:   Wivre
-    at:       [342.727, -29.708, -22.231, 112]
+    region:   c_170
     level:    [68, 74]
   17141932:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [313.286, -31.352, -40.490, 107]
+    region:   c_170
     level:    [36, 39]
   17141933:
     template: Wivre_past
     script:   Wivre
-    at:       [318.918, -32.204, 21.190, 186]
+    region:   c_173
     level:    [68, 74]
   17141934:
     template: Wivre_past
     script:   Wivre
-    at:       [386.211, -30.463, 2.085, 12]
+    region:   c_173
     level:    [68, 74]
   17141935:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [381.031, -36.567, 34.708, 145]
+    region:   c_173
     level:    [36, 39]
   17141936:
     template: Thunder_Elemental
-    at:       [356.872, -27.051, 15.257, 103]
+    region:   c_173
     level:    [75, 75]
   17141937:
     template: Wivre_past
     script:   Wivre
-    at:       [301.708, -47.552, 73.157, 238]
+    region:   c_177
     level:    [68, 74]
   17141938:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [409.028, -46.611, 81.796, 229]
+    region:   c_177
     level:    [36, 39]
   17141939:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [303.069, -42.849, 62.908, 58]
+    region:   c_177
     level:    [36, 39]
   17141940:
     template: Wivre_past
     script:   Wivre
-    at:       [354.725, -40.164, 163.851, 226]
+    region:   c_180
     level:    [68, 74]
   17141941:
     template: Wivre_past
     script:   Wivre
-    at:       [245.559, -47.976, 149.355, 94]
+    region:   c_181
     level:    [68, 74]
   17141942:
     template: Wivre_past
     script:   Wivre
-    at:       [257.883, -47.774, 136.015, 153]
+    region:   c_181
     level:    [68, 74]
   17141943:
     template: Wivre_past
     script:   Wivre
-    at:       [359.718, -37.798, 215.296, 233]
+    region:   e_183
     level:    [68, 74]
   17141944:
     template: Onyx_Quadav_past
     script:   Onyx_Quadav
-    at:       [403.626, -39.457, 208.233, 89]
+    region:   e_183
     level:    [61, 64]
   17141945:
     template: Young_Quadav_past
     script:   Young_Quadav
-    at:       [373.601, -40.899, 198.673, 205]
+    region:   e_183
     level:    [61, 63]
   17141946:
     template: Wivre_past
     script:   Wivre
-    at:       [432.531, -24.786, 268.412, 164]
+    region:   ne_186
     level:    [68, 74]
   17141947:
     template: Copper_Quadav_past
     script:   Copper_Quadav
-    at:       [393.410, -32.969, 251.022, 76]
+    region:   ne_186
     level:    [61, 63]
   17141948:
     template: Amethyst_Quadav
-    at:       [404.848, -31.647, 270.310, 58]
+    region:   ne_186
     level:    [61, 63]
   17141949:
     template: Wivre_past
     script:   Wivre
-    at:       [133.121, -50.698, 139.571, 180]
+    region:   c_189
     level:    [68, 74]
   17141950:
     template: Wivre_past
     script:   Wivre
-    at:       [153.886, -48.430, 151.379, 191]
+    region:   c_189
     level:    [68, 74]
   17141951:
     template: Doom_Mage
-    at:       [170.156, -49.077, 137.308, 244]
+    region:   c_189
     level:    [66, 69]
   17141952:
     template: Doom_Soldier
-    at:       [131.350, -52.038, 136.731, 207]
+    region:   c_189
     level:    [66, 69]
   17141953:
     template: Air_Elemental
-    at:       [136.335, -50.230, 141.679, 136]
+    region:   c_189
     level:    [75, 75]
   17141954:
     template: Grauberg_Hippogryph
-    at:       [4.643, -40.731, 241.598, 173]
+    region:   c_194
     level:    [73, 75]
   17141955:
     template: Grauberg_Hippogryph
-    at:       [-13.208, -43.845, 229.198, 165]
+    region:   c_194
     level:    [73, 75]
   17141956:
     template: Grauberg_Hippogryph
-    at:       [27.166, -49.610, 221.147, 1]
+    region:   c_194
     level:    [73, 75]
   17141957:
     template: Vampire_Bat_Grauberg_S
     script:   Vampire_Bat
-    at:       [6.369, -41.854, 234.441, 25]
+    region:   c_194
     level:    [40, 45]
   17141958:
     template: Grauberg_Hippogryph
-    at:       [18.135, -28.134, 321.442, 109]
+    region:   n_198
     level:    [73, 75]
   17141959:
     template: Grauberg_Hippogryph
-    at:       [1.222, -31.825, 286.231, 66]
+    region:   n_198
     level:    [73, 75]
   17141960:
     template: Grauberg_Hippogryph
-    at:       [27.362, -34.120, 305.314, 176]
+    region:   n_198
     level:    [73, 75]
   17141961:
     template: Vampire_Bat_Grauberg_S
     script:   Vampire_Bat
-    at:       [55.518, -38.540, 302.149, 101]
+    region:   n_198
     level:    [40, 45]
   17141962:
     template: Kotan-kor_Kamuy
@@ -5056,69 +5056,69 @@ spawns:
     level:    [80, 80]
   17141963:
     template: Grauberg_Hippogryph
-    at:       [17.824, -18.648, 373.585, 21]
+    region:   n_203
     level:    [73, 75]
   17141964:
     template: Grauberg_Hippogryph
-    at:       [2.912, -16.303, 384.248, 153]
+    region:   n_203
     level:    [73, 75]
   17141965:
     template: Grauberg_Hippogryph
-    at:       [-67.167, -32.025, 287.178, 31]
+    region:   n_205
     level:    [73, 75]
   17141966:
     template: Grauberg_Hippogryph
-    at:       [-55.271, -30.957, 294.395, 186]
+    region:   n_205
     level:    [73, 75]
   17141967:
     template: Grauberg_Hippogryph
-    at:       [-54.458, -28.037, 305.360, 147]
+    region:   n_205
     level:    [73, 75]
   17141968:
     template: Vampire_Bat_Grauberg_S
     script:   Vampire_Bat
-    at:       [-36.970, -24.331, 339.926, 94]
+    region:   n_205
     level:    [40, 45]
   17141969:
     template: Grauberg_Hippogryph
-    at:       [-45.705, -47.661, 239.332, 33]
+    region:   c_209
     level:    [73, 75]
   17141970:
     template: Grauberg_Hippogryph
-    at:       [-42.658, -48.200, 244.235, 182]
+    region:   c_209
     level:    [73, 75]
   17141971:
     template: Grauberg_Hippogryph
-    at:       [-41.670, -47.881, 238.423, 94]
+    region:   c_209
     level:    [73, 75]
   17141972:
     template: Vampire_Bat_Grauberg_S
     script:   Vampire_Bat
-    at:       [-34.957, -47.203, 241.263, 223]
+    region:   c_209
     level:    [40, 45]
   17141973:
     template: Grauberg_Hippogryph
-    at:       [-44.386, -63.652, 128.368, 231]
+    region:   c_213
     level:    [73, 75]
   17141974:
     template: Grauberg_Hippogryph
-    at:       [-98.618, -62.568, 142.877, 171]
+    region:   c_213
     level:    [73, 75]
   17141975:
     template: Grauberg_Hippogryph
-    at:       [-77.562, -57.841, 149.156, 141]
+    region:   c_213
     level:    [73, 75]
   17141976:
     template: Grauberg_Hippogryph
-    at:       [-135.265, -91.286, 37.251, 194]
+    region:   w_216
     level:    [73, 75]
   17141977:
     template: Ajattara
-    at:       [-134.292, -86.456, -14.754, 115]
+    region:   w_216
     level:    [79, 83]
   17141978:
     template: Ajattara
-    at:       [-125.097, -88.362, 20.012, 45]
+    region:   w_216
     level:    [79, 83]
   17141979:
     template: Scitalis
@@ -5126,382 +5126,382 @@ spawns:
     level:    [83, 83]
   17141980:
     template: Grauberg_Hippogryph
-    at:       [-133.782, -78.818, -71.599, 92]
+    region:   c_220
     level:    [73, 75]
   17141981:
     template: Ajattara
-    at:       [-149.927, -79.952, -41.328, 247]
+    region:   c_220
     level:    [79, 83]
   17141982:
     template: Ajattara
-    at:       [-129.517, -79.550, -80.158, 80]
+    region:   c_220
     level:    [79, 83]
   17141983:
     template: Doom_Mage
-    at:       [-162.051, -64.338, -119.709, 3]
+    region:   c_220
     level:    [66, 69]
   17141984:
     template: Doom_Soldier
-    at:       [-131.750, -79.042, -73.361, 133]
+    region:   c_220
     level:    [66, 69]
   17141985:
     template: Ajattara
-    at:       [-201.214, -54.999, -134.470, 102]
+    region:   w_225
     level:    [79, 83]
   17141986:
     template: Ajattara
-    at:       [-210.816, -48.614, -157.271, 61]
+    region:   w_225
     level:    [79, 83]
   17141987:
     template: Ajattara
-    at:       [-263.600, -109.849, 84.613, 74]
+    region:   w_227
     level:    [79, 83]
   17141988:
     template: Ajattara
-    at:       [-341.202, -133.379, 127.834, 89]
+    region:   w_228
     level:    [79, 83]
   17141989:
     template: Sidhe
-    at:       [-146.593, -25.011, 512.353, 170]
+    region:   nw_229
     level:    [75, 77]
   17141990:
     template: Sidhe
-    at:       [-156.493, -12.219, 548.299, 3]
+    region:   nw_229
     level:    [75, 77]
   17141991:
     template: Sidhe
-    at:       [-170.602, -8.765, 604.107, 163]
+    region:   nw_231
     level:    [75, 77]
   17141992:
     template: Sidhe
-    at:       [-164.981, -9.379, 565.146, 27]
+    region:   nw_231
     level:    [75, 77]
   17141993:
     template: Sidhe
-    at:       [-128.073, -14.090, 541.571, 240]
+    region:   n_233
     level:    [75, 77]
   17141994:
     template: Sidhe
-    at:       [-118.374, -14.619, 533.767, 162]
+    region:   n_233
     level:    [75, 77]
   17141995:
     template: Sidhe
-    at:       [-122.895, -8.537, 561.455, 88]
+    region:   n_233
     level:    [75, 77]
   17141996:
     template: Air_Elemental_Large
     script:   Air_Elemental
-    at:       [-108.650, -9.447, 553.746, 50]
+    region:   n_233
     level:    [80, 80]
   17141997:
     template: Sidhe
-    at:       [-124.264, -8.465, 635.927, 228]
+    region:   n_237
     level:    [75, 77]
   17141998:
     template: Sidhe
-    at:       [-122.021, -7.612, 616.007, 178]
+    region:   n_237
     level:    [75, 77]
   17141999:
     template: Sidhe
-    at:       [-115.243, -8.347, 599.503, 96]
+    region:   n_237
     level:    [75, 77]
   17142000:
     template: Sidhe
-    at:       [-80.529, -16.449, 525.357, 230]
+    region:   n_240
     level:    [75, 77]
   17142001:
     template: Sidhe
-    at:       [-80.391, -12.819, 542.584, 160]
+    region:   n_240
     level:    [75, 77]
   17142002:
     template: Sidhe
-    at:       [-67.728, -7.708, 628.395, 152]
+    region:   n_242
     level:    [75, 77]
   17142003:
     template: Sidhe
-    at:       [-64.840, -7.567, 635.669, 4]
+    region:   n_242
     level:    [75, 77]
   17142004:
     template: Air_Elemental_Large
     script:   Air_Elemental
-    at:       [-75.612, -7.896, 604.580, 154]
+    region:   n_242
     level:    [80, 80]
   17142005:
     template: Sidhe
-    at:       [-52.615, -7.504, 660.660, 240]
+    region:   n_245
     level:    [75, 77]
   17142006:
     template: Sidhe
-    at:       [-87.252, -8.981, 658.071, 221]
+    region:   n_245
     level:    [75, 77]
   17142007:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-418.535, -147.435, 187.174, 214]
+    region:   w_247
     level:    [79, 83]
   17142008:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-407.159, -142.842, 184.478, 237]
+    region:   w_247
     level:    [79, 83]
   17142009:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-438.603, -151.791, 132.078, 44]
+    region:   w_249
     level:    [79, 83]
   17142010:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-438.256, -156.928, 216.085, 36]
+    region:   w_250
     level:    [79, 83]
   17142011:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-454.829, -157.956, 200.655, 199]
+    region:   w_250
     level:    [79, 83]
   17142012:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-510.158, -176.447, 275.171, 249]
+    region:   nw_252
     level:    [79, 83]
   17142013:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-483.687, -174.960, 266.025, 55]
+    region:   nw_252
     level:    [79, 83]
   17142014:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-516.680, -160.893, 160.009, 166]
+    region:   w_254
     level:    [79, 83]
   17142015:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-508.003, -160.435, 161.438, 228]
+    region:   w_254
     level:    [79, 83]
   17142016:
     template: Air_Elemental_Large
     script:   Air_Elemental
-    at:       [-520.327, -161.185, 152.745, 25]
+    region:   w_254
     level:    [80, 80]
   17142017:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-553.962, -168.381, 201.145, 44]
+    region:   w_257
     level:    [79, 83]
   17142018:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-587.237, -168.693, 197.879, 161]
+    region:   w_257
     level:    [79, 83]
   17142019:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-558.874, -168.563, 145.250, 164]
+    region:   w_259
     level:    [79, 83]
   17142020:
     template: Ajattara_Large
     script:   Ajattara
-    at:       [-587.735, -168.206, 149.598, 106]
+    region:   w_259
     level:    [79, 83]
   17142021:
     template: Brasscap
-    at:       [432.979, -18.021, 317.280, 60]
+    region:   ne_261
     level:    [59, 61]
   17142022:
     template: Brasscap
-    at:       [414.742, -21.407, 331.891, 96]
+    region:   ne_261
     level:    [59, 61]
   17142023:
     template: Brasscap
-    at:       [475.533, -3.935, 346.259, 230]
+    region:   ne_261
     level:    [59, 61]
   17142024:
     template: Thunder_Elemental
-    at:       [483.111, -2.387, 359.551, 31]
+    region:   ne_261
     level:    [75, 75]
   17142025:
     template: Brasscap
-    at:       [476.383, 3.755, 428.011, 118]
+    region:   ne_265
     level:    [59, 61]
   17142026:
     template: Brasscap
-    at:       [523.084, 6.197, 390.496, 99]
+    region:   ne_265
     level:    [59, 61]
   17142027:
     template: Brasscap
-    at:       [509.267, 2.568, 378.661, 233]
+    region:   ne_265
     level:    [59, 61]
   17142028:
     template: Brasscap
-    at:       [602.992, 15.533, 361.619, 132]
+    region:   ne_268
     level:    [59, 61]
   17142029:
     template: Brasscap
-    at:       [578.152, 15.419, 394.036, 110]
+    region:   ne_268
     level:    [59, 61]
   17142030:
     template: Brasscap
-    at:       [606.599, 16.291, 382.580, 215]
+    region:   ne_268
     level:    [59, 61]
   17142031:
     template: Doom_Mage
-    at:       [600.685, 16.265, 384.304, 222]
+    region:   ne_268
     level:    [66, 69]
   17142032:
     template: Brasscap
-    at:       [632.924, 15.533, 373.526, 137]
+    region:   ne_272
     level:    [59, 61]
   17142033:
     template: Brasscap
-    at:       [655.083, 16.127, 376.065, 227]
+    region:   ne_272
     level:    [59, 61]
   17142034:
     template: Brasscap
-    at:       [737.162, 21.907, 392.667, 248]
+    region:   ne_272
     level:    [59, 61]
   17142035:
     template: Doom_Soldier
-    at:       [652.532, 17.687, 398.051, 178]
+    region:   ne_272
     level:    [66, 69]
   17142036:
     template: Brasscap
-    at:       [752.959, 23.879, 451.045, 40]
+    region:   ne_276
     level:    [59, 61]
   17142037:
     template: Brasscap
-    at:       [745.034, 22.707, 448.305, 169]
+    region:   ne_276
     level:    [59, 61]
   17142038:
     template: Brasscap
-    at:       [738.733, 23.932, 419.556, 34]
+    region:   ne_276
     level:    [59, 61]
   17142039:
     template: Doom_Soldier
-    at:       [754.972, 23.900, 480.061, 10]
+    region:   ne_276
     level:    [66, 69]
   17142040:
     template: Brasscap
-    at:       [741.282, 39.146, 553.901, 217]
+    region:   ne_280
     level:    [59, 61]
   17142041:
     template: Brasscap
-    at:       [722.625, 39.091, 519.774, 224]
+    region:   ne_280
     level:    [59, 61]
   17142042:
     template: Brasscap
-    at:       [715.100, 47.261, 598.141, 7]
+    region:   ne_280
     level:    [59, 61]
   17142043:
     template: Doom_Mage
-    at:       [742.385, 36.455, 531.967, 167]
+    region:   ne_280
     level:    [66, 69]
   17142044:
     template: Brasscap
-    at:       [839.822, 69.858, 629.136, 18]
+    region:   ne_284
     level:    [59, 61]
   17142045:
     template: Brasscap
-    at:       [757.479, 47.581, 595.051, 14]
+    region:   ne_284
     level:    [59, 61]
   17142046:
     template: Brasscap
-    at:       [797.416, 63.965, 645.512, 242]
+    region:   ne_286
     level:    [59, 61]
   17142047:
     template: Brasscap
-    at:       [749.655, 60.041, 643.211, 125]
+    region:   ne_286
     level:    [59, 61]
   17142048:
     template: Brasscap
-    at:       [793.221, 70.947, 726.410, 178]
+    region:   ne_288
     level:    [59, 61]
   17142049:
     template: Brasscap
-    at:       [732.170, 63.915, 687.696, 3]
+    region:   ne_288
     level:    [59, 61]
   17142050:
     template: Brasscap
-    at:       [692.869, 47.663, 635.885, 131]
+    region:   ne_290
     level:    [59, 61]
   17142051:
     template: Brasscap
-    at:       [684.094, 41.536, 611.064, 91]
+    region:   ne_290
     level:    [59, 61]
   17142052:
     template: Brasscap
-    at:       [597.479, 58.546, 657.519, 197]
+    region:   ne_292
     level:    [59, 61]
   17142053:
     template: Brasscap
-    at:       [600.885, 61.105, 666.095, 216]
+    region:   ne_292
     level:    [59, 61]
   17142054:
     template: Peiste
-    at:       [527.720, 54.645, 670.478, 56]
+    region:   ne_294
     level:    [66, 70]
   17142055:
     template: Peiste
-    at:       [550.379, 63.111, 713.594, 245]
+    region:   ne_294
     level:    [66, 70]
   17142056:
     template: Sapphirine_Quadav
-    at:       [580.220, 56.069, 647.127, 61]
+    region:   ne_294
     level:    [61, 69]
   17142057:
     template: Heliodor_Quadav
-    at:       [561.920, 55.742, 665.218]
+    region:   ne_294
     level:    [61, 69]
   17142058:
     template: Peiste
-    at:       [487.640, 56.480, 730.096, 100]
+    region:   ne_298
     level:    [66, 70]
   17142059:
     template: Peiste
-    at:       [452.107, 63.008, 743.709, 61]
+    region:   ne_298
     level:    [66, 70]
   17142060:
     template: Bronze_Quadav_past
     script:   Bronze_Quadav
-    at:       [488.658, 54.345, 703.974, 54]
+    region:   ne_298
     level:    [61, 69]
   17142061:
     template: Silver_Quadav
-    at:       [449.519, 63.516, 768.101, 158]
+    region:   ne_298
     level:    [61, 69]
   17142062:
     template: Peiste
-    at:       [434.595, 49.689, 661.205, 135]
+    region:   ne_302
     level:    [66, 70]
   17142063:
     template: Peiste
-    at:       [424.340, 51.981, 662.930, 197]
+    region:   ne_302
     level:    [66, 70]
   17142064:
     template: Old_Quadav_past
     script:   Old_Quadav
-    at:       [441.121, 63.009, 718.690, 8]
+    region:   ne_302
     level:    [61, 69]
   17142065:
     template: Sapphirine_Quadav
-    at:       [423.572, 55.057, 675.433, 63]
+    region:   ne_302
     level:    [61, 69]
   17142066:
     template: Peiste
-    at:       [359.272, 47.759, 673.323, 213]
+    region:   ne_306
     level:    [66, 70]
   17142067:
     template: Peiste
-    at:       [377.020, 51.061, 667.658, 253]
+    region:   ne_306
     level:    [66, 70]
   17142068:
     template: Brass_Quadav_past
     script:   Brass_Quadav
-    at:       [367.339, 47.645, 664.254, 27]
+    region:   ne_306
     level:    [61, 69]
   17142069:
     template: Silver_Quadav
-    at:       [376.475, 50.536, 673.854, 108]
+    region:   ne_306
     level:    [61, 69]
   17142070:
     template: Chigoe_past
@@ -5515,15 +5515,15 @@ spawns:
     level:    [43, 46]
   17142072:
     template: Heliodor_Quadav
-    at:       [275.197, 39.369, 653.087, 49]
+    region:   n_312
     level:    [61, 69]
   17142073:
     template: Sapphirine_Quadav
-    at:       [269.902, 31.280, 603.784, 120]
+    region:   n_312
     level:    [61, 69]
   17142074:
     template: Black_Wolf
-    at:       [262.007, 36.715, 626.370, 205]
+    region:   n_312
     level:    [49, 50]
   17142075:
     template: Chigoe_past
@@ -5537,17 +5537,17 @@ spawns:
     level:    [43, 46]
   17142077:
     template: Silver_Quadav
-    at:       [242.108, 31.541, 595.666, 214]
+    region:   n_317
     level:    [61, 69]
   17142078:
     template: Brass_Quadav_past
     script:   Brass_Quadav
-    at:       [206.855, 31.466, 619.914, 20]
+    region:   n_317
     level:    [61, 69]
   17142079:
     template: Wingrats_Grauberg_S
     script:   Wingrats
-    at:       [214.138, 31.460, 590.430, 118]
+    region:   n_317
     level:    [41, 49]
   17142080:
     template: Chigoe_past
@@ -5562,16 +5562,16 @@ spawns:
   17142082:
     template: Old_Quadav_past
     script:   Old_Quadav
-    at:       [166.838, 23.548, 552.598, 173]
+    region:   n_322
     level:    [61, 69]
   17142083:
     template: Heliodor_Quadav
-    at:       [200.836, 22.831, 552.894, 163]
+    region:   n_322
     level:    [61, 69]
   17142084:
     template: Wingrats_Grauberg_S
     script:   Wingrats
-    at:       [223.257, 24.739, 550.691, 39]
+    region:   n_322
     level:    [41, 49]
   17142085:
     template: Chigoe_past
@@ -5585,11 +5585,11 @@ spawns:
     level:    [43, 46]
   17142087:
     template: Peiste
-    at:       [503.133, 24.019, 499.955, 215]
+    region:   ne_327
     level:    [66, 70]
   17142088:
     template: Peiste
-    at:       [455.514, 2.804, 450.087, 54]
+    region:   ne_327
     level:    [66, 70]
   17142089:
     template: Veteran_Quadav_past
@@ -5608,30 +5608,30 @@ spawns:
   17142092:
     template: Onyx_Quadav_past
     script:   Onyx_Quadav
-    at:       [516.078, 39.586, 593.186, 163]
+    region:   ne_332
     level:    [61, 64]
   17142093:
     template: Greater_Quadav_past
     script:   Greater_Quadav
-    at:       [485.884, 29.659, 549.234, 133]
+    region:   ne_332
     level:    [61, 69]
   17142094:
     template: Peiste
-    at:       [492.206, 47.436, 651.369, 151]
+    region:   ne_334
     level:    [66, 70]
   17142095:
     template: Peiste
-    at:       [470.949, 46.933, 635.312, 233]
+    region:   ne_334
     level:    [66, 70]
   17142096:
     template: Greater_Quadav_past
     script:   Greater_Quadav
-    at:       [448.145, 47.599, 634.434, 52]
+    region:   ne_334
     level:    [61, 69]
   17142097:
     template: Young_Quadav_past
     script:   Young_Quadav
-    at:       [478.981, 42.377, 616.712, 89]
+    region:   ne_334
     level:    [61, 63]
   17142098:
     template: Blood_Soul_past
@@ -5663,7 +5663,7 @@ spawns:
     level:    [51, 56]
   17142104:
     template: Goblin_Pioneer
-    at:       [-339.626, 47.227, -795.867, 91]
+    region:   sw_344
     level:    [62, 64]
   17142105:
     template: Goblin_Mine_Small
@@ -5672,7 +5672,7 @@ spawns:
     level:    [59, 59]
   17142106:
     template: Goblin_Pioneer
-    at:       [432.716, 62.042, 707.737, 254]
+    region:   ne_346
     level:    [62, 64]
   17142107:
     template: Goblin_Mine_Small
@@ -5780,70 +5780,96 @@ spawns:
     template: 1st_Legionnaire
   17142145:
     template: Ludwig
+    region:   e_385
     level:    [1, 1]
   17142146:
     template: 2nd_Legionnaire
+    region:   c_386
   17142147:
     template: 2nd_Legionnaire
+    region:   e_385
   17142148:
     template: 2nd_Legionnaire
+    region:   c_386
   17142149:
     template: 2nd_Legionnaire
+    region:   c_386
   17142150:
     template: 2nd_Legionnaire
+    region:   c_390
   17142151:
     template: 2nd_Legionnaire
+    region:   c_386
   17142152:
     template: 2nd_Legionnaire
+    region:   e_385
   17142153:
     template: 2nd_Legionnaire
+    region:   c_386
   17142154:
     template: 2nd_Legionnaire
+    region:   c_394
   17142155:
     template: Elivira
-    at:       [320.631, -48.486, 115.725, 241]
+    region:   c_386
     level:    [1, 1]
   17142156:
     template: 1st_Gold_Musketeer
+    region:   c_386
   17142157:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142158:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142159:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142160:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142161:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142162:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142163:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142164:
     template: 1st_Gold_Musketeer
+    region:   c_394
   17142165:
     template: Kurt
+    region:   c_405
   17142166:
     template: 8th_Iron_Musketeer
+    region:   c_406
   17142167:
     template: 8th_Iron_Musketeer
   17142168:
     template: 8th_Iron_Musketeer
   17142169:
     template: 8th_Iron_Musketeer
+    region:   c_406
   17142170:
     template: 8th_Iron_Musketeer
+    region:   c_405
   17142171:
     template: 8th_Iron_Musketeer
   17142172:
     template: 8th_Iron_Musketeer
+    region:   c_406
   17142173:
     template: 8th_Iron_Musketeer
+    region:   c_405
   17142174:
     template: 8th_Iron_Musketeer
+    region:   c_390
   17142175:
     template: Adelheid
-    at:       [360.033, -48.215, 110.113, 173]
+    region:   c_394
     level:    [70, 70]
   17142176:
     template: Paralyzing_Tube_GS
@@ -5862,11 +5888,11 @@ spawns:
     level:    [70, 70]
   17142179:
     template: 2nd_Legion_Scout
-    at:       [280.126, -37.435, 23.558, 21]
+    region:   c_394
     level:    [70, 70]
   17142180:
     template: 2nd_Legion_Scout
-    at:       [311.252, -48.262, 116.294, 80]
+    region:   c_394
     level:    [70, 70]
   17142181:
     template: 2nd_Legion_Scout
@@ -5874,27 +5900,27 @@ spawns:
     level:    [70, 70]
   17142182:
     template: 2nd_Legion_Scout
-    at:       [274.517, -35.573, 15.694, 57]
+    region:   c_394
     level:    [70, 70]
   17142183:
     template: 2nd_Legion_Scout
-    at:       [295.711, -47.976, 106.470, 123]
+    region:   c_394
     level:    [70, 70]
   17142184:
     template: 2nd_Legion_Scout
-    at:       [275.059, -36.362, 18.328, 67]
+    region:   c_394
     level:    [70, 70]
   17142185:
     template: 2nd_Legion_Scout
-    at:       [274.848, -35.861, 16.134, 64]
+    region:   c_394
     level:    [70, 70]
   17142186:
     template: 2nd_Legion_Scout
-    at:       [310.607, -48.404, 112.953, 86]
+    region:   c_394
     level:    [70, 70]
   17142187:
     template: 2nd_Legion_Scout
-    at:       [312.439, -48.256, 106.007, 142]
+    region:   c_394
     level:    [70, 70]
   17142188:
     template: 4th_Legionnaire
@@ -5981,27 +6007,27 @@ spawns:
     template: 1st_Legion_Mercenary
   17142220:
     template: Field_Woundpatcher
-    at:       [317.520, -48.428, 114.569, 124]
+    region:   c_394
     level:    [60, 60]
   17142221:
     template: Field_Woundpatcher
-    at:       [307.381, -48.037, 101.568, 145]
+    region:   c_394
     level:    [60, 60]
   17142222:
     template: Field_Woundpatcher
-    at:       [309.291, -48.113, 106.115, 52]
+    region:   c_394
     level:    [60, 60]
   17142223:
     template: Field_Woundpatcher
-    at:       [357.808, -47.678, 96.430, 36]
+    region:   c_394
     level:    [60, 60]
   17142224:
     template: Field_Woundpatcher
-    at:       [356.948, -48.386, 87.031, 103]
+    region:   c_394
     level:    [60, 60]
   17142225:
     template: Field_Woundpatcher
-    at:       [302.798, -48.077, 101.518, 145]
+    region:   c_394
     level:    [60, 60]
   17142226:
     template: Republic_Supplier
@@ -6625,6 +6651,7 @@ spawns:
     level:    [1, 1]
   17142412:
     template: Areuhat
+    region:   c_394
     level:    [1, 1]
   17142413:
     template: Odzmanouk

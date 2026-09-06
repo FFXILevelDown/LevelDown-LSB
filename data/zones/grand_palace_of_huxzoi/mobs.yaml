@@ -896,7 +896,7 @@ templates:
 spawns:
   16916481:
     template: Eoghrah
-    at:       [-464.896, -0.500, 700.304, 47]
+    region:   nw_1
     level:    [75, 77]
   16916482:
     template: Eozdei
@@ -904,11 +904,11 @@ spawns:
     level:    [77, 78]
   16916483:
     template: Eoghrah
-    at:       [-409.447, -0.500, 737.969, 107]
+    region:   nw_3
     level:    [76, 76]
   16916484:
     template: Eoghrah
-    at:       [-420.608, -0.500, 733.981, 20]
+    region:   nw_3
     level:    [76, 76]
   16916485:
     template: Eozdei_Left
@@ -917,7 +917,7 @@ spawns:
     level:    [77, 78]
   16916486:
     template: Eoghrah
-    at:       [-372.004, -0.500, 702.292, 40]
+    region:   nw_6
     level:    [75, 75]
   16916487:
     template: Eozdei
@@ -951,23 +951,23 @@ spawns:
     level:    [75, 77]
   16916494:
     template: Eoghrah
-    at:       [-420.570, -0.451, 619.681, 193]
+    region:   nw_14
     level:    [75, 77]
   16916495:
     template: Eoghrah
-    at:       [-420.035, -0.500, 614.068, 60]
+    region:   nw_15
     level:    [75, 77]
   16916496:
     template: Eoghrah
-    at:       [-420.553, -0.449, 608.870, 65]
+    region:   nw_14
     level:    [75, 77]
   16916497:
     template: Eoghrah
-    at:       [-420.588, -0.449, 597.252, 62]
+    region:   nw_14
     level:    [75, 77]
   16916498:
     template: Eoghrah
-    at:       [-92.738, -0.500, 505.613, 241]
+    region:   c_18
     level:    [75, 77]
   16916499:
     template: Eozdei
@@ -975,11 +975,11 @@ spawns:
     level:    [77, 78]
   16916500:
     template: Eoghrah
-    at:       [-67.144, -0.500, 458.961, 127]
+    region:   c_20
     level:    [77, 77]
   16916501:
     template: Eoghrah
-    at:       [-68.695, -0.500, 459.823, 69]
+    region:   c_20
     level:    [77, 77]
   16916502:
     template: Eozdei_Left
@@ -988,7 +988,7 @@ spawns:
     level:    [77, 78]
   16916503:
     template: Eoghrah
-    at:       [-112.868, -0.500, 418.267, 170]
+    region:   c_23
     level:    [75, 77]
   16916504:
     template: Eozdei
@@ -1027,15 +1027,15 @@ spawns:
     level:    [74, 76]
   16916512:
     template: Eoghrah
-    at:       [-189.030, -0.455, 460.041, 124]
+    region:   c_32
     level:    [75, 77]
   16916513:
     template: Eoghrah
-    at:       [-189.997, -0.449, 460.108]
+    region:   c_32
     level:    [75, 77]
   16916514:
     template: Eoghrah
-    at:       [-216.827, -0.500, 100.793, 76]
+    region:   s_34
     level:    [75, 77]
   16916515:
     template: Eozdei
@@ -1043,11 +1043,11 @@ spawns:
     level:    [77, 78]
   16916516:
     template: Eoghrah
-    at:       [-269.110, -0.500, 62.741, 233]
+    region:   s_36
     level:    [75, 77]
   16916517:
     template: Eoghrah
-    at:       [-260.403, -0.500, 76.380, 219]
+    region:   s_36
     level:    [75, 77]
   16916518:
     template: Eozdei_Left
@@ -1056,7 +1056,7 @@ spawns:
     level:    [77, 78]
   16916519:
     template: Eoghrah
-    at:       [-302.400, -0.500, 108.833, 210]
+    region:   sw_39
     level:    [75, 77]
   16916520:
     template: Eozdei
@@ -1094,20 +1094,20 @@ spawns:
     level:    [75, 77]
   16916528:
     template: Eoghrah
-    at:       [-260.841, -0.478, 213.469, 49]
+    region:   s_48
     level:    [75, 77]
   16916529:
     template: Eoghrah
-    at:       [-260.523, -0.449, 229.414, 193]
+    region:   s_48
     level:    [75, 77]
   16916530:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [-265.782, -0.500, 263.706, 206]
+    region:   s_50
     level:    [74, 76]
   16916531:
     template: Eoghrah
-    at:       [-535.709, -0.500, 109.521, 18]
+    region:   sw_51
     level:    [75, 77]
   16916532:
     template: Eozdei
@@ -1115,11 +1115,11 @@ spawns:
     level:    [77, 78]
   16916533:
     template: Eoghrah
-    at:       [-588.860, -0.500, 65.143, 141]
+    region:   sw_53
     level:    [75, 77]
   16916534:
     template: Eoghrah
-    at:       [-573.669, -0.500, 62.727, 148]
+    region:   sw_53
     level:    [75, 77]
   16916535:
     template: Eozdei_Left
@@ -1128,7 +1128,7 @@ spawns:
     level:    [77, 78]
   16916536:
     template: Eoghrah
-    at:       [-620.929, -0.500, 111.706, 232]
+    region:   sw_56
     level:    [75, 77]
   16916537:
     template: Eozdei
@@ -1162,20 +1162,20 @@ spawns:
     level:    [75, 77]
   16916544:
     template: Eoghrah
-    at:       [-577.663, -0.602, 183.823, 47]
+    region:   sw_64
     level:    [75, 77]
   16916545:
     template: Eoghrah
-    at:       [-579.408, -0.453, 203.327, 192]
+    region:   sw_64
     level:    [75, 77]
   16916546:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [-575.405, -0.500, 264.087, 114]
+    region:   sw_66
     level:    [74, 76]
   16916547:
     template: Eoghrah
-    at:       [-740.404, -0.500, 413.772, 21]
+    region:   w_67
     level:    [75, 75]
   16916548:
     template: Eozdei
@@ -1183,11 +1183,11 @@ spawns:
     level:    [77, 78]
   16916549:
     template: Eoghrah
-    at:       [-772.504, -0.500, 470.076, 159]
+    region:   w_69
     level:    [75, 75]
   16916550:
     template: Eoghrah
-    at:       [-763.393, -0.500, 460.908, 27]
+    region:   w_69
     level:    [77, 77]
   16916551:
     template: Eozdei_Left
@@ -1196,7 +1196,7 @@ spawns:
     level:    [77, 78]
   16916552:
     template: Eoghrah
-    at:       [-740.135, -0.500, 516.776, 200]
+    region:   w_72
     level:    [77, 77]
   16916553:
     template: Eozdei
@@ -1235,41 +1235,41 @@ spawns:
     level:    [77, 78]
   16916561:
     template: Eoghrah
-    at:       [-657.978, -0.606, 458.174, 19]
+    region:   w_81
     level:    [75, 75]
   16916562:
     template: Eoghrah
-    at:       [-658.148, -0.621, 461.730, 253]
+    region:   w_81
     level:    [75, 75]
   16916563:
     template: Indoor_aern_war
     script:   Eoaern
-    at:       [-383.234, -0.458, 539.467, 6]
+    region:   nw_83
     level:    [79, 82]
   16916564:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [-343.847, -0.497, 531.066, 125]
+    region:   nw_84
     level:    [79, 82]
   16916565:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [-382.680, -0.500, 539.058, 1]
+    region:   nw_88
     level:    [79, 82]
   16916566:
     template: Indoor_aern_blm
     script:   Eoaern
-    at:       [-389.510, -0.493, 538.910, 121]
+    region:   nw_83
     level:    [79, 82]
   16916567:
     template: Indoor_aern_rdm
     script:   Eoaern
-    at:       [-340.149, -0.365, 537.744, 70]
+    region:   nw_84
     level:    [79, 82]
   16916568:
     template: Indoor_aern_smn
     script:   Eoaern_SMN
-    at:       [-370.012, -0.499, 537.948, 192]
+    region:   nw_88
     level:    [79, 82]
   16916569:
     template: Aerns_Elemental
@@ -1277,45 +1277,45 @@ spawns:
     level:    [63, 65]
   16916570:
     template: Eoeuvhi
-    at:       [-340.258, -0.500, 506.286, 229]
+    region:   w_90
     level:    [75, 77]
   16916571:
     template: Eoeuvhi
-    at:       [-299.782, -0.500, 506.397, 207]
+    region:   w_91
     level:    [74, 76]
   16916572:
     template: Eoghrah
-    at:       [-328.331, -0.500, 499.579, 255]
+    region:   region_120
     level:    [75, 77]
   16916573:
     template: Indoor_aern_thf
     script:   Eoaern
-    at:       [-297.803, -0.468, 459.023, 253]
+    region:   w_93
     level:    [79, 82]
   16916574:
     template: Indoor_aern_pld
     script:   Eoaern
-    at:       [-248.367, -0.500, 466.341, 111]
+    region:   c_94
     level:    [79, 82]
   16916575:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [-249.625, -0.499, 468.428, 253]
+    region:   c_94
     level:    [79, 82]
   16916576:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [-300.002, -0.497, 468.217, 130]
+    region:   w_93
     level:    [79, 82]
   16916577:
     template: Indoor_aern_nin
     script:   Eoaern
-    at:       [-249.525, -0.499, 468.888]
+    region:   c_94
     level:    [79, 82]
   16916578:
     template: Indoor_aern_drg
     script:   Eoaern_DRG
-    at:       [-291.808, -0.500, 461.187, 124]
+    region:   w_93
     level:    [79, 82]
   16916579:
     template: Aerns_Wynav
@@ -1333,41 +1333,41 @@ spawns:
     level:    [77, 78]
   16916582:
     template: Eoeuvhi
-    at:       [-335.414, -0.500, 424.875, 219]
+    region:   w_102
     level:    [74, 76]
   16916583:
     template: Eoghrah
-    at:       [-327.248, -0.500, 420.585, 128]
+    region:   w_103
     level:    [75, 77]
   16916584:
     template: Indoor_aern_whm
     script:   Eoaern
-    at:       [-308.563, -0.499, 362.087, 68]
+    region:   w_104
     level:    [79, 82]
   16916585:
     template: Indoor_aern_pld
     script:   Eoaern
-    at:       [-291.534, -0.499, 349.845, 194]
+    region:   w_105
     level:    [79, 82]
   16916586:
     template: Indoor_aern_bst
     script:   Eoaern_BST
-    at:       [-299.223, -0.499, 350.652, 133]
+    region:   w_104
     level:    [79, 82]
   16916587:
     template: Indoor_aern_brd
     script:   Eoaern
-    at:       [-291.569, -0.499, 384.940, 62]
+    region:   w_108
     level:    [79, 82]
   16916588:
     template: Indoor_aern_sam
     script:   Eoaern
-    at:       [-292.726, -0.499, 373.359, 245]
+    region:   w_108
     level:    [79, 82]
   16916589:
     template: Indoor_aern_sam
     script:   Eoaern
-    at:       [-291.102, -0.500, 378.787, 12]
+    region:   w_108
     level:    [79, 82]
   16916590:
     template: Aerns_Euvhi
@@ -1428,32 +1428,32 @@ spawns:
   16916602:
     template: Indoor_aern_whm
     script:   Eoaern
-    at:       [-488.767, -0.500, 258.466, 240]
+    region:   sw_123
     level:    [79, 82]
   16916603:
     template: Indoor_aern_blm
     script:   Eoaern
-    at:       [-509.441, -0.499, 261.035, 192]
+    region:   sw_123
     level:    [79, 82]
   16916604:
     template: Indoor_aern_blm
     script:   Eoaern
-    at:       [-529.327, -0.500, 258.072, 175]
+    region:   sw_127
     level:    [79, 82]
   16916605:
     template: Indoor_aern_drk
     script:   Eoaern
-    at:       [-548.928, -0.499, 252.828, 188]
+    region:   sw_125
     level:    [79, 82]
   16916606:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [-508.258, -0.500, 250.904, 128]
+    region:   sw_125
     level:    [79, 82]
   16916607:
     template: Indoor_aern_sam
     script:   Eoaern
-    at:       [-539.247, -0.499, 250.953, 65]
+    region:   sw_127
     level:    [79, 82]
   16916608:
     template: Eozdei
@@ -1467,42 +1467,42 @@ spawns:
     level:    [77, 78]
   16916610:
     template: Eoghrah
-    at:       [-498.683, -0.514, 299.670, 45]
+    region:   w_130
     level:    [75, 77]
   16916611:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [-503.357, -0.500, 335.582, 129]
+    region:   w_131
     level:    [75, 77]
   16916612:
     template: Indoor_aern_war
     script:   Eoaern
-    at:       [-538.263, -0.499, 370.799, 122]
+    region:   w_132
     level:    [79, 82]
   16916613:
     template: Indoor_aern_whm
     script:   Eoaern
-    at:       [-537.254, -0.460, 381.314, 127]
+    region:   w_133
     level:    [79, 82]
   16916614:
     template: Indoor_aern_whm
     script:   Eoaern
-    at:       [-541.334, -0.500, 329.863, 184]
+    region:   w_134
     level:    [79, 82]
   16916615:
     template: Indoor_aern_thf
     script:   Eoaern
-    at:       [-531.042, -0.499, 377.867, 64]
+    region:   w_132
     level:    [79, 82]
   16916616:
     template: Indoor_aern_drk
     script:   Eoaern
-    at:       [-540.318, -0.500, 383.488, 53]
+    region:   w_133
     level:    [79, 82]
   16916617:
     template: Indoor_aern_smn
     script:   Eoaern_SMN
-    at:       [-540.020, -0.479, 331.381, 70]
+    region:   w_134
     level:    [79, 82]
   16916618:
     template: Aerns_Elemental
@@ -1519,32 +1519,32 @@ spawns:
   16916621:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [-508.004, -0.499, 500.332, 39]
+    region:   w_152
     level:    [79, 82]
   16916622:
     template: Indoor_aern_rdm
     script:   Eoaern
-    at:       [-530.014, -0.499, 453.750, 66]
+    region:   w_142
     level:    [79, 82]
   16916623:
     template: Indoor_aern_rdm
     script:   Eoaern
-    at:       [-576.085, -0.478, 460.248, 112]
+    region:   w_143
     level:    [79, 82]
   16916624:
     template: Indoor_aern_thf
     script:   Eoaern
-    at:       [-538.966, -0.496, 451.828, 2]
+    region:   w_144
     level:    [79, 82]
   16916625:
     template: Indoor_aern_bst
     script:   Eoaern_BST
-    at:       [-591.723, -0.499, 467.255, 193]
+    region:   w_144
     level:    [79, 82]
   16916626:
     template: Indoor_aern_smn
     script:   Eoaern_SMN
-    at:       [-581.420, -0.499, 468.596, 250]
+    region:   w_143
     level:    [79, 82]
   16916627:
     template: Aerns_Euvhi
@@ -1567,12 +1567,12 @@ spawns:
   16916631:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [-539.888, -0.500, 505.969, 177]
+    region:   w_151
     level:    [74, 76]
   16916632:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [-501.346, -0.500, 499.084, 6]
+    region:   w_152
     level:    [75, 77]
   16916633:
     template: Eoghrah
@@ -1581,32 +1581,32 @@ spawns:
   16916634:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [-498.722, -0.499, 530.437, 122]
+    region:   nw_154
     level:    [79, 82]
   16916635:
     template: Indoor_aern_rdm
     script:   Eoaern
-    at:       [-448.472, -0.500, 536.898, 31]
+    region:   nw_156
     level:    [79, 82]
   16916636:
     template: Indoor_aern_brd
     script:   Eoaern
-    at:       [-459.267, -0.460, 537.065, 198]
+    region:   nw_156
     level:    [79, 82]
   16916637:
     template: Indoor_aern_brd
     script:   Eoaern
-    at:       [-498.728, -0.459, 537.445, 190]
+    region:   nw_159
     level:    [79, 82]
   16916638:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [-459.256, -0.499, 548.633, 127]
+    region:   nw_154
     level:    [79, 82]
   16916639:
     template: Indoor_aern_drg
     script:   Eoaern_DRG
-    at:       [-489.662, -0.500, 544.601, 235]
+    region:   nw_159
     level:    [79, 82]
   16916640:
     template: Aerns_Wynav
@@ -1667,15 +1667,15 @@ spawns:
     level:    [75, 77]
   16916652:
     template: Eoghrah
-    at:       [432.036, -0.500, 739.824, 215]
+    region:   ne_172
     level:    [75, 77]
   16916653:
     template: Eoghrah
-    at:       [406.550, -0.500, 739.697, 169]
+    region:   ne_172
     level:    [75, 77]
   16916654:
     template: Eoghrah
-    at:       [459.932, -0.500, 747.119, 151]
+    region:   ne_174
     level:    [75, 77]
   16916655:
     template: Eozdei
@@ -1683,11 +1683,11 @@ spawns:
     level:    [77, 78]
   16916656:
     template: Eoghrah
-    at:       [458.610, -0.510, 659.204, 252]
+    region:   ne_176
     level:    [75, 77]
   16916657:
     template: Eoghrah
-    at:       [380.359, -0.500, 659.756, 128]
+    region:   ne_177
     level:    [75, 77]
   16916658:
     template: Eozdei
@@ -1720,15 +1720,15 @@ spawns:
     level:    [75, 77]
   16916665:
     template: Eoghrah
-    at:       [419.717, -0.500, 578.876, 218]
+    region:   ne_185
     level:    [75, 77]
   16916666:
     template: Eoghrah
-    at:       [421.870, -0.593, 623.242, 41]
+    region:   ne_185
     level:    [75, 77]
   16916667:
     template: Eoghrah
-    at:       [420.301, -0.449, 608.952, 191]
+    region:   ne_185
     level:    [75, 77]
   16916668:
     template: Eozdei
@@ -1736,19 +1736,19 @@ spawns:
     level:    [77, 78]
   16916669:
     template: Eoghrah
-    at:       [784.590, -0.500, 504.725, 15]
+    region:   e_189
     level:    [75, 77]
   16916670:
     template: Eoghrah
-    at:       [777.599, -0.500, 451.455, 172]
+    region:   e_190
     level:    [75, 77]
   16916671:
     template: Eoghrah
-    at:       [774.945, -0.500, 462.424, 84]
+    region:   e_190
     level:    [75, 77]
   16916672:
     template: Eoghrah
-    at:       [787.084, -0.500, 420.243, 13]
+    region:   e_192
     level:    [75, 77]
   16916673:
     template: Eozdei_Left
@@ -1757,11 +1757,11 @@ spawns:
     level:    [77, 78]
   16916674:
     template: Eoghrah
-    at:       [704.983, -0.500, 424.234, 214]
+    region:   e_194
     level:    [75, 77]
   16916675:
     template: Eoghrah
-    at:       [700.791, -0.500, 501.936, 59]
+    region:   e_195
     level:    [75, 77]
   16916676:
     template: Eoeuvhi
@@ -1786,11 +1786,11 @@ spawns:
     level:    [75, 77]
   16916681:
     template: Eoghrah
-    at:       [660.439, -0.470, 460.351, 145]
+    region:   e_201
     level:    [75, 77]
   16916682:
     template: Eoghrah
-    at:       [662.265, -0.622, 462.509, 253]
+    region:   e_201
     level:    [75, 77]
   16916683:
     template: Eozdei_Left
@@ -1799,19 +1799,19 @@ spawns:
     level:    [77, 78]
   16916684:
     template: Eoghrah
-    at:       [626.414, -0.500, 59.730, 212]
+    region:   se_204
     level:    [75, 77]
   16916685:
     template: Eoghrah
-    at:       [580.063, -0.500, 70.788, 188]
+    region:   se_205
     level:    [75, 77]
   16916686:
     template: Eoghrah
-    at:       [578.702, -0.500, 66.677, 190]
+    region:   se_205
     level:    [75, 77]
   16916687:
     template: Eoghrah
-    at:       [542.306, -0.500, 58.651, 242]
+    region:   se_207
     level:    [75, 77]
   16916688:
     template: Eozdei
@@ -1819,11 +1819,11 @@ spawns:
     level:    [77, 78]
   16916689:
     template: Eoghrah
-    at:       [540.234, -0.500, 139.709, 130]
+    region:   se_209
     level:    [75, 77]
   16916690:
     template: Eoghrah
-    at:       [623.375, -0.500, 144.458, 252]
+    region:   se_210
     level:    [75, 77]
   16916691:
     template: Eoeuvhi
@@ -1873,15 +1873,15 @@ spawns:
     level:    [75, 77]
   16916702:
     template: Eoghrah
-    at:       [273.372, -0.500, 60.514, 36]
+    region:   s_222
     level:    [75, 77]
   16916703:
     template: Eoghrah
-    at:       [258.982, -0.500, 66.744, 125]
+    region:   s_222
     level:    [75, 77]
   16916704:
     template: Eoghrah
-    at:       [215.676, -0.500, 55.893, 47]
+    region:   s_224
     level:    [75, 77]
   16916705:
     template: Eozdei
@@ -1889,11 +1889,11 @@ spawns:
     level:    [77, 78]
   16916706:
     template: Eoghrah
-    at:       [222.494, -0.500, 138.092, 78]
+    region:   s_226
     level:    [75, 77]
   16916707:
     template: Eoghrah
-    at:       [305.698, -0.500, 136.316, 78]
+    region:   se_227
     level:    [75, 77]
   16916708:
     template: Eoeuvhi
@@ -1918,16 +1918,16 @@ spawns:
     level:    [75, 77]
   16916713:
     template: Eoghrah
-    at:       [261.798, -0.610, 223.038, 196]
+    region:   s_233
     level:    [75, 77]
   16916714:
     template: Eoghrah
-    at:       [259.777, -0.454, 197.921, 63]
+    region:   s_233
     level:    [75, 77]
   16916715:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [260.468, -0.500, 261.787, 100]
+    region:   s_235
     level:    [76, 76]
   16916716:
     template: Eozdei_Left
@@ -1936,19 +1936,19 @@ spawns:
     level:    [77, 78]
   16916717:
     template: Eoghrah
-    at:       [63.621, -0.500, 424.708, 225]
+    region:   c_237
     level:    [75, 77]
   16916718:
     template: Eoghrah
-    at:       [65.238, -0.500, 460.322, 248]
+    region:   c_238
     level:    [75, 77]
   16916719:
     template: Eoghrah
-    at:       [63.152, -0.500, 457.799, 51]
+    region:   c_238
     level:    [75, 77]
   16916720:
     template: Eoghrah
-    at:       [52.224, -0.499, 500.057, 84]
+    region:   c_240
     level:    [75, 77]
   16916721:
     template: Eozdei
@@ -1956,11 +1956,11 @@ spawns:
     level:    [77, 78]
   16916722:
     template: Eoghrah
-    at:       [140.025, -0.500, 500.494, 99]
+    region:   c_242
     level:    [75, 77]
   16916723:
     template: Eoghrah
-    at:       [132.633, -0.500, 419.672, 129]
+    region:   c_243
     level:    [75, 77]
   16916724:
     template: Eoeuvhi
@@ -1985,41 +1985,41 @@ spawns:
     level:    [77, 78]
   16916729:
     template: Eoghrah
-    at:       [172.377, -0.450, 459.393]
+    region:   c_249
     level:    [75, 77]
   16916730:
     template: Eoghrah
-    at:       [170.664, -0.449, 459.484, 129]
+    region:   c_249
     level:    [75, 77]
   16916731:
     template: Indoor_aern_war
     script:   Eoaern
-    at:       [490.638, -0.499, 546.405, 64]
+    region:   ne_251
     level:    [79, 82]
   16916732:
     template: Indoor_aern_war
     script:   Eoaern
-    at:       [462.885, -0.458, 539.306, 133]
+    region:   ne_256
     level:    [79, 82]
   16916733:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [499.818, -0.500, 548.533, 160]
+    region:   ne_251
     level:    [79, 82]
   16916734:
     template: Indoor_aern_blm
     script:   Eoaern
-    at:       [499.743, -0.499, 530.734, 1]
+    region:   ne_254
     level:    [79, 82]
   16916735:
     template: Indoor_aern_rdm
     script:   Eoaern
-    at:       [500.750, -0.499, 530.917, 66]
+    region:   ne_254
     level:    [79, 82]
   16916736:
     template: Indoor_aern_smn
     script:   Eoaern_SMN
-    at:       [460.869, -0.499, 531.022, 126]
+    region:   ne_256
     level:    [79, 82]
   16916737:
     template: Aerns_Elemental
@@ -2027,41 +2027,41 @@ spawns:
     level:    [63, 65]
   16916738:
     template: Eoghrah
-    at:       [501.153, -0.500, 506.535, 64]
+    region:   e_258
     level:    [75, 77]
   16916739:
     template: Eoghrah
-    at:       [539.833, -0.500, 501.411, 25]
+    region:   e_259
     level:    [75, 77]
   16916740:
     template: Indoor_aern_thf
     script:   Eoaern
-    at:       [570.814, -0.494, 462.675, 191]
+    region:   e_260
     level:    [79, 82]
   16916741:
     template: Indoor_aern_thf
     script:   Eoaern
-    at:       [550.568, -0.499, 459.583, 191]
+    region:   e_261
     level:    [79, 82]
   16916742:
     template: Indoor_aern_pld
     script:   Eoaern
-    at:       [580.540, -0.391, 460.124, 192]
+    region:   e_262
     level:    [79, 82]
   16916743:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [582.084, -0.500, 460.033, 154]
+    region:   e_260
     level:    [79, 82]
   16916744:
     template: Indoor_aern_nin
     script:   Eoaern
-    at:       [560.553, -0.497, 452.235, 128]
+    region:   e_262
     level:    [79, 82]
   16916745:
     template: Indoor_aern_drg
     script:   Eoaern_DRG
-    at:       [529.264, -0.500, 466.424, 78]
+    region:   e_261
     level:    [79, 82]
   16916746:
     template: Aerns_Wynav
@@ -2075,66 +2075,66 @@ spawns:
   16916748:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [587.891, -0.500, 416.780, 179]
+    region:   e_268
     level:    [74, 76]
   16916749:
     template: Eoeuvhi
-    at:       [577.011, -4.706, 372.591, 3]
+    region:   e_269
     level:    [76, 76]
   16916750:
     template: Eoeuvhi
-    at:       [578.917, -4.491, 372.569, 118]
+    region:   e_269
     level:    [74, 76]
   16916751:
     template: Eoghrah
-    at:       [538.783, -6.500, 385.433, 205]
+    region:   e_271
     level:    [75, 77]
   16916752:
     template: Eoeuvhi
-    at:       [533.019, -5.466, 331.868, 134]
+    region:   e_272
     level:    [75, 76]
   16916753:
     template: Eoeuvhi
-    at:       [537.637, -4.506, 330.942, 204]
+    region:   e_272
     level:    [74, 76]
   16916754:
     template: Eoghrah
-    at:       [543.829, -6.500, 383.752, 206]
+    region:   e_274
     level:    [75, 77]
   16916755:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [498.250, -0.500, 338.360, 184]
+    region:   e_275
     level:    [74, 76]
   16916756:
     template: Indoor_aern_war
     script:   Eoaern
-    at:       [529.444, -0.499, 267.461, 192]
+    region:   se_276
     level:    [79, 82]
   16916757:
     template: Indoor_aern_pld
     script:   Eoaern
-    at:       [530.635, -0.499, 250.481, 127]
+    region:   se_277
     level:    [79, 82]
   16916758:
     template: Indoor_aern_brd
     script:   Eoaern
-    at:       [495.953, -0.496, 250.946, 124]
+    region:   se_281
     level:    [79, 82]
   16916759:
     template: Indoor_aern_nin
     script:   Eoaern
-    at:       [545.550, -0.477, 259.547, 120]
+    region:   se_277
     level:    [79, 82]
   16916760:
     template: Indoor_aern_drg
     script:   Eoaern_DRG
-    at:       [541.136, -0.483, 285.037, 139]
+    region:   se_276
     level:    [79, 82]
   16916761:
     template: Indoor_aern_drg
     script:   Eoaern_DRG
-    at:       [490.383, -0.499, 252.273, 186]
+    region:   se_281
     level:    [79, 82]
   16916762:
     template: Aerns_Wynav
@@ -2151,7 +2151,7 @@ spawns:
     level:    [78, 78]
   16916765:
     template: Eoghrah
-    at:       [412.345, -0.499, 219.891, 153]
+    region:   se_285
     level:    [75, 77]
   16916766:
     template: Eoghrah
@@ -2159,7 +2159,7 @@ spawns:
     level:    [75, 77]
   16916767:
     template: Eoeuvhi
-    at:       [430.809, -0.500, 215.138, 230]
+    region:   se_287
     level:    [75, 76]
   16916768:
     template: Eoeuvhi
@@ -2171,49 +2171,49 @@ spawns:
     level:    [76, 76]
   16916770:
     template: Eoeuvhi
-    at:       [416.526, -6.500, 179.270, 135]
+    region:   se_290
     level:    [74, 74]
   16916771:
     template: Eoghrah
-    at:       [378.344, -0.500, 217.645, 235]
+    region:   se_291
     level:    [75, 77]
   16916772:
     template: Eoghrah
-    at:       [385.584, -0.500, 256.435, 78]
+    region:   se_292
     level:    [75, 77]
   16916773:
     template: Eoghrah
-    at:       [428.121, -0.500, 220.588, 121]
+    region:   se_293
     level:    [75, 77]
   16916774:
     template: Indoor_aern_whm
     script:   Eoaern
-    at:       [289.672, -0.499, 253.307, 64]
+    region:   se_294
     level:    [79, 82]
   16916775:
     template: Indoor_aern_blm
     script:   Eoaern
-    at:       [318.688, -0.500, 269.458, 131]
+    region:   se_295
     level:    [79, 82]
   16916776:
     template: Indoor_aern_drk
     script:   Eoaern
-    at:       [349.837, -0.499, 267.741, 58]
+    region:   se_295
     level:    [79, 82]
   16916777:
     template: Indoor_aern_drk
     script:   Eoaern
-    at:       [290.318, -0.499, 269.651, 2]
+    region:   se_297
     level:    [79, 82]
   16916778:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [348.201, -0.493, 261.415]
+    region:   se_294
     level:    [79, 82]
   16916779:
     template: Indoor_aern_sam
     script:   Eoaern
-    at:       [301.069, -0.458, 261.364, 125]
+    region:   se_297
     level:    [79, 82]
   16916780:
     template: Eozdei
@@ -2223,66 +2223,66 @@ spawns:
   16916781:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [339.684, -0.500, 333.782, 75]
+    region:   e_301
     level:    [74, 76]
   16916782:
     template: Eoeuvhi
-    at:       [299.636, -4.517, 333.182, 34]
+    region:   e_302
     level:    [74, 76]
   16916783:
     template: Eoeuvhi
-    at:       [301.820, -4.546, 327.434, 60]
+    region:   e_302
     level:    [74, 76]
   16916784:
     template: Eoghrah
-    at:       [295.779, -6.500, 377.032, 206]
+    region:   e_304
     level:    [75, 77]
   16916785:
     template: Eoeuvhi
-    at:       [270.735, -6.524, 375.991, 98]
+    region:   c_305
     level:    [74, 76]
   16916786:
     template: Eoeuvhi
-    at:       [271.380, -6.494, 382.586, 198]
+    region:   c_305
     level:    [74, 76]
   16916787:
     template: Eoghrah
-    at:       [303.386, -6.500, 384.009, 238]
+    region:   e_304
     level:    [75, 77]
   16916788:
     template: Eoeuvhi_closed
     script:   Eoeuvhi
-    at:       [266.328, -0.500, 419.974, 29]
+    region:   c_308
     level:    [74, 76]
   16916789:
     template: Indoor_aern_war
     script:   Eoaern
-    at:       [295.333, -0.499, 450.870, 4]
+    region:   e_309
     level:    [79, 82]
   16916790:
     template: Indoor_aern_whm
     script:   Eoaern
-    at:       [261.539, -0.499, 450.329, 127]
+    region:   e_309
     level:    [79, 82]
   16916791:
     template: Indoor_aern_thf
     script:   Eoaern
-    at:       [290.944, -0.499, 450.329, 127]
+    region:   e_313
     level:    [79, 82]
   16916792:
     template: Indoor_aern_drk
     script:   Eoaern
-    at:       [270.021, -0.499, 460.279, 63]
+    region:   c_312
     level:    [79, 82]
   16916793:
     template: Indoor_aern_smn
     script:   Eoaern_SMN
-    at:       [279.624, -0.500, 467.009, 139]
+    region:   e_313
     level:    [79, 82]
   16916794:
     template: Indoor_aern_smn
     script:   Eoaern_SMN
-    at:       [251.763, -0.491, 458.438, 131]
+    region:   c_312
     level:    [79, 82]
   16916795:
     template: Aerns_Elemental
@@ -2299,41 +2299,41 @@ spawns:
     level:    [77, 78]
   16916798:
     template: Eoghrah
-    at:       [296.714, -0.500, 504.497, 129]
+    region:   e_318
     level:    [75, 77]
   16916799:
     template: Eoghrah
-    at:       [340.309, -0.500, 506.384, 207]
+    region:   e_319
     level:    [75, 77]
   16916800:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [379.529, -0.458, 540.229, 4]
+    region:   ne_320
     level:    [79, 82]
   16916801:
     template: Indoor_aern_mnk
     script:   Eoaern
-    at:       [350.987, -0.499, 538.926, 191]
+    region:   ne_321
     level:    [79, 82]
   16916802:
     template: Indoor_aern_rdm
     script:   Eoaern
-    at:       [390.337, -0.492, 540.788, 4]
+    region:   ne_320
     level:    [79, 82]
   16916803:
     template: Indoor_aern_brd
     script:   Eoaern
-    at:       [391.620, -0.499, 539.042, 199]
+    region:   ne_323
     level:    [79, 82]
   16916804:
     template: Indoor_aern_rng
     script:   Eoaern
-    at:       [379.235, -0.456, 540.976, 254]
+    region:   ne_323
     level:    [79, 82]
   16916805:
     template: Indoor_aern_drg
     script:   Eoaern_DRG
-    at:       [342.150, -0.500, 541.155, 133]
+    region:   ne_321
     level:    [79, 82]
   16916806:
     template: Aerns_Wynav
@@ -2342,27 +2342,27 @@ spawns:
   16916807:
     template: Indoor_aern_blm
     script:   Eoaern
-    at:       [419.965, -0.500, 529.653, 207]
+    region:   ne_327
     level:    [79, 82]
   16916808:
     template: Indoor_aern_pld
     script:   Eoaern
-    at:       [420.147, -0.469, 522.799, 191]
+    region:   ne_327
     level:    [79, 82]
   16916809:
     template: Indoor_aern_bst
     script:   Eoaern_BST
-    at:       [419.509, -0.500, 512.593, 213]
+    region:   ne_327
     level:    [79, 82]
   16916810:
     template: Indoor_aern_sam
     script:   Eoaern
-    at:       [425.709, -0.487, 500.401, 251]
+    region:   ne_327
     level:    [79, 82]
   16916811:
     template: Indoor_aern_nin
     script:   Eoaern
-    at:       [420.256, -0.479, 494.831, 185]
+    region:   ne_327
     level:    [79, 82]
   16916812:
     template: Aerns_Euvhi

@@ -1461,243 +1461,243 @@ spawns:
     template: Frost_Bomb_Mk-II
   17813508:
     template: Iceberg_Murex
-    at:       [-186.259, -19.426, -359.339, 25]
+    region:   sw_4
     level:    [84, 85]
   17813509:
     template: Iceberg_Murex
-    at:       [-156.045, -20.009, -361.641, 50]
+    region:   sw_4
     level:    [84, 85]
   17813510:
     template: Iceberg_Murex
-    at:       [-188.097, -20.194, -345.949, 75]
+    region:   sw_4
     level:    [84, 85]
   17813511:
     template: Iceberg_Murex
-    at:       [-198.330, -20.001, -364.013, 100]
+    region:   sw_4
     level:    [84, 85]
   17813512:
     template: Iceberg_Murex
-    at:       [-207.820, -19.312, -347.197, 125]
+    region:   sw_4
     level:    [84, 85]
   17813513:
     template: Iceberg_Murex
-    at:       [-213.163, -19.584, -335.814, 150]
+    region:   sw_4
     level:    [84, 85]
   17813514:
     template: Iceberg_Murex
-    at:       [-208.267, -19.215, -338.717, 175]
+    region:   sw_4
     level:    [84, 85]
   17813515:
     template: Iceberg_Murex
-    at:       [-206.997, -19.499, -330.143, 200]
+    region:   sw_4
     level:    [84, 85]
   17813516:
     template: Iceberg_Murex
-    at:       [-242.710, -20.000, -362.153, 225]
+    region:   s_12
     level:    [84, 85]
   17813517:
     template: Iceberg_Murex
-    at:       [-243.497, -20.000, -361.508, 250]
+    region:   s_12
     level:    [84, 85]
   17813518:
     template: Iceberg_Murex
-    at:       [-231.000, -19.750, -359.337, 25]
+    region:   s_12
     level:    [84, 85]
   17813519:
     template: Iceberg_Murex
-    at:       [-209.134, -20.128, -368.525, 50]
+    region:   s_12
     level:    [84, 85]
   17813520:
     template: Iceberg_Murex
-    at:       [-248.146, -19.793, -402.708, 75]
+    region:   s_12
     level:    [84, 85]
   17813521:
     template: Iceberg_Murex
-    at:       [-248.664, -19.767, -400.919, 100]
+    region:   s_12
     level:    [84, 85]
   17813522:
     template: Iceberg_Murex
-    at:       [-266.848, -19.485, -398.455, 125]
+    region:   s_18
     level:    [84, 85]
   17813523:
     template: Iceberg_Murex
-    at:       [-278.067, -20.000, -400.987, 150]
+    region:   s_18
     level:    [84, 85]
   17813524:
     template: Iceberg_Murex
-    at:       [-261.255, -19.977, -351.205, 175]
+    region:   s_18
     level:    [84, 85]
   17813525:
     template: Iceberg_Murex
-    at:       [-225.758, -19.536, -325.271, 200]
+    region:   s_18
     level:    [84, 85]
   17813526:
     template: Iceberg_Murex
-    at:       [-218.326, -20.036, -331.551, 225]
+    region:   s_18
     level:    [84, 85]
   17813527:
     template: Iceberg_Murex
-    at:       [-239.388, -19.741, -350.812, 250]
+    region:   s_18
     level:    [84, 85]
   17813528:
     template: Floe_Amoeban
-    at:       [-241.399, -19.166, -303.312, 25]
+    region:   sw_24
     level:    [84, 85]
   17813529:
     template: Floe_Amoeban
-    at:       [-237.813, -19.122, -297.859, 50]
+    region:   sw_24
     level:    [84, 85]
   17813530:
     template: Floe_Amoeban
-    at:       [-246.433, -19.907, -288.288, 75]
+    region:   sw_24
     level:    [84, 85]
   17813531:
     template: Floe_Amoeban
-    at:       [-245.621, -20.081, -283.521, 100]
+    region:   sw_24
     level:    [84, 85]
   17813532:
     template: Floe_Amoeban
-    at:       [-213.038, -19.496, -283.208, 125]
+    region:   sw_24
     level:    [84, 85]
   17813533:
     template: Floe_Amoeban
-    at:       [-212.764, -20.185, -290.285, 150]
+    region:   sw_24
     level:    [84, 85]
   17813534:
     template: Floe_Amoeban
-    at:       [-247.337, -19.713, -300.776, 175]
+    region:   sw_24
     level:    [84, 85]
   17813535:
     template: Floe_Amoeban
-    at:       [-271.826, -20.133, -247.399, 200]
+    region:   s_31
     level:    [84, 85]
   17813536:
     template: Floe_Amoeban
-    at:       [-245.215, -19.939, -242.924, 225]
+    region:   s_31
     level:    [84, 85]
   17813537:
     template: Floe_Amoeban
-    at:       [-230.121, -19.800, -238.132, 250]
+    region:   s_31
     level:    [84, 85]
   17813538:
     template: Floe_Amoeban
-    at:       [-226.972, -19.846, -233.238, 25]
+    region:   s_31
     level:    [84, 85]
   17813539:
     template: Floe_Amoeban
-    at:       [-192.666, -19.711, -264.224, 50]
+    region:   s_31
     level:    [84, 85]
   17813540:
     template: Floe_Amoeban
-    at:       [-209.254, -19.847, -286.247, 75]
+    region:   sw_36
     level:    [84, 85]
   17813541:
     template: Floe_Amoeban
-    at:       [-185.751, -21.275, -260.859, 100]
+    region:   sw_36
     level:    [84, 85]
   17813542:
     template: Floe_Amoeban
-    at:       [-185.177, -20.401, -269.708, 125]
+    region:   sw_36
     level:    [84, 85]
   17813543:
     template: Floe_Amoeban
-    at:       [-200.982, -19.216, -256.164, 150]
+    region:   sw_36
     level:    [84, 85]
   17813544:
     template: Floe_Amoeban
-    at:       [-182.383, -20.143, -271.407, 175]
+    region:   sw_36
     level:    [84, 85]
   17813545:
     template: Ermit_Imp
-    at:       [-534.000, -19.000, -1.000, 179]
+    region:   w_41
     level:    [81, 82]
   17813546:
     template: Ermit_Imp
-    at:       [-546.000, -19.000, 4.000, 149]
+    region:   w_41
     level:    [81, 82]
   17813547:
     template: Ermit_Imp
-    at:       [-549.000, -19.000, 19.000, 203]
+    region:   w_41
     level:    [81, 82]
   17813548:
     template: Ermit_Imp
-    at:       [-562.000, -19.000, 32.000, 208]
+    region:   w_41
     level:    [81, 82]
   17813549:
     template: Ermit_Imp
-    at:       [-533.000, -20.000, 23.000, 15]
+    region:   w_41
     level:    [81, 82]
   17813550:
     template: Ermit_Imp
-    at:       [-503.000, -19.000, 5.000, 13]
+    region:   w_41
     level:    [81, 82]
   17813551:
     template: Ermit_Imp
-    at:       [-481.000, -20.000, -2.000, 30]
+    region:   w_47
     level:    [81, 82]
   17813552:
     template: Ermit_Imp
-    at:       [-470.000, -19.000, -19.000, 10]
+    region:   w_47
     level:    [81, 82]
   17813553:
     template: Ermit_Imp
-    at:       [-454.000, -19.000, -18.000, 104]
+    region:   w_47
     level:    [81, 82]
   17813554:
     template: Ermit_Imp
-    at:       [-460.000, -19.000, -49.000, 40]
+    region:   w_47
     level:    [81, 82]
   17813555:
     template: Ermit_Imp
-    at:       [-472.000, -19.000, -64.000, 67]
+    region:   w_47
     level:    [81, 82]
   17813556:
     template: Ermit_Imp
-    at:       [-490.000, -20.000, -65.000, 80]
+    region:   w_47
     level:    [81, 82]
   17813557:
     template: Ermit_Imp
-    at:       [-480.000, -20.000, -81.000, 149]
+    region:   w_47
     level:    [81, 82]
   17813558:
     template: Ermit_Imp
-    at:       [-468.000, -19.000, -77.000, 139]
+    region:   w_54
     level:    [81, 82]
   17813559:
     template: Ermit_Imp
-    at:       [-456.000, -19.000, -54.000, 237]
+    region:   w_54
     level:    [81, 82]
   17813560:
     template: Ermit_Imp
-    at:       [-476.000, -19.000, -33.000, 162]
+    region:   w_54
     level:    [81, 82]
   17813561:
     template: Ermit_Imp
-    at:       [-475.000, -19.000, -17.000, 179]
+    region:   w_54
     level:    [81, 82]
   17813562:
     template: Ermit_Imp
-    at:       [-500.000, -22.000, 11.000, 190]
+    region:   w_54
     level:    [81, 82]
   17813563:
     template: Ermit_Imp
-    at:       [-572.000, -21.000, 12.000, 161]
+    region:   w_59
     level:    [81, 82]
   17813564:
     template: Ermit_Imp
-    at:       [-439.000, -20.000, -76.000, 219]
+    region:   w_59
     level:    [81, 82]
   17813565:
     template: Ermit_Imp
-    at:       [-441.000, -20.000, -83.000, 213]
+    region:   w_59
     level:    [81, 82]
   17813566:
     template: Ermit_Imp
-    at:       [-549.000, -20.000, -45.000, 153]
+    region:   w_59
     level:    [81, 82]
   17813567:
     template: Ermit_Imp
-    at:       [-434.000, -20.000, -45.000, 146]
+    region:   w_59
     level:    [81, 82]
   17813568:
     template: Byrgen
@@ -1705,381 +1705,381 @@ spawns:
     level:    [83, 85]
   17813569:
     template: Benumbed_Vodoriga
-    at:       [-613.000, -39.000, 0.000, 33]
+    region:   sw_65
     level:    [82, 83]
   17813570:
     template: Benumbed_Vodoriga
-    at:       [-594.000, -39.000, -24.000, 225]
+    region:   sw_65
     level:    [82, 83]
   17813571:
     template: Benumbed_Vodoriga
-    at:       [-597.000, -39.000, -49.000, 182]
+    region:   sw_65
     level:    [82, 83]
   17813572:
     template: Benumbed_Vodoriga
-    at:       [-588.000, -39.000, -71.000, 138]
+    region:   sw_65
     level:    [82, 83]
   17813573:
     template: Benumbed_Vodoriga
-    at:       [-534.000, -40.000, -87.000, 171]
+    region:   sw_65
     level:    [82, 83]
   17813574:
     template: Benumbed_Vodoriga
-    at:       [-518.000, -39.000, -88.000, 125]
+    region:   sw_65
     level:    [82, 83]
   17813575:
     template: Benumbed_Vodoriga
-    at:       [-506.000, -39.000, -101.000, 222]
+    region:   w_71
     level:    [82, 83]
   17813576:
     template: Benumbed_Vodoriga
-    at:       [-532.000, -42.000, -119.000, 65]
+    region:   w_71
     level:    [82, 83]
   17813577:
     template: Benumbed_Vodoriga
-    at:       [-541.000, -42.000, -99.000, 99]
+    region:   w_71
     level:    [82, 83]
   17813578:
     template: Benumbed_Vodoriga
-    at:       [-569.000, -46.000, -110.000, 236]
+    region:   w_71
     level:    [82, 83]
   17813579:
     template: Benumbed_Vodoriga
-    at:       [-589.000, -48.000, -112.000, 2]
+    region:   w_71
     level:    [82, 83]
   17813580:
     template: Benumbed_Vodoriga
-    at:       [-598.000, -40.000, -86.000, 50]
+    region:   w_71
     level:    [82, 83]
   17813581:
     template: Benumbed_Vodoriga
-    at:       [-605.000, -39.000, -61.000, 30]
+    region:   w_71
     level:    [82, 83]
   17813582:
     template: Benumbed_Vodoriga
-    at:       [-594.000, -39.000, -25.000, 10]
+    region:   w_78
     level:    [82, 83]
   17813583:
     template: Benumbed_Vodoriga
-    at:       [-617.000, -39.000, -28.000, 169]
+    region:   w_78
     level:    [82, 83]
   17813584:
     template: Benumbed_Vodoriga
-    at:       [-635.000, -39.000, -36.000, 6]
+    region:   w_78
     level:    [82, 83]
   17813585:
     template: Benumbed_Vodoriga
-    at:       [-625.000, -39.000, -13.000, 149]
+    region:   w_78
     level:    [82, 83]
   17813586:
     template: Benumbed_Vodoriga
-    at:       [-601.000, -39.000, -12.000, 139]
+    region:   w_78
     level:    [82, 83]
   17813587:
     template: Benumbed_Vodoriga
-    at:       [-588.000, -41.000, -15.000, 87]
+    region:   w_78
     level:    [82, 83]
   17813588:
     template: Gefyrst
     level:    [82, 83]
   17813589:
     template: Sierra_Tiger
-    at:       [223.606, 0.820, -323.377, 25]
+    region:   se_85
     level:    [82, 83]
   17813590:
     template: Sierra_Tiger
-    at:       [235.551, 0.878, -338.011, 50]
+    region:   se_85
     level:    [82, 83]
   17813591:
     template: Sierra_Tiger
-    at:       [237.903, 0.008, -357.712, 75]
+    region:   se_85
     level:    [82, 83]
   17813592:
     template: Sierra_Tiger
-    at:       [231.577, 0.087, -364.567, 100]
+    region:   se_85
     level:    [82, 83]
   17813593:
     template: Sierra_Tiger
-    at:       [264.778, 0.423, -336.317, 125]
+    region:   se_85
     level:    [82, 83]
   17813594:
     template: Sierra_Tiger
-    at:       [273.347, 0.425, -380.881, 150]
+    region:   se_90
     level:    [82, 83]
   17813595:
     template: Sierra_Tiger
-    at:       [292.704, -0.982, -338.712, 175]
+    region:   se_90
     level:    [82, 83]
   17813596:
     template: Sierra_Tiger
-    at:       [289.856, -0.068, -341.886, 200]
+    region:   se_90
     level:    [82, 83]
   17813597:
     template: Sierra_Tiger
-    at:       [295.917, -0.792, -362.540, 225]
+    region:   se_90
     level:    [82, 83]
   17813598:
     template: Sierra_Tiger
-    at:       [296.246, -0.372, -371.346, 250]
+    region:   se_90
     level:    [82, 83]
   17813599:
     template: Sierra_Tiger
-    at:       [294.334, -0.162, -373.432, 25]
+    region:   se_90
     level:    [82, 83]
   17813600:
     template: Sierra_Tiger
-    at:       [335.000, 0.001, -358.000, 8]
+    region:   se_96
     level:    [82, 83]
   17813601:
     template: Sierra_Tiger
-    at:       [341.000, 0.001, -365.000, 70]
+    region:   se_96
     level:    [82, 83]
   17813602:
     template: Sierra_Tiger
-    at:       [352.000, 0.001, -374.000, 246]
+    region:   se_96
     level:    [82, 83]
   17813603:
     template: Sierra_Tiger
-    at:       [371.000, 0.001, -372.000, 202]
+    region:   se_96
     level:    [82, 83]
   17813604:
     template: Sierra_Tiger
-    at:       [370.000, 0.001, -357.000, 247]
+    region:   se_96
     level:    [82, 83]
   17813605:
     template: Sierra_Tiger
-    at:       [388.000, 0.001, -310.000, 89]
+    region:   se_96
     level:    [82, 83]
   17813606:
     template: Sierra_Tiger
-    at:       [387.000, 0.001, -339.000, 169]
+    region:   se_96
     level:    [82, 83]
   17813607:
     template: Sierra_Tiger
-    at:       [361.000, 0.001, -363.000, 151]
+    region:   se_96
     level:    [82, 83]
   17813608:
     template: Sierra_Tiger
-    at:       [341.000, 0.001, -368.000, 156]
+    region:   se_96
     level:    [82, 83]
   17813609:
     template: Sierra_Tiger
-    at:       [325.000, 0.001, -374.000, 111]
+    region:   se_96
     level:    [82, 83]
   17813610:
     template: Sierra_Tiger
-    at:       [306.000, 0.001, -383.000, 116]
+    region:   se_96
     level:    [82, 83]
   17813611:
     template: Sierra_Tiger
-    at:       [352.000, 0.001, -395.000, 223]
+    region:   se_96
     level:    [82, 83]
   17813612:
     template: Sierra_Tiger
-    at:       [285.000, 0.001, -393.000, 165]
+    region:   se_96
     level:    [82, 83]
   17813613:
     template: Sierra_Tiger
-    at:       [293.000, 0.001, -341.000, 75]
+    region:   se_96
     level:    [82, 83]
   17813614:
     template: Gefyrst
     level:    [82, 83]
   17813615:
     template: Bluffalo
-    at:       [352.319, 20.627, -267.146, 25]
+    region:   se_111
     level:    [83, 84]
   17813616:
     template: Bluffalo
-    at:       [362.022, 20.380, -268.377, 50]
+    region:   se_111
     level:    [83, 84]
   17813617:
     template: Bluffalo
-    at:       [369.830, 18.933, -279.047, 75]
+    region:   se_111
     level:    [83, 84]
   17813618:
     template: Bluffalo
-    at:       [377.471, 16.884, -262.926, 100]
+    region:   se_111
     level:    [83, 84]
   17813619:
     template: Bluffalo
-    at:       [359.300, 10.073, -216.146, 125]
+    region:   se_111
     level:    [83, 84]
   17813620:
     template: Bluffalo
-    at:       [389.659, 2.040, -184.659, 150]
+    region:   se_116
     level:    [83, 84]
   17813621:
     template: Bluffalo
-    at:       [358.800, 4.762, -184.381, 175]
+    region:   se_116
     level:    [83, 84]
   17813622:
     template: Bluffalo
-    at:       [423.553, -1.299, -184.358, 200]
+    region:   se_116
     level:    [83, 84]
   17813623:
     template: Bluffalo
-    at:       [403.540, -12.062, -111.682, 225]
+    region:   se_116
     level:    [83, 84]
   17813624:
     template: Bluffalo
-    at:       [445.918, -4.182, -172.270, 250]
+    region:   se_116
     level:    [83, 84]
   17813625:
     template: Bluffalo
-    at:       [416.053, 0.575, -184.237, 25]
+    region:   se_116
     level:    [83, 84]
   17813626:
     template: Bluffalo
-    at:       [403.000, 4.000, -208.000, 50]
+    region:   se_122
     level:    [83, 84]
   17813627:
     template: Bluffalo
-    at:       [396.000, -1.000, 172.000, 75]
+    region:   se_122
     level:    [83, 84]
   17813628:
     template: Bluffalo
-    at:       [429.000, -6.000, -153.000, 100]
+    region:   se_122
     level:    [83, 84]
   17813629:
     template: Gefyrst
-    at:       [343.704, 20.220, -260.395, 25]
+    region:   se_125
     level:    [82, 83]
   17813630:
     template: Ectozoon
-    at:       [578.651, -35.717, 64.318, 25]
+    region:   e_126
     level:    [83, 84]
   17813631:
     template: Ectozoon
-    at:       [578.035, -35.303, 71.915, 50]
+    region:   e_126
     level:    [83, 84]
   17813632:
     template: Ectozoon
-    at:       [579.117, -35.064, 84.388, 75]
+    region:   e_126
     level:    [83, 84]
   17813633:
     template: Ectozoon
-    at:       [594.374, -35.936, 87.731, 100]
+    region:   e_126
     level:    [83, 84]
   17813634:
     template: Ectozoon
-    at:       [593.713, -35.810, 74.078, 125]
+    region:   e_126
     level:    [83, 84]
   17813635:
     template: Ectozoon
-    at:       [591.156, -35.760, 65.598, 150]
+    region:   e_126
     level:    [83, 84]
   17813636:
     template: Ectozoon
-    at:       [562.904, -35.722, 70.449, 175]
+    region:   e_126
     level:    [83, 84]
   17813637:
     template: Ectozoon
-    at:       [556.344, -35.989, 44.211, 200]
+    region:   e_126
     level:    [83, 84]
   17813638:
     template: Ectozoon
-    at:       [559.610, -35.655, 69.096, 225]
+    region:   e_134
     level:    [83, 84]
   17813639:
     template: Ectozoon
-    at:       [562.904, -35.722, 70.449, 250]
+    region:   e_134
     level:    [83, 84]
   17813640:
     template: Ectozoon
-    at:       [536.291, -38.353, 104.275, 25]
+    region:   e_136
     level:    [83, 84]
   17813641:
     template: Ectozoon
-    at:       [557.206, -35.446, 106.116, 53]
+    region:   e_134
     level:    [83, 84]
   17813642:
     template: Ectozoon
-    at:       [557.768, -35.650, 108.974, 75]
+    region:   e_134
     level:    [83, 84]
   17813643:
     template: Ectozoon
-    at:       [566.148, -35.852, 110.892, 103]
+    region:   e_134
     level:    [83, 84]
   17813644:
     template: Ectozoon
-    at:       [573.910, -35.809, 109.203, 125]
+    region:   e_134
     level:    [83, 84]
   17813645:
     template: Ectozoon
-    at:       [569.814, -35.355, 101.295, 150]
+    region:   e_134
     level:    [83, 84]
   17813646:
     template: Ectozoon
-    at:       [536.291, -38.353, 104.275, 175]
+    region:   e_142
     level:    [83, 84]
   17813647:
     template: Ectozoon
-    at:       [517.870, -36.032, 82.764, 200]
+    region:   e_142
     level:    [83, 84]
   17813648:
     template: Ectozoon
-    at:       [520.757, -39.245, 95.359, 225]
+    region:   e_142
     level:    [83, 84]
   17813649:
     template: Ectozoon
-    at:       [529.527, -47.044, 133.578, 250]
+    region:   e_142
     level:    [83, 84]
   17813650:
     template: Ectozoon
-    at:       [539.354, -43.931, 133.686, 25]
+    region:   e_142
     level:    [83, 84]
   17813651:
     template: Ectozoon
-    at:       [540.170, -51.311, 154.234, 53]
+    region:   e_142
     level:    [83, 84]
   17813652:
     template: Ectozoon
-    at:       [561.957, -48.072, 149.507, 75]
+    region:   e_142
     level:    [83, 84]
   17813653:
     template: Ectozoon
-    at:       [562.737, -47.583, 147.769, 100]
+    region:   e_142
     level:    [83, 84]
   17813654:
     template: Ectozoon
-    at:       [569.206, -46.020, 143.863, 125]
+    region:   e_150
     level:    [83, 84]
   17813655:
     template: Ectozoon
-    at:       [525.129, -49.953, 142.614, 150]
+    region:   e_150
     level:    [83, 84]
   17813656:
     template: Ectozoon
-    at:       [502.074, -48.012, 147.964, 175]
+    region:   e_150
     level:    [83, 84]
   17813657:
     template: Ectozoon
-    at:       [496.423, -46.276, 84.696, 200]
+    region:   e_150
     level:    [83, 84]
   17813658:
     template: Ectozoon
-    at:       [480.000, -51.000, 92.000, 188]
+    region:   e_150
     level:    [83, 84]
   17813659:
     template: Ectozoon
-    at:       [467.000, -52.000, 110.000, 201]
+    region:   e_150
     level:    [83, 84]
   17813660:
     template: Ectozoon
-    at:       [470.000, -51.000, 128.000, 232]
+    region:   e_150
     level:    [83, 84]
   17813661:
     template: Ectozoon
-    at:       [467.000, -46.000, 157.000, 200]
+    region:   e_150
     level:    [83, 84]
   17813662:
     template: Ectozoon
-    at:       [488.000, -54.000, 182.000, 221]
+    region:   e_150
     level:    [83, 84]
   17813663:
     template: Ectozoon
-    at:       [473.000, -52.000, 179.000, 48]
+    region:   e_150
     level:    [83, 84]
   17813664:
     template: Byrgen
@@ -2087,440 +2087,440 @@ spawns:
     level:    [83, 85]
   17813665:
     template: Hoarmite
-    at:       [520.044, -54.567, 211.135, 25]
+    region:   ne_161
     level:    [84, 87]
   17813666:
     template: Hoarmite
-    at:       [517.524, -63.444, 227.775, 50]
+    region:   ne_161
     level:    [84, 87]
   17813667:
     template: Hoarmite
-    at:       [509.712, -66.821, 232.079, 75]
+    region:   ne_161
     level:    [84, 87]
   17813668:
     template: Hoarmite
-    at:       [475.764, -59.498, 219.674, 100]
+    region:   ne_161
     level:    [84, 87]
   17813669:
     template: Hoarmite
-    at:       [464.113, -62.730, 233.122, 125]
+    region:   ne_161
     level:    [84, 87]
   17813670:
     template: Hoarmite
-    at:       [475.456, -60.086, 241.873, 150]
+    region:   ne_161
     level:    [84, 87]
   17813671:
     template: Hoarmite
-    at:       [478.448, -60.272, 243.042, 175]
+    region:   ne_167
     level:    [84, 87]
   17813672:
     template: Hoarmite
-    at:       [510.435, -71.277, 253.917, 200]
+    region:   ne_167
     level:    [84, 87]
   17813673:
     template: Hoarmite
-    at:       [474.563, -75.888, 280.540, 225]
+    region:   ne_167
     level:    [84, 87]
   17813674:
     template: Hoarmite
-    at:       [498.885, -75.457, 278.396, 250]
+    region:   ne_167
     level:    [84, 87]
   17813675:
     template: Hoarmite
-    at:       [497.020, -76.933, 293.308, 25]
+    region:   ne_167
     level:    [84, 87]
   17813676:
     template: Hoarmite
-    at:       [498.488, -78.763, 306.779, 53]
+    region:   ne_167
     level:    [84, 87]
   17813677:
     template: Hoarmite
-    at:       [515.636, -75.529, 306.211, 75]
+    region:   ne_167
     level:    [84, 87]
   17813678:
     template: Hoarmite
-    at:       [524.762, -75.583, 293.533, 100]
+    region:   ne_167
     level:    [84, 87]
   17813679:
     template: Hoarmite
-    at:       [489.096, -78.525, 296.161, 125]
+    region:   ne_175
     level:    [84, 87]
   17813680:
     template: Hoarmite
-    at:       [462.256, -81.521, 309.873, 150]
+    region:   ne_175
     level:    [84, 87]
   17813681:
     template: Hoarmite
-    at:       [456.561, -84.060, 313.227, 175]
+    region:   ne_175
     level:    [84, 87]
   17813682:
     template: Hoarmite
-    at:       [462.574, -73.518, 274.501, 200]
+    region:   ne_175
     level:    [84, 87]
   17813683:
     template: Hoarmite
-    at:       [438.266, -67.326, 265.264, 225]
+    region:   ne_175
     level:    [84, 87]
   17813684:
     template: Hoarmite
-    at:       [429.239, -68.489, 257.107, 250]
+    region:   ne_175
     level:    [84, 87]
   17813685:
     template: Hoarmite
-    at:       [467.588, -62.154, 237.023, 25]
+    region:   ne_181
     level:    [84, 87]
   17813686:
     template: Hoarmite
-    at:       [462.030, -61.607, 216.447, 53]
+    region:   ne_181
     level:    [84, 87]
   17813687:
     template: Hoarmite
-    at:       [451.629, -60.776, 208.021, 79]
+    region:   ne_181
     level:    [84, 87]
   17813688:
     template: Hoarmite
-    at:       [431.142, -67.532, 236.338, 101]
+    region:   ne_181
     level:    [84, 87]
   17813689:
     template: Hoarmite
-    at:       [440.050, -73.823, 296.431, 126]
+    region:   ne_181
     level:    [84, 87]
   17813690:
     template: Hoarmite
-    at:       [456.561, -82.538, 309.640, 153]
+    region:   ne_181
     level:    [84, 87]
   17813691:
     template: Gefyrst
     level:    [82, 83]
   17813692:
     template: Adasaurus
-    at:       [266.814, -99.481, 478.777, 25]
+    region:   ne_188
     level:    [83, 84]
   17813693:
     template: Adasaurus
-    at:       [242.935, -105.850, 506.263, 53]
+    region:   ne_188
     level:    [83, 84]
   17813694:
     template: Adasaurus
-    at:       [242.885, -105.659, 505.194, 73]
+    region:   ne_188
     level:    [83, 84]
   17813695:
     template: Adasaurus
-    at:       [284.649, -99.811, 510.782, 103]
+    region:   ne_188
     level:    [83, 84]
   17813696:
     template: Adasaurus
-    at:       [268.423, -101.675, 515.338, 125]
+    region:   ne_188
     level:    [83, 84]
   17813697:
     template: Adasaurus
-    at:       [224.593, -105.022, 500.697, 153]
+    region:   ne_188
     level:    [83, 84]
   17813698:
     template: Adasaurus
-    at:       [228.770, -102.107, 495.252, 173]
+    region:   ne_194
     level:    [83, 84]
   17813699:
     template: Adasaurus
-    at:       [226.654, -103.456, 461.471, 203]
+    region:   ne_194
     level:    [83, 84]
   17813700:
     template: Adasaurus
-    at:       [215.642, -108.379, 464.681, 223]
+    region:   ne_194
     level:    [83, 84]
   17813701:
     template: Adasaurus
-    at:       [244.097, -99.171, 463.041, 250]
+    region:   ne_194
     level:    [83, 84]
   17813702:
     template: Adasaurus
-    at:       [244.064, -99.472, 453.421, 25]
+    region:   ne_198
     level:    [83, 84]
   17813703:
     template: Adasaurus
-    at:       [243.750, -99.815, 447.708, 53]
+    region:   ne_198
     level:    [83, 84]
   17813704:
     template: Adasaurus
-    at:       [237.541, -100.531, 448.135, 77]
+    region:   ne_198
     level:    [83, 84]
   17813705:
     template: Adasaurus
-    at:       [213.601, -110.966, 422.479, 102]
+    region:   ne_198
     level:    [83, 84]
   17813706:
     template: Adasaurus
-    at:       [200.604, -115.136, 422.717, 123]
+    region:   ne_198
     level:    [83, 84]
   17813707:
     template: Adasaurus
-    at:       [228.030, -108.872, 415.999, 153]
+    region:   ne_198
     level:    [83, 84]
   17813708:
     template: Adasaurus
-    at:       [222.327, -115.117, 404.193, 173]
+    region:   ne_204
     level:    [83, 84]
   17813709:
     template: Adasaurus
-    at:       [207.486, -114.727, 422.753, 202]
+    region:   ne_204
     level:    [83, 84]
   17813710:
     template: Adasaurus
-    at:       [200.604, -115.136, 422.717, 225]
+    region:   ne_204
     level:    [83, 84]
   17813711:
     template: Adasaurus
-    at:       [177.000, -113.000, 481.000, 234]
+    region:   ne_204
     level:    [83, 84]
   17813712:
     template: Adasaurus
-    at:       [179.000, -110.000, 499.000, 206]
+    region:   ne_204
     level:    [83, 84]
   17813713:
     template: Adasaurus
-    at:       [181.000, -113.000, 457.000, 116]
+    region:   ne_204
     level:    [83, 84]
   17813714:
     template: Gefyrst
-    at:       [203.307, -107.505, 501.232, 203]
+    region:   ne_210
     level:    [82, 83]
   17813715:
     template: Svelldrake
-    at:       [92.255, -124.280, 516.468, 25]
+    region:   n_211
     level:    [85, 86]
   17813716:
     template: Svelldrake
-    at:       [78.887, -124.488, 512.094, 53]
+    region:   n_211
     level:    [85, 86]
   17813717:
     template: Svelldrake
-    at:       [82.672, -132.000, 477.909, 73]
+    region:   n_211
     level:    [85, 86]
   17813718:
     template: Svelldrake
-    at:       [81.039, -126.139, 507.630, 103]
+    region:   n_211
     level:    [85, 86]
   17813719:
     template: Svelldrake
-    at:       [69.799, -125.018, 513.253, 125]
+    region:   n_211
     level:    [85, 86]
   17813720:
     template: Svelldrake
-    at:       [44.274, -139.029, 485.746, 153]
+    region:   n_216
     level:    [85, 86]
   17813721:
     template: Svelldrake
-    at:       [44.747, -136.455, 489.343, 173]
+    region:   n_216
     level:    [85, 86]
   17813722:
     template: Svelldrake
-    at:       [81.684, -127.818, 457.274, 202]
+    region:   n_216
     level:    [85, 86]
   17813723:
     template: Svelldrake
-    at:       [62.999, -130.737, 444.724, 225]
+    region:   n_216
     level:    [85, 86]
   17813724:
     template: Svelldrake
-    at:       [76.648, -124.301, 435.258, 250]
+    region:   n_216
     level:    [85, 86]
   17813725:
     template: Svelldrake
-    at:       [68.574, -126.779, 435.430, 25]
+    region:   n_216
     level:    [85, 86]
   17813726:
     template: Svelldrake
-    at:       [68.366, -124.447, 514.869, 53]
+    region:   n_222
     level:    [85, 86]
   17813727:
     template: Svelldrake
-    at:       [77.320, -124.982, 510.714, 75]
+    region:   n_222
     level:    [85, 86]
   17813728:
     template: Svelldrake
-    at:       [68.404, -128.360, 505.707, 100]
+    region:   n_222
     level:    [85, 86]
   17813729:
     template: Svelldrake
-    at:       [-7.492, -139.949, 495.482, 125]
+    region:   n_222
     level:    [85, 86]
   17813730:
     template: Svelldrake
-    at:       [0.812, -140.004, 524.081, 153]
+    region:   n_222
     level:    [85, 86]
   17813731:
     template: Svelldrake
-    at:       [19.689, -139.018, 476.445, 175]
+    region:   n_222
     level:    [85, 86]
   17813732:
     template: Gefyrst
     level:    [82, 83]
   17813733:
     template: Snowflake
-    at:       [-239.531, -183.700, 468.567, 25]
+    region:   nw_229
     level:    [91, 93]
   17813734:
     template: Snowflake
-    at:       [-235.998, -183.724, 470.476, 53]
+    region:   nw_229
     level:    [91, 93]
   17813735:
     template: Snowflake
-    at:       [-247.446, -183.958, 463.432, 75]
+    region:   nw_229
     level:    [91, 93]
   17813736:
     template: Snowflake
-    at:       [-248.224, -183.604, 487.762, 100]
+    region:   nw_229
     level:    [91, 93]
   17813737:
     template: Snowflake
-    at:       [-264.527, -182.408, 426.124, 125]
+    region:   nw_229
     level:    [91, 93]
   17813738:
     template: Snowflake
-    at:       [-293.000, -178.519, 458.977, 150]
+    region:   nw_234
     level:    [91, 93]
   17813739:
     template: Snowflake
-    at:       [-287.322, -177.351, 469.871, 175]
+    region:   nw_234
     level:    [91, 93]
   17813740:
     template: Snowflake
-    at:       [-304.193, -178.546, 447.468, 200]
+    region:   nw_234
     level:    [91, 93]
   17813741:
     template: Snowflake
-    at:       [-265.249, -179.032, 482.252, 225]
+    region:   nw_234
     level:    [91, 93]
   17813742:
     template: Snowflake
-    at:       [-301.614, -176.075, 470.159, 250]
+    region:   nw_234
     level:    [91, 93]
   17813743:
     template: Snowflake
-    at:       [-313.199, -175.734, 453.676, 25]
+    region:   nw_234
     level:    [91, 93]
   17813744:
     template: Snowflake
-    at:       [-313.671, -175.489, 416.874, 53]
+    region:   nw_240
     level:    [91, 93]
   17813745:
     template: Snowflake
-    at:       [-325.970, -176.498, 427.000, 75]
+    region:   nw_240
     level:    [91, 93]
   17813746:
     template: Snowflake
-    at:       [-323.704, -175.768, 418.510, 100]
+    region:   nw_240
     level:    [91, 93]
   17813747:
     template: Snowflake
-    at:       [-326.169, -176.500, 424.968, 125]
+    region:   nw_240
     level:    [91, 93]
   17813748:
     template: Snowflake
-    at:       [-311.469, -176.502, 464.023, 153]
+    region:   nw_240
     level:    [91, 93]
   17813749:
     template: Snowflake
-    at:       [-315.276, -175.964, 483.644, 175]
+    region:   nw_245
     level:    [91, 93]
   17813750:
     template: Snowflake
-    at:       [-293.837, -175.468, 484.514, 200]
+    region:   nw_245
     level:    [91, 93]
   17813751:
     template: Snowflake
-    at:       [-271.776, -176.671, 484.456, 225]
+    region:   nw_245
     level:    [91, 93]
   17813752:
     template: Snowflake
-    at:       [-287.322, -177.351, 469.871, 250]
+    region:   nw_245
     level:    [91, 93]
   17813753:
     template: Snowflake
-    at:       [-269.693, -177.620, 486.514, 25]
+    region:   nw_245
     level:    [91, 93]
   17813754:
     template: Snowflake
-    at:       [-254.426, -182.531, 458.744, 53]
+    region:   nw_245
     level:    [91, 93]
   17813755:
     template: Gefyrst
     level:    [82, 83]
   17813756:
     template: Verglas_Golem
-    at:       [-196.350, -175.973, 276.116, 25]
+    region:   n_252
     level:    [98, 99]
   17813757:
     template: Verglas_Golem
-    at:       [-202.458, -175.968, 284.646, 50]
+    region:   n_252
     level:    [98, 99]
   17813758:
     template: Verglas_Golem
-    at:       [-189.928, -175.696, 287.272, 73]
+    region:   n_252
     level:    [98, 99]
   17813759:
     template: Verglas_Golem
-    at:       [-185.208, -176.152, 292.481, 100]
+    region:   n_252
     level:    [98, 99]
   17813760:
     template: Verglas_Golem
-    at:       [-212.427, -175.557, -277.941, 125]
+    region:   n_252
     level:    [98, 99]
   17813761:
     template: Verglas_Golem
-    at:       [-236.579, -176.000, 282.229, 153]
+    region:   n_252
     level:    [98, 99]
   17813762:
     template: Verglas_Golem
-    at:       [-222.691, -176.567, 329.925, 175]
+    region:   n_258
     level:    [98, 99]
   17813763:
     template: Verglas_Golem
-    at:       [-232.582, -176.382, 331.669, 200]
+    region:   n_258
     level:    [98, 99]
   17813764:
     template: Verglas_Golem
-    at:       [-210.883, -176.098, 341.764, 225]
+    region:   n_258
     level:    [98, 99]
   17813765:
     template: Verglas_Golem
-    at:       [-235.225, -176.355, 335.028, 250]
+    region:   n_258
     level:    [98, 99]
   17813766:
     template: Verglas_Golem
-    at:       [-179.242, -175.038, 358.645, 25]
+    region:   n_262
     level:    [98, 99]
   17813767:
     template: Verglas_Golem
-    at:       [-198.282, -178.749, 374.283, 53]
+    region:   n_262
     level:    [98, 99]
   17813768:
     template: Verglas_Golem
-    at:       [-202.377, -180.782, 381.129, 75]
+    region:   n_262
     level:    [98, 99]
   17813769:
     template: Verglas_Golem
-    at:       [-175.382, -184.487, 389.966, 100]
+    region:   n_262
     level:    [98, 99]
   17813770:
     template: Verglas_Golem
-    at:       [-161.645, -183.614, 392.913, 125]
+    region:   n_262
     level:    [98, 99]
   17813771:
     template: Verglas_Golem
-    at:       [-155.227, -184.039, 396.902, 153]
+    region:   n_262
     level:    [98, 99]
   17813772:
     template: Verglas_Golem
-    at:       [-160.911, -183.998, 404.034, 175]
+    region:   nw_268
     level:    [98, 99]
   17813773:
     template: Verglas_Golem
-    at:       [-179.063, -183.047, 400.011, 200]
+    region:   nw_268
     level:    [98, 99]
   17813774:
     template: Verglas_Golem
-    at:       [-170.523, -178.709, 380.048, 225]
+    region:   nw_268
     level:    [98, 99]
   17813775:
     template: Ungeweder
@@ -2579,87 +2579,87 @@ spawns:
     level:    [82, 83]
   17813789:
     template: Spectator
-    at:       [-193.854, -175.886, 168.427, 25]
+    region:   c_285
     level:    [91, 92]
   17813790:
     template: Spectator
-    at:       [-210.729, -175.400, 148.877, 53]
+    region:   c_285
     level:    [91, 92]
   17813791:
     template: Spectator
-    at:       [-228.539, -175.829, 151.502, 73]
+    region:   c_285
     level:    [91, 92]
   17813792:
     template: Spectator
-    at:       [-160.165, -176.000, 122.057, 100]
+    region:   c_285
     level:    [91, 92]
   17813793:
     template: Spectator
-    at:       [-219.439, -175.662, 92.897, 125]
+    region:   c_285
     level:    [91, 92]
   17813794:
     template: Spectator
-    at:       [-177.642, -177.000, 104.999, 153]
+    region:   c_290
     level:    [91, 92]
   17813795:
     template: Spectator
-    at:       [-153.592, -176.120, 121.465, 175]
+    region:   c_290
     level:    [91, 92]
   17813796:
     template: Spectator
-    at:       [-156.583, -176.067, 114.666, 200]
+    region:   c_290
     level:    [91, 92]
   17813797:
     template: Spectator
-    at:       [-189.817, -175.691, 117.851, 225]
+    region:   c_290
     level:    [91, 92]
   17813798:
     template: Spectator
-    at:       [-215.308, -175.669, 131.492, 250]
+    region:   c_290
     level:    [91, 92]
   17813799:
     template: Spectator
-    at:       [-193.171, -175.752, 94.648, 25]
+    region:   w_295
     level:    [91, 92]
   17813800:
     template: Spectator
-    at:       [-200.789, -175.656, 90.888, 53]
+    region:   w_295
     level:    [91, 92]
   17813801:
     template: Spectator
-    at:       [-204.369, -175.640, 91.569, 75]
+    region:   w_295
     level:    [91, 92]
   17813802:
     template: Spectator
-    at:       [-242.625, -175.839, 112.778, 100]
+    region:   w_295
     level:    [91, 92]
   17813803:
     template: Spectator
-    at:       [-240.896, -175.857, 113.141, 125]
+    region:   w_295
     level:    [91, 92]
   17813804:
     template: Spectator
-    at:       [-228.729, -176.266, 68.581, 153]
+    region:   c_300
     level:    [91, 92]
   17813805:
     template: Spectator
-    at:       [-235.849, -175.085, 58.598, 175]
+    region:   c_300
     level:    [91, 92]
   17813806:
     template: Spectator
-    at:       [-245.035, -175.784, 52.747, 200]
+    region:   c_300
     level:    [91, 92]
   17813807:
     template: Spectator
-    at:       [-232.000, -175.000, 73.000, 191]
+    region:   c_300
     level:    [91, 92]
   17813808:
     template: Spectator
-    at:       [-237.000, -175.000, 111.000, 195]
+    region:   c_300
     level:    [91, 92]
   17813809:
     template: Spectator
-    at:       [-224.000, -175.000, 106.000, 14]
+    region:   c_300
     level:    [91, 92]
   17813810:
     template: Spectator
@@ -2675,75 +2675,75 @@ spawns:
     level:    [82, 87]
   17813813:
     template: Mechanical_Menace
-    at:       [-105.148, -175.315, 37.302, 25]
+    region:   c_309
     level:    [87, 88]
   17813814:
     template: Mechanical_Menace
-    at:       [-120.088, -175.946, 5.082, 53]
+    region:   c_309
     level:    [87, 88]
   17813815:
     template: Mechanical_Menace
-    at:       [-104.392, -176.887, 49.480, 75]
+    region:   c_309
     level:    [87, 88]
   17813816:
     template: Mechanical_Menace
-    at:       [-109.251, -175.876, 45.426, 100]
+    region:   c_309
     level:    [87, 88]
   17813817:
     template: Mechanical_Menace
-    at:       [-105.148, -175.315, 37.302, 125]
+    region:   c_309
     level:    [87, 88]
   17813818:
     template: Mechanical_Menace
-    at:       [-116.320, -176.000, -1.168, 153]
+    region:   c_314
     level:    [87, 88]
   17813819:
     template: Mechanical_Menace
-    at:       [-83.516, -175.256, 64.564, 175]
+    region:   c_314
     level:    [87, 88]
   17813820:
     template: Mechanical_Menace
-    at:       [-75.576, -175.196, 63.315, 200]
+    region:   c_314
     level:    [87, 88]
   17813821:
     template: Mechanical_Menace
-    at:       [-60.750, -175.370, 29.886, 225]
+    region:   c_314
     level:    [87, 88]
   17813822:
     template: Mechanical_Menace
-    at:       [-77.939, -175.607, 28.100, 250]
+    region:   c_318
     level:    [87, 88]
   17813823:
     template: Mechanical_Menace
-    at:       [-53.898, -175.409, 78.637, 25]
+    region:   c_318
     level:    [87, 88]
   17813824:
     template: Mechanical_Menace
-    at:       [-32.993, -175.000, 31.088, 53]
+    region:   c_318
     level:    [87, 88]
   17813825:
     template: Mechanical_Menace
-    at:       [6.361, -176.087, 26.964, 75]
+    region:   c_318
     level:    [87, 88]
   17813826:
     template: Mechanical_Menace
-    at:       [-12.007, -175.990, 11.531, 100]
+    region:   c_322
     level:    [87, 88]
   17813827:
     template: Mechanical_Menace
-    at:       [-17.483, -175.000, 21.494, 125]
+    region:   c_322
     level:    [87, 88]
   17813828:
     template: Mechanical_Menace
-    at:       [-23.041, -175.152, -3.859, 153]
+    region:   c_322
     level:    [87, 88]
   17813829:
     template: Mechanical_Menace
-    at:       [-34.484, -175.000, 30.074, 203]
+    region:   c_322
     level:    [87, 88]
   17813830:
     template: Mechanical_Menace
-    at:       [-77.482, -176.000, -2.609, 225]
+    region:   c_322
     level:    [87, 88]
   17813831:
     template: Mechanical_Menace
@@ -2755,294 +2755,294 @@ spawns:
     level:    [82, 87]
   17813833:
     template: Sub-zero_Gear
-    at:       [-272.656, -175.948, -17.136, 25]
+    region:   w_329
     level:    [86, 87]
   17813834:
     template: Sub-zero_Gear
-    at:       [-298.507, -175.671, -14.715, 53]
+    region:   w_329
     level:    [86, 87]
   17813835:
     template: Sub-zero_Gear
-    at:       [-305.308, -175.331, -0.987, 75]
+    region:   w_329
     level:    [86, 87]
   17813836:
     template: Sub-zero_Gear
-    at:       [-319.118, -175.934, -34.679, 100]
+    region:   w_329
     level:    [86, 87]
   17813837:
     template: Sub-zero_Gear
-    at:       [-319.793, -175.094, -18.126, 125]
+    region:   w_329
     level:    [86, 87]
   17813838:
     template: Sub-zero_Gear
-    at:       [-269.619, -176.803, -154.879, 153]
+    region:   w_334
     level:    [86, 87]
   17813839:
     template: Sub-zero_Gear
-    at:       [-281.585, -175.704, -89.937, 175]
+    region:   w_334
     level:    [86, 87]
   17813840:
     template: Sub-zero_Gear
-    at:       [-287.255, -175.838, -77.735, 200]
+    region:   w_334
     level:    [86, 87]
   17813841:
     template: Sub-zero_Gear
-    at:       [-278.152, -175.361, -94.388, 225]
+    region:   w_334
     level:    [86, 87]
   17813842:
     template: Sub-zero_Gear
-    at:       [-327.651, -176.003, -83.119, 250]
+    region:   w_334
     level:    [86, 87]
   17813843:
     template: Sub-zero_Gear
-    at:       [-281.156, -175.224, -104.245, 25]
+    region:   sw_339
     level:    [86, 87]
   17813844:
     template: Sub-zero_Gear
-    at:       [-279.000, -175.000, -107.000, 228]
+    region:   sw_339
     level:    [86, 87]
   17813845:
     template: Sub-zero_Gear
-    at:       [-255.000, -175.000, 0.000, 209]
+    region:   sw_339
     level:    [86, 87]
   17813846:
     template: Sub-zero_Gear
-    at:       [-269.000, -175.000, 0.000, 157]
+    region:   sw_339
     level:    [86, 87]
   17813847:
     template: Sub-zero_Gear
-    at:       [-298.000, -175.000, 0.000, 175]
+    region:   sw_339
     level:    [86, 87]
   17813848:
     template: Sub-zero_Gear
-    at:       [-310.000, -175.000, 0.000, 217]
+    region:   w_344
     level:    [86, 87]
   17813849:
     template: Ungeweder
     level:    [84, 87]
   17813850:
     template: Crag_Limule
-    at:       [-178.000, -89.000, -102.000, 240]
+    region:   w_346
     level:    [84, 85]
   17813851:
     template: Crag_Limule
-    at:       [-181.000, -89.000, -94.000, 187]
+    region:   w_346
     level:    [84, 85]
   17813852:
     template: Crag_Limule
-    at:       [-177.000, -89.000, -113.000, 81]
+    region:   w_346
     level:    [84, 85]
   17813853:
     template: Crag_Limule
-    at:       [-179.000, -87.000, -126.000, 49]
+    region:   w_346
     level:    [84, 85]
   17813854:
     template: Crag_Limule
-    at:       [-175.000, -84.000, -141.000, 49]
+    region:   w_346
     level:    [84, 85]
   17813855:
     template: Crag_Limule
-    at:       [-179.000, -89.000, -92.000, 191]
+    region:   w_346
     level:    [84, 85]
   17813856:
     template: Crag_Limule
-    at:       [-181.000, -88.000, -73.000, 188]
+    region:   w_346
     level:    [84, 85]
   17813857:
     template: Crag_Limule
-    at:       [-189.000, -83.000, -58.000, 157]
+    region:   w_353
     level:    [84, 85]
   17813858:
     template: Crag_Limule
-    at:       [-204.000, -81.000, -59.000, 136]
+    region:   w_353
     level:    [84, 85]
   17813859:
     template: Crag_Limule
-    at:       [-220.000, -81.000, -59.000, 126]
+    region:   w_353
     level:    [84, 85]
   17813860:
     template: Crag_Limule
-    at:       [-231.000, -81.000, -62.000, 112]
+    region:   w_353
     level:    [84, 85]
   17813861:
     template: Crag_Limule
-    at:       [-219.000, -80.000, -36.000, 159]
+    region:   w_353
     level:    [84, 85]
   17813862:
     template: Crag_Limule
-    at:       [-230.000, -75.000, -18.000, 191]
+    region:   w_353
     level:    [84, 85]
   17813863:
     template: Crag_Limule
-    at:       [-240.000, -73.000, -23.000, 133]
+    region:   w_353
     level:    [84, 85]
   17813864:
     template: Crag_Limule
-    at:       [-245.000, -74.000, -20.000, 120]
+    region:   c_360
     level:    [84, 85]
   17813865:
     template: Crag_Limule
-    at:       [-262.000, -73.000, -18.000, 137]
+    region:   c_360
     level:    [84, 85]
   17813866:
     template: Crag_Limule
-    at:       [-262.000, -73.000, -8.000, 134]
+    region:   c_360
     level:    [84, 85]
   17813867:
     template: Crag_Limule
-    at:       [-282.000, -73.000, -21.000, 211]
+    region:   c_360
     level:    [84, 85]
   17813868:
     template: Crag_Limule
-    at:       [-301.000, -66.000, 11.000, 127]
+    region:   s_364
     level:    [84, 85]
   17813869:
     template: Crag_Limule
-    at:       [-301.000, -65.000, -1.000, 197]
+    region:   s_364
     level:    [84, 85]
   17813870:
     template: Crag_Limule
-    at:       [-296.000, -69.000, -17.000, 64]
+    region:   s_364
     level:    [84, 85]
   17813871:
     template: Crag_Limule
-    at:       [-259.000, -75.000, 8.000, 34]
+    region:   s_364
     level:    [84, 85]
   17813872:
     template: Crag_Limule
-    at:       [-266.000, -78.000, 16.000, 173]
+    region:   s_364
     level:    [84, 85]
   17813873:
     template: Crag_Limule
-    at:       [-276.000, -80.000, 20.000, 244]
+    region:   s_364
     level:    [84, 85]
   17813874:
     template: Range_Clionid
-    at:       [-278.000, -37.000, -139.000, 60]
+    region:   w_370
     level:    [84, 85]
   17813875:
     template: Range_Clionid
-    at:       [-246.000, -37.000, -141.000, 254]
+    region:   w_370
     level:    [84, 85]
   17813876:
     template: Range_Clionid
-    at:       [-218.000, -31.000, -150.000, 67]
+    region:   w_370
     level:    [84, 85]
   17813877:
     template: Range_Clionid
-    at:       [-221.000, -29.000, -186.000, 63]
+    region:   w_370
     level:    [84, 85]
   17813878:
     template: Range_Clionid
-    at:       [-258.000, -37.000, -128.000, 111]
+    region:   w_370
     level:    [84, 85]
   17813879:
     template: Range_Clionid
-    at:       [-270.000, -43.000, -100.000, 123]
+    region:   w_370
     level:    [84, 85]
   17813880:
     template: Range_Clionid
-    at:       [-298.000, -49.000, -94.000, 188]
+    region:   w_376
     level:    [84, 85]
   17813881:
     template: Range_Clionid
-    at:       [-219.000, -105.000, -159.000, 225]
+    region:   w_376
     level:    [84, 85]
   17813882:
     template: Range_Clionid
-    at:       [-217.000, -99.000, -138.000, 190]
+    region:   w_376
     level:    [84, 85]
   17813883:
     template: Range_Clionid
-    at:       [-219.000, -96.000, -115.000, 19]
+    region:   w_376
     level:    [84, 85]
   17813884:
     template: Range_Clionid
-    at:       [-201.000, -89.000, -101.000, 103]
+    region:   w_376
     level:    [84, 85]
   17813885:
     template: Range_Clionid
-    at:       [-180.000, -89.000, -79.000, 188]
+    region:   w_376
     level:    [84, 85]
   17813886:
     template: Range_Clionid
-    at:       [-199.000, -81.000, -59.000, 120]
+    region:   w_382
     level:    [84, 85]
   17813887:
     template: Range_Clionid
-    at:       [-215.000, -81.000, -60.000, 21]
+    region:   w_382
     level:    [84, 85]
   17813888:
     template: Range_Clionid
-    at:       [-219.000, -81.000, -41.000, 188]
+    region:   w_382
     level:    [84, 85]
   17813889:
     template: Range_Clionid
-    at:       [-246.000, -74.000, -22.000, 123]
+    region:   w_382
     level:    [84, 85]
   17813890:
     template: Range_Clionid
-    at:       [-286.000, -72.000, -18.000, 133]
+    region:   sw_386
     level:    [84, 85]
   17813891:
     template: Range_Clionid
-    at:       [-258.000, -73.000, -91.000, 242]
+    region:   sw_386
     level:    [84, 85]
   17813892:
     template: Range_Clionid
-    at:       [-359.000, -105.000, -18.000, 13]
+    region:   sw_386
     level:    [84, 85]
   17813893:
     template: Range_Clionid
-    at:       [-341.000, -100.000, -10.000, 111]
+    region:   sw_386
     level:    [84, 85]
   17813894:
     template: Range_Clionid
-    at:       [-317.000, -89.000, 20.000, 25]
+    region:   sw_390
     level:    [84, 85]
   17813895:
     template: Range_Clionid
-    at:       [-284.000, -81.000, 18.000, 50]
+    region:   sw_390
     level:    [84, 85]
   17813896:
     template: Range_Clionid
-    at:       [-261.000, -257.000, -14.000, 75]
+    region:   sw_390
     level:    [84, 85]
   17813897:
     template: Range_Clionid
-    at:       [-277.000, -73.000, -20.000, 100]
+    region:   sw_390
     level:    [84, 85]
   17813898:
     template: Range_Clionid
-    at:       [-265.000, -37.000, -142.000, 123]
+    region:   sw_390
     level:    [84, 85]
   17813899:
     template: Range_Clionid
-    at:       [-231.000, -35.000, -140.000, 153]
+    region:   sw_390
     level:    [84, 85]
   17813900:
     template: Range_Clionid
-    at:       [-221.000, -29.000, -186.000, 173]
+    region:   w_396
     level:    [84, 85]
   17813901:
     template: Range_Clionid
-    at:       [-258.000, -37.000, -129.000, 200]
+    region:   w_396
     level:    [84, 85]
   17813902:
     template: Range_Clionid
-    at:       [-287.000, -46.000, -98.000, 225]
+    region:   w_396
     level:    [84, 85]
   17813903:
     template: Range_Clionid
-    at:       [-294.000, -36.000, -135.000, 250]
+    region:   w_399
     level:    [84, 85]
   17813904:
     template: Range_Clionid
-    at:       [-186.000, -84.000, -64.000, 123]
+    region:   w_399
     level:    [84, 85]
   17813905:
     template: Range_Clionid
-    at:       [-215.000, -81.000, -60.000, 73]
+    region:   w_399
     level:    [84, 85]
   17813906:
     template: Sturdy_Pyxis
@@ -3101,7 +3101,7 @@ spawns:
     at:       [409.000, -51.000, 163.000, 253]
   17813922:
     template: Empousa
-    at:       [-617.000, -39.000, -15.000, 9]
+    region:   w_71
     level:    [105, 105]
   17813923:
     template: Indrik
@@ -3116,7 +3116,7 @@ spawns:
     at:       [-10.000, -175.000, 56.000, 115]
   17813926:
     template: Impervious_Chariot
-    at:       [-328.710, -176.298, 3.881, 181]
+    region:   w_344
     level:    [100, 100]
   17813927:
     template: Dhorme_Khimaira
@@ -3124,11 +3124,11 @@ spawns:
     level:    [95, 95]
   17813928:
     template: Kur
-    at:       [224.820, -115.389, 404.609, 100]
+    region:   ne_210
     level:    [100, 100]
   17813929:
     template: Awahondo
-    at:       [441.022, -84.000, 323.353, 250]
+    region:   ne_425
     level:    [100, 100]
   17813930:
     template: Blanga
@@ -3143,7 +3143,7 @@ spawns:
     at:       [-108.000, -175.000, 4.000, 173]
   17813934:
     template: Refitted_Chariot
-    at:       [-266.179, -176.137, -69.295, 100]
+    region:   w_344
     level:    [100, 100]
   17813935:
     template: Upas-Kamuy

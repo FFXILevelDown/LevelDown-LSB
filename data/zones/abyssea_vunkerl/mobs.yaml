@@ -2019,583 +2019,583 @@ spawns:
     level:    [85, 87]
   17666059:
     template: Stream_Amoeban
-    at:       [-382.953, -31.148, 595.167, 100]
+    region:   nw_11
     level:    [77, 78]
   17666060:
     template: Stream_Amoeban
-    at:       [-380.000, -31.000, 594.000, 125]
+    region:   nw_11
     level:    [77, 78]
   17666061:
     template: Stream_Amoeban
-    at:       [-367.000, -32.000, 604.000, 100]
+    region:   nw_11
     level:    [77, 78]
   17666062:
     template: Stream_Amoeban
-    at:       [-393.000, -31.000, 588.000, 110]
+    region:   nw_11
     level:    [77, 78]
   17666063:
     template: Stream_Amoeban
-    at:       [-408.000, -31.000, 585.000, 127]
+    region:   nw_11
     level:    [77, 78]
   17666064:
     template: Stream_Amoeban
-    at:       [-412.000, -31.000, 595.000, 194]
+    region:   nw_16
     level:    [77, 78]
   17666065:
     template: Stream_Amoeban
-    at:       [-416.000, -31.000, 615.000, 219]
+    region:   nw_16
     level:    [77, 78]
   17666066:
     template: Stream_Amoeban
-    at:       [-440.000, -31.000, 630.000, 19]
+    region:   nw_16
     level:    [77, 78]
   17666067:
     template: Stream_Amoeban
-    at:       [-414.000, -31.400, 615.873, 100]
+    region:   nw_16
     level:    [77, 78]
   17666068:
     template: Stream_Amoeban
-    at:       [-420.000, -31.015, 636.373, 150]
+    region:   nw_16
     level:    [77, 78]
   17666069:
     template: Stream_Amoeban
-    at:       [-408.000, -31.000, 633.409, 200]
+    region:   nw_21
     level:    [77, 78]
   17666070:
     template: Stream_Amoeban
-    at:       [-446.000, -31.000, 613.000, 25]
+    region:   nw_21
     level:    [77, 78]
   17666071:
     template: Stream_Amoeban
-    at:       [-472.000, -31.000, -596.000, 111]
+    region:   nw_21
     level:    [77, 78]
   17666072:
     template: Stream_Amoeban
-    at:       [-468.000, -31.000, 618.000, 197]
+    region:   nw_21
     level:    [77, 78]
   17666073:
     template: Stream_Amoeban
-    at:       [-481.000, -32.000, 634.000, 29]
+    region:   nw_21
     level:    [77, 78]
   17666074:
     template: Stream_Amoeban
-    at:       [-426.649, -31.862, 624.851, 183]
+    region:   nw_26
     level:    [77, 78]
   17666075:
     template: Stream_Amoeban
-    at:       [-416.985, -31.612, 626.862, 128]
+    region:   nw_26
     level:    [77, 78]
   17666076:
     template: Stream_Amoeban
-    at:       [-402.647, -32.380, 631.447, 53]
+    region:   nw_26
     level:    [77, 78]
   17666077:
     template: Stream_Amoeban
-    at:       [-399.435, -32.237, 626.891, 134]
+    region:   nw_26
     level:    [77, 78]
   17666078:
     template: Stream_Amoeban
-    at:       [-396.305, -31.799, 613.750, 25]
+    region:   nw_26
     level:    [77, 78]
   17666079:
     template: Stream_Amoeban
-    at:       [-473.174, -31.862, 588.770, 101]
+    region:   nw_31
     level:    [77, 78]
   17666080:
     template: Stream_Amoeban
-    at:       [-385.749, -32.288, 614.319, 228]
+    region:   nw_31
     level:    [77, 78]
   17666081:
     template: Stream_Amoeban
-    at:       [-449.485, -31.891, 614.060, 90]
+    region:   nw_33
     level:    [77, 78]
   17666082:
     template: Stream_Amoeban
-    at:       [-377.742, -32.150, 605.339, 219]
+    region:   nw_31
     level:    [77, 78]
   17666083:
     template: Stream_Amoeban
-    at:       [-435.684, -31.604, 584.081, 5]
+    region:   nw_31
     level:    [77, 78]
   17666084:
     template: Ephemeral_Amoeban
-    at:       [-481.231, -32.000, 636.479, 49]
+    region:   nw_31
     level:    [79, 80]
   17666085:
     template: River_Murex
-    at:       [-399.136, -31.303, 540.708, 108]
+    region:   nw_37
     level:    [77, 78]
   17666086:
     template: River_Murex
-    at:       [-399.473, -31.218, 538.805, 178]
+    region:   nw_37
     level:    [77, 78]
   17666087:
     template: River_Murex
-    at:       [-393.000, -33.000, 548.000, 207]
+    region:   nw_37
     level:    [77, 78]
   17666088:
     template: River_Murex
-    at:       [-390.000, -34.000, 542.000, 107]
+    region:   nw_37
     level:    [77, 78]
   17666089:
     template: River_Murex
-    at:       [-394.000, -32.000, 538.000, 177]
+    region:   nw_41
     level:    [77, 78]
   17666090:
     template: River_Murex
-    at:       [-403.000, -31.000, 531.000, 136]
+    region:   nw_41
     level:    [77, 78]
   17666091:
     template: River_Murex
-    at:       [-409.000, -31.000, 537.000, 154]
+    region:   nw_41
     level:    [77, 78]
   17666092:
     template: River_Murex
-    at:       [-417.000, -31.000, 538.000, 136]
+    region:   nw_44
     level:    [77, 78]
   17666093:
     template: River_Murex
-    at:       [-420.000, -30.000, 529.000, 79]
+    region:   nw_44
     level:    [77, 78]
   17666094:
     template: River_Murex
-    at:       [-429.000, -32.000, 523.000, 82]
+    region:   nw_44
     level:    [77, 78]
   17666095:
     template: River_Murex
-    at:       [-438.000, -31.000, 519.000, 83]
+    region:   nw_47
     level:    [77, 78]
   17666096:
     template: River_Murex
-    at:       [-449.000, -30.000, 518.000, 125]
+    region:   nw_47
     level:    [77, 78]
   17666097:
     template: River_Murex
-    at:       [-454.000, -30.000, 527.000, 162]
+    region:   nw_47
     level:    [77, 78]
   17666098:
     template: Ephemeral_Murex
-    at:       [-398.488, -31.993, 518.293, 200]
+    region:   nw_47
     level:    [79, 88]
   17666099:
     template: Stream_Amoeban
-    at:       [-273.173, -24.790, 535.364, 25]
+    region:   n_51
     level:    [77, 78]
   17666100:
     template: Stream_Amoeban
-    at:       [-280.659, -24.000, 522.103, 50]
+    region:   n_51
     level:    [77, 78]
   17666101:
     template: Stream_Amoeban
-    at:       [-277.081, -24.068, 517.442, 75]
+    region:   n_51
     level:    [77, 78]
   17666102:
     template: Stream_Amoeban
-    at:       [-251.142, -23.744, 525.169, 100]
+    region:   n_54
     level:    [77, 78]
   17666103:
     template: Stream_Amoeban
-    at:       [-287.577, -31.571, 587.708, 125]
+    region:   n_54
     level:    [77, 78]
   17666104:
     template: Stream_Amoeban
-    at:       [-286.161, -31.086, 580.515, 150]
+    region:   n_54
     level:    [77, 78]
   17666105:
     template: Stream_Amoeban
-    at:       [-275.884, -31.007, 580.044, 175]
+    region:   n_54
     level:    [77, 78]
   17666106:
     template: Stream_Amoeban
-    at:       [-268.392, -31.613, 570.361, 200]
+    region:   n_54
     level:    [77, 78]
   17666107:
     template: Stream_Amoeban
-    at:       [-260.872, -31.303, 567.731, 225]
+    region:   n_59
     level:    [77, 78]
   17666108:
     template: Stream_Amoeban
-    at:       [-276.431, -31.848, 558.447, 250]
+    region:   n_59
     level:    [77, 78]
   17666109:
     template: Stream_Amoeban
-    at:       [-301.498, -30.960, 596.444, 25]
+    region:   n_59
     level:    [77, 78]
   17666110:
     template: Stream_Amoeban
-    at:       [-282.692, -24.228, 487.637, 50]
+    region:   n_59
     level:    [77, 78]
   17666111:
     template: Stream_Amoeban
-    at:       [-280.584, -23.996, 516.705, 75]
+    region:   n_59
     level:    [77, 78]
   17666112:
     template: Stream_Amoeban
-    at:       [-281.238, -23.934, 490.282, 100]
+    region:   n_64
     level:    [77, 78]
   17666113:
     template: Stream_Amoeban
-    at:       [-250.604, -23.777, 515.456, 125]
+    region:   n_64
     level:    [77, 78]
   17666114:
     template: Stream_Amoeban
-    at:       [-248.337, -23.504, 493.499, 150]
+    region:   n_64
     level:    [77, 78]
   17666115:
     template: Stream_Amoeban
-    at:       [-242.231, -23.894, 488.002, 175]
+    region:   n_64
     level:    [77, 78]
   17666116:
     template: Stream_Amoeban
-    at:       [-242.087, -24.076, 484.547, 200]
+    region:   n_64
     level:    [77, 78]
   17666117:
     template: Stream_Amoeban
-    at:       [-241.360, -24.158, 533.184, 225]
+    region:   n_69
     level:    [77, 78]
   17666118:
     template: Stream_Amoeban
-    at:       [-255.199, -23.281, 517.247, 250]
+    region:   n_69
     level:    [77, 78]
   17666119:
     template: Stream_Amoeban
-    at:       [-258.538, -26.856, 538.259, 25]
+    region:   n_71
     level:    [77, 78]
   17666120:
     template: Stream_Amoeban
-    at:       [-242.873, -24.000, 522.859, 50]
+    region:   n_71
     level:    [77, 78]
   17666121:
     template: Ephemeral_Amoeban
-    at:       [-267.263, -31.556, 571.729, 100]
+    region:   n_71
     level:    [79, 80]
   17666122:
     template: River_Murex
-    at:       [-117.335, -32.061, 481.238, 25]
+    region:   n_74
     level:    [77, 78]
   17666123:
     template: River_Murex
-    at:       [-113.891, -31.631, 476.262, 50]
+    region:   n_74
     level:    [77, 78]
   17666124:
     template: River_Murex
-    at:       [-92.120, -31.602, 479.001, 75]
+    region:   n_74
     level:    [77, 78]
   17666125:
     template: River_Murex
-    at:       [-72.934, -31.715, 468.441, 100]
+    region:   n_74
     level:    [77, 78]
   17666126:
     template: River_Murex
-    at:       [-74.578, -38.859, 505.320, 125]
+    region:   n_78
     level:    [77, 78]
   17666127:
     template: River_Murex
-    at:       [-67.139, -37.779, 507.969, 150]
+    region:   n_78
     level:    [77, 78]
   17666128:
     template: River_Murex
-    at:       [-85.649, -31.982, 482.107, 175]
+    region:   n_78
     level:    [77, 78]
   17666129:
     template: River_Murex
-    at:       [-73.443, -32.020, 472.661, 200]
+    region:   n_78
     level:    [77, 78]
   17666130:
     template: River_Murex
-    at:       [-84.535, -31.963, 471.509, 225]
+    region:   n_78
     level:    [77, 78]
   17666131:
     template: River_Murex
-    at:       [-63.296, -32.142, 488.297, 250]
+    region:   n_83
     level:    [77, 78]
   17666132:
     template: River_Murex
-    at:       [-57.265, -31.203, 472.651, 25]
+    region:   n_83
     level:    [77, 78]
   17666133:
     template: River_Murex
-    at:       [-66.997, -32.113, 487.527, 50]
+    region:   n_83
     level:    [77, 78]
   17666134:
     template: River_Murex
-    at:       [-81.921, -39.787, 512.188, 75]
+    region:   n_83
     level:    [77, 78]
   17666135:
     template: River_Murex
-    at:       [-80.649, -39.808, 511.988, 100]
+    region:   n_83
     level:    [77, 78]
   17666136:
     template: River_Murex
-    at:       [-47.698, -39.626, 524.576, 125]
+    region:   n_88
     level:    [77, 78]
   17666137:
     template: River_Murex
-    at:       [-77.029, -39.863, 529.455, 150]
+    region:   n_88
     level:    [77, 78]
   17666138:
     template: River_Murex
-    at:       [-80.557, -39.207, 543.666, 175]
+    region:   n_88
     level:    [77, 78]
   17666139:
     template: River_Murex
-    at:       [-79.172, -39.145, 542.903, 200]
+    region:   n_88
     level:    [77, 78]
   17666140:
     template: River_Murex
-    at:       [-75.493, -39.209, 535.914, 225]
+    region:   n_88
     level:    [77, 78]
   17666141:
     template: River_Murex
-    at:       [-72.172, -39.510, 532.897, 250]
+    region:   n_93
     level:    [77, 78]
   17666142:
     template: River_Murex
-    at:       [-75.000, -39.000, 510.000, 75]
+    region:   n_93
     level:    [77, 78]
   17666143:
     template: River_Murex
-    at:       [-61.000, -38.000, 513.000, 244]
+    region:   n_93
     level:    [77, 78]
   17666144:
     template: River_Murex
-    at:       [-36.000, -39.000, 508.000, 139]
+    region:   n_93
     level:    [77, 78]
   17666145:
     template: River_Murex
-    at:       [-71.000, -39.000, 543.000, 128]
+    region:   n_93
     level:    [77, 78]
   17666146:
     template: Ephemeral_Murex
-    at:       [-47.023, -39.777, 509.616, 10]
+    region:   n_93
     level:    [79, 88]
   17666147:
     template: Wily_Opo-opo
-    at:       [9.454, -31.727, 281.437, 25]
+    region:   n_99
     level:    [79, 80]
   17666148:
     template: Wily_Opo-opo
-    at:       [3.576, -31.537, 267.221, 50]
+    region:   n_99
     level:    [79, 80]
   17666149:
     template: Wily_Opo-opo
-    at:       [-6.633, -31.786, 269.877, 75]
+    region:   n_99
     level:    [79, 80]
   17666150:
     template: Wily_Opo-opo
-    at:       [-12.236, -32.113, 267.372, 100]
+    region:   n_99
     level:    [79, 80]
   17666151:
     template: Wily_Opo-opo
-    at:       [-15.141, -31.461, 273.056, 125]
+    region:   n_103
     level:    [79, 80]
   17666152:
     template: Wily_Opo-opo
-    at:       [-27.614, -32.356, 266.999, 150]
+    region:   n_103
     level:    [79, 80]
   17666153:
     template: Wily_Opo-opo
-    at:       [-36.118, -31.372, 257.259, 175]
+    region:   n_103
     level:    [79, 80]
   17666154:
     template: Wily_Opo-opo
-    at:       [-36.939, -31.287, 257.973, 200]
+    region:   n_103
     level:    [79, 80]
   17666155:
     template: Wily_Opo-opo
-    at:       [-33.000, -31.000, 242.000, 97]
+    region:   n_107
     level:    [79, 80]
   17666156:
     template: Wily_Opo-opo
-    at:       [-45.000, -31.000, 244.000, 185]
+    region:   n_107
     level:    [79, 80]
   17666157:
     template: Wily_Opo-opo
-    at:       [-55.000, -31.000, 249.000, 217]
+    region:   n_107
     level:    [79, 80]
   17666158:
     template: Wily_Opo-opo
-    at:       [-45.000, -31.000, 252.000, 22]
+    region:   n_110
     level:    [79, 80]
   17666159:
     template: Wily_Opo-opo
-    at:       [-45.000, -31.000, 267.000, 202]
+    region:   n_110
     level:    [79, 80]
   17666160:
     template: Ephemeral_Amoeban
-    at:       [-5.349, -31.858, 270.291, 10]
+    region:   n_110
     level:    [79, 80]
   17666161:
     template: Jasconius
-    at:       [147.837, -31.583, 281.630, 25]
+    region:   ne_113
     level:    [79, 80]
   17666162:
     template: Jasconius
-    at:       [153.393, -32.029, 277.205, 50]
+    region:   ne_113
     level:    [79, 80]
   17666163:
     template: Jasconius
-    at:       [154.049, -32.031, 274.186, 75]
+    region:   ne_113
     level:    [79, 80]
   17666164:
     template: Jasconius
-    at:       [169.578, -31.504, 275.505, 100]
+    region:   ne_116
     level:    [79, 80]
   17666165:
     template: Jasconius
-    at:       [174.468, -31.359, 281.567, 125]
+    region:   ne_116
     level:    [79, 80]
   17666166:
     template: Jasconius
-    at:       [173.475, -31.301, 275.440, 150]
+    region:   ne_116
     level:    [79, 80]
   17666167:
     template: Jasconius
-    at:       [170.271, -31.536, 272.298, 175]
+    region:   ne_116
     level:    [79, 80]
   17666168:
     template: Jasconius
-    at:       [173.578, -31.389, 268.930, 200]
+    region:   ne_120
     level:    [79, 80]
   17666169:
     template: Jasconius
-    at:       [178.126, -31.508, 250.918, 225]
+    region:   ne_120
     level:    [79, 80]
   17666170:
     template: Jasconius
-    at:       [178.140, -31.217, 246.426, 250]
+    region:   ne_120
     level:    [79, 80]
   17666171:
     template: Jasconius
-    at:       [168.738, -31.886, 243.802, 25]
+    region:   ne_120
     level:    [79, 80]
   17666172:
     template: Jasconius
-    at:       [182.313, -31.108, 241.678, 50]
+    region:   ne_124
     level:    [79, 80]
   17666173:
     template: Jasconius
-    at:       [195.884, -30.843, 261.602, 75]
+    region:   ne_124
     level:    [79, 80]
   17666174:
     template: Jasconius
-    at:       [217.000, -31.000, 242.000, 121]
+    region:   ne_124
     level:    [79, 80]
   17666175:
     template: Jasconius
-    at:       [207.000, -32.000, 244.000, 165]
+    region:   ne_127
     level:    [79, 80]
   17666176:
     template: Jasconius
-    at:       [153.000, -32.000, 207.000, 172]
+    region:   ne_127
     level:    [79, 80]
   17666177:
     template: Ephemeral_Murex
-    at:       [186.757, -31.476, 280.600, 10]
+    region:   ne_127
     level:    [79, 88]
   17666178:
     template: Blademaw_Pugil
-    at:       [330.916, -39.191, 429.689, 25]
+    region:   ne_130
     level:    [79, 80]
   17666179:
     template: Blademaw_Pugil
-    at:       [318.527, -39.571, 422.576, 50]
+    region:   ne_130
     level:    [79, 80]
   17666180:
     template: Blademaw_Pugil
-    at:       [325.076, -38.745, 422.525, 75]
+    region:   ne_130
     level:    [79, 80]
   17666181:
     template: Blademaw_Pugil
-    at:       [311.868, -42.018, 420.355, 100]
+    region:   ne_130
     level:    [79, 80]
   17666182:
     template: Blademaw_Pugil
-    at:       [336.740, -38.672, 405.524, 125]
+    region:   ne_130
     level:    [79, 80]
   17666183:
     template: Blademaw_Pugil
-    at:       [336.732, -39.307, 400.652, 150]
+    region:   ne_130
     level:    [79, 80]
   17666184:
     template: Blademaw_Pugil
-    at:       [348.868, -32.699, 422.363, 175]
+    region:   ne_136
     level:    [79, 80]
   17666185:
     template: Blademaw_Pugil
-    at:       [340.778, -32.008, 375.853, 200]
+    region:   ne_136
     level:    [79, 80]
   17666186:
     template: Blademaw_Pugil
-    at:       [370.027, -32.225, 371.033, 225]
+    region:   ne_136
     level:    [79, 80]
   17666187:
     template: Blademaw_Pugil
-    at:       [345.283, -32.346, 381.277, 250]
+    region:   ne_136
     level:    [79, 80]
   17666188:
     template: Blademaw_Pugil
-    at:       [353.032, -31.682, 375.951, 25]
+    region:   ne_136
     level:    [79, 80]
   17666189:
     template: Blademaw_Pugil
-    at:       [367.357, -31.595, 363.095, 50]
+    region:   ne_141
     level:    [79, 80]
   17666190:
     template: Blademaw_Pugil
-    at:       [338.863, -32.162, 372.426, 75]
+    region:   ne_141
     level:    [79, 80]
   17666191:
     template: Blademaw_Pugil
-    at:       [358.551, -31.615, 427.406, 100]
+    region:   ne_141
     level:    [79, 80]
   17666192:
     template: Blademaw_Pugil
-    at:       [379.312, -31.390, 417.582, 125]
+    region:   ne_141
     level:    [79, 80]
   17666193:
     template: Blademaw_Pugil
-    at:       [384.497, -30.942, 388.117, 150]
+    region:   ne_141
     level:    [79, 80]
   17666194:
     template: Blademaw_Pugil
-    at:       [376.314, -30.972, 391.879, 175]
+    region:   ne_141
     level:    [79, 80]
   17666195:
     template: Blademaw_Pugil
-    at:       [406.015, -31.414, 427.933, 200]
+    region:   ne_141
     level:    [79, 80]
   17666196:
     template: Blademaw_Pugil
-    at:       [401.680, -31.185, 417.090, 225]
+    region:   ne_148
     level:    [79, 80]
   17666197:
     template: Blademaw_Pugil
-    at:       [381.847, -31.632, 371.665, 250]
+    region:   ne_148
     level:    [79, 80]
   17666198:
     template: Blademaw_Pugil
-    at:       [385.315, -31.860, 371.788, 25]
+    region:   ne_148
     level:    [79, 80]
   17666199:
     template: Blademaw_Pugil
-    at:       [398.000, -31.000, 377.000, 227]
+    region:   ne_148
     level:    [79, 80]
   17666200:
     template: Blademaw_Pugil
-    at:       [404.000, -31.000, 385.000, 168]
+    region:   ne_152
     level:    [79, 80]
   17666201:
     template: Blademaw_Pugil
-    at:       [402.000, -31.000, 391.000, 182]
+    region:   ne_152
     level:    [79, 80]
   17666202:
     template: Blademaw_Pugil
-    at:       [394.000, -31.000, 386.000, 120]
+    region:   ne_152
     level:    [79, 80]
   17666203:
     template: Ephemeral_Amoeban
-    at:       [327.468, -39.964, 384.501, 10]
+    region:   ne_152
     level:    [79, 80]
   17666204:
     template: Morose_Marid
@@ -2631,551 +2631,551 @@ spawns:
     level:    [81, 82]
   17666212:
     template: Ephemeral_Murex
-    at:       [28.368, -39.854, 45.557, 10]
+    region:   c_164
     level:    [79, 88]
   17666213:
     template: Slaughterous_Smilodon
-    at:       [-231.113, -31.762, -16.184, 25]
+    region:   c_165
     level:    [80, 81]
   17666214:
     template: Slaughterous_Smilodon
-    at:       [-219.783, -31.616, -10.654, 50]
+    region:   c_165
     level:    [80, 81]
   17666215:
     template: Slaughterous_Smilodon
-    at:       [-216.949, -32.385, -12.510, 75]
+    region:   c_165
     level:    [80, 81]
   17666216:
     template: Slaughterous_Smilodon
-    at:       [-202.658, -32.000, -6.063, 100]
+    region:   c_165
     level:    [80, 81]
   17666217:
     template: Slaughterous_Smilodon
-    at:       [-229.265, -31.362, -0.541, 125]
+    region:   c_169
     level:    [80, 81]
   17666218:
     template: Slaughterous_Smilodon
-    at:       [-163.331, -38.727, 20.694, 150]
+    region:   c_169
     level:    [80, 81]
   17666219:
     template: Slaughterous_Smilodon
-    at:       [-169.186, -38.382, 15.937, 175]
+    region:   c_169
     level:    [80, 81]
   17666220:
     template: Slaughterous_Smilodon
-    at:       [-167.874, -39.499, 10.220, 200]
+    region:   c_169
     level:    [80, 81]
   17666221:
     template: Slaughterous_Smilodon
-    at:       [-156.665, -39.234, -15.786, 225]
+    region:   c_173
     level:    [80, 81]
   17666222:
     template: Slaughterous_Smilodon
-    at:       [-180.498, -40.234, -24.129, 250]
+    region:   c_173
     level:    [80, 81]
   17666223:
     template: Slaughterous_Smilodon
-    at:       [-189.612, -31.709, 64.654, 25]
+    region:   c_173
     level:    [80, 81]
   17666224:
     template: Slaughterous_Smilodon
-    at:       [-201.536, -31.229, 64.130, 50]
+    region:   c_173
     level:    [80, 81]
   17666225:
     template: Slaughterous_Smilodon
-    at:       [-187.612, -31.602, 63.478, 75]
+    region:   c_173
     level:    [80, 81]
   17666226:
     template: Slaughterous_Smilodon
-    at:       [-162.240, -32.000, 73.962, 100]
+    region:   c_173
     level:    [80, 81]
   17666227:
     template: Slaughterous_Smilodon
-    at:       [-162.158, -32.000, 72.705, 125]
+    region:   c_179
     level:    [80, 81]
   17666228:
     template: Slaughterous_Smilodon
-    at:       [-194.610, -31.910, 71.945, 150]
+    region:   c_179
     level:    [80, 81]
   17666229:
     template: Slaughterous_Smilodon
-    at:       [-194.590, -31.871, 27.071, 175]
+    region:   c_179
     level:    [80, 81]
   17666230:
     template: Slaughterous_Smilodon
-    at:       [-188.076, -31.683, 65.021, 200]
+    region:   c_179
     level:    [80, 81]
   17666231:
     template: Slaughterous_Smilodon
-    at:       [-218.256, -31.122, 6.701, 225]
+    region:   c_179
     level:    [80, 81]
   17666232:
     template: Slaughterous_Smilodon
-    at:       [-178.000, -39.000, -34.000, 149]
+    region:   c_179
     level:    [80, 81]
   17666233:
     template: Ephemeral_Amoeban
-    at:       [-226.891, -32.704, -43.167, 111]
+    region:   c_185
     level:    [79, 80]
   17666234:
     template: Aestutaur
-    at:       [-273.961, -39.599, -191.856, 25]
+    region:   c_186
     level:    [80, 81]
   17666235:
     template: Aestutaur
-    at:       [-252.765, -39.244, -196.180, 50]
+    region:   c_186
     level:    [80, 81]
   17666236:
     template: Aestutaur
-    at:       [-250.964, -39.558, -205.792, 75]
+    region:   c_186
     level:    [80, 81]
   17666237:
     template: Aestutaur
-    at:       [-275.810, -39.991, -181.365, 100]
+    region:   c_189
     level:    [80, 81]
   17666238:
     template: Aestutaur
-    at:       [-276.610, -39.315, -187.142, 125]
+    region:   c_189
     level:    [80, 81]
   17666239:
     template: Aestutaur
-    at:       [-243.150, -39.510, -184.438, 150]
+    region:   c_189
     level:    [80, 81]
   17666240:
     template: Aestutaur
-    at:       [-258.871, -39.189, -185.038, 175]
+    region:   c_189
     level:    [80, 81]
   17666241:
     template: Aestutaur
-    at:       [-245.647, -39.779, -191.430, 200]
+    region:   c_193
     level:    [80, 81]
   17666242:
     template: Aestutaur
-    at:       [-218.163, -39.164, -191.865, 225]
+    region:   c_193
     level:    [80, 81]
   17666243:
     template: Aestutaur
-    at:       [-213.249, -38.925, -205.193, 250]
+    region:   c_193
     level:    [80, 81]
   17666244:
     template: Aestutaur
-    at:       [-193.824, -39.686, -188.828, 25]
+    region:   c_193
     level:    [80, 81]
   17666245:
     template: Aestutaur
-    at:       [-173.953, -38.983, -203.901, 50]
+    region:   c_193
     level:    [80, 81]
   17666246:
     template: Aestutaur
-    at:       [-257.000, -39.000, -128.000, 30]
+    region:   c_198
     level:    [80, 81]
   17666247:
     template: Aestutaur
-    at:       [-261.000, -40.000, -135.000, 80]
+    region:   c_198
     level:    [80, 81]
   17666248:
     template: Aestutaur
-    at:       [-274.000, -39.000, -147.000, 43]
+    region:   c_198
     level:    [80, 81]
   17666249:
     template: Aestutaur
-    at:       [-240.000, -39.000, -138.000, 71]
+    region:   c_198
     level:    [80, 81]
   17666250:
     template: Aestutaur
-    at:       [-238.000, -39.000, -151.000, 58]
+    region:   c_198
     level:    [80, 81]
   17666251:
     template: Aestutaur
-    at:       [-202.000, -39.000, -204.000, 157]
+    region:   c_203
     level:    [80, 81]
   17666252:
     template: Ephemeral_Murex
-    at:       [-237.887, -39.018, -182.793, 50]
+    region:   c_203
     level:    [79, 88]
   17666253:
     template: Gruesome_Gargouille
-    at:       [-313.283, -39.822, -317.500, 25]
+    region:   w_205
     level:    [80, 81]
   17666254:
     template: Gruesome_Gargouille
-    at:       [-307.778, -39.483, -323.071, 50]
+    region:   w_205
     level:    [80, 81]
   17666255:
     template: Gruesome_Gargouille
-    at:       [-313.559, -39.204, -346.061, 75]
+    region:   w_205
     level:    [80, 81]
   17666256:
     template: Gruesome_Gargouille
-    at:       [-307.568, -39.247, -348.030, 100]
+    region:   w_205
     level:    [80, 81]
   17666257:
     template: Gruesome_Gargouille
-    at:       [-294.987, -39.242, -271.490, 125]
+    region:   w_205
     level:    [80, 81]
   17666258:
     template: Gruesome_Gargouille
-    at:       [-284.553, -39.908, -288.459, 150]
+    region:   c_210
     level:    [80, 81]
   17666259:
     template: Gruesome_Gargouille
-    at:       [-279.732, -39.958, -278.318, 175]
+    region:   c_210
     level:    [80, 81]
   17666260:
     template: Gruesome_Gargouille
-    at:       [-272.421, -39.210, -288.268, 200]
+    region:   c_210
     level:    [80, 81]
   17666261:
     template: Gruesome_Gargouille
-    at:       [-308.283, -39.331, -249.114, 225]
+    region:   c_210
     level:    [80, 81]
   17666262:
     template: Gruesome_Gargouille
-    at:       [-295.622, -39.498, -249.630, 250]
+    region:   c_210
     level:    [80, 81]
   17666263:
     template: Gruesome_Gargouille
-    at:       [-317.111, -39.983, -247.033, 25]
+    region:   sw_215
     level:    [80, 81]
   17666264:
     template: Gruesome_Gargouille
-    at:       [-299.953, -39.002, -240.932]
+    region:   sw_215
     level:    [80, 81]
   17666265:
     template: Gruesome_Gargouille
-    at:       [-276.000, -39.000, -362.000, 130]
+    region:   sw_217
     level:    [80, 81]
   17666266:
     template: Gruesome_Gargouille
-    at:       [-283.000, -39.000, -354.000, 217]
+    region:   sw_217
     level:    [80, 81]
   17666267:
     template: Gruesome_Gargouille
-    at:       [-324.000, -40.000, -358.000, 248]
+    region:   sw_217
     level:    [80, 81]
   17666268:
     template: Gruesome_Gargouille
-    at:       [-289.000, -39.000, -280.000, 101]
+    region:   sw_217
     level:    [80, 81]
   17666269:
     template: Ephemeral_Amoeban
-    at:       [-290.715, -39.832, -243.659, 25]
+    region:   sw_221
     level:    [79, 80]
   17666270:
     template: Slough_Bats
-    at:       [-112.165, -40.210, -325.504, 25]
+    region:   s_222
     level:    [80, 81]
   17666271:
     template: Slough_Bats
-    at:       [-113.389, -40.073, -310.032, 50]
+    region:   s_222
     level:    [80, 81]
   17666272:
     template: Slough_Bats
-    at:       [-113.007, -39.958, -302.556, 75]
+    region:   s_222
     level:    [80, 81]
   17666273:
     template: Slough_Bats
-    at:       [-133.883, -38.160, -292.682, 100]
+    region:   s_222
     level:    [80, 81]
   17666274:
     template: Slough_Bats
-    at:       [-122.728, -39.459, -288.003, 125]
+    region:   s_222
     level:    [80, 81]
   17666275:
     template: Slough_Bats
-    at:       [-107.773, -40.511, -291.767, 152]
+    region:   s_222
     level:    [80, 81]
   17666276:
     template: Slough_Bats
-    at:       [-122.700, -39.842, -283.485, 175]
+    region:   s_228
     level:    [80, 81]
   17666277:
     template: Slough_Bats
-    at:       [-105.041, -40.891, -290.419, 200]
+    region:   s_228
     level:    [80, 81]
   17666278:
     template: Slough_Bats
-    at:       [-114.381, -40.000, -281.966, 225]
+    region:   s_228
     level:    [80, 81]
   17666279:
     template: Slough_Bats
-    at:       [-126.589, -38.925, -269.776, 250]
+    region:   s_228
     level:    [80, 81]
   17666280:
     template: Slough_Bats
-    at:       [-128.838, -38.736, -266.850, 25]
+    region:   s_228
     level:    [80, 81]
   17666281:
     template: Slough_Bats
-    at:       [-127.862, -38.746, -264.949, 50]
+    region:   s_228
     level:    [80, 81]
   17666282:
     template: Slough_Bats
-    at:       [-125.697, -38.916, -266.371, 75]
+    region:   s_234
     level:    [80, 81]
   17666283:
     template: Slough_Bats
-    at:       [-120.608, -39.079, -338.891, 100]
+    region:   s_234
     level:    [80, 81]
   17666284:
     template: Slough_Bats
-    at:       [-114.435, -40.446, -329.956, 125]
+    region:   s_234
     level:    [80, 81]
   17666285:
     template: Slough_Bats
-    at:       [-114.209, -40.059, -312.789, 150]
+    region:   s_234
     level:    [80, 81]
   17666286:
     template: Slough_Bats
-    at:       [-114.675, -41.070, -349.091, 175]
+    region:   s_234
     level:    [80, 81]
   17666287:
     template: Slough_Bats
-    at:       [-111.663, -40.533, -339.971, 200]
+    region:   s_234
     level:    [80, 81]
   17666288:
     template: Slough_Bats
-    at:       [-141.653, -38.992, -352.135, 225]
+    region:   s_240
     level:    [80, 81]
   17666289:
     template: Slough_Bats
-    at:       [-156.009, -40.000, -353.001, 250]
+    region:   s_240
     level:    [80, 81]
   17666290:
     template: Slough_Bats
-    at:       [-170.500, -39.346, -357.120, 25]
+    region:   s_240
     level:    [80, 81]
   17666291:
     template: Slough_Bats
-    at:       [-166.000, -39.000, -347.000, 58]
+    region:   s_240
     level:    [80, 81]
   17666292:
     template: Slough_Bats
-    at:       [-169.000, -39.000, -355.000, 80]
+    region:   s_244
     level:    [80, 81]
   17666293:
     template: Slough_Bats
-    at:       [-168.000, -40.000, -365.000, 26]
+    region:   s_244
     level:    [80, 81]
   17666294:
     template: Slough_Bats
-    at:       [-116.000, -41.000, -251.000, 248]
+    region:   s_244
     level:    [80, 81]
   17666295:
     template: Ephemeral_Murex
-    at:       [-107.873, -40.089, -323.376, 10]
+    region:   s_244
     level:    [79, 88]
   17666296:
     template: Spitting_Spider
-    at:       [77.162, -47.512, -467.124, 25]
+    region:   se_248
     level:    [80, 81]
   17666297:
     template: Spitting_Spider
-    at:       [88.501, -46.082, -459.454, 50]
+    region:   se_248
     level:    [80, 81]
   17666298:
     template: Spitting_Spider
-    at:       [78.911, -48.005, -439.612, 75]
+    region:   se_250
     level:    [80, 81]
   17666299:
     template: Spitting_Spider
-    at:       [99.952, -45.745, -449.606, 100]
+    region:   se_250
     level:    [80, 81]
   17666300:
     template: Spitting_Spider
-    at:       [119.332, -48.000, -440.658, 125]
+    region:   se_250
     level:    [80, 81]
   17666301:
     template: Spitting_Spider
-    at:       [123.549, -47.630, -446.702, 150]
+    region:   se_253
     level:    [80, 81]
   17666302:
     template: Spitting_Spider
-    at:       [81.967, -47.595, -426.971, 175]
+    region:   se_253
     level:    [80, 81]
   17666303:
     template: Spitting_Spider
-    at:       [96.890, -47.419, -423.503, 200]
+    region:   se_253
     level:    [80, 81]
   17666304:
     template: Spitting_Spider
-    at:       [103.090, -47.329, -423.410, 225]
+    region:   se_253
     level:    [80, 81]
   17666305:
     template: Spitting_Spider
-    at:       [101.463, -46.779, -443.757, 250]
+    region:   se_257
     level:    [80, 81]
   17666306:
     template: Spitting_Spider
-    at:       [114.809, -46.961, -423.135, 25]
+    region:   se_257
     level:    [80, 81]
   17666307:
     template: Spitting_Spider
-    at:       [85.821, -47.994, -406.333, 50]
+    region:   se_257
     level:    [80, 81]
   17666308:
     template: Spitting_Spider
-    at:       [95.523, -47.435, -424.615, 75]
+    region:   se_257
     level:    [80, 81]
   17666309:
     template: Spitting_Spider
-    at:       [109.094, -47.428, -407.085, 100]
+    region:   se_261
     level:    [80, 81]
   17666310:
     template: Spitting_Spider
-    at:       [114.884, -47.943, -398.881, 125]
+    region:   se_261
     level:    [80, 81]
   17666311:
     template: Ephemeral_Amoeban
-    at:       [104.000, -47.000, -401.000, 50]
+    region:   se_261
     level:    [79, 80]
   17666312:
     template: Coccinelle
-    at:       [107.444, -40.080, -479.729, 25]
+    region:   se_264
     level:    [80, 81]
   17666313:
     template: Coccinelle
-    at:       [118.098, -40.000, -481.655, 50]
+    region:   se_264
     level:    [80, 81]
   17666314:
     template: Coccinelle
-    at:       [119.514, -39.848, -487.327, 75]
+    region:   se_264
     level:    [80, 81]
   17666315:
     template: Coccinelle
-    at:       [116.463, -39.562, -500.546, 100]
+    region:   se_264
     level:    [80, 81]
   17666316:
     template: Coccinelle
-    at:       [124.578, -40.116, -468.193, 125]
+    region:   se_268
     level:    [80, 81]
   17666317:
     template: Coccinelle
-    at:       [135.520, -40.412, -474.528, 150]
+    region:   se_268
     level:    [80, 81]
   17666318:
     template: Coccinelle
-    at:       [138.577, -39.746, -476.905, 175]
+    region:   se_268
     level:    [80, 81]
   17666319:
     template: Coccinelle
-    at:       [140.811, -39.041, -482.317, 200]
+    region:   se_268
     level:    [80, 81]
   17666320:
     template: Coccinelle
-    at:       [115.191, -40.062, -481.926, 225]
+    region:   se_272
     level:    [80, 81]
   17666321:
     template: Coccinelle
-    at:       [129.601, -39.506, -514.158, 250]
+    region:   se_272
     level:    [80, 81]
   17666322:
     template: Coccinelle
-    at:       [140.036, -40.656, -470.509, 25]
+    region:   se_272
     level:    [80, 81]
   17666323:
     template: Coccinelle
-    at:       [154.948, -39.100, -497.899, 50]
+    region:   se_272
     level:    [80, 81]
   17666324:
     template: Coccinelle
-    at:       [137.964, -39.236, -530.270, 75]
+    region:   se_272
     level:    [80, 81]
   17666325:
     template: Coccinelle
-    at:       [123.766, -39.554, -532.619, 100]
+    region:   se_277
     level:    [80, 81]
   17666326:
     template: Coccinelle
-    at:       [130.628, -39.538, -517.734, 125]
+    region:   se_277
     level:    [80, 81]
   17666327:
     template: Coccinelle
-    at:       [116.000, -39.000, -547.000, 176]
+    region:   se_277
     level:    [80, 81]
   17666328:
     template: Coccinelle
-    at:       [119.000, -39.000, -533.000, 246]
+    region:   se_277
     level:    [80, 81]
   17666329:
     template: Ephemeral_Murex
-    at:       [109.271, -40.894, -502.356, 70]
+    region:   se_281
     level:    [79, 88]
   17666330:
     template: Devegetator
-    at:       [-246.006, -39.223, -625.135, 25]
+    region:   sw_282
     level:    [81, 95]
   17666331:
     template: Devegetator
-    at:       [-262.890, -40.439, -594.499, 50]
+    region:   sw_282
     level:    [81, 95]
   17666332:
     template: Devegetator
-    at:       [-274.912, -39.628, -608.048, 75]
+    region:   sw_282
     level:    [81, 95]
   17666333:
     template: Devegetator
-    at:       [-284.661, -39.965, -600.031, 100]
+    region:   sw_282
     level:    [81, 95]
   17666334:
     template: Devegetator
-    at:       [-310.328, -41.769, -581.780, 125]
+    region:   s_286
     level:    [81, 95]
   17666335:
     template: Devegetator
-    at:       [-305.223, -39.387, -598.257, 150]
+    region:   s_286
     level:    [81, 95]
   17666336:
     template: Devegetator
-    at:       [-320.000, -40.000, -602.000, 9]
+    region:   s_286
     level:    [81, 95]
   17666337:
     template: Devegetator
-    at:       [-308.000, -39.000, -595.000, 26]
+    region:   s_286
     level:    [81, 95]
   17666338:
     template: Devegetator
-    at:       [-300.000, -38.000, -605.000, 44]
+    region:   s_290
     level:    [81, 95]
   17666339:
     template: Devegetator
-    at:       [-289.000, -38.000, -615.000, 28]
+    region:   s_290
     level:    [81, 95]
   17666340:
     template: Devegetator
-    at:       [-287.000, -38.000, -608.000, 193]
+    region:   s_290
     level:    [81, 95]
   17666341:
     template: Devegetator
-    at:       [-268.000, -39.000, -605.000, 24]
+    region:   s_290
     level:    [81, 95]
   17666342:
     template: Devegetator
-    at:       [-256.000, -39.000, -624.000, 82]
+    region:   s_290
     level:    [81, 95]
   17666343:
     template: Devegetator
-    at:       [-248.000, -39.000, -639.000, 53]
+    region:   s_295
     level:    [81, 95]
   17666344:
     template: Ephemeral_Amoeban
-    at:       [-246.627, -39.835, -602.313, 25]
+    region:   s_295
     level:    [79, 80]
   17666345:
     template: Peapuk
-    at:       [-222.550, -39.369, -670.204, 25]
+    region:   s_297
     level:    [81, 82]
   17666346:
     template: Peapuk
-    at:       [-222.310, -39.626, -667.905, 50]
+    region:   s_297
     level:    [81, 82]
   17666347:
     template: Peapuk
-    at:       [-242.098, -39.967, -680.289, 75]
+    region:   s_297
     level:    [81, 82]
   17666348:
     template: Peapuk
-    at:       [-196.396, -40.706, -664.234, 100]
+    region:   s_297
     level:    [81, 82]
   17666349:
     template: Peapuk
@@ -3183,247 +3183,247 @@ spawns:
     level:    [81, 82]
   17666350:
     template: Peapuk
-    at:       [-196.963, -40.027, -678.152, 150]
+    region:   s_302
     level:    [81, 82]
   17666351:
     template: Peapuk
-    at:       [-198.976, -40.000, -678.099, 175]
+    region:   s_302
     level:    [81, 82]
   17666352:
     template: Peapuk
-    at:       [-241.711, -39.965, -680.635, 200]
+    region:   s_302
     level:    [81, 82]
   17666353:
     template: Peapuk
-    at:       [-246.221, -39.964, -680.500, 225]
+    region:   s_305
     level:    [81, 82]
   17666354:
     template: Peapuk
-    at:       [-279.070, -40.000, -713.343, 250]
+    region:   s_305
     level:    [81, 82]
   17666355:
     template: Peapuk
-    at:       [-241.788, -39.584, -672.244, 25]
+    region:   s_305
     level:    [81, 82]
   17666356:
     template: Peapuk
-    at:       [-254.006, -38.973, -688.108, 50]
+    region:   s_305
     level:    [81, 82]
   17666357:
     template: Peapuk
-    at:       [-245.461, -39.774, -683.656, 75]
+    region:   s_305
     level:    [81, 82]
   17666358:
     template: Peapuk
-    at:       [-211.000, -39.000, -682.000, 111]
+    region:   s_310
     level:    [81, 82]
   17666359:
     template: Ephemeral_Murex
-    at:       [-236.322, -39.771, -690.493, 25]
+    region:   s_310
     level:    [79, 88]
   17666360:
     template: Russet_Rarab
-    at:       [-344.419, -39.307, -623.830, 25]
+    region:   sw_312
     level:    [81, 82]
   17666361:
     template: Russet_Rarab
-    at:       [-343.649, -39.461, -615.748, 50]
+    region:   sw_312
     level:    [81, 82]
   17666362:
     template: Russet_Rarab
-    at:       [-344.213, -39.648, -617.662, 75]
+    region:   sw_312
     level:    [81, 82]
   17666363:
     template: Russet_Rarab
-    at:       [-362.158, -39.722, -630.444, 100]
+    region:   sw_312
     level:    [81, 82]
   17666364:
     template: Russet_Rarab
-    at:       [-349.702, -39.689, -639.122, 125]
+    region:   sw_316
     level:    [81, 82]
   17666365:
     template: Russet_Rarab
-    at:       [-347.376, -39.453, -643.272, 150]
+    region:   sw_316
     level:    [81, 82]
   17666366:
     template: Russet_Rarab
-    at:       [-324.930, -39.262, -666.417, 175]
+    region:   sw_316
     level:    [81, 82]
   17666367:
     template: Russet_Rarab
-    at:       [-349.993, -39.679, -681.021, 200]
+    region:   sw_316
     level:    [81, 82]
   17666368:
     template: Russet_Rarab
-    at:       [-349.349, -39.214, -668.058, 225]
+    region:   sw_316
     level:    [81, 82]
   17666369:
     template: Russet_Rarab
-    at:       [-318.214, -39.895, -678.199, 250]
+    region:   sw_321
     level:    [81, 82]
   17666370:
     template: Russet_Rarab
-    at:       [-320.141, -39.245, -704.590, 25]
+    region:   sw_321
     level:    [81, 82]
   17666371:
     template: Russet_Rarab
-    at:       [-312.029, -39.013, -703.716, 50]
+    region:   sw_321
     level:    [81, 82]
   17666372:
     template: Russet_Rarab
-    at:       [-311.578, -39.126, -706.252, 75]
+    region:   sw_321
     level:    [81, 82]
   17666373:
     template: Russet_Rarab
-    at:       [-319.723, -39.423, -706.365, 100]
+    region:   sw_321
     level:    [81, 82]
   17666374:
     template: Russet_Rarab
-    at:       [-319.022, -40.000, -719.504, 125]
+    region:   sw_321
     level:    [81, 82]
   17666375:
     template: Russet_Rarab
-    at:       [-318.214, -39.895, -678.199, 150]
+    region:   sw_327
     level:    [81, 82]
   17666376:
     template: Russet_Rarab
-    at:       [-311.722, -39.020, -697.417, 175]
+    region:   sw_327
     level:    [81, 82]
   17666377:
     template: Ephemeral_Amoeban
-    at:       [-359.452, -39.144, -662.962, 25]
+    region:   sw_327
     level:    [79, 80]
   17666378:
     template: Clammy_Imp
-    at:       [-572.516, -39.728, -475.866, 25]
+    region:   sw_330
     level:    [81, 82]
   17666379:
     template: Clammy_Imp
-    at:       [-563.375, -40.000, -477.205, 50]
+    region:   sw_330
     level:    [81, 82]
   17666380:
     template: Clammy_Imp
-    at:       [-549.723, -39.715, -474.065, 75]
+    region:   sw_330
     level:    [81, 82]
   17666381:
     template: Clammy_Imp
-    at:       [-555.151, -40.274, -465.953, 100]
+    region:   sw_333
     level:    [81, 82]
   17666382:
     template: Clammy_Imp
-    at:       [-518.804, -39.535, -451.931, 125]
+    region:   sw_333
     level:    [81, 82]
   17666383:
     template: Clammy_Imp
-    at:       [-539.527, -40.227, -464.201, 150]
+    region:   sw_333
     level:    [81, 82]
   17666384:
     template: Clammy_Imp
-    at:       [-506.932, -39.563, -446.247, 175]
+    region:   sw_333
     level:    [81, 82]
   17666385:
     template: Clammy_Imp
-    at:       [-508.098, -39.415, -452.878, 200]
+    region:   sw_333
     level:    [81, 82]
   17666386:
     template: Clammy_Imp
-    at:       [-482.609, -39.879, -448.620, 225]
+    region:   sw_338
     level:    [81, 82]
   17666387:
     template: Clammy_Imp
-    at:       [-484.539, -39.565, -471.833, 250]
+    region:   sw_338
     level:    [81, 82]
   17666388:
     template: Clammy_Imp
-    at:       [-497.221, -39.034, -471.327, 25]
+    region:   sw_338
     level:    [81, 82]
   17666389:
     template: Clammy_Imp
-    at:       [-493.376, -39.462, -438.805, 50]
+    region:   sw_338
     level:    [81, 82]
   17666390:
     template: Clammy_Imp
-    at:       [-468.011, -40.018, -444.160, 75]
+    region:   sw_338
     level:    [81, 82]
   17666391:
     template: Clammy_Imp
-    at:       [-481.794, -39.715, -472.408, 100]
+    region:   sw_338
     level:    [81, 82]
   17666392:
     template: Clammy_Imp
-    at:       [-483.907, -38.872, -502.769, 125]
+    region:   sw_344
     level:    [81, 82]
   17666393:
     template: Clammy_Imp
-    at:       [-478.000, -40.000, -521.000, 222]
+    region:   sw_344
     level:    [81, 82]
   17666394:
     template: Clammy_Imp
-    at:       [-477.000, -39.000, -508.000, 185]
+    region:   sw_344
     level:    [81, 82]
   17666395:
     template: Clammy_Imp
-    at:       [-488.000, -39.000, -507.000, 201]
+    region:   sw_344
     level:    [81, 82]
   17666396:
     template: Clammy_Imp
-    at:       [-479.000, -39.000, 490.000, 177]
+    region:   sw_344
     level:    [81, 82]
   17666397:
     template: Clammy_Imp
-    at:       [-488.000, -39.000, 477.000, 161]
+    region:   sw_344
     level:    [81, 82]
   17666398:
     template: Ephemeral_Murex
-    at:       [-504.465, -39.309, -446.031, 50]
+    region:   sw_350
     level:    [79, 88]
   17666399:
     template: Shewriwhile
-    at:       [-607.046, -48.000, -443.131, 25]
+    region:   sw_351
     level:    [81, 82]
   17666400:
     template: Shewriwhile
-    at:       [-602.202, -48.000, -445.457, 50]
+    region:   sw_351
     level:    [81, 82]
   17666401:
     template: Shewriwhile
-    at:       [-587.972, -47.597, -436.425, 75]
+    region:   sw_353
     level:    [81, 82]
   17666402:
     template: Shewriwhile
-    at:       [-571.852, -47.542, -436.780, 100]
+    region:   sw_353
     level:    [81, 82]
   17666403:
     template: Shewriwhile
-    at:       [-635.264, -47.454, -464.804, 125]
+    region:   sw_353
     level:    [81, 82]
   17666404:
     template: Shewriwhile
-    at:       [-628.996, -47.330, -465.285, 150]
+    region:   sw_353
     level:    [81, 82]
   17666405:
     template: Shewriwhile
-    at:       [-620.301, -48.295, -448.172, 175]
+    region:   sw_353
     level:    [81, 82]
   17666406:
     template: Shewriwhile
-    at:       [-595.678, -48.008, -441.346, 200]
+    region:   sw_358
     level:    [81, 82]
   17666407:
     template: Shewriwhile
-    at:       [-642.833, -47.435, -413.716, 225]
+    region:   sw_358
     level:    [81, 82]
   17666408:
     template: Shewriwhile
-    at:       [-618.135, -47.372, -418.223, 250]
+    region:   sw_358
     level:    [81, 82]
   17666409:
     template: Shewriwhile
-    at:       [-632.619, -47.279, -423.226, 25]
+    region:   sw_361
     level:    [81, 82]
   17666410:
     template: Shewriwhile
-    at:       [-600.726, -48.000, -446.015, 50]
+    region:   sw_361
     level:    [81, 82]
   17666411:
     template: Shewriwhile
@@ -3463,175 +3463,175 @@ spawns:
     level:    [83, 84]
   17666420:
     template: Pneumaflayer
-    at:       [-449.321, -46.182, -342.810, 125]
+    region:   sw_372
     level:    [83, 84]
   17666421:
     template: Pneumaflayer
-    at:       [-447.450, -47.592, -322.542, 150]
+    region:   sw_372
     level:    [83, 84]
   17666422:
     template: Pneumaflayer
-    at:       [-443.359, -48.198, -321.635, 175]
+    region:   sw_372
     level:    [83, 84]
   17666423:
     template: Pneumaflayer
-    at:       [-438.162, -47.702, -310.043, 200]
+    region:   sw_372
     level:    [83, 84]
   17666424:
     template: Pneumaflayer
-    at:       [-470.947, -40.054, -353.656, 225]
+    region:   sw_376
     level:    [83, 84]
   17666425:
     template: Pneumaflayer
-    at:       [-468.178, -40.652, -344.668, 250]
+    region:   sw_376
     level:    [83, 84]
   17666426:
     template: Pneumaflayer
-    at:       [-474.022, -40.539, -367.459, 25]
+    region:   sw_376
     level:    [83, 84]
   17666427:
     template: Pneumaflayer
-    at:       [-471.433, -40.000, -318.749, 50]
+    region:   sw_376
     level:    [83, 84]
   17666428:
     template: Pneumaflayer
-    at:       [-479.184, -39.221, -302.387, 75]
+    region:   sw_380
     level:    [83, 84]
   17666429:
     template: Pneumaflayer
-    at:       [-473.165, -40.220, -305.014, 100]
+    region:   sw_380
     level:    [83, 84]
   17666430:
     template: Pneumaflayer
-    at:       [-468.467, -40.714, -298.219, 125]
+    region:   sw_380
     level:    [83, 84]
   17666431:
     template: Pneumaflayer
-    at:       [-440.510, -47.106, -298.638, 150]
+    region:   sw_380
     level:    [83, 84]
   17666432:
     template: Ephemeral_Murex
-    at:       [-451.284, -47.309, -322.064, 25]
+    region:   sw_384
     level:    [79, 88]
   17666433:
     template: Speltercap
-    at:       [-490.083, -39.019, 164.956, 25]
+    region:   w_385
     level:    [82, 83]
   17666434:
     template: Speltercap
-    at:       [-483.520, -39.655, 163.842, 50]
+    region:   w_385
     level:    [82, 83]
   17666435:
     template: Speltercap
-    at:       [-506.593, -38.985, 167.865, 75]
+    region:   w_385
     level:    [82, 83]
   17666436:
     template: Speltercap
-    at:       [-502.547, -38.100, 169.551, 100]
+    region:   w_385
     level:    [82, 83]
   17666437:
     template: Speltercap
-    at:       [-499.336, -37.801, 169.344, 125]
+    region:   w_385
     level:    [82, 83]
   17666438:
     template: Speltercap
-    at:       [-479.038, -31.932, 204.174, 150]
+    region:   nw_390
     level:    [82, 83]
   17666439:
     template: Speltercap
-    at:       [-477.974, -31.863, 204.262, 175]
+    region:   nw_390
     level:    [82, 83]
   17666440:
     template: Speltercap
-    at:       [-471.388, -31.769, 203.140, 200]
+    region:   nw_390
     level:    [82, 83]
   17666441:
     template: Speltercap
-    at:       [-480.031, -39.769, 169.817, 225]
+    region:   nw_390
     level:    [82, 83]
   17666442:
     template: Speltercap
-    at:       [-453.449, -31.306, 202.359, 250]
+    region:   nw_390
     level:    [82, 83]
   17666443:
     template: Speltercap
-    at:       [-441.844, -32.000, 200.515, 25]
+    region:   nw_390
     level:    [82, 83]
   17666444:
     template: Speltercap
-    at:       [-438.405, -32.000, 200.301, 50]
+    region:   nw_396
     level:    [82, 83]
   17666445:
     template: Speltercap
-    at:       [-432.856, -31.796, 200.440, 75]
+    region:   nw_396
     level:    [82, 83]
   17666446:
     template: Speltercap
-    at:       [-476.036, -31.693, 225.579, 100]
+    region:   nw_396
     level:    [82, 83]
   17666447:
     template: Speltercap
-    at:       [-465.101, -31.327, 218.908, 125]
+    region:   nw_396
     level:    [82, 83]
   17666448:
     template: Speltercap
-    at:       [-456.829, -31.235, 234.873, 150]
+    region:   nw_400
     level:    [82, 83]
   17666449:
     template: Speltercap
-    at:       [-451.171, -31.785, 236.486, 175]
+    region:   nw_400
     level:    [82, 83]
   17666450:
     template: Speltercap
-    at:       [-450.204, -31.310, 229.307, 200]
+    region:   nw_400
     level:    [82, 83]
   17666451:
     template: Speltercap
-    at:       [-425.818, -31.382, 201.891, 225]
+    region:   nw_400
     level:    [82, 83]
   17666452:
     template: Speltercap
-    at:       [-449.902, -31.611, 254.617, 250]
+    region:   nw_400
     level:    [82, 83]
   17666453:
     template: Ephemeral_Amoeban
-    at:       [-428.743, -31.562, 212.238, 100]
+    region:   nw_405
     level:    [79, 80]
   17666454:
     template: Helter-skelter
-    at:       [-362.625, -31.306, 292.808, 25]
+    region:   nw_406
     level:    [82, 83]
   17666455:
     template: Helter-skelter
-    at:       [-353.010, -31.420, 277.840, 50]
+    region:   nw_406
     level:    [82, 83]
   17666456:
     template: Helter-skelter
-    at:       [-355.404, -31.022, 305.786, 75]
+    region:   nw_406
     level:    [82, 83]
   17666457:
     template: Helter-skelter
-    at:       [-352.817, -31.046, 303.715, 100]
+    region:   nw_406
     level:    [82, 83]
   17666458:
     template: Helter-skelter
-    at:       [-334.672, -31.559, 288.954, 125]
+    region:   nw_406
     level:    [82, 83]
   17666459:
     template: Helter-skelter
-    at:       [-327.642, -32.446, 285.277, 150]
+    region:   nw_411
     level:    [82, 83]
   17666460:
     template: Helter-skelter
-    at:       [-336.180, -31.194, 281.038, 175]
+    region:   nw_411
     level:    [82, 83]
   17666461:
     template: Helter-skelter
-    at:       [-338.909, -30.648, 268.678, 200]
+    region:   nw_411
     level:    [82, 83]
   17666462:
     template: Helter-skelter
-    at:       [-355.398, -31.616, 312.208, 225]
+    region:   nw_411
     level:    [82, 83]
   17666463:
     template: Helter-skelter
@@ -3663,19 +3663,19 @@ spawns:
     level:    [82, 83]
   17666470:
     template: Helter-skelter
-    at:       [-379.985, -32.882, 365.240, 175]
+    region:   nw_422
     level:    [82, 83]
   17666471:
     template: Helter-skelter
-    at:       [-369.987, -33.740, 368.614, 200]
+    region:   nw_422
     level:    [82, 83]
   17666472:
     template: Helter-skelter
-    at:       [-399.949, -30.811, 356.812, 225]
+    region:   nw_422
     level:    [82, 83]
   17666473:
     template: Ephemeral_Murex
-    at:       [-353.961, -33.073, 335.400, 55]
+    region:   nw_425
     level:    [79, 88]
   17666474:
     template: Fulmotondro
@@ -3814,7 +3814,7 @@ spawns:
     level:    [85, 87]
   17666511:
     template: Sippoy
-    at:       [-494.686, -39.097, 161.897, 50]
+    region:   nw_405
     level:    [95, 95]
   17666512:
     template: Ironclad_Executioner
@@ -3826,11 +3826,11 @@ spawns:
     level:    [90, 90]
   17666514:
     template: Hrosshvalur
-    at:       [374.919, -30.995, 390.599, 50]
+    region:   ne_152
     level:    [90, 90]
   17666515:
     template: Div-e_Sepid
-    at:       [-491.000, -39.000, -486.000, 253]
+    region:   sw_350
     level:    [90, 90]
   17666516:
     template: Ayravata
@@ -3838,11 +3838,11 @@ spawns:
     level:    [90, 90]
   17666517:
     template: Hanuman
-    at:       [-30.647, -31.732, 282.010, 90]
+    region:   n_110
     level:    [90, 90]
   17666518:
     template: Iktomi
-    at:       [123.839, -48.027, -437.669, 50]
+    region:   se_261
     level:    [90, 90]
   17666519:
     template: Sturdy_Pyxis_Small
@@ -4029,15 +4029,15 @@ spawns:
     level:    [85, 87]
   17666563:
     template: Bastion_Fighter
-    at:       [36.335, -39.475, -99.101, 138]
+    region:   c_515
     level:    [85, 87]
   17666564:
     template: Bastion_Fighter
-    at:       [38.171, -39.963, -90.909, 175]
+    region:   c_515
     level:    [85, 87]
   17666565:
     template: Bastion_Fighter
-    at:       [37.296, -39.528, -98.148, 119]
+    region:   c_515
     level:    [85, 87]
   17666566:
     template: Bastion_Fighter
@@ -4045,7 +4045,7 @@ spawns:
     level:    [85, 87]
   17666567:
     template: Bastion_Mage
-    at:       [43.032, -40.260, -90.072, 134]
+    region:   c_515
     level:    [85, 87]
   17666568:
     template: Bastion_Mage
@@ -4057,11 +4057,11 @@ spawns:
     level:    [85, 87]
   17666570:
     template: Qiqirn_Trapper
-    at:       [42.046, -39.983, -93.989, 160]
+    region:   c_515
     level:    [85, 87]
   17666571:
     template: Qiqirn_Trapper
-    at:       [44.473, -40.126, -93.018, 108]
+    region:   c_515
     level:    [85, 87]
   17666572:
     template: Qiqirn_Bewitcher

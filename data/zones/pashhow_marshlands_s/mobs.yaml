@@ -4135,23 +4135,23 @@ spawns:
     level:    [62, 65]
   17145862:
     template: Virulent_Peiste
-    at:       [-412.599, 24.437, -431.639, 137]
+    region:   sw_6
     level:    [78, 81]
   17145863:
     template: Virulent_Peiste
-    at:       [-455.311, 24.499, -472.247, 149]
+    region:   sw_6
     level:    [78, 81]
   17145864:
     template: Virulent_Peiste
-    at:       [-446.738, 24.499, -443.850, 242]
+    region:   sw_6
     level:    [78, 81]
   17145865:
     template: Virulent_Peiste
-    at:       [-417.691, 23.840, -485.922, 74]
+    region:   sw_6
     level:    [78, 81]
   17145866:
     template: Virulent_Peiste
-    at:       [-444.380, 24.499, -487.828, 50]
+    region:   sw_6
     level:    [78, 81]
   17145867:
     template: Sugaar
@@ -4159,604 +4159,604 @@ spawns:
     level:    [83, 83]
   17145868:
     template: Virulent_Peiste
-    at:       [-398.654, 24.477, -314.916, 213]
+    region:   sw_12
     level:    [78, 81]
   17145869:
     template: Virulent_Peiste
-    at:       [-442.462, 24.488, -367.664, 87]
+    region:   sw_12
     level:    [78, 81]
   17145870:
     template: Virulent_Peiste
-    at:       [-406.646, 24.499, -314.657, 7]
+    region:   sw_12
     level:    [78, 81]
   17145871:
     template: Virulent_Peiste
-    at:       [-426.174, 24.255, -382.683, 14]
+    region:   sw_12
     level:    [78, 81]
   17145872:
     template: Virulent_Peiste
-    at:       [-422.583, 24.116, -299.794, 222]
+    region:   sw_12
     level:    [78, 81]
   17145873:
     template: Virulent_Peiste
-    at:       [-438.146, 24.499, -365.986, 42]
+    region:   sw_12
     level:    [78, 81]
   17145874:
     template: Virulent_Peiste
-    at:       [-375.841, 24.471, -328.814, 215]
+    region:   sw_12
     level:    [78, 81]
   17145875:
     template: Gadfly
-    at:       [-257.892, 24.433, -364.534, 247]
+    region:   sw_19
     level:    [64, 68]
   17145876:
     template: Gadfly
-    at:       [-296.473, 24.499, -329.792, 137]
+    region:   sw_19
     level:    [64, 68]
   17145877:
     template: Gadfly
-    at:       [-248.422, 24.499, -377.940, 140]
+    region:   sw_19
     level:    [64, 68]
   17145878:
     template: Goblin_Guerrilla
-    at:       [-250.573, 24.452, -378.125, 33]
+    region:   sw_19
     level:    [66, 69]
   17145879:
     template: Goblins_Dragonfly_past
     script:   Goblins_Dragonfly
-    at:       [-251.276, 24.448, -378.320, 35]
+    region:   sw_19
     level:    [61, 64]
   17145880:
     template: Snipper
-    at:       [-396.312, 24.151, -237.848, 208]
+    region:   sw_24
     level:    [62, 65]
   17145881:
     template: Snipper
-    at:       [-437.880, 24.135, -243.532, 107]
+    region:   sw_24
     level:    [62, 65]
   17145882:
     template: Water_Elemental
-    at:       [-433.693, 24.091, -235.436, 242]
+    region:   sw_24
     level:    [70, 74]
   17145883:
     template: Malboro
-    at:       [-429.896, 24.245, -246.726, 253]
+    region:   sw_27
     level:    [71, 74]
   17145884:
     template: Peiste
-    at:       [-233.486, 24.202, -289.616, 87]
+    region:   sw_28
     level:    [73, 76]
   17145885:
     template: Bog_Bunny
-    at:       [-255.849, 24.216, -242.432, 102]
+    region:   sw_28
     level:    [61, 64]
   17145886:
     template: Bog_Bunny
-    at:       [-281.646, 24.208, -284.572, 182]
+    region:   sw_28
     level:    [61, 64]
   17145887:
     template: Bog_Bunny
-    at:       [-254.077, 24.040, -328.203, 133]
+    region:   sw_28
     level:    [61, 64]
   17145888:
     template: Goobbue
-    at:       [-249.578, 24.392, -269.840, 227]
+    region:   sw_28
     level:    [71, 73]
   17145889:
     template: Goobbue
-    at:       [-236.091, 24.164, -249.388, 50]
+    region:   sw_28
     level:    [71, 73]
   17145890:
     template: Goblin_Grenadier
-    at:       [-291.151, 23.953, -289.813, 140]
+    region:   sw_28
     level:    [66, 69]
   17145891:
     template: Peiste
-    at:       [-182.196, 24.018, -223.812, 169]
+    region:   sw_35
     level:    [73, 76]
   17145892:
     template: Bog_Bunny
-    at:       [-200.745, 24.049, -217.005, 253]
+    region:   sw_35
     level:    [61, 64]
   17145893:
     template: Bog_Bunny
-    at:       [-197.709, 24.107, -244.502, 176]
+    region:   sw_35
     level:    [61, 64]
   17145894:
     template: Bog_Bunny
-    at:       [-209.206, 24.155, -269.502, 21]
+    region:   sw_35
     level:    [61, 64]
   17145895:
     template: Goobbue
-    at:       [-150.222, 24.251, -259.382, 93]
+    region:   sw_35
     level:    [71, 73]
   17145896:
     template: Goobbue
-    at:       [-188.042, 24.053, -230.555, 180]
+    region:   sw_35
     level:    [71, 73]
   17145897:
     template: Goblin_Flagman
-    at:       [-193.697, 24.110, -247.884, 24]
+    region:   sw_35
     level:    [66, 69]
   17145898:
     template: Thunder_Elemental
-    at:       [-211.506, 24.267, -235.815, 97]
+    region:   sw_35
     level:    [70, 74]
   17145899:
     template: Gadfly
-    at:       [-207.367, 24.488, -176.884, 16]
+    region:   sw_43
     level:    [64, 68]
   17145900:
     template: Gadfly
-    at:       [-210.437, 24.406, -151.231, 22]
+    region:   sw_43
     level:    [64, 68]
   17145901:
     template: Peiste
-    at:       [-201.892, 24.499, -195.025, 165]
+    region:   sw_43
     level:    [73, 76]
   17145902:
     template: Peiste
-    at:       [-129.628, 24.499, -238.436, 113]
+    region:   sw_43
     level:    [73, 76]
   17145903:
     template: Peiste
-    at:       [-125.594, 24.499, -162.647, 101]
+    region:   sw_43
     level:    [73, 76]
   17145904:
     template: Goblin_Grenadier
-    at:       [-215.336, 24.305, -149.127, 171]
+    region:   sw_43
     level:    [66, 69]
   17145905:
     template: Goblin_Flagman
-    at:       [-209.258, 24.499, -160.678, 230]
+    region:   sw_43
     level:    [66, 69]
   17145906:
     template: Gadfly
-    at:       [-17.094, 24.405, -196.762, 233]
+    region:   s_50
     level:    [64, 68]
   17145907:
     template: Gadfly
-    at:       [-9.163, 24.499, -197.733, 148]
+    region:   s_50
     level:    [64, 68]
   17145908:
     template: Peiste
-    at:       [2.973, 24.495, -233.165, 137]
+    region:   s_50
     level:    [73, 76]
   17145909:
     template: Peiste
-    at:       [-45.470, 24.499, -234.998, 153]
+    region:   s_50
     level:    [73, 76]
   17145910:
     template: Peiste
-    at:       [-45.324, 24.448, -176.487, 162]
+    region:   s_50
     level:    [73, 76]
   17145911:
     template: Goblin_Grenadier
-    at:       [-52.842, 24.467, -169.362, 104]
+    region:   s_50
     level:    [66, 69]
   17145912:
     template: Goblin_Flagman
-    at:       [-69.523, 24.500, -205.806, 74]
+    region:   s_50
     level:    [66, 69]
   17145913:
     template: Gadfly
-    at:       [21.985, 24.464, -316.698, 11]
+    region:   s_57
     level:    [64, 68]
   17145914:
     template: Gadfly
-    at:       [18.033, 24.494, -325.078, 174]
+    region:   s_57
     level:    [64, 68]
   17145915:
     template: Peiste
-    at:       [47.551, 24.073, -306.855, 241]
+    region:   s_57
     level:    [73, 76]
   17145916:
     template: Peiste
-    at:       [23.800, 24.499, -282.149, 246]
+    region:   s_57
     level:    [73, 76]
   17145917:
     template: Peiste
-    at:       [37.910, 24.229, -300.453, 41]
+    region:   s_57
     level:    [73, 76]
   17145918:
     template: Goblin_Guerrilla
-    at:       [38.964, 24.498, -267.254, 48]
+    region:   s_57
     level:    [66, 69]
   17145919:
     template: Goblin_Flagman
-    at:       [30.067, 24.215, -299.328, 71]
+    region:   s_57
     level:    [66, 69]
   17145920:
     template: Goblins_Dragonfly_past
     script:   Goblins_Dragonfly
-    at:       [38.435, 24.495, -266.252, 38]
+    region:   s_57
     level:    [61, 64]
   17145921:
     template: Snipper
-    at:       [229.062, 24.212, -279.730, 242]
+    region:   s_65
     level:    [62, 65]
   17145922:
     template: Snipper
-    at:       [238.176, 24.296, -278.980, 141]
+    region:   s_65
     level:    [62, 65]
   17145923:
     template: Snipper
-    at:       [164.192, 24.246, -316.771, 165]
+    region:   s_65
     level:    [62, 65]
   17145924:
     template: Water_Elemental
-    at:       [227.306, 24.122, -280.241, 151]
+    region:   s_65
     level:    [70, 74]
   17145925:
     template: Malboro
-    at:       [136.520, 24.210, -292.118, 192]
+    region:   s_69
     level:    [71, 74]
   17145926:
     template: Snipper
-    at:       [93.348, 24.302, -404.410, 107]
+    region:   s_70
     level:    [62, 65]
   17145927:
     template: Snipper
-    at:       [115.604, 24.083, -367.142, 102]
+    region:   s_70
     level:    [62, 65]
   17145928:
     template: Snipper
-    at:       [92.435, 23.897, -402.461, 165]
+    region:   s_70
     level:    [62, 65]
   17145929:
     template: Snipper
-    at:       [131.203, 23.980, -350.758, 213]
+    region:   s_70
     level:    [62, 65]
   17145930:
     template: Gadfly
-    at:       [197.100, 24.491, -236.690, 110]
+    region:   s_74
     level:    [64, 68]
   17145931:
     template: Gadfly
-    at:       [202.455, 24.392, -218.183, 215]
+    region:   s_74
     level:    [64, 68]
   17145932:
     template: Peiste
-    at:       [227.017, 24.161, -219.242, 201]
+    region:   s_74
     level:    [73, 76]
   17145933:
     template: Peiste
-    at:       [201.340, 24.397, -206.770, 215]
+    region:   s_74
     level:    [73, 76]
   17145934:
     template: Peiste
-    at:       [307.642, 24.420, -200.335, 33]
+    region:   s_74
     level:    [73, 76]
   17145935:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [245.682, 24.093, -216.286, 3]
+    region:   s_74
     level:    [71, 74]
   17145936:
     template: Garnet_Quadav_past
     script:   Garnet_Quadav
-    at:       [262.196, 24.498, -194.264, 67]
+    region:   s_74
     level:    [71, 74]
   17145937:
     template: Gadfly
-    at:       [284.980, 24.499, -150.395, 75]
+    region:   se_81
     level:    [64, 68]
   17145938:
     template: Peiste
-    at:       [287.510, 24.486, -155.144, 75]
+    region:   se_81
     level:    [73, 76]
   17145939:
     template: Peiste
-    at:       [293.900, 24.432, -137.494, 102]
+    region:   se_81
     level:    [73, 76]
   17145940:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [277.155, 24.499, -168.910, 88]
+    region:   se_81
     level:    [71, 74]
   17145941:
     template: Peiste
-    at:       [374.692, 24.499, -168.919, 97]
+    region:   se_85
     level:    [73, 76]
   17145942:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [384.043, 24.500, -160.271, 48]
+    region:   se_85
     level:    [71, 74]
   17145943:
     template: Gadfly
-    at:       [404.521, 24.499, -102.016, 250]
+    region:   e_87
     level:    [64, 68]
   17145944:
     template: Gadfly
-    at:       [407.036, 24.471, -76.589, 98]
+    region:   e_87
     level:    [64, 68]
   17145945:
     template: Peiste
-    at:       [409.964, 24.499, -108.986, 19]
+    region:   e_87
     level:    [73, 76]
   17145946:
     template: Peiste
-    at:       [389.161, 24.499, -37.931, 87]
+    region:   e_87
     level:    [73, 76]
   17145947:
     template: Peiste
-    at:       [426.391, 24.346, -86.415, 41]
+    region:   e_87
     level:    [73, 76]
   17145948:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [445.070, 24.483, -44.452, 222]
+    region:   e_87
     level:    [71, 74]
   17145949:
     template: Nickel_Quadav_past
     script:   Nickel_Quadav
-    at:       [433.412, 24.235, -118.294, 151]
+    region:   e_87
     level:    [71, 74]
   17145950:
     template: Bog_Bunny
-    at:       [369.241, 24.206, 34.525, 104]
+    region:   e_94
     level:    [61, 64]
   17145951:
     template: Bog_Bunny
-    at:       [367.998, 24.250, -11.560, 87]
+    region:   e_94
     level:    [61, 64]
   17145952:
     template: Bog_Bunny
-    at:       [307.405, 23.944, 4.925, 175]
+    region:   e_94
     level:    [61, 64]
   17145953:
     template: Goobbue
-    at:       [306.788, 23.979, -12.741, 127]
+    region:   e_94
     level:    [71, 73]
   17145954:
     template: Goobbue
-    at:       [373.580, 24.408, -23.742, 12]
+    region:   e_94
     level:    [71, 73]
   17145955:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [369.330, 24.334, 16.043, 226]
+    region:   e_94
     level:    [71, 74]
   17145956:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [379.609, 24.460, -20.134, 87]
+    region:   e_94
     level:    [71, 74]
   17145957:
     template: Bog_Bunny
-    at:       [272.086, 24.241, -2.275, 156]
+    region:   c_101
     level:    [61, 64]
   17145958:
     template: Bog_Bunny
-    at:       [266.624, 24.082, -30.431, 52]
+    region:   c_101
     level:    [61, 64]
   17145959:
     template: Bog_Bunny
-    at:       [271.079, 24.113, -33.057, 113]
+    region:   c_101
     level:    [61, 64]
   17145960:
     template: Goobbue
-    at:       [265.106, 24.156, 5.445, 48]
+    region:   c_101
     level:    [71, 73]
   17145961:
     template: Goobbue
-    at:       [285.708, 24.246, 4.380, 22]
+    region:   c_101
     level:    [71, 73]
   17145962:
     template: Garnet_Quadav_past
     script:   Garnet_Quadav
-    at:       [238.348, 24.253, -19.290, 32]
+    region:   c_101
     level:    [71, 74]
   17145963:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [241.980, 24.215, -27.781, 181]
+    region:   c_101
     level:    [71, 74]
   17145964:
     template: Thunder_Elemental
-    at:       [236.374, 24.222, -26.151, 224]
+    region:   c_101
     level:    [70, 74]
   17145965:
     template: Croque-Mitaine
     script:   Croque-mitaine
-    at:       [240.094, 24.242, -28.877, 181]
+    region:   c_101
     level:    [78, 78]
   17145966:
     template: Snipper
-    at:       [211.653, 23.739, 109.075, 166]
+    region:   c_110
     level:    [62, 65]
   17145967:
     template: Snipper
-    at:       [230.606, 24.318, 86.719, 102]
+    region:   c_110
     level:    [62, 65]
   17145968:
     template: Snipper
-    at:       [191.030, 24.283, 27.976, 69]
+    region:   c_112
     level:    [62, 65]
   17145969:
     template: Snipper
-    at:       [186.050, 24.221, 71.802, 10]
+    region:   c_112
     level:    [62, 65]
   17145970:
     template: Snipper
-    at:       [156.316, 24.499, 111.657, 23]
+    region:   c_112
     level:    [62, 65]
   17145971:
     template: Nickel_Quadav_past
     script:   Nickel_Quadav
-    at:       [145.765, 24.499, 114.724, 154]
+    region:   c_112
     level:    [71, 74]
   17145972:
     template: Snipper
-    at:       [249.371, 24.445, 191.626, 37]
+    region:   c_116
     level:    [62, 65]
   17145973:
     template: Snipper
-    at:       [196.033, 24.376, 153.769, 215]
+    region:   c_116
     level:    [62, 65]
   17145974:
     template: Water_Elemental
-    at:       [246.217, 24.317, 192.153, 19]
+    region:   c_116
     level:    [70, 74]
   17145975:
     template: Malboro
-    at:       [151.963, 24.106, 148.812, 235]
+    region:   c_119
     level:    [71, 74]
   17145976:
     template: Gadfly
-    at:       [104.550, 24.368, 100.623, 238]
+    region:   c_120
     level:    [64, 68]
   17145977:
     template: Gadfly
-    at:       [111.602, 24.498, 97.848, 170]
+    region:   c_120
     level:    [64, 68]
   17145978:
     template: Gadfly
-    at:       [96.800, 24.499, 119.444, 40]
+    region:   c_120
     level:    [64, 68]
   17145979:
     template: Lou_Carcolh
-    at:       [113.854, 24.499, 84.864, 220]
+    region:   c_123
     level:    [69, 73]
   17145980:
     template: Lou_Carcolh
-    at:       [107.034, 24.500, 115.839, 11]
+    region:   c_124
     level:    [69, 73]
   17145981:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [52.573, 24.499, 80.826, 227]
+    region:   c_120
     level:    [71, 74]
   17145982:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [138.579, 24.497, 51.771, 171]
+    region:   c_120
     level:    [71, 74]
   17145983:
     template: Gadfly
-    at:       [74.798, 24.428, 196.216, 213]
+    region:   n_127
     level:    [64, 68]
   17145984:
     template: Gadfly
-    at:       [57.262, 24.375, 153.779, 114]
+    region:   n_127
     level:    [64, 68]
   17145985:
     template: Gadfly
-    at:       [94.116, 24.499, 200.663, 120]
+    region:   n_127
     level:    [64, 68]
   17145986:
     template: Lou_Carcolh
-    at:       [103.019, 24.499, 209.202, 97]
+    region:   n_127
     level:    [69, 73]
   17145987:
     template: Lou_Carcolh
-    at:       [74.538, 24.418, 282.725, 216]
+    region:   n_127
     level:    [69, 73]
   17145988:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [74.896, 24.421, 231.630, 41]
+    region:   n_127
     level:    [71, 74]
   17145989:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [76.655, 24.499, 194.534, 80]
+    region:   n_127
     level:    [71, 74]
   17145990:
     template: Gadfly
-    at:       [8.923, 24.499, 327.545, 13]
+    region:   n_134
     level:    [64, 68]
   17145991:
     template: Gadfly
-    at:       [-11.758, 24.370, 338.808, 16]
+    region:   n_134
     level:    [64, 68]
   17145992:
     template: Gadfly
-    at:       [41.464, 24.499, 321.388, 183]
+    region:   n_134
     level:    [64, 68]
   17145993:
     template: Lou_Carcolh
-    at:       [61.358, 24.207, 321.810, 205]
+    region:   n_134
     level:    [69, 73]
   17145994:
     template: Lou_Carcolh
-    at:       [12.533, 24.484, 318.642, 51]
+    region:   n_134
     level:    [69, 73]
   17145995:
     template: Nickel_Quadav_past
     script:   Nickel_Quadav
-    at:       [42.327, 24.499, 330.436, 80]
+    region:   n_134
     level:    [71, 74]
   17145996:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [77.193, 24.500, 323.810, 141]
+    region:   n_134
     level:    [71, 74]
   17145997:
     template: Gadfly
-    at:       [-120.394, 24.468, 365.498, 60]
+    region:   n_141
     level:    [64, 68]
   17145998:
     template: Gadfly
-    at:       [-51.374, 24.499, 316.763, 40]
+    region:   n_141
     level:    [64, 68]
   17145999:
     template: Gadfly
-    at:       [-63.841, 24.151, 344.927, 222]
+    region:   n_141
     level:    [64, 68]
   17146000:
     template: Lou_Carcolh
-    at:       [-107.135, 24.499, 403.727, 3]
+    region:   n_141
     level:    [69, 73]
   17146001:
     template: Lou_Carcolh
-    at:       [-96.618, 24.482, 362.729, 74]
+    region:   n_141
     level:    [69, 73]
   17146002:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [-41.639, 24.499, 344.561, 242]
+    region:   n_141
     level:    [71, 74]
   17146003:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [-56.179, 24.282, 353.631, 151]
+    region:   n_141
     level:    [71, 74]
   17146004:
     template: Thread_Leech
-    at:       [-250.050, 24.130, 401.654, 157]
+    region:   nw_148
     level:    [65, 68]
   17146005:
     template: Thread_Leech
-    at:       [-240.056, 24.248, 408.585, 74]
+    region:   nw_148
     level:    [65, 68]
   17146006:
     template: Thread_Leech
-    at:       [-212.875, 24.264, 378.855, 134]
+    region:   nw_148
     level:    [65, 68]
   17146007:
     template: Lou_Carcolh
-    at:       [-168.292, 24.499, 396.933, 113]
+    region:   nw_148
     level:    [69, 73]
   17146008:
     template: Lou_Carcolh
-    at:       [-165.745, 24.499, 349.060, 126]
+    region:   nw_148
     level:    [69, 73]
   17146009:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [-157.386, 24.499, 394.358, 156]
+    region:   nw_148
     level:    [71, 74]
   17146010:
     template: Nickel_Quadav_past
     script:   Nickel_Quadav
-    at:       [-210.258, 24.382, 448.152, 148]
+    region:   nw_148
     level:    [71, 74]
   17146011:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [-196.442, 24.356, 403.350, 119]
+    region:   nw_148
     level:    [71, 74]
   17146012:
     template: Nommo
@@ -4764,571 +4764,571 @@ spawns:
     level:    [88, 88]
   17146013:
     template: Gadfly
-    at:       [120.124, 24.478, 365.507, 227]
+    region:   n_157
     level:    [64, 68]
   17146014:
     template: Gadfly
-    at:       [216.147, 24.262, 353.389, 241]
+    region:   n_157
     level:    [64, 68]
   17146015:
     template: Gadfly
-    at:       [200.435, 24.499, 316.453, 155]
+    region:   n_157
     level:    [64, 68]
   17146016:
     template: Lou_Carcolh
-    at:       [211.251, 24.432, 347.486, 86]
+    region:   n_157
     level:    [69, 73]
   17146017:
     template: Lou_Carcolh
-    at:       [115.283, 24.498, 360.508, 80]
+    region:   n_157
     level:    [69, 73]
   17146018:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [139.783, 24.240, 383.398, 69]
+    region:   n_157
     level:    [71, 74]
   17146019:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [164.048, 24.438, 389.979, 171]
+    region:   n_157
     level:    [71, 74]
   17146020:
     template: Gadfly
-    at:       [261.072, 24.498, 372.698, 105]
+    region:   ne_164
     level:    [64, 68]
   17146021:
     template: Gadfly
-    at:       [246.291, 24.478, 327.757, 69]
+    region:   ne_164
     level:    [64, 68]
   17146022:
     template: Gadfly
-    at:       [265.701, 24.497, 364.512, 37]
+    region:   ne_164
     level:    [64, 68]
   17146023:
     template: Lou_Carcolh
-    at:       [301.637, 24.461, 400.216, 89]
+    region:   ne_164
     level:    [69, 73]
   17146024:
     template: Lou_Carcolh
-    at:       [317.712, 24.364, 389.685, 77]
+    region:   ne_164
     level:    [69, 73]
   17146025:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [273.038, 24.499, 333.881, 151]
+    region:   ne_164
     level:    [71, 74]
   17146026:
     template: Garnet_Quadav_past
     script:   Garnet_Quadav
-    at:       [272.023, 24.500, 399.925, 100]
+    region:   ne_164
     level:    [71, 74]
   17146027:
     template: Gadfly
-    at:       [373.936, 24.477, 389.212, 116]
+    region:   ne_171
     level:    [64, 68]
   17146028:
     template: Gadfly
-    at:       [352.407, 24.474, 441.922, 164]
+    region:   ne_171
     level:    [64, 68]
   17146029:
     template: Lou_Carcolh
-    at:       [419.899, 24.499, 441.637, 249]
+    region:   ne_171
     level:    [69, 73]
   17146030:
     template: Lou_Carcolh
-    at:       [391.803, 24.249, 423.440, 21]
+    region:   ne_171
     level:    [69, 73]
   17146031:
     template: Nickel_Quadav_past
     script:   Nickel_Quadav
-    at:       [393.530, 24.499, 430.889, 19]
+    region:   ne_171
     level:    [71, 74]
   17146032:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [355.194, 24.499, 396.553, 204]
+    region:   ne_171
     level:    [71, 74]
   17146033:
     template: Gadfly
-    at:       [420.173, 24.499, 480.522, 56]
+    region:   ne_177
     level:    [64, 68]
   17146034:
     template: Gadfly
-    at:       [396.097, 24.500, 474.006, 174]
+    region:   ne_177
     level:    [64, 68]
   17146035:
     template: Gadfly
-    at:       [453.766, 24.499, 490.168, 70]
+    region:   ne_177
     level:    [64, 68]
   17146036:
     template: Lou_Carcolh
-    at:       [436.806, 24.500, 457.834, 188]
+    region:   ne_177
     level:    [69, 73]
   17146037:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [466.120, 24.499, 504.766, 89]
+    region:   ne_177
     level:    [71, 74]
   17146038:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [395.131, 24.500, 448.729, 69]
+    region:   ne_177
     level:    [71, 74]
   17146039:
     template: Gadfly
-    at:       [524.646, 24.498, 546.787, 236]
+    region:   ne_183
     level:    [64, 68]
   17146040:
     template: Gadfly
-    at:       [484.948, 24.499, 573.600, 171]
+    region:   ne_183
     level:    [64, 68]
   17146041:
     template: Gadfly
-    at:       [471.330, 24.105, 574.479, 90]
+    region:   ne_183
     level:    [64, 68]
   17146042:
     template: Lou_Carcolh
-    at:       [475.895, 24.499, 541.729, 138]
+    region:   ne_183
     level:    [69, 73]
   17146043:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [472.777, 24.467, 552.619, 87]
+    region:   ne_183
     level:    [71, 74]
   17146044:
     template: Garnet_Quadav_past
     script:   Garnet_Quadav
-    at:       [504.448, 24.500, 550.220, 33]
+    region:   ne_183
     level:    [71, 74]
   17146045:
     template: Gadfly
-    at:       [522.095, 24.490, 514.505, 87]
+    region:   ne_189
     level:    [64, 68]
   17146046:
     template: Gadfly
-    at:       [523.224, 24.499, 502.566, 91]
+    region:   ne_189
     level:    [64, 68]
   17146047:
     template: Gadfly
-    at:       [512.649, 24.499, 442.505, 157]
+    region:   ne_189
     level:    [64, 68]
   17146048:
     template: Lou_Carcolh
-    at:       [539.862, 24.499, 480.595, 244]
+    region:   ne_189
     level:    [69, 73]
   17146049:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [530.300, 24.484, 492.299, 34]
+    region:   ne_189
     level:    [71, 74]
   17146050:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [524.055, 24.499, 467.027, 164]
+    region:   ne_189
     level:    [71, 74]
   17146051:
     template: Snipper
-    at:       [446.268, 24.207, 362.779, 68]
+    region:   ne_195
     level:    [62, 65]
   17146052:
     template: Snipper
-    at:       [449.792, 24.165, 367.455, 135]
+    region:   ne_195
     level:    [62, 65]
   17146053:
     template: Snipper
-    at:       [433.638, 24.032, 354.688, 190]
+    region:   ne_195
     level:    [62, 65]
   17146054:
     template: Thread_Leech
-    at:       [-257.372, 24.500, 235.433, 183]
+    region:   nw_198
     level:    [65, 68]
   17146055:
     template: Thread_Leech
-    at:       [-253.022, 24.500, 250.238, 104]
+    region:   nw_198
     level:    [65, 68]
   17146056:
     template: Thread_Leech
-    at:       [-258.699, 24.500, 245.099, 187]
+    region:   nw_198
     level:    [65, 68]
   17146057:
     template: Thread_Leech
-    at:       [-62.156, 24.500, 75.222, 207]
+    region:   c_201
     level:    [65, 68]
   17146058:
     template: Thread_Leech
-    at:       [-63.122, 24.500, 102.689, 70]
+    region:   c_201
     level:    [65, 68]
   17146059:
     template: Thread_Leech
-    at:       [-65.535, 24.500, 51.552, 56]
+    region:   c_201
     level:    [65, 68]
   17146060:
     template: Thread_Leech
-    at:       [-195.175, 24.500, -60.098, 13]
+    region:   w_204
     level:    [65, 68]
   17146061:
     template: Thread_Leech
-    at:       [-208.531, 24.500, -56.324, 1]
+    region:   w_204
     level:    [65, 68]
   17146062:
     template: Thread_Leech
-    at:       [-219.530, 24.500, -56.027, 130]
+    region:   w_204
     level:    [65, 68]
   17146063:
     template: Gadfly
-    at:       [-191.654, 24.499, 162.118, 24]
+    region:   w_207
     level:    [64, 68]
   17146064:
     template: Gadfly
-    at:       [-203.200, 24.499, 116.323, 44]
+    region:   w_207
     level:    [64, 68]
   17146065:
     template: Gadfly
-    at:       [-190.042, 24.167, 113.469, 120]
+    region:   w_207
     level:    [64, 68]
   17146066:
     template: Gadfly
-    at:       [-197.288, 24.480, 120.981, 143]
+    region:   w_207
     level:    [64, 68]
   17146067:
     template: Gadfly
-    at:       [-211.960, 24.499, 125.909, 79]
+    region:   w_207
     level:    [64, 68]
   17146068:
     template: Gadfly
-    at:       [-182.032, 24.276, 109.511, 3]
+    region:   w_207
     level:    [64, 68]
   17146069:
     template: Gadfly
-    at:       [-117.737, 24.499, -1.115, 105]
+    region:   c_213
     level:    [64, 68]
   17146070:
     template: Gadfly
-    at:       [-80.554, 24.499, 6.476, 139]
+    region:   c_213
     level:    [64, 68]
   17146071:
     template: Gadfly
-    at:       [-74.352, 24.499, -0.105, 49]
+    region:   c_213
     level:    [64, 68]
   17146072:
     template: Gadfly
-    at:       [-76.643, 24.499, 6.688, 254]
+    region:   c_213
     level:    [64, 68]
   17146073:
     template: Gadfly
-    at:       [-125.653, 24.499, -13.224, 166]
+    region:   c_213
     level:    [64, 68]
   17146074:
     template: Gadfly
-    at:       [-127.594, 24.499, -15.444, 108]
+    region:   c_213
     level:    [64, 68]
   17146075:
     template: Lou_Carcolh
-    at:       [611.419, 24.500, 339.021, 150]
+    region:   ne_219
     level:    [69, 73]
   17146076:
     template: Lou_Carcolh
-    at:       [603.659, 24.500, 339.130, 126]
+    region:   ne_219
     level:    [69, 73]
   17146077:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [599.273, 24.500, 339.604, 7]
+    region:   ne_219
     level:    [71, 74]
   17146078:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [606.711, 24.500, 339.535]
+    region:   ne_219
     level:    [71, 74]
   17146079:
     template: Lou_Carcolh
-    at:       [618.746, 24.500, 94.329, 90]
+    region:   e_223
     level:    [69, 73]
   17146080:
     template: Lou_Carcolh
-    at:       [634.688, 24.500, 100.939, 5]
+    region:   e_223
     level:    [69, 73]
   17146081:
     template: Garnet_Quadav_past
     script:   Garnet_Quadav
-    at:       [645.223, 24.500, 97.144, 16]
+    region:   e_223
     level:    [71, 74]
   17146082:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [655.101, 24.500, 95.578, 7]
+    region:   e_223
     level:    [71, 74]
   17146083:
     template: Lou_Carcolh
-    at:       [541.882, 24.500, -33.960, 67]
+    region:   e_227
     level:    [69, 73]
   17146084:
     template: Lou_Carcolh
-    at:       [560.441, 24.500, -59.898, 242]
+    region:   e_227
     level:    [69, 73]
   17146085:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [541.261, 24.500, -60.936, 52]
+    region:   e_227
     level:    [71, 74]
   17146086:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [560.411, 24.500, -59.420, 243]
+    region:   e_227
     level:    [71, 74]
   17146087:
     template: Lou_Carcolh
-    at:       [419.497, 24.500, -238.895, 46]
+    region:   se_231
     level:    [69, 73]
   17146088:
     template: Lou_Carcolh
-    at:       [414.313, 24.500, -212.472, 131]
+    region:   se_231
     level:    [69, 73]
   17146089:
     template: Lou_Carcolh
-    at:       [410.581, 24.500, -227.205, 158]
+    region:   se_231
     level:    [69, 73]
   17146090:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [408.266, 24.500, -223.102, 173]
+    region:   se_231
     level:    [71, 74]
   17146091:
     template: Silver_Quadav_PMS
     script:   Silver_Quadav
-    at:       [416.385, 24.500, -232.246, 157]
+    region:   se_231
     level:    [71, 74]
   17146092:
     template: Electrumcap
-    at:       [577.579, 24.323, 216.893, 187]
+    region:   e_236
     level:    [68, 70]
   17146093:
     template: Electrumcap
-    at:       [617.461, 24.499, 216.531, 199]
+    region:   e_236
     level:    [68, 70]
   17146094:
     template: Electrumcap
-    at:       [642.767, 24.500, 199.486, 41]
+    region:   e_236
     level:    [68, 70]
   17146095:
     template: Electrumcap
-    at:       [585.294, 24.499, 220.070, 44]
+    region:   e_236
     level:    [68, 70]
   17146096:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [615.659, 24.499, 208.541, 123]
+    region:   e_236
     level:    [69, 71]
   17146097:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [620.979, 24.500, 217.666, 141]
+    region:   e_236
     level:    [69, 71]
   17146098:
     template: Nickel_Quadav_past
     script:   Nickel_Quadav
-    at:       [589.007, 24.392, 215.899, 132]
+    region:   e_236
     level:    [71, 74]
   17146099:
     template: Elder_Quadav_past
     script:   Elder_Quadav
-    at:       [608.813, 24.500, 235.132, 214]
+    region:   e_236
     level:    [71, 74]
   17146100:
     template: Ruby_Quadav_past
     script:   Ruby_Quadav
-    at:       [556.319, 24.500, 200.461, 227]
+    region:   e_236
     level:    [71, 74]
   17146101:
     template: Electrumcap
-    at:       [530.070, 24.500, -156.762, 57]
+    region:   se_245
     level:    [68, 70]
   17146102:
     template: Electrumcap
-    at:       [522.713, 24.500, -148.646, 127]
+    region:   se_245
     level:    [68, 70]
   17146103:
     template: Electrumcap
-    at:       [528.892, 24.500, -160.437, 237]
+    region:   se_245
     level:    [68, 70]
   17146104:
     template: Mythril_Quadav_past
     script:   Mythril_Quadav
-    at:       [516.689, 24.500, -163.436, 230]
+    region:   se_245
     level:    [71, 74]
   17146105:
     template: Zircon_Quadav_past
     script:   Zircon_Quadav
-    at:       [518.554, 24.500, -170.125, 41]
+    region:   se_245
     level:    [71, 74]
   17146106:
     template: Electrumcap
-    at:       [559.114, 24.313, -290.222, 36]
+    region:   se_250
     level:    [68, 70]
   17146107:
     template: Electrumcap
-    at:       [559.153, 24.435, -260.335, 227]
+    region:   se_250
     level:    [68, 70]
   17146108:
     template: Electrumcap
-    at:       [567.699, 24.499, -234.809, 137]
+    region:   se_250
     level:    [68, 70]
   17146109:
     template: Electrumcap
-    at:       [543.467, 24.496, -271.349, 144]
+    region:   se_250
     level:    [68, 70]
   17146110:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [565.646, 24.487, -264.672, 77]
+    region:   se_250
     level:    [69, 71]
   17146111:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [550.443, 24.452, -278.571, 57]
+    region:   se_250
     level:    [69, 71]
   17146112:
     template: Ancient_Quadav_past
     script:   Ancient_Quadav
-    at:       [518.089, 24.499, -287.510, 73]
+    region:   se_250
     level:    [76, 79]
   17146113:
     template: Gold_Quadav
-    at:       [520.331, 24.499, -307.037, 166]
+    region:   se_250
     level:    [76, 79]
   17146114:
     template: Vajra_Quadav
-    at:       [561.288, 24.500, -269.110, 236]
+    region:   se_250
     level:    [76, 79]
   17146115:
     template: Ancient_Quadav_past
     script:   Ancient_Quadav
-    at:       [515.944, 24.500, -318.686, 208]
+    region:   se_259
     level:    [76, 79]
   17146116:
     template: Gold_Quadav
-    at:       [524.873, 24.500, -312.632, 210]
+    region:   se_259
     level:    [76, 79]
   17146117:
     template: Vajra_Quadav
-    at:       [523.741, 24.500, -330.751, 209]
+    region:   se_259
     level:    [76, 79]
   17146118:
     template: Sanguine_Bat
-    at:       [-166.151, 24.499, 125.477, 115]
+    region:   w_262
     level:    [65, 66]
   17146119:
     template: Sanguine_Bat
-    at:       [-183.836, 24.464, 156.403, 186]
+    region:   w_262
     level:    [65, 66]
   17146120:
     template: Ghoul_war
     script:   Ghoul
-    at:       [-174.408, 24.499, 143.744, 168]
+    region:   w_262
     level:    [68, 68]
   17146121:
     template: Ghoul_war
     script:   Ghoul
-    at:       [-194.955, 24.481, 141.492, 77]
+    region:   w_262
     level:    [68, 68]
   17146122:
     template: Zombie_blm
     script:   Zombie
-    at:       [-167.680, 24.499, 129.942, 24]
+    region:   w_262
     level:    [67, 67]
   17146123:
     template: Sanguine_Bat
-    at:       [-122.555, 24.499, -20.862, 13]
+    region:   w_267
     level:    [65, 66]
   17146124:
     template: Sanguine_Bat
-    at:       [-103.472, 24.499, 11.224, 155]
+    region:   w_267
     level:    [65, 66]
   17146125:
     template: Zombie_blm
     script:   Zombie
-    at:       [-127.813, 24.500, -9.231, 99]
+    region:   w_267
     level:    [67, 67]
   17146126:
     template: Zombie_blm
     script:   Zombie
-    at:       [-111.414, 24.500, -13.614, 227]
+    region:   w_267
     level:    [67, 67]
   17146127:
     template: Ghoul_war
     script:   Ghoul
-    at:       [-124.235, 24.498, -20.602, 27]
+    region:   w_267
     level:    [68, 68]
   17146128:
     template: Bogy
-    at:       [-297.833, 24.267, 298.186, 127]
+    region:   nw_272
     level:    [70, 73]
   17146129:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [547.976, 24.500, 24.423, 134]
+    region:   e_273
     level:    [65, 66]
   17146130:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [558.681, 24.500, 22.434, 124]
+    region:   e_273
     level:    [65, 66]
   17146131:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [604.869, 24.500, 16.706, 24]
+    region:   e_273
     level:    [65, 66]
   17146132:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [609.221, 24.438, 211.846, 193]
+    region:   e_276
     level:    [65, 66]
   17146133:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [609.367, 23.949, 197.344, 54]
+    region:   e_276
     level:    [65, 66]
   17146134:
     template: Bogy
-    at:       [609.322, 24.486, 214.907, 200]
+    region:   e_276
     level:    [70, 73]
   17146135:
     template: Moor_Hound
-    at:       [577.776, 24.422, 195.374, 87]
+    region:   e_276
     level:    [69, 74]
   17146136:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [551.963, 24.499, -267.935, 116]
+    region:   se_280
     level:    [65, 66]
   17146137:
     template: Night_Bats_PMS
     script:   Night_Bats
-    at:       [525.879, 24.499, -273.037, 179]
+    region:   se_280
     level:    [65, 66]
   17146138:
     template: Bogy
-    at:       [541.639, 24.490, -268.913, 120]
+    region:   se_280
     level:    [70, 73]
   17146139:
     template: Moor_Hound
-    at:       [535.375, 24.495, -273.461, 216]
+    region:   se_280
     level:    [69, 74]
   17146140:
     template: Sprite
-    at:       [233.791, 24.499, 333.148, 95]
+    region:   n_284
     level:    [61, 63]
   17146141:
     template: Sprite
-    at:       [286.738, 24.048, -13.069, 30]
+    region:   c_285
     level:    [61, 63]
   17146142:
     template: Sprite
-    at:       [-360.468, 24.191, -304.376, 7]
+    region:   sw_286
     level:    [61, 63]
   17146143:
     template: Goblin_Toxophilite
-    at:       [-208.476, 24.428, 424.273, 159]
+    region:   n_287
     level:    [66, 69]
   17146144:
     template: Goblin_Mine
@@ -5336,7 +5336,7 @@ spawns:
     level:    [62, 62]
   17146145:
     template: Goblin_Toxophilite
-    at:       [164.112, 24.478, 35.457, 94]
+    region:   c_289
     level:    [66, 69]
   17146146:
     template: Goblin_Mine
@@ -5489,22 +5489,31 @@ spawns:
     level:    [1, 1]
   17146188:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146189:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146190:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146191:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146192:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146193:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146194:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146195:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146196:
     template: 1st_Iron_Musketeer
+    region:   ne_332
   17146197:
     template: Maximilian
     level:    [1, 1]
@@ -5611,42 +5620,43 @@ spawns:
     template: 8th_Iron_Musketeer
   17146237:
     template: Sonia
+    region:   ne_332
     level:    [70, 70]
   17146238:
     template: Field_Musician_Guard
-    at:       [477.455, 24.227, 388.585, 13]
+    region:   ne_332
     level:    [70, 70]
   17146239:
     template: Field_Musician_Guard
-    at:       [426.284, 23.998, 388.751, 97]
+    region:   ne_332
     level:    [70, 70]
   17146240:
     template: Field_Musician_Guard
-    at:       [448.654, 24.049, 372.639, 146]
+    region:   ne_332
     level:    [70, 70]
   17146241:
     template: Field_Musician_Guard
-    at:       [476.874, 24.158, 397.177, 3]
+    region:   ne_332
     level:    [70, 70]
   17146242:
     template: Field_Musician_Guard
-    at:       [419.395, 24.148, 396.824, 51]
+    region:   ne_332
     level:    [70, 70]
   17146243:
     template: Field_Musician_Guard
-    at:       [461.617, 24.024, 392.777, 164]
+    region:   ne_332
     level:    [70, 70]
   17146244:
     template: Field_Musician_Guard
-    at:       [442.460, 24.110, 376.513, 135]
+    region:   ne_332
     level:    [70, 70]
   17146245:
     template: Field_Musician_Guard
-    at:       [467.202, 24.252, 386.641, 36]
+    region:   ne_332
     level:    [70, 70]
   17146246:
     template: Field_Musician_Guard
-    at:       [448.060, 23.868, 407.966, 196]
+    region:   ne_332
     level:    [70, 70]
   17146247:
     template: 4th_Legionnaire
@@ -5739,27 +5749,27 @@ spawns:
     template: 1st_Legion_Mercenary
   17146279:
     template: Field_Woundpatcher
-    at:       [435.920, 24.281, 413.364, 217]
+    region:   ne_332
     level:    [60, 60]
   17146280:
     template: Field_Woundpatcher
-    at:       [423.042, 23.967, 386.653, 14]
+    region:   ne_332
     level:    [60, 60]
   17146281:
     template: Field_Woundpatcher
-    at:       [445.634, 24.249, 403.310, 114]
+    region:   ne_332
     level:    [60, 60]
   17146282:
     template: Field_Woundpatcher
-    at:       [437.784, 24.142, 397.814, 86]
+    region:   ne_332
     level:    [60, 60]
   17146283:
     template: Field_Woundpatcher
-    at:       [438.476, 24.150, 400.208, 105]
+    region:   ne_332
     level:    [60, 60]
   17146284:
     template: Field_Woundpatcher
-    at:       [419.491, 24.070, 387.519, 105]
+    region:   ne_332
     level:    [60, 60]
   17146285:
     template: Republic_Supplier

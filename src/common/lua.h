@@ -23,7 +23,7 @@
 
 #include <sol/sol.hpp>
 
-extern sol::state lua;
+extern sol::state& lua;
 
 void lua_init();
 void lua_cleanup();

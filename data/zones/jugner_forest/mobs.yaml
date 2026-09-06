@@ -2620,981 +2620,985 @@ spawns:
     level:    [27, 29]
   17203206:
     template: Knight_Crab
-    at:       [-181.000, -0.100, 441.000, 68]
+    region:   n_6
     level:    [35, 35]
   17203207:
     template: Knight_Crab
-    at:       [-167.580, 0.354, 456.594, 127]
+    region:   n_6
     level:    [35, 35]
   17203208:
     template: Knight_Crab
-    at:       [-181.442, 0.085, 458.466, 32]
+    region:   n_6
     level:    [35, 35]
   17203209:
     template: Knight_Crab
-    at:       [-191.000, -0.100, 481.000, 127]
+    region:   n_6
     level:    [35, 35]
   17203210:
     template: Knight_Crab
-    at:       [-183.000, -0.100, 471.000, 8]
+    region:   n_6
     level:    [35, 35]
   17203211:
     template: Knight_Crab
-    at:       [-158.182, -0.272, 479.933, 127]
+    region:   n_6
     level:    [35, 35]
   17203212:
     template: Knight_Crab
-    at:       [-199.000, -0.100, 447.000, 127]
+    region:   n_6
     level:    [35, 35]
   17203213:
     template: Knight_Crab
-    at:       [-165.000, -0.100, 434.000, 127]
+    region:   n_6
     level:    [35, 35]
   17203214:
     template: Knight_Crab
-    at:       [-162.514, 0.416, 458.331, 127]
+    region:   n_6
     level:    [35, 35]
   17203215:
     template: Knight_Crab
-    at:       [-160.162, 0.248, 470.313, 127]
+    region:   n_6
     level:    [35, 35]
   17203216:
     template: King_Arthro
-    at:       [-144.000, 5.000, 474.000, 93]
+    region:   region_67
     level:    [55, 55]
   17203217:
     template: Stag_Beetle
-    at:       [-486.549, -0.491, -442.085, 58]
+    region:   sw_17
     level:    [22, 23]
   17203218:
     template: Stag_Beetle
-    at:       [-441.338, -1.202, -387.056, 127]
+    region:   sw_17
     level:    [22, 23]
   17203219:
     template: Wandering_Sapling
-    at:       [-455.000, -0.100, -439.000, 54]
+    region:   sw_17
     level:    [15, 16]
   17203220:
     template: Wandering_Sapling
-    at:       [-421.321, 0.394, -402.087, 91]
+    region:   sw_17
     level:    [15, 16]
   17203221:
     template: Wandering_Sapling
-    at:       [-424.544, 2.594, -420.503]
+    region:   sw_17
     level:    [15, 16]
   17203222:
     template: Wandering_Sapling
-    at:       [-398.624, -0.465, -438.867, 113]
+    region:   sw_17
     level:    [15, 16]
   17203223:
     template: Wandering_Sapling
-    at:       [-480.388, -1.116, -349.509, 127]
+    region:   sw_17
     level:    [15, 16]
   17203224:
     template: Brutal_Sheep
-    at:       [-483.414, -0.354, -448.827, 127]
+    region:   sw_17
     level:    [20, 21]
   17203225:
     template: Brutal_Sheep
-    at:       [-521.717, -0.843, -410.474, 2]
+    region:   sw_17
     level:    [20, 21]
   17203226:
     template: Scavenging_Hound
-    at:       [-512.716, 0.612, -424.661, 164]
+    region:   sw_17
     level:    [22, 23]
   17203227:
     template: Stag_Beetle
-    at:       [-313.503, -0.534, -346.715, 127]
+    region:   sw_27
     level:    [22, 23]
   17203228:
     template: Stag_Beetle
-    at:       [-403.890, -0.149, -341.631, 106]
+    region:   sw_27
     level:    [22, 23]
   17203229:
     template: Wandering_Sapling
-    at:       [-304.177, -4.003, -301.595, 127]
+    region:   sw_27
     level:    [15, 16]
   17203230:
     template: Wandering_Sapling
-    at:       [-365.215, -0.447, -290.687, 110]
+    region:   sw_27
     level:    [15, 16]
   17203231:
     template: Wandering_Sapling
-    at:       [-344.940, -0.647, -254.034, 106]
+    region:   sw_27
     level:    [15, 16]
   17203232:
     template: Wandering_Sapling
-    at:       [-333.419, -0.851, -209.097, 127]
+    region:   sw_27
     level:    [15, 16]
   17203233:
     template: Brutal_Sheep
-    at:       [-327.273, -0.477, -219.411, 40]
+    region:   sw_27
     level:    [20, 21]
   17203234:
     template: Brutal_Sheep
-    at:       [-309.685, -2.112, -350.515, 44]
+    region:   sw_27
     level:    [20, 21]
   17203235:
     template: Brutal_Sheep
-    at:       [-409.936, -1.321, -343.822, 112]
+    region:   sw_27
     level:    [20, 21]
   17203236:
     template: Scavenging_Hound
-    at:       [-352.845, -1.182, -395.931, 72]
+    region:   sw_27
     level:    [22, 23]
   17203237:
     template: Jugner_Funguar
-    at:       [-346.280, 4.958, -319.217, 69]
+    region:   sw_37
     level:    [24, 25]
   17203238:
     template: Jugner_Funguar
-    at:       [-332.386, 4.227, -307.485, 127]
+    region:   sw_37
     level:    [24, 25]
   17203239:
     template: Jugner_Funguar
-    at:       [-373.155, 5.372, -356.504, 66]
+    region:   sw_37
     level:    [24, 25]
   17203240:
     template: Forest_Leech
-    at:       [-368.945, 6.702, -342.683, 112]
+    region:   sw_37
     level:    [21, 22]
   17203241:
     template: Forest_Leech
-    at:       [-346.586, 3.940, -311.593, 127]
+    region:   sw_37
     level:    [21, 22]
   17203242:
     template: Forest_Leech
-    at:       [-351.000, 6.000, -340.000, 127]
+    region:   sw_37
     level:    [21, 22]
   17203243:
     template: Stag_Beetle
-    at:       [-330.027, -0.753, -168.662, 55]
+    region:   w_43
     level:    [22, 23]
   17203244:
     template: Stag_Beetle
-    at:       [-217.275, -3.145, -67.138, 127]
+    region:   w_43
     level:    [22, 23]
   17203245:
     template: Stag_Beetle
-    at:       [-247.831, -0.589, -177.674, 59]
+    region:   w_43
     level:    [22, 23]
   17203246:
     template: Screamer
-    at:       [-323.990, -0.257, -126.933, 86]
+    region:   w_43
     level:    [17, 18]
   17203247:
     template: Screamer
-    at:       [-330.377, -0.734, -138.560, 76]
+    region:   w_43
     level:    [17, 18]
   17203248:
     template: Wandering_Sapling
-    at:       [-320.961, -0.792, -164.284, 41]
+    region:   w_43
     level:    [15, 16]
   17203249:
     template: Wandering_Sapling
-    at:       [-154.404, -0.476, -158.484, 127]
+    region:   w_43
     level:    [15, 16]
   17203250:
     template: Brutal_Sheep
-    at:       [-152.588, -0.010, -156.448, 8]
+    region:   w_43
     level:    [20, 21]
   17203251:
     template: Brutal_Sheep
-    at:       [-248.634, 0.078, -118.946, 83]
+    region:   w_43
     level:    [20, 21]
   17203252:
     template: Walking_Tree
-    at:       [-260.656, -0.175, -197.937, 127]
+    region:   w_43
     level:    [27, 28]
   17203253:
     template: Scavenging_Hound
-    at:       [-193.197, -1.405, -93.869, 235]
+    region:   w_43
     level:    [22, 23]
   17203254:
     template: Jugner_Funguar
-    at:       [-263.680, 4.220, -222.881, 127]
+    region:   w_54
     level:    [24, 25]
   17203255:
     template: Jugner_Funguar
-    at:       [-224.915, 6.544, -214.044, 94]
+    region:   w_55
     level:    [24, 25]
   17203256:
     template: Forest_Leech
-    at:       [-219.772, 5.432, -185.540, 127]
+    region:   w_54
     level:    [21, 22]
   17203257:
     template: Forest_Leech
-    at:       [-242.127, 6.901, -220.973, 127]
+    region:   w_55
     level:    [21, 22]
   17203258:
     template: Forest_Leech
-    at:       [-219.682, 5.056, -181.907, 54]
+    region:   w_55
     level:    [21, 22]
   17203259:
     template: Jugner_Funguar
-    at:       [-207.130, -0.111, -151.818, 100]
+    region:   w_59
     level:    [24, 25]
   17203260:
     template: Jugner_Funguar
-    at:       [-216.693, 5.223, -120.139, 127]
+    region:   w_59
     level:    [24, 25]
   17203261:
     template: Jugner_Funguar
-    at:       [-231.764, -0.048, -160.692, 120]
+    region:   w_59
     level:    [24, 25]
   17203262:
     template: Forest_Leech
-    at:       [-231.637, -0.067, -160.362, 120]
+    region:   w_59
     level:    [21, 22]
   17203263:
     template: Forest_Leech
-    at:       [-259.657, 6.714, -73.650, 23]
+    region:   w_59
     level:    [21, 22]
   17203264:
     template: Forest_Leech
-    at:       [-261.878, 3.930, -56.626, 127]
+    region:   w_59
     level:    [21, 22]
   17203265:
     template: Forest_Tiger
-    at:       [-318.638, -0.306, -128.971, 127]
+    region:   sw_65
     level:    [24, 25]
   17203266:
     template: Forest_Tiger
-    at:       [-298.290, -3.713, -294.712, 127]
+    region:   sw_65
     level:    [24, 25]
   17203267:
     template: Orcish_Grunt
-    at:       [-277.445, -0.423, -232.704, 127]
+    region:   sw_65
     level:    [16, 17]
   17203268:
     template: Orcish_Stonechucker
-    at:       [-293.285, -4.486, -165.290, 127]
+    region:   sw_65
     level:    [16, 17]
   17203269:
     template: Orcish_Neckchopper
-    at:       [-363.507, -0.561, -240.277, 127]
+    region:   sw_65
     level:    [16, 17]
   17203270:
     template: Orcish_Fighter
-    at:       [-446.533, 0.141, -461.684, 37]
+    region:   sw_65
     level:    [21, 22]
   17203271:
     template: Orcish_Cursemaker
-    at:       [-486.000, 0.000, -402.000, 127]
+    region:   sw_65
     level:    [22, 22]
   17203272:
     template: Orcish_Serjeant
-    at:       [-164.097, 0.045, -145.450, 127]
+    region:   sw_65
     level:    [21, 22]
   17203273:
     template: Ghoul_war
     script:   Ghoul
+    region:   sw_65
     level:    [16, 17]
   17203274:
     template: Zombie_blm
     script:   Zombie
-    at:       [-467.444, -0.739, -368.853, 127]
+    region:   sw_65
     level:    [16, 17]
   17203275:
     template: Thunder_Elemental
-    at:       [-414.483, -1.422, -355.749, 191]
+    region:   sw_65
     level:    [27, 29]
   17203276:
     template: Stag_Beetle
-    at:       [-328.942, -0.470, 56.844, 127]
+    region:   w_76
     level:    [22, 23]
   17203277:
     template: Stag_Beetle
-    at:       [-318.553, -0.467, 81.186, 127]
+    region:   w_76
     level:    [22, 23]
   17203278:
     template: Wandering_Sapling
-    at:       [-266.466, 3.871, 104.161, 127]
+    region:   w_76
     level:    [15, 16]
   17203279:
     template: Wandering_Sapling
-    at:       [-298.076, 6.005, 101.844, 127]
+    region:   w_76
     level:    [15, 16]
   17203280:
     template: Wandering_Sapling
-    at:       [-335.332, -1.217, -10.567, 67]
+    region:   w_76
     level:    [15, 16]
   17203281:
     template: Wandering_Sapling
-    at:       [-274.781, -0.467, 81.917, 127]
+    region:   w_76
     level:    [15, 16]
   17203282:
     template: Brutal_Sheep
-    at:       [-289.932, 7.870, 128.573, 127]
+    region:   w_76
     level:    [20, 21]
   17203283:
     template: Brutal_Sheep
-    at:       [-294.475, 9.978, 133.342, 127]
+    region:   w_76
     level:    [20, 21]
   17203284:
     template: Jugner_Funguar
-    at:       [-299.118, 6.696, 48.294, 57]
+    region:   w_84
     level:    [24, 25]
   17203285:
     template: Jugner_Funguar
-    at:       [-300.263, 7.051, 38.264, 127]
+    region:   w_84
     level:    [24, 25]
   17203286:
     template: Forest_Leech
-    at:       [-312.208, 0.916, 25.971, 107]
+    region:   w_84
     level:    [21, 22]
   17203287:
     template: Forest_Leech
-    at:       [-299.186, 6.604, 48.272, 127]
+    region:   w_84
     level:    [21, 22]
   17203288:
     template: Forest_Leech
-    at:       [-296.937, 3.922, 14.291, 74]
+    region:   w_84
     level:    [21, 22]
   17203289:
     template: Stag_Beetle
-    at:       [-226.729, 4.201, 159.070, 10]
+    region:   w_89
     level:    [22, 23]
   17203290:
     template: Stag_Beetle
-    at:       [-367.215, -0.620, 190.053, 127]
+    region:   w_89
     level:    [22, 23]
   17203291:
     template: Wandering_Sapling
-    at:       [-241.839, 2.193, 180.614, 127]
+    region:   w_89
     level:    [15, 16]
   17203292:
     template: Wandering_Sapling
-    at:       [-253.920, 5.527, 167.542, 127]
+    region:   w_89
     level:    [15, 16]
   17203293:
     template: Wandering_Sapling
-    at:       [-295.216, 7.707, 145.387, 127]
+    region:   w_89
     level:    [15, 16]
   17203294:
     template: Wandering_Sapling
-    at:       [-224.256, 0.060, 189.293, 127]
+    region:   w_89
     level:    [15, 16]
   17203295:
     template: Brutal_Sheep
-    at:       [-218.982, 0.793, 189.121, 127]
+    region:   w_89
     level:    [20, 21]
   17203296:
     template: Brutal_Sheep
-    at:       [-214.894, 0.648, 172.762, 127]
+    region:   w_89
     level:    [20, 21]
   17203297:
     template: Scavenging_Hound
-    at:       [-278.434, 4.831, 173.891, 115]
+    region:   w_89
     level:    [22, 23]
   17203298:
     template: Stag_Beetle
-    at:       [-95.617, 0.311, 114.614, 127]
+    region:   c_98
     level:    [22, 23]
   17203299:
     template: Stag_Beetle
-    at:       [-6.579, -4.265, 107.794, 127]
+    region:   c_98
     level:    [22, 23]
   17203300:
     template: Stag_Beetle
-    at:       [-52.450, -0.100, 43.953, 127]
+    region:   c_98
     level:    [22, 23]
   17203301:
     template: Wandering_Sapling
-    at:       [6.152, -0.503, 81.679, 103]
+    region:   c_98
     level:    [15, 16]
   17203302:
     template: Wandering_Sapling
-    at:       [-132.879, -2.400, 130.235, 127]
+    region:   c_98
     level:    [15, 16]
   17203303:
     template: Wandering_Sapling
-    at:       [-46.832, 1.684, 61.370, 127]
+    region:   c_98
     level:    [15, 16]
   17203304:
     template: Wandering_Sapling
-    at:       [2.144, -0.289, 33.631, 127]
+    region:   c_98
     level:    [15, 16]
   17203305:
     template: Brutal_Sheep
-    at:       [-59.511, 1.589, 78.700, 127]
+    region:   c_98
     level:    [20, 21]
   17203306:
     template: Brutal_Sheep
-    at:       [-136.100, -2.363, 130.568, 127]
+    region:   c_98
     level:    [20, 21]
   17203307:
     template: Scavenging_Hound
-    at:       [-21.138, -1.934, 133.956, 86]
+    region:   c_98
     level:    [22, 23]
   17203308:
     template: Jugner_Funguar
-    at:       [-104.368, 3.504, 105.769, 56]
+    region:   c_108
     level:    [24, 25]
   17203309:
     template: Jugner_Funguar
-    at:       [-123.246, 5.073, 94.443, 74]
+    region:   c_108
     level:    [24, 25]
   17203310:
     template: Forest_Leech
-    at:       [-116.284, 7.007, 100.649, 45]
+    region:   c_108
     level:    [21, 22]
   17203311:
     template: Forest_Leech
-    at:       [-129.710, 6.860, 101.721, 29]
+    region:   c_108
     level:    [21, 22]
   17203312:
     template: Jugner_Funguar
-    at:       [47.837, -0.224, -0.673, 127]
+    region:   c_112
     level:    [24, 25]
   17203313:
     template: Jugner_Funguar
-    at:       [4.242, 6.983, 59.801, 28]
+    region:   c_112
     level:    [24, 25]
   17203314:
     template: Jugner_Funguar
-    at:       [-21.241, 4.850, 59.121, 112]
+    region:   c_112
     level:    [24, 25]
   17203315:
     template: Forest_Leech
-    at:       [6.593, 7.013, 56.883, 127]
+    region:   c_112
     level:    [21, 22]
   17203316:
     template: Forest_Leech
-    at:       [59.267, 4.675, 18.892, 127]
+    region:   c_112
     level:    [21, 22]
   17203317:
     template: Forest_Leech
-    at:       [27.673, 6.452, 24.715, 127]
+    region:   c_112
     level:    [21, 22]
   17203318:
     template: Forest_Tiger
-    at:       [-167.977, 1.837, 99.293, 127]
+    region:   c_118
     level:    [24, 25]
   17203319:
     template: Forest_Tiger
-    at:       [-292.819, 8.204, 120.412, 94]
+    region:   c_118
     level:    [24, 25]
   17203320:
     template: Goblin_Mugger
-    at:       [-166.064, 0.077, 129.445, 127]
+    region:   c_118
     level:    [21, 22]
   17203321:
     template: Goblin_Ambusher
-    at:       [-340.562, -3.166, 51.088, 127]
+    region:   c_118
     level:    [16, 17]
   17203322:
     template: Goblin_Leecher
-    at:       [-50.701, -0.498, 90.041, 120]
+    region:   c_118
     level:    [21, 22]
   17203323:
     template: Goblin_Tinkerer
-    at:       [13.341, -0.882, 12.348, 127]
+    region:   c_118
     level:    [16, 17]
   17203324:
     template: Goblin_Gambler
-    at:       [-256.860, 5.348, 106.010, 117]
+    region:   c_118
     level:    [21, 22]
   17203325:
     template: Goblin_Butcher
-    at:       [-184.545, -0.307, 107.038, 127]
+    region:   c_118
     level:    [16, 17]
   17203326:
     template: Ghoul_war
     script:   Ghoul
-    at:       [-27.630, 0.155, 69.012, 79]
+    region:   c_118
     level:    [16, 17]
   17203327:
     template: Zombie_blm
     script:   Zombie
-    at:       [-61.207, 1.788, 89.480, 127]
+    region:   c_118
     level:    [21, 22]
   17203328:
     template: Thunder_Elemental
-    at:       [-281.810, 0.203, 8.466, 189]
+    region:   c_118
     level:    [27, 29]
   17203329:
     template: Snipper
-    at:       [-492.154, 8.047, 279.137, 16]
+    region:   nw_129
     level:    [19, 20]
   17203330:
     template: Snipper
-    at:       [-490.595, 7.110, 326.604, 127]
+    region:   nw_129
     level:    [19, 20]
   17203331:
     template: Land_Pugil
-    at:       [-515.088, 7.524, 321.950, 110]
+    region:   nw_129
     level:    [19, 20]
   17203332:
     template: Land_Pugil
-    at:       [-479.000, 8.000, 309.000, 14]
+    region:   nw_129
     level:    [19, 20]
   17203333:
     template: Bogy
-    at:       [-474.886, 6.651, 326.386, 127]
+    region:   nw_129
     level:    [25, 26]
   17203334:
     template: Water_Elemental
-    at:       [-500.637, 8.492, 281.808, 127]
+    region:   nw_129
     level:    [27, 29]
   17203335:
     template: Stag_Beetle
-    at:       [-1.000, -0.100, 274.000, 15]
+    region:   n_135
     level:    [22, 23]
   17203336:
     template: Stag_Beetle
-    at:       [-152.644, -0.646, 280.821, 127]
+    region:   n_135
     level:    [22, 23]
   17203337:
     template: Screamer
-    at:       [-58.018, -0.395, 338.201, 127]
+    region:   n_135
     level:    [17, 18]
   17203338:
     template: Screamer
-    at:       [-18.424, 0.411, 325.723, 127]
+    region:   n_135
     level:    [17, 18]
   17203339:
     template: Wandering_Sapling
-    at:       [8.552, 1.223, 288.255, 66]
+    region:   n_135
     level:    [15, 16]
   17203340:
     template: Wandering_Sapling
-    at:       [-81.000, -0.100, 354.000, 127]
+    region:   n_135
     level:    [15, 16]
   17203341:
     template: Brutal_Sheep
-    at:       [-12.979, -2.284, 302.219, 127]
+    region:   n_135
     level:    [20, 21]
   17203342:
     template: Brutal_Sheep
-    at:       [-75.000, -0.010, 319.000, 127]
+    region:   n_135
     level:    [20, 21]
   17203343:
     template: Snipper
-    at:       [-14.551, 0.603, 325.919, 119]
+    region:   n_143
     level:    [19, 20]
   17203344:
     template: Snipper
-    at:       [-76.284, 2.734, 370.433, 20]
+    region:   n_143
     level:    [19, 20]
   17203345:
     template: Land_Pugil
+    region:   n_143
     level:    [19, 20]
   17203346:
     template: Land_Pugil
-    at:       [-29.000, 4.000, 332.000, 41]
+    region:   n_143
     level:    [19, 20]
   17203347:
     template: Bogy
-    at:       [-142.531, -0.223, 372.135, 127]
+    region:   n_147
     level:    [25, 26]
   17203348:
     template: Water_Elemental
-    at:       [-13.701, 0.385, 330.864, 127]
+    region:   n_143
     level:    [27, 29]
   17203349:
     template: Snipper
-    at:       [106.745, 1.270, 425.970, 32]
+    region:   n_149
     level:    [19, 20]
   17203350:
     template: Snipper
-    at:       [76.000, 5.000, 375.000, 56]
+    region:   n_149
     level:    [19, 20]
   17203351:
     template: Land_Pugil
-    at:       [115.944, 0.066, 394.781, 66]
+    region:   n_149
     level:    [19, 20]
   17203352:
     template: Land_Pugil
-    at:       [103.732, 3.165, 419.004, 54]
+    region:   n_149
     level:    [19, 20]
   17203353:
     template: Bogy
-    at:       [77.701, 0.415, 474.031, 127]
+    region:   n_149
     level:    [25, 26]
   17203354:
     template: Water_Elemental
-    at:       [105.628, 3.643, 439.504, 127]
+    region:   n_149
     level:    [27, 29]
   17203355:
     template: Stag_Beetle
-    at:       [171.238, 1.363, -15.358, 127]
+    region:   c_155
     level:    [22, 23]
   17203356:
     template: Screamer
-    at:       [59.464, -1.193, -55.392, 127]
+    region:   c_155
     level:    [17, 18]
   17203357:
     template: Screamer
-    at:       [116.226, -0.048, -93.775, 57]
+    region:   c_155
     level:    [17, 18]
   17203358:
     template: Screamer
-    at:       [123.574, 0.451, 166.172, 127]
+    region:   c_155
     level:    [17, 18]
   17203359:
     template: Wandering_Sapling
-    at:       [91.276, -0.686, -15.679, 127]
+    region:   c_155
     level:    [15, 16]
   17203360:
     template: Wandering_Sapling
-    at:       [161.402, 0.203, -9.635, 127]
+    region:   c_155
     level:    [15, 16]
   17203361:
     template: Brutal_Sheep
-    at:       [168.471, 0.366, 1.601, 127]
+    region:   c_155
     level:    [20, 21]
   17203362:
     template: Brutal_Sheep
-    at:       [163.577, 0.984, -28.064, 127]
+    region:   c_155
     level:    [20, 21]
   17203363:
     template: Scavenging_Hound
-    at:       [104.576, 2.607, 171.745, 2]
+    region:   c_155
     level:    [22, 23]
   17203364:
     template: Jugner_Funguar
-    at:       [145.004, 4.216, 22.830, 19]
+    region:   c_166
     level:    [24, 25]
   17203365:
     template: Jugner_Funguar
-    at:       [122.952, 4.991, 28.192, 124]
+    region:   c_166
     level:    [24, 25]
   17203366:
     template: Forest_Leech
-    at:       [128.852, 3.340, 28.181, 90]
+    region:   c_166
     level:    [21, 22]
   17203367:
     template: Forest_Leech
-    at:       [132.353, 6.085, 20.119, 127]
+    region:   c_166
     level:    [21, 22]
   17203368:
     template: Stag_Beetle
-    at:       [-66.653, -0.960, -167.013, 127]
+    region:   c_168
     level:    [22, 23]
   17203369:
     template: Screamer
-    at:       [-35.917, -0.860, -212.018, 69]
+    region:   c_168
     level:    [17, 18]
   17203370:
     template: Screamer
-    at:       [114.848, -0.290, -124.722, 83]
+    region:   c_168
     level:    [17, 18]
   17203371:
     template: Screamer
-    at:       [-1.305, 0.281, -257.878, 73]
+    region:   c_168
     level:    [17, 18]
   17203372:
     template: Wandering_Sapling
-    at:       [-75.036, -0.505, -201.984, 127]
+    region:   c_168
     level:    [15, 16]
   17203373:
     template: Brutal_Sheep
-    at:       [-12.174, -0.623, -238.774, 30]
+    region:   c_168
     level:    [20, 21]
   17203374:
     template: Brutal_Sheep
-    at:       [-47.470, -0.370, -201.782, 101]
+    region:   c_168
     level:    [20, 21]
   17203375:
     template: Stag_Beetle
-    at:       [-56.184, 0.011, -350.440, 12]
+    region:   s_175
     level:    [22, 23]
   17203376:
     template: Screamer
-    at:       [-77.000, -0.100, -373.000, 127]
+    region:   s_175
     level:    [17, 18]
   17203377:
     template: Screamer
-    at:       [-121.041, -0.200, -390.800, 127]
+    region:   s_175
     level:    [17, 18]
   17203378:
     template: Screamer
-    at:       [-76.491, -8.044, -479.031, 127]
+    region:   s_175
     level:    [17, 18]
   17203379:
     template: Wandering_Sapling
-    at:       [-89.763, -8.905, -505.230, 122]
+    region:   s_175
     level:    [15, 16]
   17203380:
     template: Wandering_Sapling
-    at:       [-69.394, 2.594, -422.199, 127]
+    region:   s_175
     level:    [15, 16]
   17203381:
     template: Brutal_Sheep
-    at:       [-110.052, -1.719, -342.944, 127]
+    region:   s_175
     level:    [20, 21]
   17203382:
     template: Brutal_Sheep
-    at:       [-39.000, -0.010, -353.000, 127]
+    region:   s_175
     level:    [20, 21]
   17203383:
     template: Snipper
-    at:       [123.652, -0.246, 200.019, 127]
+    region:   c_183
     level:    [19, 20]
   17203384:
     template: Snipper
-    at:       [142.921, 0.594, 184.510, 16]
+    region:   c_183
     level:    [19, 20]
   17203385:
     template: Snipper
-    at:       [129.669, 1.127, 181.535, 82]
+    region:   c_183
     level:    [19, 20]
   17203386:
     template: Land_Pugil
-    at:       [77.292, -0.180, 165.504, 80]
+    region:   c_183
     level:    [19, 20]
   17203387:
     template: Land_Pugil
-    at:       [69.133, -0.923, 170.872, 127]
+    region:   c_183
     level:    [19, 20]
   17203388:
     template: Land_Pugil
-    at:       [103.590, 0.549, 200.879, 127]
+    region:   c_183
     level:    [19, 20]
   17203389:
     template: Snipper
-    at:       [153.113, 0.498, -119.906, 127]
+    region:   c_189
     level:    [19, 20]
   17203390:
     template: Land_Pugil
-    at:       [176.790, 0.001, -112.012, 127]
+    region:   c_189
     level:    [19, 20]
   17203391:
     template: Snipper
-    at:       [17.263, -0.252, -215.902, 127]
+    region:   s_191
     level:    [19, 20]
   17203392:
     template: Land_Pugil
-    at:       [121.866, -0.314, -202.114, 86]
+    region:   s_191
     level:    [19, 20]
   17203393:
     template: Snipper
-    at:       [-28.595, -7.073, -533.500, 77]
+    region:   s_193
     level:    [19, 20]
   17203394:
     template: Snipper
-    at:       [-48.458, -8.403, -555.806, 127]
+    region:   s_193
     level:    [19, 20]
   17203395:
     template: Land_Pugil
-    at:       [-10.716, -8.444, -533.209, 127]
+    region:   s_193
     level:    [19, 20]
   17203396:
     template: Land_Pugil
-    at:       [-28.055, -7.026, -533.702, 127]
+    region:   s_193
     level:    [19, 20]
   17203397:
     template: Forest_Tiger
-    at:       [-121.324, 0.254, -374.264, 86]
+    region:   s_197
     level:    [24, 25]
   17203398:
     template: Orcish_Grunt
-    at:       [-89.733, -3.987, -453.776, 79]
+    region:   s_197
     level:    [16, 17]
   17203399:
     template: Orcish_Stonechucker
-    at:       [-90.646, -0.413, -351.899, 24]
+    region:   s_197
     level:    [16, 17]
   17203400:
     template: Orcish_Neckchopper
-    at:       [131.238, -0.845, -65.458, 69]
+    region:   s_197
     level:    [16, 17]
   17203401:
     template: Orcish_Fighter
-    at:       [-26.085, 0.461, -336.253, 127]
+    region:   s_197
     level:    [21, 22]
   17203402:
     template: Orcish_Cursemaker
-    at:       [48.614, -0.041, -200.038, 86]
+    region:   s_197
     level:    [21, 22]
   17203403:
     template: Orcish_Serjeant
-    at:       [-7.862, -0.242, -208.725, 127]
+    region:   s_197
     level:    [21, 22]
   17203404:
     template: Ghoul_war
     script:   Ghoul
-    at:       [-99.057, 0.279, -365.504, 127]
+    region:   s_197
     level:    [16, 17]
   17203405:
     template: Zombie_blm
     script:   Zombie
-    at:       [-8.231, -0.457, -242.167, 127]
+    region:   s_197
     level:    [21, 22]
   17203406:
     template: Will-o-the-Wisp
-    at:       [102.831, -0.045, 159.810, 7]
+    region:   c_183
     level:    [24, 25]
   17203407:
     template: Orcish_Grunt
-    at:       [-171.444, -2.921, -423.883, 127]
+    region:   s_207
     level:    [16, 17]
   17203408:
     template: Orcish_Stonechucker
-    at:       [-201.273, -8.273, -492.004, 127]
+    region:   s_207
     level:    [16, 17]
   17203409:
     template: Orcish_Neckchopper
-    at:       [-181.852, -6.686, -469.303, 5]
+    region:   s_207
     level:    [16, 17]
   17203410:
     template: Orcish_Fighter
-    at:       [-192.900, -3.760, -457.319, 127]
+    region:   s_207
     level:    [21, 22]
   17203411:
     template: Orcish_Fighter
-    at:       [-193.727, -0.383, -439.764, 127]
+    region:   s_207
     level:    [21, 22]
   17203412:
     template: Orcish_Cursemaker
-    at:       [-173.710, -0.385, -443.941, 127]
+    region:   s_207
     level:    [21, 22]
   17203413:
     template: Orcish_Serjeant
-    at:       [-139.000, -0.100, -398.000, 127]
+    region:   s_207
     level:    [21, 22]
   17203414:
     template: Meteormauler_Zhagtegg
-    at:       [-232.300, -8.180, -571.660, 221]
+    region:   s_207
     level:    [37, 40]
   17203415:
     template: Orcish_Cursemaker_3
     script:   Orcish_Cursemaker
-    at:       [-142.000, -1.000, -411.000, 127]
+    region:   s_207
     level:    [25, 25]
   17203416:
     template: Orcish_Serjeant_3
     script:   Orcish_Serjeant
-    at:       [-160.949, -1.982, -392.046, 127]
+    region:   s_207
     level:    [24, 25]
   17203417:
     template: Snipper
-    at:       [-38.098, -16.064, -610.356, 13]
+    region:   s_217
     level:    [19, 20]
   17203418:
     template: Snipper
-    at:       [-67.786, -15.708, -593.466, 92]
+    region:   s_217
     level:    [19, 20]
   17203419:
     template: Land_Pugil
-    at:       [-65.658, -14.156, -584.181, 127]
+    region:   s_217
     level:    [19, 20]
   17203420:
     template: Land_Pugil
-    at:       [-50.166, -16.268, -606.709, 127]
+    region:   s_217
     level:    [19, 20]
   17203421:
     template: Bogy
-    at:       [7.247, -17.477, -595.894, 65]
+    region:   s_217
     level:    [25, 26]
   17203422:
     template: Water_Elemental
-    at:       [-8.196, -15.777, -588.725, 127]
+    region:   s_193
     level:    [27, 29]
   17203423:
     template: Forest_Tiger
-    at:       [-47.585, -19.117, -648.590, 127]
+    region:   region_68
     level:    [24, 25]
   17203424:
     template: Forest_Tiger
-    at:       [-53.845, -20.874, -654.784, 106]
+    region:   region_68
     level:    [24, 25]
   17203425:
     template: Stag_Beetle
-    at:       [-28.516, -4.882, -457.200, 16]
+    region:   s_225
     level:    [22, 23]
   17203426:
     template: Screamer
-    at:       [-14.046, -7.892, -528.575, 127]
+    region:   s_225
     level:    [17, 18]
   17203427:
     template: Screamer
-    at:       [-34.868, 2.087, -389.940, 127]
+    region:   s_225
     level:    [17, 18]
   17203428:
     template: Screamer
-    at:       [-34.763, 2.225, -388.771, 127]
+    region:   s_225
     level:    [17, 18]
   17203429:
     template: Brutal_Sheep
-    at:       [37.867, -0.208, -324.206, 26]
+    region:   s_225
     level:    [20, 21]
   17203430:
     template: Stag_Beetle
-    at:       [167.082, 0.438, -270.784, 1]
+    region:   s_230
     level:    [22, 23]
   17203431:
     template: Screamer
-    at:       [205.000, -8.000, -426.000, 8]
+    region:   s_230
     level:    [17, 18]
   17203432:
     template: Screamer
-    at:       [199.812, -2.396, -370.343, 17]
+    region:   s_230
     level:    [17, 18]
   17203433:
     template: Screamer
-    at:       [154.851, -0.044, -259.719, 127]
+    region:   s_230
     level:    [17, 18]
   17203434:
     template: Brutal_Sheep
-    at:       [189.057, -3.507, -344.603, 127]
+    region:   s_230
     level:    [20, 21]
   17203435:
     template: Forest_Tiger
-    at:       [-52.768, -6.714, -468.317, 127]
+    region:   s_235
     level:    [24, 25]
   17203436:
     template: Forest_Tiger
-    at:       [195.195, -1.062, -360.968, 84]
+    region:   s_235
     level:    [24, 25]
   17203437:
     template: Orcish_Grunt
-    at:       [50.114, -0.184, -240.493, 127]
+    region:   s_235
     level:    [16, 17]
   17203438:
     template: Orcish_Stonechucker
-    at:       [212.926, 1.887, -334.793, 57]
+    region:   s_235
     level:    [16, 17]
   17203439:
     template: Orcish_Neckchopper
-    at:       [146.642, 0.576, -227.858, 127]
+    region:   s_235
     level:    [16, 17]
   17203440:
     template: Orcish_Fighter
-    at:       [-47.952, -6.456, -463.572, 127]
+    region:   s_235
     level:    [21, 22]
   17203441:
     template: Orcish_Cursemaker
-    at:       [243.974, -8.257, -478.280, 127]
+    region:   s_235
     level:    [21, 22]
   17203442:
     template: Orcish_Serjeant
-    at:       [133.598, -0.381, -219.910, 127]
+    region:   s_235
     level:    [21, 22]
   17203443:
     template: Ghoul_war
     script:   Ghoul
-    at:       [-42.065, -8.565, -476.637, 127]
+    region:   s_235
     level:    [16, 17]
   17203444:
     template: Zombie_blm
     script:   Zombie
+    region:   s_235
     level:    [21, 22]
   17203445:
     template: Will-o-the-Wisp
-    at:       [212.124, -0.141, -374.747, 210]
+    region:   s_245
     level:    [24, 25]
   17203446:
     template: Scavenging_Hound
+    region:   s_230
     level:    [22, 23]
   17203447:
     template: Fraelissa
-    at:       [9.320, -0.493, -371.654, 4]
+    region:   s_245
     level:    [34, 35]
   17203448:
     template: Fradubio
-    at:       [76.573, -0.901, -246.241, 4]
+    region:   s_245
     level:    [59, 60]
   17203449:
     template: Duessa
@@ -3618,780 +3622,785 @@ spawns:
     level:    [54, 54]
   17203454:
     template: Snipper
-    at:       [187.730, 0.171, -310.319, 127]
+    region:   s_254
     level:    [19, 20]
   17203455:
     template: Snipper
-    at:       [205.542, 2.282, -307.884, 83]
+    region:   s_254
     level:    [19, 20]
   17203456:
     template: Land_Pugil
-    at:       [196.016, 0.046, -281.713, 56]
+    region:   s_254
     level:    [19, 20]
   17203457:
     template: Land_Pugil
-    at:       [228.000, -0.200, -298.000, 2]
+    region:   s_254
     level:    [19, 20]
   17203458:
     template: Snipper
-    at:       [276.000, -15.000, -525.000, 37]
+    region:   se_258
     level:    [19, 20]
   17203459:
     template: Land_Pugil
-    at:       [256.385, -13.462, -533.550, 83]
+    region:   se_258
     level:    [19, 20]
   17203460:
     template: Snipper
-    at:       [281.643, -17.193, -559.917, 60]
+    region:   se_260
     level:    [19, 20]
   17203461:
     template: Snipper
-    at:       [250.350, -14.905, -530.317, 127]
+    region:   se_260
     level:    [19, 20]
   17203462:
     template: Land_Pugil
-    at:       [298.623, -16.412, -512.526, 4]
+    region:   se_260
     level:    [19, 20]
   17203463:
     template: Land_Pugil
-    at:       [251.670, -17.079, -511.027, 127]
+    region:   se_260
     level:    [19, 20]
   17203464:
     template: Bogy
-    at:       [248.386, -17.344, -504.192, 127]
+    region:   se_260
     level:    [25, 26]
   17203465:
     template: Water_Elemental
-    at:       [246.856, -17.062, -503.959, 127]
+    region:   se_258
     level:    [27, 29]
   17203466:
     template: Stag_Beetle
-    at:       [301.650, -3.339, -333.811, 127]
+    region:   se_266
     level:    [22, 23]
   17203467:
     template: Stag_Beetle
-    at:       [306.488, -8.009, -383.645, 21]
+    region:   se_266
     level:    [22, 23]
   17203468:
     template: Wandering_Sapling
-    at:       [322.790, -8.260, -384.349, 53]
+    region:   se_266
     level:    [15, 16]
   17203469:
     template: Wandering_Sapling
-    at:       [301.000, -7.000, -406.000, 127]
+    region:   se_266
     level:    [15, 16]
   17203470:
     template: Wandering_Sapling
-    at:       [302.513, -14.231, -442.508]
+    region:   se_266
     level:    [15, 16]
   17203471:
     template: Brutal_Sheep
-    at:       [231.392, -7.723, -398.107, 127]
+    region:   se_266
     level:    [20, 21]
   17203472:
     template: Brutal_Sheep
-    at:       [329.158, -4.676, -340.108, 127]
+    region:   se_266
     level:    [20, 21]
   17203473:
     template: Walking_Tree
-    at:       [309.485, -7.577, -354.754, 101]
+    region:   se_266
     level:    [27, 28]
   17203474:
     template: Scavenging_Hound
-    at:       [247.226, -3.611, -379.283, 125]
+    region:   se_266
     level:    [22, 23]
   17203475:
     template: Supplespine_Mujwuj
-    at:       [50.114, -0.184, -240.493, 127]
+    region:   se_292
     level:    [50, 50]
   17203476:
     template: Stag_Beetle
-    at:       [477.529, -8.222, -268.915, 127]
+    region:   se_276
     level:    [22, 23]
   17203477:
     template: Stag_Beetle
-    at:       [409.344, -16.039, -391.269, 127]
+    region:   se_276
     level:    [22, 23]
   17203478:
     template: Wandering_Sapling
-    at:       [433.447, -9.097, -324.256, 127]
+    region:   se_276
     level:    [15, 16]
   17203479:
     template: Wandering_Sapling
-    at:       [432.619, -16.040, -396.059, 127]
+    region:   se_276
     level:    [15, 16]
   17203480:
     template: Wandering_Sapling
-    at:       [435.364, -8.491, -359.499, 49]
+    region:   se_276
     level:    [15, 16]
   17203481:
     template: Brutal_Sheep
-    at:       [427.821, -9.499, -346.105, 127]
+    region:   se_276
     level:    [20, 21]
   17203482:
     template: Brutal_Sheep
-    at:       [412.052, -13.554, -385.619, 127]
+    region:   se_276
     level:    [20, 21]
   17203483:
     template: Scavenging_Hound
-    at:       [412.250, -13.583, -385.550, 209]
+    region:   se_276
     level:    [22, 23]
   17203484:
     template: Stag_Beetle
-    at:       [264.665, 0.038, -156.324, 44]
+    region:   c_284
     level:    [22, 23]
   17203485:
     template: Screamer
-    at:       [245.220, -1.078, -126.221, 127]
+    region:   c_284
     level:    [17, 18]
   17203486:
     template: Wandering_Sapling
-    at:       [208.608, -1.398, -102.051, 127]
+    region:   c_284
     level:    [15, 16]
   17203487:
     template: Wandering_Sapling
-    at:       [186.444, -0.121, -117.545, 24]
+    region:   c_284
     level:    [15, 16]
   17203488:
     template: Wandering_Sapling
-    at:       [205.765, -0.279, -254.331, 2]
+    region:   c_284
     level:    [15, 16]
   17203489:
     template: Brutal_Sheep
-    at:       [183.965, 0.349, -199.394, 127]
+    region:   c_284
     level:    [20, 21]
   17203490:
     template: Brutal_Sheep
-    at:       [187.378, -0.199, -119.018, 127]
+    region:   c_284
     level:    [20, 21]
   17203491:
     template: Scavenging_Hound
-    at:       [214.848, -4.148, -259.123, 30]
+    region:   c_284
     level:    [22, 23]
   17203492:
     template: Forest_Tiger
-    at:       [194.127, 0.284, -235.659, 35]
+    region:   se_292
     level:    [24, 25]
   17203493:
     template: Orcish_Grunt
-    at:       [434.152, -9.488, -280.957, 127]
+    region:   se_292
     level:    [16, 17]
   17203494:
     template: Orcish_Stonechucker
-    at:       [359.079, -8.438, -333.106, 115]
+    region:   se_292
     level:    [16, 17]
   17203495:
     template: Orcish_Neckchopper
-    at:       [424.600, -7.910, -358.124, 127]
+    region:   se_292
     level:    [16, 17]
   17203496:
     template: Orcish_Fighter
-    at:       [279.671, -7.684, -420.773, 93]
+    region:   se_292
     level:    [21, 22]
   17203497:
     template: Orcish_Cursemaker
-    at:       [169.877, -0.236, -117.480, 127]
+    region:   se_292
     level:    [22, 22]
   17203498:
     template: Orcish_Serjeant
-    at:       [285.176, -8.292, -384.524, 127]
+    region:   se_292
     level:    [21, 22]
   17203499:
     template: Ghoul_war
     script:   Ghoul
-    at:       [226.547, -2.926, -138.020, 56]
+    region:   se_292
     level:    [16, 17]
   17203500:
     template: Zombie_blm
     script:   Zombie
+    region:   se_292
     level:    [21, 22]
   17203501:
     template: Will-o-the-Wisp
-    at:       [318.081, -15.956, -450.034, 196]
+    region:   se_266
     level:    [24, 25]
   17203502:
     template: Boggart
-    at:       [276.370, -12.807, -342.771, 73]
+    region:   se_302
     level:    [25, 26]
   17203503:
     template: Boggart
-    at:       [277.960, -13.695, -333.422, 76]
+    region:   se_302
     level:    [25, 26]
   17203504:
     template: Snipper
-    at:       [316.625, 0.419, -174.346, 57]
+    region:   e_304
     level:    [19, 20]
   17203505:
     template: Snipper
-    at:       [284.027, -0.793, -169.585, 127]
+    region:   e_304
     level:    [19, 20]
   17203506:
     template: Land_Pugil
-    at:       [304.000, 2.000, -194.000, 71]
+    region:   e_304
     level:    [19, 20]
   17203507:
     template: Land_Pugil
-    at:       [316.000, -0.100, -180.000, 15]
+    region:   e_304
     level:    [19, 20]
   17203508:
     template: Bogy
-    at:       [311.543, -1.084, -210.094, 123]
+    region:   e_304
     level:    [25, 26]
   17203509:
     template: Water_Elemental
-    at:       [321.833, -0.025, -188.876, 127]
+    region:   e_304
     level:    [27, 29]
   17203510:
     template: Boggart
-    at:       [346.533, -1.902, -195.983, 127]
+    region:   e_310
     level:    [25, 26]
   17203511:
     template: Boggart
-    at:       [309.905, -5.090, -242.002, 63]
+    region:   e_310
     level:    [25, 26]
   17203512:
     template: Boggart
-    at:       [337.171, -6.513, -221.572, 97]
+    region:   e_310
     level:    [25, 26]
   17203513:
     template: Jugner_Funguar
-    at:       [439.532, -0.549, -160.937, 34]
+    region:   e_313
     level:    [24, 25]
   17203514:
     template: Jugner_Funguar
-    at:       [453.987, -1.789, -153.816, 127]
+    region:   e_313
     level:    [24, 25]
   17203515:
     template: Jugner_Funguar
-    at:       [460.000, 3.000, -123.000, 9]
+    region:   e_313
     level:    [24, 25]
   17203516:
     template: Jugner_Funguar
-    at:       [463.963, -2.388, -174.703, 105]
+    region:   e_313
     level:    [24, 25]
   17203517:
     template: Jugner_Funguar
-    at:       [465.000, 1.000, -114.000, 23]
+    region:   e_313
     level:    [24, 25]
   17203518:
     template: Jugner_Funguar
-    at:       [481.119, -0.285, -153.254, 127]
+    region:   e_313
     level:    [24, 25]
   17203519:
     template: Stag_Beetle
-    at:       [195.970, 0.608, -61.862, 127]
+    region:   c_319
     level:    [22, 23]
   17203520:
     template: Stag_Beetle
-    at:       [198.456, -0.493, 0.273, 48]
+    region:   c_319
     level:    [22, 23]
   17203521:
     template: Screamer
-    at:       [75.720, -0.376, 314.619, 127]
+    region:   c_319
     level:    [17, 18]
   17203522:
     template: Screamer
-    at:       [107.365, 0.280, 203.743, 127]
+    region:   c_319
     level:    [17, 18]
   17203523:
     template: Screamer
-    at:       [221.477, -2.177, -10.568, 104]
+    region:   c_319
     level:    [17, 18]
   17203524:
     template: Wandering_Sapling
-    at:       [171.954, -0.157, 102.283, 127]
+    region:   c_319
     level:    [15, 16]
   17203525:
     template: Wandering_Sapling
-    at:       [36.558, 0.669, 302.676, 34]
+    region:   c_319
     level:    [15, 16]
   17203526:
     template: Brutal_Sheep
-    at:       [200.881, -0.462, -57.100, 127]
+    region:   c_319
     level:    [20, 21]
   17203527:
     template: Brutal_Sheep
-    at:       [212.422, -3.020, 96.026, 127]
+    region:   c_319
     level:    [20, 21]
   17203528:
     template: Stag_Beetle
-    at:       [350.856, -0.933, 165.274, 73]
+    region:   e_328
     level:    [22, 23]
   17203529:
     template: Stag_Beetle
-    at:       [320.004, -0.058, 53.325, 75]
+    region:   e_329
     level:    [22, 23]
   17203530:
     template: Wandering_Sapling
-    at:       [341.421, 1.300, 100.145, 127]
+    region:   e_329
     level:    [15, 16]
   17203531:
     template: Wandering_Sapling
-    at:       [335.660, -0.414, 157.197, 106]
+    region:   e_329
     level:    [15, 16]
   17203532:
     template: Wandering_Sapling
-    at:       [277.932, -1.513, 118.789, 11]
+    region:   e_329
     level:    [15, 16]
   17203533:
     template: Brutal_Sheep
-    at:       [275.504, -0.481, 138.749, 127]
+    region:   e_329
     level:    [20, 21]
   17203534:
     template: Brutal_Sheep
-    at:       [257.060, -1.614, 87.350, 127]
+    region:   e_329
     level:    [20, 21]
   17203535:
     template: Scavenging_Hound
+    region:   e_329
     level:    [22, 23]
   17203536:
     template: Forest_Tiger
-    at:       [325.443, -1.678, 40.651, 82]
+    region:   e_336
     level:    [24, 25]
   17203537:
     template: Forest_Tiger
-    at:       [316.655, -1.970, 35.257, 77]
+    region:   e_336
     level:    [24, 25]
   17203538:
     template: Stag_Beetle
-    at:       [216.012, 2.153, 302.857, 127]
+    region:   ne_338
     level:    [22, 23]
   17203539:
     template: Wandering_Sapling
-    at:       [185.004, -1.930, 265.227, 51]
+    region:   ne_338
     level:    [15, 16]
   17203540:
     template: Wandering_Sapling
-    at:       [257.391, -0.376, 266.918, 127]
+    region:   ne_338
     level:    [15, 16]
   17203541:
     template: Wandering_Sapling
-    at:       [192.807, -0.927, 252.992, 127]
+    region:   ne_338
     level:    [15, 16]
   17203542:
     template: Wandering_Sapling
-    at:       [203.248, 0.093, 285.642, 127]
+    region:   ne_338
     level:    [15, 16]
   17203543:
     template: Brutal_Sheep
-    at:       [243.889, -0.287, 297.285, 127]
+    region:   ne_338
     level:    [20, 21]
   17203544:
     template: Brutal_Sheep
-    at:       [233.655, -0.507, 274.010, 127]
+    region:   ne_338
     level:    [20, 21]
   17203545:
     template: Walking_Tree
-    at:       [242.488, 0.449, 264.070, 127]
+    region:   ne_338
     level:    [27, 28]
   17203546:
     template: Scavenging_Hound
+    region:   ne_338
     level:    [22, 23]
   17203547:
     template: Sappy_Sycamore
-    at:       [266.000, 0.000, 284.000, 127]
+    region:   ne_338
     level:    [41, 42]
   17203548:
     template: Jugner_Funguar
-    at:       [251.603, 3.366, 212.978, 127]
+    region:   e_349
     level:    [24, 25]
   17203549:
     template: Jugner_Funguar
-    at:       [298.692, 7.003, 153.327, 65]
+    region:   e_349
     level:    [24, 25]
   17203550:
     template: Forest_Leech
-    at:       [302.129, 5.032, 143.801, 127]
+    region:   e_349
     level:    [21, 22]
   17203551:
     template: Forest_Leech
-    at:       [278.559, 5.416, 173.170, 61]
+    region:   e_349
     level:    [21, 22]
   17203552:
     template: Stag_Beetle
-    at:       [409.233, -0.323, 162.262, 19]
+    region:   e_352
     level:    [22, 23]
   17203553:
     template: Stag_Beetle
-    at:       [383.540, 0.168, 160.292, 49]
+    region:   e_352
     level:    [22, 23]
   17203554:
     template: Wandering_Sapling
-    at:       [396.325, -0.357, 159.895, 117]
+    region:   e_352
     level:    [15, 16]
   17203555:
     template: Wandering_Sapling
-    at:       [408.789, -0.348, 163.332, 17]
+    region:   e_352
     level:    [15, 16]
   17203556:
     template: Wandering_Sapling
-    at:       [465.047, -1.752, 192.348, 127]
+    region:   e_352
     level:    [15, 16]
   17203557:
     template: Wandering_Sapling
-    at:       [411.199, -4.694, 184.688, 127]
+    region:   e_352
     level:    [15, 16]
   17203558:
     template: Brutal_Sheep
-    at:       [453.126, -4.172, 192.713, 85]
+    region:   e_352
     level:    [20, 21]
   17203559:
     template: Brutal_Sheep
-    at:       [475.742, -0.691, 193.489, 127]
+    region:   e_352
     level:    [20, 21]
   17203560:
     template: Scavenging_Hound
-    at:       [490.611, -0.319, 169.448, 42]
+    region:   e_352
     level:    [22, 23]
   17203561:
     template: Forest_Tiger
-    at:       [268.917, -0.504, 157.936, 127]
+    region:   e_361
     level:    [24, 25]
   17203562:
     template: Goblin_Mugger
-    at:       [470.573, -0.518, 174.185, 68]
+    region:   e_361
     level:    [21, 22]
   17203563:
     template: Goblin_Ambusher
-    at:       [264.070, -3.138, 312.419, 127]
+    region:   e_361
     level:    [16, 17]
   17203564:
     template: Goblin_Leecher
-    at:       [285.035, -0.141, 259.006, 90]
+    region:   e_361
     level:    [21, 22]
   17203565:
     template: Goblin_Tinkerer
-    at:       [323.786, -0.260, 111.260, 127]
+    region:   e_361
     level:    [16, 17]
   17203566:
     template: Goblin_Gambler
-    at:       [310.599, -0.511, 90.009, 127]
+    region:   e_361
     level:    [21, 22]
   17203567:
     template: Goblin_Butcher
-    at:       [252.609, 1.023, 258.211, 127]
+    region:   e_361
     level:    [16, 17]
   17203568:
     template: Ghoul_war
     script:   Ghoul
-    at:       [265.531, -2.347, 301.585, 127]
+    region:   e_361
     level:    [16, 17]
   17203569:
     template: Zombie_blm
     script:   Zombie
-    at:       [467.420, -0.556, 170.924, 127]
+    region:   e_361
     level:    [21, 22]
   17203570:
     template: Thunder_Elemental
-    at:       [252.893, 5.284, 197.902, 55]
+    region:   e_361
     level:    [27, 29]
   17203571:
     template: Jugner_Funguar
-    at:       [410.886, -0.177, 234.980, 127]
+    region:   ne_371
     level:    [24, 25]
   17203572:
     template: Jugner_Funguar
-    at:       [459.336, -0.350, 230.766, 127]
+    region:   ne_371
     level:    [24, 25]
   17203573:
     template: Jugner_Funguar
-    at:       [394.633, -0.622, 235.558, 127]
+    region:   ne_371
     level:    [24, 25]
   17203574:
     template: Jugner_Funguar
-    at:       [457.877, -2.355, 219.823, 127]
+    region:   ne_371
     level:    [24, 25]
   17203575:
     template: Jugner_Funguar
-    at:       [437.841, -1.081, 226.259, 17]
+    region:   ne_371
     level:    [24, 25]
   17203576:
     template: Jugner_Funguar
-    at:       [439.440, -0.296, 271.526, 13]
+    region:   ne_371
     level:    [24, 25]
   17203577:
     template: Jugner_Funguar
-    at:       [395.654, -0.301, 267.247, 127]
+    region:   ne_371
     level:    [24, 25]
   17203578:
     template: Jugner_Funguar
-    at:       [460.622, -2.056, 221.504, 59]
+    region:   ne_371
     level:    [24, 25]
   17203579:
     template: Jugner_Funguar
-    at:       [440.610, -0.480, 239.822, 121]
+    region:   ne_371
     level:    [24, 25]
   17203580:
     template: Jugner_Funguar
-    at:       [408.899, -0.566, 247.431, 127]
+    region:   ne_371
     level:    [24, 25]
   17203581:
     template: Stag_Beetle
-    at:       [535.504, -1.517, 152.171, 53]
+    region:   ne_382
     level:    [22, 23]
   17203582:
     template: Stag_Beetle
-    at:       [568.892, 0.296, 218.002, 127]
+    region:   ne_382
     level:    [22, 23]
   17203583:
     template: Stag_Beetle
-    at:       [567.550, -0.304, 230.711, 109]
+    region:   ne_382
     level:    [22, 23]
   17203584:
     template: Stag_Beetle
-    at:       [555.169, -0.574, 172.624, 68]
+    region:   ne_382
     level:    [22, 23]
   17203585:
     template: Panzer_Percival
-    at:       [585.027, 0.044, 203.418, 13]
+    region:   ne_382
     level:    [25, 26]
   17203586:
     template: Boggart
-    at:       [578.635, -1.257, 190.915, 127]
+    region:   ne_386
     level:    [25, 26]
   17203587:
     template: Boggart
-    at:       [553.174, -0.535, 171.070, 127]
+    region:   ne_386
     level:    [25, 26]
   17203588:
     template: Stag_Beetle
-    at:       [209.239, -0.831, 319.428, 127]
+    region:   n_388
     level:    [22, 23]
   17203589:
     template: Screamer
-    at:       [218.201, 1.015, 321.946, 127]
+    region:   n_388
     level:    [17, 18]
   17203590:
     template: Wandering_Sapling
-    at:       [198.804, 0.368, 379.857, 127]
+    region:   n_388
     level:    [15, 16]
   17203591:
     template: Wandering_Sapling
-    at:       [204.284, 0.002, 344.775, 19]
+    region:   n_388
     level:    [15, 16]
   17203592:
     template: Wandering_Sapling
-    at:       [180.857, -0.306, 342.564, 127]
+    region:   n_388
     level:    [15, 16]
   17203593:
     template: Brutal_Sheep
-    at:       [151.373, -0.907, 341.510, 42]
+    region:   n_388
     level:    [20, 21]
   17203594:
     template: Brutal_Sheep
-    at:       [189.590, -0.248, 319.314, 127]
+    region:   n_388
     level:    [20, 21]
   17203595:
     template: Scavenging_Hound
-    at:       [102.959, 2.946, 431.712, 198]
+    region:   n_388
     level:    [22, 23]
   17203596:
     template: Jugner_Funguar
-    at:       [229.675, 6.268, 378.956, 94]
+    region:   ne_396
     level:    [24, 25]
   17203597:
     template: Jugner_Funguar
-    at:       [224.984, 5.554, 363.139, 14]
+    region:   ne_396
     level:    [24, 25]
   17203598:
     template: Jugner_Funguar
-    at:       [243.032, 6.783, 379.025, 127]
+    region:   ne_396
     level:    [24, 25]
   17203599:
     template: Forest_Leech
-    at:       [246.972, 1.469, 367.769, 34]
+    region:   ne_396
     level:    [21, 22]
   17203600:
     template: Forest_Leech
-    at:       [225.948, 3.559, 346.335, 1]
+    region:   ne_396
     level:    [21, 22]
   17203601:
     template: Forest_Leech
-    at:       [216.453, 5.338, 345.295, 11]
+    region:   ne_396
     level:    [21, 22]
   17203602:
     template: Stag_Beetle
-    at:       [278.070, -1.032, 451.973, 127]
+    region:   ne_402
     level:    [22, 23]
   17203603:
     template: Stag_Beetle
-    at:       [324.553, -1.241, 364.649, 127]
+    region:   ne_402
     level:    [22, 23]
   17203604:
     template: Wandering_Sapling
-    at:       [345.469, -3.330, 388.473, 77]
+    region:   ne_402
     level:    [15, 16]
   17203605:
     template: Wandering_Sapling
-    at:       [336.910, -0.003, 451.603, 127]
+    region:   ne_402
     level:    [15, 16]
   17203606:
     template: Wandering_Sapling
-    at:       [350.453, -0.097, 431.406, 127]
+    region:   ne_402
     level:    [15, 16]
   17203607:
     template: Wandering_Sapling
-    at:       [279.925, -0.046, 391.272, 43]
+    region:   ne_402
     level:    [15, 16]
   17203608:
     template: Brutal_Sheep
-    at:       [322.312, -0.404, 474.388, 101]
+    region:   ne_402
     level:    [20, 21]
   17203609:
     template: Brutal_Sheep
-    at:       [348.132, 1.886, 453.822, 127]
+    region:   ne_402
     level:    [20, 21]
   17203610:
     template: Scavenging_Hound
+    region:   ne_402
     level:    [22, 23]
   17203611:
     template: Stag_Beetle
-    at:       [443.206, -0.106, 508.016, 109]
+    region:   ne_411
     level:    [22, 23]
   17203612:
     template: Stag_Beetle
-    at:       [447.578, -0.246, 529.386, 123]
+    region:   ne_411
     level:    [22, 23]
   17203613:
     template: Wandering_Sapling
-    at:       [408.079, -1.378, 365.169, 127]
+    region:   ne_411
     level:    [15, 16]
   17203614:
     template: Wandering_Sapling
-    at:       [432.107, -0.530, 560.422, 17]
+    region:   ne_411
     level:    [15, 16]
   17203615:
     template: Wandering_Sapling
-    at:       [441.884, -0.598, 445.014, 127]
+    region:   ne_411
     level:    [15, 16]
   17203616:
     template: Wandering_Sapling
-    at:       [489.311, -1.619, 581.602, 127]
+    region:   ne_411
     level:    [15, 16]
   17203617:
     template: Brutal_Sheep
-    at:       [419.809, -0.559, 551.337, 120]
+    region:   ne_411
     level:    [20, 21]
   17203618:
     template: Brutal_Sheep
-    at:       [509.724, 1.353, 541.722, 99]
+    region:   ne_411
     level:    [20, 21]
   17203619:
     template: Scavenging_Hound
-    at:       [476.953, -0.516, 586.987, 127]
+    region:   ne_411
     level:    [22, 23]
   17203620:
     template: Jugner_Funguar
-    at:       [421.139, 5.280, 498.013, 182]
+    region:   ne_420
     level:    [24, 25]
   17203621:
     template: Jugner_Funguar
-    at:       [422.455, 6.169, 492.610, 61]
+    region:   ne_420
     level:    [24, 25]
   17203622:
     template: Jugner_Funguar
-    at:       [422.053, 2.767, 462.964, 68]
+    region:   ne_420
     level:    [24, 25]
   17203623:
     template: Forest_Leech
-    at:       [410.000, 5.000, 470.000, 127]
+    region:   ne_420
     level:    [21, 22]
   17203624:
     template: Forest_Leech
-    at:       [426.616, 5.316, 482.723, 127]
+    region:   ne_420
     level:    [21, 22]
   17203625:
     template: Forest_Leech
-    at:       [383.386, 5.032, 462.836, 88]
+    region:   ne_420
     level:    [21, 22]
   17203626:
     template: Forest_Tiger
-    at:       [436.767, -0.450, 484.182, 61]
+    region:   ne_426
     level:    [24, 25]
   17203627:
     template: Forest_Tiger
-    at:       [432.517, -1.305, 430.399, 127]
+    region:   ne_426
     level:    [24, 25]
   17203628:
     template: Goblin_Mugger
-    at:       [396.454, -0.401, 486.946, 70]
+    region:   ne_426
     level:    [21, 22]
   17203629:
     template: Goblin_Ambusher
-    at:       [191.000, -0.100, 358.000, 13]
+    region:   ne_426
     level:    [16, 17]
   17203630:
     template: Goblin_Leecher
-    at:       [280.272, -0.414, 394.888, 126]
+    region:   ne_426
     level:    [21, 22]
   17203631:
     template: Goblin_Tinkerer
-    at:       [285.092, -1.111, 453.041, 127]
+    region:   ne_426
     level:    [16, 17]
   17203632:
     template: Goblin_Gambler
-    at:       [257.470, -0.260, 412.842, 6]
+    region:   ne_426
     level:    [21, 22]
   17203633:
     template: Goblin_Butcher
-    at:       [459.253, -0.788, 587.803, 101]
+    region:   ne_426
     level:    [16, 17]
   17203634:
     template: Ghoul_war
     script:   Ghoul
+    region:   ne_426
     level:    [16, 17]
   17203635:
     template: Zombie_blm
     script:   Zombie
-    at:       [262.618, -4.596, 321.318, 127]
+    region:   ne_426
     level:    [21, 22]
   17203636:
     template: Thunder_Elemental
-    at:       [117.386, -0.275, 363.255, 9]
+    region:   ne_426
     level:    [27, 29]
   17203637:
     template: Stag_Beetle
-    at:       [239.541, -0.365, 559.722, 127]
+    region:   ne_437
     level:    [22, 23]
   17203638:
     template: Stag_Beetle
-    at:       [296.088, -0.622, 510.656, 91]
+    region:   ne_437
     level:    [22, 23]
   17203639:
     template: Stag_Beetle
-    at:       [274.083, 0.250, 537.848]
+    region:   ne_437
     level:    [22, 23]
   17203640:
     template: Stag_Beetle
-    at:       [326.435, -0.877, 493.729, 55]
+    region:   ne_437
     level:    [22, 23]
   17203641:
     template: Stag_Beetle
-    at:       [242.000, -0.100, 528.000, 127]
+    region:   ne_437
     level:    [22, 23]
   17203642:
     template: Panzer_Percival
-    at:       [239.541, -0.365, 559.722, 127]
+    region:   ne_437
     level:    [25, 26]
   17203643:
     template: Jugner_Funguar
-    at:       [517.852, -2.598, 314.514, 58]
+    region:   ne_443
     level:    [24, 25]
   17203644:
     template: Jugner_Funguar
-    at:       [546.199, -0.485, 351.607, 127]
+    region:   ne_443
     level:    [24, 25]
   17203645:
     template: Jugner_Funguar
-    at:       [524.622, -0.344, 346.098, 127]
+    region:   ne_443
     level:    [24, 25]
   17203646:
     template: Jugner_Funguar
-    at:       [558.115, 0.195, 337.402, 39]
+    region:   ne_443
     level:    [24, 25]
   17203647:
     template: Jugner_Funguar
-    at:       [550.402, -0.134, 357.202, 1]
+    region:   ne_443
     level:    [24, 25]
   17203648:
     template: Goblin_Digger_far

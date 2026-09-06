@@ -1544,93 +1544,93 @@ spawns:
   17293319:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [154.295, 19.536, -361.910]
+    region:   se_7
     level:    [26, 27]
   17293320:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [150.404, 19.908, -364.501, 46]
+    region:   se_7
     level:    [26, 27]
   17293321:
     template: Dancing_Weapon
-    at:       [154.515, 19.888, -367.215, 127]
+    region:   se_9
     level:    [28, 29]
   17293322:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [202.526, 19.987, -152.188, 127]
+    region:   se_10
     level:    [26, 27]
   17293323:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [162.328, 19.610, -204.208, 108]
+    region:   se_10
     level:    [26, 27]
   17293324:
     template: Dancing_Weapon
-    at:       [211.774, 19.326, -164.058, 101]
+    region:   se_12
     level:    [28, 29]
   17293325:
     template: Dancing_Weapon
-    at:       [175.054, 20.370, -202.962, 127]
+    region:   se_12
     level:    [28, 29]
   17293326:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [232.845, 3.358, -60.768, 80]
+    region:   e_14
     level:    [26, 27]
   17293327:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [234.855, 2.706, -59.326, 10]
+    region:   e_14
     level:    [26, 27]
   17293328:
     template: Dancing_Weapon
-    at:       [257.587, -8.303, -27.606, 55]
+    region:   se_12
     level:    [28, 29]
   17293329:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [166.179, -20.339, -20.844, 92]
+    region:   e_17
     level:    [26, 27]
   17293330:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [155.386, -20.489, -17.656, 127]
+    region:   e_17
     level:    [26, 27]
   17293331:
     template: Clipper
-    at:       [73.138, -20.011, -16.400, 98]
+    region:   e_19
     level:    [28, 29]
   17293332:
     template: Clipper
-    at:       [128.205, -20.917, -10.987, 52]
+    region:   e_19
     level:    [28, 29]
   17293333:
     template: Clipper
-    at:       [98.359, -19.984, -8.054, 127]
+    region:   e_19
     level:    [28, 29]
   17293334:
     template: Clipper
-    at:       [97.405, -19.943, 30.225, 104]
+    region:   e_19
     level:    [28, 29]
   17293335:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [58.229, -19.703, 1.176, 127]
+    region:   e_19
     level:    [26, 27]
   17293336:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [79.295, -20.472, -38.793, 21]
+    region:   e_19
     level:    [26, 27]
   17293337:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [126.788, -20.561, -5.557, 37]
+    region:   e_25
     level:    [26, 27]
   17293338:
     template: Dark_Bats
-    at:       [97.931, -20.146, 54.796, 127]
+    region:   e_19
     level:    [26, 27]
     attributes:
       spawn:
@@ -1639,7 +1639,7 @@ spawns:
           end:    6
   17293339:
     template: Dark_Bats
-    at:       [51.297, -19.930, -18.015, 127]
+    region:   e_19
     level:    [26, 27]
     attributes:
       spawn:
@@ -1648,7 +1648,7 @@ spawns:
           end:    5
   17293340:
     template: Glow_Bat
-    at:       [93.010, -20.118, -5.074, 24]
+    region:   e_19
     level:    [28, 29]
     attributes:
       spawn:
@@ -1657,145 +1657,145 @@ spawns:
           end:    5
   17293341:
     template: Giant_Ranger
-    at:       [97.597, -19.730, 37.542, 127]
+    region:   e_19
     level:    [29, 30]
   17293342:
     template: Giant_Ascetic
-    at:       [111.750, -20.287, 38.986, 117]
+    region:   e_19
     level:    [29, 30]
   17293343:
     template: Giant_Trapper
-    at:       [84.515, -19.946, 25.945, 64]
+    region:   e_19
     level:    [29, 30]
   17293344:
     template: Gigass_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   e_19
     level:    [24, 25]
   17293345:
     template: Giant_Hunter
-    at:       [116.000, -20.500, 120.000, 127]
+    region:   e_19
     level:    [29, 30]
   17293346:
     template: Giant_Ranger
-    at:       [127.642, -19.847, 26.319, 119]
+    region:   e_19
     level:    [29, 30]
   17293347:
     template: Giant_Ascetic
-    at:       [133.000, -19.000, 92.000, 40]
+    region:   e_19
     level:    [29, 30]
   17293348:
     template: Giant_Trapper
-    at:       [81.100, -19.520, 60.416, 64]
+    region:   e_19
     level:    [29, 30]
   17293349:
     template: Gigass_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   e_19
     level:    [24, 25]
   17293350:
     template: Giant_Hunter
-    at:       [115.523, -19.538, 20.287, 83]
+    region:   e_19
     level:    [29, 30]
   17293351:
     template: Wight_war
     script:   Wight
-    at:       [100.618, -19.796, 10.374, 62]
+    region:   e_19
     level:    [28, 29]
   17293352:
     template: Wight_blm
     script:   Wight
-    at:       [67.996, -20.026, -37.896, 127]
+    region:   e_19
     level:    [28, 29]
   17293353:
     template: Light_Elemental
-    at:       [121.291, -20.500, 2.152, 58]
+    region:   e_19
     level:    [35, 36]
   17293354:
     template: Dancing_Weapon
-    at:       [132.000, -20.329, 51.000, 127]
+    region:   e_42
     level:    [28, 29]
   17293355:
     template: Clipper
-    at:       [26.713, -20.598, -65.649, 127]
+    region:   e_43
     level:    [28, 29]
   17293356:
     template: Clipper
-    at:       [-7.569, -20.255, -98.655, 69]
+    region:   e_43
     level:    [28, 29]
   17293357:
     template: Clipper
-    at:       [4.205, -19.892, -102.179, 126]
+    region:   e_43
     level:    [28, 29]
   17293358:
     template: Clipper
-    at:       [-33.394, -19.919, -63.579, 127]
+    region:   e_43
     level:    [28, 29]
   17293359:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [85.000, -19.000, -63.000, 32]
+    region:   e_43
     level:    [28, 29]
   17293360:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [68.233, -20.712, -58.283, 127]
+    region:   e_43
     level:    [28, 29]
   17293361:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [18.003, -19.775, -74.207, 108]
+    region:   e_43
     level:    [28, 29]
   17293362:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-39.253, -20.268, -63.281, 43]
+    region:   e_43
     level:    [28, 29]
   17293363:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-11.850, -20.004, -95.809, 127]
+    region:   e_43
     level:    [28, 29]
   17293364:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [25.000, -19.000, -95.000, 64]
+    region:   e_43
     level:    [28, 29]
   17293365:
     template: Banshee
-    at:       [93.812, -21.756, -57.691, 52]
+    region:   region_47
     level:    [31, 32]
   17293366:
     template: Thunder_Elemental
-    at:       [-18.441, -20.746, -56.717, 127]
+    region:   e_43
     level:    [35, 36]
   17293367:
     template: Clipper
-    at:       [51.281, -20.151, -43.546, 127]
+    region:   e_55
     level:    [28, 29]
   17293368:
     template: Clipper
-    at:       [18.827, -21.515, -20.228, 127]
+    region:   e_55
     level:    [28, 29]
   17293369:
     template: Clipper
-    at:       [127.000, -20.000, 7.000, 127]
+    region:   e_55
     level:    [28, 29]
   17293370:
     template: Clipper
-    at:       [23.850, -19.843, -7.737, 127]
+    region:   e_55
     level:    [28, 29]
   17293371:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-0.039, -20.616, 4.913, 127]
+    region:   e_59
     level:    [26, 27]
   17293372:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [40.167, -19.617, -20.335, 84]
+    region:   e_55
     level:    [26, 27]
   17293373:
     template: Dark_Bats
-    at:       [17.795, -20.564, -14.370]
+    region:   e_55
     level:    [26, 27]
     attributes:
       spawn:
@@ -1804,7 +1804,7 @@ spawns:
           end:    4
   17293374:
     template: Dark_Bats
-    at:       [2.534, -19.825, -54.687, 127]
+    region:   e_55
     level:    [26, 27]
     attributes:
       spawn:
@@ -1813,7 +1813,7 @@ spawns:
           end:    6
   17293375:
     template: Glow_Bat
-    at:       [52.197, -20.236, -42.598, 127]
+    region:   e_55
     level:    [28, 29]
     attributes:
       spawn:
@@ -1822,15 +1822,15 @@ spawns:
           end:    4
   17293376:
     template: Giant_Ranger
-    at:       [74.000, -19.000, 7.000, 119]
+    region:   e_19
     level:    [29, 30]
   17293377:
     template: Giant_Ascetic
-    at:       [-1.926, -19.806, -14.932, 127]
+    region:   e_59
     level:    [29, 30]
   17293378:
     template: Giant_Trapper
-    at:       [77.477, -20.500, 38.876, 127]
+    region:   e_19
     level:    [29, 30]
   17293379:
     template: Gigass_Leech
@@ -1838,19 +1838,19 @@ spawns:
     level:    [24, 25]
   17293380:
     template: Giant_Hunter
-    at:       [51.665, -20.414, -26.076, 75]
+    region:   e_55
     level:    [29, 30]
   17293381:
     template: Giant_Ranger
-    at:       [12.640, -20.527, -13.221, 111]
+    region:   e_55
     level:    [29, 30]
   17293382:
     template: Giant_Ascetic
-    at:       [-2.000, -20.000, -41.000, 85]
+    region:   e_55
     level:    [29, 30]
   17293383:
     template: Giant_Trapper
-    at:       [20.400, -19.578, -0.345, 21]
+    region:   e_55
     level:    [29, 30]
   17293384:
     template: Gigass_Leech
@@ -1858,55 +1858,55 @@ spawns:
     level:    [24, 25]
   17293385:
     template: Giant_Hunter
-    at:       [25.481, -20.217, -52.306, 127]
+    region:   e_59
     level:    [29, 30]
   17293386:
     template: Wight_war
     script:   Wight
-    at:       [7.254, -20.318, -49.260, 126]
+    region:   e_55
     level:    [28, 29]
   17293387:
     template: Wight_war
     script:   Wight
-    at:       [14.317, -20.471, -29.944, 17]
+    region:   e_55
     level:    [28, 29]
   17293388:
     template: Light_Elemental
-    at:       [39.310, -20.596, 6.468, 218]
+    region:   e_59
     level:    [35, 36]
   17293389:
     template: Slippery_Sucker
-    at:       [16.350, -21.300, -25.500, 60]
+    region:   e_55
     level:    [41, 42]
   17293390:
     template: Clipper
-    at:       [140.093, -20.155, 107.071, 127]
+    region:   e_78
     level:    [28, 29]
   17293391:
     template: Clipper
-    at:       [158.450, -20.491, 79.228, 127]
+    region:   e_78
     level:    [28, 29]
   17293392:
     template: Clipper
-    at:       [154.468, -20.272, 46.753, 127]
+    region:   e_78
     level:    [28, 29]
   17293393:
     template: Clipper
-    at:       [165.827, -20.386, 107.081, 127]
+    region:   e_78
     level:    [28, 29]
   17293394:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [122.702, -19.724, 100.475, 114]
+    region:   e_78
     level:    [26, 27]
   17293395:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [161.793, -20.445, 84.897, 127]
+    region:   e_78
     level:    [26, 27]
   17293396:
     template: Dark_Bats
-    at:       [128.123, -20.193, 64.695, 127]
+    region:   e_78
     level:    [26, 27]
     attributes:
       spawn:
@@ -1915,7 +1915,7 @@ spawns:
           end:    5
   17293397:
     template: Dark_Bats
-    at:       [132.243, -20.063, 116.502, 127]
+    region:   e_78
     level:    [26, 27]
     attributes:
       spawn:
@@ -1924,7 +1924,7 @@ spawns:
           end:    4
   17293398:
     template: Glow_Bat
-    at:       [146.104, -20.246, 112.231, 23]
+    region:   e_78
     level:    [28, 29]
     attributes:
       spawn:
@@ -1933,15 +1933,15 @@ spawns:
           end:    6
   17293399:
     template: Giant_Ranger
-    at:       [90.540, -20.397, 85.499, 127]
+    region:   e_78
     level:    [29, 30]
   17293400:
     template: Giant_Ascetic
-    at:       [138.488, -20.106, 69.028, 127]
+    region:   e_78
     level:    [29, 30]
   17293401:
     template: Giant_Trapper
-    at:       [169.804, -20.842, 104.269, 127]
+    region:   e_78
     level:    [29, 30]
   17293402:
     template: Gigass_Leech
@@ -1949,55 +1949,55 @@ spawns:
     level:    [24, 25]
   17293403:
     template: Giant_Hunter
-    at:       [151.342, -20.500, 108.603, 127]
+    region:   e_78
     level:    [29, 30]
   17293404:
     template: Wight_war
     script:   Wight
-    at:       [118.649, -20.477, 78.957, 127]
+    region:   e_78
     level:    [28, 29]
   17293405:
     template: Wight_blm
     script:   Wight
-    at:       [148.543, -19.992, 43.302, 127]
+    region:   e_78
     level:    [28, 29]
   17293406:
     template: Light_Elemental
-    at:       [139.842, -19.704, 115.860, 127]
+    region:   e_78
     level:    [35, 36]
   17293407:
     template: Banshee
-    at:       [203.302, -20.631, 113.160, 28]
+    region:   e_95
     level:    [31, 32]
   17293408:
     template: Banshee
-    at:       [204.455, -20.519, 117.017, 127]
+    region:   e_95
     level:    [31, 32]
   17293409:
     template: Clipper
-    at:       [114.831, -20.446, 134.955, 123]
+    region:   e_97
     level:    [28, 29]
   17293410:
     template: Clipper
-    at:       [145.320, -20.824, 138.083, 127]
+    region:   e_97
     level:    [28, 29]
   17293411:
     template: Clipper
-    at:       [108.759, -20.458, 167.470, 96]
+    region:   e_97
     level:    [28, 29]
   17293412:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [168.622, -20.796, 146.188, 127]
+    region:   e_97
     level:    [26, 27]
   17293413:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [94.104, -20.648, 176.468, 56]
+    region:   e_97
     level:    [26, 27]
   17293414:
     template: Dark_Bats
-    at:       [133.508, -20.134, 166.219, 127]
+    region:   e_97
     level:    [26, 27]
     attributes:
       spawn:
@@ -2006,7 +2006,7 @@ spawns:
           end:    6
   17293415:
     template: Glow_Bat
-    at:       [130.448, -20.350, 150.973, 60]
+    region:   e_97
     level:    [28, 29]
     attributes:
       spawn:
@@ -2015,7 +2015,7 @@ spawns:
           end:    5
   17293416:
     template: Glow_Bat
-    at:       [155.404, -20.348, 154.127, 127]
+    region:   e_97
     level:    [28, 29]
     attributes:
       spawn:
@@ -2024,15 +2024,15 @@ spawns:
           end:    4
   17293417:
     template: Giant_Ranger
-    at:       [108.174, -20.348, 166.835, 127]
+    region:   e_97
     level:    [29, 30]
   17293418:
     template: Giant_Ascetic
-    at:       [150.733, -20.274, 130.439, 104]
+    region:   e_97
     level:    [29, 30]
   17293419:
     template: Giant_Trapper
-    at:       [80.891, -20.286, 168.266, 127]
+    region:   e_97
     level:    [29, 30]
   17293420:
     template: Gigass_Leech
@@ -2040,126 +2040,126 @@ spawns:
     level:    [24, 25]
   17293421:
     template: Giant_Hunter
-    at:       [161.947, -19.796, 144.966, 19]
+    region:   e_97
     level:    [29, 30]
   17293422:
     template: Wight_war
     script:   Wight
-    at:       [145.771, -20.364, 114.513, 16]
+    region:   e_97
     level:    [28, 29]
   17293423:
     template: Wight_blm
     script:   Wight
-    at:       [133.997, -19.968, 165.512, 127]
+    region:   e_97
     level:    [28, 29]
   17293424:
     template: Light_Elemental
-    at:       [168.190, -20.220, 118.955, 5]
+    region:   e_97
     level:    [35, 36]
   17293425:
     template: Clipper
-    at:       [-118.315, -20.406, 17.336, 51]
+    region:   c_113
     level:    [28, 29]
   17293426:
     template: Clipper
-    at:       [-122.955, -20.274, 18.869, 127]
+    region:   c_113
     level:    [28, 29]
   17293427:
     template: Clipper
-    at:       [-79.159, -20.366, 17.701, 9]
+    region:   c_113
     level:    [28, 29]
   17293428:
     template: Wight_war
     script:   Wight
-    at:       [-58.427, -20.754, 13.732, 76]
+    region:   c_113
     level:    [28, 29]
   17293429:
     template: Wight_blm
     script:   Wight
-    at:       [-60.019, -20.374, 0.984, 127]
+    region:   c_113
     level:    [28, 29]
   17293430:
     template: Clipper
-    at:       [-34.386, -19.546, 107.177, 127]
+    region:   c_118
     level:    [28, 29]
   17293431:
     template: Clipper
-    at:       [-44.323, -20.952, 128.315, 127]
+    region:   c_118
     level:    [28, 29]
   17293432:
     template: Clipper
-    at:       [-13.000, -19.000, 121.000, 127]
+    region:   c_118
     level:    [28, 29]
   17293433:
     template: Clipper
-    at:       [-40.070, -19.514, 99.493, 116]
+    region:   c_118
     level:    [28, 29]
   17293434:
     template: Clipper
-    at:       [-31.033, -20.369, 91.914, 51]
+    region:   c_118
     level:    [28, 29]
   17293435:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-0.237, -20.500, 120.259, 127]
+    region:   c_118
     level:    [26, 27]
   17293436:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-9.000, -19.000, 77.000, 88]
+    region:   c_118
     level:    [26, 27]
   17293437:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-33.680, -20.359, 83.788, 127]
+    region:   c_118
     level:    [26, 27]
   17293438:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-32.522, -20.515, 125.889, 127]
+    region:   c_118
     level:    [26, 27]
   17293439:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-50.277, -21.257, 99.448, 127]
+    region:   e_127
     level:    [26, 27]
   17293440:
     template: Banshee
-    at:       [-8.638, -19.998, 94.708, 108]
+    region:   c_128
     level:    [31, 32]
   17293441:
     template: Banshee
-    at:       [-35.267, -19.591, 104.986, 127]
+    region:   c_128
     level:    [31, 32]
   17293442:
     template: Clipper
-    at:       [29.783, -20.276, 225.066, 127]
+    region:   e_130
     level:    [28, 29]
   17293443:
     template: Clipper
-    at:       [56.030, -19.987, 198.334, 127]
+    region:   e_130
     level:    [28, 29]
   17293444:
     template: Clipper
-    at:       [37.017, -20.207, 210.765, 49]
+    region:   e_130
     level:    [28, 29]
   17293445:
     template: Clipper
-    at:       [-20.705, -20.299, 261.622, 115]
+    region:   e_130
     level:    [28, 29]
   17293446:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [-7.408, -20.661, 238.485, 56]
+    region:   e_130
     level:    [26, 27]
   17293447:
     template: Land_Worm_Qufim
     script:   Land_Worm
-    at:       [25.322, -20.148, 247.269, 127]
+    region:   e_130
     level:    [26, 27]
   17293448:
     template: Dark_Bats
-    at:       [16.206, -20.554, 222.769, 22]
+    region:   e_130
     level:    [26, 27]
     attributes:
       spawn:
@@ -2168,7 +2168,7 @@ spawns:
           end:    5
   17293449:
     template: Dark_Bats
-    at:       [50.482, -20.320, 209.640, 127]
+    region:   e_130
     level:    [26, 27]
     attributes:
       spawn:
@@ -2177,7 +2177,7 @@ spawns:
           end:    4
   17293450:
     template: Glow_Bat
-    at:       [-5.017, -20.578, 203.191, 127]
+    region:   e_130
     level:    [28, 29]
     attributes:
       spawn:
@@ -2186,15 +2186,15 @@ spawns:
           end:    6
   17293451:
     template: Giant_Ranger
-    at:       [11.573, -20.561, 224.654, 38]
+    region:   e_130
     level:    [29, 30]
   17293452:
     template: Giant_Ascetic
-    at:       [-5.341, -20.068, 214.995, 127]
+    region:   e_130
     level:    [29, 30]
   17293453:
     template: Giant_Trapper
-    at:       [67.965, -20.090, 201.971, 127]
+    region:   e_130
     level:    [29, 30]
   17293454:
     template: Gigass_Leech
@@ -2202,163 +2202,163 @@ spawns:
     level:    [24, 25]
   17293455:
     template: Giant_Hunter
-    at:       [0.510, -20.454, 245.121, 10]
+    region:   e_130
     level:    [29, 30]
   17293456:
     template: Wight_war
     script:   Wight
-    at:       [50.569, -21.260, 264.128, 127]
+    region:   e_130
     level:    [28, 29]
   17293457:
     template: Wight_blm
     script:   Wight
-    at:       [40.916, -19.883, 254.015, 127]
+    region:   e_130
     level:    [28, 29]
   17293458:
     template: Clipper
-    at:       [4.000, -20.000, 281.000, 9]
+    region:   ne_146
     level:    [28, 29]
   17293459:
     template: Clipper
-    at:       [9.000, -20.000, 267.000, 107]
+    region:   ne_146
     level:    [28, 29]
   17293460:
     template: Clipper
-    at:       [8.000, -19.000, 272.000, 94]
+    region:   ne_146
     level:    [28, 29]
   17293461:
     template: Clipper
-    at:       [-2.695, -19.775, 294.761, 109]
+    region:   ne_146
     level:    [28, 29]
   17293462:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [41.000, -20.000, 286.000, 127]
+    region:   ne_146
     level:    [28, 29]
   17293463:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-2.906, -20.257, 310.320, 127]
+    region:   ne_146
     level:    [28, 29]
   17293464:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [5.722, -20.519, 318.156, 34]
+    region:   ne_146
     level:    [28, 29]
   17293465:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [8.958, -20.395, 318.346, 127]
+    region:   ne_146
     level:    [28, 29]
   17293466:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [19.251, -21.636, 289.331, 35]
+    region:   ne_146
     level:    [28, 29]
   17293467:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [13.000, -20.327, 301.000, 127]
+    region:   ne_146
     level:    [28, 29]
   17293468:
     template: Banshee
-    at:       [-8.542, -20.773, 300.196, 99]
+    region:   region_43
     level:    [31, 32]
   17293469:
     template: Thunder_Elemental
-    at:       [15.900, -21.316, 293.636, 127]
+    region:   region_43
     level:    [35, 36]
   17293470:
     template: Clipper
-    at:       [-210.276, -19.546, -18.915, 71]
+    region:   region_51
     level:    [28, 29]
   17293471:
     template: Clipper
-    at:       [-301.420, -20.515, 58.317, 127]
+    region:   region_51
     level:    [28, 29]
   17293472:
     template: Clipper
-    at:       [-330.418, -19.675, 50.818, 39]
+    region:   c_158
     level:    [28, 29]
   17293473:
     template: Clipper
-    at:       [-220.840, -20.054, -5.086, 65]
+    region:   c_158
     level:    [28, 29]
   17293474:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-209.178, -19.657, -18.833, 115]
+    region:   c_158
     level:    [28, 29]
   17293475:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-295.000, -19.000, 23.000, 127]
+    region:   c_158
     level:    [28, 29]
   17293476:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-201.795, -20.234, -20.957, 37]
+    region:   c_158
     level:    [28, 29]
   17293477:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-226.000, -19.000, 10.000, 52]
+    region:   c_158
     level:    [28, 29]
   17293478:
     template: Acrophies
-    at:       [-337.272, -20.362, 43.476, 127]
+    region:   c_158
     level:    [33, 34]
   17293479:
     template: Acrophies
-    at:       [-338.573, -20.418, 37.145, 73]
+    region:   c_158
     level:    [33, 34]
   17293480:
     template: Acrophies
-    at:       [-215.274, -20.524, 28.980, 127]
+    region:   c_158
     level:    [33, 34]
   17293481:
     template: Acrophies
-    at:       [-268.192, -20.066, 35.315, 127]
+    region:   c_158
     level:    [33, 34]
   17293482:
     template: Banshee
-    at:       [-292.246, -20.813, 50.106, 127]
+    region:   region_44
     level:    [31, 32]
   17293483:
     template: Banshee
-    at:       [-244.268, -20.527, 43.688, 80]
+    region:   c_158
     level:    [31, 32]
   17293484:
     template: Thunder_Elemental
-    at:       [-281.007, -20.646, 87.674, 127]
+    region:   c_158
     level:    [35, 36]
   17293485:
     template: Atkorkamuy
-    at:       [-200.381, -20.821, -8.813, 92]
+    region:   c_158
     level:    [73, 74]
   17293486:
     template: Kraken
-    at:       [-265.044, -4.116, 26.452, 82]
+    region:   region_45
     level:    [37, 37]
   17293487:
     template: Clipper
-    at:       [-205.046, -20.309, 71.582, 127]
+    region:   c_175
     level:    [28, 29]
   17293488:
     template: Clipper
-    at:       [-163.906, -20.522, 36.138, 121]
+    region:   c_175
     level:    [28, 29]
   17293489:
     template: Clipper
-    at:       [-202.887, -20.445, 84.563, 127]
+    region:   c_175
     level:    [28, 29]
   17293490:
     template: Clipper
-    at:       [-155.116, -20.374, 48.954, 127]
+    region:   c_175
     level:    [28, 29]
   17293491:
     template: Dark_Bats
-    at:       [-208.629, -20.743, 70.208, 127]
+    region:   c_175
     level:    [26, 27]
     attributes:
       spawn:
@@ -2367,7 +2367,7 @@ spawns:
           end:    6
   17293492:
     template: Dark_Bats
-    at:       [-166.723, -20.917, 86.685, 72]
+    region:   c_175
     level:    [26, 27]
     attributes:
       spawn:
@@ -2376,15 +2376,15 @@ spawns:
           end:    5
   17293493:
     template: Acrophies
-    at:       [-173.199, -20.105, 82.409, 127]
+    region:   c_175
     level:    [33, 34]
   17293494:
     template: Acrophies
-    at:       [-207.187, -20.330, 37.518, 127]
+    region:   c_175
     level:    [33, 34]
   17293495:
     template: Glow_Bat
-    at:       [-169.356, -20.541, 31.888, 127]
+    region:   c_175
     level:    [28, 29]
     attributes:
       spawn:
@@ -2393,75 +2393,75 @@ spawns:
           end:    5
   17293496:
     template: Giant_Ranger
-    at:       [-203.012, -19.587, 141.747, 61]
+    region:   c_175
     level:    [29, 30]
   17293497:
     template: Giant_Ascetic
-    at:       [-183.256, -19.704, 35.952, 127]
+    region:   c_175
     level:    [29, 30]
   17293498:
     template: Giant_Trapper
-    at:       [-155.357, -19.821, 56.320, 41]
+    region:   c_186
     level:    [29, 30]
   17293499:
     template: Gigass_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   c_186
     level:    [24, 25]
   17293500:
     template: Giant_Hunter
-    at:       [-205.806, -20.480, 71.884, 102]
+    region:   c_175
     level:    [29, 30]
   17293501:
     template: Wight_war
     script:   Wight
-    at:       [-211.072, -20.926, 63.614, 127]
+    region:   c_175
     level:    [28, 29]
   17293502:
     template: Wight_war
     script:   Wight
-    at:       [-165.873, -20.399, 74.991, 127]
+    region:   c_175
     level:    [28, 29]
   17293503:
     template: Wight_blm
     script:   Wight
-    at:       [-188.438, -21.307, 101.146, 127]
+    region:   c_175
     level:    [28, 29]
   17293504:
     template: Light_Elemental
-    at:       [-174.144, -20.287, 56.401, 127]
+    region:   c_175
     level:    [35, 36]
   17293505:
     template: Clipper
-    at:       [4.000, -19.000, 90.000, 64]
+    region:   c_193
     level:    [28, 29]
   17293506:
     template: Wight_war
     script:   Wight
-    at:       [-59.981, -20.746, 169.939, 127]
+    region:   c_193
     level:    [28, 29]
   17293507:
     template: Clipper
-    at:       [-204.842, -19.907, 217.130, 89]
+    region:   c_195
     level:    [28, 29]
   17293508:
     template: Clipper
-    at:       [-247.290, -20.308, 267.122, 127]
+    region:   c_195
     level:    [28, 29]
   17293509:
     template: Clipper
-    at:       [-230.245, -20.189, 214.686, 127]
+    region:   c_195
     level:    [28, 29]
   17293510:
     template: Clipper
-    at:       [-199.598, -19.549, 220.712, 66]
+    region:   c_195
     level:    [28, 29]
   17293511:
     template: Clipper
-    at:       [-178.389, -21.370, 220.464, 127]
+    region:   c_195
     level:    [28, 29]
   17293512:
     template: Dark_Bats
-    at:       [-193.434, -20.381, 193.800, 127]
+    region:   c_195
     level:    [26, 27]
     attributes:
       spawn:
@@ -2470,7 +2470,7 @@ spawns:
           end:    4
   17293513:
     template: Dark_Bats
-    at:       [-132.884, -20.448, 226.253, 127]
+    region:   c_195
     level:    [26, 27]
     attributes:
       spawn:
@@ -2479,19 +2479,19 @@ spawns:
           end:    6
   17293514:
     template: Acrophies
-    at:       [-146.361, -20.277, 229.592, 127]
+    region:   c_195
     level:    [33, 34]
   17293515:
     template: Acrophies
-    at:       [-251.752, -20.387, 234.141, 127]
+    region:   c_195
     level:    [33, 34]
   17293516:
     template: Acrophies
-    at:       [-124.312, -20.409, 208.198, 25]
+    region:   c_195
     level:    [33, 34]
   17293517:
     template: Glow_Bat
-    at:       [-179.304, -19.763, 207.884, 82]
+    region:   c_195
     level:    [28, 29]
     attributes:
       spawn:
@@ -2500,7 +2500,7 @@ spawns:
           end:    4
   17293518:
     template: Glow_Bat
-    at:       [-205.430, -20.268, 211.144, 127]
+    region:   c_195
     level:    [28, 29]
     attributes:
       spawn:
@@ -2509,15 +2509,15 @@ spawns:
           end:    6
   17293519:
     template: Giant_Ranger
-    at:       [-187.000, -19.000, 359.000, 127]
+    region:   c_195
     level:    [29, 30]
   17293520:
     template: Giant_Ascetic
-    at:       [-177.398, -20.682, 190.872, 72]
+    region:   c_195
     level:    [29, 30]
   17293521:
     template: Giant_Trapper
-    at:       [-202.000, -19.000, 176.000, 23]
+    region:   c_195
     level:    [29, 30]
   17293522:
     template: Gigass_Leech
@@ -2525,19 +2525,19 @@ spawns:
     level:    [24, 25]
   17293523:
     template: Giant_Hunter
-    at:       [-201.834, -20.500, 200.950, 109]
+    region:   c_195
     level:    [29, 30]
   17293524:
     template: Giant_Ranger
-    at:       [-185.000, -19.000, 71.000, 73]
+    region:   c_195
     level:    [29, 30]
   17293525:
     template: Giant_Ascetic
-    at:       [-172.299, -20.432, 227.098, 87]
+    region:   c_195
     level:    [29, 30]
   17293526:
     template: Giant_Trapper
-    at:       [-155.590, -20.479, 199.600, 107]
+    region:   c_195
     level:    [29, 30]
   17293527:
     template: Gigass_Leech
@@ -2545,70 +2545,70 @@ spawns:
     level:    [24, 25]
   17293528:
     template: Giant_Hunter
-    at:       [-133.569, -20.469, 224.158, 127]
+    region:   c_195
     level:    [29, 30]
   17293529:
     template: Wight_war
     script:   Wight
-    at:       [-124.359, -20.357, 204.701, 127]
+    region:   c_195
     level:    [28, 29]
   17293530:
     template: Wight_blm
     script:   Wight
-    at:       [-226.132, -20.794, 189.292, 45]
+    region:   c_195
     level:    [28, 29]
   17293531:
     template: Wight_blm
     script:   Wight
-    at:       [-204.294, -20.408, 195.454, 127]
+    region:   c_195
     level:    [28, 29]
   17293532:
     template: Light_Elemental
-    at:       [-258.393, -20.497, 264.160, 127]
+    region:   c_195
     level:    [35, 36]
   17293533:
     template: Dancing_Weapon
-    at:       [-138.180, -20.928, 228.793, 10]
+    region:   n_221
     level:    [28, 29]
   17293534:
     template: Dancing_Weapon
-    at:       [-157.659, -25.501, 235.862, 127]
+    region:   n_221
     level:    [28, 29]
   17293535:
     template: Dancing_Weapon
-    at:       [-152.269, -20.000, 243.000, 127]
+    region:   n_221
     level:    [28, 29]
   17293536:
     template: Dancing_Weapon
-    at:       [-137.651, -23.507, 231.528, 127]
+    region:   n_221
     level:    [28, 29]
   17293537:
     template: Trickster_Kinetix
-    at:       [-159.000, -19.000, 244.000, 127]
+    region:   n_221
     level:    [35, 36]
   17293538:
     template: Clipper
-    at:       [-135.855, -20.144, 269.486, 37]
+    region:   n_226
     level:    [28, 29]
   17293539:
     template: Clipper
-    at:       [-225.000, -19.000, 304.000, 92]
+    region:   n_226
     level:    [28, 29]
   17293540:
     template: Clipper
-    at:       [-142.773, -20.283, 300.440, 127]
+    region:   n_226
     level:    [28, 29]
   17293541:
     template: Clipper
-    at:       [-86.042, -20.438, 246.677, 127]
+    region:   n_226
     level:    [28, 29]
   17293542:
     template: Clipper
-    at:       [-138.300, -19.629, 281.239, 112]
+    region:   n_226
     level:    [28, 29]
   17293543:
     template: Dark_Bats
-    at:       [-132.607, -20.261, 311.274, 127]
+    region:   n_226
     level:    [26, 27]
     attributes:
       spawn:
@@ -2617,7 +2617,7 @@ spawns:
           end:    5
   17293544:
     template: Dark_Bats
-    at:       [-206.858, -20.097, 288.513, 54]
+    region:   n_226
     level:    [26, 27]
     attributes:
       spawn:
@@ -2626,7 +2626,7 @@ spawns:
           end:    4
   17293545:
     template: Dark_Bats
-    at:       [-170.683, -20.273, 306.084, 111]
+    region:   n_226
     level:    [26, 27]
     attributes:
       spawn:
@@ -2635,19 +2635,19 @@ spawns:
           end:    6
   17293546:
     template: Acrophies
-    at:       [-99.571, -21.144, 226.513, 51]
+    region:   n_226
     level:    [33, 34]
   17293547:
     template: Acrophies
-    at:       [-75.343, -19.811, 259.543, 73]
+    region:   n_226
     level:    [33, 34]
   17293548:
     template: Acrophies
-    at:       [-125.655, -20.394, 277.309, 114]
+    region:   n_226
     level:    [33, 34]
   17293549:
     template: Glow_Bat
-    at:       [-134.231, -19.846, 285.949, 115]
+    region:   n_226
     level:    [28, 29]
     attributes:
       spawn:
@@ -2656,35 +2656,35 @@ spawns:
           end:    5
   17293550:
     template: Giant_Ranger
-    at:       [-129.000, -20.000, 252.000, 100]
+    region:   n_226
     level:    [29, 30]
   17293551:
     template: Giant_Ascetic
-    at:       [-227.000, -19.000, 240.000, 127]
+    region:   n_226
     level:    [29, 30]
   17293552:
     template: Giant_Trapper
-    at:       [-160.987, -19.649, 302.987, 120]
+    region:   n_226
     level:    [29, 30]
   17293553:
     template: Gigass_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   n_240
     level:    [24, 25]
   17293554:
     template: Giant_Hunter
-    at:       [-126.000, -19.000, 284.000, 53]
+    region:   n_226
     level:    [29, 30]
   17293555:
     template: Giant_Ranger
-    at:       [-106.174, -19.917, 276.835, 124]
+    region:   n_226
     level:    [29, 30]
   17293556:
     template: Giant_Ascetic
-    at:       [-98.000, -19.000, 247.000, 127]
+    region:   n_226
     level:    [29, 30]
   17293557:
     template: Giant_Trapper
-    at:       [-189.863, -20.193, 280.965, 127]
+    region:   n_226
     level:    [29, 30]
   17293558:
     template: Gigass_Leech
@@ -2692,46 +2692,46 @@ spawns:
     level:    [24, 25]
   17293559:
     template: Giant_Hunter
-    at:       [-163.000, -20.000, 280.000, 127]
+    region:   n_226
     level:    [29, 30]
   17293560:
     template: Wight_war
     script:   Wight
-    at:       [-79.880, -20.519, 279.671, 127]
+    region:   n_226
     level:    [28, 29]
   17293561:
     template: Wight_war
     script:   Wight
-    at:       [-178.913, -19.620, 277.697, 58]
+    region:   n_226
     level:    [28, 29]
   17293562:
     template: Wight_blm
     script:   Wight
-    at:       [-202.466, -20.384, 267.475, 127]
+    region:   n_226
     level:    [28, 29]
   17293563:
     template: Light_Elemental
-    at:       [-173.685, -20.224, 311.977, 127]
+    region:   n_226
     level:    [35, 36]
   17293564:
     template: Clipper
-    at:       [-233.701, -20.501, 327.792, 13]
+    region:   n_252
     level:    [28, 29]
   17293565:
     template: Clipper
-    at:       [-253.625, -20.482, 368.971, 127]
+    region:   n_252
     level:    [28, 29]
   17293566:
     template: Clipper
-    at:       [-186.287, -20.115, 319.164, 86]
+    region:   n_252
     level:    [28, 29]
   17293567:
     template: Clipper
-    at:       [-237.884, -19.789, 381.362, 127]
+    region:   n_252
     level:    [28, 29]
   17293568:
     template: Dark_Bats
-    at:       [-247.216, -20.158, 391.798, 127]
+    region:   n_252
     level:    [26, 27]
     attributes:
       spawn:
@@ -2740,7 +2740,7 @@ spawns:
           end:    4
   17293569:
     template: Dark_Bats
-    at:       [-172.082, -20.164, 364.322, 80]
+    region:   n_252
     level:    [26, 27]
     attributes:
       spawn:
@@ -2749,15 +2749,15 @@ spawns:
           end:    6
   17293570:
     template: Acrophies
-    at:       [-182.773, -19.936, 329.292, 127]
+    region:   n_252
     level:    [33, 34]
   17293571:
     template: Acrophies
-    at:       [-213.870, -20.087, 409.474, 127]
+    region:   n_252
     level:    [33, 34]
   17293572:
     template: Glow_Bat
-    at:       [-220.006, -20.357, 446.058, 127]
+    region:   n_252
     level:    [28, 29]
     attributes:
       spawn:
@@ -2766,7 +2766,7 @@ spawns:
           end:    4
   17293573:
     template: Glow_Bat
-    at:       [-206.592, -20.223, 319.932, 79]
+    region:   n_252
     level:    [28, 29]
     attributes:
       spawn:
@@ -2775,198 +2775,198 @@ spawns:
           end:    6
   17293574:
     template: Giant_Ranger
-    at:       [-163.754, -19.678, 336.425, 30]
+    region:   n_252
     level:    [29, 30]
   17293575:
     template: Giant_Ascetic
-    at:       [-188.392, -21.169, 387.908, 127]
+    region:   n_252
     level:    [29, 30]
   17293576:
     template: Giant_Trapper
-    at:       [-221.000, -19.000, 366.000, 31]
+    region:   n_252
     level:    [29, 30]
   17293577:
     template: Gigass_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   n_252
     level:    [24, 25]
   17293578:
     template: Giant_Hunter
-    at:       [-248.000, -19.000, 376.000, 127]
+    region:   n_252
     level:    [29, 30]
   17293579:
     template: Wight_war
     script:   Wight
-    at:       [-260.565, -20.601, 364.715, 123]
+    region:   n_252
     level:    [28, 29]
   17293580:
     template: Wight_blm
     script:   Wight
-    at:       [-238.000, -20.000, 396.000, 127]
+    region:   n_252
     level:    [28, 29]
   17293581:
     template: Light_Elemental
-    at:       [-248.703, -20.264, 397.951, 50]
+    region:   n_252
     level:    [35, 36]
   17293582:
     template: Clipper
-    at:       [-144.994, -21.597, 377.807, 96]
+    region:   n_270
     level:    [28, 29]
   17293583:
     template: Clipper
-    at:       [-193.000, -19.000, 347.000, 127]
+    region:   n_270
     level:    [28, 29]
   17293584:
     template: Clipper
-    at:       [-214.000, -19.000, 314.000, 32]
+    region:   n_270
     level:    [28, 29]
   17293585:
     template: Clipper
-    at:       [-147.944, -20.363, 349.353, 78]
+    region:   n_270
     level:    [28, 29]
   17293586:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-123.719, -19.683, 376.637, 127]
+    region:   n_270
     level:    [28, 29]
   17293587:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-105.680, -20.126, 353.412, 60]
+    region:   n_270
     level:    [28, 29]
   17293588:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-107.525, -20.212, 379.564, 9]
+    region:   n_270
     level:    [28, 29]
   17293589:
     template: Greater_Pugil_QI
     script:   Greater_Pugil
-    at:       [-108.059, -20.687, 343.693, 73]
+    region:   n_270
     level:    [28, 29]
   17293590:
     template: Acrophies
-    at:       [-141.837, -21.055, 341.594, 127]
+    region:   n_270
     level:    [33, 34]
   17293591:
     template: Acrophies
-    at:       [-111.537, -20.179, 395.880, 16]
+    region:   n_270
     level:    [33, 34]
   17293592:
     template: Acrophies
-    at:       [-75.208, -20.560, 355.569, 127]
+    region:   n_270
     level:    [33, 34]
   17293593:
     template: Acrophies
-    at:       [-117.502, -19.916, 383.993, 19]
+    region:   n_270
     level:    [33, 34]
   17293594:
     template: Banshee
-    at:       [-122.106, -19.918, 384.412, 127]
+    region:   n_270
     level:    [31, 32]
   17293595:
     template: Banshee
-    at:       [-103.964, -20.654, 380.802, 127]
+    region:   n_270
     level:    [31, 32]
   17293596:
     template: Thunder_Elemental
-    at:       [-120.363, -20.487, 403.354, 127]
+    region:   n_270
     level:    [35, 36]
   17293597:
     template: Qoofim
-    at:       [-108.200, -21.820, 388.200, 127]
+    region:   n_270
     level:    [47, 48]
   17293598:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-294.000, -11.000, 483.000, 127]
+    region:   nw_286
     level:    [26, 27]
   17293599:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-335.014, -11.639, 442.083, 67]
+    region:   nw_286
     level:    [26, 27]
   17293600:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-305.772, -12.799, 457.087, 111]
+    region:   nw_286
     level:    [26, 27]
   17293601:
     template: Ancient_Bat_Qufim
     script:   Ancient_Bat
-    at:       [-368.598, -12.418, 436.948, 112]
+    region:   nw_286
     level:    [28, 29]
   17293602:
     template: Ancient_Bat_Qufim
     script:   Ancient_Bat
-    at:       [-321.689, -12.729, 445.407, 89]
+    region:   nw_286
     level:    [28, 29]
   17293603:
     template: Wight_war
     script:   Wight
-    at:       [-339.128, -12.994, 533.764, 90]
+    region:   region_46
     level:    [28, 29]
   17293604:
     template: Wight_war
     script:   Wight
-    at:       [-335.886, -13.522, 532.259, 19]
+    region:   region_46
     level:    [28, 29]
   17293605:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-419.640, -5.890, 433.476, 127]
+    region:   nw_293
     level:    [26, 27]
   17293606:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-471.459, -10.592, 407.959, 127]
+    region:   nw_293
     level:    [26, 27]
   17293607:
     template: Ancient_Bat_Qufim
     script:   Ancient_Bat
-    at:       [-467.647, -10.334, 407.221, 127]
+    region:   nw_293
     level:    [28, 29]
   17293608:
     template: Ancient_Bat_Qufim
     script:   Ancient_Bat
-    at:       [-475.560, -11.062, 372.179, 127]
+    region:   nw_293
     level:    [28, 29]
   17293609:
     template: Wight_war
     script:   Wight
-    at:       [-427.571, -12.507, 337.510, 80]
+    region:   region_48
     level:    [28, 29]
   17293610:
     template: Wight_war
     script:   Wight
-    at:       [-419.158, -11.386, 339.963, 109]
+    region:   region_48
     level:    [28, 29]
   17293611:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-497.248, -10.908, 355.857, 127]
+    region:   nw_299
     level:    [26, 27]
   17293612:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-479.353, -11.255, 370.408, 94]
+    region:   nw_299
     level:    [26, 27]
   17293613:
     template: Ancient_Bat_Qufim
     script:   Ancient_Bat
-    at:       [-496.902, -10.748, 361.449, 3]
+    region:   nw_299
     level:    [28, 29]
   17293614:
     template: Ancient_Bat_Qufim
     script:   Ancient_Bat
-    at:       [-488.081, -11.431, 366.026, 127]
+    region:   nw_299
     level:    [28, 29]
   17293615:
     template: Dancing_Weapon
-    at:       [-486.000, -12.000, 347.000, 127]
+    region:   nw_303
     level:    [28, 29]
   17293616:
     template: Dancing_Weapon
-    at:       [-494.484, -10.869, 359.086, 127]
+    region:   nw_303
     level:    [28, 29]
   17293617:
     template: Hobgoblin_Warrior

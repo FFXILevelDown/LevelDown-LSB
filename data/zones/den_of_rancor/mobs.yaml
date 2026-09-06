@@ -1376,315 +1376,316 @@ spawns:
     level:    [65, 65]
   17432584:
     template: Tonberry_Trailer
-    at:       [3.000, 16.000, -31.000, 127]
+    region:   w_8
     level:    [62, 65]
   17432585:
     template: Dire_Bat
-    at:       [-3.824, 15.564, -43.606, 127]
+    region:   w_8
     level:    [60, 63]
   17432586:
     template: Tonberry_Trailer
-    at:       [40.000, 16.000, -33.000, 127]
+    region:   w_10
     level:    [62, 65]
   17432587:
     template: Dire_Bat
-    at:       [8.000, 16.451, -41.000, 127]
+    region:   w_10
     level:    [60, 63]
   17432588:
     template: Dire_Bat
-    at:       [19.825, 16.453, -33.908, 127]
+    region:   w_10
     level:    [60, 63]
   17432589:
     template: Fire_Elemental
-    at:       [14.170, 16.298, -46.964, 216]
+    region:   w_10
     level:    [70, 72]
   17432590:
     template: Tonberry_Imprecator
-    at:       [38.208, 15.843, -46.976, 127]
+    region:   w_14
     level:    [62, 64]
   17432591:
     template: Dire_Bat
-    at:       [35.000, 36.000, -60.000, 127]
+    region:   w_14
     level:    [60, 63]
   17432592:
     template: Tonberry_Trailer
-    at:       [-2.478, 15.667, -42.535, 5]
+    region:   w_8
     level:    [62, 65]
   17432593:
     template: Tonberry_Imprecator
-    at:       [29.000, 16.000, -42.000, 2]
+    region:   w_71
     level:    [62, 64]
   17432594:
     template: Dire_Bat
-    at:       [18.465, 15.362, -69.896, 63]
+    region:   region_114
     level:    [60, 63]
   17432595:
     template: Dire_Bat
-    at:       [0.500, 16.000, -100.000, 25]
+    region:   w_19
     level:    [60, 63]
   17432596:
     template: Dire_Bat
-    at:       [20.000, 16.000, -79.000, 127]
+    region:   w_19
     level:    [60, 63]
   17432597:
     template: Tonberry_Trailer
-    at:       [22.757, 15.738, -102.055, 127]
+    region:   region_115
     level:    [62, 65]
   17432598:
     template: Dire_Bat
-    at:       [-7.000, 16.000, -60.000, 49]
+    region:   w_22
     level:    [60, 63]
   17432599:
     template: Dire_Bat
-    at:       [-19.592, 15.548, -83.703, 73]
+    region:   w_22
     level:    [60, 63]
   17432600:
     template: Dire_Bat
-    at:       [-15.042, 15.690, -94.992, 127]
+    region:   w_22
     level:    [60, 63]
   17432601:
     template: Dire_Bat
-    at:       [39.857, 15.545, -101.641, 127]
+    region:   c_25
     level:    [60, 63]
   17432602:
     template: Dire_Bat
-    at:       [52.693, 15.348, -107.705, 32]
+    region:   c_25
     level:    [60, 63]
   17432603:
     template: Dire_Bat
-    at:       [58.902, 15.249, -70.684, 127]
+    region:   c_27
     level:    [60, 63]
   17432604:
     template: Dire_Bat
-    at:       [61.000, 16.000, -92.000, 127]
+    region:   c_27
     level:    [60, 63]
   17432605:
     template: Dire_Bat
-    at:       [49.000, 16.000, -58.000, 127]
+    region:   c_27
     level:    [60, 63]
   17432606:
     template: Dire_Bat
-    at:       [76.184, 15.092, -61.292, 54]
+    region:   c_30
     level:    [60, 63]
   17432607:
     template: Tonberry_Trailer
-    at:       [104.000, 16.000, -31.000, 127]
+    region:   c_31
     level:    [62, 65]
   17432608:
     template: Tonberry_Imprecator
-    at:       [95.000, 16.000, -33.000, 127]
+    region:   c_31
     level:    [62, 64]
   17432609:
     template: Sozu_Bliberry
-    at:       [98.830, 16.807, -40.687, 127]
+    region:   c_31
     level:    [65, 66]
   17432610:
     template: Dire_Bat
-    at:       [98.000, 15.000, -60.000, 127]
+    region:   c_31
     level:    [60, 63]
   17432611:
     template: Dire_Bat
-    at:       [141.943, 15.780, -45.361, 46]
+    region:   c_35
     level:    [60, 63]
   17432612:
     template: Dire_Bat
-    at:       [115.000, 16.000, -19.000, 23]
+    region:   c_35
     level:    [60, 63]
   17432613:
     template: Dire_Bat
-    at:       [138.706, 15.491, -21.528, 127]
+    region:   c_35
     level:    [60, 63]
   17432614:
     template: Tonberry_Trailer
-    at:       [180.000, 16.000, -74.000, 20]
+    region:   c_38
     level:    [62, 65]
   17432615:
     template: Dire_Bat
-    at:       [159.000, 16.000, -59.000, 127]
+    region:   c_38
     level:    [60, 63]
   17432616:
     template: Dire_Bat
-    at:       [175.000, 15.000, -60.000, 111]
+    region:   c_38
     level:    [60, 63]
   17432617:
     template: Tonberry_Trailer
-    at:       [101.000, 17.000, -45.000, 11]
+    region:   region_116
     level:    [62, 65]
   17432618:
     template: Tonberry_Imprecator
-    at:       [178.000, 16.000, -87.000, 127]
+    region:   region_117
     level:    [62, 64]
   17432619:
     template: Dire_Bat
-    at:       [135.109, 15.709, -65.366, 127]
+    region:   c_43
     level:    [60, 63]
   17432620:
     template: Dire_Bat
-    at:       [124.732, 15.610, -59.721, 127]
+    region:   c_43
     level:    [60, 63]
   17432621:
     template: Tonberry_Trailer
-    at:       [134.000, 16.000, -101.000, 90]
+    region:   c_45
     level:    [62, 65]
   17432622:
     template: Tonberry_Trailer
-    at:       [146.000, 15.412, -102.000, 127]
+    region:   c_45
     level:    [62, 65]
   17432623:
     template: Dire_Bat
-    at:       [141.000, 15.000, -123.000, 76]
+    region:   c_45
     level:    [60, 63]
   17432624:
     template: Celeste-eyed_Tozberry
-    at:       [146.000, 15.412, -102.000, 127]
+    region:   c_45
     level:    [67, 69]
   17432625:
     template: Tonberry_Trailer
-    at:       [145.000, 16.000, -95.000, 127]
+    region:   c_45
     level:    [62, 65]
   17432626:
     template: Dire_Bat
-    at:       [109.478, 15.349, -100.959, 114]
+    region:   c_50
     level:    [60, 63]
   17432627:
     template: Dire_Bat
-    at:       [-29.100, 15.491, -59.534, 114]
+    region:   w_51
     level:    [60, 63]
   17432628:
     template: Tonberry_Slasher
-    at:       [-58.978, 15.486, -72.910, 127]
+    region:   w_52
     level:    [67, 69]
   17432629:
     template: Tonberry_Slasher
-    at:       [-60.000, 16.000, -85.000, 40]
+    region:   w_52
     level:    [67, 69]
   17432630:
     template: Dire_Bat
-    at:       [-62.783, 15.784, -74.063, 127]
+    region:   w_52
     level:    [60, 63]
   17432631:
     template: Fire_Elemental
+    region:   w_52
     level:    [70, 72]
   17432632:
     template: Tonberry_Beleaguerer
-    at:       [-64.433, 15.345, -76.619, 127]
+    region:   w_56
     level:    [66, 69]
   17432633:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000, 20]
+    region:   w_56
     level:    [53, 59]
   17432634:
     template: Dire_Bat
-    at:       [-59.125, 15.466, -36.414, 127]
+    region:   w_58
     level:    [60, 63]
   17432635:
     template: Dire_Bat
-    at:       [-60.784, 15.514, -28.653, 127]
+    region:   w_58
     level:    [60, 63]
   17432636:
     template: Dire_Bat
-    at:       [-70.634, 15.822, -54.692, 74]
+    region:   w_58
     level:    [60, 63]
   17432637:
     template: Dire_Bat
-    at:       [-67.000, 15.428, -15.000, 127]
+    region:   w_61
     level:    [60, 63]
   17432638:
     template: Bifrons_Den_of_Rancor
     script:   Bifrons
-    at:       [-87.587, 15.469, -6.522, 127]
+    region:   w_61
     level:    [68, 70]
   17432639:
     template: Bifrons_Den_of_Rancor
     script:   Bifrons
-    at:       [-74.000, 16.000, 6.000, 127]
+    region:   w_61
     level:    [68, 70]
   17432640:
     template: Friar_Rush
-    at:       [-86.000, 16.000, 2.000, 35]
+    region:   w_61
     level:    [70, 70]
   17432641:
     template: Dire_Bat
-    at:       [59.000, 16.000, 0.500, 127]
+    region:   c_65
     level:    [60, 63]
   17432642:
     template: Dire_Bat
-    at:       [30.508, 11.490, 24.665, 127]
+    region:   c_65
     level:    [60, 63]
   17432643:
     template: Dire_Bat
-    at:       [74.000, 15.000, 19.000, 127]
+    region:   c_65
     level:    [60, 63]
   17432644:
     template: Dire_Bat
-    at:       [98.466, 25.212, 2.383, 64]
+    region:   c_68
     level:    [60, 63]
   17432645:
     template: Dire_Bat
-    at:       [66.289, 35.479, -20.954, 127]
+    region:   c_68
     level:    [60, 63]
   17432646:
     template: Dire_Bat
-    at:       [96.310, 21.805, 14.483, 127]
+    region:   c_68
     level:    [60, 63]
   17432647:
     template: Tonberry_Imprecator
-    at:       [44.037, 36.243, -52.847, 127]
+    region:   w_71
     level:    [62, 64]
   17432648:
     template: Dire_Bat
-    at:       [40.740, 35.771, -32.911, 127]
+    region:   w_71
     level:    [60, 63]
   17432649:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [35.315, 35.537, -45.169, 127]
+    region:   w_71
     level:    [61, 64]
   17432650:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [22.000, 36.000, -57.000, 127]
+    region:   w_71
     level:    [61, 64]
   17432651:
     template: Tonberry_Trailer
-    at:       [31.801, 35.508, -90.055, 127]
+    region:   w_75
     level:    [62, 65]
   17432652:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [44.000, 36.000, -96.000, 127]
+    region:   w_75
     level:    [61, 64]
   17432653:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [46.787, 35.815, -82.452, 127]
+    region:   w_75
     level:    [61, 64]
   17432654:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [27.261, 35.652, -72.218, 127]
+    region:   w_75
     level:    [61, 64]
   17432655:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [0.020, 35.468, -68.012, 127]
+    region:   w_79
     level:    [61, 64]
   17432656:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [-5.459, 35.514, -77.274, 127]
+    region:   w_79
     level:    [61, 64]
   17432657:
     template: Dire_Bat
-    at:       [-3.435, 35.468, -92.258, 124]
+    region:   w_79
     level:    [60, 63]
   17432658:
     template: Dire_Bat
-    at:       [4.481, 35.510, -80.938, 127]
+    region:   w_79
     level:    [60, 63]
   17432659:
     template: Carmine-tailed_Janberry
-    at:       [0.500, 36.000, -87.000, 31]
+    region:   w_79
     level:    [66, 67]
   17432660:
     template: Tonberrys_Elemental
@@ -1692,261 +1693,261 @@ spawns:
     level:    [53, 59]
   17432661:
     template: Tonberry_Imprecator
-    at:       [51.531, 36.125, -105.354, 127]
+    region:   w_85
     level:    [62, 64]
   17432662:
     template: Tonberry_Imprecator
-    at:       [32.000, 36.000, -109.000, 127]
+    region:   w_85
     level:    [62, 64]
   17432663:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [38.450, 35.835, -123.768, 84]
+    region:   w_85
     level:    [61, 64]
   17432664:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [49.194, 36.411, -107.748, 105]
+    region:   w_85
     level:    [61, 64]
   17432665:
     template: Tonberry_Trailer
-    at:       [42.774, 35.675, -157.454, 33]
+    region:   sw_89
     level:    [62, 65]
   17432666:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [29.777, 36.128, -147.050, 34]
+    region:   sw_89
     level:    [61, 64]
   17432667:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [47.107, 36.443, -132.831, 127]
+    region:   sw_89
     level:    [61, 64]
   17432668:
     template: Tonberry_Imprecator
-    at:       [-15.819, 35.574, -134.720, 127]
+    region:   sw_92
     level:    [62, 64]
   17432669:
     template: Dire_Bat
-    at:       [-26.316, 35.579, -138.970, 127]
+    region:   sw_92
     level:    [60, 63]
   17432670:
     template: Tonberry_Trailer
-    at:       [39.019, 35.896, -38.159, 127]
+    region:   w_94
     level:    [62, 65]
   17432671:
     template: Tonberry_Imprecator
-    at:       [39.428, 36.480, -136.605, 127]
+    region:   w_85
     level:    [62, 64]
   17432672:
     template: Dire_Bat
-    at:       [-24.381, 39.820, -28.080, 24]
+    region:   w_96
     level:    [60, 63]
   17432673:
     template: Dire_Bat
-    at:       [-22.115, 35.708, -34.154, 68]
+    region:   w_96
     level:    [60, 63]
   17432674:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [-36.897, 44.970, -21.899, 127]
+    region:   w_96
     level:    [61, 64]
   17432675:
     template: Cave_Worm_DoR
     script:   Cave_Worm
-    at:       [-53.000, 45.000, -19.000, 18]
+    region:   w_96
     level:    [61, 64]
   17432676:
     template: Tonberry_Trailer
-    at:       [-56.660, 45.642, -7.901, 95]
+    region:   w_100
     level:    [62, 65]
   17432677:
     template: Dire_Bat
-    at:       [-56.468, 45.623, -7.522, 12]
+    region:   w_100
     level:    [60, 63]
   17432678:
     template: Dire_Bat
-    at:       [-60.935, 45.382, -8.103, 127]
+    region:   w_100
     level:    [60, 63]
   17432679:
     template: Tonberry_Trailer
-    at:       [-72.978, 45.266, 21.533, 117]
+    region:   w_103
     level:    [62, 65]
   17432680:
     template: Tonberry_Imprecator
-    at:       [-60.807, 45.480, 22.419, 45]
+    region:   w_103
     level:    [62, 64]
   17432681:
     template: Dire_Bat
-    at:       [-61.651, 45.459, 24.353, 121]
+    region:   w_103
     level:    [60, 63]
   17432682:
     template: Dire_Bat
-    at:       [-16.000, 36.000, -55.000, 127]
+    region:   w_103
     level:    [60, 63]
   17432683:
     template: Tonberry_Trailer
-    at:       [-79.935, 45.373, 18.524, 4]
+    region:   region_118
     level:    [62, 65]
   17432684:
     template: Dire_Bat
-    at:       [-82.567, 45.393, 21.987, 127]
+    region:   region_118
     level:    [60, 63]
   17432685:
     template: Tonberry_Imprecator
-    at:       [-36.701, 45.315, 19.801, 65]
+    region:   region_119
     level:    [62, 64]
   17432686:
     template: Dire_Bat
-    at:       [-40.879, 45.440, 21.912, 127]
+    region:   region_119
     level:    [60, 63]
   17432687:
     template: Tormentor
-    at:       [322.000, -3.000, 314.000, 127]
+    region:   ne_111
     level:    [75, 78]
   17432688:
     template: Tormentor
-    at:       [313.000, -3.000, 314.000, 92]
+    region:   ne_111
     level:    [75, 78]
   17432689:
     template: Tormentor
-    at:       [319.986, -4.212, 326.239, 127]
+    region:   ne_111
     level:    [75, 78]
   17432690:
     template: Tormentor
-    at:       [328.000, -3.000, 321.000, 127]
+    region:   ne_111
     level:    [75, 78]
   17432691:
     template: Puck
-    at:       [323.838, -4.000, 322.532, 127]
+    region:   ne_132
     level:    [74, 77]
   17432692:
     template: Bullbeggar
-    at:       [367.312, -4.837, 339.054, 124]
+    region:   ne_116
     level:    [78, 80]
   17432693:
     template: Bullbeggar
-    at:       [355.000, -4.528, 338.000, 127]
+    region:   ne_116
     level:    [78, 80]
   17432694:
     template: Bullbeggar
-    at:       [344.000, -4.000, 338.000, 9]
+    region:   ne_116
     level:    [78, 80]
   17432695:
     template: Tormentor
-    at:       [341.328, -5.020, 283.824, 127]
+    region:   ne_119
     level:    [75, 78]
   17432696:
     template: Tormentor
-    at:       [341.432, -4.585, 280.390, 37]
+    region:   ne_119
     level:    [75, 78]
   17432697:
     template: Tormentor
-    at:       [355.917, -4.485, 260.720, 127]
+    region:   ne_119
     level:    [75, 78]
   17432698:
     template: Tormentor
-    at:       [341.928, -4.625, 269.246, 55]
+    region:   ne_119
     level:    [75, 78]
   17432699:
     template: Puck
-    at:       [342.186, -4.000, 271.980]
+    region:   ne_132
     level:    [74, 77]
   17432700:
     template: Puck
-    at:       [387.933, -4.811, 238.677, 127]
+    region:   ne_124
     level:    [74, 77]
   17432701:
     template: Puck
-    at:       [390.636, -4.530, 237.156, 68]
+    region:   ne_124
     level:    [74, 77]
   17432702:
     template: Puck
-    at:       [393.884, -4.971, 231.768, 127]
+    region:   ne_124
     level:    [74, 77]
   17432703:
     template: Puck
-    at:       [401.000, -3.000, 246.000, 127]
+    region:   ne_124
     level:    [74, 77]
   17432704:
     template: Puck
-    at:       [404.117, -4.120, 235.828, 127]
+    region:   ne_128
     level:    [74, 77]
   17432705:
     template: Tormentor
-    at:       [383.952, -1.659, 289.411, 127]
+    region:   ne_129
     level:    [75, 78]
   17432706:
     template: Tormentor
-    at:       [393.675, 3.107, 297.123, 127]
+    region:   ne_129
     level:    [75, 78]
   17432707:
     template: Puck
-    at:       [386.735, 1.000, 294.356]
+    region:   ne_132
     level:    [74, 77]
   17432708:
     template: Bullbeggar
-    at:       [453.809, 5.898, 299.736, 92]
+    region:   ne_132
     level:    [78, 80]
   17432709:
     template: Bullbeggar
-    at:       [435.111, 6.288, 299.550, 64]
+    region:   ne_132
     level:    [78, 80]
   17432710:
     template: Bullbeggar
-    at:       [451.030, 5.680, 303.150, 127]
+    region:   ne_132
     level:    [78, 80]
   17432711:
     template: Bullbeggar
-    at:       [439.387, 6.627, 298.298, 4]
+    region:   ne_132
     level:    [78, 80]
   17432712:
     template: Puck
-    at:       [462.126, 5.432, 318.254, 127]
+    region:   ne_132
     level:    [74, 77]
   17432713:
     template: Puck
-    at:       [461.042, 5.446, 315.550, 127]
+    region:   ne_138
     level:    [74, 77]
   17432714:
     template: Puck
-    at:       [461.170, 5.173, 327.517, 127]
+    region:   ne_138
     level:    [74, 77]
   17432715:
     template: Puck
-    at:       [456.495, 5.013, 324.549, 127]
+    region:   region_120
     level:    [74, 77]
   17432716:
     template: Tormentor
-    at:       [419.000, 26.000, 283.000, 120]
+    region:   ne_140
     level:    [75, 78]
   17432717:
     template: Tormentor
-    at:       [421.397, 23.761, 274.775, 35]
+    region:   ne_140
     level:    [75, 78]
   17432718:
     template: Tormentor
-    at:       [448.565, 10.772, 261.047, 24]
+    region:   ne_140
     level:    [75, 78]
   17432719:
     template: Tormentor
-    at:       [432.000, 18.000, 262.000, 127]
+    region:   ne_140
     level:    [75, 78]
   17432720:
     template: Puck
-    at:       [463.000, 5.000, 321.000, 127]
+    region:   ne_140
     level:    [74, 77]
   17432721:
     template: Tonberry_Slasher
-    at:       [417.368, 25.726, 304.131, 3]
+    region:   ne_145
     level:    [67, 69]
   17432722:
     template: Tonberry_Slasher
-    at:       [415.929, 25.497, 334.798, 127]
+    region:   ne_146
     level:    [67, 69]
   17432723:
     template: Tonberry_Beleaguerer
-    at:       [418.611, 25.532, 295.349, 32]
+    region:   ne_145
     level:    [66, 69]
   17432724:
     template: Tonberrys_Elemental
@@ -1954,311 +1955,311 @@ spawns:
     level:    [53, 59]
   17432725:
     template: Bullbeggar
-    at:       [382.936, 25.656, 300.346, 127]
+    region:   ne_149
     level:    [78, 80]
   17432726:
     template: Bullbeggar
-    at:       [395.000, 26.000, 300.000, 127]
+    region:   ne_149
     level:    [78, 80]
   17432727:
     template: Bullbeggar
-    at:       [379.048, 25.128, 304.550, 47]
+    region:   ne_149
     level:    [78, 80]
   17432728:
     template: Den_Scorpion
-    at:       [372.000, 26.000, 296.000, 127]
+    region:   ne_153
     level:    [79, 81]
   17432729:
     template: Bullbeggar
-    at:       [452.788, 24.222, 294.637, 47]
+    region:   ne_153
     level:    [78, 80]
   17432730:
     template: Bullbeggar
-    at:       [453.933, 23.818, 303.310, 127]
+    region:   ne_153
     level:    [78, 80]
   17432731:
     template: Bullbeggar
-    at:       [465.648, 24.239, 290.626, 70]
+    region:   ne_153
     level:    [78, 80]
   17432732:
     template: Den_Scorpion
-    at:       [469.097, 24.118, 298.746, 216]
+    region:   ne_153
     level:    [79, 81]
   17432733:
     template: Tonberry_Slasher
-    at:       [424.000, 26.000, 302.000, 127]
+    region:   ne_157
     level:    [67, 69]
   17432734:
     template: Bifrons_Den_of_Rancor
     script:   Bifrons
-    at:       [401.006, 25.500, 367.180, 127]
+    region:   ne_157
     level:    [68, 70]
   17432735:
     template: Bifrons_Den_of_Rancor
     script:   Bifrons
-    at:       [409.028, 25.478, 357.297, 108]
+    region:   ne_157
     level:    [68, 70]
   17432736:
     template: Tormentor
-    at:       [336.014, 13.972, 262.470, 127]
+    region:   ne_160
     level:    [75, 78]
   17432737:
     template: Bullbeggar
-    at:       [342.723, 15.533, 267.984, 127]
+    region:   ne_160
     level:    [78, 80]
   17432738:
     template: Bullbeggar
-    at:       [346.569, 15.541, 264.690, 5]
+    region:   ne_160
     level:    [78, 80]
   17432739:
     template: Tormentor
-    at:       [306.863, 15.438, 261.714, 127]
+    region:   ne_163
     level:    [75, 78]
   17432740:
     template: Tormentor
-    at:       [301.642, 15.498, 254.582, 64]
+    region:   ne_163
     level:    [75, 78]
   17432741:
     template: Tormentor
-    at:       [301.686, 15.675, 246.266, 127]
+    region:   ne_163
     level:    [75, 78]
   17432742:
     template: Puck
-    at:       [308.395, 15.484, 260.147, 240]
+    region:   ne_167
     level:    [74, 77]
   17432743:
     template: Tormentor
-    at:       [321.126, 15.561, 221.961, 127]
+    region:   ne_167
     level:    [75, 78]
   17432744:
     template: Tormentor
-    at:       [330.195, 14.155, 226.603, 99]
+    region:   ne_167
     level:    [75, 78]
   17432745:
     template: Tormentor
-    at:       [320.590, 15.468, 219.446, 28]
+    region:   ne_167
     level:    [75, 78]
   17432746:
     template: Puck
-    at:       [337.340, 15.421, 219.902, 77]
+    region:   ne_167
     level:    [74, 77]
   17432747:
     template: Puck
-    at:       [304.252, 15.744, 225.500, 127]
+    region:   ne_171
     level:    [74, 77]
   17432748:
     template: Puck
-    at:       [297.671, 15.160, 211.494, 44]
+    region:   ne_171
     level:    [74, 77]
   17432749:
     template: Den_Scorpion
-    at:       [299.868, 15.576, 217.351, 86]
+    region:   ne_171
     level:    [79, 81]
   17432750:
     template: Puck
-    at:       [298.161, 15.558, 216.908, 40]
+    region:   ne_171
     level:    [74, 77]
   17432751:
     template: Bullbeggar
-    at:       [264.237, 15.513, 220.816, 127]
+    region:   ne_175
     level:    [78, 80]
   17432752:
     template: Bullbeggar
-    at:       [258.328, 15.362, 217.138, 4]
+    region:   ne_175
     level:    [78, 80]
   17432753:
     template: Bullbeggar
-    at:       [260.043, 15.304, 216.279, 127]
+    region:   ne_175
     level:    [78, 80]
   17432754:
     template: Bullbeggar
-    at:       [293.542, 14.304, 183.582, 111]
+    region:   ne_178
     level:    [78, 80]
   17432755:
     template: Bullbeggar
-    at:       [291.233, 15.090, 176.605, 21]
+    region:   ne_178
     level:    [78, 80]
   17432756:
     template: Bullbeggar
-    at:       [297.712, 15.496, 181.964, 127]
+    region:   ne_178
     level:    [78, 80]
   17432757:
     template: Bullbeggar
-    at:       [254.574, 15.637, 180.203, 45]
+    region:   ne_181
     level:    [78, 80]
   17432758:
     template: Bullbeggar
-    at:       [256.488, 14.418, 172.967, 115]
+    region:   ne_181
     level:    [78, 80]
   17432759:
     template: Den_Scorpion
-    at:       [256.184, 15.000, 183.434, 127]
+    region:   ne_181
     level:    [79, 81]
   17432760:
     template: Tormentor
-    at:       [230.716, 15.939, 181.216, 127]
+    region:   n_184
     level:    [75, 78]
   17432761:
     template: Tormentor
-    at:       [229.259, 15.710, 181.259, 127]
+    region:   n_184
     level:    [75, 78]
   17432762:
     template: Tormentor
-    at:       [242.483, 15.563, 178.874, 5]
+    region:   n_184
     level:    [75, 78]
   17432763:
     template: Puck
-    at:       [227.698, 15.000, 182.723, 127]
+    region:   ne_167
     level:    [74, 77]
   17432764:
     template: Tormentor
-    at:       [195.503, 13.635, 175.322, 28]
+    region:   n_188
     level:    [75, 78]
   17432765:
     template: Den_Scorpion
-    at:       [174.244, 12.348, 182.149, 47]
+    region:   n_188
     level:    [79, 81]
   17432766:
     template: Den_Scorpion
-    at:       [190.623, 12.233, 167.173, 33]
+    region:   n_188
     level:    [79, 81]
   17432767:
     template: Den_Scorpion
-    at:       [180.158, 15.380, 174.054, 127]
+    region:   ne_181
     level:    [79, 81]
   17432768:
     template: Bullbeggar
-    at:       [261.724, 15.463, 155.192, 127]
+    region:   ne_192
     level:    [78, 80]
   17432769:
     template: Bullbeggar
-    at:       [277.583, 15.411, 138.868, 30]
+    region:   ne_192
     level:    [78, 80]
   17432770:
     template: Bullbeggar
-    at:       [274.013, 15.559, 141.389, 127]
+    region:   ne_192
     level:    [78, 80]
   17432771:
     template: Puck
-    at:       [292.750, 15.288, 138.798, 127]
+    region:   ne_195
     level:    [74, 77]
   17432772:
     template: Puck
-    at:       [305.438, 15.573, 139.665, 127]
+    region:   ne_195
     level:    [74, 77]
   17432773:
     template: Den_Scorpion
-    at:       [301.739, 15.802, 145.633, 123]
+    region:   ne_171
     level:    [79, 81]
   17432774:
     template: Puck
-    at:       [303.871, 15.809, 141.949, 31]
+    region:   ne_195
     level:    [74, 77]
   17432775:
     template: Tormentor
-    at:       [378.717, -14.702, 199.982, 80]
+    region:   ne_199
     level:    [75, 78]
   17432776:
     template: Tormentor
-    at:       [365.960, -6.487, 183.332, 127]
+    region:   ne_199
     level:    [75, 78]
   17432777:
     template: Tormentor
-    at:       [325.623, 12.592, 139.669, 30]
+    region:   ne_199
     level:    [75, 78]
   17432778:
     template: Tormentor
-    at:       [325.869, 12.458, 139.686, 70]
+    region:   ne_199
     level:    [75, 78]
   17432779:
     template: Tormentor
-    at:       [369.004, -9.859, 180.956, 127]
+    region:   ne_199
     level:    [75, 78]
   17432780:
     template: Puck
-    at:       [325.841, 13.000, 142.558, 127]
+    region:   ne_167
     level:    [74, 77]
   17432781:
     template: Dire_Bat
-    at:       [33.033, 15.607, -138.219, 21]
+    region:   w_205
     level:    [60, 63]
   17432782:
     template: Dire_Bat
-    at:       [19.274, 15.834, -122.787, 58]
+    region:   w_205
     level:    [60, 63]
   17432783:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [32.590, 15.614, -139.314, 2]
+    region:   w_205
     level:    [64, 67]
   17432784:
     template: Tonberry_Slasher
-    at:       [71.000, 16.000, -113.000, 127]
+    region:   c_208
     level:    [67, 69]
   17432785:
     template: Tonberry_Slasher
-    at:       [82.000, 16.000, -126.000, 127]
+    region:   c_208
     level:    [67, 69]
   17432786:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [70.494, 16.194, -136.385, 86]
+    region:   c_208
     level:    [64, 67]
   17432787:
     template: Tonberry_Slasher
-    at:       [76.568, 15.606, -165.687, 127]
+    region:   s_212
     level:    [67, 69]
   17432788:
     template: Tonberry_Slasher
-    at:       [70.000, 16.000, -155.000, 39]
+    region:   s_212
     level:    [67, 69]
   17432789:
     template: Tonberry_Beleaguerer
-    at:       [79.000, 16.000, -154.000, 17]
+    region:   s_212
     level:    [66, 69]
   17432790:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_212
     level:    [53, 59]
   17432791:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [74.600, 16.098, -156.033, 38]
+    region:   s_212
     level:    [64, 67]
   17432792:
     template: Fire_Elemental
-    at:       [78.931, 15.762, -168.618, 234]
+    region:   s_212
     level:    [70, 72]
   17432793:
     template: Tonberry_Slasher
-    at:       [125.000, 16.000, -166.000, 127]
+    region:   s_217
     level:    [67, 69]
   17432794:
     template: Tonberry_Slasher
-    at:       [127.188, 15.306, -154.453, 127]
+    region:   s_217
     level:    [67, 69]
   17432795:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [111.306, 16.258, -168.514, 7]
+    region:   s_217
     level:    [64, 67]
   17432796:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [99.732, 15.501, -140.500, 65]
+    region:   s_220
     level:    [64, 67]
   17432797:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [95.387, 15.629, -145.979, 127]
+    region:   s_220
     level:    [64, 67]
   17432798:
     template: Tawny-fingered_Mugberry
-    at:       [100.000, 17.000, -180.000, 127]
+    region:   s_212
     level:    [70, 72]
   17432799:
     template: Tonberry_Beleaguerer
-    at:       [85.000, 16.000, -113.000, 127]
+    region:   c_208
     level:    [66, 69]
   17432800:
     template: Tonberrys_Elemental
@@ -2266,11 +2267,11 @@ spawns:
     level:    [53, 59]
   17432801:
     template: Tonberry_Slasher
-    at:       [79.018, 15.568, -163.092, 119]
+    region:   s_225
     level:    [67, 69]
   17432802:
     template: Tonberry_Beleaguerer
-    at:       [117.267, 15.619, -156.876, 127]
+    region:   region_121
     level:    [66, 69]
   17432803:
     template: Tonberrys_Elemental
@@ -2278,211 +2279,211 @@ spawns:
     level:    [53, 59]
   17432804:
     template: Dire_Bat
-    at:       [70.000, 16.000, -216.000, 5]
+    region:   s_228
     level:    [60, 63]
   17432805:
     template: Dire_Bat
-    at:       [100.000, 16.000, -197.000, 19]
+    region:   s_228
     level:    [60, 63]
   17432806:
     template: Dire_Bat
-    at:       [90.000, 16.000, -219.000, 50]
+    region:   s_228
     level:    [60, 63]
   17432807:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [93.628, 15.635, -217.582, 120]
+    region:   s_228
     level:    [64, 67]
   17432808:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [99.415, 15.509, -218.807, 235]
+    region:   s_228
     level:    [64, 67]
   17432809:
     template: Dire_Bat
-    at:       [139.000, 15.000, -192.000, 52]
+    region:   s_233
     level:    [60, 63]
   17432810:
     template: Dire_Bat
-    at:       [-21.178, 15.583, -115.993, 127]
+    region:   w_234
     level:    [60, 63]
   17432811:
     template: Dire_Bat
-    at:       [-27.224, 14.356, -95.793, 127]
+    region:   w_234
     level:    [60, 63]
   17432812:
     template: Dire_Bat
-    at:       [-44.196, 15.733, -98.313, 122]
+    region:   w_234
     level:    [60, 63]
   17432813:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-24.137, 15.592, -98.811, 181]
+    region:   w_234
     level:    [64, 67]
   17432814:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-27.991, 15.510, -99.665, 102]
+    region:   w_234
     level:    [64, 67]
   17432815:
     template: Dire_Bat
-    at:       [-61.344, 15.310, -160.511, 127]
+    region:   sw_239
     level:    [60, 63]
   17432816:
     template: Dire_Bat
-    at:       [-56.219, 15.567, -147.210, 73]
+    region:   sw_239
     level:    [60, 63]
   17432817:
     template: Dire_Bat
-    at:       [-60.618, 15.411, -136.884, 127]
+    region:   sw_239
     level:    [60, 63]
   17432818:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-62.673, 15.526, -141.212, 108]
+    region:   sw_239
     level:    [64, 67]
   17432819:
     template: Tonberry_Slasher
-    at:       [-39.000, 16.000, -185.000, 127]
+    region:   sw_243
     level:    [67, 69]
   17432820:
     template: Tonberry_Beleaguerer
-    at:       [-48.577, 15.486, -182.078, 97]
+    region:   sw_243
     level:    [66, 69]
   17432821:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_243
     level:    [53, 59]
   17432822:
     template: Tonberry_Beleaguerer
-    at:       [-32.000, 16.000, -178.000, 127]
+    region:   sw_243
     level:    [66, 69]
   17432823:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_243
     level:    [53, 59]
   17432824:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-28.389, 16.246, -179.900, 57]
+    region:   sw_243
     level:    [64, 67]
   17432825:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-36.092, 15.267, -186.968, 208]
+    region:   sw_243
     level:    [64, 67]
   17432826:
     template: Tonberry_Slasher
-    at:       [-44.078, 16.081, -177.664, 127]
+    region:   region_122
     level:    [67, 69]
   17432827:
     template: Dire_Bat
-    at:       [21.605, 15.513, -145.076, 127]
+    region:   sw_251
     level:    [60, 63]
   17432828:
     template: Dire_Bat
-    at:       [-2.000, 16.000, -140.000, 127]
+    region:   sw_251
     level:    [60, 63]
   17432829:
     template: Dire_Bat
-    at:       [-7.000, 16.000, -139.000, 127]
+    region:   sw_251
     level:    [60, 63]
   17432830:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-17.593, 15.497, -160.186, 38]
+    region:   sw_251
     level:    [64, 67]
   17432831:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-15.108, 15.496, -142.079, 110]
+    region:   sw_251
     level:    [64, 67]
   17432832:
     template: Dire_Bat
-    at:       [21.000, 16.000, -162.000, 92]
+    region:   sw_256
     level:    [60, 63]
   17432833:
     template: Dire_Bat
-    at:       [32.000, 16.000, -178.000, 127]
+    region:   sw_256
     level:    [60, 63]
   17432834:
     template: Dire_Bat
-    at:       [59.000, 15.000, -195.000, 111]
+    region:   sw_256
     level:    [60, 63]
   17432835:
     template: Dire_Bat
-    at:       [52.804, 15.431, -171.857, 127]
+    region:   sw_256
     level:    [60, 63]
   17432836:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [57.550, 15.788, -169.945, 116]
+    region:   sw_256
     level:    [64, 67]
   17432837:
     template: Dire_Bat
-    at:       [17.000, 16.000, -217.000, 127]
+    region:   sw_261
     level:    [60, 63]
   17432838:
     template: Dire_Bat
-    at:       [-12.000, 15.000, -224.000, 127]
+    region:   sw_261
     level:    [60, 63]
   17432839:
     template: Dire_Bat
-    at:       [23.828, 14.180, -191.198, 65]
+    region:   sw_261
     level:    [60, 63]
   17432840:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [23.852, 14.183, -208.149, 190]
+    region:   sw_261
     level:    [64, 67]
   17432841:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [13.723, 15.593, -178.858]
+    region:   sw_261
     level:    [64, 67]
   17432842:
     template: Dire_Bat
-    at:       [-1.000, 16.000, -218.000, 7]
+    region:   sw_266
     level:    [60, 63]
   17432843:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-14.302, 14.430, -224.502, 11]
+    region:   sw_266
     level:    [64, 67]
   17432844:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-13.607, 14.035, -221.351, 199]
+    region:   sw_266
     level:    [64, 67]
   17432845:
     template: Bistre-hearted_Malberry
-    at:       [-32.000, 16.000, -178.000, 127]
+    region:   sw_243
     level:    [71, 73]
   17432846:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-25.880, 15.051, -218.278, 238]
+    region:   sw_270
     level:    [64, 67]
   17432847:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [-20.373, 15.226, -210.914, 158]
+    region:   sw_270
     level:    [64, 67]
   17432848:
     template: Water_Elemental
-    at:       [-24.064, 15.145, -217.639, 99]
+    region:   sw_270
     level:    [68, 73]
   17432849:
     template: Tonberry_Slasher
-    at:       [139.000, 16.000, -227.000, 28]
+    region:   s_273
     level:    [67, 69]
   17432850:
     template: Tonberry_Slasher
-    at:       [132.000, 15.000, -217.000, 55]
+    region:   s_273
     level:    [67, 69]
   17432851:
     template: Tonberry_Beleaguerer
-    at:       [142.000, 16.000, -216.000, 127]
+    region:   s_273
     level:    [66, 69]
   17432852:
     template: Tonberrys_Elemental
@@ -2490,42 +2491,42 @@ spawns:
     level:    [53, 59]
   17432853:
     template: Dire_Bat
-    at:       [161.000, 15.000, -260.000, 127]
+    region:   s_277
     level:    [60, 63]
   17432854:
     template: Dire_Bat
-    at:       [139.000, 16.000, -250.000, 71]
+    region:   s_277
     level:    [60, 63]
   17432855:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [142.005, 15.718, -258.621, 221]
+    region:   s_277
     level:    [64, 67]
   17432856:
     template: Tonberry_Slasher
-    at:       [176.794, 16.135, -247.532, 77]
+    region:   s_280
     level:    [67, 69]
   17432857:
     template: Tonberry_Beleaguerer
-    at:       [184.000, 16.000, -243.000, 77]
+    region:   s_280
     level:    [66, 69]
   17432858:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_280
     level:    [53, 59]
   17432859:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [177.079, 15.113, -253.955, 69]
+    region:   s_280
     level:    [64, 67]
   17432860:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [178.662, 14.724, -259.357, 80]
+    region:   s_280
     level:    [64, 67]
   17432861:
     template: Tonberry_Beleaguerer
-    at:       [178.342, 16.701, -236.890, 127]
+    region:   region_123
     level:    [66, 69]
   17432862:
     template: Tonberrys_Elemental
@@ -2533,28 +2534,28 @@ spawns:
     level:    [53, 59]
   17432863:
     template: Dire_Bat
-    at:       [101.622, 15.542, -240.184, 64]
+    region:   s_287
     level:    [60, 63]
   17432864:
     template: Dire_Bat
-    at:       [114.019, 15.841, -221.130, 121]
+    region:   s_287
     level:    [60, 63]
   17432865:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [101.615, 15.628, -230.654, 89]
+    region:   s_287
     level:    [64, 67]
   17432866:
     template: Dire_Bat
-    at:       [121.000, 16.000, -260.000, 121]
+    region:   s_290
     level:    [60, 63]
   17432867:
     template: Tonberry_Slasher
-    at:       [94.135, 15.775, -255.097, 127]
+    region:   s_290
     level:    [67, 69]
   17432868:
     template: Tonberry_Beleaguerer
-    at:       [96.250, 15.805, -258.654, 99]
+    region:   s_290
     level:    [66, 69]
   17432869:
     template: Tonberrys_Elemental
@@ -2562,592 +2563,592 @@ spawns:
     level:    [53, 59]
   17432870:
     template: Dire_Bat
-    at:       [106.080, 15.419, -301.905, 127]
+    region:   region_124
     level:    [60, 63]
   17432871:
     template: Tonberry_Slasher
-    at:       [104.000, 15.000, -257.000, 47]
+    region:   region_124
     level:    [67, 69]
   17432872:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [111.027, 15.508, -317.467, 92]
+    region:   s_296
     level:    [64, 67]
   17432873:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [114.101, 15.502, -326.874, 77]
+    region:   s_296
     level:    [64, 67]
   17432874:
     template: Dire_Bat
-    at:       [57.764, 15.624, -265.576, 48]
+    region:   s_298
     level:    [60, 63]
   17432875:
     template: Dire_Bat
-    at:       [68.842, 15.621, -257.319, 127]
+    region:   s_298
     level:    [60, 63]
   17432876:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [56.910, 15.424, -271.930, 27]
+    region:   s_298
     level:    [64, 67]
   17432877:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [71.382, 15.608, -257.013, 179]
+    region:   s_298
     level:    [64, 67]
   17432878:
     template: Dire_Bat
-    at:       [19.000, 15.000, -235.000, 88]
+    region:   sw_302
     level:    [60, 63]
   17432879:
     template: Dire_Bat
-    at:       [19.103, 15.494, -248.172, 67]
+    region:   sw_302
     level:    [60, 63]
   17432880:
     template: Dire_Bat
-    at:       [59.271, 15.220, -228.050, 121]
+    region:   sw_302
     level:    [60, 63]
   17432881:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [57.916, 15.602, -232.516, 76]
+    region:   sw_302
     level:    [64, 67]
   17432882:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [32.131, 15.327, -260.283, 201]
+    region:   sw_302
     level:    [64, 67]
   17432883:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [49.733, 14.337, -225.955, 161]
+    region:   sw_302
     level:    [64, 67]
   17432884:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [54.867, 15.499, -305.471, 207]
+    region:   s_308
     level:    [64, 67]
   17432885:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [56.608, 15.151, -300.860, 59]
+    region:   s_308
     level:    [64, 67]
   17432886:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [57.499, 15.426, -292.992, 172]
+    region:   s_308
     level:    [64, 67]
   17432887:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [56.492, 15.499, -294.066, 98]
+    region:   s_308
     level:    [64, 67]
   17432888:
     template: Dire_Bat
-    at:       [139.137, 15.607, -275.832, 45]
+    region:   s_312
     level:    [60, 63]
   17432889:
     template: Dire_Bat
-    at:       [142.000, 20.000, -301.000, 68]
+    region:   s_312
     level:    [60, 63]
   17432890:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [139.616, 15.624, -271.866, 33]
+    region:   s_312
     level:    [64, 67]
   17432891:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [139.786, 25.485, -333.702, 202]
+    region:   s_315
     level:    [64, 67]
   17432892:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [141.172, 25.495, -333.324, 179]
+    region:   s_315
     level:    [64, 67]
   17432893:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [142.428, 19.406, -303.436, 230]
+    region:   s_315
     level:    [64, 67]
   17432894:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [146.428, 18.746, -300.306, 236]
+    region:   s_315
     level:    [64, 67]
   17432895:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [124.507, 35.786, -71.020, 227]
+    region:   c_319
     level:    [64, 67]
   17432896:
     template: Demonic_Pugil
-    at:       [121.841, 35.681, -87.717, 127]
+    region:   c_319
     level:    [73, 76]
   17432897:
     template: Demonic_Pugil
-    at:       [126.783, 35.368, -77.132, 42]
+    region:   c_319
     level:    [73, 76]
   17432898:
     template: Demonic_Pugil
-    at:       [119.988, 35.577, -80.647, 58]
+    region:   c_319
     level:    [73, 76]
   17432899:
     template: Doom_Toad
-    at:       [109.631, 35.713, -81.879, 36]
+    region:   c_319
     level:    [75, 78]
   17432900:
     template: Demonic_Pugil
-    at:       [140.037, 35.501, -99.992, 127]
+    region:   c_324
     level:    [73, 76]
   17432901:
     template: Demonic_Pugil
-    at:       [156.230, 35.879, -96.370, 109]
+    region:   c_324
     level:    [73, 76]
   17432902:
     template: Demonic_Pugil
-    at:       [160.192, 35.448, -103.326, 127]
+    region:   c_324
     level:    [73, 76]
   17432903:
     template: Doom_Toad
-    at:       [160.794, 35.480, -102.429, 86]
+    region:   c_324
     level:    [75, 78]
   17432904:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [154.425, 35.712, -113.867, 18]
+    region:   c_328
     level:    [64, 67]
   17432905:
     template: Demonic_Pugil
-    at:       [161.646, 35.298, -114.791, 127]
+    region:   c_328
     level:    [73, 76]
   17432906:
     template: Demonic_Pugil
-    at:       [150.171, 35.905, -123.389, 127]
+    region:   c_328
     level:    [73, 76]
   17432907:
     template: Demonic_Pugil
-    at:       [150.736, 35.915, -123.950, 37]
+    region:   c_328
     level:    [73, 76]
   17432908:
     template: Doom_Toad
-    at:       [161.607, 35.199, -109.179, 127]
+    region:   c_328
     level:    [75, 78]
   17432909:
     template: Water_Elemental
-    at:       [165.190, 35.999, -80.587, 127]
+    region:   region_126
     level:    [68, 73]
   17432910:
     template: Demonic_Pugil
-    at:       [159.362, 36.079, -72.600, 127]
+    region:   region_125
     level:    [73, 75]
   17432911:
     template: Demonic_Pugil
-    at:       [173.155, 35.951, -94.694, 87]
+    region:   region_126
     level:    [73, 76]
   17432912:
     template: Succubus_Bats
-    at:       [98.628, 25.889, -170.538, 66]
+    region:   s_336
     level:    [65, 68]
   17432913:
     template: Succubus_Bats
-    at:       [125.311, 35.486, -139.173, 127]
+    region:   s_336
     level:    [65, 68]
   17432914:
     template: Tonberry_Slasher
-    at:       [27.715, 35.781, -198.793, 127]
+    region:   sw_338
     level:    [67, 69]
   17432915:
     template: Tonberry_Beleaguerer
-    at:       [2.868, 35.489, -189.129, 127]
+    region:   sw_338
     level:    [66, 69]
   17432916:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_338
     level:    [53, 59]
   17432917:
     template: Succubus_Bats
-    at:       [-9.865, 35.474, -203.177, 69]
+    region:   sw_338
     level:    [65, 68]
   17432918:
     template: Succubus_Bats
-    at:       [21.559, 35.648, -211.866, 55]
+    region:   sw_338
     level:    [65, 68]
   17432919:
     template: Tonberry_Slasher
-    at:       [67.407, 36.210, -195.970, 50]
+    region:   s_343
     level:    [67, 69]
   17432920:
     template: Tonberry_Slasher
-    at:       [47.220, 35.839, -183.555, 70]
+    region:   s_343
     level:    [67, 69]
   17432921:
     template: Succubus_Bats
-    at:       [78.228, 35.883, -195.024, 109]
+    region:   s_343
     level:    [65, 68]
   17432922:
     template: Succubus_Bats
-    at:       [54.894, 35.540, -174.119, 127]
+    region:   s_343
     level:    [65, 68]
   17432923:
     template: Tonberry_Slasher
-    at:       [63.000, 37.000, -241.000, 106]
+    region:   s_347
     level:    [67, 69]
   17432924:
     template: Tonberry_Beleaguerer
-    at:       [33.939, 35.804, -219.174, 127]
+    region:   s_347
     level:    [66, 69]
   17432925:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_347
     level:    [53, 59]
   17432926:
     template: Succubus_Bats
-    at:       [40.414, 36.409, -212.738, 127]
+    region:   s_347
     level:    [65, 68]
   17432927:
     template: Fire_Elemental
-    at:       [33.556, 35.779, -214.908, 77]
+    region:   s_347
     level:    [70, 72]
   17432928:
     template: Tonberry_Slasher
-    at:       [74.599, 36.480, -217.452, 120]
+    region:   s_352
     level:    [67, 69]
   17432929:
     template: Tonberry_Slasher
-    at:       [96.343, 35.548, -215.027, 127]
+    region:   s_352
     level:    [67, 69]
   17432930:
     template: Succubus_Bats
-    at:       [90.262, 35.542, -242.478, 46]
+    region:   s_352
     level:    [65, 68]
   17432931:
     template: Cutlass_Scorpion_DR
     script:   Cutlass_Scorpion
-    at:       [121.000, 35.654, -236.000, 127]
+    region:   s_352
     level:    [68, 70]
   17432932:
     template: Succubus_Bats
-    at:       [124.571, 35.889, -281.581, 124]
+    region:   s_356
     level:    [65, 68]
   17432933:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [111.500, 35.517, -250.675, 137]
+    region:   s_356
     level:    [64, 67]
   17432934:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [113.177, 35.910, -285.402, 82]
+    region:   s_356
     level:    [64, 67]
   17432935:
     template: Cutlass_Scorpion_DR
     script:   Cutlass_Scorpion
-    at:       [114.666, 35.803, -273.323, 127]
+    region:   s_356
     level:    [68, 70]
   17432936:
     template: Tonberry_Beleaguerer
-    at:       [52.761, 36.143, -219.130, 127]
+    region:   s_360
     level:    [66, 69]
   17432937:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_360
     level:    [53, 59]
   17432938:
     template: Succubus_Bats
-    at:       [162.284, 35.436, -299.334]
+    region:   s_362
     level:    [65, 68]
   17432939:
     template: Succubus_Bats
-    at:       [149.437, 35.479, -299.221, 127]
+    region:   s_362
     level:    [65, 68]
   17432940:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [158.734, 35.459, -298.437, 127]
+    region:   s_362
     level:    [64, 67]
   17432941:
     template: Mousse_DoR_PMS
     script:   Mousse
-    at:       [206.719, 35.514, -285.343, 23]
+    region:   s_365
     level:    [64, 67]
   17432942:
     template: Bifrons_Den_of_Rancor
     script:   Bifrons
-    at:       [207.491, 35.504, -285.699, 64]
+    region:   s_365
     level:    [68, 70]
   17432943:
     template: Bifrons_Den_of_Rancor
     script:   Bifrons
-    at:       [192.356, 35.534, -275.124, 127]
+    region:   s_365
     level:    [68, 70]
   17432944:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [101.000, 25.000, -346.000, 127]
+    region:   s_368
     level:    [73, 76]
   17432945:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [100.952, 25.789, -336.591, 125]
+    region:   s_368
     level:    [73, 76]
   17432946:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [96.601, 25.652, -342.227, 127]
+    region:   s_368
     level:    [73, 76]
   17432947:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [101.609, 25.505, -317.571, 36]
+    region:   s_371
     level:    [73, 76]
   17432948:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [100.000, 25.000, -301.000, 41]
+    region:   s_371
     level:    [73, 76]
   17432949:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [16.937, 25.260, -294.656, 113]
+    region:   sw_373
     level:    [73, 76]
   17432950:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [27.317, 24.133, -293.822, 12]
+    region:   sw_373
     level:    [73, 76]
   17432951:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [16.986, 25.446, -306.766, 127]
+    region:   sw_373
     level:    [73, 76]
   17432952:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [58.204, 24.923, -299.496, 127]
+    region:   sw_373
     level:    [73, 76]
   17432953:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [28.000, 25.000, -303.000, 127]
+    region:   sw_373
     level:    [73, 76]
   17432954:
     template: Tonberry_Slasher
-    at:       [-20.122, 25.261, -294.893, 127]
+    region:   sw_378
     level:    [67, 69]
   17432955:
     template: Tonberry_Slasher
-    at:       [-32.897, 25.773, -280.915, 127]
+    region:   sw_379
     level:    [67, 69]
   17432956:
     template: Tonberry_Slasher
-    at:       [-38.351, 25.797, -285.935, 91]
+    region:   sw_379
     level:    [67, 69]
   17432957:
     template: Tonberry_Beleaguerer
-    at:       [-35.517, 25.899, -281.578, 57]
+    region:   sw_379
     level:    [66, 69]
   17432958:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_379
     level:    [53, 59]
   17432959:
     template: Tonberry_Slasher
-    at:       [-20.554, 25.456, -251.845, 127]
+    region:   sw_383
     level:    [67, 69]
   17432960:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [42.000, 26.000, -303.000, 127]
+    region:   sw_383
     level:    [73, 76]
   17432961:
     template: Tonberry_Beleaguerer
-    at:       [-58.316, 25.431, -309.361, 127]
+    region:   sw_385
     level:    [66, 69]
   17432962:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_385
     level:    [53, 59]
   17432963:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [42.000, 26.000, -293.000, 113]
+    region:   sw_385
     level:    [73, 76]
   17432964:
     template: Tonberry_Slasher
-    at:       [-78.435, 15.436, -221.484, 127]
+    region:   sw_388
     level:    [67, 69]
   17432965:
     template: Tonberry_Beleaguerer
-    at:       [-59.361, 24.938, -236.407, 26]
+    region:   sw_388
     level:    [66, 69]
   17432966:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_388
     level:    [53, 59]
   17432967:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-63.918, 21.624, -225.586, 127]
+    region:   sw_388
     level:    [73, 76]
   17432968:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-62.529, 23.176, -233.277, 125]
+    region:   sw_388
     level:    [73, 76]
   17432969:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-40.859, 35.731, -365.540, 32]
+    region:   sw_393
     level:    [73, 76]
   17432970:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-21.000, 36.000, -349.000, 101]
+    region:   sw_393
     level:    [73, 76]
   17432971:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-34.433, 35.838, -350.511, 73]
+    region:   sw_393
     level:    [73, 76]
   17432972:
     template: Doom_Toad
-    at:       [-42.913, 35.360, -350.062, 127]
+    region:   sw_393
     level:    [75, 78]
   17432973:
     template: Doom_Toad
-    at:       [-42.305, 35.356, -348.654, 133]
+    region:   sw_393
     level:    [75, 78]
   17432974:
     template: Ogama
-    at:       [-32.223, 36.078, -369.741, 117]
+    region:   sw_393
     level:    [80, 82]
   17432975:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [8.104, 33.010, -351.031, 127]
+    region:   sw_399
     level:    [73, 76]
   17432976:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-13.768, 36.211, -372.854, 91]
+    region:   sw_399
     level:    [73, 76]
   17432977:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [-14.259, 36.542, -369.021, 127]
+    region:   sw_399
     level:    [73, 76]
   17432978:
     template: Doom_Toad
-    at:       [-2.000, 36.000, -367.000, 58]
+    region:   sw_399
     level:    [75, 78]
   17432979:
     template: Doom_Toad
-    at:       [-21.000, 36.000, -351.000, 18]
+    region:   sw_393
     level:    [75, 78]
   17432980:
     template: Tonberry_Slasher
-    at:       [-113.000, 6.000, -215.000, 127]
+    region:   sw_404
     level:    [69, 71]
   17432981:
     template: Tonberry_Beleaguerer
-    at:       [-124.000, 7.000, -219.000, 127]
+    region:   sw_404
     level:    [69, 72]
   17432982:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_404
     level:    [53, 59]
   17432983:
     template: Tonberry_Slasher
-    at:       [-139.000, 6.000, -205.000, 55]
+    region:   sw_407
     level:    [69, 71]
   17432984:
     template: Tonberry_Slasher
-    at:       [-140.000, 7.000, -193.000, 127]
+    region:   sw_407
     level:    [69, 71]
   17432985:
     template: Tonberry_Beleaguerer
-    at:       [-145.220, 5.250, -179.819, 127]
+    region:   sw_409
     level:    [69, 72]
   17432986:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_409
     level:    [53, 59]
   17432987:
     template: Tonberry_Beleaguerer
-    at:       [-125.000, 5.000, -177.000, 127]
+    region:   sw_409
     level:    [69, 72]
   17432988:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_409
     level:    [53, 59]
   17432989:
     template: Tonberry_Decapitator
-    at:       [-149.044, 5.434, -176.297, 90]
+    region:   sw_409
     level:    [72, 74]
   17432990:
     template: Doom_Toad
-    at:       [-170.000, 5.479, -179.000, 127]
+    region:   sw_415
     level:    [75, 78]
   17432991:
     template: Doom_Toad
-    at:       [-111.213, 5.120, -179.656, 127]
+    region:   sw_415
     level:    [75, 78]
   17432992:
     template: Tonberry_Slasher
-    at:       [-141.721, 6.766, -214.374, 45]
+    region:   sw_416
     level:    [69, 71]
   17432993:
     template: Water_Elemental
-    at:       [-141.878, 6.745, -216.956, 127]
+    region:   sw_416
     level:    [68, 73]
   17432994:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [62.381, 35.827, -384.738, 127]
+    region:   s_418
     level:    [73, 76]
   17432995:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [84.000, 34.000, -378.000, 127]
+    region:   s_418
     level:    [73, 76]
   17432996:
     template: Million_Eyes_DR
     script:   Million_Eyes
-    at:       [69.618, 35.820, -381.100, 127]
+    region:   s_418
     level:    [73, 76]
   17432997:
     template: Tonberry_Slasher
-    at:       [-164.833, 15.922, -123.932, 124]
+    region:   w_421
     level:    [69, 71]
   17432998:
     template: Tonberry_Slasher
-    at:       [-161.653, 15.810, -121.665, 95]
+    region:   w_421
     level:    [69, 71]
   17432999:
     template: Tonberry_Beleaguerer
-    at:       [-158.206, 15.636, -123.734, 127]
+    region:   w_421
     level:    [69, 72]
   17433000:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   w_421
     level:    [53, 59]
   17433001:
     template: Tonberry_Tracker
-    at:       [-167.336, 15.851, -120.259, 100]
+    region:   w_421
     level:    [72, 74]
   17433002:
     template: Tonberry_Decapitator
-    at:       [-165.510, 15.833, -116.849, 124]
+    region:   w_421
     level:    [72, 74]
   17433003:
     template: Tonberry_Pontifex
-    at:       [-164.725, 16.416, -116.191, 19]
+    region:   w_421
     level:    [75, 75]
   17433004:
     template: Tonberry_Tracker
-    at:       [-188.621, 15.588, -100.234, 127]
+    region:   w_421
     level:    [72, 74]
   17433005:
     template: Hakutaku

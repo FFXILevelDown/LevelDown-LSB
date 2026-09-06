@@ -2184,7 +2184,7 @@ spawns:
     level:    [37, 40]
   17207302:
     template: Weeping_Willow
-    at:       [-670.000, -23.000, 352.000, 127]
+    region:   nw_6
     level:    [45, 45]
   17207303:
     template: Sobbing_Sapling
@@ -2208,1079 +2208,1080 @@ spawns:
     level:    [36, 38]
   17207308:
     template: Lumber_Jack
-    at:       [-670.000, -23.000, 352.000, 127]
+    region:   nw_6
     level:    [55, 55]
   17207309:
     template: May_Fly
-    at:       [-437.673, -15.122, -27.501, 30]
+    region:   w_13
     level:    [25, 26]
   17207310:
     template: May_Fly
-    at:       [-355.464, -22.956, -33.150, 127]
+    region:   w_13
     level:    [25, 26]
   17207311:
     template: May_Fly
-    at:       [-380.352, -20.430, -40.223, 67]
+    region:   w_13
     level:    [25, 26]
   17207312:
     template: Stalking_Sapling
-    at:       [-404.148, -8.277, 53.753, 127]
+    region:   w_13
     level:    [23, 24]
   17207313:
     template: Stalking_Sapling
-    at:       [-413.942, -13.988, 0.847, 45]
+    region:   w_13
     level:    [23, 24]
   17207314:
     template: Stalking_Sapling
-    at:       [-408.318, -15.498, -101.179, 121]
+    region:   w_13
     level:    [23, 24]
   17207315:
     template: Stalking_Sapling
-    at:       [-422.108, -15.615, -101.071, 127]
+    region:   w_13
     level:    [23, 24]
   17207316:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-404.364, -15.319, -15.756, 99]
+    region:   w_13
     level:    [31, 32]
   17207317:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-440.952, -7.999, 41.350, 127]
+    region:   w_13
     level:    [31, 32]
   17207318:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-367.588, -8.867, 29.823, 127]
+    region:   w_13
     level:    [31, 32]
   17207319:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-372.827, -14.081, 10.748, 41]
+    region:   w_13
     level:    [31, 32]
   17207320:
     template: May_Fly
-    at:       [-226.785, -38.870, -79.401, 127]
+    region:   c_24
     level:    [25, 26]
   17207321:
     template: May_Fly
-    at:       [-260.851, -16.735, -15.995, 127]
+    region:   c_24
     level:    [25, 26]
   17207322:
     template: May_Fly
-    at:       [-265.996, -31.153, -75.883, 91]
+    region:   c_24
     level:    [25, 26]
   17207323:
     template: Stalking_Sapling
-    at:       [-266.735, -23.511, -41.636, 92]
+    region:   c_24
     level:    [23, 24]
   17207324:
     template: Stalking_Sapling
-    at:       [-267.664, -8.467, 25.409, 127]
+    region:   c_24
     level:    [23, 24]
   17207325:
     template: Stalking_Sapling
-    at:       [-259.597, -29.612, -107.049, 41]
+    region:   c_24
     level:    [23, 24]
   17207326:
     template: Stalking_Sapling
-    at:       [-274.153, -12.419, 17.065, 127]
+    region:   c_24
     level:    [23, 24]
   17207327:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-255.082, -35.233, -65.987, 127]
+    region:   c_24
     level:    [31, 32]
   17207328:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-258.475, -7.258, 38.578, 2]
+    region:   c_24
     level:    [31, 32]
   17207329:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-241.950, -36.225, -59.763, 108]
+    region:   c_24
     level:    [31, 32]
   17207330:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-296.567, -19.759, 5.115, 127]
+    region:   c_24
     level:    [31, 32]
   17207331:
     template: May_Fly
-    at:       [-172.063, -9.635, 75.178, 76]
+    region:   c_35
     level:    [25, 26]
   17207332:
     template: May_Fly
-    at:       [-220.421, -20.214, 33.306, 25]
+    region:   c_35
     level:    [25, 26]
   17207333:
     template: May_Fly
-    at:       [-157.260, -17.963, -59.561, 82]
+    region:   c_35
     level:    [25, 26]
   17207334:
     template: Stalking_Sapling
-    at:       [-177.126, -15.524, 65.538, 74]
+    region:   c_35
     level:    [23, 24]
   17207335:
     template: Stalking_Sapling
-    at:       [-229.287, -16.540, 52.590, 61]
+    region:   c_35
     level:    [23, 24]
   17207336:
     template: Stalking_Sapling
-    at:       [-228.297, -14.497, 13.797, 54]
+    region:   c_35
     level:    [23, 24]
   17207337:
     template: Stalking_Sapling
-    at:       [-162.278, -10.369, 21.659, 127]
+    region:   c_35
     level:    [23, 24]
   17207338:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-164.181, -11.920, 57.689, 88]
+    region:   c_35
     level:    [31, 32]
   17207339:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-174.839, -29.257, -52.891, 127]
+    region:   c_35
     level:    [31, 32]
   17207340:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-239.735, -9.649, 52.519, 96]
+    region:   c_35
     level:    [31, 32]
   17207341:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-215.882, -21.505, 60.215, 29]
+    region:   c_35
     level:    [31, 32]
   17207342:
     template: Evil_Spirit
-    at:       [-209.015, -4.200, 39.787, 127]
+    region:   c_46
     level:    [35, 36]
   17207343:
     template: Goblin_Mugger
-    at:       [-382.291, -19.448, -34.468, 55]
+    region:   c_47
     level:    [26, 27]
   17207344:
     template: Goblin_Pathfinder
-    at:       [-272.815, -27.607, -66.452, 127]
+    region:   c_47
     level:    [30, 31]
   17207345:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   c_47
     level:    [23, 25]
   17207346:
     template: Goblin_Leecher
-    at:       [-397.021, -9.133, 39.474, 127]
+    region:   c_47
     level:    [26, 27]
   17207347:
     template: Goblin_Furrier
-    at:       [-292.926, -16.493, -7.768, 88]
+    region:   c_47
     level:    [30, 31]
   17207348:
     template: Goblin_Gambler
-    at:       [-272.506, -7.902, 29.885, 33]
+    region:   c_47
     level:    [26, 27]
   17207349:
     template: Goblin_Smithy
-    at:       [-349.451, -21.181, -50.632, 127]
+    region:   c_47
     level:    [30, 31]
   17207350:
     template: Goblin_Shaman
-    at:       [-452.714, -7.732, 27.960, 127]
+    region:   c_47
     level:    [30, 31]
   17207351:
     template: Wight_war
     script:   Wight
-    at:       [-225.173, -35.449, -99.367, 119]
+    region:   c_47
     level:    [26, 32]
   17207352:
     template: Wight_blm
     script:   Wight
-    at:       [-317.979, -21.608, -62.346, 31]
+    region:   c_47
     level:    [26, 32]
   17207353:
     template: Ignis_Fatuus
-    at:       [-269.239, -27.089, -56.951, 127]
+    region:   c_47
     level:    [34, 35]
   17207354:
     template: May_Fly
-    at:       [-473.685, -15.889, -96.289, 48]
+    region:   w_58
     level:    [25, 26]
   17207355:
     template: May_Fly
-    at:       [-489.103, -8.255, 7.012, 35]
+    region:   w_58
     level:    [25, 26]
   17207356:
     template: May_Fly
-    at:       [-466.067, -16.836, -71.818, 127]
+    region:   w_58
     level:    [25, 26]
   17207357:
     template: Stalking_Sapling
-    at:       [-481.413, -8.457, -7.620, 127]
+    region:   w_58
     level:    [23, 23]
   17207358:
     template: Stalking_Sapling
-    at:       [-489.032, -7.996, 6.224, 127]
+    region:   w_58
     level:    [23, 24]
   17207359:
     template: Stalking_Sapling
-    at:       [-483.701, -18.189, -68.357, 127]
+    region:   w_58
     level:    [23, 24]
   17207360:
     template: Stalking_Sapling
-    at:       [-495.610, -22.010, -45.332, 127]
+    region:   w_58
     level:    [23, 24]
   17207361:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-499.176, -15.771, -78.909, 127]
+    region:   w_58
     level:    [31, 32]
   17207362:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-557.794, -8.514, -27.658]
+    region:   w_58
     level:    [31, 32]
   17207363:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-471.726, -17.072, -76.308, 101]
+    region:   w_58
     level:    [31, 32]
   17207364:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-534.931, -20.567, -27.813, 120]
+    region:   w_58
     level:    [31, 32]
   17207365:
     template: Stalking_Sapling
-    at:       [-605.252, -16.057, 120.099, 127]
+    region:   w_69
     level:    [23, 24]
   17207366:
     template: Stalking_Sapling
-    at:       [-592.215, -8.498, 49.151, 105]
+    region:   w_69
     level:    [23, 24]
   17207367:
     template: Stalking_Sapling
-    at:       [-581.703, -15.735, 98.497, 89]
+    region:   w_69
     level:    [24, 24]
   17207368:
     template: Stalking_Sapling
-    at:       [-550.207, -8.169, 9.007, 127]
+    region:   w_69
     level:    [23, 24]
   17207369:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-553.518, -8.910, 45.760, 127]
+    region:   w_69
     level:    [31, 32]
   17207370:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-570.449, -16.041, 80.207, 127]
+    region:   w_69
     level:    [31, 32]
   17207371:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-583.280, -15.389, 82.938, 23]
+    region:   w_69
     level:    [31, 32]
   17207372:
     template: May_Fly
-    at:       [-685.653, -16.948, 118.205]
+    region:   nw_76
     level:    [25, 26]
   17207373:
     template: May_Fly
-    at:       [-722.768, -16.120, 117.829, 47]
+    region:   nw_76
     level:    [25, 26]
   17207374:
     template: Stalking_Sapling
-    at:       [-677.226, -32.331, 149.730, 127]
+    region:   nw_76
     level:    [23, 24]
   17207375:
     template: Stalking_Sapling
-    at:       [-704.723, -22.042, 206.648, 72]
+    region:   nw_76
     level:    [23, 24]
   17207376:
     template: Stalking_Sapling
-    at:       [-634.786, -16.713, 159.465, 93]
+    region:   nw_76
     level:    [23, 24]
   17207377:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-631.703, -16.473, 139.838, 80]
+    region:   nw_76
     level:    [31, 32]
   17207378:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-664.213, -28.159, 142.129, 127]
+    region:   nw_76
     level:    [31, 32]
   17207379:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-653.519, -21.142, 174.410, 16]
+    region:   nw_76
     level:    [31, 32]
   17207380:
     template: Goblin_Mugger
-    at:       [-478.550, -15.802, -118.248, 17]
+    region:   w_84
     level:    [26, 27]
   17207381:
     template: Goblin_Pathfinder
-    at:       [-455.375, -14.655, -58.153, 8]
+    region:   w_84
     level:    [30, 31]
   17207382:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   w_84
     level:    [23, 25]
   17207383:
     template: Goblin_Leecher
-    at:       [-536.689, -22.037, -40.951, 92]
+    region:   w_84
     level:    [26, 27]
   17207384:
     template: Goblin_Furrier
-    at:       [-633.035, -16.298, 155.467, 110]
+    region:   w_84
     level:    [30, 31]
   17207385:
     template: Goblin_Gambler
-    at:       [-608.920, -16.854, 106.907, 71]
+    region:   w_84
     level:    [26, 27]
   17207386:
     template: Goblin_Smithy
-    at:       [-598.370, -10.646, 52.293, 59]
+    region:   w_84
     level:    [30, 31]
   17207387:
     template: Goblin_Shaman
-    at:       [-504.915, -12.759, -8.353, 127]
+    region:   w_84
     level:    [30, 31]
   17207388:
     template: Wight_war
     script:   Wight
-    at:       [-512.256, -24.897, -52.702, 81]
+    region:   w_84
     level:    [26, 32]
   17207389:
     template: Wight_blm
     script:   Wight
-    at:       [-712.999, -16.617, 125.180, 92]
+    region:   w_84
     level:    [26, 32]
   17207390:
     template: Earth_Elemental
-    at:       [-584.468, -14.038, 64.203, 127]
+    region:   w_84
     level:    [38, 40]
   17207391:
     template: Goblin_Furrier
-    at:       [-457.282, -15.717, -93.748, 127]
+    region:   region_49
     level:    [30, 31]
   17207392:
     template: Goblin_Smithy
-    at:       [-459.340, -15.765, -88.176, 54]
+    region:   region_49
     level:    [30, 31]
   17207393:
     template: Goblin_Shaman
-    at:       [-460.460, -16.276, -99.022, 14]
+    region:   region_49
     level:    [30, 31]
   17207394:
     template: May_Fly
-    at:       [-427.010, -15.653, 234.443, 127]
+    region:   nw_98
     level:    [25, 26]
   17207395:
     template: May_Fly
-    at:       [-435.559, -15.455, 211.837, 127]
+    region:   nw_98
     level:    [25, 26]
   17207396:
     template: Stalking_Sapling
-    at:       [-416.381, -15.615, 104.341, 127]
+    region:   nw_98
     level:    [23, 24]
   17207397:
     template: Stalking_Sapling
-    at:       [-378.958, -15.425, 233.706, 127]
+    region:   nw_98
     level:    [23, 24]
   17207398:
     template: Stalking_Sapling
-    at:       [-455.891, -13.305, 75.227, 127]
+    region:   nw_98
     level:    [23, 24]
   17207399:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-319.684, -15.949, 235.122, 90]
+    region:   nw_98
     level:    [31, 32]
   17207400:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-429.729, -15.348, 160.158, 127]
+    region:   nw_98
     level:    [31, 32]
   17207401:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-493.853, -16.205, 212.750, 127]
+    region:   nw_98
     level:    [31, 32]
   17207402:
     template: May_Fly
-    at:       [-363.924, -30.724, 176.899, 127]
+    region:   nw_106
     level:    [25, 26]
   17207403:
     template: May_Fly
-    at:       [-347.173, -27.320, 183.713, 23]
+    region:   nw_106
     level:    [25, 26]
   17207404:
     template: Stalking_Sapling
-    at:       [-406.130, -17.012, 145.446, 127]
+    region:   nw_106
     level:    [23, 24]
   17207405:
     template: Stalking_Sapling
-    at:       [-363.937, -30.527, 176.968, 3]
+    region:   nw_106
     level:    [23, 24]
   17207406:
     template: Stalking_Sapling
-    at:       [-356.165, -16.328, 205.229, 127]
+    region:   nw_106
     level:    [23, 24]
   17207407:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-379.437, -13.565, 218.747, 127]
+    region:   nw_106
     level:    [31, 32]
   17207408:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-366.620, -15.444, 103.644, 127]
+    region:   nw_106
     level:    [31, 32]
   17207409:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-354.006, -14.066, 216.305, 127]
+    region:   nw_106
     level:    [31, 32]
   17207410:
     template: Skirling_Liger
-    at:       [-394.000, -16.000, 206.000, 127]
+    region:   nw_106
     level:    [42, 43]
   17207411:
     template: Evil_Spirit
-    at:       [-358.742, -12.200, 169.096, 127]
+    region:   nw_115
     level:    [35, 36]
   17207412:
     template: May_Fly
-    at:       [-333.783, -16.332, 418.247, 127]
+    region:   n_116
     level:    [25, 26]
   17207413:
     template: May_Fly
-    at:       [-353.629, -15.378, 267.942, 127]
+    region:   n_116
     level:    [25, 26]
   17207414:
     template: Stalking_Sapling
-    at:       [-323.466, -16.127, 404.902, 127]
+    region:   n_116
     level:    [23, 24]
   17207415:
     template: Stalking_Sapling
-    at:       [-359.600, -15.195, 297.904, 71]
+    region:   n_116
     level:    [23, 24]
   17207416:
     template: Stalking_Sapling
-    at:       [-318.392, -15.973, 411.753, 14]
+    region:   n_116
     level:    [23, 24]
   17207417:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-325.634, -15.662, 276.124, 127]
+    region:   n_116
     level:    [31, 32]
   17207418:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-355.310, -16.086, 327.694, 127]
+    region:   n_116
     level:    [31, 32]
   17207419:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-273.072, -15.422, 399.232, 116]
+    region:   n_116
     level:    [31, 32]
   17207420:
     template: Orcish_Fighter
-    at:       [-460.107, -16.240, 125.468, 101]
+    region:   nw_124
     level:    [26, 27]
   17207421:
     template: Orcish_Impaler
-    at:       [-409.579, -15.891, 96.963, 127]
+    region:   nw_124
     level:    [30, 31]
   17207422:
     template: Orcish_Beastrider
-    at:       [-345.000, -15.000, 259.000, 121]
+    region:   nw_124
     level:    [30, 31]
   17207423:
     template: Orcish_Nightraider
-    at:       [-370.804, -24.062, 346.997, 127]
+    region:   nw_124
     level:    [30, 31]
   17207424:
     template: Orcish_Cursemaker
-    at:       [-405.241, -15.518, 192.912, 127]
+    region:   nw_124
     level:    [26, 27]
   17207425:
     template: Orcish_Serjeant
-    at:       [-382.118, -23.163, 136.329, 91]
+    region:   nw_124
     level:    [26, 27]
   17207426:
     template: Orcish_Brawler
-    at:       [-367.261, -16.106, 271.735, 15]
+    region:   region_52
     level:    [30, 31]
   17207427:
     template: Goblin_Mugger
-    at:       [-332.994, -16.504, 104.951, 127]
+    region:   nw_124
     level:    [26, 27]
   17207428:
     template: Goblin_Pathfinder
-    at:       [-468.976, -15.130, 71.247, 119]
+    region:   nw_124
     level:    [30, 31]
   17207429:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_124
     level:    [23, 25]
   17207430:
     template: Goblin_Leecher
-    at:       [-474.332, -15.937, 86.952, 127]
+    region:   nw_124
     level:    [26, 27]
   17207431:
     template: Goblin_Furrier
-    at:       [-448.950, -14.149, 99.818, 127]
+    region:   nw_124
     level:    [30, 31]
   17207432:
     template: Goblin_Gambler
-    at:       [-269.661, -15.487, 371.036]
+    region:   nw_124
     level:    [26, 27]
   17207433:
     template: Goblin_Smithy
-    at:       [-368.028, -15.730, 226.336, 117]
+    region:   region_51
     level:    [30, 31]
   17207434:
     template: Goblin_Shaman
-    at:       [-336.147, -17.056, 435.056, 81]
+    region:   nw_124
     level:    [30, 31]
   17207435:
     template: Wight_war
     script:   Wight
-    at:       [-312.745, -15.894, 121.672, 48]
+    region:   nw_124
     level:    [26, 32]
   17207436:
     template: Wight_war
     script:   Wight
-    at:       [-355.105, -16.033, 73.755, 127]
+    region:   nw_124
     level:    [26, 32]
   17207437:
     template: Wight_blm
     script:   Wight
-    at:       [-350.582, -15.672, 235.707, 117]
+    region:   nw_124
     level:    [26, 32]
   17207438:
     template: Wight_blm
     script:   Wight
-    at:       [-405.325, -17.278, 143.939, 192]
+    region:   nw_124
     level:    [26, 32]
   17207439:
     template: Earth_Elemental
-    at:       [-433.559, -15.529, 118.233, 127]
+    region:   nw_124
     level:    [38, 40]
   17207440:
     template: Orcish_Impaler
-    at:       [-349.935, -15.665, 256.478, 127]
+    region:   nw_124
     level:    [30, 31]
   17207441:
     template: Orcish_Beastrider
+    region:   nw_124
     level:    [30, 31]
   17207442:
     template: Orcish_Nightraider
-    at:       [-344.000, -15.000, 252.000, 34]
+    region:   nw_124
     level:    [30, 31]
   17207443:
     template: Orcish_Brawler
-    at:       [-344.625, -15.942, 255.723, 33]
+    region:   region_50
     level:    [30, 31]
   17207444:
     template: Goblin_Furrier
-    at:       [-380.918, -16.254, 102.267, 8]
+    region:   region_51
     level:    [30, 31]
   17207445:
     template: Goblin_Smithy
-    at:       [-385.019, -15.724, 101.838, 36]
+    region:   region_51
     level:    [30, 31]
   17207446:
     template: Goblin_Shaman
-    at:       [-382.000, -15.000, 106.000, 127]
+    region:   nw_124
     level:    [30, 31]
   17207447:
     template: May_Fly
-    at:       [-284.098, -8.458, 168.517, 83]
+    region:   n_151
     level:    [25, 26]
   17207448:
     template: May_Fly
-    at:       [-229.074, -22.653, 149.905, 127]
+    region:   n_151
     level:    [25, 26]
   17207449:
     template: Stalking_Sapling
-    at:       [-194.234, -18.485, 132.208, 127]
+    region:   n_151
     level:    [23, 24]
   17207450:
     template: Stalking_Sapling
-    at:       [-248.150, -12.502, 174.407, 127]
+    region:   n_151
     level:    [23, 24]
   17207451:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-188.728, -10.144, 176.061, 52]
+    region:   n_151
     level:    [31, 32]
   17207452:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-254.056, -17.582, 140.688, 127]
+    region:   n_151
     level:    [31, 32]
   17207453:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-297.336, -7.993, 94.787, 110]
+    region:   n_151
     level:    [31, 32]
   17207454:
     template: May_Fly
-    at:       [-133.204, -3.004, 203.766, 127]
+    region:   n_158
     level:    [25, 26]
   17207455:
     template: May_Fly
-    at:       [-229.475, -8.636, 259.270, 127]
+    region:   n_158
     level:    [25, 26]
   17207456:
     template: Stalking_Sapling
-    at:       [-134.039, -0.842, 289.313, 79]
+    region:   n_158
     level:    [23, 24]
   17207457:
     template: Stalking_Sapling
-    at:       [-145.230, -0.170, 334.642, 60]
+    region:   n_158
     level:    [23, 24]
   17207458:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-229.511, -8.638, 265.929, 53]
+    region:   n_158
     level:    [31, 32]
   17207459:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-180.705, 2.017, 290.824, 28]
+    region:   n_158
     level:    [31, 32]
   17207460:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-147.023, -4.680, 218.997, 107]
+    region:   n_158
     level:    [31, 32]
   17207461:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-160.211, 0.239, 310.123, 127]
+    region:   n_158
     level:    [31, 32]
   17207462:
     template: May_Fly
-    at:       [-256.091, -6.157, 257.306, 94]
+    region:   n_166
     level:    [25, 26]
   17207463:
     template: Stalking_Sapling
-    at:       [-236.333, -7.819, 343.322, 70]
+    region:   n_166
     level:    [23, 24]
   17207464:
     template: Stalking_Sapling
-    at:       [-259.618, -5.921, 251.595, 127]
+    region:   n_166
     level:    [23, 24]
   17207465:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-288.633, -8.700, 247.175, 55]
+    region:   n_166
     level:    [31, 32]
   17207466:
     template: Orcish_Fighter
-    at:       [-194.696, -1.280, 238.555, 94]
+    region:   n_171
     level:    [26, 27]
   17207467:
     template: Orcish_Impaler
-    at:       [-294.798, -8.457, 166.382, 111]
+    region:   n_171
     level:    [30, 31]
   17207468:
     template: Orcish_Beastrider
-    at:       [-171.490, 0.439, 280.843, 125]
+    region:   n_171
     level:    [30, 31]
   17207469:
     template: Orcish_Nightraider
-    at:       [-116.580, 1.521, 268.260, 41]
+    region:   n_171
     level:    [30, 31]
   17207470:
     template: Orcish_Cursemaker
-    at:       [-197.528, -19.387, 134.829, 118]
+    region:   n_171
     level:    [26, 27]
   17207471:
     template: Orcish_Serjeant
-    at:       [-253.675, -7.288, 284.542, 72]
+    region:   n_171
     level:    [26, 27]
   17207472:
     template: Orcish_Brawler
-    at:       [-264.835, -6.625, 233.731, 125]
+    region:   n_171
     level:    [30, 31]
   17207473:
     template: Wight_war
     script:   Wight
-    at:       [-158.502, -2.097, 227.833, 133]
+    region:   n_171
     level:    [26, 32]
   17207474:
     template: Wight_blm
     script:   Wight
-    at:       [-271.266, -7.665, 92.827, 193]
+    region:   n_171
     level:    [26, 32]
   17207475:
     template: Ice_Elemental
-    at:       [-287.589, -7.776, 267.616, 127]
+    region:   n_166
     level:    [38, 40]
   17207476:
     template: Tottering_Toby
-    at:       [-255.542, -7.872, 185.826, 64]
+    region:   n_171
     level:    [27, 28]
   17207477:
     template: Orcish_Fighter
-    at:       [-135.000, -1.000, 306.000, 84]
+    region:   region_52
     level:    [26, 27]
   17207478:
     template: Orcish_Cursemaker
-    at:       [-140.461, -2.034, 304.404, 82]
+    region:   n_171
     level:    [26, 27]
   17207479:
     template: Orcish_Serjeant
-    at:       [-136.141, -2.335, 302.232, 70]
+    region:   n_171
     level:    [26, 27]
   17207480:
     template: Stalking_Sapling
-    at:       [-208.758, -8.838, 419.572, 124]
+    region:   n_184
     level:    [23, 24]
   17207481:
     template: Stalking_Sapling
-    at:       [-133.751, -2.463, 447.619, 29]
+    region:   n_184
     level:    [23, 24]
   17207482:
     template: Stalking_Sapling
-    at:       [-162.014, -7.932, 437.153, 101]
+    region:   n_184
     level:    [23, 24]
   17207483:
     template: Treant
-    at:       [-200.893, -7.460, 413.715, 89]
+    region:   n_184
     level:    [36, 37]
   17207484:
     template: Ba
-    at:       [-117.481, -14.422, 26.009, 105]
+    region:   c_188
     level:    [27, 28]
   17207485:
     template: May_Fly
-    at:       [-161.046, -22.031, -110.183, 45]
+    region:   c_188
     level:    [25, 26]
   17207486:
     template: May_Fly
-    at:       [-159.572, -23.218, -53.278, 127]
+    region:   c_188
     level:    [25, 26]
   17207487:
     template: Stalking_Sapling
-    at:       [-59.508, -6.508, 16.582, 27]
+    region:   c_188
     level:    [23, 24]
   17207488:
     template: Stalking_Sapling
-    at:       [-83.104, -9.973, 3.155, 57]
+    region:   c_188
     level:    [23, 24]
   17207489:
     template: Stalking_Sapling
-    at:       [-94.664, -13.760, 25.854, 30]
+    region:   c_188
     level:    [23, 24]
   17207490:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-160.895, -22.131, -108.871, 27]
+    region:   c_188
     level:    [31, 32]
   17207491:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-144.083, -18.408, -59.297, 127]
+    region:   c_188
     level:    [31, 32]
   17207492:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-125.802, -20.425, -18.400, 127]
+    region:   c_188
     level:    [31, 32]
   17207493:
     template: Ba
-    at:       [-100.137, -12.526, -104.811, 127]
+    region:   c_197
     level:    [27, 28]
   17207494:
     template: May_Fly
-    at:       [9.189, -1.839, 32.945, 127]
+    region:   c_197
     level:    [25, 26]
   17207495:
     template: May_Fly
-    at:       [-35.040, -25.124, -30.282, 127]
+    region:   c_197
     level:    [25, 26]
   17207496:
     template: Stalking_Sapling
-    at:       [-73.937, -12.847, -112.168, 122]
+    region:   c_197
     level:    [23, 24]
   17207497:
     template: Stalking_Sapling
-    at:       [-83.380, -23.509, -65.910, 65]
+    region:   c_197
     level:    [23, 24]
   17207498:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [23.961, -3.862, -0.414, 127]
+    region:   c_197
     level:    [31, 32]
   17207499:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-76.125, -12.891, -112.317]
+    region:   c_197
     level:    [31, 32]
   17207500:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-19.493, -8.294, 9.690, 119]
+    region:   c_197
     level:    [31, 32]
   17207501:
     template: Evil_Spirit
-    at:       [-87.610, -4.200, -76.529, 100]
+    region:   c_205
     level:    [35, 36]
   17207502:
     template: Evil_Spirit
-    at:       [-41.392, -4.199, -46.433, 90]
+    region:   c_206
     level:    [35, 36]
   17207503:
     template: Ba
-    at:       [-140.854, -16.819, -112.163, 123]
+    region:   c_207
     level:    [27, 28]
   17207504:
     template: May_Fly
-    at:       [-32.322, -8.260, -135.297, 127]
+    region:   c_207
     level:    [25, 26]
   17207505:
     template: Stalking_Sapling
-    at:       [-52.828, -8.073, -124.487, 61]
+    region:   c_207
     level:    [23, 24]
   17207506:
     template: Stalking_Sapling
-    at:       [-120.313, -14.188, -148.782, 127]
+    region:   c_207
     level:    [23, 24]
   17207507:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [25.599, -8.275, -159.757, 27]
+    region:   c_207
     level:    [31, 32]
   17207508:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-17.403, -10.182, -135.829, 104]
+    region:   c_207
     level:    [31, 32]
   17207509:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [-149.951, -22.071, -116.049, 127]
+    region:   c_207
     level:    [31, 32]
   17207510:
     template: Goblin_Mugger
-    at:       [-158.721, -11.926, -91.412, 88]
+    region:   c_214
     level:    [26, 27]
   17207511:
     template: Goblin_Pathfinder
-    at:       [-47.000, -23.000, -40.000, 67]
+    region:   c_214
     level:    [30, 31]
   17207512:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   c_214
     level:    [23, 25]
   17207513:
     template: Goblin_Leecher
-    at:       [-94.650, -15.954, -4.670, 27]
+    region:   c_214
     level:    [26, 27]
   17207514:
     template: Goblin_Furrier
-    at:       [8.347, -8.530, -18.713, 4]
+    region:   c_214
     level:    [30, 31]
   17207515:
     template: Goblin_Gambler
-    at:       [-12.137, -10.280, -139.193, 127]
+    region:   c_214
     level:    [26, 27]
   17207516:
     template: Goblin_Smithy
-    at:       [-22.321, -22.539, -40.461, 67]
+    region:   c_214
     level:    [30, 31]
   17207517:
     template: Goblin_Shaman
-    at:       [-55.018, -2.856, 25.830, 127]
+    region:   c_214
     level:    [30, 31]
   17207518:
     template: Wight_war
     script:   Wight
-    at:       [-101.580, -7.548, -121.676, 90]
+    region:   c_214
     level:    [26, 32]
   17207519:
     template: Wight_blm
     script:   Wight
-    at:       [-36.178, -6.963, 8.459, 53]
+    region:   c_214
     level:    [26, 32]
   17207520:
     template: Earth_Elemental
-    at:       [-44.231, -16.123, -67.942, 127]
+    region:   c_214
     level:    [38, 40]
   17207521:
     template: Ba
-    at:       [-51.563, 1.160, 125.463, 17]
+    region:   n_225
     level:    [27, 28]
   17207522:
     template: May_Fly
-    at:       [-17.167, 0.358, 172.815, 127]
+    region:   n_225
     level:    [25, 26]
   17207523:
     template: May_Fly
-    at:       [-97.281, 2.581, 174.942, 127]
+    region:   n_225
     level:    [25, 26]
   17207524:
     template: Stalking_Sapling
-    at:       [12.310, -0.773, 109.888, 124]
+    region:   n_225
     level:    [23, 24]
   17207525:
     template: Stalking_Sapling
-    at:       [-55.491, -0.383, 94.328, 127]
+    region:   n_225
     level:    [23, 24]
   17207526:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-136.765, -7.237, 77.978, 127]
+    region:   n_225
     level:    [31, 32]
   17207527:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-32.118, 0.844, 142.400, 86]
+    region:   n_225
     level:    [31, 32]
   17207528:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-29.227, 0.754, 136.722, 127]
+    region:   n_225
     level:    [31, 32]
   17207529:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [7.559, 0.174, 91.985, 110]
+    region:   n_225
     level:    [31, 32]
   17207530:
     template: Ba
-    at:       [14.298, -6.602, 294.479, 9]
+    region:   n_234
     level:    [27, 28]
   17207531:
     template: May_Fly
-    at:       [-28.226, -0.568, 250.751, 5]
+    region:   n_234
     level:    [25, 26]
   17207532:
     template: May_Fly
-    at:       [-86.515, -0.588, 343.237, 25]
+    region:   n_234
     level:    [25, 26]
   17207533:
     template: Stalking_Sapling
-    at:       [-76.849, 0.010, 278.366, 127]
+    region:   n_234
     level:    [23, 24]
   17207534:
     template: Stalking_Sapling
-    at:       [-54.940, 0.214, 352.421, 127]
+    region:   n_234
     level:    [23, 24]
   17207535:
     template: Stalking_Sapling
-    at:       [-59.485, 0.482, 350.564, 127]
+    region:   n_234
     level:    [23, 24]
   17207536:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-65.403, 0.538, 249.590, 28]
+    region:   n_234
     level:    [31, 32]
   17207537:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-52.261, -6.713, 290.427, 63]
+    region:   n_234
     level:    [31, 32]
   17207538:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-17.144, -8.538, 332.205, 37]
+    region:   n_234
     level:    [31, 32]
   17207539:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [23.218, -1.774, 277.585, 127]
+    region:   n_234
     level:    [31, 32]
   17207540:
     template: Evil_Spirit
-    at:       [-15.644, 3.800, 301.852, 127]
+    region:   n_244
     level:    [35, 36]
   17207541:
     template: Ba
-    at:       [83.353, -13.409, 140.458, 127]
+    region:   e_245
     level:    [27, 28]
   17207542:
     template: Ba
-    at:       [41.901, -12.936, 145.479, 15]
+    region:   e_245
     level:    [27, 28]
   17207543:
     template: May_Fly
-    at:       [110.466, 0.670, 82.699, 79]
+    region:   e_245
     level:    [25, 26]
   17207544:
     template: Stalking_Sapling
-    at:       [149.486, -0.085, 58.981, 127]
+    region:   e_245
     level:    [23, 24]
   17207545:
     template: Stalking_Sapling
-    at:       [136.503, -0.395, 54.974, 127]
+    region:   e_245
     level:    [23, 24]
   17207546:
     template: Stalking_Sapling
-    at:       [75.946, -8.709, 170.619, 90]
+    region:   e_245
     level:    [23, 24]
   17207547:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [80.171, -5.880, 176.626, 127]
+    region:   e_245
     level:    [31, 32]
   17207548:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [133.736, 0.326, 137.378, 127]
+    region:   e_245
     level:    [31, 32]
   17207549:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [76.969, -13.122, 157.650, 127]
+    region:   e_245
     level:    [31, 32]
   17207550:
     template: Orcish_Fighter
-    at:       [129.645, 0.627, 95.151, 32]
+    region:   n_254
     level:    [26, 27]
   17207551:
     template: Orcish_Impaler
-    at:       [-8.338, -12.377, 319.863, 127]
+    region:   n_254
     level:    [30, 31]
   17207552:
     template: Orcish_Beastrider
-    at:       [45.535, -9.173, 160.923, 33]
+    region:   n_254
     level:    [30, 31]
   17207553:
     template: Orcish_Nightraider
-    at:       [-44.620, 0.147, 207.200, 56]
+    region:   n_254
     level:    [30, 31]
   17207554:
     template: Orcish_Cursemaker
-    at:       [-37.381, 0.569, 210.052, 127]
+    region:   n_254
     level:    [26, 27]
   17207555:
     template: Orcish_Serjeant
-    at:       [103.247, -3.214, 121.931, 127]
+    region:   n_254
     level:    [26, 27]
   17207556:
     template: Orcish_Brawler
-    at:       [-57.271, -2.745, 279.160, 127]
+    region:   n_254
     level:    [30, 31]
   17207557:
     template: Wight_war
     script:   Wight
-    at:       [15.459, -1.375, 110.064, 113]
+    region:   n_254
     level:    [26, 32]
   17207558:
     template: Wight_blm
     script:   Wight
-    at:       [-73.646, 0.774, 101.020, 127]
+    region:   n_254
     level:    [26, 32]
   17207559:
     template: Ignis_Fatuus
@@ -3288,127 +3289,127 @@ spawns:
     level:    [34, 36]
   17207560:
     template: Ba
-    at:       [67.652, 2.931, 259.031, 75]
+    region:   ne_264
     level:    [27, 28]
   17207561:
     template: Ba
-    at:       [61.597, 2.639, 223.766, 127]
+    region:   ne_264
     level:    [27, 28]
   17207562:
     template: Ba
-    at:       [155.344, 2.688, 176.752, 119]
+    region:   ne_264
     level:    [27, 28]
   17207563:
     template: Ba
-    at:       [140.947, 0.625, 174.896, 51]
+    region:   ne_264
     level:    [27, 28]
   17207564:
     template: Stalking_Sapling
-    at:       [135.681, 5.340, 237.914, 127]
+    region:   ne_264
     level:    [23, 24]
   17207565:
     template: Stalking_Sapling
-    at:       [160.980, 7.086, 192.181, 111]
+    region:   ne_264
     level:    [23, 24]
   17207566:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [74.219, 0.147, 210.095, 127]
+    region:   ne_264
     level:    [31, 32]
   17207567:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [96.718, 9.802, 288.423, 127]
+    region:   ne_264
     level:    [31, 32]
   17207568:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [143.545, 7.032, 253.503, 127]
+    region:   ne_264
     level:    [31, 32]
   17207569:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [97.134, 9.954, 289.177, 55]
+    region:   ne_264
     level:    [31, 32]
   17207570:
     template: Ba
-    at:       [271.952, 8.387, 49.686, 127]
+    region:   e_274
     level:    [27, 28]
   17207571:
     template: Ba
-    at:       [143.123, 5.035, 12.486, 41]
+    region:   e_274
     level:    [27, 28]
   17207572:
     template: Ba
-    at:       [157.993, 6.890, -6.711, 115]
+    region:   e_274
     level:    [27, 28]
   17207573:
     template: Ba
-    at:       [210.104, 8.044, 145.312, 127]
+    region:   e_274
     level:    [27, 28]
   17207574:
     template: Stalking_Sapling
-    at:       [245.694, 8.570, 6.884, 111]
+    region:   e_274
     level:    [23, 24]
   17207575:
     template: Stalking_Sapling
-    at:       [151.542, 6.272, 7.468, 127]
+    region:   e_274
     level:    [23, 24]
   17207576:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [210.440, 8.098, 139.945, 127]
+    region:   e_274
     level:    [31, 32]
   17207577:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [240.452, 7.600, 117.858, 40]
+    region:   e_274
     level:    [31, 32]
   17207578:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [258.734, 10.356, 8.107, 127]
+    region:   e_274
     level:    [31, 32]
   17207579:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [245.778, 8.461, 38.333, 66]
+    region:   e_274
     level:    [31, 32]
   17207580:
     template: Ba
-    at:       [185.411, 7.753, 251.811, 127]
+    region:   ne_284
     level:    [27, 28]
   17207581:
     template: Ba
-    at:       [218.764, 7.001, 248.810, 127]
+    region:   ne_284
     level:    [27, 28]
   17207582:
     template: Ba
-    at:       [259.845, 8.181, 148.774, 127]
+    region:   ne_284
     level:    [27, 28]
   17207583:
     template: Clipper
-    at:       [202.000, 8.000, 316.000, 127]
+    region:   ne_284
     level:    [24, 25]
   17207584:
     template: Clipper
-    at:       [335.403, 8.502, 123.316, 127]
+    region:   ne_284
     level:    [24, 25]
   17207585:
     template: Clipper
-    at:       [237.000, 7.000, 246.000, 127]
+    region:   ne_284
     level:    [24, 25]
   17207586:
     template: Clipper
-    at:       [264.952, 8.195, 201.897, 67]
+    region:   ne_284
     level:    [24, 25]
   17207587:
     template: Clipper
-    at:       [298.000, 6.000, 174.000, 127]
+    region:   ne_284
     level:    [24, 25]
   17207588:
     template: Clipper
-    at:       [249.103, 8.262, 219.070, 127]
+    region:   ne_284
     level:    [24, 25]
   17207589:
     template: Ice_Elemental
@@ -3416,80 +3417,80 @@ spawns:
     level:    [38, 40]
   17207590:
     template: Orcish_Fighter
-    at:       [231.977, 8.388, 147.600, 94]
+    region:   ne_294
     level:    [26, 27]
   17207591:
     template: Orcish_Impaler
-    at:       [52.827, -0.294, 251.994, 127]
+    region:   ne_294
     level:    [30, 31]
   17207592:
     template: Orcish_Beastrider
-    at:       [247.955, 8.380, 220.773, 127]
+    region:   ne_294
     level:    [30, 31]
   17207593:
     template: Orcish_Nightraider
-    at:       [145.577, 5.919, 222.270, 125]
+    region:   ne_294
     level:    [30, 31]
   17207594:
     template: Orcish_Cursemaker
-    at:       [214.970, 7.828, 191.133, 34]
+    region:   ne_294
     level:    [26, 27]
   17207595:
     template: Orcish_Serjeant
-    at:       [100.516, 0.311, 180.387, 113]
+    region:   ne_294
     level:    [26, 27]
   17207596:
     template: Orcish_Brawler
-    at:       [230.913, 8.951, 50.825, 107]
+    region:   ne_294
     level:    [30, 31]
   17207597:
     template: Wight_war
     script:   Wight
-    at:       [83.356, 2.038, 222.500, 1]
+    region:   ne_294
     level:    [26, 32]
   17207598:
     template: Wight_blm
     script:   Wight
-    at:       [218.427, 8.282, 175.146, 127]
+    region:   ne_294
     level:    [26, 32]
   17207599:
     template: Ba
-    at:       [172.660, -3.176, -26.259, 40]
+    region:   e_303
     level:    [27, 28]
   17207600:
     template: Ba
-    at:       [235.492, 3.964, -36.209, 127]
+    region:   e_303
     level:    [27, 28]
   17207601:
     template: Stalking_Sapling
-    at:       [110.116, -1.040, -152.355, 127]
+    region:   e_303
     level:    [23, 24]
   17207602:
     template: Stalking_Sapling
-    at:       [74.132, -9.002, -148.682, 127]
+    region:   e_303
     level:    [23, 24]
   17207603:
     template: Stalking_Sapling
-    at:       [94.924, -7.156, -165.068, 127]
+    region:   e_303
     level:    [23, 24]
   17207604:
     template: Stalking_Sapling
-    at:       [195.523, -8.511, -57.747, 18]
+    region:   e_303
     level:    [23, 24]
   17207605:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [91.029, -8.968, -132.720, 127]
+    region:   e_303
     level:    [31, 32]
   17207606:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [140.485, -3.297, -88.773, 23]
+    region:   e_303
     level:    [31, 32]
   17207607:
     template: Mauthe_Doog_BD
     script:   Mauthe_Doog
-    at:       [241.633, 6.130, -36.608, 26]
+    region:   e_303
     level:    [31, 32]
   17207608:
     template: Eyegouger
@@ -3497,93 +3498,93 @@ spawns:
     level:    [46, 46]
   17207609:
     template: Evil_Spirit
-    at:       [79.883, 3.799, -200.221, 123]
+    region:   e_313
     level:    [35, 36]
   17207610:
     template: Evil_Spirit
-    at:       [197.963, 11.795, -42.483, 70]
+    region:   e_314
     level:    [35, 36]
   17207611:
     template: Ba
-    at:       [324.000, -0.010, -236.000, 18]
+    region:   e_315
     level:    [27, 28]
   17207612:
     template: Ba
-    at:       [353.988, 6.763, -238.638, 127]
+    region:   e_315
     level:    [27, 28]
   17207613:
     template: Stalking_Sapling
-    at:       [265.047, 2.213, -274.616, 60]
+    region:   e_315
     level:    [23, 24]
   17207614:
     template: Stalking_Sapling
-    at:       [310.778, 6.340, -267.915, 2]
+    region:   e_315
     level:    [23, 24]
   17207615:
     template: Stalking_Sapling
-    at:       [371.691, 8.115, -229.386, 127]
+    region:   e_315
     level:    [23, 24]
   17207616:
     template: Stalking_Sapling
-    at:       [378.083, 8.404, -117.193, 60]
+    region:   e_315
     level:    [23, 24]
   17207617:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [343.866, 7.994, -132.220, 26]
+    region:   e_315
     level:    [31, 32]
   17207618:
     template: Ba
-    at:       [213.057, 6.085, -309.779, 127]
+    region:   se_322
     level:    [27, 28]
   17207619:
     template: Stalking_Sapling
-    at:       [197.000, -0.010, -278.000, 22]
+    region:   se_322
     level:    [23, 24]
   17207620:
     template: Stalking_Sapling
-    at:       [125.249, 7.376, -286.015, 127]
+    region:   se_322
     level:    [23, 24]
   17207621:
     template: Stalking_Sapling
-    at:       [103.821, -1.672, -236.194, 6]
+    region:   se_322
     level:    [23, 24]
   17207622:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [161.678, -0.346, -258.670, 24]
+    region:   se_322
     level:    [31, 32]
   17207623:
     template: Goblin_Mugger
-    at:       [337.850, 9.894, -144.450, 109]
+    region:   e_327
     level:    [26, 27]
   17207624:
     template: Goblin_Pathfinder
-    at:       [302.763, 9.855, -86.882, 109]
+    region:   e_327
     level:    [30, 31]
   17207625:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   e_327
     level:    [23, 25]
   17207626:
     template: Goblin_Leecher
-    at:       [321.896, 8.638, -55.760, 61]
+    region:   e_327
     level:    [26, 27]
   17207627:
     template: Goblin_Furrier
-    at:       [331.889, 8.267, -111.792, 115]
+    region:   e_327
     level:    [30, 31]
   17207628:
     template: Goblin_Gambler
-    at:       [376.989, 8.778, -187.110, 37]
+    region:   e_327
     level:    [26, 27]
   17207629:
     template: Goblin_Smithy
-    at:       [99.791, -0.425, -245.630, 88]
+    region:   e_327
     level:    [30, 31]
   17207630:
     template: Goblin_Shaman
-    at:       [162.461, -0.999, -97.343, 127]
+    region:   e_327
     level:    [30, 31]
   17207631:
     template: Ignis_Fatuus
@@ -3591,263 +3592,264 @@ spawns:
     level:    [34, 36]
   17207632:
     template: Goblin_Furrier
-    at:       [377.113, 7.714, -99.702, 85]
+    region:   region_53
     level:    [30, 31]
   17207633:
     template: Goblin_Smithy
-    at:       [378.000, 8.000, -107.000, 127]
+    region:   region_53
     level:    [30, 31]
   17207634:
     template: Goblin_Shaman
-    at:       [376.587, 7.715, -99.686, 123]
+    region:   region_53
     level:    [30, 31]
   17207635:
     template: Evil_Weapon
-    at:       [236.000, 8.000, -315.000, 127]
+    region:   se_339
     level:    [37, 38]
   17207636:
     template: Evil_Weapon
-    at:       [184.104, 7.963, -319.193, 127]
+    region:   se_339
     level:    [37, 38]
   17207637:
     template: Evil_Weapon
-    at:       [101.996, 8.687, -314.354, 55]
+    region:   se_339
     level:    [37, 38]
   17207638:
     template: Evil_Weapon
-    at:       [231.965, 8.258, -339.033, 12]
+    region:   se_339
     level:    [37, 38]
   17207639:
     template: Evil_Weapon
-    at:       [148.700, 6.000, -330.000, 127]
+    region:   se_339
     level:    [37, 38]
   17207640:
     template: Prankster_Maverix
-    at:       [159.000, 7.500, -314.000, 60]
+    region:   se_339
     level:    [51, 52]
   17207641:
     template: Ba
-    at:       [151.625, -6.821, -368.713, 127]
+    region:   se_345
     level:    [27, 28]
   17207642:
     template: Ba
-    at:       [281.549, 6.681, -407.764, 10]
+    region:   se_345
     level:    [27, 28]
   17207643:
     template: Ba
-    at:       [114.330, 7.708, -464.227, 16]
+    region:   se_345
     level:    [27, 28]
   17207644:
     template: Clipper
-    at:       [120.000, 7.000, -480.000, 127]
+    region:   se_345
     level:    [24, 25]
   17207645:
     template: Clipper
-    at:       [209.999, 6.271, -427.619, 67]
+    region:   se_345
     level:    [24, 25]
   17207646:
     template: Clipper
-    at:       [204.562, 6.320, -487.567, 59]
+    region:   se_345
     level:    [24, 25]
   17207647:
     template: Clipper
-    at:       [187.502, 8.128, -447.893, 40]
+    region:   se_345
     level:    [24, 25]
   17207648:
     template: Clipper
-    at:       [196.134, 7.184, -394.396, 10]
+    region:   se_345
     level:    [24, 25]
   17207649:
     template: Goblin_Pathfinder
-    at:       [164.553, 7.658, -444.811, 118]
+    region:   se_345
     level:    [30, 31]
   17207650:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   se_345
     level:    [23, 25]
   17207651:
     template: Goblin_Furrier
-    at:       [191.097, 7.862, -428.419, 127]
+    region:   se_345
     level:    [30, 31]
   17207652:
     template: Goblin_Smithy
-    at:       [61.511, 7.260, -379.198, 13]
+    region:   se_345
     level:    [30, 31]
   17207653:
     template: Goblin_Shaman
-    at:       [201.329, 6.026, -487.133, 123]
+    region:   se_345
     level:    [30, 31]
   17207654:
     template: Wight_war
     script:   Wight
+    region:   se_345
     level:    [26, 32]
   17207655:
     template: Wight_blm
     script:   Wight
-    at:       [272.070, 7.847, -363.923, 127]
+    region:   se_345
     level:    [26, 32]
   17207656:
     template: Ice_Elemental
-    at:       [105.596, 4.769, -404.876, 62]
+    region:   se_345
     level:    [38, 40]
   17207657:
     template: Ahtu
-    at:       [187.811, 15.258, -554.714, 43]
+    region:   se_361
     level:    [51, 52]
   17207658:
     template: May_Fly
-    at:       [-397.718, -24.000, 318.029, 39]
+    region:   nw_362
     level:    [25, 26]
   17207659:
     template: May_Fly
-    at:       [-489.165, -25.103, 297.365, 127]
+    region:   nw_362
     level:    [25, 26]
   17207660:
     template: May_Fly
-    at:       [-471.058, -24.205, 253.110, 127]
+    region:   nw_362
     level:    [25, 26]
   17207661:
     template: May_Fly
-    at:       [-515.118, -23.979, 320.734, 127]
+    region:   nw_362
     level:    [25, 26]
   17207662:
     template: Stalking_Sapling
-    at:       [-577.881, -23.388, 311.255, 127]
+    region:   nw_362
     level:    [23, 24]
   17207663:
     template: Stalking_Sapling
-    at:       [-541.000, -23.000, 294.000, 127]
+    region:   nw_362
     level:    [23, 24]
   17207664:
     template: Stalking_Sapling
-    at:       [-493.332, -25.334, 300.248, 127]
+    region:   nw_362
     level:    [23, 24]
   17207665:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-446.909, -24.949, 292.482, 127]
+    region:   nw_362
     level:    [31, 32]
   17207666:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-477.516, -23.917, 234.393, 127]
+    region:   nw_362
     level:    [31, 32]
   17207667:
     template: May_Fly
-    at:       [-419.327, -24.354, 421.872, 127]
+    region:   nw_371
     level:    [25, 26]
   17207668:
     template: Stalking_Sapling
-    at:       [-473.976, -31.721, 452.679, 78]
+    region:   nw_371
     level:    [23, 24]
   17207669:
     template: Stalking_Sapling
-    at:       [-428.721, -30.550, 464.839, 127]
+    region:   nw_371
     level:    [23, 24]
   17207670:
     template: Stalking_Sapling
-    at:       [-497.606, -31.373, 439.847, 7]
+    region:   nw_371
     level:    [23, 24]
   17207671:
     template: Stalking_Sapling
-    at:       [-502.800, -29.528, 420.526, 127]
+    region:   nw_371
     level:    [23, 24]
   17207672:
     template: May_Fly
-    at:       [-481.408, -37.672, 345.270, 127]
+    region:   nw_376
     level:    [25, 26]
   17207673:
     template: May_Fly
-    at:       [-472.923, -39.561, 327.550, 127]
+    region:   nw_376
     level:    [25, 26]
   17207674:
     template: May_Fly
-    at:       [-361.943, -23.548, 346.794, 80]
+    region:   nw_376
     level:    [25, 26]
   17207675:
     template: Stalking_Sapling
-    at:       [-501.991, -24.754, 368.246, 127]
+    region:   nw_376
     level:    [23, 24]
   17207676:
     template: Stalking_Sapling
-    at:       [-365.657, -23.873, 397.241, 104]
+    region:   nw_376
     level:    [23, 24]
   17207677:
     template: Stalking_Sapling
-    at:       [-429.597, -33.173, 340.934, 127]
+    region:   nw_376
     level:    [23, 24]
   17207678:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-373.350, -24.242, 342.742, 83]
+    region:   nw_376
     level:    [31, 32]
   17207679:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-469.529, -40.282, 331.047, 94]
+    region:   nw_376
     level:    [31, 32]
   17207680:
     template: Sabertooth_Tiger_CL_BD
     script:   Sabertooth_Tiger
-    at:       [-491.984, -29.658, 318.641, 127]
+    region:   nw_376
     level:    [31, 32]
   17207681:
     template: Goblin_Pathfinder
-    at:       [-443.000, -25.000, 385.000, 127]
+    region:   nw_385
     level:    [30, 31]
   17207682:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_385
     level:    [23, 25]
   17207683:
     template: Goblin_Furrier
-    at:       [-373.571, -23.707, 405.476, 103]
+    region:   nw_385
     level:    [30, 31]
   17207684:
     template: Goblin_Smithy
-    at:       [-442.821, -39.333, 339.757, 127]
+    region:   nw_385
     level:    [30, 31]
   17207685:
     template: Goblin_Shaman
-    at:       [-395.000, -23.000, 451.000, 127]
+    region:   nw_385
     level:    [30, 31]
   17207686:
     template: Goblin_Pathfinder
-    at:       [-463.318, -25.002, 290.862, 127]
+    region:   nw_385
     level:    [30, 31]
   17207687:
     template: Goblins_Dragonfly
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_385
     level:    [23, 25]
   17207688:
     template: Goblin_Furrier
-    at:       [-390.102, -23.825, 366.081, 117]
+    region:   nw_385
     level:    [30, 31]
   17207689:
     template: Goblin_Smithy
-    at:       [-462.000, -31.000, 442.000, 127]
+    region:   nw_385
     level:    [30, 31]
   17207690:
     template: Goblin_Shaman
-    at:       [-421.663, -24.338, 415.697, 101]
+    region:   nw_385
     level:    [30, 31]
   17207691:
     template: Wight_war
     script:   Wight
-    at:       [-501.185, -24.787, 371.361, 127]
+    region:   nw_385
     level:    [26, 32]
   17207692:
     template: Wight_blm
     script:   Wight
-    at:       [-465.029, -23.954, 405.164, 127]
+    region:   nw_385
     level:    [26, 32]
   17207693:
     template: Ignis_Fatuus
-    at:       [-395.401, -23.494, 413.703, 127]
+    region:   nw_385
     level:    [34, 36]
   17207694:
     template: Treant
-    at:       [-623.325, -19.178, 333.455, 116]
+    region:   nw_6
     level:    [36, 37]
   17207695:
     template: Goblin_Digger_far

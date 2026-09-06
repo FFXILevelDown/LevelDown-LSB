@@ -1267,51 +1267,51 @@ spawns:
     level:    [9, 10]
   17215495:
     template: Huge_Hornet
-    at:       [519.620, -1.317, -330.270, 37]
+    region:   region_47
     level:    [1, 1]
   17215496:
     template: Huge_Hornet
-    at:       [540.734, -0.629, -333.375, 127]
+    region:   region_47
     level:    [1, 1]
   17215497:
     template: Huge_Hornet
-    at:       [566.213, 2.295, -374.238, 98]
+    region:   region_47
     level:    [1, 1]
   17215498:
     template: Huge_Hornet
-    at:       [528.476, -0.623, -328.999, 2]
+    region:   e_7
     level:    [1, 1]
   17215499:
     template: Huge_Hornet
-    at:       [612.031, -1.635, -390.567, 45]
+    region:   region_47
     level:    [1, 1]
   17215500:
     template: Huge_Hornet
-    at:       [527.409, -0.578, -368.226, 93]
+    region:   e_7
     level:    [1, 1]
   17215501:
     template: Huge_Hornet
-    at:       [590.000, -1.000, -412.000, 113]
+    region:   e_7
     level:    [1, 1]
   17215502:
     template: Tunnel_Worm
-    at:       [569.106, 2.450, -379.642, 105]
+    region:   region_48
     level:    [1, 1]
   17215503:
     template: Tunnel_Worm
-    at:       [520.220, -0.447, -362.865, 127]
+    region:   e_15
     level:    [1, 1]
   17215504:
     template: Tunnel_Worm
-    at:       [556.721, 1.743, -376.171]
+    region:   region_48
     level:    [1, 1]
   17215505:
     template: Tunnel_Worm
-    at:       [607.512, -1.911, -370.388, 73]
+    region:   region_48
     level:    [1, 1]
   17215506:
     template: Ding_Bats
-    at:       [543.305, -0.733, -337.072, 70]
+    region:   region_47
     level:    [1, 1]
     attributes:
       spawn:
@@ -1320,7 +1320,7 @@ spawns:
           end:    6
   17215507:
     template: Ding_Bats
-    at:       [537.899, 1.948, -390.116, 121]
+    region:   region_47
     level:    [1, 1]
     attributes:
       spawn:
@@ -1329,7 +1329,7 @@ spawns:
           end:    5
   17215508:
     template: Ding_Bats
-    at:       [566.450, 2.497, -382.151, 20]
+    region:   region_48
     level:    [1, 1]
     attributes:
       spawn:
@@ -1338,7 +1338,7 @@ spawns:
           end:    4
   17215509:
     template: Ding_Bats
-    at:       [508.497, -0.069, -358.864, 100]
+    region:   e_7
     level:    [1, 1]
     attributes:
       spawn:
@@ -1347,47 +1347,47 @@ spawns:
           end:    6
   17215510:
     template: Huge_Hornet
-    at:       [499.821, 1.649, -461.902, 127]
+    region:   e_22
     level:    [1, 1]
   17215511:
     template: Huge_Hornet
-    at:       [552.621, -0.749, -463.848, 75]
+    region:   e_22
     level:    [1, 1]
   17215512:
     template: Huge_Hornet
-    at:       [486.871, 0.163, -461.877, 5]
+    region:   e_22
     level:    [1, 1]
   17215513:
     template: Huge_Hornet
-    at:       [499.724, 0.594, -449.531, 52]
+    region:   e_22
     level:    [1, 1]
   17215514:
     template: Huge_Hornet
-    at:       [568.683, -1.240, -488.904, 127]
+    region:   e_22
     level:    [1, 1]
   17215515:
     template: Huge_Hornet
-    at:       [511.320, 0.011, -446.909, 16]
+    region:   e_22
     level:    [1, 1]
   17215516:
     template: Tunnel_Worm
-    at:       [536.828, 2.006, -412.025, 127]
+    region:   e_22
     level:    [1, 1]
   17215517:
     template: Tunnel_Worm
-    at:       [519.182, -0.016, -435.046, 127]
+    region:   e_22
     level:    [1, 1]
   17215518:
     template: Tunnel_Worm
-    at:       [526.741, 2.007, -458.386, 127]
+    region:   e_22
     level:    [1, 1]
   17215519:
     template: Tunnel_Worm
-    at:       [545.263, 2.526, -441.363, 127]
+    region:   e_22
     level:    [1, 1]
   17215520:
     template: Ding_Bats
-    at:       [484.304, -0.125, -441.789, 17]
+    region:   e_22
     level:    [1, 1]
     attributes:
       spawn:
@@ -1396,7 +1396,7 @@ spawns:
           end:    6
   17215521:
     template: Ding_Bats
-    at:       [553.909, 0.435, -448.707, 31]
+    region:   e_22
     level:    [1, 1]
     attributes:
       spawn:
@@ -1405,7 +1405,7 @@ spawns:
           end:    5
   17215522:
     template: Ding_Bats
-    at:       [533.716, 1.628, -426.093, 127]
+    region:   e_22
     level:    [1, 1]
     attributes:
       spawn:
@@ -1414,7 +1414,7 @@ spawns:
           end:    4
   17215523:
     template: Ding_Bats
-    at:       [539.315, 2.431, -411.778, 127]
+    region:   e_22
     level:    [1, 1]
     attributes:
       spawn:
@@ -1423,43 +1423,43 @@ spawns:
           end:    6
   17215524:
     template: Huge_Hornet
-    at:       [263.752, 0.106, -267.112, 127]
+    region:   e_36
     level:    [1, 1]
   17215525:
     template: Huge_Hornet
-    at:       [276.000, -0.263, -217.000, 127]
+    region:   e_36
     level:    [1, 1]
   17215526:
     template: Huge_Hornet
-    at:       [348.825, -0.190, -247.886, 71]
+    region:   e_36
     level:    [1, 1]
   17215527:
     template: Huge_Hornet
-    at:       [347.371, 0.223, -277.198, 127]
+    region:   e_36
     level:    [1, 1]
   17215528:
     template: Huge_Hornet
-    at:       [264.191, -0.100, -275.011, 1]
+    region:   e_36
     level:    [1, 1]
   17215529:
     template: Huge_Hornet
-    at:       [232.397, 0.015, -266.777, 64]
+    region:   e_36
     level:    [1, 1]
   17215530:
     template: Tunnel_Worm
-    at:       [313.868, 0.019, -287.789, 127]
+    region:   e_36
     level:    [1, 1]
   17215531:
     template: Tunnel_Worm
-    at:       [326.005, 0.250, -267.903, 46]
+    region:   e_36
     level:    [1, 1]
   17215532:
     template: Tunnel_Worm
-    at:       [260.961, 0.181, -244.791, 20]
+    region:   e_36
     level:    [1, 1]
   17215533:
     template: Ding_Bats
-    at:       [330.083, 0.733, -268.639, 110]
+    region:   e_36
     level:    [1, 1]
     attributes:
       spawn:
@@ -1468,7 +1468,7 @@ spawns:
           end:    6
   17215534:
     template: Ding_Bats
-    at:       [268.838, 0.178, -274.946, 29]
+    region:   e_36
     level:    [1, 1]
     attributes:
       spawn:
@@ -1477,7 +1477,7 @@ spawns:
           end:    5
   17215535:
     template: Ding_Bats
-    at:       [334.808, 0.367, -253.910, 127]
+    region:   e_36
     level:    [1, 1]
     attributes:
       spawn:
@@ -1486,47 +1486,47 @@ spawns:
           end:    4
   17215536:
     template: Huge_Hornet
-    at:       [132.867, 2.433, -221.391, 127]
+    region:   n_48
     level:    [1, 1]
   17215537:
     template: Huge_Hornet
-    at:       [153.091, 2.002, -227.955, 127]
+    region:   n_48
     level:    [1, 1]
   17215538:
     template: Huge_Hornet
-    at:       [191.000, -0.010, -170.000, 51]
+    region:   n_48
     level:    [1, 1]
   17215539:
     template: Huge_Hornet
-    at:       [231.147, 1.986, -225.692, 51]
+    region:   n_48
     level:    [1, 1]
   17215540:
     template: Huge_Hornet
-    at:       [127.002, -0.304, -168.788, 109]
+    region:   n_48
     level:    [1, 1]
   17215541:
     template: Huge_Hornet
-    at:       [153.224, -0.164, -170.525, 127]
+    region:   n_48
     level:    [1, 1]
   17215542:
     template: Huge_Hornet
-    at:       [223.892, -0.757, -199.853, 114]
+    region:   n_48
     level:    [1, 1]
   17215543:
     template: Tunnel_Worm
-    at:       [230.921, 1.693, -229.096, 127]
+    region:   n_48
     level:    [1, 1]
   17215544:
     template: Tunnel_Worm
-    at:       [164.742, -0.170, -176.135, 99]
+    region:   n_48
     level:    [1, 1]
   17215545:
     template: Tunnel_Worm
-    at:       [221.462, -0.432, -234.466, 127]
+    region:   n_48
     level:    [1, 1]
   17215546:
     template: Ding_Bats
-    at:       [172.818, 0.395, -213.949, 53]
+    region:   n_48
     level:    [1, 1]
     attributes:
       spawn:
@@ -1535,7 +1535,7 @@ spawns:
           end:    6
   17215547:
     template: Ding_Bats
-    at:       [158.828, 2.292, -218.533, 123]
+    region:   n_48
     level:    [1, 1]
     attributes:
       spawn:
@@ -1544,7 +1544,7 @@ spawns:
           end:    5
   17215548:
     template: Ding_Bats
-    at:       [100.796, 2.075, -216.289, 127]
+    region:   n_48
     level:    [1, 1]
     attributes:
       spawn:
@@ -1553,7 +1553,7 @@ spawns:
           end:    4
   17215549:
     template: Ding_Bats
-    at:       [130.213, -0.458, -191.607, 125]
+    region:   n_48
     level:    [1, 1]
     attributes:
       spawn:
@@ -1562,39 +1562,39 @@ spawns:
           end:    6
   17215550:
     template: Maneating_Hornet
-    at:       [272.194, -19.842, -318.087, 49]
+    region:   c_62
     level:    [3, 4]
   17215551:
     template: Maneating_Hornet
-    at:       [199.325, -19.891, -294.631, 127]
+    region:   c_62
     level:    [3, 4]
   17215552:
     template: Maneating_Hornet
-    at:       [203.761, -20.054, -288.250, 45]
+    region:   c_62
     level:    [3, 4]
   17215553:
     template: Stone_Eater
-    at:       [253.159, -19.789, -327.498, 96]
+    region:   e_65
     level:    [3, 4]
   17215554:
     template: Stone_Eater
-    at:       [295.616, -19.675, -354.268, 127]
+    region:   c_62
     level:    [3, 4]
   17215555:
     template: Ornery_Sheep
-    at:       [202.118, -20.004, -281.196, 127]
+    region:   c_62
     level:    [5, 6]
   17215556:
     template: Ornery_Sheep
-    at:       [193.961, -19.725, -297.893, 94]
+    region:   c_62
     level:    [5, 6]
   17215557:
     template: Goblin_Thug
-    at:       [178.955, -19.810, -292.161, 50]
+    region:   c_62
     level:    [4, 5]
   17215558:
     template: Ding_Bats
-    at:       [214.194, -19.663, -313.586, 120]
+    region:   c_62
     level:    [2, 3]
     attributes:
       spawn:
@@ -1603,7 +1603,7 @@ spawns:
           end:    5
   17215559:
     template: Ding_Bats
-    at:       [231.240, -20.007, -318.040, 120]
+    region:   c_62
     level:    [2, 3]
     attributes:
       spawn:
@@ -1612,7 +1612,7 @@ spawns:
           end:    4
   17215560:
     template: Fledermaus
-    at:       [166.099, -19.993, -281.073, 127]
+    region:   c_62
     level:    [3, 4]
     attributes:
       spawn:
@@ -1621,7 +1621,7 @@ spawns:
           end:    5
   17215561:
     template: Fledermaus
-    at:       [220.319, -19.984, -319.241, 126]
+    region:   c_62
     level:    [3, 4]
     attributes:
       spawn:
@@ -1630,43 +1630,43 @@ spawns:
           end:    4
   17215562:
     template: Black_Wolf
-    at:       [296.878, -19.968, -348.444, 14]
+    region:   c_62
     level:    [5, 6]
   17215563:
     template: Maneating_Hornet
-    at:       [97.678, -20.225, -450.120, 28]
+    region:   c_75
     level:    [3, 4]
   17215564:
     template: Maneating_Hornet
-    at:       [88.465, -19.668, -425.441, 51]
+    region:   c_75
     level:    [3, 4]
   17215565:
     template: Maneating_Hornet
-    at:       [127.374, -20.081, -518.502, 45]
+    region:   c_75
     level:    [3, 4]
   17215566:
     template: Stone_Eater
-    at:       [116.088, -20.228, -488.391, 127]
+    region:   c_75
     level:    [3, 4]
   17215567:
     template: Ornery_Sheep
-    at:       [115.881, -20.194, -461.588, 127]
+    region:   c_75
     level:    [5, 6]
   17215568:
     template: Ornery_Sheep
-    at:       [106.803, -19.585, -451.447, 12]
+    region:   c_75
     level:    [5, 6]
   17215569:
     template: Goblin_Thug
-    at:       [86.466, -19.990, -439.452, 127]
+    region:   c_75
     level:    [4, 5]
   17215570:
     template: Goblin_Thug
-    at:       [79.277, -20.024, -408.258, 117]
+    region:   c_75
     level:    [4, 5]
   17215571:
     template: Ding_Bats
-    at:       [117.184, -20.108, -477.581, 48]
+    region:   c_75
     level:    [3, 4]
     attributes:
       spawn:
@@ -1675,7 +1675,7 @@ spawns:
           end:    4
   17215572:
     template: Ding_Bats
-    at:       [139.653, -19.766, -526.990, 116]
+    region:   c_75
     level:    [3, 4]
     attributes:
       spawn:
@@ -1684,7 +1684,7 @@ spawns:
           end:    6
   17215573:
     template: Fledermaus
-    at:       [82.808, -19.888, -424.995, 113]
+    region:   c_75
     level:    [3, 4]
     attributes:
       spawn:
@@ -1693,39 +1693,39 @@ spawns:
           end:    6
   17215574:
     template: Black_Wolf
-    at:       [179.860, -19.972, -560.195, 119]
+    region:   c_75
     level:    [5, 6]
   17215575:
     template: Maneating_Hornet
-    at:       [339.385, -19.957, -362.257, 127]
+    region:   e_87
     level:    [3, 4]
   17215576:
     template: Maneating_Hornet
-    at:       [357.954, -19.975, -375.078, 127]
+    region:   e_87
     level:    [3, 4]
   17215577:
     template: Stone_Eater
-    at:       [353.498, -19.918, -370.776, 127]
+    region:   e_87
     level:    [3, 4]
   17215578:
     template: Ornery_Sheep
-    at:       [340.414, -19.892, -436.967, 127]
+    region:   e_87
     level:    [5, 6]
   17215579:
     template: Ornery_Sheep
-    at:       [336.571, -19.965, -438.015, 127]
+    region:   e_87
     level:    [5, 6]
   17215580:
     template: Goblin_Thug
-    at:       [342.150, -19.925, -363.022, 27]
+    region:   e_87
     level:    [4, 5]
   17215581:
     template: Goblin_Thug
-    at:       [345.980, -20.146, -448.015, 47]
+    region:   e_87
     level:    [4, 5]
   17215582:
     template: Ding_Bats
-    at:       [354.605, -19.791, -417.520, 83]
+    region:   e_87
     level:    [2, 3]
     attributes:
       spawn:
@@ -1734,7 +1734,7 @@ spawns:
           end:    4
   17215583:
     template: Fledermaus
-    at:       [354.196, -20.061, -377.609, 19]
+    region:   e_87
     level:    [3, 4]
     attributes:
       spawn:
@@ -1743,7 +1743,7 @@ spawns:
           end:    6
   17215584:
     template: Fledermaus
-    at:       [328.524, -20.061, -437.201, 125]
+    region:   e_87
     level:    [3, 4]
     attributes:
       spawn:
@@ -1752,39 +1752,39 @@ spawns:
           end:    6
   17215585:
     template: Black_Wolf
-    at:       [353.951, -19.841, -407.709, 127]
+    region:   e_87
     level:    [5, 8]
   17215586:
     template: Maneating_Hornet
-    at:       [119.541, -19.834, -355.162, 127]
+    region:   c_98
     level:    [3, 4]
   17215587:
     template: Maneating_Hornet
-    at:       [137.660, -19.830, -287.674, 121]
+    region:   c_98
     level:    [3, 4]
   17215588:
     template: Stone_Eater
-    at:       [124.217, -20.101, -313.059, 127]
+    region:   c_98
     level:    [3, 4]
   17215589:
     template: Ornery_Sheep
-    at:       [98.350, -19.790, -365.045, 101]
+    region:   c_98
     level:    [5, 6]
   17215590:
     template: Ornery_Sheep
-    at:       [100.416, -20.709, -350.646, 127]
+    region:   c_98
     level:    [5, 6]
   17215591:
     template: Goblin_Thug
-    at:       [131.977, -19.903, -281.355, 127]
+    region:   c_98
     level:    [4, 5]
   17215592:
     template: Goblin_Weaver
-    at:       [135.309, -19.829, -291.289, 125]
+    region:   c_98
     level:    [4, 5]
   17215593:
     template: Ding_Bats
-    at:       [140.796, -20.516, -290.858, 127]
+    region:   c_98
     level:    [2, 3]
     attributes:
       spawn:
@@ -1793,7 +1793,7 @@ spawns:
           end:    4
   17215594:
     template: Fledermaus
-    at:       [91.791, -19.942, -374.605, 11]
+    region:   c_98
     level:    [3, 4]
     attributes:
       spawn:
@@ -1802,7 +1802,7 @@ spawns:
           end:    5
   17215595:
     template: Fledermaus
-    at:       [121.293, -19.942, -328.526, 45]
+    region:   c_98
     level:    [3, 4]
     attributes:
       spawn:
@@ -1811,39 +1811,39 @@ spawns:
           end:    4
   17215596:
     template: Black_Wolf
-    at:       [104.376, -19.878, -353.739, 73]
+    region:   c_98
     level:    [5, 8]
   17215597:
     template: Maneating_Hornet
-    at:       [268.067, -20.875, -528.187, 127]
+    region:   s_109
     level:    [3, 4]
   17215598:
     template: Maneating_Hornet
-    at:       [318.198, -19.927, -485.416, 127]
+    region:   s_109
     level:    [3, 4]
   17215599:
     template: Stone_Eater
-    at:       [294.411, -20.124, -511.495, 127]
+    region:   s_109
     level:    [3, 4]
   17215600:
     template: Ornery_Sheep
-    at:       [260.531, -20.127, -523.547, 84]
+    region:   s_109
     level:    [5, 6]
   17215601:
     template: Ornery_Sheep
-    at:       [298.771, -19.800, -512.994, 16]
+    region:   s_109
     level:    [5, 6]
   17215602:
     template: Goblin_Thug
-    at:       [234.559, -19.838, -524.823, 8]
+    region:   s_109
     level:    [4, 5]
   17215603:
     template: Goblin_Weaver
-    at:       [228.667, -19.833, -549.457, 127]
+    region:   s_109
     level:    [4, 5]
   17215604:
     template: Ding_Bats
-    at:       [247.799, -19.390, -527.615, 120]
+    region:   s_109
     level:    [2, 3]
     attributes:
       spawn:
@@ -1852,7 +1852,7 @@ spawns:
           end:    4
   17215605:
     template: Fledermaus
-    at:       [223.590, -19.902, -559.140, 127]
+    region:   s_109
     level:    [3, 4]
     attributes:
       spawn:
@@ -1861,7 +1861,7 @@ spawns:
           end:    5
   17215606:
     template: Fledermaus
-    at:       [231.102, -20.353, -532.572, 126]
+    region:   s_109
     level:    [3, 4]
     attributes:
       spawn:
@@ -1870,43 +1870,43 @@ spawns:
           end:    4
   17215607:
     template: Black_Wolf
-    at:       [306.745, -19.750, -511.381, 127]
+    region:   s_109
     level:    [5, 6]
   17215608:
     template: Maneating_Hornet
-    at:       [171.557, -39.688, -348.654, 127]
+    region:   c_120
     level:    [4, 5]
   17215609:
     template: Maneating_Hornet
-    at:       [149.367, -39.474, -401.623, 54]
+    region:   c_120
     level:    [4, 5]
   17215610:
     template: Stone_Eater
-    at:       [165.276, -40.183, -413.860, 55]
+    region:   c_120
     level:    [4, 5]
   17215611:
     template: Ornery_Sheep
-    at:       [186.081, -39.990, -367.942, 34]
+    region:   c_120
     level:    [7, 8]
   17215612:
     template: Ornery_Sheep
-    at:       [164.245, -39.900, -347.878, 127]
+    region:   c_120
     level:    [7, 8]
   17215613:
     template: Carnero
-    at:       [160.748, -40.010, -423.153, 83]
+    region:   c_120
     level:    [11, 12]
   17215614:
     template: Goblin_Thug
-    at:       [152.618, -41.221, -427.077, 127]
+    region:   c_120
     level:    [6, 7]
   17215615:
     template: Goblin_Weaver
-    at:       [151.264, -39.476, -407.135, 127]
+    region:   c_120
     level:    [6, 7]
   17215616:
     template: Ding_Bats
-    at:       [169.835, -39.785, -347.248, 127]
+    region:   c_120
     level:    [4, 5]
     attributes:
       spawn:
@@ -1915,7 +1915,7 @@ spawns:
           end:    6
   17215617:
     template: Fledermaus
-    at:       [156.821, -40.015, -415.995, 127]
+    region:   c_120
     level:    [4, 5]
     attributes:
       spawn:
@@ -1924,53 +1924,53 @@ spawns:
           end:    4
   17215618:
     template: Black_Wolf
-    at:       [123.906, -40.377, -396.290, 212]
+    region:   c_120
     level:    [5, 8]
   17215619:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [169.821, -39.787, -346.405, 127]
+    region:   c_120
     level:    [6, 7]
   17215620:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [155.352, -40.353, -420.845, 76]
+    region:   c_120
     level:    [6, 7]
   17215621:
     template: Maneating_Hornet
-    at:       [207.225, -40.063, -506.726, 69]
+    region:   c_133
     level:    [4, 5]
   17215622:
     template: Maneating_Hornet
-    at:       [203.847, -39.601, -493.471, 127]
+    region:   c_133
     level:    [4, 5]
   17215623:
     template: Stone_Eater
-    at:       [193.578, -40.548, -506.382, 71]
+    region:   c_133
     level:    [4, 5]
   17215624:
     template: Ornery_Sheep
-    at:       [160.304, -39.990, -460.400, 122]
+    region:   c_133
     level:    [7, 8]
   17215625:
     template: Ornery_Sheep
-    at:       [201.021, -39.904, -500.721, 32]
+    region:   c_133
     level:    [7, 8]
   17215626:
     template: Carnero
-    at:       [159.616, -39.970, -461.112, 127]
+    region:   c_133
     level:    [11, 12]
   17215627:
     template: Goblin_Thug
-    at:       [214.216, -40.024, -479.124, 127]
+    region:   c_133
     level:    [6, 7]
   17215628:
     template: Goblin_Weaver
-    at:       [183.213, -39.986, -479.180, 127]
+    region:   c_133
     level:    [6, 7]
   17215629:
     template: Ding_Bats
-    at:       [201.565, -39.919, -502.445, 127]
+    region:   c_133
     level:    [3, 4]
     attributes:
       spawn:
@@ -1979,7 +1979,7 @@ spawns:
           end:    6
   17215630:
     template: Fledermaus
-    at:       [196.767, -40.092, -507.552, 127]
+    region:   c_133
     level:    [5, 6]
     attributes:
       spawn:
@@ -1988,48 +1988,49 @@ spawns:
           end:    5
   17215631:
     template: Black_Wolf
+    region:   c_133
     level:    [5, 8]
   17215632:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [195.947, -39.960, -494.888, 127]
+    region:   c_133
     level:    [6, 7]
   17215633:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [219.956, -41.339, -489.837, 241]
+    region:   c_133
     level:    [6, 7]
   17215634:
     template: Maneating_Hornet
-    at:       [249.970, -39.947, -395.177, 127]
+    region:   c_146
     level:    [4, 5]
   17215635:
     template: Maneating_Hornet
-    at:       [218.023, -39.954, -363.102, 127]
+    region:   c_146
     level:    [4, 5]
   17215636:
     template: Stone_Eater
-    at:       [255.281, -39.483, -390.584, 27]
+    region:   c_146
     level:    [4, 5]
   17215637:
     template: Stone_Eater
-    at:       [251.818, -39.978, -403.469, 20]
+    region:   c_146
     level:    [4, 5]
   17215638:
     template: Ornery_Sheep
-    at:       [277.891, -39.854, -413.354, 103]
+    region:   c_146
     level:    [7, 8]
   17215639:
     template: Goblin_Thug
-    at:       [228.607, -39.892, -369.553, 127]
+    region:   c_146
     level:    [6, 7]
   17215640:
     template: Goblin_Thug
-    at:       [263.175, -39.794, -395.255, 127]
+    region:   c_146
     level:    [6, 7]
   17215641:
     template: Ding_Bats
-    at:       [282.744, -40.103, -436.489, 36]
+    region:   c_146
     level:    [3, 4]
     attributes:
       spawn:
@@ -2038,7 +2039,7 @@ spawns:
           end:    5
   17215642:
     template: Fledermaus
-    at:       [255.802, -39.845, -404.797, 127]
+    region:   c_146
     level:    [4, 5]
     attributes:
       spawn:
@@ -2047,1235 +2048,1235 @@ spawns:
           end:    4
   17215643:
     template: Black_Wolf
-    at:       [259.514, -39.700, -399.115, 110]
+    region:   c_146
     level:    [5, 8]
   17215644:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [284.085, -39.835, -421.564, 127]
+    region:   c_146
     level:    [6, 7]
   17215645:
     template: Ornery_Sheep
-    at:       [274.561, -39.972, -476.762, 94]
+    region:   c_157
     level:    [7, 8]
   17215646:
     template: Ornery_Sheep
-    at:       [275.135, -39.977, -477.840, 122]
+    region:   c_157
     level:    [7, 8]
   17215647:
     template: Black_Wolf
-    at:       [274.602, -40.002, -470.081, 127]
+    region:   c_157
     level:    [5, 8]
   17215648:
     template: Ornery_Sheep
-    at:       [213.010, -59.983, -442.766, 105]
+    region:   c_160
     level:    [7, 8]
   17215649:
     template: Ornery_Sheep
-    at:       [211.745, -59.938, -441.313, 127]
+    region:   c_160
     level:    [7, 8]
   17215650:
     template: Black_Wolf
-    at:       [210.600, -59.942, -441.231, 40]
+    region:   c_160
     level:    [5, 8]
   17215651:
     template: Stone_Eater
-    at:       [408.552, -0.452, -342.091, 127]
+    region:   e_163
     level:    [2, 3]
   17215652:
     template: Stone_Eater
-    at:       [436.921, -0.470, -342.960, 53]
+    region:   e_163
     level:    [2, 3]
   17215653:
     template: Stone_Eater
-    at:       [425.940, -0.171, -355.247, 127]
+    region:   e_163
     level:    [2, 3]
   17215654:
     template: Stone_Eater
-    at:       [440.175, -0.541, -328.963, 37]
+    region:   e_163
     level:    [2, 3]
   17215655:
     template: Stone_Eater
-    at:       [365.740, -1.293, -295.515, 72]
+    region:   e_163
     level:    [2, 3]
   17215656:
     template: Stone_Eater
-    at:       [367.050, -0.432, -281.855, 91]
+    region:   e_163
     level:    [2, 3]
   17215657:
     template: Stone_Eater
-    at:       [429.354, -0.352, -320.313, 66]
+    region:   e_163
     level:    [2, 3]
   17215658:
     template: Stone_Eater
-    at:       [362.820, -0.072, -270.662, 127]
+    region:   e_163
     level:    [2, 3]
   17215659:
     template: Rock_Lizard
-    at:       [408.230, 0.040, -372.040, 38]
+    region:   e_163
     level:    [4, 5]
   17215660:
     template: Walking_Sapling
-    at:       [385.957, 0.007, -307.337, 82]
+    region:   e_163
     level:    [3, 4]
   17215661:
     template: Walking_Sapling
-    at:       [405.598, -0.071, -360.543, 127]
+    region:   e_163
     level:    [3, 4]
   17215662:
     template: Vulture
-    at:       [346.151, -0.266, -297.003, 127]
+    region:   e_163
     level:    [3, 4]
   17215663:
     template: Vulture
-    at:       [403.909, -0.060, -332.823, 127]
+    region:   e_163
     level:    [3, 4]
   17215664:
     template: Stone_Eater
-    at:       [-4.871, -0.779, -137.804, 92]
+    region:   n_176
     level:    [2, 3]
   17215665:
     template: Stone_Eater
-    at:       [-0.404, 0.194, -146.564, 94]
+    region:   n_176
     level:    [2, 3]
   17215666:
     template: Stone_Eater
-    at:       [16.560, 2.498, -145.646, 109]
+    region:   n_176
     level:    [2, 3]
   17215667:
     template: Stone_Eater
-    at:       [28.346, 0.959, -125.205, 127]
+    region:   n_176
     level:    [2, 3]
   17215668:
     template: Stone_Eater
-    at:       [-21.527, -0.588, -39.222, 7]
+    region:   n_176
     level:    [2, 3]
   17215669:
     template: Stone_Eater
-    at:       [-0.050, -0.405, -117.528, 127]
+    region:   n_176
     level:    [2, 3]
   17215670:
     template: Stone_Eater
-    at:       [19.963, 2.234, -160.361, 78]
+    region:   n_176
     level:    [2, 3]
   17215671:
     template: Stone_Eater
-    at:       [1.523, 0.289, -151.209, 127]
+    region:   n_176
     level:    [2, 3]
   17215672:
     template: Rock_Lizard
-    at:       [-22.750, 2.149, -175.666, 80]
+    region:   n_176
     level:    [4, 5]
   17215673:
     template: Walking_Sapling
-    at:       [20.911, 2.761, -173.123, 57]
+    region:   n_176
     level:    [3, 4]
   17215674:
     template: Walking_Sapling
-    at:       [56.216, -1.146, -156.771, 127]
+    region:   n_176
     level:    [3, 4]
   17215675:
     template: Vulture
-    at:       [27.419, 0.395, -111.129, 61]
+    region:   n_176
     level:    [3, 4]
   17215676:
     template: Vulture
-    at:       [35.049, 0.180, -86.413, 127]
+    region:   n_176
     level:    [3, 4]
   17215677:
     template: Young_Quadav
-    at:       [66.100, -0.671, -161.368, 127]
+    region:   n_176
     level:    [3, 4]
   17215678:
     template: Young_Quadav
-    at:       [-15.261, 1.846, -183.948, 105]
+    region:   n_176
     level:    [3, 4]
   17215679:
     template: Stone_Eater
-    at:       [17.672, 9.953, -275.941, 127]
+    region:   n_191
     level:    [2, 3]
   17215680:
     template: Stone_Eater
-    at:       [16.448, 1.124, -210.873, 127]
+    region:   n_191
     level:    [2, 3]
   17215681:
     template: Stone_Eater
-    at:       [-25.211, 8.542, -234.240, 127]
+    region:   n_191
     level:    [2, 3]
   17215682:
     template: Stone_Eater
-    at:       [-0.936, -0.273, -201.183, 103]
+    region:   n_191
     level:    [2, 3]
   17215683:
     template: Stone_Eater
-    at:       [51.848, 7.819, -275.364, 83]
+    region:   n_191
     level:    [2, 3]
   17215684:
     template: Stone_Eater
-    at:       [7.678, 9.863, -270.105, 127]
+    region:   n_191
     level:    [2, 3]
   17215685:
     template: Stone_Eater
-    at:       [25.894, 9.537, -273.201, 127]
+    region:   n_191
     level:    [2, 3]
   17215686:
     template: Rock_Lizard
-    at:       [52.063, 7.362, -278.991, 127]
+    region:   n_191
     level:    [4, 5]
   17215687:
     template: Rock_Lizard
-    at:       [18.124, 4.902, -323.676, 37]
+    region:   n_191
     level:    [4, 5]
   17215688:
     template: Walking_Sapling
-    at:       [65.818, 2.477, -277.559, 127]
+    region:   n_191
     level:    [3, 4]
   17215689:
     template: Walking_Sapling
-    at:       [64.381, 2.264, -284.402, 69]
+    region:   n_191
     level:    [3, 4]
   17215690:
     template: Vulture
-    at:       [9.185, 0.899, -191.630, 126]
+    region:   n_191
     level:    [3, 4]
   17215691:
     template: Vulture
-    at:       [7.844, 9.532, -253.657, 59]
+    region:   n_191
     level:    [3, 4]
   17215692:
     template: Young_Quadav
-    at:       [72.994, 0.359, -303.385, 67]
+    region:   n_191
     level:    [3, 4]
   17215693:
     template: Young_Quadav
-    at:       [39.851, 4.402, -222.056, 65]
+    region:   n_191
     level:    [3, 4]
   17215694:
     template: Amethyst_Quadav
-    at:       [47.222, 8.291, -281.950, 79]
+    region:   n_191
     level:    [3, 4]
   17215695:
     template: Amber_Quadav
-    at:       [-15.452, -0.190, -211.107, 127]
+    region:   n_191
     level:    [3, 4]
   17215696:
     template: Young_Quadav
-    at:       [19.122, 8.858, -258.690, 127]
+    region:   n_191
     level:    [3, 4]
   17215697:
     template: Amethyst_Quadav
-    at:       [16.476, 8.980, -263.387, 127]
+    region:   n_191
     level:    [3, 4]
   17215698:
     template: Amber_Quadav
-    at:       [19.677, 9.054, -265.293, 89]
+    region:   n_191
     level:    [3, 4]
   17215699:
     template: Stone_Eater
-    at:       [378.144, 1.173, -508.440, 105]
+    region:   se_211
     level:    [2, 3]
   17215700:
     template: Stone_Eater
-    at:       [394.935, 0.084, -564.740, 127]
+    region:   se_211
     level:    [2, 3]
   17215701:
     template: Stone_Eater
-    at:       [416.090, 1.187, -512.914, 127]
+    region:   se_211
     level:    [2, 3]
   17215702:
     template: Stone_Eater
-    at:       [364.371, -0.114, -493.123, 94]
+    region:   se_211
     level:    [2, 3]
   17215703:
     template: Stone_Eater
-    at:       [350.826, -0.306, -565.244, 127]
+    region:   se_215
     level:    [2, 3]
   17215704:
     template: Stone_Eater
-    at:       [366.497, -0.447, -508.456, 85]
+    region:   se_211
     level:    [2, 3]
   17215705:
     template: Stone_Eater
-    at:       [484.486, 2.102, -495.024, 7]
+    region:   se_211
     level:    [2, 3]
   17215706:
     template: Stone_Eater
-    at:       [381.843, 1.860, -541.829, 127]
+    region:   se_211
     level:    [2, 3]
   17215707:
     template: Rock_Lizard
-    at:       [485.078, 0.005, -484.273, 15]
+    region:   se_211
     level:    [4, 5]
   17215708:
     template: Rock_Lizard
-    at:       [396.674, -0.009, -468.967, 17]
+    region:   se_211
     level:    [4, 5]
   17215709:
     template: Walking_Sapling
-    at:       [492.782, -0.003, -525.087, 76]
+    region:   se_211
     level:    [3, 4]
   17215710:
     template: Walking_Sapling
-    at:       [504.008, 2.336, -491.080, 127]
+    region:   se_211
     level:    [3, 4]
   17215711:
     template: Vulture
-    at:       [421.247, 0.082, -479.516, 96]
+    region:   se_211
     level:    [3, 4]
   17215712:
     template: Vulture
-    at:       [435.966, 2.489, -497.017, 127]
+    region:   se_211
     level:    [3, 4]
   17215713:
     template: Young_Quadav
-    at:       [385.152, 1.620, -551.201, 127]
+    region:   se_211
     level:    [3, 4]
   17215714:
     template: Young_Quadav
-    at:       [363.282, 0.168, -546.527, 127]
+    region:   se_211
     level:    [3, 4]
   17215715:
     template: Amber_Quadav
-    at:       [387.905, -0.027, -462.550, 127]
+    region:   se_211
     level:    [3, 4]
   17215716:
     template: Stone_Eater
-    at:       [585.606, -0.207, -518.277, 127]
+    region:   se_228
     level:    [2, 3]
   17215717:
     template: Stone_Eater
-    at:       [604.691, 0.093, -559.773, 45]
+    region:   se_228
     level:    [2, 3]
   17215718:
     template: Stone_Eater
-    at:       [537.890, 2.247, -498.168, 73]
+    region:   se_228
     level:    [2, 3]
   17215719:
     template: Stone_Eater
-    at:       [539.863, 2.615, -528.773, 127]
+    region:   se_228
     level:    [2, 3]
   17215720:
     template: Stone_Eater
-    at:       [580.874, 2.908, -587.121, 72]
+    region:   se_228
     level:    [2, 3]
   17215721:
     template: Stone_Eater
-    at:       [580.790, 1.834, -555.383, 127]
+    region:   se_228
     level:    [2, 3]
   17215722:
     template: Walking_Sapling
-    at:       [561.895, -0.031, -577.052, 45]
+    region:   se_228
     level:    [3, 4]
   17215723:
     template: Vulture
-    at:       [577.447, -2.458, -492.123, 127]
+    region:   se_228
     level:    [3, 4]
   17215724:
     template: Vulture
-    at:       [549.031, 1.250, -493.561, 75]
+    region:   se_228
     level:    [3, 4]
   17215725:
     template: Goblin_Thug
-    at:       [569.821, -1.834, -485.959, 127]
+    region:   se_228
     level:    [3, 4]
   17215726:
     template: Goblin_Fisher
-    at:       [567.343, 0.259, -589.735, 62]
+    region:   se_228
     level:    [3, 4]
   17215727:
     template: Goblin_Fisher
-    at:       [578.983, 2.236, -573.558, 34]
+    region:   se_228
     level:    [3, 4]
   17215728:
     template: Stone_Eater
-    at:       [611.905, -2.781, -653.299, 5]
+    region:   se_240
     level:    [3, 4]
   17215729:
     template: Stone_Eater
-    at:       [587.236, 2.327, -619.357, 127]
+    region:   se_241
     level:    [3, 4]
   17215730:
     template: Stone_Eater
-    at:       [692.389, -2.301, -636.574, 127]
+    region:   se_240
     level:    [3, 4]
   17215731:
     template: Stone_Eater
-    at:       [551.823, 0.153, -662.000, 5]
+    region:   se_240
     level:    [3, 4]
   17215732:
     template: Stone_Eater
-    at:       [523.435, -0.287, -715.621, 127]
+    region:   se_240
     level:    [3, 4]
   17215733:
     template: Stone_Eater
-    at:       [512.416, -1.118, -726.876, 77]
+    region:   se_240
     level:    [3, 4]
   17215734:
     template: Stone_Eater
-    at:       [669.495, -3.146, -650.674, 127]
+    region:   se_240
     level:    [3, 4]
   17215735:
     template: Stone_Eater
-    at:       [640.992, 0.158, -636.970, 127]
+    region:   se_240
     level:    [3, 4]
   17215736:
     template: Walking_Sapling
-    at:       [658.407, -0.047, -634.852, 127]
+    region:   se_240
     level:    [4, 5]
   17215737:
     template: Walking_Sapling
-    at:       [618.189, -0.510, -642.752, 123]
+    region:   se_240
     level:    [4, 5]
   17215738:
     template: Vulture
-    at:       [695.065, -2.474, -638.304, 127]
+    region:   se_240
     level:    [4, 5]
   17215739:
     template: Vulture
-    at:       [561.772, -0.594, -686.303, 127]
+    region:   se_240
     level:    [4, 5]
   17215740:
     template: Vulture
-    at:       [654.677, -1.732, -613.874, 127]
+    region:   se_240
     level:    [4, 5]
   17215741:
     template: Goblin_Weaver
-    at:       [521.125, -0.115, -712.584, 125]
+    region:   se_240
     level:    [4, 5]
   17215742:
     template: Goblin_Fisher
-    at:       [580.261, -0.124, -649.032, 73]
+    region:   se_240
     level:    [4, 5]
   17215743:
     template: Goblin_Fisher
-    at:       [620.288, 1.240, -616.886, 90]
+    region:   se_240
     level:    [4, 5]
   17215744:
     template: Stone_Eater
-    at:       [284.345, -0.095, -637.362, 38]
+    region:   se_257
     level:    [4, 5]
   17215745:
     template: Stone_Eater
-    at:       [246.533, 0.032, -598.447, 127]
+    region:   se_257
     level:    [4, 5]
   17215746:
     template: Stone_Eater
-    at:       [284.826, 0.113, -575.533, 108]
+    region:   se_257
     level:    [4, 5]
   17215747:
     template: Rock_Lizard
-    at:       [280.688, 0.070, -591.116, 127]
+    region:   se_257
     level:    [5, 6]
   17215748:
     template: Rock_Lizard
-    at:       [237.144, 2.124, -614.938, 72]
+    region:   se_257
     level:    [5, 6]
   17215749:
     template: Walking_Sapling
-    at:       [308.043, 1.106, -576.371, 33]
+    region:   se_257
     level:    [4, 5]
   17215750:
     template: Walking_Sapling
-    at:       [278.625, 0.526, -630.545, 125]
+    region:   se_257
     level:    [4, 5]
   17215751:
     template: Walking_Sapling
-    at:       [290.027, 0.008, -569.761, 127]
+    region:   se_257
     level:    [4, 5]
   17215752:
     template: Walking_Sapling
-    at:       [403.059, -0.726, -636.092, 3]
+    region:   se_257
     level:    [4, 5]
   17215753:
     template: Walking_Sapling
-    at:       [329.433, 0.616, -563.283, 37]
+    region:   se_257
     level:    [4, 5]
   17215754:
     template: Walking_Sapling
-    at:       [313.454, 2.012, -578.594, 127]
+    region:   se_257
     level:    [4, 5]
   17215755:
     template: Vulture
-    at:       [382.021, -0.700, -633.344, 127]
+    region:   se_257
     level:    [4, 5]
   17215756:
     template: Vulture
-    at:       [385.672, -0.545, -606.360, 127]
+    region:   se_257
     level:    [4, 5]
   17215757:
     template: Young_Quadav
-    at:       [300.423, 0.905, -627.372, 15]
+    region:   se_257
     level:    [5, 6]
   17215758:
     template: Amethyst_Quadav
-    at:       [397.093, -0.190, -612.581, 117]
+    region:   se_257
     level:    [5, 6]
   17215759:
     template: Amber_Quadav
-    at:       [425.413, -0.038, -635.822, 127]
+    region:   se_257
     level:    [5, 6]
   17215760:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [307.451, 0.069, -564.155, 127]
+    region:   se_257
     level:    [5, 6]
   17215761:
     template: Shrapnel
-    at:       [328.320, -0.341, -610.653, 85]
+    region:   se_257
     level:    [8, 9]
   17215762:
     template: Stone_Eater
-    at:       [-117.670, 4.213, -222.344, 41]
+    region:   n_274
     level:    [4, 5]
   17215763:
     template: Stone_Eater
-    at:       [-103.161, 10.961, -231.914, 56]
+    region:   n_274
     level:    [4, 5]
   17215764:
     template: Rock_Lizard
-    at:       [-23.045, 2.678, -179.826, 127]
+    region:   n_274
     level:    [5, 6]
   17215765:
     template: Rock_Lizard
-    at:       [-109.813, -0.014, -170.340, 11]
+    region:   n_274
     level:    [5, 6]
   17215766:
     template: Walking_Sapling
-    at:       [-49.418, 0.130, -163.973, 127]
+    region:   n_274
     level:    [4, 5]
   17215767:
     template: Walking_Sapling
-    at:       [-17.642, 0.186, -215.824, 89]
+    region:   n_274
     level:    [4, 5]
   17215768:
     template: Walking_Sapling
-    at:       [-114.716, 4.194, -223.261, 64]
+    region:   n_274
     level:    [4, 5]
   17215769:
     template: Walking_Sapling
-    at:       [-58.276, 2.713, -184.743, 127]
+    region:   n_274
     level:    [4, 5]
   17215770:
     template: Walking_Sapling
-    at:       [-5.499, 0.697, -196.360, 127]
+    region:   n_274
     level:    [4, 5]
   17215771:
     template: Walking_Sapling
-    at:       [-67.238, 0.153, -196.045, 40]
+    region:   n_274
     level:    [4, 5]
   17215772:
     template: Vulture
-    at:       [-9.553, 2.330, -180.860, 47]
+    region:   n_274
     level:    [4, 5]
   17215773:
     template: Vulture
-    at:       [-77.699, 0.814, -193.808, 127]
+    region:   n_274
     level:    [4, 5]
   17215774:
     template: Young_Quadav
-    at:       [-91.834, 2.559, -190.379, 127]
+    region:   n_274
     level:    [6, 7]
   17215775:
     template: Amethyst_Quadav
-    at:       [-27.208, -0.230, -206.404, 127]
+    region:   n_274
     level:    [6, 7]
   17215776:
     template: Amber_Quadav
-    at:       [-126.297, -0.909, -204.614, 61]
+    region:   n_274
     level:    [6, 7]
   17215777:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [-65.648, 1.363, -219.441, 127]
+    region:   n_274
     level:    [6, 7]
   17215778:
     template: Tococo
-    at:       [-53.000, 0.000, -197.000, 127]
+    region:   n_274
     level:    [4, 5]
   17215779:
     template: Ornery_Sheep
-    at:       [450.883, -20.452, -583.066, 70]
+    region:   se_291
     level:    [5, 6]
   17215780:
     template: Ornery_Sheep
-    at:       [463.673, -20.205, -590.366, 26]
+    region:   se_291
     level:    [5, 6]
   17215781:
     template: Goblin_Thug
-    at:       [447.349, -20.641, -570.559, 127]
+    region:   se_291
     level:    [6, 7]
   17215782:
     template: Goblin_Thug
-    at:       [449.762, -20.456, -584.155, 127]
+    region:   se_291
     level:    [6, 7]
   17215783:
     template: Goblin_Weaver
-    at:       [451.079, -20.833, -583.523, 127]
+    region:   se_291
     level:    [6, 7]
   17215784:
     template: Goblin_Weaver
-    at:       [498.044, -20.172, -594.537, 127]
+    region:   se_291
     level:    [6, 7]
   17215785:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [447.715, -20.701, -589.586, 41]
+    region:   se_291
     level:    [6, 7]
   17215786:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [442.160, -20.455, -590.081, 61]
+    region:   se_291
     level:    [6, 7]
   17215787:
     template: Goblin_Thug
-    at:       [464.716, -20.946, -579.741, 127]
+    region:   region_49
     level:    [5, 6]
   17215788:
     template: Goblin_Weaver
-    at:       [461.568, -21.130, -582.489, 28]
+    region:   se_291
     level:    [5, 6]
   17215789:
     template: Goblin_Weaver
-    at:       [459.527, -20.269, -555.846]
+    region:   region_49
     level:    [5, 6]
   17215790:
     template: Stone_Eater
-    at:       [-155.829, 11.148, -329.826, 127]
+    region:   w_302
     level:    [4, 5]
   17215791:
     template: Stone_Eater
-    at:       [-103.015, 10.062, -320.065, 127]
+    region:   w_302
     level:    [4, 5]
   17215792:
     template: Rock_Lizard
-    at:       [-87.582, 9.947, -280.148, 127]
+    region:   c_304
     level:    [5, 6]
   17215793:
     template: Rock_Lizard
-    at:       [-101.407, 12.003, -256.547, 127]
+    region:   c_304
     level:    [5, 6]
   17215794:
     template: Walking_Sapling
-    at:       [-211.480, 10.891, -327.839, 110]
+    region:   c_304
     level:    [4, 5]
   17215795:
     template: Walking_Sapling
-    at:       [-135.214, 11.819, -287.585, 127]
+    region:   c_304
     level:    [4, 5]
   17215796:
     template: Vulture
-    at:       [-172.689, 11.238, -351.716, 117]
+    region:   c_304
     level:    [5, 6]
   17215797:
     template: Vulture
-    at:       [-121.932, 12.166, -340.014, 13]
+    region:   c_304
     level:    [5, 6]
   17215798:
     template: Vulture
-    at:       [-151.198, 10.898, -282.222, 83]
+    region:   c_304
     level:    [5, 6]
   17215799:
     template: Vulture
-    at:       [-120.199, 10.330, -248.540, 127]
+    region:   c_304
     level:    [5, 6]
   17215800:
     template: Vulture
-    at:       [-121.216, 10.433, -327.163, 127]
+    region:   c_304
     level:    [5, 6]
   17215801:
     template: Vulture
-    at:       [-144.523, 11.951, -266.704, 7]
+    region:   c_304
     level:    [5, 6]
   17215802:
     template: Young_Quadav
-    at:       [-90.116, 9.701, -335.284, 44]
+    region:   c_304
     level:    [6, 7]
   17215803:
     template: Young_Quadav
-    at:       [-130.215, 10.333, -310.776, 2]
+    region:   c_304
     level:    [6, 7]
   17215804:
     template: Amethyst_Quadav
-    at:       [-106.455, 12.054, -340.457, 127]
+    region:   c_304
     level:    [6, 7]
   17215805:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [-157.468, 10.477, -319.813, 127]
+    region:   c_304
     level:    [6, 7]
   17215806:
     template: Shrapnel
-    at:       [-161.855, 10.163, -359.714, 17]
+    region:   w_302
     level:    [8, 9]
   17215807:
     template: Stone_Eater
-    at:       [-116.375, 19.793, -461.837, 68]
+    region:   c_321
     level:    [4, 5]
   17215808:
     template: Stone_Eater
-    at:       [0.910, 1.994, -428.347, 87]
+    region:   c_321
     level:    [4, 5]
   17215809:
     template: Rock_Lizard
-    at:       [-35.076, 9.775, -418.659, 127]
+    region:   c_321
     level:    [5, 6]
   17215810:
     template: Rock_Lizard
-    at:       [-86.826, 13.435, -461.713]
+    region:   c_321
     level:    [5, 6]
   17215811:
     template: Walking_Sapling
-    at:       [-45.212, 11.076, -471.567, 127]
+    region:   c_321
     level:    [4, 5]
   17215812:
     template: Walking_Sapling
-    at:       [-65.272, 10.943, -442.355, 84]
+    region:   c_321
     level:    [4, 5]
   17215813:
     template: Vulture
-    at:       [12.775, 8.131, -381.857, 60]
+    region:   c_321
     level:    [5, 6]
   17215814:
     template: Vulture
-    at:       [-111.792, 12.776, -411.412, 37]
+    region:   c_321
     level:    [5, 6]
   17215815:
     template: Vulture
-    at:       [-61.609, 9.827, -355.694, 127]
+    region:   c_321
     level:    [5, 6]
   17215816:
     template: Vulture
-    at:       [-58.635, 12.932, -445.011, 48]
+    region:   c_321
     level:    [5, 6]
   17215817:
     template: Vulture
-    at:       [-1.730, 8.798, -404.458, 127]
+    region:   c_321
     level:    [5, 6]
   17215818:
     template: Vulture
-    at:       [-36.482, 9.206, -492.341, 37]
+    region:   c_321
     level:    [5, 6]
   17215819:
     template: Young_Quadav
-    at:       [-22.604, 6.982, -424.051, 127]
+    region:   c_321
     level:    [6, 7]
   17215820:
     template: Young_Quadav
-    at:       [-62.016, 11.941, -430.520, 127]
+    region:   c_321
     level:    [6, 7]
   17215821:
     template: Amber_Quadav
-    at:       [-98.294, 12.510, -369.689, 37]
+    region:   c_321
     level:    [6, 7]
   17215822:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [-85.446, 10.361, -362.531, 101]
+    region:   c_321
     level:    [6, 7]
   17215823:
     template: Shrapnel
-    at:       [-116.110, 19.076, -449.929, 127]
+    region:   region_50
     level:    [8, 10]
   17215824:
     template: Stone_Eater
-    at:       [41.121, -0.052, -577.450, 127]
+    region:   s_339
     level:    [4, 5]
   17215825:
     template: Stone_Eater
-    at:       [43.614, 2.049, -497.341, 87]
+    region:   s_339
     level:    [4, 5]
   17215826:
     template: Rock_Lizard
-    at:       [66.149, 0.232, -556.592, 127]
+    region:   s_339
     level:    [5, 6]
   17215827:
     template: Rock_Lizard
-    at:       [74.291, 0.249, -524.750, 11]
+    region:   s_339
     level:    [5, 6]
   17215828:
     template: Walking_Sapling
-    at:       [46.075, 0.962, -555.163, 127]
+    region:   s_339
     level:    [4, 5]
   17215829:
     template: Walking_Sapling
-    at:       [88.822, 0.252, -552.338, 127]
+    region:   s_339
     level:    [4, 5]
   17215830:
     template: Walking_Sapling
-    at:       [97.321, 0.105, -551.379, 127]
+    region:   s_339
     level:    [4, 5]
   17215831:
     template: Walking_Sapling
-    at:       [65.563, -0.420, -483.268, 127]
+    region:   s_339
     level:    [4, 5]
   17215832:
     template: Walking_Sapling
-    at:       [89.366, 0.253, -565.779, 127]
+    region:   s_339
     level:    [4, 5]
   17215833:
     template: Walking_Sapling
-    at:       [60.198, 2.214, -506.415, 127]
+    region:   s_339
     level:    [4, 5]
   17215834:
     template: Walking_Sapling
-    at:       [31.549, 2.792, -501.300, 127]
+    region:   s_339
     level:    [4, 5]
   17215835:
     template: Walking_Sapling
-    at:       [53.454, 0.406, -488.130, 127]
+    region:   s_339
     level:    [4, 5]
   17215836:
     template: Vulture
-    at:       [24.794, -0.049, -445.489, 127]
+    region:   s_339
     level:    [4, 5]
   17215837:
     template: Vulture
-    at:       [45.600, 0.101, -574.685, 90]
+    region:   s_339
     level:    [4, 5]
   17215838:
     template: Young_Quadav
-    at:       [16.735, 0.380, -428.331, 85]
+    region:   s_339
     level:    [4, 5]
   17215839:
     template: Young_Quadav
-    at:       [34.000, 0.373, -534.000, 127]
+    region:   s_339
     level:    [4, 5]
   17215840:
     template: Amethyst_Quadav
-    at:       [171.000, -1.000, -649.000, 103]
+    region:   s_339
     level:    [4, 5]
   17215841:
     template: Amber_Quadav
-    at:       [36.000, -0.550, -468.000, 38]
+    region:   s_339
     level:    [4, 5]
   17215842:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [43.376, 0.516, -512.072, 14]
+    region:   s_339
     level:    [4, 5]
   17215843:
     template: Shrapnel
-    at:       [23.111, 2.749, -487.916, 65]
+    region:   s_339
     level:    [8, 10]
   17215844:
     template: Young_Quadav
-    at:       [100.203, 1.896, -582.310, 91]
+    region:   region_51
     level:    [4, 5]
   17215845:
     template: Amethyst_Quadav
-    at:       [91.179, 1.358, -574.910, 127]
+    region:   region_51
     level:    [4, 5]
   17215846:
     template: Amber_Quadav
-    at:       [101.035, 1.424, -573.742, 127]
+    region:   region_51
     level:    [4, 5]
   17215847:
     template: Stone_Eater
-    at:       [126.154, -0.057, -579.490, 110]
+    region:   s_359
     level:    [4, 5]
   17215848:
     template: Stone_Eater
-    at:       [152.407, 0.087, -593.848, 127]
+    region:   s_362
     level:    [4, 5]
   17215849:
     template: Rock_Lizard
-    at:       [150.942, 0.186, -593.710, 127]
+    region:   s_362
     level:    [5, 6]
   17215850:
     template: Rock_Lizard
-    at:       [145.402, 0.164, -608.888, 51]
+    region:   s_362
     level:    [5, 6]
   17215851:
     template: Walking_Sapling
-    at:       [130.431, 0.048, -593.460, 127]
+    region:   s_362
     level:    [4, 5]
   17215852:
     template: Walking_Sapling
-    at:       [145.049, 0.164, -608.967, 56]
+    region:   s_362
     level:    [4, 5]
   17215853:
     template: Walking_Sapling
-    at:       [143.975, -0.092, -597.474, 84]
+    region:   s_362
     level:    [4, 5]
   17215854:
     template: Walking_Sapling
-    at:       [110.622, 0.611, -578.704, 127]
+    region:   s_362
     level:    [4, 5]
   17215855:
     template: Walking_Sapling
-    at:       [136.306, -0.402, -669.923, 29]
+    region:   s_362
     level:    [4, 5]
   17215856:
     template: Vulture
-    at:       [157.795, -0.008, -599.790, 127]
+    region:   s_362
     level:    [4, 5]
   17215857:
     template: Vulture
-    at:       [98.744, 0.337, -631.894, 17]
+    region:   s_362
     level:    [4, 5]
   17215858:
     template: Young_Quadav
-    at:       [179.000, -0.046, -603.000, 127]
+    region:   s_362
     level:    [4, 5]
   17215859:
     template: Amethyst_Quadav
-    at:       [123.558, -0.374, -655.455, 127]
+    region:   s_362
     level:    [4, 5]
   17215860:
     template: Amber_Quadav
-    at:       [87.968, 0.781, -607.762, 127]
+    region:   s_362
     level:    [4, 5]
   17215861:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [111.540, 0.518, -579.167, 112]
+    region:   s_362
     level:    [4, 5]
   17215862:
     template: Shrapnel
-    at:       [210.098, 2.158, -616.197, 127]
+    region:   s_362
     level:    [8, 10]
   17215863:
     template: Rock_Lizard
-    at:       [-260.662, 22.417, -357.882, 127]
+    region:   w_375
     level:    [7, 8]
   17215864:
     template: Rock_Lizard
-    at:       [-228.159, 18.045, -411.726, 29]
+    region:   w_375
     level:    [7, 8]
   17215865:
     template: Rock_Lizard
-    at:       [-270.019, 20.612, -389.970, 127]
+    region:   w_375
     level:    [7, 8]
   17215866:
     template: Rock_Lizard
-    at:       [-276.306, 20.355, -345.704, 127]
+    region:   w_375
     level:    [7, 8]
   17215867:
     template: Rock_Lizard
-    at:       [-275.441, 20.451, -347.294, 20]
+    region:   w_375
     level:    [7, 8]
   17215868:
     template: Leaping_Lizzy
-    at:       [-283.760, 21.444, -412.182, 127]
+    region:   w_375
     level:    [10, 11]
   17215869:
     template: Walking_Sapling
-    at:       [-252.808, 20.950, -329.127, 127]
+    region:   w_375
     level:    [5, 6]
   17215870:
     template: Walking_Sapling
-    at:       [-224.595, 19.724, -437.165, 87]
+    region:   w_375
     level:    [5, 6]
   17215871:
     template: Walking_Sapling
-    at:       [-255.520, 20.243, -439.260, 31]
+    region:   w_375
     level:    [5, 6]
   17215872:
     template: Vulture
-    at:       [-269.047, 20.008, -439.325, 7]
+    region:   w_375
     level:    [6, 7]
   17215873:
     template: Vulture
-    at:       [-224.777, 17.958, -421.627, 127]
+    region:   w_375
     level:    [6, 7]
   17215874:
     template: Vulture
-    at:       [-241.895, 20.016, -390.936, 13]
+    region:   w_375
     level:    [6, 7]
   17215875:
     template: Young_Quadav
-    at:       [-249.278, 20.348, -379.294, 127]
+    region:   w_375
     level:    [7, 8]
   17215876:
     template: Amethyst_Quadav
-    at:       [-245.384, 20.488, -394.565, 76]
+    region:   w_375
     level:    [7, 8]
   17215877:
     template: Amber_Quadav
-    at:       [-261.807, 22.838, -408.475, 127]
+    region:   w_375
     level:    [7, 8]
   17215878:
     template: Amber_Quadav
-    at:       [-279.381, 19.500, -393.718, 80]
+    region:   w_375
     level:    [7, 8]
   17215879:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [-274.122, 20.257, -355.209, 87]
+    region:   w_375
     level:    [7, 8]
   17215880:
     template: Young_Quadav
-    at:       [-218.000, 14.000, -379.000, 127]
+    region:   region_52
     level:    [5, 6]
   17215881:
     template: Amethyst_Quadav
-    at:       [-221.428, 15.547, -382.506, 86]
+    region:   region_52
     level:    [5, 6]
   17215882:
     template: Amber_Quadav
-    at:       [-224.901, 16.142, -380.003, 92]
+    region:   region_52
     level:    [5, 6]
   17215883:
     template: Rock_Lizard
-    at:       [-341.113, 32.862, -333.188, 127]
+    region:   w_395
     level:    [7, 8]
   17215884:
     template: Rock_Lizard
-    at:       [-362.393, 29.985, -393.530, 18]
+    region:   w_395
     level:    [7, 8]
   17215885:
     template: Rock_Lizard
-    at:       [-327.621, 31.526, -410.456, 11]
+    region:   w_395
     level:    [7, 8]
   17215886:
     template: Rock_Lizard
-    at:       [-376.273, 32.776, -441.078, 127]
+    region:   w_395
     level:    [7, 8]
   17215887:
     template: Rock_Lizard
-    at:       [-322.871, 30.052, -401.184, 127]
+    region:   w_395
     level:    [7, 8]
   17215888:
     template: Leaping_Lizzy
-    at:       [-339.499, 29.731, -441.475, 127]
+    region:   w_395
     level:    [10, 11]
   17215889:
     template: Walking_Sapling
-    at:       [-388.955, 37.529, -383.622, 127]
+    region:   w_395
     level:    [5, 6]
   17215890:
     template: Walking_Sapling
-    at:       [-322.421, 29.970, -383.104, 99]
+    region:   w_395
     level:    [5, 6]
   17215891:
     template: Walking_Sapling
-    at:       [-319.987, 31.544, -426.122, 127]
+    region:   w_395
     level:    [5, 6]
   17215892:
     template: Vulture
-    at:       [-321.229, 29.318, -333.781, 126]
+    region:   w_395
     level:    [6, 7]
   17215893:
     template: Vulture
-    at:       [-354.882, 38.491, -328.393, 127]
+    region:   w_395
     level:    [6, 7]
   17215894:
     template: Vulture
-    at:       [-403.019, 39.947, -446.894, 127]
+    region:   w_395
     level:    [6, 7]
   17215895:
     template: Young_Quadav
-    at:       [-315.369, 29.483, -353.413, 67]
+    region:   w_395
     level:    [7, 8]
   17215896:
     template: Young_Quadav
-    at:       [-362.289, 30.496, -449.346, 127]
+    region:   w_395
     level:    [7, 8]
   17215897:
     template: Amber_Quadav
-    at:       [-372.868, 34.819, -422.473, 16]
+    region:   w_395
     level:    [7, 8]
   17215898:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [-316.208, 32.233, -420.296, 53]
+    region:   w_395
     level:    [7, 8]
   17215899:
     template: Rock_Lizard
-    at:       [-432.400, 39.961, -279.234, 127]
+    region:   w_411
     level:    [7, 8]
   17215900:
     template: Rock_Lizard
-    at:       [-438.730, 39.718, -257.323, 127]
+    region:   w_412
     level:    [7, 8]
   17215901:
     template: Rock_Lizard
-    at:       [-459.357, 40.485, -245.516, 45]
+    region:   w_412
     level:    [7, 8]
   17215902:
     template: Rock_Lizard
-    at:       [-391.425, 38.893, -302.177, 127]
+    region:   w_412
     level:    [7, 8]
   17215903:
     template: Rock_Lizard
-    at:       [-441.996, 39.806, -266.942, 70]
+    region:   w_412
     level:    [7, 8]
   17215904:
     template: Walking_Sapling
-    at:       [-380.461, 38.309, -312.457, 21]
+    region:   w_412
     level:    [5, 6]
   17215905:
     template: Walking_Sapling
-    at:       [-405.407, 39.626, -327.381, 43]
+    region:   w_412
     level:    [5, 6]
   17215906:
     template: Walking_Sapling
-    at:       [-403.213, 39.556, -289.577, 8]
+    region:   w_412
     level:    [5, 6]
   17215907:
     template: Vulture
-    at:       [-455.705, 42.726, -296.243, 127]
+    region:   w_412
     level:    [6, 7]
   17215908:
     template: Vulture
-    at:       [-465.532, 42.423, -283.568, 53]
+    region:   w_412
     level:    [6, 7]
   17215909:
     template: Vulture
-    at:       [-448.904, 42.891, -336.342, 61]
+    region:   w_412
     level:    [6, 7]
   17215910:
     template: Young_Quadav
-    at:       [-466.963, 41.179, -255.718, 127]
+    region:   w_412
     level:    [7, 8]
   17215911:
     template: Young_Quadav
-    at:       [-468.602, 40.914, -328.583, 56]
+    region:   w_412
     level:    [7, 8]
   17215912:
     template: Amethyst_Quadav
-    at:       [-433.453, 39.996, -313.779, 127]
+    region:   w_412
     level:    [7, 8]
   17215913:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [-434.146, 39.363, -275.784, 67]
+    region:   w_412
     level:    [7, 8]
   17215914:
     template: Maneating_Hornet
-    at:       [-427.092, 42.035, -452.141, 108]
+    region:   w_426
     level:    [5, 6]
   17215915:
     template: Maneating_Hornet
-    at:       [-514.777, 39.729, -474.870, 127]
+    region:   w_426
     level:    [5, 6]
   17215916:
     template: Maneating_Hornet
-    at:       [-509.202, 40.457, -464.245, 29]
+    region:   w_426
     level:    [5, 6]
   17215917:
     template: Maneating_Hornet
-    at:       [-487.848, 43.719, -450.860, 127]
+    region:   w_426
     level:    [5, 6]
   17215918:
     template: Maneating_Hornet
-    at:       [-471.935, 43.544, -453.752, 127]
+    region:   w_426
     level:    [5, 6]
   17215919:
     template: Maneating_Hornet
-    at:       [-539.924, 39.545, -524.807, 127]
+    region:   w_426
     level:    [5, 6]
   17215920:
     template: Land_Crab
-    at:       [-419.252, 39.447, -480.446, 52]
+    region:   w_426
     level:    [6, 7]
   17215921:
     template: Land_Crab
-    at:       [-475.188, 42.576, -462.339, 127]
+    region:   w_426
     level:    [6, 7]
   17215922:
     template: Land_Crab
-    at:       [-519.015, 40.342, -457.071, 98]
+    region:   w_426
     level:    [6, 7]
   17215923:
     template: Land_Crab
-    at:       [-500.190, 42.932, -456.261, 127]
+    region:   w_426
     level:    [6, 7]
   17215924:
     template: Land_Crab
-    at:       [-432.026, 39.943, -439.890, 127]
+    region:   w_426
     level:    [6, 7]
   17215925:
     template: Land_Crab
-    at:       [-432.457, 40.634, -465.487, 127]
+    region:   w_426
     level:    [6, 7]
   17215926:
     template: Land_Crab
-    at:       [-489.722, 43.341, -457.325, 5]
+    region:   w_426
     level:    [6, 7]
   17215927:
     template: Land_Crab
-    at:       [-410.372, 40.448, -448.121, 40]
+    region:   w_426
     level:    [6, 7]
   17215928:
     template: Goblin_Thug
-    at:       [-513.987, 41.054, -453.395]
+    region:   w_426
     level:    [7, 8]
   17215929:
     template: Goblin_Weaver
-    at:       [-527.638, 39.125, -511.567, 127]
+    region:   w_426
     level:    [7, 8]
   17215930:
     template: Shrapnel
-    at:       [-519.726, 40.060, -526.655, 127]
+    region:   w_426
     level:    [8, 10]
   17215931:
     template: Maneating_Hornet
-    at:       [-473.406, 42.574, -381.102, 58]
+    region:   w_443
     level:    [5, 6]
   17215932:
     template: Maneating_Hornet
-    at:       [-561.127, 39.421, -394.850, 67]
+    region:   w_443
     level:    [5, 6]
   17215933:
     template: Maneating_Hornet
-    at:       [-500.889, 40.416, -332.337, 127]
+    region:   w_443
     level:    [5, 6]
   17215934:
     template: Maneating_Hornet
-    at:       [-533.526, 38.953, -344.445, 127]
+    region:   w_443
     level:    [5, 6]
   17215935:
     template: Maneating_Hornet
-    at:       [-513.167, 40.023, -404.951, 15]
+    region:   w_443
     level:    [5, 6]
   17215936:
     template: Maneating_Hornet
-    at:       [-482.726, 40.190, -350.593, 127]
+    region:   w_443
     level:    [5, 6]
   17215937:
     template: Land_Crab
-    at:       [-476.993, 39.648, -351.034, 50]
+    region:   w_443
     level:    [6, 7]
   17215938:
     template: Land_Crab
-    at:       [-506.451, 40.819, -350.408, 127]
+    region:   w_450
     level:    [6, 7]
   17215939:
     template: Land_Crab
-    at:       [-529.080, 39.939, -376.079, 48]
+    region:   w_443
     level:    [6, 7]
   17215940:
     template: Land_Crab
-    at:       [-457.107, 42.593, -382.682, 127]
+    region:   w_443
     level:    [6, 7]
   17215941:
     template: Land_Crab
-    at:       [-482.046, 43.300, -381.715, 66]
+    region:   w_443
     level:    [6, 7]
   17215942:
     template: Land_Crab
-    at:       [-512.666, 40.151, -410.802, 127]
+    region:   w_443
     level:    [6, 7]
   17215943:
     template: Land_Crab
-    at:       [-485.681, 43.334, -381.310, 127]
+    region:   w_443
     level:    [6, 7]
   17215944:
     template: Land_Crab
-    at:       [-506.210, 39.782, -328.295, 32]
+    region:   w_443
     level:    [6, 7]
   17215945:
     template: Goblin_Thug
-    at:       [-521.799, 39.445, -431.978, 127]
+    region:   w_443
     level:    [7, 8]
   17215946:
     template: Goblin_Weaver
-    at:       [-476.069, 40.148, -339.751, 127]
+    region:   w_443
     level:    [7, 8]
   17215947:
     template: Shrapnel
-    at:       [-512.816, 39.345, -366.324, 127]
+    region:   w_443
     level:    [8, 10]
   17215948:
     template: Goblin_Digger_near
@@ -3443,7 +3444,7 @@ spawns:
     level:    [1, 1]
   17216040:
     template: Wraith_Bat
-    at:       [-81.990, 1.699, 220.305, 101]
+    region:   c_552
     level:    [1, 1]
   17216041:
     template: Wraith_Bat
@@ -3456,15 +3457,18 @@ spawns:
     level:    [1, 1]
   17216044:
     template: Wraith_Bat
+    region:   c_556
     level:    [1, 1]
   17216045:
     template: Wraith_Bat
+    region:   e_557
     level:    [1, 1]
   17216046:
     template: Wraith_Bat
     level:    [1, 1]
   17216047:
     template: Wraith_Bat
+    region:   n_559
     level:    [1, 1]
   17216048:
     template: Wraith_Bat
@@ -3600,90 +3604,94 @@ spawns:
     at:     [282.489, -0.500, -236.783]
   17216092:
     script: Slime
+    region: e_36
   17216093:
     script: Slime
+    region: e_36
   17216094:
     script: Slime
+    region: e_36
   17216095:
     script: Slime
+    region: e_36
   17216096:
     script: Slime
-    at:     [255.871, -0.832, -268.475, 148]
+    region: e_36
   17216097:
     script: Slime
-    at:     [263.377, 0.119, -247.208, 231]
+    region: e_36
   17216098:
     script: Slime
     at:     [243.414, -0.013, -260.251, 231]
   17216099:
     script: Slime
-    at:     [288.135, -0.089, -277.412, 98]
+    region: e_163
   17216100:
     script: Slime
-    at:     [248.525, -0.172, -243.604, 137]
+    region: e_163
   17216101:
     script: Slime
-    at:     [262.019, 0.013, -262.376, 31]
+    region: e_163
   17216102:
     script: Slime
-    at:     [293.817, -0.150, -283.346, 31]
+    region: e_163
   17216103:
     script: Slime
-    at:     [244.554, -0.052, -260.073, 183]
+    region: e_163
   17216104:
     script: Slime
-    at:     [260.247, -0.074, -264.757, 242]
+    region: e_163
   17216105:
     script: Slime
-    at:     [246.449, -0.187, -278.460, 248]
+    region: n_48
   17216106:
     script: Slime
-    at:     [172.084, 0.186, -234.389, 6]
+    region: n_48
   17216107:
     script: Slime
-    at:     [139.255, 0.601, -173.184, 11]
+    region: n_48
   17216108:
     script: Slime
-    at:     [114.284, 0.379, -181.685, 149]
+    region: n_48
   17216109:
     script: Slime
-    at:     [122.889, -0.268, -188.241, 26]
+    region: n_48
   17216110:
     script: Slime
-    at:     [173.127, 0.354, -170.064, 21]
+    region: n_48
   17216111:
     script: Slime
-    at:     [168.674, -0.402, -204.495, 229]
+    region: n_48
   17216112:
     script: She-Slime
-    at:     [126.635, 0.177, -182.535, 140]
+    region: e_36
   17216113:
     script: She-Slime
-    at:     [193.966, -0.715, -203.614, 87]
+    region: e_36
   17216114:
     script: She-Slime
-    at:     [152.973, 2.471, -219.031, 235]
+    region: e_36
   17216115:
     script: She-Slime
-    at:     [149.110, 0.175, -238.949, 2]
+    region: n_48
   17216116:
     script: She-Slime
-    at:     [380.484, -0.541, -251.435, 78]
+    region: n_628
   17216117:
     script: She-Slime
-    at:     [371.083, -0.524, -243.496, 153]
+    region: n_48
   17216118:
     script: She-Slime
-    at:     [397.851, -0.716, -247.698, 228]
+    region: e_630
   17216119:
     script: She-Slime
-    at:     [377.727, -0.211, -249.964, 229]
+    region: e_163
   17216120:
     script: She-Slime
-    at:     [363.854, -0.655, -285.700]
+    region: e_163
   17216121:
     script: She-Slime
-    at:     [345.615, 0.196, -283.651, 5]
+    region: e_163
   17216122:
     script: Metal_Slime
     at:     [440.225, -1.186, -332.973, 18]

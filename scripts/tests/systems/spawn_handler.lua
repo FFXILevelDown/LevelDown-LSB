@@ -37,8 +37,10 @@ describe('Spawn Handler', function()
         end)
 
         it('respawns after deaggro with 60 second timer', function()
+            local far = player:getPos()
             local mob = player.entities:moveTo('River_Crab')
-            mob:setPos(mob:getXPos() + 200, mob:getYPos(), mob:getZPos())
+            mob:setPos(far.x, far.y, far.z)
+            mob:clearPath()
             mob:disengage()
 
             for _ = 1, 10 do
@@ -72,6 +74,7 @@ describe('Spawn Handler', function()
 
         it('respawns same mob after deaggro', function()
             player:gotoZone(xi.zone.GHELSBA_OUTPOST)
+            local far   = { x = 99.0, y = 0.0, z = -34.0 }
             local mobs  = xi.test.world:getSpawnSlot(xi.zone.GHELSBA_OUTPOST, 1)
             local mob1  = mobs[1]
             local mob2  = mobs[2]
@@ -79,8 +82,11 @@ describe('Spawn Handler', function()
             local mob   = mob1:isSpawned() and mob1 or mob2
             local other = mob == mob1 and mob2 or mob1
 
+            player.entities:moveTo(mob)
+
             for _ = 1, 5 do
-                mob:setPos(mob:getXPos() + 200, mob:getYPos(), mob:getZPos())
+                mob:setPos(far.x, far.y, far.z)
+                mob:clearPath()
                 mob:disengage()
 
                 for _ = 1, 10 do

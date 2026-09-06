@@ -49,11 +49,14 @@ public:
     // uniform random point anywhere in the region, giving up after `attempts` samples find nothing walkable
     auto randomPoint(const NavMesh* navMesh = nullptr, uint8 attempts = 8) const -> Maybe<position_t>;
 
-    // random point `distance` units from `from`, still in the region and reachable without leaving the walkable surface
-    auto randomPointAt(const position_t& from, float distance, const NavMesh* navMesh = nullptr) const -> Maybe<position_t>;
+    // random point a drawn distance (mean `meanDistance`) from `from`, still in the region and reachable without leaving the walkable surface
+    auto randomPointAt(const position_t& from, float meanDistance, const NavMesh* navMesh = nullptr) const -> Maybe<position_t>;
 
     // nearest point of the region to `position`, or `position` itself when it is already inside
     auto closestPoint(const position_t& position) const -> position_t;
+
+    // how far along `direction` stays in the region, up to `distance`
+    auto clampToRegion(const position_t& from, const Vector3& direction, float distance) const -> float;
 
     // how far outside the region `position` is in the XZ plane, or zero when it is inside
     auto distanceOutside(const position_t& position) const -> float;

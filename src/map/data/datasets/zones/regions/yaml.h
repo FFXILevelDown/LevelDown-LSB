@@ -62,5 +62,5 @@ struct glz::json_schema<xi::data::datasets::zones::regions::wire::Region>
 template <>
 struct glz::json_schema<xi::data::datasets::zones::regions::wire::Document>
 {
-    glz::schema regions{ .description = "Areas a mob may roam in, keyed by name. A spawn joins one by naming it." };
+    glz::schema regions{ .description = "Areas a mob may roam in, keyed by name. A spawn joins one by naming it, or lists several and picks one on each spawn." };
 };

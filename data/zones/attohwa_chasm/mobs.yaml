@@ -1774,207 +1774,207 @@ templates:
 spawns:
   16805889:
     template: Tracer_Antlion
-    at:       [121.173, 3.132, -130.448, 197]
+    region:   s_1
     level:    [38, 40]
   16805890:
     template: Tracer_Antlion
-    at:       [144.183, 3.938, -151.932, 21]
+    region:   s_1
     level:    [38, 40]
   16805891:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [102.619, -0.339, -128.023, 198]
+    region:   s_1
     level:    [36, 38]
   16805892:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [67.467, -4.487, -135.368, 116]
+    region:   s_1
     level:    [36, 38]
   16805893:
     template: Goblin_Smithy
-    at:       [85.862, -3.709, -129.312, 100]
+    region:   s_1
     level:    [37, 39]
   16805894:
     template: Goblin_Shaman
-    at:       [91.069, -3.861, -124.270, 173]
+    region:   s_1
     level:    [35, 37]
   16805895:
     template: Tracer_Antlion
-    at:       [199.790, 19.923, -220.135, 45]
+    region:   se_7
     level:    [38, 40]
   16805896:
     template: Doom_Scorpion
-    at:       [175.764, 11.461, -252.360, 202]
+    region:   se_7
     level:    [41, 44]
   16805897:
     template: Doom_Scorpion
-    at:       [173.171, 8.810, -155.416, 159]
+    region:   se_7
     level:    [41, 44]
   16805898:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [188.346, 16.222, -182.300, 33]
+    region:   se_7
     level:    [36, 38]
   16805899:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [188.347, 16.632, -210.078, 139]
+    region:   se_7
     level:    [36, 38]
   16805900:
     template: Tracer_Antlion
-    at:       [124.138, 6.848, -65.789, 11]
+    region:   c_12
     level:    [38, 40]
   16805901:
     template: Tracer_Antlion
-    at:       [140.307, 15.152, -32.869, 49]
+    region:   c_12
     level:    [38, 40]
   16805902:
     template: Goblin_Shaman
-    at:       [120.912, 12.137, -25.899, 176]
+    region:   c_12
     level:    [35, 37]
   16805903:
     template: Goblin_Furrier
-    at:       [141.766, 16.054, -33.883, 68]
+    region:   c_12
     level:    [35, 37]
   16805904:
     template: Goblin_Pathfinder
-    at:       [179.367, 17.201, 69.087, 220]
+    region:   c_16
     level:    [36, 38]
   16805905:
     template: Goblins_Gallinipper
-    at:       [175.249, 16.708, 64.557, 216]
+    region:   c_16
     level:    [31, 34]
   16805906:
     template: Goblin_Furrier
-    at:       [77.858, 0.621, 54.230, 77]
+    region:   c_16
     level:    [35, 37]
   16805907:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [138.133, 12.912, 49.491, 113]
+    region:   c_16
     level:    [36, 38]
   16805908:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [160.796, 12.986, 84.017, 181]
+    region:   c_16
     level:    [36, 38]
   16805909:
     template: Attohwa_Coeurl
-    at:       [199.614, 19.507, 156.006, 161]
+    region:   ne_21
     level:    [37, 39]
   16805910:
     template: Tracer_Antlion
-    at:       [254.495, 19.682, 225.294, 52]
+    region:   ne_22
     level:    [38, 40]
   16805911:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [289.536, 19.956, 216.790, 132]
+    region:   ne_22
     level:    [36, 38]
   16805912:
     template: Goblin_Furrier
-    at:       [303.095, 19.525, 227.607, 45]
+    region:   ne_22
     level:    [35, 37]
   16805913:
     template: Goblin_Smithy
-    at:       [293.777, 19.742, 217.787, 174]
+    region:   ne_22
     level:    [36, 38]
   16805914:
     template: Doom_Scorpion
-    at:       [328.417, 19.232, 169.109, 78]
+    region:   ne_26
     level:    [41, 44]
   16805915:
     template: Doom_Scorpion
-    at:       [359.613, 19.618, 190.775, 193]
+    region:   ne_26
     level:    [41, 44]
   16805916:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [362.117, 20.211, 219.132, 201]
+    region:   ne_26
     level:    [36, 38]
   16805917:
     template: Goblin_Furrier
-    at:       [339.884, 20.165, 233.752, 158]
+    region:   ne_26
     level:    [35, 37]
   16805918:
     template: Goblin_Shaman
-    at:       [336.714, 19.835, 195.309, 135]
+    region:   ne_26
     level:    [35, 37]
   16805919:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [426.142, 20.099, 197.870, 171]
+    region:   ne_31
     level:    [36, 38]
   16805920:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [401.426, 20.238, 180.272, 171]
+    region:   ne_31
     level:    [36, 38]
   16805921:
     template: Goblin_Smithy
-    at:       [401.626, 20.172, 184.110, 84]
+    region:   ne_31
     level:    [37, 39]
   16805922:
     template: Attohwa_Coeurl
-    at:       [447.880, 19.532, 120.920, 127]
+    region:   e_34
     level:    [37, 39]
   16805923:
     template: Attohwa_Coeurl
-    at:       [498.524, 20.135, 122.415, 111]
+    region:   e_34
     level:    [37, 39]
   16805924:
     template: Tracer_Antlion
-    at:       [527.798, 19.214, 69.674, 211]
+    region:   e_36
     level:    [38, 40]
   16805925:
     template: Tracer_Antlion
-    at:       [549.573, 6.100, 30.641, 28]
+    region:   e_36
     level:    [38, 40]
   16805926:
     template: Goblin_Pathfinder
-    at:       [532.948, 17.356, 82.641, 194]
+    region:   e_36
     level:    [38, 39]
   16805927:
     template: Goblins_Gallinipper
-    at:       [532.217, 17.517, 81.001, 196]
+    region:   e_36
     level:    [31, 34]
   16805928:
     template: Tracer_Antlion
-    at:       [549.076, 12.850, -36.365, 203]
+    region:   e_40
     level:    [38, 40]
   16805929:
     template: Doom_Scorpion
-    at:       [552.856, 10.475, -25.063, 89]
+    region:   e_40
     level:    [41, 44]
   16805930:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [547.628, 10.502, -15.604, 9]
+    region:   e_40
     level:    [37, 39]
   16805931:
     template: Attohwa_Coeurl
-    at:       [499.121, 19.274, 49.069, 162]
+    region:   e_43
     level:    [37, 39]
   16805932:
     template: Attohwa_Coeurl
-    at:       [472.409, 19.123, -1.265, 223]
+    region:   e_44
     level:    [38, 39]
   16805933:
     template: Doom_Scorpion
-    at:       [412.552, 19.071, 22.753, 250]
+    region:   e_45
     level:    [41, 44]
   16805934:
     template: Doom_Scorpion
-    at:       [412.440, 19.062, 21.739, 29]
+    region:   e_45
     level:    [41, 44]
   16805935:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [422.843, 19.723, 10.547, 149]
+    region:   e_45
     level:    [37, 39]
   16805936:
     template: Chasm_Lizard
-    at:       [408.173, 19.301, 14.956, 54]
+    region:   e_45
     level:    [40, 42]
   16805937:
     template: Burrow_Antlion
@@ -1982,120 +1982,121 @@ spawns:
     level:    [41, 44]
   16805938:
     template: Chasm_Lizard
-    at:       [395.187, 20.017, 68.456, 32]
+    region:   e_50
     level:    [40, 42]
   16805939:
     template: Goblin_Smithy
-    at:       [395.927, 20.038, 69.015, 38]
+    region:   e_50
     level:    [37, 39]
   16805940:
     template: Chasm_Lizard
-    at:       [312.982, 19.730, 77.991, 8]
+    region:   e_52
     level:    [40, 42]
   16805941:
     template: Gallinipper_AC
     script:   Gallinipper
+    region:   e_52
     level:    [37, 39]
   16805942:
     template: Chasm_Lizard
-    at:       [270.963, 19.542, 83.237, 240]
+    region:   e_54
     level:    [40, 42]
   16805943:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [241.207, 20.018, 57.551, 79]
+    region:   e_52
     level:    [37, 39]
   16805944:
     template: Goblin_Smithy
-    at:       [240.646, 20.214, 63.696, 81]
+    region:   e_56
     level:    [37, 39]
   16805945:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [239.784, 19.761, 8.901, 191]
+    region:   e_57
     level:    [37, 39]
   16805946:
     template: Tracer_Antlion
-    at:       [241.263, 19.519, 4.641, 152]
+    region:   e_57
     level:    [38, 40]
   16805947:
     template: Tracer_Antlion
-    at:       [259.303, 19.585, -111.287, 238]
+    region:   se_59
     level:    [38, 40]
   16805948:
     template: Goblin_Furrier
-    at:       [241.237, 19.835, -94.707, 85]
+    region:   se_59
     level:    [35, 37]
   16805949:
     template: Chasm_Lizard
-    at:       [327.707, 19.557, -127.261, 94]
+    region:   se_61
     level:    [40, 42]
   16805950:
     template: Goblin_Furrier
-    at:       [322.218, 20.186, -135.694, 72]
+    region:   se_61
     level:    [35, 37]
   16805951:
     template: Chasm_Lizard
-    at:       [412.780, 19.728, -116.145, 160]
+    region:   se_63
     level:    [40, 42]
   16805952:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [381.161, 20.295, -120.078, 245]
+    region:   se_63
     level:    [37, 39]
   16805953:
     template: Goblin_Shaman
-    at:       [406.631, 19.582, -117.030, 17]
+    region:   se_63
     level:    [35, 37]
   16805954:
     template: Goblin_Shaman
-    at:       [393.382, 20.292, -60.708, 27]
+    region:   e_66
     level:    [35, 37]
   16805955:
     template: Goblin_Shaman
-    at:       [397.792, 20.018, -55.198, 174]
+    region:   e_66
     level:    [35, 37]
   16805956:
     template: Tracer_Antlion
-    at:       [258.854, 20.034, -242.113, 94]
+    region:   se_68
     level:    [38, 40]
   16805957:
     template: Goblin_Pathfinder
-    at:       [269.131, 19.849, -237.688, 127]
+    region:   se_68
     level:    [38, 39]
   16805958:
     template: Goblins_Gallinipper
-    at:       [269.870, 19.745, -237.517, 252]
+    region:   se_68
     level:    [31, 34]
   16805959:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [200.036, 19.532, -44.221, 190]
+    region:   se_71
     level:    [37, 39]
   16805960:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [202.344, 19.595, -75.223, 63]
+    region:   se_71
     level:    [37, 39]
   16805961:
     template: Attohwa_Coeurl
-    at:       [199.226, 20.261, -58.223, 45]
+    region:   se_71
     level:    [37, 39]
   16805962:
     template: Sekhmet
-    at:       [199.960, 19.486, -44.082, 168]
+    region:   se_71
     level:    [52, 53]
   16805963:
     template: Tracer_Antlion
-    at:       [211.707, 19.751, -2.363, 210]
+    region:   e_75
     level:    [38, 40]
   16805964:
     template: Attohwa_Coeurl
-    at:       [194.541, 19.327, 3.554, 172]
+    region:   e_75
     level:    [37, 39]
   16805965:
     template: Attohwa_Coeurl
-    at:       [293.968, 20.079, 176.302, 247]
+    region:   ne_77
     level:    [37, 39]
   16805966:
     template: Burrow_Antlion
@@ -2103,31 +2104,31 @@ spawns:
     level:    [41, 44]
   16805967:
     template: Attohwa_Coeurl
-    at:       [278.849, 19.385, 120.320, 90]
+    region:   e_79
     level:    [37, 39]
   16805968:
     template: Chasm_Lizard
-    at:       [262.444, 19.414, 134.738, 74]
+    region:   e_80
     level:    [40, 42]
   16805969:
     template: Tracer_Antlion
-    at:       [237.646, 19.647, 86.881, 112]
+    region:   e_81
     level:    [38, 40]
   16805970:
     template: Tracer_Antlion
-    at:       [246.671, 19.229, 114.585, 219]
+    region:   e_81
     level:    [38, 40]
   16805971:
     template: Goblin_Smithy
-    at:       [236.959, 19.500, 118.408, 211]
+    region:   e_81
     level:    [37, 39]
   16805972:
     template: Goblin_Shaman
-    at:       [240.532, 19.836, 94.410, 104]
+    region:   e_81
     level:    [37, 39]
   16805973:
     template: Chasm_Lizard
-    at:       [243.709, 19.521, 111.244, 27]
+    region:   e_81
     level:    [40, 42]
   16805974:
     template: Burrow_Antlion
@@ -2136,41 +2137,41 @@ spawns:
   16805975:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [320.056, 19.931, 131.636, 184]
+    region:   e_87
     level:    [37, 39]
   16805976:
     template: Attohwa_Coeurl
-    at:       [322.781, 19.369, 118.032, 90]
+    region:   e_87
     level:    [37, 39]
   16805977:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [352.604, 19.175, 115.182, 53]
+    region:   e_89
     level:    [37, 39]
   16805978:
     template: Gallinipper_AC
     script:   Gallinipper
-    at:       [387.337, 19.333, 106.977, 230]
+    region:   e_90
     level:    [37, 39]
   16805979:
     template: Goblin_Robber
-    at:       [241.283, 19.716, -170.978, 141]
+    region:   se_91
     level:    [42, 44]
   16805980:
     template: Goblin_Trader
-    at:       [232.185, 19.304, -190.901, 122]
+    region:   se_91
     level:    [42, 44]
   16805981:
     template: Goblins_Ogrefly
-    at:       [234.808, 19.580, -191.177, 123]
+    region:   se_91
     level:    [38, 39]
   16805982:
     template: Goblin_Reaper
-    at:       [284.920, 19.242, -165.717, 30]
+    region:   se_94
     level:    [42, 44]
   16805983:
     template: Master_Coeurl
-    at:       [284.138, 19.410, -161.315, 53]
+    region:   se_94
     level:    [46, 47]
   16805984:
     template: Burrow_Antlion
@@ -2178,26 +2179,27 @@ spawns:
     level:    [41, 44]
   16805985:
     template: Goblin_Poacher
-    at:       [285.575, 19.411, -196.078, 15]
+    region:   se_97
     level:    [42, 44]
   16805986:
     template: Goblin_Robber
-    at:       [309.058, 19.500, -173.137, 192]
+    region:   se_99
     level:    [42, 44]
   16805987:
     template: Goblin_Reaper
+    region:   se_99
     level:    [42, 44]
   16805988:
     template: Ogrefly
-    at:       [320.499, 20.223, -137.888, 210]
+    region:   se_99
     level:    [44, 46]
   16805989:
     template: Ogrefly
-    at:       [321.074, 20.233, -137.800, 194]
+    region:   se_99
     level:    [44, 46]
   16805990:
     template: Master_Coeurl
-    at:       [313.366, 19.319, -203.489, 68]
+    region:   se_102
     level:    [46, 47]
   16805991:
     template: Burrow_Antlion
@@ -2205,11 +2207,11 @@ spawns:
     level:    [41, 44]
   16805992:
     template: Hunter_Antlion
-    at:       [343.837, 18.987, -251.040, 252]
+    region:   se_104
     level:    [45, 46]
   16805993:
     template: Ogrefly
-    at:       [321.794, 19.374, -242.223, 103]
+    region:   se_104
     level:    [44, 46]
   16805994:
     template: Burrow_Antlion
@@ -2217,66 +2219,67 @@ spawns:
     level:    [41, 44]
   16805995:
     template: Ogrefly
-    at:       [366.055, 19.103, -200.487, 8]
+    region:   se_107
     level:    [44, 46]
   16805996:
     template: Goblin_Poacher
-    at:       [358.689, 19.894, -227.724, 45]
+    region:   se_107
     level:    [42, 44]
   16805997:
     template: Goblin_Trader
-    at:       [365.594, 19.370, -166.660, 224]
+    region:   se_109
     level:    [42, 44]
   16805998:
     template: Goblins_Ogrefly
-    at:       [363.780, 19.597, -168.571, 208]
+    region:   se_109
     level:    [38, 39]
   16805999:
     template: Hunter_Antlion
-    at:       [403.446, 19.562, -264.733, 190]
+    region:   se_111
     level:    [45, 46]
   16806000:
     template: Ogrefly
-    at:       [422.028, 20.146, -239.631, 234]
+    region:   se_111
     level:    [44, 46]
   16806001:
     template: Ogrefly
-    at:       [422.485, 20.147, -240.129, 222]
+    region:   se_111
     level:    [44, 46]
   16806002:
     template: Doom_Scorpion
-    at:       [410.227, 19.833, -158.752, 152]
+    region:   se_114
     level:    [41, 44]
   16806003:
     template: Doom_Scorpion
-    at:       [415.878, 18.793, -188.754, 153]
+    region:   se_114
     level:    [41, 44]
   16806004:
     template: Doom_Scorpion
-    at:       [428.686, 19.736, -160.619, 15]
+    region:   se_114
     level:    [41, 44]
   16806005:
     template: Bane_Lizard
-    at:       [396.717, 19.499, -160.875, 101]
+    region:   se_117
     level:    [47, 48]
   16806006:
     template: Bane_Lizard
+    region:   se_117
     level:    [47, 48]
   16806007:
     template: Ogrefly
-    at:       [422.134, 20.098, -200.611, 171]
+    region:   se_117
     level:    [45, 47]
   16806008:
     template: Ogrefly
-    at:       [408.327, 19.680, -201.604, 46]
+    region:   se_117
     level:    [45, 47]
   16806009:
     template: Bane_Lizard
-    at:       [479.499, 19.777, -230.149, 186]
+    region:   se_121
     level:    [47, 48]
   16806010:
     template: Bane_Lizard
-    at:       [461.600, 20.253, -242.426, 12]
+    region:   se_121
     level:    [47, 48]
   16806011:
     template: Pit_Antlion
@@ -2284,35 +2287,35 @@ spawns:
     level:    [49, 51]
   16806012:
     template: Hunter_Antlion
-    at:       [520.479, 19.752, -213.250, 95]
+    region:   se_124
     level:    [45, 46]
   16806013:
     template: Hunter_Antlion
-    at:       [493.843, 19.737, -218.858, 220]
+    region:   se_124
     level:    [45, 46]
   16806014:
     template: Bane_Lizard
-    at:       [483.512, 19.697, -187.095, 232]
+    region:   se_126
     level:    [47, 48]
   16806015:
     template: Ogrefly
-    at:       [482.208, 19.561, -193.348, 87]
+    region:   se_126
     level:    [45, 47]
   16806016:
     template: Master_Coeurl
-    at:       [471.532, 19.312, -113.094, 171]
+    region:   se_128
     level:    [47, 48]
   16806017:
     template: Ogrefly
-    at:       [481.954, 19.354, -122.678, 127]
+    region:   se_128
     level:    [45, 47]
   16806018:
     template: Master_Coeurl
-    at:       [442.889, 19.943, -64.328, 186]
+    region:   e_130
     level:    [47, 48]
   16806019:
     template: Ogrefly
-    at:       [443.075, 19.414, -82.118, 86]
+    region:   e_130
     level:    [46, 47]
   16806020:
     template: Pit_Antlion
@@ -2320,15 +2323,15 @@ spawns:
     level:    [49, 51]
   16806021:
     template: Hunter_Antlion
-    at:       [519.803, 19.573, -150.794, 221]
+    region:   se_133
     level:    [45, 46]
   16806022:
     template: Hunter_Antlion
-    at:       [521.131, 19.772, -147.402, 72]
+    region:   se_133
     level:    [45, 46]
   16806023:
     template: Ogrefly
-    at:       [519.907, 20.244, -180.692, 174]
+    region:   se_133
     level:    [45, 47]
   16806024:
     template: Pit_Antlion
@@ -2336,27 +2339,27 @@ spawns:
     level:    [49, 51]
   16806025:
     template: Bane_Lizard
-    at:       [519.786, 19.462, -73.137, 96]
+    region:   se_137
     level:    [47, 49]
   16806026:
     template: Bane_Lizard
-    at:       [524.034, 19.268, -93.583, 255]
+    region:   se_137
     level:    [47, 49]
   16806027:
     template: Ogrefly
-    at:       [518.442, 19.647, -113.428, 210]
+    region:   se_137
     level:    [45, 47]
   16806028:
     template: Master_Coeurl
-    at:       [470.802, 18.927, -72.160, 222]
+    region:   e_140
     level:    [47, 48]
   16806029:
     template: Ogrefly
-    at:       [478.897, 20.439, -59.991, 226]
+    region:   e_140
     level:    [46, 47]
   16806030:
     template: Master_Coeurl
-    at:       [460.625, 19.397, -28.494, 142]
+    region:   e_142
     level:    [47, 48]
   16806031:
     template: Lioumere
@@ -2365,94 +2368,94 @@ spawns:
   16806032:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-140.453, 19.578, -187.775, 83]
+    region:   s_144
     level:    [35, 37]
   16806033:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-150.670, 19.510, -181.204, 3]
+    region:   s_144
     level:    [35, 37]
   16806034:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-115.597, 28.678, -140.461, 123]
+    region:   s_146
     level:    [35, 37]
   16806035:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-123.412, 28.528, -141.529, 124]
+    region:   s_146
     level:    [35, 37]
   16806036:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-123.315, 28.478, -141.801, 124]
+    region:   s_146
     level:    [34, 35]
   16806037:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [19.798, 18.520, -150.208, 49]
+    region:   s_149
     level:    [35, 37]
   16806038:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [20.232, 18.518, -150.440, 51]
+    region:   s_149
     level:    [35, 37]
   16806039:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [4.778, 18.946, -142.154, 124]
+    region:   s_149
     level:    [34, 35]
   16806040:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [5.162, 11.151, -180.596, 102]
+    region:   s_149
     level:    [34, 35]
   16806041:
     template: Will-o-the-Wykes
-    at:       [21.137, 18.508, -150.465, 51]
+    region:   s_149
     level:    [40, 43]
   16806042:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-18.429, -0.577, -224.558, 173]
+    region:   s_154
     level:    [35, 37]
   16806043:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-23.157, -0.497, -226.081, 59]
+    region:   s_154
     level:    [35, 37]
   16806044:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-132.441, 19.576, -102.501, 224]
+    region:   s_156
     level:    [35, 37]
   16806045:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-144.021, 19.408, -99.955, 107]
+    region:   s_156
     level:    [36, 37]
   16806046:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-139.070, 19.477, -97.983, 36]
+    region:   s_156
     level:    [34, 35]
   16806047:
     template: Will-o-the-Wykes
-    at:       [-139.111, 19.560, -109.550, 53]
+    region:   s_156
     level:    [40, 43]
   16806048:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-166.170, 7.071, -137.287, 23]
+    region:   s_160
     level:    [34, 35]
   16806049:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-176.737, 1.799, -126.924, 169]
+    region:   s_160
     level:    [34, 35]
   16806050:
     template: Earth_Elemental
-    at:       [-178.309, 0.108, -118.041, 185]
+    region:   s_160
     level:    [40, 42]
   16806051:
     template: Flesh_Eater_AC
@@ -2462,106 +2465,106 @@ spawns:
   16806052:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-63.057, 33.596, -103.561, 205]
+    region:   s_164
     level:    [34, 35]
   16806053:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-65.304, 33.543, -110.112, 205]
+    region:   s_164
     level:    [34, 35]
   16806054:
     template: Air_Elemental
-    at:       [-66.337, 33.556, -112.926, 74]
+    region:   s_167
     level:    [40, 42]
   16806055:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-47.766, 33.483, -117.816, 76]
+    region:   s_167
     level:    [34, 35]
   16806056:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-45.126, 33.501, -110.288, 207]
+    region:   s_167
     level:    [34, 35]
   16806057:
     template: Air_Elemental
-    at:       [-46.810, 33.450, -114.395, 77]
+    region:   s_167
     level:    [40, 42]
   16806058:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [27.826, 9.806, -58.642, 131]
+    region:   c_170
     level:    [35, 37]
   16806059:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [12.966, 8.964, -56.711, 247]
+    region:   c_170
     level:    [35, 37]
   16806060:
     template: Will-o-the-Wykes
-    at:       [-5.661, 9.508, -60.284, 248]
+    region:   c_170
     level:    [40, 43]
   16806061:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [52.981, 19.428, -18.805, 116]
+    region:   c_173
     level:    [35, 37]
   16806062:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [58.977, 19.646, -17.366, 68]
+    region:   c_173
     level:    [34, 35]
   16806063:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [54.485, 19.412, -16.372, 213]
+    region:   c_173
     level:    [34, 35]
   16806064:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [12.083, 9.463, 18.952, 155]
+    region:   c_176
     level:    [35, 37]
   16806065:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [11.914, 9.470, 21.624, 96]
+    region:   c_176
     level:    [34, 35]
   16806066:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [21.631, -0.605, 96.137, 1]
+    region:   c_178
     level:    [35, 37]
   16806067:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [21.778, -0.474, 96.386, 12]
+    region:   c_178
     level:    [35, 37]
   16806068:
     template: Earth_Elemental
-    at:       [-6.251, -4.495, 163.401, 176]
+    region:   n_180
     level:    [40, 42]
   16806069:
     template: Earth_Elemental
-    at:       [3.967, -4.678, 150.759, 207]
+    region:   n_180
     level:    [40, 42]
   16806070:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-44.080, 13.508, -63.402, 63]
+    region:   s_182
     level:    [34, 35]
   16806071:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-43.982, 13.505, -63.318, 63]
+    region:   s_182
     level:    [34, 35]
   16806072:
     template: Air_Elemental
-    at:       [-45.088, 13.355, -50.984, 180]
+    region:   s_182
     level:    [41, 43]
   16806073:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-44.038, 13.385, -54.642, 186]
+    region:   s_182
     level:    [34, 35]
   16806074:
     template: Flesh_Eater_AC
@@ -2571,35 +2574,35 @@ spawns:
   16806075:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-93.716, 4.484, -53.462, 39]
+    region:   c_187
     level:    [36, 38]
   16806076:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-114.727, -0.574, -5.002, 19]
+    region:   c_188
     level:    [36, 38]
   16806077:
     template: Will-o-the-Wykes
-    at:       [-116.715, -0.377, -8.058, 123]
+    region:   c_188
     level:    [40, 43]
   16806078:
     template: Will-o-the-Wykes
-    at:       [-123.162, -0.455, -4.995, 143]
+    region:   c_188
     level:    [40, 43]
   16806079:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-99.996, -4.815, 55.300, 57]
+    region:   c_191
     level:    [36, 38]
   16806080:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-100.210, -5.398, 57.175, 186]
+    region:   c_191
     level:    [36, 38]
   16806081:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-82.557, -6.404, 92.554, 129]
+    region:   c_195
     level:    [34, 36]
   16806082:
     template: Flesh_Eater_AC
@@ -2609,65 +2612,65 @@ spawns:
   16806083:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-103.608, -6.549, 116.514, 246]
+    region:   c_195
     level:    [35, 36]
   16806084:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-98.209, -6.548, 116.439, 118]
+    region:   c_195
     level:    [35, 36]
   16806085:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-99.644, -10.906, 164.881, 60]
+    region:   n_197
     level:    [36, 38]
   16806086:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-100.354, -12.522, 178.681, 171]
+    region:   n_197
     level:    [36, 39]
   16806087:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-166.926, -1.270, 181.784, 127]
+    region:   n_199
     level:    [35, 36]
   16806088:
     template: Will-o-the-Wykes
-    at:       [-159.564, -1.005, 181.947, 126]
+    region:   n_199
     level:    [40, 43]
   16806089:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-177.875, -0.593, 218.699, 4]
+    region:   n_201
     level:    [34, 36]
   16806090:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-181.908, -0.387, 219.653, 193]
+    region:   n_201
     level:    [34, 36]
   16806091:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-198.808, 8.786, 260.488, 142]
+    region:   n_203
     level:    [36, 39]
   16806092:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-216.559, 9.516, 261.397, 117]
+    region:   n_203
     level:    [36, 39]
   16806093:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-243.865, 13.518, 263.571, 196]
+    region:   nw_205
     level:    [34, 36]
   16806094:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-245.305, 13.359, 248.779, 216]
+    region:   nw_205
     level:    [34, 36]
   16806095:
     template: Air_Elemental
-    at:       [-247.958, 13.610, 282.724, 74]
+    region:   nw_205
     level:    [41, 43]
   16806096:
     template: Flesh_Eater_AC
@@ -2676,32 +2679,32 @@ spawns:
     level:    [34, 36]
   16806097:
     template: Air_Elemental
-    at:       [-265.656, 13.582, 248.894, 82]
+    region:   nw_205
     level:    [41, 43]
   16806098:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-303.142, -0.128, 220.389, 192]
+    region:   nw_210
     level:    [36, 39]
   16806099:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-300.534, 0.117, 227.447, 210]
+    region:   nw_210
     level:    [36, 39]
   16806100:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-303.110, -0.592, 216.190, 66]
+    region:   nw_210
     level:    [36, 39]
   16806101:
     template: Hecteyes_AC
     script:   Hecteyes
-    at:       [-302.759, -7.665, 366.753, 179]
+    region:   nw_213
     level:    [36, 39]
   16806102:
     template: Flesh_Eater_AC
     script:   Flesh_Eater
-    at:       [-301.145, -10.838, 353.284, 193]
+    region:   nw_213
     level:    [35, 36]
   16806103:
     template: Flesh_Eater_AC
@@ -2720,67 +2723,67 @@ spawns:
     level:    [36, 37]
   16806106:
     template: Air_Elemental
-    at:       [-248.381, -6.149, 320.423, 205]
+    region:   s_182
     level:    [41, 43]
   16806107:
     template: Tulwar_Scorpion
-    at:       [-221.725, -5.066, -26.395, 109]
+    region:   w_219
     level:    [58, 59]
   16806108:
     template: Tulwar_Scorpion
-    at:       [-220.237, -6.710, -18.364, 145]
+    region:   w_219
     level:    [58, 59]
   16806109:
     template: Sand_Lizard
-    at:       [-200.319, -6.390, -29.450, 60]
+    region:   w_219
     level:    [65, 67]
   16806110:
     template: Sand_Lizard
-    at:       [-235.142, -4.541, -40.209, 80]
+    region:   w_219
     level:    [65, 67]
   16806111:
     template: Tulwar_Scorpion
-    at:       [-252.020, -4.853, -92.483, 133]
+    region:   sw_223
     level:    [58, 59]
   16806112:
     template: Tulwar_Scorpion
-    at:       [-240.837, -0.360, -104.408, 244]
+    region:   sw_223
     level:    [58, 59]
   16806113:
     template: Monarch_Ogrefly
-    at:       [-239.121, -1.816, -96.968, 202]
+    region:   sw_223
     level:    [65, 66]
   16806114:
     template: Tulwar_Scorpion
-    at:       [-246.064, -0.538, -136.310, 137]
+    region:   sw_226
     level:    [58, 59]
   16806115:
     template: Tulwar_Scorpion
-    at:       [-251.569, -4.922, -152.249, 250]
+    region:   sw_226
     level:    [58, 59]
   16806116:
     template: Monarch_Ogrefly
-    at:       [-262.890, -4.472, -138.975, 244]
+    region:   sw_226
     level:    [65, 66]
   16806117:
     template: Sargas
-    at:       [-268.573, -4.502, -141.054, 93]
+    region:   sw_226
     level:    [77, 78]
   16806118:
     template: Monarch_Ogrefly
-    at:       [-256.293, -4.696, -136.900, 5]
+    region:   sw_230
     level:    [65, 66]
   16806119:
     template: Sand_Lizard
-    at:       [-255.485, -0.815, -108.619, 231]
+    region:   sw_230
     level:    [65, 67]
   16806120:
     template: Sand_Lizard
-    at:       [-255.139, 0.388, -115.720, 220]
+    region:   sw_230
     level:    [65, 67]
   16806121:
     template: Tracker_Antlion
-    at:       [-260.790, -3.725, -39.133, 15]
+    region:   w_233
     level:    [71, 73]
   16806122:
     template: Trench_Antlion
@@ -2788,51 +2791,51 @@ spawns:
     level:    [70, 71]
   16806123:
     template: Sand_Lizard
-    at:       [-299.413, -4.744, -67.781, 17]
+    region:   w_235
     level:    [65, 67]
   16806124:
     template: Sand_Lizard
-    at:       [-318.505, -4.595, -79.793, 236]
+    region:   sw_236
     level:    [65, 67]
   16806125:
     template: Sand_Lizard
-    at:       [-336.852, -4.525, -103.689, 97]
+    region:   sw_237
     level:    [65, 67]
   16806126:
     template: Monarch_Ogrefly
-    at:       [-319.943, -4.613, -120.445, 148]
+    region:   sw_238
     level:    [65, 66]
   16806127:
     template: Monarch_Ogrefly
-    at:       [-316.806, -4.613, -121.943, 53]
+    region:   sw_238
     level:    [65, 66]
   16806128:
     template: Tracker_Antlion
-    at:       [-312.207, -4.475, -166.396, 151]
+    region:   sw_240
     level:    [70, 72]
   16806129:
     template: Tracker_Antlion
-    at:       [-305.498, -3.943, -164.109, 194]
+    region:   sw_240
     level:    [70, 72]
   16806130:
     template: Tracker_Antlion
-    at:       [-372.107, -4.751, -170.252, 209]
+    region:   sw_242
     level:    [70, 72]
   16806131:
     template: Tracker_Antlion
-    at:       [-391.368, -4.222, -178.695, 241]
+    region:   sw_242
     level:    [70, 72]
   16806132:
     template: Tracker_Antlion
-    at:       [-379.130, -3.996, -163.242, 141]
+    region:   sw_242
     level:    [70, 72]
   16806133:
     template: Sand_Lizard
-    at:       [-363.695, -4.583, -122.283, 247]
+    region:   sw_245
     level:    [65, 67]
   16806134:
     template: Sand_Lizard
-    at:       [-360.182, -4.620, -120.869, 100]
+    region:   sw_245
     level:    [65, 67]
   16806135:
     template: Trench_Antlion
@@ -2840,53 +2843,53 @@ spawns:
     level:    [70, 71]
   16806136:
     template: Sand_Lizard
-    at:       [-365.709, -4.577, -86.781, 89]
+    region:   sw_248
     level:    [66, 68]
   16806137:
     template: Sand_Lizard
-    at:       [-345.912, -4.541, -90.334, 37]
+    region:   sw_248
     level:    [66, 68]
   16806138:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-360.410, -4.250, -53.949, 111]
+    region:   w_250
     level:    [67, 69]
   16806139:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-364.395, -4.358, -72.668, 152]
+    region:   w_250
     level:    [67, 69]
   16806140:
     template: Tracker_Antlion
-    at:       [-406.269, -4.313, -123.613, 114]
+    region:   sw_252
     level:    [70, 72]
   16806141:
     template: Tracker_Antlion
-    at:       [-441.586, -4.075, -63.541, 18]
+    region:   sw_253
     level:    [70, 72]
   16806142:
     template: Tracker_Antlion
-    at:       [-400.731, -4.618, -78.300, 191]
+    region:   sw_254
     level:    [71, 73]
   16806143:
     template: Monarch_Ogrefly
-    at:       [-399.995, -4.520, -73.947, 77]
+    region:   sw_254
     level:    [65, 66]
   16806144:
     template: Monarch_Ogrefly
-    at:       [-395.905, -3.873, -58.243, 85]
+    region:   w_256
     level:    [65, 67]
   16806145:
     template: Tomb_Mage
-    at:       [-398.156, -4.152, -52.155, 174]
+    region:   w_256
     level:    [70, 72]
   16806146:
     template: Monarch_Ogrefly
-    at:       [-410.152, -4.250, -39.172, 116]
+    region:   w_258
     level:    [65, 67]
   16806147:
     template: Tomb_Warrior
-    at:       [-408.093, -4.335, -38.187, 142]
+    region:   w_258
     level:    [71, 73]
   16806148:
     template: Trench_Antlion
@@ -2895,58 +2898,58 @@ spawns:
   16806149:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-384.524, -6.383, 22.888, 38]
+    region:   w_261
     level:    [67, 69]
   16806150:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-369.531, -6.231, 16.905, 40]
+    region:   w_261
     level:    [67, 69]
   16806151:
     template: Mummy
-    at:       [-369.133, -5.618, 13.895, 201]
+    region:   w_261
     level:    [62, 64]
   16806152:
     template: Lich
-    at:       [-318.869, -4.551, 2.460, 2]
+    region:   w_261
     level:    [62, 64]
   16806153:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-365.961, -12.521, 65.108, 152]
+    region:   w_265
     level:    [67, 69]
   16806154:
     template: Monarch_Ogrefly
-    at:       [-355.292, -11.969, 58.592, 160]
+    region:   w_265
     level:    [65, 67]
   16806155:
     template: Corse
-    at:       [-327.803, -12.811, 49.827, 75]
+    region:   w_265
     level:    [66, 67]
   16806156:
     template: Lich
-    at:       [-329.019, -12.825, 66.982, 129]
+    region:   w_265
     level:    [62, 64]
   16806157:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-384.676, -7.060, 47.139, 231]
+    region:   w_269
     level:    [67, 69]
   16806158:
     template: Corse
-    at:       [-393.985, -6.120, 49.135, 38]
+    region:   w_269
     level:    [66, 67]
   16806159:
     template: Monarch_Ogrefly
-    at:       [-328.588, -4.705, -22.888, 134]
+    region:   w_271
     level:    [65, 67]
   16806160:
     template: Mummy
-    at:       [-315.843, -4.239, -27.163, 161]
+    region:   w_271
     level:    [62, 64]
   16806161:
     template: Corse
-    at:       [-327.956, -12.811, 45.807, 157]
+    region:   w_273
     level:    [66, 67]
   16806162:
     template: Citipati
@@ -2959,35 +2962,35 @@ spawns:
           end:    4
   16806163:
     template: Tracker_Antlion
-    at:       [-441.809, -4.232, 33.199, 85]
+    region:   w_275
     level:    [71, 73]
   16806164:
     template: Sand_Lizard
-    at:       [-452.792, -4.406, 7.103, 197]
+    region:   w_276
     level:    [66, 68]
   16806165:
     template: Mummy
-    at:       [-469.216, -4.373, 2.275, 14]
+    region:   w_277
     level:    [62, 64]
   16806166:
     template: Sand_Lizard
-    at:       [-506.386, -4.274, 35.644, 160]
+    region:   w_278
     level:    [66, 68]
   16806167:
     template: Tomb_Warrior
-    at:       [-478.955, -4.491, 42.167, 187]
+    region:   w_278
     level:    [71, 73]
   16806168:
     template: Tomb_Mage
-    at:       [-500.392, -4.068, 45.592, 72]
+    region:   w_278
     level:    [72, 73]
   16806169:
     template: Sand_Lizard
-    at:       [-477.211, -4.539, 78.557, 211]
+    region:   w_281
     level:    [66, 68]
   16806170:
     template: Monarch_Ogrefly
-    at:       [-473.942, -4.494, 86.107, 233]
+    region:   w_281
     level:    [65, 67]
   16806171:
     template: Trench_Antlion
@@ -2995,49 +2998,49 @@ spawns:
     level:    [70, 71]
   16806172:
     template: Monarch_Ogrefly
-    at:       [-436.820, -4.059, 85.016, 219]
+    region:   w_284
     level:    [65, 67]
   16806173:
     template: Lich
-    at:       [-443.814, -4.554, 71.948, 101]
+    region:   w_284
     level:    [62, 64]
   16806174:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-396.928, -4.615, 118.080, 115]
+    region:   w_286
     level:    [67, 69]
   16806175:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-398.719, -4.537, 157.359, 186]
+    region:   w_286
     level:    [67, 69]
   16806176:
     template: Monarch_Ogrefly
-    at:       [-394.909, -4.171, 149.045, 89]
+    region:   w_286
     level:    [65, 67]
   16806177:
     template: Monarch_Ogrefly
-    at:       [-436.746, -4.334, 168.821, 12]
+    region:   nw_289
     level:    [65, 67]
   16806178:
     template: Sand_Lizard
-    at:       [-487.078, -4.504, 127.407, 187]
+    region:   w_290
     level:    [66, 68]
   16806179:
     template: Sand_Lizard
-    at:       [-477.011, -4.643, 126.075, 108]
+    region:   w_290
     level:    [66, 68]
   16806180:
     template: Sand_Lizard
-    at:       [-490.727, -4.500, 142.170, 76]
+    region:   w_292
     level:    [66, 68]
   16806181:
     template: Tracker_Antlion
-    at:       [-537.839, -4.177, 164.048, 123]
+    region:   nw_293
     level:    [71, 72]
   16806182:
     template: Tracker_Antlion
-    at:       [-519.691, -4.587, 164.136, 12]
+    region:   nw_293
     level:    [71, 73]
   16806183:
     template: Trench_Antlion
@@ -3046,11 +3049,11 @@ spawns:
   16806184:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-477.880, -4.467, 167.780, 6]
+    region:   nw_296
     level:    [67, 69]
   16806185:
     template: Monarch_Ogrefly
-    at:       [-480.258, -4.324, 190.473, 130]
+    region:   nw_296
     level:    [65, 67]
   16806186:
     template: Trench_Antlion
@@ -3058,169 +3061,169 @@ spawns:
     level:    [70, 71]
   16806187:
     template: Monarch_Ogrefly
-    at:       [-501.260, -4.603, 182.439, 142]
+    region:   nw_299
     level:    [65, 67]
   16806188:
     template: Tracker_Antlion
-    at:       [-345.768, -4.512, 170.105, 173]
+    region:   nw_300
     level:    [70, 72]
   16806189:
     template: Sand_Lizard
-    at:       [-353.866, -4.403, 165.300, 116]
+    region:   nw_300
     level:    [66, 68]
   16806190:
     template: Tracker_Antlion
-    at:       [-363.443, -4.663, 240.161, 73]
+    region:   nw_302
     level:    [70, 72]
   16806191:
     template: Sand_Lizard
-    at:       [-364.003, -4.378, 230.624, 122]
+    region:   nw_302
     level:    [66, 68]
   16806192:
     template: Tracker_Antlion
-    at:       [-395.550, -4.814, 273.991, 213]
+    region:   nw_304
     level:    [70, 72]
   16806193:
     template: Monarch_Ogrefly
-    at:       [-393.522, -4.607, 248.029, 21]
+    region:   nw_304
     level:    [65, 67]
   16806194:
     template: Tracker_Antlion
-    at:       [-388.468, -4.309, 192.079, 72]
+    region:   nw_306
     level:    [71, 73]
   16806195:
     template: Monarch_Ogrefly
-    at:       [-397.115, -4.577, 200.370, 216]
+    region:   nw_306
     level:    [65, 67]
   16806196:
     template: Monarch_Ogrefly
-    at:       [-440.057, -4.752, 204.436, 133]
+    region:   nw_308
     level:    [65, 67]
   16806197:
     template: Monarch_Ogrefly
-    at:       [-438.938, -4.657, 201.287, 47]
+    region:   nw_308
     level:    [65, 67]
   16806198:
     template: Monarch_Ogrefly
-    at:       [-454.479, -4.617, 211.876, 252]
+    region:   nw_310
     level:    [65, 67]
   16806199:
     template: Sand_Lizard
-    at:       [-438.029, -4.609, 241.272, 204]
+    region:   nw_311
     level:    [66, 68]
   16806200:
     template: Sand_Lizard
-    at:       [-443.342, -4.604, 244.082, 136]
+    region:   nw_311
     level:    [66, 68]
   16806201:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-424.608, -3.932, 277.363, 248]
+    region:   nw_313
     level:    [67, 69]
   16806202:
     template: Tracker_Antlion
-    at:       [-400.515, -3.723, 298.781, 171]
+    region:   nw_314
     level:    [71, 72]
   16806203:
     template: Tracker_Antlion
-    at:       [-382.584, -4.122, 324.758, 235]
+    region:   nw_314
     level:    [70, 71]
   16806204:
     template: Sand_Lizard
-    at:       [-375.513, -3.969, 357.079, 85]
+    region:   nw_316
     level:    [66, 68]
   16806205:
     template: Sand_Lizard
-    at:       [-381.899, -4.519, 347.795, 121]
+    region:   nw_316
     level:    [66, 68]
   16806206:
     template: Monarch_Ogrefly
-    at:       [-368.867, -4.254, 320.820, 112]
+    region:   nw_316
     level:    [65, 67]
   16806207:
     template: Monarch_Ogrefly
-    at:       [-367.141, -4.325, 352.927, 34]
+    region:   nw_319
     level:    [65, 67]
   16806208:
     template: Monarch_Ogrefly
-    at:       [-364.514, -3.860, 344.207, 188]
+    region:   nw_319
     level:    [65, 67]
   16806209:
     template: Sand_Lizard
-    at:       [-453.361, -4.037, 324.072, 133]
+    region:   nw_321
     level:    [66, 68]
   16806210:
     template: Monarch_Ogrefly
-    at:       [-465.821, -4.063, 319.963, 165]
+    region:   nw_321
     level:    [65, 67]
   16806211:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-480.661, -4.522, 246.468, 53]
+    region:   nw_323
     level:    [67, 69]
   16806212:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-206.530, -10.406, 340.894, 40]
+    region:   nw_325
     level:    [67, 69]
   16806213:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-528.264, -4.370, 204.122, 213]
+    region:   nw_325
     level:    [67, 69]
   16806214:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-529.365, -4.261, 200.689, 84]
+    region:   nw_325
     level:    [67, 69]
   16806215:
     template: Xolotl
-    at:       [-483.789, -3.578, 258.435, 225]
+    region:   nw_327
     level:    [80, 81]
   16806216:
     template: Xolotls_Hound_Warrior
-    at:       [-485.062, -3.557, 260.935, 209]
+    region:   nw_327
     level:    [72, 72]
   16806217:
     template: Xolotls_Sacrifice
-    at:       [-483.773, -3.567, 260.481, 198]
+    region:   nw_327
     level:    [72, 72]
   16806218:
     template: Sand_Lizard
-    at:       [-585.623, -4.056, 201.033, 112]
+    region:   nw_330
     level:    [66, 68]
   16806219:
     template: Tracker_Antlion
-    at:       [-599.675, -4.350, 152.479, 161]
+    region:   nw_331
     level:    [70, 72]
   16806220:
     template: Tracker_Antlion
-    at:       [-601.347, -3.820, 183.267, 88]
+    region:   nw_331
     level:    [70, 72]
   16806221:
     template: Earth_Elemental
-    at:       [-589.255, -4.584, 119.382, 44]
+    region:   w_333
     level:    [40, 42]
   16806222:
     template: Cutlass_Scorpion_AC
     script:   Cutlass_Scorpion
-    at:       [-525.273, -4.214, 92.052, 60]
+    region:   w_334
     level:    [67, 69]
   16806223:
     template: Tomb_Warrior
-    at:       [-523.251, -3.979, 106.455, 78]
+    region:   w_334
     level:    [71, 73]
   16806224:
     template: Tomb_Mage
-    at:       [-525.643, -3.960, 96.190, 141]
+    region:   w_334
     level:    [72, 73]
   16806225:
     template: Arch_Corse
-    at:       [-523.234, -3.900, 103.718, 179]
+    region:   w_334
     level:    [75, 80]
   16806226:
     template: Tracker_Antlion
-    at:       [-523.126, -4.219, 60.624, 162]
+    region:   w_338
     level:    [70, 72]
   16806227:
     template: Tiamat
@@ -3228,37 +3231,37 @@ spawns:
     level:    [95, 95]
   16806228:
     template: Arch_Corse
-    at:       [-527.157, -5.661, -47.781, 81]
+    region:   w_340
     level:    [75, 80]
   16806229:
     template: Arch_Corse
-    at:       [-520.572, -5.889, -50.988, 220]
+    region:   w_340
     level:    [75, 80]
   16806230:
     template: Arch_Corse
-    at:       [-530.321, -11.920, -67.433, 205]
+    region:   w_340
     level:    [75, 80]
   16806231:
     template: Bifrons_Attohwa_Chasm
     script:   Bifrons
-    at:       [-557.331, -12.390, -68.294, 248]
+    region:   w_340
     level:    [75, 75]
   16806232:
     template: Bifrons_Attohwa_Chasm
     script:   Bifrons
-    at:       [-514.034, -10.690, -68.692, 75]
+    region:   w_340
     level:    [75, 75]
   16806233:
     template: Air_Elemental
-    at:       [-523.778, -4.447, -1.833, 76]
+    region:   w_340
     level:    [75, 76]
   16806234:
     template: Air_Elemental
-    at:       [-559.979, -12.364, -71.178, 101]
+    region:   w_340
     level:    [75, 76]
   16806235:
     template: Earth_Elemental
-    at:       [-547.578, -12.384, -66.866, 178]
+    region:   w_340
     level:    [75, 76]
   16806236:
     template: Earth_Elemental

@@ -613,237 +613,238 @@ spawns:
   16867334:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [25.460, -0.500, -99.750, 89]
+    region:   c_6
     level:    [46, 48]
   16867335:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [24.665, -0.500, -99.413, 72]
+    region:   c_6
     level:    [46, 48]
   16867336:
     template: Weeper_Large
     script:   Weeper
-    at:       [44.135, -0.500, -81.517, 73]
+    region:   c_9
     level:    [48, 50]
   16867337:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [34.371, -0.473, -72.308, 235]
+    region:   c_9
     level:    [46, 48]
   16867338:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [34.027, -0.499, -78.529, 215]
+    region:   c_9
     level:    [46, 48]
   16867339:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [32.918, -0.500, -162.805, 4]
+    region:   s_11
     level:    [46, 48]
   16867340:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [34.775, -0.500, -163.482, 239]
+    region:   s_11
     level:    [46, 48]
   16867341:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [28.961, -0.405, -199.263, 114]
+    region:   s_13
     level:    [46, 48]
   16867342:
     template: Apex_Idle_Drifter
-    at:       [79.481, 0.000, -228.781, 89]
+    region:   s_14
     level:    [139, 142]
   16867343:
     template: Apex_Idle_Drifter
-    at:       [82.717, 0.000, -202.652, 89]
+    region:   s_14
     level:    [139, 142]
   16867344:
     template: Apex_Idle_Drifter
-    at:       [89.644, 0.000, -207.889, 89]
+    region:   s_14
     level:    [139, 142]
   16867345:
     template: Apex_Idle_Drifter
-    at:       [84.963, 0.000, -219.765, 89]
+    region:   s_14
     level:    [139, 142]
   16867346:
     template: Apex_Idle_Drifter
-    at:       [88.664, 0.000, -210.257, 89]
+    region:   s_14
     level:    [139, 142]
   16867347:
     template: Apex_Idle_Drifter
-    at:       [110.870, 0.000, -192.915, 89]
+    region:   s_19
     level:    [139, 142]
   16867348:
     template: Apex_Idle_Drifter
-    at:       [110.511, 0.000, -190.451, 89]
+    region:   s_19
     level:    [139, 142]
   16867349:
     template: Apex_Idle_Drifter
-    at:       [120.263, 0.000, -207.149, 89]
+    region:   s_19
     level:    [139, 142]
   16867350:
     template: Apex_Idle_Drifter
-    at:       [109.077, 0.000, -191.268, 89]
+    region:   s_19
     level:    [139, 142]
   16867351:
     template: Apex_Idle_Drifter
-    at:       [118.663, 0.000, -189.575, 89]
+    region:   s_19
     level:    [139, 142]
   16867352:
     template: Apex_Idle_Drifter
-    at:       [116.038, 0.000, -248.406, 89]
+    region:   s_24
     level:    [139, 142]
   16867353:
     template: Apex_Idle_Drifter
-    at:       [120.612, 0.000, -265.180, 89]
+    region:   s_24
     level:    [139, 142]
   16867354:
     template: Apex_Idle_Drifter
-    at:       [117.821, 0.000, -227.373, 89]
+    region:   s_24
     level:    [139, 142]
   16867355:
     template: Apex_Idle_Drifter
-    at:       [123.884, 0.000, -232.078, 89]
+    region:   s_24
     level:    [139, 142]
   16867356:
     template: Apex_Idle_Drifter
-    at:       [118.579, 0.000, -234.606, 89]
+    region:   s_24
     level:    [139, 142]
   16867357:
     template: Apex_Idle_Drifter
-    at:       [116.066, 0.000, -287.876, 89]
+    region:   s_29
     level:    [139, 142]
   16867358:
     template: Apex_Idle_Drifter
-    at:       [122.755, 0.000, -271.683, 89]
+    region:   s_29
     level:    [139, 142]
   16867359:
     template: Apex_Idle_Drifter
-    at:       [110.848, 0.000, -299.056, 89]
+    region:   s_29
     level:    [139, 142]
   16867360:
     template: Apex_Idle_Drifter
-    at:       [70.047, 0.000, -317.485, 89]
+    region:   s_29
     level:    [139, 142]
   16867361:
     template: Apex_Idle_Drifter
-    at:       [116.653, 0.000, -277.566, 89]
+    region:   s_29
     level:    [139, 142]
   16867362:
     template: Apex_Idle_Drifter
-    at:       [70.047, 0.000, -317.139, 89]
+    region:   s_34
     level:    [139, 142]
   16867363:
     template: Apex_Idle_Drifter
-    at:       [91.900, 0.000, -306.389, 89]
+    region:   s_34
     level:    [139, 142]
   16867364:
     template: Apex_Idle_Drifter
-    at:       [70.505, 0.000, -316.930, 89]
+    region:   s_34
     level:    [139, 142]
   16867365:
     template: Apex_Idle_Drifter
-    at:       [96.831, 0.000, -318.653, 89]
+    region:   s_34
     level:    [139, 142]
   16867366:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [37.765, -0.499, -278.473, 188]
+    region:   s_38
     level:    [46, 48]
   16867367:
     template: Weeper_Large
     script:   Weeper
+    region:   s_40
     level:    [48, 50]
   16867368:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [31.037, -0.500, -293.068, 113]
+    region:   s_40
     level:    [46, 48]
   16867369:
     template: Weeper_Large
     script:   Weeper
-    at:       [36.911, -0.500, -296.417, 10]
+    region:   s_40
     level:    [48, 50]
   16867370:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [40.747, -0.610, -302.846, 181]
+    region:   region_124
     level:    [46, 48]
   16867371:
     template: Weeper_Large
     script:   Weeper
-    at:       [0.783, -0.500, -243.832, 88]
+    region:   s_44
     level:    [48, 50]
   16867372:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-9.901, -0.500, -238.750, 124]
+    region:   s_44
     level:    [46, 48]
   16867373:
     template: Weeper_Large
     script:   Weeper
-    at:       [2.001, -0.500, -241.044, 205]
+    region:   s_44
     level:    [48, 50]
   16867374:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [6.468, -0.500, -262.852, 103]
+    region:   s_46
     level:    [46, 48]
   16867375:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [13.233, -0.500, -256.048, 58]
+    region:   s_46
     level:    [46, 48]
   16867376:
     template: Weeper_Large
     script:   Weeper
-    at:       [-15.654, -0.500, -292.320, 211]
+    region:   s_49
     level:    [48, 50]
   16867377:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-17.689, -0.500, -296.903, 127]
+    region:   s_49
     level:    [46, 48]
   16867378:
     template: Weeper_Large
     script:   Weeper
-    at:       [-33.243, -0.500, -302.853, 191]
+    region:   s_49
     level:    [48, 50]
   16867379:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [8.140, -0.500, -292.312, 198]
+    region:   region_125
     level:    [46, 48]
   16867380:
     template: Thinker_PV
     script:   Thinker
-    at:       [77.909, 0.001, -84.722, 166]
+    region:   s_52
     level:    [54, 56]
   16867381:
     template: Gorger_PV
     script:   Gorger
-    at:       [126.125, -0.458, -235.921, 153]
+    region:   s_52
     level:    [52, 54]
   16867382:
     template: Craver_PV
     script:   Craver
-    at:       [57.042, -1.655, -307.012, 4]
+    region:   s_52
     level:    [52, 54]
   16867383:
     template: Thinker_PV
     script:   Thinker
-    at:       [59.921, -0.495, -70.863, 17]
+    region:   c_56
     level:    [54, 56]
   16867384:
     template: Gorger_PV
     script:   Gorger
-    at:       [30.209, -0.500, -145.921, 222]
+    region:   c_56
     level:    [52, 54]
   16867385:
     template: Craver_PV
     script:   Craver
-    at:       [52.241, 0.001, -208.681, 112]
+    region:   c_56
     level:    [52, 54]
   16867387:
     template: Memory_Receptacle_PV
@@ -853,17 +854,17 @@ spawns:
   16867388:
     template: Stray_PV
     script:   Stray
-    at:       [-40.000, -1.000, -360.000]
+    region:   s_60
     level:    [39, 40]
   16867389:
     template: Stray_PV
     script:   Stray
-    at:       [-40.000, -1.000, -360.000]
+    region:   s_60
     level:    [39, 40]
   16867390:
     template: Stray_PV
     script:   Stray
-    at:       [-40.000, -1.000, -360.000]
+    region:   s_60
     level:    [39, 40]
   16867392:
     template: Memory_Receptacle_PV
@@ -883,17 +884,17 @@ spawns:
   16867395:
     template: Stray_PV
     script:   Stray
-    at:       [80.000, -1.000, -40.000]
+    region:   c_67
     level:    [39, 40]
   16867396:
     template: Weeper_Large
     script:   Weeper
-    at:       [121.855, -0.500, 235.748, 20]
+    region:   n_69
     level:    [52, 54]
   16867397:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [127.498, -0.500, 236.280, 7]
+    region:   n_69
     level:    [46, 48]
   16867398:
     template: Weeper_Large
@@ -903,120 +904,120 @@ spawns:
   16867399:
     template: Weeper_Large
     script:   Weeper
-    at:       [108.037, -0.499, 191.096, 178]
+    region:   n_71
     level:    [48, 50]
   16867400:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [57.061, -0.500, 195.246, 38]
+    region:   n_103
     level:    [46, 48]
   16867401:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [47.774, -0.500, 203.668, 17]
+    region:   n_103
     level:    [46, 48]
   16867402:
     template: Seether_PV
     script:   Seether
-    at:       [43.233, -0.500, 243.410, 6]
+    region:   n_75
     level:    [50, 52]
   16867403:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [49.302, -0.499, 242.689, 189]
+    region:   n_75
     level:    [46, 48]
   16867404:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [49.443, -0.499, 237.091, 58]
+    region:   n_75
     level:    [46, 48]
   16867405:
     template: Weeper_Large
     script:   Weeper
-    at:       [36.020, -0.500, 239.515, 171]
+    region:   n_75
     level:    [48, 50]
   16867406:
     template: Apex_Idle_Drifter
-    at:       [84.289, 0.000, 157.413, 89]
+    region:   n_78
     level:    [139, 142]
   16867407:
     template: Apex_Idle_Drifter
-    at:       [79.602, 0.000, 170.510, 89]
+    region:   n_78
     level:    [139, 142]
   16867408:
     template: Apex_Idle_Drifter
-    at:       [80.110, 0.000, 174.201, 89]
+    region:   n_78
     level:    [139, 142]
   16867409:
     template: Apex_Idle_Drifter
-    at:       [79.255, 0.000, 172.746, 89]
+    region:   n_78
     level:    [139, 142]
   16867410:
     template: Apex_Idle_Drifter
-    at:       [77.106, 0.000, 167.111, 89]
+    region:   n_78
     level:    [139, 142]
   16867411:
     template: Apex_Livid_Rager
-    at:       [78.345, 0.000, 152.396, 89]
+    region:   n_78
     level:    [139, 142]
   16867412:
     template: Apex_Idle_Drifter
-    at:       [49.054, 0.000, 151.739, 89]
+    region:   n_84
     level:    [139, 142]
   16867413:
     template: Apex_Idle_Drifter
-    at:       [40.376, 0.000, 148.097, 89]
+    region:   n_84
     level:    [139, 142]
   16867414:
     template: Apex_Idle_Drifter
-    at:       [39.476, 0.000, 156.515, 89]
+    region:   n_84
     level:    [139, 142]
   16867415:
     template: Apex_Idle_Drifter
-    at:       [39.396, 0.000, 156.631, 89]
+    region:   n_84
     level:    [139, 142]
   16867416:
     template: Apex_Idle_Drifter
-    at:       [36.770, 0.000, 152.412, 89]
+    region:   n_84
     level:    [139, 142]
   16867417:
     template: Apex_Livid_Rager
-    at:       [55.001, 0.000, 146.795, 89]
+    region:   n_84
     level:    [139, 142]
   16867418:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [18.526, -0.500, 194.983, 239]
+    region:   n_90
     level:    [46, 48]
   16867419:
     template: Weeper_Large
     script:   Weeper
-    at:       [7.868, -0.500, 208.729, 193]
+    region:   n_91
     level:    [48, 50]
   16867420:
     template: Weeper_Large
     script:   Weeper
-    at:       [-5.616, -0.500, 195.939, 8]
+    region:   n_92
     level:    [48, 50]
   16867421:
     template: Weeper_Large
     script:   Weeper
-    at:       [-38.007, -0.500, 164.700, 242]
+    region:   n_93
     level:    [48, 50]
   16867422:
     template: Weeper_Large
     script:   Weeper
-    at:       [-28.494, -0.500, 155.243, 59]
+    region:   n_93
     level:    [48, 50]
   16867423:
     template: Weeper_Large
     script:   Weeper
-    at:       [-93.117, -0.529, 167.409, 199]
+    region:   n_95
     level:    [48, 50]
   16867424:
     template: Weeper_Large
     script:   Weeper
-    at:       [-79.489, -0.500, 155.811, 165]
+    region:   n_95
     level:    [48, 50]
   16867425:
     template: Weeper_Large
@@ -1026,61 +1027,62 @@ spawns:
   16867426:
     template: Weeper_Large
     script:   Weeper
-    at:       [-119.872, -0.500, 150.287, 230]
+    region:   n_99
     level:    [48, 50]
   16867427:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-140.412, -0.500, 138.600, 212]
+    region:   n_99
     level:    [46, 48]
   16867428:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-132.975, -0.500, 166.912, 75]
+    region:   n_99
     level:    [46, 48]
   16867429:
     template: Seether_PV
     script:   Seether
-    at:       [-155.455, -0.500, 145.139, 175]
+    region:   nw_102
     level:    [50, 52]
   16867430:
     template: Seether_PV
     script:   Seether
-    at:       [-157.554, -0.500, 170.506, 139]
+    region:   nw_102
     level:    [50, 52]
   16867431:
     template: Thinker_PV
     script:   Thinker
-    at:       [49.928, -0.500, 213.503, 149]
+    region:   n_103
     level:    [54, 56]
   16867432:
     template: Gorger_PV
     script:   Gorger
-    at:       [45.404, -0.500, 182.134, 254]
+    region:   n_103
     level:    [52, 54]
   16867433:
     template: Craver_PV
     script:   Craver
-    at:       [18.320, -0.500, 181.901, 201]
+    region:   n_103
     level:    [52, 54]
   16867434:
     template: Thinker_PV
     script:   Thinker
-    at:       [-124.423, -0.500, 170.694, 164]
+    region:   n_106
     level:    [54, 56]
   16867435:
     template: Gorger_PV
     script:   Gorger
+    region:   n_106
     level:    [52, 54]
   16867436:
     template: Craver_PV
     script:   Craver
-    at:       [-86.821, -0.499, 168.645, 35]
+    region:   n_106
     level:    [52, 54]
   16867437:
     template: Seether_PV
     script:   Seether
-    at:       [-97.880, -0.500, 162.508, 231]
+    region:   n_109
     level:    [50, 52]
   16867439:
     template: Memory_Receptacle_PV
@@ -1120,77 +1122,77 @@ spawns:
   16867447:
     template: Stray_PV
     script:   Stray
-    at:       [-160.000, -1.000, 120.000]
+    region:   nw_119
     level:    [41, 42]
   16867448:
     template: Stray_PV
     script:   Stray
-    at:       [-160.000, -1.000, 120.000]
+    region:   nw_119
     level:    [41, 42]
   16867449:
     template: Stray_PV
     script:   Stray
-    at:       [-160.000, -1.000, 120.000]
+    region:   nw_119
     level:    [41, 42]
   16867450:
     template: Stray_PV
     script:   Stray
-    at:       [-160.000, -1.000, 120.000]
+    region:   nw_119
     level:    [41, 42]
   16867451:
     template: Stray_PV
     script:   Stray
-    at:       [-160.000, -1.000, 120.000]
+    region:   nw_119
     level:    [41, 42]
   16867452:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [371.881, -0.500, -236.268, 64]
+    region:   se_124
     level:    [46, 48]
   16867453:
     template: Weeper_Large
     script:   Weeper
-    at:       [373.047, -0.500, -237.812, 136]
+    region:   se_124
     level:    [52, 54]
   16867454:
     template: Seether_PV
     script:   Seether
-    at:       [380.411, -0.508, -168.530, 208]
+    region:   se_126
     level:    [54, 56]
   16867455:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [383.196, -0.591, -168.826, 109]
+    region:   se_127
     level:    [50, 52]
   16867456:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [361.898, -0.576, -182.285, 120]
+    region:   se_127
     level:    [50, 52]
   16867457:
     template: Weeper_Large
     script:   Weeper
-    at:       [378.829, -1.099, -170.240, 49]
+    region:   se_127
     level:    [52, 54]
   16867458:
     template: Seether_PV
     script:   Seether
-    at:       [343.670, -0.500, -222.870, 171]
+    region:   se_131
     level:    [54, 56]
   16867459:
     template: Weeper_Large
     script:   Weeper
-    at:       [349.939, -0.500, -233.902, 67]
+    region:   se_131
     level:    [52, 54]
   16867460:
     template: Weeper_Large
     script:   Weeper
-    at:       [353.454, -0.500, -227.473, 50]
+    region:   se_131
     level:    [52, 54]
   16867461:
     template: Seether_PV
     script:   Seether
-    at:       [286.875, -0.500, -222.135, 174]
+    region:   se_133
     level:    [54, 56]
   16867462:
     template: Wanderer_Large
@@ -1200,12 +1202,12 @@ spawns:
   16867463:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [225.356, -0.469, -232.537, 199]
+    region:   region_126
     level:    [50, 52]
   16867464:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [319.676, -0.500, -215.638, 63]
+    region:   se_139
     level:    [50, 52]
   16867465:
     template: Deviator
@@ -1214,86 +1216,87 @@ spawns:
   16867466:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [290.767, -0.943, -178.672, 132]
+    region:   se_138
     level:    [50, 52]
   16867467:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [338.346, -0.500, -189.659, 186]
+    region:   se_139
     level:    [50, 52]
   16867468:
     template: Weeper_Large
     script:   Weeper
-    at:       [263.712, -0.500, -201.890, 45]
+    region:   se_140
     level:    [52, 54]
   16867469:
     template: Weeper_Large
     script:   Weeper
+    region:   se_140
     level:    [52, 54]
   16867470:
     template: Seether_PV
     script:   Seether
-    at:       [338.760, -1.380, -139.719, 249]
+    region:   e_143
     level:    [54, 56]
   16867471:
     template: Weeper_Large
     script:   Weeper
-    at:       [328.963, -1.638, -130.215, 72]
+    region:   e_143
     level:    [52, 54]
   16867472:
     template: Weeper_Large
     script:   Weeper
-    at:       [363.196, -0.473, -132.372, 31]
+    region:   e_143
     level:    [52, 54]
   16867473:
     template: Weeper_Large
     script:   Weeper
-    at:       [320.829, -0.996, -134.882, 10]
+    region:   e_145
     level:    [52, 54]
   16867474:
     template: Seether_PV
     script:   Seether
-    at:       [305.799, -0.500, -93.314, 92]
+    region:   e_146
     level:    [54, 56]
   16867475:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [297.674, -0.500, -91.766, 128]
+    region:   e_147
     level:    [50, 52]
   16867476:
     template: Weeper_Large
     script:   Weeper
-    at:       [287.427, -0.500, -85.555, 96]
+    region:   e_147
     level:    [52, 54]
   16867477:
     template: Weeper_Large
     script:   Weeper
-    at:       [289.798, -0.500, -103.254, 117]
+    region:   e_147
     level:    [52, 54]
   16867478:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [274.177, -0.500, -78.604, 212]
+    region:   region_127
     level:    [50, 52]
   16867479:
     template: Seether_PV
     script:   Seether
-    at:       [252.124, -0.500, -115.340, 139]
+    region:   e_151
     level:    [54, 56]
   16867480:
     template: Weeper_Large
     script:   Weeper
-    at:       [246.406, -0.500, -104.293, 229]
+    region:   e_152
     level:    [52, 54]
   16867481:
     template: Weeper_Large
     script:   Weeper
-    at:       [266.801, -0.500, -122.333, 194]
+    region:   e_153
     level:    [52, 54]
   16867482:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [256.331, -0.500, -129.847, 196]
+    region:   e_154
     level:    [50, 52]
   16867483:
     template: Wanderer_Large
@@ -1308,91 +1311,92 @@ spawns:
   16867485:
     template: Seether_PV
     script:   Seether
-    at:       [189.691, -0.500, -144.958, 135]
+    region:   region_128
     level:    [54, 56]
   16867486:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [203.515, -0.500, -148.052, 237]
+    region:   e_158
     level:    [50, 52]
   16867487:
     template: Weeper_Large
     script:   Weeper
-    at:       [208.969, -0.500, -146.161, 8]
+    region:   e_158
     level:    [52, 54]
   16867488:
     template: Weeper_Large
     script:   Weeper
-    at:       [208.478, -0.500, -161.869, 166]
+    region:   se_160
     level:    [52, 54]
   16867489:
     template: Weeper_Large
     script:   Weeper
-    at:       [215.024, -0.500, -122.775, 251]
+    region:   se_160
     level:    [52, 54]
   16867490:
     template: Weeper_Large
     script:   Weeper
-    at:       [157.248, -0.500, -119.105, 51]
+    region:   e_162
     level:    [52, 54]
   16867491:
     template: Seether_PV
     script:   Seether
-    at:       [233.993, -0.500, -62.984, 251]
+    region:   e_163
     level:    [54, 56]
   16867492:
     template: Seether_PV
     script:   Seether
-    at:       [197.291, -0.500, -45.044, 99]
+    region:   e_164
     level:    [54, 56]
   16867493:
     template: Weeper_Large
     script:   Weeper
-    at:       [212.800, -0.500, -65.911, 13]
+    region:   e_165
     level:    [52, 54]
   16867494:
     template: Thinker_PV
     script:   Thinker
-    at:       [226.341, -0.500, -120.856, 92]
+    region:   e_166
     level:    [56, 58]
   16867495:
     template: Gorger_PV
     script:   Gorger
-    at:       [201.589, -0.500, -126.820, 26]
+    region:   e_166
     level:    [56, 58]
   16867496:
     template: Craver_PV
     script:   Craver
+    region:   e_166
     level:    [56, 58]
   16867497:
     template: Thinker_PV
     script:   Thinker
-    at:       [268.561, -0.500, -116.287, 232]
+    region:   e_169
     level:    [56, 58]
   16867498:
     template: Gorger_PV
     script:   Gorger
-    at:       [323.910, -1.081, -138.213, 203]
+    region:   e_169
     level:    [56, 58]
   16867499:
     template: Craver_PV
     script:   Craver
-    at:       [281.410, -0.385, -180.182, 215]
+    region:   e_169
     level:    [56, 58]
   16867500:
     template: Thinker_PV
     script:   Thinker
-    at:       [378.524, -0.500, -221.008, 110]
+    region:   se_172
     level:    [56, 58]
   16867501:
     template: Gorger_PV
     script:   Gorger
-    at:       [342.592, -0.500, -212.266, 251]
+    region:   se_172
     level:    [56, 58]
   16867502:
     template: Craver_PV
     script:   Craver
-    at:       [389.136, -0.588, -176.363, 118]
+    region:   se_172
     level:    [56, 58]
   16867504:
     template: Memory_Receptacle_PV
@@ -1402,27 +1406,27 @@ spawns:
   16867505:
     template: Stray_PV
     script:   Stray
-    at:       [160.000, -1.000, -160.000]
+    region:   se_177
     level:    [43, 44]
   16867506:
     template: Stray_PV
     script:   Stray
-    at:       [160.000, -1.000, -160.000]
+    region:   se_177
     level:    [43, 44]
   16867507:
     template: Stray_PV
     script:   Stray
-    at:       [160.000, -1.000, -160.000]
+    region:   se_177
     level:    [43, 44]
   16867508:
     template: Stray_PV
     script:   Stray
-    at:       [160.000, -1.000, -160.000]
+    region:   se_177
     level:    [43, 44]
   16867509:
     template: Stray_Weeper_PV
     script:   Stray_Weeper
-    at:       [160.000, -1.000, -160.000]
+    region:   se_177
     level:    [43, 44]
   16867511:
     template: Memory_Receptacle_PV
@@ -1462,27 +1466,27 @@ spawns:
   16867519:
     template: Stray_PV
     script:   Stray
-    at:       [240.000, -1.000, -240.000]
+    region:   se_191
     level:    [43, 44]
   16867520:
     template: Stray_PV
     script:   Stray
-    at:       [240.000, -1.000, -240.000]
+    region:   se_191
     level:    [43, 44]
   16867521:
     template: Stray_PV
     script:   Stray
-    at:       [240.000, -1.000, -240.000]
+    region:   se_191
     level:    [43, 44]
   16867522:
     template: Stray_PV
     script:   Stray
-    at:       [240.000, -1.000, -240.000]
+    region:   se_191
     level:    [43, 44]
   16867523:
     template: Stray_Weeper_PV
     script:   Stray_Weeper
-    at:       [240.000, -1.000, -240.000]
+    region:   se_191
     level:    [43, 44]
   16867525:
     template: Memory_Receptacle_PV
@@ -1492,141 +1496,142 @@ spawns:
   16867526:
     template: Stray_PV
     script:   Stray
-    at:       [360.000, -1.000, -80.000]
+    region:   e_198
     level:    [43, 44]
   16867527:
     template: Stray_PV
     script:   Stray
-    at:       [360.000, -1.000, -80.000]
+    region:   e_198
     level:    [43, 44]
   16867528:
     template: Stray_PV
     script:   Stray
-    at:       [360.000, -1.000, -80.000]
+    region:   e_198
     level:    [43, 44]
   16867529:
     template: Stray_PV
     script:   Stray
-    at:       [360.000, -1.000, -80.000]
+    region:   e_198
     level:    [43, 44]
   16867530:
     template: Stray_Weeper_PV
     script:   Stray_Weeper
-    at:       [360.000, -1.000, -80.000]
+    region:   e_198
     level:    [43, 44]
   16867531:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [262.331, -0.496, 171.836, 70]
+    region:   ne_203
     level:    [46, 48]
   16867532:
     template: Weeper_Large
     script:   Weeper
-    at:       [265.335, -0.471, 185.426, 178]
+    region:   ne_203
     level:    [52, 54]
   16867533:
     template: Weeper_Large
     script:   Weeper
-    at:       [301.310, -0.500, 141.955, 112]
+    region:   ne_205
     level:    [52, 54]
   16867534:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [223.721, -0.499, 85.773, 144]
+    region:   ne_206
     level:    [50, 52]
   16867535:
     template: Weeper_Large
     script:   Weeper
-    at:       [237.333, -0.500, 98.300, 33]
+    region:   ne_206
     level:    [52, 54]
   16867536:
     template: Weeper_Large
     script:   Weeper
-    at:       [227.787, -0.499, 97.582, 235]
+    region:   ne_206
     level:    [52, 54]
   16867537:
     template: Seether_PV
     script:   Seether
-    at:       [232.748, -0.399, 76.777, 80]
+    region:   ne_209
     level:    [54, 56]
   16867538:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [209.964, -0.391, 169.044, 178]
+    region:   ne_210
     level:    [50, 52]
   16867539:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [161.416, -0.491, 133.560, 203]
+    region:   ne_211
     level:    [50, 52]
   16867540:
     template: Weeper_Large
     script:   Weeper
-    at:       [164.260, -0.499, 132.590, 15]
+    region:   ne_211
     level:    [52, 54]
   16867541:
     template: Weeper_Large
     script:   Weeper
-    at:       [200.268, -0.458, 81.422, 128]
+    region:   ne_214
     level:    [52, 54]
   16867542:
     template: Weeper_Large
     script:   Weeper
-    at:       [191.939, -0.474, 80.315, 184]
+    region:   ne_214
     level:    [52, 54]
   16867543:
     template: Seether_PV
     script:   Seether
-    at:       [181.314, -0.500, 79.898, 80]
+    region:   ne_216
     level:    [54, 56]
   16867544:
     template: Weeper_Large
     script:   Weeper
-    at:       [183.110, -0.410, 70.509, 17]
+    region:   ne_216
     level:    [52, 54]
   16867545:
     template: Seether_PV
     script:   Seether
-    at:       [122.846, -0.500, 77.833, 221]
+    region:   n_217
     level:    [54, 56]
   16867546:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [278.527, -0.330, 77.405, 183]
+    region:   ne_218
     level:    [50, 52]
   16867547:
     template: Weeper_Large
     script:   Weeper
-    at:       [276.490, -0.406, 73.830, 183]
+    region:   ne_218
     level:    [52, 54]
   16867548:
     template: Seether_PV
     script:   Seether
-    at:       [297.951, -0.968, 97.095, 20]
+    region:   ne_220
     level:    [54, 56]
   16867549:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [294.582, -1.255, 96.413, 191]
+    region:   ne_221
     level:    [50, 52]
   16867550:
     template: Weeper_Large
     script:   Weeper
-    at:       [305.036, -1.167, 100.993, 233]
+    region:   ne_221
     level:    [52, 54]
   16867551:
     template: Weeper_Large
     script:   Weeper
-    at:       [310.137, -0.755, 101.342, 38]
+    region:   ne_221
     level:    [52, 54]
   16867552:
     template: Seether_PV
     script:   Seether
-    at:       [340.267, -0.484, 89.737, 76]
+    region:   ne_224
     level:    [54, 56]
   16867553:
     template: Seether_PV
     script:   Seether
+    region:   ne_224
     level:    [54, 56]
   16867554:
     template: Wailer
@@ -1635,203 +1640,206 @@ spawns:
   16867555:
     template: Weeper_Large
     script:   Weeper
+    region:   ne_228
     level:    [52, 54]
   16867556:
     template: Weeper_Large
     script:   Weeper
-    at:       [346.670, -0.849, 121.948, 212]
+    region:   ne_228
     level:    [52, 54]
   16867557:
     template: Seether_PV
     script:   Seether
-    at:       [383.570, -0.498, 131.103, 176]
+    region:   ne_230
     level:    [54, 56]
   16867558:
     template: Seether_PV
     script:   Seether
-    at:       [384.899, -1.795, 93.678, 84]
+    region:   ne_230
     level:    [54, 56]
   16867559:
     template: Weeper_Large
     script:   Weeper
-    at:       [373.434, -0.547, 107.668, 109]
+    region:   ne_231
     level:    [52, 54]
   16867560:
     template: Weeper_Large
     script:   Weeper
-    at:       [367.229, -0.743, 89.382, 178]
+    region:   ne_231
     level:    [52, 54]
   16867561:
     template: Seether_PV
     script:   Seether
-    at:       [286.257, -0.499, 242.693, 19]
+    region:   ne_234
     level:    [54, 56]
   16867562:
     template: Seether_PV
     script:   Seether
-    at:       [307.923, -0.481, 179.264, 164]
+    region:   ne_234
     level:    [54, 56]
   16867563:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [388.039, -0.498, 187.883, 112]
+    region:   ne_235
     level:    [50, 52]
   16867564:
     template: Apex_Idle_Drifter
-    at:       [229.658, 0.000, 209.404, 89]
+    region:   ne_236
     level:    [139, 142]
   16867565:
     template: Apex_Idle_Drifter
-    at:       [245.688, 0.000, 209.552, 89]
+    region:   ne_236
     level:    [139, 142]
   16867566:
     template: Apex_Idle_Drifter
-    at:       [234.031, 0.000, 208.519, 89]
+    region:   ne_236
     level:    [139, 142]
   16867567:
     template: Apex_Idle_Drifter
-    at:       [246.092, 0.000, 207.062, 89]
+    region:   ne_236
     level:    [139, 142]
   16867568:
     template: Apex_Idle_Drifter
-    at:       [273.076, 0.000, 229.747, 89]
+    region:   ne_240
     level:    [139, 142]
   16867569:
     template: Apex_Idle_Drifter
-    at:       [272.776, 0.000, 248.108, 89]
+    region:   ne_240
     level:    [139, 142]
   16867570:
     template: Apex_Idle_Drifter
-    at:       [278.368, 0.000, 225.803, 89]
+    region:   ne_240
     level:    [139, 142]
   16867571:
     template: Apex_Idle_Drifter
-    at:       [257.397, 0.000, 217.730, 89]
+    region:   ne_240
     level:    [139, 142]
   16867572:
     template: Apex_Woeful_Lamenter
-    at:       [258.188, 0.000, 203.567, 89]
+    region:   ne_240
     level:    [139, 142]
   16867573:
     template: Apex_Idle_Drifter
-    at:       [326.908, 0.000, 246.730, 89]
+    region:   ne_245
     level:    [139, 142]
   16867574:
     template: Apex_Idle_Drifter
-    at:       [305.861, 0.000, 241.186, 89]
+    region:   ne_245
     level:    [139, 142]
   16867575:
     template: Apex_Idle_Drifter
-    at:       [342.892, 0.000, 238.061, 89]
+    region:   ne_245
     level:    [139, 142]
   16867576:
     template: Apex_Idle_Drifter
-    at:       [329.335, 0.000, 228.765, 89]
+    region:   ne_245
     level:    [139, 142]
   16867577:
     template: Apex_Idle_Drifter
-    at:       [334.304, 0.000, 244.449, 89]
+    region:   ne_245
     level:    [139, 142]
   16867578:
     template: Apex_Idle_Drifter
-    at:       [300.825, 0.000, 232.017, 89]
+    region:   ne_245
     level:    [139, 142]
   16867579:
     template: Apex_Woeful_Lamenter
-    at:       [317.665, 0.000, 238.881, 89]
+    region:   ne_245
     level:    [139, 142]
   16867580:
     template: Apex_Idle_Drifter
-    at:       [363.794, 0.000, 240.609, 89]
+    region:   ne_252
     level:    [139, 142]
   16867581:
     template: Apex_Idle_Drifter
-    at:       [357.175, 0.000, 230.712, 89]
+    region:   ne_252
     level:    [139, 142]
   16867582:
     template: Apex_Idle_Drifter
-    at:       [382.271, 0.000, 247.055, 89]
+    region:   ne_252
     level:    [139, 142]
   16867583:
     template: Apex_Idle_Drifter
-    at:       [384.674, 0.000, 246.969, 89]
+    region:   ne_252
     level:    [139, 142]
   16867584:
     template: Apex_Woeful_Lamenter
-    at:       [350.602, 0.000, 245.601, 89]
+    region:   ne_252
     level:    [139, 142]
   16867585:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [448.323, -0.420, 206.208, 143]
+    region:   ne_257
     level:    [50, 52]
   16867586:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [441.168, -0.483, 193.127, 60]
+    region:   ne_259
     level:    [50, 52]
   16867587:
     template: Weeper_Large
     script:   Weeper
-    at:       [434.162, -0.495, 227.073, 221]
+    region:   ne_259
     level:    [52, 54]
   16867588:
     template: Thinker_PV
     script:   Thinker
-    at:       [174.477, -0.499, 103.434, 238]
+    region:   ne_261
     level:    [56, 58]
   16867589:
     template: Gorger_PV
     script:   Gorger
+    region:   ne_261
     level:    [56, 58]
   16867590:
     template: Craver_PV
     script:   Craver
-    at:       [230.132, -0.495, 95.845, 228]
+    region:   ne_261
     level:    [56, 58]
   16867591:
     template: Thinker_PV
     script:   Thinker
-    at:       [230.628, -0.500, 141.745, 216]
+    region:   ne_261
     level:    [56, 58]
   16867592:
     template: Gorger_PV
     script:   Gorger
+    region:   ne_261
     level:    [56, 58]
   16867593:
     template: Craver_PV
     script:   Craver
-    at:       [212.407, -0.388, 151.807, 53]
+    region:   ne_261
     level:    [56, 58]
   16867594:
     template: Thinker_PV
     script:   Thinker
-    at:       [270.425, -0.499, 162.852, 32]
+    region:   ne_266
     level:    [56, 58]
   16867595:
     template: Gorger_PV
     script:   Gorger
-    at:       [234.186, -0.499, 184.833, 115]
+    region:   ne_266
     level:    [56, 58]
   16867596:
     template: Craver_PV
     script:   Craver
-    at:       [388.893, -0.403, 246.265, 3]
+    region:   ne_266
     level:    [56, 58]
   16867597:
     template: Thinker_PV
     script:   Thinker
-    at:       [281.679, -0.751, 102.533, 187]
+    region:   ne_269
     level:    [56, 58]
   16867598:
     template: Gorger_PV
     script:   Gorger
-    at:       [348.647, -0.492, 72.767, 5]
+    region:   ne_269
     level:    [56, 58]
   16867599:
     template: Craver_PV
     script:   Craver
-    at:       [345.673, -1.172, 127.784, 43]
+    region:   ne_269
     level:    [56, 58]
   16867601:
     template: Memory_Receptacle_PV
@@ -1841,37 +1849,37 @@ spawns:
   16867602:
     template: Stray_PV
     script:   Stray
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867603:
     template: Stray_PV
     script:   Stray
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867604:
     template: Stray_Weeper_PV
     script:   Stray_Weeper
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867605:
     template: Stray_PV
     script:   Stray
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867606:
     template: Stray_PV
     script:   Stray
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867607:
     template: Stray_PV
     script:   Stray
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867608:
     template: Stray_Seether_PV
     script:   Stray_Seether
-    at:       [120.000, -1.000, 40.000]
+    region:   c_274
     level:    [45, 46]
   16867610:
     template: Memory_Receptacle_PV
@@ -1911,7 +1919,7 @@ spawns:
   16867617:
     template: Stray_Seether_PV
     script:   Stray_Seether
-    at:       [440.000, -1.000, 40.000]
+    region:   e_289
     level:    [45, 46]
   16867619:
     template: Memory_Receptacle_PV
@@ -1921,12 +1929,12 @@ spawns:
   16867620:
     template: Stray_PV
     script:   Stray
-    at:       [440.000, -1.000, 280.000]
+    region:   ne_292
     level:    [45, 46]
   16867621:
     template: Stray_PV
     script:   Stray
-    at:       [440.000, -1.000, 280.000]
+    region:   ne_292
     level:    [45, 46]
   16867622:
     template: Stray_Weeper_PV
@@ -1936,7 +1944,7 @@ spawns:
   16867623:
     template: Stray_PV
     script:   Stray
-    at:       [440.000, -1.000, 280.000]
+    region:   ne_292
     level:    [45, 46]
   16867624:
     template: Stray_PV
@@ -1956,87 +1964,87 @@ spawns:
   16867627:
     template: Seether_PV
     script:   Seether
-    at:       [18.422, -1.914, 14.039, 68]
+    region:   c_300
     level:    [54, 56]
   16867628:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [15.250, -2.478, 16.606, 91]
+    region:   c_300
     level:    [50, 52]
   16867629:
     template: Weeper_Large
     script:   Weeper
-    at:       [23.445, -1.392, 6.323, 26]
+    region:   c_300
     level:    [52, 54]
   16867630:
     template: Weeper_Large
     script:   Weeper
-    at:       [4.759, -0.435, 10.155, 193]
+    region:   c_302
     level:    [52, 54]
   16867631:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [29.498, -0.500, 72.938, 190]
+    region:   n_303
     level:    [50, 52]
   16867632:
     template: Weeper_Large
     script:   Weeper
-    at:       [28.675, -0.500, 78.156, 72]
+    region:   n_303
     level:    [52, 54]
   16867633:
     template: Weeper_Large
     script:   Weeper
-    at:       [28.114, -0.500, 65.329, 40]
+    region:   n_303
     level:    [52, 54]
   16867634:
     template: Seether_PV
     script:   Seether
-    at:       [-5.792, -0.500, 58.736, 154]
+    region:   c_300
     level:    [54, 56]
   16867635:
     template: Weeper_Large
     script:   Weeper
-    at:       [-12.062, -0.500, 70.024, 128]
+    region:   c_307
     level:    [52, 54]
   16867636:
     template: Weeper_Large
     script:   Weeper
-    at:       [-6.139, -0.500, 59.517, 146]
+    region:   c_307
     level:    [52, 54]
   16867637:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-30.565, -0.499, 37.843, 217]
+    region:   c_309
     level:    [50, 52]
   16867638:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-72.070, -0.500, 51.263, 20]
+    region:   c_310
     level:    [50, 52]
   16867639:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-81.131, -0.499, 40.104, 166]
+    region:   c_310
     level:    [50, 52]
   16867640:
     template: Seether_PV
     script:   Seether
-    at:       [-141.474, -0.500, -8.146, 176]
+    region:   c_371
     level:    [54, 56]
   16867641:
     template: Weeper_Large
     script:   Weeper
-    at:       [-122.349, -0.500, -20.278, 115]
+    region:   c_313
     level:    [52, 54]
   16867642:
     template: Weeper_Large
     script:   Weeper
-    at:       [-154.663, -0.499, -17.640, 188]
+    region:   w_314
     level:    [52, 54]
   16867643:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-139.326, -0.500, -24.154, 221]
+    region:   c_315
     level:    [50, 52]
   16867644:
     template: Seether_PV
@@ -2046,62 +2054,62 @@ spawns:
   16867645:
     template: Weeper_Large
     script:   Weeper
-    at:       [-186.975, -0.499, 45.465, 216]
+    region:   w_317
     level:    [52, 54]
   16867646:
     template: Weeper_Large
     script:   Weeper
-    at:       [-213.055, -0.500, 35.851, 255]
+    region:   w_318
     level:    [52, 54]
   16867647:
     template: Seether_PV
     script:   Seether
-    at:       [-262.027, -0.500, -16.606, 194]
+    region:   w_319
     level:    [54, 56]
   16867648:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-245.528, -0.500, -47.020, 128]
+    region:   w_320
     level:    [50, 52]
   16867649:
     template: Weeper_Large
     script:   Weeper
-    at:       [-265.038, -0.500, -42.077, 126]
+    region:   w_320
     level:    [52, 54]
   16867650:
     template: Weeper_Large
     script:   Weeper
-    at:       [-257.842, -0.500, -20.196, 36]
+    region:   w_320
     level:    [52, 54]
   16867651:
     template: Seether_PV
     script:   Seether
-    at:       [-316.529, -0.500, -3.010, 234]
+    region:   w_323
     level:    [54, 56]
   16867652:
     template: Weeper_Large
     script:   Weeper
-    at:       [-318.706, -0.500, -11.938, 22]
+    region:   w_324
     level:    [52, 54]
   16867653:
     template: Weeper_Large
     script:   Weeper
-    at:       [-307.223, -0.500, -2.176, 239]
+    region:   w_324
     level:    [52, 54]
   16867654:
     template: Seether_PV
     script:   Seether
-    at:       [-296.659, -0.402, 45.692, 22]
+    region:   w_326
     level:    [54, 56]
   16867655:
     template: Weeper_Large
     script:   Weeper
-    at:       [-279.696, -0.473, 40.015, 185]
+    region:   w_327
     level:    [52, 54]
   16867656:
     template: Weeper_Large
     script:   Weeper
-    at:       [-273.399, -0.421, 38.547, 120]
+    region:   w_327
     level:    [52, 54]
   16867657:
     template: Provoker
@@ -2124,198 +2132,201 @@ spawns:
   16867661:
     template: Weeper_Large
     script:   Weeper
-    at:       [-280.097, -0.499, 85.776, 152]
+    region:   nw_333
     level:    [52, 54]
   16867662:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-258.448, -0.500, 118.699, 171]
+    region:   nw_334
     level:    [50, 52]
   16867663:
     template: Weeper_Large
     script:   Weeper
-    at:       [-236.938, -0.500, 127.147, 249]
+    region:   nw_334
     level:    [52, 54]
   16867664:
     template: Seether_PV
     script:   Seether
-    at:       [-239.915, -0.500, 164.424, 131]
+    region:   nw_336
     level:    [54, 56]
   16867665:
     template: Wanderer_Large
     script:   Wanderer
-    at:       [-237.772, -0.500, 146.196, 21]
+    region:   nw_337
     level:    [50, 52]
   16867666:
     template: Weeper_Large
     script:   Weeper
-    at:       [-236.988, -0.500, 149.457, 205]
+    region:   nw_337
     level:    [52, 54]
   16867667:
     template: Weeper_Large
     script:   Weeper
-    at:       [-282.033, -0.499, 134.110, 107]
+    region:   nw_339
     level:    [52, 54]
   16867668:
     template: Seether_PV
     script:   Seether
-    at:       [-299.441, -0.500, 137.714, 235]
+    region:   region_129
     level:    [54, 56]
   16867669:
     template: Weeper_Large
     script:   Weeper
-    at:       [-303.576, -0.414, 150.968, 89]
+    region:   nw_341
     level:    [52, 54]
   16867670:
     template: Apex_Idle_Drifter
-    at:       [-350.360, 0.000, 72.650, 89]
+    region:   nw_342
     level:    [139, 142]
   16867671:
     template: Apex_Idle_Drifter
-    at:       [-360.503, 0.000, 74.700, 89]
+    region:   nw_342
     level:    [139, 142]
   16867672:
     template: Apex_Idle_Drifter
-    at:       [-346.971, 0.000, 68.598, 89]
+    region:   nw_342
     level:    [139, 142]
   16867673:
     template: Apex_Woeful_Lamenter
-    at:       [-349.425, 0.000, 69.572, 89]
+    region:   nw_342
     level:    [139, 142]
   16867674:
     template: Apex_Idle_Drifter
-    at:       [-370.720, 0.000, 74.584, 89]
+    region:   nw_346
     level:    [139, 142]
   16867675:
     template: Apex_Idle_Drifter
-    at:       [-391.405, 0.000, 67.726, 89]
+    region:   nw_346
     level:    [139, 142]
   16867676:
     template: Apex_Idle_Drifter
-    at:       [-382.233, 0.000, 83.131, 89]
+    region:   nw_346
     level:    [139, 142]
   16867677:
     template: Apex_Idle_Drifter
-    at:       [-382.148, 0.000, 83.426, 89]
+    region:   nw_346
     level:    [139, 142]
   16867678:
     template: Apex_Idle_Drifter
-    at:       [-375.412, 0.000, 65.864, 89]
+    region:   nw_346
     level:    [139, 142]
   16867679:
     template: Apex_Idle_Drifter
-    at:       [-436.937, 0.000, 84.021, 89]
+    region:   nw_351
     level:    [139, 142]
   16867680:
     template: Apex_Idle_Drifter
-    at:       [-412.371, 0.000, 73.860, 89]
+    region:   nw_351
     level:    [139, 142]
   16867681:
     template: Apex_Idle_Drifter
-    at:       [-407.199, 0.000, 78.640, 89]
+    region:   nw_351
     level:    [139, 142]
   16867682:
     template: Apex_Idle_Drifter
-    at:       [-446.349, 0.000, 69.197, 89]
+    region:   nw_351
     level:    [139, 142]
   16867683:
     template: Apex_Idle_Drifter
-    at:       [-434.210, 0.000, 76.170, 89]
+    region:   nw_351
     level:    [139, 142]
   16867684:
     template: Apex_Woeful_Lamenter
-    at:       [-427.470, 0.000, 74.676, 89]
+    region:   nw_351
     level:    [139, 142]
   16867685:
     template: Apex_Livid_Rager
-    at:       [-427.629, 0.000, 74.648, 89]
+    region:   nw_351
     level:    [139, 142]
   16867686:
     template: Apex_Idle_Drifter
-    at:       [-442.535, 0.000, 122.125, 89]
+    region:   nw_358
     level:    [139, 142]
   16867687:
     template: Apex_Idle_Drifter
-    at:       [-431.307, 0.000, 124.128, 89]
+    region:   nw_358
     level:    [139, 142]
   16867688:
     template: Apex_Idle_Drifter
-    at:       [-446.347, 0.000, 115.023, 89]
+    region:   nw_358
     level:    [139, 142]
   16867689:
     template: Apex_Idle_Drifter
-    at:       [-428.072, 0.000, 111.464, 89]
+    region:   nw_358
     level:    [139, 142]
   16867690:
     template: Apex_Livid_Rager
-    at:       [-427.012, 0.000, 113.393, 89]
+    region:   nw_358
     level:    [140, 142]
   16867691:
     template: Thinker_PV
     script:   Thinker
-    at:       [-334.659, -0.423, 52.328, 45]
+    region:   nw_363
     level:    [56, 58]
   16867692:
     template: Gorger_PV
     script:   Gorger
-    at:       [-353.969, -0.500, 87.582, 252]
+    region:   nw_363
     level:    [56, 58]
   16867693:
     template: Craver_PV
     script:   Craver
+    region:   nw_363
     level:    [56, 58]
   16867694:
     template: Thinker_PV
     script:   Thinker
-    at:       [-451.858, -0.500, 53.940, 73]
+    region:   nw_363
     level:    [56, 58]
   16867695:
     template: Gorger_PV
     script:   Gorger
+    region:   nw_363
     level:    [56, 58]
   16867696:
     template: Craver_PV
     script:   Craver
-    at:       [-390.923, -0.500, 72.809, 104]
+    region:   nw_363
     level:    [56, 58]
   16867697:
     template: Thinker_PV
     script:   Thinker
+    region:   c_371
     level:    [56, 58]
   16867698:
     template: Gorger_PV
     script:   Gorger
-    at:       [-148.101, -0.500, -20.705, 58]
+    region:   c_371
     level:    [56, 58]
   16867699:
     template: Craver_PV
     script:   Craver
-    at:       [-123.970, -0.500, -31.381, 205]
+    region:   c_371
     level:    [56, 58]
   16867700:
     template: Thinker_PV
     script:   Thinker
-    at:       [-211.430, -0.499, 42.528, 231]
+    region:   w_372
     level:    [56, 58]
   16867701:
     template: Gorger_PV
     script:   Gorger
-    at:       [-185.491, -0.500, 12.580, 209]
+    region:   w_372
     level:    [56, 58]
   16867702:
     template: Craver_PV
     script:   Craver
-    at:       [-309.406, -0.499, 20.972, 149]
+    region:   w_372
     level:    [56, 58]
   16867703:
     template: Gorger_PV
     script:   Gorger
-    at:       [-243.088, -0.499, 150.610]
+    region:   nw_375
     level:    [56, 58]
   16867704:
     template: Craver_PV
     script:   Craver
-    at:       [-232.052, -0.499, 107.356, 190]
+    region:   nw_375
     level:    [56, 58]
 
 slots:

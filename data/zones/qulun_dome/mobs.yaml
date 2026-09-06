@@ -502,80 +502,80 @@ templates:
 spawns:
   17383425:
     template: Ancient_Quadav
-    at:       [262.000, 40.000, 85.000, 124]
+    region:   nw_12
     level:    [69, 72]
   17383426:
     template: Darksteel_Quadav
-    at:       [291.882, 39.528, 22.795, 127]
+    region:   se_4
     level:    [69, 72]
   17383427:
     template: Platinum_Quadav
-    at:       [306.111, 39.603, 16.437, 30]
+    region:   se_4
     level:    [69, 72]
   17383428:
     template: Sapphire_Quadav
-    at:       [297.294, 39.675, 15.086, 223]
+    region:   se_4
     level:    [69, 72]
   17383429:
     template: Ancient_Quadav
-    at:       [296.000, 40.000, 89.000, 44]
+    region:   se_4
     level:    [69, 72]
   17383430:
     template: Darksteel_Quadav
-    at:       [298.000, 40.000, 19.000, 25]
+    region:   se_4
     level:    [69, 72]
   17383431:
     template: Platinum_Quadav
-    at:       [289.000, 43.000, 79.000, 25]
+    region:   se_4
     level:    [69, 72]
   17383432:
     template: Sapphire_Quadav
-    at:       [306.567, 39.765, 21.833, 255]
+    region:   se_4
     level:    [69, 72]
   17383433:
     template: Ruby_Quadav
-    at:       [295.000, 40.000, 13.000, 127]
+    region:   se_4
     level:    [72, 74]
   17383434:
     template: Darksteel_Quadav
-    at:       [288.751, 41.128, 70.520, 127]
+    region:   n_10
     level:    [69, 72]
   17383435:
     template: Sapphire_Quadav
-    at:       [289.558, 40.808, 69.111, 69]
+    region:   n_10
     level:    [69, 72]
   17383436:
     template: Darksteel_Quadav
-    at:       [271.269, 41.748, 65.587, 127]
+    region:   nw_12
     level:    [69, 72]
   17383437:
     template: Sapphire_Quadav
-    at:       [268.090, 40.768, 63.624, 57]
+    region:   nw_12
     level:    [69, 72]
   17383438:
     template: Ancient_Quadav
-    at:       [274.419, 42.624, 69.813, 127]
+    region:   n_14
     level:    [69, 72]
   17383439:
     template: Platinum_Quadav
-    at:       [278.450, 42.624, 75.634, 104]
+    region:   n_14
     level:    [69, 72]
   17383440:
     template: Adaman_Quadav
-    at:       [283.000, 43.000, 95.000, 9]
+    region:   n_16
     level:    [72, 74]
   17383441:
     template: Ruby_Quadav
-    at:       [276.362, 42.624, 93.686, 127]
+    region:   n_16
     level:    [72, 74]
   17383442:
     template: Diamond_Quadav
-    at:       [277.930, 42.625, 96.177, 127]
+    region:   n_16
     level:    [75, 75]
   17383443:
     template: ZaDha_Adamantking_QD
     script:   ZaDha_Adamantking
-    at:       [281.000, 43.000, 96.000, 127]
+    region:   n_16
     level:    [85, 85]
   17383444:
     template: Diamond_Quadav

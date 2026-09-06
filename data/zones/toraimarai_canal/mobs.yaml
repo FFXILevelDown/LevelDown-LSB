@@ -1349,327 +1349,330 @@ spawns:
   17469446:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-261.000, 15.571, 259.330, 96]
+    region:   nw_6
     level:    [45, 47]
   17469447:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-259.600, 15.498, 242.731, 63]
+    region:   nw_6
     level:    [45, 47]
   17469448:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-175.000, 15.500, 216.240, 195]
+    region:   nw_8
     level:    [45, 47]
   17469449:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-175.100, 15.500, 198.235, 64]
+    region:   nw_8
     level:    [45, 47]
   17469450:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-175.900, 15.500, 223.949, 181]
+    region:   nw_8
     level:    [47, 49]
   17469451:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-175.200, 15.500, 198.257, 65]
+    region:   nw_8
     level:    [47, 49]
   17469452:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-176.100, 15.500, 187.574, 74]
+    region:   nw_16
     level:    [49, 52]
   17469453:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-175.400, 15.498, 197.251, 191]
+    region:   nw_8
     level:    [49, 52]
   17469454:
     template: Fallen_Knight
-    at:       [-175.400, 15.510, 201.878, 194]
+    region:   nw_8
     level:    [52, 55]
   17469455:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-185.200, 15.498, 181.027, 185]
+    region:   nw_16
     level:    [45, 47]
   17469456:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-185.900, 15.500, 138.270, 192]
+    region:   nw_16
     level:    [45, 47]
   17469457:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-174.232, 15.500, 193.291, 80]
+    region:   nw_16
     level:    [47, 49]
   17469458:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-185.500, 15.503, 148.294, 70]
+    region:   nw_16
     level:    [47, 49]
   17469459:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-184.491, 15.500, 171.092, 52]
+    region:   nw_16
     level:    [49, 52]
   17469460:
     template: Fallen_Knight
-    at:       [-185.200, 15.498, 164.343, 192]
+    region:   nw_8
     level:    [52, 55]
   17469461:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-145.700, 15.498, 134.701, 127]
+    region:   n_22
     level:    [45, 47]
   17469462:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-134.700, 15.500, 134.677, 255]
+    region:   n_22
     level:    [45, 47]
   17469463:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-175.000, 15.508, 124.352, 59]
+    region:   n_22
     level:    [47, 49]
   17469464:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-137.500, 15.498, 134.632, 127]
+    region:   n_22
     level:    [47, 49]
   17469465:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-164.800, 15.500, 135.544, 118]
+    region:   n_22
     level:    [49, 52]
   17469466:
     template: Fallen_Knight
-    at:       [-138.100, 15.500, 134.660]
+    region:   n_22
     level:    [52, 55]
   17469467:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-42.330, 15.501, 134.764, 127]
+    region:   n_27
     level:    [45, 47]
   17469468:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-24.220, 15.508, 111.875, 188]
+    region:   n_27
     level:    [45, 47]
   17469469:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-34.360, 15.500, 135.610, 140]
+    region:   n_27
     level:    [47, 49]
   17469470:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-34.140, 15.500, 135.649, 138]
+    region:   n_27
     level:    [47, 49]
   17469471:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-24.200, 15.500, 86.866, 195]
+    region:   n_27
     level:    [49, 52]
   17469472:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-60.450, 15.500, 135.544]
+    region:   n_27
     level:    [49, 52]
   17469473:
     template: Fallen_Knight
-    at:       [-84.916, 15.500, 64.231, 10]
+    region:   n_27
     level:    [52, 55]
   17469474:
     template: Fallen_Knight
-    at:       [-23.120, 15.500, 105.876, 192]
+    region:   n_27
     level:    [52, 55]
   17469475:
     template: Lich
-    at:       [-43.652, 15.500, 135.374, 10]
+    region:   n_27
     level:    [54, 57]
   17469476:
     template: Lich
-    at:       [-94.759, 15.500, 101.384, 192]
+    region:   n_27
     level:    [54, 57]
   17469477:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-64.690, 15.522, 42.027, 192]
+    region:   c_38
     level:    [45, 47]
   17469478:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-64.770, 15.498, 37.384, 191]
+    region:   c_38
     level:    [45, 47]
   17469479:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-64.040, 15.502, 45.104, 203]
+    region:   c_38
     level:    [47, 49]
   17469480:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-64.790, 15.498, 22.609, 188]
+    region:   c_38
     level:    [47, 49]
   17469481:
     template: Bigclaw_aggro
     script:   Bigclaw
+    region:   c_38
     level:    [49, 52]
   17469482:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-64.330, 15.503, 44.885, 203]
+    region:   c_38
     level:    [49, 52]
   17469483:
     template: Fallen_Knight
-    at:       [-65.150, 15.500, 33.464, 191]
+    region:   c_38
     level:    [52, 55]
   17469484:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-55.360, 15.500, 34.176, 63]
+    region:   c_45
     level:    [45, 47]
   17469485:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-55.420, 15.500, 33.251, 193]
+    region:   c_45
     level:    [45, 47]
   17469486:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-60.770, 20.778, 23.825, 199]
+    region:   c_45
     level:    [47, 49]
   17469487:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-49.200, 15.500, 53.825, 110]
+    region:   c_45
     level:    [47, 49]
   17469488:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-49.050, 15.500, 53.816, 110]
+    region:   c_45
     level:    [49, 52]
   17469489:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-54.550, 15.500, 51.575, 118]
+    region:   c_45
     level:    [49, 52]
   17469490:
     template: Fallen_Knight
-    at:       [-48.090, 15.529, 54.685, 79]
+    region:   c_45
     level:    [52, 55]
   17469491:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-15.520, 15.505, 122.182, 53]
+    region:   n_52
     level:    [45, 47]
   17469492:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-15.350, 15.498, 136.229, 192]
+    region:   n_52
     level:    [45, 47]
   17469493:
     template: Hell_Bat_TC
     script:   Hell_Bat
+    region:   n_52
     level:    [47, 49]
   17469494:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-32.570, 15.500, 144.388, 243]
+    region:   n_52
     level:    [47, 49]
   17469495:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-15.170, 15.508, 121.668, 67]
+    region:   n_52
     level:    [49, 52]
   17469496:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-31.520, 15.498, 144.483, 128]
+    region:   n_52
     level:    [49, 52]
   17469497:
     template: Fallen_Knight
-    at:       [-18.660, 15.510, 144.389, 139]
+    region:   n_52
     level:    [52, 55]
   17469498:
     template: Canal_Bats_TC
     script:   Canal_Bats
-    at:       [-64.270, 15.500, 153.089, 190]
+    region:   n_59
     level:    [45, 47]
   17469499:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-64.680, 15.500, 158.220, 63]
+    region:   n_59
     level:    [47, 49]
   17469500:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-65.000, 15.500, 148.781, 199]
+    region:   n_59
     level:    [49, 52]
   17469501:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-86.730, 15.508, 144.345, 124]
+    region:   n_59
     level:    [49, 52]
   17469502:
     template: Fallen_Knight
-    at:       [-67.070, 15.500, 147.904, 120]
+    region:   n_59
     level:    [52, 55]
   17469503:
     template: Dark_Aspic
-    at:       [-215.800, 15.498, 212.582, 167]
+    region:   region_92
     level:    [53, 55]
   17469504:
     template: Dark_Aspic
-    at:       [-207.057, 15.500, 212.578, 127]
+    region:   region_91
     level:    [53, 55]
   17469505:
     template: Dark_Aspic
-    at:       [-137.700, 15.498, 150.932, 134]
+    region:   region_90
     level:    [53, 55]
   17469506:
     template: Dark_Aspic
+    region:   region_90
     level:    [53, 55]
   17469507:
     template: Dark_Aspic
-    at:       [-95.040, 15.500, -28.836, 156]
+    region:   region_93
     level:    [53, 55]
   17469508:
     template: Dark_Aspic
-    at:       [-17.900, 15.498, -1.197, 141]
+    region:   region_94
     level:    [53, 55]
   17469509:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-23.990, 15.586, -2.165, 165]
+    region:   c_69
     level:    [54, 57]
   17469510:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-30.600, 15.501, -6.825, 99]
+    region:   c_69
     level:    [54, 57]
   17469511:
     template: Fallen_Knight
-    at:       [20.912, 16.499, 55.118, 109]
+    region:   c_71
     level:    [52, 55]
   17469512:
     template: Fallen_Knight
-    at:       [28.697, 16.024, 57.175, 224]
+    region:   c_71
     level:    [52, 55]
   17469513:
     template: Lich
-    at:       [17.000, 16.500, 65.000, 113]
+    region:   c_71
     level:    [54, 57]
   17469514:
     template: Lich
-    at:       [23.000, 16.468, 65.000, 127]
+    region:   c_71
     level:    [54, 57]
   17469515:
     template: Girtab
-    at:       [13.946, 16.500, 59.748, 176]
+    region:   c_71
     level:    [58, 60]
   17469516:
     template: Magic_Sludge
@@ -1678,1017 +1681,1018 @@ spawns:
   17469517:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-115.300, 15.500, -19.090, 127]
+    region:   c_77
     level:    [47, 49]
   17469518:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-119.100, 15.498, -19.396, 255]
+    region:   c_77
     level:    [47, 49]
   17469519:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-201.900, 15.489, -15.026, 128]
+    region:   w_79
     level:    [47, 49]
   17469520:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-191.900, 15.498, -15.067, 128]
+    region:   w_79
     level:    [47, 49]
   17469521:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-212.000, 15.501, -12.331, 147]
+    region:   w_79
     level:    [47, 49]
   17469522:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-198.700, 15.498, -15.232, 255]
+    region:   w_79
     level:    [49, 52]
   17469523:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-215.400, 15.520, -2.653, 200]
+    region:   w_79
     level:    [49, 52]
   17469524:
     template: Fallen_Knight
-    at:       [-214.300, 15.500, -11.925, 136]
+    region:   w_79
     level:    [52, 55]
   17469525:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-185.600, 15.501, -26.139, 187]
+    region:   w_85
     level:    [47, 49]
   17469526:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-184.900, 15.505, -42.891, 180]
+    region:   w_85
     level:    [47, 49]
   17469527:
     template: Hell_Bat_TC
     script:   Hell_Bat
+    region:   w_85
     level:    [47, 49]
   17469528:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-203.200, 15.500, -25.318, 1]
+    region:   w_85
     level:    [49, 52]
   17469529:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-185.600, 15.501, -26.565, 53]
+    region:   w_85
     level:    [49, 52]
   17469530:
     template: Fallen_Knight
-    at:       [-257.000, 15.500, -15.000, 109]
+    region:   w_79
     level:    [52, 55]
   17469531:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-224.600, 15.500, 1.110, 190]
+    region:   w_91
     level:    [47, 49]
   17469532:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-183.200, 20.000, -20.791, 239]
+    region:   w_91
     level:    [47, 49]
   17469533:
     template: Bigclaw_aggro
     script:   Bigclaw
-    at:       [-224.600, 15.500, -8.578, 203]
+    region:   w_91
     level:    [49, 52]
   17469534:
     template: Fallen_Knight
-    at:       [-233.300, 15.500, -15.079, 109]
+    region:   w_91
     level:    [52, 55]
   17469535:
     template: Dark_Aspic
-    at:       [-133.200, 15.500, -72.178, 131]
+    region:   c_95
     level:    [53, 55]
   17469536:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-128.700, 15.513, -71.991, 254]
+    region:   c_95
     level:    [54, 57]
   17469537:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-143.500, 15.583, -77.149, 97]
+    region:   c_95
     level:    [54, 57]
   17469538:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-258.800, 15.534, -60.064, 39]
+    region:   w_98
     level:    [47, 49]
   17469539:
     template: Hell_Bat_TC
     script:   Hell_Bat
-    at:       [-262.800, 15.472, -59.491, 134]
+    region:   w_98
     level:    [47, 49]
   17469540:
     template: Girtab
-    at:       [-319.600, 13.614, -0.178, 192]
+    region:   w_100
     level:    [58, 60]
   17469541:
     template: Scavenger_Crab
-    at:       [-319.600, 13.498, -49.063, 64]
+    region:   w_100
     level:    [60, 62]
   17469542:
     template: Scavenger_Crab
-    at:       [-319.700, 13.501, 1.036, 63]
+    region:   w_100
     level:    [60, 62]
   17469543:
     template: Scavenger_Crab
-    at:       [-337.200, 13.498, -39.492, 128]
+    region:   w_100
     level:    [60, 62]
   17469544:
     template: Scavenger_Crab
-    at:       [-322.000, 13.456, -49.365, 121]
+    region:   w_100
     level:    [60, 62]
   17469545:
     template: Scavenger_Crab
-    at:       [-314.500, 13.498, -39.504]
+    region:   w_100
     level:    [60, 62]
   17469546:
     template: Scavenger_Crab
-    at:       [-320.100, 15.869, -27.361, 192]
+    region:   w_100
     level:    [60, 62]
   17469547:
     template: Fleshcraver
-    at:       [-339.000, 19.239, 59.130, 27]
+    region:   w_107
     level:    [60, 62]
   17469548:
     template: Mindcraver
-    at:       [-338.000, 19.461, 59.311, 85]
+    region:   w_107
     level:    [60, 62]
   17469549:
     template: Fleshcraver
-    at:       [-299.800, 24.395, 53.792, 155]
+    region:   w_109
     level:    [60, 62]
   17469550:
     template: Fleshcraver
-    at:       [-299.700, 24.497, 57.545, 124]
+    region:   w_109
     level:    [60, 62]
   17469551:
     template: Mindcraver
-    at:       [-297.400, 24.490, 60.532, 90]
+    region:   w_109
     level:    [60, 62]
   17469552:
     template: Mindcraver
-    at:       [-300.500, 24.500, 65.093, 181]
+    region:   w_109
     level:    [60, 62]
   17469553:
     template: Rotten_Sod
-    at:       [-273.000, 23.878, 62.292, 21]
+    region:   w_109
     level:    [58, 60]
   17469554:
     template: Makara
-    at:       [-177.900, 20.000, 146.313, 189]
+    region:   nw_114
     level:    [50, 51]
   17469555:
     template: Makara
-    at:       [-180.600, 20.774, 183.412, 61]
+    region:   nw_114
     level:    [49, 52]
   17469556:
     template: Makara
-    at:       [-177.700, 20.000, 132.550, 66]
+    region:   nw_114
     level:    [49, 52]
   17469557:
     template: Makara
-    at:       [-177.300, 20.000, 141.899, 189]
+    region:   nw_114
     level:    [49, 52]
   17469558:
     template: Makara
-    at:       [-80.720, 20.000, 139.113, 126]
+    region:   n_118
     level:    [49, 52]
   17469559:
     template: Makara
-    at:       [-66.360, 20.000, 142.257, 254]
+    region:   n_118
     level:    [49, 52]
   17469560:
     template: Makara
-    at:       [-60.850, 20.000, 145.815, 198]
+    region:   n_118
     level:    [49, 52]
   17469561:
     template: Makara
-    at:       [-55.290, 20.000, 142.190, 130]
+    region:   n_118
     level:    [49, 52]
   17469562:
     template: Makara
-    at:       [-38.260, 20.000, 58.975, 127]
+    region:   c_122
     level:    [49, 52]
   17469563:
     template: Makara
-    at:       [-94.700, 19.975, 59.582, 8]
+    region:   c_122
     level:    [49, 52]
   17469564:
     template: Makara
-    at:       [-64.170, 20.000, 56.038, 3]
+    region:   c_122
     level:    [49, 52]
   17469565:
     template: Makara
-    at:       [-27.330, 20.000, 59.399]
+    region:   c_122
     level:    [49, 52]
   17469566:
     template: Makara
-    at:       [-24.530, 20.000, 59.783, 253]
+    region:   c_122
     level:    [49, 52]
   17469567:
     template: Makara
-    at:       [-181.300, 21.002, 59.787, 128]
+    region:   w_127
     level:    [49, 52]
   17469568:
     template: Makara
-    at:       [-213.000, 21.002, 59.309, 250]
+    region:   w_127
     level:    [49, 52]
   17469569:
     template: Makara
-    at:       [-180.200, 21.002, 60.247]
+    region:   w_127
     level:    [49, 52]
   17469570:
     template: Makara
-    at:       [-200.700, 21.002, 60.422, 255]
+    region:   w_127
     level:    [49, 52]
   17469571:
     template: Makara
-    at:       [-179.000, 20.000, -44.751, 192]
+    region:   w_131
     level:    [49, 52]
   17469572:
     template: Makara
-    at:       [-179.100, 20.000, -36.561, 192]
+    region:   w_131
     level:    [49, 52]
   17469573:
     template: Makara
-    at:       [-179.800, 20.000, -21.121, 188]
+    region:   w_133
     level:    [49, 52]
   17469574:
     template: Makara
-    at:       [-185.000, 20.000, -19.329, 140]
+    region:   w_133
     level:    [49, 52]
   17469575:
     template: Bouncing_Ball
-    at:       [-134.900, 21.986, 18.316, 84]
+    region:   c_136
     level:    [64, 67]
   17469576:
     template: Bouncing_Ball
-    at:       [-148.900, 21.537, 22.907, 185]
+    region:   c_136
     level:    [64, 67]
   17469577:
     template: Bouncing_Ball
-    at:       [-133.300, 21.881, 21.310, 101]
+    region:   c_136
     level:    [64, 67]
   17469578:
     template: Canal_Moocher
-    at:       [-138.800, 22.500, 24.550, 60]
+    region:   c_136
     level:    [73, 74]
   17469579:
     template: Stygian_Pugil
-    at:       [-315.300, 16.000, 19.311, 163]
+    region:   w_139
     level:    [63, 65]
   17469580:
     template: Stygian_Pugil
-    at:       [-327.700, 16.000, 7.621, 164]
+    region:   w_140
     level:    [63, 65]
   17469581:
     template: Stygian_Pugil
-    at:       [-315.900, 16.000, -45.784, 123]
+    region:   w_141
     level:    [63, 65]
   17469582:
     template: Stygian_Pugil
-    at:       [-331.900, 15.998, -47.748, 5]
+    region:   w_142
     level:    [63, 65]
   17469583:
     template: Stygian_Pugil
-    at:       [-303.000, 21.002, -21.481, 108]
+    region:   region_95
     level:    [63, 65]
   17469584:
     template: Stygian_Pugil
-    at:       [-304.600, 21.000, -18.027, 254]
+    region:   region_95
     level:    [63, 65]
   17469585:
     template: Stygian_Pugil
-    at:       [-328.900, 17.500, -7.620, 151]
+    region:   region_96
     level:    [63, 65]
   17469586:
     template: Stygian_Pugil
-    at:       [-338.100, 20.650, -17.672, 41]
+    region:   region_96
     level:    [63, 65]
   17469587:
     template: Oni_Carcass
-    at:       [-378.200, 21.997, -15.414, 16]
+    region:   w_147
     level:    [68, 70]
   17469588:
     template: Makara
-    at:       [-60.750, 20.221, 25.932, 190]
+    region:   c_148
     level:    [49, 52]
   17469589:
     template: Makara
-    at:       [-60.630, 20.007, 4.110, 192]
+    region:   c_148
     level:    [49, 52]
   17469590:
     template: Makara
-    at:       [-60.280, 21.000, 17.129, 63]
+    region:   c_148
     level:    [49, 52]
   17469591:
     template: Makara
-    at:       [-60.230, 20.006, 30.885, 192]
+    region:   c_148
     level:    [49, 52]
   17469592:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-43.520, 15.500, -25.315]
+    region:   c_152
     level:    [54, 57]
   17469593:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-30.180, 15.501, -25.334]
+    region:   c_152
     level:    [54, 57]
   17469594:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-22.360, 15.501, -25.596, 3]
+    region:   c_152
     level:    [54, 57]
   17469595:
     template: Bloodsucker_TC
     script:   Bloodsucker
-    at:       [-25.320, 15.515, -25.315, 131]
+    region:   c_152
     level:    [54, 57]
   17469596:
     template: Blackwater_Pugil
-    at:       [-114.200, 21.002, -100.840, 127]
+    region:   s_156
     level:    [96, 97]
   17469597:
     template: Blackwater_Pugil
-    at:       [-98.960, 21.002, -97.555, 65]
+    region:   s_156
     level:    [96, 97]
   17469598:
     template: Blackwater_Pugil
-    at:       [-83.160, 21.002, -100.440]
+    region:   s_158
     level:    [96, 97]
   17469599:
     template: Blackwater_Pugil
-    at:       [-123.600, 21.002, -100.230]
+    region:   s_158
     level:    [96, 97]
   17469600:
     template: Blackwater_Pugil
-    at:       [-26.720, 21.002, -140.210]
+    region:   s_160
     level:    [96, 97]
   17469601:
     template: Blackwater_Pugil
-    at:       [-22.260, 21.002, -141.420, 13]
+    region:   s_160
     level:    [96, 97]
   17469602:
     template: Blackwater_Pugil
-    at:       [-43.400, 21.002, -139.630, 255]
+    region:   s_160
     level:    [96, 97]
   17469603:
     template: Blackwater_Pugil
-    at:       [-19.050, 21.002, -160.930, 64]
+    region:   s_163
     level:    [96, 97]
   17469604:
     template: Plunderer_Crab
-    at:       [-176.900, 21.559, -90.912, 230]
+    region:   sw_164
     level:    [95, 97]
   17469605:
     template: Plunderer_Crab
-    at:       [-177.200, 21.530, -108.540, 5]
+    region:   sw_164
     level:    [95, 97]
   17469606:
     template: Plunderer_Crab
-    at:       [-182.300, 21.524, -90.630, 128]
+    region:   sw_164
     level:    [95, 97]
   17469607:
     template: Plunderer_Crab
-    at:       [-184.800, 21.943, -136.680, 25]
+    region:   sw_167
     level:    [95, 97]
   17469608:
     template: Plunderer_Crab
-    at:       [-180.100, 21.568, -148.140, 51]
+    region:   sw_167
     level:    [95, 97]
   17469609:
     template: Plunderer_Crab
-    at:       [-188.600, 21.568, -136.870, 148]
+    region:   sw_167
     level:    [95, 97]
   17469610:
     template: Plunderer_Crab
-    at:       [-69.100, 21.528, -182.140, 67]
+    region:   s_170
     level:    [95, 97]
   17469611:
     template: Plunderer_Crab
-    at:       [-55.680, 21.516, -186.970, 229]
+    region:   s_170
     level:    [95, 97]
   17469612:
     template: Plunderer_Crab
-    at:       [-57.210, 21.986, -175.360, 153]
+    region:   s_170
     level:    [95, 97]
   17469613:
     template: Blackwater_Pugil
-    at:       [30.840, 16.000, -152.110, 135]
+    region:   s_173
     level:    [96, 97]
   17469614:
     template: Blackwater_Pugil
-    at:       [55.415, 16.000, -152.580, 188]
+    region:   s_174
     level:    [96, 97]
   17469615:
     template: Blackwater_Pugil
-    at:       [31.211, 16.002, -214.960, 61]
+    region:   s_175
     level:    [96, 97]
   17469616:
     template: Blackwater_Pugil
-    at:       [59.001, 16.000, -204.340, 229]
+    region:   s_176
     level:    [96, 97]
   17469617:
     template: Blackwater_Pugil
-    at:       [23.510, 17.500, -193.050, 4]
+    region:   region_97
     level:    [96, 97]
   17469618:
     template: Blackwater_Pugil
-    at:       [25.121, 17.499, -196.150, 121]
+    region:   region_97
     level:    [96, 97]
   17469619:
     template: Blackwater_Pugil
-    at:       [51.506, 21.023, -178.310, 233]
+    region:   region_98
     level:    [96, 97]
   17469620:
     template: Blackwater_Pugil
-    at:       [59.535, 18.554, -187.750, 58]
+    region:   region_98
     level:    [96, 97]
   17469621:
     template: Plunderer_Crab
-    at:       [101.570, 21.680, -188.430, 158]
+    region:   se_181
     level:    [95, 97]
   17469622:
     template: Plunderer_Crab
-    at:       [91.172, 21.507, -177.180, 100]
+    region:   se_181
     level:    [95, 97]
   17469623:
     template: Plunderer_Crab
-    at:       [95.061, 21.999, -182.640, 48]
+    region:   se_181
     level:    [95, 97]
   17469624:
     template: Plunderer_Crab
-    at:       [99.625, 21.502, -189.360, 3]
+    region:   se_181
     level:    [95, 97]
   17469625:
     template: Blackwater_Pugil
-    at:       [60.217, 21.002, 66.414, 192]
+    region:   c_185
     level:    [96, 97]
   17469626:
     template: Blackwater_Pugil
-    at:       [87.530, 20.208, 59.418, 255]
+    region:   c_185
     level:    [96, 97]
   17469627:
     template: Blackwater_Pugil
-    at:       [61.977, 21.002, 58.971, 127]
+    region:   c_185
     level:    [96, 97]
   17469628:
     template: Blackwater_Pugil
-    at:       [82.974, 20.902, 59.589, 126]
+    region:   c_185
     level:    [96, 97]
   17469629:
     template: Mousse_SSG
     script:   Mousse
-    at:       [61.374, 21.875, 132.970, 156]
+    region:   n_189
     level:    [63, 65]
   17469630:
     template: Mousse_SSG
     script:   Mousse
-    at:       [56.058, 21.989, 142.837, 89]
+    region:   n_189
     level:    [63, 65]
   17469631:
     template: Mousse_SSG
     script:   Mousse
-    at:       [53.868, 21.570, 135.233, 103]
+    region:   n_189
     level:    [63, 65]
   17469632:
     template: Konjac
-    at:       [60.000, 22.500, 135.400, 60]
+    region:   n_189
     level:    [78, 78]
   17469633:
     template: Blackwater_Pugil
-    at:       [22.808, 21.002, 16.864, 205]
+    region:   c_193
     level:    [96, 97]
   17469634:
     template: Blackwater_Pugil
-    at:       [20.944, 20.975, -38.118, 196]
+    region:   c_193
     level:    [96, 97]
   17469635:
     template: Blackwater_Pugil
-    at:       [22.659, 21.002, 17.326, 205]
+    region:   c_195
     level:    [96, 97]
   17469636:
     template: Blackwater_Pugil
-    at:       [26.127, 21.002, 19.840, 232]
+    region:   c_195
     level:    [96, 97]
   17469637:
     template: Deviling_Bats
-    at:       [37.834, 15.517, -63.837, 32]
+    region:   c_197
     level:    [95, 97]
   17469638:
     template: Deviling_Bats
-    at:       [34.520, 15.498, -64.535, 132]
+    region:   c_197
     level:    [95, 97]
   17469639:
     template: Sodden_Bones
-    at:       [37.567, 15.519, -54.834, 223]
+    region:   c_197
     level:    [96, 98]
   17469640:
     template: Sodden_Bones
-    at:       [32.125, 15.500, -69.991, 68]
+    region:   c_197
     level:    [96, 98]
   17469641:
     template: Drowned_Bones
-    at:       [14.972, 15.512, -97.315, 65]
+    region:   c_197
     level:    [96, 98]
   17469642:
     template: Drowned_Bones
-    at:       [23.985, 15.500, -92.140, 180]
+    region:   c_197
     level:    [96, 98]
   17469643:
     template: Starborer
-    at:       [39.701, 15.897, -171.830, 64]
+    region:   s_203
     level:    [96, 97]
   17469644:
     template: Starborer
-    at:       [39.650, 13.498, -145.440, 192]
+    region:   s_203
     level:    [96, 97]
   17469645:
     template: Starborer
-    at:       [39.577, 13.500, -204.190, 64]
+    region:   s_203
     level:    [96, 97]
   17469646:
     template: Starborer
-    at:       [63.516, 11.498, -199.810, 63]
+    region:   s_203
     level:    [96, 97]
   17469647:
     template: Starborer
-    at:       [52.981, 13.503, -199.900, 128]
+    region:   s_203
     level:    [96, 97]
   17469648:
     template: Starborer
-    at:       [45.771, 13.498, -200.010, 128]
+    region:   s_203
     level:    [96, 97]
   17469649:
     template: Starborer
-    at:       [39.512, 17.361, -179.430, 63]
+    region:   s_203
     level:    [96, 97]
   17469650:
     template: Deviling_Bats
-    at:       [98.198, 15.500, -225.440, 127]
+    region:   se_210
     level:    [95, 97]
   17469651:
     template: Deviling_Bats
-    at:       [91.984, 15.538, -216.520, 103]
+    region:   se_210
     level:    [95, 97]
   17469652:
     template: Sodden_Bones
-    at:       [91.427, 15.500, -223.480, 30]
+    region:   se_210
     level:    [96, 98]
   17469653:
     template: Sodden_Bones
-    at:       [110.290, 15.519, -215.520, 245]
+    region:   se_210
     level:    [96, 98]
   17469654:
     template: Drowned_Bones
-    at:       [154.130, 15.319, -224.960, 90]
+    region:   se_210
     level:    [96, 98]
   17469655:
     template: Drowned_Bones
-    at:       [155.430, 14.706, -223.180, 69]
+    region:   se_210
     level:    [96, 98]
   17469656:
     template: Sodden_Bones
-    at:       [102.670, 16.496, -261.040, 195]
+    region:   se_216
     level:    [96, 98]
   17469657:
     template: Sodden_Bones
-    at:       [105.610, 16.500, -259.980, 39]
+    region:   se_216
     level:    [96, 98]
   17469658:
     template: Drowned_Bones
-    at:       [105.540, 16.011, -253.810, 160]
+    region:   se_216
     level:    [96, 98]
   17469659:
     template: Drowned_Bones
-    at:       [100.580, 16.500, -258.100, 167]
+    region:   se_216
     level:    [96, 98]
   17469660:
     template: Rapier_Scorpion
-    at:       [104.990, 16.006, -252.950, 35]
+    region:   se_216
     level:    [96, 98]
   17469661:
     template: Impish_Bats
-    at:       [60.150, 15.524, -96.193, 219]
+    region:   c_221
     level:    [58, 60]
   17469662:
     template: Impish_Bats
-    at:       [61.172, 15.532, -100.480, 40]
+    region:   c_221
     level:    [58, 60]
   17469663:
     template: Impish_Bats
-    at:       [82.842, 20.347, -32.869, 143]
+    region:   c_223
     level:    [58, 60]
   17469664:
     template: Impish_Bats
-    at:       [74.830, 20.253, -45.081, 43]
+    region:   c_223
     level:    [58, 60]
   17469665:
     template: Impish_Bats
-    at:       [90.355, 19.708, -30.055, 227]
+    region:   c_223
     level:    [58, 60]
   17469666:
     template: Hinge_Oil
-    at:       [77.995, 24.999, -25.224, 201]
+    region:   c_226
     level:    [65, 65]
   17469667:
     template: Hinge_Oil
-    at:       [75.444, 23.000, -52.520, 87]
+    region:   c_227
     level:    [65, 65]
   17469668:
     template: Hinge_Oil
-    at:       [64.984, 25.000, -37.398, 12]
+    region:   c_228
     level:    [65, 65]
   17469669:
     template: Hinge_Oil
-    at:       [93.262, 21.999, -42.956, 71]
+    region:   c_229
     level:    [65, 65]
   17469670:
     template: Deviling_Bats
-    at:       [148.580, 15.500, 60.500, 116]
+    region:   e_230
     level:    [95, 97]
   17469671:
     template: Deviling_Bats
-    at:       [86.533, 15.500, 55.453, 128]
+    region:   e_230
     level:    [95, 97]
   17469672:
     template: Sodden_Bones
-    at:       [103.630, 15.498, 67.329]
+    region:   e_230
     level:    [96, 98]
   17469673:
     template: Sodden_Bones
-    at:       [128.460, 15.500, 55.509, 255]
+    region:   e_230
     level:    [96, 98]
   17469674:
     template: Drowned_Bones
-    at:       [109.300, 15.500, 55.437]
+    region:   e_230
     level:    [96, 98]
   17469675:
     template: Drowned_Bones
-    at:       [114.170, 15.500, 55.400, 127]
+    region:   e_230
     level:    [96, 98]
   17469676:
     template: Sodden_Bones
-    at:       [140.050, 16.499, 23.306, 108]
+    region:   e_236
     level:    [96, 98]
   17469677:
     template: Sodden_Bones
-    at:       [137.280, 16.499, 20.171, 140]
+    region:   e_236
     level:    [96, 98]
   17469678:
     template: Drowned_Bones
-    at:       [140.380, 16.499, 21.890, 164]
+    region:   e_236
     level:    [96, 98]
   17469679:
     template: Drowned_Bones
-    at:       [146.280, 16.000, 14.824, 224]
+    region:   e_236
     level:    [96, 98]
   17469680:
     template: Rapier_Scorpion
-    at:       [148.510, 16.031, 22.530, 197]
+    region:   e_236
     level:    [96, 98]
   17469681:
     template: Deviling_Bats
-    at:       [218.400, 15.496, 49.468, 60]
+    region:   e_241
     level:    [95, 97]
   17469682:
     template: Deviling_Bats
-    at:       [218.860, 15.463, 55.331, 69]
+    region:   e_241
     level:    [95, 97]
   17469683:
     template: Deviling_Bats
-    at:       [191.940, 15.527, 59.147]
+    region:   e_241
     level:    [95, 97]
   17469684:
     template: Deviling_Bats
-    at:       [265.340, 15.498, -7.905, 103]
+    region:   e_244
     level:    [95, 97]
   17469685:
     template: Deviling_Bats
-    at:       [263.820, 15.500, -2.678, 255]
+    region:   e_244
     level:    [95, 97]
   17469686:
     template: Sodden_Bones
-    at:       [267.130, 15.498, -5.259, 26]
+    region:   e_244
     level:    [96, 98]
   17469687:
     template: Sodden_Bones
-    at:       [263.920, 15.531, -8.660, 2]
+    region:   e_244
     level:    [96, 98]
   17469688:
     template: Drowned_Bones
-    at:       [215.880, 15.520, 11.887, 52]
+    region:   e_244
     level:    [96, 98]
   17469689:
     template: Drowned_Bones
-    at:       [232.490, 15.505, -15.623, 139]
+    region:   e_244
     level:    [96, 98]
   17469690:
     template: Starborer
-    at:       [280.740, 13.565, -80.498, 127]
+    region:   e_250
     level:    [96, 97]
   17469691:
     template: Starborer
-    at:       [320.270, 13.498, -79.941, 64]
+    region:   e_250
     level:    [96, 97]
   17469692:
     template: Starborer
-    at:       [280.380, 13.500, -79.905, 64]
+    region:   e_250
     level:    [96, 97]
   17469693:
     template: Starborer
-    at:       [296.060, 17.270, -80.278, 128]
+    region:   e_250
     level:    [96, 97]
   17469694:
     template: Starborer
-    at:       [319.950, 13.564, -80.202]
+    region:   e_250
     level:    [96, 97]
   17469695:
     template: Starborer
-    at:       [280.570, 13.505, -74.573, 188]
+    region:   e_250
     level:    [96, 97]
   17469696:
     template: Starborer
-    at:       [305.850, 17.111, -80.010, 127]
+    region:   e_250
     level:    [96, 97]
   17469697:
     template: Blackwater_Pugil
-    at:       [283.230, 20.999, -19.790, 255]
+    region:   e_257
     level:    [96, 97]
   17469698:
     template: Blackwater_Pugil
-    at:       [286.000, 21.000, -19.554, 127]
+    region:   e_257
     level:    [96, 97]
   17469699:
     template: Blackwater_Pugil
-    at:       [285.830, 21.000, -19.363, 128]
+    region:   e_257
     level:    [96, 97]
   17469700:
     template: Blackwater_Pugil
-    at:       [277.750, 21.000, -19.500]
+    region:   e_257
     level:    [96, 97]
   17469701:
     template: Blackwater_Pugil
-    at:       [301.860, 21.003, -67.757, 253]
+    region:   region_99
     level:    [96, 97]
   17469702:
     template: Blackwater_Pugil
-    at:       [299.960, 21.305, -71.077, 215]
+    region:   region_99
     level:    [96, 97]
   17469703:
     template: Blackwater_Pugil
-    at:       [272.600, 15.998, -72.207, 155]
+    region:   e_263
     level:    [96, 97]
   17469704:
     template: Blackwater_Pugil
-    at:       [332.390, 16.000, -67.947, 163]
+    region:   e_264
     level:    [96, 97]
   17469705:
     template: Blackwater_Pugil
-    at:       [306.210, 18.500, -83.663, 138]
+    region:   region_100
     level:    [96, 97]
   17469706:
     template: Blackwater_Pugil
-    at:       [312.610, 17.500, -87.714, 88]
+    region:   region_100
     level:    [96, 97]
   17469707:
     template: Blackwater_Pugil
-    at:       [273.150, 15.998, -83.324, 179]
+    region:   e_267
     level:    [96, 97]
   17469708:
     template: Blackwater_Pugil
-    at:       [331.170, 16.000, -91.986, 229]
+    region:   e_268
     level:    [96, 97]
   17469709:
     template: Poroggo_Excavator
-    at:       [258.980, 21.002, -160.960, 64]
+    region:   se_269
     level:    [98, 99]
   17469710:
     template: Flume_Toad
-    at:       [293.680, 21.002, -138.730, 109]
+    region:   se_270
     level:    [94, 96]
   17469711:
     template: Flume_Toad
-    at:       [283.840, 21.002, -139.770, 127]
+    region:   se_270
     level:    [94, 96]
   17469712:
     template: Flume_Toad
-    at:       [266.580, 21.002, -140.170, 126]
+    region:   se_270
     level:    [94, 96]
   17469713:
     template: Flume_Toad
-    at:       [293.560, 21.002, -139.210, 104]
+    region:   se_270
     level:    [94, 96]
   17469714:
     template: Flume_Toad
-    at:       [268.690, 21.002, -140.500, 254]
+    region:   se_270
     level:    [94, 96]
   17469715:
     template: Flume_Toad
-    at:       [260.520, 21.002, -180.650, 128]
+    region:   se_275
     level:    [94, 96]
   17469716:
     template: Flume_Toad
-    at:       [243.880, 21.002, -180.820, 127]
+    region:   se_275
     level:    [94, 96]
   17469717:
     template: Flume_Toad
-    at:       [253.710, 21.002, -180.970, 128]
+    region:   se_275
     level:    [94, 96]
   17469718:
     template: Poroggo_Excavator
-    at:       [308.620, 21.531, -177.690, 215]
+    region:   se_278
     level:    [98, 99]
   17469719:
     template: Flume_Toad
-    at:       [302.860, 21.989, -176.050, 153]
+    region:   se_278
     level:    [94, 96]
   17469720:
     template: Flume_Toad
-    at:       [291.390, 21.556, -182.970, 95]
+    region:   se_278
     level:    [94, 96]
   17469721:
     template: Flume_Toad
-    at:       [291.470, 21.555, -180.550, 142]
+    region:   se_278
     level:    [94, 96]
   17469722:
     template: Poroggo_Excavator
-    at:       [148.970, 20.520, -219.650, 200]
+    region:   se_282
     level:    [98, 99]
   17469723:
     template: Flume_Toad
-    at:       [188.520, 21.002, -181.120, 127]
+    region:   se_283
     level:    [94, 96]
   17469724:
     template: Flume_Toad
-    at:       [188.720, 21.002, -180.940, 126]
+    region:   se_283
     level:    [94, 96]
   17469725:
     template: Flume_Toad
-    at:       [182.560, 21.002, -183.890, 208]
+    region:   se_285
     level:    [94, 96]
   17469726:
     template: Flume_Toad
-    at:       [181.150, 21.002, -190.180, 69]
+    region:   se_285
     level:    [94, 96]
   17469727:
     template: Flume_Toad
-    at:       [147.480, 20.194, -220.560, 138]
+    region:   se_287
     level:    [94, 96]
   17469728:
     template: Flume_Toad
-    at:       [150.230, 20.412, -219.460, 8]
+    region:   se_287
     level:    [94, 96]
   17469729:
     template: Flume_Toad
-    at:       [149.510, 20.506, -218.920, 147]
+    region:   se_287
     level:    [94, 96]
   17469730:
     template: Flume_Toad
-    at:       [139.770, 20.000, -219.770, 10]
+    region:   se_287
     level:    [94, 96]
   17469731:
     template: Poroggo_Excavator
-    at:       [184.940, 21.517, -252.450, 26]
+    region:   se_291
     level:    [98, 99]
   17469732:
     template: Flume_Toad
-    at:       [179.810, 21.899, -252.940, 25]
+    region:   se_291
     level:    [94, 96]
   17469733:
     template: Flume_Toad
-    at:       [179.750, 21.908, -252.920, 24]
+    region:   se_291
     level:    [94, 96]
   17469734:
     template: Flume_Toad
-    at:       [185.490, 21.981, -256.870, 158]
+    region:   se_291
     level:    [94, 96]
   17469735:
     template: Stygian_Pugil
-    at:       [220.610, 20.000, -134.200, 192]
+    region:   se_295
     level:    [63, 65]
   17469736:
     template: Stygian_Pugil
-    at:       [220.000, 20.000, -125.450, 64]
+    region:   se_295
     level:    [63, 65]
   17469737:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [235.260, 15.498, -146.610, 91]
+    region:   se_297
     level:    [62, 64]
   17469738:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [231.610, 15.500, -145.280, 196]
+    region:   se_297
     level:    [62, 64]
   17469739:
     template: Doom_Mage_TC
     script:   Doom_Mage
-    at:       [231.510, 15.519, -135.320, 192]
+    region:   se_297
     level:    [65, 67]
   17469740:
     template: Doom_Mage_TC
     script:   Doom_Mage
-    at:       [232.240, 15.498, -145.060, 155]
+    region:   se_297
     level:    [65, 67]
   17469741:
     template: Doom_Soldier_TC
     script:   Doom_Soldier
-    at:       [230.340, 15.500, -128.070, 255]
+    region:   se_297
     level:    [65, 67]
   17469742:
     template: Doom_Soldier_TC
     script:   Doom_Soldier
-    at:       [231.360, 15.500, -129.030, 186]
+    region:   se_297
     level:    [65, 67]
   17469743:
     template: Doom_Mage_TC
     script:   Doom_Mage
-    at:       [162.260, 7.952, -117.580, 178]
+    region:   se_303
     level:    [65, 67]
   17469744:
     template: Doom_Mage_TC
     script:   Doom_Mage
-    at:       [167.400, 8.112, -111.970, 96]
+    region:   se_303
     level:    [65, 67]
   17469745:
     template: Doom_Soldier_TC
     script:   Doom_Soldier
-    at:       [171.900, 11.498, -132.670, 32]
+    region:   se_303
     level:    [65, 67]
   17469746:
     template: Doom_Soldier_TC
     script:   Doom_Soldier
-    at:       [172.880, 11.498, -134.090, 172]
+    region:   se_303
     level:    [65, 67]
   17469747:
     template: Brazen_Bones
-    at:       [169.270, 8.028, -110.580, 223]
+    region:   se_303
     level:    [82, 83]
   17469748:
     template: Bouncing_Ball
-    at:       [163.940, 11.000, -109.120, 222]
+    region:   se_308
     level:    [64, 67]
   17469749:
     template: Bouncing_Ball
-    at:       [157.530, 12.050, -138.810, 125]
+    region:   se_309
     level:    [64, 67]
   17469750:
     template: Bouncing_Ball
-    at:       [143.810, 10.000, -116.590, 127]
+    region:   se_310
     level:    [64, 67]
   17469751:
     template: Bouncing_Ball
-    at:       [174.040, 12.000, -114.990, 72]
+    region:   se_311
     level:    [64, 67]
   17469752:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [179.980, 1.094, -71.602, 64]
+    region:   e_312
     level:    [62, 64]
   17469753:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [164.080, -3.829, -61.422, 127]
+    region:   e_312
     level:    [62, 64]
   17469754:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [100.580, -3.783, -125.270, 192]
+    region:   se_314
     level:    [62, 64]
   17469755:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [99.544, -0.853, -140.730, 71]
+    region:   se_314
     level:    [62, 64]
   17469756:
     template: Starmite
-    at:       [122.820, -7.848, -73.744, 135]
+    region:   e_316
     level:    [65, 67]
   17469757:
     template: Starmite
-    at:       [133.680, -8.470, -80.302, 7]
+    region:   e_316
     level:    [65, 67]
   17469758:
     template: Starmite
-    at:       [112.130, -8.498, -87.833, 229]
+    region:   e_316
     level:    [65, 67]
   17469759:
     template: Starmite
-    at:       [107.970, -8.498, -85.942, 181]
+    region:   e_316
     level:    [65, 67]
   17469760:
     template: Starmite
-    at:       [110.320, -8.428, -74.742, 52]
+    region:   e_316
     level:    [65, 67]
   17469761:
     template: Mimic

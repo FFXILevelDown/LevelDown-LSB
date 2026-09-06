@@ -54,10 +54,10 @@ spellObject.onSpellCast = function(caster, target, spell)
             not target:hasStatusEffect(xi.effect.STONESKIN)
         then
             local solaceStoneskin = 0
-            local equippedBody = caster:getEquipID(xi.slot.BODY)
-            if equippedBody == 11186 then
+            local equippedBody = xi.equipment.getUsableEquipID(caster, xi.slot.BODY)
+            if equippedBody == xi.item.ORISON_BLIAUT_P1 then
                 solaceStoneskin = math.floor(final * 0.30)
-            elseif equippedBody == 11086 then
+            elseif equippedBody == xi.item.ORISON_BLIAUT_P2 then
                 solaceStoneskin = math.floor(final * 0.35)
             else
                 solaceStoneskin = math.floor(final * 0.25)

@@ -2810,15 +2810,15 @@ spawns:
     level:    [85, 85]
   17539074:
     template: Vanguard_Vindicator
-    at:       [80.179, -0.491, -65.576, 255]
+    region:   se_2
     level:    [75, 77]
   17539075:
     template: Vanguard_Militant
-    at:       [59.143, -0.499, -77.688, 186]
+    region:   se_2
     level:    [75, 77]
   17539076:
     template: Vanguard_Beasttender
-    at:       [67.618, -0.323, -74.090, 96]
+    region:   se_2
     level:    [75, 77]
   17539077:
     template: Vanguards_Scorpion
@@ -2826,47 +2826,47 @@ spawns:
     level:    [75, 77]
   17539078:
     template: Vanguard_Thaumaturge
-    at:       [60.283, -0.500, -83.699, 20]
+    region:   se_2
     level:    [75, 77]
   17539079:
     template: Vanguard_Protector
-    at:       [71.076, -0.500, -78.161, 69]
+    region:   se_2
     level:    [75, 77]
   17539080:
     template: Vanguard_Purloiner
-    at:       [68.147, -0.362, -78.017, 36]
+    region:   se_2
     level:    [75, 77]
   17539081:
     template: Vanguard_Vigilante
-    at:       [58.128, -0.479, -69.451, 101]
+    region:   se_2
     level:    [75, 77]
   17539082:
     template: Vanguard_Defender
-    at:       [74.496, -0.006, -69.126, 195]
+    region:   se_2
     level:    [75, 77]
   17539083:
     template: Vanguard_Vindicator
-    at:       [58.371, -0.498, -77.053, 227]
+    region:   se_11
     level:    [75, 77]
   17539084:
     template: Vanguard_Constable
-    at:       [36.880, -0.500, -63.632, 157]
+    region:   se_11
     level:    [75, 77]
   17539085:
     template: Vanguard_Thaumaturge
-    at:       [37.259, -0.014, -68.957, 137]
+    region:   se_11
     level:    [75, 77]
   17539086:
     template: Vanguard_Hatamoto
-    at:       [38.208, -0.500, -70.818, 137]
+    region:   se_11
     level:    [75, 77]
   17539087:
     template: Vanguard_Kusa
-    at:       [49.144, -0.500, -72.117, 115]
+    region:   se_11
     level:    [75, 77]
   17539088:
     template: Vanguard_Drakekeeper
-    at:       [29.913, -0.499, -63.533, 137]
+    region:   se_11
     level:    [75, 77]
   17539089:
     template: Vanguards_Wyvern
@@ -2874,11 +2874,11 @@ spawns:
     level:    [75, 77]
   17539090:
     template: Vanguard_Vindicator
-    at:       [15.924, -0.464, -92.354, 49]
+    region:   se_18
     level:    [75, 77]
   17539091:
     template: Vanguard_Militant
-    at:       [-4.026, -0.500, -75.873, 238]
+    region:   se_18
     level:    [75, 77]
   17539092:
     template: Vanguard_Vigilante
@@ -2886,31 +2886,31 @@ spawns:
     level:    [75, 77]
   17539093:
     template: Vanguard_Vigilante
-    at:       [1.976, -0.500, -90.337, 222]
+    region:   se_18
     level:    [75, 77]
   17539094:
     template: Vanguard_Minstrel
-    at:       [-0.559, -0.500, -85.315, 196]
+    region:   se_18
     level:    [75, 77]
   17539095:
     template: Vanguard_Mason
-    at:       [-6.948, -0.500, -78.144, 105]
+    region:   se_18
     level:    [75, 77]
   17539096:
     template: Vanguard_Hatamoto
-    at:       [-1.421, -0.500, -84.073, 247]
+    region:   se_18
     level:    [75, 77]
   17539097:
     template: Vanguard_Kusa
-    at:       [-1.617, -0.500, -83.186, 9]
+    region:   se_18
     level:    [75, 77]
   17539098:
     template: Vanguard_Undertaker
-    at:       [17.423, -0.500, -78.738, 188]
+    region:   se_18
     level:    [75, 77]
   17539099:
     template: Vanguards_Avatar
-    at:       [15.421, -0.500, -81.002, 241]
+    region:   se_27
     level:    [75, 77]
   17539100:
     template: Vanguard_Protector
@@ -2922,19 +2922,19 @@ spawns:
     level:    [75, 77]
   17539102:
     template: Vanguard_Thaumaturge
-    at:       [-13.567, -0.500, -83.988, 26]
+    region:   s_30
     level:    [75, 77]
   17539103:
     template: Vanguard_Defender
-    at:       [-38.800, -0.500, -91.976, 87]
+    region:   s_30
     level:    [75, 77]
   17539104:
     template: Vanguard_Defender
-    at:       [-19.315, -0.500, -77.140, 181]
+    region:   s_32
     level:    [75, 77]
   17539105:
     template: Vanguard_Drakekeeper
-    at:       [-7.979, -0.303, -78.746, 216]
+    region:   s_30
     level:    [75, 77]
   17539106:
     template: Vanguards_Wyvern
@@ -2942,19 +2942,19 @@ spawns:
     level:    [75, 77]
   17539107:
     template: Vanguard_Purloiner
-    at:       [-25.232, -0.303, -80.729, 120]
+    region:   s_32
     level:    [75, 77]
   17539108:
     template: Vanguard_Militant
-    at:       [-34.445, -0.500, -72.049, 246]
+    region:   s_30
     level:    [75, 77]
   17539109:
     template: Vanguard_Minstrel
-    at:       [-23.260, -0.500, -86.230, 82]
+    region:   s_30
     level:    [75, 77]
   17539110:
     template: Vanguard_Beasttender
-    at:       [-38.162, -0.500, -62.945, 5]
+    region:   s_38
     level:    [75, 77]
   17539111:
     template: Vanguards_Scorpion
@@ -2962,7 +2962,7 @@ spawns:
     level:    [75, 77]
   17539112:
     template: Vanguard_Drakekeeper
-    at:       [-39.888, -0.217, -44.430, 63]
+    region:   s_38
     level:    [75, 77]
   17539113:
     template: Vanguards_Wyvern
@@ -2970,19 +2970,19 @@ spawns:
     level:    [75, 77]
   17539114:
     template: Vanguard_Vindicator
-    at:       [-36.413, -0.500, -61.870, 47]
+    region:   s_38
     level:    [75, 77]
   17539115:
     template: Vanguard_Militant
-    at:       [-34.973, -0.500, -48.085, 196]
+    region:   s_38
     level:    [75, 77]
   17539116:
     template: Vanguard_Vigilante
-    at:       [-32.867, -0.500, -62.897, 162]
+    region:   s_38
     level:    [75, 77]
   17539117:
     template: Vanguard_Mason
-    at:       [-40.789, -0.500, -47.628, 89]
+    region:   s_38
     level:    [75, 77]
   17539118:
     template: Adamantking_Effigy
@@ -3002,67 +3002,67 @@ spawns:
     level:    [75, 77]
   17539122:
     template: Vanguard_Minstrel
-    at:       [-56.834, -0.500, 11.244, 135]
+    region:   c_50
     level:    [75, 77]
   17539123:
     template: Vanguard_Thaumaturge
-    at:       [-57.343, -0.500, 2.341, 108]
+    region:   c_50
     level:    [75, 77]
   17539124:
     template: Vanguard_Protector
-    at:       [-62.898, -0.500, 5.906, 160]
+    region:   c_50
     level:    [75, 77]
   17539125:
     template: Vanguard_Constable
-    at:       [-56.600, -0.500, -9.896, 254]
+    region:   c_50
     level:    [75, 77]
   17539126:
     template: Vanguard_Vigilante
-    at:       [-49.959, -0.500, 11.644, 70]
+    region:   c_50
     level:    [75, 77]
   17539127:
     template: Vanguard_Defender
-    at:       [-52.368, -0.499, 40.219, 160]
+    region:   n_55
     level:    [75, 77]
   17539128:
     template: Vanguard_Minstrel
-    at:       [-47.615, -0.500, 38.928, 194]
+    region:   n_55
     level:    [75, 77]
   17539129:
     template: Vanguard_Vindicator
-    at:       [-50.686, -0.499, 31.806, 55]
+    region:   n_55
     level:    [75, 77]
   17539130:
     template: Vanguard_Militant
-    at:       [-43.881, -0.495, 23.574, 84]
+    region:   n_55
     level:    [75, 77]
   17539131:
     template: Vanguard_Purloiner
-    at:       [-39.072, -0.147, 39.486, 11]
+    region:   n_55
     level:    [75, 77]
   17539132:
     template: Vanguard_Mason
-    at:       [-52.027, -0.499, 36.924, 69]
+    region:   n_55
     level:    [75, 77]
   17539133:
     template: Vanguard_Vindicator
-    at:       [36.689, -0.285, -48.432, 194]
+    region:   se_61
     level:    [75, 77]
   17539134:
     template: Vanguard_Purloiner
-    at:       [40.444, -0.500, -47.574, 32]
+    region:   se_61
     level:    [75, 77]
   17539135:
     template: Vanguard_Militant
-    at:       [39.347, -0.500, -54.743, 79]
+    region:   se_61
     level:    [75, 77]
   17539136:
     template: Vanguard_Vigilante
-    at:       [-19.007, -2.486, -65.375, 72]
+    region:   s_64
     level:    [75, 77]
   17539137:
     template: Vanguard_Thaumaturge
-    at:       [-14.931, -2.374, -66.853, 53]
+    region:   s_64
     level:    [75, 77]
   17539138:
     template: Vanguard_Vigilante
@@ -3074,11 +3074,11 @@ spawns:
     level:    [75, 77]
   17539140:
     template: Vanguard_Vigilante
-    at:       [14.365, -3.499, -59.726, 121]
+    region:   se_68
     level:    [75, 77]
   17539141:
     template: Vanguard_Thaumaturge
-    at:       [14.932, -3.470, -62.205, 123]
+    region:   se_68
     level:    [75, 77]
   17539142:
     template: Adamantking_Image
@@ -3094,15 +3094,15 @@ spawns:
     level:    [82, 82]
   17539145:
     template: Vanguard_Purloiner
-    at:       [1.126, -0.500, -23.889, 1]
+    region:   e_73
     level:    [75, 77]
   17539146:
     template: Vanguard_Purloiner
-    at:       [8.490, -0.500, -24.093, 128]
+    region:   e_73
     level:    [75, 77]
   17539147:
     template: ZeVho_Fallsplitter
-    at:       [4.663, -0.500, -24.165]
+    region:   e_73
     level:    [85, 85]
   17539148:
     template: Adamantking_Image
@@ -3170,7 +3170,7 @@ spawns:
     level:    [65, 65]
   17539164:
     template: Vanguard_Drakekeeper
-    at:       [41.854, -0.500, 7.997, 3]
+    region:   e_92
     level:    [75, 77]
   17539165:
     template: Vanguards_Wyvern
@@ -3178,19 +3178,19 @@ spawns:
     level:    [75, 77]
   17539166:
     template: Vanguard_Undertaker
-    at:       [39.223, -0.500, 8.679, 132]
+    region:   e_92
     level:    [75, 77]
   17539167:
     template: Vanguards_Avatar
-    at:       [42.923, -0.500, 8.445, 133]
+    region:   e_92
     level:    [75, 77]
   17539168:
     template: Vanguard_Thaumaturge
-    at:       [67.354, 6.500, 0.666, 6]
+    region:   e_92
     level:    [75, 77]
   17539169:
     template: Vanguard_Vigilante
-    at:       [21.094, -0.500, 8.754, 127]
+    region:   e_92
     level:    [75, 77]
   17539170:
     template: Vanguard_Mason
@@ -3230,19 +3230,19 @@ spawns:
     level:    [75, 77]
   17539179:
     template: Vanguard_Thaumaturge
-    at:       [-21.009, -0.500, 23.482, 120]
+    region:   n_107
     level:    [75, 77]
   17539180:
     template: Vanguard_Protector
-    at:       [-14.795, -0.006, 30.009, 232]
+    region:   n_107
     level:    [75, 77]
   17539181:
     template: Vanguard_Protector
-    at:       [-15.636, -0.500, 23.088, 4]
+    region:   n_107
     level:    [75, 77]
   17539182:
     template: Vanguard_Constable
-    at:       [-17.605, -0.500, 23.406, 136]
+    region:   n_107
     level:    [75, 77]
   17539183:
     template: Vanguard_Vigilante
@@ -3266,11 +3266,11 @@ spawns:
     level:    [75, 77]
   17539188:
     template: GiPha_Manameister
-    at:       [30.380, 5.343, 11.809, 64]
+    region:   e_116
     level:    [85, 85]
   17539189:
     template: Vanguard_Defender
-    at:       [30.491, 3.851, 14.268, 64]
+    region:   e_116
     level:    [85, 85]
   17539190:
     template: KoDho_Cannonball
@@ -3279,46 +3279,46 @@ spawns:
   17539191:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [-88.697, -0.421, 0.088, 146]
+    region:   w_119
     level:    [90, 92]
   17539192:
     template: Vanguard_Militant_Large
     script:   Vanguard_Militant
-    at:       [-82.961, -0.500, -5.756, 31]
+    region:   w_120
     level:    [90, 92]
   17539193:
     template: Vanguard_Constable_Large
     script:   Vanguard_Constable
-    at:       [-81.504, -0.500, -3.786, 18]
+    region:   w_120
     level:    [90, 92]
   17539194:
     template: Vanguard_Thaumaturge_Large
     script:   Vanguard_Thaumaturge
-    at:       [-89.843, -0.500, -3.790, 209]
+    region:   w_120
     level:    [90, 92]
   17539195:
     template: Vanguard_Protector_Large
     script:   Vanguard_Protector
-    at:       [-82.389, 0.151, -4.340, 10]
+    region:   w_120
     level:    [90, 92]
   17539196:
     template: Vanguard_Defender_Large
     script:   Vanguard_Defender
-    at:       [-81.217, -0.500, -4.778, 237]
+    region:   w_120
     level:    [90, 92]
   17539197:
     template: Vanguard_Beasttender_Large
     script:   Vanguard_Beasttender
-    at:       [-82.531, -0.068, -5.206, 25]
+    region:   w_120
     level:    [90, 92]
   17539198:
     template: Vanguards_Scorpion
-    at:       [-83.391, -0.500, -4.250, 28]
+    region:   w_120
     level:    [90, 92]
   17539199:
     template: Vanguard_Drakekeeper_Large
     script:   Vanguard_Drakekeeper
-    at:       [-97.697, 7.253, 51.128, 208]
+    region:   nw_127
     level:    [90, 92]
   17539200:
     template: Vanguards_Wyvern
@@ -3327,7 +3327,7 @@ spawns:
   17539201:
     template: Vanguard_Purloiner_Large
     script:   Vanguard_Purloiner
-    at:       [-105.974, 7.351, 51.139, 50]
+    region:   nw_127
     level:    [90, 92]
   17539202:
     template: Vanguard_Vigilante_Large
@@ -3337,22 +3337,22 @@ spawns:
   17539203:
     template: Vanguard_Minstrel_Large
     script:   Vanguard_Minstrel
-    at:       [-99.507, 7.263, 47.654, 249]
+    region:   nw_127
     level:    [90, 92]
   17539204:
     template: Vanguard_Hatamoto_Large
     script:   Vanguard_Hatamoto
-    at:       [-104.397, 7.216, 47.481, 67]
+    region:   nw_127
     level:    [90, 92]
   17539205:
     template: Vanguard_Minstrel_Large
     script:   Vanguard_Minstrel
-    at:       [-106.531, 10.100, 60.949, 80]
+    region:   nw_133
     level:    [90, 92]
   17539206:
     template: Vanguard_Mason_Large
     script:   Vanguard_Mason
-    at:       [-108.000, 11.500, 71.783, 131]
+    region:   nw_133
     level:    [90, 92]
   17539207:
     template: Vanguard_Hatamoto_Large
@@ -3362,7 +3362,7 @@ spawns:
   17539208:
     template: Vanguard_Kusa_Large
     script:   Vanguard_Kusa
-    at:       [-111.052, 10.222, 61.820, 162]
+    region:   nw_133
     level:    [90, 92]
   17539209:
     template: Vanguard_Undertaker_Large
@@ -3376,79 +3376,79 @@ spawns:
   17539211:
     template: Vanguard_Undertaker_Large
     script:   Vanguard_Undertaker
-    at:       [-101.297, 10.164, 61.351, 45]
+    region:   nw_133
     level:    [90, 92]
   17539212:
     template: Vanguards_Avatar
-    at:       [-101.900, 11.031, 65.200, 246]
+    region:   nw_133
     level:    [90, 92]
   17539213:
     template: Vanguard_Beasttender_Large
     script:   Vanguard_Beasttender
-    at:       [-105.290, -0.251, -9.147, 32]
+    region:   w_141
     level:    [90, 92]
   17539214:
     template: Vanguards_Scorpion
-    at:       [-105.242, -0.500, -7.872, 44]
+    region:   w_141
     level:    [90, 92]
   17539215:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [-125.300, -0.499, -18.719, 161]
+    region:   w_141
     level:    [90, 92]
   17539216:
     template: Vanguard_Protector_Large
     script:   Vanguard_Protector
-    at:       [-101.219, -0.500, -8.639, 39]
+    region:   w_141
     level:    [90, 92]
   17539217:
     template: Vanguard_Vigilante_Large
     script:   Vanguard_Vigilante
-    at:       [-120.830, -0.500, -10.682, 32]
+    region:   w_141
     level:    [90, 92]
   17539218:
     template: Vanguard_Hatamoto_Large
     script:   Vanguard_Hatamoto
-    at:       [-132.238, -0.469, -10.694, 37]
+    region:   w_146
     level:    [90, 92]
   17539219:
     template: Vanguard_Hatamoto_Large
     script:   Vanguard_Hatamoto
-    at:       [-144.552, -0.381, -17.223, 251]
+    region:   w_147
     level:    [90, 92]
   17539220:
     template: Vanguard_Kusa_Large
     script:   Vanguard_Kusa
-    at:       [-136.198, -0.347, -15.971, 164]
+    region:   w_147
     level:    [90, 92]
   17539221:
     template: Vanguard_Kusa_Large
     script:   Vanguard_Kusa
-    at:       [-135.321, -0.386, -7.474, 219]
+    region:   w_147
     level:    [90, 92]
   17539222:
     template: Vanguard_Undertaker_Large
     script:   Vanguard_Undertaker
-    at:       [-152.093, -0.595, -18.639, 11]
+    region:   w_147
     level:    [90, 92]
   17539223:
     template: Vanguards_Avatar
-    at:       [-155.074, -0.543, -18.459, 19]
+    region:   w_147
     level:    [90, 92]
   17539224:
     template: Vanguard_Minstrel_Large
     script:   Vanguard_Minstrel
-    at:       [-145.442, -0.497, -11.516, 85]
+    region:   w_147
     level:    [90, 92]
   17539225:
     template: Vanguard_Protector_Large
     script:   Vanguard_Protector
-    at:       [-133.551, -4.299, 7.920, 195]
+    region:   w_153
     level:    [90, 92]
   17539226:
     template: Vanguard_Defender_Large
     script:   Vanguard_Defender
-    at:       [-134.343, -4.838, 8.958, 210]
+    region:   w_153
     level:    [90, 92]
   17539227:
     template: Adamantking_Effigy
@@ -3460,7 +3460,7 @@ spawns:
     level:    [80, 80]
   17539229:
     template: Adamantking_Effigy
-    at:       [-128.456, -8.978, 16.966, 166]
+    region:   w_153
     level:    [80, 80]
   17539230:
     template: Vanguard_Hatamoto_Large
@@ -3497,16 +3497,16 @@ spawns:
   17539237:
     template: Vanguard_Beasttender_Large
     script:   Vanguard_Beasttender
-    at:       [-177.648, -7.963, -16.341, 241]
+    region:   w_165
     level:    [90, 92]
   17539238:
     template: Vanguards_Scorpion
-    at:       [-172.516, -7.837, -16.583, 142]
+    region:   w_165
     level:    [90, 92]
   17539239:
     template: Vanguard_Drakekeeper_Large
     script:   Vanguard_Drakekeeper
-    at:       [-177.848, -8.989, -25.569, 252]
+    region:   w_165
     level:    [90, 92]
   17539240:
     template: Vanguards_Wyvern
@@ -3515,46 +3515,46 @@ spawns:
   17539241:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [-184.171, -9.106, -15.070, 242]
+    region:   w_165
     level:    [90, 92]
   17539242:
     template: Vanguard_Militant_Large
     script:   Vanguard_Militant
-    at:       [-176.557, -8.584, -15.427, 223]
+    region:   w_165
     level:    [90, 92]
   17539243:
     template: Vanguard_Constable_Large
     script:   Vanguard_Constable
-    at:       [-185.322, -9.130, -20.465, 9]
+    region:   w_165
     level:    [90, 92]
   17539244:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [-125.907, -0.500, -47.801, 208]
+    region:   sw_172
     level:    [90, 92]
   17539245:
     template: Vanguard_Constable_Large
     script:   Vanguard_Constable
-    at:       [-125.110, -0.500, -40.652, 226]
+    region:   sw_172
     level:    [90, 92]
   17539246:
     template: Vanguard_Thaumaturge_Large
     script:   Vanguard_Thaumaturge
-    at:       [-118.128, -0.500, -49.878, 177]
+    region:   sw_172
     level:    [90, 92]
   17539247:
     template: Vanguard_Beasttender_Large
     script:   Vanguard_Beasttender
-    at:       [-128.455, -0.500, -43.144, 112]
+    region:   sw_172
     level:    [90, 92]
   17539248:
     template: Vanguards_Scorpion
-    at:       [-126.727, -0.500, -42.690, 112]
+    region:   sw_172
     level:    [90, 92]
   17539249:
     template: Vanguard_Drakekeeper_Large
     script:   Vanguard_Drakekeeper
-    at:       [-112.600, -0.842, -38.962, 240]
+    region:   sw_172
     level:    [90, 92]
   17539250:
     template: Vanguards_Wyvern
@@ -3563,51 +3563,51 @@ spawns:
   17539251:
     template: Vanguard_Thaumaturge_Large
     script:   Vanguard_Thaumaturge
-    at:       [-109.392, -9.256, -63.144, 189]
+    region:   sw_179
     level:    [90, 92]
   17539252:
     template: Vanguard_Vigilante_Large
     script:   Vanguard_Vigilante
-    at:       [-109.290, -8.622, -59.401, 64]
+    region:   sw_179
     level:    [90, 92]
   17539253:
     template: Adamantking_Image
-    at:       [-109.066, -8.464, -59.580, 64]
+    region:   sw_179
     level:    [80, 80]
   17539254:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [-58.887, -8.506, -63.955, 17]
+    region:   s_182
     level:    [90, 92]
   17539255:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [-51.935, -8.500, -70.675, 199]
+    region:   s_182
     level:    [90, 92]
   17539256:
     template: Vanguard_Defender_Large
     script:   Vanguard_Defender
-    at:       [-55.390, -8.502, -70.429, 97]
+    region:   s_182
     level:    [90, 92]
   17539257:
     template: Vanguard_Purloiner_Large
     script:   Vanguard_Purloiner
-    at:       [-58.194, -8.540, -62.769, 32]
+    region:   s_182
     level:    [90, 92]
   17539258:
     template: Vanguard_Vigilante_Large
     script:   Vanguard_Vigilante
-    at:       [-56.741, -8.500, -57.299, 153]
+    region:   s_182
     level:    [90, 92]
   17539259:
     template: Vanguard_Militant_Large
     script:   Vanguard_Militant
-    at:       [-52.266, -8.507, -61.768, 239]
+    region:   s_182
     level:    [90, 92]
   17539260:
     template: Vanguard_Protector_Large
     script:   Vanguard_Protector
-    at:       [-59.433, -8.544, -66.659, 184]
+    region:   s_182
     level:    [90, 92]
   17539261:
     template: Vanguard_Militant_Large
@@ -3617,17 +3617,17 @@ spawns:
   17539262:
     template: Vanguard_Militant_Large
     script:   Vanguard_Militant
-    at:       [-16.910, 6.500, 28.500, 50]
+    region:   n_190
     level:    [90, 92]
   17539263:
     template: Vanguard_Vigilante_Large
     script:   Vanguard_Vigilante
-    at:       [-32.386, -0.335, 37.195, 168]
+    region:   n_191
     level:    [90, 92]
   17539264:
     template: Vanguard_Vigilante_Large
     script:   Vanguard_Vigilante
-    at:       [-8.431, 6.500, 27.190, 11]
+    region:   n_191
     level:    [90, 92]
   17539265:
     template: Vanguard_Protector_Large
@@ -3636,7 +3636,7 @@ spawns:
     level:    [90, 92]
   17539266:
     template: Adamantking_Effigy
-    at:       [-17.199, 6.500, 31.391, 193]
+    region:   n_191
     level:    [80, 80]
   17539267:
     template: Adamantking_Effigy
@@ -3650,22 +3650,22 @@ spawns:
   17539269:
     template: Vanguard_Constable_Large
     script:   Vanguard_Constable
-    at:       [-3.776, 6.500, 28.354, 118]
+    region:   ne_197
     level:    [90, 92]
   17539270:
     template: Vanguard_Thaumaturge_Large
     script:   Vanguard_Thaumaturge
-    at:       [14.041, 6.500, 0.361, 11]
+    region:   ne_197
     level:    [90, 92]
   17539271:
     template: Vanguard_Thaumaturge_Large
     script:   Vanguard_Thaumaturge
-    at:       [-0.830, 6.500, 20.600, 168]
+    region:   ne_197
     level:    [90, 92]
   17539272:
     template: Vanguard_Undertaker_Large
     script:   Vanguard_Undertaker
-    at:       [0.411, 6.546, 26.121, 120]
+    region:   ne_197
     level:    [90, 92]
   17539273:
     template: Vanguards_Avatar
@@ -3673,7 +3673,7 @@ spawns:
     level:    [90, 92]
   17539274:
     template: Adamantking_Effigy
-    at:       [3.335, 6.500, 21.486, 190]
+    region:   ne_197
     level:    [80, 80]
   17539275:
     template: Adamantking_Effigy
@@ -3682,17 +3682,17 @@ spawns:
   17539276:
     template: Vanguard_Purloiner_Large
     script:   Vanguard_Purloiner
-    at:       [-0.232, 6.500, 3.392, 147]
+    region:   e_204
     level:    [90, 92]
   17539277:
     template: Vanguard_Purloiner_Large
     script:   Vanguard_Purloiner
-    at:       [2.053, 6.500, -1.791, 2]
+    region:   e_204
     level:    [90, 92]
   17539278:
     template: Vanguard_Defender_Large
     script:   Vanguard_Defender
-    at:       [19.974, -0.500, 9.023, 126]
+    region:   e_204
     level:    [90, 92]
   17539279:
     template: Vanguard_Vigilante_Large
@@ -3702,17 +3702,17 @@ spawns:
   17539280:
     template: Vanguard_Thaumaturge_Large
     script:   Vanguard_Thaumaturge
-    at:       [2.244, 6.500, -11.149, 219]
+    region:   e_204
     level:    [90, 92]
   17539281:
     template: Vanguard_Hatamoto_Large
     script:   Vanguard_Hatamoto
-    at:       [22.884, 6.500, -6.799, 9]
+    region:   e_209
     level:    [90, 92]
   17539282:
     template: Vanguard_Kusa_Large
     script:   Vanguard_Kusa
-    at:       [25.051, 6.500, -6.374, 96]
+    region:   e_209
     level:    [90, 92]
   17539283:
     template: Vanguard_Minstrel_Large
@@ -3722,11 +3722,11 @@ spawns:
   17539284:
     template: Vanguard_Beasttender_Large
     script:   Vanguard_Beasttender
-    at:       [17.358, 6.500, -5.228, 41]
+    region:   e_209
     level:    [90, 92]
   17539285:
     template: Vanguards_Scorpion
-    at:       [17.478, 6.500, -5.124, 123]
+    region:   e_209
     level:    [90, 92]
   17539286:
     template: Adamantking_Effigy
@@ -3734,12 +3734,12 @@ spawns:
     level:    [80, 80]
   17539287:
     template: Adamantking_Effigy
-    at:       [23.512, 6.500, -2.799, 104]
+    region:   e_209
     level:    [80, 80]
   17539288:
     template: Vanguard_Hatamoto_Large
     script:   Vanguard_Hatamoto
-    at:       [90.690, -0.500, 8.077, 106]
+    region:   e_216
     level:    [90, 92]
   17539289:
     template: Vanguard_Kusa_Large
@@ -3749,7 +3749,7 @@ spawns:
   17539290:
     template: Vanguard_Minstrel_Large
     script:   Vanguard_Minstrel
-    at:       [51.506, 6.399, -1.653, 98]
+    region:   e_216
     level:    [90, 92]
   17539291:
     template: Vanguard_Drakekeeper_Large
@@ -3766,22 +3766,22 @@ spawns:
     level:    [80, 80]
   17539294:
     template: Adamantking_Effigy
-    at:       [35.544, 6.500, 0.580, 93]
+    region:   e_216
     level:    [80, 80]
   17539295:
     template: Vanguard_Hatamoto_Large
     script:   Vanguard_Hatamoto
-    at:       [66.626, 6.500, -6.692, 119]
+    region:   e_223
     level:    [90, 92]
   17539296:
     template: Vanguard_Minstrel_Large
     script:   Vanguard_Minstrel
-    at:       [65.522, 6.500, -6.398, 25]
+    region:   e_223
     level:    [90, 92]
   17539297:
     template: Vanguard_Purloiner_Large
     script:   Vanguard_Purloiner
-    at:       [66.044, 6.500, -4.016, 205]
+    region:   e_223
     level:    [90, 92]
   17539298:
     template: Vanguard_Thaumaturge_Large
@@ -3796,32 +3796,32 @@ spawns:
   17539300:
     template: Vanguard_Vindicator_Large
     script:   Vanguard_Vindicator
-    at:       [75.080, 6.500, -28.890, 143]
+    region:   e_228
     level:    [90, 92]
   17539301:
     template: Vanguard_Militant_Large
     script:   Vanguard_Militant
-    at:       [71.326, 6.500, -29.040, 247]
+    region:   e_228
     level:    [90, 92]
   17539302:
     template: Vanguard_Vigilante_Large
     script:   Vanguard_Vigilante
-    at:       [66.825, 6.500, -30.591, 221]
+    region:   e_228
     level:    [90, 92]
   17539303:
     template: Vanguard_Protector_Large
     script:   Vanguard_Protector
-    at:       [81.378, 6.500, -29.280, 252]
+    region:   e_228
     level:    [90, 92]
   17539304:
     template: Vanguard_Constable_Large
     script:   Vanguard_Constable
-    at:       [70.154, 6.500, -32.482, 122]
+    region:   e_228
     level:    [90, 92]
   17539305:
     template: Vanguard_Minstrel_Large
     script:   Vanguard_Minstrel
-    at:       [70.665, 6.500, -29.054, 241]
+    region:   e_228
     level:    [90, 92]
   17539306:
     template: Adamantking_Image

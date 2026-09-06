@@ -167,6 +167,9 @@ private:
     xi::RoamFlag roamFlags_;
     bool         onPoint_;
 
+    // region to clip random-roam legs to, null for all other pathing; owned by the zone
+    const RoamRegion* roamRegion_{ nullptr };
+
     timer::time_point timeAtPoint_;
 
     // Path is held while tick < unpauseTime_; time_point::min() means not paused.

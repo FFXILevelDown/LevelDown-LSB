@@ -378,17 +378,23 @@ void InsertMobs(CZone* PZone, const xi::ZoneId zoneId, const xi::data::Mobs& mob
             PMob->m_roamFlags    = mobTemplate.RoamFlags;
             PMob->m_MobSkillList = mobTemplate.SkillList;
 
-            if (!spawn.Region.empty())
+            if (!spawn.Regions.empty())
             {
-                if (const auto* region = PZone->roamRegion(spawn.Region))
+                std::vector<const RoamRegion*> regions;
+                regions.reserve(spawn.Regions.size());
+                for (const auto& name : spawn.Regions)
                 {
-                    PMob->setRoamRegion(region);
+                    const auto* region = PZone->roamRegion(name);
+                    if (!region)
+                    {
+                        ShowCriticalFmt("InsertMobs: spawn {} names region '{}', which the zone does not declare", spawn.Id, name);
+                        std::exit(-1);
+                    }
+
+                    regions.push_back(region);
                 }
-                else
-                {
-                    ShowCriticalFmt("InsertMobs: spawn {} names region '{}', which the zone does not declare", spawn.Id, spawn.Region);
-                    std::exit(-1);
-                }
+
+                PMob->setRoamRegions(std::move(regions));
             }
 
             if (!spawn.Route.empty())

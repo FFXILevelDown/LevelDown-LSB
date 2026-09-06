@@ -110,7 +110,7 @@ auto convertOneOf(const std::optional<wire::OneOf>& source, const std::string_vi
     return members;
 }
 
-auto convertSteal(const std::optional<wire::Steal>& source) -> std::vector<std::string>
+auto convertNames(const std::optional<wire::Names>& source) -> std::vector<std::string>
 {
     if (!source)
     {
@@ -168,7 +168,7 @@ auto convertLoot(const std::optional<wire::Loot>& source, const std::string_view
         }
     }
 
-    loot.Steal   = convertSteal(source->steal);
+    loot.Steal   = convertNames(source->steal);
     loot.Despoil = convertWeights(source->despoil);
     return loot;
 }
@@ -239,6 +239,12 @@ auto convertSpawn(const uint32 id, const wire::Spawn& source) -> MobSpawnData
         throw std::runtime_error(fmt::format("spawn {} sets more than one of at, region, path and circuit", id));
     }
 
+    auto regions = convertNames(source.region);
+    if (source.region && regions.empty())
+    {
+        throw std::runtime_error(fmt::format("spawn {} lists no regions", id));
+    }
+
     const auto level = source.level.value_or(std::array<uint8, 2>{});
 
     MobSpawnData spawn{
@@ -250,7 +256,7 @@ auto convertSpawn(const uint32 id, const wire::Spawn& source) -> MobSpawnData
         .Position     = shared::toPosition(source.at, fmt::format("spawn {}", id)),
         .MinLevel     = level[0],
         .MaxLevel     = level[1],
-        .Region       = source.region.value_or(std::string{}),
+        .Regions      = std::move(regions),
         .Attributes   = convertAttributes(source.attributes, fmt::format("spawn {}", id)),
     };
 

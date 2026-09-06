@@ -1316,440 +1316,440 @@ spawns:
     level:    [68, 70]
   17240071:
     template: Goblin_Mercenary
-    at:       [-175.334, 7.677, -247.300, 2]
+    region:   sw_7
     level:    [65, 68]
   17240072:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-166.229, 7.588, -248.090, 127]
+    region:   sw_7
     level:    [62, 66]
   17240073:
     template: Beach_Bunny
-    at:       [-168.000, 8.000, -257.000, 127]
+    region:   sw_7
     level:    [62, 65]
   17240074:
     template: Beach_Bunny
-    at:       [-164.000, 8.000, -267.000, 76]
+    region:   sw_7
     level:    [62, 65]
   17240075:
     template: Beach_Bunny
-    at:       [-155.872, 7.236, -250.314, 47]
+    region:   sw_7
     level:    [62, 65]
   17240076:
     template: Goblin_Mercenary
-    at:       [-198.000, 8.000, -197.000, 127]
+    region:   sw_7
     level:    [65, 68]
   17240077:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-204.697, 7.351, -195.497, 127]
+    region:   sw_13
     level:    [62, 66]
   17240078:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-196.127, 6.926, -248.968, 90]
+    region:   sw_13
     level:    [62, 66]
   17240079:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-197.000, 8.000, -221.000, 55]
+    region:   sw_13
     level:    [64, 65]
   17240080:
     template: Beach_Bunny
-    at:       [-201.014, 7.552, -235.712, 127]
+    region:   sw_13
     level:    [62, 65]
   17240081:
     template: Beach_Bunny
-    at:       [-207.000, 8.000, -221.000, 127]
+    region:   sw_13
     level:    [62, 65]
   17240082:
     template: Beach_Bunny
-    at:       [-193.657, 7.792, -186.730, 13]
+    region:   sw_19
     level:    [62, 65]
   17240083:
     template: Goblin_Shepherd
-    at:       [-195.995, 7.300, -155.712, 83]
+    region:   sw_19
     level:    [65, 68]
   17240084:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_19
     level:    [49, 50]
   17240085:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-191.037, 7.670, -164.467, 127]
+    region:   sw_19
     level:    [62, 66]
   17240086:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-158.229, 7.453, -164.615, 127]
+    region:   sw_19
     level:    [63, 64]
   17240087:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-165.648, 7.725, -153.970]
+    region:   sw_19
     level:    [63, 66]
   17240088:
     template: Beach_Bunny
-    at:       [-171.000, 7.000, -147.000, 127]
+    region:   sw_19
     level:    [62, 65]
   17240089:
     template: Beach_Bunny
-    at:       [-158.293, 7.941, -147.586, 127]
+    region:   sw_19
     level:    [62, 65]
   17240090:
     template: Beach_Bunny
-    at:       [-176.717, 8.222, -165.130, 127]
+    region:   sw_19
     level:    [62, 65]
   17240091:
     template: Goblin_Shepherd
-    at:       [-166.429, 7.910, -105.478, 127]
+    region:   sw_27
     level:    [65, 68]
   17240092:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_27
     level:    [48, 50]
   17240093:
     template: Goblin_Bandit
-    at:       [-134.000, 7.000, -96.000, 127]
+    region:   sw_27
     level:    [65, 68]
   17240094:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-183.952, 8.302, -80.728, 98]
+    region:   sw_27
     level:    [62, 66]
   17240095:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-204.000, 7.000, -88.000, 24]
+    region:   sw_27
     level:    [65, 66]
   17240096:
     template: Beach_Bunny
-    at:       [-132.288, 7.287, -129.783, 73]
+    region:   sw_27
     level:    [62, 65]
   17240097:
     template: Beach_Bunny
-    at:       [-210.000, 6.000, -70.000, 30]
+    region:   sw_27
     level:    [62, 65]
   17240098:
     template: Beach_Bunny
-    at:       [-159.083, 7.533, -122.425, 1]
+    region:   sw_27
     level:    [62, 65]
   17240099:
     template: Beach_Bunny
-    at:       [-146.340, 7.415, -107.721, 127]
+    region:   sw_37
     level:    [62, 65]
   17240100:
     template: Doom_Soldier
-    at:       [-152.000, 7.000, -232.000, 127]
+    region:   sw_27
     level:    [66, 70]
   17240101:
     template: Goblin_Alchemist
-    at:       [-216.118, 7.328, -26.906, 127]
+    region:   sw_37
     level:    [65, 68]
   17240102:
     template: Beach_Bunny
-    at:       [-230.918, 7.693, -38.703, 85]
+    region:   sw_37
     level:    [62, 65]
   17240103:
     template: Beach_Bunny
-    at:       [-195.903, 7.851, -51.057, 39]
+    region:   sw_37
     level:    [62, 65]
   17240104:
     template: Doom_Mage
-    at:       [-244.000, 7.000, -38.000, 5]
+    region:   sw_37
     level:    [67, 71]
   17240105:
     template: Goblin_Mercenary
-    at:       [-100.360, 3.991, -67.480, 94]
+    region:   s_41
     level:    [65, 68]
   17240106:
     template: Beach_Bunny
-    at:       [-121.000, 8.000, -97.000, 83]
+    region:   s_41
     level:    [62, 65]
   17240107:
     template: Beach_Bunny
-    at:       [-106.491, 4.685, -75.981, 20]
+    region:   s_41
     level:    [62, 65]
   17240108:
     template: Beach_Bunny
-    at:       [-88.494, -0.149, -108.119, 37]
+    region:   s_41
     level:    [62, 65]
   17240109:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-81.310, -0.594, -123.310, 124]
+    region:   s_41
     level:    [62, 65]
   17240110:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-104.996, 4.655, -95.891, 127]
+    region:   s_41
     level:    [62, 66]
   17240111:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-70.000, -0.500, -80.000, 4]
+    region:   s_41
     level:    [62, 66]
   17240112:
     template: Doom_Soldier
-    at:       [-92.985, 1.141, -96.138, 118]
+    region:   s_41
     level:    [66, 70]
   17240113:
     template: Goblin_Mercenary
-    at:       [-139.706, 7.167, -61.223, 87]
+    region:   s_49
     level:    [65, 68]
   17240114:
     template: Goblin_Shepherd
-    at:       [-121.744, 8.367, -62.640, 53]
+    region:   s_49
     level:    [65, 68]
   17240115:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   s_49
     level:    [48, 50]
   17240116:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-162.000, 8.176, -72.000, 45]
+    region:   s_49
     level:    [62, 66]
   17240117:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-133.098, 8.009, -40.367, 45]
+    region:   s_41
     level:    [62, 66]
   17240118:
     template: Beach_Bunny
-    at:       [-117.025, 7.551, -73.857, 127]
+    region:   s_49
     level:    [62, 65]
   17240119:
     template: Beach_Bunny
-    at:       [-190.642, 7.660, -84.615, 127]
+    region:   s_49
     level:    [62, 65]
   17240120:
     template: Beach_Bunny
-    at:       [-155.540, 8.345, -58.054, 15]
+    region:   s_49
     level:    [62, 65]
   17240121:
     template: Doom_Soldier
-    at:       [-136.996, 7.685, -66.934, 127]
+    region:   s_49
     level:    [66, 70]
   17240122:
     template: Doom_Soldier
-    at:       [-128.000, 8.000, -120.000, 127]
+    region:   s_49
     level:    [66, 70]
   17240123:
     template: Fire_Elemental
-    at:       [-117.450, 7.652, -49.839, 127]
+    region:   s_49
     level:    [67, 69]
   17240124:
     template: Goblin_Mercenary
-    at:       [-144.000, 8.000, -21.000, 127]
+    region:   w_60
     level:    [65, 68]
   17240125:
     template: Goblin_Bandit
-    at:       [-154.915, 7.554, -38.958, 72]
+    region:   w_60
     level:    [65, 68]
   17240126:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-163.965, 8.149, -18.008, 126]
+    region:   w_60
     level:    [62, 66]
   17240127:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-159.152, 7.447, 36.063, 16]
+    region:   w_60
     level:    [62, 66]
   17240128:
     template: Beach_Bunny
-    at:       [-174.123, 7.144, -17.756, 96]
+    region:   w_60
     level:    [62, 65]
   17240129:
     template: Beach_Bunny
-    at:       [-140.000, 6.000, -0.400, 127]
+    region:   w_60
     level:    [62, 65]
   17240130:
     template: Velociraptor
-    at:       [-66.000, -0.500, 58.000, 98]
+    region:   w_60
     level:    [66, 69]
   17240131:
     template: Doom_Soldier
-    at:       [-155.341, 7.185, 42.764, 127]
+    region:   w_60
     level:    [66, 70]
   17240132:
     template: Fantasma
-    at:       [-156.436, 7.507, 4.787, 124]
+    region:   w_60
     level:    [65, 68]
   17240133:
     template: Goblin_Bandit
-    at:       [-70.337, -0.260, -33.754, 4]
+    region:   s_69
     level:    [65, 68]
   17240134:
     template: Goblin_Alchemist
-    at:       [-70.871, -0.336, -54.624, 127]
+    region:   s_69
     level:    [65, 68]
   17240135:
     template: Robber_Crab
-    at:       [56.000, 4.000, -154.000, 127]
+    region:   s_69
     level:    [64, 67]
   17240136:
     template: Robber_Crab
-    at:       [70.000, -0.500, -123.000, 127]
+    region:   s_69
     level:    [64, 67]
   17240137:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-94.377, 1.777, -77.286]
+    region:   s_69
     level:    [62, 66]
   17240138:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-43.455, -0.249, -73.865, 5]
+    region:   s_69
     level:    [62, 66]
   17240139:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-178.318, 7.524, -61.697, 112]
+    region:   s_69
     level:    [62, 65]
   17240140:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-93.664, 0.596, -40.317, 127]
+    region:   s_69
     level:    [62, 66]
   17240141:
     template: Velociraptor
-    at:       [55.000, 0.014, -76.000, 74]
+    region:   s_69
     level:    [66, 69]
   17240142:
     template: Doom_Soldier
-    at:       [-88.000, 0.491, 9.000, 26]
+    region:   s_69
     level:    [66, 70]
   17240143:
     template: Doom_Mage
-    at:       [-74.664, 0.207, -60.099, 69]
+    region:   s_69
     level:    [67, 71]
   17240144:
     template: Fire_Elemental
-    at:       [-97.820, 0.706, -40.265, 73]
+    region:   s_69
     level:    [67, 69]
   17240145:
     template: Goblin_Shepherd
-    at:       [-104.159, 0.129, 40.355, 81]
+    region:   c_81
     level:    [65, 68]
   17240146:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   c_81
     level:    [48, 50]
   17240147:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-114.000, -0.279, 4.000, 127]
+    region:   c_81
     level:    [62, 66]
   17240148:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-114.504, -0.896, 33.370, 127]
+    region:   c_81
     level:    [62, 66]
   17240149:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-112.928, -0.438, 43.572, 45]
+    region:   c_81
     level:    [62, 66]
   17240150:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-95.426, -0.066, 45.530, 127]
+    region:   c_81
     level:    [62, 66]
   17240151:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-130.306, -0.168, 43.241, 87]
+    region:   c_81
     level:    [62, 66]
   17240152:
     template: Velociraptor
-    at:       [-110.073, -1.307, 26.077, 21]
+    region:   c_81
     level:    [66, 69]
   17240153:
     template: Doom_Mage
-    at:       [-94.875, -0.915, -18.312, 66]
+    region:   c_81
     level:    [67, 71]
   17240154:
     template: Fantasma
-    at:       [-106.212, -0.514, 12.486, 127]
+    region:   c_81
     level:    [65, 68]
   17240155:
     template: Goblin_Bandit
-    at:       [-79.146, -0.346, 44.272, 82]
+    region:   c_92
     level:    [65, 68]
   17240156:
     template: Goblin_Shepherd
-    at:       [-68.883, -1.638, -16.536, 38]
+    region:   c_92
     level:    [65, 68]
   17240157:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   c_92
     level:    [48, 50]
   17240158:
     template: Velociraptor
-    at:       [-57.000, -1.000, 24.000, 127]
+    region:   c_92
     level:    [66, 69]
   17240159:
     template: Velociraptor
-    at:       [-44.000, -0.600, -19.000, 52]
+    region:   s_69
     level:    [66, 69]
   17240160:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-64.508, -2.753, -8.592, 71]
+    region:   c_92
     level:    [63, 66]
   17240161:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-74.319, -2.164, 14.002, 127]
+    region:   c_92
     level:    [62, 65]
   17240162:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-56.000, -0.500, 37.000, 127]
+    region:   c_92
     level:    [62, 66]
   17240163:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-45.379, -0.754, 17.195, 127]
+    region:   c_92
     level:    [62, 66]
   17240164:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-35.078, -0.603, 53.982, 127]
+    region:   c_92
     level:    [62, 66]
   17240165:
     template: Goblin_Mercenary
-    at:       [-75.551, -0.279, 96.352, 127]
+    region:   c_101
     level:    [65, 68]
   17240166:
     template: Velociraptor
-    at:       [-41.000, 0.351, 120.000, 127]
+    region:   c_101
     level:    [66, 69]
   17240167:
     template: Velociraptor
-    at:       [-41.767, 0.338, 96.766, 127]
+    region:   c_101
     level:    [66, 69]
   17240168:
     template: Velociraptor
-    at:       [-67.000, 0.120, 87.000, 127]
+    region:   c_101
     level:    [66, 69]
   17240169:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-42.998, -0.480, 83.220, 127]
+    region:   c_101
     level:    [62, 66]
   17240170:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-55.436, -0.006, 84.424, 54]
+    region:   c_101
     level:    [62, 66]
   17240171:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-66.102, -0.359, 111.204, 97]
+    region:   c_101
     level:    [63, 65]
   17240172:
     template: Enna-enna
@@ -1757,30 +1757,30 @@ spawns:
     level:    [65, 67]
   17240173:
     template: Goblin_Alchemist
-    at:       [-4.805, -0.686, 159.007, 37]
+    region:   c_109
     level:    [65, 68]
   17240174:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-7.000, -0.414, 136.000, 127]
+    region:   c_109
     level:    [62, 66]
   17240175:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [5.519, -0.369, 163.169, 127]
+    region:   c_109
     level:    [63, 66]
   17240176:
     template: Sand_Lizard_CT
     script:   Sand_Lizard
-    at:       [-10.586, -0.285, 116.435, 95]
+    region:   c_109
     level:    [62, 65]
   17240177:
     template: Sand_Cockatrice
-    at:       [-9.302, -1.162, 150.034, 127]
+    region:   c_109
     level:    [71, 74]
   17240178:
     template: Sand_Cockatrice
-    at:       [27.000, 0.426, 175.000, 127]
+    region:   c_109
     level:    [71, 74]
   17240179:
     template: Enna-enna
@@ -1788,695 +1788,695 @@ spawns:
     level:    [65, 69]
   17240180:
     template: Killer_Jonny
-    at:       [-90.636, -8.859, 152.899, 127]
+    region:   c_252
     level:    [85, 85]
   17240181:
     template: Velociraptor
-    at:       [24.988, -0.343, -73.873, 3]
+    region:   s_117
     level:    [66, 69]
   17240182:
     template: Velociraptor
-    at:       [78.989, -0.260, -88.796, 127]
+    region:   s_117
     level:    [66, 69]
   17240183:
     template: Robber_Crab
-    at:       [-22.613, -0.105, 4.000, 127]
+    region:   s_117
     level:    [64, 67]
   17240184:
     template: Robber_Crab
-    at:       [25.958, -0.677, -97.172, 31]
+    region:   s_117
     level:    [64, 67]
   17240185:
     template: Robber_Crab
-    at:       [9.000, -0.549, -89.000, 127]
+    region:   s_117
     level:    [64, 67]
   17240186:
     template: Robber_Crab
-    at:       [85.161, -0.292, -109.526, 60]
+    region:   se_140
     level:    [64, 67]
   17240187:
     template: Robber_Crab
-    at:       [6.641, -0.809, -71.173, 127]
+    region:   s_117
     level:    [64, 67]
   17240188:
     template: Beach_Bunny
-    at:       [93.335, -0.896, -103.247, 127]
+    region:   s_117
     level:    [62, 65]
   17240189:
     template: Beach_Bunny
-    at:       [42.553, -0.326, -93.871, 95]
+    region:   s_117
     level:    [62, 65]
   17240190:
     template: Sand_Cockatrice
-    at:       [36.000, -0.708, -54.000, 127]
+    region:   s_117
     level:    [71, 74]
   17240191:
     template: Velociraptor
-    at:       [34.647, -0.801, -31.008, 3]
+    region:   s_127
     level:    [66, 69]
   17240192:
     template: Velociraptor
-    at:       [33.784, 0.154, -19.485, 127]
+    region:   s_127
     level:    [66, 69]
   17240193:
     template: Sand_Cockatrice
-    at:       [41.630, -0.508, -35.939, 23]
+    region:   s_127
     level:    [71, 74]
   17240194:
     template: Sand_Cockatrice
-    at:       [51.086, -1.282, -43.654, 68]
+    region:   s_127
     level:    [71, 74]
   17240195:
     template: Velociraptor
-    at:       [38.182, -0.199, 10.715, 127]
+    region:   c_131
     level:    [66, 69]
   17240196:
     template: Velociraptor
-    at:       [51.400, -0.453, -23.167, 41]
+    region:   c_131
     level:    [66, 69]
   17240197:
     template: Sand_Cockatrice
-    at:       [39.000, -0.489, 24.000, 34]
+    region:   c_131
     level:    [71, 74]
   17240198:
     template: Sand_Cockatrice
-    at:       [12.561, -0.062, 2.844, 127]
+    region:   c_131
     level:    [71, 74]
   17240199:
     template: Velociraptor
-    at:       [86.691, -0.656, 43.022, 17]
+    region:   e_135
     level:    [66, 69]
   17240200:
     template: Velociraptor
-    at:       [42.329, -0.510, 39.127, 84]
+    region:   e_135
     level:    [66, 69]
   17240201:
     template: Velociraptor
-    at:       [51.230, -0.500, 26.599, 46]
+    region:   e_135
     level:    [66, 69]
   17240202:
     template: Sand_Cockatrice
-    at:       [56.212, 0.078, 44.545, 127]
+    region:   e_135
     level:    [71, 74]
   17240203:
     template: Sand_Cockatrice
-    at:       [59.761, -0.955, 54.414, 127]
+    region:   e_135
     level:    [71, 74]
   17240204:
     template: Velociraptor
-    at:       [55.343, 1.897, -136.475, 127]
+    region:   se_140
     level:    [66, 69]
   17240205:
     template: Velociraptor
-    at:       [94.603, -1.320, -99.259, 127]
+    region:   se_140
     level:    [66, 69]
   17240206:
     template: Velociraptor
-    at:       [9.000, -0.400, -114.000, 80]
+    region:   se_140
     level:    [66, 69]
   17240207:
     template: Velociraptor
-    at:       [49.251, -0.499, -113.419, 127]
+    region:   se_155
     level:    [66, 69]
   17240208:
     template: Velociraptor
-    at:       [108.000, -0.500, -116.000, 127]
+    region:   se_140
     level:    [66, 69]
   17240209:
     template: Velociraptor
-    at:       [71.000, -0.959, -100.000]
+    region:   se_140
     level:    [66, 69]
   17240210:
     template: Beach_Bunny
-    at:       [98.263, 2.167, -140.957, 38]
+    region:   se_140
     level:    [62, 65]
   17240211:
     template: Beach_Bunny
-    at:       [92.488, 0.657, -131.323, 127]
+    region:   se_140
     level:    [62, 65]
   17240212:
     template: Robber_Crab
-    at:       [104.530, 3.490, -158.634, 127]
+    region:   se_140
     level:    [64, 67]
   17240213:
     template: Robber_Crab
-    at:       [31.000, -0.856, -126.000, 123]
+    region:   se_155
     level:    [64, 67]
   17240214:
     template: Robber_Crab
-    at:       [24.381, 0.204, -140.896, 71]
+    region:   se_140
     level:    [64, 67]
   17240215:
     template: Terror_Pugil
-    at:       [102.000, 4.000, -180.000, 26]
+    region:   se_155
     level:    [66, 70]
   17240216:
     template: Terror_Pugil
-    at:       [80.000, 4.000, -164.000, 52]
+    region:   se_155
     level:    [66, 70]
   17240217:
     template: Terror_Pugil
-    at:       [93.000, 4.000, -172.000, 6]
+    region:   se_140
     level:    [66, 70]
   17240218:
     template: Air_Elemental
-    at:       [97.352, -0.201, -112.898, 127]
+    region:   se_140
     level:    [67, 69]
   17240219:
     template: Robber_Crab
-    at:       [38.558, 3.500, -168.933, 127]
+    region:   se_155
     level:    [64, 67]
   17240220:
     template: Robber_Crab
-    at:       [89.622, 3.500, -170.979, 17]
+    region:   se_140
     level:    [64, 67]
   17240221:
     template: Robber_Crab
-    at:       [108.865, 4.237, -180.776, 70]
+    region:   se_155
     level:    [64, 67]
   17240222:
     template: Terror_Pugil
-    at:       [50.000, 4.000, -162.000, 58]
+    region:   se_155
     level:    [66, 70]
   17240223:
     template: Terror_Pugil
-    at:       [111.573, 3.800, -196.562, 127]
+    region:   se_155
     level:    [66, 70]
   17240224:
     template: Terror_Pugil
-    at:       [35.361, 3.500, -162.366, 97]
+    region:   se_155
     level:    [66, 70]
   17240225:
     template: Terror_Pugil
-    at:       [66.428, 3.500, -158.479, 127]
+    region:   se_155
     level:    [66, 70]
   17240226:
     template: Fantasma
-    at:       [111.000, -0.700, -120.000, 127]
+    region:   se_155
     level:    [65, 68]
   17240227:
     template: Beach_Bunny
-    at:       [-56.000, -0.500, -76.000, 127]
+    region:   s_163
     level:    [62, 65]
   17240228:
     template: Beach_Bunny
-    at:       [16.047, -0.645, -131.422, 44]
+    region:   s_163
     level:    [62, 65]
   17240229:
     template: Robber_Crab
-    at:       [-6.426, -0.184, -120.199, 241]
+    region:   s_163
     level:    [64, 67]
   17240230:
     template: Robber_Crab
-    at:       [6.949, -0.722, -126.390, 115]
+    region:   s_163
     level:    [64, 67]
   17240231:
     template: Robber_Crab
-    at:       [-6.214, -0.684, -107.975, 127]
+    region:   s_163
     level:    [64, 67]
   17240232:
     template: Tegmine
-    at:       [-11.142, -2.023, -123.280, 77]
+    region:   s_163
     level:    [71, 72]
   17240233:
     template: Beach_Bunny
-    at:       [127.332, 3.498, -158.919, 10]
+    region:   se_169
     level:    [62, 65]
   17240234:
     template: Beach_Bunny
-    at:       [120.368, 1.303, -137.158, 127]
+    region:   se_169
     level:    [62, 65]
   17240235:
     template: Robber_Crab
-    at:       [127.138, 3.499, -159.234, 127]
+    region:   se_169
     level:    [64, 67]
   17240236:
     template: Robber_Crab
-    at:       [99.000, 1.000, -128.000, 45]
+    region:   se_169
     level:    [64, 67]
   17240237:
     template: Beach_Bunny
-    at:       [73.000, 2.000, -142.000, 127]
+    region:   se_173
     level:    [62, 65]
   17240238:
     template: Robber_Crab
-    at:       [120.321, 3.800, -196.135, 127]
+    region:   se_173
     level:    [64, 67]
   17240239:
     template: Robber_Crab
-    at:       [99.000, 3.000, -176.000, 12]
+    region:   se_169
     level:    [64, 67]
   17240240:
     template: Terror_Pugil
-    at:       [125.407, 3.800, -188.326, 68]
+    region:   se_169
     level:    [66, 70]
   17240241:
     template: Velociraptor
-    at:       [86.360, -0.320, 168.701, 78]
+    region:   e_177
     level:    [66, 69]
   17240242:
     template: Velociraptor
-    at:       [61.334, -2.689, 196.676, 127]
+    region:   e_177
     level:    [66, 69]
   17240243:
     template: Velociraptor
-    at:       [99.596, 0.244, 156.647, 127]
+    region:   e_177
     level:    [66, 69]
   17240244:
     template: Sand_Cockatrice
-    at:       [32.029, -0.501, 155.008, 127]
+    region:   e_177
     level:    [71, 74]
   17240245:
     template: Sand_Cockatrice
-    at:       [98.098, 0.105, 161.568, 33]
+    region:   e_177
     level:    [71, 74]
   17240246:
     template: Sand_Cockatrice
-    at:       [68.949, -0.966, 180.558, 86]
+    region:   e_177
     level:    [71, 74]
   17240247:
     template: Sand_Cockatrice
-    at:       [109.000, 1.000, 225.000, 71]
+    region:   e_177
     level:    [71, 74]
   17240248:
     template: Sand_Cockatrice
-    at:       [61.000, -2.000, 219.000, 127]
+    region:   e_177
     level:    [71, 74]
   17240249:
     template: Sand_Cockatrice
-    at:       [93.000, 1.000, 189.000, 127]
+    region:   e_177
     level:    [71, 74]
   17240250:
     template: Sand_Cockatrice
-    at:       [54.518, -1.507, 202.054, 127]
+    region:   e_177
     level:    [71, 74]
   17240251:
     template: Velociraptor
-    at:       [139.000, 6.000, 180.000, 122]
+    region:   e_187
     level:    [66, 69]
   17240252:
     template: Velociraptor
-    at:       [168.083, 0.900, 213.647, 127]
+    region:   e_187
     level:    [66, 69]
   17240253:
     template: Sand_Cockatrice
-    at:       [150.518, 7.749, 199.094, 127]
+    region:   e_187
     level:    [71, 74]
   17240254:
     template: Sand_Cockatrice
-    at:       [144.348, 4.111, 161.584, 127]
+    region:   e_187
     level:    [71, 74]
   17240255:
     template: Sand_Cockatrice
-    at:       [157.000, 8.000, 175.000, 16]
+    region:   e_187
     level:    [71, 74]
   17240256:
     template: Sand_Cockatrice
-    at:       [117.718, 6.747, 198.080, 18]
+    region:   e_187
     level:    [71, 74]
   17240257:
     template: Sand_Cockatrice
-    at:       [114.439, 2.856, 180.074, 75]
+    region:   e_187
     level:    [71, 74]
   17240258:
     template: Velociraptor
-    at:       [82.003, 1.170, 95.608, 127]
+    region:   e_194
     level:    [66, 69]
   17240259:
     template: Sand_Cockatrice
-    at:       [82.067, -0.316, 127.873, 127]
+    region:   e_194
     level:    [71, 74]
   17240260:
     template: Sand_Cockatrice
-    at:       [83.253, -1.790, 112.033, 49]
+    region:   e_194
     level:    [71, 74]
   17240261:
     template: Velociraptor
-    at:       [91.000, -0.600, 231.000, 127]
+    region:   ne_197
     level:    [66, 69]
   17240262:
     template: Velociraptor
-    at:       [119.591, 0.109, 266.963, 32]
+    region:   ne_197
     level:    [66, 69]
   17240263:
     template: Sand_Cockatrice
-    at:       [103.527, -1.083, 258.867, 97]
+    region:   ne_197
     level:    [71, 74]
   17240264:
     template: Sand_Cockatrice
-    at:       [128.933, -0.817, 263.799, 127]
+    region:   ne_197
     level:    [71, 74]
   17240265:
     template: Air_Elemental
-    at:       [121.440, 0.423, 261.537, 127]
+    region:   ne_197
     level:    [52, 54]
   17240266:
     template: Velociraptor
-    at:       [137.000, 0.158, 242.000, 125]
+    region:   ne_202
     level:    [66, 69]
   17240267:
     template: Velociraptor
-    at:       [122.793, -0.198, 236.149, 94]
+    region:   ne_202
     level:    [66, 69]
   17240268:
     template: Sand_Cockatrice
-    at:       [145.641, 0.236, 236.808, 42]
+    region:   ne_202
     level:    [71, 74]
   17240269:
     template: Sand_Cockatrice
-    at:       [164.000, -0.271, 237.000, 79]
+    region:   ne_202
     level:    [71, 74]
   17240270:
     template: Velociraptor
-    at:       [50.567, -0.924, 247.046, 127]
+    region:   ne_206
     level:    [66, 69]
   17240271:
     template: Velociraptor
-    at:       [31.773, -1.048, 211.751, 127]
+    region:   ne_202
     level:    [66, 69]
   17240272:
     template: Sand_Cockatrice
-    at:       [91.793, -0.254, 247.486, 35]
+    region:   ne_206
     level:    [71, 74]
   17240273:
     template: Sand_Cockatrice
-    at:       [45.611, -0.419, 241.266, 36]
+    region:   ne_206
     level:    [71, 74]
   17240274:
     template: Goblin_Mercenary
-    at:       [-5.629, -0.759, 236.711, 101]
+    region:   n_210
     level:    [65, 68]
   17240275:
     template: Goblin_Alchemist
-    at:       [9.977, -0.432, 237.051, 33]
+    region:   n_210
     level:    [65, 68]
   17240276:
     template: Velociraptor
-    at:       [-10.869, -1.958, 244.579, 26]
+    region:   n_210
     level:    [66, 69]
   17240277:
     template: Velociraptor
-    at:       [-19.223, -4.428, 273.239, 85]
+    region:   n_210
     level:    [66, 69]
   17240278:
     template: Velociraptor
-    at:       [26.689, -2.211, 210.332, 102]
+    region:   n_210
     level:    [66, 69]
   17240279:
     template: Doom_Soldier
-    at:       [5.822, 0.018, 255.433, 127]
+    region:   n_210
     level:    [66, 70]
   17240280:
     template: Doom_Mage
-    at:       [-1.278, -0.747, 285.251, 127]
+    region:   n_210
     level:    [67, 71]
   17240281:
     template: Goblin_Alchemist
-    at:       [-40.444, -8.500, 278.100, 4]
+    region:   n_217
     level:    [65, 68]
   17240282:
     template: Velociraptor
-    at:       [-44.221, -8.504, 274.782, 127]
+    region:   n_217
     level:    [66, 69]
   17240283:
     template: Velociraptor
-    at:       [-32.415, -7.534, 262.930, 15]
+    region:   n_210
     level:    [66, 69]
   17240284:
     template: Velociraptor
-    at:       [-31.271, -8.417, 238.722, 95]
+    region:   n_217
     level:    [66, 69]
   17240285:
     template: Velociraptor
-    at:       [-38.159, -8.356, 245.696, 127]
+    region:   n_217
     level:    [66, 69]
   17240286:
     template: Doom_Mage
-    at:       [-47.960, -10.331, 284.954, 127]
+    region:   n_217
     level:    [67, 71]
   17240287:
     template: Fantasma
-    at:       [-29.000, -7.000, 287.000, 127]
+    region:   n_217
     level:    [65, 68]
   17240288:
     template: Goblin_Mercenary
-    at:       [-78.000, -7.000, 233.000, 127]
+    region:   c_224
     level:    [65, 68]
   17240289:
     template: Goblin_Mercenary
-    at:       [-92.657, -8.133, 202.634, 84]
+    region:   c_224
     level:    [65, 68]
   17240290:
     template: Goblin_Shepherd
-    at:       [-58.783, -8.391, 227.263, 94]
+    region:   c_224
     level:    [65, 68]
   17240291:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   c_224
     level:    [48, 50]
   17240292:
     template: Velociraptor
-    at:       [-50.000, -7.000, 236.000, 127]
+    region:   c_224
     level:    [66, 69]
   17240293:
     template: Velociraptor
-    at:       [-68.787, -8.437, 218.052]
+    region:   w_240
     level:    [66, 69]
   17240294:
     template: Doom_Soldier
-    at:       [-59.083, -7.753, 235.910, 139]
+    region:   c_224
     level:    [66, 70]
   17240295:
     template: Doom_Soldier
-    at:       [-63.026, -9.126, 223.178, 127]
+    region:   c_224
     level:    [66, 70]
   17240296:
     template: Goblin_Shepherd
-    at:       [-103.667, -7.724, 198.084, 51]
+    region:   c_232
     level:    [65, 68]
   17240297:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   c_232
     level:    [49, 50]
   17240298:
     template: Goblin_Alchemist
-    at:       [-148.605, -8.728, 224.892, 39]
+    region:   c_232
     level:    [66, 68]
   17240299:
     template: Goblin_Bandit
-    at:       [-119.385, -10.890, 224.180, 67]
+    region:   c_232
     level:    [65, 68]
   17240300:
     template: Velociraptor
-    at:       [-146.404, -8.334, 206.000, 127]
+    region:   c_232
     level:    [66, 69]
   17240301:
     template: Velociraptor
-    at:       [-139.723, -9.936, 222.956, 127]
+    region:   w_240
     level:    [66, 69]
   17240302:
     template: Velociraptor
-    at:       [-152.773, -8.364, 235.812, 89]
+    region:   n_260
     level:    [66, 69]
   17240303:
     template: Fire_Elemental
-    at:       [-133.441, -9.796, 232.733, 120]
+    region:   c_232
     level:    [67, 69]
   17240304:
     template: Goblin_Shepherd
-    at:       [-170.000, -7.000, 234.000, 123]
+    region:   w_240
     level:    [65, 68]
   17240305:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   w_240
     level:    [48, 50]
   17240306:
     template: Goblin_Mercenary
-    at:       [-196.058, -0.664, 242.764, 127]
+    region:   w_240
     level:    [65, 68]
   17240307:
     template: Goblin_Mercenary
-    at:       [-199.529, -0.529, 239.002, 127]
+    region:   w_240
     level:    [65, 68]
   17240308:
     template: Goblin_Alchemist
-    at:       [-186.032, -7.719, 196.377, 127]
+    region:   w_240
     level:    [65, 68]
   17240309:
     template: Velociraptor
-    at:       [-186.606, -5.249, 222.630, 127]
+    region:   w_240
     level:    [66, 69]
   17240310:
     template: Velociraptor
-    at:       [-207.198, -1.415, 233.102, 16]
+    region:   w_240
     level:    [66, 69]
   17240311:
     template: Velociraptor
-    at:       [-202.256, -0.473, 236.764, 29]
+    region:   w_240
     level:    [66, 69]
   17240312:
     template: Doom_Soldier
-    at:       [-193.983, -1.977, 229.738, 197]
+    region:   w_240
     level:    [66, 70]
   17240313:
     template: Doom_Mage
-    at:       [-194.611, -6.558, 210.991, 117]
+    region:   w_240
     level:    [67, 71]
   17240314:
     template: Fire_Elemental
-    at:       [-205.226, -0.811, 244.788, 82]
+    region:   w_240
     level:    [67, 69]
   17240315:
     template: Zmey_Gorynych
-    at:       [-212.197, -1.902, 239.375, 165]
+    region:   w_240
     level:    [78, 78]
   17240316:
     template: Goblin_Mercenary
-    at:       [-61.664, -8.015, 163.289, 86]
+    region:   c_252
     level:    [65, 68]
   17240317:
     template: Velociraptor
-    at:       [-65.404, 0.159, 120.915, 127]
+    region:   c_252
     level:    [66, 69]
   17240318:
     template: Sand_Cockatrice
-    at:       [-22.969, -7.305, 159.582, 126]
+    region:   c_252
     level:    [71, 74]
   17240319:
     template: Sand_Cockatrice
-    at:       [-8.855, -0.258, 121.569, 16]
+    region:   c_252
     level:    [71, 74]
   17240320:
     template: Sand_Cockatrice
-    at:       [-40.800, -8.440, 159.852, 143]
+    region:   c_252
     level:    [71, 74]
   17240321:
     template: Sand_Cockatrice
-    at:       [-66.669, -7.936, 158.061, 127]
+    region:   c_252
     level:    [71, 74]
   17240322:
     template: Doom_Soldier
-    at:       [-86.270, -8.911, 152.536, 93]
+    region:   c_252
     level:    [66, 70]
   17240323:
     template: Enna-enna
-    at:       [-58.308, -7.562, 154.104, 127]
+    region:   c_252
     level:    [65, 69]
   17240324:
     template: Robber_Crab
-    at:       [-121.445, -9.426, 251.172, 127]
+    region:   n_260
     level:    [64, 67]
   17240325:
     template: Robber_Crab
-    at:       [-114.396, -8.419, 241.882, 100]
+    region:   n_260
     level:    [64, 67]
   17240326:
     template: Robber_Crab
-    at:       [-129.904, -8.313, 238.074, 127]
+    region:   n_260
     level:    [64, 67]
   17240327:
     template: Robber_Crab
-    at:       [-97.410, -7.675, 239.510, 127]
+    region:   c_267
     level:    [64, 67]
   17240328:
     template: Robber_Crab
-    at:       [-126.317, -10.140, 252.654, 10]
+    region:   n_260
     level:    [64, 67]
   17240329:
     template: Robber_Crab
-    at:       [-151.949, -8.318, 197.560, 99]
+    region:   c_267
     level:    [64, 67]
   17240330:
     template: Robber_Crab
-    at:       [-163.870, -8.497, 196.435, 90]
+    region:   c_252
     level:    [64, 67]
   17240331:
     template: Robber_Crab
-    at:       [-146.095, -8.316, 190.249, 33]
+    region:   c_267
     level:    [64, 67]
   17240332:
     template: Robber_Crab
-    at:       [-160.245, -8.501, 199.611, 127]
+    region:   c_267
     level:    [64, 67]
   17240333:
     template: Robber_Crab
-    at:       [-169.853, -8.594, 194.528, 30]
+    region:   n_260
     level:    [64, 67]
   17240334:
     template: Robber_Crab
-    at:       [-177.941, -8.778, 191.490, 142]
+    region:   n_260
     level:    [64, 67]
   17240335:
     template: Goblin_Shepherd
-    at:       [-220.137, -7.809, 167.873, 127]
+    region:   w_271
     level:    [65, 68]
   17240336:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   w_271
     level:    [48, 50]
   17240337:
     template: Goblin_Alchemist
-    at:       [-231.748, -9.503, 171.745, 127]
+    region:   w_271
     level:    [65, 68]
   17240338:
     template: Goblin_Bandit
-    at:       [-236.574, -8.496, 162.404, 92]
+    region:   w_271
     level:    [65, 68]
   17240339:
     template: Velociraptor
-    at:       [-246.015, -8.619, 160.529, 127]
+    region:   w_271
     level:    [66, 69]
   17240340:
     template: Velociraptor
-    at:       [-216.020, -8.280, 156.083, 84]
+    region:   w_271
     level:    [66, 69]
   17240341:
     template: Velociraptor
-    at:       [-200.931, -8.008, 161.038, 50]
+    region:   w_240
     level:    [66, 69]
   17240342:
     template: Enna-enna
-    at:       [-199.121, -7.927, 184.343, 127]
+    region:   w_271
     level:    [65, 69]
   17240343:
     template: Doom_Soldier
-    at:       [-248.016, -9.684, 152.482, 212]
+    region:   w_271
     level:    [66, 70]
   17240344:
     template: Doom_Soldier
-    at:       [-196.000, -8.000, 157.000, 127]
+    region:   w_271
     level:    [66, 70]
   17240345:
     template: Goblin_Bandit
-    at:       [-303.225, -16.748, 157.660, 66]
+    region:   w_281
     level:    [65, 68]
   17240346:
     template: Goblin_Bandit
-    at:       [-207.871, -8.641, 153.776, 124]
+    region:   w_281
     level:    [65, 68]
   17240347:
     template: Goblin_Mercenary
-    at:       [-276.030, -16.436, 137.363, 13]
+    region:   w_281
     level:    [65, 68]
   17240348:
     template: Goblin_Shepherd
-    at:       [-340.797, -0.621, 200.935, 127]
+    region:   w_284
     level:    [65, 68]
   17240349:
     template: Goblins_Rabbit
-    at:       [1.000, 1.000, 1.000]
+    region:   w_284
     level:    [48, 50]
   17240350:
     template: Goblin_Alchemist
-    at:       [-328.559, -1.750, 258.524, 127]
+    region:   w_284
     level:    [65, 68]
   17240351:
     template: Doom_Soldier
-    at:       [-339.214, -1.256, 212.411, 122]
+    region:   w_284
     level:    [66, 70]
   17240352:
     template: Goblin_Shepherd
-    at:       [-302.833, -9.386, 290.335, 127]
+    region:   nw_290
     level:    [65, 68]
   17240353:
     template: Goblins_Rabbit
@@ -2484,243 +2484,243 @@ spawns:
     level:    [48, 50]
   17240354:
     template: Goblin_Mercenary
-    at:       [-297.632, -10.542, 339.524, 127]
+    region:   nw_290
     level:    [65, 68]
   17240355:
     template: Goblin_Bandit
-    at:       [-299.758, -8.114, 301.156, 76]
+    region:   nw_290
     level:    [65, 68]
   17240356:
     template: Goblin_Alchemist
-    at:       [-303.906, -6.464, 272.455, 82]
+    region:   nw_290
     level:    [65, 67]
   17240357:
     template: Sand_Cockatrice
-    at:       [118.001, 7.499, 362.037, 127]
+    region:   ne_293
     level:    [71, 74]
   17240358:
     template: Sand_Cockatrice
-    at:       [111.987, 7.027, 324.558, 127]
+    region:   ne_293
     level:    [71, 74]
   17240359:
     template: Greater_Manticore
-    at:       [167.452, 7.262, 360.168, 127]
+    region:   ne_293
     level:    [76, 79]
   17240360:
     template: Greater_Manticore
-    at:       [110.548, 6.964, 357.024, 7]
+    region:   ne_293
     level:    [76, 79]
   17240361:
     template: Greater_Manticore
-    at:       [131.227, 7.632, 337.879, 127]
+    region:   ne_293
     level:    [76, 79]
   17240362:
     template: Greater_Manticore
-    at:       [112.925, 7.222, 356.178, 127]
+    region:   ne_293
     level:    [76, 79]
   17240363:
     template: Sand_Cockatrice
-    at:       [-192.312, -1.160, 354.857, 115]
+    region:   nw_299
     level:    [71, 74]
   17240364:
     template: Greater_Manticore
-    at:       [-202.000, -0.500, 370.000, 127]
+    region:   nw_299
     level:    [76, 79]
   17240365:
     template: Greater_Manticore
-    at:       [-231.989, -0.542, 366.856, 18]
+    region:   nw_299
     level:    [76, 79]
   17240366:
     template: Sand_Cockatrice
-    at:       [-212.000, -0.388, 433.000, 127]
+    region:   nw_302
     level:    [71, 74]
   17240367:
     template: Greater_Manticore
-    at:       [-205.943, -0.545, 394.386, 117]
+    region:   nw_302
     level:    [76, 79]
   17240368:
     template: Greater_Manticore
-    at:       [-208.434, -0.057, 417.289, 127]
+    region:   nw_302
     level:    [76, 79]
   17240369:
     template: Greater_Manticore
-    at:       [-199.000, -0.430, 405.000, 127]
+    region:   nw_302
     level:    [76, 79]
   17240370:
     template: Sand_Cockatrice
-    at:       [-246.452, -0.893, 447.796, 81]
+    region:   nw_306
     level:    [71, 74]
   17240371:
     template: Greater_Manticore
-    at:       [-262.000, -0.700, 442.000, 127]
+    region:   nw_306
     level:    [76, 79]
   17240372:
     template: Greater_Manticore
-    at:       [-272.224, -0.942, 461.321, 127]
+    region:   nw_306
     level:    [76, 79]
   17240373:
     template: Greater_Manticore
-    at:       [-268.000, -0.558, 440.000, 127]
+    region:   nw_306
     level:    [76, 79]
   17240374:
     template: Greater_Manticore
-    at:       [-283.874, -0.660, 485.504, 127]
+    region:   nw_306
     level:    [76, 79]
   17240375:
     template: Greater_Manticore
-    at:       [-224.000, -0.535, 435.000, 127]
+    region:   nw_306
     level:    [76, 79]
   17240376:
     template: Frostmane
-    at:       [-281.000, -0.500, 471.000, 127]
+    region:   nw_306
     level:    [80, 80]
   17240377:
     template: Air_Elemental
-    at:       [-273.408, -0.727, 481.573, 127]
+    region:   nw_306
     level:    [52, 54]
   17240378:
     template: Sand_Cockatrice
-    at:       [-174.099, -0.560, 447.000, 79]
+    region:   nw_314
     level:    [71, 74]
   17240379:
     template: Greater_Manticore
-    at:       [-165.060, -0.512, 434.314, 9]
+    region:   nw_314
     level:    [76, 79]
   17240380:
     template: Greater_Manticore
-    at:       [-164.323, -0.465, 438.714, 127]
+    region:   nw_314
     level:    [76, 79]
   17240381:
     template: Greater_Manticore
-    at:       [-189.945, -0.276, 441.843, 66]
+    region:   nw_314
     level:    [76, 79]
   17240382:
     template: Greater_Manticore
-    at:       [-177.000, -0.494, 474.000, 127]
+    region:   nw_318
     level:    [76, 79]
   17240383:
     template: Greater_Manticore
-    at:       [-161.472, 0.184, 461.402, 43]
+    region:   nw_318
     level:    [76, 79]
   17240384:
     template: Air_Elemental
-    at:       [-173.940, -0.392, 467.717, 61]
+    region:   nw_318
     level:    [52, 54]
   17240385:
     template: Goblin_Mercenary
-    at:       [-98.000, -10.000, 423.000, 24]
+    region:   n_322
     level:    [65, 68]
   17240386:
     template: Goblin_Alchemist
-    at:       [-101.055, -8.415, 445.757, 161]
+    region:   n_322
     level:    [66, 67]
   17240387:
     template: Goblin_Bandit
-    at:       [-98.762, -8.548, 438.355, 166]
+    region:   n_323
     level:    [65, 68]
   17240388:
     template: Goblin_Mercenary
-    at:       [-100.000, -8.000, 437.000, 36]
+    region:   n_323
     level:    [65, 68]
   17240389:
     template: Sand_Cockatrice
-    at:       [74.069, 0.499, 51.230, 103]
+    region:   e_326
     level:    [71, 74]
   17240390:
     template: Sand_Cockatrice
-    at:       [88.973, -1.498, 68.817, 127]
+    region:   e_326
     level:    [71, 74]
   17240391:
     template: Sand_Cockatrice
-    at:       [86.488, -0.434, 79.905, 127]
+    region:   e_326
     level:    [71, 74]
   17240392:
     template: Greater_Manticore
-    at:       [119.613, -0.526, 78.168, 90]
+    region:   e_326
     level:    [76, 79]
   17240393:
     template: Greater_Manticore
-    at:       [102.000, 0.940, 75.000, 97]
+    region:   e_326
     level:    [76, 79]
   17240394:
     template: Sand_Cockatrice
-    at:       [195.000, 8.000, 53.000, 33]
+    region:   e_333
     level:    [71, 74]
   17240395:
     template: Sand_Cockatrice
-    at:       [177.000, 8.000, 78.000, 44]
+    region:   e_333
     level:    [71, 74]
   17240396:
     template: Sand_Cockatrice
-    at:       [154.603, 7.326, 82.811, 127]
+    region:   e_333
     level:    [71, 74]
   17240397:
     template: Greater_Manticore
-    at:       [198.231, 7.527, 82.958, 127]
+    region:   e_333
     level:    [76, 79]
   17240398:
     template: Greater_Manticore
-    at:       [133.334, 0.147, 89.726, 127]
+    region:   e_333
     level:    [76, 79]
   17240399:
     template: Greater_Manticore
-    at:       [200.418, 7.510, -2.290, 127]
+    region:   e_335
     level:    [76, 79]
   17240400:
     template: Greater_Manticore
-    at:       [219.000, 7.000, 20.000, 127]
+    region:   e_335
     level:    [76, 79]
   17240401:
     template: Sand_Cockatrice
-    at:       [214.181, 7.617, -1.953, 127]
+    region:   e_335
     level:    [71, 74]
   17240402:
     template: Sand_Cockatrice
-    at:       [207.462, 7.704, -0.030, 2]
+    region:   e_335
     level:    [71, 74]
   17240403:
     template: Sand_Cockatrice
-    at:       [188.874, 6.415, 1.711, 127]
+    region:   e_335
     level:    [71, 74]
   17240404:
     template: Sand_Cockatrice
-    at:       [195.000, 8.000, 67.000, 121]
+    region:   e_335
     level:    [71, 74]
   17240405:
     template: Greater_Manticore
-    at:       [241.310, 7.412, 40.969, 127]
+    region:   e_341
     level:    [76, 79]
   17240406:
     template: Greater_Manticore
-    at:       [239.057, 6.201, 51.442, 156]
+    region:   e_341
     level:    [76, 79]
   17240407:
     template: Greater_Manticore
-    at:       [244.008, 6.942, -9.908, 127]
+    region:   e_335
     level:    [76, 79]
   17240408:
     template: Greater_Manticore
-    at:       [240.000, 8.000, 19.000, 43]
+    region:   e_341
     level:    [76, 79]
   17240409:
     template: Sand_Cockatrice
-    at:       [211.000, 8.000, 13.000, 38]
+    region:   e_341
     level:    [71, 74]
   17240410:
     template: Sand_Cockatrice
-    at:       [195.000, 8.000, 29.000, 21]
+    region:   e_341
     level:    [71, 74]
   17240411:
     template: Sand_Cockatrice
-    at:       [202.000, 7.000, 31.000, 127]
+    region:   e_341
     level:    [71, 74]
   17240412:
     template: Sand_Cockatrice
-    at:       [189.000, 8.000, 18.000, 17]
+    region:   e_335
     level:    [71, 74]
   17240413:
     template: Kreutzet
-    at:       [207.000, 8.000, 1.000, 79]
+    region:   region_53
     level:    [79, 80]
   17240414:
     template: Axesarion_the_Wanderer

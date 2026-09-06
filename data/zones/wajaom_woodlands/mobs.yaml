@@ -3945,11 +3945,11 @@ spawns:
     level:    [62, 63]
   16986144:
     template: Marid
-    at:       [142.000, -26.000, 284.000, 127]
+    region:   n_40
     level:    [77, 78]
   16986145:
     template: Marid
-    at:       [133.000, -26.000, 304.000, 127]
+    region:   n_40
     level:    [77, 78]
   16986146:
     template: Red_Kisser
@@ -3965,15 +3965,15 @@ spawns:
     level:    [68, 69]
   16986149:
     template: Grand_Marid
-    at:       [138.000, -26.000, 296.000, 127]
+    region:   n_40
     level:    [79, 80]
   16986150:
     template: Marid
-    at:       [203.000, -24.000, 279.000, 127]
+    region:   region_122
     level:    [77, 78]
   16986151:
     template: Marid
-    at:       [207.000, -25.000, 294.000, 127]
+    region:   region_122
     level:    [77, 78]
   16986152:
     template: Lesser_Colibri
@@ -4063,15 +4063,15 @@ spawns:
     level:    [62, 63]
   16986172:
     template: Marid
-    at:       [286.000, -24.000, 125.000, 127]
+    region:   region_123
     level:    [77, 78]
   16986173:
     template: Marid
-    at:       [278.000, -23.000, 113.000, 127]
+    region:   region_123
     level:    [77, 78]
   16986174:
     template: Grand_Marid
-    at:       [264.000, -23.000, 105.000, 127]
+    region:   region_123
     level:    [79, 80]
   16986175:
     template: Lesser_Colibri
@@ -4083,11 +4083,11 @@ spawns:
     level:    [63, 65]
   16986177:
     template: Marid
-    at:       [188.000, -24.000, 143.000, 127]
+    region:   region_124
     level:    [77, 78]
   16986178:
     template: Marid
-    at:       [157.000, -24.000, 122.000, 127]
+    region:   region_124
     level:    [77, 78]
   16986179:
     template: Lesser_Colibri
@@ -4821,7 +4821,7 @@ spawns:
     level:    [75, 75]
   16986355:
     template: Hydra
-    at:       [-282.000, -24.000, -1.000, 127]
+    region:   region_125
     level:    [80, 80]
   16986356:
     template: Soldier_Pephredo
@@ -4837,7 +4837,7 @@ spawns:
     level:    [63, 64]
   16986359:
     template: Soldier_Pephredo
-    at:       [-688.000, -7.000, -156.000, 127]
+    region:   region_121
     level:    [64, 66]
   16986360:
     template: Worker_Pephredo
@@ -4919,7 +4919,7 @@ spawns:
     level:    [73, 74]
   16986378:
     template: Jaded_Jody
-    at:       [-572.000, -8.500, -335.000, 127]
+    region:   sw_264
     level:    [80, 80]
   16986379:
     template: Puk_WW

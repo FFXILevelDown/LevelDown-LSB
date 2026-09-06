@@ -43,7 +43,6 @@
 #include <type_traits>
 
 #include "common/lua.h"
-extern sol::state lua;
 
 // Sol compilation definitions are in the base CMakeLists file
 // SOL_ALL_SAFETIES_ON = 1

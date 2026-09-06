@@ -321,4 +321,18 @@ xi.equipment.hasRelic = function(player, relic, tier)
     return false
 end
 
+---Equipped item id for the slot, or 0 when its required level is above the player's current level (level sync/cap)
+---@nodiscard
+---@param player CBaseEntity
+---@param slot xi.slot
+---@return xi.item
+xi.equipment.getUsableEquipID = function(player, slot)
+    local item = player:getEquippedItem(slot)
+    if item and item:getReqLvl() <= player:getMainLvl() then
+        return item:getID()
+    end
+
+    return xi.item.NONE
+end
+
 xi.equip = xi.equipment

@@ -1,5 +1,4 @@
 set(SOURCES
-    ${COMMON_SOURCES}
     besieged_system.cpp
     besieged_system.h
     campaign_system.cpp
@@ -27,44 +26,13 @@ set(SOURCES
     zone_settings.h
 )
 
-if(UNIX)
-    set(resource "")
-else()
-    set(resource "${CMAKE_SOURCE_DIR}/res/worldserver.rc")
-endif()
-
-add_executable(xi_world
-    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
-    ${resource})
-
-set(WORLD_LIB_SOURCES ${SOURCES})
-add_library(xi_world_lib
-    STATIC
-        ${WORLD_LIB_SOURCES})
-
+xi_add_library(xi_world_lib ${SOURCES})
+target_include_directories(xi_world_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(xi_world_lib
     PUBLIC
-        ${SHARED_EXTERNAL_LIBS}
-        ${WORLD_ONLY_EXTERNAL_LIBS}
-        project_options
         xi_data_core
-    PRIVATE
-        project_warnings
+        ${WORLD_ONLY_EXTERNAL_LIBS}
 )
 
-target_include_directories(xi_world_lib
-    PUBLIC
-        ${CMAKE_SOURCE_DIR}
-        ${CMAKE_SOURCE_DIR}/src
-        ${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-if (APPLE)
-    disable_lto(xi_world)
-endif()
-
-target_link_libraries(xi_world
-    PUBLIC
-        xi_world_lib)
-
-set_target_output_directory(xi_world)
+xi_add_executable(xi_world worldserver.rc ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+target_link_libraries(xi_world PRIVATE xi_world_lib)

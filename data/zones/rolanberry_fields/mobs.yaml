@@ -2017,27 +2017,27 @@ spawns:
     level:    [34, 36]
   17227782:
     template: Silk_Caterpillar
-    at:       [340.000, 0.380, 179.000, 127]
+    region:   ne_6
     level:    [28, 30]
   17227783:
     template: Death_Wasp
-    at:       [-48.345, -9.267, -693.279, 127]
+    region:   s_7
     level:    [25, 26]
   17227784:
     template: Death_Wasp
-    at:       [-5.195, 0.136, -813.223, 40]
+    region:   s_7
     level:    [25, 26]
   17227785:
     template: Death_Wasp
-    at:       [48.698, -8.080, -689.458, 17]
+    region:   s_7
     level:    [25, 26]
   17227786:
     template: Death_Wasp
-    at:       [-25.934, -4.863, -689.032, 127]
+    region:   s_7
     level:    [25, 26]
   17227787:
     template: Moon_Bat
-    at:       [15.146, -3.192, -826.552, 61]
+    region:   s_7
     level:    [25, 26]
     attributes:
       spawn:
@@ -2046,7 +2046,7 @@ spawns:
           end:    6
   17227788:
     template: Moon_Bat
-    at:       [-21.000, -6.187, -706.617, 127]
+    region:   s_7
     level:    [25, 26]
     attributes:
       spawn:
@@ -2055,7 +2055,7 @@ spawns:
           end:    5
   17227789:
     template: Moon_Bat
-    at:       [-19.937, -3.435, -675.620, 120]
+    region:   s_7
     level:    [25, 26]
     attributes:
       spawn:
@@ -2064,43 +2064,43 @@ spawns:
           end:    4
   17227790:
     template: Goobbue_Farmer
-    at:       [-4.981, -1.130, -648.119, 116]
+    region:   s_7
     level:    [31, 32]
   17227791:
     template: Berry_Grub
-    at:       [-36.544, -6.517, -735.386, 127]
+    region:   s_15
     level:    [27, 28]
   17227792:
     template: Berry_Grub
-    at:       [-21.073, -5.854, -742.824, 107]
+    region:   s_15
     level:    [27, 28]
   17227793:
     template: Berry_Grub
-    at:       [66.267, -8.551, -737.068, 31]
+    region:   s_17
     level:    [27, 28]
   17227794:
     template: Berry_Grub
-    at:       [-100.847, -5.859, -619.436, 127]
+    region:   s_17
     level:    [27, 28]
   17227795:
     template: Death_Wasp
-    at:       [-160.248, -7.737, -607.978, 127]
+    region:   s_19
     level:    [25, 26]
   17227796:
     template: Death_Wasp
-    at:       [-88.124, -7.194, -654.235, 119]
+    region:   s_19
     level:    [25, 26]
   17227797:
     template: Death_Wasp
-    at:       [-28.365, 2.392, -598.413, 122]
+    region:   s_19
     level:    [25, 26]
   17227798:
     template: Death_Wasp
-    at:       [-57.795, 3.730, -555.583, 112]
+    region:   s_19
     level:    [25, 26]
   17227799:
     template: Moon_Bat
-    at:       [-8.326, 2.292, -625.871, 127]
+    region:   s_19
     level:    [25, 26]
     attributes:
       spawn:
@@ -2109,7 +2109,7 @@ spawns:
           end:    6
   17227800:
     template: Moon_Bat
-    at:       [-180.067, -8.347, -615.935, 90]
+    region:   s_19
     level:    [25, 26]
     attributes:
       spawn:
@@ -2118,7 +2118,7 @@ spawns:
           end:    5
   17227801:
     template: Moon_Bat
-    at:       [-40.960, 0.436, -550.934, 75]
+    region:   s_19
     level:    [25, 26]
     attributes:
       spawn:
@@ -2127,51 +2127,51 @@ spawns:
           end:    4
   17227802:
     template: Goobbue_Farmer
-    at:       [-27.249, 0.437, -565.683, 35]
+    region:   s_19
     level:    [31, 32]
   17227803:
     template: Berry_Grub
-    at:       [-96.468, -7.567, -647.508, 127]
+    region:   s_27
     level:    [27, 28]
   17227804:
     template: Berry_Grub
-    at:       [-149.619, -7.521, -621.630, 127]
+    region:   s_27
     level:    [27, 28]
   17227805:
     template: Berry_Grub
-    at:       [-130.993, -7.599, -627.434, 15]
+    region:   s_27
     level:    [27, 28]
   17227806:
     template: Berry_Grub
-    at:       [-72.994, 0.361, -584.919, 127]
+    region:   s_27
     level:    [27, 28]
   17227807:
     template: Berry_Grub
-    at:       [-63.000, -0.736, -511.000, 87]
+    region:   s_31
     level:    [27, 28]
   17227808:
     template: Berry_Grub
-    at:       [-79.000, -0.174, -499.000, 127]
+    region:   s_31
     level:    [27, 28]
   17227809:
     template: Death_Wasp
-    at:       [-139.300, 2.284, -500.728, 127]
+    region:   s_33
     level:    [25, 26]
   17227810:
     template: Death_Wasp
-    at:       [-205.050, -0.037, -525.542, 31]
+    region:   s_33
     level:    [25, 26]
   17227811:
     template: Death_Wasp
-    at:       [-191.042, -3.095, -536.380, 23]
+    region:   s_33
     level:    [25, 26]
   17227812:
     template: Death_Wasp
-    at:       [-93.089, -0.574, -510.639, 127]
+    region:   s_33
     level:    [25, 26]
   17227813:
     template: Moon_Bat
-    at:       [-167.886, -1.098, -561.463, 127]
+    region:   s_33
     level:    [25, 26]
     attributes:
       spawn:
@@ -2180,7 +2180,7 @@ spawns:
           end:    6
   17227814:
     template: Moon_Bat
-    at:       [-166.256, 4.350, -497.802, 125]
+    region:   s_33
     level:    [25, 26]
     attributes:
       spawn:
@@ -2189,7 +2189,7 @@ spawns:
           end:    5
   17227815:
     template: Moon_Bat
-    at:       [-208.633, 4.604, -498.459, 127]
+    region:   s_33
     level:    [25, 26]
     attributes:
       spawn:
@@ -2198,97 +2198,97 @@ spawns:
           end:    4
   17227816:
     template: Goobbue_Farmer
-    at:       [-120.482, 3.952, -536.600, 16]
+    region:   s_33
     level:    [31, 32]
   17227817:
     template: Berry_Grub
-    at:       [-54.000, -0.908, -516.000, 127]
+    region:   s_41
     level:    [27, 28]
   17227818:
     template: Berry_Grub
-    at:       [-58.352, -0.268, -493.549, 127]
+    region:   s_41
     level:    [27, 28]
   17227819:
     template: Berry_Grub
-    at:       [-165.483, -1.284, -529.779, 127]
+    region:   s_41
     level:    [27, 28]
   17227820:
     template: Berry_Grub
-    at:       [-169.323, -0.389, -539.580, 33]
+    region:   s_44
     level:    [27, 28]
   17227821:
     template: Berry_Grub
-    at:       [32.164, -7.845, -620.960, 127]
+    region:   s_44
     level:    [27, 28]
   17227822:
     template: Old_Quadav
-    at:       [-24.467, 4.113, -614.182, 127]
+    region:   s_46
     level:    [27, 28]
   17227823:
     template: Copper_Quadav
-    at:       [-73.795, -0.009, -612.551, 50]
+    region:   s_46
     level:    [27, 28]
   17227824:
     template: Bronze_Quadav
-    at:       [4.514, -1.232, -646.615, 127]
+    region:   s_46
     level:    [32, 33]
   17227825:
     template: Brass_Quadav
-    at:       [-167.058, -7.940, -639.854, 64]
+    region:   s_46
     level:    [27, 28]
   17227826:
     template: Silver_Quadav
-    at:       [-160.927, -0.170, -552.050, 72]
+    region:   s_46
     level:    [32, 33]
   17227827:
     template: Zircon_Quadav
-    at:       [-84.198, 1.905, -550.255, 127]
+    region:   s_46
     level:    [32, 33]
   17227828:
     template: Garnet_Quadav
-    at:       [19.438, -7.346, -683.309, 117]
+    region:   s_46
     level:    [32, 33]
   17227829:
     template: Wight_war
     script:   Wight
-    at:       [-78.953, 0.637, -557.610, 127]
+    region:   s_46
     level:    [32, 34]
   17227830:
     template: Wight_blm
     script:   Wight
-    at:       [-44.751, -6.203, -672.086, 127]
+    region:   s_46
     level:    [32, 34]
   17227831:
     template: Fire_Elemental
-    at:       [-0.593, -7.964, -769.307, 84]
+    region:   s_7
     level:    [38, 40]
   17227832:
     template: Berry_Grub
-    at:       [43.695, -7.928, -630.779, 127]
+    region:   s_56
     level:    [27, 28]
   17227833:
     template: Berry_Grub
-    at:       [124.023, -15.647, -746.315, 44]
+    region:   s_56
     level:    [27, 28]
   17227834:
     template: Berry_Grub
-    at:       [43.453, -7.982, -640.625, 69]
+    region:   s_56
     level:    [27, 28]
   17227835:
     template: Berry_Grub
-    at:       [-290.302, -8.695, -526.615, 88]
+    region:   s_56
     level:    [27, 28]
   17227836:
     template: Ochu
-    at:       [77.579, -15.219, -662.028, 42]
+    region:   s_56
     level:    [36, 37]
   17227837:
     template: Ochu
-    at:       [91.236, -13.909, -699.929, 3]
+    region:   s_56
     level:    [36, 37]
   17227838:
     template: Midnight_Wings
-    at:       [41.242, -7.858, -606.041, 125]
+    region:   s_56
     level:    [22, 23]
     attributes:
       spawn:
@@ -2297,7 +2297,7 @@ spawns:
           end:    6
   17227839:
     template: Midnight_Wings
-    at:       [60.196, -9.902, -623.181, 116]
+    region:   s_56
     level:    [22, 23]
     attributes:
       spawn:
@@ -2306,7 +2306,7 @@ spawns:
           end:    5
   17227840:
     template: Midnight_Wings
-    at:       [45.353, -7.620, -586.829, 45]
+    region:   s_56
     level:    [22, 23]
     attributes:
       spawn:
@@ -2315,7 +2315,7 @@ spawns:
           end:    4
   17227841:
     template: Midnight_Wings
-    at:       [44.105, -7.858, -635.237, 60]
+    region:   s_56
     level:    [22, 23]
     attributes:
       spawn:
@@ -2324,31 +2324,31 @@ spawns:
           end:    6
   17227842:
     template: Berry_Grub
-    at:       [-265.341, -7.059, -513.174, 127]
+    region:   s_66
     level:    [27, 28]
   17227843:
     template: Berry_Grub
-    at:       [-154.000, -0.010, -559.000, 127]
+    region:   s_66
     level:    [27, 28]
   17227844:
     template: Berry_Grub
-    at:       [-282.169, -8.812, -572.090, 51]
+    region:   s_66
     level:    [27, 28]
   17227845:
     template: Berry_Grub
-    at:       [-340.788, -15.637, -507.732, 127]
+    region:   s_66
     level:    [27, 28]
   17227846:
     template: Ochu
-    at:       [-403.530, -8.815, -451.048, 35]
+    region:   s_66
     level:    [36, 37]
   17227847:
     template: Ochu
-    at:       [-254.000, -8.000, -555.000, 127]
+    region:   s_66
     level:    [36, 37]
   17227848:
     template: Midnight_Wings
-    at:       [-262.392, -7.868, -528.647, 127]
+    region:   s_66
     level:    [22, 23]
     attributes:
       spawn:
@@ -2357,7 +2357,7 @@ spawns:
           end:    5
   17227849:
     template: Midnight_Wings
-    at:       [-349.945, -8.147, -428.828, 127]
+    region:   s_66
     level:    [22, 23]
     attributes:
       spawn:
@@ -2366,7 +2366,7 @@ spawns:
           end:    4
   17227850:
     template: Midnight_Wings
-    at:       [-279.732, -7.661, -514.795, 127]
+    region:   s_66
     level:    [22, 23]
     attributes:
       spawn:
@@ -2375,7 +2375,7 @@ spawns:
           end:    6
   17227851:
     template: Midnight_Wings
-    at:       [-348.589, -8.285, -442.198, 127]
+    region:   s_66
     level:    [22, 23]
     attributes:
       spawn:
@@ -2384,31 +2384,31 @@ spawns:
           end:    5
   17227852:
     template: Berry_Grub
-    at:       [-406.366, -15.792, -477.113, 127]
+    region:   sw_76
     level:    [27, 28]
   17227853:
     template: Berry_Grub
-    at:       [-430.333, -14.946, -440.119, 6]
+    region:   sw_76
     level:    [27, 28]
   17227854:
     template: Berry_Grub
-    at:       [-345.522, -15.568, -523.987, 127]
+    region:   sw_76
     level:    [27, 28]
   17227855:
     template: Berry_Grub
-    at:       [-258.313, -15.478, -611.462, 127]
+    region:   sw_76
     level:    [27, 28]
   17227856:
     template: Ochu
-    at:       [-445.144, -15.406, -462.756, 127]
+    region:   sw_76
     level:    [36, 37]
   17227857:
     template: Ochu
-    at:       [-425.421, -15.142, -453.780, 127]
+    region:   sw_76
     level:    [36, 37]
   17227858:
     template: Midnight_Wings
-    at:       [-348.014, -16.460, -527.984, 33]
+    region:   sw_76
     level:    [22, 23]
     attributes:
       spawn:
@@ -2417,7 +2417,7 @@ spawns:
           end:    4
   17227859:
     template: Midnight_Wings
-    at:       [-325.323, -15.629, -486.789, 127]
+    region:   sw_76
     level:    [22, 23]
     attributes:
       spawn:
@@ -2426,7 +2426,7 @@ spawns:
           end:    6
   17227860:
     template: Midnight_Wings
-    at:       [-366.173, -15.564, -496.296, 127]
+    region:   sw_76
     level:    [22, 23]
     attributes:
       spawn:
@@ -2435,7 +2435,7 @@ spawns:
           end:    5
   17227861:
     template: Midnight_Wings
-    at:       [-397.305, -15.959, -485.936, 127]
+    region:   sw_76
     level:    [22, 23]
     attributes:
       spawn:
@@ -2444,31 +2444,31 @@ spawns:
           end:    4
   17227862:
     template: Berry_Grub
-    at:       [-332.400, -20.837, -619.828, 127]
+    region:   s_86
     level:    [27, 28]
   17227863:
     template: Berry_Grub
-    at:       [-342.535, -23.796, -655.053, 96]
+    region:   s_86
     level:    [27, 28]
   17227864:
     template: Berry_Grub
-    at:       [-327.119, -17.102, -595.016, 127]
+    region:   s_86
     level:    [27, 28]
   17227865:
     template: Berry_Grub
-    at:       [-377.955, -23.664, -549.600, 127]
+    region:   s_86
     level:    [27, 28]
   17227866:
     template: Ochu
-    at:       [-374.000, -23.000, -652.000, 103]
+    region:   s_86
     level:    [36, 37]
   17227867:
     template: Ochu
-    at:       [-294.930, -23.551, -672.106, 57]
+    region:   s_86
     level:    [36, 37]
   17227868:
     template: Midnight_Wings
-    at:       [-215.999, -16.155, -631.995, 100]
+    region:   s_86
     level:    [22, 23]
     attributes:
       spawn:
@@ -2477,7 +2477,7 @@ spawns:
           end:    6
   17227869:
     template: Midnight_Wings
-    at:       [-214.104, -16.429, -647.805, 3]
+    region:   s_86
     level:    [22, 23]
     attributes:
       spawn:
@@ -2486,7 +2486,7 @@ spawns:
           end:    5
   17227870:
     template: Midnight_Wings
-    at:       [-239.950, -15.511, -652.671, 57]
+    region:   s_86
     level:    [22, 23]
     attributes:
       spawn:
@@ -2495,7 +2495,7 @@ spawns:
           end:    4
   17227871:
     template: Midnight_Wings
-    at:       [-216.190, -14.830, -618.737, 19]
+    region:   s_86
     level:    [22, 23]
     attributes:
       spawn:
@@ -2504,31 +2504,31 @@ spawns:
           end:    6
   17227872:
     template: Berry_Grub
-    at:       [-400.104, -23.663, -539.452, 115]
+    region:   sw_96
     level:    [27, 28]
   17227873:
     template: Berry_Grub
-    at:       [-371.935, -23.684, -582.112, 127]
+    region:   sw_96
     level:    [27, 28]
   17227874:
     template: Berry_Grub
-    at:       [-458.088, -24.278, -506.554, 126]
+    region:   sw_96
     level:    [27, 28]
   17227875:
     template: Berry_Grub
-    at:       [-128.599, -5.169, -456.551, 127]
+    region:   sw_96
     level:    [27, 28]
   17227876:
     template: Ochu
-    at:       [-363.640, -23.747, -570.474, 113]
+    region:   sw_96
     level:    [36, 37]
   17227877:
     template: Ochu
-    at:       [-378.243, -23.479, -569.385, 96]
+    region:   sw_96
     level:    [36, 37]
   17227878:
     template: Midnight_Wings
-    at:       [-505.831, -24.654, -460.309, 127]
+    region:   sw_96
     level:    [22, 23]
     attributes:
       spawn:
@@ -2537,7 +2537,7 @@ spawns:
           end:    5
   17227879:
     template: Midnight_Wings
-    at:       [-398.391, -23.580, -604.347, 51]
+    region:   sw_96
     level:    [22, 23]
     attributes:
       spawn:
@@ -2546,7 +2546,7 @@ spawns:
           end:    4
   17227880:
     template: Midnight_Wings
-    at:       [-490.055, -23.910, -482.000, 127]
+    region:   sw_96
     level:    [22, 23]
     attributes:
       spawn:
@@ -2555,7 +2555,7 @@ spawns:
           end:    6
   17227881:
     template: Midnight_Wings
-    at:       [-396.133, -23.966, -523.818, 127]
+    region:   sw_96
     level:    [22, 23]
     attributes:
       spawn:
@@ -2564,73 +2564,73 @@ spawns:
           end:    5
   17227882:
     template: Goblin_Mugger
-    at:       [-249.152, -14.598, -588.042, 125]
+    region:   sw_106
     level:    [26, 27]
   17227883:
     template: Goblin_Pathfinder
-    at:       [-451.295, -22.926, -505.127, 3]
+    region:   sw_106
     level:    [31, 32]
   17227884:
     template: Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   sw_106
     level:    [23, 25]
   17227885:
     template: Goblin_Leecher
-    at:       [-345.903, -23.349, -690.102, 2]
+    region:   sw_106
     level:    [26, 27]
   17227886:
     template: Goblin_Furrier
-    at:       [-409.305, -14.243, -462.304, 127]
+    region:   sw_106
     level:    [31, 32]
   17227887:
     template: Goblin_Gambler
-    at:       [-442.402, -15.925, -472.100, 124]
+    region:   sw_106
     level:    [26, 27]
   17227888:
     template: Goblin_Smithy
-    at:       [-457.203, -17.109, -426.492, 127]
+    region:   sw_106
     level:    [31, 32]
   17227889:
     template: Goblin_Shaman
-    at:       [-195.414, -15.090, -630.760, 127]
+    region:   sw_106
     level:    [31, 31]
   17227890:
     template: Wight_war
     script:   Wight
-    at:       [-380.972, -24.197, -544.068, 127]
+    region:   sw_106
     level:    [31, 33]
   17227891:
     template: Wight_blm
     script:   Wight
-    at:       [-514.596, -23.573, -449.658, 81]
+    region:   sw_106
     level:    [31, 33]
   17227892:
     template: Berry_Grub
-    at:       [-100.946, -5.847, -456.680, 127]
+    region:   s_116
     level:    [27, 28]
   17227893:
     template: Berry_Grub
-    at:       [-89.768, -4.642, -342.903, 127]
+    region:   s_116
     level:    [27, 28]
   17227894:
     template: Berry_Grub
-    at:       [1.802, -0.524, -390.863, 18]
+    region:   s_116
     level:    [27, 28]
   17227895:
     template: Berry_Grub
-    at:       [-322.126, -8.578, -379.559, 127]
+    region:   s_116
     level:    [27, 28]
   17227896:
     template: Ochu
-    at:       [-132.000, -7.000, -429.000, 127]
+    region:   s_116
     level:    [36, 37]
   17227897:
     template: Ochu
-    at:       [-81.081, -3.824, -386.116, 71]
+    region:   s_116
     level:    [36, 37]
   17227898:
     template: Midnight_Wings
-    at:       [-69.560, 0.156, -403.596, 31]
+    region:   s_116
     level:    [22, 23]
     attributes:
       spawn:
@@ -2639,7 +2639,7 @@ spawns:
           end:    4
   17227899:
     template: Midnight_Wings
-    at:       [-17.360, -1.243, -378.408, 127]
+    region:   s_116
     level:    [22, 23]
     attributes:
       spawn:
@@ -2648,7 +2648,7 @@ spawns:
           end:    6
   17227900:
     template: Midnight_Wings
-    at:       [-135.849, -7.756, -378.543, 127]
+    region:   s_116
     level:    [22, 23]
     attributes:
       spawn:
@@ -2657,7 +2657,7 @@ spawns:
           end:    5
   17227901:
     template: Midnight_Wings
-    at:       [-169.616, -6.691, -425.617, 79]
+    region:   s_116
     level:    [22, 23]
     attributes:
       spawn:
@@ -2666,27 +2666,27 @@ spawns:
           end:    4
   17227902:
     template: Ignis_Fatuus
-    at:       [-79.347, -5.668, -455.139, 127]
+    region:   s_116
     level:    [34, 36]
   17227903:
     template: Death_Wasp
-    at:       [-206.375, 1.572, -370.296, 127]
+    region:   s_127
     level:    [25, 26]
   17227904:
     template: Death_Wasp
-    at:       [-231.450, 2.095, -358.873, 127]
+    region:   s_127
     level:    [25, 26]
   17227905:
     template: Death_Wasp
-    at:       [-169.280, -0.529, -375.054, 107]
+    region:   s_127
     level:    [25, 26]
   17227906:
     template: Death_Wasp
-    at:       [-220.703, 4.314, -413.192, 59]
+    region:   s_127
     level:    [25, 26]
   17227907:
     template: Moon_Bat
-    at:       [-191.384, 0.775, -371.158, 127]
+    region:   s_127
     level:    [25, 26]
     attributes:
       spawn:
@@ -2695,7 +2695,7 @@ spawns:
           end:    6
   17227908:
     template: Moon_Bat
-    at:       [-154.408, -0.114, -357.811, 95]
+    region:   s_127
     level:    [25, 26]
     attributes:
       spawn:
@@ -2704,7 +2704,7 @@ spawns:
           end:    5
   17227909:
     template: Moon_Bat
-    at:       [-234.951, 0.854, -452.044, 127]
+    region:   s_127
     level:    [25, 26]
     attributes:
       spawn:
@@ -2713,43 +2713,43 @@ spawns:
           end:    4
   17227910:
     template: Goobbue_Farmer
-    at:       [-150.186, -0.468, -363.019, 127]
+    region:   s_127
     level:    [31, 32]
   17227911:
     template: Berry_Grub
-    at:       [-336.439, -8.063, -441.305, 124]
+    region:   s_135
     level:    [27, 28]
   17227912:
     template: Berry_Grub
-    at:       [-356.931, -8.497, -397.144, 44]
+    region:   s_135
     level:    [27, 28]
   17227913:
     template: Berry_Grub
-    at:       [-291.646, -7.053, -411.692, 19]
+    region:   s_135
     level:    [27, 28]
   17227914:
     template: Berry_Grub
-    at:       [-105.940, 0.497, -260.391, 127]
+    region:   s_135
     level:    [27, 28]
   17227915:
     template: Death_Wasp
-    at:       [-190.258, 2.374, -349.430, 37]
+    region:   c_139
     level:    [25, 26]
   17227916:
     template: Death_Wasp
-    at:       [-176.718, 1.966, -344.592, 12]
+    region:   c_139
     level:    [25, 26]
   17227917:
     template: Death_Wasp
-    at:       [-166.053, 4.087, -301.327, 127]
+    region:   c_139
     level:    [25, 26]
   17227918:
     template: Death_Wasp
-    at:       [-188.422, 2.200, -316.902, 122]
+    region:   c_139
     level:    [25, 26]
   17227919:
     template: Moon_Bat
-    at:       [-251.008, 2.422, -330.970, 92]
+    region:   c_139
     level:    [25, 26]
     attributes:
       spawn:
@@ -2758,7 +2758,7 @@ spawns:
           end:    6
   17227920:
     template: Moon_Bat
-    at:       [-166.625, 2.855, -310.951, 104]
+    region:   c_139
     level:    [25, 26]
     attributes:
       spawn:
@@ -2767,7 +2767,7 @@ spawns:
           end:    5
   17227921:
     template: Moon_Bat
-    at:       [-172.462, 2.492, -321.957, 63]
+    region:   c_139
     level:    [25, 26]
     attributes:
       spawn:
@@ -2776,35 +2776,35 @@ spawns:
           end:    4
   17227922:
     template: Goobbue_Farmer
-    at:       [-198.047, 3.735, -341.258, 127]
+    region:   c_139
     level:    [31, 32]
   17227923:
     template: Berry_Grub
-    at:       [-69.630, 0.590, -300.581, 127]
+    region:   c_147
     level:    [27, 28]
   17227924:
     template: Berry_Grub
-    at:       [-182.731, -0.741, -250.018, 127]
+    region:   c_147
     level:    [27, 28]
   17227925:
     template: Death_Wasp
-    at:       [-150.938, -0.275, -156.961, 127]
+    region:   c_149
     level:    [25, 26]
   17227926:
     template: Death_Wasp
-    at:       [-132.152, 2.231, -274.935, 57]
+    region:   c_149
     level:    [25, 26]
   17227927:
     template: Death_Wasp
-    at:       [-143.714, 0.449, -195.824, 127]
+    region:   c_149
     level:    [25, 26]
   17227928:
     template: Death_Wasp
-    at:       [-126.880, 1.001, -263.441, 127]
+    region:   c_149
     level:    [25, 26]
   17227929:
     template: Moon_Bat
-    at:       [-150.078, 1.112, -253.592, 127]
+    region:   c_149
     level:    [25, 26]
     attributes:
       spawn:
@@ -2813,7 +2813,7 @@ spawns:
           end:    6
   17227930:
     template: Moon_Bat
-    at:       [-167.621, 0.545, -172.933, 101]
+    region:   c_149
     level:    [25, 26]
     attributes:
       spawn:
@@ -2822,7 +2822,7 @@ spawns:
           end:    5
   17227931:
     template: Moon_Bat
-    at:       [-54.582, 0.516, -279.421, 27]
+    region:   c_149
     level:    [25, 26]
     attributes:
       spawn:
@@ -2831,81 +2831,81 @@ spawns:
           end:    4
   17227932:
     template: Goobbue_Farmer
-    at:       [-138.928, 0.170, -192.667, 127]
+    region:   c_149
     level:    [31, 32]
   17227933:
     template: Berry_Grub
-    at:       [-172.925, -0.643, -261.184, 51]
+    region:   c_157
     level:    [27, 28]
   17227934:
     template: Berry_Grub
-    at:       [16.507, -9.113, -265.656, 127]
+    region:   c_157
     level:    [27, 28]
   17227935:
     template: Old_Quadav
-    at:       [-172.898, 0.672, -290.526, 6]
+    region:   c_159
     level:    [27, 28]
   17227936:
     template: Copper_Quadav
-    at:       [-171.747, -0.688, -377.078, 127]
+    region:   c_159
     level:    [27, 28]
   17227937:
     template: Bronze_Quadav
-    at:       [-212.832, 4.157, -343.416, 106]
+    region:   c_159
     level:    [32, 33]
   17227938:
     template: Brass_Quadav
-    at:       [-342.398, -7.317, -355.302, 57]
+    region:   c_159
     level:    [27, 28]
   17227939:
     template: Silver_Quadav
-    at:       [-178.260, -0.225, -375.509, 122]
+    region:   c_159
     level:    [32, 33]
   17227940:
     template: Zircon_Quadav
-    at:       [-271.315, 1.174, -323.625, 127]
+    region:   c_159
     level:    [32, 33]
   17227941:
     template: Garnet_Quadav
-    at:       [-189.326, 3.087, -194.854, 127]
+    region:   c_159
     level:    [32, 33]
   17227942:
     template: Wight_war
     script:   Wight
-    at:       [-137.336, 1.896, -210.520, 127]
+    region:   c_159
     level:    [32, 34]
   17227943:
     template: Wight_blm
     script:   Wight
-    at:       [-182.234, 4.636, -328.340, 127]
+    region:   c_159
     level:    [32, 34]
   17227944:
     template: Fire_Elemental
-    at:       [-109.356, 0.391, -234.225, 200]
+    region:   c_149
     level:    [38, 40]
   17227945:
     template: Berry_Grub
-    at:       [-15.801, -8.053, -261.255, 127]
+    region:   c_169
     level:    [27, 28]
   17227946:
     template: Berry_Grub
-    at:       [-32.693, -7.951, -246.288, 127]
+    region:   c_169
     level:    [27, 28]
   17227947:
     template: Berry_Grub
-    at:       [-43.824, -8.130, -107.980, 127]
+    region:   c_169
     level:    [27, 28]
   17227948:
     template: Ochu
-    at:       [0.500, -7.715, -324.000, 127]
+    region:   c_169
     level:    [36, 37]
   17227949:
     template: Ochu
-    at:       [-54.074, -7.557, -235.799, 110]
+    region:   c_169
     level:    [36, 37]
   17227950:
     template: Midnight_Wings
-    at:       [-28.000, -8.777, -210.000, 127]
+    region:   c_169
     level:    [22, 23]
     attributes:
       spawn:
@@ -2914,7 +2914,7 @@ spawns:
           end:    6
   17227951:
     template: Midnight_Wings
-    at:       [1.416, -8.117, -230.862, 108]
+    region:   c_169
     level:    [22, 23]
     attributes:
       spawn:
@@ -2923,7 +2923,7 @@ spawns:
           end:    5
   17227952:
     template: Midnight_Wings
-    at:       [11.100, -8.389, -336.433, 34]
+    region:   c_169
     level:    [22, 23]
     attributes:
       spawn:
@@ -2932,7 +2932,7 @@ spawns:
           end:    4
   17227953:
     template: Midnight_Wings
-    at:       [-29.921, -7.663, -231.135, 118]
+    region:   c_169
     level:    [22, 23]
     attributes:
       spawn:
@@ -2941,27 +2941,27 @@ spawns:
           end:    6
   17227954:
     template: Berry_Grub
-    at:       [-63.000, -8.281, -205.000, 127]
+    region:   c_178
     level:    [27, 28]
   17227955:
     template: Berry_Grub
-    at:       [-110.334, -7.781, -175.172, 109]
+    region:   c_178
     level:    [27, 28]
   17227956:
     template: Berry_Grub
-    at:       [-6.000, -16.012, -144.000, 127]
+    region:   c_178
     level:    [27, 28]
   17227957:
     template: Ochu
-    at:       [-38.837, -7.707, -149.442, 102]
+    region:   c_178
     level:    [36, 37]
   17227958:
     template: Ochu
-    at:       [-80.000, -7.000, -129.000, 20]
+    region:   c_178
     level:    [36, 37]
   17227959:
     template: Midnight_Wings
-    at:       [-102.000, -7.000, -135.000, 63]
+    region:   c_178
     level:    [22, 23]
     attributes:
       spawn:
@@ -2970,7 +2970,7 @@ spawns:
           end:    5
   17227960:
     template: Midnight_Wings
-    at:       [-63.000, -7.000, -141.000, 34]
+    region:   c_178
     level:    [22, 23]
     attributes:
       spawn:
@@ -2979,7 +2979,7 @@ spawns:
           end:    4
   17227961:
     template: Midnight_Wings
-    at:       [-25.620, -9.951, -143.526, 127]
+    region:   c_178
     level:    [22, 23]
     attributes:
       spawn:
@@ -2988,7 +2988,7 @@ spawns:
           end:    6
   17227962:
     template: Midnight_Wings
-    at:       [-52.000, -7.000, -151.000, 78]
+    region:   c_178
     level:    [22, 23]
     attributes:
       spawn:
@@ -2997,27 +2997,27 @@ spawns:
           end:    5
   17227963:
     template: Berry_Grub
-    at:       [53.256, -16.367, -161.702, 48]
+    region:   c_187
     level:    [27, 28]
   17227964:
     template: Berry_Grub
-    at:       [13.898, -16.373, -102.201, 80]
+    region:   c_187
     level:    [27, 28]
   17227965:
     template: Berry_Grub
-    at:       [32.874, -15.989, -280.514, 127]
+    region:   c_187
     level:    [27, 28]
   17227966:
     template: Ochu
-    at:       [-0.500, -15.661, -69.000, 29]
+    region:   c_187
     level:    [36, 37]
   17227967:
     template: Ochu
-    at:       [22.000, -15.000, -162.000, 119]
+    region:   c_187
     level:    [36, 37]
   17227968:
     template: Midnight_Wings
-    at:       [4.000, -16.000, -119.000, 54]
+    region:   c_187
     level:    [22, 23]
     attributes:
       spawn:
@@ -3026,7 +3026,7 @@ spawns:
           end:    4
   17227969:
     template: Midnight_Wings
-    at:       [5.551, -15.261, -175.506, 127]
+    region:   c_187
     level:    [22, 23]
     attributes:
       spawn:
@@ -3035,7 +3035,7 @@ spawns:
           end:    6
   17227970:
     template: Midnight_Wings
-    at:       [42.119, -15.519, -174.449, 127]
+    region:   c_187
     level:    [22, 23]
     attributes:
       spawn:
@@ -3044,7 +3044,7 @@ spawns:
           end:    5
   17227971:
     template: Midnight_Wings
-    at:       [-8.722, -15.518, -183.142, 127]
+    region:   c_187
     level:    [22, 23]
     attributes:
       spawn:
@@ -3053,7 +3053,7 @@ spawns:
           end:    4
   17227972:
     template: Black_Triple_Stars
-    at:       [5.000, -15.000, -142.000, 127]
+    region:   c_187
     level:    [26, 27]
     attributes:
       spawn:
@@ -3062,69 +3062,69 @@ spawns:
           end:    6
   17227973:
     template: Goblin_Mugger
-    at:       [-66.749, -8.112, -177.084, 127]
+    region:   c_197
     level:    [26, 27]
   17227974:
     template: Goblin_Pathfinder
-    at:       [-89.561, -7.541, -194.824, 127]
+    region:   c_197
     level:    [31, 32]
   17227975:
     template: Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   c_197
     level:    [23, 25]
   17227976:
     template: Goblin_Leecher
-    at:       [-177.742, -7.293, -83.656, 127]
+    region:   c_197
     level:    [26, 27]
   17227977:
     template: Goblin_Furrier
-    at:       [-138.070, -8.189, -90.229, 22]
+    region:   c_197
     level:    [31, 32]
   17227978:
     template: Goblin_Gambler
-    at:       [-198.803, -7.191, -62.552, 18]
+    region:   c_197
     level:    [26, 27]
   17227979:
     template: Goblin_Smithy
-    at:       [16.133, -7.884, -344.030, 127]
+    region:   c_197
     level:    [31, 32]
   17227980:
     template: Goblin_Shaman
-    at:       [30.000, -7.000, -239.000, 104]
+    region:   c_197
     level:    [31, 32]
   17227981:
     template: Wight_war
     script:   Wight
-    at:       [0.023, -14.892, -211.381, 86]
+    region:   c_197
     level:    [28, 33]
   17227982:
     template: Wight_blm
     script:   Wight
-    at:       [39.215, -8.027, -356.326, 180]
+    region:   c_197
     level:    [28, 33]
   17227983:
     template: Berry_Grub
-    at:       [75.799, -15.591, -345.296, 68]
+    region:   c_207
     level:    [27, 28]
   17227984:
     template: Berry_Grub
-    at:       [28.734, -14.819, -313.646, 11]
+    region:   c_207
     level:    [27, 28]
   17227985:
     template: Berry_Grub
-    at:       [25.707, -23.276, -102.957, 102]
+    region:   c_207
     level:    [27, 28]
   17227986:
     template: Ochu
-    at:       [48.792, -15.319, -301.595, 127]
+    region:   c_207
     level:    [36, 37]
   17227987:
     template: Ochu
-    at:       [79.000, -15.000, -368.000, 87]
+    region:   c_207
     level:    [36, 37]
   17227988:
     template: Midnight_Wings
-    at:       [76.000, -15.000, -209.000, 127]
+    region:   c_207
     level:    [22, 23]
     attributes:
       spawn:
@@ -3133,7 +3133,7 @@ spawns:
           end:    6
   17227989:
     template: Midnight_Wings
-    at:       [81.784, -15.991, -310.662, 108]
+    region:   c_207
     level:    [22, 23]
     attributes:
       spawn:
@@ -3142,7 +3142,7 @@ spawns:
           end:    5
   17227990:
     template: Midnight_Wings
-    at:       [47.666, -15.005, -212.265, 45]
+    region:   c_207
     level:    [22, 23]
     attributes:
       spawn:
@@ -3151,7 +3151,7 @@ spawns:
           end:    4
   17227991:
     template: Midnight_Wings
-    at:       [83.638, -15.754, -296.826, 30]
+    region:   c_207
     level:    [22, 23]
     attributes:
       spawn:
@@ -3160,7 +3160,7 @@ spawns:
           end:    6
   17227992:
     template: Black_Triple_Stars
-    at:       [76.000, -15.000, -209.000, 127]
+    region:   c_207
     level:    [26, 27]
     attributes:
       spawn:
@@ -3169,27 +3169,27 @@ spawns:
           end:    6
   17227993:
     template: Berry_Grub
-    at:       [48.333, -24.076, -127.291, 127]
+    region:   e_217
     level:    [27, 28]
   17227994:
     template: Berry_Grub
-    at:       [119.000, -24.000, -284.000, 58]
+    region:   e_217
     level:    [27, 28]
   17227995:
     template: Berry_Grub
-    at:       [259.110, -31.674, -225.993, 127]
+    region:   e_217
     level:    [27, 28]
   17227996:
     template: Ochu
-    at:       [79.093, -23.601, -149.828, 127]
+    region:   e_217
     level:    [36, 37]
   17227997:
     template: Ochu
-    at:       [37.000, -24.257, -82.000, 127]
+    region:   e_217
     level:    [36, 37]
   17227998:
     template: Midnight_Wings
-    at:       [64.809, -23.823, -124.777, 94]
+    region:   e_217
     level:    [22, 23]
     attributes:
       spawn:
@@ -3198,7 +3198,7 @@ spawns:
           end:    5
   17227999:
     template: Midnight_Wings
-    at:       [105.463, -20.885, -308.107, 76]
+    region:   e_217
     level:    [22, 23]
     attributes:
       spawn:
@@ -3207,7 +3207,7 @@ spawns:
           end:    4
   17228000:
     template: Midnight_Wings
-    at:       [106.064, -22.612, -281.583, 59]
+    region:   e_217
     level:    [22, 23]
     attributes:
       spawn:
@@ -3216,7 +3216,7 @@ spawns:
           end:    6
   17228001:
     template: Midnight_Wings
-    at:       [141.045, -23.636, -262.190, 127]
+    region:   e_217
     level:    [22, 23]
     attributes:
       spawn:
@@ -3225,31 +3225,31 @@ spawns:
           end:    5
   17228002:
     template: Berry_Grub
-    at:       [274.333, -31.865, -295.219, 127]
+    region:   e_226
     level:    [27, 28]
   17228003:
     template: Berry_Grub
-    at:       [-169.319, 0.052, -153.956, 4]
+    region:   e_226
     level:    [27, 28]
   17228004:
     template: Poison_Leech
-    at:       [241.131, -31.509, -264.584, 127]
+    region:   e_226
     level:    [25, 26]
   17228005:
     template: Poison_Leech
-    at:       [165.320, -31.103, -208.931, 44]
+    region:   e_226
     level:    [25, 26]
   17228006:
     template: Poison_Leech
-    at:       [268.763, -31.550, -272.414, 107]
+    region:   e_226
     level:    [25, 26]
   17228007:
     template: Poison_Leech
-    at:       [284.150, -31.462, -303.105, 33]
+    region:   e_226
     level:    [25, 26]
   17228008:
     template: Midnight_Wings
-    at:       [283.970, -32.379, -281.682, 65]
+    region:   e_226
     level:    [22, 23]
     attributes:
       spawn:
@@ -3258,7 +3258,7 @@ spawns:
           end:    4
   17228009:
     template: Midnight_Wings
-    at:       [312.314, -31.605, -272.031, 127]
+    region:   e_226
     level:    [22, 23]
     attributes:
       spawn:
@@ -3267,69 +3267,69 @@ spawns:
           end:    6
   17228010:
     template: Goblin_Mugger
-    at:       [198.025, -31.749, -162.098, 127]
+    region:   e_234
     level:    [26, 27]
   17228011:
     template: Goblin_Pathfinder
-    at:       [83.539, -23.976, -162.273, 55]
+    region:   e_234
     level:    [31, 32]
   17228012:
     template: Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   e_234
     level:    [23, 25]
   17228013:
     template: Goblin_Leecher
-    at:       [134.000, -23.983, -248.000, 84]
+    region:   e_234
     level:    [26, 27]
   17228014:
     template: Goblin_Furrier
-    at:       [188.016, -24.141, -281.973, 127]
+    region:   e_234
     level:    [31, 32]
   17228015:
     template: Goblin_Gambler
-    at:       [226.007, -31.349, -223.786, 117]
+    region:   e_234
     level:    [26, 27]
   17228016:
     template: Goblin_Smithy
-    at:       [126.692, -23.672, -208.948, 12]
+    region:   e_234
     level:    [31, 32]
   17228017:
     template: Goblin_Shaman
-    at:       [114.000, -23.000, -267.000, 88]
+    region:   e_234
     level:    [31, 32]
   17228018:
     template: Wight_war
     script:   Wight
-    at:       [72.827, -16.007, -226.665, 181]
+    region:   e_234
     level:    [28, 33]
   17228019:
     template: Wight_blm
     script:   Wight
-    at:       [120.811, -23.620, -188.944, 7]
+    region:   e_234
     level:    [28, 33]
   17228020:
     template: Clipper
-    at:       [255.294, -30.470, -244.418, 29]
+    region:   e_244
     level:    [24, 25]
   17228021:
     template: Clipper
-    at:       [249.267, -32.009, -239.087, 127]
+    region:   e_244
     level:    [24, 25]
   17228022:
     template: Clipper
-    at:       [266.707, -31.791, -287.295, 67]
+    region:   e_244
     level:    [24, 25]
   17228023:
     template: Water_Elemental
-    at:       [241.765, -31.873, -252.888, 49]
+    region:   e_244
     level:    [38, 40]
   17228024:
     template: Goobbue_Farmer
-    at:       [312.789, -24.434, -369.710, 127]
+    region:   e_248
     level:    [31, 32]
   17228025:
     template: Midnight_Wings
-    at:       [347.679, -31.273, -406.395, 90]
+    region:   e_248
     level:    [22, 23]
     attributes:
       spawn:
@@ -3338,7 +3338,7 @@ spawns:
           end:    5
   17228026:
     template: Midnight_Wings
-    at:       [357.413, -31.790, -394.848, 127]
+    region:   e_248
     level:    [22, 23]
     attributes:
       spawn:
@@ -3347,35 +3347,35 @@ spawns:
           end:    4
   17228027:
     template: Evil_Weapon
-    at:       [318.000, -31.000, -313.000, 106]
+    region:   e_251
     level:    [37, 38]
   17228028:
     template: Evil_Weapon
-    at:       [311.664, -32.634, -339.734, 127]
+    region:   e_251
     level:    [37, 38]
   17228029:
     template: Evil_Weapon
-    at:       [297.323, -37.509, -344.220, 127]
+    region:   e_251
     level:    [37, 38]
   17228030:
     template: Death_Wasp
-    at:       [-146.539, -0.572, -114.044, 127]
+    region:   c_254
     level:    [25, 26]
   17228031:
     template: Death_Wasp
-    at:       [-295.590, -0.717, -106.140, 109]
+    region:   c_254
     level:    [25, 26]
   17228032:
     template: Death_Wasp
-    at:       [-275.505, 0.159, -162.957, 126]
+    region:   c_254
     level:    [25, 26]
   17228033:
     template: Death_Wasp
-    at:       [-216.863, -1.201, -98.084, 127]
+    region:   c_254
     level:    [25, 26]
   17228034:
     template: Moon_Bat
-    at:       [-240.712, -0.078, -162.300, 127]
+    region:   c_254
     level:    [25, 26]
     attributes:
       spawn:
@@ -3384,11 +3384,11 @@ spawns:
           end:    6
   17228035:
     template: Moon_Bat
-    at:       [-279.689, 0.131, -160.676, 117]
+    region:   c_254
     level:    [25, 26]
   17228036:
     template: Moon_Bat
-    at:       [-287.821, -0.278, -126.565, 79]
+    region:   c_254
     level:    [25, 26]
     attributes:
       spawn:
@@ -3397,39 +3397,39 @@ spawns:
           end:    4
   17228037:
     template: Goobbue_Farmer
-    at:       [-237.291, 0.208, -76.225, 119]
+    region:   c_254
     level:    [31, 32]
   17228038:
     template: Berry_Grub
-    at:       [-193.538, 0.085, -112.884, 127]
+    region:   c_262
     level:    [27, 28]
   17228039:
     template: Berry_Grub
-    at:       [-165.029, 0.015, -121.767, 127]
+    region:   c_262
     level:    [27, 28]
   17228040:
     template: Berry_Grub
-    at:       [-376.729, 0.313, -63.612, 72]
+    region:   c_262
     level:    [27, 28]
   17228041:
     template: Death_Wasp
-    at:       [-339.377, 0.449, -39.040, 127]
+    region:   c_265
     level:    [25, 26]
   17228042:
     template: Death_Wasp
-    at:       [-311.894, -0.663, -90.253, 77]
+    region:   c_265
     level:    [25, 26]
   17228043:
     template: Death_Wasp
-    at:       [-354.374, -0.369, -47.299, 17]
+    region:   c_265
     level:    [25, 26]
   17228044:
     template: Death_Wasp
-    at:       [-302.336, 4.452, -43.631, 127]
+    region:   c_265
     level:    [25, 26]
   17228045:
     template: Moon_Bat
-    at:       [-331.659, 3.176, -4.463, 113]
+    region:   c_265
     level:    [25, 26]
     attributes:
       spawn:
@@ -3438,7 +3438,7 @@ spawns:
           end:    6
   17228046:
     template: Moon_Bat
-    at:       [-307.587, 0.546, -84.692, 127]
+    region:   c_265
     level:    [25, 26]
     attributes:
       spawn:
@@ -3447,7 +3447,7 @@ spawns:
           end:    5
   17228047:
     template: Moon_Bat
-    at:       [-317.082, 4.374, 20.068, 127]
+    region:   c_265
     level:    [25, 26]
     attributes:
       spawn:
@@ -3456,39 +3456,39 @@ spawns:
           end:    4
   17228048:
     template: Goobbue_Farmer
-    at:       [-335.921, 2.559, -30.674, 127]
+    region:   c_265
     level:    [31, 32]
   17228049:
     template: Berry_Grub
-    at:       [-350.392, 0.294, -65.868, 127]
+    region:   w_273
     level:    [27, 28]
   17228050:
     template: Berry_Grub
-    at:       [-369.420, 0.224, -43.718, 127]
+    region:   w_273
     level:    [27, 28]
   17228051:
     template: Berry_Grub
-    at:       [-345.207, 7.950, 132.697, 127]
+    region:   w_273
     level:    [27, 28]
   17228052:
     template: Death_Wasp
-    at:       [-343.463, 5.993, 174.766, 127]
+    region:   n_276
     level:    [25, 26]
   17228053:
     template: Death_Wasp
-    at:       [-375.910, -0.380, 49.592, 127]
+    region:   n_276
     level:    [25, 26]
   17228054:
     template: Death_Wasp
-    at:       [-394.637, -0.265, 157.155, 127]
+    region:   n_276
     level:    [25, 26]
   17228055:
     template: Death_Wasp
-    at:       [-286.482, 1.127, 34.380, 127]
+    region:   n_276
     level:    [25, 26]
   17228056:
     template: Moon_Bat
-    at:       [-284.299, 2.635, 89.738, 11]
+    region:   n_276
     level:    [25, 26]
     attributes:
       spawn:
@@ -3497,7 +3497,7 @@ spawns:
           end:    6
   17228057:
     template: Moon_Bat
-    at:       [-299.732, 11.821, 156.942, 27]
+    region:   n_276
     level:    [25, 26]
     attributes:
       spawn:
@@ -3506,7 +3506,7 @@ spawns:
           end:    5
   17228058:
     template: Moon_Bat
-    at:       [-287.995, 4.557, 98.496, 127]
+    region:   n_276
     level:    [25, 26]
     attributes:
       spawn:
@@ -3515,101 +3515,101 @@ spawns:
           end:    4
   17228059:
     template: Goobbue_Farmer
-    at:       [-307.039, 3.278, 36.413, 58]
+    region:   n_276
     level:    [31, 32]
   17228060:
     template: Berry_Grub
-    at:       [-332.109, 6.161, 197.918, 127]
+    region:   nw_284
     level:    [27, 28]
   17228061:
     template: Berry_Grub
-    at:       [-360.074, 7.500, 117.610, 123]
+    region:   nw_284
     level:    [27, 28]
   17228062:
     template: Berry_Grub
-    at:       [-413.877, -0.345, 151.339, 46]
+    region:   nw_284
     level:    [27, 28]
   17228063:
     template: Berry_Grub
-    at:       [-413.412, -0.229, 175.936, 127]
+    region:   nw_287
     level:    [27, 28]
   17228064:
     template: Berry_Grub
-    at:       [-389.175, 1.059, 156.439, 24]
+    region:   nw_287
     level:    [27, 28]
   17228065:
     template: Berry_Grub
-    at:       [-415.570, -0.116, 167.766, 127]
+    region:   nw_287
     level:    [27, 28]
   17228066:
     template: Berry_Grub
-    at:       [-470.360, -8.117, -19.607, 127]
+    region:   nw_287
     level:    [27, 28]
   17228067:
     template: Old_Quadav
-    at:       [-211.654, 1.636, -130.779, 127]
+    region:   c_291
     level:    [27, 28]
   17228068:
     template: Copper_Quadav
-    at:       [-293.837, 1.801, 22.596, 127]
+    region:   c_291
     level:    [27, 28]
   17228069:
     template: Bronze_Quadav
-    at:       [-265.024, 2.707, -107.130, 127]
+    region:   c_291
     level:    [32, 33]
   17228070:
     template: Brass_Quadav
-    at:       [-290.007, 2.170, 58.365, 13]
+    region:   c_291
     level:    [27, 28]
   17228071:
     template: Silver_Quadav
-    at:       [-316.402, 1.616, -32.242, 91]
+    region:   c_291
     level:    [32, 33]
   17228072:
     template: Zircon_Quadav
-    at:       [-339.519, 0.288, 70.384, 127]
+    region:   c_291
     level:    [32, 33]
   17228073:
     template: Garnet_Quadav
-    at:       [-314.952, 8.651, 178.544, 127]
+    region:   c_291
     level:    [32, 33]
   17228074:
     template: Wight_war
     script:   Wight
-    at:       [-264.730, 0.571, -158.487, 114]
+    region:   c_291
     level:    [32, 34]
   17228075:
     template: Wight_blm
     script:   Wight
-    at:       [-240.617, 0.340, -90.076, 127]
+    region:   c_291
     level:    [32, 34]
   17228076:
     template: Ignis_Fatuus
-    at:       [-299.428, 2.090, -19.368, 83]
+    region:   c_291
     level:    [34, 36]
   17228077:
     template: Berry_Grub
-    at:       [-397.000, -0.010, -39.000, 127]
+    region:   w_301
     level:    [27, 28]
   17228078:
     template: Berry_Grub
-    at:       [-400.311, -4.175, -98.375, 127]
+    region:   w_301
     level:    [27, 28]
   17228079:
     template: Berry_Grub
-    at:       [-387.592, -6.455, 13.234, 12]
+    region:   w_301
     level:    [27, 28]
   17228080:
     template: Ochu
-    at:       [-423.847, -7.602, -15.953, 127]
+    region:   w_301
     level:    [36, 37]
   17228081:
     template: Ochu
-    at:       [-312.866, -7.012, -125.709, 25]
+    region:   w_301
     level:    [36, 37]
   17228082:
     template: Midnight_Wings
-    at:       [-398.790, -7.774, -128.887, 127]
+    region:   w_301
     level:    [22, 23]
     attributes:
       spawn:
@@ -3618,7 +3618,7 @@ spawns:
           end:    6
   17228083:
     template: Midnight_Wings
-    at:       [-421.903, -3.132, -47.701, 127]
+    region:   w_301
     level:    [22, 23]
     attributes:
       spawn:
@@ -3627,7 +3627,7 @@ spawns:
           end:    5
   17228084:
     template: Midnight_Wings
-    at:       [-445.000, -7.000, -58.000, 127]
+    region:   w_301
     level:    [22, 23]
     attributes:
       spawn:
@@ -3636,7 +3636,7 @@ spawns:
           end:    4
   17228085:
     template: Midnight_Wings
-    at:       [-480.611, -7.983, -47.753, 72]
+    region:   w_301
     level:    [22, 23]
     attributes:
       spawn:
@@ -3645,19 +3645,19 @@ spawns:
           end:    6
   17228086:
     template: Ravenous_Crawler
-    at:       [-488.800, -8.000, -37.888, 127]
+    region:   w_301
     level:    [42, 43]
   17228087:
     template: Berry_Grub
-    at:       [-470.705, -15.174, -95.671, 40]
+    region:   w_311
     level:    [27, 28]
   17228088:
     template: Ochu
-    at:       [-423.345, -8.063, 50.354, 127]
+    region:   w_311
     level:    [36, 37]
   17228089:
     template: Midnight_Wings
-    at:       [-453.823, -0.952, 150.970, 56]
+    region:   w_311
     level:    [22, 23]
     attributes:
       spawn:
@@ -3666,7 +3666,7 @@ spawns:
           end:    5
   17228090:
     template: Midnight_Wings
-    at:       [-442.230, -6.999, 98.825, 127]
+    region:   w_311
     level:    [22, 23]
     attributes:
       spawn:
@@ -3675,7 +3675,7 @@ spawns:
           end:    4
   17228091:
     template: Midnight_Wings
-    at:       [-427.697, -0.139, 177.070, 127]
+    region:   w_311
     level:    [22, 23]
     attributes:
       spawn:
@@ -3684,15 +3684,15 @@ spawns:
           end:    6
   17228092:
     template: Berry_Grub
-    at:       [-435.343, -15.870, -307.545, 127]
+    region:   w_316
     level:    [27, 28]
   17228093:
     template: Ochu
-    at:       [-456.189, -12.442, -139.450, 127]
+    region:   w_316
     level:    [36, 37]
   17228094:
     template: Midnight_Wings
-    at:       [-505.275, -15.729, -97.115, 127]
+    region:   w_316
     level:    [22, 23]
     attributes:
       spawn:
@@ -3701,7 +3701,7 @@ spawns:
           end:    5
   17228095:
     template: Midnight_Wings
-    at:       [-463.346, -13.499, -118.013, 63]
+    region:   w_316
     level:    [22, 23]
     attributes:
       spawn:
@@ -3710,7 +3710,7 @@ spawns:
           end:    4
   17228096:
     template: Midnight_Wings
-    at:       [-501.013, -15.526, -77.520, 58]
+    region:   w_316
     level:    [22, 23]
     attributes:
       spawn:
@@ -3719,81 +3719,81 @@ spawns:
           end:    6
   17228097:
     template: Goblin_Mugger
-    at:       [-398.073, -4.168, -98.574, 127]
+    region:   w_321
     level:    [26, 27]
   17228098:
     template: Goblin_Pathfinder
-    at:       [-312.993, -6.988, -131.676, 127]
+    region:   w_321
     level:    [31, 32]
   17228099:
     template: Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   w_321
     level:    [23, 25]
   17228100:
     template: Goblin_Leecher
-    at:       [-432.370, -8.009, -13.862, 105]
+    region:   w_321
     level:    [26, 27]
   17228101:
     template: Goblin_Furrier
-    at:       [-423.891, -7.464, 79.309, 127]
+    region:   w_321
     level:    [31, 32]
   17228102:
     template: Goblin_Gambler
-    at:       [-418.656, -7.846, -100.935, 127]
+    region:   w_321
     level:    [26, 27]
   17228103:
     template: Goblin_Smithy
-    at:       [-451.570, -6.621, -12.140, 46]
+    region:   w_321
     level:    [31, 32]
   17228104:
     template: Goblin_Shaman
-    at:       [-445.684, -7.829, 4.001, 127]
+    region:   w_321
     level:    [31, 32]
   17228105:
     template: Wight_war
     script:   Wight
-    at:       [-391.094, -7.790, 42.948, 36]
+    region:   w_321
     level:    [28, 33]
   17228106:
     template: Wight_blm
     script:   Wight
-    at:       [-475.890, -15.913, -157.121, 116]
+    region:   w_321
     level:    [28, 33]
   17228107:
     template: Berry_Grub
-    at:       [-450.610, -16.112, -248.336, 127]
+    region:   w_331
     level:    [27, 28]
   17228108:
     template: Berry_Grub
-    at:       [-525.639, -15.183, -213.920, 44]
+    region:   w_331
     level:    [27, 28]
   17228109:
     template: Evil_Spirit
-    at:       [-413.499, -9.333, -297.513, 127]
+    region:   w_331
     level:    [35, 36]
   17228110:
     template: Fire_Elemental
-    at:       [-406.194, -7.875, -249.450, 218]
+    region:   w_331
     level:    [38, 40]
   17228111:
     template: Berry_Grub
-    at:       [-590.097, -21.987, -267.555, 127]
+    region:   w_335
     level:    [27, 28]
   17228112:
     template: Berry_Grub
-    at:       [-563.633, -23.455, -101.543, 127]
+    region:   w_335
     level:    [27, 28]
   17228113:
     template: Poison_Leech
-    at:       [-575.114, -18.694, -196.455, 127]
+    region:   w_335
     level:    [25, 26]
   17228114:
     template: Poison_Leech
-    at:       [-577.861, -15.802, -242.438, 65]
+    region:   w_335
     level:    [25, 26]
   17228115:
     template: Midnight_Wings
-    at:       [-564.362, -15.688, -188.096, 127]
+    region:   w_335
     level:    [22, 23]
     attributes:
       spawn:
@@ -3802,7 +3802,7 @@ spawns:
           end:    5
   17228116:
     template: Midnight_Wings
-    at:       [-511.883, -17.998, -197.738, 127]
+    region:   w_335
     level:    [22, 23]
     attributes:
       spawn:
@@ -3811,51 +3811,51 @@ spawns:
           end:    4
   17228117:
     template: Clipper
-    at:       [-556.725, -15.764, -186.266, 64]
+    region:   w_341
     level:    [24, 25]
   17228118:
     template: Clipper
-    at:       [-549.375, -15.618, -160.806, 127]
+    region:   w_341
     level:    [24, 25]
   17228119:
     template: Water_Elemental
-    at:       [-535.719, -15.530, -202.402, 14]
+    region:   w_341
     level:    [38, 40]
   17228120:
     template: Berry_Grub
-    at:       [-574.904, -23.699, -102.693, 14]
+    region:   w_345
     level:    [27, 28]
   17228121:
     template: Berry_Grub
-    at:       [225.101, 15.273, 269.709, 127]
+    region:   w_345
     level:    [27, 28]
   17228122:
     template: Ochu
-    at:       [-552.216, -23.530, -121.511, 95]
+    region:   w_345
     level:    [36, 37]
   17228123:
     template: Poison_Leech
-    at:       [-616.189, -23.978, -74.471, 108]
+    region:   w_345
     level:    [25, 26]
   17228124:
     template: Poison_Leech
-    at:       [-636.574, -23.366, -241.027, 127]
+    region:   w_345
     level:    [25, 26]
   17228125:
     template: Poison_Leech
-    at:       [-568.272, -23.738, -114.040, 67]
+    region:   w_345
     level:    [25, 26]
   17228126:
     template: Poison_Leech
-    at:       [-613.317, -22.723, -189.383, 127]
+    region:   w_345
     level:    [25, 26]
   17228127:
     template: Poison_Leech
-    at:       [-620.110, -24.201, -94.421, 127]
+    region:   w_345
     level:    [25, 26]
   17228128:
     template: Midnight_Wings
-    at:       [-587.139, -22.992, -47.234, 127]
+    region:   w_345
     level:    [22, 23]
     attributes:
       spawn:
@@ -3864,7 +3864,7 @@ spawns:
           end:    6
   17228129:
     template: Midnight_Wings
-    at:       [-654.688, -24.972, -308.366, 63]
+    region:   w_345
     level:    [22, 23]
     attributes:
       spawn:
@@ -3873,85 +3873,85 @@ spawns:
           end:    5
   17228130:
     template: Clipper
-    at:       [-637.324, -20.230, -136.400, 127]
+    region:   w_354
     level:    [24, 25]
   17228131:
     template: Clipper
-    at:       [-711.374, -22.413, -156.395, 127]
+    region:   w_354
     level:    [24, 25]
   17228132:
     template: Clipper
-    at:       [-605.731, -22.742, -168.206, 127]
+    region:   w_354
     level:    [24, 25]
   17228133:
     template: Clipper
-    at:       [-708.801, -20.812, -171.996, 1]
+    region:   w_354
     level:    [24, 25]
   17228134:
     template: Water_Elemental
-    at:       [-660.632, -20.111, -132.782, 112]
+    region:   w_354
     level:    [38, 40]
   17228135:
     template: Ochu
-    at:       [-568.150, -23.749, -113.643, 127]
+    region:   w_359
     level:    [36, 37]
   17228136:
     template: Goblin_Mugger
-    at:       [-705.388, -22.693, -215.646, 33]
+    region:   w_359
     level:    [26, 27]
   17228137:
     template: Goblin_Pathfinder
-    at:       [-549.026, -22.840, -73.052, 127]
+    region:   w_359
     level:    [31, 32]
   17228138:
     template: Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   w_359
     level:    [23, 25]
   17228139:
     template: Goblin_Leecher
-    at:       [-584.484, -23.273, -115.127, 127]
+    region:   w_359
     level:    [26, 27]
   17228140:
     template: Goblin_Furrier
-    at:       [-723.717, -23.647, -165.072, 66]
+    region:   w_359
     level:    [31, 32]
   17228141:
     template: Goblin_Gambler
-    at:       [-594.636, -19.979, -259.418, 35]
+    region:   w_359
     level:    [26, 27]
   17228142:
     template: Goblin_Smithy
-    at:       [-608.632, -22.499, -210.415, 84]
+    region:   w_359
     level:    [31, 32]
   17228143:
     template: Goblin_Shaman
-    at:       [-621.052, -20.572, -150.984, 48]
+    region:   w_359
     level:    [31, 32]
   17228144:
     template: Wight_war
     script:   Wight
-    at:       [-543.954, -21.037, -111.476, 48]
+    region:   w_359
     level:    [28, 33]
   17228145:
     template: Wight_blm
     script:   Wight
-    at:       [-428.833, -15.218, -262.510, 127]
+    region:   w_359
     level:    [28, 33]
   17228146:
     template: Evil_Spirit
-    at:       [386.833, -25.657, -123.291, 127]
+    region:   e_370
     level:    [35, 36]
   17228147:
     template: Evil_Spirit
-    at:       [455.675, -23.779, -81.502, 127]
+    region:   e_370
     level:    [35, 36]
   17228148:
     template: Evil_Weapon
-    at:       [396.992, -24.010, -152.613, 59]
+    region:   e_375
     level:    [37, 38]
   17228149:
     template: Evil_Weapon
-    at:       [389.529, -25.065, -146.909, 127]
+    region:   e_373
     level:    [37, 38]
   17228150:
     template: Eldritch_Edge
@@ -3959,47 +3959,47 @@ spawns:
     level:    [55, 55]
   17228151:
     template: Evil_Weapon
-    at:       [431.693, -21.979, -61.798, 44]
+    region:   e_375
     level:    [37, 38]
   17228152:
     template: Evil_Weapon
-    at:       [440.000, -28.000, -44.000, 57]
+    region:   e_375
     level:    [37, 38]
   17228153:
     template: Evil_Weapon
-    at:       [312.000, 8.000, 252.000, 7]
+    region:   ne_377
     level:    [37, 38]
   17228154:
     template: Evil_Weapon
-    at:       [292.517, 15.263, 292.345, 127]
+    region:   ne_377
     level:    [37, 38]
   17228155:
     template: Evil_Weapon
-    at:       [300.000, 16.000, 316.000, 40]
+    region:   ne_377
     level:    [37, 38]
   17228156:
     template: Evil_Weapon
-    at:       [300.000, 9.000, 258.000, 127]
+    region:   ne_377
     level:    [37, 38]
   17228157:
     template: Death_Wasp
-    at:       [-185.633, 12.954, 226.421, 127]
+    region:   n_386
     level:    [25, 26]
   17228158:
     template: Death_Wasp
-    at:       [-177.362, 10.939, 225.128, 25]
+    region:   n_386
     level:    [25, 26]
   17228159:
     template: Death_Wasp
-    at:       [-112.765, 8.627, 271.178, 127]
+    region:   n_386
     level:    [25, 26]
   17228160:
     template: Death_Wasp
-    at:       [-260.077, 10.025, 224.356, 52]
+    region:   n_386
     level:    [25, 26]
   17228161:
     template: Midnight_Wings
-    at:       [-66.674, 9.899, 357.464, 127]
+    region:   n_386
     level:    [22, 23]
     attributes:
       spawn:
@@ -4008,7 +4008,7 @@ spawns:
           end:    4
   17228162:
     template: Midnight_Wings
-    at:       [-294.377, 8.311, 211.237, 127]
+    region:   n_386
     level:    [22, 23]
     attributes:
       spawn:
@@ -4017,7 +4017,7 @@ spawns:
           end:    6
   17228163:
     template: Midnight_Wings
-    at:       [-108.151, 10.237, 318.696, 127]
+    region:   n_386
     level:    [22, 23]
     attributes:
       spawn:
@@ -4026,7 +4026,7 @@ spawns:
           end:    5
   17228164:
     template: Moon_Bat
-    at:       [-245.706, 9.357, 182.077, 2]
+    region:   n_386
     level:    [25, 26]
     attributes:
       spawn:
@@ -4035,7 +4035,7 @@ spawns:
           end:    4
   17228165:
     template: Moon_Bat
-    at:       [-184.755, 10.762, 218.230, 11]
+    region:   n_386
     level:    [25, 26]
     attributes:
       spawn:
@@ -4044,7 +4044,7 @@ spawns:
           end:    6
   17228166:
     template: Moon_Bat
-    at:       [-150.708, 12.753, 263.780, 127]
+    region:   n_386
     level:    [25, 26]
     attributes:
       spawn:
@@ -4053,27 +4053,27 @@ spawns:
           end:    5
   17228167:
     template: Goobbue_Farmer
-    at:       [-259.361, 10.163, 224.918, 127]
+    region:   n_386
     level:    [31, 32]
   17228168:
     template: Death_Wasp
-    at:       [-322.781, 7.861, 253.564, 18]
+    region:   nw_392
     level:    [25, 26]
   17228169:
     template: Death_Wasp
-    at:       [-391.419, 1.054, 254.959, 99]
+    region:   nw_392
     level:    [25, 26]
   17228170:
     template: Death_Wasp
-    at:       [-405.963, -0.001, 219.556, 38]
+    region:   nw_392
     level:    [25, 26]
   17228171:
     template: Death_Wasp
-    at:       [-378.057, 7.430, 314.015, 127]
+    region:   nw_392
     level:    [25, 26]
   17228172:
     template: Midnight_Wings
-    at:       [-392.182, 5.029, 302.039, 252]
+    region:   nw_392
     level:    [22, 23]
     attributes:
       spawn:
@@ -4082,7 +4082,7 @@ spawns:
           end:    4
   17228173:
     template: Midnight_Wings
-    at:       [-346.120, 8.258, 262.868, 127]
+    region:   nw_392
     level:    [22, 23]
     attributes:
       spawn:
@@ -4091,7 +4091,7 @@ spawns:
           end:    6
   17228174:
     template: Moon_Bat
-    at:       [-393.522, 0.734, 286.345, 98]
+    region:   nw_392
     level:    [25, 26]
     attributes:
       spawn:
@@ -4100,7 +4100,7 @@ spawns:
           end:    5
   17228175:
     template: Moon_Bat
-    at:       [-371.133, 5.281, 266.123, 127]
+    region:   nw_392
     level:    [25, 26]
     attributes:
       spawn:
@@ -4109,27 +4109,27 @@ spawns:
           end:    4
   17228176:
     template: Berry_Grub
-    at:       [279.190, 1.589, 105.115, 36]
+    region:   ne_400
     level:    [27, 28]
   17228177:
     template: Berry_Grub
-    at:       [250.593, 8.152, 84.543, 56]
+    region:   ne_400
     level:    [27, 28]
   17228178:
     template: Berry_Grub
-    at:       [252.621, 15.055, 289.784, 178]
+    region:   ne_400
     level:    [27, 28]
   17228179:
     template: Death_Wasp
-    at:       [253.982, 8.847, 238.760, 86]
+    region:   ne_400
     level:    [25, 26]
   17228180:
     template: Death_Wasp
-    at:       [222.043, 8.028, 74.158, 83]
+    region:   ne_400
     level:    [25, 26]
   17228181:
     template: Midnight_Wings
-    at:       [230.844, 9.100, 246.190, 44]
+    region:   ne_400
     level:    [22, 23]
     attributes:
       spawn:
@@ -4138,7 +4138,7 @@ spawns:
           end:    6
   17228182:
     template: Midnight_Wings
-    at:       [270.055, 16.429, 296.999, 118]
+    region:   ne_400
     level:    [22, 23]
     attributes:
       spawn:
@@ -4147,7 +4147,7 @@ spawns:
           end:    5
   17228183:
     template: Moon_Bat
-    at:       [250.788, 15.208, 290.330, 127]
+    region:   ne_400
     level:    [25, 26]
     attributes:
       spawn:
@@ -4156,7 +4156,7 @@ spawns:
           end:    4
   17228184:
     template: Moon_Bat
-    at:       [327.152, -2.302, 182.623, 41]
+    region:   ne_400
     level:    [25, 26]
     attributes:
       spawn:
@@ -4165,81 +4165,81 @@ spawns:
           end:    6
   17228185:
     template: Goobbue_Farmer
-    at:       [232.941, 14.955, 266.017, 13]
+    region:   ne_400
     level:    [31, 32]
   17228186:
     template: Ochu
-    at:       [236.797, 16.297, 280.600, 127]
+    region:   ne_400
     level:    [36, 37]
   17228187:
     template: Evil_Spirit
-    at:       [214.643, 10.583, 102.784, 81]
+    region:   ne_400
     level:    [35, 36]
   17228188:
     template: Old_Quadav
-    at:       [-39.093, 14.304, 249.033, 127]
+    region:   n_412
     level:    [27, 28]
   17228189:
     template: Copper_Quadav
-    at:       [-41.406, 15.977, 293.650, 127]
+    region:   n_381
     level:    [27, 28]
   17228190:
     template: Bronze_Quadav
-    at:       [133.517, 16.086, 185.229, 127]
+    region:   n_381
     level:    [32, 33]
   17228191:
     template: Brass_Quadav
-    at:       [-168.563, 12.857, 257.298, 127]
+    region:   n_381
     level:    [27, 28]
   17228192:
     template: Silver_Quadav
-    at:       [-50.351, 14.265, 312.475, 55]
+    region:   n_381
     level:    [32, 33]
   17228193:
     template: Zircon_Quadav
-    at:       [-187.337, 10.025, 250.075, 127]
+    region:   n_381
     level:    [32, 33]
   17228194:
     template: Garnet_Quadav
-    at:       [-178.581, 8.010, 287.152, 118]
+    region:   n_381
     level:    [32, 33]
   17228195:
     template: Wight_war
     script:   Wight
-    at:       [168.783, 16.038, 200.582, 127]
+    region:   n_412
     level:    [32, 34]
   17228196:
     template: Wight_blm
     script:   Wight
-    at:       [-68.807, 9.012, 359.016, 61]
+    region:   n_412
     level:    [32, 34]
   17228197:
     template: Ignis_Fatuus
-    at:       [-56.221, 14.263, 347.572, 14]
+    region:   n_412
     level:    [34, 36]
   17228198:
     template: Evil_Spirit
-    at:       [-171.952, 10.553, 267.279, 127]
+    region:   n_412
     level:    [35, 36]
   17228199:
     template: Death_Wasp
-    at:       [50.971, 18.725, 389.813, 127]
+    region:   n_423
     level:    [25, 26]
   17228200:
     template: Death_Wasp
-    at:       [-31.431, 16.347, 320.568, 43]
+    region:   n_423
     level:    [25, 26]
   17228201:
     template: Death_Wasp
-    at:       [98.247, 16.377, 398.480, 127]
+    region:   n_423
     level:    [25, 26]
   17228202:
     template: Death_Wasp
-    at:       [6.940, 16.000, 323.061, 116]
+    region:   n_423
     level:    [25, 26]
   17228203:
     template: Midnight_Wings
-    at:       [98.836, 17.190, 368.134, 11]
+    region:   n_423
     level:    [22, 23]
     attributes:
       spawn:
@@ -4248,7 +4248,7 @@ spawns:
           end:    5
   17228204:
     template: Midnight_Wings
-    at:       [1.237, 20.095, 340.612, 119]
+    region:   n_423
     level:    [22, 23]
     attributes:
       spawn:
@@ -4257,7 +4257,7 @@ spawns:
           end:    4
   17228205:
     template: Moon_Bat
-    at:       [-30.324, 17.473, 332.220, 2]
+    region:   n_423
     level:    [25, 26]
     attributes:
       spawn:
@@ -4266,7 +4266,7 @@ spawns:
           end:    6
   17228206:
     template: Moon_Bat
-    at:       [-37.016, 16.056, 365.179, 127]
+    region:   n_423
     level:    [25, 26]
     attributes:
       spawn:
@@ -4275,23 +4275,23 @@ spawns:
           end:    5
   17228207:
     template: Death_Wasp
-    at:       [166.385, 17.345, 332.870, 127]
+    region:   ne_431
     level:    [25, 26]
   17228208:
     template: Death_Wasp
-    at:       [189.780, 16.248, 319.691, 127]
+    region:   ne_431
     level:    [25, 26]
   17228209:
     template: Death_Wasp
-    at:       [148.503, 26.288, 378.935, 127]
+    region:   ne_431
     level:    [25, 26]
   17228210:
     template: Death_Wasp
-    at:       [212.250, 22.823, 363.977, 116]
+    region:   ne_431
     level:    [25, 26]
   17228211:
     template: Midnight_Wings
-    at:       [180.296, 24.392, 357.572, 127]
+    region:   ne_431
     level:    [22, 23]
     attributes:
       spawn:
@@ -4300,7 +4300,7 @@ spawns:
           end:    4
   17228212:
     template: Midnight_Wings
-    at:       [133.434, 22.388, 377.057, 36]
+    region:   ne_431
     level:    [22, 23]
     attributes:
       spawn:
@@ -4309,7 +4309,7 @@ spawns:
           end:    6
   17228213:
     template: Moon_Bat
-    at:       [215.375, 17.979, 338.073, 127]
+    region:   ne_431
     level:    [25, 26]
     attributes:
       spawn:
@@ -4318,7 +4318,7 @@ spawns:
           end:    5
   17228214:
     template: Moon_Bat
-    at:       [148.790, 15.477, 310.068, 74]
+    region:   ne_431
     level:    [25, 26]
     attributes:
       spawn:
@@ -4327,23 +4327,23 @@ spawns:
           end:    4
   17228215:
     template: Death_Wasp
-    at:       [221.402, 24.006, 432.802, 127]
+    region:   ne_439
     level:    [25, 26]
   17228216:
     template: Death_Wasp
-    at:       [183.776, 24.773, 429.114, 55]
+    region:   ne_439
     level:    [25, 26]
   17228217:
     template: Death_Wasp
-    at:       [113.316, 16.202, 402.408, 127]
+    region:   ne_439
     level:    [25, 26]
   17228218:
     template: Death_Wasp
-    at:       [72.191, 15.526, 426.605, 73]
+    region:   ne_439
     level:    [25, 26]
   17228219:
     template: Midnight_Wings
-    at:       [211.982, 23.026, 450.594, 122]
+    region:   ne_439
     level:    [22, 23]
     attributes:
       spawn:
@@ -4352,7 +4352,7 @@ spawns:
           end:    6
   17228220:
     template: Midnight_Wings
-    at:       [197.365, 24.412, 451.771, 103]
+    region:   ne_439
     level:    [22, 23]
     attributes:
       spawn:
@@ -4361,7 +4361,7 @@ spawns:
           end:    5
   17228221:
     template: Moon_Bat
-    at:       [112.260, 24.041, 450.105, 127]
+    region:   ne_439
     level:    [25, 26]
     attributes:
       spawn:
@@ -4370,7 +4370,7 @@ spawns:
           end:    4
   17228222:
     template: Moon_Bat
-    at:       [80.640, 24.053, 522.384, 65]
+    region:   ne_439
     level:    [25, 26]
     attributes:
       spawn:
@@ -4379,75 +4379,75 @@ spawns:
           end:    6
   17228223:
     template: Goblin_Mugger
-    at:       [289.971, 23.379, 435.686, 126]
+    region:   ne_447
     level:    [26, 27]
   17228224:
     template: Goblin_Pathfinder
-    at:       [168.013, 24.104, 480.386, 9]
+    region:   ne_447
     level:    [31, 32]
   17228225:
     template: Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   ne_447
     level:    [23, 25]
   17228226:
     template: Goblin_Leecher
-    at:       [15.291, 18.615, 355.977, 112]
+    region:   ne_447
     level:    [26, 27]
   17228227:
     template: Goblin_Furrier
-    at:       [211.911, 17.588, 333.557, 19]
+    region:   ne_447
     level:    [31, 32]
   17228228:
     template: Goblin_Gambler
-    at:       [119.034, 24.700, 469.874, 27]
+    region:   ne_447
     level:    [26, 27]
   17228229:
     template: Goblin_Smithy
-    at:       [145.377, 23.483, 385.610, 6]
+    region:   ne_447
     level:    [31, 32]
   17228230:
     template: Goblin_Shaman
-    at:       [100.416, 21.475, 469.245, 57]
+    region:   ne_447
     level:    [31, 32]
   17228231:
     template: Poison_Leech
-    at:       [-660.565, -31.932, -342.338, 127]
+    region:   sw_455
     level:    [25, 26]
   17228232:
     template: Poison_Leech
-    at:       [-635.103, -31.766, -357.275, 64]
+    region:   sw_455
     level:    [25, 26]
   17228233:
     template: Poison_Leech
-    at:       [-756.205, -31.688, -451.196, 127]
+    region:   sw_455
     level:    [25, 26]
   17228234:
     template: Poison_Leech
-    at:       [-686.605, -31.476, -471.422, 75]
+    region:   sw_455
     level:    [25, 26]
   17228235:
     template: Ochu
-    at:       [-691.786, -34.802, -335.763, 127]
+    region:   sw_459
     level:    [36, 37]
   17228236:
     template: Drooling_Daisy
-    at:       [-763.000, -31.000, -414.000, 127]
+    region:   sw_459
     level:    [39, 40]
   17228237:
     template: Clipper
-    at:       [-749.667, -28.636, -428.092, 127]
+    region:   sw_459
     level:    [24, 25]
   17228238:
     template: Clipper
-    at:       [-723.348, -28.962, -464.443, 123]
+    region:   sw_459
     level:    [24, 25]
   17228239:
     template: Clipper
-    at:       [-745.057, -27.493, -421.336, 127]
+    region:   sw_459
     level:    [24, 25]
   17228240:
     template: Clipper
-    at:       [-748.740, -31.345, -363.878, 127]
+    region:   sw_459
     level:    [24, 25]
   17228241:
     template: Goblin_Digger_far
@@ -4456,22 +4456,27 @@ spawns:
     level:    [28, 29]
   17228242:
     template: Simurgh
-    at:       [-681.000, -31.000, -447.000, 127]
+    region:   sw_459
     level:    [58, 58]
   17228243:
     template: Sprite
+    region:   c_467
     level:    [61, 63]
   17228244:
     template: Sprite
+    region:   c_467
     level:    [61, 63]
   17228245:
     template: Sprite
+    region:   c_467
     level:    [61, 63]
   17228246:
     template: Sprite
+    region:   c_467
     level:    [61, 63]
   17228247:
     template: Sprite
+    region:   c_467
     level:    [61, 63]
   17228248:
     template: Urayuli

@@ -105,42 +105,18 @@
             }
         },
         {
-            "label": "Create Build Dir",
-            "type": "shell",
-            "linux": {
-                "command": "mkdir -p ./build/"
-            },
-            "windows": {
-                "command": "cmd",
-                "args": [
-                    "/C",
-                    "if not exist .\\build mkdir .\\build",
-                ]
-            },
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "presentation": {
-                "reveal": "never",
-                "close": true,
-            }
-        },
-        {
             "type": "shell",
             "label": "CMake Configuration",
             "dependsOn": [
                 "Kill xi_connect",
                 "Kill xi_map",
                 "Kill xi_search",
-                "Kill xi_world",
-                "Create Build Dir"
+                "Kill xi_world"
             ],
             "command": "cmake",
             "args": [
-                "-S",
-                "${workspaceFolder}",
-                "-B",
-                "${workspaceFolder}/build",
+                "--preset",
+                "default",
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -155,8 +131,8 @@
             "command": "cmake",
             "args": [
                 "--build",
-                "${workspaceFolder}/build",
-                "-j8"
+                "--preset",
+                "default",
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

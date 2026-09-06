@@ -90,7 +90,7 @@ local function getStepFinishingMovesBase(player)
     end
 
     -- Terpsichore FM bonus. (Confirmed main-hand only)
-    local mainHandWeapon = player:getEquipID(xi.slot.MAIN)
+    local mainHandWeapon = xi.equipment.getUsableEquipID(player, xi.slot.MAIN)
 
     if terpsichoreTable[mainHandWeapon] then
         numAwardedMoves = numAwardedMoves + player:getMod(xi.mod.STEP_FINISH)

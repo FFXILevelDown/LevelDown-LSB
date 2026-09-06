@@ -3923,16 +3923,16 @@ spawns:
     level:    [76, 78]
   17125382:
     template: Mariehene
-    at:       [216.898, 3.438, -72.800, 82]
+    region:   e_6
     level:    [71, 74]
   17125383:
     template: War_Lizard
-    at:       [221.998, 3.472, -79.213, 177]
+    region:   e_6
     level:    [71, 73]
   17125384:
     template: Wolf_Bat_La_Vaule_S
     script:   Wolf_Bat
-    at:       [211.504, 3.663, -75.772, 166]
+    region:   e_6
     level:    [71, 73]
   17125385:
     template: Wolf_Bat_La_Vaule_S
@@ -3941,7 +3941,7 @@ spawns:
     level:    [71, 73]
   17125386:
     template: Mariehene
-    at:       [190.791, 3.499, -76.590, 228]
+    region:   e_10
     level:    [71, 74]
   17125387:
     template: Wood_Bats_La_Vaule_S
@@ -3951,7 +3951,7 @@ spawns:
   17125388:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [162.774, 3.532, -75.368, 71]
+    region:   c_12
     level:    [76, 79]
   17125389:
     template: Mariehene
@@ -3959,37 +3959,37 @@ spawns:
     level:    [71, 74]
   17125390:
     template: Orcish_Augur
-    at:       [150.404, 3.410, -102.112, 86]
+    region:   c_14
     level:    [76, 79]
   17125391:
     template: Water_Elemental
-    at:       [156.053, 3.538, -107.163, 253]
+    region:   c_14
     level:    [75, 75]
   17125392:
     template: War_Lizard
-    at:       [155.962, 3.430, -100.339, 168]
+    region:   c_14
     level:    [71, 73]
   17125393:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [150.169, 3.489, -120.479, 21]
+    region:   c_17
     level:    [76, 79]
   17125394:
     template: Mariehene
-    at:       [155.802, 3.647, -114.167, 130]
+    region:   c_17
     level:    [71, 74]
   17125395:
     template: Wood_Bats_La_Vaule_S
     script:   Wood_Bats
-    at:       [159.255, 3.461, -117.845, 133]
+    region:   c_17
     level:    [71, 73]
   17125396:
     template: Mariehene
-    at:       [173.106, 3.432, -134.099, 120]
+    region:   e_20
     level:    [71, 74]
   17125397:
     template: Mariehene
-    at:       [196.831, 3.027, -116.532, 106]
+    region:   e_21
     level:    [71, 74]
   17125398:
     template: Wolf_Bat_La_Vaule_S
@@ -3997,11 +3997,11 @@ spawns:
     level:    [71, 73]
   17125399:
     template: Orcish_Augur
-    at:       [219.436, 3.304, -127.550, 61]
+    region:   e_23
     level:    [76, 79]
   17125400:
     template: Orcish_Dragonbrander
-    at:       [221.544, 3.437, -120.379, 154]
+    region:   e_23
     level:    [76, 79]
   17125401:
     template: Wolf_Bat_La_Vaule_S
@@ -4010,29 +4010,29 @@ spawns:
     level:    [71, 73]
   17125402:
     template: Mariehene
-    at:       [233.120, 3.500, -117.900, 217]
+    region:   e_23
     level:    [71, 74]
   17125403:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [240.409, 3.499, -114.297, 255]
+    region:   e_27
     level:    [76, 79]
   17125404:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [250.282, 3.215, -125.529, 4]
+    region:   e_27
     level:    [76, 79]
   17125405:
     template: Mariehene
-    at:       [244.452, 3.499, -117.864, 31]
+    region:   e_27
     level:    [71, 74]
   17125406:
     template: War_Lizard
-    at:       [238.354, 3.498, -113.596, 138]
+    region:   e_27
     level:    [71, 73]
   17125407:
     template: Mariehene
-    at:       [236.032, 3.261, -100.161, 120]
+    region:   e_31
     level:    [71, 74]
   17125408:
     template: Wood_Bats_La_Vaule_S
@@ -4040,58 +4040,58 @@ spawns:
     level:    [71, 73]
   17125409:
     template: Mariehene
-    at:       [236.007, 3.499, -80.132, 225]
+    region:   e_33
     level:    [71, 74]
   17125410:
     template: War_Lizard
-    at:       [235.496, 3.499, -78.565, 12]
+    region:   e_33
     level:    [71, 73]
   17125411:
     template: War_Lizard
-    at:       [275.268, -0.028, -59.599]
+    region:   e_35
     level:    [71, 73]
   17125412:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [316.487, -0.796, -62.860, 23]
+    region:   e_36
     level:    [76, 79]
   17125413:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [303.871, -0.653, -49.729, 236]
+    region:   e_36
     level:    [76, 79]
   17125414:
     template: Mariehene
-    at:       [312.309, -0.878, -51.108, 12]
+    region:   e_36
     level:    [71, 74]
   17125415:
     template: Orcish_Augur
-    at:       [332.373, -0.531, -58.493, 12]
+    region:   e_39
     level:    [76, 79]
   17125416:
     template: Orcish_Dragonbrander
-    at:       [323.586, -0.585, -60.639, 186]
+    region:   e_39
     level:    [76, 79]
   17125417:
     template: Mariehene
-    at:       [340.801, -0.548, -57.385, 169]
+    region:   e_39
     level:    [71, 74]
   17125418:
     template: War_Lizard
-    at:       [337.801, -0.405, -34.237, 177]
+    region:   e_42
     level:    [71, 73]
   17125419:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [306.858, 0.275, -20.558, 45]
+    region:   e_43
     level:    [76, 79]
   17125420:
     template: Orcish_Augur
-    at:       [301.430, 0.142, -14.711, 3]
+    region:   e_43
     level:    [76, 79]
   17125421:
     template: Mariehene
-    at:       [304.680, -0.003, -20.004, 214]
+    region:   e_43
     level:    [71, 74]
   17125422:
     template: War_Lizard
@@ -4099,29 +4099,29 @@ spawns:
     level:    [71, 73]
   17125423:
     template: Orcish_Dragonbrander
-    at:       [346.811, -0.422, -99.417, 158]
+    region:   e_47
     level:    [76, 79]
   17125424:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [344.398, -0.401, -99.274, 175]
+    region:   e_47
     level:    [76, 79]
   17125425:
     template: Mariehene
-    at:       [335.533, -1.034, -113.519, 93]
+    region:   e_47
     level:    [71, 74]
   17125426:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [329.480, -0.694, -143.623, 122]
+    region:   e_50
     level:    [76, 79]
   17125427:
     template: Orcish_Augur
-    at:       [330.234, -0.459, -140.488, 158]
+    region:   e_50
     level:    [76, 79]
   17125428:
     template: War_Lizard
-    at:       [339.116, -0.719, -141.672, 50]
+    region:   e_50
     level:    [71, 73]
   17125429:
     template: War_Lizard
@@ -4129,16 +4129,16 @@ spawns:
     level:    [71, 73]
   17125430:
     template: Orcish_Dragonbrander
-    at:       [378.265, -0.293, -177.083, 107]
+    region:   se_54
     level:    [76, 79]
   17125431:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [375.737, 0.272, -174.487, 220]
+    region:   se_54
     level:    [76, 79]
   17125432:
     template: Mariehene
-    at:       [377.311, -0.637, -179.525, 186]
+    region:   se_54
     level:    [71, 74]
   17125433:
     template: Hawkeyed_Dnatbat
@@ -4146,33 +4146,33 @@ spawns:
     level:    [81, 81]
   17125434:
     template: Seneschal_Imp
-    at:       [323.062, 3.385, -208.695, 44]
+    region:   se_58
     level:    [77, 79]
   17125435:
     template: Orcish_Dragonbrander
-    at:       [273.604, 3.362, -205.907, 176]
+    region:   se_59
     level:    [76, 79]
   17125436:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [276.181, 3.499, -241.593, 87]
+    region:   se_60
     level:    [76, 79]
   17125437:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [293.086, 3.000, -251.187, 192]
+    region:   se_61
     level:    [76, 79]
   17125438:
     template: Fighting_Smilodon
-    at:       [284.862, 3.348, -261.813, 4]
+    region:   se_61
     level:    [75, 78]
   17125439:
     template: Fighting_Smilodon
-    at:       [269.025, 3.483, -273.445, 245]
+    region:   se_63
     level:    [75, 78]
   17125440:
     template: Fighting_Smilodon
-    at:       [269.435, 3.534, -276.066, 201]
+    region:   se_63
     level:    [75, 78]
   17125441:
     template: Orcish_Bowshooter_past
@@ -4181,32 +4181,32 @@ spawns:
     level:    [76, 79]
   17125442:
     template: Orcish_Augur
-    at:       [283.592, 3.505, -288.773, 171]
+    region:   se_66
     level:    [76, 79]
   17125443:
     template: Orcish_Dragonbrander
-    at:       [289.487, 2.403, -290.839, 241]
+    region:   se_66
     level:    [76, 79]
   17125444:
     template: Orcish_Augur
-    at:       [263.839, 3.249, -224.237, 23]
+    region:   se_68
     level:    [76, 79]
   17125445:
     template: Fighting_Smilodon
-    at:       [262.931, 3.522, -228.881, 133]
+    region:   se_68
     level:    [75, 78]
   17125446:
     template: Thunder_Elemental
-    at:       [262.099, 3.537, -234.577, 185]
+    region:   se_68
     level:    [75, 75]
   17125447:
     template: Seneschal_Imp
-    at:       [262.092, 3.709, -245.552, 35]
+    region:   se_71
     level:    [77, 79]
   17125448:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [239.600, 3.500, -239.113, 116]
+    region:   se_72
     level:    [76, 79]
   17125449:
     template: Orcish_Firebelcher_past
@@ -4227,7 +4227,7 @@ spawns:
     level:    [81, 83]
   17125453:
     template: Fighting_Smilodon
-    at:       [339.582, 0.182, -231.878, 198]
+    region:   se_77
     level:    [75, 78]
   17125454:
     template: Fighting_Smilodon
@@ -4235,11 +4235,11 @@ spawns:
     level:    [75, 78]
   17125455:
     template: Fighting_Smilodon
-    at:       [236.585, -0.611, -301.684, 225]
+    region:   se_79
     level:    [75, 78]
   17125456:
     template: Fighting_Smilodon
-    at:       [208.388, -0.603, -299.173, 190]
+    region:   se_80
     level:    [75, 78]
   17125457:
     template: Fighting_Smilodon
@@ -4248,46 +4248,46 @@ spawns:
   17125458:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [163.657, -0.696, -263.169, 228]
+    region:   s_82
     level:    [76, 79]
   17125459:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [171.432, -1.158, -258.328, 9]
+    region:   s_82
     level:    [76, 79]
   17125460:
     template: Orcish_Augur
-    at:       [167.864, -0.860, -256.054, 57]
+    region:   s_82
     level:    [76, 79]
   17125461:
     template: Orcish_Dragonbrander
-    at:       [169.436, -0.924, -253.377, 4]
+    region:   s_82
     level:    [76, 79]
   17125462:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [160.586, -0.433, -24.797, 97]
+    region:   c_86
     level:    [76, 79]
   17125463:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [158.629, -0.627, -15.235, 142]
+    region:   c_86
     level:    [76, 79]
   17125464:
     template: Mariehene
-    at:       [159.436, -0.509, -21.646, 35]
+    region:   c_86
     level:    [71, 74]
   17125465:
     template: Mariehene
-    at:       [161.233, -0.548, -15.296, 155]
+    region:   c_86
     level:    [71, 74]
   17125466:
     template: Orcish_Augur
-    at:       [137.190, -0.648, -20.398, 131]
+    region:   c_90
     level:    [76, 79]
   17125467:
     template: War_Lizard
-    at:       [144.897, -0.725, -22.377, 238]
+    region:   c_90
     level:    [71, 73]
   17125468:
     template: Mariehene
@@ -4299,114 +4299,114 @@ spawns:
     level:    [71, 73]
   17125470:
     template: Orcish_Dragonbrander
-    at:       [83.264, -0.540, -18.783, 140]
+    region:   c_94
     level:    [76, 79]
   17125471:
     template: Orcish_Veteran_past
     script:   Orcish_Veteran
-    at:       [85.776, -0.772, -22.006, 211]
+    region:   c_94
     level:    [76, 79]
   17125472:
     template: Mariehene
-    at:       [85.443, -0.805, -22.788, 10]
+    region:   c_94
     level:    [71, 74]
   17125473:
     template: Mariehene
-    at:       [93.124, -0.717, -14.006, 236]
+    region:   c_94
     level:    [71, 74]
   17125474:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [31.847, -1.229, -16.491, 206]
+    region:   c_98
     level:    [76, 79]
   17125475:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [40.509, -0.499, -18.506, 27]
+    region:   c_98
     level:    [78, 81]
   17125476:
     template: Fighting_Smilodon
-    at:       [32.625, -1.205, -15.091, 103]
+    region:   c_98
     level:    [75, 78]
   17125477:
     template: Thunder_Elemental
-    at:       [35.972, -0.683, -24.584, 32]
+    region:   c_101
     level:    [75, 75]
   17125478:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-9.502, -0.563, -19.355, 186]
+    region:   c_102
     level:    [76, 79]
   17125479:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-19.265, -0.697, -21.431, 101]
+    region:   c_102
     level:    [76, 79]
   17125480:
     template: Fighting_Smilodon
-    at:       [0.006, -0.503, -19.290, 10]
+    region:   c_102
     level:    [75, 78]
   17125481:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-22.230, 0.162, -44.869, 216]
+    region:   c_105
     level:    [76, 79]
   17125482:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-17.829, 0.202, -54.810, 229]
+    region:   c_105
     level:    [78, 81]
   17125483:
     template: Fighting_Smilodon
-    at:       [-21.685, 0.669, -64.272, 6]
+    region:   c_105
     level:    [75, 78]
   17125484:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-19.797, -0.645, 8.310, 179]
+    region:   c_108
     level:    [76, 79]
   17125485:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-19.375, -0.535, 2.173, 172]
+    region:   c_108
     level:    [76, 79]
   17125486:
     template: Fighting_Smilodon
-    at:       [-26.057, -0.596, 22.910, 106]
+    region:   c_108
     level:    [75, 78]
   17125487:
     template: Fighting_Smilodon
-    at:       [-22.959, -0.434, 44.523, 183]
+    region:   c_111
     level:    [75, 78]
   17125488:
     template: Orcish_Firebelcher_past
     script:   Orcish_Firebelcher
-    at:       [-55.587, -0.508, 23.795, 43]
+    region:   c_112
     level:    [81, 83]
   17125489:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-64.222, -0.418, 21.641, 157]
+    region:   c_112
     level:    [76, 79]
   17125490:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-64.758, -0.819, 33.197, 141]
+    region:   c_112
     level:    [76, 79]
   17125491:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-60.166, -0.637, 64.819, 107]
+    region:   c_115
     level:    [78, 81]
   17125492:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-61.291, -0.524, 61.806, 74]
+    region:   c_115
     level:    [76, 79]
   17125493:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-67.648, -0.669, 60.762, 54]
+    region:   c_115
     level:    [76, 79]
   17125494:
     template: Shatterskull_Mippdapp_LaVaule_S
@@ -4416,92 +4416,92 @@ spawns:
   17125495:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-113.274, 3.304, 15.776, 45]
+    region:   c_119
     level:    [76, 79]
   17125496:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-112.783, 3.702, 26.602, 224]
+    region:   c_119
     level:    [76, 79]
   17125497:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-131.319, 3.386, 13.436, 218]
+    region:   c_121
     level:    [78, 81]
   17125498:
     template: Orcish_Protector_past
     script:   Orcish_Protector
-    at:       [-132.731, 3.255, 12.224, 92]
+    region:   c_121
     level:    [77, 79]
   17125499:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-124.242, 3.449, 33.679, 34]
+    region:   c_123
     level:    [76, 79]
   17125500:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-117.213, 3.556, -6.992, 135]
+    region:   c_124
     level:    [76, 79]
   17125501:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-118.457, 3.500, -1.296, 94]
+    region:   c_124
     level:    [78, 81]
   17125502:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-135.909, 3.661, -10.226, 219]
+    region:   c_126
     level:    [76, 79]
   17125503:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-133.881, 3.507, -0.682, 131]
+    region:   c_126
     level:    [76, 79]
   17125504:
     template: Orcish_Protector_past
     script:   Orcish_Protector
-    at:       [-126.506, 3.529, -2.477, 250]
+    region:   c_126
     level:    [77, 79]
   17125505:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-165.702, 3.505, 0.254, 175]
+    region:   c_129
     level:    [78, 81]
   17125506:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-161.155, 3.490, 2.534, 196]
+    region:   c_129
     level:    [76, 79]
   17125507:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-161.351, 3.297, -4.396, 192]
+    region:   c_129
     level:    [78, 81]
   17125508:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-117.589, 3.499, -24.191, 39]
+    region:   c_132
     level:    [76, 79]
   17125509:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-111.168, 3.395, -17.547, 97]
+    region:   c_132
     level:    [78, 81]
   17125510:
     template: Orcish_Protector_past
     script:   Orcish_Protector
-    at:       [-124.360, 3.627, -16.586, 176]
+    region:   c_132
     level:    [77, 79]
   17125511:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-104.095, 3.518, -38.359, 87]
+    region:   c_135
     level:    [78, 81]
   17125512:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-98.954, 3.717, -33.327, 63]
+    region:   c_135
     level:    [76, 79]
   17125513:
     template: Orcish_Champion_past
@@ -4531,92 +4531,92 @@ spawns:
   17125518:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-181.118, -0.536, 53.294, 191]
+    region:   w_142
     level:    [76, 79]
   17125519:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-184.765, -0.733, 60.683, 119]
+    region:   w_142
     level:    [76, 79]
   17125520:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-221.087, -0.500, 43.320, 200]
+    region:   w_144
     level:    [78, 81]
   17125521:
     template: Orcish_Protector_past
     script:   Orcish_Protector
-    at:       [-205.108, -0.037, 58.895, 248]
+    region:   w_144
     level:    [77, 79]
   17125522:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-219.811, -0.956, -7.456, 241]
+    region:   w_146
     level:    [76, 79]
   17125523:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-219.796, -1.183, 10.351, 118]
+    region:   w_146
     level:    [78, 81]
   17125524:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-224.433, -0.496, -5.157, 83]
+    region:   w_146
     level:    [76, 79]
   17125525:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-224.226, -0.720, 2.062, 192]
+    region:   w_146
     level:    [78, 81]
   17125526:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-216.009, -0.400, -67.191, 57]
+    region:   w_150
     level:    [76, 79]
   17125527:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-214.859, -0.369, -66.564, 187]
+    region:   w_150
     level:    [76, 79]
   17125528:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-218.658, -0.564, -60.247, 135]
+    region:   w_150
     level:    [76, 79]
   17125529:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-200.370, -0.500, -61.117, 148]
+    region:   w_153
     level:    [76, 79]
   17125530:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-189.329, -0.971, -66.954, 100]
+    region:   w_153
     level:    [78, 81]
   17125531:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-219.293, -0.301, -90.661, 182]
+    region:   w_155
     level:    [78, 81]
   17125532:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-221.938, -0.444, -91.929, 104]
+    region:   w_155
     level:    [76, 79]
   17125533:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-156.305, -0.501, -60.981, 128]
+    region:   c_157
     level:    [76, 79]
   17125534:
     template: Orcish_Bowshooter_past
     script:   Orcish_Bowshooter
-    at:       [-152.841, -0.431, -61.019, 135]
+    region:   c_157
     level:    [76, 79]
   17125535:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-105.532, -0.060, -104.971, 149]
+    region:   c_159
     level:    [78, 81]
   17125536:
     template: Orcish_Bowshooter_past
@@ -4631,85 +4631,85 @@ spawns:
   17125538:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-97.703, -0.509, -117.352, 36]
+    region:   c_162
     level:    [76, 79]
   17125539:
     template: Orcish_Warlord_past
     script:   Orcish_Warlord
-    at:       [-95.919, -0.534, -121.810, 47]
+    region:   c_162
     level:    [78, 81]
   17125540:
     template: Orcish_Champion_past
     script:   Orcish_Champion
-    at:       [-94.392, -0.508, -119.748, 216]
+    region:   c_162
     level:    [76, 79]
   17125541:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-94.980, 3.755, -243.913, 2]
+    region:   s_165
     level:    [81, 83]
   17125542:
     template: Orcish_Strategist
-    at:       [-88.269, 3.520, -244.557, 85]
+    region:   s_165
     level:    [81, 83]
   17125543:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [-104.418, 3.595, -242.356, 176]
+    region:   s_165
     level:    [81, 83]
   17125544:
     template: Orcish_Cupholder
-    at:       [-67.572, 3.363, -243.690, 94]
+    region:   s_168
     level:    [81, 83]
   17125545:
     template: Orcish_Strategist
-    at:       [-66.932, 3.523, -232.115, 164]
+    region:   s_168
     level:    [81, 83]
   17125546:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [-65.322, 3.512, -232.077, 19]
+    region:   s_168
     level:    [81, 83]
   17125547:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [-65.457, 3.545, -231.545, 30]
+    region:   s_168
     level:    [81, 83]
   17125548:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-54.030, 3.629, -220.160, 107]
+    region:   s_172
     level:    [81, 83]
   17125549:
     template: Orcish_Strategist
-    at:       [-46.056, 3.596, -217.494, 3]
+    region:   s_172
     level:    [81, 83]
   17125550:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [-25.223, 3.529, -211.956, 196]
+    region:   s_174
     level:    [81, 83]
   17125551:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-34.764, 3.524, -207.204, 175]
+    region:   s_174
     level:    [81, 83]
   17125552:
     template: Orcish_Cupholder
-    at:       [-16.769, 3.426, -205.870, 222]
+    region:   s_174
     level:    [81, 83]
   17125553:
     template: Orcish_Strategist
-    at:       [-24.433, 3.427, -214.613, 55]
+    region:   s_174
     level:    [81, 83]
   17125554:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [3.931, 3.393, -201.663, 161]
+    region:   s_178
     level:    [81, 83]
   17125555:
     template: Orcish_Cupholder
-    at:       [-1.171, 3.496, -200.731, 35]
+    region:   s_178
     level:    [81, 83]
   17125556:
     template: Orcish_Farkiller_past
@@ -4718,16 +4718,16 @@ spawns:
     level:    [81, 83]
   17125557:
     template: Orcish_Strategist
-    at:       [-72.147, 3.739, -261.717, 67]
+    region:   s_181
     level:    [81, 83]
   17125558:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-75.314, 3.537, -271.076, 18]
+    region:   s_181
     level:    [81, 83]
   17125559:
     template: Orcish_Cupholder
-    at:       [-77.143, 3.499, -280.161, 197]
+    region:   s_183
     level:    [81, 83]
   17125560:
     template: Orcish_Strategist
@@ -4768,25 +4768,25 @@ spawns:
   17125568:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-180.810, -0.419, -276.766, 103]
+    region:   sw_192
     level:    [81, 83]
   17125569:
     template: Orcish_Cupholder
-    at:       [-181.539, -0.759, -298.130, 105]
+    region:   sw_193
     level:    [81, 83]
   17125570:
     template: Orcish_Strategist
-    at:       [-161.422, -0.500, -299.840, 133]
+    region:   s_194
     level:    [81, 83]
   17125571:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [-164.264, -0.643, -300.004, 55]
+    region:   s_194
     level:    [81, 83]
   17125572:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-144.729, -0.883, -302.983, 36]
+    region:   s_196
     level:    [81, 83]
   17125573:
     template: Orcish_Cupholder
@@ -4795,24 +4795,24 @@ spawns:
   17125574:
     template: Orcish_Farkiller_past
     script:   Orcish_Farkiller
-    at:       [-90.396, 3.028, -288.648, 148]
+    region:   s_198
     level:    [81, 83]
   17125575:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [-71.587, 3.288, -289.116, 44]
+    region:   s_199
     level:    [81, 83]
   17125576:
     template: Lobison
-    at:       [57.251, -0.991, -209.832, 80]
+    region:   s_200
     level:    [80, 82]
   17125577:
     template: Lobison
-    at:       [62.851, -0.563, -201.199, 194]
+    region:   s_200
     level:    [80, 82]
   17125578:
     template: Lobison
-    at:       [58.756, -1.054, -253.432, 163]
+    region:   s_202
     level:    [80, 82]
   17125579:
     template: Lobison
@@ -4820,31 +4820,31 @@ spawns:
     level:    [80, 82]
   17125580:
     template: Lobison
-    at:       [103.274, -0.949, -261.528, 117]
+    region:   s_204
     level:    [80, 82]
   17125581:
     template: Lobison
-    at:       [111.717, -1.042, -255.943, 144]
+    region:   s_205
     level:    [80, 82]
   17125582:
     template: Lobison
-    at:       [63.617, -1.307, -291.507, 206]
+    region:   s_206
     level:    [80, 82]
   17125583:
     template: Lobison
-    at:       [62.544, 0.330, -334.965, 41]
+    region:   s_207
     level:    [80, 82]
   17125584:
     template: Lobison
-    at:       [55.841, 0.705, -345.166, 155]
+    region:   s_207
     level:    [80, 82]
   17125585:
     template: Lobison
-    at:       [19.317, -0.984, -262.277, 203]
+    region:   s_209
     level:    [80, 82]
   17125586:
     template: Lobison
-    at:       [16.601, -0.369, -267.218, 95]
+    region:   s_209
     level:    [80, 82]
   17125587:
     template: Lobison
@@ -4852,29 +4852,29 @@ spawns:
     level:    [80, 82]
   17125588:
     template: Lobison
-    at:       [0.909, -0.500, -298.354, 205]
+    region:   s_212
     level:    [80, 82]
   17125589:
     template: Lobison
-    at:       [-17.658, -0.541, -291.923, 253]
+    region:   s_212
     level:    [80, 82]
   17125590:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [80.739, -3.838, -119.441, 38]
+    region:   c_214
     level:    [81, 83]
   17125591:
     template: Orcish_Imperial_Guard
-    at:       [76.560, -4.126, -115.748, 198]
+    region:   c_214
     level:    [81, 83]
   17125592:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [63.068, -1.479, -107.846, 248]
+    region:   c_216
     level:    [81, 83]
   17125593:
     template: Seneschal_Imp
-    at:       [63.504, -1.433, -104.902, 3]
+    region:   c_216
     level:    [77, 79]
   17125594:
     template: Orcish_Imperial_Guard
@@ -4882,24 +4882,24 @@ spawns:
     level:    [81, 83]
   17125595:
     template: Orcish_Wyrmbrander
-    at:       [39.686, -4.307, -118.717, 97]
+    region:   c_219
     level:    [81, 83]
   17125596:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [45.130, -3.946, -111.883, 205]
+    region:   c_219
     level:    [81, 83]
   17125597:
     template: Orcish_Imperial_Guard
-    at:       [32.413, -3.183, -141.315, 170]
+    region:   c_221
     level:    [81, 83]
   17125598:
     template: Orcish_Prophetess
-    at:       [25.297, -2.653, -144.735, 144]
+    region:   c_221
     level:    [81, 83]
   17125599:
     template: Orcish_Wyrmbrander
-    at:       [41.224, -4.486, -162.141, 54]
+    region:   c_223
     level:    [81, 83]
   17125600:
     template: Orcish_Dreadnought_past
@@ -4908,23 +4908,23 @@ spawns:
     level:    [81, 83]
   17125601:
     template: Orcish_Prophetess
-    at:       [85.207, -4.470, -158.838, 165]
+    region:   c_225
     level:    [81, 83]
   17125602:
     template: Orcish_Wyrmbrander
-    at:       [88.565, -4.738, -160.000, 179]
+    region:   c_225
     level:    [81, 83]
   17125603:
     template: Orcish_Prophetess
-    at:       [79.549, -3.528, -147.615, 92]
+    region:   c_227
     level:    [81, 83]
   17125604:
     template: Orcish_Wyrmbrander
-    at:       [90.264, -3.350, -138.634, 53]
+    region:   c_227
     level:    [81, 83]
   17125605:
     template: Seneschal_Imp
-    at:       [91.395, -3.841, -133.087, 255]
+    region:   c_227
     level:    [77, 79]
   17125606:
     template: Seneschal_Imp
@@ -4936,20 +4936,20 @@ spawns:
     level:    [81, 83]
   17125608:
     template: Orcish_Wyrmbrander
-    at:       [54.764, -8.671, -119.811, 166]
+    region:   c_232
     level:    [81, 83]
   17125609:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [49.356, -9.008, -124.908, 12]
+    region:   c_233
     level:    [81, 83]
   17125610:
     template: Orcish_Imperial_Guard
-    at:       [38.710, -9.261, -151.783, 62]
+    region:   c_234
     level:    [81, 83]
   17125611:
     template: Orcish_Prophetess
-    at:       [38.420, -9.261, -149.276, 54]
+    region:   c_234
     level:    [81, 83]
   17125612:
     template: Orcish_Wyrmbrander
@@ -4961,19 +4961,19 @@ spawns:
     level:    [81, 83]
   17125614:
     template: Orcish_Prophetess
-    at:       [67.001, -8.741, -158.433, 1]
+    region:   c_238
     level:    [81, 83]
   17125615:
     template: Orcish_Wyrmbrander
-    at:       [69.700, -8.496, -159.827, 109]
+    region:   c_238
     level:    [81, 83]
   17125616:
     template: Morbol
-    at:       [58.900, 2.960, 61.346, 248]
+    region:   c_240
     level:    [83, 83]
   17125617:
     template: La_Vaule_Pugil
-    at:       [57.380, 3.322, 38.622, 52]
+    region:   c_241
     level:    [72, 75]
   17125618:
     template: La_Vaule_Pugil
@@ -4981,31 +4981,31 @@ spawns:
     level:    [72, 75]
   17125619:
     template: La_Vaule_Pugil
-    at:       [57.620, 3.330, -83.806, 57]
+    region:   c_243
     level:    [72, 75]
   17125620:
     template: La_Vaule_Pugil
-    at:       [96.027, 3.166, -112.741, 215]
+    region:   c_244
     level:    [72, 75]
   17125621:
     template: La_Vaule_Pugil
-    at:       [102.056, 3.046, -144.108, 250]
+    region:   c_245
     level:    [72, 75]
   17125622:
     template: La_Vaule_Pugil
-    at:       [100.637, 3.409, -175.765, 208]
+    region:   s_246
     level:    [72, 75]
   17125623:
     template: La_Vaule_Pugil
-    at:       [99.831, 3.347, -202.139, 23]
+    region:   s_247
     level:    [72, 75]
   17125624:
     template: La_Vaule_Pugil
-    at:       [128.051, 3.382, -222.697, 7]
+    region:   s_248
     level:    [72, 75]
   17125625:
     template: La_Vaule_Pugil
-    at:       [142.624, 3.445, -259.783, 136]
+    region:   s_249
     level:    [72, 75]
   17125626:
     template: La_Vaule_Pugil
@@ -5017,7 +5017,7 @@ spawns:
     level:    [72, 75]
   17125628:
     template: La_Vaule_Pugil
-    at:       [183.162, 3.290, -361.669, 194]
+    region:   se_252
     level:    [72, 75]
   17125629:
     template: Morbol
@@ -5025,39 +5025,39 @@ spawns:
     level:    [83, 83]
   17125630:
     template: La_Vaule_Pugil
-    at:       [60.549, 3.354, -182.606, 191]
+    region:   s_254
     level:    [72, 75]
   17125631:
     template: La_Vaule_Pugil
-    at:       [25.422, 3.366, -176.359, 221]
+    region:   s_255
     level:    [72, 75]
   17125632:
     template: La_Vaule_Pugil
-    at:       [19.697, 3.169, -141.376, 214]
+    region:   c_256
     level:    [72, 75]
   17125633:
     template: La_Vaule_Pugil
-    at:       [-39.671, 3.336, -141.403, 8]
+    region:   c_257
     level:    [72, 75]
   17125634:
     template: La_Vaule_Pugil
-    at:       [-80.309, 3.343, -141.523, 120]
+    region:   c_258
     level:    [72, 75]
   17125635:
     template: La_Vaule_Pugil
-    at:       [-167.551, 3.260, -137.084, 227]
+    region:   c_259
     level:    [72, 75]
   17125636:
     template: La_Vaule_Pugil
-    at:       [-220.530, 3.207, -144.336, 244]
+    region:   w_260
     level:    [72, 75]
   17125637:
     template: La_Vaule_Pugil
-    at:       [-245.532, 3.268, -134.497, 12]
+    region:   w_261
     level:    [72, 75]
   17125638:
     template: La_Vaule_Pugil
-    at:       [-257.548, 3.340, -122.421, 218]
+    region:   w_262
     level:    [72, 75]
   17125639:
     template: La_Vaule_Pugil
@@ -5066,11 +5066,11 @@ spawns:
   17125640:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [129.427, -0.132, -140.620, 143]
+    region:   c_264
     level:    [81, 83]
   17125641:
     template: Orcish_Imperial_Guard
-    at:       [111.346, -3.504, -142.193, 14]
+    region:   c_264
     level:    [81, 83]
   17125642:
     template: Orcish_Prophetess
@@ -5079,15 +5079,15 @@ spawns:
   17125643:
     template: Orcish_Dreadnought_past
     script:   Orcish_Dreadnought
-    at:       [137.719, -0.266, -177.233, 231]
+    region:   s_267
     level:    [81, 83]
   17125644:
     template: Orcish_Wyrmbrander
-    at:       [162.073, -0.532, -179.371, 127]
+    region:   s_268
     level:    [81, 83]
   17125645:
     template: Seneschal_Imp
-    at:       [151.657, -0.206, -184.422, 22]
+    region:   s_268
     level:    [77, 79]
   17125646:
     template: Orcish_Prophetess
@@ -5153,23 +5153,23 @@ spawns:
   17125661:
     template: All-Seeing_Onyx_Eye
     script:   All-seeing_Onyx_Eye
-    at:       [173.407, 3.171, -374.932, 96]
+    region:   se_285
     level:    [83, 83]
   17125662:
     template: Cogtooth_Skagnogg
-    at:       [142.595, -0.377, -176.132, 162]
+    region:   s_267
     level:    [83, 83]
   17125663:
     template: Agrios
-    at:       [101.244, -0.570, 60.608, 228]
+    region:   c_240
     level:    [83, 83]
   17125664:
     template: Falsespinner_Bhudbrodd
-    at:       [-221.122, -0.915, -96.614, 120]
+    region:   w_155
     level:    [83, 83]
   17125665:
     template: Rugaroo
-    at:       [17.596, -0.289, -259.902, 164]
+    region:   s_209
     level:    [83, 83]
   17125666:
     template: Darkheir_Grradhod
@@ -5606,86 +5606,100 @@ spawns:
     level:    [60, 60]
   17125818:
     template: Spinebeak_Neckchopper
+    region:   se_442
     level:    [60, 60]
   17125819:
     template: Spinebeak_Neckchopper
+    region:   se_442
     level:    [60, 60]
   17125820:
     template: Jagidbods_Warmachine
-    at:       [297.807, 2.913, -219.016, 84]
+    region:   se_442
     level:    [70, 70]
   17125821:
     template: Jagidbod_of_Clan_Reaper
   17125822:
     template: Clan_Reaper_Grunt
-    at:       [283.987, 3.526, -206.732, 85]
+    region:   se_442
     level:    [70, 70]
   17125823:
     template: Clan_Reaper_Grunt
-    at:       [275.160, 3.420, -208.777, 247]
+    region:   se_442
     level:    [70, 70]
   17125824:
     template: Clan_Reaper_Grunt
-    at:       [279.563, 3.501, -207.437, 118]
+    region:   se_442
     level:    [70, 70]
   17125825:
     template: Clan_Reaper_Grunt
-    at:       [296.419, 2.986, -220.271, 208]
+    region:   se_442
     level:    [70, 70]
   17125826:
     template: Clan_Reaper_Grunt
-    at:       [299.451, 3.560, -202.653, 45]
+    region:   se_442
     level:    [70, 70]
   17125827:
     template: Clan_Reaper_Grunt
-    at:       [284.897, 3.520, -203.474, 241]
+    region:   se_442
     level:    [70, 70]
   17125828:
     template: Clan_Reaper_Grunt
-    at:       [293.388, 2.965, -229.699, 224]
+    region:   se_442
     level:    [70, 70]
   17125829:
     template: Clan_Reaper_Grunt
-    at:       [285.257, 3.587, -205.861, 42]
+    region:   se_442
     level:    [70, 70]
   17125830:
     template: Clan_Reaper_Grunt
-    at:       [294.948, 3.578, -222.825, 73]
+    region:   se_442
     level:    [70, 70]
   17125831:
     template: Alpha_Gnole_Anders
+    region:   se_442
   17125832:
     template: Anderss_Guard
+    region:   se_456
     level:    [60, 64]
   17125833:
     template: Anderss_Guard
+    region:   se_456
     level:    [60, 64]
   17125834:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125835:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125836:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125837:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125838:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125839:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125840:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125841:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125842:
     template: Moonfang_Warrior
+    region:   se_442
     level:    [60, 60]
   17125843:
     template: Poisonhand_Gnadgad_S
@@ -5768,79 +5782,96 @@ spawns:
     level:    [60, 60]
   17125867:
     template: Throatripper_Predator
-    at:       [285.876, 3.709, -195.986, 202]
+    region:   se_442
     level:    [60, 60]
   17125868:
     template: Throatripper_Predator
-    at:       [282.190, 3.513, -204.267, 252]
+    region:   se_442
     level:    [60, 60]
   17125869:
     template: Throatripper_Predator
-    at:       [281.389, 3.514, -208.197, 93]
+    region:   se_442
     level:    [60, 60]
   17125870:
     template: Throatripper_Predator
-    at:       [284.314, 3.561, -205.978, 185]
+    region:   se_442
     level:    [60, 60]
   17125871:
     template: Throatripper_Predator
-    at:       [279.409, 3.500, -206.540, 218]
+    region:   se_442
     level:    [60, 60]
   17125872:
     template: Throatripper_Predator
-    at:       [276.884, 3.500, -242.736, 129]
+    region:   se_442
     level:    [60, 60]
   17125873:
     template: Dirtyhanded_Gochakzuk
+    region:   se_497
     level:    [70, 70]
   17125874:
     template: Gravemaker_Mesmerizer
     level:    [70, 70]
   17125875:
     template: Gravemaker_Mesmerizer
+    region:   se_497
     level:    [70, 70]
   17125876:
     template: Gravemaker_Mesmerizer
     level:    [70, 70]
   17125877:
     template: Gravemaker_Mesmerizer
+    region:   se_456
     level:    [70, 70]
   17125878:
     template: Gravemaker_Mesmerizer
+    region:   se_456
     level:    [70, 70]
   17125879:
     template: Gravemaker_Mesmerizer
+    region:   se_456
     level:    [70, 70]
   17125880:
     template: Gravemaker_Mesmerizer
+    region:   se_504
     level:    [70, 70]
   17125881:
     template: Gravemaker_Mesmerizer
+    region:   se_59
     level:    [70, 70]
   17125882:
     template: Gravemaker_Mesmerizer
+    region:   se_497
     level:    [70, 70]
   17125883:
     template: Battlemaster_Vatgit
+    region:   se_456
     level:    [75, 80]
   17125884:
     template: Clan_Longtooth_Pillager
   17125885:
     template: Clan_Longtooth_Pillager
+    region:   se_59
   17125886:
     template: Clan_Longtooth_Pillager
+    region:   se_497
   17125887:
     template: Clan_Longtooth_Pillager
+    region:   se_59
   17125888:
     template: Clan_Longtooth_Pillager
+    region:   se_59
   17125889:
     template: Clan_Longtooth_Pillager
+    region:   se_497
   17125890:
     template: Clan_Longtooth_Pillager
+    region:   se_59
   17125891:
     template: Clan_Longtooth_Pillager
+    region:   se_59
   17125892:
     template: Clan_Longtooth_Pillager
+    region:   se_497
   17125893:
     template: Clan_Bear_Fighter
   17125894:
@@ -5939,15 +5970,15 @@ spawns:
     level:    [60, 60]
   17125925:
     template: Fiendish_Leechkeeper
-    at:       [293.556, 1.678, -233.170, 59]
+    region:   se_442
     level:    [60, 60]
   17125926:
     template: Fiendish_Leechkeeper
-    at:       [280.326, 3.500, -209.774, 80]
+    region:   se_442
     level:    [60, 60]
   17125927:
     template: Fiendish_Leechkeeper
-    at:       [280.318, 3.500, -243.329, 56]
+    region:   se_442
     level:    [60, 60]
   17125928:
     template: Fiendish_Leechkeeper

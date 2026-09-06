@@ -4510,32 +4510,32 @@ spawns:
   17113094:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [29.094, 6.120, 23.807, 242]
+    region:   c_6
     level:    [42, 44]
   17113095:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [-105.823, 3.368, 110.502, 3]
+    region:   c_7
     level:    [42, 44]
   17113096:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [54.010, 5.386, 23.914, 12]
+    region:   c_8
     level:    [38, 41]
   17113097:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-13.263, 3.879, 51.624, 208]
+    region:   c_9
     level:    [38, 41]
   17113098:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-102.050, 3.329, 97.499, 52]
+    region:   c_7
     level:    [38, 41]
   17113099:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-133.879, 3.848, 108.843, 234]
+    region:   c_11
     level:    [38, 41]
   17113100:
     template: Orcish_Bowshooter_past
@@ -4552,162 +4552,162 @@ spawns:
   17113103:
     template: Snipper_Small
     script:   Snipper
-    at:       [154.084, -0.284, 189.670, 56]
+    region:   n_15
     level:    [38, 41]
   17113104:
     template: Snipper_Small
     script:   Snipper
-    at:       [175.595, 0.223, 82.044, 132]
+    region:   c_16
     level:    [38, 41]
   17113105:
     template: Snipper_Small
     script:   Snipper
-    at:       [150.138, 0.912, -121.100, 171]
+    region:   c_17
     level:    [38, 41]
   17113106:
     template: Snipper_Small
     script:   Snipper
-    at:       [86.992, -0.331, 146.901, 38]
+    region:   c_18
     level:    [38, 41]
   17113107:
     template: Snipper_Small
     script:   Snipper
-    at:       [159.476, 0.730, -210.080, 138]
+    region:   c_19
     level:    [38, 41]
   17113108:
     template: Snipper_Small
     script:   Snipper
-    at:       [111.544, -0.685, -119.993, 3]
+    region:   c_20
     level:    [38, 41]
   17113109:
     template: Snipper_Small
     script:   Snipper
-    at:       [115.700, -0.441, -124.479, 192]
+    region:   c_20
     level:    [38, 41]
   17113110:
     template: Snipper_Small
     script:   Snipper
-    at:       [118.014, 0.473, -154.087, 217]
+    region:   c_22
     level:    [38, 41]
   17113111:
     template: Snipper_Small
     script:   Snipper
-    at:       [81.407, 0.675, -209.546, 3]
+    region:   c_23
     level:    [38, 41]
   17113112:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [174.774, -1.015, 106.593, 44]
+    region:   c_24
     level:    [59, 60]
   17113113:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [203.569, -0.440, -0.430, 145]
+    region:   e_25
     level:    [59, 60]
   17113114:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [131.977, -0.944, 31.913, 52]
+    region:   c_26
     level:    [59, 60]
   17113115:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [153.720, -0.390, 27.545, 106]
+    region:   c_27
     level:    [59, 60]
   17113116:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [142.531, -2.129, -20.120, 58]
+    region:   c_28
     level:    [59, 60]
   17113117:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [144.049, -0.987, -69.530, 110]
+    region:   c_29
     level:    [59, 60]
   17113118:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [164.870, -0.929, 179.631, 12]
+    region:   c_30
     level:    [38, 41]
   17113119:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [205.839, -0.248, -48.231, 73]
+    region:   e_31
     level:    [38, 41]
   17113120:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [196.936, 0.624, -75.312, 136]
+    region:   e_32
     level:    [38, 41]
   17113121:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [171.155, -2.614, -174.008, 236]
+    region:   c_33
     level:    [38, 41]
   17113122:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [123.594, 0.080, 143.736, 114]
+    region:   c_34
     level:    [38, 41]
   17113123:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [87.910, -0.565, -152.225, 58]
+    region:   c_35
     level:    [38, 41]
   17113124:
     template: Screamer_Small
     script:   Screamer
-    at:       [214.760, -2.636, 99.565, 27]
+    region:   e_36
     level:    [40, 42]
   17113125:
     template: Screamer_Small
     script:   Screamer
-    at:       [198.529, 0.621, -11.076, 163]
+    region:   e_31
     level:    [40, 42]
   17113126:
     template: Screamer_Small
     script:   Screamer
-    at:       [169.346, -0.105, -118.061, 19]
+    region:   c_17
     level:    [40, 42]
   17113127:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [120.690, -0.531, 39.945, 33]
+    region:   c_39
     level:    [42, 43]
   17113128:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [-47.922, -1.574, 158.280, 197]
+    region:   c_40
     level:    [42, 43]
   17113129:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [0.758, -0.006, 16.899, 125]
+    region:   c_41
     level:    [42, 43]
   17113130:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [45.630, -1.676, 76.340, 35]
+    region:   c_42
     level:    [59, 60]
   17113131:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [-68.681, -1.503, 129.503, 118]
+    region:   c_43
     level:    [59, 60]
   17113132:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [15.954, -0.680, 71.956, 19]
+    region:   c_42
     level:    [38, 41]
   17113133:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-87.978, 2.009, 99.507, 165]
+    region:   c_45
     level:    [38, 41]
   17113134:
     template: Screamer_Small
     script:   Screamer
-    at:       [107.017, -1.677, -15.645, 108]
+    region:   c_46
     level:    [40, 42]
   17113135:
     template: Decrepit_Gnole
@@ -4720,72 +4720,72 @@ spawns:
   17113137:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [276.640, -0.342, 162.601, 211]
+    region:   e_49
     level:    [42, 43]
   17113138:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [236.854, -0.420, 201.106, 130]
+    region:   ne_50
     level:    [59, 60]
   17113139:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [235.812, -0.648, 185.579, 160]
+    region:   e_51
     level:    [59, 60]
   17113140:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [278.244, -1.032, 117.912, 249]
+    region:   e_52
     level:    [59, 60]
   17113141:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [288.587, -0.058, 37.973, 135]
+    region:   e_53
     level:    [59, 60]
   17113142:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [357.277, -0.222, 79.060, 237]
+    region:   e_54
     level:    [59, 60]
   17113143:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [345.538, -0.065, 81.164, 131]
+    region:   e_54
     level:    [59, 60]
   17113144:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [334.128, 0.121, 108.295, 189]
+    region:   e_56
     level:    [59, 60]
   17113145:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [341.597, 2.223, 99.633, 72]
+    region:   e_56
     level:    [59, 60]
   17113146:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [340.420, 0.219, 156.344, 3]
+    region:   e_58
     level:    [59, 60]
   17113147:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [333.724, -0.330, 160.190, 114]
+    region:   e_58
     level:    [59, 60]
   17113148:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [285.735, -0.677, 233.691, 174]
+    region:   ne_60
     level:    [38, 41]
   17113149:
     template: Ghoul_war_Small
     script:   Ghoul
-    at:       [277.782, -0.703, 95.410, 139]
+    region:   e_52
     level:    [39, 42]
   17113150:
     template: Ghoul_war_Small
     script:   Ghoul
-    at:       [337.829, 0.301, 106.913, 165]
+    region:   e_56
     level:    [39, 42]
   17113151:
     template: Thunder_Elemental_Small
@@ -4795,32 +4795,32 @@ spawns:
   17113152:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [-298.615, 3.759, 14.959, 31]
+    region:   w_64
     level:    [42, 44]
   17113153:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [-258.376, 6.667, -80.621, 204]
+    region:   w_65
     level:    [42, 44]
   17113154:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-303.923, 3.876, 60.833, 148]
+    region:   w_66
     level:    [38, 41]
   17113155:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-298.516, 5.103, 23.019, 193]
+    region:   w_64
     level:    [38, 41]
   17113156:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-263.783, 2.521, -93.347, 63]
+    region:   w_65
     level:    [38, 41]
   17113157:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-219.298, 2.566, -99.892, 166]
+    region:   w_69
     level:    [38, 41]
   17113158:
     template: Orcish_Bowshooter_past
@@ -4844,44 +4844,44 @@ spawns:
     level:    [76, 79]
   17113162:
     template: Biddybug
-    at:       [101.705, -3.435, 326.846, 175]
+    region:   n_74
     level:    [62, 64]
   17113163:
     template: Biddybug
-    at:       [-160.749, -0.264, 249.259, 156]
+    region:   n_75
     level:    [62, 64]
   17113164:
     template: Biddybug
-    at:       [-150.070, -0.374, 311.070, 170]
+    region:   n_76
     level:    [62, 64]
   17113165:
     template: Biddybug
-    at:       [275.162, -0.458, 563.903, 207]
+    region:   ne_77
     level:    [62, 64]
   17113166:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-216.250, -1.269, -73.830, 207]
+    region:   w_78
     level:    [38, 41]
   17113167:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-326.298, -0.498, 42.724, 36]
+    region:   w_79
     level:    [38, 41]
   17113168:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-271.801, -1.186, 67.635, 172]
+    region:   w_80
     level:    [39, 41]
   17113169:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-268.209, 6.740, 167.651, 10]
+    region:   w_81
     level:    [39, 41]
   17113170:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-332.476, 5.189, 135.227, 181]
+    region:   w_82
     level:    [39, 41]
   17113171:
     template: Thunder_Elemental_Small
@@ -4890,15 +4890,15 @@ spawns:
     level:    [50, 50]
   17113172:
     template: Decrepit_Gnole
-    at:       [-279.910, -0.246, 23.214, 117]
+    region:   w_84
     level:    [73, 75]
   17113173:
     template: Decrepit_Gnole
-    at:       [-253.022, 0.305, -38.102, 101]
+    region:   w_85
     level:    [73, 75]
   17113174:
     template: Decrepit_Gnole
-    at:       [-204.612, -0.313, -119.120, 173]
+    region:   w_86
     level:    [73, 75]
   17113175:
     template: Voirloup
@@ -4906,258 +4906,258 @@ spawns:
     level:    [89, 89]
   17113176:
     template: Decrepit_Gnole
-    at:       [-327.970, -1.758, 85.189, 83]
+    region:   w_88
     level:    [73, 75]
   17113177:
     template: Decrepit_Gnole
-    at:       [-354.501, -1.278, 28.178, 218]
+    region:   w_89
     level:    [73, 75]
   17113178:
     template: Decrepit_Gnole
-    at:       [-324.974, -0.410, -7.310, 57]
+    region:   w_90
     level:    [73, 75]
   17113179:
     template: Decrepit_Gnole
-    at:       [-287.583, -0.802, -52.905, 128]
+    region:   w_91
     level:    [73, 75]
   17113180:
     template: Snipper_Small
     script:   Snipper
-    at:       [-46.830, 2.342, 332.011, 19]
+    region:   n_92
     level:    [38, 41]
   17113181:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [-19.444, 0.965, 320.913, 14]
+    region:   n_93
     level:    [40, 42]
   17113182:
     template: Biddybug
-    at:       [102.368, -2.295, 323.108, 211]
+    region:   n_74
     level:    [62, 64]
   17113183:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [79.412, 0.993, 352.074, 133]
+    region:   n_95
     level:    [38, 41]
   17113184:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [73.330, 2.936, 366.326, 98]
+    region:   n_95
     level:    [38, 41]
   17113185:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [-7.212, 1.784, 329.705, 235]
+    region:   n_93
     level:    [38, 41]
   17113186:
     template: Snipper_Small
     script:   Snipper
-    at:       [43.791, -0.117, 291.650, 147]
+    region:   n_98
     level:    [38, 41]
   17113187:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [51.310, 0.103, 286.080, 18]
+    region:   n_98
     level:    [40, 42]
   17113188:
     template: Biddybug
-    at:       [93.763, -1.258, 307.948, 141]
+    region:   n_100
     level:    [62, 64]
   17113189:
     template: Biddybug
-    at:       [46.884, 0.022, 287.878, 66]
+    region:   n_98
     level:    [62, 64]
   17113190:
     template: Biddybug
-    at:       [101.667, 1.220, 195.830, 127]
+    region:   n_102
     level:    [62, 64]
   17113191:
     template: Biddybug
-    at:       [87.277, -1.038, 267.309, 191]
+    region:   n_103
     level:    [62, 64]
   17113192:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [53.227, 0.026, 311.682, 12]
+    region:   n_104
     level:    [38, 41]
   17113193:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [49.404, 2.047, 329.395, 20]
+    region:   n_104
     level:    [38, 41]
   17113194:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [303.227, -1.621, 473.853, 213]
+    region:   ne_106
     level:    [42, 43]
   17113195:
     template: Biddybug
-    at:       [300.541, -3.805, 486.282, 222]
+    region:   ne_106
     level:    [62, 64]
   17113196:
     template: Biddybug
-    at:       [311.467, -0.217, 465.073, 20]
+    region:   ne_106
     level:    [62, 64]
   17113197:
     template: Biddybug
-    at:       [296.069, 0.171, 524.403, 191]
+    region:   ne_109
     level:    [62, 64]
   17113198:
     template: Biddybug
-    at:       [300.837, -3.609, 486.605, 94]
+    region:   ne_109
     level:    [62, 64]
   17113199:
     template: Biddybug
-    at:       [266.866, -0.143, 552.060, 9]
+    region:   ne_77
     level:    [62, 64]
   17113200:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [529.716, -0.154, 357.347, 102]
+    region:   ne_112
     level:    [42, 43]
   17113201:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [506.763, -1.052, 349.585, 207]
+    region:   ne_112
     level:    [42, 43]
   17113202:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [553.302, -0.354, 356.105]
+    region:   ne_114
     level:    [42, 43]
   17113203:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [559.997, -2.321, 368.072, 8]
+    region:   ne_114
     level:    [42, 43]
   17113204:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [564.486, -1.411, 356.110, 208]
+    region:   ne_114
     level:    [42, 43]
   17113205:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [377.816, 3.012, 463.967, 138]
+    region:   ne_117
     level:    [42, 44]
   17113206:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [218.628, 6.959, 355.363, 204]
+    region:   ne_118
     level:    [42, 44]
   17113207:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [288.972, 5.789, 172.195, 233]
+    region:   ne_119
     level:    [42, 44]
   17113208:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [375.105, 1.020, 451.040, 35]
+    region:   ne_117
     level:    [38, 41]
   17113209:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [230.856, 6.616, 375.642, 232]
+    region:   ne_118
     level:    [38, 41]
   17113210:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [259.034, 6.553, 201.636, 237]
+    region:   ne_122
     level:    [38, 41]
   17113211:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [294.035, 2.442, 136.100, 62]
+    region:   e_123
     level:    [38, 41]
   17113212:
     template: Snipper_Small
     script:   Snipper
-    at:       [126.302, -0.916, 406.187, 37]
+    region:   n_124
     level:    [38, 41]
   17113213:
     template: Snipper_Small
     script:   Snipper
-    at:       [124.706, -0.514, 447.046, 75]
+    region:   n_125
     level:    [38, 41]
   17113214:
     template: Snipper_Small
     script:   Snipper
-    at:       [138.654, -0.142, 438.169, 159]
+    region:   n_126
     level:    [38, 41]
   17113215:
     template: Snipper_Small
     script:   Snipper
-    at:       [126.079, -2.019, 483.634, 215]
+    region:   n_127
     level:    [38, 41]
   17113216:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [106.849, 3.111, 429.232, 180]
+    region:   n_124
     level:    [40, 42]
   17113217:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [127.308, -1.645, 477.251, 37]
+    region:   n_127
     level:    [40, 42]
   17113218:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [108.316, -0.170, 456.786, 164]
+    region:   n_125
     level:    [38, 41]
   17113219:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [91.774, 1.071, 472.649, 223]
+    region:   n_131
     level:    [38, 41]
   17113220:
     template: Water_Elemental
-    at:       [115.468, 1.097, 433.498, 44]
+    region:   n_125
     level:    [40, 64]
   17113221:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [304.709, -0.679, 449.651, 126]
+    region:   ne_133
     level:    [42, 43]
   17113222:
     template: Snipper_Small
     script:   Snipper
-    at:       [114.034, -0.219, 367.835, 154]
+    region:   n_134
     level:    [38, 41]
   17113223:
     template: Ignis_Djinn
-    at:       [400.540, -1.084, 439.165, 94]
+    region:   ne_135
     level:    [76, 79]
   17113224:
     template: Biddybug
-    at:       [301.122, -0.175, 445.882, 89]
+    region:   ne_133
     level:    [62, 64]
   17113225:
     template: Biddybug
-    at:       [262.683, -0.928, 421.229, 184]
+    region:   ne_137
     level:    [62, 64]
   17113226:
     template: Biddybug
-    at:       [198.731, -0.622, 391.162, 14]
+    region:   ne_138
     level:    [62, 64]
   17113227:
     template: Biddybug
-    at:       [179.942, 0.244, 320.939, 203]
+    region:   ne_139
     level:    [62, 64]
   17113228:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [232.371, -0.504, 240.248, 248]
+    region:   ne_140
     level:    [59, 60]
   17113229:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [320.206, -1.189, 366.854, 10]
+    region:   ne_141
     level:    [38, 41]
   17113230:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [254.413, -0.382, 289.609, 26]
+    region:   ne_142
     level:    [38, 41]
   17113231:
     template: Thunder_Elemental_Small
@@ -5167,7 +5167,7 @@ spawns:
   17113232:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [304.537, -0.088, 278.614, 62]
+    region:   ne_144
     level:    [48, 49]
   17113233:
     template: Lobison_Large
@@ -5177,160 +5177,160 @@ spawns:
   17113234:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [-286.084, -0.629, 197.311, 65]
+    region:   nw_146
     level:    [48, 49]
   17113235:
     template: Water_Elemental
-    at:       [-477.008, 6.217, 325.756]
+    region:   nw_147
     level:    [40, 64]
   17113236:
     template: Lobison_Large
     script:   Lobison
-    at:       [-359.187, -0.340, 202.069, 173]
+    region:   nw_148
     level:    [81, 82]
   17113237:
     template: Lobison_Large
     script:   Lobison
-    at:       [-363.144, -0.522, 231.894, 172]
+    region:   nw_149
     level:    [81, 82]
   17113238:
     template: Lobison_Large
     script:   Lobison
-    at:       [-366.361, -1.077, 221.591, 162]
+    region:   nw_149
     level:    [81, 82]
   17113239:
     template: Lobison_Large
     script:   Lobison
-    at:       [-366.966, -0.578, 254.914, 26]
+    region:   nw_151
     level:    [81, 82]
   17113240:
     template: Lobison_Large
     script:   Lobison
-    at:       [-367.523, -0.579, 265.280, 8]
+    region:   nw_152
     level:    [81, 82]
   17113241:
     template: Lobison_Large
     script:   Lobison
-    at:       [-426.409, 4.891, 276.965, 242]
+    region:   nw_153
     level:    [81, 82]
   17113242:
     template: Lobison_Large
     script:   Lobison
-    at:       [-454.230, 8.132, 275.526, 95]
+    region:   nw_154
     level:    [81, 82]
   17113243:
     template: Lobison_Large
     script:   Lobison
-    at:       [-522.093, 6.837, 324.694, 109]
+    region:   nw_155
     level:    [81, 82]
   17113244:
     template: Lobison_Large
     script:   Lobison
-    at:       [-499.446, 8.405, 280.281, 120]
+    region:   nw_156
     level:    [81, 82]
   17113245:
     template: Snipper_Small
     script:   Snipper
-    at:       [-87.810, -1.980, 310.692, 9]
+    region:   n_157
     level:    [38, 41]
   17113246:
     template: Snipper_Small
     script:   Snipper
-    at:       [-96.956, -0.142, 348.036, 203]
+    region:   n_158
     level:    [38, 41]
   17113247:
     template: Snipper_Small
     script:   Snipper
-    at:       [-127.382, -0.405, 323.917, 181]
+    region:   n_159
     level:    [38, 41]
   17113248:
     template: Snipper_Small
     script:   Snipper
-    at:       [-147.209, -0.376, 311.420, 174]
+    region:   n_76
     level:    [38, 41]
   17113249:
     template: Snipper_Small
     script:   Snipper
-    at:       [-146.618, 2.825, 485.178, 145]
+    region:   n_161
     level:    [38, 41]
   17113250:
     template: Snipper_Small
     script:   Snipper
-    at:       [-190.373, -0.876, 483.691, 34]
+    region:   n_162
     level:    [38, 41]
   17113251:
     template: Snipper_Small
     script:   Snipper
-    at:       [-221.593, -0.340, 438.978, 182]
+    region:   nw_163
     level:    [38, 41]
   17113252:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [-60.956, 0.213, 332.219, 39]
+    region:   n_157
     level:    [40, 42]
   17113253:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [-114.336, -0.273, 329.979, 77]
+    region:   n_159
     level:    [40, 42]
   17113254:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [-164.435, -1.026, 347.677, 163]
+    region:   n_166
     level:    [40, 42]
   17113255:
     template: Hawkertrap_JFS
     script:   Hawkertrap
-    at:       [-164.719, -1.095, 413.868]
+    region:   n_167
     level:    [40, 42]
   17113256:
     template: Biddybug
-    at:       [187.665, -0.497, 361.238, 32]
+    region:   ne_168
     level:    [62, 64]
   17113257:
     template: Biddybug
-    at:       [177.092, 0.136, 292.585, 37]
+    region:   n_169
     level:    [62, 64]
   17113258:
     template: Biddybug
-    at:       [-166.813, -1.076, 311.572, 63]
+    region:   n_76
     level:    [62, 64]
   17113259:
     template: Biddybug
-    at:       [-141.302, -0.336, 294.297, 126]
+    region:   n_171
     level:    [62, 64]
   17113260:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [-73.228, 3.348, 369.802, 160]
+    region:   n_172
     level:    [38, 41]
   17113261:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [-159.659, 0.353, 341.671, 19]
+    region:   n_166
     level:    [38, 41]
   17113262:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [-146.407, 0.457, 379.412, 101]
+    region:   n_174
     level:    [38, 41]
   17113263:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [-146.479, 3.416, 419.296, 35]
+    region:   n_167
     level:    [38, 41]
   17113264:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [-175.579, -0.138, 454.933, 88]
+    region:   n_176
     level:    [38, 41]
   17113265:
     template: Water_Elemental
-    at:       [-113.931, -0.196, 351.214, 192]
+    region:   n_158
     level:    [40, 64]
   17113266:
     template: Water_Elemental
-    at:       [-192.418, -0.851, 434.194, 98]
+    region:   nw_163
     level:    [40, 64]
   17113267:
     template: Orcish_Bowshooter_past
@@ -5338,94 +5338,94 @@ spawns:
     level:    [76, 79]
   17113268:
     template: Biddybug
-    at:       [-153.657, -1.710, 243.582, 199]
+    region:   n_75
     level:    [62, 64]
   17113269:
     template: Biddybug
-    at:       [-130.404, -0.048, 291.902, 239]
+    region:   n_171
     level:    [62, 64]
   17113270:
     template: War_Smilodon_Small
     script:   War_Smilodon
-    at:       [-195.374, -1.555, 196.535, 207]
+    region:   nw_182
     level:    [59, 60]
   17113271:
     template: Ghoul_war_Small
     script:   Ghoul
-    at:       [-130.419, -0.115, 291.273, 240]
+    region:   n_171
     level:    [39, 42]
   17113272:
     template: Ghoul_war_Small
     script:   Ghoul
-    at:       [-204.273, -0.719, 202.771, 129]
+    region:   nw_182
     level:    [39, 42]
   17113273:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [-147.279, -1.040, -412.746, 123]
+    region:   s_185
     level:    [76, 79]
   17113274:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [-139.425, -1.682, -408.868, 26]
+    region:   s_185
     level:    [76, 79]
   17113275:
     template: Orcish_Veteran_past_Small
     script:   Orcish_Veteran
-    at:       [-155.722, -0.614, -405.586, 148]
+    region:   s_185
     level:    [76, 79]
   17113276:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [-184.670, -1.845, -451.275, 103]
+    region:   s_188
     level:    [76, 79]
   17113277:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [-177.628, -2.314, -431.411, 185]
+    region:   s_188
     level:    [76, 79]
   17113278:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [-152.154, -9.811, -477.330, 219]
+    region:   s_190
     level:    [76, 79]
   17113279:
     template: Orcish_Veteran_past_Small
     script:   Orcish_Veteran
-    at:       [-150.797, -8.327, -470.585, 10]
+    region:   s_190
     level:    [76, 79]
   17113280:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [-195.079, -1.804, -436.378, 18]
+    region:   s_188
     level:    [76, 79]
   17113281:
     template: Orcish_Protector_past_Small
     script:   Orcish_Protector
-    at:       [-161.446, -0.557, -444.713, 107]
+    region:   s_193
     level:    [76, 79]
   17113282:
     template: Orcish_Veteran_past_Small
     script:   Orcish_Veteran
-    at:       [-162.577, -0.569, -445.481, 222]
+    region:   s_193
     level:    [76, 79]
   17113283:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [-78.121, -0.605, -204.924, 227]
+    region:   c_195
     level:    [76, 79]
   17113284:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [-63.582, -0.453, -193.738, 105]
+    region:   c_195
     level:    [76, 79]
   17113285:
     template: Decrepit_Gnole
-    at:       [-31.802, -0.788, -185.877, 130]
+    region:   c_197
     level:    [73, 75]
   17113286:
     template: Decrepit_Gnole
-    at:       [-19.686, -0.200, -200.692, 60]
+    region:   c_197
     level:    [73, 75]
   17113287:
     template: Orcish_Bowshooter_past_Small
@@ -5455,323 +5455,323 @@ spawns:
   17113292:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [32.133, 1.903, -230.850, 134]
+    region:   s_204
     level:    [76, 79]
   17113293:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [31.350, 1.143, -257.081, 112]
+    region:   s_204
     level:    [76, 79]
   17113294:
     template: Orcish_Veteran_past_Small
     script:   Orcish_Veteran
-    at:       [3.798, -0.932, -192.169, 175]
+    region:   c_206
     level:    [76, 79]
   17113295:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [0.619, -0.264, -204.201, 61]
+    region:   c_206
     level:    [76, 79]
   17113296:
     template: Orcish_Veteran_past_Small
     script:   Orcish_Veteran
-    at:       [11.525, -0.283, -200.177, 10]
+    region:   c_206
     level:    [76, 79]
   17113297:
     template: Decrepit_Gnole
-    at:       [34.509, 0.302, -297.176, 124]
+    region:   s_209
     level:    [73, 75]
   17113298:
     template: Decrepit_Gnole
-    at:       [37.701, -0.427, -339.058, 118]
+    region:   s_210
     level:    [73, 75]
   17113299:
     template: Decrepit_Gnole
-    at:       [19.235, 0.311, -359.965, 61]
+    region:   s_211
     level:    [73, 75]
   17113300:
     template: Decrepit_Gnole
-    at:       [7.113, 1.588, -351.577, 222]
+    region:   s_212
     level:    [73, 75]
   17113301:
     template: Decrepit_Gnole
-    at:       [-19.340, 0.302, -389.100, 144]
+    region:   s_213
     level:    [73, 75]
   17113302:
     template: Decrepit_Gnole
-    at:       [-48.702, 0.736, -428.454, 117]
+    region:   s_214
     level:    [73, 75]
   17113303:
     template: Decrepit_Gnole
-    at:       [-31.647, -2.453, -441.877, 53]
+    region:   s_215
     level:    [73, 75]
   17113304:
     template: Decrepit_Gnole
-    at:       [-33.068, -9.592, -485.636, 63]
+    region:   s_216
     level:    [73, 75]
   17113305:
     template: Decrepit_Gnole
-    at:       [-45.876, -8.411, -508.400, 128]
+    region:   s_217
     level:    [73, 75]
   17113306:
     template: Decrepit_Gnole
-    at:       [3.798, -9.113, -527.724, 240]
+    region:   s_218
     level:    [73, 75]
   17113307:
     template: Decrepit_Gnole
-    at:       [9.814, 0.619, -247.357, 27]
+    region:   s_219
     level:    [73, 75]
   17113308:
     template: Decrepit_Gnole
-    at:       [-13.206, -1.236, -268.861, 108]
+    region:   s_220
     level:    [73, 75]
   17113309:
     template: Decrepit_Gnole
-    at:       [-9.208, 0.065, -314.219, 182]
+    region:   s_221
     level:    [73, 75]
   17113310:
     template: Decrepit_Gnole
-    at:       [-45.145, -0.179, -338.108, 179]
+    region:   s_222
     level:    [73, 75]
   17113311:
     template: Decrepit_Gnole
-    at:       [-56.772, 0.236, -356.077, 93]
+    region:   s_223
     level:    [73, 75]
   17113312:
     template: Decrepit_Gnole
-    at:       [-109.175, -0.427, -358.020, 222]
+    region:   s_224
     level:    [73, 75]
   17113313:
     template: Decrepit_Gnole
-    at:       [-96.129, -0.114, -402.665, 244]
+    region:   s_225
     level:    [73, 75]
   17113314:
     template: Decrepit_Gnole
-    at:       [-70.085, 0.931, -410.022, 3]
+    region:   s_226
     level:    [73, 75]
   17113315:
     template: Decrepit_Gnole
-    at:       [-67.879, 0.315, -449.805, 243]
+    region:   s_227
     level:    [73, 75]
   17113316:
     template: Decrepit_Gnole
-    at:       [-73.994, -8.031, -480.104, 226]
+    region:   s_228
     level:    [73, 75]
   17113317:
     template: Decrepit_Gnole
-    at:       [-1.137, -15.414, -618.912, 141]
+    region:   s_229
     level:    [73, 75]
   17113318:
     template: Decrepit_Gnole
-    at:       [-8.714, -14.707, -591.332, 203]
+    region:   s_230
     level:    [73, 75]
   17113319:
     template: Decrepit_Gnole
-    at:       [-0.723, -8.443, -558.075, 14]
+    region:   s_231
     level:    [73, 75]
   17113320:
     template: Decrepit_Gnole
-    at:       [-40.862, -8.860, -564.950, 151]
+    region:   s_232
     level:    [73, 75]
   17113321:
     template: Decrepit_Gnole
-    at:       [-74.828, -15.932, -589.570, 191]
+    region:   s_233
     level:    [73, 75]
   17113322:
     template: Decrepit_Gnole
-    at:       [-28.292, -13.967, -604.707, 27]
+    region:   s_234
     level:    [73, 75]
   17113323:
     template: Decrepit_Gnole
-    at:       [-43.387, -17.846, -646.721, 143]
+    region:   s_235
     level:    [73, 75]
   17113324:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [409.895, -13.745, -384.081, 164]
+    region:   se_236
     level:    [42, 43]
   17113325:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [407.162, -10.174, -369.878, 41]
+    region:   se_237
     level:    [42, 43]
   17113326:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [426.960, -9.037, -345.886, 190]
+    region:   se_237
     level:    [42, 43]
   17113327:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [433.835, -9.138, -374.538, 41]
+    region:   se_239
     level:    [42, 43]
   17113328:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [469.265, -8.343, -277.582, 210]
+    region:   se_240
     level:    [42, 43]
   17113329:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [468.443, -11.540, -248.816, 75]
+    region:   se_240
     level:    [42, 43]
   17113330:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [483.566, -9.065, -240.211, 63]
+    region:   e_242
     level:    [42, 43]
   17113331:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [467.464, -1.622, -174.310, 2]
+    region:   e_243
     level:    [42, 43]
   17113332:
     template: Boll_Weevil
-    at:       [444.051, -0.373, -154.413, 138]
+    region:   e_243
     level:    [56, 57]
   17113333:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [431.832, 6.144, -124.217, 107]
+    region:   e_245
     level:    [42, 43]
   17113334:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [442.146, 7.482, -119.401, 98]
+    region:   e_245
     level:    [42, 43]
   17113335:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [430.768, 3.772, -110.876, 210]
+    region:   e_245
     level:    [42, 43]
   17113336:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [441.707, 5.768, -132.702, 151]
+    region:   e_248
     level:    [42, 43]
   17113337:
     template: Ignis_Djinn
-    at:       [484.080, -2.313, -212.871, 146]
+    region:   e_249
     level:    [76, 79]
   17113338:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [369.106, -9.527, -341.978, 18]
+    region:   se_250
     level:    [48, 49]
   17113339:
     template: Gnoletrap
-    at:       [317.305, -8.051, -377.749, 215]
+    region:   se_251
     level:    [92, 93]
   17113340:
     template: Gnoletrap
-    at:       [316.674, -8.338, -361.803, 193]
+    region:   se_251
     level:    [92, 93]
   17113341:
     template: Gnoletrap
-    at:       [309.854, -7.863, -388.423, 71]
+    region:   se_251
     level:    [92, 93]
   17113342:
     template: Gnoletrap
-    at:       [317.458, -8.325, -360.635, 191]
+    region:   se_251
     level:    [92, 93]
   17113343:
     template: Gnoletrap
-    at:       [309.497, -7.983, -381.166, 17]
+    region:   se_251
     level:    [92, 93]
   17113344:
     template: Gnoletrap
-    at:       [362.143, -10.047, -370.034, 50]
+    region:   se_256
     level:    [92, 93]
   17113345:
     template: Gnoletrap
-    at:       [348.723, -8.484, -363.636, 185]
+    region:   se_256
     level:    [92, 93]
   17113346:
     template: Gnoletrap
-    at:       [346.568, -11.188, -383.219, 16]
+    region:   se_256
     level:    [92, 93]
   17113347:
     template: Gnoletrap
-    at:       [336.633, -8.459, -358.598, 163]
+    region:   se_256
     level:    [92, 93]
   17113348:
     template: Gnoletrap
-    at:       [337.632, -8.143, -355.588, 132]
+    region:   se_256
     level:    [92, 93]
   17113349:
     template: Gnoletrap
-    at:       [349.967, -16.155, -425.818, 250]
+    region:   se_261
     level:    [92, 93]
   17113350:
     template: Gnoletrap
-    at:       [316.419, -14.241, -427.070, 155]
+    region:   se_261
     level:    [92, 93]
   17113351:
     template: Gnoletrap
-    at:       [353.797, -16.025, -417.779, 67]
+    region:   se_261
     level:    [92, 93]
   17113352:
     template: Gnoletrap
-    at:       [347.622, -16.084, -434.034, 64]
+    region:   se_261
     level:    [92, 93]
   17113353:
     template: Gnoletrap
-    at:       [318.476, -15.639, -430.249, 72]
+    region:   se_261
     level:    [92, 93]
   17113354:
     template: Gnoletrap
-    at:       [384.318, -15.842, -395.318, 122]
+    region:   se_266
     level:    [92, 93]
   17113355:
     template: Gnoletrap
-    at:       [353.924, -13.778, -384.553, 243]
+    region:   se_266
     level:    [92, 93]
   17113356:
     template: Gnoletrap
-    at:       [375.584, -17.651, -408.302, 242]
+    region:   se_266
     level:    [92, 93]
   17113357:
     template: Gnoletrap
-    at:       [405.662, -16.827, -401.293, 243]
+    region:   se_269
     level:    [92, 93]
   17113358:
     template: Gnoletrap
-    at:       [398.065, -15.748, -390.231, 15]
+    region:   se_269
     level:    [92, 93]
   17113359:
     template: Gnoletrap
-    at:       [409.898, -13.447, -383.713, 98]
+    region:   se_269
     level:    [92, 93]
   17113360:
     template: Gnoletrap
-    at:       [422.073, -14.613, -386.011, 59]
+    region:   se_269
     level:    [92, 93]
   17113361:
     template: Gnoletrap
-    at:       [439.457, -16.839, -394.976, 127]
+    region:   se_273
     level:    [92, 93]
   17113362:
     template: Gnoletrap
-    at:       [437.414, -15.597, -388.464, 103]
+    region:   se_273
     level:    [92, 93]
   17113363:
     template: Gnoletrap
-    at:       [446.739, -16.406, -390.841, 179]
+    region:   se_273
     level:    [92, 93]
   17113364:
     template: Screamer_Small
     script:   Screamer
-    at:       [297.023, -7.986, -363.932, 132]
+    region:   se_250
     level:    [40, 42]
   17113365:
     template: Screamer_Small
     script:   Screamer
-    at:       [340.058, -10.144, -386.450, 123]
+    region:   se_236
     level:    [40, 42]
   17113366:
     template: Screamer_Small
     script:   Screamer
-    at:       [344.875, -17.094, -436.851, 149]
+    region:   se_237
     level:    [40, 42]
   17113367:
     template: Orcish_Bowshooter_past_Small
@@ -5786,61 +5786,61 @@ spawns:
   17113369:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [198.283, -5.299, -326.242, 96]
+    region:   se_281
     level:    [42, 43]
   17113370:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [264.129, -4.770, -312.376, 178]
+    region:   se_282
     level:    [42, 43]
   17113371:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [268.689, -7.386, -367.511, 98]
+    region:   se_283
     level:    [42, 43]
   17113372:
     template: Stag_Beetle_past
     script:   Stag_Beetle
-    at:       [278.923, -16.126, -520.910, 61]
+    region:   se_284
     level:    [42, 43]
   17113373:
     template: Snipper_Small
     script:   Snipper
-    at:       [322.318, -16.491, -518.026, 73]
+    region:   se_281
     level:    [38, 41]
   17113374:
     template: Snipper_Small
     script:   Snipper
-    at:       [254.731, -1.969, -317.932, 128]
+    region:   se_286
     level:    [38, 41]
   17113375:
     template: Snipper_Small
     script:   Snipper
-    at:       [292.993, -9.830, -431.921, 76]
+    region:   se_287
     level:    [38, 41]
   17113376:
     template: Snipper_Small
     script:   Snipper
-    at:       [277.139, -10.171, -490.745, 127]
+    region:   se_288
     level:    [38, 41]
   17113377:
     template: Ignis_Djinn
-    at:       [271.898, -13.796, -560.246, 204]
+    region:   se_289
     level:    [76, 79]
   17113378:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [233.773, -15.829, -548.145, 104]
+    region:   se_290
     level:    [76, 79]
   17113379:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [203.399, 0.388, -335.686, 80]
+    region:   se_290
     level:    [76, 79]
   17113380:
     template: Orcish_Veteran_past_Small
     script:   Orcish_Veteran
-    at:       [195.578, -0.556, -347.699, 128]
+    region:   se_290
     level:    [76, 79]
   17113381:
     template: Drumskull_Zogdregg
@@ -5849,139 +5849,139 @@ spawns:
   17113382:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [229.804, -16.278, -507.032, 8]
+    region:   se_294
     level:    [76, 79]
   17113383:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [234.859, -14.530, -501.872, 37]
+    region:   se_294
     level:    [76, 79]
   17113384:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [233.792, -17.593, -528.228, 130]
+    region:   se_296
     level:    [76, 79]
   17113385:
     template: Orcish_Protector_past_Small
     script:   Orcish_Protector
-    at:       [233.046, -16.582, -534.401, 23]
+    region:   se_296
     level:    [76, 79]
   17113386:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [237.881, -16.417, -558.963, 131]
+    region:   se_289
     level:    [76, 79]
   17113387:
     template: Orcish_Protector_past_Small
     script:   Orcish_Protector
-    at:       [239.925, -17.090, -560.896, 207]
+    region:   se_289
     level:    [76, 79]
   17113388:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [209.594, 0.118, -290.158, 62]
+    region:   se_300
     level:    [38, 41]
   17113389:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [224.858, 0.172, -294.133, 65]
+    region:   se_301
     level:    [38, 41]
   17113390:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [238.070, -0.654, -359.372, 206]
+    region:   se_302
     level:    [38, 41]
   17113391:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [245.454, -8.418, -396.491]
+    region:   se_303
     level:    [38, 41]
   17113392:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [279.552, -7.680, -465.145, 67]
+    region:   se_304
     level:    [38, 41]
   17113393:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [281.817, -12.096, -498.969, 25]
+    region:   se_287
     level:    [38, 41]
   17113394:
     template: Land_Pugil_Small
     script:   Land_Pugil
-    at:       [279.795, -15.294, -512.430, 162]
+    region:   se_283
     level:    [38, 41]
   17113395:
     template: Screamer_Small
     script:   Screamer
-    at:       [234.455, -2.280, -273.196, 173]
+    region:   se_301
     level:    [40, 42]
   17113396:
     template: Screamer_Small
     script:   Screamer
-    at:       [267.373, -7.333, -369.845, 144]
+    region:   se_282
     level:    [40, 42]
   17113397:
     template: Screamer_Small
     script:   Screamer
-    at:       [289.981, -10.272, -458.301, 6]
+    region:   se_304
     level:    [40, 42]
   17113398:
     template: Decrepit_Gnole
-    at:       [92.700, -0.067, -243.337]
+    region:   s_310
     level:    [73, 75]
   17113399:
     template: Decrepit_Gnole
-    at:       [137.456, -1.758, -251.835, 128]
+    region:   s_311
     level:    [73, 75]
   17113400:
     template: Decrepit_Gnole
-    at:       [165.877, 0.488, -260.979, 106]
+    region:   s_312
     level:    [73, 75]
   17113401:
     template: Decrepit_Gnole
-    at:       [165.577, -0.076, -304.279, 67]
+    region:   s_313
     level:    [73, 75]
   17113402:
     template: Decrepit_Gnole
-    at:       [192.534, -4.166, -374.465, 187]
+    region:   se_314
     level:    [73, 75]
   17113403:
     template: Decrepit_Gnole
-    at:       [209.363, -8.290, -423.356, 17]
+    region:   se_315
     level:    [73, 75]
   17113404:
     template: Decrepit_Gnole
-    at:       [206.087, -10.846, -449.246, 115]
+    region:   se_316
     level:    [73, 75]
   17113405:
     template: Decrepit_Gnole
-    at:       [238.343, -6.736, -430.353, 179]
+    region:   se_317
     level:    [73, 75]
   17113406:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [-215.540, 6.368, -197.831, 94]
+    region:   w_318
     level:    [42, 44]
   17113407:
     template: Jugner_Funguar_Small
     script:   Jugner_Funguar
-    at:       [-366.931, 6.300, -341.947, 212]
+    region:   sw_319
     level:    [42, 44]
   17113408:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-214.402, 2.848, -177.807, 3]
+    region:   w_318
     level:    [38, 41]
   17113409:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-332.538, 0.506, -303.032, 190]
+    region:   sw_321
     level:    [38, 41]
   17113410:
     template: Forest_Leech_Small
     script:   Forest_Leech
-    at:       [-379.454, 6.478, -367.196, 153]
+    region:   sw_322
     level:    [38, 41]
   17113411:
     template: Orcish_Bowshooter_past
@@ -6010,19 +6010,19 @@ spawns:
     level:    [76, 79]
   17113416:
     template: Goblin_Bombardier
-    at:       [-370.747, -0.693, -236.952, 160]
+    region:   sw_328
     level:    [71, 74]
   17113417:
     template: Goblin_Field_Doctor
-    at:       [-362.347, -0.341, -314.076, 33]
+    region:   sw_329
     level:    [71, 74]
   17113418:
     template: Goblin_Paratrooper
-    at:       [-391.246, 0.987, -388.079, 6]
+    region:   sw_330
     level:    [71, 74]
   17113419:
     template: Goblin_Picket
-    at:       [-339.333, 0.891, -343.459, 252]
+    region:   sw_331
     level:    [71, 74]
   17113420:
     template: Goblin_Mine
@@ -6030,19 +6030,19 @@ spawns:
     level:    [75, 75]
   17113421:
     template: Goblin_Bombardier
-    at:       [-468.324, -1.341, -355.386, 36]
+    region:   sw_333
     level:    [71, 74]
   17113422:
     template: Goblin_Field_Doctor
-    at:       [-528.863, 0.026, -423.615, 216]
+    region:   sw_334
     level:    [71, 74]
   17113423:
     template: Goblin_Paratrooper
-    at:       [-299.419, -2.184, -291.102, 18]
+    region:   sw_335
     level:    [71, 74]
   17113424:
     template: Goblin_Picket
-    at:       [-388.411, 0.090, -426.289, 78]
+    region:   sw_336
     level:    [71, 74]
   17113425:
     template: Goblin_Mine
@@ -6050,15 +6050,15 @@ spawns:
     level:    [75, 75]
   17113426:
     template: Goblin_Bombardier
-    at:       [-347.896, -2.616, -384.562, 206]
+    region:   sw_338
     level:    [71, 74]
   17113427:
     template: Goblin_Paratrooper
-    at:       [-399.665, -0.288, -458.836, 160]
+    region:   sw_339
     level:    [71, 74]
   17113428:
     template: Goblin_Picket
-    at:       [-451.721, 2.144, -422.026, 129]
+    region:   sw_336
     level:    [71, 74]
   17113429:
     template: Goblin_Mine
@@ -6067,87 +6067,87 @@ spawns:
   17113430:
     template: Orcish_Bowshooter_past_Small
     script:   Orcish_Bowshooter
-    at:       [-265.381, -0.196, -204.441, 116]
+    region:   w_342
     level:    [76, 79]
   17113431:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [-261.407, -1.573, -187.511, 191]
+    region:   w_342
     level:    [76, 79]
   17113432:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [-273.235, -2.814, -187.593, 43]
+    region:   w_342
     level:    [76, 79]
   17113433:
     template: Orcish_Champion_past_Small
     script:   Orcish_Champion
-    at:       [-153.652, -0.432, -125.513, 40]
+    region:   c_345
     level:    [76, 79]
   17113434:
     template: Orcish_Dragonbrander_Small
     script:   Orcish_Dragonbrander
-    at:       [-143.878, -0.638, -139.522, 9]
+    region:   c_345
     level:    [76, 79]
   17113435:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-327.281, -0.095, -241.691, 71]
+    region:   w_347
     level:    [38, 41]
   17113436:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-397.340, -0.475, -361.533, 72]
+    region:   sw_348
     level:    [38, 41]
   17113437:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-485.832, -0.314, -400.117, 167]
+    region:   sw_349
     level:    [38, 41]
   17113438:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-319.340, -0.356, -347.186, 100]
+    region:   sw_350
     level:    [38, 41]
   17113439:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-409.354, -0.442, -445.975, 79]
+    region:   sw_351
     level:    [38, 41]
   17113440:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-279.891, -0.113, -106.545, 41]
+    region:   w_352
     level:    [39, 41]
   17113441:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-314.418, -0.803, -151.228, 109]
+    region:   w_353
     level:    [39, 41]
   17113442:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-308.058, -1.607, -172.811, 249]
+    region:   w_354
     level:    [39, 41]
   17113443:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-176.074, -0.527, -171.076, 40]
+    region:   c_355
     level:    [39, 41]
   17113444:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-261.769, -1.397, -247.188, 46]
+    region:   sw_356
     level:    [39, 41]
   17113445:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-374.578, -0.389, -432.141, 148]
+    region:   sw_357
     level:    [39, 41]
   17113446:
     template: Brutal_Sheep_Small
     script:   Brutal_Sheep
-    at:       [-459.606, -1.494, -455.361, 102]
+    region:   sw_358
     level:    [39, 41]
   17113447:
     template: Skeleton_Esquire
@@ -6155,7 +6155,7 @@ spawns:
     level:    [75, 75]
   17113448:
     template: Skeleton_Esquire
-    at:       [-437.196, -0.326, -433.725, 61]
+    region:   sw_351
     level:    [75, 75]
   17113449:
     template: Skeleton_Esquire
@@ -6163,7 +6163,7 @@ spawns:
     level:    [75, 75]
   17113450:
     template: Skeleton_Esquire
-    at:       [-458.349, -0.208, -470.348, 196]
+    region:   sw_362
     level:    [75, 75]
   17113451:
     template: Thunder_Elemental_Small
@@ -6173,52 +6173,52 @@ spawns:
   17113452:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [-320.882, -0.831, -119.044, 208]
+    region:   w_364
     level:    [48, 49]
   17113453:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [-403.611, -1.440, -487.950]
+    region:   sw_339
     level:    [48, 49]
   17113454:
     template: Sprite_Small
     script:   Sprite
-    at:       [-369.839, -0.202, -316.200, 74]
+    region:   sw_366
     level:    [66, 68]
   17113455:
     template: Sprite_Small
     script:   Sprite
-    at:       [-192.248, -0.568, 86.854, 97]
+    region:   w_367
     level:    [66, 68]
   17113456:
     template: Sprite_Small
     script:   Sprite
-    at:       [-76.233, -0.306, 115.239, 139]
+    region:   c_368
     level:    [66, 68]
   17113457:
     template: Sprite_Small
     script:   Sprite
-    at:       [26.109, -2.793, 220.935, 49]
+    region:   n_369
     level:    [66, 68]
   17113458:
     template: Sprite_Small
     script:   Sprite
-    at:       [-75.865, -8.332, -553.539, 186]
+    region:   s_370
     level:    [66, 68]
   17113459:
     template: Sprite_Small
     script:   Sprite
-    at:       [275.380, -6.418, -482.568, 86]
+    region:   se_371
     level:    [66, 68]
   17113460:
     template: Sprite_Small
     script:   Sprite
-    at:       [154.709, 0.853, 88.945, 190]
+    region:   c_372
     level:    [66, 68]
   17113461:
     template: Sprite_Small
     script:   Sprite
-    at:       [267.806, -0.178, 250.970, 209]
+    region:   ne_373
     level:    [66, 68]
   17113462:
     template: Fingerfilcher_Dradzad
@@ -6362,24 +6362,34 @@ spawns:
     level:    [80, 80]
   17113501:
     template: Valaineral_R_Davilles
+    region:   c_413
   17113502:
     template: Royal_Guard
+    region:   c_413
   17113503:
     template: Royal_Guard
+    region:   c_413
   17113504:
     template: Royal_Guard
+    region:   c_413
   17113505:
     template: Royal_Guard
+    region:   c_413
   17113506:
     template: Royal_Guard
+    region:   c_413
   17113507:
     template: Royal_Guard
+    region:   c_413
   17113508:
     template: Royal_Guard
+    region:   c_413
   17113509:
     template: Royal_Guard
+    region:   c_413
   17113510:
     template: Royal_Guard
+    region:   c_413
   17113511:
     template: Leonoyne
   17113512:
@@ -6440,6 +6450,7 @@ spawns:
     template: Norvallen_Knight
   17113540:
     template: Norvallen_Knight
+    region:   c_452
   17113541:
     template: Yrvaulair_S_Cousseraux
   17113542:
@@ -6462,43 +6473,43 @@ spawns:
     template: Royal_Knight
   17113551:
     template: Laisavie_X_Berlends
-    at:       [59.648, 0.482, -37.299, 118]
+    region:   c_413
     level:    [70, 70]
   17113552:
     template: Silver_Fox_Archer
-    at:       [42.876, 0.144, -14.442, 57]
+    region:   c_413
     level:    [70, 70]
   17113553:
     template: Silver_Fox_Archer
-    at:       [48.071, -0.099, -10.326, 77]
+    region:   c_413
     level:    [70, 70]
   17113554:
     template: Silver_Fox_Archer
-    at:       [63.528, 0.323, -35.996, 110]
+    region:   c_413
     level:    [70, 70]
   17113555:
     template: Silver_Fox_Archer
-    at:       [44.168, 0.434, -19.119, 64]
+    region:   c_413
     level:    [70, 70]
   17113556:
     template: Silver_Fox_Archer
-    at:       [60.542, 0.472, -37.942, 125]
+    region:   c_413
     level:    [70, 70]
   17113557:
     template: Silver_Fox_Archer
-    at:       [42.831, 0.258, -24.416, 211]
+    region:   c_413
     level:    [70, 70]
   17113558:
     template: Silver_Fox_Archer
-    at:       [52.617, -0.099, -10.740, 90]
+    region:   c_413
     level:    [70, 70]
   17113559:
     template: Silver_Fox_Archer
-    at:       [45.165, -0.196, -10.078, 67]
+    region:   c_413
     level:    [70, 70]
   17113560:
     template: Silver_Fox_Archer
-    at:       [44.115, 0.436, -19.025, 63]
+    region:   c_413
     level:    [70, 70]
   17113561:
     template: Gold_Badger_Esquire
@@ -6591,27 +6602,27 @@ spawns:
     level:    [60, 60]
   17113593:
     template: Royal_Palliator
-    at:       [54.513, 0.151, -37.216, 128]
+    region:   c_413
     level:    [60, 60]
   17113594:
     template: Royal_Palliator
-    at:       [75.949, -0.280, -37.005, 62]
+    region:   c_413
     level:    [60, 60]
   17113595:
     template: Royal_Palliator
-    at:       [44.131, 0.456, -19.464, 46]
+    region:   c_413
     level:    [60, 60]
   17113596:
     template: Royal_Palliator
-    at:       [74.124, -0.131, -31.437, 40]
+    region:   c_413
     level:    [60, 60]
   17113597:
     template: Royal_Palliator
-    at:       [47.228, -0.338, -37.552, 12]
+    region:   c_413
     level:    [60, 60]
   17113598:
     template: Royal_Palliator
-    at:       [63.253, 0.350, -36.725, 225]
+    region:   c_413
     level:    [60, 60]
   17113599:
     template: Royal_Provisioner
@@ -7375,7 +7386,7 @@ spawns:
     level:    [68, 68]
   17113825:
     template: Auroral_Alicorn
-    at:       [327.030, -0.054, 132.999, 215]
+    region:   e_737
     level:    [68, 68]
   17113826:
     template: Kholomodumo

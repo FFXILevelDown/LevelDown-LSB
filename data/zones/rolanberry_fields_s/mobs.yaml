@@ -4423,182 +4423,182 @@ spawns:
     level:    [25, 29]
   17149958:
     template: Lycopodium
-    at:       [133.000, 23.829, 440.923, 227]
+    region:   ne_6
     level:    [28, 32]
   17149959:
     template: Lycopodium
-    at:       [185.730, 24.055, 415.282, 101]
+    region:   ne_6
     level:    [28, 32]
   17149960:
     template: Lycopodium
-    at:       [179.920, 23.899, 397.018, 29]
+    region:   ne_6
     level:    [28, 32]
   17149961:
     template: Lycopodium
-    at:       [146.110, 21.672, 396.804, 147]
+    region:   ne_6
     level:    [28, 32]
   17149962:
     template: Lycopodium
-    at:       [136.590, 22.156, 425.378, 120]
+    region:   ne_6
     level:    [28, 32]
   17149963:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [216.510, 23.659, 396.437, 190]
+    region:   ne_6
     level:    [38, 42]
   17149964:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [171.970, 23.934, 412.484, 123]
+    region:   ne_6
     level:    [38, 42]
   17149965:
     template: Lycopodium
-    at:       [204.680, 15.836, 295.305, 75]
+    region:   ne_13
     level:    [28, 32]
   17149966:
     template: Lycopodium
-    at:       [216.410, 16.580, 335.859, 178]
+    region:   ne_13
     level:    [28, 32]
   17149967:
     template: Lycopodium
-    at:       [177.370, 15.817, 325.212, 11]
+    region:   ne_13
     level:    [28, 32]
   17149968:
     template: Lycopodium
-    at:       [207.950, 15.746, 309.584, 151]
+    region:   ne_13
     level:    [28, 32]
   17149969:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [211.860, 17.625, 339.748, 119]
+    region:   ne_13
     level:    [38, 42]
   17149970:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [178.610, 16.899, 333.488, 195]
+    region:   ne_13
     level:    [38, 42]
   17149971:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [238.860, 17.413, 369.110, 218]
+    region:   ne_13
     level:    [38, 42]
   17149972:
     template: Lycopodium
-    at:       [100.180, 16.535, 392.096, 243]
+    region:   n_20
     level:    [28, 32]
   17149973:
     template: Lycopodium
-    at:       [73.915, 17.017, 390.174, 58]
+    region:   n_20
     level:    [28, 32]
   17149974:
     template: Lycopodium
-    at:       [15.899, 20.354, 349.425, 104]
+    region:   n_20
     level:    [28, 32]
   17149975:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [64.449, 16.555, 358.161, 223]
+    region:   n_20
     level:    [38, 42]
   17149976:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [65.570, 16.327, 394.420, 136]
+    region:   n_20
     level:    [38, 42]
   17149977:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [58.952, 17.295, 366.851, 252]
+    region:   n_20
     level:    [38, 42]
   17149978:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [66.649, 19.552, 379.751, 156]
+    region:   n_20
     level:    [38, 42]
   17149979:
     template: Lycopodium
-    at:       [108.330, 23.795, 467.515, 166]
+    region:   n_27
     level:    [28, 32]
   17149980:
     template: Lycopodium
-    at:       [105.630, 22.790, 458.657, 34]
+    region:   n_27
     level:    [28, 32]
   17149981:
     template: Lycopodium
-    at:       [110.660, 21.947, 441.699, 71]
+    region:   n_27
     level:    [28, 32]
   17149982:
     template: Lycopodium
-    at:       [63.904, 24.024, 531.031, 103]
+    region:   n_27
     level:    [28, 32]
   17149983:
     template: Lycopodium
-    at:       [113.050, 23.659, 468.100, 141]
+    region:   n_27
     level:    [28, 32]
   17149984:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [80.575, 22.707, 477.634, 19]
+    region:   n_27
     level:    [38, 42]
   17149985:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [106.840, 23.113, 487.402, 15]
+    region:   n_27
     level:    [38, 42]
   17149986:
     template: Lamina
-    at:       [99.349, 23.548, 471.100, 172]
+    region:   n_27
     level:    [57, 58]
   17149987:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [265.450, 12.140, 265.885, 232]
+    region:   ne_35
     level:    [38, 42]
   17149988:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [189.230, 15.871, 258.196, 217]
+    region:   ne_35
     level:    [38, 42]
   17149989:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [228.360, 10.590, 254.619, 232]
+    region:   ne_35
     level:    [38, 42]
   17149990:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [149.000, 15.430, 172.141, 151]
+    region:   ne_38
     level:    [38, 42]
   17149991:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [174.930, 15.875, 199.014, 220]
+    region:   ne_38
     level:    [38, 42]
   17149992:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [172.600, 15.744, 194.229, 160]
+    region:   ne_38
     level:    [38, 42]
   17149993:
     template: Goobbue_Farmer
-    at:       [148.880, 15.680, 182.783, 151]
+    region:   ne_38
     level:    [59, 61]
   17149994:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [304.230, -0.606, 170.981, 150]
+    region:   ne_42
     level:    [38, 42]
   17149995:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [280.100, 0.552, 173.145, 120]
+    region:   ne_42
     level:    [38, 42]
   17149996:
     template: Goobbue_Farmer
-    at:       [287.120, 7.104, 211.860, 54]
+    region:   ne_42
     level:    [59, 61]
   17149997:
     template: Goobbue_Farmer
-    at:       [348.170, -0.075, 160.093, 65]
+    region:   ne_42
     level:    [59, 61]
   17149998:
     template: Fire_Elemental
@@ -4607,24 +4607,24 @@ spawns:
   17149999:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [415.250, -7.816, 120.275, 15]
+    region:   ne_47
     level:    [38, 42]
   17150000:
     template: Death_Wasp_past
     script:   Death_Wasp
-    at:       [424.030, -8.546, 126.386, 153]
+    region:   ne_47
     level:    [38, 42]
   17150001:
     template: Goobbue_Farmer
-    at:       [422.160, -7.763, 118.093, 122]
+    region:   ne_47
     level:    [59, 61]
   17150002:
     template: Goobbue_Farmer
-    at:       [486.850, -8.895, 32.087, 133]
+    region:   e_50
     level:    [59, 61]
   17150003:
     template: Goobbue_Farmer
-    at:       [522.880, -14.980, 13.051, 15]
+    region:   e_50
     level:    [59, 61]
   17150004:
     template: Chigoe_past_Small
@@ -4658,170 +4658,170 @@ spawns:
     level:    [75, 78]
   17150010:
     template: Goobbue_Farmer
-    at:       [303.220, 1.890, 90.557, 138]
+    region:   ne_58
     level:    [59, 61]
   17150011:
     template: Goobbue_Farmer
-    at:       [222.820, 8.260, 76.426, 226]
+    region:   ne_58
     level:    [59, 61]
   17150012:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [209.550, 13.027, 109.029, 63]
+    region:   ne_58
     level:    [38, 41]
   17150013:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [240.110, 7.570, 85.481, 115]
+    region:   ne_58
     level:    [38, 41]
   17150014:
     template: Wight_war_past
     script:   Wight
-    at:       [255.040, 6.884, 99.482, 130]
+    region:   ne_58
     level:    [50, 60]
   17150015:
     template: Wight_blm_RFS
     script:   Wight
-    at:       [313.350, -0.259, 121.747, 255]
+    region:   ne_58
     level:    [50, 60]
   17150016:
     template: Wight_war_past
     script:   Wight
-    at:       [477.920, -10.040, 31.205, 181]
+    region:   e_64
     level:    [50, 60]
   17150017:
     template: Wight_blm_RFS
     script:   Wight
-    at:       [514.480, -8.982, 33.590, 136]
+    region:   e_64
     level:    [50, 60]
   17150018:
     template: Wight_blm_RFS
     script:   Wight
-    at:       [486.600, -8.717, 37.970, 41]
+    region:   e_64
     level:    [50, 60]
   17150019:
     template: Coppercap
-    at:       [304.000, 14.895, 326.881, 132]
+    region:   ne_67
     level:    [47, 49]
   17150020:
     template: Coppercap
-    at:       [302.890, 14.862, 326.476, 156]
+    region:   ne_67
     level:    [47, 49]
   17150021:
     template: Coppercap
-    at:       [323.990, 8.103, 285.268, 47]
+    region:   ne_67
     level:    [47, 49]
   17150022:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [304.400, 15.032, 324.940, 43]
+    region:   ne_67
     level:    [38, 42]
   17150023:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [312.290, 15.138, 326.058, 219]
+    region:   ne_67
     level:    [38, 42]
   17150024:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [435.680, -24.810, -98.935, 129]
+    region:   e_72
     level:    [44, 47]
   17150025:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [416.580, -24.630, -109.260, 107]
+    region:   e_72
     level:    [44, 47]
   17150026:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [389.550, -25.870, -144.440, 70]
+    region:   e_74
     level:    [44, 47]
   17150027:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [355.040, -32.620, -135.780, 154]
+    region:   e_74
     level:    [44, 47]
   17150028:
     template: Goblin_Patrolman
-    at:       [284.790, -32.800, -170.150, 238]
+    region:   e_74
     level:    [56, 59]
   17150029:
     template: Goblin_Franctireur
-    at:       [386.990, -26.270, -140.410, 197]
+    region:   e_74
     level:    [56, 59]
   17150030:
     template: Goblins_Crawler
-    at:       [279.990, -32.670, -171.940, 235]
+    region:   e_74
     level:    [51, 53]
   17150031:
     template: Scabrous_Slug
-    at:       [233.760, -32.090, -232.170, 94]
+    region:   e_79
     level:    [56, 62]
   17150032:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [243.580, -32.430, -236.470, 122]
+    region:   e_79
     level:    [44, 47]
   17150033:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [242.190, -31.910, -220.760, 98]
+    region:   e_79
     level:    [44, 47]
   17150034:
     template: Goblin_Draftee
-    at:       [298.800, -32.560, -234.970, 18]
+    region:   e_79
     level:    [56, 59]
   17150035:
     template: Scabrous_Slug
-    at:       [266.700, -32.070, -279.130, 237]
+    region:   e_83
     level:    [56, 62]
   17150036:
     template: Scabrous_Slug
-    at:       [256.630, -31.410, -296.810, 73]
+    region:   e_83
     level:    [56, 62]
   17150037:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [253.750, -31.850, -282.430, 254]
+    region:   e_83
     level:    [44, 47]
   17150038:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [267.230, -32.160, -303.770, 56]
+    region:   e_83
     level:    [44, 47]
   17150039:
     template: Goblin_Franctireur
-    at:       [249.110, -27.370, -312.300, 179]
+    region:   e_83
     level:    [56, 59]
   17150040:
     template: Scabrous_Slug
-    at:       [206.170, -25.580, -241.940, 246]
+    region:   e_88
     level:    [56, 62]
   17150041:
     template: Scabrous_Slug
-    at:       [188.130, -24.460, -284.790, 230]
+    region:   e_88
     level:    [56, 62]
   17150042:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [199.450, -24.270, -280.740, 189]
+    region:   e_88
     level:    [44, 47]
   17150043:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [227.480, -27.870, -301.550, 140]
+    region:   e_88
     level:    [44, 47]
   17150044:
     template: Goblin_Draftee
-    at:       [225.330, -30.390, -267.990, 179]
+    region:   e_88
     level:    [56, 59]
   17150045:
     template: Scabrous_Slug
-    at:       [209.040, -33.060, -182.740, 235]
+    region:   e_93
     level:    [56, 62]
   17150046:
     template: Scabrous_Slug
-    at:       [169.810, -32.150, -163.930, 124]
+    region:   e_93
     level:    [56, 62]
   17150047:
     template: Dyinyinga
@@ -4829,155 +4829,155 @@ spawns:
     level:    [65, 68]
   17150048:
     template: Scabrous_Slug
-    at:       [253.290, -31.220, -243.190, 19]
+    region:   e_96
     level:    [56, 62]
   17150049:
     template: Water_Elemental
-    at:       [240.390, -32.430, -244.400, 232]
+    region:   e_96
     level:    [43, 43]
   17150050:
     template: Goblin_Patrolman
-    at:       [252.730, -20.610, -345.260, 132]
+    region:   e_98
     level:    [56, 59]
   17150051:
     template: Goblin_Franctireur
-    at:       [221.710, -23.750, -330.160, 25]
+    region:   e_98
     level:    [56, 59]
   17150052:
     template: Evil_Spirit_RFS
     script:   Evil_Spirit
-    at:       [260.500, -22.250, -344.600, 248]
+    region:   e_98
     level:    [43, 43]
   17150053:
     template: Goblins_Crawler
-    at:       [255.340, -21.170, -344.730, 134]
+    region:   e_98
     level:    [51, 53]
   17150054:
     template: Coppercap
-    at:       [332.264, -26.264, -374.374, 124]
+    region:   e_102
     level:    [47, 49]
   17150055:
     template: Coppercap
-    at:       [351.269, -32.533, -335.930, 17]
+    region:   e_102
     level:    [47, 49]
   17150056:
     template: Coppercap
-    at:       [348.862, -31.402, -388.657, 35]
+    region:   e_102
     level:    [47, 49]
   17150057:
     template: Coppercap
-    at:       [343.970, -32.650, -321.140, 103]
+    region:   e_102
     level:    [47, 49]
   17150058:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [332.275, -26.117, -392.428, 93]
+    region:   e_102
     level:    [38, 42]
   17150059:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [340.085, -30.936, -339.102, 198]
+    region:   e_102
     level:    [38, 42]
   17150060:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-37.980, 15.527, 303.273, 39]
+    region:   n_108
     level:    [38, 48]
   17150061:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-114.700, 8.987, 326.760, 39]
+    region:   n_108
     level:    [38, 48]
   17150062:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-101.700, 11.178, 307.406, 202]
+    region:   n_108
     level:    [38, 48]
   17150063:
     template: Goobbue_Farmer
-    at:       [-45.360, 14.815, 300.664, 9]
+    region:   n_108
     level:    [59, 61]
   17150064:
     template: Goobbue_Farmer
-    at:       [-35.170, 15.147, 244.059, 87]
+    region:   n_112
     level:    [59, 61]
   17150065:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-140.100, 9.722, 262.283, 87]
+    region:   n_113
     level:    [38, 48]
   17150066:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-173.100, 12.184, 253.822, 116]
+    region:   n_113
     level:    [38, 48]
   17150067:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-159.500, 8.309, 276.244, 73]
+    region:   n_113
     level:    [38, 48]
   17150068:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-164.100, 7.982, 228.158, 76]
+    region:   n_113
     level:    [38, 48]
   17150069:
     template: Goobbue_Farmer
-    at:       [-136.800, 8.112, 222.192, 145]
+    region:   n_117
     level:    [59, 61]
   17150070:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-238.700, 8.495, 201.384, 135]
+    region:   n_118
     level:    [38, 48]
   17150071:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-276.700, 9.868, 169.839, 169]
+    region:   n_118
     level:    [38, 48]
   17150072:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-246.700, 11.524, 211.110, 198]
+    region:   n_118
     level:    [38, 48]
   17150073:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-315.300, 8.067, 153.259, 187]
+    region:   n_118
     level:    [38, 48]
   17150074:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-289.200, 11.876, 167.930, 121]
+    region:   n_118
     level:    [38, 48]
   17150075:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-338.848, 3.421, 4.416, 26]
+    region:   c_123
     level:    [38, 48]
   17150076:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-346.900, 1.631, -0.368, 185]
+    region:   c_123
     level:    [38, 48]
   17150077:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-321.400, 3.032, 22.292, 77]
+    region:   c_123
     level:    [38, 48]
   17150078:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-310.885, 0.601, 39.123, 65]
+    region:   c_123
     level:    [38, 48]
   17150079:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-289.958, 1.561, 75.027, 26]
+    region:   c_123
     level:    [38, 48]
   17150080:
     template: Goobbue_Farmer
-    at:       [-314.240, 0.057, 0.261, 235]
+    region:   c_123
     level:    [59, 61]
   17150081:
     template: Erle
@@ -4986,175 +4986,175 @@ spawns:
   17150082:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-300.400, 3.945, -29.423, 50]
+    region:   c_130
     level:    [38, 48]
   17150083:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-260.200, 1.583, -137.520, 142]
+    region:   c_130
     level:    [38, 48]
   17150084:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-291.500, 2.957, -42.449, 12]
+    region:   c_130
     level:    [38, 48]
   17150085:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-285.200, 2.681, -45.363, 152]
+    region:   c_130
     level:    [38, 48]
   17150086:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-249.200, 3.038, -108.160, 138]
+    region:   c_130
     level:    [38, 48]
   17150087:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-206.000, 3.437, -174.670, 200]
+    region:   c_135
     level:    [38, 48]
   17150088:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-232.900, 1.183, -159.590, 36]
+    region:   c_135
     level:    [38, 48]
   17150089:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-178.300, 3.432, -201.460, 169]
+    region:   c_135
     level:    [38, 48]
   17150090:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-233.000, 3.287, -142.700, 210]
+    region:   c_135
     level:    [38, 48]
   17150091:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-156.900, 2.746, -216.940, 180]
+    region:   c_135
     level:    [38, 48]
   17150092:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-225.000, 2.996, -342.470, 197]
+    region:   c_140
     level:    [38, 48]
   17150093:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-204.900, 2.467, -332.900, 26]
+    region:   c_140
     level:    [38, 48]
   17150094:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-139.600, 2.815, -271.390, 139]
+    region:   c_140
     level:    [38, 48]
   17150095:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-184.300, 3.379, -322.790, 13]
+    region:   c_140
     level:    [38, 48]
   17150096:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-182.100, 2.408, -305.510, 176]
+    region:   c_140
     level:    [38, 48]
   17150097:
     template: Goobbue_Farmer
-    at:       [-190.700, 1.468, -348.490, 96]
+    region:   c_140
     level:    [59, 61]
   17150098:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-300.400, -3.526, -327.480, 251]
+    region:   c_146
     level:    [38, 48]
   17150099:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-268.900, 3.547, -340.680, 138]
+    region:   c_146
     level:    [38, 48]
   17150100:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-340.500, -7.769, -334.550, 137]
+    region:   c_146
     level:    [38, 48]
   17150101:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-231.541, 1.454, -403.440, 174]
+    region:   s_149
     level:    [38, 48]
   17150102:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-215.759, 2.282, -405.868, 39]
+    region:   s_149
     level:    [38, 48]
   17150103:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-230.154, 1.341, -376.925, 42]
+    region:   s_149
     level:    [38, 48]
   17150104:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-231.821, 0.943, -467.342, 113]
+    region:   s_149
     level:    [38, 48]
   17150105:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-141.986, 4.256, -514.727, 177]
+    region:   s_153
     level:    [38, 48]
   17150106:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-126.691, 0.267, -510.548, 180]
+    region:   s_153
     level:    [38, 48]
   17150107:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-192.668, 1.699, -511.878, 3]
+    region:   s_153
     level:    [38, 48]
   17150108:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-204.748, 1.494, -511.260, 11]
+    region:   s_153
     level:    [38, 48]
   17150109:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-22.900, 3.204, -589.800, 233]
+    region:   s_157
     level:    [38, 48]
   17150110:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-17.560, 3.184, -609.160, 37]
+    region:   s_157
     level:    [38, 48]
   17150111:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-25.170, 1.799, -630.720, 218]
+    region:   s_157
     level:    [38, 48]
   17150112:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-10.610, 2.177, -612.240, 232]
+    region:   s_157
     level:    [38, 48]
   17150113:
     template: Goobbue_Farmer
-    at:       [-16.990, 3.255, -606.430, 88]
+    region:   s_157
     level:    [59, 61]
   17150114:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-12.160, -4.369, -672.390, 203]
+    region:   s_162
     level:    [38, 48]
   17150115:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [-0.666, -5.112, -693.030, 253]
+    region:   s_162
     level:    [38, 48]
   17150116:
     template: Death_Jacket_CN_RFS
     script:   Death_Jacket
-    at:       [9.115, -5.722, -694.100, 228]
+    region:   s_162
     level:    [38, 48]
   17150117:
     template: Chigoe_past_Small
@@ -5179,36 +5179,36 @@ spawns:
   17150121:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [-365.600, 7.607, 317.191, 254]
+    region:   nw_169
     level:    [58, 62]
   17150122:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [-373.500, 7.410, 309.739, 77]
+    region:   nw_169
     level:    [58, 62]
   17150123:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [-347.100, 8.375, 314.641, 236]
+    region:   nw_171
     level:    [58, 62]
   17150124:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [-359.600, 7.839, 288.782, 210]
+    region:   nw_171
     level:    [58, 62]
   17150125:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [-347.700, 7.705, 293.908, 25]
+    region:   nw_171
     level:    [58, 62]
   17150126:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [-345.500, 8.106, 311.329, 199]
+    region:   nw_171
     level:    [58, 62]
   17150127:
     template: Goobbue_Farmer
-    at:       [-329.000, 7.129, 195.070, 121]
+    region:   n_175
     level:    [59, 61]
   17150128:
     template: Fire_Elemental
@@ -5216,360 +5216,360 @@ spawns:
     level:    [43, 43]
   17150129:
     template: Champion_Crawler
-    at:       [-350.200, 7.285, 165.513, 204]
+    region:   nw_177
     level:    [93, 94]
   17150130:
     template: Champion_Crawler
-    at:       [-346.800, 7.934, 135.427, 89]
+    region:   nw_177
     level:    [93, 94]
   17150131:
     template: Champion_Crawler
-    at:       [-337.900, 7.883, 146.899, 37]
+    region:   nw_177
     level:    [93, 94]
   17150132:
     template: Champion_Crawler
-    at:       [-387.100, 1.011, 127.571, 188]
+    region:   nw_177
     level:    [93, 94]
   17150133:
     template: Champion_Crawler
-    at:       [-343.900, 7.916, 132.507, 115]
+    region:   nw_177
     level:    [93, 94]
   17150134:
     template: Champion_Crawler
-    at:       [-427.600, -0.029, 178.729, 112]
+    region:   nw_182
     level:    [93, 94]
   17150135:
     template: Champion_Crawler
-    at:       [-441.300, -7.498, 125.084, 231]
+    region:   nw_182
     level:    [93, 94]
   17150136:
     template: Champion_Crawler
-    at:       [-435.900, -0.638, 153.621, 92]
+    region:   nw_182
     level:    [93, 94]
   17150137:
     template: Champion_Crawler
-    at:       [-409.200, 0.034, 179.768, 125]
+    region:   nw_182
     level:    [93, 94]
   17150138:
     template: Champion_Crawler
-    at:       [-423.100, -5.730, 118.175, 84]
+    region:   nw_182
     level:    [93, 94]
   17150139:
     template: Champion_Crawler
-    at:       [-338.054, 0.255, 30.100, 39]
+    region:   w_187
     level:    [93, 94]
   17150140:
     template: Champion_Crawler
-    at:       [-354.792, 0.084, 55.758, 74]
+    region:   w_187
     level:    [93, 94]
   17150141:
     template: Champion_Crawler
-    at:       [-335.200, 0.269, 32.017, 65]
+    region:   w_187
     level:    [93, 94]
   17150142:
     template: Champion_Crawler
-    at:       [-359.600, -0.386, 40.037, 136]
+    region:   w_187
     level:    [93, 94]
   17150143:
     template: Champion_Crawler
-    at:       [-338.700, 0.266, 30.488, 11]
+    region:   w_187
     level:    [93, 94]
   17150144:
     template: Champion_Crawler
-    at:       [-427.300, -7.969, 79.214, 56]
+    region:   w_192
     level:    [93, 94]
   17150145:
     template: Champion_Crawler
-    at:       [-420.900, -8.722, 21.135, 38]
+    region:   w_192
     level:    [93, 94]
   17150146:
     template: Champion_Crawler
-    at:       [-418.100, -8.538, 20.628, 112]
+    region:   w_192
     level:    [93, 94]
   17150147:
     template: Champion_Crawler
-    at:       [-425.900, -8.512, 48.620, 119]
+    region:   w_192
     level:    [93, 94]
   17150148:
     template: Champion_Crawler
-    at:       [-429.500, -8.451, 61.581, 7]
+    region:   w_192
     level:    [93, 94]
   17150149:
     template: Champion_Crawler
-    at:       [-399.800, -8.477, 3.766, 201]
+    region:   w_197
     level:    [93, 94]
   17150150:
     template: Champion_Crawler
-    at:       [-426.900, -7.453, -31.818, 209]
+    region:   w_197
     level:    [93, 94]
   17150151:
     template: Champion_Crawler
-    at:       [-413.500, -3.009, -33.499, 72]
+    region:   w_197
     level:    [93, 94]
   17150152:
     template: Champion_Crawler
-    at:       [-445.200, -8.031, -61.353, 18]
+    region:   w_197
     level:    [93, 94]
   17150153:
     template: Champion_Crawler
-    at:       [-451.700, -7.756, -16.400, 178]
+    region:   w_197
     level:    [93, 94]
   17150154:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-411.000, -8.440, -122.230, 57]
+    region:   w_202
     level:    [42, 52]
   17150155:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-405.400, -2.250, -91.724, 198]
+    region:   w_202
     level:    [42, 52]
   17150156:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-447.200, -14.850, -145.380, 25]
+    region:   w_202
     level:    [42, 52]
   17150157:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [-460.300, -12.870, -124.510, 229]
+    region:   w_202
     level:    [38, 42]
   17150158:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-515.900, -16.320, -92.834, 157]
+    region:   w_206
     level:    [42, 52]
   17150159:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-493.600, -15.810, -100.960, 250]
+    region:   w_206
     level:    [42, 52]
   17150160:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-527.100, -15.970, -53.096, 18]
+    region:   w_206
     level:    [42, 52]
   17150161:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-519.300, -16.170, -13.369, 230]
+    region:   w_206
     level:    [42, 52]
   17150162:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [-514.100, -16.050, -2.118, 211]
+    region:   w_206
     level:    [38, 42]
   17150163:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [-519.400, -16.450, -79.827, 30]
+    region:   w_206
     level:    [38, 42]
   17150164:
     template: Scabrous_Slug
-    at:       [-524.400, -16.390, -140.810, 137]
+    region:   w_212
     level:    [56, 62]
   17150165:
     template: Scabrous_Slug
-    at:       [-502.500, -16.350, -148.650, 76]
+    region:   w_212
     level:    [56, 62]
   17150166:
     template: Scabrous_Slug
-    at:       [-525.200, -16.400, -243.760, 89]
+    region:   w_214
     level:    [56, 62]
   17150167:
     template: Scabrous_Slug
-    at:       [-516.800, -16.430, -229.710, 38]
+    region:   w_214
     level:    [56, 62]
   17150168:
     template: Scabrous_Slug
-    at:       [-621.310, -23.608, -143.331, 16]
+    region:   w_216
     level:    [56, 62]
   17150169:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [-646.800, -22.070, -134.490, 164]
+    region:   w_216
     level:    [44, 47]
   17150170:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [-603.200, -24.140, -131.300, 232]
+    region:   w_216
     level:    [44, 47]
   17150171:
     template: Water_Elemental
-    at:       [-591.700, -24.000, -162.660, 78]
+    region:   w_216
     level:    [43, 43]
   17150172:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-567.900, -24.110, -97.379, 13]
+    region:   w_220
     level:    [42, 52]
   17150173:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-565.800, -24.020, -98.170, 150]
+    region:   w_220
     level:    [42, 52]
   17150174:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-588.700, -24.770, -65.609, 244]
+    region:   w_220
     level:    [42, 52]
   17150175:
     template: Berry_Grub_past
     script:   Berry_Grub
-    at:       [-596.300, -24.530, -81.486, 232]
+    region:   w_220
     level:    [42, 52]
   17150176:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [-706.600, -24.370, -240.640, 60]
+    region:   w_224
     level:    [44, 47]
   17150177:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [-710.300, -22.710, -194.820, 51]
+    region:   w_224
     level:    [44, 47]
   17150178:
     template: Scabrous_Slug
-    at:       [-680.206, -24.348, -242.292, 74]
+    region:   w_226
     level:    [56, 62]
   17150179:
     template: Scabrous_Slug
-    at:       [-639.423, -23.516, -214.955, 36]
+    region:   w_226
     level:    [56, 62]
   17150180:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [-632.722, -23.973, -234.004, 155]
+    region:   w_226
     level:    [44, 47]
   17150181:
     template: Poison_Leech_past
     script:   Poison_Leech
-    at:       [-627.500, -23.450, -245.820, 228]
+    region:   w_226
     level:    [44, 47]
   17150182:
     template: Evil_Spirit_RFS
     script:   Evil_Spirit
-    at:       [-669.586, -24.198, -239.206, 131]
+    region:   w_226
     level:    [43, 43]
   17150183:
     template: Clipper_past
     script:   Clipper
-    at:       [-746.797, -29.219, -397.998, 125]
+    region:   sw_231
     level:    [43, 45]
   17150184:
     template: Clipper_past
     script:   Clipper
-    at:       [-762.161, -32.103, -388.111, 64]
+    region:   sw_231
     level:    [43, 45]
   17150185:
     template: Clipper_past
     script:   Clipper
-    at:       [-744.463, -28.343, -396.074, 35]
+    region:   sw_231
     level:    [43, 45]
   17150186:
     template: Water_Elemental
-    at:       [-678.569, -31.986, -387.607, 223]
+    region:   sw_231
     level:    [43, 43]
   17150187:
     template: Goblin_Draftee
-    at:       [-691.320, -29.695, -403.796, 153]
+    region:   sw_231
     level:    [56, 59]
   17150188:
     template: Clipper_past
     script:   Clipper
-    at:       [-711.877, -32.130, -480.899, 14]
+    region:   sw_236
     level:    [43, 45]
   17150189:
     template: Clipper_past
     script:   Clipper
-    at:       [-741.253, -31.986, -470.724, 69]
+    region:   sw_236
     level:    [43, 45]
   17150190:
     template: Clipper_past
     script:   Clipper
-    at:       [-709.977, -30.790, -469.884, 122]
+    region:   sw_236
     level:    [43, 45]
   17150191:
     template: Goblin_Patrolman
-    at:       [-686.119, -32.142, -474.664, 76]
+    region:   sw_236
     level:    [56, 59]
   17150192:
     template: Goblins_Crawler
-    at:       [-685.523, -32.080, -472.819, 76]
+    region:   sw_236
     level:    [51, 53]
   17150193:
     template: Evil_Spirit_RFS
     script:   Evil_Spirit
-    at:       [-740.895, -32.009, -472.336, 153]
+    region:   sw_236
     level:    [43, 43]
   17150194:
     template: Goobbue_Farmer
-    at:       [-289.900, -7.929, -396.620, 123]
+    region:   s_242
     level:    [59, 61]
   17150195:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [-275.900, -8.118, -432.260, 60]
+    region:   s_242
     level:    [38, 41]
   17150196:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [-291.465, -6.168, -385.598, 26]
+    region:   s_242
     level:    [38, 41]
   17150197:
     template: Ochu
-    at:       [-401.187, -8.671, -444.740, 208]
+    region:   sw_245
     level:    [64, 67]
   17150198:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [-324.200, -8.055, -422.400, 97]
+    region:   sw_245
     level:    [38, 41]
   17150199:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [-322.216, -8.076, -419.408, 89]
+    region:   sw_245
     level:    [38, 41]
   17150200:
     template: Ochu
-    at:       [-318.163, -12.548, -462.667, 244]
+    region:   s_248
     level:    [64, 67]
   17150201:
     template: Moon_Bat_Rolanberry_Fields_S
     script:   Moon_Bat
-    at:       [-280.100, -8.276, -450.690, 230]
+    region:   s_248
     level:    [38, 41]
   17150202:
     template: Goobbue_Farmer
-    at:       [-67.540, -4.587, -624.720, 116]
+    region:   s_250
     level:    [59, 61]
   17150203:
     template: Old_Quadav_past
     script:   Old_Quadav
-    at:       [-121.388, -8.058, -631.415, 106]
+    region:   s_251
     level:    [65, 69]
   17150204:
     template: Heliodor_Quadav
-    at:       [-102.164, -7.537, -625.400, 250]
+    region:   s_251
     level:    [65, 69]
   17150205:
     template: Hawker_past
     script:   Hawker
-    at:       [-30.150, -2.473, -754.360, 9]
+    region:   s_253
     level:    [38, 48]
   17150206:
     template: Hawker_past
     script:   Hawker
-    at:       [-24.600, -1.998, -763.620, 72]
+    region:   s_253
     level:    [38, 48]
   17150207:
     template: Hawker_past
     script:   Hawker
-    at:       [-5.732, -7.238, -746.330, 88]
+    region:   s_253
     level:    [38, 48]
   17150208:
     template: Goobbue_Farmer
-    at:       [-14.780, -2.927, -778.970, 247]
+    region:   s_253
     level:    [59, 61]
   17150209:
     template: Fire_Elemental
@@ -5578,48 +5578,48 @@ spawns:
   17150210:
     template: Hawker_past
     script:   Hawker
-    at:       [-36.700, -0.307, -812.050, 121]
+    region:   s_258
     level:    [38, 48]
   17150211:
     template: Hawker_past
     script:   Hawker
-    at:       [-12.450, -0.662, -808.750, 50]
+    region:   s_258
     level:    [38, 48]
   17150212:
     template: Hawker_past
     script:   Hawker
-    at:       [-28.650, -1.149, -808.890, 32]
+    region:   s_258
     level:    [38, 48]
   17150213:
     template: Hawker_past
     script:   Hawker
-    at:       [13.218, -2.601, -815.010, 175]
+    region:   s_258
     level:    [38, 48]
   17150214:
     template: Hawker_past
     script:   Hawker
-    at:       [55.018, -8.281, -720.130, 151]
+    region:   s_262
     level:    [38, 48]
   17150215:
     template: Hawker_past
     script:   Hawker
-    at:       [77.375, -8.282, -741.680, 159]
+    region:   s_262
     level:    [38, 48]
   17150216:
     template: Goobbue_Farmer
-    at:       [-53.690, -0.093, -317.570, 120]
+    region:   c_264
     level:    [59, 61]
   17150217:
     template: Goobbue_Farmer
-    at:       [-48.180, -0.206, -289.710, 95]
+    region:   c_264
     level:    [59, 61]
   17150218:
     template: Goobbue_Farmer
-    at:       [-60.990, -4.664, -353.660, 103]
+    region:   s_266
     level:    [59, 61]
   17150219:
     template: Goobbue_Farmer
-    at:       [-62.860, -0.402, -403.930, 115]
+    region:   s_266
     level:    [59, 61]
   17150220:
     template: Fire_Elemental
@@ -5627,241 +5627,241 @@ spawns:
     level:    [43, 43]
   17150221:
     template: Coppercap
-    at:       [-125.600, -7.880, -379.360, 72]
+    region:   s_269
     level:    [47, 49]
   17150222:
     template: Coppercap
-    at:       [-154.500, -8.312, -398.860, 8]
+    region:   s_269
     level:    [47, 49]
   17150223:
     template: Coppercap
-    at:       [-103.900, -6.211, -387.840, 2]
+    region:   s_269
     level:    [47, 49]
   17150224:
     template: Coppercap
-    at:       [-128.661, -8.215, -435.134, 69]
+    region:   s_269
     level:    [47, 49]
   17150225:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [-145.500, -7.980, -407.260, 214]
+    region:   s_269
     level:    [38, 42]
   17150226:
     template: Midnight_Wings_RFS
     script:   Midnight_Wings
-    at:       [-128.600, -8.133, -409.860, 119]
+    region:   s_269
     level:    [38, 42]
   17150227:
     template: Goobbue_Farmer
-    at:       [-37.400, -0.488, -519.560, 202]
+    region:   s_275
     level:    [59, 61]
   17150228:
     template: Goobbue_Farmer
-    at:       [-55.500, -0.254, -492.920, 246]
+    region:   s_275
     level:    [59, 61]
   17150229:
     template: Coppercap
-    at:       [115.310, -24.900, -254.470, 185]
+    region:   e_277
     level:    [47, 49]
   17150230:
     template: Coppercap
-    at:       [131.290, -24.310, -275.230, 82]
+    region:   e_277
     level:    [47, 49]
   17150231:
     template: Coppercap
-    at:       [117.960, -24.420, -277.630, 183]
+    region:   e_277
     level:    [47, 49]
   17150232:
     template: Coppercap
-    at:       [131.820, -24.280, -277.900, 157]
+    region:   e_277
     level:    [47, 49]
   17150233:
     template: Coppercap
-    at:       [67.307, -24.200, -148.360, 117]
+    region:   c_281
     level:    [47, 49]
   17150234:
     template: Coppercap
-    at:       [35.790, -24.060, -109.490, 177]
+    region:   c_281
     level:    [47, 49]
   17150235:
     template: Coppercap
-    at:       [78.957, -24.480, -159.850, 101]
+    region:   c_281
     level:    [47, 49]
   17150236:
     template: Goobbue_Farmer
-    at:       [78.870, -24.460, -161.250, 173]
+    region:   c_281
     level:    [59, 61]
   17150237:
     template: Goobbue_Farmer
-    at:       [114.940, -18.680, -346.280, 214]
+    region:   e_285
     level:    [59, 61]
   17150238:
     template: Goobbue_Farmer
-    at:       [108.150, -20.670, -333.290, 151]
+    region:   e_285
     level:    [59, 61]
   17150239:
     template: Coppercap
-    at:       [56.360, -16.190, -314.830, 66]
+    region:   c_287
     level:    [47, 49]
   17150240:
     template: Coppercap
-    at:       [48.550, -16.100, -301.260, 135]
+    region:   c_287
     level:    [47, 49]
   17150241:
     template: Coppercap
-    at:       [26.207, -16.010, -190.120, 78]
+    region:   c_289
     level:    [47, 49]
   17150242:
     template: Coppercap
-    at:       [26.475, -16.010, -190.050, 99]
+    region:   c_289
     level:    [47, 49]
   17150243:
     template: Coppercap
-    at:       [-0.702, -16.430, -146.240, 163]
+    region:   c_289
     level:    [47, 49]
   17150244:
     template: Goobbue_Farmer
-    at:       [20.877, -16.040, -152.620, 73]
+    region:   c_292
     level:    [59, 61]
   17150245:
     template: Coppercap
-    at:       [-37.630, -16.440, -80.345, 177]
+    region:   c_293
     level:    [47, 49]
   17150246:
     template: Coppercap
-    at:       [-49.310, -16.220, -78.041, 62]
+    region:   c_293
     level:    [47, 49]
   17150247:
     template: Coppercap
-    at:       [-26.800, -16.230, -73.462, 47]
+    region:   c_293
     level:    [47, 49]
   17150248:
     template: Coppercap
-    at:       [-48.210, -8.171, -124.740, 73]
+    region:   c_296
     level:    [47, 49]
   17150249:
     template: Coppercap
-    at:       [-98.204, -8.405, -112.759, 238]
+    region:   c_296
     level:    [47, 49]
   17150250:
     template: Coppercap
-    at:       [-85.240, -11.020, -102.360, 215]
+    region:   c_296
     level:    [47, 49]
   17150251:
     template: Coppercap
-    at:       [-1.904, -8.520, -274.763, 125]
+    region:   c_299
     level:    [47, 49]
   17150252:
     template: Coppercap
-    at:       [-4.149, -8.169, -258.593, 186]
+    region:   c_299
     level:    [47, 49]
   17150253:
     template: Coppercap
-    at:       [-49.913, -8.730, -207.727, 208]
+    region:   c_299
     level:    [47, 49]
   17150254:
     template: Goobbue_Farmer
-    at:       [-5.260, -8.149, -286.276, 136]
+    region:   c_299
     level:    [59, 61]
   17150255:
     template: Coppercap
-    at:       [6.532, -8.317, -369.860, 154]
+    region:   c_303
     level:    [47, 49]
   17150256:
     template: Coppercap
-    at:       [9.188, -8.206, -359.840, 235]
+    region:   c_303
     level:    [47, 49]
   17150257:
     template: Coppercap
-    at:       [-165.009, -8.193, -89.493, 78]
+    region:   c_305
     level:    [47, 49]
   17150258:
     template: Coppercap
-    at:       [-202.500, -8.288, -47.339, 18]
+    region:   c_306
     level:    [47, 49]
   17150259:
     template: Ochu
-    at:       [-280.127, -8.059, -546.967, 154]
+    region:   s_307
     level:    [64, 67]
   17150260:
     template: Ochu
-    at:       [-291.369, -8.852, -544.292, 223]
+    region:   s_307
     level:    [64, 67]
   17150261:
     template: Ochu
-    at:       [-309.574, -15.841, -574.171, 201]
+    region:   s_309
     level:    [64, 67]
   17150262:
     template: Ochu
-    at:       [-303.306, -14.769, -540.421, 194]
+    region:   s_310
     level:    [64, 67]
   17150263:
     template: Ochu
-    at:       [-267.462, -16.823, -593.352, 134]
+    region:   s_311
     level:    [64, 67]
   17150264:
     template: Ochu
-    at:       [-423.638, -16.555, -492.989, 117]
+    region:   sw_312
     level:    [64, 67]
   17150265:
     template: Ochu
-    at:       [-378.602, -15.890, -480.696, 163]
+    region:   sw_312
     level:    [64, 67]
   17150266:
     template: Worker_Crawler
-    at:       [-368.500, -24.420, -622.090, 244]
+    region:   sw_314
     level:    [60, 63]
   17150267:
     template: Worker_Crawler
-    at:       [-378.500, -24.450, -637.600, 221]
+    region:   sw_314
     level:    [60, 63]
   17150268:
     template: Worker_Crawler
-    at:       [-344.700, -24.380, -649.010, 193]
+    region:   sw_314
     level:    [60, 63]
   17150269:
     template: Worker_Crawler
-    at:       [-299.100, -23.820, -656.030, 110]
+    region:   s_317
     level:    [60, 63]
   17150270:
     template: Worker_Crawler
-    at:       [-276.500, -24.020, -666.960, 231]
+    region:   s_317
     level:    [60, 63]
   17150271:
     template: Worker_Crawler
-    at:       [-271.500, -24.190, -645.850, 4]
+    region:   s_317
     level:    [60, 63]
   17150272:
     template: Worker_Crawler
-    at:       [-324.600, -24.480, -717.120, 164]
+    region:   sw_320
     level:    [60, 63]
   17150273:
     template: Worker_Crawler
-    at:       [-342.300, -24.150, -706.220, 250]
+    region:   sw_320
     level:    [60, 63]
   17150274:
     template: Worker_Crawler
-    at:       [-427.100, -24.100, -533.880, 89]
+    region:   sw_322
     level:    [60, 63]
   17150275:
     template: Worker_Crawler
-    at:       [-427.100, -24.110, -536.970, 161]
+    region:   sw_322
     level:    [60, 63]
   17150276:
     template: Worker_Crawler
-    at:       [-392.000, -24.340, -540.690, 106]
+    region:   sw_322
     level:    [60, 63]
   17150277:
     template: Ochu
-    at:       [-358.295, -24.493, -552.833, 169]
+    region:   sw_325
     level:    [64, 67]
   17150278:
     template: Ochu
-    at:       [-452.272, -25.568, -532.311, 95]
+    region:   sw_326
     level:    [64, 67]
   17150279:
     template: Ochu
-    at:       [-484.535, -23.756, -467.462, 110]
+    region:   sw_326
     level:    [64, 67]
   17150280:
     template: Delicieuse_Delphine
@@ -5869,122 +5869,122 @@ spawns:
     level:    [72, 73]
   17150281:
     template: Silver_Quadav
-    at:       [-200.383, -7.858, -551.114, 240]
+    region:   s_329
     level:    [65, 68]
   17150282:
     template: Emerald_Quadav
-    at:       [-212.630, -8.085, -562.837, 234]
+    region:   s_329
     level:    [65, 68]
   17150283:
     template: Bronze_Quadav_past
     script:   Bronze_Quadav
-    at:       [-267.900, -8.109, -480.610, 210]
+    region:   s_331
     level:    [65, 68]
   17150284:
     template: Sapphirine_Quadav
-    at:       [-281.800, -8.045, -493.900, 233]
+    region:   s_331
     level:    [65, 68]
   17150285:
     template: Brass_Quadav_past
     script:   Brass_Quadav
-    at:       [-214.100, -15.970, -631.760, 64]
+    region:   s_333
     level:    [65, 69]
   17150286:
     template: Emerald_Quadav
-    at:       [-212.100, -15.670, -629.620, 197]
+    region:   s_333
     level:    [65, 68]
   17150287:
     template: Old_Quadav_past
     script:   Old_Quadav
-    at:       [-336.100, -15.490, -489.960, 101]
+    region:   s_335
     level:    [65, 69]
   17150288:
     template: Bronze_Quadav_past
     script:   Bronze_Quadav
-    at:       [-318.200, -15.390, -499.140, 108]
+    region:   s_335
     level:    [65, 68]
   17150289:
     template: Brass_Quadav_past
     script:   Brass_Quadav
-    at:       [-363.700, -23.950, -572.020, 234]
+    region:   sw_337
     level:    [65, 69]
   17150290:
     template: Silver_Quadav
-    at:       [-375.800, -24.020, -559.040, 207]
+    region:   sw_337
     level:    [65, 68]
   17150291:
     template: Heliodor_Quadav
-    at:       [-370.000, -23.860, -576.650, 55]
+    region:   sw_337
     level:    [65, 69]
   17150292:
     template: Old_Quadav_past
     script:   Old_Quadav
-    at:       [-468.200, -24.350, -495.300, 16]
+    region:   sw_340
     level:    [65, 69]
   17150293:
     template: Sapphirine_Quadav
-    at:       [-470.200, -24.240, -496.010, 6]
+    region:   sw_340
     level:    [65, 68]
   17150294:
     template: Emerald_Quadav
-    at:       [-466.200, -22.890, -474.690, 194]
+    region:   sw_340
     level:    [65, 68]
   17150295:
     template: Bronze_Quadav_past
     script:   Bronze_Quadav
-    at:       [-317.900, -23.860, -661.180, 226]
+    region:   s_343
     level:    [65, 68]
   17150296:
     template: Heliodor_Quadav
-    at:       [-311.200, -24.060, -664.350, 18]
+    region:   s_343
     level:    [65, 69]
   17150297:
     template: Brass_Quadav_past
     script:   Brass_Quadav
-    at:       [-306.800, -24.070, -643.790, 205]
+    region:   s_343
     level:    [65, 69]
   17150298:
     template: Bronze_Quadav_past
     script:   Bronze_Quadav
-    at:       [-283.000, -16.620, -613.820, 104]
+    region:   s_346
     level:    [65, 68]
   17150299:
     template: Silver_Quadav
-    at:       [-276.600, -16.460, -609.700, 32]
+    region:   s_346
     level:    [65, 68]
   17150300:
     template: Old_Quadav_past
     script:   Old_Quadav
-    at:       [-268.600, -16.400, -598.200, 2]
+    region:   s_346
     level:    [65, 69]
   17150301:
     template: Brass_Quadav_past
     script:   Brass_Quadav
-    at:       [-422.837, -16.781, -468.370, 12]
+    region:   sw_349
     level:    [65, 69]
   17150302:
     template: Heliodor_Quadav
-    at:       [-434.194, -16.468, -481.585, 102]
+    region:   sw_349
     level:    [65, 69]
   17150303:
     template: Emerald_Quadav
-    at:       [-440.300, -16.210, -468.620, 211]
+    region:   sw_349
     level:    [65, 68]
   17150304:
     template: Sprite
-    at:       [79.568, 17.511, 454.471, 213]
+    region:   ne_352
     level:    [61, 63]
   17150305:
     template: Sprite
-    at:       [331.800, -0.017, 192.244, 159]
+    region:   ne_353
     level:    [61, 63]
   17150306:
     template: Sprite
-    at:       [77.134, -16.139, -225.951, 62]
+    region:   c_354
     level:    [61, 63]
   17150307:
     template: Sprite
-    at:       [-204.800, 8.975, 208.639, 98]
+    region:   n_355
     level:    [61, 63]
   17150308:
     template: Sprite
@@ -5992,7 +5992,7 @@ spawns:
     level:    [61, 63]
   17150309:
     template: Goblin_Skirmisher
-    at:       [-299.989, 3.281, 72.820, 187]
+    region:   n_355
     level:    [58, 63]
   17150310:
     template: Goblin_Mine_Small
@@ -6001,7 +6001,7 @@ spawns:
     level:    [53, 53]
   17150311:
     template: Goblin_Skirmisher
-    at:       [-427.100, -7.928, -96.135, 90]
+    region:   w_359
     level:    [58, 63]
   17150312:
     template: Goblin_Mine_Small
@@ -6010,7 +6010,7 @@ spawns:
     level:    [53, 53]
   17150313:
     template: Goblin_Skirmisher
-    at:       [-205.200, -0.528, -233.840, 56]
+    region:   c_361
     level:    [58, 63]
   17150314:
     template: Goblin_Mine_Small
@@ -6019,7 +6019,7 @@ spawns:
     level:    [53, 53]
   17150315:
     template: Goblin_Skirmisher
-    at:       [-11.080, -0.537, -642.570, 63]
+    region:   s_363
     level:    [58, 63]
   17150316:
     template: Goblin_Mine_Small
@@ -6149,13 +6149,15 @@ spawns:
     template: 1st_Iron_Musketeer
   17150357:
     template: Maximilian
-    at:       [281.777, 7.500, 201.179, 13]
+    region:   ne_405
   17150358:
     template: 1st_Legionnaire
   17150359:
     template: 1st_Legionnaire
+    region:   ne_407
   17150360:
     template: 1st_Legionnaire
+    region:   ne_408
   17150361:
     template: 1st_Legionnaire
   17150362:
@@ -6164,10 +6166,13 @@ spawns:
     template: 1st_Legionnaire
   17150364:
     template: 1st_Legionnaire
+    region:   ne_412
   17150365:
     template: 1st_Legionnaire
+    region:   ne_413
   17150366:
     template: 1st_Legionnaire
+    region:   ne_408
   17150367:
     template: Ludwig
     level:    [1, 1]
@@ -6235,43 +6240,43 @@ spawns:
     template: 8th_Iron_Musketeer
   17150397:
     template: Striking_Bull
-    at:       [293.596, 7.244, 224.961, 63]
+    region:   ne_445
     level:    [70, 70]
   17150398:
     template: 2nd_Legion_Grenadier
-    at:       [289.549, 6.391, 192.876, 253]
+    region:   ne_445
     level:    [70, 70]
   17150399:
     template: 2nd_Legion_Grenadier
-    at:       [286.977, 7.909, 235.992, 215]
+    region:   ne_445
     level:    [70, 70]
   17150400:
     template: 2nd_Legion_Grenadier
-    at:       [233.332, 8.625, 238.488, 186]
+    region:   ne_445
     level:    [70, 70]
   17150401:
     template: 2nd_Legion_Grenadier
-    at:       [266.710, 7.569, 192.944, 229]
+    region:   ne_445
     level:    [70, 70]
   17150402:
     template: 2nd_Legion_Grenadier
-    at:       [294.813, 6.893, 218.042, 200]
+    region:   ne_445
     level:    [70, 70]
   17150403:
     template: 2nd_Legion_Grenadier
-    at:       [277.024, 9.347, 253.396, 232]
+    region:   ne_445
     level:    [70, 70]
   17150404:
     template: 2nd_Legion_Grenadier
-    at:       [294.290, 6.941, 219.682, 36]
+    region:   ne_445
     level:    [70, 70]
   17150405:
     template: 2nd_Legion_Grenadier
-    at:       [239.555, 7.599, 205.695, 32]
+    region:   ne_445
     level:    [70, 70]
   17150406:
     template: 2nd_Legion_Grenadier
-    at:       [275.322, 9.486, 256.671, 253]
+    region:   ne_445
     level:    [70, 70]
   17150407:
     template: 4th_Legionnaire
@@ -6358,27 +6363,27 @@ spawns:
     template: 1st_Legion_Mercenary
   17150439:
     template: Field_Woundpatcher
-    at:       [279.837, 7.744, 239.551, 47]
+    region:   ne_487
     level:    [60, 60]
   17150440:
     template: Field_Woundpatcher
-    at:       [293.073, 6.984, 219.421, 163]
+    region:   ne_487
     level:    [60, 60]
   17150441:
     template: Field_Woundpatcher
-    at:       [265.939, 7.591, 197.263, 1]
+    region:   ne_487
     level:    [60, 60]
   17150442:
     template: Field_Woundpatcher
-    at:       [224.336, 10.827, 252.061, 221]
+    region:   ne_487
     level:    [60, 60]
   17150443:
     template: Field_Woundpatcher
-    at:       [252.201, 7.861, 195.035, 21]
+    region:   ne_487
     level:    [60, 60]
   17150444:
     template: Field_Woundpatcher
-    at:       [232.866, 8.131, 207.151, 39]
+    region:   ne_487
     level:    [60, 60]
   17150445:
     template: Republic_Supplier

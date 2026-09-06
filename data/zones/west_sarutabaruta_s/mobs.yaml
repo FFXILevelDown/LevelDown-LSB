@@ -4217,807 +4217,807 @@ spawns:
     level:    [12, 15]
   17166342:
     template: Mad_Fox
-    at:       [68.664, -21.208, 416.940, 205]
+    region:   n_6
     level:    [48, 49]
   17166343:
     template: Mad_Fox
-    at:       [37.201, -19.589, 361.772, 3]
+    region:   n_6
     level:    [48, 49]
   17166344:
     template: Rafflesia
-    at:       [42.140, -20.903, 421.673, 175]
+    region:   n_6
     level:    [49, 52]
   17166345:
     template: Rafflesia
-    at:       [58.032, -21.491, 379.000, 166]
+    region:   n_6
     level:    [49, 52]
   17166346:
     template: Bumblebee
-    at:       [76.323, -22.655, 381.568, 81]
+    region:   n_6
     level:    [15, 17]
   17166347:
     template: Bumblebee
-    at:       [19.707, -19.051, 413.226, 12]
+    region:   n_6
     level:    [15, 17]
   17166348:
     template: Carrion_Crow
-    at:       [-52.260, -17.061, 409.067, 103]
+    region:   n_12
     level:    [22, 25]
   17166349:
     template: Carrion_Crow
-    at:       [-12.896, -15.964, 409.620, 112]
+    region:   n_12
     level:    [22, 25]
   17166350:
     template: Carrion_Crow
-    at:       [-42.799, -17.114, 416.090, 101]
+    region:   n_12
     level:    [22, 25]
   17166351:
     template: Carrion_Crow
-    at:       [-41.139, -17.219, 426.132, 115]
+    region:   n_12
     level:    [22, 25]
   17166352:
     template: Carrion_Crow
-    at:       [-40.596, -16.745, 431.518, 135]
+    region:   n_12
     level:    [22, 25]
   17166353:
     template: Savanna_Dhalmel
-    at:       [326.852, -21.954, 615.668, 46]
+    region:   ne_17
     level:    [35, 37]
   17166354:
     template: Savanna_Dhalmel
-    at:       [279.739, -21.047, 625.764, 163]
+    region:   ne_17
     level:    [35, 37]
   17166355:
     template: Savanna_Dhalmel
-    at:       [295.660, -21.347, 576.603, 146]
+    region:   ne_19
     level:    [35, 37]
   17166356:
     template: Savanna_Dhalmel
-    at:       [307.810, -20.750, 593.270, 22]
+    region:   ne_19
     level:    [35, 37]
   17166357:
     template: Savanna_Dhalmel
-    at:       [295.391, -21.050, 553.380, 136]
+    region:   ne_21
     level:    [35, 37]
   17166358:
     template: Savanna_Dhalmel
-    at:       [309.520, -21.121, 538.436, 83]
+    region:   ne_21
     level:    [35, 37]
   17166359:
     template: Savanna_Dhalmel
-    at:       [260.453, -21.288, 550.287, 200]
+    region:   ne_23
     level:    [35, 37]
   17166360:
     template: Savanna_Dhalmel
-    at:       [267.034, -21.352, 571.352, 211]
+    region:   ne_23
     level:    [35, 37]
   17166361:
     template: Savanna_Dhalmel
-    at:       [213.294, -20.874, 555.320, 3]
+    region:   ne_25
     level:    [35, 37]
   17166362:
     template: Savanna_Dhalmel
-    at:       [219.020, -21.264, 589.000, 23]
+    region:   ne_25
     level:    [35, 37]
   17166363:
     template: Savanna_Dhalmel
-    at:       [217.855, -21.283, 587.774, 165]
+    region:   ne_25
     level:    [35, 37]
   17166364:
     template: Savanna_Dhalmel
-    at:       [215.852, -21.306, 608.392, 243]
+    region:   ne_28
     level:    [35, 37]
   17166365:
     template: Savanna_Dhalmel
-    at:       [240.599, -23.766, 628.782, 3]
+    region:   ne_28
     level:    [35, 37]
   17166366:
     template: Savanna_Dhalmel
-    at:       [184.435, -19.793, 513.848, 243]
+    region:   ne_30
     level:    [35, 37]
   17166367:
     template: Savanna_Dhalmel
-    at:       [223.641, -20.995, 531.315, 116]
+    region:   ne_30
     level:    [35, 37]
   17166368:
     template: Savanna_Dhalmel
-    at:       [180.605, -21.185, 560.864, 99]
+    region:   ne_30
     level:    [35, 37]
   17166369:
     template: Savanna_Dhalmel
-    at:       [219.758, -21.097, 542.407, 66]
+    region:   ne_30
     level:    [35, 37]
   17166370:
     template: Savanna_Dhalmel
-    at:       [193.909, -20.940, 549.601, 91]
+    region:   ne_30
     level:    [35, 37]
   17166371:
     template: Rafflesia
-    at:       [292.549, -21.559, 379.383, 189]
+    region:   ne_35
     level:    [49, 52]
   17166372:
     template: Rafflesia
-    at:       [289.321, -23.590, 360.440, 56]
+    region:   ne_35
     level:    [49, 52]
   17166373:
     template: Bumblebee
-    at:       [239.843, -31.219, 371.062, 22]
+    region:   ne_35
     level:    [15, 17]
   17166374:
     template: Bumblebee
-    at:       [248.562, -28.686, 377.750, 233]
+    region:   ne_35
     level:    [15, 17]
   17166375:
     template: Rafflesia
-    at:       [249.868, -28.137, 300.212, 109]
+    region:   ne_39
     level:    [49, 52]
   17166376:
     template: Rafflesia
-    at:       [259.336, -25.073, 329.728, 25]
+    region:   ne_39
     level:    [49, 52]
   17166377:
     template: Bumblebee
-    at:       [245.201, -28.800, 298.435, 43]
+    region:   ne_39
     level:    [15, 17]
   17166378:
     template: Bumblebee
-    at:       [239.385, -28.907, 307.662, 252]
+    region:   ne_39
     level:    [15, 17]
   17166379:
     template: Rafflesia
-    at:       [208.040, -29.832, 300.444, 77]
+    region:   ne_43
     level:    [49, 52]
   17166380:
     template: Rafflesia
-    at:       [184.915, -35.185, 319.309, 120]
+    region:   ne_43
     level:    [49, 52]
   17166381:
     template: Bumblebee
-    at:       [197.841, -36.130, 351.789, 108]
+    region:   ne_43
     level:    [15, 17]
   17166382:
     template: Bumblebee
-    at:       [216.755, -31.367, 330.852, 87]
+    region:   ne_43
     level:    [15, 17]
   17166383:
     template: Rafflesia
-    at:       [251.551, -27.222, 292.354, 206]
+    region:   e_47
     level:    [49, 52]
   17166384:
     template: Rafflesia
-    at:       [242.156, -21.347, 248.427, 72]
+    region:   e_47
     level:    [49, 52]
   17166385:
     template: Bumblebee
-    at:       [264.434, -24.126, 289.928, 136]
+    region:   e_47
     level:    [15, 17]
   17166386:
     template: Bumblebee
-    at:       [230.909, -28.793, 293.157, 40]
+    region:   e_47
     level:    [15, 17]
   17166387:
     template: Crawler
-    at:       [224.911, -17.792, 202.335, 135]
+    region:   e_51
     level:    [18, 21]
   17166388:
     template: Crawler
-    at:       [176.554, -21.039, 195.023, 130]
+    region:   e_52
     level:    [18, 21]
   17166389:
     template: Crawler
-    at:       [109.369, -21.638, 213.961, 206]
+    region:   c_53
     level:    [18, 21]
   17166390:
     template: Crawler
-    at:       [78.778, -23.439, 262.665, 215]
+    region:   c_53
     level:    [18, 21]
   17166391:
     template: Crawler
-    at:       [74.765, -24.381, 279.511, 233]
+    region:   c_53
     level:    [18, 21]
   17166392:
     template: Crawler
-    at:       [88.376, -19.799, 222.602, 242]
+    region:   c_53
     level:    [18, 21]
   17166393:
     template: Bumblebee
-    at:       [38.379, -15.196, 226.562, 173]
+    region:   c_53
     level:    [15, 17]
   17166394:
     template: Bumblebee
-    at:       [83.092, -24.834, 271.705, 246]
+    region:   c_53
     level:    [15, 17]
   17166395:
     template: Crawler
-    at:       [158.392, -21.297, 200.678, 91]
+    region:   e_52
     level:    [18, 21]
   17166396:
     template: Crawler
-    at:       [283.648, -17.085, 214.701, 174]
+    region:   e_52
     level:    [18, 21]
   17166397:
     template: Crawler
-    at:       [229.871, -16.902, 159.549, 159]
+    region:   e_52
     level:    [18, 21]
   17166398:
     template: Crawler
-    at:       [287.805, -16.367, 207.443, 231]
+    region:   e_52
     level:    [18, 21]
   17166399:
     template: Crawler
-    at:       [256.902, -22.071, 254.285, 8]
+    region:   e_63
     level:    [18, 21]
   17166400:
     template: Crawler
-    at:       [220.463, -29.022, 277.889, 151]
+    region:   e_63
     level:    [18, 21]
   17166401:
     template: Rafflesia
-    at:       [134.782, -30.848, 265.957, 24]
+    region:   c_65
     level:    [49, 52]
   17166402:
     template: Rafflesia
-    at:       [153.187, -38.743, 311.255, 75]
+    region:   c_65
     level:    [49, 52]
   17166403:
     template: Bumblebee
-    at:       [135.175, -33.579, 287.809, 190]
+    region:   c_65
     level:    [15, 17]
   17166404:
     template: Bumblebee
-    at:       [140.427, -31.993, 269.946, 157]
+    region:   c_65
     level:    [15, 17]
   17166405:
     template: Rafflesia
-    at:       [214.627, -25.502, 429.051, 251]
+    region:   n_69
     level:    [49, 52]
   17166406:
     template: Rafflesia
-    at:       [183.797, -31.723, 411.532, 199]
+    region:   n_69
     level:    [49, 52]
   17166407:
     template: Bumblebee
-    at:       [178.740, -32.818, 407.728, 118]
+    region:   n_69
     level:    [15, 17]
   17166408:
     template: Bumblebee
-    at:       [119.732, -31.640, 375.131, 118]
+    region:   n_69
     level:    [15, 17]
   17166409:
     template: Rafflesia
-    at:       [188.536, -24.977, 450.603, 121]
+    region:   n_73
     level:    [49, 52]
   17166410:
     template: Rafflesia
-    at:       [193.663, -23.316, 456.139, 204]
+    region:   n_73
     level:    [49, 52]
   17166411:
     template: Bumblebee
-    at:       [175.564, -21.099, 484.959, 125]
+    region:   n_73
     level:    [15, 17]
   17166412:
     template: Bumblebee
-    at:       [131.206, -21.095, 483.322, 167]
+    region:   n_73
     level:    [15, 17]
   17166413:
     template: Rafflesia
-    at:       [157.247, -39.516, 370.755, 131]
+    region:   n_77
     level:    [49, 52]
   17166414:
     template: Rafflesia
-    at:       [137.977, -38.413, 324.337, 48]
+    region:   n_77
     level:    [49, 52]
   17166415:
     template: Rafflesia
-    at:       [141.416, -36.696, 361.771, 187]
+    region:   n_77
     level:    [49, 52]
   17166416:
     template: Rafflesia
-    at:       [162.816, -40.049, 352.410, 106]
+    region:   n_77
     level:    [49, 52]
   17166417:
     template: Bumblebee
-    at:       [150.076, -39.507, 360.586, 14]
+    region:   n_77
     level:    [15, 17]
   17166418:
     template: Bumblebee
-    at:       [131.552, -37.419, 327.563, 168]
+    region:   n_77
     level:    [15, 17]
   17166419:
     template: Bumblebee
-    at:       [161.502, -40.011, 352.426, 73]
+    region:   n_77
     level:    [15, 17]
   17166420:
     template: Savanna_Rarab
-    at:       [-70.089, -13.543, 252.334, 50]
+    region:   c_84
     level:    [12, 15]
   17166421:
     template: Savanna_Rarab
-    at:       [-28.745, -11.075, 213.830, 76]
+    region:   c_84
     level:    [12, 15]
   17166422:
     template: Savanna_Rarab
-    at:       [-35.804, -10.645, 212.079, 108]
+    region:   c_84
     level:    [12, 15]
   17166423:
     template: Carrion_Crow
-    at:       [-47.257, -9.426, 164.562, 166]
+    region:   c_87
     level:    [22, 25]
   17166424:
     template: Carrion_Crow
-    at:       [-46.417, -9.234, 163.852, 28]
+    region:   c_87
     level:    [22, 25]
   17166425:
     template: Carrion_Crow
-    at:       [-37.883, -9.271, 203.078, 49]
+    region:   c_87
     level:    [22, 25]
   17166426:
     template: Carrion_Crow
-    at:       [-41.760, -8.677, 194.029, 114]
+    region:   c_87
     level:    [22, 25]
   17166427:
     template: Carrion_Crow
-    at:       [-21.937, -9.067, 168.752, 23]
+    region:   c_87
     level:    [22, 25]
   17166428:
     template: Savanna_Rarab
-    at:       [-90.467, -11.214, 218.618, 175]
+    region:   c_92
     level:    [12, 15]
   17166429:
     template: Savanna_Rarab
-    at:       [-77.661, -11.900, 231.063, 208]
+    region:   c_92
     level:    [12, 15]
   17166430:
     template: Savanna_Rarab
-    at:       [-78.584, -13.131, 244.784, 221]
+    region:   c_92
     level:    [12, 15]
   17166431:
     template: Goblin_Patrolman
-    at:       [-46.425, -6.082, 35.321, 36]
+    region:   c_95
     level:    [56, 59]
   17166432:
     template: Goblins_Rarab
-    at:       [-34.041, -5.717, 50.067, 246]
+    region:   c_95
     level:    [51, 54]
   17166433:
     template: Goblin_Draftee
-    at:       [-35.070, -5.097, 39.796, 51]
+    region:   c_95
     level:    [56, 59]
   17166434:
     template: Rafflesia
-    at:       [-108.912, -20.731, 194.254, 32]
+    region:   c_98
     level:    [49, 52]
   17166435:
     template: Rafflesia
-    at:       [-117.394, -22.022, 215.702, 87]
+    region:   c_98
     level:    [49, 52]
   17166436:
     template: Bumblebee
-    at:       [-109.894, -21.995, 220.727, 185]
+    region:   c_98
     level:    [15, 17]
   17166437:
     template: Bumblebee
-    at:       [-106.563, -19.932, 209.735, 9]
+    region:   c_98
     level:    [15, 17]
   17166438:
     template: Rafflesia
-    at:       [-120.387, -20.871, 159.806, 174]
+    region:   c_102
     level:    [49, 52]
   17166439:
     template: Rafflesia
-    at:       [-77.448, -21.171, 139.706, 243]
+    region:   c_102
     level:    [49, 52]
   17166440:
     template: Bumblebee
-    at:       [-117.503, -22.826, 138.973, 176]
+    region:   c_102
     level:    [15, 17]
   17166441:
     template: Belladonna
-    at:       [-104.000, -22.000, 175.000, 158]
+    region:   c_102
     level:    [53, 54]
   17166442:
     template: Rafflesia
-    at:       [-83.263, -20.689, 92.789, 162]
+    region:   c_106
     level:    [49, 52]
   17166443:
     template: Rafflesia
-    at:       [-82.637, -20.908, 97.222, 116]
+    region:   c_106
     level:    [49, 52]
   17166444:
     template: Bumblebee
-    at:       [-79.085, -20.089, 83.702, 59]
+    region:   c_106
     level:    [15, 17]
   17166445:
     template: Bumblebee
-    at:       [-77.145, -19.921, 77.970, 7]
+    region:   c_106
     level:    [15, 17]
   17166446:
     template: Rafflesia
-    at:       [-74.901, -16.903, -11.716, 75]
+    region:   c_110
     level:    [49, 52]
   17166447:
     template: Rafflesia
-    at:       [-81.174, -16.160, -35.776, 254]
+    region:   c_110
     level:    [49, 52]
   17166448:
     template: Rafflesia
-    at:       [-75.818, -17.330, 15.630, 200]
+    region:   c_110
     level:    [49, 52]
   17166449:
     template: Bumblebee
-    at:       [-84.533, -17.085, -15.615, 234]
+    region:   c_110
     level:    [15, 17]
   17166450:
     template: Bumblebee
-    at:       [-90.661, -17.182, -47.397, 52]
+    region:   c_110
     level:    [15, 17]
   17166451:
     template: Rafflesia
-    at:       [-85.937, -16.571, -75.554, 230]
+    region:   s_115
     level:    [49, 52]
   17166452:
     template: Rafflesia
-    at:       [-153.329, -17.683, -100.407, 167]
+    region:   s_115
     level:    [49, 52]
   17166453:
     template: Rafflesia
-    at:       [-149.197, -17.033, -110.070, 227]
+    region:   s_115
     level:    [49, 52]
   17166454:
     template: Bumblebee
-    at:       [-160.464, -17.423, -105.947, 9]
+    region:   s_115
     level:    [15, 17]
   17166455:
     template: Bumblebee
-    at:       [-149.345, -17.749, -102.836, 185]
+    region:   s_115
     level:    [15, 17]
   17166456:
     template: Bumblebee
-    at:       [-165.568, -17.462, -107.579, 120]
+    region:   s_115
     level:    [15, 17]
   17166457:
     template: Tiny_Lycopodium
-    at:       [309.203, -4.960, -3.027, 149]
+    region:   e_121
     level:    [10, 12]
   17166458:
     template: Tiny_Lycopodium
-    at:       [334.591, -4.683, -10.396, 122]
+    region:   e_121
     level:    [10, 12]
   17166459:
     template: Tiny_Lycopodium
-    at:       [314.982, -5.095, 8.200, 140]
+    region:   e_121
     level:    [10, 12]
   17166460:
     template: Tiny_Lycopodium
-    at:       [336.896, -5.772, 3.023]
+    region:   e_121
     level:    [10, 12]
   17166461:
     template: Tiny_Lycopodium
-    at:       [336.981, -5.707, 2.860, 249]
+    region:   e_121
     level:    [10, 12]
   17166462:
     template: Tiny_Lycopodium
-    at:       [333.415, -5.004, -18.230, 250]
+    region:   e_121
     level:    [10, 12]
   17166463:
     template: Tiny_Lycopodium
-    at:       [350.184, -4.743, 5.131, 154]
+    region:   e_127
     level:    [10, 12]
   17166464:
     template: Tiny_Lycopodium
-    at:       [368.878, -4.948, 27.384, 32]
+    region:   e_127
     level:    [10, 12]
   17166465:
     template: Tiny_Lycopodium
-    at:       [362.415, -4.705, 44.257, 127]
+    region:   e_127
     level:    [10, 12]
   17166466:
     template: Tiny_Lycopodium
-    at:       [377.650, -5.344, 25.892, 40]
+    region:   e_127
     level:    [10, 12]
   17166467:
     template: Tiny_Lycopodium
-    at:       [373.373, -4.832, 35.817, 5]
+    region:   e_127
     level:    [10, 12]
   17166468:
     template: Carrion_Crow
-    at:       [401.530, -4.570, 82.397, 29]
+    region:   e_132
     level:    [22, 25]
   17166469:
     template: Carrion_Crow
-    at:       [388.449, -5.206, 120.018, 83]
+    region:   e_132
     level:    [22, 25]
   17166470:
     template: Carrion_Crow
-    at:       [359.014, -4.656, 106.696, 202]
+    region:   e_134
     level:    [22, 25]
   17166471:
     template: Carrion_Crow
-    at:       [347.190, -4.949, 118.452, 213]
+    region:   e_134
     level:    [22, 25]
   17166472:
     template: Tiny_Lycopodium
-    at:       [317.413, -4.166, 84.001, 101]
+    region:   e_134
     level:    [10, 12]
   17166473:
     template: Tiny_Lycopodium
-    at:       [340.299, -5.167, 126.157, 251]
+    region:   e_134
     level:    [10, 12]
   17166474:
     template: Tiny_Lycopodium
-    at:       [336.756, -4.785, 70.410, 94]
+    region:   e_134
     level:    [10, 12]
   17166475:
     template: Tiny_Lycopodium
-    at:       [323.826, -4.428, 90.012, 93]
+    region:   e_134
     level:    [10, 12]
   17166476:
     template: Tiny_Lycopodium
-    at:       [297.496, -5.377, 63.636, 2]
+    region:   e_140
     level:    [10, 12]
   17166477:
     template: Tiny_Lycopodium
-    at:       [290.906, -5.423, 22.029, 250]
+    region:   e_140
     level:    [10, 12]
   17166478:
     template: Tiny_Lycopodium
-    at:       [328.349, -5.503, 32.406, 244]
+    region:   e_140
     level:    [10, 12]
   17166479:
     template: Tiny_Lycopodium
-    at:       [291.584, -5.220, 26.804, 152]
+    region:   e_140
     level:    [10, 12]
   17166480:
     template: Tiny_Lycopodium
-    at:       [294.802, -5.150, 67.300, 90]
+    region:   e_140
     level:    [10, 12]
   17166481:
     template: Savanna_Rarab
-    at:       [293.545, -5.436, 13.549, 14]
+    region:   e_140
     level:    [12, 15]
   17166482:
     template: Savanna_Rarab
-    at:       [280.712, -4.755, 12.477, 85]
+    region:   e_140
     level:    [12, 15]
   17166483:
     template: Goblin_Franctireur
-    at:       [320.241, -20.158, 276.448, 34]
+    region:   e_147
     level:    [56, 59]
   17166484:
     template: Goblin_Patrolman
-    at:       [318.180, -20.108, 276.078, 162]
+    region:   e_147
     level:    [56, 59]
   17166485:
     template: Goblins_Rarab
-    at:       [321.832, -19.243, 265.450, 44]
+    region:   e_147
     level:    [51, 54]
   17166486:
     template: Goblin_Franctireur
-    at:       [338.630, -18.626, 393.682, 116]
+    region:   ne_150
     level:    [56, 59]
   17166487:
     template: Goblin_Draftee
-    at:       [322.851, -17.076, 385.027, 147]
+    region:   ne_150
     level:    [56, 59]
   17166488:
     template: Goblin_Patrolman
-    at:       [361.327, -20.363, 393.591, 89]
+    region:   ne_150
     level:    [56, 59]
   17166489:
     template: Goblins_Rarab
-    at:       [318.630, -17.221, 372.200, 127]
+    region:   ne_150
     level:    [51, 54]
   17166490:
     template: Savanna_Rarab
-    at:       [185.155, -3.326, -39.427, 197]
+    region:   e_154
     level:    [12, 15]
   17166491:
     template: Savanna_Rarab
-    at:       [171.470, -2.354, -24.172, 5]
+    region:   e_154
     level:    [12, 15]
   17166492:
     template: Savanna_Rarab
-    at:       [167.405, -4.964, 104.279, 159]
+    region:   e_156
     level:    [12, 15]
   17166493:
     template: Savanna_Rarab
-    at:       [233.855, -5.500, 122.855, 121]
+    region:   e_156
     level:    [12, 15]
   17166494:
     template: Crawler
-    at:       [221.208, -5.256, 98.642, 39]
+    region:   e_156
     level:    [18, 21]
   17166495:
     template: Crawler
-    at:       [214.095, -4.301, 110.411, 94]
+    region:   e_156
     level:    [18, 21]
   17166496:
     template: Tiny_Lycopodium
-    at:       [207.235, -4.714, 72.002, 2]
+    region:   e_156
     level:    [10, 12]
   17166497:
     template: Tiny_Lycopodium
-    at:       [214.182, -4.306, 111.592, 92]
+    region:   e_156
     level:    [10, 12]
   17166498:
     template: Tiny_Lycopodium
-    at:       [242.295, -4.542, 117.681, 104]
+    region:   e_156
     level:    [10, 12]
   17166499:
     template: Crawler
-    at:       [62.831, -5.001, 82.025, 17]
+    region:   c_163
     level:    [18, 21]
   17166500:
     template: Crawler
-    at:       [102.766, -7.271, 101.872, 31]
+    region:   c_163
     level:    [18, 21]
   17166501:
     template: Crawler
-    at:       [79.868, -9.199, 146.532, 134]
+    region:   c_163
     level:    [18, 21]
   17166502:
     template: Carrion_Crow
-    at:       [97.687, -7.656, 108.653, 148]
+    region:   c_166
     level:    [22, 25]
   17166503:
     template: Carrion_Crow
-    at:       [72.243, -8.832, 125.457, 229]
+    region:   c_166
     level:    [22, 25]
   17166504:
     template: Carrion_Crow
-    at:       [60.339, -5.110, 90.487, 191]
+    region:   c_166
     level:    [22, 25]
   17166505:
     template: Carrion_Crow
-    at:       [86.175, -7.091, 108.729, 196]
+    region:   c_166
     level:    [22, 25]
   17166506:
     template: Tiny_Lycopodium
-    at:       [78.273, -0.402, 6.796, 185]
+    region:   c_170
     level:    [10, 12]
   17166507:
     template: Tiny_Lycopodium
-    at:       [90.254, -0.646, 21.601, 19]
+    region:   c_170
     level:    [10, 12]
   17166508:
     template: Tiny_Lycopodium
-    at:       [102.762, -0.974, -26.775, 21]
+    region:   c_170
     level:    [10, 12]
   17166509:
     template: Savanna_Rarab
-    at:       [106.005, -0.868, -39.354, 67]
+    region:   c_170
     level:    [12, 15]
   17166510:
     template: Savanna_Rarab
-    at:       [118.204, -1.307, -17.025, 160]
+    region:   c_170
     level:    [12, 15]
   17166511:
     template: Carrion_Crow
-    at:       [91.247, -0.647, 7.546, 145]
+    region:   c_175
     level:    [22, 25]
   17166512:
     template: Carrion_Crow
-    at:       [99.764, -0.239, 18.990, 38]
+    region:   c_175
     level:    [22, 25]
   17166513:
     template: Carrion_Crow
-    at:       [130.648, -1.824, -3.539, 5]
+    region:   c_175
     level:    [22, 25]
   17166514:
     template: Carrion_Crow
-    at:       [60.409, -0.884, 35.148, 71]
+    region:   c_175
     level:    [22, 25]
   17166515:
     template: Crawler
-    at:       [137.133, -20.644, 195.625, 192]
+    region:   c_179
     level:    [18, 21]
   17166516:
     template: Crawler
-    at:       [87.010, -17.655, 214.434, 251]
+    region:   c_179
     level:    [18, 21]
   17166517:
     template: Crawler
-    at:       [124.250, -15.042, 166.547, 249]
+    region:   c_179
     level:    [18, 21]
   17166518:
     template: Savanna_Rarab
-    at:       [38.815, -12.468, 198.951, 105]
+    region:   c_182
     level:    [12, 15]
   17166519:
     template: Savanna_Rarab
-    at:       [-1.117, -9.839, 211.249, 161]
+    region:   c_182
     level:    [12, 15]
   17166520:
     template: Savanna_Rarab
-    at:       [7.766, -9.384, 206.367, 128]
+    region:   c_182
     level:    [12, 15]
   17166521:
     template: Savanna_Rarab
-    at:       [31.914, -14.602, 218.554, 55]
+    region:   c_182
     level:    [12, 15]
   17166522:
     template: Savanna_Rarab
-    at:       [112.501, -0.480, -87.142, 1]
+    region:   c_186
     level:    [12, 15]
   17166523:
     template: Savanna_Rarab
-    at:       [64.831, -0.814, -86.178, 224]
+    region:   c_186
     level:    [12, 15]
   17166524:
     template: Savanna_Rarab
-    at:       [82.032, -1.070, -139.780, 64]
+    region:   s_188
     level:    [12, 15]
   17166525:
     template: Savanna_Rarab
-    at:       [83.192, -0.689, -108.847, 219]
+    region:   s_188
     level:    [12, 15]
   17166526:
     template: Carrion_Crow
-    at:       [99.633, -1.157, -127.028, 176]
+    region:   s_190
     level:    [22, 25]
   17166527:
     template: Carrion_Crow
-    at:       [52.156, -0.937, -111.461, 242]
+    region:   s_190
     level:    [22, 25]
   17166528:
     template: Savanna_Rarab
-    at:       [36.899, -0.332, -155.857, 60]
+    region:   s_192
     level:    [12, 15]
   17166529:
     template: Savanna_Rarab
-    at:       [72.755, -0.763, -165.294, 77]
+    region:   s_192
     level:    [12, 15]
   17166530:
     template: Savanna_Rarab
-    at:       [47.235, -0.459, -202.054, 45]
+    region:   s_194
     level:    [12, 15]
   17166531:
     template: Savanna_Rarab
-    at:       [43.693, -0.510, -238.787, 36]
+    region:   s_194
     level:    [12, 15]
   17166532:
     template: Carrion_Crow
-    at:       [74.113, -0.621, -237.314, 126]
+    region:   s_196
     level:    [22, 25]
   17166533:
     template: Carrion_Crow
-    at:       [67.743, -0.800, -244.269, 85]
+    region:   s_196
     level:    [22, 25]
   17166534:
     template: Carrion_Crow
-    at:       [46.045, -0.328, -320.700, 71]
+    region:   s_198
     level:    [22, 25]
   17166535:
     template: Carrion_Crow
-    at:       [57.031, -0.850, -291.996, 125]
+    region:   s_198
     level:    [22, 25]
   17166536:
     template: Tiny_Lycopodium
-    at:       [126.048, -0.399, -317.113, 164]
+    region:   s_200
     level:    [10, 12]
   17166537:
     template: Tiny_Lycopodium
-    at:       [100.058, -1.248, -317.632, 246]
+    region:   s_200
     level:    [10, 12]
   17166538:
     template: Tiny_Lycopodium
-    at:       [106.347, -1.642, -304.204, 117]
+    region:   s_200
     level:    [10, 12]
   17166539:
     template: Tiny_Lycopodium
-    at:       [126.903, -0.449, -324.067, 45]
+    region:   s_200
     level:    [10, 12]
   17166540:
     template: Tiny_Lycopodium
-    at:       [100.750, -1.485, -294.734, 103]
+    region:   s_200
     level:    [10, 12]
   17166541:
     template: Tiny_Lycopodium
-    at:       [136.297, -1.141, -321.147, 191]
+    region:   s_200
     level:    [10, 12]
   17166542:
     template: Tiny_Lycopodium
-    at:       [113.797, -0.800, -310.342, 125]
+    region:   s_200
     level:    [10, 12]
   17166543:
     template: Jeduah
@@ -5025,127 +5025,127 @@ spawns:
     level:    [17, 18]
   17166544:
     template: Crawler
-    at:       [85.407, -0.931, -261.157, 244]
+    region:   s_208
     level:    [18, 21]
   17166545:
     template: Crawler
-    at:       [62.130, -0.793, -247.254, 91]
+    region:   s_208
     level:    [18, 21]
   17166546:
     template: Crawler
-    at:       [79.336, -0.897, -297.883, 220]
+    region:   s_208
     level:    [18, 21]
   17166547:
     template: River_Crab
-    at:       [115.611, 1.767, -426.561, 126]
+    region:   s_211
     level:    [22, 25]
   17166548:
     template: River_Crab
-    at:       [49.042, 0.430, -448.849, 235]
+    region:   s_211
     level:    [22, 25]
   17166549:
     template: River_Crab
-    at:       [9.873, -1.300, -446.172, 35]
+    region:   s_211
     level:    [22, 25]
   17166550:
     template: River_Crab
-    at:       [86.889, 3.826, -467.615, 86]
+    region:   s_214
     level:    [22, 25]
   17166551:
     template: River_Crab
-    at:       [91.904, 4.752, -459.995, 124]
+    region:   s_214
     level:    [22, 25]
   17166552:
     template: River_Crab
-    at:       [108.335, 6.999, -459.502, 132]
+    region:   s_214
     level:    [22, 25]
   17166553:
     template: River_Crab
-    at:       [106.614, 6.693, -459.316, 132]
+    region:   s_214
     level:    [22, 25]
   17166554:
     template: Crawler
-    at:       [50.866, -0.906, -353.056, 2]
+    region:   s_218
     level:    [18, 21]
   17166555:
     template: Crawler
-    at:       [8.398, -0.450, -358.464, 128]
+    region:   s_218
     level:    [18, 21]
   17166556:
     template: Savanna_Rarab
-    at:       [13.134, -0.729, -400.448, 233]
+    region:   s_218
     level:    [12, 15]
   17166557:
     template: Savanna_Rarab
-    at:       [44.192, -0.185, -360.308, 61]
+    region:   s_218
     level:    [12, 15]
   17166558:
     template: Crawler
-    at:       [-81.758, -4.805, -211.323, 32]
+    region:   s_222
     level:    [18, 21]
   17166559:
     template: Crawler
-    at:       [-47.485, -4.742, -212.030, 158]
+    region:   s_222
     level:    [18, 21]
   17166560:
     template: Crawler
-    at:       [-23.674, -3.703, -219.254, 215]
+    region:   s_222
     level:    [18, 21]
   17166561:
     template: Savanna_Rarab
-    at:       [-78.728, -4.752, -211.494, 159]
+    region:   s_222
     level:    [12, 15]
   17166562:
     template: Savanna_Rarab
-    at:       [-85.857, -4.623, -208.056, 180]
+    region:   s_222
     level:    [12, 15]
   17166563:
     template: Hispid_Rarab
-    at:       [-126.455, -4.205, -404.465, 121]
+    region:   s_227
     level:    [92, 93]
   17166564:
     template: Hispid_Rarab
-    at:       [-23.463, -3.406, -347.662, 193]
+    region:   s_227
     level:    [92, 93]
   17166565:
     template: Hispid_Rarab
-    at:       [-52.279, -4.990, -379.810, 166]
+    region:   s_227
     level:    [92, 93]
   17166566:
     template: Hispid_Rarab
-    at:       [-91.691, -5.096, -376.436, 97]
+    region:   s_227
     level:    [92, 93]
   17166567:
     template: Hispid_Rarab
-    at:       [-139.916, -2.032, -385.243, 139]
+    region:   s_227
     level:    [92, 93]
   17166568:
     template: Hispid_Rarab
-    at:       [-73.702, -4.536, -362.804, 60]
+    region:   s_227
     level:    [92, 93]
   17166569:
     template: Hispid_Rarab
-    at:       [-25.057, -3.005, -354.573, 56]
+    region:   s_227
     level:    [92, 93]
   17166570:
     template: Hispid_Rarab
-    at:       [-125.285, -4.123, -363.062, 22]
+    region:   s_227
     level:    [92, 93]
   17166571:
     template: Hispid_Rarab
-    at:       [-143.522, -2.071, -381.868, 86]
+    region:   s_227
     level:    [92, 93]
   17166572:
     template: Hispid_Rarab
-    at:       [-117.274, -4.965, -376.062, 131]
+    region:   s_227
     level:    [92, 93]
   17166573:
     template: Hispid_Rarab
-    at:       [-137.692, -2.432, -385.675, 239]
+    region:   s_227
     level:    [92, 93]
   17166574:
     template: Hispid_Rarab
-    at:       [-91.575, -4.495, -364.763, 248]
+    region:   s_227
     level:    [92, 93]
   17166575:
     template: Hispid_Rarab
@@ -5161,363 +5161,363 @@ spawns:
     level:    [92, 93]
   17166578:
     template: Goblin_Franctireur
-    at:       [-98.864, -5.114, -197.702, 56]
+    region:   s_242
     level:    [56, 59]
   17166579:
     template: Goblin_Patrolman
-    at:       [-158.721, -5.084, -212.104, 65]
+    region:   s_242
     level:    [56, 59]
   17166580:
     template: Goblins_Rarab
-    at:       [-115.860, -4.324, -208.121, 49]
+    region:   s_242
     level:    [51, 54]
   17166581:
     template: Goblin_Draftee
-    at:       [-125.210, -4.966, -187.453, 179]
+    region:   s_242
     level:    [56, 59]
   17166582:
     template: Hispid_Rarab
-    at:       [-204.234, -0.303, -360.840, 1]
+    region:   sw_246
     level:    [92, 93]
   17166583:
     template: Hispid_Rarab
-    at:       [-223.344, -1.094, -385.846, 123]
+    region:   sw_246
     level:    [92, 93]
   17166584:
     template: Hispid_Rarab
-    at:       [-227.261, -1.230, -398.522, 97]
+    region:   sw_246
     level:    [92, 93]
   17166585:
     template: Hispid_Rarab
-    at:       [-209.441, -1.078, -390.859, 42]
+    region:   sw_246
     level:    [92, 93]
   17166586:
     template: Hispid_Rarab
-    at:       [-202.897, -0.426, -405.109, 15]
+    region:   sw_246
     level:    [92, 93]
   17166587:
     template: Hispid_Rarab
-    at:       [-206.470, -0.320, -349.955, 47]
+    region:   sw_246
     level:    [92, 93]
   17166588:
     template: Hispid_Rarab
-    at:       [-233.740, -0.930, -389.546, 128]
+    region:   sw_246
     level:    [92, 93]
   17166589:
     template: Hispid_Rarab
-    at:       [-220.611, -1.106, -358.789, 33]
+    region:   sw_246
     level:    [92, 93]
   17166590:
     template: Hispid_Rarab
-    at:       [-220.330, -1.039, -364.393, 221]
+    region:   sw_246
     level:    [92, 93]
   17166591:
     template: Hispid_Rarab
-    at:       [-235.947, -0.592, -392.174, 178]
+    region:   sw_246
     level:    [92, 93]
   17166592:
     template: Hispid_Rarab
-    at:       [-172.498, -1.347, -433.560, 250]
+    region:   sw_256
     level:    [92, 93]
   17166593:
     template: Hispid_Rarab
-    at:       [-203.738, -0.563, -426.855, 175]
+    region:   sw_256
     level:    [92, 93]
   17166594:
     template: Hispid_Rarab
-    at:       [-226.878, 2.276, -452.629, 81]
+    region:   sw_256
     level:    [92, 93]
   17166595:
     template: Hispid_Rarab
-    at:       [-168.092, -1.062, -434.012, 162]
+    region:   sw_256
     level:    [92, 93]
   17166596:
     template: Hispid_Rarab
-    at:       [-231.416, 2.466, -436.393, 187]
+    region:   sw_256
     level:    [92, 93]
   17166597:
     template: River_Crab
-    at:       [-298.542, 5.655, -454.566, 42]
+    region:   sw_261
     level:    [22, 25]
   17166598:
     template: River_Crab
-    at:       [-376.279, 7.021, -432.049, 148]
+    region:   sw_261
     level:    [22, 25]
   17166599:
     template: River_Crab
-    at:       [-340.257, 5.810, -454.460, 250]
+    region:   sw_261
     level:    [22, 25]
   17166600:
     template: River_Crab
-    at:       [-351.568, 4.801, -451.501, 150]
+    region:   sw_261
     level:    [22, 25]
   17166601:
     template: River_Crab
-    at:       [-375.622, 7.017, -432.803, 165]
+    region:   sw_265
     level:    [22, 25]
   17166602:
     template: River_Crab
-    at:       [-365.770, 4.257, -406.110, 202]
+    region:   sw_265
     level:    [22, 25]
   17166603:
     template: River_Crab
-    at:       [-360.419, 3.177, -385.212, 12]
+    region:   sw_265
     level:    [22, 25]
   17166604:
     template: River_Crab
-    at:       [-386.003, 6.755, -379.386, 127]
+    region:   sw_265
     level:    [22, 25]
   17166605:
     template: River_Crab
-    at:       [-368.270, 5.038, -413.981, 83]
+    region:   sw_269
     level:    [22, 25]
   17166606:
     template: River_Crab
-    at:       [-305.850, 2.598, -416.801, 95]
+    region:   sw_269
     level:    [22, 25]
   17166607:
     template: River_Crab
-    at:       [-299.094, 2.408, -420.050, 134]
+    region:   sw_269
     level:    [22, 25]
   17166608:
     template: River_Crab
-    at:       [-281.024, 2.942, -384.258, 154]
+    region:   sw_269
     level:    [22, 25]
   17166609:
     template: Savanna_Rarab
-    at:       [-265.910, 0.050, -295.267, 102]
+    region:   sw_273
     level:    [12, 15]
   17166610:
     template: Savanna_Rarab
-    at:       [-260.743, -1.451, -308.603, 5]
+    region:   sw_273
     level:    [12, 15]
   17166611:
     template: Savanna_Rarab
-    at:       [-291.680, -0.725, -318.792, 132]
+    region:   sw_273
     level:    [12, 15]
   17166612:
     template: Crawler
-    at:       [-258.270, -1.269, -293.680, 205]
+    region:   sw_273
     level:    [18, 21]
   17166613:
     template: Crawler
-    at:       [-274.547, -0.597, -247.602, 194]
+    region:   sw_273
     level:    [18, 21]
   17166614:
     template: Crawler
-    at:       [-342.672, -1.754, -307.770, 147]
+    region:   sw_273
     level:    [18, 21]
   17166615:
     template: Carrion_Crow
-    at:       [-248.115, -0.982, -246.336, 50]
+    region:   sw_279
     level:    [22, 25]
   17166616:
     template: Carrion_Crow
-    at:       [-228.686, -0.834, -281.954, 149]
+    region:   sw_279
     level:    [22, 25]
   17166617:
     template: Carrion_Crow
-    at:       [-219.040, -1.279, -243.227, 14]
+    region:   sw_281
     level:    [22, 25]
   17166618:
     template: Carrion_Crow
-    at:       [-205.741, -0.519, -235.834, 1]
+    region:   sw_281
     level:    [22, 25]
   17166619:
     template: Savanna_Rarab
-    at:       [-238.592, -0.879, -258.254, 234]
+    region:   sw_283
     level:    [12, 15]
   17166620:
     template: Savanna_Rarab
-    at:       [-220.896, -1.336, -248.586, 232]
+    region:   sw_283
     level:    [12, 15]
   17166621:
     template: Crawler
-    at:       [-260.432, -1.241, -238.225, 208]
+    region:   sw_283
     level:    [18, 21]
   17166622:
     template: Crawler
-    at:       [-226.956, -1.118, -285.434, 236]
+    region:   sw_283
     level:    [18, 21]
   17166623:
     template: Crawler
-    at:       [-133.614, -5.276, -269.846, 164]
+    region:   s_287
     level:    [18, 21]
   17166624:
     template: Crawler
-    at:       [-188.406, -1.534, -242.522, 183]
+    region:   s_287
     level:    [18, 21]
   17166625:
     template: Bumblebee
-    at:       [-119.180, -5.104, -143.923, 225]
+    region:   s_289
     level:    [15, 17]
   17166626:
     template: Bumblebee
-    at:       [-105.284, -5.314, -141.335, 214]
+    region:   s_289
     level:    [15, 17]
   17166627:
     template: Yagudo_Mendicant_past
     script:   Yagudo_Mendicant
-    at:       [-331.699, -20.811, 199.732, 131]
+    region:   w_291
     level:    [61, 64]
   17166628:
     template: Yagudos_Elemental
-    at:       [-328.101, -20.756, 196.334, 65]
+    region:   w_291
     level:    [56, 58]
   17166629:
     template: Yagudo_Piper_past
     script:   Yagudo_Piper
-    at:       [-337.323, -21.259, 200.971, 16]
+    region:   w_291
     level:    [61, 64]
   17166630:
     template: Yagudo_Scribe_past
     script:   Yagudo_Scribe
-    at:       [-337.183, -21.036, 233.544, 151]
+    region:   w_294
     level:    [61, 64]
   17166631:
     template: Yagudo_Acolyte_past
     script:   Yagudo_Acolyte
-    at:       [-349.383, -20.636, 238.916, 102]
+    region:   w_294
     level:    [61, 64]
   17166632:
     template: Yagudo_Initiate_past
     script:   Yagudo_Initiate
-    at:       [-311.114, -19.156, 257.578, 241]
+    region:   w_296
     level:    [61, 64]
   17166633:
     template: Yagudo_Mendicant_past
     script:   Yagudo_Mendicant
-    at:       [-297.157, -20.288, 261.601, 12]
+    region:   w_296
     level:    [61, 64]
   17166634:
     template: Yagudos_Elemental
-    at:       [-299.069, -20.033, 259.091, 8]
+    region:   w_298
     level:    [56, 58]
   17166635:
     template: Yagudo_Initiate_past
     script:   Yagudo_Initiate
-    at:       [-337.034, -17.060, 286.911, 128]
+    region:   w_299
     level:    [61, 64]
   17166636:
     template: Yagudo_Piper_past
     script:   Yagudo_Piper
-    at:       [-339.432, -16.989, 275.295, 106]
+    region:   w_299
     level:    [61, 64]
   17166637:
     template: Yagudo_Scribe_past
     script:   Yagudo_Scribe
-    at:       [-278.279, -19.480, 331.214, 178]
+    region:   nw_301
     level:    [61, 64]
   17166638:
     template: Yagudo_Mendicant_past
     script:   Yagudo_Mendicant
-    at:       [-271.674, -19.549, 333.201, 215]
+    region:   nw_301
     level:    [61, 64]
   17166639:
     template: Yagudos_Elemental
-    at:       [-271.859, -19.873, 331.357, 207]
+    region:   nw_301
     level:    [56, 58]
   17166640:
     template: Yagudo_Acolyte_past
     script:   Yagudo_Acolyte
-    at:       [-353.183, -16.588, 320.392, 131]
+    region:   nw_304
     level:    [61, 64]
   17166641:
     template: Yagudo_Piper_past
     script:   Yagudo_Piper
-    at:       [-359.921, -16.588, 321.250, 11]
+    region:   nw_304
     level:    [61, 64]
   17166642:
     template: Yagudo_Initiate_past
     script:   Yagudo_Initiate
-    at:       [-317.673, -16.595, 368.276, 43]
+    region:   nw_306
     level:    [61, 64]
   17166643:
     template: Yagudo_Scribe_past
     script:   Yagudo_Scribe
-    at:       [-316.446, -16.560, 369.515, 64]
+    region:   nw_306
     level:    [61, 64]
   17166644:
     template: Yagudo_Acolyte_past
     script:   Yagudo_Acolyte
-    at:       [-306.319, -17.305, 385.827, 233]
+    region:   nw_308
     level:    [61, 64]
   17166645:
     template: Yagudo_Mendicant_past
     script:   Yagudo_Mendicant
-    at:       [-304.230, -17.400, 393.276, 53]
+    region:   nw_308
     level:    [61, 64]
   17166646:
     template: Yagudos_Elemental
-    at:       [-304.285, -17.360, 395.428, 44]
+    region:   nw_308
     level:    [56, 58]
   17166647:
     template: Savanna_Rarab
-    at:       [-114.699, -16.595, 329.027, 87]
+    region:   n_311
     level:    [12, 15]
   17166648:
     template: Savanna_Rarab
-    at:       [-181.636, -17.259, 404.911, 197]
+    region:   n_311
     level:    [12, 15]
   17166649:
     template: Savanna_Rarab
-    at:       [-148.694, -16.819, 374.948, 100]
+    region:   n_311
     level:    [12, 15]
   17166650:
     template: Savanna_Rarab
-    at:       [-178.312, -17.191, 350.955, 177]
+    region:   n_311
     level:    [12, 15]
   17166651:
     template: Bumblebee
-    at:       [-167.842, -16.860, 373.827, 222]
+    region:   n_311
     level:    [15, 17]
   17166652:
     template: Bumblebee
-    at:       [-154.394, -16.592, 325.594, 51]
+    region:   n_311
     level:    [15, 17]
   17166653:
     template: Bumblebee
-    at:       [-195.358, -17.030, 369.676, 15]
+    region:   n_311
     level:    [15, 17]
   17166654:
     template: Bumblebee
-    at:       [-217.116, -17.334, 409.619, 223]
+    region:   n_311
     level:    [15, 17]
   17166655:
     template: Rafflesia
-    at:       [-255.878, -29.788, 479.075, 208]
+    region:   nw_319
     level:    [49, 52]
   17166656:
     template: Rafflesia
-    at:       [-258.237, -30.549, 486.803, 69]
+    region:   nw_319
     level:    [49, 52]
   17166657:
     template: Bumblebee
-    at:       [-258.186, -30.837, 489.182, 172]
+    region:   nw_319
     level:    [15, 17]
   17166658:
     template: Rafflesia
-    at:       [-309.013, -29.278, 468.865, 229]
+    region:   nw_322
     level:    [49, 52]
   17166659:
     template: Rafflesia
-    at:       [-389.543, -29.352, 432.130, 183]
+    region:   nw_322
     level:    [49, 52]
   17166660:
     template: Bumblebee
-    at:       [-340.124, -29.511, 458.800, 118]
+    region:   nw_322
     level:    [15, 17]
   17166661:
     template: Rafflesia
-    at:       [-404.531, -28.518, 349.476, 233]
+    region:   nw_325
     level:    [49, 52]
   17166662:
     template: Rafflesia
-    at:       [-403.018, -28.481, 397.701, 138]
+    region:   nw_325
     level:    [49, 52]
   17166663:
     template: Rafflesia
-    at:       [-390.016, -28.113, 354.728, 35]
+    region:   nw_325
     level:    [49, 52]
   17166664:
     template: Bumblebee
@@ -5537,63 +5537,63 @@ spawns:
     level:    [49, 52]
   17166668:
     template: Bumblebee
-    at:       [-203.897, -24.901, 514.288, 9]
+    region:   nw_332
     level:    [15, 17]
   17166669:
     template: Tiffenotte
-    at:       [-222.439, -25.552, 535.278, 102]
+    region:   nw_332
     level:    [72, 72]
   17166670:
     template: Rafflesia
-    at:       [-163.414, -23.201, 582.643, 81]
+    region:   nw_334
     level:    [49, 52]
   17166671:
     template: Rafflesia
-    at:       [-173.771, -21.574, 638.267, 200]
+    region:   nw_334
     level:    [49, 52]
   17166672:
     template: Bumblebee
-    at:       [-159.991, -23.189, 616.484, 199]
+    region:   nw_334
     level:    [15, 17]
   17166673:
     template: Yagudo_Persecutor_past
     script:   Yagudo_Persecutor
-    at:       [307.476, -22.223, 653.471, 221]
+    region:   ne_337
     level:    [61, 64]
   17166674:
     template: Yagudo_Persecutor_past
     script:   Yagudo_Persecutor
-    at:       [324.927, -25.222, 698.036, 178]
+    region:   ne_338
     level:    [61, 64]
   17166675:
     template: Yagudo_Condottiere
-    at:       [325.877, -20.522, 568.580, 51]
+    region:   ne_338
     level:    [61, 64]
   17166676:
     template: Yagudo_Condottiere
-    at:       [313.371, -21.225, 539.556, 23]
+    region:   ne_340
     level:    [61, 64]
   17166677:
     template: Yagudo_Persecutor_past
     script:   Yagudo_Persecutor
-    at:       [454.998, -8.938, 149.595, 24]
+    region:   e_132
     level:    [61, 64]
   17166678:
     template: Yagudo_Condottiere
-    at:       [364.037, -5.005, 77.100, 82]
+    region:   e_132
     level:    [61, 64]
   17166679:
     template: Yagudo_Persecutor_past
     script:   Yagudo_Persecutor
-    at:       [436.845, -8.443, 160.933, 42]
+    region:   e_343
     level:    [61, 64]
   17166680:
     template: Yagudo_Condottiere
-    at:       [353.967, -8.301, 160.978, 25]
+    region:   e_343
     level:    [61, 64]
   17166681:
     template: Goblin_Skirmisher
-    at:       [262.243, -25.344, 337.084, 68]
+    region:   ne_345
     level:    [56, 59]
   17166682:
     template: Goblin_Mine_Small
@@ -5602,7 +5602,7 @@ spawns:
     level:    [52, 53]
   17166683:
     template: Goblin_Skirmisher
-    at:       [266.569, -18.817, 423.857, 127]
+    region:   ne_345
     level:    [56, 59]
   17166684:
     template: Goblin_Mine_Small
@@ -5611,7 +5611,7 @@ spawns:
     level:    [52, 53]
   17166685:
     template: Goblin_Skirmisher
-    at:       [-29.477, -4.140, -371.306, 116]
+    region:   s_349
     level:    [56, 59]
   17166686:
     template: Goblin_Mine_Small
@@ -5620,7 +5620,7 @@ spawns:
     level:    [52, 53]
   17166687:
     template: Goblin_Skirmisher
-    at:       [-138.279, -5.141, -222.555]
+    region:   s_349
     level:    [56, 59]
   17166688:
     template: Goblin_Mine_Small
@@ -5669,27 +5669,27 @@ spawns:
     level:    [51, 54]
   17166699:
     template: Poroggo_Gent
-    at:       [201.346, -2.388, -61.025, 205]
+    region:   s_363
     level:    [56, 67]
   17166700:
     template: Poroggo_Gent
-    at:       [88.710, -0.605, -209.785, 145]
+    region:   s_363
     level:    [56, 67]
   17166701:
     template: Toad
-    at:       [78.836, -0.109, -199.204, 141]
+    region:   s_365
     level:    [51, 54]
   17166702:
     template: Toad
-    at:       [78.604, -0.065, -200.259, 145]
+    region:   s_365
     level:    [51, 54]
   17166703:
     template: Toad
-    at:       [76.711, -0.331, -197.307, 99]
+    region:   s_365
     level:    [51, 54]
   17166704:
     template: Toad
-    at:       [99.201, -1.359, -182.436, 31]
+    region:   s_365
     level:    [51, 54]
   17166705:
     template: Ramponneau
@@ -5697,7 +5697,7 @@ spawns:
     level:    [47, 54]
   17166706:
     template: Poroggo_Gent
-    at:       [-354.939, 3.461, -393.815, 147]
+    region:   sw_370
     level:    [56, 67]
   17166707:
     template: Poroggo_Gent
@@ -5705,27 +5705,27 @@ spawns:
     level:    [56, 67]
   17166708:
     template: Toad
-    at:       [-334.245, 3.083, -400.256, 3]
+    region:   sw_372
     level:    [51, 54]
   17166709:
     template: Toad
-    at:       [-356.465, 3.226, -368.772, 205]
+    region:   sw_372
     level:    [51, 54]
   17166710:
     template: Toad
-    at:       [-358.989, 2.889, -377.841, 186]
+    region:   sw_372
     level:    [51, 54]
   17166711:
     template: Toad
-    at:       [-358.256, 3.045, -384.889, 177]
+    region:   sw_372
     level:    [51, 54]
   17166712:
     template: Toad
-    at:       [-336.230, 2.944, -354.066, 169]
+    region:   sw_372
     level:    [51, 54]
   17166713:
     template: Poroggo_Gent
-    at:       [-245.903, -16.460, 644.531, 81]
+    region:   nw_377
     level:    [56, 67]
   17166714:
     template: Poroggo_Gent
@@ -5733,23 +5733,23 @@ spawns:
     level:    [56, 67]
   17166715:
     template: Toad
-    at:       [-280.511, -16.922, 669.355, 61]
+    region:   nw_379
     level:    [51, 54]
   17166716:
     template: Toad
-    at:       [-245.594, -16.904, 676.191, 169]
+    region:   nw_379
     level:    [51, 54]
   17166717:
     template: Toad
-    at:       [-244.342, -16.967, 670.040, 142]
+    region:   nw_379
     level:    [51, 54]
   17166718:
     template: Toad
-    at:       [-273.538, -16.956, 664.932, 255]
+    region:   nw_379
     level:    [51, 54]
   17166719:
     template: Toad
-    at:       [-242.934, -17.019, 655.377, 208]
+    region:   nw_379
     level:    [51, 54]
   17166720:
     template: Sandworm
@@ -6506,62 +6506,68 @@ spawns:
     level:    [70, 70]
   17166937:
     template: Plenilune_Ronin
+    region:   c_601
     level:    [70, 70]
   17166938:
     template: Plenilune_Ronin
+    region:   c_601
     level:    [70, 70]
   17166939:
     template: Plenilune_Ronin
+    region:   c_601
     level:    [70, 70]
   17166940:
     template: Plenilune_Ronin
+    region:   c_601
     level:    [70, 70]
   17166941:
     template: Plenilune_Ronin
+    region:   c_601
     level:    [70, 70]
   17166942:
     template: Plenilune_Ronin
+    region:   c_601
     level:    [70, 70]
   17166943:
     template: Vuu_Puqu_the_Beguiler_S
     script:   Vuu_Puqu_the_Beguiler
-    at:       [18.605, -15.646, 302.524, 58]
+    region:   c_601
     level:    [70, 70]
   17166944:
     template: Divine_Inspirer
-    at:       [-189.732, -17.017, 365.597, 236]
+    region:   c_601
     level:    [70, 70]
   17166945:
     template: Divine_Inspirer
-    at:       [-186.576, -17.053, 368.866, 227]
+    region:   c_601
     level:    [70, 70]
   17166946:
     template: Divine_Inspirer
-    at:       [-257.235, -17.054, 371.248, 18]
+    region:   c_601
     level:    [70, 70]
   17166947:
     template: Divine_Inspirer
-    at:       [-250.772, -16.897, 366.415, 21]
+    region:   c_601
     level:    [70, 70]
   17166948:
     template: Divine_Inspirer
-    at:       [-242.818, -16.563, 362.006, 21]
+    region:   c_601
     level:    [70, 70]
   17166949:
     template: Divine_Inspirer
-    at:       [-256.866, -17.007, 372.031, 18]
+    region:   c_601
     level:    [70, 70]
   17166950:
     template: Divine_Inspirer
-    at:       [-249.250, -16.785, 365.762, 21]
+    region:   c_601
     level:    [70, 70]
   17166951:
     template: Divine_Inspirer
-    at:       [-258.397, -17.012, 372.654, 18]
+    region:   c_601
     level:    [70, 70]
   17166952:
     template: Divine_Inspirer
-    at:       [-189.966, -17.048, 370.977, 226]
+    region:   c_601
     level:    [70, 70]
   17166953:
     template: Divine_Pilgrim
@@ -6680,23 +6686,23 @@ spawns:
     level:    [70, 70]
   17166985:
     template: Fiendish_Leechkeeper
-    at:       [16.193, -15.786, 316.047, 118]
+    region:   c_601
     level:    [70, 70]
   17166986:
     template: Fiendish_Leechkeeper
-    at:       [-22.089, -12.477, 282.381, 203]
+    region:   c_601
     level:    [70, 70]
   17166987:
     template: Fiendish_Leechkeeper
-    at:       [-22.201, -13.020, 292.692, 65]
+    region:   c_601
     level:    [70, 70]
   17166988:
     template: Fiendish_Leechkeeper
-    at:       [30.493, -17.145, 292.621, 158]
+    region:   c_601
     level:    [70, 70]
   17166989:
     template: Fiendish_Leechkeeper
-    at:       [23.661, -16.592, 298.491, 53]
+    region:   c_601
     level:    [70, 70]
   17166990:
     template: Fiendish_Leechkeeper

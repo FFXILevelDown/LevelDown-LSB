@@ -2274,40 +2274,40 @@ templates:
 spawns:
   17264641:
     template: Wandering_Sapling
-    at:       [-339.049, -0.847, -269.279, 70]
+    region:   sw_1
     level:    [15, 16]
   17264642:
     template: Wandering_Sapling
-    at:       [-177.788, 1.057, -325.142, 127]
+    region:   sw_1
     level:    [15, 16]
   17264643:
     template: Wandering_Sapling
-    at:       [-174.293, 5.205, -309.232, 127]
+    region:   sw_1
     level:    [15, 16]
   17264644:
     template: Wandering_Sapling
-    at:       [-295.492, -5.569, -269.094, 127]
+    region:   sw_1
     level:    [15, 16]
   17264645:
     template: Jubjub
-    at:       [-205.650, -0.703, -303.317, 127]
+    region:   sw_1
     level:    [17, 18]
   17264646:
     template: Jubjub
-    at:       [-275.088, -2.825, -249.074, 77]
+    region:   sw_1
     level:    [17, 18]
   17264647:
     template: Hill_Lizard
-    at:       [-232.650, -0.413, -266.419, 127]
+    region:   sw_1
     level:    [21, 22]
   17264648:
     template: Hill_Lizard
-    at:       [-192.304, -0.489, -396.502, 79]
+    region:   sw_1
     level:    [21, 22]
   17264649:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-178.188, 5.070, -306.203, 248]
+    region:   sw_1
     level:    [15, 16]
     attributes:
       spawn:
@@ -2317,7 +2317,7 @@ spawns:
   17264650:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-162.049, 6.278, -356.851, 14]
+    region:   sw_1
     level:    [15, 16]
     attributes:
       spawn:
@@ -2327,7 +2327,7 @@ spawns:
   17264651:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-198.221, -0.563, -330.939, 127]
+    region:   sw_1
     level:    [15, 16]
     attributes:
       spawn:
@@ -2336,7 +2336,7 @@ spawns:
           end:    4
   17264652:
     template: Black_Bat
-    at:       [-180.770, -0.890, -374.761, 59]
+    region:   sw_1
     level:    [17, 18]
     attributes:
       spawn:
@@ -2345,103 +2345,103 @@ spawns:
           end:    4
   17264653:
     template: Wandering_Sapling
-    at:       [-328.321, -9.582, -368.197, 99]
+    region:   sw_13
     level:    [15, 16]
   17264654:
     template: Wandering_Sapling
-    at:       [-270.441, -8.410, -441.635, 127]
+    region:   sw_13
     level:    [15, 16]
   17264655:
     template: Wandering_Sapling
-    at:       [-285.529, -8.460, -334.044, 40]
+    region:   sw_13
     level:    [15, 16]
   17264656:
     template: Wandering_Sapling
-    at:       [-345.032, -10.178, -375.979, 111]
+    region:   sw_13
     level:    [15, 16]
   17264657:
     template: Jubjub
-    at:       [-251.276, -2.352, -403.781, 127]
+    region:   sw_13
     level:    [17, 18]
   17264658:
     template: Jubjub
-    at:       [-292.603, -8.546, -343.961, 91]
+    region:   sw_13
     level:    [17, 18]
   17264659:
     template: Jubjub
-    at:       [-328.817, -9.635, -369.373, 127]
+    region:   sw_13
     level:    [17, 18]
   17264660:
     template: Hill_Lizard
-    at:       [-284.872, -7.711, -319.567, 127]
+    region:   sw_13
     level:    [21, 22]
   17264661:
     template: Hill_Lizard
-    at:       [-249.670, -8.490, -440.095]
+    region:   sw_13
     level:    [21, 22]
   17264662:
     template: Hill_Lizard
-    at:       [-301.161, -8.830, -340.460, 127]
+    region:   sw_13
     level:    [21, 22]
   17264663:
     template: Wandering_Sapling
-    at:       [-514.942, -15.773, 31.446, 127]
+    region:   w_23
     level:    [15, 16]
   17264664:
     template: Wandering_Sapling
-    at:       [-491.825, -11.165, 33.480, 113]
+    region:   w_23
     level:    [15, 16]
   17264665:
     template: Wandering_Sapling
-    at:       [-484.069, -7.507, 24.718, 36]
+    region:   w_23
     level:    [15, 16]
   17264666:
     template: Jubjub
-    at:       [-474.403, 0.019, -84.125, 127]
+    region:   w_23
     level:    [17, 18]
   17264667:
     template: Jubjub
-    at:       [-502.050, -5.722, -54.949, 85]
+    region:   w_23
     level:    [17, 18]
   17264668:
     template: Hill_Lizard
-    at:       [-498.395, -12.849, 31.868, 92]
+    region:   w_23
     level:    [21, 22]
   17264669:
     template: Hill_Lizard
-    at:       [-493.850, -3.219, -30.416, 127]
+    region:   w_23
     level:    [21, 22]
   17264670:
     template: Will-o-the-Wisp
     level:    [24, 25]
   17264671:
     template: Wandering_Sapling
-    at:       [-234.881, 3.635, 54.390, 125]
+    region:   w_31
     level:    [15, 16]
   17264672:
     template: Wandering_Sapling
-    at:       [-360.376, -1.405, 36.636, 10]
+    region:   w_31
     level:    [15, 16]
   17264673:
     template: Jubjub
-    at:       [-265.000, 8.000, 38.000, 127]
+    region:   w_31
     level:    [17, 18]
   17264674:
     template: Jubjub
-    at:       [-335.412, -0.775, 35.862, 127]
+    region:   w_31
     level:    [17, 18]
   17264675:
     template: Hill_Lizard
-    at:       [-348.974, 0.844, -29.855, 127]
+    region:   w_31
     level:    [21, 22]
   17264676:
     template: Hill_Lizard
-    at:       [-365.469, -2.871, 48.622, 127]
+    region:   w_31
     level:    [21, 22]
   17264677:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-341.620, -0.807, 34.880, 227]
+    region:   w_31
     level:    [15, 16]
     attributes:
       spawn:
@@ -2451,7 +2451,7 @@ spawns:
   17264678:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-214.533, 8.203, 39.319, 1]
+    region:   w_31
     level:    [15, 16]
     attributes:
       spawn:
@@ -2460,7 +2460,7 @@ spawns:
           end:    6
   17264679:
     template: Black_Bat
-    at:       [-284.000, 5.000, 94.000, 127]
+    region:   w_31
     level:    [17, 18]
     attributes:
       spawn:
@@ -2469,64 +2469,64 @@ spawns:
           end:    5
   17264680:
     template: Scavenging_Hound
-    at:       [-235.451, 0.346, 71.908, 251]
+    region:   w_31
     level:    [22, 23]
   17264681:
     template: Bogy
-    at:       [-329.553, 2.668, 15.731, 127]
+    region:   w_31
     level:    [25, 26]
   17264682:
     template: Wandering_Sapling
-    at:       [-66.450, -0.686, 6.292, 127]
+    region:   w_42
     level:    [15, 16]
   17264683:
     template: Wandering_Sapling
-    at:       [-246.953, 8.297, 5.810, 127]
+    region:   w_42
     level:    [15, 16]
   17264684:
     template: Jubjub
-    at:       [-79.913, 0.221, 22.534, 127]
+    region:   w_42
     level:    [17, 18]
   17264685:
     template: Jubjub
-    at:       [-177.930, 7.798, -7.678, 127]
+    region:   w_42
     level:    [17, 18]
   17264686:
     template: Hill_Lizard
-    at:       [-227.424, 6.888, -15.474, 108]
+    region:   w_42
     level:    [21, 22]
   17264687:
     template: Hill_Lizard
-    at:       [-187.650, 8.190, -76.837]
+    region:   w_42
     level:    [21, 22]
   17264688:
     template: Jubjub
-    at:       [106.486, 15.939, -63.704, 113]
+    region:   c_48
     level:    [17, 18]
   17264689:
     template: Jubjub
-    at:       [-13.179, 12.585, -39.414, 74]
+    region:   c_48
     level:    [17, 18]
   17264690:
     template: Hill_Lizard
-    at:       [-48.472, 7.984, -51.446, 1]
+    region:   c_48
     level:    [21, 22]
   17264691:
     template: Hill_Lizard
-    at:       [-133.880, 12.397, -77.938, 126]
+    region:   c_48
     level:    [21, 22]
   17264692:
     template: Hill_Lizard
-    at:       [-160.936, 7.568, -112.915, 53]
+    region:   c_48
     level:    [21, 22]
   17264693:
     template: Axe_Beak
-    at:       [-131.462, 12.278, -77.496, 48]
+    region:   c_48
     level:    [27, 28]
   17264694:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-105.572, 12.947, -92.602, 98]
+    region:   c_48
     level:    [15, 16]
     attributes:
       spawn:
@@ -2536,7 +2536,7 @@ spawns:
   17264695:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [127.696, 19.908, -53.796, 127]
+    region:   c_48
     level:    [15, 16]
     attributes:
       spawn:
@@ -2545,7 +2545,7 @@ spawns:
           end:    5
   17264696:
     template: Black_Bat
-    at:       [33.403, 20.730, -39.274, 127]
+    region:   c_48
     level:    [17, 18]
     attributes:
       spawn:
@@ -2554,94 +2554,94 @@ spawns:
           end:    6
   17264697:
     template: Scavenging_Hound
-    at:       [93.445, 14.946, -92.246, 129]
+    region:   c_48
     level:    [22, 23]
   17264698:
     template: Earth_Elemental
-    at:       [84.091, 21.708, -41.824, 127]
+    region:   c_48
     level:    [27, 29]
   17264699:
     template: Goblin_Mugger
-    at:       [-33.551, 6.905, -77.027, 98]
+    region:   c_48
     level:    [21, 22]
   17264700:
     template: Goblin_Ambusher
-    at:       [-111.390, 6.212, -31.886, 2]
+    region:   c_48
     level:    [16, 17]
   17264701:
     template: Goblin_Leecher
-    at:       [-97.408, -0.817, -6.536, 119]
+    region:   c_48
     level:    [21, 22]
   17264702:
     template: Goblin_Tinkerer
-    at:       [-41.941, 8.157, -15.834, 57]
+    region:   c_48
     level:    [16, 17]
   17264703:
     template: Goblin_Gambler
-    at:       [-139.946, 4.671, 9.386, 150]
+    region:   c_48
     level:    [21, 22]
   17264704:
     template: Goblin_Butcher
-    at:       [-128.779, 1.006, -10.510, 127]
+    region:   c_48
     level:    [16, 17]
   17264705:
     template: Zombie_war
     script:   Zombie
-    at:       [-320.781, 6.722, -76.951, 255]
+    region:   c_48
     level:    [16, 23]
   17264706:
     template: Zombie_blm
     script:   Zombie
-    at:       [45.206, 23.015, -40.216, 200]
+    region:   c_48
     level:    [16, 23]
   17264707:
     template: Goblin_Mugger
-    at:       [-175.000, 7.000, -19.000, 127]
+    region:   c_48
     level:    [21, 22]
   17264708:
     template: Goblin_Leecher
-    at:       [-179.258, 6.971, -18.373, 44]
+    region:   c_48
     level:    [21, 22]
   17264709:
     template: Goblin_Gambler
-    at:       [-176.021, 7.010, -15.943, 34]
+    region:   c_48
     level:    [21, 25]
   17264710:
     template: Goblin_Butcher
-    at:       [-177.612, 7.031, -15.016, 23]
+    region:   c_48
     level:    [16, 17]
   17264711:
     template: Jubjub
-    at:       [-194.426, 15.291, -150.594, 127]
+    region:   sw_71
     level:    [17, 18]
   17264712:
     template: Jubjub
-    at:       [-192.712, 22.449, -191.034, 18]
+    region:   sw_71
     level:    [17, 18]
   17264713:
     template: Jubjub
-    at:       [-260.151, 8.533, -186.868, 127]
+    region:   sw_71
     level:    [17, 18]
   17264714:
     template: Hill_Lizard
-    at:       [-199.342, 14.578, -150.322, 133]
+    region:   sw_71
     level:    [22, 22]
   17264715:
     template: Hill_Lizard
-    at:       [-130.178, 22.750, -147.699, 127]
+    region:   sw_71
     level:    [21, 22]
   17264716:
     template: Hill_Lizard
-    at:       [-132.208, 27.373, -170.802, 88]
+    region:   sw_71
     level:    [21, 22]
   17264717:
     template: Axe_Beak
-    at:       [-159.252, 20.764, -148.571, 127]
+    region:   sw_71
     level:    [27, 28]
   17264718:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-251.957, 8.088, -165.976, 195]
+    region:   sw_71
     level:    [15, 16]
     attributes:
       spawn:
@@ -2651,7 +2651,7 @@ spawns:
   17264719:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-240.226, 12.848, -184.500, 127]
+    region:   sw_71
     level:    [15, 16]
     attributes:
       spawn:
@@ -2660,7 +2660,7 @@ spawns:
           end:    4
   17264720:
     template: Black_Bat
-    at:       [-132.103, 26.934, -174.737, 127]
+    region:   sw_71
     level:    [17, 18]
     attributes:
       spawn:
@@ -2669,36 +2669,36 @@ spawns:
           end:    4
   17264721:
     template: Earth_Elemental
-    at:       [-126.668, 29.310, -159.991, 60]
+    region:   sw_71
     level:    [27, 29]
   17264722:
     template: Chonchon
-    at:       [-129.000, 23.000, -188.000, 60]
+    region:   sw_71
     level:    [42, 43]
   17264723:
     template: Jubjub
-    at:       [-83.746, 21.057, -148.845, 113]
+    region:   s_83
     level:    [17, 18]
   17264724:
     template: Jubjub
-    at:       [-56.656, 23.195, -155.282, 69]
+    region:   s_83
     level:    [17, 18]
   17264725:
     template: Hill_Lizard
-    at:       [-32.447, 23.388, -142.058, 127]
+    region:   s_83
     level:    [21, 22]
   17264726:
     template: Hill_Lizard
-    at:       [-19.521, 15.722, -188.924, 127]
+    region:   s_83
     level:    [21, 22]
   17264727:
     template: Axe_Beak
-    at:       [-30.932, 23.220, -145.549, 200]
+    region:   s_83
     level:    [27, 28]
   17264728:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-34.385, 21.609, -167.718, 69]
+    region:   s_83
     level:    [15, 16]
     attributes:
       spawn:
@@ -2707,7 +2707,7 @@ spawns:
           end:    5
   17264729:
     template: Black_Bat
-    at:       [-0.028, 15.552, -161.032, 127]
+    region:   s_83
     level:    [17, 18]
     attributes:
       spawn:
@@ -2716,32 +2716,32 @@ spawns:
           end:    5
   17264730:
     template: Earth_Elemental
-    at:       [-44.403, 15.279, -201.244, 126]
+    region:   s_90
     level:    [27, 29]
   17264731:
     template: Jubjub
-    at:       [45.193, 27.783, -110.354, 127]
+    region:   s_91
     level:    [17, 18]
   17264732:
     template: Hill_Lizard
-    at:       [34.856, 28.160, -111.060, 118]
+    region:   s_91
     level:    [21, 22]
   17264733:
     template: Hill_Lizard
-    at:       [124.497, 23.714, -188.035, 127]
+    region:   s_91
     level:    [21, 22]
   17264734:
     template: Hill_Lizard
-    at:       [117.923, 22.154, -196.943, 127]
+    region:   s_91
     level:    [21, 22]
   17264735:
     template: Axe_Beak
-    at:       [145.204, 23.346, -191.426, 198]
+    region:   s_91
     level:    [27, 28]
   17264736:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [115.401, 22.161, -191.733, 66]
+    region:   s_91
     level:    [15, 16]
     attributes:
       spawn:
@@ -2750,7 +2750,7 @@ spawns:
           end:    6
   17264737:
     template: Black_Bat
-    at:       [46.084, 27.617, -132.747, 113]
+    region:   s_91
     level:    [17, 18]
     attributes:
       spawn:
@@ -2759,157 +2759,157 @@ spawns:
           end:    6
   17264738:
     template: Earth_Elemental
-    at:       [43.097, 24.488, -147.902, 101]
+    region:   s_91
     level:    [27, 29]
   17264739:
     template: Wandering_Sapling
-    at:       [204.096, 0.015, -473.303, 83]
+    region:   s_99
     level:    [15, 16]
   17264740:
     template: Wandering_Sapling
-    at:       [41.069, 7.506, -354.666, 19]
+    region:   s_99
     level:    [15, 16]
   17264741:
     template: Wandering_Sapling
-    at:       [49.747, 7.536, -364.785, 127]
+    region:   s_99
     level:    [15, 16]
   17264742:
     template: Jubjub
-    at:       [212.000, 7.000, -428.000, 127]
+    region:   s_99
     level:    [17, 18]
   17264743:
     template: Jubjub
-    at:       [162.282, 5.806, -410.021, 127]
+    region:   s_99
     level:    [17, 18]
   17264744:
     template: Jubjub
-    at:       [-28.288, 13.998, -355.876, 1]
+    region:   s_99
     level:    [17, 18]
   17264745:
     template: Raptor
-    at:       [161.115, 0.293, -454.853, 105]
+    region:   s_99
     level:    [24, 25]
   17264746:
     template: Raptor
-    at:       [186.036, -0.885, -488.330, 53]
+    region:   s_99
     level:    [24, 25]
   17264747:
     template: Raptor
-    at:       [158.899, 5.874, -409.556, 14]
+    region:   s_99
     level:    [24, 25]
   17264748:
     template: Wandering_Sapling
-    at:       [425.029, -4.022, -340.270, 9]
+    region:   se_108
     level:    [15, 16]
   17264749:
     template: Wandering_Sapling
-    at:       [410.668, 0.250, -359.823, 127]
+    region:   se_108
     level:    [15, 16]
   17264750:
     template: Wandering_Sapling
-    at:       [332.197, -1.456, -398.623, 127]
+    region:   se_108
     level:    [15, 16]
   17264751:
     template: Jubjub
-    at:       [442.715, -9.653, -317.442, 100]
+    region:   se_108
     level:    [17, 18]
   17264752:
     template: Jubjub
-    at:       [447.309, -4.567, -354.924, 8]
+    region:   se_108
     level:    [17, 18]
   17264753:
     template: Jubjub
-    at:       [294.847, 3.503, -457.174, 78]
+    region:   se_108
     level:    [17, 18]
   17264754:
     template: Raptor
-    at:       [358.834, -0.582, -334.507, 64]
+    region:   se_108
     level:    [24, 25]
   17264755:
     template: Raptor
-    at:       [492.000, -8.000, -308.000, 36]
+    region:   se_108
     level:    [24, 25]
   17264756:
     template: Raptor
-    at:       [456.117, -7.579, -356.759, 39]
+    region:   se_108
     level:    [24, 25]
   17264757:
     template: Yagudo_Votary
-    at:       [18.305, 7.307, -349.326, 127]
+    region:   s_117
     level:    [22, 23]
   17264758:
     template: Yagudo_Mendicant
-    at:       [23.226, 7.141, -349.190, 127]
+    region:   s_117
     level:    [17, 18]
   17264759:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_117
     level:    [9, 13]
   17264760:
     template: Yagudo_Theologist
-    at:       [444.058, -9.008, -338.143, 38]
+    region:   s_117
     level:    [22, 23]
   17264761:
     template: Yagudo_Piper
-    at:       [359.585, -1.234, -404.251, 127]
+    region:   s_117
     level:    [17, 18]
   17264762:
     template: Yagudo_Priest
-    at:       [255.550, -0.749, -472.755, 127]
+    region:   s_117
     level:    [22, 23]
   17264763:
     template: Yagudo_Persecutor
-    at:       [407.659, -1.452, -319.434, 127]
+    region:   s_117
     level:    [17, 18]
   17264764:
     template: Zombie_war
     script:   Zombie
-    at:       [477.442, -8.320, -361.622, 2]
+    region:   s_117
     level:    [16, 23]
   17264765:
     template: Zombie_blm
     script:   Zombie
-    at:       [203.348, 6.340, -447.955, 96]
+    region:   s_117
     level:    [16, 23]
   17264766:
     template: Will-o-the-Wisp
     level:    [24, 25]
   17264767:
     template: Fire_Elemental
-    at:       [286.190, 1.720, -463.527, 127]
+    region:   s_117
     level:    [27, 29]
   17264768:
     template: Naa_Zeku_the_Unwaiting
-    at:       [407.659, -1.452, -319.434, 127]
+    region:   s_117
     level:    [49, 49]
   17264769:
     template: Jubjub
-    at:       [250.784, 1.821, -223.623]
+    region:   region_53
     level:    [17, 18]
   17264770:
     template: Jubjub
-    at:       [254.316, -0.475, -208.051, 126]
+    region:   region_53
     level:    [17, 18]
   17264771:
     template: Jubjub
-    at:       [189.874, 6.954, -30.035, 127]
+    region:   region_53
     level:    [17, 18]
   17264772:
     template: Raptor
-    at:       [230.717, 6.975, -49.026, 127]
+    region:   region_53
     level:    [24, 25]
   17264773:
     template: Raptor
-    at:       [197.235, 6.550, -91.495, 83]
+    region:   region_53
     level:    [24, 25]
   17264774:
     template: Axe_Beak
-    at:       [283.359, 2.975, -258.221, 73]
+    region:   region_53
     level:    [27, 28]
   17264775:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [213.238, 11.303, -232.174, 12]
+    region:   region_53
     level:    [15, 16]
     attributes:
       spawn:
@@ -2919,7 +2919,7 @@ spawns:
   17264776:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [194.861, 7.145, -55.124, 25]
+    region:   region_53
     level:    [15, 16]
     attributes:
       spawn:
@@ -2929,7 +2929,7 @@ spawns:
   17264777:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [229.520, 7.355, -41.505, 87]
+    region:   region_53
     level:    [15, 16]
     attributes:
       spawn:
@@ -2938,7 +2938,7 @@ spawns:
           end:    4
   17264778:
     template: Black_Bat
-    at:       [240.282, 5.028, -230.627, 127]
+    region:   region_53
     level:    [17, 18]
     attributes:
       spawn:
@@ -2947,32 +2947,32 @@ spawns:
           end:    4
   17264779:
     template: Jubjub
-    at:       [411.150, 0.800, -146.407, 18]
+    region:   se_139
     level:    [17, 18]
   17264780:
     template: Jubjub
-    at:       [325.576, -8.141, -84.811, 127]
+    region:   se_139
     level:    [17, 18]
   17264781:
     template: Jubjub
-    at:       [411.352, 0.673, -148.328, 127]
+    region:   se_139
     level:    [17, 18]
   17264782:
     template: Raptor
-    at:       [350.623, -7.924, -139.842, 147]
+    region:   se_139
     level:    [24, 25]
   17264783:
     template: Raptor
-    at:       [407.016, 13.534, -279.268, 127]
+    region:   se_139
     level:    [24, 25]
   17264784:
     template: Axe_Beak
-    at:       [317.523, -8.593, -117.118, 99]
+    region:   se_139
     level:    [27, 28]
   17264785:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [366.560, -7.752, -147.157, 123]
+    region:   se_139
     level:    [15, 16]
     attributes:
       spawn:
@@ -2982,7 +2982,7 @@ spawns:
   17264786:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [424.991, 8.332, -272.050, 249]
+    region:   se_139
     level:    [15, 16]
     attributes:
       spawn:
@@ -2992,7 +2992,7 @@ spawns:
   17264787:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [410.067, 4.520, -165.298, 127]
+    region:   se_139
     level:    [15, 16]
     attributes:
       spawn:
@@ -3001,7 +3001,7 @@ spawns:
           end:    4
   17264788:
     template: Black_Bat
-    at:       [407.792, 7.890, -250.954, 127]
+    region:   se_139
     level:    [17, 18]
     attributes:
       spawn:
@@ -3010,64 +3010,66 @@ spawns:
           end:    4
   17264789:
     template: Yagudo_Votary
-    at:       [293.153, 7.293, -280.560, 81]
+    region:   s_129
     level:    [22, 23]
   17264790:
     template: Yagudo_Mendicant
-    at:       [195.858, 6.593, -274.022, 72]
+    region:   s_129
     level:    [17, 18]
   17264791:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_129
     level:    [9, 13]
   17264792:
     template: Yagudo_Theologist
-    at:       [192.140, 15.343, -236.350, 34]
+    region:   s_129
     level:    [22, 23]
   17264793:
     template: Yagudo_Piper
-    at:       [309.425, 0.653, -258.376, 24]
+    region:   s_129
     level:    [17, 18]
   17264794:
     template: Yagudo_Priest
-    at:       [198.306, 6.357, -277.501, 31]
+    region:   s_129
     level:    [22, 23]
   17264795:
     template: Yagudo_Persecutor
-    at:       [190.380, 7.403, -56.731, 27]
+    region:   s_129
     level:    [17, 18]
   17264796:
     template: Zombie_war
     script:   Zombie
-    at:       [212.377, 11.834, -224.754, 127]
+    region:   s_129
     level:    [16, 23]
   17264797:
     template: Zombie_blm
     script:   Zombie
+    region:   s_129
     level:    [16, 23]
   17264798:
     template: Earth_Elemental
-    at:       [243.605, 6.596, -278.531, 122]
+    region:   s_129
     level:    [27, 29]
   17264799:
     template: Jubjub
-    at:       [487.962, -9.109, -164.022, 114]
+    region:   e_159
     level:    [17, 18]
   17264800:
     template: Raptor
-    at:       [519.970, -16.202, -139.740, 2]
+    region:   e_159
     level:    [24, 25]
   17264801:
     template: Raptor
-    at:       [433.262, -10.250, -154.713, 63]
+    region:   e_159
     level:    [24, 25]
   17264802:
     template: Axe_Beak
-    at:       [448.189, -9.523, -89.685, 221]
+    region:   e_159
     level:    [27, 28]
   17264803:
     template: Night_Bats_MM_PM
     script:   Night_Bats
+    region:   e_159
     level:    [15, 16]
     attributes:
       spawn:
@@ -3077,7 +3079,7 @@ spawns:
   17264804:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [506.861, -13.937, -159.278, 119]
+    region:   e_159
     level:    [15, 16]
     attributes:
       spawn:
@@ -3086,7 +3088,7 @@ spawns:
           end:    6
   17264805:
     template: Black_Bat
-    at:       [428.574, -0.644, -24.885, 127]
+    region:   e_159
     level:    [17, 18]
     attributes:
       spawn:
@@ -3095,228 +3097,228 @@ spawns:
           end:    4
   17264806:
     template: Jubjub
-    at:       [479.358, -17.221, -31.756, 127]
+    region:   e_166
     level:    [17, 18]
   17264807:
     template: Axe_Beak
-    at:       [481.069, -16.308, -47.822, 55]
+    region:   e_166
     level:    [27, 28]
   17264808:
     template: Axe_Beak
-    at:       [515.000, -15.000, -101.000, 127]
+    region:   e_166
     level:    [27, 28]
   17264809:
     template: Wandering_Sapling
-    at:       [619.164, -16.307, -346.929, 127]
+    region:   se_169
     level:    [15, 16]
   17264810:
     template: Wandering_Sapling
-    at:       [631.291, -17.313, -259.288, 28]
+    region:   se_169
     level:    [15, 16]
   17264811:
     template: Wandering_Sapling
-    at:       [586.074, -15.662, -386.383, 95]
+    region:   se_169
     level:    [15, 16]
   17264812:
     template: Jubjub
-    at:       [609.798, -11.714, -320.137, 25]
+    region:   se_169
     level:    [17, 18]
   17264813:
     template: Jubjub
-    at:       [623.389, -17.741, -237.564, 127]
+    region:   se_169
     level:    [17, 18]
   17264814:
     template: Jubjub
-    at:       [641.613, -16.061, -337.278, 54]
+    region:   se_169
     level:    [17, 18]
   17264815:
     template: Raptor
-    at:       [583.725, -15.652, -388.159, 96]
+    region:   se_169
     level:    [24, 25]
   17264816:
     template: Raptor
-    at:       [606.439, -14.299, -336.918, 127]
+    region:   se_169
     level:    [24, 25]
   17264817:
     template: Raptor
-    at:       [609.323, -11.810, -311.878, 127]
+    region:   se_169
     level:    [24, 25]
   17264818:
     template: Daggerclaw_Dracos
-    at:       [630.430, -16.372, -494.748]
+    region:   se_169
     level:    [27, 28]
   17264819:
     template: Fire_Elemental
-    at:       [713.915, -16.088, -478.193, 59]
+    region:   se_169
     level:    [27, 29]
   17264820:
     template: Goblin_Mugger
-    at:       [577.454, -15.655, -441.185, 72]
+    region:   se_169
     level:    [21, 22]
   17264821:
     template: Goblin_Ambusher
-    at:       [604.144, -16.446, -360.695, 127]
+    region:   se_169
     level:    [16, 17]
   17264822:
     template: Goblin_Leecher
-    at:       [612.643, -18.322, -227.108, 127]
+    region:   se_169
     level:    [21, 22]
   17264823:
     template: Goblin_Tinkerer
-    at:       [594.000, -15.000, -418.000, 126]
+    region:   se_169
     level:    [16, 17]
   17264824:
     template: Goblin_Gambler
-    at:       [629.122, -7.767, -445.578, 123]
+    region:   se_169
     level:    [21, 22]
   17264825:
     template: Goblin_Butcher
-    at:       [723.832, -16.108, -455.199, 106]
+    region:   se_169
     level:    [16, 17]
   17264826:
     template: Zombie_war
     script:   Zombie
-    at:       [635.698, -6.074, -406.433, 197]
+    region:   se_169
     level:    [16, 23]
   17264827:
     template: Zombie_blm
     script:   Zombie
-    at:       [631.074, -17.606, -498.085, 129]
+    region:   se_169
     level:    [16, 23]
   17264828:
     template: Waraxe_Beak
-    at:       [723.000, -16.000, -397.000, 127]
+    region:   se_169
     level:    [55, 56]
   17264829:
     template: Goblin_Ambusher
-    at:       [664.221, -0.900, -423.928, 27]
+    region:   se_169
     level:    [16, 17]
   17264830:
     template: Goblin_Tinkerer
-    at:       [663.198, -0.150, -424.090, 127]
+    region:   se_169
     level:    [16, 17]
   17264831:
     template: Goblin_Gambler
-    at:       [659.945, -0.509, -420.259, 127]
+    region:   se_169
     level:    [21, 22]
   17264832:
     template: Goblin_Butcher
-    at:       [663.301, -0.058, -420.064, 127]
+    region:   se_169
     level:    [16, 17]
   17264833:
     template: Goblin_Mugger
-    at:       [-41.420, -15.861, 186.892, 88]
+    region:   c_193
     level:    [21, 22]
   17264834:
     template: Goblin_Ambusher
-    at:       [-61.374, -16.979, 179.073, 127]
+    region:   c_193
     level:    [16, 17]
   17264835:
     template: Goblin_Leecher
-    at:       [-99.211, -17.147, 147.901, 34]
+    region:   c_193
     level:    [21, 22]
   17264836:
     template: Goblin_Tinkerer
-    at:       [-54.000, -16.000, 147.000, 61]
+    region:   c_193
     level:    [16, 17]
   17264837:
     template: Goblin_Gambler
-    at:       [-13.686, -17.177, 183.402, 127]
+    region:   c_193
     level:    [21, 22]
   17264838:
     template: Goblin_Butcher
-    at:       [-152.996, -15.968, 121.873, 103]
+    region:   c_193
     level:    [16, 17]
   17264839:
     template: Zombie_war
     script:   Zombie
-    at:       [-8.523, -10.295, 167.519, 127]
+    region:   c_193
     level:    [16, 23]
   17264840:
     template: Zombie_blm
     script:   Zombie
-    at:       [-164.096, -16.005, 151.266, 104]
+    region:   c_193
     level:    [16, 23]
   17264841:
     template: Bogy
-    at:       [-45.538, -15.844, 188.858, 41]
+    region:   c_193
     level:    [25, 26]
   17264842:
     template: Goblin_Mugger
-    at:       [-56.000, -16.000, 178.000, 127]
+    region:   c_193
     level:    [21, 22]
   17264843:
     template: Goblin_Ambusher
-    at:       [-117.000, -16.000, 164.000, 85]
+    region:   c_193
     level:    [16, 17]
   17264844:
     template: Goblin_Leecher
-    at:       [-58.860, -15.824, 177.824, 163]
+    region:   c_193
     level:    [21, 22]
   17264845:
     template: Goblin_Gambler
-    at:       [-58.015, -16.549, 181.997, 127]
+    region:   c_193
     level:    [16, 17]
   17264846:
     template: Boggart
-    at:       [-366.208, -10.055, 90.904, 127]
+    region:   w_207
     level:    [26, 27]
   17264847:
     template: Boggart
-    at:       [-195.413, -11.357, 88.380, 113]
+    region:   w_207
     level:    [26, 27]
   17264848:
     template: Boggart
-    at:       [-276.673, 3.354, 92.327, 127]
+    region:   w_207
     level:    [26, 27]
   17264849:
     template: Boggart
-    at:       [-246.275, -8.434, 123.325, 127]
+    region:   w_207
     level:    [26, 27]
   17264850:
     template: Boggart
-    at:       [-235.898, -4.926, 87.437, 127]
+    region:   w_207
     level:    [26, 27]
   17264851:
     template: Boggart
-    at:       [-180.021, -8.560, 80.061, 11]
+    region:   w_207
     level:    [26, 27]
   17264852:
     template: Wandering_Sapling
-    at:       [5.794, -0.029, 40.254, 122]
+    region:   c_212
     level:    [15, 16]
   17264853:
     template: Wandering_Sapling
-    at:       [54.754, 1.805, 55.900, 27]
+    region:   c_212
     level:    [15, 16]
   17264854:
     template: Crane_Fly
-    at:       [-82.123, -7.855, 83.106, 127]
+    region:   c_212
     level:    [20, 21]
   17264855:
     template: Crane_Fly
-    at:       [-0.021, -2.337, 27.605, 127]
+    region:   c_212
     level:    [20, 21]
   17264856:
     template: Crane_Fly
-    at:       [103.969, 6.683, 1.573, 127]
+    region:   c_212
     level:    [20, 21]
   17264857:
     template: Crane_Fly
-    at:       [-44.099, -1.732, 41.118, 127]
+    region:   c_212
     level:    [20, 21]
   17264858:
     template: Stag_Beetle
-    at:       [43.012, 5.259, 27.717, 2]
+    region:   c_212
     level:    [22, 23]
   17264859:
     template: Stag_Beetle
-    at:       [-55.485, -6.059, 57.630, 54]
+    region:   c_219
     level:    [22, 23]
   17264860:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [199.785, -8.518, 33.952, 222]
+    region:   c_212
     level:    [15, 16]
     attributes:
       spawn:
@@ -3326,7 +3328,7 @@ spawns:
   17264861:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [-14.106, -8.224, 61.458, 127]
+    region:   c_212
     level:    [15, 16]
     attributes:
       spawn:
@@ -3335,7 +3337,7 @@ spawns:
           end:    6
   17264862:
     template: Black_Bat
-    at:       [183.007, -7.998, 41.327, 27]
+    region:   c_212
     level:    [17, 18]
     attributes:
       spawn:
@@ -3344,7 +3346,7 @@ spawns:
           end:    4
   17264863:
     template: Black_Bat
-    at:       [-7.321, -8.527, 67.834, 127]
+    region:   c_212
     level:    [17, 18]
     attributes:
       spawn:
@@ -3353,36 +3355,36 @@ spawns:
           end:    4
   17264864:
     template: Wandering_Sapling
-    at:       [433.133, -16.300, 43.644, 126]
+    region:   e_224
     level:    [15, 16]
   17264865:
     template: Wandering_Sapling
-    at:       [293.022, -9.043, 35.003, 100]
+    region:   e_224
     level:    [15, 16]
   17264866:
     template: Crane_Fly
-    at:       [360.578, -15.644, 31.998, 9]
+    region:   e_224
     level:    [20, 21]
   17264867:
     template: Crane_Fly
-    at:       [311.328, -8.508, 64.644, 67]
+    region:   e_224
     level:    [20, 21]
   17264868:
     template: Crane_Fly
-    at:       [351.584, -10.467, 68.617, 127]
+    region:   e_224
     level:    [20, 21]
   17264869:
     template: Stag_Beetle
-    at:       [352.983, -13.829, 52.963, 127]
+    region:   e_224
     level:    [22, 23]
   17264870:
     template: Stag_Beetle
-    at:       [400.098, -15.775, 67.428, 127]
+    region:   e_224
     level:    [22, 23]
   17264871:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [236.871, -8.085, 38.948, 190]
+    region:   e_224
     level:    [15, 16]
     attributes:
       spawn:
@@ -3392,7 +3394,7 @@ spawns:
   17264872:
     template: Night_Bats_MM_PM
     script:   Night_Bats
-    at:       [366.867, 4.452, -47.936, 18]
+    region:   e_224
     level:    [15, 16]
     attributes:
       spawn:
@@ -3401,7 +3403,7 @@ spawns:
           end:    6
   17264873:
     template: Black_Bat
-    at:       [342.263, 6.728, -36.571, 127]
+    region:   e_224
     level:    [17, 18]
     attributes:
       spawn:
@@ -3410,848 +3412,849 @@ spawns:
           end:    4
   17264874:
     template: Yagudo_Votary
-    at:       [340.943, 7.002, -33.202, 14]
+    region:   c_234
     level:    [22, 23]
   17264875:
     template: Yagudo_Mendicant
-    at:       [28.488, 2.944, 35.633, 127]
+    region:   c_234
     level:    [17, 18]
   17264876:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   c_234
     level:    [9, 13]
   17264877:
     template: Yagudo_Theologist
-    at:       [0.782, -1.621, 48.263, 127]
+    region:   c_234
     level:    [22, 23]
   17264878:
     template: Yagudo_Piper
-    at:       [248.029, -7.512, 22.166, 23]
+    region:   c_234
     level:    [17, 18]
   17264879:
     template: Yagudo_Priest
-    at:       [196.111, -8.499, 37.018, 127]
+    region:   c_234
     level:    [22, 23]
   17264880:
     template: Yagudo_Persecutor
-    at:       [134.981, 1.649, 5.468, 127]
+    region:   c_234
     level:    [17, 18]
   17264881:
     template: Zombie_war
     script:   Zombie
-    at:       [265.081, -8.390, 40.787, 127]
+    region:   c_234
     level:    [17, 24]
   17264882:
     template: Zombie_blm
     script:   Zombie
-    at:       [251.196, -7.077, 52.622, 127]
+    region:   c_234
     level:    [17, 24]
   17264883:
     template: Bogy
-    at:       [329.343, 4.938, -31.200, 127]
+    region:   region_52
     level:    [25, 26]
   17264884:
     template: Wandering_Sapling
-    at:       [66.909, -22.810, 236.522, 127]
+    region:   c_244
     level:    [15, 16]
   17264885:
     template: Wandering_Sapling
-    at:       [257.161, -9.079, 129.084, 115]
+    region:   c_244
     level:    [15, 16]
   17264886:
     template: Crane_Fly
-    at:       [76.748, -21.520, 221.103, 127]
+    region:   c_244
     level:    [20, 21]
   17264887:
     template: Crane_Fly
-    at:       [110.604, -16.369, 200.843, 127]
+    region:   c_244
     level:    [20, 21]
   17264888:
     template: Crane_Fly
-    at:       [264.482, -8.295, 109.640, 108]
+    region:   c_244
     level:    [20, 21]
   17264889:
     template: Crane_Fly
-    at:       [174.977, -16.521, 168.252, 127]
+    region:   c_244
     level:    [20, 21]
   17264890:
     template: Stag_Beetle
-    at:       [84.109, -22.178, 224.541, 127]
+    region:   c_250
     level:    [22, 23]
   17264891:
     template: Stag_Beetle
-    at:       [87.251, -16.576, 198.690, 111]
+    region:   c_244
     level:    [22, 23]
   17264892:
     template: Wandering_Sapling
-    at:       [286.965, -16.836, 199.081, 127]
+    region:   c_252
     level:    [15, 16]
   17264893:
     template: Wandering_Sapling
-    at:       [247.060, -22.094, 250.326, 6]
+    region:   c_252
     level:    [15, 16]
   17264894:
     template: Crane_Fly
-    at:       [311.272, -10.635, 188.254, 127]
+    region:   c_252
     level:    [20, 21]
   17264895:
     template: Crane_Fly
-    at:       [259.131, -16.052, 336.187, 99]
+    region:   c_252
     level:    [20, 21]
   17264896:
     template: Crane_Fly
-    at:       [281.519, -18.997, 224.155, 127]
+    region:   c_252
     level:    [20, 21]
   17264897:
     template: Crane_Fly
-    at:       [285.464, -16.725, 242.943, 27]
+    region:   c_252
     level:    [20, 21]
   17264898:
     template: Stag_Beetle
-    at:       [320.780, -10.824, 160.319, 127]
+    region:   c_252
     level:    [22, 23]
   17264899:
     template: Stag_Beetle
-    at:       [301.756, -16.044, 215.102, 127]
+    region:   c_252
     level:    [22, 23]
   17264900:
     template: Wandering_Sapling
-    at:       [355.026, -14.382, 150.132, 127]
+    region:   e_260
     level:    [15, 16]
   17264901:
     template: Wandering_Sapling
-    at:       [488.726, -24.009, 237.529, 127]
+    region:   e_260
     level:    [15, 16]
   17264902:
     template: Crane_Fly
-    at:       [514.264, -23.249, 107.243, 108]
+    region:   e_260
     level:    [20, 21]
   17264903:
     template: Crane_Fly
-    at:       [444.503, -15.953, 116.825, 127]
+    region:   e_260
     level:    [20, 21]
   17264904:
     template: Crane_Fly
-    at:       [406.997, -16.945, 200.697, 127]
+    region:   e_260
     level:    [20, 21]
   17264905:
     template: Stag_Beetle
-    at:       [443.626, -23.891, 154.007, 127]
+    region:   e_260
     level:    [22, 23]
   17264906:
     template: Coeurl
-    at:       [360.584, -15.848, 158.942, 127]
+    region:   e_260
     level:    [25, 26]
   17264907:
     template: Coeurl
-    at:       [513.330, -16.202, 53.865, 62]
+    region:   e_260
     level:    [25, 26]
   17264908:
     template: Scavenging_Hound
-    at:       [447.709, -24.386, 185.607, 46]
+    region:   e_260
     level:    [25, 26]
   17264909:
     template: Yagudo_Votary
-    at:       [676.000, -24.000, 37.000, 127]
+    region:   c_269
     level:    [22, 23]
   17264910:
     template: Yagudo_Mendicant
-    at:       [210.033, -15.178, 141.764, 37]
+    region:   c_269
     level:    [17, 18]
   17264911:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   c_269
     level:    [9, 13]
   17264912:
     template: Yagudo_Theologist
-    at:       [350.019, -16.730, 191.077, 127]
+    region:   c_269
     level:    [22, 23]
   17264913:
     template: Yagudo_Piper
-    at:       [333.027, -16.673, 229.886, 60]
+    region:   c_269
     level:    [17, 18]
   17264914:
     template: Yagudo_Priest
-    at:       [225.394, -16.624, 277.951, 125]
+    region:   c_269
     level:    [22, 23]
   17264915:
     template: Yagudo_Persecutor
-    at:       [404.347, -17.724, 162.201, 127]
+    region:   c_269
     level:    [17, 18]
   17264916:
     template: Zombie_war
     script:   Zombie
-    at:       [329.337, -16.259, 221.362, 127]
+    region:   c_269
     level:    [17, 24]
   17264917:
     template: Zombie_blm
     script:   Zombie
-    at:       [185.031, -10.107, 130.612, 104]
+    region:   c_269
     level:    [17, 24]
   17264918:
     template: Fire_Elemental
-    at:       [408.109, -16.601, 127.704, 33]
+    region:   c_269
     level:    [27, 29]
   17264919:
     template: Bogy
-    at:       [297.467, -12.885, 166.107, 127]
+    region:   c_269
     level:    [25, 26]
   17264920:
     template: Yagudo_Votary
-    at:       [382.000, -16.690, 183.000, 127]
+    region:   c_269
     level:    [22, 23]
   17264921:
     template: Yagudo_Theologist
-    at:       [376.395, -16.628, 180.901, 127]
+    region:   c_269
     level:    [22, 23]
   17264922:
     template: Yagudo_Priest
-    at:       [708.000, -31.000, -7.000, 127]
+    region:   c_269
     level:    [22, 23]
   17264923:
     template: Yagudo_Persecutor
-    at:       [378.000, -15.000, 187.000, 127]
+    region:   c_269
     level:    [17, 18]
   17264924:
     template: Boggart
-    at:       [404.890, -0.070, -3.612, 126]
+    region:   e_284
     level:    [26, 27]
   17264925:
     template: Boggart
+    region:   e_284
     level:    [26, 27]
   17264926:
     template: Boggart
-    at:       [471.212, -15.530, 44.015, 127]
+    region:   e_286
     level:    [26, 27]
   17264927:
     template: Boggart
-    at:       [507.420, -16.104, 43.107, 2]
+    region:   e_286
     level:    [26, 27]
   17264928:
     template: Boggart
-    at:       [535.535, -16.271, 42.682]
+    region:   e_286
     level:    [26, 27]
   17264929:
     template: Boggart
-    at:       [606.000, -22.000, 7.000, 106]
+    region:   e_289
     level:    [26, 27]
   17264930:
     template: Boggart
-    at:       [643.574, -19.322, 1.395, 127]
+    region:   e_289
     level:    [26, 27]
   17264931:
     template: Wandering_Sapling
-    at:       [564.906, -24.491, 3.470, 108]
+    region:   e_291
     level:    [15, 16]
   17264932:
     template: Wandering_Sapling
-    at:       [623.818, -25.879, -19.726, 127]
+    region:   e_291
     level:    [15, 16]
   17264933:
     template: Crane_Fly
-    at:       [660.463, -29.271, -46.188, 65]
+    region:   e_291
     level:    [20, 21]
   17264934:
     template: Crane_Fly
-    at:       [646.171, -24.884, -47.506, 48]
+    region:   e_291
     level:    [20, 21]
   17264935:
     template: Crane_Fly
-    at:       [666.360, -30.592, -54.570, 103]
+    region:   e_291
     level:    [20, 21]
   17264936:
     template: Crane_Fly
-    at:       [628.931, -25.340, -16.663, 127]
+    region:   e_291
     level:    [20, 21]
   17264937:
     template: Stag_Beetle
-    at:       [617.719, -32.379, 192.964, 82]
+    region:   e_291
     level:    [22, 23]
   17264938:
     template: Stag_Beetle
-    at:       [568.829, -24.437, 5.910, 127]
+    region:   e_291
     level:    [22, 23]
   17264939:
     template: Yagudo_Votary
-    at:       [705.579, -32.285, -74.129, 126]
+    region:   e_291
     level:    [22, 23]
   17264940:
     template: Yagudo_Mendicant
-    at:       [628.535, -25.806, 171.614, 127]
+    region:   e_291
     level:    [17, 18]
   17264941:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   e_291
     level:    [9, 13]
   17264942:
     template: Yagudo_Theologist
-    at:       [658.236, -26.471, -14.944, 127]
+    region:   e_291
     level:    [22, 23]
   17264943:
     template: Yagudo_Piper
-    at:       [584.146, -23.986, 129.662, 125]
+    region:   e_291
     level:    [17, 18]
   17264944:
     template: Yagudo_Priest
-    at:       [632.632, -23.354, 71.671, 42]
+    region:   e_291
     level:    [22, 23]
   17264945:
     template: Yagudo_Persecutor
-    at:       [598.668, -25.077, 167.133, 63]
+    region:   e_291
     level:    [17, 18]
   17264946:
     template: Coo_Keja_the_Unseen
-    at:       [684.000, -23.000, 6.000, 127]
+    region:   e_291
     level:    [35, 37]
   17264947:
     template: Yagudo_Votary
-    at:       [618.083, -32.017, 192.547, 213]
+    region:   e_291
     level:    [24, 25]
   17264948:
     template: Yagudo_Theologist
-    at:       [617.908, -31.896, 190.706, 217]
+    region:   e_291
     level:    [24, 25]
   17264949:
     template: Wandering_Sapling
-    at:       [547.003, -42.030, 347.868, 102]
+    region:   ne_309
     level:    [15, 16]
   17264950:
     template: Wandering_Sapling
-    at:       [560.180, -40.413, 444.339, 99]
+    region:   ne_309
     level:    [15, 16]
   17264951:
     template: Wandering_Sapling
-    at:       [606.149, -31.800, 516.829, 127]
+    region:   ne_309
     level:    [15, 16]
   17264952:
     template: Crane_Fly
-    at:       [522.201, -40.457, 437.259, 127]
+    region:   ne_309
     level:    [20, 21]
   17264953:
     template: Crane_Fly
-    at:       [530.123, -41.108, 333.835, 65]
+    region:   ne_309
     level:    [20, 21]
   17264954:
     template: Crane_Fly
-    at:       [540.813, -38.764, 329.274, 9]
+    region:   ne_309
     level:    [20, 21]
   17264955:
     template: Stag_Beetle
-    at:       [538.803, -39.733, 364.658, 127]
+    region:   ne_309
     level:    [22, 23]
   17264956:
     template: Stag_Beetle
-    at:       [581.906, -40.781, 454.574, 127]
+    region:   ne_309
     level:    [22, 23]
   17264957:
     template: Stag_Beetle
-    at:       [565.858, -34.204, 482.305, 116]
+    region:   ne_309
     level:    [22, 23]
   17264958:
     template: Coeurl
-    at:       [681.051, -24.500, 523.413, 86]
+    region:   ne_309
     level:    [25, 26]
   17264959:
     template: Coeurl
-    at:       [703.507, -21.880, 566.309, 66]
+    region:   ne_309
     level:    [25, 26]
   17264960:
     template: Scavenging_Hound
-    at:       [559.000, -31.000, 296.000, 1]
+    region:   ne_309
     level:    [25, 26]
   17264961:
     template: Wandering_Sapling
-    at:       [564.606, -31.137, 617.778, 115]
+    region:   ne_321
     level:    [15, 16]
   17264962:
     template: Wandering_Sapling
-    at:       [634.277, -31.384, 661.628, 1]
+    region:   ne_321
     level:    [15, 16]
   17264963:
     template: Wandering_Sapling
-    at:       [585.011, -32.013, 600.485, 127]
+    region:   ne_321
     level:    [15, 16]
   17264964:
     template: Crane_Fly
-    at:       [628.268, -24.495, 643.669, 127]
+    region:   ne_321
     level:    [20, 21]
   17264965:
     template: Crane_Fly
-    at:       [536.757, -31.715, 629.822, 127]
+    region:   ne_321
     level:    [20, 21]
   17264966:
     template: Crane_Fly
-    at:       [650.570, -25.133, 647.906, 76]
+    region:   ne_321
     level:    [20, 21]
   17264967:
     template: Coeurl
-    at:       [551.767, -32.570, 590.205, 94]
+    region:   ne_321
     level:    [25, 26]
   17264968:
     template: Coeurl
-    at:       [646.199, -24.483, 644.477, 127]
+    region:   ne_321
     level:    [25, 26]
   17264969:
     template: Coeurl
-    at:       [535.318, -32.179, 602.055, 127]
+    region:   ne_321
     level:    [25, 26]
   17264970:
     template: Scavenging_Hound
-    at:       [620.000, -32.000, 670.000, 127]
+    region:   ne_321
     level:    [25, 26]
   17264971:
     template: Will-o-the-Wisp
     level:    [24, 25]
   17264972:
     template: Patripatan
-    at:       [548.000, -32.000, 600.000, 150]
+    region:   ne_321
     level:    [27, 30]
   17264973:
     template: Wandering_Sapling
-    at:       [157.598, -8.123, 572.040, 66]
+    region:   n_333
     level:    [15, 16]
   17264974:
     template: Wandering_Sapling
-    at:       [-315.000, 18.000, 427.000, 127]
+    region:   n_333
     level:    [15, 16]
   17264975:
     template: Wandering_Sapling
-    at:       [-126.000, 8.000, 435.000, 127]
+    region:   n_333
     level:    [15, 16]
   17264976:
     template: Wandering_Sapling
-    at:       [-72.000, 7.000, 452.000, 127]
+    region:   n_333
     level:    [15, 16]
   17264977:
     template: Crane_Fly
-    at:       [152.814, -8.560, 585.853, 127]
+    region:   Needs_Multi_Region
     level:    [20, 21]
   17264978:
     template: Crane_Fly
-    at:       [155.269, -8.413, 563.495, 5]
+    region:   n_333
     level:    [20, 21]
   17264979:
     template: Crane_Fly
-    at:       [155.277, -8.462, 562.477, 1]
+    region:   Needs_Multi_Region
     level:    [20, 21]
   17264980:
     template: Crane_Fly
-    at:       [137.907, -8.368, 570.670, 56]
+    region:   n_333
     level:    [20, 21]
   17264981:
     template: Hill_Lizard
-    at:       [44.000, -7.000, 458.000, 127]
+    region:   Needs_Multi_Region
     level:    [21, 22]
   17264982:
     template: Hill_Lizard
-    at:       [-379.000, 8.000, 395.000, 54]
+    region:   n_333
     level:    [21, 22]
   17264983:
     template: Hill_Lizard
-    at:       [-345.000, 10.000, 440.000, 122]
+    region:   n_333
     level:    [21, 22]
   17264984:
     template: Hill_Lizard
-    at:       [122.449, -8.762, 559.568, 127]
+    region:   n_333
     level:    [21, 22]
   17264985:
     template: Hill_Lizard
-    at:       [346.541, -0.141, 516.058, 127]
+    region:   Needs_Multi_Region
     level:    [21, 22]
   17264986:
     template: Hill_Lizard
-    at:       [131.484, -8.364, 595.539, 127]
+    region:   Needs_Multi_Region
     level:    [21, 22]
   17264987:
     template: Hill_Lizard
-    at:       [-1.000, -0.010, 436.000, 127]
+    region:   Needs_Multi_Region
     level:    [21, 22]
   17264988:
     template: Will-o-the-Wisp
     level:    [24, 25]
   17264989:
     template: Wandering_Sapling
-    at:       [31.005, -24.734, 260.716, 127]
+    region:   n_349
     level:    [15, 16]
   17264990:
     template: Wandering_Sapling
-    at:       [-9.616, -9.540, 365.579, 127]
+    region:   n_349
     level:    [15, 16]
   17264991:
     template: Wandering_Sapling
-    at:       [-17.508, -1.142, 401.225, 17]
+    region:   n_349
     level:    [15, 16]
   17264992:
     template: Wandering_Sapling
-    at:       [10.278, -8.334, 358.131, 11]
+    region:   n_349
     level:    [15, 16]
   17264993:
     template: Crane_Fly
-    at:       [-18.104, -3.307, 383.681, 74]
+    region:   n_349
     level:    [20, 21]
   17264994:
     template: Crane_Fly
-    at:       [-6.014, -3.214, 384.320, 123]
+    region:   n_349
     level:    [20, 21]
   17264995:
     template: Crane_Fly
-    at:       [38.965, -16.501, 320.453, 127]
+    region:   n_349
     level:    [20, 21]
   17264996:
     template: Crane_Fly
-    at:       [34.704, -6.778, 412.105, 127]
+    region:   n_349
     level:    [20, 21]
   17264997:
     template: Hill_Lizard
-    at:       [-5.023, -0.443, 409.476, 127]
+    region:   n_349
     level:    [21, 22]
   17264998:
     template: Hill_Lizard
-    at:       [26.412, -8.329, 359.189, 127]
+    region:   n_349
     level:    [21, 22]
   17264999:
     template: Wandering_Sapling
-    at:       [19.114, -6.690, 502.457, 127]
+    region:   n_359
     level:    [15, 16]
   17265000:
     template: Wandering_Sapling
-    at:       [-21.946, 0.065, 441.484, 38]
+    region:   n_359
     level:    [15, 16]
   17265001:
     template: Wandering_Sapling
-    at:       [18.240, -6.883, 502.967, 127]
+    region:   n_359
     level:    [15, 16]
   17265002:
     template: Wandering_Sapling
-    at:       [7.836, -0.721, 453.456, 127]
+    region:   n_359
     level:    [15, 16]
   17265003:
     template: Crane_Fly
-    at:       [43.136, -9.279, 520.226, 127]
+    region:   n_359
     level:    [20, 21]
   17265004:
     template: Crane_Fly
-    at:       [-0.550, 3.144, 461.406, 42]
+    region:   n_359
     level:    [20, 21]
   17265005:
     template: Crane_Fly
-    at:       [46.639, -9.396, 518.155, 127]
+    region:   n_359
     level:    [20, 21]
   17265006:
     template: Crane_Fly
-    at:       [-28.252, 6.397, 488.400, 104]
+    region:   n_359
     level:    [20, 21]
   17265007:
     template: Hill_Lizard
-    at:       [109.599, -8.217, 403.765, 127]
+    region:   n_359
     level:    [21, 22]
   17265008:
     template: Hill_Lizard
-    at:       [-31.405, 0.034, 453.130, 101]
+    region:   n_359
     level:    [21, 22]
   17265009:
     template: Wandering_Sapling
-    at:       [-189.284, 6.990, 394.123, 92]
+    region:   nw_369
     level:    [15, 16]
   17265010:
     template: Wandering_Sapling
-    at:       [-156.330, 7.009, 420.362, 127]
+    region:   nw_369
     level:    [15, 16]
   17265011:
     template: Wandering_Sapling
-    at:       [-266.636, 6.323, 382.797, 127]
+    region:   nw_369
     level:    [15, 16]
   17265012:
     template: Crane_Fly
-    at:       [-278.580, 8.098, 374.860, 75]
+    region:   nw_369
     level:    [20, 21]
   17265013:
     template: Crane_Fly
-    at:       [-288.615, 8.752, 370.692, 127]
+    region:   nw_369
     level:    [20, 21]
   17265014:
     template: Crane_Fly
-    at:       [-151.780, 7.537, 430.624, 127]
+    region:   nw_369
     level:    [20, 21]
   17265015:
     template: Hill_Lizard
-    at:       [-251.859, 2.495, 372.780, 98]
+    region:   nw_369
     level:    [21, 22]
   17265016:
     template: Hill_Lizard
-    at:       [-147.339, 7.272, 425.051, 29]
+    region:   nw_369
     level:    [21, 22]
   17265017:
     template: Goblin_Mugger
-    at:       [111.696, -13.035, 373.440, 4]
+    region:   n_377
     level:    [21, 22]
   17265018:
     template: Goblin_Ambusher
-    at:       [-55.873, 1.647, 440.458, 127]
+    region:   n_377
     level:    [16, 17]
   17265019:
     template: Goblin_Leecher
-    at:       [-15.989, 3.803, 494.569, 113]
+    region:   n_377
     level:    [21, 22]
   17265020:
     template: Goblin_Tinkerer
-    at:       [98.189, -8.521, 408.554, 127]
+    region:   n_377
     level:    [16, 17]
   17265021:
     template: Goblin_Gambler
-    at:       [-276.939, 15.216, 404.388, 127]
+    region:   n_377
     level:    [21, 22]
   17265022:
     template: Goblin_Butcher
-    at:       [-80.269, 8.058, 500.948, 62]
+    region:   n_377
     level:    [16, 17]
   17265023:
     template: Zombie_war
     script:   Zombie
-    at:       [10.164, -3.028, 443.982, 7]
+    region:   n_377
     level:    [16, 23]
   17265024:
     template: Zombie_blm
     script:   Zombie
-    at:       [121.708, -16.478, 325.949, 127]
+    region:   n_377
     level:    [16, 23]
   17265025:
     template: Wandering_Sapling
-    at:       [-203.784, 8.175, 561.324, 129]
+    region:   nw_385
     level:    [15, 16]
   17265026:
     template: Wandering_Sapling
-    at:       [-253.648, 15.387, 583.952, 117]
+    region:   nw_385
     level:    [15, 16]
   17265027:
     template: Wandering_Sapling
-    at:       [-400.000, -0.030, 319.000, 127]
+    region:   nw_385
     level:    [15, 16]
   17265028:
     template: Crane_Fly
-    at:       [-267.384, 15.333, 550.991, 16]
+    region:   nw_385
     level:    [20, 21]
   17265029:
     template: Crane_Fly
-    at:       [-254.255, 15.474, 586.197, 109]
+    region:   nw_385
     level:    [20, 21]
   17265030:
     template: Crane_Fly
-    at:       [-209.229, 8.798, 563.235, 16]
+    region:   nw_385
     level:    [20, 21]
   17265031:
     template: Wandering_Sapling
-    at:       [-330.784, 4.753, 327.399, 127]
+    region:   nw_391
     level:    [15, 16]
   17265032:
     template: Wandering_Sapling
-    at:       [-115.200, 7.574, 395.408, 6]
+    region:   nw_391
     level:    [15, 16]
   17265033:
     template: Wandering_Sapling
-    at:       [-138.165, 4.414, 376.046, 90]
+    region:   nw_391
     level:    [15, 16]
   17265034:
     template: Wandering_Sapling
-    at:       [-220.468, -0.595, 318.217, 127]
+    region:   nw_391
     level:    [15, 16]
   17265035:
     template: Crane_Fly
-    at:       [-89.198, -5.143, 375.783, 127]
+    region:   nw_391
     level:    [20, 21]
   17265036:
     template: Crane_Fly
-    at:       [-169.564, 0.010, 365.975, 127]
+    region:   nw_391
     level:    [20, 21]
   17265037:
     template: Crane_Fly
-    at:       [-164.220, -0.882, 339.442, 112]
+    region:   nw_397
     level:    [20, 21]
   17265038:
     template: Hill_Lizard
-    at:       [-318.118, 7.802, 349.865, 127]
+    region:   nw_397
     level:    [21, 22]
   17265039:
     template: Hill_Lizard
-    at:       [-148.423, -1.852, 333.439, 16]
+    region:   nw_391
     level:    [21, 22]
   17265040:
     template: Hill_Lizard
-    at:       [-332.576, 5.836, 349.656, 127]
+    region:   nw_391
     level:    [21, 22]
   17265041:
     template: Wandering_Sapling
-    at:       [-420.398, 4.512, 347.207, 127]
+    region:   nw_401
     level:    [15, 16]
   17265042:
     template: Wandering_Sapling
-    at:       [-349.913, 0.506, 326.557, 42]
+    region:   nw_401
     level:    [15, 16]
   17265043:
     template: Wandering_Sapling
-    at:       [-403.652, 6.479, 398.486, 127]
+    region:   nw_401
     level:    [15, 16]
   17265044:
     template: Wandering_Sapling
-    at:       [-367.321, -0.047, 354.632, 59]
+    region:   nw_401
     level:    [15, 16]
   17265045:
     template: Crane_Fly
-    at:       [-342.663, 2.844, 364.784, 126]
+    region:   nw_401
     level:    [20, 21]
   17265046:
     template: Crane_Fly
-    at:       [-371.204, -0.318, 319.762, 14]
+    region:   nw_401
     level:    [20, 21]
   17265047:
     template: Crane_Fly
-    at:       [-325.160, 10.318, 374.457, 127]
+    region:   nw_401
     level:    [20, 21]
   17265048:
     template: Hill_Lizard
-    at:       [-410.486, 1.585, 326.620, 127]
+    region:   nw_401
     level:    [21, 22]
   17265049:
     template: Hill_Lizard
-    at:       [-355.148, -0.493, 334.491, 127]
+    region:   nw_401
     level:    [21, 22]
   17265050:
     template: Hill_Lizard
-    at:       [-387.566, -2.642, 309.662, 32]
+    region:   nw_401
     level:    [21, 22]
   17265051:
     template: Wandering_Sapling
-    at:       [-314.041, 15.573, 505.925, 127]
+    region:   nw_411
     level:    [15, 16]
   17265052:
     template: Wandering_Sapling
-    at:       [-402.917, 23.923, 539.979, 127]
+    region:   nw_411
     level:    [15, 16]
   17265053:
     template: Wandering_Sapling
-    at:       [-431.604, 21.718, 502.813, 127]
+    region:   nw_411
     level:    [15, 16]
   17265054:
     template: Wandering_Sapling
-    at:       [-326.887, 15.285, 496.585, 127]
+    region:   nw_411
     level:    [15, 16]
   17265055:
     template: Crane_Fly
-    at:       [-345.115, 16.065, 492.262, 127]
+    region:   nw_411
     level:    [20, 21]
   17265056:
     template: Crane_Fly
-    at:       [-320.302, 15.930, 502.581, 104]
+    region:   nw_411
     level:    [20, 21]
   17265057:
     template: Crane_Fly
-    at:       [-459.284, 18.914, 559.077, 127]
+    region:   nw_411
     level:    [20, 21]
   17265058:
     template: Hill_Lizard
-    at:       [-366.974, 16.182, 491.399, 127]
+    region:   nw_411
     level:    [21, 22]
   17265059:
     template: Hill_Lizard
-    at:       [-395.308, 23.475, 553.295, 127]
+    region:   nw_411
     level:    [21, 22]
   17265060:
     template: Hill_Lizard
-    at:       [-429.390, 14.590, 467.457, 127]
+    region:   nw_411
     level:    [21, 22]
   17265061:
     template: Goblin_Mugger
-    at:       [-406.340, 6.393, 357.803, 127]
+    region:   nw_421
     level:    [21, 22]
   17265062:
     template: Goblin_Ambusher
-    at:       [-426.662, -1.196, 299.648, 116]
+    region:   nw_421
     level:    [16, 17]
   17265063:
     template: Goblin_Leecher
-    at:       [-334.045, -8.340, 288.666, 127]
+    region:   nw_421
     level:    [21, 22]
   17265064:
     template: Goblin_Tinkerer
-    at:       [-293.246, 12.615, 374.652, 127]
+    region:   nw_421
     level:    [16, 17]
   17265065:
     template: Goblin_Gambler
-    at:       [-373.233, -8.735, 289.170, 77]
+    region:   nw_421
     level:    [21, 22]
   17265066:
     template: Goblin_Butcher
-    at:       [-350.631, 4.298, 379.554, 127]
+    region:   nw_421
     level:    [16, 17]
   17265067:
     template: Zombie_war
     script:   Zombie
-    at:       [-380.163, -8.584, 269.266, 13]
+    region:   nw_421
     level:    [16, 23]
   17265068:
     template: Zombie_blm
     script:   Zombie
-    at:       [-318.068, 7.492, 359.338, 1]
+    region:   nw_421
     level:    [16, 23]
   17265069:
     template: Goblin_Mugger
-    at:       [-380.819, -9.000, 261.701, 127]
+    region:   nw_421
     level:    [21, 22]
   17265070:
     template: Goblin_Leecher
-    at:       [-382.364, -9.083, 260.283, 127]
+    region:   nw_421
     level:    [21, 22]
   17265071:
     template: Goblin_Tinkerer
-    at:       [-513.000, 8.000, 318.000, 50]
+    region:   nw_421
     level:    [16, 17]
   17265072:
     template: Goblin_Gambler
-    at:       [-381.398, -8.999, 263.840, 126]
+    region:   nw_421
     level:    [21, 22]
   17265073:
     template: Crane_Fly
-    at:       [-460.304, -0.244, 278.633, 11]
+    region:   nw_433
     level:    [20, 21]
   17265074:
     template: Crane_Fly
-    at:       [-499.561, -3.733, 283.204, 69]
+    region:   nw_433
     level:    [20, 21]
   17265075:
     template: Hill_Lizard
-    at:       [-513.435, -3.513, 292.353, 44]
+    region:   nw_433
     level:    [21, 22]
   17265076:
     template: Hill_Lizard
-    at:       [-507.936, 8.012, 335.527, 127]
+    region:   nw_433
     level:    [21, 22]
   17265077:
     template: Coeurl
-    at:       [-486.000, 7.000, 311.000, 127]
+    region:   nw_433
     level:    [25, 26]
   17265078:
     template: Coeurl
-    at:       [-537.000, -8.000, 288.000, 127]
+    region:   nw_433
     level:    [25, 26]
   17265079:
     template: Boggart
-    at:       [-409.400, -8.563, 279.818, 127]
+    region:   nw_439
     level:    [26, 27]
   17265080:
     template: Boggart
-    at:       [-460.000, 6.000, 307.000, 108]
+    region:   region_54
     level:    [26, 27]
   17265081:
     template: Boggart
-    at:       [-445.392, 7.235, 323.336, 127]
+    region:   region_54
     level:    [26, 27]
   17265082:
     template: Boggart
-    at:       [-438.833, -2.391, 268.526, 51]
+    region:   nw_442
     level:    [26, 27]
   17265083:
     template: Boggart
-    at:       [-478.574, 7.767, 336.165, 127]
+    region:   nw_443
     level:    [26, 27]
   17265084:
     template: Goblin_Digger_far

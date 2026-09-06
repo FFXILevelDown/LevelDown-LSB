@@ -1386,917 +1386,917 @@ templates:
 spawns:
   17645569:
     template: Greater_Gaylas
-    at:       [-181.109, -5.000, -221.000, 45]
+    region:   sw_1
     level:    [46, 49]
   17645570:
     template: Greater_Gaylas
-    at:       [-202.642, -12.303, -221.000, 127]
+    region:   sw_1
     level:    [46, 49]
   17645571:
     template: Goblin_Poacher
-    at:       [-136.767, -10.536, -178.842, 96]
+    region:   sw_3
     level:    [46, 49]
   17645572:
     template: Greater_Gaylas
-    at:       [-140.398, -10.278, -194.284, 73]
+    region:   sw_3
     level:    [46, 49]
   17645573:
     template: Goblin_Robber
-    at:       [-116.000, -10.788, -179.000, 127]
+    region:   s_5
     level:    [46, 49]
   17645574:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [-73.506, -11.059, -186.940, 127]
+    region:   s_5
     level:    [46, 49]
   17645575:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [-82.130, -10.626, -186.347, 127]
+    region:   s_5
     level:    [46, 49]
   17645576:
     template: Labyrinth_Leech
-    at:       [-77.606, -10.830, -162.111, 63]
+    region:   s_5
     level:    [45, 48]
   17645577:
     template: Labyrinth_Leech
-    at:       [-66.000, -11.391, -180.000, 127]
+    region:   s_5
     level:    [45, 48]
   17645578:
     template: Bune
-    at:       [-72.000, -10.000, -170.000, 119]
+    region:   s_5
     level:    [83, 83]
   17645579:
     template: Goblin_Poacher
-    at:       [-40.559, -11.375, -168.806, 127]
+    region:   s_11
     level:    [46, 49]
   17645580:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [8.870, -10.025, -161.612, 30]
+    region:   s_11
     level:    [46, 49]
   17645581:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [-3.637, -10.405, -162.565, 112]
+    region:   s_11
     level:    [46, 49]
   17645582:
     template: Labyrinth_Leech
-    at:       [-51.843, -11.465, -151.114, 127]
+    region:   s_11
     level:    [45, 48]
   17645583:
     template: Labyrinth_Leech
-    at:       [-13.004, -9.725, -165.081, 127]
+    region:   s_11
     level:    [45, 48]
   17645584:
     template: Goblin_Robber
-    at:       [-13.256, -10.286, -133.926, 127]
+    region:   s_16
     level:    [46, 49]
   17645585:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [0.700, -10.053, -122.000, 127]
+    region:   s_16
     level:    [46, 49]
   17645586:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [-14.000, -10.000, -153.000, 127]
+    region:   s_16
     level:    [46, 49]
   17645587:
     template: Labyrinth_Leech
-    at:       [-8.879, -10.022, -145.581, 127]
+    region:   s_16
     level:    [45, 48]
   17645588:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [29.000, -9.000, -90.000, 55]
+    region:   s_20
     level:    [46, 49]
   17645589:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [54.211, -11.234, -66.683, 127]
+    region:   s_20
     level:    [46, 49]
   17645590:
     template: Hell_Bat
-    at:       [334.000, -33.000, 53.000, 118]
+    region:   s_20
     level:    [44, 48]
   17645591:
     template: Greater_Gaylas
-    at:       [-77.000, -10.205, -99.000, 127]
+    region:   s_20
     level:    [46, 49]
   17645592:
     template: Goblin_Reaper
-    at:       [153.000, -10.000, -53.000, 127]
+    region:   c_24
     level:    [46, 49]
   17645593:
     template: Hawker
-    at:       [91.285, -16.214, -59.834, 127]
+    region:   c_24
     level:    [45, 48]
   17645594:
     template: Goblin_Poacher
-    at:       [102.000, -11.000, -55.000, 127]
+    region:   e_26
     level:    [46, 49]
   17645595:
     template: Goblin_Poacher
-    at:       [131.971, -10.497, -48.832, 127]
+    region:   e_26
     level:    [46, 49]
   17645596:
     template: Hawker
-    at:       [113.526, -10.072, -51.426, 127]
+    region:   e_26
     level:    [45, 48]
   17645597:
     template: Hawker
-    at:       [123.000, -9.000, -43.000, 127]
+    region:   e_26
     level:    [45, 48]
   17645598:
     template: Labyrinth_Leech
-    at:       [124.000, -9.000, -35.000, 34]
+    region:   e_26
     level:    [45, 48]
   17645599:
     template: Goblin_Robber
-    at:       [163.000, -10.443, -52.000, 121]
+    region:   e_31
     level:    [46, 49]
   17645600:
     template: Goblin_Robber
-    at:       [158.286, -10.664, -36.631, 75]
+    region:   e_26
     level:    [46, 49]
   17645601:
     template: Hawker
-    at:       [141.000, -10.000, -51.000, 63]
+    region:   e_31
     level:    [45, 48]
   17645602:
     template: Hawker
-    at:       [149.570, -10.345, -38.308, 127]
+    region:   e_31
     level:    [45, 48]
   17645603:
     template: Labyrinth_Leech
-    at:       [158.259, -10.838, -39.341, 127]
+    region:   e_31
     level:    [45, 48]
   17645604:
     template: Goblin_Reaper
-    at:       [165.558, -10.647, -68.537, 127]
+    region:   e_26
     level:    [46, 49]
   17645605:
     template: Goblin_Reaper
-    at:       [152.325, -10.702, -77.007, 15]
+    region:   se_37
     level:    [46, 49]
   17645606:
     template: Hawker
-    at:       [157.534, -10.069, -67.156, 127]
+    region:   se_37
     level:    [45, 48]
   17645607:
     template: Hawker
-    at:       [165.974, -10.632, -75.974, 127]
+    region:   se_37
     level:    [45, 48]
   17645608:
     template: Labyrinth_Leech
-    at:       [155.141, -10.550, -78.762, 127]
+    region:   se_37
     level:    [45, 48]
   17645609:
     template: Goblinsavior_Heronox
-    at:       [166.000, -9.000, -83.000, 127]
+    region:   region_63
     level:    [51, 52]
   17645610:
     template: Goblin_Robber
-    at:       [176.948, -11.418, -28.134, 104]
+    region:   e_42
     level:    [46, 49]
   17645611:
     template: Hawker
-    at:       [164.000, -10.000, -39.000, 28]
+    region:   e_42
     level:    [45, 48]
   17645612:
     template: Goblin_Reaper
-    at:       [259.000, -18.000, 1.000, 127]
+    region:   e_44
     level:    [46, 49]
   17645613:
     template: Hawker
-    at:       [238.000, -18.000, -19.000, 127]
+    region:   e_44
     level:    [45, 48]
   17645614:
     template: Hawker
-    at:       [216.000, -20.000, -21.000, 127]
+    region:   e_44
     level:    [45, 48]
   17645615:
     template: Goblin_Poacher
-    at:       [245.000, -19.000, -20.000, 127]
+    region:   e_47
     level:    [46, 49]
   17645616:
     template: Hawker
-    at:       [261.059, -19.390, -7.422, 127]
+    region:   e_47
     level:    [45, 48]
   17645617:
     template: Hell_Bat
-    at:       [300.000, -25.000, 21.000, 100]
+    region:   e_49
     level:    [44, 48]
   17645618:
     template: Hell_Bat
-    at:       [278.257, -20.612, 20.825, 127]
+    region:   e_49
     level:    [44, 48]
   17645619:
     template: Hell_Bat
-    at:       [323.000, -30.884, 20.000, 127]
+    region:   e_49
     level:    [44, 48]
   17645620:
     template: Makara
-    at:       [-73.000, -8.000, -211.000, 127]
+    region:   region_64
     level:    [46, 49]
   17645621:
     template: Makara
-    at:       [-69.000, -9.397, -206.000, 127]
+    region:   region_64
     level:    [46, 49]
   17645622:
     template: Makara
-    at:       [-10.000, -9.440, -113.000, 127]
+    region:   region_65
     level:    [46, 49]
   17645623:
     template: Makara
-    at:       [-4.710, -9.735, -108.126, 23]
+    region:   region_65
     level:    [46, 49]
   17645624:
     template: Makara
-    at:       [46.752, -9.360, -90.668, 42]
+    region:   s_56
     level:    [46, 49]
   17645625:
     template: Makara
-    at:       [52.894, -9.189, -88.940, 127]
+    region:   s_56
     level:    [46, 49]
   17645626:
     template: Makara
-    at:       [165.000, -9.450, -90.000, 90]
+    region:   se_58
     level:    [46, 49]
   17645627:
     template: Makara
-    at:       [171.000, -8.000, -87.000, 127]
+    region:   se_58
     level:    [46, 49]
   17645628:
     template: Labyrinth_Lizard_GT
     script:   Labyrinth_Lizard
-    at:       [-60.000, -10.679, -121.000, 127]
+    region:   s_60
     level:    [46, 49]
   17645629:
     template: Greater_Gaylas
-    at:       [-98.000, 0.500, -82.000, 73]
+    region:   s_60
     level:    [46, 49]
   17645630:
     template: Greater_Gaylas
-    at:       [-61.058, -10.695, -100.916, 127]
+    region:   s_60
     level:    [46, 49]
   17645631:
     template: Robber_Crab
-    at:       [-63.022, 0.081, -43.061, 59]
+    region:   c_63
     level:    [65, 68]
   17645632:
     template: Robber_Crab
-    at:       [-80.527, 0.662, -56.477, 113]
+    region:   c_63
     level:    [65, 68]
   17645633:
     template: Goblin_Mercenary
-    at:       [-100.000, 1.000, -44.000, 127]
+    region:   c_63
     level:    [65, 68]
   17645634:
     template: Goblin_Mercenary
-    at:       [-101.000, 1.000, -29.000, 111]
+    region:   c_63
     level:    [65, 68]
   17645635:
     template: Goblin_Alchemist
-    at:       [-54.613, 0.375, -38.078, 27]
+    region:   c_63
     level:    [65, 68]
   17645636:
     template: Goblin_Shepherd
-    at:       [-72.681, 0.673, -58.353, 5]
+    region:   c_63
     level:    [65, 68]
   17645637:
     template: Goblins_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   c_63
     level:    [53, 55]
   17645638:
     template: Goblin_Shepherd
-    at:       [-94.000, 0.454, -56.000, 127]
+    region:   c_63
     level:    [65, 68]
   17645639:
     template: Goblins_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   c_63
     level:    [53, 55]
   17645640:
     template: Wyvernpoacher_Drachlox
-    at:       [-63.000, 1.000, -61.000, 26]
+    region:   c_63
     level:    [70, 72]
   17645641:
     template: Robber_Crab
-    at:       [-105.218, 0.644, -21.270, 94]
+    region:   w_73
     level:    [65, 68]
   17645642:
     template: Robber_Crab
-    at:       [-166.444, 0.121, -16.104, 127]
+    region:   w_73
     level:    [65, 68]
   17645643:
     template: Goblin_Mercenary
-    at:       [-150.673, -0.067, -20.914, 19]
+    region:   w_73
     level:    [65, 68]
   17645644:
     template: Goblin_Mercenary
-    at:       [-165.598, 0.218, -21.966, 66]
+    region:   w_73
     level:    [65, 68]
   17645645:
     template: Goblin_Alchemist
-    at:       [-124.415, 0.161, -16.182, 127]
+    region:   w_73
     level:    [65, 68]
   17645646:
     template: Goblin_Shepherd
-    at:       [-111.000, 1.000, -19.000, 127]
+    region:   w_73
     level:    [65, 68]
   17645647:
     template: Goblins_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   w_73
     level:    [53, 55]
   17645648:
     template: Goblin_Shepherd
-    at:       [-144.000, -0.895, -22.000, 100]
+    region:   w_73
     level:    [65, 68]
   17645649:
     template: Goblins_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   w_73
     level:    [53, 55]
   17645650:
     template: Robber_Crab
-    at:       [-47.000, -0.035, -17.000, 127]
+    region:   c_82
     level:    [65, 68]
   17645651:
     template: Goblin_Shepherd
-    at:       [-42.807, 0.986, -19.715, 105]
+    region:   c_82
     level:    [65, 68]
   17645652:
     template: Goblins_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   c_82
     level:    [53, 55]
   17645653:
     template: Goblin_Alchemist
-    at:       [-52.833, 0.628, -19.013, 127]
+    region:   c_82
     level:    [65, 68]
   17645654:
     template: Robber_Crab
-    at:       [-12.979, -0.013, 50.313, 127]
+    region:   c_86
     level:    [65, 68]
   17645655:
     template: Robber_Crab
-    at:       [-16.398, -0.638, 63.503, 127]
+    region:   c_86
     level:    [65, 68]
   17645656:
     template: Doom_Soldier
-    at:       [-0.583, 0.624, 52.888, 126]
+    region:   c_86
     level:    [65, 67]
   17645657:
     template: Doom_Soldier
-    at:       [-11.541, -0.070, 28.884, 127]
+    region:   c_86
     level:    [65, 67]
   17645658:
     template: Doom_Mage
-    at:       [-24.355, -0.035, 51.432, 105]
+    region:   c_86
     level:    [65, 67]
   17645659:
     template: Doom_Mage
-    at:       [-15.701, 0.744, 36.913, 127]
+    region:   c_86
     level:    [65, 67]
   17645660:
     template: Robber_Crab
-    at:       [7.303, -0.163, 71.181, 127]
+    region:   c_92
     level:    [65, 68]
   17645661:
     template: Robber_Crab
-    at:       [-7.000, -0.107, 81.000, 86]
+    region:   c_92
     level:    [65, 68]
   17645662:
     template: Doom_Soldier
-    at:       [11.541, -0.577, 63.837, 82]
+    region:   c_92
     level:    [65, 67]
   17645663:
     template: Doom_Soldier
-    at:       [-5.000, 0.500, 68.000, 64]
+    region:   n_103
     level:    [65, 67]
   17645664:
     template: Doom_Mage
-    at:       [4.861, 0.171, 70.683, 81]
+    region:   c_92
     level:    [65, 67]
   17645665:
     template: Doom_Mage
-    at:       [4.000, -0.653, 83.000, 32]
+    region:   c_92
     level:    [65, 67]
   17645666:
     template: Robber_Crab
-    at:       [-29.000, 0.008, 46.521, 127]
+    region:   c_98
     level:    [65, 68]
   17645667:
     template: Robber_Crab
-    at:       [-27.988, -0.324, 35.437, 127]
+    region:   c_98
     level:    [65, 68]
   17645668:
     template: Doom_Soldier
-    at:       [-34.535, 0.076, 45.989, 127]
+    region:   c_98
     level:    [65, 67]
   17645669:
     template: Robber_Crab
-    at:       [-45.000, 0.237, 52.000, 127]
+    region:   c_101
     level:    [65, 68]
   17645670:
     template: Robber_Crab
-    at:       [-5.000, 0.481, 61.000, 127]
+    region:   c_101
     level:    [65, 68]
   17645671:
     template: Doom_Soldier
-    at:       [-20.875, -7.994, 113.746, 127]
+    region:   n_103
     level:    [65, 67]
   17645672:
     template: Doom_Soldier
-    at:       [-14.902, -4.435, 104.990, 160]
+    region:   n_103
     level:    [65, 67]
   17645673:
     template: Boulder_Eater
-    at:       [15.780, -4.681, 145.630, 108]
+    region:   n_105
     level:    [100, 102]
   17645674:
     template: Boulder_Eater
-    at:       [-0.896, -9.250, 140.501, 84]
+    region:   n_105
     level:    [100, 102]
   17645675:
     template: Boulder_Eater
-    at:       [32.030, 0.095, 167.957, 118]
+    region:   n_105
     level:    [100, 102]
   17645676:
     template: Pygmytoise
-    at:       [36.000, -0.713, 188.000, 77]
+    region:   n_108
     level:    [102, 103]
   17645677:
     template: Boulder_Eater
-    at:       [41.932, -0.001, 156.427, 127]
+    region:   n_109
     level:    [100, 102]
   17645678:
     template: Boulder_Eater
-    at:       [28.479, -0.933, 152.120, 33]
+    region:   n_109
     level:    [100, 102]
   17645679:
     template: Pygmytoise
-    at:       [62.000, -0.726, 190.000, 127]
+    region:   n_111
     level:    [102, 103]
   17645680:
     template: Pygmytoise
-    at:       [120.000, 1.000, 176.000, 127]
+    region:   n_111
     level:    [102, 102]
   17645681:
     template: Pygmytoise
-    at:       [43.000, 0.240, 164.000, 127]
+    region:   n_111
     level:    [102, 103]
   17645682:
     template: Boulder_Eater
-    at:       [61.000, 0.105, 177.000, 52]
+    region:   n_114
     level:    [100, 102]
   17645683:
     template: Boulder_Eater
-    at:       [53.000, 0.354, 170.000, 127]
+    region:   n_114
     level:    [100, 102]
   17645684:
     template: Boulder_Eater
-    at:       [32.633, 0.166, 198.310, 84]
+    region:   n_114
     level:    [100, 102]
   17645685:
     template: Boulder_Eater
-    at:       [62.000, -1.000, 212.000, 30]
+    region:   n_117
     level:    [100, 102]
   17645686:
     template: Boulder_Eater
-    at:       [115.732, -0.378, 201.708, 59]
+    region:   n_117
     level:    [100, 102]
   17645687:
     template: Earth_Elemental
-    at:       [118.136, -0.290, 195.442, 114]
+    region:   n_111
     level:    [75, 77]
   17645688:
     template: Pygmytoise
-    at:       [91.658, 0.587, 200.137, 23]
+    region:   n_120
     level:    [102, 103]
   17645689:
     template: Pygmytoise
-    at:       [96.086, -0.943, 187.523, 15]
+    region:   n_120
     level:    [102, 103]
   17645690:
     template: Pygmytoise
-    at:       [124.000, -0.167, 203.000, 102]
+    region:   n_120
     level:    [102, 103]
   17645691:
     template: Boulder_Eater
-    at:       [93.139, 0.152, 205.912, 127]
+    region:   n_123
     level:    [100, 102]
   17645692:
     template: Boulder_Eater
-    at:       [90.476, -0.584, 185.519, 127]
+    region:   n_123
     level:    [100, 102]
   17645693:
     template: Boulder_Eater
-    at:       [116.348, 0.186, 164.146, 61]
+    region:   ne_125
     level:    [100, 102]
   17645694:
     template: Boulder_Eater
-    at:       [131.556, -0.681, 164.154, 127]
+    region:   ne_125
     level:    [100, 102]
   17645695:
     template: Boulder_Eater
-    at:       [119.058, -0.500, 148.624, 123]
+    region:   ne_125
     level:    [100, 102]
   17645696:
     template: Boulder_Eater
-    at:       [80.000, -1.000, 210.000, 127]
+    region:   ne_125
     level:    [100, 102]
   17645697:
     template: Earth_Elemental
-    at:       [73.000, -1.000, 196.000, 3]
+    region:   ne_125
     level:    [75, 77]
   17645698:
     template: Robber_Crab
-    at:       [-19.000, 0.695, -1.000, 90]
+    region:   c_131
     level:    [65, 68]
   17645699:
     template: Robber_Crab
-    at:       [30.000, -0.500, 59.000, 127]
+    region:   c_131
     level:    [65, 68]
   17645700:
     template: Doom_Guard
-    at:       [63.794, 0.320, 27.335, 196]
+    region:   c_132
     level:    [75, 77]
   17645701:
     template: Doom_Guard
-    at:       [63.097, 0.027, 22.216, 123]
+    region:   c_132
     level:    [75, 77]
   17645702:
     template: Doom_Warlock
-    at:       [58.659, -0.266, 31.539, 127]
+    region:   c_132
     level:    [76, 78]
   17645703:
     template: Doom_Warlock
-    at:       [82.000, 1.000, 19.000, 62]
+    region:   c_132
     level:    [76, 78]
   17645704:
     template: Doom_Guard
-    at:       [56.256, 0.382, 45.635, 126]
+    region:   c_132
     level:    [75, 77]
   17645705:
     template: Doom_Warlock
-    at:       [110.438, 7.985, 48.535, 158]
+    region:   e_137
     level:    [76, 78]
   17645706:
     template: Doom_Warlock
-    at:       [161.000, 10.000, 82.000, 23]
+    region:   e_137
     level:    [76, 78]
   17645707:
     template: Doom_Guard
-    at:       [129.068, 10.001, 41.063, 127]
+    region:   e_137
     level:    [75, 77]
   17645708:
     template: Fire_Elemental
-    at:       [131.752, 10.305, 48.990, 2]
+    region:   e_137
     level:    [75, 77]
   17645709:
     template: Doom_Warlock
-    at:       [136.348, 9.155, 36.651, 44]
+    region:   e_141
     level:    [76, 78]
   17645710:
     template: Doom_Warlock
-    at:       [150.750, 9.828, 60.647, 23]
+    region:   e_141
     level:    [76, 78]
   17645711:
     template: Doom_Guard
-    at:       [149.966, 9.942, 50.755, 127]
+    region:   e_141
     level:    [75, 77]
   17645712:
     template: Doom_Guard
-    at:       [136.565, 9.661, 61.238, 127]
+    region:   e_141
     level:    [75, 77]
   17645713:
     template: Typhoon_Wyvern
-    at:       [143.000, 10.161, 44.000, 124]
+    region:   e_141
     level:    [78, 80]
   17645714:
     template: Demonic_Pugil
-    at:       [171.000, 10.000, 35.000, 74]
+    region:   e_141
     level:    [73, 76]
   17645715:
     template: Doom_Warlock
-    at:       [157.000, 10.000, 70.000, 127]
+    region:   e_147
     level:    [76, 78]
   17645716:
     template: Typhoon_Wyvern
-    at:       [170.285, 9.454, 63.650, 55]
+    region:   e_147
     level:    [78, 80]
   17645717:
     template: Erlik
-    at:       [171.000, 9.194, 55.000, 127]
+    region:   e_147
     level:    [75, 78]
   17645718:
     template: Erlik
-    at:       [187.000, 9.000, 105.000, 127]
+    region:   e_147
     level:    [75, 78]
   17645719:
     template: Baobhan_Sith
-    at:       [206.000, 10.000, 76.000, 127]
+    region:   ne_152
     level:    [79, 81]
   17645720:
     template: Doom_Warlock
-    at:       [184.895, 9.723, 93.099, 12]
+    region:   ne_152
     level:    [76, 78]
   17645721:
     template: Doom_Guard
-    at:       [196.673, 9.969, 76.631, 127]
+    region:   ne_152
     level:    [75, 77]
   17645722:
     template: Doom_Guard
-    at:       [199.000, 19.000, 90.000, 127]
+    region:   ne_152
     level:    [75, 77]
   17645723:
     template: Typhoon_Wyvern
-    at:       [188.227, 10.461, 71.997, 49]
+    region:   ne_152
     level:    [78, 80]
   17645724:
     template: Demonic_Pugil
-    at:       [212.000, 10.000, 124.000, 127]
+    region:   ne_152
     level:    [73, 76]
   17645725:
     template: Doom_Warlock
-    at:       [201.555, 9.809, 116.058, 127]
+    region:   ne_157
     level:    [76, 78]
   17645726:
     template: Doom_Warlock
-    at:       [203.870, 9.967, 112.156, 254]
+    region:   ne_157
     level:    [76, 78]
   17645727:
     template: Doom_Guard
-    at:       [194.808, 9.995, 118.887, 103]
+    region:   ne_152
     level:    [75, 77]
   17645728:
     template: Demonic_Pugil
-    at:       [166.625, 10.203, 31.359, 127]
+    region:   ne_157
     level:    [73, 76]
   17645729:
     template: Demonic_Pugil
-    at:       [206.802, 9.942, 127.849, 54]
+    region:   e_161
     level:    [73, 76]
   17645730:
     template: Demonic_Pugil
-    at:       [-109.000, 0.456, 33.000, 127]
+    region:   ne_162
     level:    [73, 76]
   17645731:
     template: Doom_Warlock
-    at:       [-172.941, -1.220, 55.577, 127]
+    region:   w_163
     level:    [76, 78]
   17645732:
     template: Doom_Guard
-    at:       [-219.000, -8.000, -2.000, 127]
+    region:   w_163
     level:    [75, 77]
   17645733:
     template: Doom_Guard
-    at:       [-193.000, -0.583, 43.000, 16]
+    region:   w_165
     level:    [75, 77]
   17645734:
     template: Doom_Warlock
-    at:       [-237.000, 0.001, 131.000, 127]
+    region:   w_165
     level:    [76, 78]
   17645735:
     template: Doom_Guard
-    at:       [-199.209, 0.499, 59.455, 117]
+    region:   w_167
     level:    [75, 77]
   17645736:
     template: Demonic_Pugil
-    at:       [-188.000, 1.000, 87.000, 65]
+    region:   nw_177
     level:    [73, 76]
   17645737:
     template: Antares_GT
     script:   Antares
-    at:       [-206.330, 0.044, 73.926, 56]
+    region:   w_167
     level:    [77, 79]
   17645738:
     template: Doom_Warlock
-    at:       [-137.334, -0.108, 48.105, 32]
+    region:   w_172
     level:    [76, 78]
   17645739:
     template: Doom_Warlock
-    at:       [-118.000, -0.515, 79.000, 127]
+    region:   w_175
     level:    [76, 78]
   17645740:
     template: Demonic_Pugil
-    at:       [-191.000, 1.000, 88.000, 106]
+    region:   w_172
     level:    [73, 76]
   17645741:
     template: Erlik
-    at:       [-148.140, 0.145, 52.424, 198]
+    region:   w_172
     level:    [75, 78]
   17645742:
     template: Taxim
-    at:       [-151.000, 0.048, 47.000, 127]
+    region:   region_66
     level:    [78, 80]
   17645743:
     template: Doom_Guard
-    at:       [-179.000, -0.502, 42.000, 46]
+    region:   w_175
     level:    [75, 77]
   17645744:
     template: Doom_Warlock
-    at:       [-125.000, 0.635, 59.000, 127]
+    region:   w_175
     level:    [76, 78]
   17645745:
     template: Demonic_Pugil
-    at:       [-116.434, 0.214, 29.811, 127]
+    region:   nw_177
     level:    [73, 76]
   17645746:
     template: Demonic_Pugil
-    at:       [-270.000, -8.000, -50.000, 117]
+    region:   w_178
     level:    [73, 76]
   17645747:
     template: Doom_Guard
-    at:       [-293.000, -9.000, 3.000, 127]
+    region:   w_179
     level:    [75, 77]
   17645748:
     template: Doom_Warlock
-    at:       [-280.910, -10.031, 4.991, 127]
+    region:   w_180
     level:    [76, 78]
   17645749:
     template: Doom_Warlock
-    at:       [-286.879, -10.412, -8.943, 118]
+    region:   w_180
     level:    [76, 78]
   17645750:
     template: Demonic_Pugil
-    at:       [-273.000, -8.000, -50.000, 127]
+    region:   w_180
     level:    [73, 76]
   17645751:
     template: Doom_Guard
-    at:       [-310.781, -10.012, -4.037, 127]
+    region:   w_183
     level:    [75, 77]
   17645752:
     template: Demonic_Pugil
-    at:       [-325.000, -9.000, 11.000, 53]
+    region:   w_183
     level:    [73, 76]
   17645753:
     template: Erlik
-    at:       [-295.000, -9.000, -25.000, 14]
+    region:   w_183
     level:    [75, 78]
   17645754:
     template: Typhoon_Wyvern
-    at:       [-316.000, -9.000, 3.000, 61]
+    region:   w_183
     level:    [78, 80]
   17645755:
     template: Ungur
-    at:       [-316.000, -9.000, 3.000, 5]
+    region:   region_67
     level:    [81, 83]
   17645756:
     template: Doom_Guard
-    at:       [-279.607, -9.443, -29.088, 127]
+    region:   w_188
     level:    [75, 77]
   17645757:
     template: Demonic_Pugil
-    at:       [-291.159, -10.735, -30.400, 81]
+    region:   w_188
     level:    [73, 76]
   17645758:
     template: Typhoon_Wyvern
-    at:       [-277.000, -10.000, -34.000, 127]
+    region:   w_188
     level:    [78, 80]
   17645759:
     template: Demonic_Pugil
-    at:       [-268.764, -9.302, 8.063, 72]
+    region:   w_191
     level:    [73, 76]
   17645760:
     template: Demonic_Pugil
-    at:       [-332.175, -9.379, 8.431, 101]
+    region:   region_68
     level:    [73, 76]
   17645761:
     template: Demonic_Pugil
-    at:       [-246.000, -0.005, 170.000, 127]
+    region:   region_68
     level:    [73, 76]
   17645762:
     template: Doom_Guard
-    at:       [-247.196, -0.264, 115.732, 129]
+    region:   region_69
     level:    [75, 77]
   17645763:
     template: Antares_GT
     script:   Antares
-    at:       [-245.000, -0.045, 146.000, 18]
+    region:   region_69
     level:    [77, 79]
   17645764:
     template: Typhoon_Wyvern
-    at:       [-242.000, -0.577, 120.000, 16]
+    region:   region_69
     level:    [78, 80]
   17645765:
     template: Doom_Warlock
-    at:       [-242.206, -0.268, 163.853, 127]
+    region:   region_69
     level:    [76, 78]
   17645766:
     template: Demonic_Pugil
-    at:       [-251.000, -0.531, 166.000, 35]
+    region:   nw_207
     level:    [73, 76]
   17645767:
     template: Antares_GT
     script:   Antares
-    at:       [-235.362, 0.110, 134.351, 60]
+    region:   region_69
     level:    [77, 79]
   17645768:
     template: Antares_GT
     script:   Antares
-    at:       [-228.872, -0.264, 144.689, 55]
+    region:   region_69
     level:    [77, 79]
   17645769:
     template: Earth_Elemental
-    at:       [-204.660, -0.059, 159.318, 77]
+    region:   nw_202
     level:    [75, 77]
   17645770:
     template: Doom_Guard
-    at:       [-203.823, -0.411, 170.144, 127]
+    region:   nw_202
     level:    [75, 77]
   17645771:
     template: Demonic_Pugil
-    at:       [-194.000, -0.405, 150.000, 111]
+    region:   nw_202
     level:    [73, 76]
   17645772:
     template: Antares_GT
     script:   Antares
-    at:       [-209.552, -0.257, 161.728, 127]
+    region:   nw_202
     level:    [77, 79]
   17645773:
     template: Fire_Elemental
-    at:       [-209.265, -0.234, 161.320, 155]
+    region:   nw_202
     level:    [75, 77]
   17645774:
     template: Amikiri
-    at:       [-219.000, 0.332, 152.000, 14]
+    region:   region_69
     level:    [80, 82]
   17645775:
     template: Demonic_Pugil
-    at:       [-190.195, 0.294, 154.754, 127]
+    region:   nw_207
     level:    [73, 76]
   17645776:
     template: Demonic_Pugil
-    at:       [-73.000, 0.563, 210.000, 92]
+    region:   nw_208
     level:    [73, 76]
   17645777:
     template: Doom_Guard
-    at:       [-100.407, -7.337, 126.912, 67]
+    region:   n_209
     level:    [75, 77]
   17645778:
     template: Doom_Warlock
-    at:       [-99.000, -0.205, 204.000, 48]
+    region:   n_209
     level:    [76, 78]
   17645779:
     template: Doom_Warlock
-    at:       [-78.000, -0.600, 163.000, 127]
+    region:   n_209
     level:    [76, 78]
   17645780:
     template: Demonic_Pugil
-    at:       [-70.000, 0.185, 204.000, 58]
+    region:   n_209
     level:    [73, 76]
   17645781:
     template: Doom_Warlock
-    at:       [-102.334, -0.987, 185.746, 105]
+    region:   n_213
     level:    [76, 78]
   17645782:
     template: Doom_Warlock
-    at:       [-121.065, -0.019, 191.866, 123]
+    region:   n_213
     level:    [76, 78]
   17645783:
     template: Demonic_Pugil
-    at:       [-50.000, 1.000, 48.000, 127]
+    region:   n_213
     level:    [73, 76]
   17645784:
     template: Typhoon_Wyvern
-    at:       [-123.856, 0.239, 223.303, 67]
+    region:   w_183
     level:    [78, 80]
   17645785:
     template: Doom_Guard
-    at:       [-116.249, 0.239, 243.809, 38]
+    region:   nw_217
     level:    [75, 77]
   17645786:
     template: Doom_Guard
-    at:       [-111.847, -0.151, 218.968, 127]
+    region:   nw_217
     level:    [75, 77]
   17645787:
     template: Demonic_Pugil
-    at:       [-125.000, 0.186, 246.000, 29]
+    region:   nw_217
     level:    [73, 76]
   17645788:
     template: Erlik
-    at:       [-170.945, -0.669, 199.067, 126]
+    region:   nw_217
     level:    [75, 78]
   17645789:
     template: Doom_Guard
-    at:       [-153.043, -0.153, 190.665, 127]
+    region:   nw_221
     level:    [75, 77]
   17645790:
     template: Doom_Warlock
-    at:       [-158.354, -0.033, 204.064, 127]
+    region:   nw_221
     level:    [76, 78]
   17645791:
     template: Erlik
-    at:       [-151.609, 0.348, 206.383, 127]
+    region:   nw_221
     level:    [75, 78]
   17645792:
     template: Typhoon_Wyvern
-    at:       [-88.000, 0.735, 190.000, 127]
+    region:   w_188
     level:    [78, 80]
   17645793:
     template: Demonic_Pugil
-    at:       [-132.640, -0.190, 245.236, 93]
+    region:   region_70
     level:    [73, 76]
   17645794:
     template: Gigaplasm

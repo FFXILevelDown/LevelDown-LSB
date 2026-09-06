@@ -1273,1223 +1273,1227 @@ spawns:
     level:    [9, 10]
   17252358:
     template: Tiny_Mandragora
-    at:       [-71.880, -0.276, -606.767, 40]
+    region:   s_6
     level:    [1, 1]
   17252359:
     template: Tiny_Mandragora
-    at:       [-102.000, 2.000, -630.000, 35]
+    region:   s_6
     level:    [1, 1]
   17252360:
     template: Tiny_Mandragora
-    at:       [-64.064, -1.624, -595.490, 35]
+    region:   s_6
     level:    [1, 1]
   17252361:
     template: Tiny_Mandragora
-    at:       [-82.000, 3.000, -650.000, 68]
+    region:   s_6
     level:    [1, 1]
   17252362:
     template: Tiny_Mandragora
-    at:       [-81.305, 7.709, -697.327, 8]
+    region:   s_6
     level:    [1, 1]
   17252363:
     template: Bumblebee
-    at:       [-65.428, 1.072, -615.994, 127]
+    region:   s_6
     level:    [1, 1]
   17252364:
     template: Bumblebee
-    at:       [-74.490, 3.368, -681.391, 127]
+    region:   s_6
     level:    [1, 1]
   17252365:
     template: Bumblebee
-    at:       [-58.793, -1.506, -596.501, 28]
+    region:   s_6
     level:    [1, 1]
   17252366:
     template: Bumblebee
-    at:       [-81.650, -0.396, -594.010, 51]
+    region:   s_6
     level:    [1, 1]
   17252367:
     template: Savanna_Rarab
-    at:       [-74.568, 2.266, -664.749, 127]
+    region:   s_6
     level:    [2, 3]
   17252368:
     template: Savanna_Rarab
-    at:       [-46.617, -0.677, -599.755, 3]
+    region:   s_6
     level:    [2, 3]
   17252369:
     template: Tiny_Mandragora
-    at:       [-56.482, -5.184, -438.670, 127]
+    region:   s_17
     level:    [1, 1]
   17252370:
     template: Tiny_Mandragora
-    at:       [-64.736, -5.506, -507.120, 127]
+    region:   s_17
     level:    [1, 1]
   17252371:
     template: Tiny_Mandragora
-    at:       [-36.922, -4.647, -477.283, 121]
+    region:   s_17
     level:    [1, 1]
   17252372:
     template: Tiny_Mandragora
-    at:       [-87.000, -4.000, -512.000, 127]
+    region:   s_17
     level:    [1, 1]
   17252373:
     template: Bumblebee
-    at:       [-56.783, -4.685, -432.613, 41]
+    region:   s_17
     level:    [1, 1]
   17252374:
     template: Bumblebee
-    at:       [-33.854, -5.062, -453.999, 127]
+    region:   s_17
     level:    [1, 1]
   17252375:
     template: Bumblebee
-    at:       [-37.350, -3.616, -426.772, 127]
+    region:   s_17
     level:    [1, 1]
   17252376:
     template: Bumblebee
-    at:       [-78.663, -3.830, -415.516, 127]
+    region:   s_17
     level:    [1, 1]
   17252377:
     template: Savanna_Rarab
-    at:       [-47.101, -5.323, -493.976, 89]
+    region:   s_17
     level:    [2, 3]
   17252378:
     template: Savanna_Rarab
-    at:       [-92.137, -5.072, -454.461, 26]
+    region:   s_17
     level:    [2, 3]
   17252379:
     template: Crawler
-    at:       [-8.926, -4.718, -428.373, 127]
+    region:   s_27
     level:    [4, 5]
   17252380:
     template: Crawler
-    at:       [74.999, -4.920, -391.037, 11]
+    region:   s_27
     level:    [4, 5]
   17252381:
     template: Savanna_Rarab
-    at:       [56.099, -5.221, -368.477, 48]
+    region:   s_27
     level:    [2, 3]
   17252382:
     template: Savanna_Rarab
-    at:       [45.930, -4.753, -394.595, 46]
+    region:   s_27
     level:    [2, 3]
   17252383:
     template: Savanna_Rarab
-    at:       [37.265, -4.683, -405.645, 99]
+    region:   s_27
     level:    [2, 3]
   17252384:
     template: Savanna_Rarab
-    at:       [-51.000, -5.000, -463.000, 127]
+    region:   s_27
     level:    [2, 3]
   17252385:
     template: Savanna_Rarab
-    at:       [-103.000, -5.000, -419.000, 47]
+    region:   s_27
     level:    [2, 3]
   17252386:
     template: Savanna_Rarab
-    at:       [2.271, -4.765, -434.073, 127]
+    region:   s_27
     level:    [2, 3]
   17252387:
     template: Carrion_Crow
-    at:       [28.178, -4.999, -390.729, 127]
+    region:   s_27
     level:    [3, 4]
   17252388:
     template: Carrion_Crow
-    at:       [38.700, -4.197, -428.140, 127]
+    region:   s_27
     level:    [3, 4]
   17252389:
     template: Carrion_Crow
-    at:       [56.057, -5.000, -400.949, 127]
+    region:   s_27
     level:    [3, 4]
   17252390:
     template: Yagudo_Initiate
-    at:       [84.730, -3.827, -345.743, 103]
+    region:   s_27
     level:    [3, 4]
   17252391:
     template: Yagudo_Initiate
-    at:       [30.169, -4.915, -434.413, 7]
+    region:   s_27
     level:    [3, 4]
   17252392:
     template: Crawler
-    at:       [-89.560, -4.824, -360.586, 4]
+    region:   s_40
     level:    [4, 5]
   17252393:
     template: Crawler
-    at:       [-120.778, -5.646, -380.143, 127]
+    region:   s_40
     level:    [4, 5]
   17252394:
     template: Savanna_Rarab
-    at:       [-76.226, -0.733, -280.424, 127]
+    region:   s_40
     level:    [2, 3]
   17252395:
     template: Savanna_Rarab
-    at:       [-119.424, -4.352, -314.641, 127]
+    region:   s_40
     level:    [2, 3]
   17252396:
     template: Savanna_Rarab
-    at:       [-79.841, -4.642, -353.841, 127]
+    region:   s_40
     level:    [2, 3]
   17252397:
     template: Savanna_Rarab
-    at:       [-38.744, -1.975, -227.388, 127]
+    region:   s_40
     level:    [2, 3]
   17252398:
     template: Savanna_Rarab
-    at:       [-109.896, -4.947, -353.416, 127]
+    region:   s_40
     level:    [2, 3]
   17252399:
     template: Savanna_Rarab
-    at:       [-81.213, -5.143, -376.059, 127]
+    region:   s_40
     level:    [2, 3]
   17252400:
     template: Carrion_Crow
-    at:       [-61.984, -0.812, -255.469, 27]
+    region:   s_40
     level:    [3, 4]
   17252401:
     template: Carrion_Crow
-    at:       [-65.374, -0.916, -273.278, 127]
+    region:   s_40
     level:    [3, 4]
   17252402:
     template: Carrion_Crow
-    at:       [-102.500, -2.331, -203.921, 127]
+    region:   s_40
     level:    [3, 4]
   17252403:
     template: Yagudo_Initiate
-    at:       [-116.727, -3.066, -303.972, 127]
+    region:   s_40
     level:    [3, 4]
   17252404:
     template: Yagudo_Initiate
-    at:       [-121.562, -4.677, -327.899, 127]
+    region:   s_40
     level:    [3, 4]
   17252405:
     template: Crawler
-    at:       [176.940, -1.548, -120.330, 3]
+    region:   s_53
     level:    [4, 5]
   17252406:
     template: Crawler
-    at:       [142.344, -4.968, -322.974, 13]
+    region:   s_53
     level:    [4, 5]
   17252407:
     template: Savanna_Rarab
-    at:       [195.209, -0.775, -122.774, 127]
+    region:   s_53
     level:    [2, 3]
   17252408:
     template: Savanna_Rarab
-    at:       [161.588, -0.340, -114.559, 127]
+    region:   s_53
     level:    [2, 3]
   17252409:
     template: Savanna_Rarab
-    at:       [158.269, -0.800, -155.563, 127]
+    region:   s_53
     level:    [2, 3]
   17252410:
     template: Savanna_Rarab
-    at:       [112.817, -0.826, -199.820, 1]
+    region:   s_53
     level:    [2, 3]
   17252411:
     template: Savanna_Rarab
-    at:       [155.765, -0.536, -117.073, 127]
+    region:   s_53
     level:    [2, 3]
   17252412:
     template: Savanna_Rarab
-    at:       [76.728, -5.431, -297.661, 83]
+    region:   s_53
     level:    [2, 3]
   17252413:
     template: Carrion_Crow
-    at:       [152.349, -4.297, -265.932, 85]
+    region:   s_53
     level:    [3, 4]
   17252414:
     template: Carrion_Crow
-    at:       [102.073, -1.423, -201.173, 127]
+    region:   s_53
     level:    [3, 4]
   17252415:
     template: Carrion_Crow
-    at:       [190.976, -3.744, -163.539, 127]
+    region:   s_53
     level:    [3, 4]
   17252416:
     template: Yagudo_Initiate
-    at:       [103.917, -5.631, -259.352, 54]
+    region:   s_53
     level:    [3, 4]
   17252417:
     template: Yagudo_Acolyte
-    at:       [174.008, -1.333, -145.974, 73]
+    region:   s_53
     level:    [3, 4]
   17252418:
     template: Yagudo_Scribe
-    at:       [111.023, -5.115, -290.580, 17]
+    region:   s_53
     level:    [3, 4]
   17252419:
     template: Mad_Fox
-    at:       [119.265, -4.682, -243.420, 127]
+    region:   s_53
     level:    [3, 5]
   17252420:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [169.323, -0.811, -115.913, 16]
+    region:   s_53
     level:    [3, 5]
   17252421:
     template: Crawler
-    at:       [389.381, -5.002, -280.818, 127]
+    region:   e_69
     level:    [4, 5]
   17252422:
     template: Crawler
-    at:       [220.863, -5.798, -262.327, 127]
+    region:   e_69
     level:    [4, 5]
   17252423:
     template: Crawler
-    at:       [306.784, -5.142, -253.116, 61]
+    region:   e_69
     level:    [4, 5]
   17252424:
     template: Savanna_Rarab
-    at:       [234.558, -4.842, -280.506, 12]
+    region:   e_69
     level:    [2, 3]
   17252425:
     template: Savanna_Rarab
-    at:       [358.600, -5.538, -259.983, 237]
+    region:   e_69
     level:    [2, 3]
   17252426:
     template: Savanna_Rarab
-    at:       [254.569, -5.234, -231.884, 47]
+    region:   e_69
     level:    [2, 3]
   17252427:
     template: Savanna_Rarab
-    at:       [349.836, -5.322, -277.430, 127]
+    region:   e_69
     level:    [2, 3]
   17252428:
     template: Savanna_Rarab
-    at:       [258.525, 0.521, -132.858, 127]
+    region:   e_69
     level:    [2, 3]
   17252429:
     template: Savanna_Rarab
-    at:       [256.003, -5.252, -254.971, 80]
+    region:   e_69
     level:    [2, 3]
   17252430:
     template: Carrion_Crow
-    at:       [311.673, -6.531, -260.485, 25]
+    region:   e_69
     level:    [3, 4]
   17252431:
     template: Carrion_Crow
-    at:       [267.512, -4.509, -224.268, 97]
+    region:   e_69
     level:    [3, 4]
   17252432:
     template: Carrion_Crow
-    at:       [250.166, 0.630, -124.469, 127]
+    region:   e_69
     level:    [3, 4]
   17252433:
     template: Yagudo_Initiate
-    at:       [278.597, -0.712, -164.992, 54]
+    region:   e_69
     level:    [3, 4]
   17252434:
     template: Yagudo_Acolyte
-    at:       [232.656, -4.092, -225.834, 127]
+    region:   e_69
     level:    [3, 4]
   17252435:
     template: Yagudo_Scribe
-    at:       [277.028, 1.930, -134.682, 31]
+    region:   e_69
     level:    [3, 4]
   17252436:
     template: Mad_Fox
-    at:       [226.255, -5.342, -268.842, 58]
+    region:   e_69
     level:    [3, 5]
   17252437:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [356.002, -4.684, -246.877, 13]
+    region:   e_69
     level:    [3, 5]
   17252438:
     template: Crawler
-    at:       [-46.944, -3.859, -189.331, 89]
+    region:   c_86
     level:    [4, 5]
   17252439:
     template: Crawler
-    at:       [-37.784, -0.295, -159.817, 127]
+    region:   c_86
     level:    [4, 5]
   17252440:
     template: Savanna_Rarab
-    at:       [-79.459, -0.503, -120.896, 127]
+    region:   c_86
     level:    [2, 3]
   17252441:
     template: Savanna_Rarab
-    at:       [-53.684, -0.168, -38.814, 127]
+    region:   c_86
     level:    [2, 3]
   17252442:
     template: Savanna_Rarab
-    at:       [-81.228, -0.555, -37.102, 108]
+    region:   c_86
     level:    [2, 3]
   17252443:
     template: Savanna_Rarab
-    at:       [-82.574, -0.773, -127.758, 127]
+    region:   c_86
     level:    [2, 3]
   17252444:
     template: Savanna_Rarab
-    at:       [-54.203, -0.700, -135.348, 127]
+    region:   c_86
     level:    [2, 3]
   17252445:
     template: Savanna_Rarab
-    at:       [-52.883, 0.521, -120.933, 31]
+    region:   c_86
     level:    [2, 3]
   17252446:
     template: Carrion_Crow
-    at:       [-115.530, -4.694, -75.970, 127]
+    region:   c_86
     level:    [3, 4]
   17252447:
     template: Carrion_Crow
-    at:       [-66.498, -0.895, -156.409, 102]
+    region:   c_86
     level:    [3, 4]
   17252448:
     template: Carrion_Crow
-    at:       [-62.277, -1.517, -46.608, 127]
+    region:   c_86
     level:    [3, 4]
   17252449:
     template: Yagudo_Initiate
-    at:       [-58.819, 0.201, -62.076, 121]
+    region:   c_86
     level:    [3, 4]
   17252450:
     template: Yagudo_Acolyte
-    at:       [-76.520, -0.797, -85.861, 70]
+    region:   c_86
     level:    [3, 4]
   17252451:
     template: Yagudo_Scribe
-    at:       [-36.021, -0.684, -169.454, 127]
+    region:   c_86
     level:    [3, 4]
   17252452:
     template: Mad_Fox
-    at:       [-25.937, -3.446, -188.722, 127]
+    region:   c_86
     level:    [3, 5]
   17252453:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [-65.009, -2.200, -167.989, 35]
+    region:   c_86
     level:    [3, 5]
   17252454:
     template: Crawler
-    at:       [-234.129, -2.415, -181.229, 127]
+    region:   w_102
     level:    [4, 5]
   17252455:
     template: Crawler
-    at:       [-359.996, -0.336, -156.495, 127]
+    region:   w_102
     level:    [4, 5]
   17252456:
     template: Savanna_Rarab
-    at:       [-82.000, -4.000, -530.000, 127]
+    region:   w_102
     level:    [2, 3]
   17252457:
     template: Savanna_Rarab
-    at:       [-108.000, -1.000, -238.000, 127]
+    region:   w_102
     level:    [2, 3]
   17252458:
     template: Savanna_Rarab
-    at:       [-114.004, -0.796, -162.506, 54]
+    region:   w_102
     level:    [2, 3]
   17252459:
     template: Savanna_Rarab
-    at:       [-164.000, -2.000, -173.000, 118]
+    region:   w_102
     level:    [2, 3]
   17252460:
     template: Savanna_Rarab
-    at:       [-250.068, -0.817, -197.632, 127]
+    region:   w_102
     level:    [2, 3]
   17252461:
     template: Savanna_Rarab
-    at:       [-47.000, 3.000, -641.000, 127]
+    region:   w_102
     level:    [2, 3]
   17252462:
     template: Carrion_Crow
-    at:       [-303.568, -2.858, -197.411, 121]
+    region:   w_102
     level:    [3, 4]
   17252463:
     template: Carrion_Crow
-    at:       [-342.570, -2.589, -198.561, 30]
+    region:   w_102
     level:    [3, 4]
   17252464:
     template: Carrion_Crow
-    at:       [-121.339, -1.597, -180.442, 10]
+    region:   w_102
     level:    [3, 4]
   17252465:
     template: Yagudo_Initiate
-    at:       [-231.422, -0.868, -200.266, 127]
+    region:   w_102
     level:    [3, 4]
   17252466:
     template: Yagudo_Acolyte
-    at:       [-191.668, -0.720, -195.702, 127]
+    region:   w_102
     level:    [3, 4]
   17252467:
     template: Yagudo_Scribe
-    at:       [-200.490, -1.026, -173.356, 127]
+    region:   w_102
     level:    [3, 4]
   17252468:
     template: Crawler
-    at:       [-201.941, -4.984, -27.481, 127]
+    region:   w_116
     level:    [4, 5]
   17252469:
     template: Crawler
-    at:       [-169.198, -4.790, -31.971, 18]
+    region:   w_116
     level:    [4, 5]
   17252470:
     template: Crawler
-    at:       [-187.730, -5.257, -72.398, 58]
+    region:   w_116
     level:    [4, 5]
   17252471:
     template: Savanna_Rarab
-    at:       [-230.215, -4.749, 37.343, 127]
+    region:   w_116
     level:    [2, 3]
   17252472:
     template: Savanna_Rarab
-    at:       [-197.665, -4.708, -113.854, 56]
+    region:   w_116
     level:    [2, 3]
   17252473:
     template: Savanna_Rarab
-    at:       [-251.000, -4.000, -32.000, 127]
+    region:   w_116
     level:    [2, 3]
   17252474:
     template: Savanna_Rarab
-    at:       [-198.503, -4.587, 40.909, 113]
+    region:   w_116
     level:    [2, 3]
   17252475:
     template: Savanna_Rarab
-    at:       [-143.187, -5.431, -64.200, 127]
+    region:   w_116
     level:    [2, 3]
   17252476:
     template: Savanna_Rarab
-    at:       [-193.508, -4.296, -89.642, 127]
+    region:   w_116
     level:    [2, 3]
   17252477:
     template: Carrion_Crow
-    at:       [-180.877, -4.919, -81.622, 127]
+    region:   w_116
     level:    [3, 4]
   17252478:
     template: Carrion_Crow
-    at:       [-154.857, -1.472, -115.223, 127]
+    region:   w_116
     level:    [3, 4]
   17252479:
     template: Carrion_Crow
-    at:       [-212.080, -3.446, -115.172, 106]
+    region:   w_116
     level:    [3, 4]
   17252480:
     template: Yagudo_Initiate
-    at:       [-240.201, -4.972, 51.552, 127]
+    region:   w_116
     level:    [3, 4]
   17252481:
     template: Yagudo_Acolyte
-    at:       [-248.095, -2.436, -63.407, 127]
+    region:   w_116
     level:    [3, 4]
   17252482:
     template: Yagudo_Scribe
-    at:       [-184.301, -5.285, -69.559, 66]
+    region:   w_116
     level:    [3, 4]
   17252483:
     template: Mad_Fox
+    region:   w_116
     level:    [3, 5]
   17252484:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
-    at:       [-238.946, -4.829, 49.344, 127]
+    region:   w_116
     level:    [3, 5]
   17252485:
     template: Crawler
-    at:       [201.868, -16.720, -431.986, 127]
+    region:   se_133
     level:    [4, 5]
   17252486:
     template: Crawler
-    at:       [215.175, -17.432, -474.680, 25]
+    region:   se_133
     level:    [4, 5]
   17252487:
     template: Savanna_Rarab
-    at:       [224.258, -17.858, -486.256, 127]
+    region:   se_133
     level:    [2, 3]
   17252488:
     template: Savanna_Rarab
-    at:       [227.825, -16.978, -317.467, 82]
+    region:   se_133
     level:    [2, 3]
   17252489:
     template: Sharp-Eared_Ropipi
-    at:       [332.000, -13.000, -325.000]
+    region:   se_152
     level:    [10, 11]
   17252490:
     template: Carrion_Crow
-    at:       [255.261, -17.926, -419.045, 127]
+    region:   se_133
     level:    [3, 4]
   17252491:
     template: Carrion_Crow
-    at:       [243.252, -17.615, -418.619, 77]
+    region:   se_133
     level:    [3, 4]
   17252492:
     template: Carrion_Crow
-    at:       [239.566, -17.000, -400.812, 199]
+    region:   se_133
     level:    [3, 4]
   17252493:
     template: Carrion_Crow
-    at:       [227.528, -17.062, -448.979, 127]
+    region:   se_133
     level:    [3, 4]
   17252494:
     template: Carrion_Crow
-    at:       [248.114, -17.009, -435.476, 60]
+    region:   se_133
     level:    [3, 4]
   17252495:
     template: Goblin_Thug
-    at:       [226.729, -17.104, -447.153, 93]
+    region:   se_133
     level:    [3, 4]
   17252496:
     template: Goblin_Thug
-    at:       [301.000, -17.222, -466.000, 76]
+    region:   se_133
     level:    [3, 4]
   17252497:
     template: Goblin_Weaver
-    at:       [240.703, -17.374, -383.767, 45]
+    region:   se_133
     level:    [3, 4]
   17252498:
     template: Goblin_Weaver
-    at:       [198.222, -16.900, -432.542, 96]
+    region:   se_133
     level:    [3, 4]
   17252499:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
-    at:       [199.149, -16.676, -359.507, 127]
+    region:   se_133
     level:    [3, 5]
   17252500:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
+    region:   se_133
     level:    [3, 5]
   17252501:
     template: Goblin_Thug
-    at:       [216.562, -17.983, -460.089, 127]
+    region:   region_42
     level:    [3, 4]
   17252502:
     template: Goblin_Thug
-    at:       [218.673, -17.996, -458.735, 97]
+    region:   region_42
     level:    [3, 4]
   17252503:
     template: Goblin_Weaver
-    at:       [215.000, -17.188, -454.000, 79]
+    region:   region_42
     level:    [3, 4]
   17252504:
     template: Crawler
-    at:       [309.383, -17.521, -381.142, 127]
+    region:   se_152
     level:    [4, 5]
   17252505:
     template: Crawler
-    at:       [286.941, -17.010, -413.542, 97]
+    region:   se_152
     level:    [4, 5]
   17252506:
     template: Savanna_Rarab
-    at:       [303.282, -17.642, -415.870, 31]
+    region:   se_152
     level:    [2, 3]
   17252507:
     template: Savanna_Rarab
-    at:       [363.152, -16.705, -326.213, 127]
+    region:   se_152
     level:    [2, 3]
   17252508:
     template: Sharp-Eared_Ropipi
+    region:   se_152
     level:    [10, 11]
   17252509:
     template: Carrion_Crow
-    at:       [298.657, -17.453, -481.918, 123]
+    region:   se_152
     level:    [3, 4]
   17252510:
     template: Carrion_Crow
-    at:       [361.248, -17.138, -336.774, 127]
+    region:   se_152
     level:    [3, 4]
   17252511:
     template: Carrion_Crow
-    at:       [276.831, -18.159, -493.418, 127]
+    region:   se_152
     level:    [3, 4]
   17252512:
     template: Carrion_Crow
-    at:       [290.583, -16.889, -390.865, 117]
+    region:   se_152
     level:    [3, 4]
   17252513:
     template: Carrion_Crow
-    at:       [360.200, -15.924, -312.248, 99]
+    region:   se_152
     level:    [3, 4]
   17252514:
     template: Goblin_Thug
-    at:       [339.533, -17.544, -360.241, 127]
+    region:   se_152
     level:    [3, 4]
   17252515:
     template: Goblin_Thug
-    at:       [269.640, -19.525, -505.516, 127]
+    region:   se_152
     level:    [3, 4]
   17252516:
     template: Goblin_Weaver
-    at:       [286.468, -17.063, -447.647, 68]
+    region:   se_152
     level:    [3, 4]
   17252517:
     template: Mad_Fox
-    at:       [380.571, -17.459, -324.576, 95]
+    region:   se_152
     level:    [3, 4]
   17252518:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
-    at:       [383.729, -17.439, -317.982, 23]
+    region:   se_152
     level:    [3, 5]
   17252519:
     template: River_Crab
-    at:       [186.110, 0.881, -90.012, 124]
+    region:   c_167
     level:    [3, 4]
   17252520:
     template: River_Crab
-    at:       [-11.742, 0.969, -141.733, 127]
+    region:   c_167
     level:    [3, 4]
   17252521:
     template: River_Crab
-    at:       [-16.460, 0.979, -110.380, 127]
+    region:   c_167
     level:    [3, 4]
   17252522:
     template: River_Crab
-    at:       [135.856, 0.997, -166.236, 68]
+    region:   c_167
     level:    [3, 4]
   17252523:
     template: River_Crab
-    at:       [-21.955, 0.982, -155.975, 127]
+    region:   c_167
     level:    [3, 4]
   17252524:
     template: Pug_Pugil
-    at:       [-13.659, 0.975, -142.457, 127]
+    region:   c_167
     level:    [5, 6]
   17252525:
     template: Pug_Pugil
-    at:       [136.876, 0.999, -177.389, 64]
+    region:   c_167
     level:    [5, 6]
   17252526:
     template: Pug_Pugil
-    at:       [-16.570, 0.933, -154.455, 71]
+    region:   c_167
     level:    [5, 6]
   17252527:
     template: Pug_Pugil
-    at:       [90.968, 0.830, -182.257, 95]
+    region:   c_167
     level:    [5, 6]
   17252528:
     template: Pug_Pugil
-    at:       [-19.272, 0.999, -167.501, 42]
+    region:   c_167
     level:    [5, 6]
   17252529:
     template: Mandragora
-    at:       [81.015, -0.888, -120.849, 126]
+    region:   c_177
     level:    [4, 5]
   17252530:
     template: Mandragora
-    at:       [117.949, -5.088, -69.419, 127]
+    region:   c_177
     level:    [4, 5]
   17252531:
     template: Mandragora
-    at:       [101.619, -5.521, -20.018, 127]
+    region:   c_177
     level:    [4, 5]
   17252532:
     template: Mandragora
-    at:       [104.214, -4.313, 6.509, 127]
+    region:   c_177
     level:    [4, 5]
   17252533:
     template: Giant_Bee
-    at:       [95.574, -5.372, -40.878, 12]
+    region:   c_177
     level:    [7, 8]
   17252534:
     template: Giant_Bee
-    at:       [30.919, -3.754, -82.165, 127]
+    region:   c_177
     level:    [7, 8]
   17252535:
     template: Giant_Bee
-    at:       [13.439, -2.165, -40.250, 127]
+    region:   c_177
     level:    [7, 8]
   17252536:
     template: Giant_Bee
-    at:       [76.116, -4.561, -81.496, 127]
+    region:   c_177
     level:    [7, 8]
   17252537:
     template: Giant_Bee
-    at:       [71.960, -3.498, -94.784, 42]
+    region:   c_177
     level:    [7, 8]
   17252538:
     template: Giant_Bee
-    at:       [105.472, -4.620, -88.400, 127]
+    region:   c_177
     level:    [7, 8]
   17252539:
     template: Crawler
-    at:       [65.622, -0.853, -163.000, 127]
+    region:   c_177
     level:    [4, 5]
   17252540:
     template: Crawler
-    at:       [34.441, -4.143, -51.154, 127]
+    region:   c_177
     level:    [5, 6]
   17252541:
     template: Savanna_Rarab
-    at:       [22.212, -5.269, -5.463, 28]
+    region:   c_177
     level:    [4, 5]
   17252542:
     template: Savanna_Rarab
-    at:       [59.953, -5.680, -62.374, 127]
+    region:   c_177
     level:    [4, 5]
   17252543:
     template: Yagudo_Initiate
-    at:       [-2.221, -0.698, -109.529, 127]
+    region:   c_177
     level:    [5, 6]
   17252544:
     template: Yagudo_Acolyte
-    at:       [90.174, -0.961, -120.336, 2]
+    region:   c_177
     level:    [5, 6]
   17252545:
     template: Yagudo_Scribe
-    at:       [67.404, -0.890, -160.207, 127]
+    region:   c_177
     level:    [5, 6]
   17252546:
     template: Mad_Fox
-    at:       [4.725, -0.970, -148.243, 33]
+    region:   c_177
     level:    [6, 8]
   17252547:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [-6.863, -0.386, -84.694, 127]
+    region:   c_177
     level:    [6, 8]
   17252548:
     template: Balloon
-    at:       [57.321, -5.688, -31.624, 35]
+    region:   c_177
     level:    [8, 10]
   17252549:
     template: Mandragora
-    at:       [83.368, -8.740, 203.538, 127]
+    region:   c_197
     level:    [4, 5]
   17252550:
     template: Mandragora
-    at:       [115.893, -10.517, 57.645, 11]
+    region:   c_197
     level:    [4, 5]
   17252551:
     template: Mandragora
-    at:       [84.499, -12.614, 86.106, 127]
+    region:   c_197
     level:    [4, 5]
   17252552:
     template: Giant_Bee
-    at:       [105.898, -11.096, 68.381, 127]
+    region:   c_197
     level:    [7, 8]
   17252553:
     template: Giant_Bee
-    at:       [78.448, -12.583, 119.631, 127]
+    region:   c_197
     level:    [7, 8]
   17252554:
     template: Giant_Bee
-    at:       [109.270, -12.899, 159.137, 127]
+    region:   c_197
     level:    [7, 8]
   17252555:
     template: Giant_Bee
-    at:       [94.870, -13.160, 86.860, 127]
+    region:   c_197
     level:    [7, 8]
   17252556:
     template: Giant_Bee
-    at:       [116.239, -10.611, 59.226, 71]
+    region:   c_197
     level:    [7, 8]
   17252557:
     template: Crawler
-    at:       [94.269, -11.619, 62.994, 127]
+    region:   c_197
     level:    [5, 6]
   17252558:
     template: Crawler
-    at:       [118.403, -11.750, 171.801, 127]
+    region:   c_197
     level:    [5, 6]
   17252559:
     template: Savanna_Rarab
-    at:       [114.699, -12.846, 112.821, 39]
+    region:   c_197
     level:    [4, 5]
   17252560:
     template: Savanna_Rarab
-    at:       [122.908, -10.480, 55.630, 56]
+    region:   c_197
     level:    [4, 5]
   17252561:
     template: Yagudo_Initiate
-    at:       [114.728, -12.311, 163.527, 127]
+    region:   c_197
     level:    [5, 6]
   17252562:
     template: Yagudo_Initiate
-    at:       [17.574, -11.215, 187.995, 127]
+    region:   c_197
     level:    [5, 6]
   17252563:
     template: Yagudo_Acolyte
-    at:       [22.395, -12.748, 157.753, 127]
+    region:   c_197
     level:    [5, 6]
   17252564:
     template: Yagudo_Scribe
-    at:       [115.570, -11.449, 67.592, 127]
+    region:   c_197
     level:    [5, 6]
   17252565:
     template: Mad_Fox
-    at:       [79.305, -9.948, 183.985, 127]
+    region:   c_197
     level:    [6, 8]
   17252566:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [42.719, -12.458, 157.910, 127]
+    region:   c_197
     level:    [6, 8]
   17252567:
     template: Balloon
-    at:       [124.201, -10.728, 177.435, 104]
+    region:   c_197
     level:    [8, 10]
   17252568:
     template: Yagudo_Initiate
-    at:       [58.109, -11.249, 174.864, 6]
+    region:   region_43
     level:    [5, 6]
   17252569:
     template: Yagudo_Acolyte
-    at:       [56.450, -10.866, 178.541, 127]
+    region:   region_43
     level:    [5, 6]
   17252570:
     template: Yagudo_Scribe
-    at:       [59.000, -11.000, 177.000, 65]
+    region:   region_43
     level:    [5, 6]
   17252571:
     template: Mandragora
-    at:       [200.851, -2.351, -64.179, 127]
+    region:   e_219
     level:    [4, 5]
   17252572:
     template: Mandragora
-    at:       [432.899, 3.228, -129.496, 127]
+    region:   e_219
     level:    [4, 5]
   17252573:
     template: Mandragora
-    at:       [165.574, -4.141, -48.067, 127]
+    region:   e_219
     level:    [4, 5]
   17252574:
     template: Giant_Bee
-    at:       [214.057, -3.110, -51.440, 127]
+    region:   e_219
     level:    [7, 8]
   17252575:
     template: Giant_Bee
-    at:       [301.656, 2.439, -75.426, 127]
+    region:   e_219
     level:    [7, 8]
   17252576:
     template: Giant_Bee
-    at:       [362.739, 1.702, -105.153, 80]
+    region:   e_219
     level:    [7, 8]
   17252577:
     template: Giant_Bee
-    at:       [389.578, 2.892, -113.949, 127]
+    region:   e_219
     level:    [7, 8]
   17252578:
     template: Yagudo_Acolyte
-    at:       [401.834, 3.473, -118.365, 127]
+    region:   e_219
     level:    [5, 6]
   17252579:
     template: Yagudo_Scribe
-    at:       [377.403, 1.519, -105.948, 127]
+    region:   e_219
     level:    [5, 6]
   17252580:
     template: River_Crab
-    at:       [239.870, 1.000, -100.914, 72]
+    region:   e_228
     level:    [3, 4]
   17252581:
     template: Pug_Pugil
-    at:       [225.155, 1.000, -100.336, 127]
+    region:   e_228
     level:    [5, 6]
   17252582:
     template: River_Crab
-    at:       [256.735, 5.300, -102.501, 127]
+    region:   e_228
     level:    [3, 4]
   17252583:
     template: River_Crab
-    at:       [348.102, 4.806, -134.012, 127]
+    region:   e_238
     level:    [3, 4]
   17252584:
     template: River_Crab
-    at:       [423.978, 5.161, -146.680, 29]
+    region:   e_232
     level:    [3, 4]
   17252585:
     template: River_Crab
-    at:       [288.442, 5.393, -96.658, 8]
+    region:   e_232
     level:    [3, 4]
   17252586:
     template: Pug_Pugil
-    at:       [328.183, 4.868, -104.875, 127]
+    region:   e_232
     level:    [5, 6]
   17252587:
     template: Pug_Pugil
-    at:       [262.797, 5.000, -97.021, 127]
+    region:   e_238
     level:    [5, 6]
   17252588:
     template: Pug_Pugil
-    at:       [247.849, 5.119, -95.430, 127]
+    region:   e_232
     level:    [5, 6]
   17252589:
     template: Pug_Pugil
-    at:       [337.354, 5.106, -134.251, 127]
+    region:   e_232
     level:    [5, 6]
   17252590:
     template: River_Crab
-    at:       [463.212, 9.057, -138.723, 127]
+    region:   e_238
     level:    [3, 4]
   17252591:
     template: Pug_Pugil
-    at:       [473.023, 9.490, -142.342, 127]
+    region:   e_238
     level:    [5, 6]
   17252592:
     template: Mandragora
-    at:       [-134.474, -6.207, 158.717, 127]
+    region:   w_240
     level:    [4, 5]
   17252593:
     template: Mandragora
-    at:       [-205.488, -8.729, 282.169, 79]
+    region:   w_240
     level:    [4, 5]
   17252594:
     template: Mandragora
-    at:       [-251.998, -10.571, 412.535, 127]
+    region:   w_240
     level:    [4, 5]
   17252595:
     template: Mandragora
-    at:       [-158.265, -7.357, 171.713, 114]
+    region:   w_240
     level:    [4, 5]
   17252596:
     template: Mandragora
-    at:       [-151.358, -7.246, 172.811, 9]
+    region:   w_240
     level:    [4, 5]
   17252597:
     template: Savanna_Rarab
-    at:       [-271.251, -11.736, 399.382, 26]
+    region:   w_240
     level:    [4, 5]
   17252598:
     template: Savanna_Rarab
-    at:       [-163.127, -8.633, 272.582, 17]
+    region:   w_240
     level:    [4, 5]
   17252599:
     template: Savanna_Rarab
-    at:       [-270.996, -15.735, 437.492, 127]
+    region:   w_240
     level:    [4, 5]
   17252600:
     template: Goblin_Fisher
-    at:       [-157.214, -7.441, 168.660, 127]
+    region:   w_240
     level:    [4, 5]
   17252601:
     template: Goblin_Fisher
-    at:       [-182.637, -8.890, 284.653, 127]
+    region:   w_240
     level:    [4, 5]
   17252602:
     template: Mandragora
-    at:       [-124.996, -4.863, 204.974, 127]
+    region:   c_250
     level:    [4, 5]
   17252603:
     template: Mandragora
-    at:       [-70.072, -8.976, 261.247, 127]
+    region:   c_250
     level:    [4, 5]
   17252604:
     template: Mandragora
-    at:       [-42.965, -9.482, 218.965, 127]
+    region:   c_250
     level:    [4, 5]
   17252605:
     template: Mandragora
-    at:       [-109.069, -8.601, 231.478, 127]
+    region:   c_250
     level:    [4, 5]
   17252606:
     template: Mandragora
-    at:       [-25.045, -11.795, 168.607, 127]
+    region:   c_250
     level:    [4, 5]
   17252607:
     template: Savanna_Rarab
-    at:       [-81.655, -6.560, 176.803, 77]
+    region:   c_250
     level:    [4, 5]
   17252608:
     template: Savanna_Rarab
-    at:       [-111.852, -8.833, 249.441, 12]
+    region:   c_250
     level:    [4, 5]
   17252609:
     template: Savanna_Rarab
-    at:       [-76.217, -11.191, 252.775, 127]
+    region:   c_250
     level:    [4, 5]
   17252610:
     template: Goblin_Fisher
-    at:       [-23.476, -10.161, 159.923, 5]
+    region:   c_250
     level:    [4, 5]
   17252611:
     template: Goblin_Fisher
-    at:       [-38.012, -8.894, 208.369, 127]
+    region:   c_250
     level:    [4, 5]
   17252612:
     template: River_Crab
-    at:       [-141.950, -2.578, 190.210, 127]
+    region:   w_260
     level:    [3, 4]
   17252613:
     template: River_Crab
-    at:       [-96.131, -2.998, 113.005, 35]
+    region:   w_260
     level:    [3, 4]
   17252614:
     template: River_Crab
-    at:       [-96.219, -2.912, 43.850, 7]
+    region:   w_260
     level:    [3, 4]
   17252615:
     template: Pug_Pugil
-    at:       [-143.050, -2.579, 191.400, 118]
+    region:   w_260
     level:    [5, 6]
   17252616:
     template: Pug_Pugil
-    at:       [-96.150, -3.020, 58.269, 109]
+    region:   w_260
     level:    [5, 6]
   17252617:
     template: Pug_Pugil
-    at:       [-102.230, -2.654, 167.140, 127]
+    region:   w_260
     level:    [5, 5]
   17252618:
     template: River_Crab
-    at:       [-74.804, 0.849, -13.925, 119]
+    region:   w_260
     level:    [3, 4]
   17252619:
     template: River_Crab
-    at:       [-98.037, 1.005, 22.814, 127]
+    region:   c_267
     level:    [3, 4]
   17252620:
     template: Pug_Pugil
-    at:       [-98.221, 1.000, -0.159, 85]
+    region:   c_267
     level:    [5, 6]
   17252621:
     template: Pug_Pugil
-    at:       [-87.184, 0.878, -17.737, 127]
+    region:   c_267
     level:    [5, 6]
   17252622:
     template: Mandragora
-    at:       [270.193, -11.107, 59.750, 84]
+    region:   e_270
     level:    [4, 5]
   17252623:
     template: Mandragora
-    at:       [347.738, -13.014, 119.894, 127]
+    region:   e_270
     level:    [4, 5]
   17252624:
     template: Mandragora
-    at:       [296.475, -12.108, 100.394, 127]
+    region:   e_270
     level:    [4, 5]
   17252625:
     template: Mandragora
-    at:       [354.225, -12.520, -42.922, 64]
+    region:   e_270
     level:    [4, 5]
   17252626:
     template: Mandragora
-    at:       [313.395, -9.178, 4.171, 9]
+    region:   e_270
     level:    [4, 5]
   17252627:
     template: Giant_Bee
-    at:       [358.018, -12.739, -0.411, 127]
+    region:   e_270
     level:    [7, 8]
   17252628:
     template: Giant_Bee
-    at:       [291.074, -9.573, 56.504, 43]
+    region:   e_270
     level:    [7, 8]
   17252629:
     template: Giant_Bee
-    at:       [253.459, -9.486, 25.147, 57]
+    region:   e_270
     level:    [7, 8]
   17252630:
     template: Giant_Bee
-    at:       [297.119, -9.414, 46.480, 34]
+    region:   e_270
     level:    [7, 8]
   17252631:
     template: Giant_Bee
-    at:       [223.000, -9.221, -6.230, 127]
+    region:   e_270
     level:    [7, 8]
   17252632:
     template: Crawler
-    at:       [221.907, -8.457, -3.421, 52]
+    region:   e_270
     level:    [5, 6]
   17252633:
     template: Crawler
-    at:       [343.228, -11.095, -44.051, 55]
+    region:   e_270
     level:    [5, 6]
   17252634:
     template: Crawler
-    at:       [367.961, -12.894, 83.454, 127]
+    region:   e_270
     level:    [5, 6]
   17252635:
     template: Goblin_Thug
-    at:       [346.851, -13.728, 100.262, 127]
+    region:   e_270
     level:    [5, 6]
   17252636:
     template: Goblin_Thug
-    at:       [255.012, -9.500, 24.750, 79]
+    region:   e_270
     level:    [5, 6]
   17252637:
     template: Goblin_Weaver
-    at:       [225.562, -7.647, -16.070, 127]
+    region:   e_270
     level:    [5, 6]
   17252638:
     template: Goblin_Weaver
-    at:       [233.846, -8.944, 6.562, 127]
+    region:   e_270
     level:    [5, 6]
   17252639:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
-    at:       [343.525, -10.760, -43.632, 24]
+    region:   e_270
     level:    [6, 8]
   17252640:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
+    region:   e_270
     level:    [6, 8]
   17252641:
     template: Goblin_Thug
-    at:       [342.020, -11.164, -25.738, 127]
+    region:   region_44
     level:    [5, 6]
   17252642:
     template: Goblin_Thug
-    at:       [338.607, -10.764, -24.184, 127]
+    region:   region_44
     level:    [5, 6]
   17252643:
     template: Goblin_Weaver
-    at:       [342.000, -11.000, -21.000, 92]
+    region:   region_44
     level:    [5, 6]
   17252644:
     template: Mandragora
-    at:       [285.583, -13.219, 150.224, 25]
+    region:   e_292
     level:    [4, 5]
   17252645:
     template: Mandragora
-    at:       [260.850, -13.455, 131.218, 127]
+    region:   e_292
     level:    [4, 5]
   17252646:
     template: Mandragora
-    at:       [202.206, -8.528, 249.093, 127]
+    region:   e_292
     level:    [4, 5]
   17252647:
     template: Mandragora
-    at:       [289.938, -13.238, 153.200, 127]
+    region:   e_292
     level:    [4, 5]
   17252648:
     template: Mandragora
-    at:       [244.999, -12.883, 137.826, 127]
+    region:   e_292
     level:    [4, 5]
   17252649:
     template: Giant_Bee
-    at:       [298.561, -13.583, 143.858, 127]
+    region:   e_292
     level:    [7, 8]
   17252650:
     template: Giant_Bee
-    at:       [173.081, -12.869, 160.985, 127]
+    region:   e_292
     level:    [7, 8]
   17252651:
     template: Giant_Bee
-    at:       [201.636, -11.695, 212.581, 79]
+    region:   e_292
     level:    [7, 8]
   17252652:
     template: Giant_Bee
-    at:       [132.548, -10.468, 196.356, 22]
+    region:   e_292
     level:    [7, 8]
   17252653:
     template: Giant_Bee
-    at:       [172.120, -12.935, 203.085, 127]
+    region:   e_292
     level:    [7, 8]
   17252654:
     template: Crawler
-    at:       [421.795, -5.536, 277.605, 119]
+    region:   e_292
     level:    [5, 6]
   17252655:
     template: Crawler
-    at:       [354.185, -4.590, 244.205, 120]
+    region:   e_292
     level:    [5, 6]
   17252656:
     template: Crawler
-    at:       [285.575, -12.656, 126.129, 127]
+    region:   e_292
     level:    [5, 6]
   17252657:
     template: Spiny_Spipi
-    at:       [270.957, -12.815, 118.668, 114]
+    region:   e_292
     level:    [9, 10]
   17252658:
     template: Goblin_Thug
-    at:       [145.945, -12.714, 146.844, 84]
+    region:   e_292
     level:    [5, 6]
   17252659:
     template: Goblin_Weaver
-    at:       [284.834, -13.302, 148.180, 118]
+    region:   e_292
     level:    [5, 6]
   17252660:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [293.397, -12.334, 131.336, 127]
+    region:   e_292
     level:    [6, 8]
   17252661:
     template: Balloon
@@ -2497,596 +2501,598 @@ spawns:
     level:    [8, 10]
   17252662:
     template: Mandragora
-    at:       [118.743, -9.928, 251.348, 127]
+    region:   e_310
     level:    [5, 6]
   17252663:
     template: Mandragora
-    at:       [162.675, -8.580, 243.604, 6]
+    region:   e_310
     level:    [5, 6]
   17252664:
     template: Mandragora
-    at:       [367.980, -7.412, 304.259, 127]
+    region:   e_310
     level:    [5, 6]
   17252665:
     template: Mandragora
-    at:       [206.825, -9.548, 284.967, 127]
+    region:   e_310
     level:    [5, 6]
   17252666:
     template: Savanna_Rarab
-    at:       [280.733, -8.685, 283.407, 127]
+    region:   e_310
     level:    [5, 6]
   17252667:
     template: Savanna_Rarab
-    at:       [105.021, -10.168, 250.330, 127]
+    region:   e_310
     level:    [5, 6]
   17252668:
     template: Savanna_Rarab
-    at:       [139.217, -11.417, 291.081, 127]
+    region:   e_310
     level:    [5, 6]
   17252669:
     template: Goblin_Fisher
-    at:       [242.134, -8.868, 324.348, 127]
+    region:   e_310
     level:    [5, 6]
   17252670:
     template: Goblin_Fisher
-    at:       [397.710, -4.601, 314.140, 29]
+    region:   e_310
     level:    [5, 6]
   17252671:
     template: Goblin_Fisher
-    at:       [112.015, -8.985, 242.603, 127]
+    region:   e_310
     level:    [5, 6]
   17252672:
     template: Goblin_Weaver
-    at:       [366.694, -4.995, 288.701, 79]
+    region:   e_310
     level:    [5, 6]
   17252673:
     template: Balloon
-    at:       [179.688, -9.698, 286.191, 127]
+    region:   e_310
     level:    [8, 10]
   17252674:
     template: River_Crab
-    at:       [414.089, -3.105, 296.954, 52]
+    region:   ne_323
     level:    [4, 5]
   17252675:
     template: River_Crab
-    at:       [369.604, -2.939, 257.418, 28]
+    region:   ne_323
     level:    [4, 5]
   17252676:
     template: River_Crab
-    at:       [437.112, -3.047, 296.705, 101]
+    region:   ne_323
     level:    [4, 5]
   17252677:
     template: Pug_Pugil
-    at:       [370.830, -3.000, 258.478, 67]
+    region:   ne_323
     level:    [6, 7]
   17252678:
     template: Pug_Pugil
-    at:       [346.000, -2.000, 258.000, 103]
+    region:   ne_323
     level:    [6, 7]
   17252679:
     template: Pug_Pugil
-    at:       [383.976, -2.999, 271.131, 29]
+    region:   ne_323
     level:    [6, 7]
   17252680:
     template: Mandragora
-    at:       [-202.521, -8.883, 350.614, 127]
+    region:   nw_328
     level:    [4, 5]
   17252681:
     template: Mandragora
-    at:       [-201.400, -20.769, 567.029, 1]
+    region:   nw_328
     level:    [4, 5]
   17252682:
     template: Mandragora
-    at:       [-202.000, -17.000, 534.000, 127]
+    region:   nw_328
     level:    [4, 5]
   17252683:
     template: Mandragora
-    at:       [-121.598, -8.584, 328.574, 127]
+    region:   nw_328
     level:    [4, 5]
   17252684:
     template: Savanna_Rarab
-    at:       [-193.045, -12.752, 435.059, 38]
+    region:   nw_328
     level:    [4, 5]
   17252685:
     template: Savanna_Rarab
-    at:       [-204.871, -8.505, 402.307, 127]
+    region:   nw_328
     level:    [4, 5]
   17252686:
     template: Savanna_Rarab
-    at:       [-107.110, -9.364, 320.761, 49]
+    region:   nw_328
     level:    [4, 5]
   17252687:
     template: Goblin_Fisher
-    at:       [-196.274, -9.238, 367.233, 120]
+    region:   nw_328
     level:    [5, 6]
   17252688:
     template: Goblin_Fisher
-    at:       [-202.000, -18.000, 545.000, 127]
+    region:   nw_328
     level:    [5, 6]
   17252689:
     template: Goblin_Fisher
-    at:       [-144.156, -9.002, 325.594, 127]
+    region:   nw_328
     level:    [5, 6]
   17252690:
     template: Goblin_Weaver
-    at:       [-201.678, -10.500, 416.209, 51]
+    region:   nw_328
     level:    [5, 6]
   17252691:
     template: River_Crab
-    at:       [263.629, -7.103, 254.491, 9]
+    region:   c_339
     level:    [4, 5]
   17252692:
     template: River_Crab
-    at:       [140.807, -6.873, 245.632, 16]
+    region:   c_339
     level:    [4, 5]
   17252693:
     template: River_Crab
-    at:       [174.481, -7.107, 260.892, 127]
+    region:   c_339
     level:    [4, 5]
   17252694:
     template: River_Crab
-    at:       [34.989, -7.022, 221.648, 127]
+    region:   c_339
     level:    [4, 5]
   17252695:
     template: Pug_Pugil
-    at:       [18.897, -7.000, 256.100, 125]
+    region:   c_339
     level:    [6, 7]
   17252696:
     template: Pug_Pugil
-    at:       [23.978, -7.032, 244.295, 127]
+    region:   c_339
     level:    [6, 7]
   17252697:
     template: Pug_Pugil
-    at:       [246.499, -7.031, 260.807, 127]
+    region:   c_339
     level:    [6, 7]
   17252698:
     template: Pug_Pugil
-    at:       [266.786, -7.104, 254.506, 127]
+    region:   c_339
     level:    [6, 7]
   17252699:
     template: River_Crab
-    at:       [-226.041, -14.503, 495.600, 127]
+    region:   nw_347
     level:    [4, 5]
   17252700:
     template: Pug_Pugil
-    at:       [-223.502, -14.581, 486.551, 127]
+    region:   nw_347
     level:    [6, 7]
   17252701:
     template: River_Crab
-    at:       [-218.948, -10.533, 448.540, 127]
+    region:   nw_349
     level:    [4, 5]
   17252702:
     template: Pug_Pugil
-    at:       [-215.251, -10.638, 463.871, 127]
+    region:   nw_349
     level:    [6, 7]
   17252703:
     template: River_Crab
-    at:       [-222.789, -7.035, 367.037, 68]
+    region:   nw_347
     level:    [4, 5]
   17252704:
     template: River_Crab
-    at:       [-112.639, -2.944, 184.287, 26]
+    region:   nw_349
     level:    [4, 5]
   17252705:
     template: River_Crab
-    at:       [-182.737, -7.090, 300.198, 93]
+    region:   nw_353
     level:    [4, 5]
   17252706:
     template: River_Crab
-    at:       [-54.836, -6.887, 277.762, 127]
+    region:   nw_353
     level:    [4, 5]
   17252707:
     template: Pug_Pugil
-    at:       [-138.450, -6.550, 243.550, 127]
+    region:   nw_347
     level:    [6, 7]
   17252708:
     template: Pug_Pugil
-    at:       [-218.860, -6.500, 324.930]
+    region:   nw_349
     level:    [6, 7]
   17252709:
     template: Pug_Pugil
-    at:       [-124.396, -7.117, 305.695, 127]
+    region:   nw_353
     level:    [6, 7]
   17252710:
     template: Pug_Pugil
-    at:       [-225.605, -7.078, 392.051, 127]
+    region:   nw_353
     level:    [6, 7]
   17252711:
     template: Mandragora
-    at:       [-356.567, -21.296, 505.270, 127]
+    region:   nw_362
     level:    [4, 5]
   17252712:
     template: Mandragora
-    at:       [-356.284, -21.351, 502.639, 71]
+    region:   nw_362
     level:    [4, 5]
   17252713:
     template: Mandragora
-    at:       [-357.983, -21.152, 494.585, 127]
+    region:   nw_362
     level:    [4, 5]
   17252714:
     template: Mandragora
-    at:       [-251.449, -16.807, 503.436, 127]
+    region:   nw_362
     level:    [4, 5]
   17252715:
     template: Crawler
-    at:       [-241.987, -24.503, 636.318, 121]
+    region:   nw_362
     level:    [5, 6]
   17252716:
     template: Crawler
-    at:       [-329.554, -20.863, 512.980, 127]
+    region:   nw_362
     level:    [5, 6]
   17252717:
     template: Savanna_Rarab
-    at:       [-325.828, -20.179, 501.297, 127]
+    region:   nw_362
     level:    [4, 5]
   17252718:
     template: Savanna_Rarab
-    at:       [-323.818, -21.135, 492.490, 127]
+    region:   nw_362
     level:    [4, 5]
   17252719:
     template: Goblin_Fisher
-    at:       [-241.000, -16.000, 483.000, 99]
+    region:   nw_362
     level:    [5, 6]
   17252720:
     template: Goblin_Weaver
-    at:       [-288.000, -16.000, 521.000, 127]
+    region:   nw_362
     level:    [5, 6]
   17252721:
     template: River_Crab
-    at:       [-226.092, -23.175, 624.680, 123]
+    region:   nw_374
     level:    [5, 6]
   17252722:
     template: River_Crab
-    at:       [-238.093, -22.999, 656.609, 126]
+    region:   nw_370
     level:    [5, 6]
   17252723:
     template: Pug_Pugil
-    at:       [-221.205, -23.049, 622.597, 127]
+    region:   nw_370
     level:    [7, 8]
   17252724:
     template: Pug_Pugil
-    at:       [-254.978, -22.771, 658.906, 121]
+    region:   nw_370
     level:    [7, 8]
   17252725:
     template: Duke_Decapod
-    at:       [-238.093, -22.999, 656.609, 126]
+    region:   nw_370
     level:    [7, 8]
   17252726:
     template: River_Crab
-    at:       [121.560, -6.500, 220.370]
+    region:   nw_374
     level:    [5, 6]
   17252727:
     template: Pug_Pugil
-    at:       [-20.480, 1.500, -33.610]
+    region:   nw_370
     level:    [7, 8]
   17252728:
     template: River_Crab
-    at:       [145.910, 1.500, -105.160]
+    region:   nw_374
     level:    [5, 6]
   17252729:
     template: Pug_Pugil
-    at:       [308.330, -2.500, 260.010]
+    region:   nw_370
     level:    [7, 8]
   17252730:
     template: Mandragora
-    at:       [-104.413, -20.107, 489.779, 16]
+    region:   nw_378
     level:    [4, 5]
   17252731:
     template: Mandragora
-    at:       [-135.747, -21.229, 477.988, 16]
+    region:   nw_378
     level:    [4, 5]
   17252732:
     template: Mandragora
-    at:       [-82.585, -20.867, 430.809, 16]
+    region:   nw_378
     level:    [4, 5]
   17252733:
     template: Crawler
-    at:       [-76.076, -21.329, 502.899, 52]
+    region:   nw_378
     level:    [5, 6]
   17252734:
     template: Crawler
-    at:       [-89.217, -21.207, 437.312, 96]
+    region:   nw_378
     level:    [5, 6]
   17252735:
     template: Carrion_Crow
-    at:       [-154.149, -20.481, 354.432, 89]
+    region:   nw_378
     level:    [4, 5]
   17252736:
     template: Carrion_Crow
-    at:       [-127.395, -21.053, 456.680, 28]
+    region:   nw_378
     level:    [4, 5]
   17252737:
     template: Carrion_Crow
-    at:       [-81.341, -20.750, 449.769, 40]
+    region:   nw_378
     level:    [4, 5]
   17252738:
     template: Carrion_Crow
-    at:       [-117.528, -20.586, 516.991, 127]
+    region:   nw_378
     level:    [4, 5]
   17252739:
     template: Savanna_Rarab
-    at:       [-151.557, -23.943, 445.798, 127]
+    region:   nw_378
     level:    [4, 5]
   17252740:
     template: Savanna_Rarab
-    at:       [-159.321, -23.740, 434.247, 51]
+    region:   nw_378
     level:    [4, 5]
   17252741:
     template: Yagudo_Initiate
-    at:       [-87.227, -21.397, 496.354, 127]
+    region:   nw_378
     level:    [5, 6]
   17252742:
     template: Yagudo_Acolyte
-    at:       [-118.018, -20.731, 402.520, 127]
+    region:   nw_378
     level:    [5, 6]
   17252743:
     template: Yagudo_Scribe
-    at:       [-94.659, -21.441, 390.897, 99]
+    region:   nw_378
     level:    [5, 6]
   17252744:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [-156.172, -20.473, 360.209, 200]
+    region:   nw_378
     level:    [6, 8]
   17252745:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
+    region:   nw_378
     level:    [6, 8]
   17252746:
     template: Mandragora
-    at:       [40.606, -26.396, 533.401, 127]
+    region:   n_394
     level:    [4, 5]
   17252747:
     template: Mandragora
-    at:       [78.115, -24.601, 484.043, 127]
+    region:   n_394
     level:    [4, 5]
   17252748:
     template: Crawler
-    at:       [53.689, -25.048, 446.502, 127]
+    region:   n_394
     level:    [5, 6]
   17252749:
     template: Crawler
-    at:       [66.905, -28.226, 585.997, 32]
+    region:   n_394
     level:    [5, 6]
   17252750:
     template: Crawler
-    at:       [-30.802, -24.326, 457.240, 96]
+    region:   n_394
     level:    [5, 6]
   17252751:
     template: Savanna_Rarab
-    at:       [39.723, -26.408, 532.749, 127]
+    region:   n_394
     level:    [4, 5]
   17252752:
     template: Savanna_Rarab
-    at:       [-16.778, -24.858, 476.026, 127]
+    region:   n_394
     level:    [4, 5]
   17252753:
     template: Carrion_Crow
-    at:       [24.659, -25.360, 454.397, 3]
+    region:   n_394
     level:    [4, 5]
   17252754:
     template: Carrion_Crow
-    at:       [70.791, -25.557, 554.430, 55]
+    region:   n_394
     level:    [4, 5]
   17252755:
     template: Carrion_Crow
-    at:       [47.309, -25.361, 486.588, 98]
+    region:   n_394
     level:    [4, 5]
   17252756:
     template: Carrion_Crow
-    at:       [84.442, -24.444, 436.418, 97]
+    region:   n_394
     level:    [4, 5]
   17252757:
     template: Yagudo_Initiate
-    at:       [52.235, -25.082, 448.565, 122]
+    region:   n_394
     level:    [5, 6]
   17252758:
     template: Yagudo_Initiate
-    at:       [85.695, -24.992, 515.371, 54]
+    region:   n_394
     level:    [5, 6]
   17252759:
     template: Yagudo_Acolyte
-    at:       [119.321, -24.500, 442.207, 127]
+    region:   n_394
     level:    [5, 6]
   17252760:
     template: Yagudo_Scribe
-    at:       [96.434, -25.761, 462.073, 127]
+    region:   n_394
     level:    [5, 6]
   17252761:
     template: Mad_Fox
-    at:       [93.933, -23.924, 440.186, 127]
+    region:   n_394
     level:    [6, 8]
   17252762:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [112.156, -25.420, 444.520, 183]
+    region:   n_394
     level:    [6, 8]
   17252763:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
-    at:       [81.191, -25.190, 451.326, 127]
+    region:   n_394
     level:    [6, 8]
   17252764:
     template: Balloon
-    at:       [24.592, -25.151, 482.157, 127]
+    region:   n_394
     level:    [8, 10]
   17252765:
     template: Yagudo_Initiate
-    at:       [103.555, -25.248, 497.301, 22]
+    region:   region_45
     level:    [5, 6]
   17252766:
     template: Yagudo_Acolyte
-    at:       [103.766, -25.216, 497.118, 127]
+    region:   region_45
     level:    [5, 6]
   17252767:
     template: Yagudo_Scribe
-    at:       [104.400, -24.869, 495.291, 127]
+    region:   region_45
     level:    [5, 6]
   17252768:
     template: Crawler
-    at:       [38.482, -36.499, 559.111, 117]
+    region:   n_416
     level:    [5, 6]
   17252769:
     template: Crawler
-    at:       [-49.770, -33.826, 680.062, 127]
+    region:   n_416
     level:    [5, 6]
   17252770:
     template: Crawler
-    at:       [-38.489, -36.400, 716.315, 25]
+    region:   n_416
     level:    [5, 6]
   17252771:
     template: Crawler
-    at:       [-29.863, -37.429, 741.291, 127]
+    region:   n_416
     level:    [5, 6]
   17252772:
     template: Savanna_Rarab
-    at:       [-20.867, -34.336, 698.648, 127]
+    region:   n_416
     level:    [4, 5]
   17252773:
     template: Savanna_Rarab
-    at:       [-40.219, -32.881, 683.197, 127]
+    region:   n_416
     level:    [4, 5]
   17252774:
     template: Carrion_Crow
-    at:       [-16.150, -33.767, 692.080, 37]
+    region:   n_416
     level:    [4, 5]
   17252775:
     template: Carrion_Crow
-    at:       [-74.724, -36.568, 724.062, 127]
+    region:   n_416
     level:    [4, 5]
   17252776:
     template: Goblin_Thug
-    at:       [49.052, -35.204, 574.248, 127]
+    region:   n_416
     level:    [5, 6]
   17252777:
     template: Goblin_Weaver
-    at:       [-71.796, -35.209, 683.063, 127]
+    region:   n_416
     level:    [5, 6]
   17252778:
     template: Goblin_Weaver
-    at:       [-44.098, -33.060, 668.485, 127]
+    region:   n_416
     level:    [5, 6]
   17252779:
     template: Mandragora
-    at:       [212.527, -20.467, 326.215, 73]
+    region:   n_427
     level:    [4, 5]
   17252780:
     template: Mandragora
-    at:       [222.636, -21.314, 369.431, 102]
+    region:   n_427
     level:    [4, 5]
   17252781:
     template: Giant_Bee
-    at:       [164.668, -23.471, 386.990, 1]
+    region:   n_427
     level:    [7, 8]
   17252782:
     template: Giant_Bee
-    at:       [196.057, -20.370, 315.148, 127]
+    region:   n_427
     level:    [7, 8]
   17252783:
     template: Giant_Bee
-    at:       [154.483, -20.077, 309.328, 109]
+    region:   n_427
     level:    [7, 8]
   17252784:
     template: Crawler
-    at:       [234.812, -21.285, 381.560, 127]
+    region:   n_427
     level:    [5, 6]
   17252785:
     template: Crawler
-    at:       [101.628, -24.283, 389.814, 56]
+    region:   n_427
     level:    [5, 6]
   17252786:
     template: Savanna_Rarab
-    at:       [108.792, -24.944, 362.655, 127]
+    region:   n_427
     level:    [4, 5]
   17252787:
     template: Savanna_Rarab
-    at:       [204.619, -20.718, 401.818, 41]
+    region:   n_427
     level:    [4, 5]
   17252788:
     template: Yagudo_Initiate
-    at:       [223.792, -21.669, 344.509, 28]
+    region:   n_427
     level:    [5, 6]
   17252789:
     template: Yagudo_Acolyte
-    at:       [168.355, -23.110, 384.658, 127]
+    region:   n_427
     level:    [5, 6]
   17252790:
     template: Yagudo_Scribe
-    at:       [240.000, -20.000, 396.000, 102]
+    region:   n_427
     level:    [5, 6]
   17252791:
     template: Mad_Fox
+    region:   n_427
     level:    [6, 8]
   17252792:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [188.018, -21.657, 392.761, 127]
+    region:   n_427
     level:    [6, 8]
   17252793:
     template: Balloon
-    at:       [158.009, -25.183, 369.984, 127]
+    region:   n_441
     level:    [8, 10]
   17252794:
     template: Mandragora
-    at:       [279.887, -20.612, 440.250, 27]
+    region:   ne_442
     level:    [4, 5]
   17252795:
     template: Mandragora
-    at:       [282.701, -25.486, 539.365, 127]
+    region:   ne_442
     level:    [4, 5]
   17252796:
     template: Giant_Bee
-    at:       [205.862, -20.645, 478.402, 127]
+    region:   ne_442
     level:    [7, 8]
   17252797:
     template: Giant_Bee
-    at:       [261.443, -19.970, 470.299, 82]
+    region:   ne_442
     level:    [7, 8]
   17252798:
     template: Giant_Bee
-    at:       [305.461, -26.026, 529.244, 127]
+    region:   ne_442
     level:    [7, 8]
   17252799:
     template: Crawler
-    at:       [260.407, -25.490, 557.029, 127]
+    region:   ne_442
     level:    [5, 6]
   17252800:
     template: Crawler
-    at:       [300.569, -25.565, 514.759, 121]
+    region:   ne_442
     level:    [5, 6]
   17252801:
     template: Savanna_Rarab
-    at:       [271.176, -21.234, 433.314, 123]
+    region:   ne_442
     level:    [4, 5]
   17252802:
     template: Savanna_Rarab
-    at:       [262.700, -20.041, 469.898, 127]
+    region:   ne_442
     level:    [4, 5]
   17252803:
     template: Yagudo_Initiate
-    at:       [227.439, -20.484, 445.245, 7]
+    region:   ne_442
     level:    [5, 6]
   17252804:
     template: Yagudo_Acolyte
-    at:       [285.147, -25.605, 570.016, 127]
+    region:   ne_442
     level:    [5, 6]
   17252805:
     template: Yagudo_Scribe
-    at:       [276.579, -20.796, 437.770, 70]
+    region:   ne_442
     level:    [5, 6]
   17252806:
     template: Mad_Fox
-    at:       [258.794, -21.228, 483.047, 1]
+    region:   ne_442
     level:    [6, 8]
   17252807:
     template: Magicked_Bones_club
     script:   Magicked_Bones
-    at:       [239.149, -21.494, 420.748, 127]
+    region:   ne_442
     level:    [6, 8]
   17252808:
     template: Magicked_Bones_blm
     script:   Magicked_Bones
-    at:       [282.657, -25.722, 572.524, 70]
+    region:   ne_442
     level:    [6, 8]
   17252809:
     template: Goblin_Digger_near
@@ -3358,64 +3364,94 @@ spawns:
     script: Astral_Box
   17252953:
     script: Slime
+    region: s_6
   17252954:
     script: Slime
+    region: s_6
   17252955:
     script: Slime
+    region: s_6
   17252956:
     script: Slime
+    region: s_6
   17252957:
     script: Slime
+    region: s_6
   17252958:
     script: Slime
+    region: s_6
   17252959:
     script: Slime
+    region: s_6
   17252960:
     script: Slime
+    region: s_40
   17252961:
     script: Slime
+    region: s_40
   17252962:
     script: Slime
+    region: s_40
   17252963:
     script: Slime
+    region: s_40
   17252964:
     script: Slime
+    region: s_40
   17252965:
     script: Slime
+    region: s_40
   17252966:
     script: Slime
+    region: s_17
   17252967:
     script: Slime
+    region: s_17
   17252968:
     script: Slime
+    region: s_17
   17252969:
     script: Slime
+    region: s_17
   17252970:
     script: Slime
+    region: s_17
   17252971:
     script: Slime
+    region: s_17
   17252972:
     script: Slime
+    region: s_17
   17252973:
     script: She-Slime
+    region: s_6
   17252974:
     script: She-Slime
+    region: s_6
   17252975:
     script: She-Slime
+    region: s_6
   17252976:
     script: She-Slime
+    region: s_17
   17252977:
     script: She-Slime
+    region: s_17
   17252978:
     script: She-Slime
+    region: s_17
   17252979:
     script: She-Slime
+    region: s_40
   17252980:
     script: She-Slime
+    region: sw_628
   17252981:
     script: She-Slime
+    region: s_40
   17252982:
     script: She-Slime
+    region: s_40
   17252983:
     script: Metal_Slime
   17252984:

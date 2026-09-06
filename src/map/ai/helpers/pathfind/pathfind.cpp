@@ -32,6 +32,7 @@
 #include <common/utils.h>
 
 #include <map/entities/mob_entity.h> // xi::RoamFlag::Worm
+#include <map/roam_region.h>
 
 #include <algorithm>
 #include <memory>
@@ -96,8 +97,8 @@ auto CPathFind::RoamAround(const position_t& point, float maxRadius, uint8 maxTu
 
     Clear();
 
-    roamFlags_ = roamFlags;
-
+    roamFlags_  = roamFlags;
+    roamRegion_ = region;
     if (FindRandomPath(point, maxRadius, maxTurns, roamFlags, region))
     {
         return true;
@@ -395,6 +396,33 @@ auto CPathFind::FindPathInternal(const position_t& start, const position_t& end)
         return false;
     }
 
+    // cut the path where it first leaves the region
+    if (roamRegion_)
+    {
+        auto from = start;
+        for (std::size_t i = 0; i < built->points.size(); ++i)
+        {
+            const auto& to     = built->points[i].position;
+            const float length = distance(from, to, true);
+            if (length > 0.0f)
+            {
+                const Vector3 direction{ .x = (to.x - from.x) / length, .y = 0.0f, .z = (to.z - from.z) / length };
+                const float   allowed = roamRegion_->clampToRegion(from, direction, length);
+                if (allowed < length)
+                {
+                    const position_t edge{ from.x + direction.x * allowed, from.y + (to.y - from.y) * allowed / length, from.z + direction.z * allowed, 0, 0 };
+
+                    built->points.resize(i);
+                    built->points.emplace_back(pathpoint_t{ edge, 0s, false });
+                    built->isPartial = true;
+                    break;
+                }
+            }
+
+            from = to;
+        }
+    }
+
     path_.assign(std::move(built->points), built->isPartial);
     return !path_.empty();
 }
@@ -509,6 +537,7 @@ auto CPathFind::Clear() -> void
     distanceFromPoint_ = 0;
     pathFlags_         = 0;
     roamFlags_         = xi::RoamFlag::None;
+    roamRegion_        = nullptr;
 
     path_.clear();
 

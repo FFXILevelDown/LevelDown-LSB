@@ -580,131 +580,131 @@ templates:
 spawns:
   17297409:
     template: Lesser_Gaylas
-    at:       [171.183, 4.291, -124.580, 30]
+    region:   se_1
     level:    [41, 42]
   17297410:
     template: Lesser_Gaylas
-    at:       [153.156, 3.746, -116.237, 127]
+    region:   se_1
     level:    [41, 42]
   17297411:
     template: Lesser_Gaylas
-    at:       [89.000, 2.000, -103.000, 99]
+    region:   se_1
     level:    [41, 42]
   17297412:
     template: Greater_Gayla
-    at:       [119.409, 3.860, -126.084, 127]
+    region:   se_1
     level:    [43, 44]
   17297413:
     template: Greater_Gayla
-    at:       [175.632, 3.077, -98.700, 127]
+    region:   se_1
     level:    [43, 44]
   17297414:
     template: Thunder_Elemental
-    at:       [138.615, 3.400, -101.378, 125]
+    region:   se_1
     level:    [48, 50]
   17297415:
     template: Light_Elemental
-    at:       [138.615, 3.400, -101.378, 125]
+    region:   se_1
     level:    [48, 50]
   17297416:
     template: Demonic_Weapon
-    at:       [159.000, 4.000, -82.000, 127]
+    region:   se_8
     level:    [45, 46]
   17297417:
     template: Demonic_Weapon
-    at:       [192.178, 3.851, -86.399, 82]
+    region:   se_8
     level:    [45, 46]
   17297418:
     template: Lost_Soul_war
     script:   Lost_Soul
-    at:       [124.000, 4.000, -117.000, 127]
+    region:   c_10
     level:    [45, 46]
   17297419:
     template: Lost_Soul_war
     script:   Lost_Soul
-    at:       [165.000, 4.000, -116.000, 49]
+    region:   c_10
     level:    [45, 46]
   17297420:
     template: Lost_Soul_blm
     script:   Lost_Soul
-    at:       [154.000, 4.000, -95.000, 127]
+    region:   c_10
     level:    [45, 46]
   17297421:
     template: Lost_Soul_blm
     script:   Lost_Soul
-    at:       [141.000, 4.000, -130.000, 1]
+    region:   c_10
     level:    [45, 46]
   17297422:
     template: Demonic_Weapon
-    at:       [23.000, -4.000, -30.000, 127]
+    region:   c_14
     level:    [45, 46]
   17297423:
     template: Demonic_Weapon
-    at:       [1.531, -3.612, -23.642, 117]
+    region:   c_14
     level:    [45, 46]
   17297424:
     template: Lesser_Gaylas
-    at:       [-104.000, -9.000, -19.000, 119]
+    region:   s_16
     level:    [41, 42]
   17297425:
     template: Lesser_Gaylas
-    at:       [-68.693, -3.265, -71.942, 46]
+    region:   s_16
     level:    [41, 42]
   17297426:
     template: Greater_Gayla
-    at:       [-97.892, -6.114, -50.670, 102]
+    region:   s_16
     level:    [43, 44]
   17297427:
     template: Greater_Gayla
-    at:       [-82.446, -3.896, -71.939, 127]
+    region:   s_16
     level:    [43, 44]
   17297428:
     template: Lesser_Gaylas
-    at:       [-64.514, -4.798, 11.870, 127]
+    region:   c_20
     level:    [41, 42]
   17297429:
     template: Lesser_Gaylas
-    at:       [-49.231, -4.483, -5.900, 127]
+    region:   c_20
     level:    [41, 42]
   17297430:
     template: Greater_Gayla
-    at:       [-52.906, -3.392, 14.425, 127]
+    region:   c_20
     level:    [43, 44]
   17297431:
     template: Greater_Gayla
-    at:       [-100.000, -9.000, 22.000, 30]
+    region:   c_20
     level:    [43, 44]
   17297432:
     template: Master_Coeurl
-    at:       [-82.389, -4.301, -90.121, 88]
+    region:   s_24
     level:    [49, 50]
   17297433:
     template: Bhuta
-    at:       [-70.571, -4.375, -85.672, 53]
+    region:   s_24
     level:    [47, 48]
   17297434:
     template: Thunder_Elemental
-    at:       [-84.343, -4.477, -85.742, 127]
+    region:   s_24
     level:    [48, 50]
   17297435:
     template: Light_Elemental
-    at:       [-80.538, -4.413, -79.202, 2]
+    region:   s_24
     level:    [48, 50]
   17297436:
     template: Master_Coeurl
-    at:       [-36.000, -3.000, -6.000, 127]
+    region:   c_28
     level:    [49, 50]
   17297437:
     template: Bhuta
-    at:       [-24.568, -3.857, 4.811, 13]
+    region:   c_28
     level:    [47, 48]
   17297438:
     template: Thunder_Elemental
-    at:       [-44.195, -4.390, -8.444, 45]
+    region:   c_28
     level:    [48, 50]
   17297439:
     template: Light_Elemental
-    at:       [-44.195, -4.390, -8.444, 45]
+    region:   c_28
     level:    [48, 50]
   17297440:
     template: Behemoth
@@ -716,19 +716,19 @@ spawns:
     level:    [85, 85]
   17297442:
     template: Thunder_Elemental
-    at:       [-226.728, -20.524, 21.987, 79]
+    region:   nw_34
     level:    [48, 50]
   17297443:
     template: Thunder_Elemental
-    at:       [-270.475, -20.439, 75.426, 67]
+    region:   nw_34
     level:    [48, 50]
   17297444:
     template: Light_Elemental
-    at:       [-209.248, -19.929, 61.437, 57]
+    region:   nw_34
     level:    [48, 50]
   17297445:
     template: Light_Elemental
-    at:       [-248.852, -20.733, 87.634, 36]
+    region:   nw_34
     level:    [48, 50]
   17297446:
     template: Picklix_Longindex

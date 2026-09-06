@@ -211,7 +211,7 @@ xi.job_utils.puppetmaster.onAbilityCheckRepair = function(player, target, abilit
     elseif pet:checkDistance(player) > 20.0 + player:getHitboxSize() + pet:getHitboxSize() then
         return xi.msg.basic.TOO_FAR_AWAY_2, 0
     else
-        local id = player:getEquipID(xi.slot.AMMO)
+        local id = xi.equipment.getUsableEquipID(player, xi.slot.AMMO)
 
         if xi.job_utils.puppetmaster.oilData[id] then
             return 0, 0
@@ -270,7 +270,7 @@ xi.job_utils.puppetmaster.onAbilityCheckMaintenance = function(player, target, a
     elseif not pet:isAutomaton() then
         return xi.msg.basic.NO_EFFECT_ON_PET, 0
     else
-        local id = player:getEquipID(xi.slot.AMMO)
+        local id = xi.equipment.getUsableEquipID(player, xi.slot.AMMO)
         if xi.job_utils.puppetmaster.oilData[id] then
             return 0, 0
         else

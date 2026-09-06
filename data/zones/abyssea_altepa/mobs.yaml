@@ -1553,291 +1553,291 @@ spawns:
     at:       [1.000, 1.000, 1.000]
   17670155:
     template: Desert_Clionid
-    at:       [625.050, 0.314, 67.801, 25]
+    region:   e_11
     level:    [84, 85]
   17670156:
     template: Desert_Clionid
-    at:       [601.213, 0.001, 37.068, 50]
+    region:   e_11
     level:    [84, 85]
   17670157:
     template: Desert_Clionid
-    at:       [596.370, 0.001, 37.832, 75]
+    region:   e_11
     level:    [84, 85]
   17670158:
     template: Desert_Clionid
-    at:       [649.355, -1.173, 77.468, 100]
+    region:   e_11
     level:    [84, 85]
   17670159:
     template: Desert_Clionid
-    at:       [642.955, 0.254, 70.905, 125]
+    region:   e_11
     level:    [84, 85]
   17670160:
     template: Desert_Clionid
-    at:       [615.190, -0.993, 27.453, 150]
+    region:   e_11
     level:    [84, 85]
   17670161:
     template: Desert_Clionid
-    at:       [611.639, 0.325, 35.331, 175]
+    region:   e_11
     level:    [84, 85]
   17670162:
     template: Desert_Clionid
-    at:       [601.213, 0.001, 37.068, 200]
+    region:   e_18
     level:    [84, 85]
   17670163:
     template: Desert_Clionid
-    at:       [544.671, -0.017, 21.300, 225]
+    region:   e_18
     level:    [84, 85]
   17670164:
     template: Desert_Clionid
-    at:       [539.727, 0.535, 33.457, 250]
+    region:   e_18
     level:    [84, 85]
   17670165:
     template: Desert_Clionid
-    at:       [507.063, 0.114, 8.256, 25]
+    region:   e_18
     level:    [84, 85]
   17670166:
     template: Desert_Clionid
-    at:       [499.553, 0.978, -0.130, 50]
+    region:   e_18
     level:    [84, 85]
   17670167:
     template: Desert_Clionid
-    at:       [479.069, 0.001, 2.805, 75]
+    region:   e_18
     level:    [84, 85]
   17670168:
     template: Desert_Clionid
-    at:       [517.196, 0.001, -0.125, 100]
+    region:   e_18
     level:    [84, 85]
   17670169:
     template: Desert_Clionid
-    at:       [557.417, 0.892, -17.851, 125]
+    region:   e_18
     level:    [84, 85]
   17670170:
     template: Desert_Clionid
-    at:       [569.219, 0.260, -2.980, 150]
+    region:   ne_26
     level:    [84, 85]
   17670171:
     template: Desert_Clionid
-    at:       [566.740, 0.169, -44.654, 175]
+    region:   ne_26
     level:    [84, 85]
   17670172:
     template: Desert_Clionid
-    at:       [582.090, -0.010, -16.136, 200]
+    region:   ne_26
     level:    [84, 85]
   17670173:
     template: Desert_Clionid
-    at:       [557.455, 0.885, -35.711, 225]
+    region:   ne_26
     level:    [84, 85]
   17670174:
     template: Desert_Clionid
-    at:       [579.835, 0.961, -36.579, 250]
+    region:   ne_26
     level:    [84, 85]
   17670175:
     template: Desert_Clionid
-    at:       [591.720, 0.334, -74.803, 25]
+    region:   ne_26
     level:    [84, 85]
   17670176:
     template: Desert_Clionid
-    at:       [580.500, 0.929, -75.084, 50]
+    region:   ne_26
     level:    [84, 85]
   17670177:
     template: Desert_Clionid
-    at:       [618.856, 0.645, -51.259, 75]
+    region:   ne_33
     level:    [84, 85]
   17670178:
     template: Desert_Clionid
-    at:       [610.266, 0.312, -81.703, 100]
+    region:   ne_33
     level:    [84, 85]
   17670179:
     template: Desert_Clionid
-    at:       [644.648, 0.303, -68.947, 125]
+    region:   ne_33
     level:    [84, 85]
   17670180:
     template: Desert_Clionid
-    at:       [639.444, 0.375, -91.527, 150]
+    region:   ne_33
     level:    [84, 85]
   17670181:
     template: Desert_Clionid
-    at:       [636.126, 0.129, -113.402, 175]
+    region:   ne_33
     level:    [84, 85]
   17670182:
     template: Desert_Clionid
-    at:       [595.139, -0.102, -117.085, 200]
+    region:   ne_33
     level:    [84, 85]
   17670183:
     template: Oasis_Amoeban
-    at:       [450.102, 0.051, 185.039, 20]
+    region:   ne_39
     level:    [80, 89]
   17670184:
     template: Oasis_Amoeban
-    at:       [454.464, -0.095, 205.063, 50]
+    region:   ne_39
     level:    [80, 89]
   17670185:
     template: Oasis_Amoeban
-    at:       [474.104, -0.094, 163.473, 70]
+    region:   ne_39
     level:    [80, 89]
   17670186:
     template: Oasis_Amoeban
-    at:       [469.002, 0.349, 162.778, 110]
+    region:   ne_39
     level:    [80, 89]
   17670187:
     template: Oasis_Amoeban
-    at:       [466.213, -0.030, 179.478, 240]
+    region:   ne_39
     level:    [80, 89]
   17670188:
     template: Oasis_Amoeban
-    at:       [481.856, 0.110, 166.203, 210]
+    region:   ne_44
     level:    [80, 89]
   17670189:
     template: Oasis_Amoeban
-    at:       [468.894, 0.354, 162.271, 170]
+    region:   ne_44
     level:    [80, 89]
   17670190:
     template: Oasis_Amoeban
-    at:       [463.585, 0.821, 159.927, 20]
+    region:   ne_44
     level:    [80, 89]
   17670191:
     template: Oasis_Amoeban
-    at:       [544.977, 0.461, 169.179, 90]
+    region:   ne_44
     level:    [80, 89]
   17670192:
     template: Oasis_Amoeban
-    at:       [524.936, 0.434, 171.919, 50]
+    region:   ne_44
     level:    [80, 89]
   17670193:
     template: Oasis_Amoeban
-    at:       [526.501, 0.137, 196.201, 180]
+    region:   ne_44
     level:    [80, 89]
   17670194:
     template: Oasis_Amoeban
-    at:       [482.627, 0.669, 214.690, 110]
+    region:   ne_50
     level:    [80, 89]
   17670195:
     template: Oasis_Amoeban
-    at:       [496.858, 0.749, 234.103, 210]
+    region:   ne_50
     level:    [80, 89]
   17670196:
     template: Oasis_Amoeban
-    at:       [515.652, 0.136, 233.349, 100]
+    region:   ne_50
     level:    [80, 89]
   17670197:
     template: Oasis_Amoeban
-    at:       [538.134, 0.648, 219.742, 10]
+    region:   ne_50
     level:    [80, 89]
   17670198:
     template: Oasis_Amoeban
-    at:       [564.247, 0.380, 212.396, 90]
+    region:   ne_50
     level:    [80, 89]
   17670199:
     template: Oasis_Amoeban
-    at:       [573.651, 0.649, 247.645, 128]
+    region:   ne_50
     level:    [80, 89]
   17670200:
     template: Oasis_Amoeban
-    at:       [578.496, -0.340, 232.081, 240]
+    region:   ne_50
     level:    [80, 89]
   17670201:
     template: Oasis_Amoeban
-    at:       [565.899, 0.099, 231.150, 150]
+    region:   ne_57
     level:    [80, 89]
   17670202:
     template: Oasis_Amoeban
-    at:       [613.230, -2.215, 245.964, 170]
+    region:   ne_57
     level:    [80, 89]
   17670203:
     template: Oasis_Amoeban
-    at:       [591.218, -0.363, 248.416, 70]
+    region:   ne_57
     level:    [80, 89]
   17670204:
     template: Oasis_Amoeban
-    at:       [444.979, 0.049, 196.457, 180]
+    region:   ne_57
     level:    [80, 89]
   17670205:
     template: Oasis_Amoeban
-    at:       [590.804, -1.353, 231.908, 244]
+    region:   ne_57
     level:    [80, 89]
   17670206:
     template: Oasis_Amoeban
-    at:       [602.134, -1.140, 233.258, 176]
+    region:   ne_57
     level:    [80, 89]
   17670207:
     template: Oasis_Amoeban
-    at:       [526.136, -0.273, 290.377, 99]
+    region:   ne_57
     level:    [80, 89]
   17670208:
     template: Nannakola
-    at:       [113.761, 0.166, 205.104, 25]
+    region:   n_64
     level:    [81, 82]
   17670209:
     template: Nannakola
-    at:       [108.318, 0.602, 184.856, 50]
+    region:   n_64
     level:    [81, 82]
   17670210:
     template: Nannakola
-    at:       [87.445, 0.561, 188.257, 75]
+    region:   n_64
     level:    [81, 82]
   17670211:
     template: Nannakola
-    at:       [74.604, 0.125, 271.388, 100]
+    region:   n_64
     level:    [81, 82]
   17670212:
     template: Nannakola
-    at:       [73.384, -1.910, 286.709, 125]
+    region:   n_64
     level:    [81, 82]
   17670213:
     template: Nannakola
-    at:       [60.184, -1.250, 251.957, 150]
+    region:   n_69
     level:    [81, 82]
   17670214:
     template: Nannakola
-    at:       [64.150, -1.161, 252.881, 175]
+    region:   n_69
     level:    [81, 82]
   17670215:
     template: Nannakola
-    at:       [53.069, -1.362, 250.963, 200]
+    region:   n_69
     level:    [81, 82]
   17670216:
     template: Nannakola
-    at:       [25.130, 0.529, 194.427, 225]
+    region:   n_69
     level:    [81, 82]
   17670217:
     template: Nannakola
-    at:       [3.152, 0.341, 210.856, 250]
+    region:   n_69
     level:    [81, 82]
   17670218:
     template: Nannakola
-    at:       [23.764, -0.049, 181.181, 25]
+    region:   n_69
     level:    [81, 82]
   17670219:
     template: Nannakola
-    at:       [56.873, 0.261, 173.889, 50]
+    region:   n_69
     level:    [81, 82]
   17670220:
     template: Nannakola
-    at:       [10.416, 0.320, 202.187, 75]
+    region:   n_69
     level:    [81, 82]
   17670221:
     template: Nannakola
-    at:       [12.503, 0.449, 199.696, 100]
+    region:   n_77
     level:    [81, 82]
   17670222:
     template: Nannakola
-    at:       [24.968, 0.703, 121.426, 125]
+    region:   n_77
     level:    [81, 82]
   17670223:
     template: Nannakola
-    at:       [53.215, 0.121, 168.583, 150]
+    region:   n_77
     level:    [81, 82]
   17670224:
     template: Nannakola
-    at:       [81.023, 0.010, 158.298, 175]
+    region:   n_77
     level:    [81, 82]
   17670225:
     template: Nannakola
-    at:       [93.000, 0.100, 147.000, 200]
+    region:   n_77
     level:    [81, 82]
   17670226:
     template: Nannakola
-    at:       [52.000, 0.100, 138.000, 225]
+    region:   n_77
     level:    [81, 82]
   17670227:
     template: Ungeweder
@@ -1845,35 +1845,35 @@ spawns:
     level:    [86, 87]
   17670228:
     template: Akrab
-    at:       [-184.204, 0.919, 176.919, 10]
+    region:   n_84
     level:    [82, 83]
   17670229:
     template: Akrab
-    at:       [-167.995, -2.187, 330.765, 40]
+    region:   n_84
     level:    [82, 83]
   17670230:
     template: Akrab
-    at:       [-129.822, 0.290, 323.199, 70]
+    region:   n_84
     level:    [82, 83]
   17670231:
     template: Akrab
-    at:       [-200.000, 0.100, 353.000, 100]
+    region:   n_87
     level:    [82, 83]
   17670232:
     template: Akrab
-    at:       [-197.000, 0.100, 329.000, 130]
+    region:   n_87
     level:    [82, 83]
   17670233:
     template: Akrab
-    at:       [-217.000, -1.000, 288.000, 160]
+    region:   n_87
     level:    [82, 83]
   17670234:
     template: Akrab
-    at:       [-234.000, 0.100, 247.000, 190]
+    region:   n_87
     level:    [82, 83]
   17670235:
     template: Akrab
-    at:       [-218.000, 0.100, 225.000, 220]
+    region:   n_87
     level:    [82, 83]
   17670236:
     template: Akrab
@@ -1881,23 +1881,23 @@ spawns:
     level:    [82, 83]
   17670237:
     template: Akrab
-    at:       [-177.000, 0.100, 251.000, 30]
+    region:   n_87
     level:    [82, 83]
   17670238:
     template: Akrab
-    at:       [-182.000, 0.100, 295.000, 60]
+    region:   n_94
     level:    [82, 83]
   17670239:
     template: Akrab
-    at:       [-114.000, 0.100, 278.000, 90]
+    region:   n_94
     level:    [82, 83]
   17670240:
     template: Akrab
-    at:       [-138.000, 0.100, 254.000, 120]
+    region:   n_96
     level:    [82, 83]
   17670241:
     template: Akrab
-    at:       [-163.000, 0.100, 223.000, 160]
+    region:   n_96
     level:    [82, 83]
   17670242:
     template: Akrab
@@ -1909,7 +1909,7 @@ spawns:
     level:    [82, 83]
   17670244:
     template: Akrab
-    at:       [-122.000, 0.100, 247.000, 30]
+    region:   n_96
     level:    [82, 83]
   17670245:
     template: Byrgen
@@ -1917,135 +1917,135 @@ spawns:
     level:    [90, 92]
   17670246:
     template: Dune_Manticore
-    at:       [-513.337, 1.297, 186.926, 20]
+    region:   nw_102
     level:    [86, 87]
   17670247:
     template: Dune_Manticore
-    at:       [-485.906, 0.095, 201.278, 50]
+    region:   nw_102
     level:    [86, 87]
   17670248:
     template: Dune_Manticore
-    at:       [-424.249, 0.589, 184.128, 80]
+    region:   nw_102
     level:    [86, 87]
   17670249:
     template: Dune_Manticore
-    at:       [-519.298, 0.010, 196.526, 110]
+    region:   nw_102
     level:    [86, 87]
   17670250:
     template: Dune_Manticore
-    at:       [-505.003, -0.210, 222.064, 140]
+    region:   nw_106
     level:    [86, 87]
   17670251:
     template: Dune_Manticore
-    at:       [-502.486, 0.861, 235.852, 160]
+    region:   nw_106
     level:    [86, 87]
   17670252:
     template: Dune_Manticore
-    at:       [-529.683, -0.460, 226.895, 200]
+    region:   nw_106
     level:    [86, 87]
   17670253:
     template: Dune_Manticore
-    at:       [-490.165, -1.426, 281.400, 250]
+    region:   nw_109
     level:    [86, 87]
   17670254:
     template: Dune_Manticore
-    at:       [-465.000, 0.100, 256.000, 30]
+    region:   nw_109
     level:    [86, 87]
   17670255:
     template: Dune_Manticore
-    at:       [-444.000, 0.100, 238.000, 80]
+    region:   nw_109
     level:    [86, 87]
   17670256:
     template: Dune_Manticore
-    at:       [-439.000, 0.100, 208.000, 90]
+    region:   nw_109
     level:    [86, 87]
   17670257:
     template: Dune_Manticore
-    at:       [-470.000, 0.100, 182.000, 170]
+    region:   nw_109
     level:    [86, 87]
   17670258:
     template: Dune_Manticore
-    at:       [-484.000, 0.100, 181.000, 210]
+    region:   nw_109
     level:    [86, 87]
   17670259:
     template: Dune_Manticore
-    at:       [-439.000, 0.100, 138.000, 50]
+    region:   nw_115
     level:    [86, 87]
   17670260:
     template: Dune_Manticore
-    at:       [-422.000, 0.100, 186.000, 10]
+    region:   nw_115
     level:    [86, 87]
   17670261:
     template: Dune_Manticore
-    at:       [-419.000, 0.100, 259.000, 150]
+    region:   nw_115
     level:    [86, 87]
   17670262:
     template: Dune_Manticore
-    at:       [-404.000, 0.100, 282.000, 190]
+    region:   nw_115
     level:    [86, 87]
   17670263:
     template: Dune_Manticore
-    at:       [-474.000, 0.100, 289.000, 210]
+    region:   nw_115
     level:    [86, 87]
   17670264:
     template: Baelfyr
-    at:       [-477.000, 0.100, 234.000, 100]
+    region:   nw_120
     level:    [84, 86]
   17670265:
     template: Camelopardalis
-    at:       [-466.324, 0.334, 37.528, 20]
+    region:   nw_121
     level:    [85, 86]
   17670266:
     template: Camelopardalis
-    at:       [-513.572, 0.522, 93.953, 50]
+    region:   nw_121
     level:    [85, 86]
   17670267:
     template: Camelopardalis
-    at:       [-452.948, 0.001, 94.316, 80]
+    region:   nw_121
     level:    [85, 86]
   17670268:
     template: Camelopardalis
-    at:       [-500.900, 0.859, 114.064, 120]
+    region:   nw_121
     level:    [85, 86]
   17670269:
     template: Camelopardalis
-    at:       [-496.900, 0.596, 113.068, 200]
+    region:   nw_121
     level:    [85, 86]
   17670270:
     template: Camelopardalis
-    at:       [-505.510, 0.348, 105.340, 250]
+    region:   nw_121
     level:    [85, 86]
   17670271:
     template: Camelopardalis
-    at:       [-508.810, 0.369, 104.055, 140]
+    region:   nw_121
     level:    [85, 86]
   17670272:
     template: Camelopardalis
-    at:       [-512.000, 0.100, 69.000, 20]
+    region:   nw_128
     level:    [85, 86]
   17670273:
     template: Camelopardalis
-    at:       [-535.000, -1.000, 62.000, 60]
+    region:   nw_128
     level:    [85, 86]
   17670274:
     template: Camelopardalis
-    at:       [-528.000, 0.100, 35.000, 90]
+    region:   nw_128
     level:    [85, 86]
   17670275:
     template: Camelopardalis
-    at:       [-468.000, 0.100, 29.000, 150]
+    region:   nw_128
     level:    [85, 86]
   17670276:
     template: Camelopardalis
-    at:       [-450.000, 0.100, 71.000, 120]
+    region:   nw_128
     level:    [85, 86]
   17670277:
     template: Camelopardalis
-    at:       [-482.000, 0.100, 65.000, 250]
+    region:   nw_128
     level:    [85, 86]
   17670278:
     template: Camelopardalis
-    at:       [-460.000, 0.100, 74.000, 10]
+    region:   nw_128
     level:    [85, 86]
   17670279:
     template: Byrgen
@@ -2053,247 +2053,247 @@ spawns:
     level:    [90, 92]
   17670280:
     template: Manigordo
-    at:       [-380.367, 0.982, -80.537, 20]
+    region:   w_136
     level:    [85, 86]
   17670281:
     template: Manigordo
-    at:       [-369.697, 0.056, -68.140, 50]
+    region:   w_136
     level:    [85, 86]
   17670282:
     template: Manigordo
-    at:       [-375.204, -0.065, -88.779, 80]
+    region:   w_136
     level:    [85, 86]
   17670283:
     template: Manigordo
-    at:       [-354.049, 0.819, -60.447, 110]
+    region:   w_139
     level:    [85, 86]
   17670284:
     template: Manigordo
-    at:       [-354.953, 0.173, -33.399, 140]
+    region:   w_139
     level:    [85, 86]
   17670285:
     template: Manigordo
-    at:       [-396.549, 0.031, -37.550, 170]
+    region:   w_139
     level:    [85, 86]
   17670286:
     template: Manigordo
-    at:       [-405.301, 0.049, -43.959, 200]
+    region:   w_139
     level:    [85, 86]
   17670287:
     template: Manigordo
-    at:       [-408.634, 0.178, -35.379, 230]
+    region:   w_139
     level:    [85, 86]
   17670288:
     template: Manigordo
-    at:       [-397.136, 0.010, -79.113, 10]
+    region:   w_144
     level:    [85, 86]
   17670289:
     template: Manigordo
-    at:       [-441.372, -0.027, -43.737, 40]
+    region:   w_144
     level:    [85, 86]
   17670290:
     template: Manigordo
-    at:       [-478.925, 0.508, -13.092, 70]
+    region:   w_144
     level:    [85, 86]
   17670291:
     template: Manigordo
-    at:       [-484.040, 0.126, -32.595, 100]
+    region:   w_144
     level:    [85, 86]
   17670292:
     template: Manigordo
-    at:       [-501.617, -0.178, -24.138, 130]
+    region:   w_144
     level:    [85, 86]
   17670293:
     template: Manigordo
-    at:       [-530.108, 0.316, -31.456, 160]
+    region:   w_144
     level:    [85, 86]
   17670294:
     template: Manigordo
-    at:       [-554.730, 0.093, -35.408, 190]
+    region:   w_144
     level:    [85, 86]
   17670295:
     template: Manigordo
-    at:       [-547.766, 0.023, -30.730, 220]
+    region:   w_144
     level:    [85, 86]
   17670296:
     template: Baelfyr
-    at:       [-390.355, 0.517, -32.385, 250]
+    region:   w_152
     level:    [84, 86]
   17670297:
     template: Arid_Limule
-    at:       [114.172, 0.786, 59.376, 10]
+    region:   ne_153
     level:    [83, 85]
   17670298:
     template: Arid_Limule
-    at:       [118.369, 0.182, 47.654, 40]
+    region:   ne_153
     level:    [83, 85]
   17670299:
     template: Arid_Limule
-    at:       [125.898, 0.341, 32.485, 70]
+    region:   ne_153
     level:    [83, 85]
   17670300:
     template: Arid_Limule
-    at:       [107.595, 0.439, 43.841, 100]
+    region:   ne_153
     level:    [83, 85]
   17670301:
     template: Arid_Limule
-    at:       [129.000, 0.551, 26.509, 130]
+    region:   ne_153
     level:    [83, 85]
   17670302:
     template: Arid_Limule
-    at:       [134.140, 1.000, 12.469, 160]
+    region:   ne_153
     level:    [83, 85]
   17670303:
     template: Arid_Limule
-    at:       [123.556, 0.822, 23.565, 190]
+    region:   ne_153
     level:    [83, 85]
   17670304:
     template: Arid_Limule
-    at:       [148.951, -0.067, 46.410, 220]
+    region:   e_160
     level:    [83, 85]
   17670305:
     template: Arid_Limule
-    at:       [155.125, 0.232, 7.562, 250]
+    region:   e_160
     level:    [83, 85]
   17670306:
     template: Arid_Limule
-    at:       [164.697, 0.035, 1.657, 30]
+    region:   e_160
     level:    [83, 85]
   17670307:
     template: Arid_Limule
-    at:       [199.746, 0.971, 19.422, 60]
+    region:   e_160
     level:    [83, 85]
   17670308:
     template: Arid_Limule
-    at:       [207.812, -1.645, 44.849, 90]
+    region:   e_160
     level:    [83, 85]
   17670309:
     template: Arid_Limule
-    at:       [204.440, -0.083, 41.405, 120]
+    region:   n_165
     level:    [83, 85]
   17670310:
     template: Arid_Limule
-    at:       [194.647, 0.478, 26.200, 150]
+    region:   n_165
     level:    [83, 85]
   17670311:
     template: Arid_Limule
-    at:       [207.463, -0.666, 2.665, 180]
+    region:   n_165
     level:    [83, 85]
   17670312:
     template: Arid_Limule
-    at:       [212.145, -2.191, -3.580, 210]
+    region:   n_165
     level:    [83, 85]
   17670313:
     template: Arid_Limule
-    at:       [167.425, 1.893, -19.906, 240]
+    region:   n_165
     level:    [83, 85]
   17670314:
     template: Arid_Limule
-    at:       [196.830, 0.010, -36.539, 20]
+    region:   n_165
     level:    [83, 85]
   17670315:
     template: Arid_Limule
-    at:       [193.678, 0.114, -31.366, 50]
+    region:   n_165
     level:    [83, 85]
   17670316:
     template: Arid_Limule
-    at:       [168.558, 0.243, -35.580, 80]
+    region:   n_172
     level:    [83, 85]
   17670317:
     template: Arid_Limule
-    at:       [166.626, 1.122, -28.515, 110]
+    region:   n_172
     level:    [83, 85]
   17670318:
     template: Arid_Limule
-    at:       [159.748, 0.903, -18.054, 130]
+    region:   n_172
     level:    [83, 85]
   17670319:
     template: Arid_Limule
-    at:       [143.936, 0.762, -8.381, 160]
+    region:   n_172
     level:    [83, 85]
   17670320:
     template: Arid_Limule
-    at:       [126.423, 0.438, -10.971, 190]
+    region:   n_172
     level:    [83, 85]
   17670321:
     template: Arid_Limule
-    at:       [72.197, 0.189, -2.719, 220]
+    region:   n_172
     level:    [83, 85]
   17670322:
     template: Arid_Limule
-    at:       [47.612, 0.802, 20.140, 250]
+    region:   n_172
     level:    [83, 85]
   17670323:
     template: Gastornis
-    at:       [81.427, 0.002, -79.618, 25]
+    region:   e_179
     level:    [84, 85]
   17670324:
     template: Gastornis
-    at:       [75.711, 0.242, -110.843, 50]
+    region:   e_179
     level:    [84, 85]
   17670325:
     template: Gastornis
-    at:       [106.945, 0.505, -161.919, 75]
+    region:   e_179
     level:    [84, 85]
   17670326:
     template: Gastornis
-    at:       [80.930, 0.001, -157.496, 100]
+    region:   e_179
     level:    [84, 85]
   17670327:
     template: Gastornis
-    at:       [76.510, -1.275, -168.888, 125]
+    region:   e_179
     level:    [84, 85]
   17670328:
     template: Gastornis
-    at:       [114.755, 0.062, -157.480, 150]
+    region:   e_179
     level:    [84, 85]
   17670329:
     template: Gastornis
-    at:       [105.690, -2.339, -231.864, 175]
+    region:   e_179
     level:    [84, 85]
   17670330:
     template: Gastornis
-    at:       [152.570, 0.572, -223.424, 200]
+    region:   c_186
     level:    [84, 85]
   17670331:
     template: Gastornis
-    at:       [130.535, 0.354, -238.884, 220]
+    region:   c_186
     level:    [84, 85]
   17670332:
     template: Gastornis
-    at:       [153.113, 0.178, -235.319, 250]
+    region:   c_186
     level:    [84, 85]
   17670333:
     template: Gastornis
-    at:       [152.570, 0.572, -223.424, 25]
+    region:   c_186
     level:    [84, 85]
   17670334:
     template: Gastornis
-    at:       [161.672, 0.001, -276.249, 50]
+    region:   c_190
     level:    [84, 85]
   17670335:
     template: Gastornis
-    at:       [152.316, -2.167, -287.854, 75]
+    region:   c_190
     level:    [84, 85]
   17670336:
     template: Gastornis
-    at:       [150.484, -1.224, -281.498, 100]
+    region:   c_190
     level:    [84, 85]
   17670337:
     template: Gastornis
-    at:       [173.360, 0.501, -236.814, 125]
+    region:   c_190
     level:    [84, 85]
   17670338:
     template: Gastornis
-    at:       [113.000, 0.100, -191.000, 150]
+    region:   c_190
     level:    [84, 85]
   17670339:
     template: Gastornis
-    at:       [50.000, 0.100, -119.000, 175]
+    region:   c_190
     level:    [84, 85]
   17670340:
     template: Gastornis
-    at:       [37.000, 0.100, -83.000, 200]
+    region:   c_190
     level:    [84, 85]
   17670341:
     template: Baelfyr
@@ -2301,158 +2301,158 @@ spawns:
     level:    [84, 86]
   17670342:
     template: Dune_Cockatrice
-    at:       [-153.942, 0.102, -200.152, 25]
+    region:   c_198
     level:    [83, 84]
   17670343:
     template: Dune_Cockatrice
-    at:       [-124.924, 0.352, -211.762, 50]
+    region:   c_198
     level:    [83, 84]
   17670344:
     template: Dune_Cockatrice
-    at:       [-127.946, 0.599, -175.910, 75]
+    region:   c_198
     level:    [83, 84]
   17670345:
     template: Dune_Cockatrice
-    at:       [-126.899, 0.689, -176.646, 100]
+    region:   c_198
     level:    [83, 84]
   17670346:
     template: Dune_Cockatrice
-    at:       [-125.273, 0.867, -180.129, 125]
+    region:   c_198
     level:    [83, 84]
   17670347:
     template: Dune_Cockatrice
-    at:       [-136.727, 0.826, -161.575, 150]
+    region:   c_203
     level:    [83, 84]
   17670348:
     template: Dune_Cockatrice
-    at:       [-132.467, 0.445, -160.748, 175]
+    region:   c_203
     level:    [83, 84]
   17670349:
     template: Dune_Cockatrice
-    at:       [-105.375, 0.662, -161.396, 200]
+    region:   c_203
     level:    [83, 84]
   17670350:
     template: Dune_Cockatrice
-    at:       [-91.406, 0.429, -152.070, 225]
+    region:   c_203
     level:    [83, 84]
   17670351:
     template: Dune_Cockatrice
-    at:       [-73.861, 0.107, -163.369, 250]
+    region:   c_203
     level:    [83, 84]
   17670352:
     template: Dune_Cockatrice
-    at:       [-95.609, 0.761, -197.234, 25]
+    region:   c_203
     level:    [83, 84]
   17670353:
     template: Dune_Cockatrice
-    at:       [-85.418, 0.087, -203.241, 50]
+    region:   c_203
     level:    [83, 84]
   17670354:
     template: Dune_Cockatrice
-    at:       [-75.506, -0.093, -236.348, 75]
+    region:   c_203
     level:    [83, 84]
   17670355:
     template: Dune_Cockatrice
-    at:       [-95.174, -1.151, -251.645, 100]
+    region:   c_211
     level:    [83, 84]
   17670356:
     template: Dune_Cockatrice
-    at:       [-113.499, 0.668, -218.942, 125]
+    region:   c_211
     level:    [83, 84]
   17670357:
     template: Dune_Cockatrice
-    at:       [-51.589, 0.683, -190.821, 175]
+    region:   c_211
     level:    [83, 84]
   17670358:
     template: Dune_Cockatrice
-    at:       [-55.004, 0.693, -161.285, 200]
+    region:   c_211
     level:    [83, 84]
   17670359:
     template: Dune_Cockatrice
-    at:       [-35.851, 0.013, -164.121, 225]
+    region:   c_211
     level:    [83, 84]
   17670360:
     template: Dune_Cockatrice
-    at:       [-37.232, 0.127, -166.547, 250]
+    region:   c_211
     level:    [83, 84]
   17670361:
     template: Byrgen
     level:    [90, 92]
   17670362:
     template: Ergdrake
-    at:       [-270.276, -0.726, -294.207, 25]
+    region:   s_218
     level:    [86, 87]
   17670363:
     template: Ergdrake
-    at:       [-258.952, 0.449, -300.398, 50]
+    region:   s_218
     level:    [86, 87]
   17670364:
     template: Ergdrake
-    at:       [-262.381, 0.106, -327.721, 75]
+    region:   s_218
     level:    [86, 87]
   17670365:
     template: Ergdrake
-    at:       [-242.955, 0.006, -324.117, 100]
+    region:   s_218
     level:    [86, 87]
   17670366:
     template: Ergdrake
-    at:       [-237.133, 0.001, -322.220, 125]
+    region:   s_218
     level:    [86, 87]
   17670367:
     template: Ergdrake
-    at:       [-259.073, -0.339, -339.365, 150]
+    region:   c_223
     level:    [86, 87]
   17670368:
     template: Ergdrake
-    at:       [-204.576, 0.804, -336.637, 175]
+    region:   c_223
     level:    [86, 87]
   17670369:
     template: Ergdrake
-    at:       [-199.887, 0.001, -322.876, 200]
+    region:   c_223
     level:    [86, 87]
   17670370:
     template: Ergdrake
-    at:       [-165.923, 0.150, -351.629, 225]
+    region:   c_223
     level:    [86, 87]
   17670371:
     template: Ergdrake
-    at:       [-178.532, 4.885, -377.947, 250]
+    region:   c_223
     level:    [86, 87]
   17670372:
     template: Ergdrake
-    at:       [-197.507, 0.353, -388.918, 25]
+    region:   c_223
     level:    [86, 87]
   17670373:
     template: Ergdrake
-    at:       [-138.460, 0.923, -396.150, 50]
+    region:   c_223
     level:    [86, 87]
   17670374:
     template: Ergdrake
-    at:       [-127.932, 0.125, -405.047, 75]
+    region:   c_223
     level:    [86, 87]
   17670375:
     template: Ergdrake
-    at:       [-120.694, 0.775, -415.747, 100]
+    region:   c_231
     level:    [86, 87]
   17670376:
     template: Ergdrake
-    at:       [-140.935, -0.828, -448.258, 125]
+    region:   c_231
     level:    [86, 87]
   17670377:
     template: Ergdrake
-    at:       [-111.611, -2.384, -448.717, 150]
+    region:   c_231
     level:    [86, 87]
   17670378:
     template: Ergdrake
-    at:       [-195.805, -0.038, -402.548, 175]
+    region:   c_231
     level:    [86, 87]
   17670379:
     template: Ergdrake
-    at:       [-180.202, 0.926, -404.447, 200]
+    region:   c_231
     level:    [86, 87]
   17670380:
     template: Ergdrake
-    at:       [-220.113, 0.892, -393.949, 225]
+    region:   c_231
     level:    [86, 87]
   17670381:
     template: Byrgen
@@ -2460,107 +2460,107 @@ spawns:
     level:    [90, 92]
   17670382:
     template: Desert_Puk
-    at:       [-362.520, 0.729, -384.715, 25]
+    region:   sw_238
     level:    [84, 85]
   17670383:
     template: Desert_Puk
-    at:       [-364.933, 0.105, -382.468, 60]
+    region:   sw_238
     level:    [84, 85]
   17670384:
     template: Desert_Puk
-    at:       [-364.638, -0.102, -395.720, 90]
+    region:   sw_238
     level:    [84, 85]
   17670385:
     template: Desert_Puk
-    at:       [-371.558, -1.929, -404.248, 120]
+    region:   sw_238
     level:    [84, 85]
   17670386:
     template: Desert_Puk
-    at:       [-358.551, 0.893, -378.638, 150]
+    region:   sw_238
     level:    [84, 85]
   17670387:
     template: Desert_Puk
-    at:       [-353.553, -0.844, -387.369, 180]
+    region:   sw_238
     level:    [84, 85]
   17670388:
     template: Desert_Puk
-    at:       [-381.726, -1.015, -430.719, 210]
+    region:   sw_244
     level:    [84, 85]
   17670389:
     template: Desert_Puk
-    at:       [-356.161, 0.010, -438.936, 240]
+    region:   sw_244
     level:    [84, 85]
   17670390:
     template: Desert_Puk
-    at:       [-355.917, 0.004, -442.149, 20]
+    region:   sw_244
     level:    [84, 85]
   17670391:
     template: Desert_Puk
-    at:       [-366.036, -0.298, -404.844, 50]
+    region:   sw_244
     level:    [84, 85]
   17670392:
     template: Desert_Puk
-    at:       [-341.534, 0.924, -436.826, 80]
+    region:   sw_244
     level:    [84, 85]
   17670393:
     template: Desert_Puk
-    at:       [-354.004, -2.308, -453.891, 110]
+    region:   sw_244
     level:    [84, 85]
   17670394:
     template: Desert_Puk
-    at:       [-378.491, -1.245, -430.408, 140]
+    region:   sw_244
     level:    [84, 85]
   17670395:
     template: Desert_Puk
-    at:       [-387.319, -0.731, -431.547, 170]
+    region:   s_251
     level:    [84, 85]
   17670396:
     template: Desert_Puk
-    at:       [-331.277, -0.076, -449.719, 200]
+    region:   s_251
     level:    [84, 85]
   17670397:
     template: Desert_Puk
-    at:       [-229.938, -1.544, -523.401, 230]
+    region:   s_251
     level:    [84, 85]
   17670398:
     template: Desert_Puk
-    at:       [-319.331, 0.373, -468.392, 10]
+    region:   s_251
     level:    [84, 85]
   17670399:
     template: Desert_Puk
-    at:       [-324.904, -0.090, -465.356, 40]
+    region:   s_251
     level:    [84, 85]
   17670400:
     template: Desert_Puk
-    at:       [-252.561, 0.129, -508.781, 70]
+    region:   s_251
     level:    [84, 85]
   17670401:
     template: Desert_Puk
-    at:       [-295.876, 0.788, -482.679, 100]
+    region:   s_257
     level:    [84, 85]
   17670402:
     template: Desert_Puk
-    at:       [-298.264, 0.914, -483.073, 130]
+    region:   s_257
     level:    [84, 85]
   17670403:
     template: Desert_Puk
-    at:       [-294.124, 0.130, -487.238, 160]
+    region:   s_257
     level:    [84, 85]
   17670404:
     template: Desert_Puk
-    at:       [-271.911, 0.204, -478.152, 190]
+    region:   s_257
     level:    [84, 85]
   17670405:
     template: Desert_Puk
-    at:       [-300.735, 0.203, -471.416, 220]
+    region:   s_257
     level:    [84, 85]
   17670406:
     template: Desert_Puk
-    at:       [-255.293, -0.042, -495.882, 250]
+    region:   s_257
     level:    [84, 85]
   17670407:
     template: Desert_Puk
-    at:       [-248.541, -0.199, -508.872, 30]
+    region:   s_257
     level:    [84, 85]
   17670408:
     template: Baelfyr
@@ -2568,139 +2568,139 @@ spawns:
     level:    [84, 86]
   17670409:
     template: Sand_Murex
-    at:       [-278.268, 0.338, -610.777, 25]
+    region:   s_265
     level:    [79, 88]
   17670410:
     template: Sand_Murex
-    at:       [-261.976, 0.885, -609.700, 50]
+    region:   s_265
     level:    [79, 88]
   17670411:
     template: Sand_Murex
-    at:       [-264.451, 0.795, -605.940, 75]
+    region:   s_265
     level:    [79, 88]
   17670412:
     template: Sand_Murex
-    at:       [-288.692, -0.537, -618.417, 100]
+    region:   s_265
     level:    [79, 88]
   17670413:
     template: Sand_Murex
-    at:       [-249.183, 0.461, -625.270, 125]
+    region:   s_265
     level:    [79, 88]
   17670414:
     template: Sand_Murex
-    at:       [-251.189, 0.480, -631.511, 150]
+    region:   s_265
     level:    [79, 88]
   17670415:
     template: Sand_Murex
-    at:       [-215.220, 0.476, -654.100, 180]
+    region:   s_271
     level:    [79, 88]
   17670416:
     template: Sand_Murex
-    at:       [-237.784, 0.143, -646.881, 210]
+    region:   s_271
     level:    [79, 88]
   17670417:
     template: Sand_Murex
-    at:       [-240.498, 0.690, -665.102, 240]
+    region:   s_271
     level:    [79, 88]
   17670418:
     template: Sand_Murex
-    at:       [-241.732, 0.609, -665.907, 30]
+    region:   s_271
     level:    [79, 88]
   17670419:
     template: Sand_Murex
-    at:       [-206.524, 0.126, -676.267, 60]
+    region:   s_271
     level:    [79, 88]
   17670420:
     template: Sand_Murex
-    at:       [-252.650, -1.296, -665.378, 90]
+    region:   s_276
     level:    [79, 88]
   17670421:
     template: Sand_Murex
-    at:       [-194.471, -0.237, -664.804, 120]
+    region:   s_276
     level:    [79, 88]
   17670422:
     template: Sand_Murex
-    at:       [-191.158, -1.274, -666.193, 150]
+    region:   s_276
     level:    [79, 88]
   17670423:
     template: Sand_Murex
-    at:       [-189.102, -1.749, -669.703, 180]
+    region:   s_276
     level:    [79, 88]
   17670424:
     template: Sand_Murex
-    at:       [-223.749, -1.000, -688.286, 210]
+    region:   s_276
     level:    [79, 88]
   17670425:
     template: Sand_Murex
-    at:       [-188.783, -1.838, -670.223, 240]
+    region:   s_276
     level:    [79, 88]
   17670426:
     template: Sand_Murex
-    at:       [-239.952, 0.212, -631.740, 10]
+    region:   s_276
     level:    [79, 88]
   17670427:
     template: Barrens_Treant
-    at:       [-548.128, 0.315, -433.925, 50]
+    region:   sw_283
     level:    [83, 84]
   17670428:
     template: Barrens_Treant
-    at:       [-554.531, 0.073, -438.656, 100]
+    region:   sw_283
     level:    [83, 84]
   17670429:
     template: Barrens_Treant
-    at:       [-511.470, -0.916, -438.238, 150]
+    region:   sw_283
     level:    [83, 84]
   17670430:
     template: Barrens_Treant
-    at:       [-498.560, 0.928, -481.863, 200]
+    region:   sw_283
     level:    [83, 84]
   17670431:
     template: Barrens_Treant
-    at:       [-532.438, -1.080, -501.813, 250]
+    region:   sw_283
     level:    [83, 84]
   17670432:
     template: Barrens_Treant
-    at:       [-482.531, 0.001, -476.836, 1]
+    region:   sw_283
     level:    [83, 84]
   17670433:
     template: Barrens_Treant
-    at:       [-474.832, -0.258, -475.079, 200]
+    region:   sw_289
     level:    [83, 84]
   17670434:
     template: Barrens_Treant
-    at:       [-506.519, 0.565, -513.020, 30]
+    region:   sw_289
     level:    [83, 84]
   17670435:
     template: Barrens_Treant
-    at:       [-448.180, 0.208, -520.038, 70]
+    region:   sw_289
     level:    [83, 84]
   17670436:
     template: Barrens_Treant
-    at:       [-418.851, -0.196, -534.997, 150]
+    region:   sw_289
     level:    [83, 84]
   17670437:
     template: Barrens_Treant
-    at:       [-423.604, -0.030, -537.754, 170]
+    region:   sw_289
     level:    [83, 84]
   17670438:
     template: Barrens_Treant
-    at:       [-420.853, 0.958, -556.463, 20]
+    region:   sw_294
     level:    [83, 84]
   17670439:
     template: Barrens_Treant
-    at:       [-426.825, -1.574, -571.151, 190]
+    region:   sw_294
     level:    [83, 84]
   17670440:
     template: Barrens_Treant
-    at:       [-398.524, 0.210, -528.217, 90]
+    region:   sw_294
     level:    [83, 84]
   17670441:
     template: Barrens_Treant
-    at:       [-424.000, 0.100, -544.000, 30]
+    region:   sw_294
     level:    [83, 84]
   17670442:
     template: Barrens_Treant
-    at:       [-393.000, 0.100, -558.000, 20]
+    region:   sw_294
     level:    [83, 84]
   17670443:
     template: Byrgen
@@ -2708,115 +2708,115 @@ spawns:
     level:    [90, 92]
   17670444:
     template: Fear_Dearg
-    at:       [-688.385, -0.169, -329.932, 10]
+    region:   w_300
     level:    [82, 83]
   17670445:
     template: Fear_Dearg
-    at:       [-666.531, 0.304, -336.265, 40]
+    region:   w_300
     level:    [82, 83]
   17670446:
     template: Fear_Dearg
-    at:       [-653.559, 0.007, -346.576, 70]
+    region:   w_300
     level:    [82, 83]
   17670447:
     template: Fear_Dearg
-    at:       [-665.341, 0.351, -351.047, 100]
+    region:   w_300
     level:    [82, 83]
   17670448:
     template: Fear_Dearg
-    at:       [-628.994, -0.465, -265.993, 130]
+    region:   w_300
     level:    [82, 83]
   17670449:
     template: Fear_Dearg
-    at:       [-652.587, 0.289, -284.586, 160]
+    region:   w_300
     level:    [82, 83]
   17670450:
     template: Fear_Dearg
-    at:       [-634.985, 0.051, -279.055, 190]
+    region:   w_300
     level:    [82, 83]
   17670451:
     template: Fear_Dearg
-    at:       [-633.993, 0.100, -281.707, 220]
+    region:   w_307
     level:    [82, 83]
   17670452:
     template: Fear_Dearg
-    at:       [-609.706, 2.000, -301.815, 250]
+    region:   w_307
     level:    [82, 83]
   17670453:
     template: Fear_Dearg
-    at:       [-609.251, 2.049, -304.959, 30]
+    region:   w_307
     level:    [82, 83]
   17670454:
     template: Fear_Dearg
-    at:       [-613.617, 2.611, -313.657, 60]
+    region:   w_307
     level:    [82, 83]
   17670455:
     template: Fear_Dearg
-    at:       [-623.117, 2.250, -307.467, 90]
+    region:   w_307
     level:    [82, 83]
   17670456:
     template: Fear_Dearg
-    at:       [-617.785, 0.474, -326.518, 120]
+    region:   w_307
     level:    [82, 83]
   17670457:
     template: Fear_Dearg
-    at:       [-624.416, 2.180, -307.412, 150]
+    region:   w_307
     level:    [82, 83]
   17670458:
     template: Fear_Dearg
-    at:       [-615.494, 2.676, -314.527, 180]
+    region:   w_314
     level:    [82, 83]
   17670459:
     template: Fear_Dearg
-    at:       [-607.246, 0.131, -326.639, 210]
+    region:   w_314
     level:    [82, 83]
   17670460:
     template: Fear_Dearg
-    at:       [-608.402, 1.960, -306.312, 240]
+    region:   w_314
     level:    [82, 83]
   17670461:
     template: Fear_Dearg
-    at:       [-599.683, 0.149, -353.005, 20]
+    region:   w_314
     level:    [82, 83]
   17670462:
     template: Fear_Dearg
-    at:       [-612.311, 0.630, -352.062, 50]
+    region:   w_314
     level:    [82, 83]
   17670463:
     template: Fear_Dearg
-    at:       [-613.611, 0.920, -336.415, 80]
+    region:   w_314
     level:    [82, 83]
   17670464:
     template: Fear_Dearg
-    at:       [-648.134, 0.275, -345.110, 110]
+    region:   w_314
     level:    [82, 83]
   17670465:
     template: Fear_Dearg
-    at:       [-605.964, 0.098, -354.261, 140]
+    region:   w_321
     level:    [82, 83]
   17670466:
     template: Fear_Dearg
-    at:       [-628.180, -1.829, -371.707, 170]
+    region:   w_321
     level:    [82, 83]
   17670467:
     template: Fear_Dearg
-    at:       [-617.914, 2.284, -314.899, 200]
+    region:   w_321
     level:    [82, 83]
   17670468:
     template: Fear_Dearg
-    at:       [-653.877, 0.299, -353.129, 230]
+    region:   w_321
     level:    [82, 83]
   17670469:
     template: Fear_Dearg
-    at:       [-657.273, 0.006, -344.120, 10]
+    region:   w_321
     level:    [82, 83]
   17670470:
     template: Fear_Dearg
-    at:       [-592.757, -0.424, -313.878, 40]
+    region:   w_321
     level:    [82, 83]
   17670471:
     template: Fear_Dearg
-    at:       [-599.000, 0.001, -367.000, 70]
+    region:   w_321
     level:    [82, 83]
   17670472:
     template: Gefyrst
@@ -2824,91 +2824,91 @@ spawns:
     level:    [82, 84]
   17670473:
     template: Bonfire
-    at:       [-606.128, 0.161, -581.247, 25]
+    region:   sw_329
     level:    [86, 87]
   17670474:
     template: Bonfire
-    at:       [-618.848, -0.549, -606.033, 50]
+    region:   sw_329
     level:    [86, 87]
   17670475:
     template: Bonfire
-    at:       [-624.615, -1.182, -586.191, 75]
+    region:   sw_329
     level:    [86, 87]
   17670476:
     template: Bonfire
-    at:       [-600.496, 0.632, -585.679, 100]
+    region:   sw_329
     level:    [86, 87]
   17670477:
     template: Bonfire
-    at:       [-622.094, -2.014, -583.363, 125]
+    region:   sw_329
     level:    [86, 87]
   17670478:
     template: Bonfire
-    at:       [-629.179, -5.513, -569.883, 150]
+    region:   sw_329
     level:    [86, 87]
   17670479:
     template: Bonfire
-    at:       [-622.141, -4.169, -564.784, 175]
+    region:   sw_335
     level:    [86, 87]
   17670480:
     template: Bonfire
-    at:       [-659.111, -3.144, -603.096, 200]
+    region:   sw_335
     level:    [86, 87]
   17670481:
     template: Bonfire
-    at:       [-651.263, -1.112, -640.566, 225]
+    region:   sw_335
     level:    [86, 87]
   17670482:
     template: Bonfire
-    at:       [-701.253, -8.094, -573.074, 250]
+    region:   sw_335
     level:    [86, 87]
   17670483:
     template: Bonfire
-    at:       [-656.992, -2.571, -637.052, 25]
+    region:   sw_335
     level:    [86, 87]
   17670484:
     template: Bonfire
-    at:       [-652.210, -0.712, -609.909, 50]
+    region:   sw_340
     level:    [86, 87]
   17670485:
     template: Bonfire
-    at:       [-657.595, -2.228, -650.147, 75]
+    region:   sw_340
     level:    [86, 87]
   17670486:
     template: Bonfire
-    at:       [-690.362, -7.683, -637.214, 100]
+    region:   sw_340
     level:    [86, 87]
   17670487:
     template: Bonfire
-    at:       [-685.335, -7.421, -624.872, 125]
+    region:   sw_340
     level:    [86, 87]
   17670488:
     template: Bonfire
-    at:       [-703.021, -7.274, -606.681, 150]
+    region:   sw_340
     level:    [86, 87]
   17670489:
     template: Bonfire
-    at:       [-694.427, -7.357, -603.813, 175]
+    region:   sw_345
     level:    [86, 87]
   17670490:
     template: Bonfire
-    at:       [-686.299, -7.668, -628.479, 200]
+    region:   sw_345
     level:    [86, 87]
   17670491:
     template: Bonfire
-    at:       [-699.084, -7.118, -604.505, 225]
+    region:   sw_345
     level:    [86, 87]
   17670492:
     template: Bonfire
-    at:       [-704.501, -7.539, -633.127, 250]
+    region:   sw_345
     level:    [86, 87]
   17670493:
     template: Bonfire
-    at:       [-687.804, -7.811, -562.213, 25]
+    region:   sw_345
     level:    [86, 87]
   17670494:
     template: Bonfire
-    at:       [-661.298, -3.906, -636.465, 25]
+    region:   sw_345
     level:    [86, 87]
   17670495:
     template: Baelfyr
@@ -2916,206 +2916,207 @@ spawns:
     level:    [84, 86]
   17670496:
     template: Surveyor
-    at:       [-811.522, -21.910, -727.719, 25]
+    region:   sw_352
     level:    [86, 87]
   17670497:
     template: Surveyor
-    at:       [-810.426, -20.778, -704.261, 50]
+    region:   sw_352
     level:    [86, 87]
   17670498:
     template: Surveyor
-    at:       [-810.943, -22.142, -716.118, 75]
+    region:   sw_352
     level:    [86, 87]
   17670499:
     template: Surveyor
-    at:       [-809.945, -21.358, -720.122, 100]
+    region:   sw_352
     level:    [86, 87]
   17670500:
     template: Surveyor
-    at:       [-773.755, -20.286, -729.778, 125]
+    region:   sw_352
     level:    [86, 87]
   17670501:
     template: Surveyor
-    at:       [-761.339, -19.179, -696.573, 150]
+    region:   sw_352
     level:    [86, 87]
   17670502:
     template: Surveyor
-    at:       [-747.816, -19.424, -715.120, 175]
+    region:   sw_358
     level:    [86, 87]
   17670503:
     template: Surveyor
-    at:       [-746.216, -20.209, -729.876, 200]
+    region:   sw_358
     level:    [86, 87]
   17670504:
     template: Surveyor
-    at:       [-727.072, -19.847, -717.521, 225]
+    region:   sw_358
     level:    [86, 87]
   17670505:
     template: Surveyor
-    at:       [-726.354, -19.673, -706.594, 250]
+    region:   sw_358
     level:    [86, 87]
   17670506:
     template: Surveyor
-    at:       [-723.107, -19.462, -706.616, 25]
+    region:   sw_358
     level:    [86, 87]
   17670507:
     template: Surveyor
-    at:       [-719.925, -20.000, -682.294, 50]
+    region:   sw_358
     level:    [86, 87]
   17670508:
     template: Surveyor
-    at:       [-760.725, -19.016, -660.325, 75]
+    region:   sw_364
     level:    [86, 87]
   17670509:
     template: Surveyor
-    at:       [-786.149, -16.798, -658.625, 100]
+    region:   sw_364
     level:    [86, 87]
   17670510:
     template: Surveyor
-    at:       [-782.749, -18.967, -636.721, 125]
+    region:   sw_364
     level:    [86, 87]
   17670511:
     template: Surveyor
-    at:       [-792.626, -19.119, -656.559, 150]
+    region:   sw_364
     level:    [86, 87]
   17670512:
     template: Surveyor
-    at:       [-793.192, -19.284, -653.510, 175]
+    region:   sw_364
     level:    [86, 87]
   17670513:
     template: Surveyor
-    at:       [-794.141, -19.441, -627.111, 200]
+    region:   sw_364
     level:    [86, 87]
   17670514:
     template: Surveyor
-    at:       [-787.496, -18.299, -626.879, 225]
+    region:   sw_364
     level:    [86, 87]
   17670515:
     template: Surveyor
-    at:       [-780.980, -17.750, -629.732, 250]
+    region:   sw_371
     level:    [86, 87]
   17670516:
     template: Surveyor
-    at:       [-779.317, -19.348, -615.177, 25]
+    region:   sw_371
     level:    [86, 87]
   17670517:
     template: Surveyor
-    at:       [-775.329, -19.267, -596.361, 50]
+    region:   sw_371
     level:    [86, 87]
   17670518:
     template: Surveyor
-    at:       [-793.192, -19.284, -653.510, 75]
+    region:   sw_371
     level:    [86, 87]
   17670519:
     template: Surveyor
-    at:       [-800.496, -19.377, -624.898, 134]
+    region:   sw_371
     level:    [86, 87]
   17670520:
     template: Surveyor
-    at:       [-803.794, -20.341, -643.055, 108]
+    region:   sw_371
     level:    [86, 87]
   17670521:
     template: Surveyor
+    region:   sw_371
     level:    [86, 87]
   17670522:
     template: Baelfyr
-    at:       [-806.107, -19.895, -641.593, 175]
+    region:   sw_378
     level:    [84, 86]
   17670523:
     template: Sand_Sweeper
-    at:       [-775.137, -7.574, -512.404, 25]
+    region:   sw_379
     level:    [87, 88]
   17670524:
     template: Sand_Sweeper
-    at:       [-804.880, -7.406, -504.609, 50]
+    region:   sw_379
     level:    [87, 88]
   17670525:
     template: Sand_Sweeper
-    at:       [-783.536, -6.746, -509.647, 75]
+    region:   sw_379
     level:    [87, 88]
   17670526:
     template: Sand_Sweeper
-    at:       [-805.483, -7.910, -512.328, 100]
+    region:   sw_379
     level:    [87, 88]
   17670527:
     template: Sand_Sweeper
-    at:       [-836.452, -8.000, -484.007, 125]
+    region:   sw_379
     level:    [87, 88]
   17670528:
     template: Sand_Sweeper
-    at:       [-833.682, -7.851, -474.475, 150]
+    region:   sw_379
     level:    [87, 88]
   17670529:
     template: Sand_Sweeper
-    at:       [-830.182, -7.602, -465.397, 175]
+    region:   sw_379
     level:    [87, 88]
   17670530:
     template: Sand_Sweeper
-    at:       [-807.712, -6.562, -456.206, 200]
+    region:   sw_386
     level:    [87, 88]
   17670531:
     template: Sand_Sweeper
-    at:       [-809.369, -7.733, -483.839, 225]
+    region:   sw_386
     level:    [87, 88]
   17670532:
     template: Sand_Sweeper
-    at:       [-780.657, -7.909, -463.953, 250]
+    region:   sw_386
     level:    [87, 88]
   17670533:
     template: Sand_Sweeper
-    at:       [-787.731, -7.077, -460.099, 20]
+    region:   sw_386
     level:    [87, 88]
   17670534:
     template: Sand_Sweeper
-    at:       [-806.915, -7.801, -434.818, 60]
+    region:   sw_386
     level:    [87, 88]
   17670535:
     template: Sand_Sweeper
-    at:       [-792.051, -7.501, -407.029, 100]
+    region:   sw_386
     level:    [87, 88]
   17670536:
     template: Sand_Sweeper
-    at:       [-817.991, -7.648, -409.182, 140]
+    region:   sw_386
     level:    [87, 88]
   17670537:
     template: Sand_Sweeper
-    at:       [-820.761, -7.038, -399.556, 180]
+    region:   sw_386
     level:    [87, 88]
   17670538:
     template: Sand_Sweeper
-    at:       [-760.400, -8.000, -399.726, 220]
+    region:   sw_394
     level:    [87, 88]
   17670539:
     template: Sand_Sweeper
-    at:       [-730.727, -0.850, -394.382, 10]
+    region:   sw_394
     level:    [87, 88]
   17670540:
     template: Sand_Sweeper
-    at:       [-735.990, -2.280, -399.978, 50]
+    region:   sw_394
     level:    [87, 88]
   17670541:
     template: Sand_Sweeper
-    at:       [-760.538, -8.783, -351.894, 90]
+    region:   sw_394
     level:    [87, 88]
   17670542:
     template: Sand_Sweeper
-    at:       [-732.251, -1.313, -398.161, 130]
+    region:   sw_394
     level:    [87, 88]
   17670543:
     template: Sand_Sweeper
-    at:       [-724.449, -2.619, -417.008, 170]
+    region:   sw_394
     level:    [87, 88]
   17670544:
     template: Sand_Sweeper
-    at:       [-792.000, -7.000, -476.000, 210]
+    region:   sw_394
     level:    [87, 88]
   17670545:
     template: Sand_Sweeper
-    at:       [-784.000, -7.000, -416.000, 250]
+    region:   sw_394
     level:    [87, 88]
   17670546:
     template: Byrgen
-    at:       [-810.333, -9.189, -371.916, 40]
+    region:   sw_402
     level:    [90, 92]
   17670547:
     template: Sturdy_Pyxis
@@ -3174,21 +3175,21 @@ spawns:
     level:    [105, 105]
   17670564:
     template: Cuijatender
-    at:       [-635.000, 1.020, -299.202, 200]
+    region:   w_420
     level:    [105, 105]
   17670565:
     template: Ironclad_Smiter
     at:       [-740.000, -15.000, -696.000, 121]
   17670566:
     template: Long-Barreled_Chariot
-    at:       [-799.719, -19.886, -646.279, 100]
+    region:   sw_378
     level:    [100, 100]
   17670567:
     template: Amarok
     at:       [-565.000, 0.001, 160.000, 26]
   17670568:
     template: Hazhdiha
-    at:       [-267.509, 0.477, -321.101, 200]
+    region:   c_424
     level:    [100, 100]
   17670569:
     template: Ouzelum
@@ -3205,14 +3206,14 @@ spawns:
     at:       [-878.000, -8.000, -525.000, 254]
   17670573:
     template: Battlerigged_Chariot
-    at:       [-676.528, -7.988, -564.241, 100]
+    region:   sw_429
     level:    [100, 100]
   17670574:
     template: Sharabha
     at:       [-307.000, 0.001, 307.000, 137]
   17670575:
     template: Ansherekh
-    at:       [-514.005, 0.545, -63.118, 200]
+    region:   w_152
     level:    [100, 100]
   17670576:
     template: Waugyl

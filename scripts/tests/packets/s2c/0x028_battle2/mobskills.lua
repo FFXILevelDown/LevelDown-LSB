@@ -94,7 +94,9 @@ local packets =
     {
         test = function(player, mob)
             player:gotoZone(xi.zone.DYNAMIS_SAN_DORIA)
-            local thfMob = player.entities:moveTo('Vanguard_Pillager')
+            local thfMob = player.entities:get('Vanguard_Pillager')
+            thfMob:respawn()
+            player.entities:moveTo(thfMob)
             thfMob:useMobAbility(xi.mobSkill.PERFECT_DODGE_1, thfMob)
             xi.test.world:tickEntity(thfMob)
         end,
@@ -135,7 +137,9 @@ local packets =
     {
         test = function(player, mob)
             player:gotoZone(xi.zone.DYNAMIS_SAN_DORIA)
-            local thfMob = player.entities:moveTo('Vanguard_Pillager')
+            local thfMob = player.entities:get('Vanguard_Pillager')
+            thfMob:respawn()
+            player.entities:moveTo(thfMob)
             thfMob:useMobAbility(xi.mobSkill.HOWL, thfMob, 0)
             xi.test.world:tickEntity(thfMob)
             xi.test.world:skipTime(10)

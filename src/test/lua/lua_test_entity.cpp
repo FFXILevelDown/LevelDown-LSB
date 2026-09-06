@@ -95,8 +95,17 @@ void CLuaTestEntity::respawn() const
 
     despawn();
 
-    // Respawn the mob
-    mob->Spawn();
+    // a region mob rolls a fresh spawn point every life; keep it where the test left it
+    if (const auto* region = mob->roamRegion())
+    {
+        mob->setRoamRegions({});
+        mob->Spawn();
+        mob->setRoamRegions({ region });
+    }
+    else
+    {
+        mob->Spawn();
+    }
 
     if (!mob->isAlive())
     {

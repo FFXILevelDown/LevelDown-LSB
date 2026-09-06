@@ -3940,123 +3940,123 @@ spawns:
     level:    [15, 20]
   17108998:
     template: Scarab_Beetle
-    at:       [330.000, -40.000, 68.000, 108]
+    region:   c_6
     level:    [21, 23]
   17108999:
     template: Scarab_Beetle
-    at:       [282.000, -49.000, 150.000, 250]
+    region:   c_7
     level:    [21, 23]
   17109000:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [694.000, -60.000, 431.000, 73]
+    region:   c_8
     level:    [13, 15]
   17109001:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [502.000, -57.000, 419.000, 56]
+    region:   c_9
     level:    [13, 15]
   17109002:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [412.000, -20.000, -111.000, 229]
+    region:   c_10
     level:    [11, 13]
   17109003:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [379.000, -19.000, -159.000, 192]
+    region:   c_11
     level:    [11, 13]
   17109004:
     template: Scarab_Beetle
-    at:       [315.000, -41.000, 94.000]
+    region:   c_12
     level:    [21, 23]
   17109005:
     template: Scarab_Beetle
-    at:       [262.000, -49.000, 157.000, 16]
+    region:   c_13
     level:    [21, 23]
   17109006:
     template: Scarab_Beetle
-    at:       [90.000, -50.000, 73.000, 17]
+    region:   c_10
     level:    [21, 23]
   17109007:
     template: Scarab_Beetle
-    at:       [203.000, -49.000, 112.000, 212]
+    region:   c_15
     level:    [21, 23]
   17109008:
     template: Scarab_Beetle
-    at:       [209.000, -39.000, 83.000, 136]
+    region:   c_16
     level:    [21, 23]
   17109009:
     template: Scarab_Beetle
-    at:       [243.000, -40.000, 88.000, 1]
+    region:   c_17
     level:    [21, 23]
   17109010:
     template: Colibri_past
     script:   Colibri
-    at:       [326.000, -40.000, 63.000, 175]
+    region:   c_18
     level:    [45, 47]
   17109011:
     template: Colibri_past
     script:   Colibri
-    at:       [282.000, -38.000, 50.000, 113]
+    region:   c_16
     level:    [45, 47]
   17109012:
     template: Colibri_past
     script:   Colibri
-    at:       [135.000, -45.000, 23.000, 127]
+    region:   c_17
     level:    [45, 47]
   17109013:
     template: Colibri_past
     script:   Colibri
-    at:       [222.000, -30.000, -75.000, 146]
+    region:   c_17
     level:    [45, 47]
   17109014:
     template: Forest_Hare
-    at:       [586.000, -61.000, 374.000, 225]
+    region:   c_12
     level:    [11, 15]
   17109015:
     template: Forest_Hare
-    at:       [666.000, -57.000, 367.000, 231]
+    region:   c_8
     level:    [11, 15]
   17109016:
     template: Forest_Hare
-    at:       [565.000, -49.000, 325.000, 211]
+    region:   c_24
     level:    [11, 15]
   17109017:
     template: Forest_Hare
-    at:       [511.000, -59.000, 437.000, 43]
+    region:   c_25
     level:    [11, 15]
   17109018:
     template: Forest_Hare
-    at:       [393.000, -61.000, 400.000, 181]
+    region:   c_26
     level:    [11, 15]
   17109019:
     template: Forest_Hare
-    at:       [396.000, -59.000, 448.000, 233]
+    region:   c_9
     level:    [11, 15]
   17109020:
     template: Forest_Hare
-    at:       [330.000, -59.000, 439.000, 160]
+    region:   c_28
     level:    [11, 15]
   17109021:
     template: Forest_Hare
-    at:       [290.000, -57.000, 411.000, 95]
+    region:   c_10
     level:    [11, 15]
   17109022:
     template: Forest_Hare
-    at:       [237.000, -57.000, 425.000, 251]
+    region:   c_15
     level:    [11, 15]
   17109023:
     template: River_Crab
-    at:       [221.000, -57.000, 441.000, 61]
+    region:   c_31
     level:    [11, 14]
   17109024:
     template: River_Crab
-    at:       [257.000, -57.000, 372.000, 158]
+    region:   c_32
     level:    [11, 14]
   17109025:
     template: River_Crab
-    at:       [419.000, -47.000, 161.000, 192]
+    region:   c_33
     level:    [11, 14]
   17109026:
     template: River_Crab
@@ -4064,15 +4064,15 @@ spawns:
     level:    [11, 14]
   17109027:
     template: River_Crab
-    at:       [258.000, -43.000, 102.000, 58]
+    region:   c_35
     level:    [11, 14]
   17109028:
     template: Pugil
-    at:       [227.000, -57.000, 387.000, 29]
+    region:   c_36
     level:    [14, 17]
   17109029:
     template: Pugil
-    at:       [289.000, -57.000, 341.000, 253]
+    region:   c_37
     level:    [14, 17]
   17109030:
     template: Pugil
@@ -4084,55 +4084,55 @@ spawns:
     level:    [14, 17]
   17109032:
     template: Pugil
-    at:       [378.000, -36.000, 17.000, 99]
+    region:   c_40
     level:    [14, 17]
   17109033:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [376.000, -61.000, 431.000, 67]
+    region:   e_41
     level:    [13, 15]
   17109034:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [771.000, -59.000, 476.000, 182]
+    region:   e_42
     level:    [11, 13]
   17109035:
     template: Wild_Sheep
-    at:       [480.000, -36.000, 23.000, 127]
+    region:   e_43
     level:    [16, 18]
   17109036:
     template: Wild_Sheep
-    at:       [512.000, -40.000, 90.000, 97]
+    region:   e_44
     level:    [16, 18]
   17109037:
     template: Wild_Sheep
-    at:       [523.000, -39.000, 55.000, 147]
+    region:   e_45
     level:    [16, 18]
   17109038:
     template: Wild_Sheep
-    at:       [512.000, -39.000, 87.000, 200]
+    region:   e_46
     level:    [16, 18]
   17109039:
     template: Wild_Sheep
-    at:       [544.000, -50.000, 140.000, 234]
+    region:   e_47
     level:    [16, 18]
   17109040:
     template: Wild_Sheep
-    at:       [484.000, -41.000, 94.000, 34]
+    region:   e_48
     level:    [16, 18]
   17109041:
     template: Wild_Sheep
-    at:       [541.000, -49.000, 148.000, 108]
+    region:   e_49
     level:    [16, 18]
   17109042:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [224.000, -59.000, 367.000, 49]
+    region:   c_50
     level:    [13, 15]
   17109043:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [490.000, -50.000, 231.000, 133]
+    region:   c_51
     level:    [13, 15]
   17109044:
     template: Ding_Bats_ERS
@@ -4142,237 +4142,237 @@ spawns:
   17109045:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [221.000, -53.000, 274.000, 71]
+    region:   c_53
     level:    [11, 13]
   17109046:
     template: Scarab_Beetle
-    at:       [290.000, -37.000, 51.000, 52]
+    region:   c_54
     level:    [21, 23]
   17109047:
     template: Scarab_Beetle
-    at:       [231.000, -39.000, 18.000, 126]
+    region:   c_55
     level:    [21, 23]
   17109048:
     template: Scarab_Beetle
-    at:       [175.000, -46.000, 45.000, 170]
+    region:   c_56
     level:    [21, 23]
   17109049:
     template: Scarab_Beetle
-    at:       [172.000, -46.000, 39.000, 111]
+    region:   c_57
     level:    [21, 23]
   17109050:
     template: Scarab_Beetle
-    at:       [156.000, -48.000, 48.000, 242]
+    region:   c_58
     level:    [21, 23]
   17109051:
     template: Scarab_Beetle
-    at:       [185.000, -40.000, 24.000, 19]
+    region:   c_59
     level:    [21, 23]
   17109052:
     template: Scarab_Beetle
-    at:       [193.000, -37.000, -50.000, 212]
+    region:   c_60
     level:    [21, 23]
   17109053:
     template: Scarab_Beetle
-    at:       [155.000, -30.000, -83.000, 115]
+    region:   c_61
     level:    [21, 23]
   17109054:
     template: Scarab_Beetle
-    at:       [205.000, -30.000, -69.000, 127]
+    region:   c_62
     level:    [21, 23]
   17109055:
     template: Scarab_Beetle
-    at:       [258.000, -33.000, -63.000, 12]
+    region:   c_63
     level:    [21, 23]
   17109056:
     template: Scarab_Beetle
-    at:       [177.000, -25.000, -99.000, 243]
+    region:   c_51
     level:    [21, 23]
   17109057:
     template: Scarab_Beetle
-    at:       [172.000, -30.000, -66.000, 33]
+    region:   s_65
     level:    [21, 23]
   17109058:
     template: Colibri_past
     script:   Colibri
-    at:       [225.000, -35.000, -59.000, 194]
+    region:   c_59
     level:    [45, 47]
   17109059:
     template: Colibri_past
     script:   Colibri
-    at:       [226.000, -39.000, -48.000, 162]
+    region:   c_67
     level:    [45, 47]
   17109060:
     template: Colibri_past
     script:   Colibri
-    at:       [236.000, -25.000, -97.000, 151]
+    region:   c_68
     level:    [45, 47]
   17109061:
     template: Colibri_past
     script:   Colibri
-    at:       [195.000, -39.000, -28.000, 135]
+    region:   c_62
     level:    [45, 47]
   17109062:
     template: Colibri_past
     script:   Colibri
-    at:       [217.000, -20.000, -111.000, 25]
+    region:   c_63
     level:    [45, 47]
   17109063:
     template: Colibri_past
     script:   Colibri
-    at:       [418.000, -29.000, -72.000, 234]
+    region:   c_71
     level:    [45, 47]
   17109064:
     template: Ladybug
-    at:       [496.000, -28.000, -79.000, 2]
+    region:   s_72
     level:    [44, 47]
   17109065:
     template: Ladybug
-    at:       [492.000, -27.000, -76.000, 2]
+    region:   s_73
     level:    [44, 47]
   17109066:
     template: Ladybug
-    at:       [489.000, -29.000, -71.000, 2]
+    region:   s_73
     level:    [44, 47]
   17109067:
     template: Ladybug
-    at:       [470.000, -29.000, -61.000, 50]
+    region:   s_75
     level:    [44, 47]
   17109068:
     template: Ladybug
-    at:       [410.000, -28.000, -62.000, 148]
+    region:   s_76
     level:    [44, 47]
   17109069:
     template: Ladybug
-    at:       [427.000, -27.000, -94.000, 192]
+    region:   se_77
     level:    [44, 47]
   17109070:
     template: Ladybug
-    at:       [417.000, -29.000, -77.000, 98]
+    region:   se_78
     level:    [44, 47]
   17109071:
     template: Ladybug
-    at:       [418.000, -19.000, -119.000, 35]
+    region:   se_79
     level:    [44, 47]
   17109072:
     template: Ladybug
-    at:       [461.000, -21.000, -99.000, 167]
+    region:   se_80
     level:    [44, 47]
   17109073:
     template: Ladybug
-    at:       [479.000, -19.000, -142.000, 154]
+    region:   s_81
     level:    [44, 47]
   17109074:
     template: Ladybug
-    at:       [471.000, -18.000, -173.000, 215]
+    region:   se_82
     level:    [44, 47]
   17109075:
     template: Ladybug
-    at:       [472.000, -18.000, -155.000, 32]
+    region:   s_83
     level:    [44, 47]
   17109076:
     template: Ladybug
-    at:       [478.000, -20.000, -156.000, 143]
+    region:   e_84
     level:    [44, 47]
   17109077:
     template: Ladybug
-    at:       [443.000, -19.000, -270.000, 83]
+    region:   e_85
     level:    [44, 47]
   17109078:
     template: Ladybug
-    at:       [438.000, -20.000, -282.000, 211]
+    region:   se_86
     level:    [44, 47]
   17109079:
     template: Ladybug
-    at:       [556.000, -20.000, -274.000, 9]
+    region:   se_87
     level:    [44, 47]
   17109080:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [235.000, -20.000, -157.000, 178]
+    region:   c_88
     level:    [37, 46]
   17109081:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [434.000, -17.000, -227.000, 214]
+    region:   c_51
     level:    [37, 46]
   17109082:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [504.000, -7.000, -353.000, 154]
+    region:   c_60
     level:    [37, 46]
   17109083:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [534.000, -8.000, -471.000, 62]
+    region:   se_91
     level:    [37, 46]
   17109084:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [365.000, -49.000, 120.000, 229]
+    region:   ne_92
     level:    [13, 15]
   17109085:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [508.000, -48.000, 306.000, 65]
+    region:   ne_93
     level:    [11, 13]
   17109086:
     template: Forest_Hare
-    at:       [147.000, -59.000, 427.000, 51]
+    region:   n_94
     level:    [11, 15]
   17109087:
     template: Forest_Hare
-    at:       [246.000, -59.000, 403.000, 223]
+    region:   n_95
     level:    [11, 15]
   17109088:
     template: Forest_Hare
-    at:       [252.000, -59.000, 338.000, 163]
+    region:   n_96
     level:    [11, 15]
   17109089:
     template: Forest_Hare
-    at:       [213.000, -57.000, 292.000, 82]
+    region:   n_97
     level:    [11, 15]
   17109090:
     template: Forest_Hare
-    at:       [197.000, -39.000, 287.000, 19]
+    region:   n_98
     level:    [11, 15]
   17109091:
     template: Forest_Hare
-    at:       [121.000, -59.000, 221.000, 183]
+    region:   ne_99
     level:    [11, 15]
   17109092:
     template: Forest_Hare
-    at:       [447.000, -54.000, 341.000, 158]
+    region:   ne_93
     level:    [11, 15]
   17109093:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [387.000, -52.000, 171.000, 53]
+    region:   ne_101
     level:    [13, 15]
   17109094:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [559.000, -50.000, 208.000, 68]
+    region:   ne_102
     level:    [11, 13]
   17109095:
     template: Goblin_Patrolman
-    at:       [477.000, -60.000, 403.000, 159]
+    region:   ne_103
     level:    [56, 59]
   17109096:
     template: Goblins_Ladybug
-    at:       [477.000, -60.000, 403.000, 159]
+    region:   ne_103
     level:    [52, 54]
   17109097:
     template: Goblin_Franctireur
-    at:       [733.000, -61.000, 466.000, 157]
+    region:   ne_105
     level:    [56, 59]
   17109098:
     template: Goblin_Draftee
-    at:       [795.000, -59.000, 476.000, 178]
+    region:   ne_101
     level:    [56, 59]
   17109099:
     template: Goblin_Skirmisher
-    at:       [731.000, -59.000, 479.000, 5]
+    region:   ne_107
     level:    [56, 59]
   17109100:
     template: Goblin_Mine_Small
@@ -4381,129 +4381,129 @@ spawns:
     level:    [54, 54]
   17109101:
     template: Goblin_Franctireur
-    at:       [754.000, -60.000, 406.000, 17]
+    region:   ne_109
     level:    [56, 59]
   17109102:
     template: Goblin_Draftee
-    at:       [689.000, -60.000, 412.000, 59]
+    region:   ne_110
     level:    [56, 59]
   17109103:
     template: Goblin_Franctireur
-    at:       [683.000, -58.000, 418.000, 63]
+    region:   ne_111
     level:    [56, 59]
   17109104:
     template: Goblin_Patrolman
-    at:       [679.000, -52.000, 421.000, 67]
+    region:   ne_112
     level:    [56, 59]
   17109105:
     template: Goblins_Ladybug
-    at:       [1.000, 1.000, 1.000, 55]
+    region:   ne_112
     level:    [52, 54]
   17109106:
     template: Forest_Hare
-    at:       [608.000, -50.000, 269.000, 52]
+    region:   ne_114
     level:    [11, 15]
   17109107:
     template: Forest_Hare
-    at:       [363.000, -49.000, 153.000, 227]
+    region:   ne_115
     level:    [11, 15]
   17109108:
     template: Forest_Hare
-    at:       [399.000, -46.000, 136.000, 255]
+    region:   ne_116
     level:    [11, 15]
   17109109:
     template: Forest_Hare
-    at:       [344.000, -49.000, 127.000, 161]
+    region:   ne_117
     level:    [11, 15]
   17109110:
     template: Forest_Hare
-    at:       [316.000, -39.000, 66.000, 214]
+    region:   ne_118
     level:    [11, 15]
   17109111:
     template: Forest_Hare
-    at:       [280.000, -49.000, 127.000, 153]
+    region:   ne_119
     level:    [11, 15]
   17109112:
     template: Forest_Hare
-    at:       [242.000, -46.000, 106.000, 212]
+    region:   ne_120
     level:    [11, 15]
   17109113:
     template: Wild_Sheep
-    at:       [668.000, -48.000, 303.000, 194]
+    region:   ne_103
     level:    [16, 18]
   17109114:
     template: Wild_Sheep
-    at:       [621.000, -51.000, 200.000, 218]
+    region:   ne_105
     level:    [16, 18]
   17109115:
     template: Wild_Sheep
-    at:       [615.000, -51.000, 223.000, 202]
+    region:   ne_123
     level:    [16, 18]
   17109116:
     template: Wild_Sheep
-    at:       [546.000, -53.000, 262.000, 63]
+    region:   ne_101
     level:    [16, 18]
   17109117:
     template: Wild_Sheep
-    at:       [511.000, -48.000, 345.000, 100]
+    region:   ne_115
     level:    [16, 18]
   17109118:
     template: Wild_Sheep
-    at:       [501.000, -50.000, 270.000, 226]
+    region:   ne_126
     level:    [16, 18]
   17109119:
     template: Wild_Sheep
-    at:       [483.000, -50.000, 303.000, 176]
+    region:   ne_102
     level:    [16, 18]
   17109120:
     template: Wild_Sheep
-    at:       [453.000, -49.000, 319.000, 172]
+    region:   ne_117
     level:    [16, 18]
   17109121:
     template: Wild_Sheep
-    at:       [481.000, -59.000, 405.000, 21]
+    region:   ne_129
     level:    [16, 18]
   17109122:
     template: Wild_Sheep
-    at:       [516.000, -60.000, 483.000, 144]
+    region:   ne_111
     level:    [16, 18]
   17109123:
     template: Wild_Sheep
-    at:       [512.000, -60.000, 418.000, 9]
+    region:   ne_131
     level:    [16, 18]
   17109124:
     template: Wild_Sheep
-    at:       [569.000, -61.000, 428.000, 48]
+    region:   ne_112
     level:    [16, 18]
   17109125:
     template: Wild_Sheep
-    at:       [564.000, -60.000, 404.000, 114]
+    region:   ne_133
     level:    [16, 18]
   17109126:
     template: Wild_Sheep
-    at:       [621.000, -55.000, 341.000, 85]
+    region:   e_134
     level:    [16, 18]
   17109127:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [42.000, -50.000, 172.000, 179]
+    region:   ne_135
     level:    [13, 15]
   17109128:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [284.000, -49.000, 149.000, 76]
+    region:   ne_136
     level:    [11, 13]
   17109129:
     template: Goblin_Franctireur
-    at:       [499.000, -61.000, 488.000, 178]
+    region:   ne_137
     level:    [56, 59]
   17109130:
     template: Goblin_Draftee
-    at:       [636.000, -59.000, 390.000, 223]
+    region:   ne_135
     level:    [56, 59]
   17109131:
     template: Goblin_Skirmisher
-    at:       [581.000, -49.000, 314.000, 40]
+    region:   ne_139
     level:    [56, 59]
   17109132:
     template: Goblin_Mine_Small
@@ -4512,15 +4512,15 @@ spawns:
     level:    [54, 54]
   17109133:
     template: Goblin_Franctireur
-    at:       [526.000, -49.000, 322.000, 71]
+    region:   ne_141
     level:    [56, 59]
   17109134:
     template: Goblin_Draftee
-    at:       [517.000, -59.000, 396.000, 44]
+    region:   ne_142
     level:    [56, 59]
   17109135:
     template: Goblin_Skirmisher
-    at:       [511.000, -48.000, 345.000, 29]
+    region:   ne_143
     level:    [56, 59]
   17109136:
     template: Goblin_Mine_Small
@@ -4529,195 +4529,195 @@ spawns:
     level:    [54, 54]
   17109137:
     template: Goblin_Patrolman
-    at:       [764.000, -59.000, 548.000, 88]
+    region:   ne_145
     level:    [56, 59]
   17109138:
     template: Goblins_Ladybug
-    at:       [1.000, 1.000, 1.000, 88]
+    region:   ne_145
     level:    [52, 54]
   17109139:
     template: Wild_Sheep
-    at:       [789.000, -60.000, 488.000, 37]
+    region:   ne_137
     level:    [16, 18]
   17109140:
     template: Wild_Sheep
-    at:       [735.000, -59.000, 478.000, 241]
+    region:   ne_135
     level:    [16, 18]
   17109141:
     template: Wild_Sheep
-    at:       [670.000, -61.000, 462.000, 86]
+    region:   ne_149
     level:    [16, 18]
   17109142:
     template: Wild_Sheep
-    at:       [691.000, -61.000, 420.000, 100]
+    region:   ne_141
     level:    [16, 18]
   17109143:
     template: Wild_Sheep
-    at:       [730.000, -61.000, 414.000, 37]
+    region:   ne_142
     level:    [16, 18]
   17109144:
     template: Wild_Sheep
-    at:       [576.000, -52.000, 334.000, 135]
+    region:   ne_152
     level:    [16, 18]
   17109145:
     template: Giant_Spider
-    at:       [751.000, -61.000, 471.000, 123]
+    region:   ne_136
     level:    [50, 52]
   17109146:
     template: Giant_Spider
-    at:       [794.000, -59.000, 519.000, 102]
+    region:   ne_154
     level:    [50, 52]
   17109147:
     template: Melusine
-    at:       [806.113, -61.463, 522.366, 201]
+    region:   ne_154
     level:    [73, 73]
   17109148:
     template: Giant_Spider
-    at:       [806.000, -60.000, 640.000, 214]
+    region:   ne_145
     level:    [50, 52]
   17109149:
     template: Giant_Spider
-    at:       [782.000, -59.000, 639.000, 108]
+    region:   ne_157
     level:    [50, 52]
   17109150:
     template: Giant_Spider
-    at:       [760.000, -60.000, 596.000, 44]
+    region:   ne_158
     level:    [50, 52]
   17109151:
     template: Giant_Spider
-    at:       [754.000, -60.000, 555.000, 33]
+    region:   ne_159
     level:    [50, 52]
   17109152:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [225.000, -40.000, 26.000, 82]
+    region:   n_160
     level:    [13, 15]
   17109153:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [275.000, -39.000, 82.000, 231]
+    region:   n_161
     level:    [11, 13]
   17109154:
     template: Forest_Hare
-    at:       [267.000, -49.000, 160.000, 230]
+    region:   n_162
     level:    [11, 15]
   17109155:
     template: Forest_Hare
-    at:       [276.000, -50.000, 157.000, 183]
+    region:   n_161
     level:    [11, 15]
   17109156:
     template: Forest_Hare
-    at:       [320.000, -46.000, 178.000, 153]
+    region:   c_13
     level:    [11, 15]
   17109157:
     template: Carrion_Worm
-    at:       [199.000, -60.000, 440.000, 53]
+    region:   n_160
     level:    [10, 12]
   17109158:
     template: Carrion_Worm
-    at:       [165.000, -59.000, 376.000, 17]
+    region:   n_166
     level:    [10, 12]
   17109159:
     template: Carrion_Worm
-    at:       [195.000, -59.000, 384.000, 35]
+    region:   n_167
     level:    [10, 12]
   17109160:
     template: Carrion_Worm
-    at:       [183.000, -56.000, 346.000, 201]
+    region:   n_168
     level:    [10, 12]
   17109161:
     template: Mouse_Bat_past
     script:   Mouse_Bat
-    at:       [266.000, -20.000, -146.000, 208]
+    region:   c_169
     level:    [13, 15]
   17109162:
     template: Ding_Bats_ERS
     script:   Ding_Bats
-    at:       [81.000, -30.000, 119.000, 138]
+    region:   c_170
     level:    [11, 13]
   17109163:
     template: Forest_Hare
-    at:       [337.000, -47.000, 185.000, 210]
+    region:   c_171
     level:    [11, 15]
   17109164:
     template: Forest_Hare
-    at:       [334.000, -46.000, 187.000, 178]
+    region:   n_172
     level:    [11, 15]
   17109165:
     template: Forest_Hare
-    at:       [339.000, -49.000, 189.000, 122]
+    region:   n_173
     level:    [11, 15]
   17109166:
     template: Carrion_Worm
-    at:       [247.000, -49.000, 272.000, 31]
+    region:   n_174
     level:    [10, 12]
   17109167:
     template: Carrion_Worm
-    at:       [150.000, -59.000, 313.000]
+    region:   n_175
     level:    [10, 12]
   17109168:
     template: Carrion_Worm
-    at:       [195.000, -58.000, 271.000, 154]
+    region:   n_172
     level:    [10, 12]
   17109169:
     template: Carrion_Worm
-    at:       [183.000, -56.000, 309.000, 175]
+    region:   n_177
     level:    [10, 12]
   17109170:
     template: Carrion_Worm
-    at:       [134.000, -60.000, 263.000, 81]
+    region:   n_178
     level:    [10, 12]
   17109171:
     template: Carrion_Worm
-    at:       [188.000, -49.000, 188.000]
+    region:   n_179
     level:    [10, 12]
   17109172:
     template: Carrion_Worm
-    at:       [161.000, -59.000, 169.000, 95]
+    region:   n_180
     level:    [10, 12]
   17109173:
     template: Carrion_Worm
-    at:       [86.000, -59.000, 182.000, 236]
+    region:   c_181
     level:    [10, 12]
   17109174:
     template: Carrion_Worm
-    at:       [28.000, -50.000, 167.000, 29]
+    region:   c_182
     level:    [10, 12]
   17109175:
     template: Carrion_Worm
-    at:       [19.000, -49.000, 158.000, 235]
+    region:   c_183
     level:    [10, 12]
   17109176:
     template: Carrion_Worm
-    at:       [4.000, -49.000, 156.000, 196]
+    region:   c_184
     level:    [10, 12]
   17109177:
     template: Carrion_Worm
-    at:       [18.000, -49.000, 139.000, 255]
+    region:   c_169
     level:    [10, 12]
   17109178:
     template: Carrion_Worm
-    at:       [71.000, -58.000, 166.000, 217]
+    region:   c_169
     level:    [10, 12]
   17109179:
     template: Carrion_Worm
-    at:       [84.000, -50.000, 126.000, 187]
+    region:   c_169
     level:    [10, 12]
   17109180:
     template: Carrion_Worm
-    at:       [73.000, -49.000, 122.000, 172]
+    region:   c_188
     level:    [10, 12]
   17109181:
     template: Carrion_Worm
-    at:       [43.000, -50.000, 144.000, 193]
+    region:   c_188
     level:    [10, 12]
   17109182:
     template: Carrion_Worm
-    at:       [57.000, -49.000, 137.000, 203]
+    region:   c_190
     level:    [10, 12]
   17109183:
     template: Carrion_Worm
-    at:       [62.000, -49.000, 129.000]
+    region:   c_190
     level:    [10, 12]
   17109184:
     template: River_Crab
@@ -4725,19 +4725,19 @@ spawns:
     level:    [11, 14]
   17109185:
     template: River_Crab
-    at:       [112.000, -57.000, 182.000, 166]
+    region:   n_193
     level:    [11, 14]
   17109186:
     template: Pugil
-    at:       [223.000, -47.000, 149.000, 27]
+    region:   n_194
     level:    [14, 17]
   17109187:
     template: Pugil
-    at:       [142.000, -57.000, 178.000, 147]
+    region:   n_193
     level:    [14, 17]
   17109188:
     template: Pugil
-    at:       [261.000, -38.000, 92.000, 185]
+    region:   n_196
     level:    [14, 17]
   17109189:
     template: Mouse_Bat_past
@@ -4751,72 +4751,72 @@ spawns:
     level:    [11, 13]
   17109191:
     template: Scarab_Beetle
-    at:       [242.000, -39.000, 10.000, 23]
+    region:   c_61
     level:    [21, 23]
   17109192:
     template: Scarab_Beetle
-    at:       [246.000, -39.000, -4.000, 122]
+    region:   c_88
     level:    [21, 23]
   17109193:
     template: Scarab_Beetle
-    at:       [154.000, -26.000, -96.000, 108]
+    region:   c_201
     level:    [21, 23]
   17109194:
     template: Colibri_past
     script:   Colibri
-    at:       [423.000, -28.000, -92.000, 158]
+    region:   s_81
     level:    [45, 47]
   17109195:
     template: Colibri_past
     script:   Colibri
-    at:       [403.000, -22.000, -103.000, 165]
+    region:   s_203
     level:    [45, 47]
   17109196:
     template: Colibri_past
     script:   Colibri
-    at:       [416.000, -20.000, -110.000, 50]
+    region:   s_203
     level:    [45, 47]
   17109197:
     template: Ladybug
-    at:       [495.000, -12.000, -336.000, 30]
+    region:   s_81
     level:    [44, 47]
   17109198:
     template: Ladybug
-    at:       [546.000, -16.000, -336.000, 156]
+    region:   s_203
     level:    [44, 47]
   17109199:
     template: Ladybug
-    at:       [549.000, -10.000, -350.000, 209]
+    region:   se_82
     level:    [44, 47]
   17109200:
     template: Ladybug
-    at:       [531.000, -11.000, -348.000, 109]
+    region:   s_208
     level:    [44, 47]
   17109201:
     template: Ladybug
-    at:       [492.000, -7.000, -360.000, 99]
+    region:   s_209
     level:    [44, 47]
   17109202:
     template: Ladybug
-    at:       [476.000, -10.000, -363.000, 199]
+    region:   s_209
     level:    [44, 47]
   17109203:
     template: Ladybug
-    at:       [424.000, -11.000, -346.000, 49]
+    region:   s_83
     level:    [44, 47]
   17109204:
     template: Ladybug
-    at:       [434.000, -9.000, -362.000, 206]
+    region:   s_83
     level:    [44, 47]
   17109205:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [421.000, -9.000, -364.000, 222]
+    region:   s_209
     level:    [37, 46]
   17109206:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [525.000, -11.000, -487.000, 182]
+    region:   se_82
     level:    [37, 46]
   17109207:
     template: River_Crab
@@ -4824,47 +4824,47 @@ spawns:
     level:    [11, 14]
   17109208:
     template: River_Crab
-    at:       [381.000, -26.000, -51.000, 191]
+    region:   e_216
     level:    [11, 14]
   17109209:
     template: River_Crab
-    at:       [417.000, -16.000, -198.000, 194]
+    region:   e_217
     level:    [11, 14]
   17109210:
     template: River_Crab
-    at:       [433.000, -9.000, -235.000, 158]
+    region:   se_218
     level:    [11, 14]
   17109211:
     template: River_Crab
-    at:       [469.000, -6.000, -412.000, 7]
+    region:   se_219
     level:    [11, 14]
   17109212:
     template: Pugil
-    at:       [259.000, -37.000, 65.000, 60]
+    region:   e_220
     level:    [14, 17]
   17109213:
     template: Pugil
-    at:       [270.000, -37.000, 24.000, 23]
+    region:   e_221
     level:    [14, 17]
   17109214:
     template: Pugil
-    at:       [382.000, -37.000, 9.000, 56]
+    region:   e_222
     level:    [14, 17]
   17109215:
     template: Pugil
-    at:       [392.000, -16.000, -135.000, 172]
+    region:   e_223
     level:    [14, 17]
   17109216:
     template: Pugil
-    at:       [452.000, -16.000, -309.000, 158]
+    region:   se_224
     level:    [14, 17]
   17109217:
     template: Pugil
-    at:       [498.000, -6.000, -428.000, 37]
+    region:   se_225
     level:    [14, 17]
   17109218:
     template: Pugil
-    at:       [386.000, -16.000, -126.000, 29]
+    region:   se_226
     level:    [14, 17]
   17109219:
     template: Mouse_Bat_past
@@ -4878,265 +4878,265 @@ spawns:
     level:    [11, 13]
   17109221:
     template: Scarab_Beetle
-    at:       [329.000, -29.000, -83.000, 35]
+    region:   c_68
     level:    [21, 23]
   17109222:
     template: Scarab_Beetle
-    at:       [303.000, -39.000, 0.000, 60]
+    region:   c_62
     level:    [21, 23]
   17109223:
     template: Scarab_Beetle
-    at:       [325.000, -39.000, -25.000, 253]
+    region:   c_63
     level:    [21, 23]
   17109224:
     template: Scarab_Beetle
-    at:       [354.000, -32.000, -24.000, 255]
+    region:   c_232
     level:    [21, 23]
   17109225:
     template: Scarab_Beetle
-    at:       [357.000, -19.000, -181.000, 94]
+    region:   c_233
     level:    [21, 23]
   17109226:
     template: Scarab_Beetle
-    at:       [272.000, -22.000, -141.000, 41]
+    region:   c_50
     level:    [21, 23]
   17109227:
     template: Colibri_past
     script:   Colibri
-    at:       [520.000, -20.000, -197.000, 151]
+    region:   e_84
     level:    [45, 47]
   17109228:
     template: Colibri_past
     script:   Colibri
-    at:       [521.000, -20.000, -162.000, 208]
+    region:   e_236
     level:    [45, 47]
   17109229:
     template: Colibri_past
     script:   Colibri
-    at:       [519.000, -20.000, -157.000, 184]
+    region:   e_236
     level:    [45, 47]
   17109230:
     template: Colibri_past
     script:   Colibri
-    at:       [515.000, -19.000, -201.000, 209]
+    region:   se_238
     level:    [45, 47]
   17109231:
     template: Colibri_past
     script:   Colibri
-    at:       [499.000, -19.000, -224.000, 16]
+    region:   se_238
     level:    [45, 47]
   17109232:
     template: Colibri_past
     script:   Colibri
-    at:       [526.000, -19.000, -275.000, 242]
+    region:   se_238
     level:    [45, 47]
   17109233:
     template: Colibri_past
     script:   Colibri
-    at:       [515.000, -19.000, -283.000, 97]
+    region:   se_238
     level:    [45, 47]
   17109234:
     template: Colibri_past
     script:   Colibri
-    at:       [537.000, -19.000, -286.000, 12]
+    region:   se_242
     level:    [45, 47]
   17109235:
     template: Myradrosh
-    at:       [470.000, -18.000, -241.000, 189]
+    region:   se_242
     level:    [53, 53]
   17109236:
     template: Colibri_past
     script:   Colibri
-    at:       [535.000, -18.000, -331.000, 195]
+    region:   se_87
     level:    [45, 47]
   17109237:
     template: Colibri_past
     script:   Colibri
-    at:       [314.000, -21.000, -222.000, 226]
+    region:   se_87
     level:    [45, 47]
   17109238:
     template: Colibri_past
     script:   Colibri
-    at:       [374.000, -19.000, -200.000, 165]
+    region:   se_87
     level:    [45, 47]
   17109239:
     template: Colibri_past
     script:   Colibri
-    at:       [385.000, -16.000, -219.000, 180]
+    region:   se_247
     level:    [45, 47]
   17109240:
     template: Ladybug
-    at:       [563.000, -10.000, -379.000, 194]
+    region:   e_248
     level:    [44, 47]
   17109241:
     template: Ladybug
-    at:       [519.000, -10.000, -481.000, 9]
+    region:   e_248
     level:    [44, 47]
   17109242:
     template: Ladybug
-    at:       [535.000, -10.000, -484.000, 140]
+    region:   e_84
     level:    [44, 47]
   17109243:
     template: Ladybug
-    at:       [363.000, -19.000, -221.000, 181]
+    region:   e_236
     level:    [44, 47]
   17109244:
     template: Ladybug
-    at:       [355.000, -19.000, -209.000, 194]
+    region:   se_252
     level:    [44, 47]
   17109245:
     template: Ladybug
-    at:       [367.000, -19.000, -219.000, 156]
+    region:   se_252
     level:    [44, 47]
   17109246:
     template: Ladybug
-    at:       [288.000, -18.000, -248.000, 101]
+    region:   se_252
     level:    [44, 47]
   17109247:
     template: Ladybug
-    at:       [289.000, -18.000, -271.000, 168]
+    region:   se_252
     level:    [44, 47]
   17109248:
     template: Ladybug
-    at:       [290.000, -18.000, -249.000, 17]
+    region:   se_86
     level:    [44, 47]
   17109249:
     template: Ladybug
-    at:       [242.000, -20.000, -243.000, 10]
+    region:   se_257
     level:    [44, 47]
   17109250:
     template: Ladybug
-    at:       [219.000, -19.000, -236.000, 13]
+    region:   se_247
     level:    [44, 47]
   17109251:
     template: Ladybug
-    at:       [222.000, -21.000, -262.000, 117]
+    region:   se_247
     level:    [44, 47]
   17109252:
     template: Ladybug
-    at:       [272.000, -19.000, -293.000, 114]
+    region:   se_247
     level:    [44, 47]
   17109253:
     template: Ladybug
-    at:       [241.000, -19.000, -302.000, 14]
+    region:   se_78
     level:    [44, 47]
   17109254:
     template: Ladybug
-    at:       [252.000, -19.000, -314.000, 196]
+    region:   se_79
     level:    [44, 47]
   17109255:
     template: Ladybug
-    at:       [247.000, -19.000, -287.000, 247]
+    region:   se_80
     level:    [44, 47]
   17109256:
     template: Ladybug
-    at:       [241.000, -19.000, -287.000, 167]
+    region:   se_80
     level:    [44, 47]
   17109257:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [400.000, -19.000, -186.000, 35]
+    region:   se_265
     level:    [37, 46]
   17109258:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [274.000, -18.000, -247.000, 219]
+    region:   se_80
     level:    [37, 46]
   17109259:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [232.000, -20.000, -282.000, 36]
+    region:   se_78
     level:    [37, 46]
   17109260:
     template: Scarab_Beetle
-    at:       [325.000, -29.000, -125.000, 253]
+    region:   c_58
     level:    [21, 23]
   17109261:
     template: Scarab_Beetle
-    at:       [354.000, -20.000, -124.000, 254]
+    region:   c_269
     level:    [21, 23]
   17109262:
     template: Colibri_past
     script:   Colibri
-    at:       [181.000, -19.000, -325.000, 8]
+    region:   s_270
     level:    [45, 47]
   17109263:
     template: Colibri_past
     script:   Colibri
-    at:       [157.000, -20.000, -320.000, 51]
+    region:   s_270
     level:    [45, 47]
   17109264:
     template: Colibri_past
     script:   Colibri
-    at:       [182.000, -20.000, -311.000, 196]
+    region:   s_270
     level:    [45, 47]
   17109265:
     template: Ladybug
-    at:       [274.000, -19.000, -286.000, 135]
+    region:   s_72
     level:    [44, 47]
   17109266:
     template: Ladybug
-    at:       [267.000, -19.000, -312.000, 179]
+    region:   s_72
     level:    [44, 47]
   17109267:
     template: Ladybug
-    at:       [210.000, -10.000, -363.000, 107]
+    region:   s_73
     level:    [44, 47]
   17109268:
     template: Ladybug
-    at:       [293.000, -11.000, -384.000, 17]
+    region:   s_73
     level:    [44, 47]
   17109269:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [180.000, -19.000, -324.000, 118]
+    region:   s_270
     level:    [37, 46]
   17109270:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [251.000, -19.000, -348.000, 93]
+    region:   s_73
     level:    [37, 46]
   17109271:
     template: Scarab_Beetle
-    at:       [357.000, -19.000, -181.000, 94]
+    region:   c_279
     level:    [21, 23]
   17109272:
     template: Scarab_Beetle
-    at:       [368.000, -49.000, 165.000, 229]
+    region:   c_60
     level:    [21, 23]
   17109273:
     template: Colibri_past
     script:   Colibri
-    at:       [216.000, -13.000, -351.000, 89]
+    region:   s_75
     level:    [45, 47]
   17109274:
     template: Colibri_past
     script:   Colibri
-    at:       [359.000, -3.000, -460.000, 179]
+    region:   s_282
     level:    [45, 47]
   17109275:
     template: Colibri_past
     script:   Colibri
-    at:       [339.000, 0.000, -466.000, 80]
+    region:   s_282
     level:    [45, 47]
   17109276:
     template: Colibri_past
     script:   Colibri
-    at:       [350.000, -9.000, -406.000, 223]
+    region:   s_76
     level:    [45, 47]
   17109277:
     template: Colibri_past
     script:   Colibri
-    at:       [378.000, -11.000, -410.000, 83]
+    region:   s_76
     level:    [45, 47]
   17109278:
     template: Colibri_past
     script:   Colibri
-    at:       [346.000, -20.000, -343.000, 82]
+    region:   s_286
     level:    [45, 47]
   17109279:
     template: Djinn
-    at:       [166.000, -10.000, -394.000, 140]
+    region:   s_287
     level:    [53, 55]
   17109280:
     template: Djinn
@@ -5156,52 +5156,52 @@ spawns:
     level:    [53, 55]
   17109284:
     template: Djinn
-    at:       [215.000, 3.000, -482.000, 85]
+    region:   s_292
     level:    [53, 55]
   17109285:
     template: Djinn
-    at:       [299.000, 4.000, -448.000, 12]
+    region:   s_293
     level:    [53, 55]
   17109286:
     template: Djinn
-    at:       [239.000, 0.000, -485.000, 88]
+    region:   s_293
     level:    [53, 55]
   17109287:
     template: Djinn
-    at:       [264.000, 0.000, -481.000, 125]
+    region:   s_295
     level:    [53, 55]
   17109288:
     template: Djinn
-    at:       [267.000, 0.000, -474.000, 170]
+    region:   s_296
     level:    [53, 55]
   17109289:
     template: Djinn
-    at:       [298.000, 0.000, -507.000, 158]
+    region:   s_297
     level:    [53, 55]
   17109290:
     template: Djinn
-    at:       [357.000, 0.000, -477.000, 33]
+    region:   s_297
     level:    [53, 55]
   17109291:
     template: Djinn
-    at:       [221.000, 1.000, -507.000, 46]
+    region:   s_299
     level:    [53, 55]
   17109292:
     template: Djinn
-    at:       [236.000, 0.000, -538.000, 122]
+    region:   s_299
     level:    [53, 55]
   17109293:
     template: Djinn
-    at:       [166.000, 0.000, -465.000, 38]
+    region:   s_301
     level:    [53, 55]
   17109294:
     template: Djinn
-    at:       [156.000, 0.000, -518.000, 217]
+    region:   s_301
     level:    [53, 55]
   17109295:
     template: Battrap_past
     script:   Battrap
-    at:       [156.000, 0.000, -438.000, 125]
+    region:   s_303
     level:    [35, 37]
   17109296:
     template: Goblintrap
@@ -5210,192 +5210,192 @@ spawns:
   17109297:
     template: Battrap_past
     script:   Battrap
-    at:       [265.000, 0.000, -430.000, 39]
+    region:   s_305
     level:    [35, 37]
   17109298:
     template: Battrap_past
     script:   Battrap
-    at:       [287.000, -6.000, -416.000, 80]
+    region:   s_306
     level:    [35, 37]
   17109299:
     template: Battrap_past
     script:   Battrap
-    at:       [307.000, -16.000, -372.000, 112]
+    region:   s_293
     level:    [35, 37]
   17109300:
     template: Battrap_past
     script:   Battrap
-    at:       [272.000, -16.000, -376.000, 212]
+    region:   s_308
     level:    [35, 37]
   17109301:
     template: Battrap_past
     script:   Battrap
-    at:       [291.000, -2.000, -423.000, 126]
+    region:   s_308
     level:    [35, 37]
   17109302:
     template: Battrap_past
     script:   Battrap
-    at:       [219.000, 2.000, -457.000, 64]
+    region:   s_299
     level:    [35, 37]
   17109303:
     template: Battrap_past
     script:   Battrap
-    at:       [292.000, 0.000, -492.000, 8]
+    region:   s_311
     level:    [35, 37]
   17109304:
     template: Battrap_past
     script:   Battrap
-    at:       [125.000, 0.000, -478.000, 144]
+    region:   s_311
     level:    [35, 37]
   17109305:
     template: Battrap_past
     script:   Battrap
-    at:       [108.000, 0.000, -532.000, 93]
+    region:   s_313
     level:    [35, 37]
   17109306:
     template: Ladybug
-    at:       [292.000, -7.000, -398.000, 91]
+    region:   s_75
     level:    [44, 47]
   17109307:
     template: Ladybug
-    at:       [274.000, -9.000, -394.000, 240]
+    region:   s_75
     level:    [44, 47]
   17109308:
     template: Ladybug
-    at:       [296.000, -13.000, -372.000, 179]
+    region:   s_313
     level:    [44, 47]
   17109309:
     template: Ladybug
-    at:       [366.000, -10.000, -410.000, 50]
+    region:   s_313
     level:    [44, 47]
   17109310:
     template: Ladybug
-    at:       [431.000, -9.000, -358.000, 93]
+    region:   s_313
     level:    [44, 47]
   17109311:
     template: Ladybug
-    at:       [410.000, -9.000, -366.000, 198]
+    region:   s_286
     level:    [44, 47]
   17109312:
     template: Ladybug
-    at:       [419.000, -10.000, -375.000, 85]
+    region:   s_286
     level:    [44, 47]
   17109313:
     template: Ladybug
-    at:       [428.000, -17.000, -334.000, 209]
+    region:   se_321
     level:    [44, 47]
   17109314:
     template: Ladybug
-    at:       [384.000, -12.000, -352.000, 122]
+    region:   se_77
     level:    [44, 47]
   17109315:
     template: Ladybug
-    at:       [361.000, -19.000, -352.000, 20]
+    region:   se_323
     level:    [44, 47]
   17109316:
     template: Ladybug
-    at:       [443.000, -9.000, -447.000, 135]
+    region:   se_323
     level:    [44, 47]
   17109317:
     template: Ladybug
-    at:       [461.000, -7.000, -454.000, 239]
+    region:   se_323
     level:    [44, 47]
   17109318:
     template: Ladybug
-    at:       [474.000, -9.000, -479.000, 3]
+    region:   se_326
     level:    [44, 47]
   17109319:
     template: Ladybug
-    at:       [392.000, -18.000, -268.000, 174]
+    region:   se_326
     level:    [44, 47]
   17109320:
     template: Ladybug
-    at:       [388.000, -19.000, -289.000, 161]
+    region:   se_326
     level:    [44, 47]
   17109321:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [189.000, 0.000, -450.000, 159]
+    region:   s_303
     level:    [37, 46]
   17109322:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [296.000, 4.000, -453.000, 150]
+    region:   s_330
     level:    [37, 46]
   17109323:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [224.000, 5.000, -467.000, 95]
+    region:   s_295
     level:    [37, 46]
   17109324:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [291.000, 0.000, -512.000, 118]
+    region:   s_296
     level:    [37, 46]
   17109325:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [281.000, 0.000, -509.000, 165]
+    region:   s_299
     level:    [37, 46]
   17109326:
     template: Enchanted_Bones_war
     script:   Enchanted_Bones
-    at:       [315.000, 0.000, -533.000, 6]
+    region:   s_301
     level:    [37, 46]
   17109327:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [237.000, 0.000, -518.000, 146]
+    region:   s_335
     level:    [37, 46]
   17109328:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [141.000, -2.000, -466.000, 108]
+    region:   s_305
     level:    [37, 46]
   17109329:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [144.000, 0.000, -524.000, 82]
+    region:   s_293
     level:    [37, 46]
   17109330:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [316.000, -19.000, -346.000, 15]
+    region:   s_296
     level:    [37, 46]
   17109331:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [354.000, -19.000, -339.000, 57]
+    region:   s_297
     level:    [37, 46]
   17109332:
     template: Enchanted_Bones_blm
     script:   Enchanted_Bones
-    at:       [366.000, -19.000, -292.000, 124]
+    region:   s_286
     level:    [37, 46]
   17109333:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [301.000, 3.000, -453.000, 116]
+    region:   s_305
     level:    [53, 54]
   17109334:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [278.000, 0.000, -519.000, 132]
+    region:   s_330
     level:    [53, 54]
   17109335:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [163.000, 0.000, -471.000, 213]
+    region:   s_299
     level:    [53, 54]
   17109336:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [160.000, 0.000, -527.000, 104]
+    region:   s_296
     level:    [53, 54]
   17109337:
     template: Walking_Tree_past
     script:   Walking_Tree
-    at:       [164.000, 0.000, -476.000, 104]
+    region:   s_292
     level:    [53, 54]
   17109338:
     template: Skogs_Fru
@@ -5404,52 +5404,52 @@ spawns:
   17109339:
     template: Orcish_Mesmerizer_past
     script:   Orcish_Mesmerizer
-    at:       [450.000, 0.000, -480.000, 230]
+    region:   se_326
     level:    [62, 64]
   17109340:
     template: Orcish_Stonechucker_past
     script:   Orcish_Stonechucker
-    at:       [444.000, -5.000, -457.000, 180]
+    region:   se_326
     level:    [62, 64]
   17109341:
     template: Orcish_Fodder_past
     script:   Orcish_Fodder
-    at:       [460.000, -5.000, -466.000, 19]
+    region:   se_326
     level:    [62, 64]
   17109342:
     template: Orcish_Neckchopper_past
     script:   Orcish_Neckchopper
-    at:       [435.000, -3.000, -461.000, 93]
+    region:   se_326
     level:    [62, 64]
   17109343:
     template: Orcish_Mesmerizer_past
     script:   Orcish_Mesmerizer
-    at:       [363.000, -20.000, -317.000, 76]
+    region:   s_351
     level:    [62, 64]
   17109344:
     template: Orcish_Neckchopper_past
     script:   Orcish_Neckchopper
-    at:       [353.000, -19.000, -324.000, 86]
+    region:   s_351
     level:    [62, 64]
   17109345:
     template: Orcish_Fodder_past
     script:   Orcish_Fodder
-    at:       [327.000, -20.000, -343.000, 194]
+    region:   s_351
     level:    [62, 64]
   17109346:
     template: Orcish_Stonechucker_past
     script:   Orcish_Stonechucker
-    at:       [337.000, -19.000, -355.000, 158]
+    region:   s_354
     level:    [62, 64]
   17109347:
     template: Orcish_Neckchopper_past
     script:   Orcish_Neckchopper
-    at:       [338.000, -20.000, -350.000, 232]
+    region:   s_354
     level:    [62, 64]
   17109348:
     template: Orcish_Fodder_past
     script:   Orcish_Fodder
-    at:       [340.000, -21.000, -346.000]
+    region:   s_354
     level:    [62, 64]
   17109349:
     template: Pixie
@@ -5630,53 +5630,71 @@ spawns:
     template: Valaineral_R_Davilles
   17109395:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109396:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109397:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109398:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109399:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109400:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109401:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109402:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109403:
     template: Royal_Guard
+    region:   c_403
     level:    [1, 1]
   17109404:
     template: Leonoyne
-    at:       [338.335, -26.638, -101.672, 16]
+    region:   c_403
     level:    [1, 1]
   17109405:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109406:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109407:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109408:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109409:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109410:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109411:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109412:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109413:
     template: Savage_Hound_Condottiere
+    region:   c_403
   17109414:
     template: Ashmea_B_Greinner
     at:       [324.406, -30.245, -124.723, 91]
@@ -5700,33 +5718,42 @@ spawns:
     template: Scarlet_Boar_Esquire
   17109424:
     template: Feldrautte_I_Rouhent
-    at:       [319.669, -29.828, -126.684, 13]
+    region:   c_403
   17109425:
     template: Norvallen_Knight
+    region:   c_403
     level:    [1, 1]
   17109426:
     template: Norvallen_Knight
+    region:   c_403
     level:    [1, 1]
   17109427:
     template: Norvallen_Knight
+    region:   c_403
     level:    [1, 1]
   17109428:
     template: Norvallen_Knight
+    region:   c_403
     level:    [1, 1]
   17109429:
     template: Norvallen_Knight
+    region:   c_403
     level:    [1, 1]
   17109430:
     template: Norvallen_Knight
+    region:   c_438
     level:    [1, 1]
   17109431:
     template: Norvallen_Knight
+    region:   c_439
     level:    [1, 1]
   17109432:
     template: Norvallen_Knight
+    region:   c_439
     level:    [1, 1]
   17109433:
     template: Norvallen_Knight
+    region:   c_439
     level:    [1, 1]
   17109434:
     template: Yrvaulair_S_Cousseraux
@@ -5805,7 +5832,7 @@ spawns:
     level:    [69, 70]
   17109453:
     template: Aragoneu_Knight
-    at:       [318.385, -30.500, -122.770, 203]
+    region:   c_438
     level:    [69, 70]
   17109454:
     template: Gold_Badger_Esquire
@@ -5910,27 +5937,27 @@ spawns:
     level:    [1, 1]
   17109486:
     template: Royal_Palliator
-    at:       [322.797, -29.642, -115.731, 233]
+    region:   c_403
     level:    [60, 60]
   17109487:
     template: Royal_Palliator
-    at:       [288.735, -30.754, -89.025, 148]
+    region:   c_403
     level:    [60, 60]
   17109488:
     template: Royal_Palliator
-    at:       [281.263, -27.447, -132.209, 82]
+    region:   c_403
     level:    [60, 60]
   17109489:
     template: Royal_Palliator
-    at:       [330.925, -28.558, -108.071, 117]
+    region:   c_403
     level:    [60, 60]
   17109490:
     template: Royal_Palliator
-    at:       [330.919, -27.775, -109.952, 91]
+    region:   c_403
     level:    [60, 60]
   17109491:
     template: Royal_Palliator
-    at:       [286.686, -30.215, -117.044, 241]
+    region:   c_403
     level:    [60, 60]
   17109492:
     template: Royal_Provisioner
@@ -6134,7 +6161,7 @@ spawns:
     level:    [70, 70]
   17109554:
     template: Dismemberment_Grappler
-    at:       [318.429, -30.264, -124.942, 223]
+    region:   c_562
     level:    [70, 70]
   17109555:
     template: Dismemberment_Grappler

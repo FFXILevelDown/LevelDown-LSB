@@ -1987,608 +1987,608 @@ spawns:
     level:    [90, 90]
   17317899:
     template: Veld_Clionid
-    at:       [-599.862, 0.400, 621.005, 25]
+    region:   nw_11
     level:    [74, 75]
   17317900:
     template: Veld_Clionid
-    at:       [-621.696, -0.536, 607.590, 50]
+    region:   nw_11
     level:    [74, 75]
   17317901:
     template: Veld_Clionid
-    at:       [-622.158, -0.424, 572.468, 75]
+    region:   nw_11
     level:    [74, 75]
   17317902:
     template: Veld_Clionid
-    at:       [-621.651, 0.665, 583.496, 100]
+    region:   nw_11
     level:    [74, 75]
   17317903:
     template: Veld_Clionid
-    at:       [-642.198, 0.949, 579.293, 125]
+    region:   nw_11
     level:    [74, 75]
   17317904:
     template: Veld_Clionid
-    at:       [-620.626, -0.363, 540.391, 150]
+    region:   nw_11
     level:    [74, 75]
   17317905:
     template: Veld_Clionid
-    at:       [-649.542, -0.482, 572.261, 175]
+    region:   nw_11
     level:    [74, 75]
   17317906:
     template: Veld_Clionid
-    at:       [-609.765, -0.797, 540.035, 200]
+    region:   nw_11
     level:    [74, 75]
   17317907:
     template: Veld_Clionid
-    at:       [-622.668, -0.710, 522.827, 225]
+    region:   nw_19
     level:    [74, 75]
   17317908:
     template: Veld_Clionid
-    at:       [-535.617, -0.972, 447.468, 250]
+    region:   nw_19
     level:    [74, 75]
   17317909:
     template: Veld_Clionid
-    at:       [-555.239, -0.537, 433.857, 25]
+    region:   nw_19
     level:    [74, 75]
   17317910:
     template: Veld_Clionid
-    at:       [-575.009, 0.701, 441.258, 50]
+    region:   nw_19
     level:    [74, 75]
   17317911:
     template: Veld_Clionid
-    at:       [-557.425, -0.671, 459.298, 75]
+    region:   nw_19
     level:    [74, 75]
   17317912:
     template: Veld_Clionid
-    at:       [-560.919, -1.000, 465.610, 100]
+    region:   nw_19
     level:    [74, 75]
   17317913:
     template: Veld_Clionid
-    at:       [-587.054, -1.031, 476.194, 125]
+    region:   nw_19
     level:    [74, 75]
   17317914:
     template: Veld_Clionid
-    at:       [-574.347, -0.593, -473.778, 150]
+    region:   nw_19
     level:    [74, 75]
   17317915:
     template: Veld_Clionid
-    at:       [-593.850, 0.307, 465.407, 175]
+    region:   nw_27
     level:    [74, 75]
   17317916:
     template: Veld_Clionid
-    at:       [-630.785, -0.652, 521.752, 200]
+    region:   nw_27
     level:    [74, 75]
   17317917:
     template: Veld_Clionid
-    at:       [-610.325, -0.651, 553.465, 225]
+    region:   nw_11
     level:    [74, 75]
   17317918:
     template: Veld_Clionid
-    at:       [-606.688, -0.336, 553.301, 250]
+    region:   nw_11
     level:    [74, 75]
   17317919:
     template: Veld_Clionid
-    at:       [-621.872, -0.725, 555.940, 25]
+    region:   nw_11
     level:    [74, 75]
   17317920:
     template: Veld_Clionid
-    at:       [-597.000, 0.001, 531.000, 50]
+    region:   nw_19
     level:    [74, 75]
   17317921:
     template: Veld_Clionid
-    at:       [-599.000, 0.001, 513.000, 75]
+    region:   nw_19
     level:    [74, 75]
   17317922:
     template: Ephemeral_Clionid_Large
     script:   Ephemeral_Clionid
-    at:       [-584.017, -0.913, 531.581, 100]
+    region:   nw_27
     level:    [79, 83]
   17317923:
     template: Gigadaphnia
-    at:       [287.023, 40.613, 304.360, 25]
+    region:   nw_35
     level:    [74, 75]
   17317924:
     template: Gigadaphnia
-    at:       [297.375, 38.865, 328.588, 50]
+    region:   nw_35
     level:    [74, 75]
   17317925:
     template: Gigadaphnia
-    at:       [306.626, 38.278, 337.453, 75]
+    region:   nw_35
     level:    [74, 75]
   17317926:
     template: Gigadaphnia
-    at:       [308.312, 38.942, 336.761, 100]
+    region:   nw_35
     level:    [74, 75]
   17317927:
     template: Gigadaphnia
-    at:       [301.760, 40.297, 325.571, 125]
+    region:   nw_35
     level:    [74, 75]
   17317928:
     template: Gigadaphnia
-    at:       [311.674, 40.216, 319.074, 150]
+    region:   nw_35
     level:    [74, 75]
   17317929:
     template: Gigadaphnia
-    at:       [305.878, 37.570, 339.247, 175]
+    region:   nw_35
     level:    [74, 75]
   17317930:
     template: Gigadaphnia
-    at:       [344.503, 42.026, 350.360, 200]
+    region:   nw_42
     level:    [74, 75]
   17317931:
     template: Gigadaphnia
-    at:       [337.863, 40.893, 361.061, 225]
+    region:   nw_42
     level:    [74, 75]
   17317932:
     template: Gigadaphnia
-    at:       [349.000, 39.386, 368.261, 250]
+    region:   nw_42
     level:    [74, 75]
   17317933:
     template: Gigadaphnia
-    at:       [353.563, 40.155, 366.018, 25]
+    region:   nw_42
     level:    [74, 75]
   17317934:
     template: Gigadaphnia
-    at:       [371.765, 42.632, 369.525, 50]
+    region:   nw_42
     level:    [74, 75]
   17317935:
     template: Gigadaphnia
-    at:       [356.808, 41.705, 350.846, 75]
+    region:   nw_42
     level:    [74, 75]
   17317936:
     template: Gigadaphnia
-    at:       [350.127, 39.406, 373.018, 100]
+    region:   nw_42
     level:    [74, 75]
   17317937:
     template: Gigadaphnia
-    at:       [375.090, 44.517, 381.901, 125]
+    region:   nw_49
     level:    [74, 75]
   17317938:
     template: Gigadaphnia
-    at:       [385.845, 42.620, 387.980, 150]
+    region:   nw_49
     level:    [74, 75]
   17317939:
     template: Gigadaphnia
-    at:       [364.658, 40.033, 399.965, 175]
+    region:   nw_35
     level:    [74, 75]
   17317940:
     template: Gigadaphnia
-    at:       [388.974, 40.755, 394.431, 200]
+    region:   nw_42
     level:    [74, 75]
   17317941:
     template: Gigadaphnia
-    at:       [424.717, 39.158, 409.217, 225]
+    region:   nw_42
     level:    [74, 75]
   17317942:
     template: Gigadaphnia
-    at:       [452.968, 39.824, 432.550, 250]
+    region:   nw_49
     level:    [74, 75]
   17317943:
     template: Gigadaphnia
-    at:       [471.685, 40.248, 439.331, 25]
+    region:   nw_49
     level:    [74, 75]
   17317944:
     template: Ephemeral_Limule
-    at:       [326.761, 41.132, 328.554, 50]
+    region:   nw_49
     level:    [79, 82]
   17317945:
     template: Plateau_Hare
-    at:       [-582.466, -0.085, 268.009, 75]
+    region:   nw_57
     level:    [74, 75]
   17317946:
     template: Plateau_Hare
-    at:       [-560.511, -8.000, 241.818, 100]
+    region:   nw_57
     level:    [74, 75]
   17317947:
     template: Plateau_Hare
-    at:       [-584.558, 1.457, 290.608, 125]
+    region:   nw_57
     level:    [74, 75]
   17317948:
     template: Plateau_Hare
-    at:       [-571.837, 2.690, 303.682, 150]
+    region:   nw_57
     level:    [74, 75]
   17317949:
     template: Plateau_Hare
-    at:       [-547.758, -2.173, 296.873, 175]
+    region:   nw_57
     level:    [74, 75]
   17317950:
     template: Plateau_Hare
-    at:       [-542.862, -3.451, 281.778, 200]
+    region:   nw_57
     level:    [74, 75]
   17317951:
     template: Plateau_Hare
-    at:       [-523.152, -7.677, 294.795, 225]
+    region:   nw_57
     level:    [74, 75]
   17317952:
     template: Plateau_Hare
-    at:       [-529.615, -7.689, 247.578, 250]
+    region:   nw_57
     level:    [74, 75]
   17317953:
     template: Plateau_Hare
-    at:       [-530.223, -7.656, 246.559, 25]
+    region:   nw_57
     level:    [74, 75]
   17317954:
     template: Plateau_Hare
-    at:       [-545.238, -7.856, 244.457, 50]
+    region:   w_66
     level:    [74, 75]
   17317955:
     template: Plateau_Hare
-    at:       [-523.860, -9.026, 226.888, 75]
+    region:   w_66
     level:    [74, 75]
   17317956:
     template: Plateau_Hare
-    at:       [-524.513, -8.384, 207.278, 100]
+    region:   w_66
     level:    [74, 75]
   17317957:
     template: Plateau_Hare
-    at:       [-559.356, -7.932, 244.382, 125]
+    region:   w_66
     level:    [74, 75]
   17317958:
     template: Plateau_Hare
-    at:       [-565.413, -13.605, 175.938, 150]
+    region:   w_66
     level:    [74, 75]
   17317959:
     template: Plateau_Hare
-    at:       [-546.951, -14.668, 176.676, 175]
+    region:   w_66
     level:    [74, 75]
   17317960:
     template: Plateau_Hare
-    at:       [-465.545, -15.919, 162.425, 200]
+    region:   w_66
     level:    [74, 75]
   17317961:
     template: Plateau_Hare
-    at:       [-529.223, -12.714, 183.812, 225]
+    region:   nw_57
     level:    [74, 75]
   17317962:
     template: Plateau_Hare
-    at:       [-527.518, -13.677, 179.162, 250]
+    region:   nw_57
     level:    [74, 75]
   17317963:
     template: Plateau_Hare
-    at:       [-566.114, -15.843, 162.514, 25]
+    region:   nw_75
     level:    [74, 75]
   17317964:
     template: Ephemeral_Clionid_XLarge
     script:   Ephemeral_Clionid
-    at:       [-564.180, -7.747, 209.460, 50]
+    region:   nw_75
     level:    [79, 83]
   17317965:
     template: Angler_Tiger
-    at:       [-699.272, -15.036, -43.963, 75]
+    region:   w_77
     level:    [79, 80]
   17317966:
     template: Angler_Tiger
-    at:       [-715.406, -15.970, -42.929, 100]
+    region:   w_77
     level:    [79, 80]
   17317967:
     template: Angler_Tiger
-    at:       [-705.127, -15.875, -19.982, 125]
+    region:   w_77
     level:    [79, 80]
   17317968:
     template: Angler_Tiger
-    at:       [-706.701, -16.386, -12.231, 150]
+    region:   w_77
     level:    [79, 80]
   17317969:
     template: Angler_Tiger
-    at:       [-696.006, -15.665, -6.851, 175]
+    region:   w_77
     level:    [79, 80]
   17317970:
     template: Angler_Tiger
-    at:       [-723.096, -9.013, 30.631, 200]
+    region:   w_77
     level:    [79, 80]
   17317971:
     template: Angler_Tiger
-    at:       [-709.457, -8.818, 37.373, 225]
+    region:   w_77
     level:    [79, 80]
   17317972:
     template: Angler_Tiger
-    at:       [-687.719, -8.168, 73.202, 250]
+    region:   w_77
     level:    [79, 80]
   17317973:
     template: Angler_Tiger
-    at:       [-709.095, -7.613, 137.105, 25]
+    region:   w_85
     level:    [79, 80]
   17317974:
     template: Angler_Tiger
-    at:       [-704.514, -7.294, 156.692, 50]
+    region:   w_85
     level:    [79, 80]
   17317975:
     template: Angler_Tiger
-    at:       [-693.582, -7.689, 163.957, 75]
+    region:   w_85
     level:    [79, 80]
   17317976:
     template: Angler_Tiger
-    at:       [-709.535, -8.023, 166.549, 100]
+    region:   w_85
     level:    [79, 80]
   17317977:
     template: Angler_Tiger
-    at:       [-699.461, -7.718, 173.368, 125]
+    region:   w_85
     level:    [79, 80]
   17317978:
     template: Angler_Tiger
-    at:       [-690.063, 1.585, 212.231, 150]
+    region:   w_85
     level:    [79, 80]
   17317979:
     template: Angler_Tiger
-    at:       [-691.650, -2.073, 187.361, 175]
+    region:   w_85
     level:    [79, 80]
   17317980:
     template: Angler_Tiger
-    at:       [-710.344, 0.337, 200.722, 200]
+    region:   w_92
     level:    [79, 80]
   17317981:
     template: Angler_Tiger
-    at:       [-710.664, 0.557, 211.871, 225]
+    region:   w_92
     level:    [79, 80]
   17317982:
     template: Angler_Tiger
-    at:       [-689.568, 0.720, 204.337, 250]
+    region:   w_92
     level:    [79, 80]
   17317983:
     template: Ephemeral_Limule_XLarge
     script:   Ephemeral_Limule
-    at:       [-701.273, -15.847, -25.684, 25]
+    region:   w_92
     level:    [79, 82]
   17317984:
     template: Geier
-    at:       [-462.487, -12.933, 122.772, 50]
+    region:   w_96
     level:    [74, 75]
   17317985:
     template: Geier
-    at:       [-450.963, -9.306, 107.916, 75]
+    region:   w_96
     level:    [74, 75]
   17317986:
     template: Geier
-    at:       [-465.241, -14.733, 104.491, 100]
+    region:   w_96
     level:    [74, 75]
   17317987:
     template: Geier
-    at:       [-475.661, -15.775, 85.775, 125]
+    region:   w_96
     level:    [74, 75]
   17317988:
     template: Geier
-    at:       [-448.465, -8.316, 125.633, 150]
+    region:   w_96
     level:    [74, 75]
   17317989:
     template: Geier
-    at:       [-430.615, -7.731, 82.716, 175]
+    region:   w_96
     level:    [74, 75]
   17317990:
     template: Geier
-    at:       [-407.307, -1.494, 103.427, 200]
+    region:   w_96
     level:    [74, 75]
   17317991:
     template: Geier
-    at:       [-404.389, -1.198, 101.189, 225]
+    region:   w_96
     level:    [74, 75]
   17317992:
     template: Geier
-    at:       [-400.667, -6.476, 87.586, 250]
+    region:   w_104
     level:    [74, 75]
   17317993:
     template: Geier
-    at:       [-434.294, -7.558, 91.919, 25]
+    region:   w_104
     level:    [74, 75]
   17317994:
     template: Geier
-    at:       [-459.066, -12.964, 61.214, 50]
+    region:   w_104
     level:    [74, 75]
   17317995:
     template: Geier
-    at:       [-449.791, -10.599, 53.937, 75]
+    region:   w_104
     level:    [74, 75]
   17317996:
     template: Geier
-    at:       [-465.603, -13.700, 36.371, 100]
+    region:   w_104
     level:    [74, 75]
   17317997:
     template: Geier
-    at:       [-416.614, -7.751, 37.091, 125]
+    region:   w_104
     level:    [74, 75]
   17317998:
     template: Geier
-    at:       [-385.717, -10.421, 30.157, 150]
+    region:   w_104
     level:    [74, 75]
   17317999:
     template: Geier
-    at:       [-382.555, -7.329, 72.262, 175]
+    region:   w_104
     level:    [74, 75]
   17318000:
     template: Geier
-    at:       [-386.000, -8.000, 44.000, 37]
+    region:   w_104
     level:    [74, 75]
   17318001:
     template: Geier
-    at:       [-402.000, -8.000, 36.000, 154]
+    region:   w_113
     level:    [74, 75]
   17318002:
     template: Geier
-    at:       [-470.000, -15.000, 49.000, 131]
+    region:   w_113
     level:    [74, 75]
   17318003:
     template: Geier
-    at:       [-515.000, -15.000, 125.000, 222]
+    region:   w_113
     level:    [74, 75]
   17318004:
     template: Geier
-    at:       [-484.000, -10.000, 144.000, 253]
+    region:   w_113
     level:    [74, 75]
   17318005:
     template: Ephemeral_Clionid_Small
     script:   Ephemeral_Clionid
-    at:       [-407.220, -2.162, 100.252, 75]
+    region:   w_113
     level:    [79, 83]
   17318006:
     template: Great_Wasp
-    at:       [-328.516, -16.321, -53.510, 100]
+    region:   c_118
     level:    [79, 80]
   17318007:
     template: Great_Wasp
-    at:       [-315.772, -15.866, -65.164, 125]
+    region:   c_118
     level:    [79, 80]
   17318008:
     template: Great_Wasp
-    at:       [-329.259, -16.088, -47.815, 150]
+    region:   c_118
     level:    [79, 80]
   17318009:
     template: Great_Wasp
-    at:       [-316.209, -15.956, -56.027, 175]
+    region:   c_118
     level:    [79, 80]
   17318010:
     template: Great_Wasp
-    at:       [-313.311, -16.098, -59.484, 200]
+    region:   c_118
     level:    [79, 80]
   17318011:
     template: Great_Wasp
-    at:       [-295.090, -11.298, -47.054, 225]
+    region:   c_118
     level:    [79, 80]
   17318012:
     template: Great_Wasp
-    at:       [-273.618, -16.308, -84.928, 250]
+    region:   c_118
     level:    [79, 80]
   17318013:
     template: Great_Wasp
-    at:       [-265.858, -8.635, -54.408, 25]
+    region:   c_118
     level:    [79, 80]
   17318014:
     template: Great_Wasp
-    at:       [-260.291, -8.990, -29.701, 50]
+    region:   c_118
     level:    [79, 80]
   17318015:
     template: Great_Wasp
-    at:       [-257.044, -12.369, -85.139, 75]
+    region:   c_127
     level:    [79, 80]
   17318016:
     template: Great_Wasp
-    at:       [-245.773, -9.598, -105.413, 100]
+    region:   c_127
     level:    [79, 80]
   17318017:
     template: Great_Wasp
-    at:       [-218.032, -7.441, -81.829, 125]
+    region:   c_127
     level:    [79, 80]
   17318018:
     template: Great_Wasp
-    at:       [-224.418, -8.388, -101.093, 150]
+    region:   c_127
     level:    [79, 80]
   17318019:
     template: Great_Wasp
-    at:       [-203.385, -8.001, -81.082, 175]
+    region:   c_127
     level:    [79, 80]
   17318020:
     template: Great_Wasp
-    at:       [-199.818, -9.000, -93.246, 200]
+    region:   c_127
     level:    [79, 80]
   17318021:
     template: Great_Wasp
-    at:       [-200.918, -9.000, -94.305, 225]
+    region:   c_127
     level:    [79, 80]
   17318022:
     template: Great_Wasp
-    at:       [-194.442, -8.870, -105.630, 250]
+    region:   c_127
     level:    [79, 80]
   17318023:
     template: Great_Wasp
-    at:       [-206.682, -7.598, -125.858, 25]
+    region:   c_127
     level:    [79, 80]
   17318024:
     template: Great_Wasp
-    at:       [-220.150, -7.712, -113.748, 50]
+    region:   c_118
     level:    [79, 80]
   17318025:
     template: Great_Wasp
-    at:       [-246.308, -9.768, -104.793, 75]
+    region:   c_118
     level:    [79, 80]
   17318026:
     template: Great_Wasp
-    at:       [-243.414, -9.182, -95.953, 100]
+    region:   c_118
     level:    [79, 80]
   17318027:
     template: Great_Wasp
-    at:       [-190.264, -8.648, -101.740, 125]
+    region:   c_118
     level:    [79, 80]
   17318028:
     template: Ephemeral_Limule_Small
     script:   Ephemeral_Limule
-    at:       [-242.843, -8.016, -39.464, 150]
+    region:   c_118
     level:    [79, 82]
   17318029:
     template: Psychopomp
-    at:       [-5.409, 8.456, -228.859, 175]
+    region:   c_141
     level:    [79, 80]
   17318030:
     template: Psychopomp
-    at:       [18.091, 7.576, -177.930, 200]
+    region:   c_141
     level:    [79, 80]
   17318031:
     template: Psychopomp
-    at:       [24.524, 7.452, -189.973, 225]
+    region:   c_141
     level:    [79, 80]
   17318032:
     template: Psychopomp
-    at:       [19.324, 8.194, -167.622, 250]
+    region:   c_141
     level:    [79, 80]
   17318033:
     template: Psychopomp
-    at:       [18.235, 8.373, -162.803, 25]
+    region:   c_141
     level:    [79, 80]
   17318034:
     template: Psychopomp
-    at:       [41.785, 8.003, -159.105, 50]
+    region:   c_141
     level:    [79, 80]
   17318035:
     template: Psychopomp
-    at:       [55.581, 7.477, -168.611, 75]
+    region:   c_141
     level:    [79, 80]
   17318036:
     template: Psychopomp
-    at:       [-17.952, 8.788, -161.753, 100]
+    region:   c_141
     level:    [79, 80]
   17318037:
     template: Psychopomp
-    at:       [-26.888, 7.120, -149.921, 125]
+    region:   c_141
     level:    [79, 80]
   17318038:
     template: Psychopomp
-    at:       [-58.942, 3.963, -117.993, 150]
+    region:   c_150
     level:    [79, 80]
   17318039:
     template: Psychopomp
-    at:       [-78.992, 0.521, -132.954, 175]
+    region:   c_151
     level:    [79, 80]
   17318040:
     template: Psychopomp
-    at:       [-72.484, -0.189, -128.985, 200]
+    region:   c_151
     level:    [79, 80]
   17318041:
     template: Psychopomp
-    at:       [-67.236, 2.096, -117.697, 225]
+    region:   c_151
     level:    [79, 80]
   17318042:
     template: Psychopomp
-    at:       [-90.126, 0.438, -126.110, 250]
+    region:   c_151
     level:    [79, 80]
   17318043:
     template: Psychopomp
-    at:       [-103.908, 0.246, -130.229, 25]
+    region:   c_151
     level:    [79, 80]
   17318044:
     template: Psychopomp
-    at:       [-81.203, 0.948, -141.049, 50]
+    region:   c_151
     level:    [79, 80]
   17318045:
     template: Psychopomp
-    at:       [-89.226, 0.447, -140.897, 75]
+    region:   c_151
     level:    [79, 80]
   17318046:
     template: Psychopomp
-    at:       [-123.748, -0.787, -150.446, 100]
+    region:   c_151
     level:    [79, 80]
   17318047:
     template: Psychopomp
-    at:       [-90.000, 0.001, -185.000, 3]
+    region:   c_159
     level:    [79, 80]
   17318048:
     template: Psychopomp
-    at:       [-51.000, 6.000, -161.000, 222]
+    region:   c_160
     level:    [79, 80]
   17318049:
     template: Psychopomp
@@ -2600,79 +2600,79 @@ spawns:
     level:    [79, 83]
   17318051:
     template: Bathyal_Gigas
-    at:       [-682.210, 16.348, 490.958, 25]
+    region:   nw_163
     level:    [81, 82]
   17318052:
     template: Bathyal_Gigas
-    at:       [-734.456, 14.547, 569.804, 50]
+    region:   nw_163
     level:    [81, 82]
   17318053:
     template: Bathyal_Gigas
-    at:       [-759.339, 16.201, 556.784, 75]
+    region:   nw_163
     level:    [81, 82]
   17318054:
     template: Bathyal_Gigas
-    at:       [-775.499, 16.771, 588.722, 100]
+    region:   nw_163
     level:    [81, 82]
   17318055:
     template: Bathyal_Gigas
-    at:       [-764.474, 16.596, 585.370, 125]
+    region:   nw_167
     level:    [81, 82]
   17318056:
     template: Bathyal_Gigas
-    at:       [-756.293, 16.039, 595.216, 150]
+    region:   nw_167
     level:    [81, 82]
   17318057:
     template: Bathyal_Gigas
-    at:       [-790.982, 16.904, 555.098, 175]
+    region:   nw_167
     level:    [81, 82]
   17318058:
     template: Bathyal_Gigas
-    at:       [-804.146, 16.810, 502.741, 200]
+    region:   nw_167
     level:    [81, 82]
   17318059:
     template: Bathyal_Gigas
-    at:       [-798.107, 16.320, 488.289, 225]
+    region:   nw_171
     level:    [81, 82]
   17318060:
     template: Bathyal_Gigas
-    at:       [-789.910, 16.397, 445.238, 250]
+    region:   nw_171
     level:    [81, 82]
   17318061:
     template: Bathyal_Gigas
-    at:       [-765.764, 15.744, 367.273, 25]
+    region:   nw_171
     level:    [81, 82]
   17318062:
     template: Bathyal_Gigas
-    at:       [-731.208, 17.866, 368.528, 50]
+    region:   nw_171
     level:    [81, 82]
   17318063:
     template: Bathyal_Gigas
-    at:       [-715.211, 16.481, 354.690, 75]
+    region:   nw_175
     level:    [81, 82]
   17318064:
     template: Bathyal_Gigas
-    at:       [-658.289, 16.480, 312.533, 100]
+    region:   nw_175
     level:    [81, 82]
   17318065:
     template: Bathyal_Gigas
-    at:       [-657.381, 16.182, 303.016, 125]
+    region:   nw_175
     level:    [81, 82]
   17318066:
     template: Bathyal_Gigas
-    at:       [-641.806, 16.375, 411.482, 150]
+    region:   nw_175
     level:    [81, 82]
   17318067:
     template: Bathyal_Gigas
-    at:       [-633.487, 16.686, 418.768, 175]
+    region:   nw_179
     level:    [81, 82]
   17318068:
     template: Bathyal_Gigas
-    at:       [-653.674, 16.567, 440.656, 200]
+    region:   nw_180
     level:    [81, 82]
   17318069:
     template: Bathyal_Gigas
-    at:       [-690.897, 17.169, 508.993, 225]
+    region:   nw_181
     level:    [81, 82]
   17318070:
     template: Ephemeral_Limule_XLarge
@@ -2681,75 +2681,75 @@ spawns:
     level:    [79, 82]
   17318071:
     template: Hadal_Gigas
-    at:       [-355.829, 8.051, 355.598, 25]
+    region:   n_183
     level:    [81, 82]
   17318072:
     template: Hadal_Gigas
-    at:       [-360.857, 8.330, 349.402, 50]
+    region:   n_183
     level:    [81, 82]
   17318073:
     template: Hadal_Gigas
-    at:       [-349.571, 8.434, 353.504, 75]
+    region:   n_183
     level:    [81, 82]
   17318074:
     template: Hadal_Gigas
-    at:       [-333.165, 9.311, 353.300, 100]
+    region:   n_183
     level:    [81, 82]
   17318075:
     template: Hadal_Gigas
-    at:       [-404.842, 8.291, 228.420, 125]
+    region:   n_183
     level:    [81, 82]
   17318076:
     template: Hadal_Gigas
-    at:       [-399.632, 8.538, 186.619, 150]
+    region:   c_188
     level:    [81, 82]
   17318077:
     template: Hadal_Gigas
-    at:       [-389.364, 8.913, 168.989, 175]
+    region:   c_188
     level:    [81, 82]
   17318078:
     template: Hadal_Gigas
-    at:       [-262.743, 8.102, 176.475, 200]
+    region:   c_188
     level:    [81, 82]
   17318079:
     template: Hadal_Gigas
-    at:       [-269.126, 8.344, 198.830, 225]
+    region:   w_191
     level:    [81, 82]
   17318080:
     template: Hadal_Gigas
-    at:       [-275.717, 7.894, 236.580, 250]
+    region:   w_191
     level:    [81, 82]
   17318081:
     template: Hadal_Gigas
-    at:       [-309.770, 8.311, 237.641, 25]
+    region:   w_191
     level:    [81, 82]
   17318082:
     template: Hadal_Gigas
-    at:       [-280.464, 8.102, 285.166, 50]
+    region:   w_191
     level:    [81, 82]
   17318083:
     template: Hadal_Gigas
-    at:       [-358.291, 8.214, 128.291, 75]
+    region:   nw_195
     level:    [81, 82]
   17318084:
     template: Hadal_Gigas
-    at:       [-322.558, 8.054, 120.891, 100]
+    region:   nw_195
     level:    [81, 82]
   17318085:
     template: Hadal_Gigas
-    at:       [-295.236, 8.579, 113.086, 125]
+    region:   nw_195
     level:    [81, 82]
   17318086:
     template: Hadal_Gigas
-    at:       [-259.689, 8.660, 114.931, 150]
+    region:   nw_195
     level:    [81, 82]
   17318087:
     template: Hadal_Gigas
-    at:       [-261.888, 8.570, 193.015, 175]
+    region:   nw_199
     level:    [81, 82]
   17318088:
     template: Hadal_Gigas
-    at:       [-388.522, 8.986, 310.281, 200]
+    region:   c_200
     level:    [81, 82]
   17318089:
     template: Hadal_Gigas
@@ -2758,71 +2758,71 @@ spawns:
   17318090:
     template: Ephemeral_Clionid_XLarge
     script:   Ephemeral_Clionid
-    at:       [-310.869, 8.257, 399.576, 50]
+    region:   w_202
     level:    [79, 83]
   17318091:
     template: Demersal_Gigas
-    at:       [-357.232, -0.423, -187.765, 25]
+    region:   w_203
     level:    [81, 82]
   17318092:
     template: Demersal_Gigas
-    at:       [-375.758, 3.433, -174.088, 50]
+    region:   w_203
     level:    [81, 82]
   17318093:
     template: Demersal_Gigas
-    at:       [-373.524, 0.839, -165.909, 75]
+    region:   w_203
     level:    [81, 82]
   17318094:
     template: Demersal_Gigas
-    at:       [-394.387, 0.440, -149.056, 100]
+    region:   w_203
     level:    [81, 82]
   17318095:
     template: Demersal_Gigas
-    at:       [-353.832, -0.347, -205.972, 125]
+    region:   w_207
     level:    [81, 82]
   17318096:
     template: Demersal_Gigas
-    at:       [-363.928, 0.352, -269.660, 150]
+    region:   w_207
     level:    [81, 82]
   17318097:
     template: Demersal_Gigas
-    at:       [-404.510, 0.400, -251.159, 175]
+    region:   w_207
     level:    [81, 82]
   17318098:
     template: Demersal_Gigas
-    at:       [-424.693, -0.103, -250.027, 200]
+    region:   w_207
     level:    [81, 82]
   17318099:
     template: Demersal_Gigas
-    at:       [-464.278, -0.724, -235.657, 225]
+    region:   sw_211
     level:    [81, 82]
   17318100:
     template: Demersal_Gigas
-    at:       [-464.246, 2.309, -228.346, 250]
+    region:   sw_211
     level:    [81, 82]
   17318101:
     template: Demersal_Gigas
-    at:       [-505.749, 0.967, -152.502, 25]
+    region:   sw_211
     level:    [81, 82]
   17318102:
     template: Demersal_Gigas
-    at:       [-528.328, 0.448, -148.827, 50]
+    region:   w_214
     level:    [81, 82]
   17318103:
     template: Demersal_Gigas
-    at:       [-543.398, 0.837, -115.577, 75]
+    region:   w_214
     level:    [81, 82]
   17318104:
     template: Demersal_Gigas
-    at:       [-541.108, 0.495, -130.639, 100]
+    region:   w_214
     level:    [81, 82]
   17318105:
     template: Demersal_Gigas
-    at:       [-362.715, 0.831, -263.362, 125]
+    region:   w_214
     level:    [81, 82]
   17318106:
     template: Demersal_Gigas
-    at:       [-382.738, 0.808, -283.970, 150]
+    region:   w_214
     level:    [81, 82]
   17318107:
     template: Demersal_Gigas
@@ -2830,223 +2830,223 @@ spawns:
     level:    [81, 82]
   17318108:
     template: Demersal_Gigas
-    at:       [-569.000, 0.001, -60.000, 11]
+    region:   w_220
     level:    [81, 82]
   17318109:
     template: Demersal_Gigas
-    at:       [-561.000, 0.001, -11.000, 109]
+    region:   w_221
     level:    [81, 82]
   17318110:
     template: Ephemeral_Limule_XLarge
     script:   Ephemeral_Limule
-    at:       [-510.021, 0.701, -152.308, 100]
+    region:   w_220
     level:    [79, 82]
   17318111:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-476.211, -7.950, 323.644, 25]
+    region:   ne_223
     level:    [79, 80]
   17318112:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-468.648, -8.040, 304.763, 50]
+    region:   ne_223
     level:    [79, 80]
   17318113:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-440.130, -7.454, 306.626, 75]
+    region:   ne_223
     level:    [79, 80]
   17318114:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-440.937, -7.247, 303.721, 100]
+    region:   ne_223
     level:    [79, 80]
   17318115:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-450.583, -7.235, 286.749, 125]
+    region:   ne_223
     level:    [79, 80]
   17318116:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-429.989, -5.620, 311.677, 150]
+    region:   ne_223
     level:    [79, 80]
   17318117:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-441.001, -7.575, 308.254, 175]
+    region:   ne_229
     level:    [79, 80]
   17318118:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-419.256, -2.234, 305.287, 200]
+    region:   ne_229
     level:    [79, 80]
   17318119:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-416.571, -3.011, 339.532, 225]
+    region:   ne_229
     level:    [79, 80]
   17318120:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-458.569, -4.867, 370.640, 250]
+    region:   ne_229
     level:    [79, 80]
   17318121:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-489.717, -0.643, 365.772, 25]
+    region:   ne_229
     level:    [79, 80]
   17318122:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-479.124, 0.243, 367.546, 50]
+    region:   ne_229
     level:    [79, 80]
   17318123:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-477.368, 0.434, 379.598, 75]
+    region:   ne_229
     level:    [79, 80]
   17318124:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-469.070, -1.919, 378.067, 100]
+    region:   ne_236
     level:    [79, 80]
   17318125:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-454.732, -6.100, 389.563, 125]
+    region:   ne_236
     level:    [79, 80]
   17318126:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-446.059, -7.863, 379.363, 150]
+    region:   ne_236
     level:    [79, 80]
   17318127:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-451.036, -6.820, 411.917, 175]
+    region:   ne_236
     level:    [79, 80]
   17318128:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-434.111, -7.906, 403.566, 200]
+    region:   ne_236
     level:    [79, 80]
   17318129:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [-471.331, -1.253, 403.598, 225]
+    region:   ne_236
     level:    [79, 80]
   17318130:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [452.969, 39.824, 432.551, 50]
+    region:   ne_236
     level:    [79, 80]
   17318131:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [475.491, 40.404, 417.092, 75]
+    region:   ne_236
     level:    [79, 80]
   17318132:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [473.995, 40.169, 457.051, 100]
+    region:   ne_244
     level:    [79, 80]
   17318133:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [490.441, 40.322, 482.356, 125]
+    region:   ne_244
     level:    [79, 80]
   17318134:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [491.209, 40.361, 482.909, 150]
+    region:   ne_236
     level:    [79, 80]
   17318135:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [462.098, 40.405, 412.366, 175]
+    region:   ne_244
     level:    [79, 80]
   17318136:
     template: Gigadaphnia_HI
     script:   Gigadaphnia
-    at:       [466.876, 40.508, 434.547, 200]
+    region:   ne_236
     level:    [79, 80]
   17318137:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [-464.265, -3.868, 382.551, 100]
+    region:   ne_236
     level:    [79, 82]
   17318138:
     template: Black_Merino
-    at:       [326.769, 40.138, 121.478, 25]
+    region:   e_250
     level:    [79, 80]
   17318139:
     template: Black_Merino
-    at:       [364.217, 41.366, 167.915, 50]
+    region:   e_250
     level:    [79, 80]
   17318140:
     template: Black_Merino
-    at:       [412.073, 41.424, 167.707, 75]
+    region:   e_250
     level:    [79, 80]
   17318141:
     template: Black_Merino
-    at:       [434.917, 40.715, 173.527, 100]
+    region:   e_250
     level:    [79, 80]
   17318142:
     template: Black_Merino
-    at:       [434.100, 40.700, 172.270, 125]
+    region:   e_250
     level:    [79, 80]
   17318143:
     template: Black_Merino
-    at:       [428.867, 42.524, 178.439, 150]
+    region:   e_250
     level:    [79, 80]
   17318144:
     template: Black_Merino
-    at:       [494.909, 42.849, 213.122, 175]
+    region:   ne_256
     level:    [79, 80]
   17318145:
     template: Black_Merino
-    at:       [504.276, 44.733, 216.967, 200]
+    region:   ne_256
     level:    [79, 80]
   17318146:
     template: Black_Merino
-    at:       [518.649, 40.000, 202.659, 225]
+    region:   ne_256
     level:    [79, 80]
   17318147:
     template: Black_Merino
-    at:       [504.242, 40.773, 199.901, 250]
+    region:   ne_256
     level:    [79, 80]
   17318148:
     template: Black_Merino
-    at:       [528.342, 40.374, 217.987, 25]
+    region:   ne_256
     level:    [79, 80]
   17318149:
     template: Black_Merino
-    at:       [533.169, 40.500, 229.346, 50]
+    region:   ne_261
     level:    [79, 80]
   17318150:
     template: Black_Merino
-    at:       [570.786, 40.939, 246.180, 75]
+    region:   ne_261
     level:    [79, 80]
   17318151:
     template: Black_Merino
-    at:       [594.463, 40.577, 251.571, 100]
+    region:   ne_263
     level:    [79, 80]
   17318152:
     template: Black_Merino
-    at:       [610.907, 39.884, 272.114, 125]
+    region:   ne_261
     level:    [79, 80]
   17318153:
     template: Black_Merino
-    at:       [607.359, 40.443, 262.646, 150]
+    region:   ne_261
     level:    [79, 80]
   17318154:
     template: Black_Merino
-    at:       [628.763, 40.270, 265.287, 175]
+    region:   ne_263
     level:    [79, 80]
   17318155:
     template: Black_Merino
-    at:       [642.387, 40.252, 270.952, 200]
+    region:   ne_261
     level:    [79, 80]
   17318156:
     template: Black_Merino
@@ -3064,213 +3064,213 @@ spawns:
   17318159:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [39.828, 24.107, -286.144, 25]
+    region:   s_271
     level:    [79, 80]
   17318160:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-6.253, 24.631, -304.642, 50]
+    region:   s_271
     level:    [79, 80]
   17318161:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [13.945, 24.535, -313.832, 75]
+    region:   s_271
     level:    [79, 80]
   17318162:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-4.889, 24.044, -317.395, 100]
+    region:   s_271
     level:    [79, 80]
   17318163:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [4.228, 24.368, -302.407, 125]
+    region:   s_271
     level:    [79, 80]
   17318164:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [27.123, 24.447, -312.689, 150]
+    region:   s_271
     level:    [79, 80]
   17318165:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-31.290, 25.580, -355.480, 175]
+    region:   s_271
     level:    [79, 80]
   17318166:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-51.639, 24.623, -361.928, 200]
+    region:   s_278
     level:    [79, 80]
   17318167:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-50.551, 25.255, -365.688, 225]
+    region:   s_278
     level:    [79, 80]
   17318168:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-105.060, 24.989, -366.854, 250]
+    region:   s_278
     level:    [79, 80]
   17318169:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-106.760, 25.663, -372.034, 25]
+    region:   s_278
     level:    [79, 80]
   17318170:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-113.129, 24.758, -371.421, 50]
+    region:   s_278
     level:    [79, 80]
   17318171:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-110.469, 25.812, -398.144, 75]
+    region:   s_283
     level:    [79, 80]
   17318172:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-126.700, 24.135, -402.398, 100]
+    region:   s_283
     level:    [79, 80]
   17318173:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-141.930, 24.888, -397.953, 125]
+    region:   s_283
     level:    [79, 80]
   17318174:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-149.348, 26.128, -438.902, 150]
+    region:   s_283
     level:    [79, 80]
   17318175:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-178.370, 24.918, -437.354, 175]
+    region:   s_283
     level:    [79, 80]
   17318176:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-202.183, 23.864, -439.298, 200]
+    region:   s_283
     level:    [79, 80]
   17318177:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-191.741, 24.185, -455.366, 225]
+    region:   s_271
     level:    [79, 80]
   17318178:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-174.152, 24.543, -477.573, 250]
+    region:   s_278
     level:    [79, 80]
   17318179:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-180.007, 24.939, -481.871, 25]
+    region:   s_283
     level:    [79, 80]
   17318180:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-163.126, 24.981, -499.612, 50]
+    region:   s_283
     level:    [79, 80]
   17318181:
     template: Veld_Clionid_HI
     script:   Veld_Clionid
-    at:       [-199.053, 24.693, -455.726, 75]
+    region:   s_293
     level:    [79, 80]
   17318182:
     template: Ephemeral_Clionid
-    at:       [-157.124, 24.654, -448.933, 100]
+    region:   s_293
     level:    [79, 83]
   17318183:
     template: Luison
-    at:       [-123.537, 24.931, -498.861, 25]
+    region:   s_295
     level:    [81, 82]
   17318184:
     template: Luison
-    at:       [-105.046, 24.305, -515.784, 50]
+    region:   s_295
     level:    [81, 82]
   17318185:
     template: Luison
-    at:       [-99.407, 24.738, -508.408, 75]
+    region:   s_295
     level:    [81, 82]
   17318186:
     template: Luison
-    at:       [-103.581, 24.485, -542.522, 100]
+    region:   s_295
     level:    [81, 82]
   17318187:
     template: Luison
-    at:       [-81.615, 24.187, -529.752, 125]
+    region:   s_295
     level:    [81, 82]
   17318188:
     template: Luison
-    at:       [-82.881, 24.647, -498.996, 150]
+    region:   s_295
     level:    [81, 82]
   17318189:
     template: Luison
-    at:       [-61.889, 24.588, -490.118, 175]
+    region:   s_295
     level:    [81, 82]
   17318190:
     template: Luison
-    at:       [-46.618, 24.252, -473.988, 200]
+    region:   s_295
     level:    [81, 82]
   17318191:
     template: Luison
-    at:       [-10.507, 25.314, -437.636, 225]
+    region:   s_303
     level:    [81, 82]
   17318192:
     template: Luison
-    at:       [42.264, 24.391, -428.183, 250]
+    region:   s_303
     level:    [81, 82]
   17318193:
     template: Luison
-    at:       [41.645, 24.908, -381.848, 25]
+    region:   s_303
     level:    [81, 82]
   17318194:
     template: Luison
-    at:       [59.390, 24.699, -384.978, 50]
+    region:   s_303
     level:    [81, 82]
   17318195:
     template: Luison
-    at:       [35.940, 24.270, -360.653, 75]
+    region:   s_303
     level:    [81, 82]
   17318196:
     template: Luison
-    at:       [66.970, 24.503, -357.303, 100]
+    region:   s_303
     level:    [81, 82]
   17318197:
     template: Luison
-    at:       [79.244, 24.340, -369.897, 125]
+    region:   s_303
     level:    [81, 82]
   17318198:
     template: Luison
-    at:       [38.758, 24.592, -413.919, 150]
+    region:   s_310
     level:    [81, 82]
   17318199:
     template: Luison
-    at:       [-29.452, 22.985, -507.305, 175]
+    region:   s_310
     level:    [81, 82]
   17318200:
     template: Luison
-    at:       [44.209, 24.091, -546.515, 200]
+    region:   s_310
     level:    [81, 82]
   17318201:
     template: Luison
-    at:       [46.812, 24.734, -567.176, 225]
+    region:   s_310
     level:    [81, 82]
   17318202:
     template: Luison
-    at:       [62.124, 27.503, -546.152, 250]
+    region:   s_310
     level:    [81, 82]
   17318203:
     template: Luison
-    at:       [67.956, 31.935, -572.483, 25]
+    region:   s_310
     level:    [81, 82]
   17318204:
     template: Luison
-    at:       [61.507, 32.587, -604.972, 50]
+    region:   s_310
     level:    [81, 82]
   17318205:
     template: Luison
-    at:       [105.599, 32.353, -609.495, 75]
+    region:   s_310
     level:    [81, 82]
   17318206:
     template: Ephemeral_Clionid_XLarge
@@ -3279,72 +3279,72 @@ spawns:
     level:    [79, 83]
   17318207:
     template: Cankercap
-    at:       [-322.474, 38.750, 281.153, 25]
+    region:   nw_319
     level:    [79, 80]
   17318208:
     template: Cankercap
-    at:       [-327.370, 38.918, 277.922, 50]
+    region:   nw_319
     level:    [79, 80]
   17318209:
     template: Cankercap
-    at:       [-329.572, 39.027, 281.256, 75]
+    region:   nw_319
     level:    [79, 80]
   17318210:
     template: Cankercap
-    at:       [-349.061, 38.934, 271.716, 100]
+    region:   nw_319
     level:    [79, 80]
   17318211:
     template: Cankercap
-    at:       [-345.012, 39.387, 275.383, 125]
+    region:   w_323
     level:    [79, 80]
   17318212:
     template: Cankercap
-    at:       [-360.116, 38.745, 239.306, 150]
+    region:   w_323
     level:    [79, 80]
   17318213:
     template: Cankercap
-    at:       [-360.346, 39.660, 218.188, 175]
+    region:   w_323
     level:    [79, 80]
   17318214:
     template: Cankercap
-    at:       [-348.983, 39.099, 201.901, 200]
+    region:   w_323
     level:    [79, 80]
   17318215:
     template: Cankercap
-    at:       [-337.562, 39.629, 196.847, 225]
+    region:   nw_327
     level:    [79, 80]
   17318216:
     template: Cankercap
-    at:       [-324.115, 38.737, 198.969, 250]
+    region:   w_323
     level:    [79, 80]
   17318217:
     template: Cankercap
-    at:       [-322.422, 39.273, 173.241, 25]
+    region:   nw_329
     level:    [79, 80]
   17318218:
     template: Ephemeral_Limule_Small
     script:   Ephemeral_Limule
-    at:       [-333.925, 39.211, 194.579]
+    region:   nw_329
     level:    [79, 82]
   17318219:
     template: Pasture_Funguar
-    at:       [39.500, 46.750, 201.349, 25]
+    region:   n_331
     level:    [79, 80]
   17318220:
     template: Pasture_Funguar
-    at:       [40.712, 47.099, 211.002, 50]
+    region:   n_331
     level:    [79, 80]
   17318221:
     template: Pasture_Funguar
-    at:       [43.403, 47.663, 221.748, 75]
+    region:   n_331
     level:    [79, 80]
   17318222:
     template: Pasture_Funguar
-    at:       [40.079, 46.761, 235.703, 100]
+    region:   n_331
     level:    [79, 80]
   17318223:
     template: Pasture_Funguar
-    at:       [43.589, 46.971, 231.565, 125]
+    region:   n_331
     level:    [79, 80]
   17318224:
     template: Pasture_Funguar
@@ -3352,411 +3352,411 @@ spawns:
     level:    [79, 80]
   17318225:
     template: Pasture_Funguar
-    at:       [61.454, 47.678, 237.239, 175]
+    region:   n_337
     level:    [79, 80]
   17318226:
     template: Pasture_Funguar
-    at:       [107.137, 37.133, 255.384, 200]
+    region:   n_337
     level:    [79, 80]
   17318227:
     template: Pasture_Funguar
-    at:       [113.344, 35.047, 256.538, 225]
+    region:   n_339
     level:    [79, 80]
   17318228:
     template: Pasture_Funguar
-    at:       [120.577, 33.605, 259.756, 250]
+    region:   n_339
     level:    [79, 80]
   17318229:
     template: Ephemeral_Clionid_Large
     script:   Ephemeral_Clionid
-    at:       [52.734, 46.158, 228.804, 100]
+    region:   n_339
     level:    [79, 83]
   17318230:
     template: Plateau_Glider
-    at:       [18.802, 16.425, 31.416, 25]
+    region:   c_342
     level:    [79, 80]
   17318231:
     template: Plateau_Glider
-    at:       [40.992, 16.719, 21.348, 50]
+    region:   c_342
     level:    [79, 80]
   17318232:
     template: Plateau_Glider
-    at:       [54.358, 17.262, 13.964, 75]
+    region:   c_342
     level:    [79, 80]
   17318233:
     template: Plateau_Glider
-    at:       [38.308, 16.919, 20.922, 100]
+    region:   c_342
     level:    [79, 80]
   17318234:
     template: Plateau_Glider
-    at:       [48.798, 16.216, 32.947, 125]
+    region:   c_342
     level:    [79, 80]
   17318235:
     template: Plateau_Glider
-    at:       [76.310, 24.176, 21.979, 150]
+    region:   c_342
     level:    [79, 80]
   17318236:
     template: Plateau_Glider
-    at:       [55.624, 15.980, 74.830, 175]
+    region:   c_342
     level:    [79, 80]
   17318237:
     template: Plateau_Glider
-    at:       [44.388, 16.975, 85.376, 200]
+    region:   c_349
     level:    [79, 80]
   17318238:
     template: Plateau_Glider
-    at:       [50.211, 20.450, 100.800, 225]
+    region:   c_349
     level:    [79, 80]
   17318239:
     template: Plateau_Glider
-    at:       [58.972, 19.259, 106.943, 250]
+    region:   c_349
     level:    [79, 80]
   17318240:
     template: Plateau_Glider
-    at:       [63.538, 16.946, 105.063, 25]
+    region:   c_349
     level:    [79, 80]
   17318241:
     template: Plateau_Glider
-    at:       [66.182, 17.020, 133.922, 50]
+    region:   c_349
     level:    [79, 80]
   17318242:
     template: Plateau_Glider
-    at:       [56.731, 19.992, 134.203, 75]
+    region:   c_349
     level:    [79, 80]
   17318243:
     template: Plateau_Glider
-    at:       [78.894, 16.138, 119.309, 100]
+    region:   c_349
     level:    [79, 80]
   17318244:
     template: Plateau_Glider
-    at:       [60.873, 19.805, 129.204, 125]
+    region:   c_356
     level:    [79, 80]
   17318245:
     template: Plateau_Glider
-    at:       [71.554, 23.036, 23.943, 150]
+    region:   c_356
     level:    [79, 80]
   17318246:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [54.304, 17.340, 46.992, 175]
+    region:   c_356
     level:    [79, 82]
   17318247:
     template: Farfadet
-    at:       [-160.680, 8.320, 124.369, 25]
+    region:   c_359
     level:    [79, 80]
   17318248:
     template: Farfadet
-    at:       [-107.820, 11.501, 134.519, 50]
+    region:   c_359
     level:    [79, 80]
   17318249:
     template: Farfadet
-    at:       [-112.054, 16.347, 162.001, 75]
+    region:   c_359
     level:    [79, 80]
   17318250:
     template: Farfadet
-    at:       [-104.283, 14.806, 174.558, 100]
+    region:   c_359
     level:    [79, 80]
   17318251:
     template: Farfadet
-    at:       [-111.123, 16.350, 161.446, 125]
+    region:   c_359
     level:    [79, 80]
   17318252:
     template: Farfadet
-    at:       [-129.880, 13.479, 149.979, 150]
+    region:   c_359
     level:    [79, 80]
   17318253:
     template: Farfadet
-    at:       [-112.950, 11.885, 180.678, 175]
+    region:   c_359
     level:    [79, 80]
   17318254:
     template: Farfadet
-    at:       [-80.070, 16.089, 154.321, 200]
+    region:   c_359
     level:    [79, 80]
   17318255:
     template: Farfadet
-    at:       [-80.720, 16.103, 154.055, 225]
+    region:   c_359
     level:    [79, 80]
   17318256:
     template: Farfadet
-    at:       [-84.867, 15.908, 196.608, 250]
+    region:   c_368
     level:    [79, 80]
   17318257:
     template: Farfadet
-    at:       [-77.948, 17.199, 138.852, 25]
+    region:   c_368
     level:    [79, 80]
   17318258:
     template: Farfadet
-    at:       [-83.327, 16.183, 145.779, 50]
+    region:   c_368
     level:    [79, 80]
   17318259:
     template: Farfadet
-    at:       [-32.166, 16.224, 159.485, 75]
+    region:   c_368
     level:    [79, 80]
   17318260:
     template: Farfadet
-    at:       [-43.227, 17.050, 134.627, 100]
+    region:   c_368
     level:    [79, 80]
   17318261:
     template: Farfadet
-    at:       [-20.373, 16.208, 143.026, 125]
+    region:   c_368
     level:    [79, 80]
   17318262:
     template: Farfadet
-    at:       [-40.898, 16.454, 130.707, 150]
+    region:   c_368
     level:    [79, 80]
   17318263:
     template: Farfadet
-    at:       [-26.256, 16.297, 142.577, 175]
+    region:   c_368
     level:    [79, 80]
   17318264:
     template: Farfadet
-    at:       [-46.859, 16.198, 119.270, 200]
+    region:   c_376
     level:    [79, 80]
   17318265:
     template: Farfadet
-    at:       [-62.435, 16.878, 120.904, 225]
+    region:   c_376
     level:    [79, 80]
   17318266:
     template: Farfadet
-    at:       [-35.442, 16.722, 124.908, 250]
+    region:   c_376
     level:    [79, 80]
   17318267:
     template: Ephemeral_Limule_Large
     script:   Ephemeral_Limule
-    at:       [-82.401, 16.463, 141.706, 100]
+    region:   c_376
     level:    [79, 82]
   17318268:
     template: Poroggo_Seducteur
-    at:       [380.038, 24.267, -502.954, 25]
+    region:   se_380
     level:    [79, 80]
   17318269:
     template: Poroggo_Seducteur
-    at:       [396.701, 24.224, -488.481, 50]
+    region:   se_380
     level:    [79, 80]
   17318270:
     template: Poroggo_Seducteur
-    at:       [390.406, 24.155, -493.484, 75]
+    region:   se_380
     level:    [79, 80]
   17318271:
     template: Poroggo_Seducteur
-    at:       [378.971, 24.186, -503.393, 100]
+    region:   se_380
     level:    [79, 80]
   17318272:
     template: Poroggo_Seducteur
-    at:       [384.884, 24.712, -522.463, 125]
+    region:   se_380
     level:    [79, 80]
   17318273:
     template: Poroggo_Seducteur
-    at:       [369.120, 23.946, -524.979, 150]
+    region:   se_380
     level:    [79, 80]
   17318274:
     template: Poroggo_Seducteur
-    at:       [395.484, 24.055, -524.585, 175]
+    region:   se_380
     level:    [79, 80]
   17318275:
     template: Poroggo_Seducteur
-    at:       [414.116, 24.966, -505.323, 200]
+    region:   se_380
     level:    [79, 80]
   17318276:
     template: Poroggo_Seducteur
-    at:       [417.392, 24.334, -509.182, 225]
+    region:   se_388
     level:    [79, 80]
   17318277:
     template: Poroggo_Seducteur
-    at:       [416.156, 24.744, -522.483, 250]
+    region:   se_388
     level:    [79, 80]
   17318278:
     template: Poroggo_Seducteur
-    at:       [405.326, 23.938, -524.838, 25]
+    region:   se_388
     level:    [79, 80]
   17318279:
     template: Poroggo_Seducteur
-    at:       [401.865, 25.129, -542.349, 50]
+    region:   se_388
     level:    [79, 80]
   17318280:
     template: Poroggo_Seducteur
-    at:       [384.699, 24.730, -522.482, 75]
+    region:   se_388
     level:    [79, 80]
   17318281:
     template: Poroggo_Seducteur
-    at:       [440.475, 24.801, -536.026, 100]
+    region:   se_388
     level:    [79, 80]
   17318282:
     template: Poroggo_Seducteur
-    at:       [460.563, 23.879, -458.982, 125]
+    region:   se_394
     level:    [79, 80]
   17318283:
     template: Poroggo_Seducteur
-    at:       [485.208, 24.942, -451.351, 150]
+    region:   se_394
     level:    [79, 80]
   17318284:
     template: Poroggo_Seducteur
-    at:       [476.028, 24.000, -439.764, 175]
+    region:   se_380
     level:    [79, 80]
   17318285:
     template: Ephemeral_Clionid_Small
     script:   Ephemeral_Clionid
-    at:       [406.893, 24.545, -555.718, 200]
+    region:   se_394
     level:    [79, 83]
   17318286:
     template: Crapaudy
-    at:       [544.527, 40.433, -409.278, 25]
+    region:   se_398
     level:    [79, 80]
   17318287:
     template: Crapaudy
-    at:       [541.752, 40.515, -407.169, 50]
+    region:   se_398
     level:    [79, 80]
   17318288:
     template: Crapaudy
-    at:       [535.722, 40.618, -418.521, 75]
+    region:   se_398
     level:    [79, 80]
   17318289:
     template: Crapaudy
-    at:       [536.897, 40.298, -426.271, 100]
+    region:   se_398
     level:    [79, 80]
   17318290:
     template: Crapaudy
-    at:       [533.580, 40.322, -430.736, 125]
+    region:   se_398
     level:    [79, 80]
   17318291:
     template: Crapaudy
-    at:       [553.439, 40.128, -402.436, 150]
+    region:   se_398
     level:    [79, 80]
   17318292:
     template: Crapaudy
-    at:       [548.718, 40.455, -409.064, 175]
+    region:   se_398
     level:    [79, 80]
   17318293:
     template: Crapaudy
-    at:       [557.019, 40.118, -434.389, 200]
+    region:   se_398
     level:    [79, 80]
   17318294:
     template: Crapaudy
-    at:       [545.471, 39.993, -431.664, 225]
+    region:   se_406
     level:    [79, 80]
   17318295:
     template: Crapaudy
-    at:       [549.026, 40.349, -442.747, 250]
+    region:   se_406
     level:    [79, 80]
   17318296:
     template: Crapaudy
-    at:       [598.990, 40.189, -392.214, 25]
+    region:   se_406
     level:    [79, 80]
   17318297:
     template: Crapaudy
-    at:       [600.161, 40.800, -376.004, 50]
+    region:   se_406
     level:    [79, 80]
   17318298:
     template: Crapaudy
-    at:       [610.253, 40.313, -401.099, 75]
+    region:   se_406
     level:    [79, 80]
   17318299:
     template: Crapaudy
-    at:       [643.274, 40.000, -399.980, 100]
+    region:   se_406
     level:    [79, 80]
   17318300:
     template: Crapaudy
-    at:       [621.281, 40.317, -422.345, 125]
+    region:   se_406
     level:    [79, 80]
   17318301:
     template: Crapaudy
-    at:       [592.725, 40.164, -438.566, 150]
+    region:   se_406
     level:    [79, 80]
   17318302:
     template: Crapaudy
-    at:       [649.992, 37.895, -433.417, 175]
+    region:   se_406
     level:    [79, 80]
   17318303:
     template: Crapaudy
-    at:       [642.473, 40.306, -450.127, 200]
+    region:   se_406
     level:    [79, 80]
   17318304:
     template: Crapaudy
-    at:       [635.852, 40.007, -443.609, 225]
+    region:   se_406
     level:    [79, 80]
   17318305:
     template: Crapaudy
-    at:       [608.000, 40.000, -447.000, 181]
+    region:   se_406
     level:    [79, 80]
   17318306:
     template: Crapaudy
-    at:       [604.000, 40.000, -423.000, 25]
+    region:   se_406
     level:    [79, 80]
   17318307:
     template: Crapaudy
-    at:       [585.000, 40.000, -405.000, 158]
+    region:   se_406
     level:    [79, 80]
   17318308:
     template: Crapaudy
-    at:       [557.000, 40.000, -421.000, 85]
+    region:   se_406
     level:    [79, 80]
   17318309:
     template: Ephemeral_Clionid
-    at:       [573.000, 40.000, -443.000, 225]
+    region:   se_406
     level:    [79, 83]
   17318310:
     template: Crepuscule_Puk
-    at:       [201.119, 32.638, -542.844, 25]
+    region:   se_422
     level:    [79, 80]
   17318311:
     template: Crepuscule_Puk
-    at:       [228.301, 26.374, -530.899, 50]
+    region:   se_422
     level:    [79, 80]
   17318312:
     template: Crepuscule_Puk
-    at:       [223.225, 27.773, -533.847, 75]
+    region:   se_422
     level:    [79, 80]
   17318313:
     template: Crepuscule_Puk
-    at:       [224.620, 26.265, -499.274, 100]
+    region:   se_422
     level:    [79, 80]
   17318314:
     template: Crepuscule_Puk
-    at:       [209.836, 29.875, -497.658, 125]
+    region:   se_422
     level:    [79, 80]
   17318315:
     template: Crepuscule_Puk
-    at:       [186.426, 31.282, -503.817, 150]
+    region:   se_422
     level:    [79, 80]
   17318316:
     template: Crepuscule_Puk
-    at:       [205.376, 31.828, -478.151, 175]
+    region:   se_422
     level:    [79, 80]
   17318317:
     template: Crepuscule_Puk
-    at:       [216.211, 27.294, -463.368, 200]
+    region:   se_422
     level:    [79, 80]
   17318318:
     template: Crepuscule_Puk
-    at:       [230.634, 24.908, -474.414, 225]
+    region:   se_422
     level:    [79, 80]
   17318319:
     template: Crepuscule_Puk
-    at:       [269.575, 23.387, -471.560, 250]
+    region:   se_422
     level:    [79, 80]
   17318320:
     template: Crepuscule_Puk
-    at:       [218.913, 23.846, -432.938, 25]
+    region:   se_432
     level:    [79, 80]
   17318321:
     template: Crepuscule_Puk
-    at:       [274.909, 23.580, -461.410, 50]
+    region:   se_432
     level:    [79, 80]
   17318322:
     template: Crepuscule_Puk
-    at:       [288.228, 23.462, -475.727, 75]
+    region:   se_432
     level:    [79, 80]
   17318323:
     template: Crepuscule_Puk
-    at:       [288.200, 24.377, -486.412, 100]
+    region:   se_432
     level:    [79, 80]
   17318324:
     template: Crepuscule_Puk
-    at:       [296.365, 24.396, -489.504, 125]
+    region:   se_432
     level:    [79, 80]
   17318325:
     template: Crepuscule_Puk
-    at:       [308.606, 24.423, -499.604, 150]
+    region:   se_432
     level:    [79, 80]
   17318326:
     template: Crepuscule_Puk
@@ -3776,100 +3776,100 @@ spawns:
     level:    [79, 80]
   17318330:
     template: Crepuscule_Puk
-    at:       [273.135, 23.952, -445.644, 25]
+    region:   se_442
     level:    [79, 80]
   17318331:
     template: Crepuscule_Puk
-    at:       [293.787, 24.370, -441.647, 50]
+    region:   se_442
     level:    [79, 80]
   17318332:
     template: Ephemeral_Limule_Small
     script:   Ephemeral_Limule
-    at:       [240.669, 26.666, -536.998, 100]
+    region:   se_442
     level:    [79, 82]
   17318333:
     template: Brae_Opo-Opo
-    at:       [583.756, 24.101, 139.273, 25]
+    region:   e_445
     level:    [79, 80]
   17318334:
     template: Brae_Opo-Opo
-    at:       [623.913, 24.674, 146.151, 50]
+    region:   e_445
     level:    [79, 80]
   17318335:
     template: Brae_Opo-Opo
-    at:       [672.842, 23.976, 164.599, 75]
+    region:   e_445
     level:    [79, 80]
   17318336:
     template: Brae_Opo-Opo
-    at:       [682.078, 23.955, 164.121, 100]
+    region:   e_445
     level:    [79, 80]
   17318337:
     template: Brae_Opo-Opo
-    at:       [680.820, 24.008, 156.945, 125]
+    region:   e_445
     level:    [79, 80]
   17318338:
     template: Brae_Opo-Opo
-    at:       [672.213, 26.399, 143.326, 150]
+    region:   e_445
     level:    [79, 80]
   17318339:
     template: Brae_Opo-Opo
-    at:       [694.916, 27.060, 139.956, 175]
+    region:   e_451
     level:    [79, 80]
   17318340:
     template: Brae_Opo-Opo
-    at:       [703.823, 24.545, 148.041, 200]
+    region:   e_451
     level:    [79, 80]
   17318341:
     template: Brae_Opo-Opo
-    at:       [704.643, 24.829, 147.032, 225]
+    region:   e_451
     level:    [79, 80]
   17318342:
     template: Brae_Opo-Opo
-    at:       [713.558, 31.920, 126.027, 250]
+    region:   e_451
     level:    [79, 80]
   17318343:
     template: Brae_Opo-Opo
-    at:       [712.419, 32.223, 125.178, 25]
+    region:   e_451
     level:    [79, 80]
   17318344:
     template: Brae_Opo-Opo
-    at:       [661.206, 32.323, 116.710, 50]
+    region:   e_451
     level:    [79, 80]
   17318345:
     template: Brae_Opo-Opo
-    at:       [634.667, 31.833, 121.285, 75]
+    region:   e_457
     level:    [79, 80]
   17318346:
     template: Brae_Opo-Opo
-    at:       [733.524, 26.084, 143.162, 100]
+    region:   e_457
     level:    [79, 80]
   17318347:
     template: Brae_Opo-Opo
-    at:       [760.005, 26.514, 143.943, 125]
+    region:   e_457
     level:    [79, 80]
   17318348:
     template: Brae_Opo-Opo
-    at:       [760.915, 25.723, 148.743, 150]
+    region:   e_457
     level:    [79, 80]
   17318349:
     template: Brae_Opo-Opo
-    at:       [749.012, 32.385, 121.421, 175]
+    region:   e_457
     level:    [79, 80]
   17318350:
     template: Brae_Opo-Opo
-    at:       [719.550, 32.000, 119.047, 200]
+    region:   e_462
     level:    [79, 80]
   17318351:
     template: Brae_Opo-Opo
-    at:       [603.013, 23.637, 114.197, 225]
+    region:   e_462
     level:    [79, 80]
   17318352:
     template: Ephemeral_Clionid
-    at:       [744.051, 25.103, 145.773, 100]
+    region:   e_462
     level:    [79, 83]
   17318353:
     template: Ephemeral_Limule
-    at:       [737.934, 31.535, 127.248]
+    region:   e_462
     level:    [79, 82]
   17318354:
     template: Hammering_Ram
@@ -3978,79 +3978,79 @@ spawns:
     level:    [79, 80]
   17318380:
     template: Irate_Sheep
-    at:       [442.121, 24.625, -182.191, 100]
+    region:   e_492
     level:    [79, 80]
   17318381:
     template: Irate_Sheep
-    at:       [429.117, 23.351, -166.543, 125]
+    region:   e_492
     level:    [79, 80]
   17318382:
     template: Irate_Sheep
-    at:       [426.303, 22.355, -163.254, 150]
+    region:   e_494
     level:    [79, 80]
   17318383:
     template: Irate_Sheep
-    at:       [429.579, 23.890, -184.096, 175]
+    region:   e_492
     level:    [79, 80]
   17318384:
     template: Irate_Sheep
-    at:       [413.672, 21.511, -183.839, 200]
+    region:   e_492
     level:    [79, 80]
   17318385:
     template: Irate_Sheep
-    at:       [405.325, 23.632, -204.299, 225]
+    region:   e_492
     level:    [79, 80]
   17318386:
     template: Irate_Sheep
-    at:       [387.726, 22.712, -132.982, 250]
+    region:   e_494
     level:    [79, 80]
   17318387:
     template: Irate_Sheep
-    at:       [352.717, 24.547, -138.227, 25]
+    region:   e_494
     level:    [79, 80]
   17318388:
     template: Irate_Sheep
-    at:       [319.167, 24.485, -134.466, 50]
+    region:   se_500
     level:    [79, 80]
   17318389:
     template: Irate_Sheep
-    at:       [325.399, 24.660, -143.365, 75]
+    region:   se_500
     level:    [79, 80]
   17318390:
     template: Irate_Sheep
-    at:       [357.000, 24.000, -110.000, 100]
+    region:   se_500
     level:    [79, 80]
   17318391:
     template: Irate_Sheep
-    at:       [345.000, 24.000, -75.000, 125]
+    region:   se_500
     level:    [79, 80]
   17318392:
     template: Irate_Sheep
-    at:       [387.000, 24.000, -79.000, 150]
+    region:   se_500
     level:    [79, 80]
   17318393:
     template: Irate_Sheep
-    at:       [427.000, 24.000, -114.000, 175]
+    region:   se_500
     level:    [79, 80]
   17318394:
     template: Irate_Sheep
-    at:       [473.000, 25.000, -131.000, 200]
+    region:   se_500
     level:    [79, 80]
   17318395:
     template: Irate_Sheep
-    at:       [507.000, 24.000, -123.000, 225]
+    region:   se_500
     level:    [79, 80]
   17318396:
     template: Irate_Sheep
-    at:       [522.000, 24.000, -177.000, 250]
+    region:   se_500
     level:    [79, 80]
   17318397:
     template: Irate_Sheep
-    at:       [486.000, 23.000, -229.000, 25]
+    region:   se_500
     level:    [79, 80]
   17318398:
     template: Irate_Sheep
-    at:       [409.000, 23.000, -225.000, 50]
+    region:   se_500
     level:    [79, 80]
   17318399:
     template: Irate_Sheep
@@ -4067,75 +4067,75 @@ spawns:
   17318402:
     template: Ephemeral_Limule_Small
     script:   Ephemeral_Limule
-    at:       [312.633, 23.540, -162.674, 150]
+    region:   e_514
     level:    [79, 82]
   17318403:
     template: Rock_Grinder
-    at:       [601.048, 24.000, -42.831, 25]
+    region:   e_515
     level:    [79, 80]
   17318404:
     template: Rock_Grinder
-    at:       [613.766, 25.848, -46.450, 50]
+    region:   e_515
     level:    [79, 80]
   17318405:
     template: Rock_Grinder
-    at:       [615.505, 25.834, -48.842, 75]
+    region:   e_515
     level:    [79, 80]
   17318406:
     template: Rock_Grinder
-    at:       [619.679, 27.485, -12.771, 100]
+    region:   e_515
     level:    [79, 80]
   17318407:
     template: Rock_Grinder
-    at:       [637.812, 32.000, -36.578, 125]
+    region:   e_515
     level:    [79, 80]
   17318408:
     template: Rock_Grinder
-    at:       [631.946, 31.480, -36.160, 150]
+    region:   e_515
     level:    [79, 80]
   17318409:
     template: Rock_Grinder
-    at:       [637.836, 32.506, -18.239, 175]
+    region:   e_515
     level:    [79, 80]
   17318410:
     template: Rock_Grinder
-    at:       [639.025, 32.045, -35.102, 200]
+    region:   e_522
     level:    [79, 80]
   17318411:
     template: Rock_Grinder
-    at:       [632.966, 31.923, -48.231, 225]
+    region:   e_522
     level:    [79, 80]
   17318412:
     template: Rock_Grinder
-    at:       [616.936, 25.456, -64.401, 250]
+    region:   e_522
     level:    [79, 80]
   17318413:
     template: Rock_Grinder
-    at:       [634.353, 29.583, -93.656, 25]
+    region:   e_522
     level:    [79, 80]
   17318414:
     template: Rock_Grinder
-    at:       [664.746, 31.732, -93.953, 50]
+    region:   e_522
     level:    [79, 80]
   17318415:
     template: Rock_Grinder
-    at:       [665.138, 31.184, -100.688, 75]
+    region:   e_522
     level:    [79, 80]
   17318416:
     template: Rock_Grinder
-    at:       [666.039, 30.361, -107.115, 100]
+    region:   e_522
     level:    [79, 80]
   17318417:
     template: Rock_Grinder
-    at:       [680.006, 32.000, -118.342, 125]
+    region:   e_515
     level:    [79, 80]
   17318418:
     template: Rock_Grinder
-    at:       [666.816, 29.936, -118.783, 150]
+    region:   e_522
     level:    [79, 80]
   17318419:
     template: Rock_Grinder
-    at:       [616.136, 24.078, -105.794, 175]
+    region:   e_531
     level:    [79, 80]
   17318420:
     template: Rock_Grinder
@@ -4143,24 +4143,24 @@ spawns:
     level:    [79, 80]
   17318421:
     template: Rock_Grinder
-    at:       [614.652, 24.250, -112.350, 225]
+    region:   e_515
     level:    [79, 80]
   17318422:
     template: Rock_Grinder
-    at:       [595.919, 24.361, -108.289, 250]
+    region:   e_515
     level:    [79, 80]
   17318423:
     template: Rock_Grinder
-    at:       [641.000, 24.000, -111.000, 25]
+    region:   e_535
     level:    [79, 80]
   17318424:
     template: Rock_Grinder
-    at:       [645.000, 32.000, -83.000, 50]
+    region:   e_535
     level:    [79, 80]
   17318425:
     template: Ephemeral_Clionid_XLarge
     script:   Ephemeral_Clionid
-    at:       [602.740, 24.121, -46.127, 100]
+    region:   e_537
     level:    [79, 83]
   17318426:
     template: Ruminator
@@ -4253,7 +4253,7 @@ spawns:
     level:    [85, 85]
   17318449:
     template: Mangy-tailed_Marvin
-    at:       [-525.941, -8.527, 210.483, 100]
+    region:   nw_75
     level:    [85, 85]
   17318450:
     template: Megamaw_Mikey
@@ -4261,23 +4261,23 @@ spawns:
     level:    [85, 85]
   17318451:
     template: Chasmic_Hornet
-    at:       [-288.485, -8.986, -32.260, 120]
+    region:   c_118
     level:    [85, 85]
   17318452:
     template: Piasa
-    at:       [-427.728, -7.523, 84.505, 100]
+    region:   w_113
     level:    [85, 85]
   17318453:
     template: Keesha_Poppo
-    at:       [671.895, 32.398, 110.392, 100]
+    region:   e_565
     level:    [85, 85]
   17318454:
     template: Irrlicht
-    at:       [-66.416, 2.036, -154.016, 150]
+    region:   c_566
     level:    [85, 85]
   17318455:
     template: Ovni
-    at:       [508.775, 40.361, 481.563, 100]
+    region:   ne_567
     level:    [85, 85]
   17318456:
     template: Briareus
@@ -4317,15 +4317,15 @@ spawns:
     script:   Sturdy_Pyxis
   17318466:
     template: Akash
-    at:       [-604.206, -0.172, 234.676, 25]
+    region:   nw_578
     level:    [79, 80]
   17318467:
     template: Akash
-    at:       [-282.836, -7.545, -29.908, 50]
+    region:   w_579
     level:    [79, 80]
   17318468:
     template: Akash
-    at:       [319.985, 40.006, 237.084, 75]
+    region:   s_580
     level:    [79, 80]
   17318469:
     template: Akash

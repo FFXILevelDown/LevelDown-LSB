@@ -66,11 +66,11 @@ if(WIN32)
         add_custom_command(TARGET copy_mariadb_dll_to_ext
             COMMAND ${CMAKE_COMMAND} -E copy
                 ${mariadb_BINARY_DIR}/libmariadb/${CMAKE_BUILD_TYPE}/libmariadb.lib
-                ${CMAKE_SOURCE_DIR}/ext/mariadb/${libpath}/libmariadb.lib
+                ${CMAKE_SOURCE_DIR}/ext/mariadb/lib64/libmariadb.lib
 
             COMMAND ${CMAKE_COMMAND} -E copy
                 ${mariadb_BINARY_DIR}/libmariadb/${CMAKE_BUILD_TYPE}/libmariadb.dll
-                ${CMAKE_SOURCE_DIR}/ext/mariadb/${libpath}/libmariadb.dll
+                ${CMAKE_SOURCE_DIR}/ext/mariadb/lib64/libmariadb.dll
 
             COMMAND ${CMAKE_COMMAND} -E copy_directory
                 ${mariadb_SOURCE_DIR}/include
@@ -83,28 +83,8 @@ if(WIN32)
     endif()
 endif()
 
-find_library(MARIADB_LIBRARY
-    NAMES
-        libmariadb64 mariadb64 libmysql64 mysql64 libmariadb mariadb libmysql mysql
-    PATHS
-        ${PROJECT_SOURCE_DIR}/ext/mariadb/${lib_dir}/
-        /usr/
-        /usr/bin/
-        /usr/include/
-        /usr/lib/
-        /usr/local/
-        /usr/local/bin/
-        /opt/)
-
-set(MARIADB_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/ext/mariadb/include/) # Only look internally
-
-include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(MariaDB DEFAULT_MSG MARIADB_LIBRARY MARIADB_INCLUDE_DIR)
-
-message(STATUS "MARIADB_FOUND: ${MARIADB_FOUND}")
-message(STATUS "MARIADB_LIBRARY: ${MARIADB_LIBRARY}")
-message(STATUS "MARIADB_INCLUDE_DIR: ${MARIADB_INCLUDE_DIR}")
-
-add_library(mariadbclient INTERFACE)
-target_link_libraries(mariadbclient INTERFACE ${MARIADB_LIBRARY})
-target_include_directories(mariadbclient SYSTEM INTERFACE ${MARIADB_INCLUDE_DIR})
+xi_find_bundled_library(MariaDB MARIADB mariadbclient
+    NAMES libmariadb64 mariadb64 libmysql64 mysql64 libmariadb mariadb libmysql mysql
+    LIBRARY_DIR mariadb
+    INCLUDE_DIR ext/mariadb/include
+)

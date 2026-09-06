@@ -1,12 +1,21 @@
-# add_subdirectory(lua) # Handled globally
-# add_subdirectory(mariadb) # Handled globally
-# add_subdirectory(zmq) # Handled globally
-# add_subdirectory(openssl) # Handled globally
+# luajit, mariadb, zmq and openssl are prebuilt; cmake/Find*.cmake turns them into targets.
 add_subdirectory(concurrentqueue)
 add_subdirectory(SPSCQueue)
 add_subdirectory(sol)
 
-# CPM Modules
+CPMAddPackage(
+    NAME ZLIB
+    GITHUB_REPOSITORY madler/zlib
+    GIT_TAG v1.3.1
+    OPTIONS "ZLIB_BUILD_EXAMPLES OFF"
+) # defines: zlibstatic, for the compressed ximesh files
+
+CPMAddPackage(
+    NAME utfcpp
+    GITHUB_REPOSITORY nemtrif/utfcpp
+    GIT_TAG v4.0.8
+) # defines: utf8cpp
+
 if(TRACY_ENABLE)
     # Tracy version tag, without the leading 'v'
     set(TRACY_VERSION 0.14.0)
@@ -179,6 +188,7 @@ CPMAddPackage(
     OPTIONS
         "HTTPLIB_REQUIRE_ZLIB OFF"
         "HTTPLIB_USE_ZLIB_IF_AVAILABLE OFF"
+        "HTTPLIB_USE_OPENSSL_IF_AVAILABLE OFF"
 ) # defines: httplib::httplib
 
 CPMAddPackage(
@@ -221,36 +231,8 @@ if(asio_ADDED)
     target_link_libraries(asio INTERFACE Threads::Threads)
 
     if(WIN32)
-        # macro see @ https://stackoverflow.com/a/40217291/1746503
-        macro(get_win32_winnt version)
-            if(CMAKE_SYSTEM_VERSION)
-                set(ver ${CMAKE_SYSTEM_VERSION})
-                string(REGEX MATCH "^([0-9]+).([0-9])" ver ${ver})
-                string(REGEX MATCH "^([0-9]+)" verMajor ${ver})
-
-                # Check for Windows 10, b/c we'll need to convert to hex 'A'.
-                if("${verMajor}" MATCHES "10")
-                    set(verMajor "A")
-                    string(REGEX REPLACE "^([0-9]+)" ${verMajor} ver ${ver})
-                endif("${verMajor}" MATCHES "10")
-
-                # Remove all remaining '.' characters.
-                string(REPLACE "." "" ver ${ver})
-
-                # Prepend each digit with a zero.
-                string(REGEX REPLACE "([0-9A-Z])" "0\\1" ver ${ver})
-                set(${version} "0x${ver}")
-            endif()
-        endmacro()
-
-        if(NOT DEFINED _WIN32_WINNT)
-            get_win32_winnt(ver)
-            set(_WIN32_WINNT ${ver})
-        endif()
-
-        message(STATUS "Set _WIN32_WINNET=${_WIN32_WINNT}")
-
-        target_compile_definitions(asio INTERFACE _WIN32_WINNT=${_WIN32_WINNT})
+        # Without this asio targets Windows XP. Windows 10 is the oldest we run on.
+        target_compile_definitions(asio INTERFACE _WIN32_WINNT=0x0A00)
     endif()
 endif()
 
@@ -317,7 +299,7 @@ CPMAddPackage(
 set(CPPTRACE_SYMBOL_OPTIONS "")
 if(APPLE)
     # macOS binaries carry a "debug map" pointing at the .o files rather than embedded DWARF;
-    # atos resolves against the staged .dSYM (see set_target_output_directory) and is fast.
+    # atos resolves against the staged .dSYM (see xi_stage_in_repo_root) and is fast.
     list(APPEND CPPTRACE_SYMBOL_OPTIONS
         "CPPTRACE_GET_SYMBOLS_WITH_LIBDWARF OFF"
         "CPPTRACE_GET_SYMBOLS_WITH_ADDR2LINE ON"
@@ -339,6 +321,9 @@ CPMAddPackage(
     SYSTEM ON
     OPTIONS
         ${CPPTRACE_SYMBOL_OPTIONS}
+        # We link cpptrace::cpptrace, never its module target, and that target is the
+        # only thing in the build requiring Ninja 1.11+ or barring Unix Makefiles.
+        "CPPTRACE_DISABLE_CXX_20_MODULES ON"
 ) # defines: cpptrace::cpptrace
 
 set(SHARED_EXTERNAL_LIBS
@@ -347,6 +332,10 @@ set(SHARED_EXTERNAL_LIBS
     concurrentqueue
     spscqueue
     mariadbclient
+    zeromq
+    luajit
+    libcrypto
+    libssl
     sol2_single
     argparse
     efsw
@@ -400,36 +389,7 @@ set(TEST_ONLY_EXTERNAL_LIBS
     nlohmann_json::nlohmann_json
 )
 
-#
 # copy external lib lists to parent scope
-#
-
-set(SHARED_EXTERNAL_LIBS
-    ${SHARED_EXTERNAL_LIBS}
-    PARENT_SCOPE
-)
-
-set(CONNECT_ONLY_EXTERNAL_LIBS
-    ${CONNECT_ONLY_EXTERNAL_LIBS}
-    PARENT_SCOPE
-)
-
-set(MAP_ONLY_EXTERNAL_LIBS
-    ${MAP_ONLY_EXTERNAL_LIBS}
-    PARENT_SCOPE
-)
-
-set(SEARCH_ONLY_EXTERNAL_LIBS
-    ${SEARCH_ONLY_EXTERNAL_LIBS}
-    PARENT_SCOPE
-)
-
-set(WORLD_ONLY_EXTERNAL_LIBS
-    ${WORLD_ONLY_EXTERNAL_LIBS}
-    PARENT_SCOPE
-)
-
-set(TEST_ONLY_EXTERNAL_LIBS
-    ${TEST_ONLY_EXTERNAL_LIBS}
-    PARENT_SCOPE
-)
+foreach(list SHARED CONNECT_ONLY MAP_ONLY SEARCH_ONLY WORLD_ONLY TEST_ONLY)
+    set(${list}_EXTERNAL_LIBS ${${list}_EXTERNAL_LIBS} PARENT_SCOPE)
+endforeach()

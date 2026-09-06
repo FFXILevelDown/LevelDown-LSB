@@ -29,16 +29,17 @@ _(click to expand sections)_
 
 ```ps
 git clone --recursive https://github.com/LandSandBoat/server.git
-py -3 -m pip install -r server/tools/requirements.txt
-cp server/settings/default/* server/settings
+cd server
+py -3 -m pip install -r tools/requirements.txt
+cp settings/default/* settings/
 ```
 
-* Edit the file `network.lua` inside `server\settings\` and set `SQL_PASSWORD` to the root password you set during MariaDB setup.
+* Edit the file `network.lua` inside `settings\` and set `SQL_PASSWORD` to the root password you set during MariaDB setup.
   * Leave `SQL_LOGIN` as `'root'` and `SQL_DATABASE` as `'xidb'`.
   * Keep the quotation marks around the password!
-* Edit the file `main.lua` inside `server\settings\` with your desired settings for your server.
+* Edit the file `main.lua` inside `settings\` with your desired settings for your server.
   * Keep the quotation marks around any value that already has them.
-* Back in your PowerShell window, navigate to `server\` and build the database:
+* Prepare the database using `dbtool`:
 
 ```ps
 py -3 ./tools/dbtool.py
@@ -79,6 +80,11 @@ o------------------------------------------o
 
 * An extra `e. Express Update` entry appears at the top of the menu when an express update is available for your database version.
 * You can exit out of `dbtool` now with `q`.
+You can build from Visual Studio or from the command line. Both read the same `CMakePresets.json`, so they produce the same thing and you can switch between them freely.
+
+<details>
+<summary><b>Visual Studio</b></summary>
+
 * Open the `server` root folder in Visual Studio 2026.
   * `Open a local folder` on the splash screen.
   * Make sure VS has administrator priviledges so it can fetch all the data it needs.
@@ -87,12 +93,42 @@ o------------------------------------------o
 
 ⚠️ **Check the configuration dropdown near the top of the window before you build.** Visual Studio often selects a `Debug` configuration by default. A `Debug` build of the map server is many times slower than an optimized one. Slow enough that it becomes painful to use. Only build `Debug` when you are chasing a serious problem and need the full debug information.
 
-* Set the dropdown to `Default (RelWithDebInfo)`.
+* Set the build configuration to `RelWithDebInfo`.
   * This is suitable for daily use.
+* When changed this might trigger another re-configure. Wait for that to finish.
 * In the top toolbar, select `Build > Build All`.
   * This may take a little while!
 * You should eventually see `Build All succeeded.`.
-  * Congratulations, you've built the server! You can now go onto [Next Steps](#next-steps).
+
+<img width="470" height="428" alt="Image" src="https://github.com/user-attachments/assets/add6c55e-4d21-4b3e-867f-fc46b4b7c0a3" />
+
+</details>
+
+<details>
+<summary><b>Command line</b></summary>
+
+`build.py` works from any shell: when `cl.exe` is not on `PATH` it finds Visual Studio and enters its developer environment itself. If you run `cmake` by hand instead, use a **Developer PowerShell for VS 2026**, or CMake picks whichever compiler it can find, which may not be MSVC at all.
+
+From inside `server`:
+
+```ps
+py -3 .\tools\build.py
+```
+
+`build.py` configures and builds with the `default` preset, which is `RelWithDebInfo`. That is the configuration you want for everyday use. Pass `--preset debug` only when you are chasing a serious problem.
+
+It is a thin wrapper around these two commands, which you can run yourself instead:
+
+```ps
+cmake --preset default
+cmake --build --preset default
+```
+
+</details>
+
+Congratulations, you've built the server! You can now go onto [Next Steps](#next-steps).
+
+The other presets are listed in [Build Troubleshooting](Build-Troubleshooting#the-presets).
 
 ## To Update
 
@@ -119,12 +155,10 @@ git stash pop
 py -3 ./tools/dbtool.py update
 ```
 
-* Open the `server` root folder in Visual Studio 2026.
-  * CMake _may_ reconfigure, wait for it to complete like before.
-  * Check the configuration dropdown again. You'll still want to use `Default (RelWithDebInfo)`.
-* In the top toolbar, select `Build > Build All`.
-  * This may take a little while if you have a weaker machine.
-* You should eventually see `Build All succeeded.`.
+* Build again, the same way you did the first time:
+  * **Visual Studio:** open the `server` root folder. CMake _may_ reconfigure, wait for it to complete like before. Check the configuration dropdown again, you'll still want `Default (RelWithDebInfo)`. Then `Build > Build All`.
+  * **Command line:** `py -3 .\tools\build.py`
+* This may take a little while if you have a weaker machine.
 
 </details>
 
@@ -145,7 +179,7 @@ NOTE: We try to keep up to date with whatever the latest LTS release of Ubuntu i
 
 ```sh
 sudo apt update
-sudo apt install git python3 python3-pip g++-15 cmake make pkg-config libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev libzstd-dev libdwarf-dev mariadb-server libmariadb-dev-compat binutils-dev
+sudo apt install git python3 python3-pip g++-15 cmake ninja-build pkg-config libluajit-5.1-dev libzmq3-dev libssl-dev zlib1g-dev libzstd-dev libdwarf-dev mariadb-server libmariadb-dev-compat binutils-dev
 ```
 
 * The project needs a compiler with C++23 support and CMake 3.25 or newer. Our CI builds with `g++-15` and `clang-22`. If your distribution only offers an older `g++`, expect build failures.
@@ -154,8 +188,9 @@ sudo apt install git python3 python3-pip g++-15 cmake make pkg-config libluajit-
 
 ```sh
 git clone --recursive https://github.com/LandSandBoat/server.git
-pip3 install -r server/tools/requirements.txt
-cp server/settings/default/* server/settings
+cd server
+pip3 install -r tools/requirements.txt
+cp settings/default/* settings/
 ```
 
 * Run the following script to improve database security:
@@ -170,9 +205,9 @@ sudo mysql_secure_installation
 sudo mysql -u root -p -e "CREATE USER 'xi'@'localhost' IDENTIFIED BY 'password';CREATE DATABASE xidb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;USE xidb;GRANT ALL PRIVILEGES ON xidb.* TO 'xi'@'localhost';"
 ```
 
-* Edit the file `network.lua` inside `server/settings/` and change the `SQL_LOGIN`, `SQL_PASSWORD`, and `SQL_DATABASE` to the login, password, and database you used in the above command (default xi, password, xidb).
+* Edit the file `network.lua` inside `settings/` and change the `SQL_LOGIN`, `SQL_PASSWORD`, and `SQL_DATABASE` to the login, password, and database you used in the above command (default xi, password, xidb).
   * Make sure to include the quotation marks!
-* Edit the file `main.lua` inside `server/settings` with your desired settings for your server.
+* Edit the file `main.lua` inside `settings/` with your desired settings for your server.
   * Keep the quotation marks around any value that already has them.
 * In the `server` directory, build the executables:
 
@@ -313,7 +348,7 @@ Some users have had success building and running on Arch. We can't and won't sup
 
 ```sh
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm git python python-pip gcc cmake make pkgconf luajit zeromq openssl zlib zstd libdwarf mariadb binutils
+sudo pacman -S --noconfirm git python python-pip gcc cmake ninja pkgconf luajit zeromq openssl zlib zstd libdwarf mariadb binutils
 sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
@@ -322,9 +357,11 @@ sudo systemctl start mariadb
 Install the Python requirements. Arch marks its system Python as externally managed, so use a virtual environment:
 
 ```sh
+git clone --recursive https://github.com/LandSandBoat/server.git
+cd server
 python -m venv .venv
 source .venv/bin/activate
-pip install -r server/tools/requirements.txt
+pip install -r tools/requirements.txt
 ```
 
 Then build as described in the Ubuntu section:
@@ -381,13 +418,14 @@ sudo emerge --sync && emerge -avuDU @world
 ```
 Emerge the following packages and their dependencies: 
 ```sh
-sudo emerge -a dev-db/mariadb dev-lang/luajit dev-vcs/git net-libs/zeromq
+sudo emerge -a dev-build/cmake dev-build/ninja dev-db/mariadb dev-lang/luajit dev-vcs/git net-libs/zeromq
 ```
 Clone the repo in your folder of choice, then copy the settings files:
 ```sh
 cd ~/ && mkdir git && cd ~/git 
 git clone --recursive https://github.com/LandSandBoat/server.git
-cp server/settings/default/* server/settings
+cd server
+cp settings/default/* settings/
 ```
 MariaDB will need to be configured and the database initialized before the service can be started. If you have issues, or are using Systemd instead of OpenRC, refer to the [Gentoo Wiki](https://wiki.gentoo.org/wiki/MariaDB).
 ```sh
@@ -405,7 +443,7 @@ Now we can emerge all the necessary packages for dbtool:
 sudo emerge -a dev-python/black dev-python/colorama dev-python/GitPython dev-python/mariadb dev-python/pylint dev-python/pyyaml dev-python/pyzmq dev-python/regex
 ```
 
-⚠️ **This list is incomplete.** `server/tools/requirements.txt` is the source of truth, and it has grown since this section was written. At the time of writing it also needs `ruamel.yaml`, `requests`, `bcrypt`, `jinja2`, and `jsonschema`. Without them `dbtool` fails on import.
+⚠️ **This list is incomplete.** `tools/requirements.txt` is the source of truth, and it has grown since this section was written. At the time of writing it also needs `ruamel.yaml`, `requests`, `bcrypt`, `jinja2`, and `jsonschema`. Without them `dbtool` fails on import.
 
 Check `requirements.txt` yourself and emerge the matching `dev-python/*` atoms. Portage atom names do not always match the PyPI name, so search with `emerge -s` if an obvious guess fails.
 Additionally, you will also need to emerge the below packages if you wish to use [pydarkstar](https://github.com/AdamGagorik/pydarkstar) as an automated auction house:

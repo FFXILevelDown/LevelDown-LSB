@@ -3310,197 +3310,197 @@ spawns:
   17170433:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-419.423, -8.129, -652.164, 209]
+    region:   sw_1
     level:    [27, 30]
   17170434:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-421.243, -7.268, -658.499, 69]
+    region:   sw_1
     level:    [27, 30]
   17170435:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-403.598, -11.915, -648.517, 29]
+    region:   sw_1
     level:    [26, 28]
   17170436:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-463.972, -3.805, -636.955, 105]
+    region:   sw_1
     level:    [26, 28]
   17170437:
     template: Lycopodium
-    at:       [-450.666, -4.670, -654.805, 17]
+    region:   sw_1
     level:    [22, 25]
   17170438:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-502.331, -14.640, -566.153, 50]
+    region:   sw_6
     level:    [26, 28]
   17170439:
     template: Lycopodium
-    at:       [-516.055, -11.186, -567.890, 81]
+    region:   sw_6
     level:    [22, 25]
   17170440:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-444.778, -20.722, -515.256, 190]
+    region:   sw_8
     level:    [27, 30]
   17170441:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-451.221, -21.456, -532.705, 86]
+    region:   sw_8
     level:    [27, 30]
   17170442:
     template: Lycopodium
-    at:       [-259.898, -48.925, -275.982, 198]
+    region:   sw_8
     level:    [22, 25]
   17170443:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-495.222, -31.630, -433.019, 34]
+    region:   sw_11
     level:    [27, 30]
   17170444:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-480.338, -21.576, -469.339, 170]
+    region:   sw_11
     level:    [27, 30]
   17170445:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-488.174, -26.293, -456.112, 1]
+    region:   sw_11
     level:    [26, 28]
   17170446:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-484.335, -30.426, -428.191, 69]
+    region:   sw_11
     level:    [26, 28]
   17170447:
     template: Lycopodium
-    at:       [-244.776, -62.110, -227.036, 43]
+    region:   sw_11
     level:    [22, 25]
   17170448:
     template: Lycopodium
-    at:       [-502.285, -31.031, -450.089, 156]
+    region:   sw_11
     level:    [22, 25]
   17170449:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-513.490, -36.438, -414.588, 24]
+    region:   sw_17
     level:    [27, 30]
   17170450:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-506.617, -36.304, -411.809, 94]
+    region:   sw_17
     level:    [26, 28]
   17170451:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-502.142, -36.040, -405.333, 216]
+    region:   sw_17
     level:    [26, 28]
   17170452:
     template: Lycopodium
-    at:       [-500.593, -35.641, -413.933, 179]
+    region:   sw_17
     level:    [22, 25]
   17170453:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-286.517, -44.259, -281.878, 30]
+    region:   sw_21
     level:    [27, 30]
   17170454:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-242.188, -54.572, -267.227, 60]
+    region:   sw_21
     level:    [27, 30]
   17170455:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-220.362, -63.674, -248.687, 49]
+    region:   sw_21
     level:    [27, 30]
   17170456:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-284.076, -42.193, -293.562, 43]
+    region:   sw_21
     level:    [26, 28]
   17170457:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-263.440, -56.747, -238.054, 87]
+    region:   sw_21
     level:    [26, 28]
   17170458:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-315.745, -37.098, -281.627, 138]
+    region:   sw_21
     level:    [26, 28]
   17170459:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-289.887, -43.092, -278.540, 98]
+    region:   sw_21
     level:    [26, 28]
   17170460:
     template: Lycopodium
-    at:       [-289.390, -42.591, -281.366, 11]
+    region:   sw_28
     level:    [22, 25]
   17170461:
     template: Lycopodium
-    at:       [-203.663, -68.241, -220.451, 16]
+    region:   sw_28
     level:    [22, 25]
   17170462:
     template: Lycopodium
-    at:       [-305.469, -36.334, -304.096, 37]
+    region:   sw_28
     level:    [22, 25]
   17170463:
     template: Lycopodium
-    at:       [-204.253, -68.255, -218.729, 152]
+    region:   sw_28
     level:    [22, 25]
   17170464:
     template: Lycopodium
-    at:       [-290.487, -38.043, -302.706, 72]
+    region:   sw_28
     level:    [22, 25]
   17170465:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-65.825, -68.521, -269.005, 167]
+    region:   sw_33
     level:    [26, 28]
   17170466:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-66.272, -68.019, -276.124, 20]
+    region:   sw_33
     level:    [26, 28]
   17170467:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-76.198, -67.655, -261.200, 157]
+    region:   sw_33
     level:    [26, 28]
   17170468:
     template: Lycopodium
-    at:       [-86.962, -68.299, -253.635, 135]
+    region:   sw_33
     level:    [22, 25]
   17170469:
     template: Lycopodium
-    at:       [-67.840, -68.039, -274.753, 20]
+    region:   sw_33
     level:    [22, 25]
   17170470:
     template: Lycopodium
-    at:       [-209.216, -68.118, -210.771, 29]
+    region:   sw_33
     level:    [22, 25]
   17170471:
     template: Lycopodium
-    at:       [-91.525, -68.537, -229.214, 247]
+    region:   sw_33
     level:    [22, 25]
   17170472:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [20.395, -68.306, -248.278, 222]
+    region:   s_40
     level:    [27, 30]
   17170473:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-1.954, -68.105, -259.336, 249]
+    region:   s_40
     level:    [27, 30]
   17170474:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [21.637, -68.108, -245.976, 224]
+    region:   s_40
     level:    [27, 30]
   17170475:
     template: Ratatoskr
@@ -3508,104 +3508,104 @@ spawns:
     level:    [55, 58]
   17170476:
     template: Lycopodium
-    at:       [12.340, -68.014, -318.346, 129]
+    region:   s_44
     level:    [22, 25]
   17170477:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-0.493, -68.250, -311.578, 160]
+    region:   s_44
     level:    [27, 30]
   17170478:
     template: Vorpal_Bunny_past
     script:   Vorpal_Bunny
-    at:       [-2.155, -68.282, -310.412, 158]
+    region:   s_44
     level:    [27, 30]
   17170479:
     template: Lycopodium
-    at:       [-5.686, -67.993, -295.534, 87]
+    region:   s_44
     level:    [22, 25]
   17170480:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [82.791, -60.574, -322.359, 54]
+    region:   s_48
     level:    [26, 28]
   17170481:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [74.939, -60.674, -321.108, 61]
+    region:   s_48
     level:    [26, 28]
   17170482:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [61.347, -64.384, -323.718, 147]
+    region:   s_48
     level:    [26, 28]
   17170483:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [78.688, -60.690, -315.539, 241]
+    region:   s_48
     level:    [33, 37]
   17170484:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [72.022, -60.507, -317.727, 234]
+    region:   s_48
     level:    [33, 37]
   17170485:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [116.807, -53.556, -249.343, 70]
+    region:   c_53
     level:    [33, 37]
   17170486:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [161.741, -60.354, -131.865, 181]
+    region:   c_53
     level:    [33, 37]
   17170487:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [160.491, -60.171, -205.278, 59]
+    region:   c_53
     level:    [33, 37]
   17170488:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [171.871, -59.968, -130.144, 37]
+    region:   c_53
     level:    [33, 37]
   17170489:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [201.759, -47.831, -100.698, 77]
+    region:   c_53
     level:    [33, 37]
   17170490:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [229.321, -45.098, -110.525, 135]
+    region:   c_53
     level:    [33, 37]
   17170491:
     template: Rafflesia
-    at:       [178.153, -58.839, -196.007, 205]
+    region:   c_53
     level:    [59, 62]
   17170492:
     template: Rafflesia
-    at:       [196.082, -60.286, -166.959, 16]
+    region:   c_53
     level:    [59, 62]
   17170493:
     template: Rafflesia
-    at:       [178.929, -60.108, -133.860, 155]
+    region:   c_53
     level:    [59, 62]
   17170494:
     template: Rafflesia
-    at:       [165.083, -60.324, -155.665, 156]
+    region:   c_53
     level:    [59, 62]
   17170495:
     template: Rafflesia
-    at:       [164.570, -60.148, -150.337, 95]
+    region:   c_53
     level:    [59, 62]
   17170496:
     template: Rafflesia
-    at:       [155.881, -59.505, -208.563, 116]
+    region:   c_53
     level:    [59, 62]
   17170497:
     template: Rafflesia
-    at:       [219.018, -28.927, -4.983, 217]
+    region:   c_65
     level:    [59, 62]
   17170498:
     template: Rafflesia
@@ -3613,319 +3613,319 @@ spawns:
     level:    [59, 62]
   17170499:
     template: Kirtimukha
-    at:       [24.010, -67.138, -240.132, 149]
+    region:   c_53
     level:    [65, 65]
   17170500:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [203.354, -57.809, -144.815, 164]
+    region:   c_53
     level:    [33, 37]
   17170501:
     template: Air_Elemental
-    at:       [155.434, -60.525, -174.608, 222]
+    region:   c_53
     level:    [60, 60]
   17170502:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [197.901, -28.957, 31.596, 165]
+    region:   c_65
     level:    [33, 37]
   17170503:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [210.161, -32.259, -10.780, 109]
+    region:   c_65
     level:    [33, 37]
   17170504:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [177.346, -37.784, -2.238, 177]
+    region:   c_65
     level:    [33, 37]
   17170505:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [209.284, -28.942, -0.936, 148]
+    region:   c_65
     level:    [33, 37]
   17170506:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [181.928, -33.817, 10.288, 221]
+    region:   c_65
     level:    [33, 37]
   17170507:
     template: Rafflesia
-    at:       [173.659, -39.113, 30.356, 119]
+    region:   c_65
     level:    [59, 62]
   17170508:
     template: Rafflesia
-    at:       [186.324, -43.766, -30.791, 123]
+    region:   c_65
     level:    [59, 62]
   17170509:
     template: Rafflesia
-    at:       [210.554, -38.347, -25.037, 71]
+    region:   c_65
     level:    [59, 62]
   17170510:
     template: Rafflesia
-    at:       [181.465, -35.438, -5.819, 126]
+    region:   c_65
     level:    [59, 62]
   17170511:
     template: Rafflesia
-    at:       [175.276, -38.289, 3.899, 239]
+    region:   c_65
     level:    [59, 62]
   17170512:
     template: Rafflesia
-    at:       [209.811, -38.863, -26.733, 116]
+    region:   c_65
     level:    [59, 62]
   17170513:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [242.601, -21.001, 33.448, 134]
+    region:   c_81
     level:    [33, 37]
   17170514:
     template: Rafflesia
-    at:       [264.718, -20.098, 43.656, 247]
+    region:   c_81
     level:    [59, 62]
   17170515:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [263.736, -28.359, -10.053, 13]
+    region:   c_83
     level:    [33, 37]
   17170516:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [238.650, -28.290, -26.807, 118]
+    region:   c_83
     level:    [33, 37]
   17170517:
     template: Rafflesia
-    at:       [275.243, -28.574, -6.248, 236]
+    region:   c_83
     level:    [59, 62]
   17170518:
     template: Rafflesia
-    at:       [248.098, -27.746, -25.221, 61]
+    region:   c_83
     level:    [59, 62]
   17170519:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [235.410, -30.222, -49.942, 53]
+    region:   c_87
     level:    [33, 37]
   17170520:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [221.608, -35.175, -44.526, 96]
+    region:   c_87
     level:    [33, 37]
   17170521:
     template: Rafflesia
-    at:       [221.763, -37.106, -51.597, 6]
+    region:   c_87
     level:    [59, 62]
   17170522:
     template: Rafflesia
-    at:       [212.716, -42.188, -50.447, 83]
+    region:   c_87
     level:    [59, 62]
   17170523:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [185.722, -33.511, 36.658, 215]
+    region:   c_91
     level:    [33, 37]
   17170524:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [199.242, -28.799, 39.991, 196]
+    region:   c_91
     level:    [33, 37]
   17170525:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-410.027, -38.150, 62.128, 37]
+    region:   w_93
     level:    [33, 37]
   17170526:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-429.764, -32.774, 61.745, 169]
+    region:   w_93
     level:    [33, 37]
   17170527:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-416.424, -39.790, 51.262, 149]
+    region:   w_93
     level:    [33, 37]
   17170528:
     template: Rafflesia
-    at:       [-419.321, -37.844, 56.985, 61]
+    region:   w_93
     level:    [59, 62]
   17170529:
     template: Rafflesia
-    at:       [-359.887, -53.397, 31.140, 203]
+    region:   w_93
     level:    [59, 62]
   17170530:
     template: Rafflesia
-    at:       [-366.315, -53.553, 26.279, 19]
+    region:   w_93
     level:    [59, 62]
   17170531:
     template: Rafflesia
-    at:       [93.386, -42.880, 128.710, 60]
+    region:   c_99
     level:    [59, 62]
   17170532:
     template: Rafflesia
-    at:       [121.630, -42.610, 147.435, 56]
+    region:   c_99
     level:    [59, 62]
   17170533:
     template: Rafflesia
-    at:       [102.639, -48.415, 159.086, 145]
+    region:   c_99
     level:    [59, 62]
   17170534:
     template: Rafflesia
-    at:       [93.886, -50.035, 154.297, 31]
+    region:   c_99
     level:    [59, 62]
   17170535:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [111.923, -45.373, 166.967, 234]
+    region:   c_99
     level:    [33, 37]
   17170536:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [114.660, -43.787, 172.123, 66]
+    region:   c_99
     level:    [33, 37]
   17170537:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [110.638, -44.799, 156.084, 177]
+    region:   c_99
     level:    [33, 37]
   17170538:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [37.793, -51.878, 221.342, 188]
+    region:   c_106
     level:    [33, 37]
   17170539:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [38.824, -52.476, 210.061, 218]
+    region:   c_106
     level:    [33, 37]
   17170540:
     template: Rafflesia
-    at:       [35.475, -52.257, 233.399, 204]
+    region:   c_106
     level:    [59, 62]
   17170541:
     template: Rafflesia
-    at:       [26.054, -52.315, 244.923, 167]
+    region:   c_106
     level:    [59, 62]
   17170542:
     template: Rafflesia
-    at:       [26.664, -52.373, 227.370, 58]
+    region:   c_106
     level:    [59, 62]
   17170543:
     template: Rafflesia
-    at:       [-143.869, -60.070, 284.510, 227]
+    region:   w_111
     level:    [59, 62]
   17170544:
     template: Rafflesia
-    at:       [-134.979, -61.607, 248.793, 218]
+    region:   w_111
     level:    [59, 62]
   17170545:
     template: Rafflesia
-    at:       [-134.557, -61.374, 248.358, 154]
+    region:   w_111
     level:    [59, 62]
   17170546:
     template: Rafflesia
-    at:       [-191.891, -68.303, 240.320, 115]
+    region:   w_111
     level:    [59, 62]
   17170547:
     template: Rafflesia
-    at:       [-134.355, -61.159, 251.906, 92]
+    region:   w_111
     level:    [59, 62]
   17170548:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-164.737, -60.142, 288.859, 173]
+    region:   w_111
     level:    [33, 37]
   17170549:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-188.448, -64.360, 259.469, 29]
+    region:   w_111
     level:    [33, 37]
   17170550:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-131.810, -62.254, 238.193, 128]
+    region:   w_111
     level:    [33, 37]
   17170551:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-187.399, -68.151, 235.486, 146]
+    region:   w_111
     level:    [33, 37]
   17170552:
     template: Rafflesia
-    at:       [-285.926, -47.741, 302.809, 78]
+    region:   w_120
     level:    [59, 62]
   17170553:
     template: Rafflesia
-    at:       [-294.137, -53.347, 289.085, 104]
+    region:   w_120
     level:    [59, 62]
   17170554:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-289.623, -53.733, 280.581, 235]
+    region:   w_120
     level:    [33, 37]
   17170555:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-317.364, -62.885, 264.317, 7]
+    region:   w_120
     level:    [33, 37]
   17170556:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-308.015, -53.840, 397.424, 132]
+    region:   nw_124
     level:    [33, 37]
   17170557:
     template: Rafflesia
-    at:       [-120.287, -48.408, 421.843, 86]
+    region:   nw_125
     level:    [59, 62]
   17170558:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-131.432, -54.440, 402.608, 119]
+    region:   nw_125
     level:    [33, 37]
   17170559:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [-124.925, -53.060, 403.745, 93]
+    region:   nw_125
     level:    [33, 37]
   17170560:
     template: Jumbo_Rafflesia
-    at:       [-174.761, -35.743, 597.956, 133]
+    region:   nw_128
     level:    [65, 69]
   17170561:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-169.295, -36.505, 602.426, 42]
+    region:   nw_128
     level:    [55, 60]
   17170562:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-170.059, -36.910, 620.064, 54]
+    region:   nw_128
     level:    [55, 60]
   17170563:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [47.823, -29.263, 608.374, 236]
+    region:   n_131
     level:    [55, 60]
   17170564:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [44.326, -29.135, 595.533, 209]
+    region:   n_131
     level:    [55, 60]
   17170565:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-81.543, -36.314, 725.735, 159]
+    region:   n_133
     level:    [55, 60]
   17170566:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-78.232, -36.510, 761.273, 169]
+    region:   n_133
     level:    [55, 60]
   17170567:
     template: Jumbo_Rafflesia
-    at:       [-83.107, -35.799, 737.944, 168]
+    region:   n_133
     level:    [65, 69]
   17170568:
     template: Jumbo_Rafflesia
-    at:       [-43.884, -33.177, 743.401, 160]
+    region:   n_133
     level:    [65, 69]
   17170569:
     template: Demoiselle_Desolee
@@ -3934,309 +3934,309 @@ spawns:
   17170570:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-83.752, -31.126, 695.961, 42]
+    region:   nw_138
     level:    [55, 60]
   17170571:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-117.706, -36.482, 723.693, 178]
+    region:   nw_138
     level:    [55, 60]
   17170572:
     template: Jumbo_Rafflesia
-    at:       [-121.658, -36.430, 684.315, 80]
+    region:   nw_138
     level:    [65, 69]
   17170573:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-40.408, -27.579, 653.493, 222]
+    region:   n_141
     level:    [55, 60]
   17170574:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-36.602, -27.888, 660.571, 201]
+    region:   n_141
     level:    [55, 60]
   17170575:
     template: Jumbo_Rafflesia
-    at:       [-69.595, -26.985, 665.885, 99]
+    region:   n_141
     level:    [65, 69]
   17170576:
     template: Jumbo_Rafflesia
-    at:       [-50.078, -28.498, 660.275, 86]
+    region:   n_141
     level:    [65, 69]
   17170577:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-51.734, -28.457, 686.549, 127]
+    region:   n_145
     level:    [55, 60]
   17170578:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-43.530, -28.482, 686.450, 76]
+    region:   n_145
     level:    [55, 60]
   17170579:
     template: Jumbo_Rafflesia
-    at:       [-54.580, -28.457, 688.838, 62]
+    region:   n_145
     level:    [65, 69]
   17170580:
     template: Jumbo_Rafflesia
-    at:       [-31.158, -28.454, 695.038, 2]
+    region:   n_145
     level:    [65, 69]
   17170581:
     template: Dragonfly_MMS_FKNS
     script:   Dragonfly
-    at:       [-16.030, -27.664, 692.466, 193]
+    region:   n_149
     level:    [55, 60]
   17170582:
     template: Jumbo_Rafflesia
-    at:       [-20.799, -27.810, 690.226, 112]
+    region:   n_149
     level:    [65, 69]
   17170583:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-81.482, -36.511, 556.176, 161]
+    region:   n_151
     level:    [40, 43]
   17170584:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-95.632, -36.028, 558.644, 160]
+    region:   n_151
     level:    [40, 43]
   17170585:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-74.257, -36.412, 546.695, 242]
+    region:   n_151
     level:    [40, 43]
   17170586:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-48.189, -29.460, 537.680, 59]
+    region:   n_154
     level:    [40, 43]
   17170587:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-31.044, -28.125, 537.238, 135]
+    region:   n_154
     level:    [40, 43]
   17170588:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-47.910, -29.481, 537.364, 67]
+    region:   n_154
     level:    [40, 43]
   17170589:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [-4.868, -28.358, 517.971, 246]
+    region:   n_157
     level:    [40, 43]
   17170590:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [27.818, -28.272, 472.476, 34]
+    region:   n_157
     level:    [40, 43]
   17170591:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [24.922, -28.542, 510.220, 24]
+    region:   n_157
     level:    [40, 43]
   17170592:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [15.136, -27.934, 516.989, 230]
+    region:   n_157
     level:    [40, 43]
   17170593:
     template: War_Lizard_past
     script:   War_Lizard
-    at:       [29.046, -28.433, 500.656, 50]
+    region:   n_157
     level:    [40, 43]
   17170594:
     template: Emela-ntouka
-    at:       [22.341, -27.762, 481.013, 75]
+    region:   n_157
     level:    [52, 52]
   17170595:
     template: Yagudo_Interrogator_past
     script:   Yagudo_Interrogator
-    at:       [-9.470, -28.453, 675.517, 97]
+    region:   n_163
     level:    [66, 69]
   17170596:
     template: Yagudo_Drummer_past
     script:   Yagudo_Drummer
-    at:       [-6.897, -28.744, 674.167, 66]
+    region:   n_163
     level:    [66, 69]
   17170597:
     template: Yagudo_Votary_past
     script:   Yagudo_Votary
-    at:       [-65.311, -36.196, 760.331, 143]
+    region:   n_165
     level:    [66, 69]
   17170598:
     template: Yagudo_Priest_past
     script:   Yagudo_Priest
-    at:       [-64.626, -36.412, 755.580, 238]
+    region:   n_165
     level:    [66, 69]
   17170599:
     template: Yagudo_Theologist
-    at:       [-59.327, -36.149, 760.038, 255]
+    region:   n_165
     level:    [66, 69]
   17170600:
     template: Yagudo_Herald_past
     script:   Yagudo_Herald
-    at:       [8.772, -28.316, 479.750, 229]
+    region:   n_168
     level:    [66, 69]
   17170601:
     template: Yagudo_Herald_past
     script:   Yagudo_Herald
-    at:       [45.992, -28.902, 522.774, 26]
+    region:   n_169
     level:    [66, 69]
   17170602:
     template: Yagudo_Herald_past
     script:   Yagudo_Herald
-    at:       [-174.698, -37.382, 618.726, 52]
+    region:   nw_170
     level:    [66, 69]
   17170603:
     template: Carrion_Crow
-    at:       [717.640, 13.561, 56.309, 135]
+    region:   e_171
     level:    [38, 40]
   17170604:
     template: Carrion_Crow
-    at:       [745.618, 17.719, 52.494, 2]
+    region:   e_171
     level:    [38, 40]
   17170605:
     template: Carrion_Crow
-    at:       [749.770, 19.385, 57.851, 4]
+    region:   e_171
     level:    [38, 40]
   17170606:
     template: Earth_Elemental
-    at:       [750.080, 18.580, 43.871, 83]
+    region:   e_171
     level:    [75, 75]
   17170607:
     template: Carrion_Crow
-    at:       [701.396, 3.619, 3.679, 190]
+    region:   e_175
     level:    [38, 40]
   17170608:
     template: Carrion_Crow
-    at:       [664.309, 2.455, 21.985, 92]
+    region:   e_175
     level:    [38, 40]
   17170609:
     template: Carrion_Crow
-    at:       [688.157, 3.657, -12.485, 17]
+    region:   e_175
     level:    [38, 40]
   17170610:
     template: Yagudo_Herald_past
     script:   Yagudo_Herald
-    at:       [747.180, 19.553, 71.928, 199]
+    region:   e_178
     level:    [66, 69]
   17170611:
     template: Yagudo_Herald_past
     script:   Yagudo_Herald
-    at:       [713.802, 13.400, 53.291, 138]
+    region:   e_178
     level:    [66, 69]
   17170612:
     template: Yagudo_Votary_past
     script:   Yagudo_Votary
-    at:       [713.641, 14.112, 55.360, 103]
+    region:   e_178
     level:    [66, 69]
   17170613:
     template: Yagudo_Interrogator_past
     script:   Yagudo_Interrogator
-    at:       [736.665, 16.059, 50.579, 236]
+    region:   e_178
     level:    [66, 69]
   17170614:
     template: Yagudo_Drummer_past
     script:   Yagudo_Drummer
-    at:       [693.504, 4.285, 19.264, 85]
+    region:   e_182
     level:    [66, 69]
   17170615:
     template: Yagudo_Theologist
-    at:       [693.079, 3.680, 19.306, 75]
+    region:   e_182
     level:    [66, 69]
   17170616:
     template: Yagudo_Drummer_past
     script:   Yagudo_Drummer
-    at:       [698.066, 4.999, 17.800, 245]
+    region:   e_182
     level:    [66, 69]
   17170617:
     template: Yagudo_Votary_past
     script:   Yagudo_Votary
-    at:       [696.751, 4.051, 16.018, 117]
+    region:   e_182
     level:    [66, 69]
   17170618:
     template: Yagudo_Priest_past
     script:   Yagudo_Priest
-    at:       [693.301, 3.243, 25.088, 105]
+    region:   e_182
     level:    [66, 69]
   17170619:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [456.360, -20.213, 52.310, 72]
+    region:   e_187
     level:    [33, 37]
   17170620:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [445.170, -20.076, 65.947, 46]
+    region:   e_187
     level:    [33, 37]
   17170621:
     template: Rafflesia
-    at:       [470.789, -17.497, 59.413, 123]
+    region:   e_189
     level:    [59, 62]
   17170622:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [473.498, -19.786, 50.822, 40]
+    region:   e_189
     level:    [33, 37]
   17170623:
     template: Rafflesia
-    at:       [518.455, -16.874, 58.021, 96]
+    region:   e_191
     level:    [59, 62]
   17170624:
     template: Rafflesia
-    at:       [522.337, -20.067, 39.640, 39]
+    region:   e_191
     level:    [59, 62]
   17170625:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [503.897, -18.330, 56.737, 101]
+    region:   e_191
     level:    [33, 37]
   17170626:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [526.819, -16.655, 58.044, 170]
+    region:   e_191
     level:    [33, 37]
   17170627:
     template: Rafflesia
-    at:       [538.216, -14.755, 61.580, 76]
+    region:   e_195
     level:    [59, 62]
   17170628:
     template: Rafflesia
-    at:       [534.669, -12.084, 85.640, 171]
+    region:   e_195
     level:    [59, 62]
   17170629:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [555.181, -12.254, 72.766, 184]
+    region:   e_195
     level:    [33, 37]
   17170630:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [518.668, -12.765, 75.882, 1]
+    region:   e_195
     level:    [33, 37]
   17170631:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [521.408, -9.277, 193.050, 134]
+    region:   e_199
     level:    [33, 37]
   17170632:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [511.793, -8.309, 204.061, 4]
+    region:   e_199
     level:    [33, 37]
   17170633:
     template: Death_Jacket_FKNS
     script:   Death_Jacket
-    at:       [530.455, -9.669, 191.849, 175]
+    region:   e_199
     level:    [33, 37]
   17170634:
     template: Rafflesia
-    at:       [515.832, -8.951, 195.817, 72]
+    region:   e_199
     level:    [59, 62]
   17170635:
     template: Rafflesia
-    at:       [510.498, -8.420, 205.197, 13]
+    region:   e_199
     level:    [59, 62]
   17170636:
     template: Pixie
@@ -4252,7 +4252,7 @@ spawns:
     level:    [56, 58]
   17170639:
     template: Goblin_Pioneer
-    at:       [265.624, -28.497, -10.723, 220]
+    region:   c_207
     level:    [62, 64]
   17170640:
     template: Goblin_Mine_Small
@@ -4261,7 +4261,7 @@ spawns:
     level:    [75, 75]
   17170641:
     template: Goblin_Pioneer
-    at:       [-282.369, -48.813, 301.486, 54]
+    region:   nw_209
     level:    [62, 64]
   17170642:
     template: Goblin_Mine_Small
@@ -4270,12 +4270,12 @@ spawns:
     level:    [75, 75]
   17170643:
     template: Goblin_Pioneer
-    at:       [-237.255, -29.272, 592.442, 243]
+    region:   nw_211
     level:    [62, 64]
   17170644:
     template: Goblin_Mine_Small
     script:   Goblin_Mine
-    at:       [-193.992, -36.399, 598.958, 205]
+    region:   nw_211
     level:    [75, 75]
   17170645:
     template: War_Lynx
@@ -4830,35 +4830,43 @@ spawns:
     level:    [70, 70]
   17170802:
     template: Muu_Buxu_the_Elusive
-    at:       [-124.439, -80.522, 12.153, 143]
+    region:   w_370
     level:    [70, 70]
   17170803:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170804:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170805:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170806:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170807:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170808:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170809:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170810:
     template: Divine_Assassin
+    region:   w_370
     level:    [70, 70]
   17170811:
     template: Divine_Assassin
-    at:       [-108.500, -80.633, 10.211, 26]
+    region:   w_370
     level:    [70, 70]
   17170812:
     template: Dee_Xalmo_the_Grim
@@ -4940,43 +4948,43 @@ spawns:
     level:    [69, 69]
   17170834:
     template: Yuu_Mjuus_Elemental
-    at:       [-77.962, -68.500, -6.766]
+    region:   w_370
     level:    [69, 69]
   17170835:
     template: Divine_Sentinel
-    at:       [-76.069, -70.426, -3.902, 195]
+    region:   w_370
     level:    [69, 69]
   17170836:
     template: Divine_Sentinel
-    at:       [-140.102, -78.311, 18.613, 33]
+    region:   w_370
     level:    [69, 69]
   17170837:
     template: Divine_Sentinel
-    at:       [-136.702, -79.887, 13.684, 192]
+    region:   w_370
     level:    [69, 69]
   17170838:
     template: Divine_Sentinel
-    at:       [-76.177, -71.740, -1.788, 195]
+    region:   w_370
     level:    [69, 69]
   17170839:
     template: Divine_Sentinel
-    at:       [-75.855, -71.570, -1.965, 192]
+    region:   w_370
     level:    [69, 69]
   17170840:
     template: Divine_Sentinel
-    at:       [-143.572, -77.140, 23.531, 248]
+    region:   w_370
     level:    [69, 69]
   17170841:
     template: Divine_Sentinel
-    at:       [-75.264, -71.260, -1.984, 186]
+    region:   w_370
     level:    [69, 69]
   17170842:
     template: Divine_Sentinel
-    at:       [-58.758, -68.498, -18.392, 131]
+    region:   w_370
     level:    [69, 69]
   17170843:
     template: Divine_Sentinel
-    at:       [-138.838, -78.724, 18.587, 45]
+    region:   w_370
     level:    [69, 69]
   17170844:
     template: Divine_Pilgrim
@@ -5108,21 +5116,27 @@ spawns:
     level:    [65, 65]
   17170876:
     template: Fiendish_Leechkeeper
+    region:   w_370
     level:    [70, 70]
   17170877:
     template: Fiendish_Leechkeeper
+    region:   w_370
     level:    [70, 70]
   17170878:
     template: Fiendish_Leechkeeper
+    region:   w_370
     level:    [70, 70]
   17170879:
     template: Fiendish_Leechkeeper
+    region:   w_370
     level:    [70, 70]
   17170880:
     template: Fiendish_Leechkeeper
+    region:   w_370
     level:    [70, 70]
   17170881:
     template: Fiendish_Leechkeeper
+    region:   w_370
     level:    [70, 70]
   17170882:
     template: Shadowhorn

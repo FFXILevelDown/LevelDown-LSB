@@ -1433,1659 +1433,1659 @@ spawns:
     at:     [1.000, 1.000, 1.000]
   17956871:
     template: Eschan_Worm
-    at:       [-399.200, -0.149, -148.010, 161]
+    region:   w_7
     level:    [50, 59]
   17956872:
     template: Eschan_Worm
-    at:       [-404.200, -0.171, -129.000, 178]
+    region:   w_7
     level:    [50, 59]
   17956873:
     template: Eschan_Worm
-    at:       [-406.700, -0.363, -160.970, 75]
+    region:   w_7
     level:    [50, 59]
   17956874:
     template: Eschan_Worm
-    at:       [-411.000, -0.239, -152.190, 86]
+    region:   w_7
     level:    [50, 59]
   17956875:
     template: Eschan_Worm
-    at:       [-412.800, -0.137, -145.750, 214]
+    region:   w_7
     level:    [50, 59]
   17956876:
     template: Eschan_Obdella
-    at:       [-398.200, -0.439, -162.350, 238]
+    region:   w_7
     level:    [50, 59]
   17956877:
     template: Eschan_Obdella
-    at:       [-413.800, -0.282, -130.400, 26]
+    region:   w_7
     level:    [50, 59]
   17956878:
     template: Eschan_Obdella
-    at:       [-392.800, -0.280, -157.850, 218]
+    region:   w_7
     level:    [50, 59]
   17956879:
     template: Eschan_Obdella
-    at:       [-410.800, 0.085, -146.040, 149]
+    region:   w_7
     level:    [50, 59]
   17956880:
     template: Eschan_Obdella
-    at:       [-397.000, -0.381, -155.300, 153]
+    region:   w_7
     level:    [50, 59]
   17956881:
     template: Eschan_Worm
-    at:       [-443.700, -0.843, -115.870, 183]
+    region:   w_17
     level:    [50, 59]
   17956882:
     template: Eschan_Worm
-    at:       [-450.200, -0.481, -116.210, 57]
+    region:   w_17
     level:    [50, 59]
   17956883:
     template: Eschan_Worm
-    at:       [-450.000, -0.460, -116.470, 61]
+    region:   w_17
     level:    [50, 59]
   17956884:
     template: Eschan_Obdella
-    at:       [-430.800, -0.149, -126.140, 61]
+    region:   w_17
     level:    [50, 59]
   17956885:
     template: Eschan_Obdella
-    at:       [-438.200, -1.235, -105.140, 150]
+    region:   w_17
     level:    [50, 59]
   17956886:
     template: Eschan_Obdella
-    at:       [-441.500, -0.477, -124.470, 39]
+    region:   w_17
     level:    [50, 59]
   17956887:
     template: Eschan_Obdella
-    at:       [-444.200, -0.778, -105.110, 231]
+    region:   w_17
     level:    [50, 59]
   17956888:
     template: Eschan_Worm
-    at:       [-438.600, -0.683, -74.999, 224]
+    region:   w_24
     level:    [50, 59]
   17956889:
     template: Eschan_Worm
-    at:       [-446.300, -0.393, -83.004, 160]
+    region:   w_24
     level:    [50, 59]
   17956890:
     template: Eschan_Worm
-    at:       [-445.500, -0.363, -80.585, 115]
+    region:   w_24
     level:    [50, 59]
   17956891:
     template: Eschan_Obdella
-    at:       [-441.800, -0.592, -87.372, 137]
+    region:   w_24
     level:    [50, 59]
   17956892:
     template: Eschan_Obdella
-    at:       [-431.000, -0.361, -73.253, 246]
+    region:   w_24
     level:    [50, 59]
   17956893:
     template: Eschan_Obdella
-    at:       [-442.800, -0.753, -85.063, 66]
+    region:   w_24
     level:    [50, 59]
   17956894:
     template: Eschan_Obdella
-    at:       [-439.800, -0.786, -83.026, 19]
+    region:   w_24
     level:    [50, 59]
   17956895:
     template: Eschan_Worm
-    at:       [-363.400, -0.416, -0.822, 106]
+    region:   w_31
     level:    [50, 59]
   17956896:
     template: Eschan_Worm
-    at:       [-340.100, 0.371, 5.970, 245]
+    region:   w_31
     level:    [50, 59]
   17956897:
     template: Eschan_Worm
-    at:       [-366.000, -0.351, 43.704, 232]
+    region:   w_31
     level:    [50, 59]
   17956898:
     template: Eschan_Worm
-    at:       [-349.200, -1.080, 4.650, 215]
+    region:   w_31
     level:    [50, 59]
   17956899:
     template: Eschan_Crawler
-    at:       [-352.300, -1.309, -3.301, 189]
+    region:   w_31
     level:    [50, 59]
   17956900:
     template: Eschan_Crawler
-    at:       [-348.400, -0.153, 1.360, 21]
+    region:   w_31
     level:    [50, 59]
   17956901:
     template: Eschan_Crawler
-    at:       [-352.700, -1.299, -1.411, 64]
+    region:   w_31
     level:    [50, 59]
   17956902:
     template: Eschan_Crawler
-    at:       [-352.700, -0.629, 4.665, 106]
+    region:   w_31
     level:    [50, 59]
   17956903:
     template: Eschan_Crawler
-    at:       [-364.500, -0.569, -0.495, 137]
+    region:   w_31
     level:    [50, 59]
   17956904:
     template: Eschan_Worm
-    at:       [-252.200, -0.048, 1.184, 167]
+    region:   w_40
     level:    [50, 59]
   17956905:
     template: Eschan_Worm
-    at:       [-273.600, -0.214, 8.376, 64]
+    region:   w_40
     level:    [50, 59]
   17956906:
     template: Eschan_Worm
-    at:       [-308.800, -0.828, -0.827, 161]
+    region:   w_40
     level:    [50, 59]
   17956907:
     template: Eschan_Worm
-    at:       [-243.700, -0.388, 6.530, 24]
+    region:   w_40
     level:    [50, 59]
   17956908:
     template: Eschan_Worm
-    at:       [-285.400, 0.454, 21.213, 224]
+    region:   w_40
     level:    [50, 59]
   17956909:
     template: Eschan_Worm
-    at:       [-318.800, -1.156, 1.160, 68]
+    region:   w_40
     level:    [50, 59]
   17956910:
     template: Eschan_Crawler
-    at:       [-318.500, -1.226, -0.085, 159]
+    region:   w_40
     level:    [50, 59]
   17956911:
     template: Eschan_Crawler
-    at:       [-303.900, -0.307, 3.411, 86]
+    region:   w_40
     level:    [50, 59]
   17956912:
     template: Eschan_Crawler
-    at:       [-261.100, -0.188, 8.567, 108]
+    region:   w_40
     level:    [50, 59]
   17956913:
     template: Eschan_Crawler
-    at:       [-261.500, 0.259, -8.076, 5]
+    region:   w_40
     level:    [50, 59]
   17956914:
     template: Eschan_Crawler
-    at:       [-274.600, -0.319, 3.404, 192]
+    region:   w_40
     level:    [50, 59]
   17956915:
     template: Eschan_Crawler
-    at:       [-246.800, -0.786, -8.536, 81]
+    region:   w_40
     level:    [50, 59]
   17956916:
     template: Eschan_Crawler
-    at:       [-273.400, -0.321, 36.055, 212]
+    region:   w_40
     level:    [50, 59]
   17956917:
     template: Eschan_Worm
-    at:       [-248.100, -0.118, 49.170, 14]
+    region:   w_53
     level:    [50, 59]
   17956918:
     template: Eschan_Worm
-    at:       [-237.900, 0.285, 15.571, 80]
+    region:   w_53
     level:    [50, 59]
   17956919:
     template: Eschan_Worm
-    at:       [-254.100, -0.172, 46.353, 24]
+    region:   w_53
     level:    [50, 59]
   17956920:
     template: Eschan_Worm
-    at:       [-197.700, -0.333, 86.863, 235]
+    region:   w_53
     level:    [50, 59]
   17956921:
     template: Eschan_Worm
-    at:       [-213.800, 0.149, 31.396, 242]
+    region:   w_53
     level:    [50, 59]
   17956922:
     template: Eschan_Crawler
-    at:       [-209.700, -0.524, 67.005, 61]
+    region:   w_53
     level:    [50, 59]
   17956923:
     template: Eschan_Crawler
-    at:       [-222.800, 0.237, 35.303, 118]
+    region:   w_53
     level:    [50, 59]
   17956924:
     template: Eschan_Crawler
-    at:       [-220.000, -0.470, 54.366, 232]
+    region:   w_53
     level:    [50, 59]
   17956925:
     template: Eschan_Crawler
-    at:       [-198.100, 0.310, 55.717, 220]
+    region:   w_53
     level:    [50, 59]
   17956926:
     template: Eschan_Crawler
-    at:       [-194.600, -0.344, 87.282, 161]
+    region:   w_53
     level:    [50, 59]
   17956927:
     template: Eschan_Crawler
-    at:       [-230.100, -0.250, 27.459, 73]
+    region:   w_53
     level:    [50, 59]
   17956928:
     template: Eschan_Crawler
-    at:       [-225.900, -0.537, 59.946, 223]
+    region:   w_53
     level:    [50, 59]
   17956929:
     template: Eschan_Crawler
-    at:       [-254.500, 0.358, 52.528, 98]
+    region:   w_53
     level:    [50, 59]
   17956930:
     template: Eschan_Worm
-    at:       [-124.500, -0.432, 43.496, 39]
+    region:   w_66
     level:    [50, 59]
   17956931:
     template: Eschan_Worm
-    at:       [-160.300, -0.497, 41.208, 192]
+    region:   w_66
     level:    [50, 59]
   17956932:
     template: Eschan_Worm
-    at:       [-159.600, -0.361, 31.174, 10]
+    region:   w_66
     level:    [50, 59]
   17956933:
     template: Eschan_Crawler
-    at:       [-168.800, -0.287, 35.459, 111]
+    region:   w_66
     level:    [50, 59]
   17956934:
     template: Eschan_Crawler
-    at:       [-130.200, -0.157, 41.554, 217]
+    region:   w_66
     level:    [50, 59]
   17956935:
     template: Eschan_Crawler
-    at:       [-165.300, -0.430, 37.571, 232]
+    region:   w_66
     level:    [50, 59]
   17956936:
     template: Eschan_Crawler
-    at:       [-172.200, -0.032, 40.089, 226]
+    region:   w_66
     level:    [50, 59]
   17956937:
     template: Eschan_Crawler
-    at:       [-164.200, -0.460, 38.955, 93]
+    region:   w_66
     level:    [50, 59]
   17956938:
     template: Eschan_Crawler
-    at:       [-148.700, -0.050, 40.120, 21]
+    region:   w_66
     level:    [50, 59]
   17956939:
     template: Eschan_Crawler
-    at:       [-145.500, 0.071, 38.622, 137]
+    region:   w_66
     level:    [50, 59]
   17956940:
     template: Eschan_Weapon
-    at:       [-467.700, -1.605, 134.102, 144]
+    region:   w_76
     level:    [60, 69]
   17956941:
     template: Eschan_Weapon
-    at:       [-437.500, -0.499, 122.495, 211]
+    region:   w_76
     level:    [60, 69]
   17956942:
     template: Eschan_Weapon
-    at:       [-466.700, 0.063, 110.358, 22]
+    region:   w_76
     level:    [60, 69]
   17956943:
     template: Eschan_Weapon
-    at:       [-449.400, -0.358, 82.339, 98]
+    region:   w_76
     level:    [60, 69]
   17956944:
     template: Eschan_Dhalmel
-    at:       [-432.500, -0.875, 102.068, 79]
+    region:   w_76
     level:    [60, 69]
   17956945:
     template: Eschan_Dhalmel
-    at:       [-434.300, -0.405, 116.836, 91]
+    region:   w_76
     level:    [60, 69]
   17956946:
     template: Eschan_Dhalmel
-    at:       [-471.900, -1.631, 118.908, 58]
+    region:   w_76
     level:    [60, 69]
   17956947:
     template: Eschan_Dhalmel
-    at:       [-450.100, -0.294, 85.182, 128]
+    region:   w_76
     level:    [60, 69]
   17956948:
     template: Eschan_Weapon
-    at:       [-517.300, -0.230, 208.095, 184]
+    region:   w_84
     level:    [60, 69]
   17956949:
     template: Eschan_Weapon
-    at:       [-528.500, -0.331, 200.966, 92]
+    region:   w_84
     level:    [60, 69]
   17956950:
     template: Eschan_Weapon
-    at:       [-523.600, -0.239, 189.811, 15]
+    region:   w_84
     level:    [60, 69]
   17956951:
     template: Eschan_Weapon
-    at:       [-518.800, -0.472, 197.074, 209]
+    region:   w_84
     level:    [60, 69]
   17956952:
     template: Eschan_Dhalmel
-    at:       [-519.800, 0.020, 211.738, 205]
+    region:   w_84
     level:    [60, 69]
   17956953:
     template: Eschan_Dhalmel
-    at:       [-518.000, 0.373, 176.889]
+    region:   w_84
     level:    [60, 69]
   17956954:
     template: Eschan_Dhalmel
-    at:       [-521.400, 0.375, 178.940, 198]
+    region:   w_84
     level:    [60, 69]
   17956955:
     template: Eschan_Weapon
-    at:       [-524.300, -0.347, 231.110, 14]
+    region:   nw_91
     level:    [60, 69]
   17956956:
     template: Eschan_Weapon
-    at:       [-436.400, -0.467, 238.522, 108]
+    region:   nw_91
     level:    [60, 69]
   17956957:
     template: Eschan_Weapon
-    at:       [-448.600, -0.517, 248.970, 148]
+    region:   nw_91
     level:    [60, 69]
   17956958:
     template: Eschan_Weapon
-    at:       [-500.000, 0.215, 224.348, 22]
+    region:   nw_91
     level:    [60, 69]
   17956959:
     template: Eschan_Weapon
-    at:       [-517.600, -0.455, 243.447, 34]
+    region:   nw_91
     level:    [60, 69]
   17956960:
     template: Eschan_Dhalmel
-    at:       [-467.300, -0.078, 244.408, 253]
+    region:   nw_91
     level:    [60, 69]
   17956961:
     template: Eschan_Dhalmel
-    at:       [-498.100, 0.147, 225.266, 92]
+    region:   nw_91
     level:    [60, 69]
   17956962:
     template: Eschan_Dhalmel
-    at:       [-430.800, -0.374, 244.873, 246]
+    region:   nw_91
     level:    [60, 69]
   17956963:
     template: Eschan_Dhalmel
-    at:       [-473.600, -0.404, 237.503, 1]
+    region:   nw_91
     level:    [60, 69]
   17956964:
     template: Eschan_Dhalmel
-    at:       [-440.200, -0.486, 240.580, 142]
+    region:   nw_91
     level:    [60, 69]
   17956965:
     template: Eschan_Weapon
-    at:       [-406.000, -0.185, 272.658, 44]
+    region:   nw_101
     level:    [60, 69]
   17956966:
     template: Eschan_Weapon
-    at:       [-413.100, -0.020, 279.600, 16]
+    region:   nw_101
     level:    [60, 69]
   17956967:
     template: Eschan_Weapon
-    at:       [-394.900, -0.535, 279.169, 177]
+    region:   nw_101
     level:    [60, 69]
   17956968:
     template: Eschan_Weapon
-    at:       [-379.800, 0.264, 294.184, 113]
+    region:   nw_101
     level:    [60, 69]
   17956969:
     template: Eschan_Weapon
-    at:       [-379.700, 0.263, 293.858, 188]
+    region:   nw_101
     level:    [60, 69]
   17956970:
     template: Eschan_Dhalmel
-    at:       [-397.100, -0.456, 282.778, 58]
+    region:   nw_101
     level:    [60, 69]
   17956971:
     template: Eschan_Dhalmel
-    at:       [-416.600, 0.235, 271.498, 128]
+    region:   nw_101
     level:    [60, 69]
   17956972:
     template: Eschan_Dhalmel
-    at:       [-426.100, 0.495, 267.768, 86]
+    region:   nw_101
     level:    [60, 69]
   17956973:
     template: Eschan_Dhalmel
-    at:       [-421.200, 0.129, 282.640, 62]
+    region:   nw_101
     level:    [60, 69]
   17956974:
     template: Eschan_Coeurl
-    at:       [-286.700, -0.246, 248.175, 6]
+    region:   nw_110
     level:    [60, 69]
   17956975:
     template: Eschan_Coeurl
-    at:       [-285.000, -0.476, 241.873, 24]
+    region:   nw_110
     level:    [60, 69]
   17956976:
     template: Eschan_Coeurl
-    at:       [-279.000, 0.410, 221.660, 28]
+    region:   nw_110
     level:    [60, 69]
   17956977:
     template: Eschan_Coeurl
-    at:       [-314.700, -0.312, 194.177, 185]
+    region:   w_113
     level:    [60, 69]
   17956978:
     template: Eschan_Coeurl
-    at:       [-313.000, -0.298, 198.925, 247]
+    region:   w_113
     level:    [60, 69]
   17956979:
     template: Eschan_Coeurl
-    at:       [-288.100, -0.273, 192.498, 41]
+    region:   w_113
     level:    [60, 69]
   17956980:
     template: Eschan_Coeurl
-    at:       [-329.300, -0.382, 200.098, 161]
+    region:   w_113
     level:    [60, 69]
   17956981:
     template: Eschan_Coeurl
-    at:       [-311.100, -0.032, 205.524, 171]
+    region:   w_113
     level:    [60, 69]
   17956982:
     template: Eschan_Coeurl
-    at:       [-279.600, 0.267, 214.722, 236]
+    region:   nw_118
     level:    [60, 69]
   17956983:
     template: Eschan_Coeurl
-    at:       [-280.500, -0.354, 246.294, 165]
+    region:   nw_118
     level:    [60, 69]
   17956984:
     template: Eschan_Coeurl
-    at:       [-287.700, -0.287, 235.574, 68]
+    region:   nw_118
     level:    [60, 69]
   17956985:
     template: Eschan_Coeurl
-    at:       [-283.800, 0.121, 223.962, 248]
+    region:   nw_118
     level:    [60, 69]
   17956986:
     template: Eschan_Coeurl
-    at:       [-281.100, -0.303, 231.328, 27]
+    region:   nw_118
     level:    [60, 69]
   17956987:
     template: Eschan_Vulture
-    at:       [20.247, 0.417, 31.686, 150]
+    region:   c_123
     level:    [70, 79]
   17956988:
     template: Eschan_Vulture
-    at:       [83.491, -0.338, 35.107, 103]
+    region:   c_123
     level:    [70, 79]
   17956989:
     template: Eschan_Vulture
-    at:       [-11.580, 0.026, 80.172, 39]
+    region:   c_123
     level:    [70, 79]
   17956990:
     template: Eschan_Vulture
-    at:       [73.154, 0.813, 61.868, 118]
+    region:   c_123
     level:    [70, 79]
   17956991:
     template: Eschan_Vulture
-    at:       [6.837, 0.281, 63.190, 96]
+    region:   c_123
     level:    [70, 79]
   17956992:
     template: Eschan_Warrior
-    at:       [-35.440, -0.291, 32.344, 165]
+    region:   c_128
     level:    [70, 79]
   17956993:
     template: Eschan_Warrior
-    at:       [-27.280, -0.356, 32.573, 105]
+    region:   c_128
     level:    [70, 79]
   17956994:
     template: Eschan_Warrior
-    at:       [-22.200, -0.523, 8.902, 124]
+    region:   c_128
     level:    [70, 79]
   17956995:
     template: Eschan_Warrior
-    at:       [-40.680, -0.340, 47.313, 154]
+    region:   c_128
     level:    [70, 79]
   17956996:
     template: Eschan_Warrior
-    at:       [-11.920, -0.180, 68.249, 58]
+    region:   c_128
     level:    [70, 79]
   17956997:
     template: Eschan_Corse
-    at:       [-38.750, 0.206, 18.415, 139]
+    region:   c_128
     level:    [70, 79]
   17956998:
     template: Eschan_Corse
-    at:       [-40.380, -0.458, 42.587, 57]
+    region:   c_128
     level:    [70, 79]
   17956999:
     template: Eschan_Warrior
-    at:       [42.736, 0.307, 99.054, 34]
+    region:   c_135
     level:    [70, 79]
   17957000:
     template: Eschan_Warrior
-    at:       [-26.010, -0.294, 107.487, 99]
+    region:   c_135
     level:    [70, 79]
   17957001:
     template: Eschan_Warrior
-    at:       [11.739, -0.800, 64.265, 68]
+    region:   c_135
     level:    [70, 79]
   17957002:
     template: Eschan_Warrior
-    at:       [20.063, 0.523, 88.085, 73]
+    region:   c_135
     level:    [70, 79]
   17957003:
     template: Eschan_Warrior
-    at:       [-31.640, -0.216, 103.540, 241]
+    region:   c_135
     level:    [70, 79]
   17957004:
     template: Eschan_Corse
-    at:       [-19.680, -0.070, 121.983, 126]
+    region:   c_135
     level:    [70, 79]
   17957005:
     template: Eschan_Corse
-    at:       [15.843, 0.302, 80.316, 53]
+    region:   c_135
     level:    [70, 79]
   17957006:
     template: Eschan_Warrior
-    at:       [60.148, 1.086, 49.125, 79]
+    region:   c_142
     level:    [70, 79]
   17957007:
     template: Eschan_Warrior
-    at:       [57.199, 0.479, 39.226, 81]
+    region:   c_142
     level:    [70, 79]
   17957008:
     template: Eschan_Warrior
-    at:       [59.841, 0.956, 52.867, 241]
+    region:   c_142
     level:    [70, 79]
   17957009:
     template: Eschan_Warrior
-    at:       [73.359, -0.252, 31.732, 246]
+    region:   c_142
     level:    [70, 79]
   17957010:
     template: Eschan_Corse
-    at:       [55.318, 0.755, 49.322, 140]
+    region:   c_142
     level:    [70, 79]
   17957011:
     template: Eschan_Warrior
-    at:       [10.109, 0.107, -34.113, 26]
+    region:   c_147
     level:    [70, 79]
   17957012:
     template: Eschan_Warrior
-    at:       [43.016, 0.127, -25.740, 240]
+    region:   c_147
     level:    [70, 79]
   17957013:
     template: Eschan_Warrior
-    at:       [-1.251, 0.053, -27.533, 209]
+    region:   c_147
     level:    [70, 79]
   17957014:
     template: Eschan_Corse
-    at:       [-2.013, 0.162, -26.486]
+    region:   c_147
     level:    [70, 79]
   17957015:
     template: Eschan_Vulture
-    at:       [2.323, -0.734, -143.910, 230]
+    region:   c_151
     level:    [70, 79]
   17957016:
     template: Eschan_Vulture
-    at:       [4.648, -0.135, -147.320, 110]
+    region:   c_151
     level:    [70, 79]
   17957017:
     template: Eschan_Vulture
-    at:       [36.470, -0.326, -113.120, 176]
+    region:   c_151
     level:    [70, 79]
   17957018:
     template: Eschan_Vulture
-    at:       [-10.720, -0.004, -84.547, 195]
+    region:   c_154
     level:    [70, 79]
   17957019:
     template: Eschan_Sorcerer
-    at:       [-8.090, -0.328, -87.033, 242]
+    region:   c_154
     level:    [70, 79]
   17957020:
     template: Eschan_Sorcerer
-    at:       [-12.210, 0.052, -81.775, 4]
+    region:   c_154
     level:    [70, 79]
   17957021:
     template: Eschan_Sorcerer
-    at:       [-2.997, -0.509, -89.755, 187]
+    region:   c_154
     level:    [70, 79]
   17957022:
     template: Eschan_Corse
-    at:       [-34.130, -0.395, -84.208, 26]
+    region:   c_154
     level:    [70, 79]
   17957023:
     template: Eschan_Corse
-    at:       [-34.640, -0.430, -83.304, 159]
+    region:   c_154
     level:    [70, 79]
   17957024:
     template: Eschan_Vulture
-    at:       [-76.400, -0.133, -131.250, 216]
+    region:   c_160
     level:    [70, 79]
   17957025:
     template: Eschan_Vulture
-    at:       [-63.060, -0.397, -130.130, 164]
+    region:   c_160
     level:    [70, 79]
   17957026:
     template: Eschan_Vulture
-    at:       [-52.680, 0.069, -117.260, 221]
+    region:   c_160
     level:    [70, 79]
   17957027:
     template: Eschan_Vulture
-    at:       [-30.140, -0.393, -116.690, 234]
+    region:   c_160
     level:    [70, 79]
   17957028:
     template: Eschan_Vulture
-    at:       [-66.440, -0.020, -116.990, 118]
+    region:   c_160
     level:    [70, 79]
   17957029:
     template: Eschan_Corse
-    at:       [-43.340, -0.597, -119.840, 106]
+    region:   c_160
     level:    [70, 79]
   17957030:
     template: Eschan_Corse
-    at:       [-83.110, -0.342, -112.760, 123]
+    region:   c_160
     level:    [70, 79]
   17957031:
     template: Eschan_Sorcerer
-    at:       [3.277, -0.665, -135.940, 29]
+    region:   c_167
     level:    [70, 79]
   17957032:
     template: Eschan_Sorcerer
-    at:       [15.404, 0.047, -115.820, 144]
+    region:   c_167
     level:    [70, 79]
   17957033:
     template: Eschan_Sorcerer
-    at:       [-22.170, 0.467, -145.300, 143]
+    region:   c_167
     level:    [70, 79]
   17957034:
     template: Eschan_Sorcerer
-    at:       [-29.230, 0.360, -146.350, 194]
+    region:   c_167
     level:    [70, 79]
   17957035:
     template: Eschan_Sorcerer
-    at:       [-22.740, 0.466, -145.790, 155]
+    region:   c_167
     level:    [70, 79]
   17957036:
     template: Eschan_Corse
-    at:       [-10.410, -0.207, -151.400, 85]
+    region:   c_167
     level:    [70, 79]
   17957037:
     template: Eschan_Corse
-    at:       [-16.990, 0.325, -150.500, 161]
+    region:   c_167
     level:    [70, 79]
   17957038:
     template: Eschan_Corse
-    at:       [-16.720, 0.280, -149.980, 140]
+    region:   c_167
     level:    [70, 79]
   17957039:
     template: Eschan_Corse
-    at:       [-47.200, -0.202, -166.940, 33]
+    region:   c_167
     level:    [70, 79]
   17957040:
     template: Eschan_Wasp
-    at:       [-107.109, -0.281, -309.593, 142]
+    region:   s_176
     level:    [80, 89]
   17957041:
     template: Eschan_Wasp
-    at:       [-155.900, -1.434, -286.230, 187]
+    region:   s_176
     level:    [80, 89]
   17957042:
     template: Eschan_Wasp
-    at:       [-113.400, 0.408, -301.970, 133]
+    region:   s_176
     level:    [80, 89]
   17957043:
     template: Eschan_Wasp
-    at:       [-114.935, -0.309, -351.929, 120]
+    region:   s_176
     level:    [80, 89]
   17957044:
     template: Eschan_Wasp
-    at:       [-126.331, -0.663, -321.474, 169]
+    region:   s_176
     level:    [80, 89]
   17957045:
     template: Eschan_Snapweed
-    at:       [-146.200, -0.430, -268.850, 209]
+    region:   s_176
     level:    [80, 89]
   17957046:
     template: Eschan_Snapweed
-    at:       [-143.000, -0.963, -283.700, 105]
+    region:   s_176
     level:    [80, 89]
   17957047:
     template: Eschan_Snapweed
-    at:       [-122.300, -0.268, -275.640, 84]
+    region:   s_176
     level:    [80, 89]
   17957048:
     template: Eschan_Goobbue
-    at:       [-73.974, -0.294, -326.691, 204]
+    region:   s_176
     level:    [80, 89]
   17957049:
     template: Eschan_Goobbue
-    at:       [-145.200, -0.177, -272.090, 87]
+    region:   s_176
     level:    [80, 89]
   17957050:
     template: Eschan_Goobbue
-    at:       [-97.215, -0.343, -331.883, 145]
+    region:   s_176
     level:    [80, 89]
   17957051:
     template: Eschan_Goobbue
-    at:       [-88.679, -0.351, -354.461, 232]
+    region:   s_176
     level:    [80, 89]
   17957052:
     template: Eschan_Snapweed
-    at:       [-200.300, 0.273, -303.200, 139]
+    region:   sw_188
     level:    [80, 89]
   17957053:
     template: Eschan_Snapweed
-    at:       [-186.200, 0.033, -281.010, 242]
+    region:   sw_188
     level:    [80, 89]
   17957054:
     template: Eschan_Snapweed
-    at:       [-195.500, 0.136, -296.320, 35]
+    region:   sw_188
     level:    [80, 89]
   17957055:
     template: Eschan_Snapweed
-    at:       [-188.200, -0.112, -282.590, 231]
+    region:   sw_188
     level:    [80, 89]
   17957056:
     template: Eschan_Snapweed
-    at:       [-165.200, -0.386, -279.930, 31]
+    region:   sw_188
     level:    [80, 89]
   17957057:
     template: Eschan_Snapweed
-    at:       [-199.700, 0.067, -293.160, 33]
+    region:   sw_188
     level:    [80, 89]
   17957058:
     template: Eschan_Wasp
-    at:       [-140.946, -1.224, -368.093, 92]
+    region:   sw_194
     level:    [80, 89]
   17957059:
     template: Eschan_Wasp
-    at:       [-157.100, 0.312, -339.790, 224]
+    region:   sw_194
     level:    [80, 89]
   17957060:
     template: Eschan_Wasp
-    at:       [-167.300, -0.226, -352.570, 74]
+    region:   sw_194
     level:    [80, 89]
   17957061:
     template: Eschan_Wasp
-    at:       [-171.000, 0.057, -362.210, 149]
+    region:   sw_194
     level:    [80, 89]
   17957062:
     template: Eschan_Wasp
-    at:       [-173.100, -0.395, -319.080, 158]
+    region:   sw_194
     level:    [80, 89]
   17957063:
     template: Eschan_Goobbue
-    at:       [-187.800, -0.039, -350.800, 67]
+    region:   sw_194
     level:    [80, 89]
   17957064:
     template: Eschan_Goobbue
-    at:       [-189.100, -1.151, -318.350, 135]
+    region:   sw_194
     level:    [80, 89]
   17957065:
     template: Eschan_Goobbue
-    at:       [-194.200, -1.266, -319.980, 221]
+    region:   sw_194
     level:    [80, 89]
   17957066:
     template: Eschan_Wasp
-    at:       [-214.300, -0.208, -352.470, 54]
+    region:   sw_202
     level:    [80, 89]
   17957067:
     template: Eschan_Wasp
-    at:       [-213.900, 0.030, -358.910, 196]
+    region:   sw_202
     level:    [80, 89]
   17957068:
     template: Eschan_Wasp
-    at:       [-236.500, -0.479, -367.000, 147]
+    region:   sw_202
     level:    [80, 89]
   17957069:
     template: Eschan_Wasp
-    at:       [-230.800, 0.596, -377.980, 48]
+    region:   sw_202
     level:    [80, 89]
   17957070:
     template: Eschan_Wasp
-    at:       [-222.500, -0.759, -352.860, 68]
+    region:   sw_202
     level:    [80, 89]
   17957071:
     template: Eschan_Goobbue
-    at:       [-216.000, 0.988, -386.550, 192]
+    region:   sw_202
     level:    [80, 89]
   17957072:
     template: Eschan_Goobbue
-    at:       [-237.000, -0.646, -367.920, 136]
+    region:   sw_202
     level:    [80, 89]
   17957073:
     template: Eschan_Goobbue
-    at:       [-248.800, -1.031, -393.810, 93]
+    region:   sw_202
     level:    [80, 89]
   17957074:
     template: Eschan_Wasp
-    at:       [-189.400, -1.644, -440.550, 121]
+    region:   sw_210
     level:    [80, 89]
   17957075:
     template: Eschan_Wasp
-    at:       [-186.000, 0.223, -442.760, 234]
+    region:   sw_210
     level:    [80, 89]
   17957076:
     template: Eschan_Wasp
-    at:       [-172.700, -0.356, -429.830, 232]
+    region:   sw_210
     level:    [80, 89]
   17957077:
     template: Eschan_Wasp
-    at:       [-170.400, -0.331, -434.770, 67]
+    region:   sw_210
     level:    [80, 89]
   17957078:
     template: Eschan_Wasp
-    at:       [-198.200, -1.822, -442.620, 158]
+    region:   sw_210
     level:    [80, 89]
   17957079:
     template: Eschan_Snapweed
-    at:       [-188.000, -1.389, -433.660, 32]
+    region:   sw_210
     level:    [80, 89]
   17957080:
     template: Eschan_Snapweed
-    at:       [-194.600, -1.860, -434.960, 6]
+    region:   sw_210
     level:    [80, 89]
   17957081:
     template: Eschan_Snapweed
-    at:       [-189.000, -2.132, -441.800, 120]
+    region:   sw_210
     level:    [80, 89]
   17957082:
     template: Eschan_Snapweed
-    at:       [-198.600, 0.164, -418.730, 236]
+    region:   sw_210
     level:    [80, 89]
   17957083:
     template: Eschan_Wasp
-    at:       [-315.300, -0.140, -413.390, 20]
+    region:   sw_219
     level:    [80, 89]
   17957084:
     template: Eschan_Wasp
-    at:       [-315.200, 0.471, -420.710, 117]
+    region:   sw_219
     level:    [80, 89]
   17957085:
     template: Eschan_Wasp
-    at:       [-319.800, -0.041, -427.360, 89]
+    region:   sw_219
     level:    [80, 89]
   17957086:
     template: Eschan_Wasp
-    at:       [-322.400, 0.132, -414.500, 73]
+    region:   sw_219
     level:    [80, 89]
   17957087:
     template: Eschan_Wasp
-    at:       [-323.300, -0.134, -411.070, 203]
+    region:   sw_219
     level:    [80, 89]
   17957088:
     template: Eschan_Wasp
-    at:       [-280.400, -0.379, -403.380, 16]
+    region:   sw_219
     level:    [80, 89]
   17957089:
     template: Eschan_Goobbue
-    at:       [-329.400, 0.251, -421.160, 30]
+    region:   sw_219
     level:    [80, 89]
   17957090:
     template: Eschan_Goobbue
-    at:       [-329.600, 0.228, -420.750, 30]
+    region:   sw_219
     level:    [80, 89]
   17957091:
     template: Eschan_Goobbue
-    at:       [-319.800, -0.495, -397.250, 203]
+    region:   sw_219
     level:    [80, 89]
   17957092:
     template: Eschan_Goobbue
-    at:       [-339.100, 0.133, -423.860, 252]
+    region:   sw_219
     level:    [80, 89]
   17957093:
     template: Eschan_Wasp
-    at:       [-437.700, -0.333, -430.290, 125]
+    region:   sw_229
     level:    [80, 89]
   17957094:
     template: Eschan_Wasp
-    at:       [-429.500, -0.725, -426.320, 225]
+    region:   sw_229
     level:    [80, 89]
   17957095:
     template: Eschan_Wasp
-    at:       [-421.100, -1.090, -416.490, 159]
+    region:   sw_229
     level:    [80, 89]
   17957096:
     template: Eschan_Wasp
-    at:       [-393.800, -0.405, -399.590, 89]
+    region:   sw_229
     level:    [80, 89]
   17957097:
     template: Eschan_Wasp
-    at:       [-424.800, -1.108, -421.000, 122]
+    region:   sw_229
     level:    [80, 89]
   17957098:
     template: Eschan_Wasp
-    at:       [-418.400, -0.643, -415.040, 241]
+    region:   sw_229
     level:    [80, 89]
   17957099:
     template: Eschan_Goobbue
-    at:       [-430.500, -0.954, -424.020, 41]
+    region:   sw_229
     level:    [80, 89]
   17957100:
     template: Eschan_Goobbue
-    at:       [-443.700, -0.312, -431.890, 226]
+    region:   sw_229
     level:    [80, 89]
   17957101:
     template: Eschan_Goobbue
-    at:       [-411.100, -0.293, -405.130, 223]
+    region:   sw_229
     level:    [80, 89]
   17957102:
     template: Eschan_Wasp
-    at:       [-60.540, -0.097, -377.290, 56]
+    region:   s_238
     level:    [80, 89]
   17957103:
     template: Eschan_Wasp
-    at:       [-32.940, -0.141, -404.880, 82]
+    region:   s_238
     level:    [80, 89]
   17957104:
     template: Eschan_Wasp
-    at:       [-45.400, -0.259, -369.580, 246]
+    region:   s_238
     level:    [80, 89]
   17957105:
     template: Eschan_Snapweed
-    at:       [-35.480, 0.315, -426.850, 147]
+    region:   s_238
     level:    [80, 89]
   17957106:
     template: Eschan_Snapweed
-    at:       [-36.130, -0.266, -402.060, 186]
+    region:   s_238
     level:    [80, 89]
   17957107:
     template: Eschan_Snapweed
-    at:       [-45.400, -0.261, -368.850, 28]
+    region:   s_238
     level:    [80, 89]
   17957108:
     template: Eschan_Goobbue
-    at:       [-40.360, -0.021, -389.850, 186]
+    region:   s_238
     level:    [80, 89]
   17957109:
     template: Eschan_Goobbue
-    at:       [-44.570, -0.244, -369.510, 31]
+    region:   s_238
     level:    [80, 89]
   17957110:
     template: Eschan_Goobbue
-    at:       [-49.470, 0.001, -389.070, 58]
+    region:   s_238
     level:    [80, 89]
   17957111:
     template: Eschan_Wasp
-    at:       [-10.680, 0.617, -418.890, 105]
+    region:   s_247
     level:    [80, 89]
   17957112:
     template: Eschan_Wasp
-    at:       [-5.074, -0.512, -449.920, 111]
+    region:   s_247
     level:    [80, 89]
   17957113:
     template: Eschan_Snapweed
-    at:       [13.053, -0.131, -438.090, 71]
+    region:   s_247
     level:    [80, 89]
   17957114:
     template: Eschan_Snapweed
-    at:       [-10.310, 0.584, -418.840, 102]
+    region:   s_247
     level:    [80, 89]
   17957115:
     template: Eschan_Snapweed
-    at:       [15.314, -0.157, -430.210, 119]
+    region:   s_247
     level:    [80, 89]
   17957116:
     template: Eschan_Snapweed
-    at:       [12.383, -0.412, -434.010, 199]
+    region:   s_247
     level:    [80, 89]
   17957117:
     template: Eschan_Snapweed
-    at:       [36.973, -0.421, -449.580, 112]
+    region:   s_253
     level:    [80, 89]
   17957118:
     template: Eschan_Snapweed
-    at:       [57.805, -0.616, -433.490, 247]
+    region:   s_253
     level:    [80, 89]
   17957119:
     template: Eschan_Snapweed
-    at:       [42.240, -0.354, -447.280, 80]
+    region:   s_253
     level:    [80, 89]
   17957120:
     template: Eschan_Snapweed
-    at:       [45.627, -0.486, -440.320, 57]
+    region:   s_253
     level:    [80, 89]
   17957121:
     template: Eschan_Puk
-    at:       [-310.300, -0.157, 487.351, 92]
+    region:   nw_257
     level:    [107, 109]
   17957122:
     template: Eschan_Puk
-    at:       [-311.700, 0.119, 416.367, 79]
+    region:   nw_257
     level:    [107, 109]
   17957123:
     template: Eschan_Puk
-    at:       [-343.600, 0.073, 436.256, 28]
+    region:   nw_257
     level:    [107, 109]
   17957124:
     template: Eschan_Puk
-    at:       [-326.800, -0.096, 473.704, 171]
+    region:   nw_257
     level:    [107, 109]
   17957125:
     template: Eschan_Puk
-    at:       [-294.200, 0.152, 442.204, 144]
+    region:   nw_257
     level:    [107, 109]
   17957126:
     template: Eschan_Shadow_Dragon
-    at:       [-367.800, -0.731, 414.191, 176]
+    region:   nw_262
     level:    [107, 110]
   17957127:
     template: Eschan_Shadow_Dragon
-    at:       [-348.600, -0.129, 437.713, 64]
+    region:   nw_262
     level:    [107, 110]
   17957128:
     template: Eschan_Puk
-    at:       [-333.600, -0.039, 446.415, 98]
+    region:   nw_262
     level:    [107, 109]
   17957129:
     template: Eschan_Puk
-    at:       [-353.600, 0.812, 419.313, 197]
+    region:   nw_262
     level:    [107, 109]
   17957130:
     template: Eschan_Puk
-    at:       [-340.200, -0.104, 433.483, 135]
+    region:   nw_262
     level:    [107, 109]
   17957131:
     template: Eschan_Puk
-    at:       [-354.800, -0.365, 406.920, 197]
+    region:   nw_262
     level:    [107, 109]
   17957132:
     template: Eschan_Puk
-    at:       [-339.500, 0.144, 433.673, 6]
+    region:   nw_262
     level:    [107, 109]
   17957133:
     template: Eschan_Shadow_Dragon
-    at:       [-315.700, 0.116, 417.545, 71]
+    region:   nw_269
     level:    [107, 110]
   17957134:
     template: Eschan_Shadow_Dragon
-    at:       [-323.700, 0.548, 419.304, 220]
+    region:   nw_269
     level:    [107, 110]
   17957135:
     template: Eschan_Shadow_Dragon
-    at:       [-317.100, -0.967, 440.342, 59]
+    region:   nw_269
     level:    [107, 110]
   17957136:
     template: Eschan_Shadow_Dragon
-    at:       [-317.000, -0.953, 444.428, 179]
+    region:   nw_269
     level:    [107, 110]
   17957137:
     template: Eschan_Puk
-    at:       [-322.900, -0.363, 405.473, 179]
+    region:   nw_269
     level:    [107, 109]
   17957138:
     template: Eschan_Puk
-    at:       [-315.100, 0.249, 423.208, 35]
+    region:   nw_269
     level:    [107, 109]
   17957139:
     template: Eschan_Puk
-    at:       [-325.100, -0.282, 388.028, 116]
+    region:   nw_269
     level:    [107, 109]
   17957140:
     template: Eschan_Puk
-    at:       [-302.000, 0.173, 424.184, 92]
+    region:   nw_269
     level:    [107, 109]
   17957141:
     template: Eschan_Puk
-    at:       [-319.600, 0.428, 419.558, 106]
+    region:   nw_269
     level:    [107, 109]
   17957142:
     template: Eschan_Shadow_Dragon
-    at:       [-321.600, -0.479, 476.399, 25]
+    region:   nw_278
     level:    [107, 110]
   17957143:
     template: Eschan_Shadow_Dragon
-    at:       [-293.800, -0.379, 470.644, 39]
+    region:   nw_278
     level:    [107, 110]
   17957144:
     template: Eschan_Shadow_Dragon
-    at:       [-275.900, -0.428, 501.209, 157]
+    region:   nw_278
     level:    [107, 110]
   17957145:
     template: Eschan_Puk
-    at:       [-274.200, -0.361, 514.947, 89]
+    region:   nw_278
     level:    [107, 109]
   17957146:
     template: Eschan_Puk
-    at:       [-271.600, -0.354, 476.539, 93]
+    region:   nw_278
     level:    [107, 109]
   17957147:
     template: Eschan_Puk
-    at:       [-306.500, -0.046, 479.609, 94]
+    region:   nw_278
     level:    [107, 109]
   17957148:
     template: Eschan_Puk
-    at:       [-273.900, -0.323, 513.695, 231]
+    region:   nw_278
     level:    [107, 109]
   17957149:
     template: Eschan_Puk
-    at:       [-320.700, -0.246, 470.673, 112]
+    region:   nw_278
     level:    [107, 109]
   17957150:
     template: Eschan_Shadow_Dragon
-    at:       [-276.400, 0.249, 535.189, 120]
+    region:   nw_286
     level:    [107, 110]
   17957151:
     template: Eschan_Shadow_Dragon
-    at:       [-277.200, -1.570, 554.041, 253]
+    region:   nw_286
     level:    [107, 110]
   17957152:
     template: Eschan_Puk
-    at:       [-265.500, -0.054, 562.906, 153]
+    region:   nw_286
     level:    [107, 109]
   17957153:
     template: Eschan_Puk
-    at:       [-269.000, 0.097, 542.416, 171]
+    region:   nw_286
     level:    [107, 109]
   17957154:
     template: Eschan_Puk
-    at:       [-277.600, 0.248, 536.882, 99]
+    region:   nw_286
     level:    [107, 109]
   17957155:
     template: Eschan_Puk
-    at:       [-281.700, -0.222, 537.323, 12]
+    region:   nw_286
     level:    [107, 109]
   17957156:
     template: Eschan_Shadow_Dragon
-    at:       [-246.800, -0.363, 597.638, 133]
+    region:   nw_292
     level:    [107, 110]
   17957157:
     template: Eschan_Shadow_Dragon
-    at:       [-243.000, -0.469, 603.392, 5]
+    region:   nw_292
     level:    [107, 110]
   17957158:
     template: Eschan_Shadow_Dragon
-    at:       [-264.500, -2.138, 510.355, 63]
+    region:   nw_292
     level:    [107, 110]
   17957159:
     template: Eschan_Puk
-    at:       [-232.300, -0.597, 620.234, 195]
+    region:   nw_292
     level:    [107, 109]
   17957160:
     template: Eschan_Puk
-    at:       [-234.500, -0.012, 585.445, 95]
+    region:   nw_292
     level:    [107, 109]
   17957161:
     template: Eschan_Puk
-    at:       [-231.500, -0.902, 586.754, 224]
+    region:   nw_292
     level:    [107, 109]
   17957162:
     template: Eschan_Puk
-    at:       [-235.000, -0.087, 585.364, 96]
+    region:   nw_292
     level:    [107, 109]
   17957163:
     template: Eschan_Tarichuk
-    at:       [238.080, -0.875, -159.700, 104]
+    region:   c_299
     level:    [107, 109]
   17957164:
     template: Eschan_Tarichuk
-    at:       [249.700, -0.232, -151.860, 117]
+    region:   c_299
     level:    [107, 109]
   17957165:
     template: Eschan_Tarichuk
-    at:       [235.760, -0.486, -157.820, 168]
+    region:   c_299
     level:    [107, 109]
   17957166:
     template: Eschan_Tarichuk
-    at:       [276.250, -0.910, -126.370, 76]
+    region:   e_302
     level:    [107, 109]
   17957167:
     template: Eschan_Tarichuk
-    at:       [277.080, -2.482, -116.010, 48]
+    region:   e_302
     level:    [107, 109]
   17957168:
     template: Eschan_Tarichuk
-    at:       [305.310, -0.028, -123.230, 144]
+    region:   e_302
     level:    [107, 109]
   17957169:
     template: Eschan_Tarichuk
-    at:       [281.560, -1.662, -114.570, 23]
+    region:   e_302
     level:    [107, 109]
   17957170:
     template: Eschan_Tarichuk
-    at:       [277.480, -2.443, -124.270, 252]
+    region:   e_302
     level:    [107, 109]
   17957171:
     template: Eschan_Tarichuk
-    at:       [322.400, -0.437, -122.160, 162]
+    region:   e_302
     level:    [107, 109]
   17957172:
     template: Eschan_Bugard
-    at:       [315.540, -0.433, -121.270, 123]
+    region:   e_302
     level:    [107, 110]
   17957173:
     template: Eschan_Bugard
-    at:       [285.960, -2.203, -119.370, 184]
+    region:   e_302
     level:    [107, 110]
   17957174:
     template: Eschan_Tarichuk
-    at:       [392.260, 0.249, -177.350, 130]
+    region:   e_310
     level:    [107, 109]
   17957175:
     template: Eschan_Tarichuk
-    at:       [391.220, 0.254, -176.820, 121]
+    region:   e_310
     level:    [107, 109]
   17957176:
     template: Eschan_Tarichuk
-    at:       [373.600, 0.008, -164.770, 197]
+    region:   e_310
     level:    [107, 109]
   17957177:
     template: Eschan_Tarichuk
-    at:       [353.420, -0.046, -144.410, 208]
+    region:   e_310
     level:    [107, 109]
   17957178:
     template: Eschan_Bugard
-    at:       [353.570, -0.337, -162.460, 89]
+    region:   e_310
     level:    [107, 110]
   17957179:
     template: Eschan_Bugard
-    at:       [390.950, 0.126, -186.600, 37]
+    region:   e_310
     level:    [107, 110]
   17957180:
     template: Eschan_Tarichuk
-    at:       [423.840, 0.302, -202.750, 194]
+    region:   se_316
     level:    [107, 109]
   17957181:
     template: Eschan_Tarichuk
-    at:       [443.550, 0.084, -215.480, 215]
+    region:   se_316
     level:    [107, 109]
   17957182:
     template: Eschan_Tarichuk
-    at:       [449.350, -0.221, -248.190, 201]
+    region:   se_316
     level:    [107, 109]
   17957183:
     template: Eschan_Tarichuk
-    at:       [444.260, -0.458, -195.120, 55]
+    region:   se_316
     level:    [107, 109]
   17957184:
     template: Eschan_Tarichuk
-    at:       [446.380, -0.338, -220.000, 181]
+    region:   se_316
     level:    [107, 109]
   17957185:
     template: Eschan_Bugard
-    at:       [447.740, -0.314, -236.980, 37]
+    region:   se_316
     level:    [107, 110]
   17957186:
     template: Eschan_Bugard
-    at:       [448.700, -0.335, -201.080, 32]
+    region:   se_316
     level:    [107, 110]
   17957187:
     template: Eschan_Tarichuk
-    at:       [417.390, 0.155, -305.280, 52]
+    region:   se_323
     level:    [107, 109]
   17957188:
     template: Eschan_Tarichuk
-    at:       [431.080, -0.135, -279.420, 155]
+    region:   se_323
     level:    [107, 109]
   17957189:
     template: Eschan_Tarichuk
-    at:       [426.420, 0.059, -277.450, 255]
+    region:   se_323
     level:    [107, 109]
   17957190:
     template: Eschan_Tarichuk
-    at:       [449.380, -0.324, -315.140, 183]
+    region:   se_323
     level:    [107, 109]
   17957191:
     template: Eschan_Tarichuk
-    at:       [415.600, -0.136, -324.960, 137]
+    region:   se_323
     level:    [107, 109]
   17957192:
     template: Eschan_Tarichuk
-    at:       [401.320, -0.958, -282.740, 210]
+    region:   se_323
     level:    [107, 109]
   17957193:
     template: Eschan_Tarichuk
-    at:       [362.500, -0.469, -313.600, 68]
+    region:   se_329
     level:    [107, 109]
   17957194:
     template: Eschan_Tarichuk
-    at:       [348.130, 0.216, -300.710, 178]
+    region:   se_329
     level:    [107, 109]
   17957195:
     template: Eschan_Tarichuk
-    at:       [349.400, 0.158, -301.230, 65]
+    region:   se_329
     level:    [107, 109]
   17957196:
     template: Eschan_Tarichuk
-    at:       [350.390, -0.163, -306.410, 95]
+    region:   se_329
     level:    [107, 109]
   17957197:
     template: Eschan_Tarichuk
-    at:       [344.260, 0.289, -297.760, 22]
+    region:   se_329
     level:    [107, 109]
   17957198:
     template: Eschan_Bugard
-    at:       [358.050, 0.177, -298.910, 149]
+    region:   se_329
     level:    [107, 110]
   17957199:
     template: Eschan_Bugard
-    at:       [362.030, -1.133, -278.540, 200]
+    region:   se_329
     level:    [107, 110]
   17957200:
     template: Eschan_Tarichuk
-    at:       [280.640, 0.046, -223.380, 151]
+    region:   se_336
     level:    [107, 109]
   17957201:
     template: Eschan_Tarichuk
-    at:       [273.590, -0.351, -236.830, 247]
+    region:   se_336
     level:    [107, 109]
   17957202:
     template: Eschan_Tarichuk
-    at:       [275.720, -0.241, -235.370, 184]
+    region:   se_336
     level:    [107, 109]
   17957203:
     template: Eschan_Bugard
-    at:       [294.770, 0.190, -264.610, 231]
+    region:   se_336
     level:    [107, 110]
   17957204:
     template: Eschan_Bugard
-    at:       [285.660, 0.039, -252.890, 61]
+    region:   se_336
     level:    [107, 110]
   17957205:
     template: Eschan_Bugard
-    at:       [272.480, -0.370, -279.520, 18]
+    region:   s_341
     level:    [107, 110]
   17957206:
     template: Eschan_Bugard
-    at:       [247.880, -2.313, -309.800, 233]
+    region:   s_341
     level:    [107, 110]
   17957207:
     template: Eschan_Bugard
-    at:       [271.540, -0.513, -273.000, 179]
+    region:   s_341
     level:    [107, 110]
   17957208:
     template: Eschan_Tarichuk
-    at:       [207.720, -1.060, -307.990, 203]
+    region:   s_344
     level:    [107, 109]
   17957209:
     template: Eschan_Tarichuk
-    at:       [215.200, 0.502, -352.500, 174]
+    region:   s_344
     level:    [107, 109]
   17957210:
     template: Eschan_Tarichuk
-    at:       [196.940, -0.086, -348.070, 94]
+    region:   s_344
     level:    [107, 109]
   17957211:
     template: Eschan_Tarichuk
-    at:       [231.410, 0.096, -352.980, 255]
+    region:   s_344
     level:    [107, 109]
   17957212:
     template: Eschan_Tarichuk
-    at:       [207.850, -1.197, -322.700, 75]
+    region:   s_344
     level:    [107, 109]
   17957213:
     template: Eschan_Tarichuk
-    at:       [186.480, -0.663, -405.690, 163]
+    region:   s_349
     level:    [107, 109]
   17957214:
     template: Eschan_Tarichuk
-    at:       [189.130, -1.320, -398.750, 178]
+    region:   s_349
     level:    [107, 109]
   17957215:
     template: Eschan_Tarichuk
-    at:       [197.320, 0.307, -381.940, 188]
+    region:   s_349
     level:    [107, 109]
   17957216:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [583.550, 0.252, -164.790, 7]
+    region:   e_352
     level:    [107, 109]
   17957217:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [607.150, 0.126, -132.750, 63]
+    region:   e_352
     level:    [107, 109]
   17957218:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [571.870, -0.115, -155.950, 71]
+    region:   e_352
     level:    [107, 109]
   17957219:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [580.980, -0.233, -202.680, 144]
+    region:   e_352
     level:    [107, 109]
   17957220:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [581.750, 0.313, -145.480, 208]
+    region:   e_352
     level:    [107, 109]
   17957221:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [572.450, 0.048, -200.500, 253]
+    region:   e_352
     level:    [107, 109]
   17957222:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [572.020, -0.742, -189.880, 233]
+    region:   e_352
     level:    [107, 109]
   17957223:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [595.420, -0.029, -166.990, 83]
+    region:   e_352
     level:    [107, 109]
   17957224:
     template: Eschan_Yztarg
-    at:       [583.670, 0.368, -142.170, 119]
+    region:   e_352
     level:    [107, 110]
   17957225:
     template: Eschan_Yztarg
-    at:       [627.050, -3.194, -157.080, 51]
+    region:   e_352
     level:    [107, 110]
   17957226:
     template: Eschan_Yztarg
-    at:       [564.970, -0.358, -190.900, 82]
+    region:   e_352
     level:    [107, 110]
   17957227:
     template: Eschan_Yztarg
-    at:       [558.130, -0.291, -152.430, 183]
+    region:   e_352
     level:    [107, 110]
   17957228:
     template: Eschan_Yztarg
-    at:       [624.140, -0.578, -173.070, 124]
+    region:   e_352
     level:    [107, 110]
   17957229:
     template: Eschan_Yztarg
-    at:       [597.560, -1.526, -195.320, 67]
+    region:   e_352
     level:    [107, 110]
   17957230:
     template: Eschan_Yztarg
-    at:       [597.690, -0.323, -146.400, 30]
+    region:   e_352
     level:    [107, 110]
   17957231:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [446.170, 0.339, -450.570, 176]
+    region:   se_367
     level:    [107, 109]
   17957232:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [435.600, -0.671, -464.450, 238]
+    region:   se_367
     level:    [107, 109]
   17957233:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [439.100, -0.202, -472.380, 139]
+    region:   se_367
     level:    [107, 109]
   17957234:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [438.750, -0.455, -482.350, 166]
+    region:   se_367
     level:    [107, 109]
   17957235:
     template: Eschan_Yztarg
-    at:       [430.720, -0.716, -473.870, 219]
+    region:   se_367
     level:    [107, 110]
   17957236:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [495.890, 0.195, -490.110, 242]
+    region:   se_372
     level:    [107, 109]
   17957237:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [481.490, 0.032, -507.800, 100]
+    region:   se_372
     level:    [107, 109]
   17957238:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [487.340, 0.090, -456.380, 180]
+    region:   se_374
     level:    [107, 109]
   17957239:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [482.020, 0.021, -468.180, 187]
+    region:   se_374
     level:    [107, 109]
   17957240:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [482.800, 0.129, -457.640, 181]
+    region:   se_374
     level:    [107, 109]
   17957241:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [482.910, -0.248, -448.140, 245]
+    region:   se_374
     level:    [107, 109]
   17957242:
     template: Eschan_Yztarg
-    at:       [496.550, 0.186, -482.720, 165]
+    region:   se_372
     level:    [107, 110]
   17957243:
     template: Eschan_Yztarg
-    at:       [490.010, -0.282, -483.850, 36]
+    region:   se_374
     level:    [107, 110]
   17957244:
     template: Eschan_Yztarg
-    at:       [480.880, -1.389, -487.180, 150]
+    region:   se_374
     level:    [107, 110]
   17957245:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [478.650, -0.321, -531.110, 233]
+    region:   se_381
     level:    [107, 109]
   17957246:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [492.720, 0.206, -501.060, 156]
+    region:   se_381
     level:    [107, 109]
   17957247:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [484.550, 0.324, -500.090, 173]
+    region:   se_381
     level:    [107, 109]
   17957248:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [499.300, -0.694, -498.750, 200]
+    region:   se_381
     level:    [107, 109]
   17957249:
     template: Eschan_Yztarg
-    at:       [484.700, -0.016, -506.590, 120]
+    region:   se_381
     level:    [107, 110]
   17957250:
     template: Eschan_Yztarg
-    at:       [477.170, -0.402, -523.900, 180]
+    region:   se_381
     level:    [107, 110]
   17957251:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [423.020, 0.361, -641.220, 116]
+    region:   se_387
     level:    [107, 109]
   17957252:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [432.490, -0.370, -642.070, 201]
+    region:   se_387
     level:    [107, 109]
   17957253:
     template: Eschan_Yztarg
-    at:       [433.350, -0.345, -644.320, 255]
+    region:   se_387
     level:    [107, 110]
   17957254:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [436.740, 0.292, -616.260, 186]
+    region:   se_390
     level:    [107, 109]
   17957255:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [439.040, -0.493, -601.590, 30]
+    region:   se_390
     level:    [107, 109]
   17957256:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [440.390, 0.299, -615.010, 18]
+    region:   se_390
     level:    [107, 109]
   17957257:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [437.920, -0.275, -606.570, 35]
+    region:   se_390
     level:    [107, 109]
   17957258:
     template: Eschan_Yztarg
-    at:       [442.410, 0.021, -611.950, 223]
+    region:   se_390
     level:    [107, 110]
   17957259:
     template: Eschan_Yztarg
-    at:       [438.830, -0.123, -609.820, 185]
+    region:   se_390
     level:    [107, 110]
   17957260:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [417.230, 0.339, -634.450, 170]
+    region:   se_396
     level:    [107, 109]
   17957261:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [429.720, -0.268, -633.610, 57]
+    region:   se_396
     level:    [107, 109]
   17957262:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [398.070, -0.324, -632.000, 226]
+    region:   se_396
     level:    [107, 109]
   17957263:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [407.760, -0.225, -637.390, 180]
+    region:   se_396
     level:    [107, 109]
   17957264:
     template: Eschan_Yztarg
-    at:       [426.050, -0.083, -632.830, 209]
+    region:   se_396
     level:    [107, 110]
   17957265:
     template: Eschan_Yztarg
-    at:       [403.310, -0.441, -642.280, 95]
+    region:   se_396
     level:    [107, 110]
   17957266:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [366.290, -0.695, -566.300, 19]
+    region:   se_402
     level:    [107, 109]
   17957267:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [368.760, -1.070, -568.920, 244]
+    region:   se_402
     level:    [107, 109]
   17957268:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [358.320, -0.486, -596.770, 13]
+    region:   se_402
     level:    [107, 109]
   17957269:
     template: Eschan_Opo-Opo
     script:   Eschan_Opo-opo
-    at:       [364.060, -0.404, -608.560, 178]
+    region:   se_402
     level:    [107, 109]
   17957270:
     template: Eschan_Yztarg
-    at:       [366.840, -0.356, -603.470, 23]
+    region:   se_402
     level:    [107, 110]
   17957271:
     template: Eschan_Yztarg
-    at:       [364.310, -0.230, -591.820, 197]
+    region:   se_402
     level:    [107, 110]
   17957272:
     template: Eschan_Mosquito
-    at:       [-298.100, 0.446, 490.858, 220]
+    region:   nw_257
     level:    [119, 119]
   17957273:
     template: Eschan_Mosquito
-    at:       [265.340, 0.028, -288.850, 64]
+    region:   se_409
     level:    [119, 119]
   17957274:
     template: Eschan_Mosquito
-    at:       [465.030, -0.541, -296.640, 15]
+    region:   se_409
     level:    [119, 119]
   17957275:
     template: Eschan_Mosquito
-    at:       [584.830, -0.949, -197.960, 23]
+    region:   e_352
     level:    [119, 119]
   17957276:
     template: Eschan_Mosquito

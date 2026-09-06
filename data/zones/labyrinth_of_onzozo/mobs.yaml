@@ -1186,692 +1186,692 @@ templates:
 spawns:
   17649665:
     template: Goblin_Poacher
-    at:       [-18.780, -10.640, -255.732, 123]
+    region:   s_1
     level:    [46, 49]
   17649666:
     template: Goblin_Robber
-    at:       [-23.164, -10.905, -252.212, 127]
+    region:   s_1
     level:    [46, 49]
   17649667:
     template: Goblin_Reaper
-    at:       [-28.722, -10.970, -256.546, 90]
+    region:   s_1
     level:    [46, 49]
   17649668:
     template: Labyrinth_Leech
-    at:       [-18.489, -0.381, -198.924, 20]
+    region:   s_4
     level:    [45, 48]
   17649669:
     template: Labyrinth_Leech
-    at:       [-20.202, -4.076, -210.275, 127]
+    region:   s_4
     level:    [45, 48]
   17649670:
     template: Labyrinth_Leech
-    at:       [-17.229, -11.049, -239.161, 127]
+    region:   s_4
     level:    [45, 48]
   17649671:
     template: Air_Elemental
-    at:       [-21.180, -0.540, -201.859, 90]
+    region:   s_4
     level:    [60, 62]
   17649672:
     template: Labyrinth_Leech
-    at:       [-16.000, -0.500, -182.000, 127]
+    region:   s_8
     level:    [45, 48]
   17649673:
     template: Labyrinth_Leech
-    at:       [-18.000, -0.560, -191.000, 93]
+    region:   s_8
     level:    [45, 48]
   17649674:
     template: Cockatrice
-    at:       [-9.163, 0.025, -160.618, 14]
+    region:   s_8
     level:    [50, 53]
   17649675:
     template: Cockatrice
-    at:       [1.615, -0.356, -167.300, 9]
+    region:   s_8
     level:    [50, 53]
   17649676:
     template: Goblin_Poacher
-    at:       [3.811, -0.541, -169.964, 127]
+    region:   s_8
     level:    [46, 49]
   17649677:
     template: Goblin_Trader
-    at:       [-2.466, 0.194, -133.180, 127]
+    region:   s_13
     level:    [46, 49]
   17649678:
     template: Goblins_Leech
-    at:       [1.000, 1.000, 1.000]
+    region:   s_13
     level:    [33, 35]
   17649679:
     template: Goblin_Robber
-    at:       [1.650, -0.189, -135.925, 97]
+    region:   s_13
     level:    [46, 49]
   17649680:
     template: Goblin_Reaper
-    at:       [-7.633, -0.526, -130.087, 127]
+    region:   s_13
     level:    [46, 49]
   17649681:
     template: Cockatrice
-    at:       [-1.871, 0.142, -133.446, 127]
+    region:   s_13
     level:    [50, 53]
   17649682:
     template: Cockatrice
-    at:       [10.529, -0.785, -133.438, 127]
+    region:   s_13
     level:    [50, 53]
   17649683:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-10.641, -0.414, -130.287, 115]
+    region:   s_13
     level:    [51, 54]
   17649684:
     template: Cockatrice
-    at:       [49.789, -0.642, -140.212, 94]
+    region:   s_20
     level:    [50, 53]
   17649685:
     template: Cockatrice
-    at:       [87.188, 0.097, -129.898, 124]
+    region:   se_21
     level:    [50, 53]
   17649686:
     template: Cockatrice
-    at:       [74.401, -0.485, -125.714, 126]
+    region:   se_21
     level:    [50, 53]
   17649687:
     template: Cockatrice
-    at:       [92.255, -0.494, -125.586, 127]
+    region:   se_21
     level:    [50, 53]
   17649688:
     template: Goblin_Miner
-    at:       [130.570, -0.500, -122.544, 127]
+    region:   se_25
     level:    [51, 54]
   17649689:
     template: Goblin_Bouncer
-    at:       [120.560, -0.353, -118.467, 127]
+    region:   se_25
     level:    [51, 54]
   17649690:
     template: Goblin_Hunter
-    at:       [122.013, 0.263, -101.010, 126]
+    region:   se_25
     level:    [51, 54]
   17649691:
     template: Cockatrice
-    at:       [81.000, -0.010, -112.000, 127]
+    region:   se_25
     level:    [50, 53]
   17649692:
     template: Cockatrice
-    at:       [-104.000, 5.000, -82.000, 34]
+    region:   se_25
     level:    [50, 53]
   17649693:
     template: Mysticmaker_Profblix
-    at:       [124.811, -0.363, -100.604, 115]
+    region:   se_25
     level:    [50, 52]
   17649694:
     template: Goblin_Enchanter
-    at:       [111.970, -0.342, -87.012, 127]
+    region:   se_31
     level:    [51, 54]
   17649695:
     template: Goblin_Hunter
-    at:       [131.358, -0.158, -81.496, 40]
+    region:   se_31
     level:    [51, 54]
   17649696:
     template: Cockatrice
-    at:       [-5.000, -0.214, -113.000, 62]
+    region:   se_31
     level:    [50, 53]
   17649697:
     template: Cockatrice
-    at:       [32.000, -0.500, -134.000, 64]
+    region:   se_31
     level:    [50, 53]
   17649698:
     template: Cockatrice
-    at:       [-119.000, 5.000, -75.000, 5]
+    region:   se_31
     level:    [50, 53]
   17649699:
     template: Cockatrice
-    at:       [82.000, -1.000, -121.000, 121]
+    region:   se_35
     level:    [50, 53]
   17649700:
     template: Cockatrice
-    at:       [69.726, -1.462, -104.983, 103]
+    region:   region_57
     level:    [50, 53]
   17649701:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-73.000, 4.000, -43.000, 103]
+    region:   w_79
     level:    [52, 55]
   17649702:
     template: Cockatrice
-    at:       [41.936, -0.390, -67.656, 31]
+    region:   se_38
     level:    [50, 53]
   17649703:
     template: Goblin_Miner
-    at:       [50.710, -0.945, -81.306, 127]
+    region:   c_39
     level:    [51, 54]
   17649704:
     template: Goblin_Bouncer
-    at:       [46.618, -0.144, -85.193, 127]
+    region:   c_39
     level:    [51, 54]
   17649705:
     template: Cockatrice
-    at:       [38.185, -0.004, -77.104, 89]
+    region:   c_39
     level:    [50, 53]
   17649706:
     template: Goblin_Enchanter
-    at:       [55.777, -1.018, -61.923, 88]
+    region:   e_42
     level:    [52, 55]
   17649707:
     template: Goblin_Hunter
-    at:       [54.114, -0.127, -59.617, 127]
+    region:   e_42
     level:    [52, 55]
   17649708:
     template: Flying_Manta
-    at:       [60.418, 4.432, -34.907, 127]
+    region:   region_58
     level:    [55, 59]
   17649709:
     template: Cockatrice
-    at:       [56.095, 3.947, -40.425, 17]
+    region:   region_58
     level:    [50, 53]
   17649710:
     template: Goblin_Enchanter
-    at:       [55.292, 3.376, -29.237, 17]
+    region:   region_59
     level:    [52, 55]
   17649711:
     template: Flying_Manta
-    at:       [118.588, 13.677, -20.099, 47]
+    region:   region_60
     level:    [55, 59]
   17649712:
     template: Goblin_Miner
-    at:       [109.529, 12.465, -17.995, 127]
+    region:   e_48
     level:    [52, 55]
   17649713:
     template: Air_Elemental
-    at:       [104.094, 11.088, -20.411, 21]
+    region:   e_48
     level:    [60, 62]
   17649714:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [36.248, 9.921, -7.776, 25]
+    region:   e_50
     level:    [52, 55]
   17649715:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [56.306, 10.235, 4.023, 127]
+    region:   e_50
     level:    [52, 55]
   17649716:
     template: Goblin_Enchanter
-    at:       [134.835, -0.863, -63.138, 127]
+    region:   e_50
     level:    [53, 56]
   17649717:
     template: Goblin_Hunter
-    at:       [133.308, 8.726, -27.965, 84]
+    region:   e_50
     level:    [53, 56]
   17649718:
     template: Goblin_Miner
-    at:       [90.256, 9.500, -3.693, 181]
+    region:   c_56
     level:    [53, 56]
   17649719:
     template: Goblin_Bouncer
-    at:       [56.541, 9.632, -8.646, 127]
+    region:   e_50
     level:    [53, 56]
   17649720:
     template: Goblin_Enchanter
-    at:       [76.987, 8.440, -11.766, 127]
+    region:   c_56
     level:    [53, 56]
   17649721:
     template: Goblin_Hunter
-    at:       [139.430, 14.176, 184.465, 127]
+    region:   e_50
     level:    [53, 56]
   17649722:
     template: Goblin_Miner
-    at:       [31.766, 10.433, 32.094, 110]
+    region:   c_56
     level:    [53, 56]
   17649723:
     template: Goblin_Bouncer
-    at:       [43.301, 10.296, 17.440, 170]
+    region:   c_56
     level:    [53, 56]
   17649724:
     template: Goblin_Enchanter
-    at:       [37.937, 10.184, 25.490, 99]
+    region:   c_60
     level:    [53, 56]
   17649725:
     template: Air_Elemental
-    at:       [20.170, 9.331, -23.996, 127]
+    region:   c_60
     level:    [60, 62]
   17649726:
     template: Goblin_Miner
-    at:       [1.546, 9.691, -28.864, 127]
+    region:   c_62
     level:    [53, 56]
   17649727:
     template: Goblin_Bouncer
-    at:       [-11.000, 9.892, -51.000, 85]
+    region:   c_62
     level:    [53, 56]
   17649728:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-4.768, 9.598, -49.266, 127]
+    region:   c_62
     level:    [52, 55]
   17649729:
     template: Goblin_Miner
-    at:       [-30.588, 12.114, -60.534, 97]
+    region:   c_65
     level:    [53, 56]
   17649730:
     template: Flying_Manta
-    at:       [-39.356, 14.265, -60.406, 127]
+    region:   region_61
     level:    [55, 59]
   17649731:
     template: Lord_of_Onzozo
-    at:       [-44.000, 14.000, -58.000, 73]
+    region:   region_61
     level:    [74, 77]
   17649732:
     template: Goblin_Hunter
-    at:       [44.053, 10.022, 34.597, 127]
+    region:   region_62
     level:    [53, 56]
   17649733:
     template: Goblin_Bouncer
-    at:       [-13.983, 8.882, -22.718, 127]
+    region:   c_69
     level:    [53, 56]
   17649734:
     template: Cockatrice
-    at:       [-39.082, 3.591, -101.549, 119]
+    region:   s_70
     level:    [50, 53]
   17649735:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-79.000, 4.000, -75.000, 127]
+    region:   s_70
     level:    [51, 54]
   17649736:
     template: Cockatrice
-    at:       [-70.538, 4.583, -83.044, 127]
+    region:   w_73
     level:    [50, 53]
   17649737:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-98.632, 4.310, -65.822, 125]
+    region:   w_73
     level:    [51, 54]
   17649738:
     template: Cockatrice
-    at:       [-58.418, 4.204, -93.767, 12]
+    region:   w_73
     level:    [50, 53]
   17649739:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-94.387, 4.563, -94.413, 2]
+    region:   w_73
     level:    [51, 54]
   17649740:
     template: Cockatrice
-    at:       [-105.492, 3.964, -94.441, 126]
+    region:   w_73
     level:    [50, 53]
   17649741:
     template: Cockatrice
-    at:       [-68.502, 3.884, -77.907, 127]
+    region:   w_73
     level:    [50, 53]
   17649742:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-114.508, 3.720, -67.311, 127]
+    region:   w_73
     level:    [51, 54]
   17649743:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-92.129, 4.334, -60.648, 127]
+    region:   w_79
     level:    [51, 54]
   17649744:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-90.194, 5.141, -49.998, 127]
+    region:   w_79
     level:    [51, 54]
   17649745:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-89.312, 4.225, -34.839, 5]
+    region:   w_79
     level:    [51, 54]
   17649746:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-70.555, 4.891, -66.983, 127]
+    region:   w_79
     level:    [51, 54]
   17649747:
     template: Cockatrice
-    at:       [-83.278, 4.992, -49.000, 81]
+    region:   w_79
     level:    [50, 53]
   17649748:
     template: Goblin_Bouncer
-    at:       [-140.886, 5.510, -65.254, 49]
+    region:   w_84
     level:    [53, 56]
   17649749:
     template: Air_Elemental
-    at:       [-144.420, 5.812, -59.667, 127]
+    region:   w_84
     level:    [60, 62]
   17649750:
     template: Goblin_Miner
-    at:       [-181.767, 9.333, -76.967, 127]
+    region:   w_86
     level:    [53, 56]
   17649751:
     template: Goblin_Hunter
-    at:       [-50.923, 13.378, -63.153, 90]
+    region:   w_86
     level:    [53, 56]
   17649752:
     template: Goblin_Enchanter
-    at:       [16.671, 9.611, -24.344, 109]
+    region:   w_86
     level:    [53, 56]
   17649753:
     template: Goblin_Bouncer
-    at:       [-179.000, 10.000, -63.000, 127]
+    region:   sw_89
     level:    [53, 56]
   17649754:
     template: Goblin_Miner
-    at:       [-168.862, 9.809, -97.066, 32]
+    region:   region_63
     level:    [53, 56]
   17649755:
     template: Flying_Manta
-    at:       [-100.912, 4.263, -21.983, 87]
+    region:   w_91
     level:    [55, 59]
   17649756:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-110.555, 4.825, 3.417, 127]
+    region:   w_92
     level:    [54, 57]
   17649757:
     template: Mushussu_LO
     script:   Mushussu
-    at:       [-110.859, 4.581, 20.368, 127]
+    region:   w_92
     level:    [54, 57]
   17649758:
     template: Flying_Manta
-    at:       [-111.183, 5.357, 44.411, 71]
+    region:   w_92
     level:    [55, 59]
   17649759:
     template: Flying_Manta
-    at:       [-128.471, 4.952, 0.489, 127]
+    region:   w_92
     level:    [55, 59]
   17649760:
     template: Flying_Manta
-    at:       [-104.000, 4.000, 28.000, 127]
+    region:   w_92
     level:    [55, 59]
   17649761:
     template: Peg_Powler
-    at:       [-77.000, 4.000, 58.000, 127]
+    region:   region_64
     level:    [61, 62]
   17649762:
     template: Flying_Manta
-    at:       [-81.567, 5.013, 37.186, 127]
+    region:   w_98
     level:    [55, 59]
   17649763:
     template: Flying_Manta
-    at:       [-72.956, 4.943, 39.293, 127]
+    region:   w_98
     level:    [55, 59]
   17649764:
     template: Goblin_Hunter
-    at:       [-171.551, 9.752, -64.130, 127]
+    region:   w_98
     level:    [55, 58]
   17649765:
     template: Goblin_Bouncer
-    at:       [-88.145, 5.018, 40.687, 37]
+    region:   w_98
     level:    [55, 58]
   17649766:
     template: Flying_Manta
-    at:       [-64.269, 5.441, 72.382, 127]
+    region:   w_102
     level:    [55, 59]
   17649767:
     template: Goblin_Miner
-    at:       [-65.400, 4.638, 65.231, 209]
+    region:   w_102
     level:    [55, 58]
   17649768:
     template: Goblin_Enchanter
-    at:       [-180.890, 9.336, -76.762, 127]
+    region:   w_102
     level:    [55, 58]
   17649769:
     template: Flying_Manta
-    at:       [-51.745, 4.288, 46.295, 127]
+    region:   c_105
     level:    [55, 59]
   17649770:
     template: Flying_Manta
-    at:       [-33.112, 4.735, 34.742, 65]
+    region:   c_105
     level:    [55, 59]
   17649771:
     template: Goblin_Miner
-    at:       [-44.537, 4.992, 31.114, 122]
+    region:   c_105
     level:    [55, 58]
   17649772:
     template: Goblin_Enchanter
-    at:       [-85.038, 5.181, 62.810, 73]
+    region:   c_105
     level:    [55, 58]
   17649773:
     template: Flying_Manta
-    at:       [-65.089, 5.386, 81.363, 127]
+    region:   c_109
     level:    [55, 59]
   17649774:
     template: Flying_Manta
-    at:       [-54.100, 5.462, 81.680, 8]
+    region:   c_109
     level:    [55, 59]
   17649775:
     template: Goblin_Hunter
-    at:       [-74.760, 4.532, 43.525, 127]
+    region:   c_109
     level:    [55, 58]
   17649776:
     template: Goblin_Bouncer
-    at:       [-42.191, 5.050, 70.169, 89]
+    region:   c_109
     level:    [55, 58]
   17649777:
     template: Water_Elemental
-    at:       [-47.494, 3.177, 94.569, 127]
+    region:   c_113
     level:    [60, 62]
   17649778:
     template: Torama
-    at:       [-63.170, 4.417, 101.432, 68]
+    region:   n_114
     level:    [70, 73]
   17649779:
     template: Torama
-    at:       [-62.446, 4.076, 127.246, 127]
+    region:   n_114
     level:    [70, 73]
   17649780:
     template: Torama
-    at:       [-75.873, 4.679, 139.577, 127]
+    region:   nw_116
     level:    [70, 73]
   17649781:
     template: Air_Elemental
-    at:       [-90.324, 2.007, 136.288, 6]
+    region:   nw_116
     level:    [60, 62]
   17649782:
     template: Torama
-    at:       [-124.874, 0.000, 124.742, 127]
+    region:   nw_118
     level:    [70, 73]
   17649783:
     template: Labyrinth_Manticore
-    at:       [-119.897, 0.275, 127.060, 127]
+    region:   nw_122
     level:    [71, 74]
   17649784:
     template: Narasimha
-    at:       [-123.000, -0.600, 119.000, 127]
+    region:   region_65
     level:    [75, 77]
   17649785:
     template: Water_Elemental
-    at:       [-117.092, -0.101, 114.090, 127]
+    region:   nw_118
     level:    [60, 62]
   17649786:
     template: Torama
-    at:       [-98.000, -1.072, 136.000, 23]
+    region:   nw_122
     level:    [70, 73]
   17649787:
     template: Labyrinth_Manticore
-    at:       [-126.841, -0.554, 129.681, 31]
+    region:   nw_122
     level:    [71, 74]
   17649788:
     template: Air_Elemental
-    at:       [-136.518, -1.299, 138.352, 45]
+    region:   nw_122
     level:    [60, 62]
   17649789:
     template: Torama
-    at:       [-140.842, -0.873, 150.054, 199]
+    region:   nw_122
     level:    [70, 73]
   17649790:
     template: Labyrinth_Manticore
-    at:       [-140.000, -0.955, 144.000, 53]
+    region:   region_66
     level:    [71, 74]
   17649791:
     template: Goblin_Bouncer
-    at:       [67.252, 11.468, 57.109, 80]
+    region:   e_127
     level:    [54, 57]
   17649792:
     template: Goblin_Hunter
-    at:       [63.429, 10.982, 59.969, 122]
+    region:   e_127
     level:    [56, 58]
   17649793:
     template: Goblin_Hunter
-    at:       [67.934, 11.652, 57.001, 117]
+    region:   e_129
     level:    [54, 57]
   17649794:
     template: Goblin_Miner
-    at:       [92.244, 12.611, 51.699]
+    region:   e_129
     level:    [54, 57]
   17649795:
     template: Hellion
-    at:       [97.454, 14.882, 58.474, 49]
+    region:   e_129
     level:    [66, 66]
   17649796:
     template: Flying_Manta
-    at:       [121.000, 14.000, 59.000, 91]
+    region:   region_67
     level:    [55, 59]
   17649797:
     template: Tainted_Flesh_LoO
     script:   Tainted_Flesh
-    at:       [136.566, 14.708, 70.077, 127]
+    region:   region_68
     level:    [60, 63]
   17649798:
     template: Goblin_Bouncer
-    at:       [106.777, 14.600, 106.716, 168]
+    region:   e_134
     level:    [55, 58]
   17649799:
     template: Goblin_Enchanter
-    at:       [-40.033, 4.917, 43.545, 127]
+    region:   e_134
     level:    [54, 57]
   17649800:
     template: Goblin_Miner
-    at:       [95.406, 14.698, 98.696, 127]
+    region:   e_134
     level:    [55, 58]
   17649801:
     template: Goblin_Miner
-    at:       [98.403, 14.633, 112.906, 108]
+    region:   ne_137
     level:    [55, 58]
   17649802:
     template: Goblin_Enchanter
-    at:       [101.387, 14.531, 107.883, 127]
+    region:   ne_137
     level:    [54, 57]
   17649803:
     template: Goblin_Bouncer
-    at:       [137.750, 12.727, 143.599, 21]
+    region:   ne_139
     level:    [55, 58]
   17649804:
     template: Goblin_Enchanter
-    at:       [116.743, 14.863, 156.634, 127]
+    region:   ne_139
     level:    [54, 57]
   17649805:
     template: Goblin_Hunter
-    at:       [90.790, 11.967, 48.486, 34]
+    region:   ne_139
     level:    [54, 57]
   17649806:
     template: Goblin_Hunter
-    at:       [128.789, 14.306, 146.893, 9]
+    region:   ne_142
     level:    [54, 57]
   17649807:
     template: Air_Elemental
-    at:       [137.411, 14.599, 197.831, 122]
+    region:   ne_142
     level:    [60, 62]
   17649808:
     template: Flying_Manta
-    at:       [130.927, 14.478, 208.215, 162]
+    region:   region_69
     level:    [55, 59]
   17649809:
     template: Water_Elemental
-    at:       [132.765, 14.227, 205.942, 33]
+    region:   region_69
     level:    [60, 62]
   17649810:
     template: Tainted_Flesh_LoO
     script:   Tainted_Flesh
-    at:       [127.523, 14.327, 210.258, 76]
+    region:   region_70
     level:    [60, 63]
   17649811:
     template: Torama
-    at:       [55.890, 4.021, 131.186, 127]
+    region:   ne_147
     level:    [70, 73]
   17649812:
     template: Torama
-    at:       [62.397, 4.334, 119.532, 127]
+    region:   ne_147
     level:    [70, 73]
   17649813:
     template: Torama
-    at:       [-1.758, 4.982, 153.412, 83]
+    region:   n_149
     level:    [70, 73]
   17649814:
     template: Torama
-    at:       [8.113, 5.055, 159.197, 127]
+    region:   n_149
     level:    [70, 73]
   17649815:
     template: Torama
-    at:       [39.858, 4.364, 164.961, 127]
+    region:   n_151
     level:    [70, 73]
   17649816:
     template: Torama
-    at:       [48.440, 5.070, 174.352, 127]
+    region:   n_151
     level:    [70, 73]
   17649817:
     template: Torama
-    at:       [53.826, 4.287, 143.153, 127]
+    region:   n_155
     level:    [70, 73]
   17649818:
     template: Soulstealer_Skullnix
-    at:       [38.000, 5.000, 159.000, 127]
+    region:   region_71
     level:    [69, 72]
   17649819:
     template: Torama
-    at:       [-7.000, 4.467, 184.000, 98]
+    region:   n_155
     level:    [70, 73]
   17649820:
     template: Torama
-    at:       [-7.233, 4.976, 204.202, 83]
+    region:   n_155
     level:    [70, 73]
   17649821:
     template: Labyrinth_Manticore
-    at:       [49.000, 4.000, 196.000, 127]
+    region:   n_155
     level:    [71, 74]
   17649822:
     template: Ose
-    at:       [17.000, 4.000, 152.000, 113]
+    region:   region_71
     level:    [74, 76]
   17649823:
     template: Torama
-    at:       [26.971, 4.440, 216.229, 127]
+    region:   n_159
     level:    [70, 73]
   17649824:
     template: Torama
-    at:       [9.000, 4.000, 176.000, 127]
+    region:   n_159
     level:    [70, 73]
   17649825:
     template: Goblin_Alchemist
-    at:       [24.384, 5.471, 197.938, 103]
+    region:   n_159
     level:    [66, 69]
   17649826:
     template: Labyrinth_Manticore
-    at:       [4.000, 3.000, 201.000, 127]
+    region:   n_159
     level:    [71, 74]
   17649827:
     template: Wyvern
-    at:       [16.000, 5.000, 185.000, 127]
+    region:   n_159
     level:    [72, 75]
   17649828:
     template: Water_Elemental
-    at:       [30.421, 5.318, 156.935, 33]
+    region:   n_164
     level:    [60, 62]
   17649829:
     template: Goblin_Alchemist
-    at:       [13.729, 4.814, 166.295, 127]
+    region:   n_164
     level:    [66, 69]
   17649830:
     template: Water_Elemental
-    at:       [-7.370, 5.106, 170.640, 127]
+    region:   n_166
     level:    [60, 62]
   17649831:
     template: Goblin_Bandit
-    at:       [5.096, 3.930, 166.865, 126]
+    region:   n_167
     level:    [66, 69]
   17649832:
     template: Goblin_Shepherd
-    at:       [16.965, 4.892, 164.793, 138]
+    region:   n_167
     level:    [66, 69]
   17649833:
     template: Goblins_Leech
@@ -1879,23 +1879,23 @@ spawns:
     level:    [49, 50]
   17649834:
     template: Goblin_Mercenary
-    at:       [43.103, 5.677, 181.977, 23]
+    region:   n_167
     level:    [66, 69]
   17649835:
     template: Water_Elemental
-    at:       [19.981, 4.995, 167.218, 127]
+    region:   n_167
     level:    [60, 62]
   17649836:
     template: Goblin_Alchemist
-    at:       [46.454, 4.606, 179.825, 126]
+    region:   n_172
     level:    [66, 69]
   17649837:
     template: Goblin_Bandit
-    at:       [29.024, 3.474, 185.723, 184]
+    region:   n_164
     level:    [66, 69]
   17649838:
     template: Goblin_Shepherd
-    at:       [38.347, 5.500, 178.050, 56]
+    region:   n_172
     level:    [66, 69]
   17649839:
     template: Goblins_Leech
@@ -1903,19 +1903,19 @@ spawns:
     level:    [49, 50]
   17649840:
     template: Goblin_Mercenary
-    at:       [19.549, 4.570, 181.891, 85]
+    region:   n_172
     level:    [66, 69]
   17649841:
     template: Water_Elemental
-    at:       [45.618, 4.666, 179.014, 127]
+    region:   n_172
     level:    [60, 62]
   17649842:
     template: Goblin_Bandit
-    at:       [42.977, 4.970, 201.956, 39]
+    region:   n_159
     level:    [66, 69]
   17649843:
     template: Goblin_Shepherd
-    at:       [41.150, 5.026, 204.483, 36]
+    region:   n_159
     level:    [66, 69]
   17649844:
     template: Goblins_Leech
@@ -1923,27 +1923,27 @@ spawns:
     level:    [49, 50]
   17649845:
     template: Goblin_Mercenary
-    at:       [51.128, 4.500, 190.142, 40]
+    region:   n_159
     level:    [66, 69]
   17649846:
     template: Water_Elemental
-    at:       [42.836, 4.980, 202.594, 127]
+    region:   region_72
     level:    [60, 62]
   17649847:
     template: Babaulas
-    at:       [28.000, 5.000, 290.000, 127]
+    region:   n_183
     level:    [96, 98]
   17649848:
     template: Babaulas
-    at:       [13.000, 4.000, 292.000, 127]
+    region:   n_183
     level:    [96, 98]
   17649849:
     template: Babaulas
-    at:       [2.000, 4.000, 278.000, 127]
+    region:   n_185
     level:    [96, 98]
   17649850:
     template: Boribaba
-    at:       [19.000, 5.000, 272.000, 127]
+    region:   n_185
     level:    [95, 97]
   17649851:
     template: Boribaba
@@ -1951,35 +1951,35 @@ spawns:
     level:    [95, 97]
   17649852:
     template: Babaulas
-    at:       [23.320, 4.063, 265.671, 77]
+    region:   n_188
     level:    [96, 98]
   17649853:
     template: Babaulas
-    at:       [18.000, 5.000, 267.000, 127]
+    region:   n_188
     level:    [96, 98]
   17649854:
     template: Babaulas
-    at:       [25.000, 5.000, 271.000, 127]
+    region:   n_188
     level:    [96, 98]
   17649855:
     template: Babaulas
-    at:       [10.000, 5.000, 280.000, 127]
+    region:   n_191
     level:    [96, 98]
   17649856:
     template: Boribaba
-    at:       [22.000, 6.000, 279.000, 127]
+    region:   n_191
     level:    [95, 97]
   17649857:
     template: Boribaba
-    at:       [4.000, 5.000, 287.000, 127]
+    region:   n_191
     level:    [95, 97]
   17649858:
     template: Air_Elemental
-    at:       [20.325, 4.091, 233.179, 127]
+    region:   n_191
     level:    [60, 62]
   17649859:
     template: Water_Elemental
-    at:       [15.764, 5.079, 268.452, 127]
+    region:   n_195
     level:    [60, 62]
   17649860:
     template: Ubume

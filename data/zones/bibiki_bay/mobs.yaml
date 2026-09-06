@@ -1615,423 +1615,423 @@ spawns:
     level:    [40, 42]
   16793607:
     template: Jagil
-    at:       [-444.873, -0.299, -403.688, 159]
+    region:   sw_7
     level:    [35, 38]
   16793608:
     template: Coralline_Uragnite
-    at:       [-406.205, -0.292, -407.641, 245]
+    region:   sw_8
     level:    [32, 34]
   16793609:
     template: Coralline_Uragnite
-    at:       [-387.863, -0.311, -408.680, 108]
+    region:   sw_9
     level:    [32, 34]
   16793610:
     template: Coralline_Uragnite
-    at:       [-351.684, -0.253, -400.461, 100]
+    region:   sw_9
     level:    [32, 34]
   16793611:
     template: Coralline_Uragnite
-    at:       [-281.849, -0.211, -397.711, 98]
+    region:   sw_12
     level:    [32, 34]
   16793612:
     template: Kraken
-    at:       [-125.000, -0.001, -605.000, 248]
+    region:   sw_12
     level:    [37, 40]
   16793613:
     template: Viscous_Clot
-    at:       [-369.073, -3.713, -437.934, 71]
+    region:   sw_13
     level:    [38, 40]
   16793614:
     template: Coralline_Uragnite
-    at:       [-387.209, -3.304, -433.291, 99]
+    region:   sw_13
     level:    [32, 34]
   16793615:
     template: Coralline_Uragnite
-    at:       [-394.916, -2.948, -426.888, 130]
+    region:   sw_13
     level:    [32, 34]
   16793616:
     template: Viscous_Clot
-    at:       [-333.446, -1.284, -420.345, 104]
+    region:   sw_13
     level:    [38, 40]
   16793617:
     template: Coralline_Uragnite
-    at:       [-335.924, -1.413, -421.473, 149]
+    region:   sw_17
     level:    [32, 34]
   16793618:
     template: Ignis_Fatuus_Bibiki_Bay
     script:   Ignis_Fatuus
-    at:       [-345.315, -3.386, -445.033, 133]
+    region:   sw_17
     level:    [35, 37]
   16793619:
     template: Coastal_Opo-opo
-    at:       [-401.072, -3.883, -475.673, 210]
+    region:   sw_19
     level:    [37, 39]
   16793620:
     template: Coastal_Opo-opo
-    at:       [-371.096, -3.814, -486.109, 209]
+    region:   sw_19
     level:    [37, 39]
   16793621:
     template: Alraune
-    at:       [-337.840, -4.108, -473.197, 239]
+    region:   sw_21
     level:    [38, 40]
   16793622:
     template: Toucan
-    at:       [-362.407, -3.671, -459.656, 148]
+    region:   sw_22
     level:    [38, 40]
   16793623:
     template: Alraune
-    at:       [-436.660, -3.518, -508.649, 145]
+    region:   sw_23
     level:    [38, 40]
   16793624:
     template: Alraune
-    at:       [-468.402, -3.949, -510.722, 242]
+    region:   sw_24
     level:    [38, 40]
   16793625:
     template: Coastal_Opo-opo
-    at:       [-517.374, -3.797, -569.916, 179]
+    region:   sw_25
     level:    [37, 39]
   16793626:
     template: Coastal_Opo-opo
-    at:       [-517.150, -3.817, -595.382, 192]
+    region:   sw_26
     level:    [37, 39]
   16793627:
     template: Coastal_Opo-opo
-    at:       [-518.776, -3.728, -631.614, 127]
+    region:   sw_27
     level:    [37, 39]
   16793628:
     template: Toucan
-    at:       [-516.507, -3.439, -583.968, 46]
+    region:   sw_28
     level:    [38, 40]
   16793629:
     template: Coastal_Opo-opo
-    at:       [-474.105, -3.542, -696.889, 201]
+    region:   sw_29
     level:    [37, 39]
   16793630:
     template: Coastal_Opo-opo
-    at:       [-477.765, -3.698, -710.881, 15]
+    region:   sw_29
     level:    [37, 39]
   16793631:
     template: Toucan
-    at:       [-515.981, -3.952, -765.965, 176]
+    region:   sw_31
     level:    [38, 40]
   16793632:
     template: Ignis_Fatuus_Bibiki_Bay
     script:   Ignis_Fatuus
-    at:       [-528.078, -3.735, -763.708, 135]
+    region:   sw_31
     level:    [35, 37]
   16793633:
     template: Alraune
-    at:       [-553.414, -3.525, -745.839, 141]
+    region:   sw_33
     level:    [38, 40]
   16793634:
     template: Alraune
-    at:       [-562.908, -3.936, -802.141, 110]
+    region:   sw_34
     level:    [38, 40]
   16793635:
     template: Alraune
-    at:       [-553.174, -3.824, -806.849, 142]
+    region:   sw_34
     level:    [38, 40]
   16793636:
     template: Jagil
-    at:       [-632.690, -0.329, -610.281, 104]
+    region:   sw_36
     level:    [35, 38]
   16793637:
     template: Coralline_Uragnite
-    at:       [-642.913, -0.290, -725.030, 53]
+    region:   sw_37
     level:    [32, 34]
   16793638:
     template: Coralline_Uragnite
-    at:       [-646.053, -0.279, -713.213, 133]
+    region:   sw_37
     level:    [33, 35]
   16793639:
     template: Viscous_Clot
-    at:       [-639.769, -0.299, -688.462, 228]
+    region:   sw_37
     level:    [38, 40]
   16793640:
     template: Jagil
-    at:       [-634.534, -0.305, -637.201, 173]
+    region:   sw_40
     level:    [35, 38]
   16793641:
     template: Jagil
-    at:       [-621.830, -1.584, -686.621, 224]
+    region:   sw_40
     level:    [35, 38]
   16793642:
     template: Coralline_Uragnite
-    at:       [-629.299, -0.408, -687.358, 181]
+    region:   sw_40
     level:    [33, 35]
   16793643:
     template: Coralline_Uragnite
-    at:       [-632.634, -0.282, -739.186, 214]
+    region:   sw_44
     level:    [33, 35]
   16793644:
     template: Kraken
-    at:       [-640.787, -0.299, -753.275, 217]
+    region:   sw_44
     level:    [37, 40]
   16793645:
     template: Jagil
-    at:       [-645.633, -0.298, -652.296, 224]
+    region:   sw_45
     level:    [35, 38]
   16793646:
     template: Serra
-    at:       [-639.118, -0.301, -619.797, 131]
+    region:   sw_45
     level:    [44, 46]
   16793647:
     template: Viscous_Clot
-    at:       [-609.686, -3.325, -667.146, 96]
+    region:   sw_37
     level:    [38, 40]
   16793648:
     template: Coastal_Opo-opo
-    at:       [-614.964, -2.691, -626.485, 252]
+    region:   sw_48
     level:    [37, 39]
   16793649:
     template: Jagil
-    at:       [-620.215, -2.316, -677.057, 38]
+    region:   sw_48
     level:    [35, 38]
   16793650:
     template: Toucan
-    at:       [-602.153, -3.818, -722.112, 231]
+    region:   sw_50
     level:    [38, 40]
   16793651:
     template: Jagil
-    at:       [-603.077, -3.224, -702.300, 77]
+    region:   sw_50
     level:    [35, 38]
   16793652:
     template: Alraune
-    at:       [-491.524, -3.335, -834.252, 38]
+    region:   sw_52
     level:    [38, 40]
   16793653:
     template: Coastal_Opo-opo
-    at:       [-434.340, -3.811, -847.433, 236]
+    region:   sw_53
     level:    [37, 39]
   16793654:
     template: Coastal_Opo-opo
-    at:       [-436.432, -3.677, -851.234, 85]
+    region:   sw_53
     level:    [37, 39]
   16793655:
     template: Alraune
-    at:       [-389.139, -3.330, -833.924, 30]
+    region:   sw_55
     level:    [38, 40]
   16793656:
     template: Coastal_Opo-opo
-    at:       [-410.337, -3.694, -836.662, 212]
+    region:   sw_55
     level:    [37, 39]
   16793657:
     template: Alraune
-    at:       [-361.794, -3.760, -792.222, 100]
+    region:   sw_57
     level:    [38, 40]
   16793658:
     template: Alraune
-    at:       [-350.034, -3.703, -802.416, 90]
+    region:   sw_57
     level:    [38, 40]
   16793659:
     template: Coastal_Opo-opo
-    at:       [-329.596, -3.650, -764.113, 108]
+    region:   sw_59
     level:    [37, 39]
   16793660:
     template: Alraune
-    at:       [-312.532, -3.629, -736.713, 122]
+    region:   sw_60
     level:    [38, 40]
   16793661:
     template: Alraune
-    at:       [-307.997, -3.814, -730.409, 221]
+    region:   sw_60
     level:    [38, 40]
   16793662:
     template: Coralline_Uragnite
-    at:       [-369.605, -0.277, -915.245, 253]
+    region:   sw_62
     level:    [33, 35]
   16793663:
     template: Coralline_Uragnite
-    at:       [-128.000, 0.001, -694.000, 1]
+    region:   sw_62
     level:    [33, 35]
   16793664:
     template: Jagil
-    at:       [-348.439, -0.320, -910.409, 157]
+    region:   sw_62
     level:    [35, 38]
   16793665:
     template: Coralline_Uragnite
-    at:       [-275.086, -0.287, -911.019, 227]
+    region:   sw_65
     level:    [33, 35]
   16793666:
     template: Coralline_Uragnite
-    at:       [-292.920, -0.349, -924.978, 35]
+    region:   sw_65
     level:    [33, 35]
   16793667:
     template: Kraken
-    at:       [-385.171, -0.300, -920.657, 110]
+    region:   sw_67
     level:    [37, 40]
   16793668:
     template: Toucan
-    at:       [-347.526, -2.404, -892.337, 254]
+    region:   sw_68
     level:    [38, 40]
   16793669:
     template: Toucan
-    at:       [-325.605, -1.759, -898.888, 195]
+    region:   sw_68
     level:    [38, 40]
   16793670:
     template: Viscous_Clot
-    at:       [-317.473, -2.881, -891.771, 173]
+    region:   sw_68
     level:    [38, 40]
   16793671:
     template: Viscous_Clot
-    at:       [-358.000, 0.001, -402.000, 218]
+    region:   sw_68
     level:    [38, 40]
   16793672:
     template: Alraune
-    at:       [-369.480, -2.640, -942.519, 212]
+    region:   sw_72
     level:    [38, 40]
   16793673:
     template: Coastal_Opo-opo
-    at:       [-311.765, -2.925, -945.651, 178]
+    region:   sw_73
     level:    [37, 39]
   16793674:
     template: Coastal_Opo-opo
-    at:       [-328.811, -1.283, -936.112, 104]
+    region:   sw_73
     level:    [37, 39]
   16793675:
     template: Toucan
-    at:       [-399.000, -3.000, -481.000, 70]
+    region:   sw_75
     level:    [38, 40]
   16793676:
     template: Jagil
-    at:       [-266.098, -3.503, -846.997, 236]
+    region:   sw_75
     level:    [35, 38]
   16793677:
     template: Toucan
-    at:       [-267.917, -3.786, -855.054, 78]
+    region:   sw_75
     level:    [38, 40]
   16793678:
     template: Jagil
-    at:       [-318.000, 0.001, -399.000, 70]
+    region:   sw_75
     level:    [35, 38]
   16793679:
     template: Toucan
-    at:       [-244.249, -3.415, -825.854, 254]
+    region:   sw_79
     level:    [38, 40]
   16793680:
     template: Alraune
-    at:       [-241.508, -3.979, -844.223, 208]
+    region:   sw_79
     level:    [38, 40]
   16793681:
     template: Alraune
-    at:       [-205.760, -3.565, -793.519, 104]
+    region:   s_81
     level:    [38, 40]
   16793682:
     template: Alraune
-    at:       [-199.784, -3.805, -796.816]
+    region:   s_81
     level:    [38, 40]
   16793683:
     template: Coastal_Opo-opo
-    at:       [-230.441, -3.232, -752.743, 196]
+    region:   sw_83
     level:    [37, 39]
   16793684:
     template: Coastal_Opo-opo
-    at:       [-202.568, -3.875, -718.675, 37]
+    region:   s_84
     level:    [37, 39]
   16793685:
     template: Coastal_Opo-opo
-    at:       [-210.221, -3.233, -730.618, 234]
+    region:   s_84
     level:    [37, 39]
   16793686:
     template: Coralline_Uragnite
-    at:       [-125.850, -0.295, -703.816, 202]
+    region:   s_86
     level:    [33, 35]
   16793687:
     template: Coralline_Uragnite
-    at:       [-123.690, -0.292, -711.031, 232]
+    region:   s_86
     level:    [33, 35]
   16793688:
     template: Viscous_Clot
-    at:       [-118.616, -0.314, -703.221, 239]
+    region:   s_93
     level:    [38, 40]
   16793689:
     template: Coralline_Uragnite
-    at:       [-117.562, -0.281, -640.046, 225]
+    region:   s_89
     level:    [33, 35]
   16793690:
     template: Coralline_Uragnite
-    at:       [-117.262, -0.280, -639.870, 227]
+    region:   s_89
     level:    [33, 35]
   16793691:
     template: Kraken
-    at:       [-133.765, -0.384, -567.637, 74]
+    region:   s_91
     level:    [37, 40]
   16793692:
     template: Toucan
-    at:       [-117.413, -0.245, -633.773, 189]
+    region:   s_92
     level:    [38, 40]
   16793693:
     template: Alraune
-    at:       [-148.949, -3.127, -693.202, 189]
+    region:   s_93
     level:    [38, 40]
   16793694:
     template: Ignis_Fatuus_Bibiki_Bay
     script:   Ignis_Fatuus
-    at:       [-164.371, -3.919, -682.986, 86]
+    region:   s_93
     level:    [35, 37]
   16793695:
     template: Viscous_Clot
-    at:       [-330.000, -0.001, -914.000, 75]
+    region:   s_93
     level:    [38, 40]
   16793696:
     template: Coastal_Opo-opo
-    at:       [-174.560, -3.796, -616.477, 48]
+    region:   s_96
     level:    [37, 39]
   16793697:
     template: Coastal_Opo-opo
-    at:       [-158.243, -3.978, -600.555, 31]
+    region:   s_96
     level:    [37, 39]
   16793698:
     template: Shankha
-    at:       [-176.392, -3.776, -611.012, 84]
+    region:   s_96
     level:    [52, 53]
   16793699:
     template: Jagil
-    at:       [-125.650, -0.340, -638.413, 199]
+    region:   s_99
     level:    [35, 38]
   16793700:
     template: Jagil
-    at:       [-134.780, -1.145, -643.816, 186]
+    region:   s_99
     level:    [35, 38]
   16793701:
     template: Toucan
-    at:       [-133.628, -1.156, -637.436, 156]
+    region:   s_99
     level:    [38, 40]
   16793702:
     template: Coastal_Opo-opo
-    at:       [-187.453, -2.737, -573.818, 171]
+    region:   s_102
     level:    [37, 39]
   16793703:
     template: Alraune
-    at:       [-213.348, -3.230, -553.583, 185]
+    region:   s_103
     level:    [38, 40]
   16793704:
     template: Alraune
-    at:       [-206.285, -3.360, -547.666, 246]
+    region:   s_103
     level:    [38, 40]
   16793705:
     template: Toucan
-    at:       [-223.342, -2.715, -533.340, 2]
+    region:   sw_105
     level:    [38, 40]
   16793706:
     template: Jagil
-    at:       [-285.000, 0.001, -907.000, 70]
+    region:   sw_105
     level:    [35, 38]
   16793707:
     template: Alraune
-    at:       [-251.526, -3.930, -527.831, 156]
+    region:   sw_107
     level:    [38, 40]
   16793708:
     template: Alraune
-    at:       [-250.881, -3.837, -531.278, 105]
+    region:   sw_107
     level:    [38, 40]
   16793709:
     template: Coastal_Opo-opo
-    at:       [-268.025, -3.569, -526.613, 241]
+    region:   sw_109
     level:    [37, 39]
   16793710:
     template: Ignis_Fatuus_Bibiki_Bay
     script:   Ignis_Fatuus
-    at:       [-281.653, -3.996, -522.317, 251]
+    region:   sw_109
     level:    [35, 37]
   16793711:
     template: Peerifool
@@ -2059,844 +2059,844 @@ spawns:
     level:    [48, 48]
   16793717:
     template: Island_Rarab
-    at:       [626.897, -20.141, 836.197, 113]
+    region:   ne_117
     level:    [34, 36]
   16793718:
     template: Island_Rarab
-    at:       [634.802, -20.465, 846.795, 91]
+    region:   ne_117
     level:    [34, 36]
   16793719:
     template: Marine_Dhalmel
-    at:       [565.508, -20.011, 813.581, 105]
+    region:   ne_119
     level:    [34, 37]
   16793720:
     template: Marine_Dhalmel
-    at:       [615.664, -20.641, 825.090, 208]
+    region:   ne_119
     level:    [34, 37]
   16793721:
     template: Raven
-    at:       [583.343, -20.300, 810.525, 211]
+    region:   ne_119
     level:    [36, 38]
   16793722:
     template: Marine_Dhalmel
-    at:       [577.613, -20.020, 797.245, 162]
+    region:   ne_122
     level:    [34, 37]
   16793723:
     template: Eft
-    at:       [563.828, -19.840, 774.826, 215]
+    region:   ne_122
     level:    [33, 35]
   16793724:
     template: Raven
-    at:       [575.839, -20.146, 792.906, 45]
+    region:   ne_124
     level:    [36, 38]
   16793725:
     template: Island_Rarab
-    at:       [562.346, -20.139, 826.770, 214]
+    region:   ne_124
     level:    [34, 36]
   16793726:
     template: Ignis_Fatuus_Bibiki_Bay
     script:   Ignis_Fatuus
-    at:       [537.520, -20.551, 805.887, 211]
+    region:   ne_126
     level:    [35, 37]
   16793727:
     template: Marine_Dhalmel
-    at:       [505.984, -19.756, 792.817, 204]
+    region:   ne_127
     level:    [34, 37]
   16793728:
     template: Island_Rarab
-    at:       [501.204, -19.834, 799.383, 101]
+    region:   ne_127
     level:    [34, 36]
   16793729:
     template: Goblin_Shaman
-    at:       [526.664, -10.279, 770.094, 94]
+    region:   ne_129
     level:    [34, 36]
   16793730:
     template: Eft
-    at:       [507.061, -5.666, 752.171, 89]
+    region:   ne_130
     level:    [33, 35]
   16793731:
     template: Eft
-    at:       [522.429, -5.598, 738.819, 254]
+    region:   ne_131
     level:    [33, 35]
   16793732:
     template: Eft
-    at:       [520.487, -5.649, 744.293, 118]
+    region:   ne_131
     level:    [33, 35]
   16793733:
     template: Eft
-    at:       [483.708, -5.525, 760.584, 112]
+    region:   ne_133
     level:    [33, 35]
   16793734:
     template: Eft
-    at:       [479.944, -4.608, 745.725, 79]
+    region:   ne_134
     level:    [33, 35]
   16793735:
     template: Eft
-    at:       [489.204, -4.123, 741.304, 239]
+    region:   ne_134
     level:    [33, 35]
   16793736:
     template: Eft
-    at:       [466.355, -3.602, 728.849, 133]
+    region:   region_118
     level:    [33, 35]
   16793737:
     template: Eft
-    at:       [466.019, -3.602, 728.924, 128]
+    region:   region_118
     level:    [33, 35]
   16793738:
     template: Raven
-    at:       [479.243, -5.525, 762.199, 56]
+    region:   ne_138
     level:    [36, 38]
   16793739:
     template: Raven
-    at:       [467.866, -3.874, 738.148, 23]
+    region:   ne_138
     level:    [36, 38]
   16793740:
     template: Raven
-    at:       [500.850, -5.689, 751.525, 12]
+    region:   ne_138
     level:    [36, 38]
   16793741:
     template: Eft
-    at:       [472.730, -5.487, 759.491, 171]
+    region:   ne_138
     level:    [33, 35]
   16793742:
     template: Intulo
-    at:       [525.746, -12.134, 775.797, 98]
+    region:   ne_134
     level:    [46, 47]
   16793743:
     template: Marine_Dhalmel
-    at:       [455.579, -20.096, 780.656, 54]
+    region:   ne_143
     level:    [34, 37]
   16793744:
     template: Marine_Dhalmel
-    at:       [439.507, -19.795, 782.116, 161]
+    region:   ne_143
     level:    [34, 37]
   16793745:
     template: Eft
-    at:       [452.358, -20.485, 789.918, 139]
+    region:   ne_143
     level:    [33, 35]
   16793746:
     template: Goblin_Pathfinder
-    at:       [414.780, -25.939, 838.156, 11]
+    region:   ne_146
     level:    [34, 36]
   16793747:
     template: Goblins_Rarab
-    at:       [411.956, -26.477, 839.843, 28]
+    region:   ne_146
     level:    [29, 31]
   16793748:
     template: Marine_Dhalmel
-    at:       [438.028, -20.436, 829.001, 39]
+    region:   ne_146
     level:    [34, 37]
   16793749:
     template: Island_Rarab
-    at:       [418.148, -25.410, 834.728, 191]
+    region:   ne_146
     level:    [34, 36]
   16793750:
     template: Hobgoblin_Martialist
-    at:       [357.379, -28.610, 876.190, 90]
+    region:   ne_150
     level:    [72, 74]
   16793751:
     template: Hobgoblin_Animalier
-    at:       [341.794, -28.167, 873.139, 150]
+    region:   ne_151
     level:    [72, 74]
   16793752:
     template: Goblins_Rarab
-    at:       [342.198, -28.318, 869.335, 235]
+    region:   ne_151
     level:    [66, 69]
   16793753:
     template: Teine_Sith
-    at:       [339.638, -27.940, 871.772, 52]
+    region:   ne_153
     level:    [75, 78]
   16793754:
     template: Tropical_Rarab
-    at:       [317.639, -28.868, 884.111, 255]
+    region:   ne_154
     level:    [73, 76]
   16793755:
     template: Tropical_Rarab
-    at:       [317.052, -28.749, 882.031, 151]
+    region:   ne_154
     level:    [73, 76]
   16793756:
     template: Tropical_Rarab
-    at:       [319.289, -28.315, 808.663, 92]
+    region:   ne_156
     level:    [73, 76]
   16793757:
     template: Hobgoblin_Venerer
-    at:       [322.849, -27.694, 817.534, 211]
+    region:   ne_156
     level:    [72, 74]
   16793758:
     template: Catoblepas
-    at:       [268.898, -28.222, 803.303, 238]
+    region:   ne_158
     level:    [76, 77]
   16793759:
     template: Hobgoblin_Fascinator
-    at:       [281.891, -28.728, 805.950, 103]
+    region:   ne_158
     level:    [72, 74]
   16793760:
     template: Tragopan
-    at:       [284.782, -36.643, 880.523, 237]
+    region:   ne_160
     level:    [71, 73]
   16793761:
     template: Tragopan
-    at:       [280.802, -35.938, 856.373, 148]
+    region:   ne_160
     level:    [71, 73]
   16793762:
     template: Tropical_Rarab
-    at:       [274.333, -36.401, 865.289, 107]
+    region:   ne_160
     level:    [73, 76]
   16793763:
     template: Tropical_Rarab
-    at:       [285.284, -36.392, 871.636, 48]
+    region:   ne_160
     level:    [73, 76]
   16793764:
     template: Tropical_Rarab
-    at:       [263.207, -36.077, 832.390, 253]
+    region:   ne_164
     level:    [73, 76]
   16793765:
     template: Tragopan
-    at:       [274.657, -36.525, 835.394, 163]
+    region:   ne_164
     level:    [71, 73]
   16793766:
     template: Tragopan
-    at:       [275.001, -36.521, 836.515, 117]
+    region:   ne_164
     level:    [71, 73]
   16793767:
     template: Teine_Sith
-    at:       [264.337, -35.887, 843.210, 20]
+    region:   ne_164
     level:    [75, 78]
   16793768:
     template: Catoblepas
-    at:       [226.790, -36.564, 829.649, 95]
+    region:   ne_168
     level:    [76, 77]
   16793769:
     template: Catoblepas
-    at:       [211.408, -42.311, 831.564, 78]
+    region:   ne_168
     level:    [76, 77]
   16793770:
     template: Tragopan
-    at:       [225.972, -38.597, 838.728, 229]
+    region:   ne_168
     level:    [71, 73]
   16793771:
     template: Catoblepas
-    at:       [243.331, -28.345, 780.134, 207]
+    region:   ne_171
     level:    [76, 77]
   16793772:
     template: Catoblepas
-    at:       [230.304, -30.390, 779.238, 224]
+    region:   ne_171
     level:    [76, 77]
   16793773:
     template: Tropical_Rarab
-    at:       [147.346, -44.628, 811.119, 111]
+    region:   n_173
     level:    [73, 76]
   16793774:
     template: Tartarus_Eft
-    at:       [149.732, -44.544, 810.709, 4]
+    region:   n_173
     level:    [76, 77]
   16793775:
     template: Tartarus_Eft
-    at:       [154.172, -43.935, 825.208, 253]
+    region:   n_173
     level:    [76, 77]
   16793776:
     template: Splacknuck
-    at:       [170.426, -44.934, 832.740, 119]
+    region:   n_173
     level:    [69, 70]
   16793777:
     template: Hobgoblin_Animalier
-    at:       [190.583, -37.342, 801.349, 157]
+    region:   n_177
     level:    [72, 74]
   16793778:
     template: Goblins_Rarab
-    at:       [192.140, -37.149, 799.647, 157]
+    region:   n_177
     level:    [66, 69]
   16793779:
     template: Tartarus_Eft
-    at:       [97.309, -44.969, 936.494, 58]
+    region:   n_181
     level:    [76, 77]
   16793780:
     template: Hobgoblin_Fascinator
-    at:       [147.172, -43.950, 801.518, 133]
+    region:   n_180
     level:    [72, 74]
   16793781:
     template: Tartarus_Eft
-    at:       [94.391, -45.059, 936.718, 187]
+    region:   n_181
     level:    [76, 77]
   16793782:
     template: Catoblepas
-    at:       [132.431, -44.037, 793.533, 22]
+    region:   n_182
     level:    [76, 77]
   16793783:
     template: Tragopan
-    at:       [120.023, -44.040, 768.552, 71]
+    region:   n_182
     level:    [71, 73]
   16793784:
     template: Hobgoblin_Martialist
-    at:       [212.848, -35.529, 797.890, 184]
+    region:   n_184
     level:    [72, 74]
   16793785:
     template: Hobgoblin_Venerer
-    at:       [180.257, -40.740, 807.810, 143]
+    region:   n_184
     level:    [72, 74]
   16793786:
     template: Tragopan
-    at:       [121.485, -45.161, 873.250, 25]
+    region:   n_186
     level:    [71, 73]
   16793787:
     template: Tropical_Rarab
-    at:       [123.382, -44.787, 879.470, 102]
+    region:   n_186
     level:    [73, 76]
   16793788:
     template: Tartarus_Eft
-    at:       [90.709, -46.356, 928.717, 203]
+    region:   n_181
     level:    [76, 77]
   16793789:
     template: Tartarus_Eft
-    at:       [89.097, -46.465, 918.895, 66]
+    region:   n_181
     level:    [76, 77]
   16793790:
     template: Catoblepas
-    at:       [120.510, -44.293, 756.344, 17]
+    region:   n_190
     level:    [76, 77]
   16793791:
     template: Tropical_Rarab
-    at:       [124.393, -42.989, 748.430, 35]
+    region:   n_190
     level:    [73, 76]
   16793792:
     template: Hobgoblin_Fascinator
-    at:       [167.338, -37.316, 723.550, 28]
+    region:   n_192
     level:    [72, 74]
   16793793:
     template: Tragopan
-    at:       [163.303, -36.607, 719.604, 55]
+    region:   n_192
     level:    [71, 73]
   16793794:
     template: Catoblepas
-    at:       [128.921, -36.528, 710.634, 201]
+    region:   n_194
     level:    [76, 77]
   16793795:
     template: Catoblepas
-    at:       [120.196, -35.744, 701.230, 91]
+    region:   n_194
     level:    [76, 77]
   16793796:
     template: Hobgoblin_Martialist
-    at:       [126.828, -36.469, 714.525, 58]
+    region:   n_194
     level:    [72, 74]
   16793797:
     template: Hobgoblin_Animalier
-    at:       [116.064, -36.789, 677.892, 187]
+    region:   n_197
     level:    [72, 74]
   16793798:
     template: Goblins_Rarab
-    at:       [117.994, -36.772, 678.057, 135]
+    region:   n_197
     level:    [66, 69]
   16793799:
     template: Hobgoblin_Venerer
-    at:       [118.495, -36.415, 686.662, 30]
+    region:   n_197
     level:    [72, 74]
   16793800:
     template: Locus_Bight_Rarab
-    at:       [115.359, -37.220, 594.536, 136]
+    region:   n_200
     level:    [135, 137]
   16793801:
     template: Locus_Bight_Rarab
-    at:       [123.407, -36.736, 597.755, 75]
+    region:   n_200
     level:    [135, 137]
   16793802:
     template: Locus_Bight_Rarab
-    at:       [126.034, -37.252, 597.384, 250]
+    region:   n_200
     level:    [135, 137]
   16793803:
     template: Locus_Bight_Rarab
-    at:       [86.030, -37.413, 568.731, 108]
+    region:   n_203
     level:    [135, 137]
   16793804:
     template: Locus_Bight_Rarab
-    at:       [81.823, -36.603, 561.799, 4]
+    region:   n_203
     level:    [135, 137]
   16793805:
     template: Locus_Bight_Rarab
-    at:       [86.369, -37.271, 562.982, 239]
+    region:   n_203
     level:    [135, 137]
   16793806:
     template: Locus_Camelopard
-    at:       [81.041, -31.058, 533.685, 228]
+    region:   n_206
     level:    [135, 137]
   16793807:
     template: Locus_Camelopard
-    at:       [82.345, -33.843, 543.440, 62]
+    region:   n_206
     level:    [135, 137]
   16793808:
     template: Locus_Camelopard
-    at:       [82.120, -33.825, 543.169, 58]
+    region:   n_206
     level:    [135, 137]
   16793809:
     template: Locus_Bight_Rarab
-    at:       [92.240, -28.039, 518.472, 17]
+    region:   n_209
     level:    [135, 137]
   16793810:
     template: Locus_Bight_Rarab
-    at:       [85.329, -28.742, 514.519, 139]
+    region:   n_209
     level:    [135, 137]
   16793811:
     template: Locus_Bight_Rarab
-    at:       [79.306, -28.524, 515.927, 127]
+    region:   n_209
     level:    [135, 137]
   16793812:
     template: Locus_Bight_Rarab
-    at:       [85.019, -28.436, 518.497, 213]
+    region:   n_209
     level:    [135, 137]
   16793813:
     template: Locus_Camelopard
-    at:       [103.104, -27.941, 520.859, 25]
+    region:   n_213
     level:    [135, 137]
   16793814:
     template: Locus_Camelopard
-    at:       [121.427, -28.472, 515.343, 181]
+    region:   n_213
     level:    [135, 137]
   16793815:
     template: Locus_Camelopard
-    at:       [119.230, -28.474, 511.238, 120]
+    region:   n_213
     level:    [135, 137]
   16793816:
     template: Locus_Camelopard
-    at:       [119.885, -28.458, 517.770, 18]
+    region:   n_213
     level:    [135, 137]
   16793817:
     template: Locus_Bight_Rarab
-    at:       [122.810, -28.004, 500.616, 139]
+    region:   n_217
     level:    [135, 137]
   16793818:
     template: Locus_Bight_Rarab
-    at:       [130.620, -28.534, 488.857, 39]
+    region:   n_217
     level:    [135, 137]
   16793819:
     template: Locus_Bight_Rarab
-    at:       [134.123, -29.122, 494.730, 3]
+    region:   n_217
     level:    [135, 137]
   16793820:
     template: Locus_Bight_Rarab
-    at:       [137.115, -27.835, 480.853, 253]
+    region:   n_217
     level:    [135, 137]
   16793821:
     template: Locus_Bight_Rarab
-    at:       [129.999, -28.006, 467.803, 196]
+    region:   n_221
     level:    [135, 137]
   16793822:
     template: Locus_Bight_Rarab
-    at:       [130.802, -28.409, 445.710, 139]
+    region:   n_221
     level:    [135, 137]
   16793823:
     template: Locus_Bight_Rarab
-    at:       [125.757, -28.832, 434.691, 120]
+    region:   n_221
     level:    [135, 137]
   16793824:
     template: Locus_Bight_Rarab
-    at:       [137.362, -27.853, 440.332, 199]
+    region:   n_221
     level:    [135, 137]
   16793825:
     template: Locus_Bight_Rarab
-    at:       [133.111, -27.959, 451.734, 156]
+    region:   n_221
     level:    [135, 137]
   16793826:
     template: Locus_Bight_Rarab
-    at:       [130.886, -28.016, 470.181, 187]
+    region:   n_221
     level:    [135, 137]
   16793827:
     template: Locus_Camelopard
-    at:       [149.722, -28.137, 471.258, 153]
+    region:   n_227
     level:    [135, 137]
   16793828:
     template: Locus_Camelopard
-    at:       [176.941, -27.935, 478.008, 229]
+    region:   n_227
     level:    [135, 137]
   16793829:
     template: Locus_Camelopard
-    at:       [152.663, -28.199, 458.383, 70]
+    region:   n_227
     level:    [135, 137]
   16793830:
     template: Locus_Camelopard
-    at:       [161.803, -27.721, 462.179, 22]
+    region:   n_227
     level:    [135, 137]
   16793831:
     template: Locus_Camelopard
-    at:       [170.581, -28.376, 414.759, 147]
+    region:   n_231
     level:    [135, 137]
   16793832:
     template: Locus_Camelopard
-    at:       [173.974, -29.171, 417.112, 212]
+    region:   n_231
     level:    [135, 137]
   16793833:
     template: Locus_Camelopard
-    at:       [189.389, -28.497, 389.084, 64]
+    region:   n_231
     level:    [135, 137]
   16793834:
     template: Locus_Camelopard
-    at:       [182.583, -28.393, 394.694, 30]
+    region:   n_231
     level:    [135, 137]
   16793835:
     template: Locus_Bight_Rarab
-    at:       [203.713, -28.504, 393.053, 79]
+    region:   n_235
     level:    [135, 137]
   16793836:
     template: Locus_Bight_Rarab
-    at:       [203.671, -28.527, 392.788, 84]
+    region:   n_235
     level:    [135, 137]
   16793837:
     template: Locus_Bight_Rarab
-    at:       [203.516, -28.306, 390.124, 174]
+    region:   n_235
     level:    [135, 137]
   16793838:
     template: Locus_Bight_Rarab
-    at:       [202.452, -28.668, 402.103, 231]
+    region:   n_235
     level:    [135, 137]
   16793839:
     template: Locus_Camelopard
-    at:       [200.633, -27.714, 351.949, 25]
+    region:   ne_239
     level:    [135, 137]
   16793840:
     template: Locus_Camelopard
-    at:       [210.554, -24.495, 337.126, 215]
+    region:   ne_239
     level:    [135, 137]
   16793841:
     template: Locus_Camelopard
-    at:       [209.737, -23.965, 337.077, 206]
+    region:   ne_239
     level:    [135, 137]
   16793842:
     template: Locus_Camelopard
-    at:       [198.684, -25.787, 341.823, 146]
+    region:   ne_239
     level:    [135, 137]
   16793843:
     template: Locus_Camelopard
-    at:       [219.025, -21.978, 298.234, 255]
+    region:   e_243
     level:    [135, 137]
   16793844:
     template: Locus_Camelopard
-    at:       [221.507, -21.382, 305.849, 206]
+    region:   e_243
     level:    [135, 137]
   16793845:
     template: Locus_Camelopard
-    at:       [221.233, -21.205, 306.566, 15]
+    region:   e_243
     level:    [135, 137]
   16793846:
     template: Locus_Camelopard
-    at:       [216.761, -19.972, 311.213, 234]
+    region:   e_243
     level:    [135, 137]
   16793847:
     template: Locus_Hypnos_Eft
-    at:       [186.252, -28.291, 473.189, 228]
+    region:   n_247
     level:    [135, 137]
   16793848:
     template: Locus_Hypnos_Eft
-    at:       [182.031, -28.107, 481.037, 197]
+    region:   n_247
     level:    [135, 137]
   16793849:
     template: Locus_Hypnos_Eft
-    at:       [203.574, -28.656, 512.331, 244]
+    region:   n_247
     level:    [135, 137]
   16793850:
     template: Locus_Hypnos_Eft
-    at:       [193.549, -28.546, 491.758, 25]
+    region:   n_247
     level:    [135, 137]
   16793851:
     template: Locus_Hypnos_Eft
-    at:       [205.311, -28.352, 560.471, 131]
+    region:   ne_251
     level:    [135, 137]
   16793852:
     template: Locus_Hypnos_Eft
-    at:       [220.573, -24.855, 548.505, 47]
+    region:   ne_251
     level:    [135, 137]
   16793853:
     template: Locus_Hypnos_Eft
-    at:       [208.988, -28.629, 545.212, 65]
+    region:   ne_251
     level:    [135, 137]
   16793854:
     template: Locus_Hypnos_Eft
-    at:       [228.966, -23.041, 560.007, 97]
+    region:   ne_251
     level:    [135, 137]
   16793855:
     template: Locus_Hypnos_Eft
-    at:       [234.259, -28.493, 524.062, 255]
+    region:   ne_255
     level:    [135, 137]
   16793856:
     template: Locus_Hypnos_Eft
-    at:       [225.617, -28.676, 524.519, 243]
+    region:   ne_255
     level:    [135, 137]
   16793857:
     template: Locus_Hypnos_Eft
-    at:       [234.834, -28.498, 518.094, 59]
+    region:   ne_255
     level:    [135, 137]
   16793858:
     template: Locus_Hypnos_Eft
-    at:       [230.322, -28.414, 515.892, 107]
+    region:   ne_255
     level:    [135, 137]
   16793859:
     template: Locus_Ghost_Crab
-    at:       [267.938, -20.180, 564.616, 42]
+    region:   ne_259
     level:    [137, 139]
   16793860:
     template: Locus_Ghost_Crab
-    at:       [272.278, -20.715, 578.845, 151]
+    region:   ne_259
     level:    [137, 139]
   16793861:
     template: Locus_Ghost_Crab
-    at:       [270.589, -20.859, 578.936, 232]
+    region:   ne_259
     level:    [137, 139]
   16793862:
     template: Locus_Ghost_Crab
-    at:       [281.771, -20.604, 563.717, 26]
+    region:   ne_259
     level:    [137, 139]
   16793863:
     template: Locus_Ghost_Crab
-    at:       [265.889, -20.139, 564.403, 17]
+    region:   ne_259
     level:    [137, 139]
   16793864:
     template: Locus_Ghost_Crab
-    at:       [276.819, -20.048, 575.360, 213]
+    region:   ne_259
     level:    [137, 139]
   16793865:
     template: Locus_Ghost_Crab
-    at:       [300.656, -15.618, 602.381, 185]
+    region:   ne_265
     level:    [137, 139]
   16793866:
     template: Locus_Ghost_Crab
-    at:       [293.328, -17.799, 585.118, 116]
+    region:   ne_265
     level:    [137, 139]
   16793867:
     template: Locus_Ghost_Crab
-    at:       [281.585, -20.407, 593.255, 214]
+    region:   ne_265
     level:    [137, 139]
   16793868:
     template: Locus_Ghost_Crab
-    at:       [292.381, -18.713, 591.082, 129]
+    region:   ne_265
     level:    [137, 139]
   16793869:
     template: Locus_Ghost_Crab
-    at:       [300.286, -15.419, 602.268, 190]
+    region:   ne_265
     level:    [137, 139]
   16793870:
     template: Locus_Ghost_Crab
-    at:       [300.172, -15.715, 602.306, 191]
+    region:   ne_265
     level:    [137, 139]
   16793871:
     template: Locus_Ghost_Crab
-    at:       [345.039, -17.945, 302.402, 25]
+    region:   ne_271
     level:    [137, 139]
   16793872:
     template: Locus_Ghost_Crab
-    at:       [332.608, -18.868, 302.699, 13]
+    region:   ne_271
     level:    [137, 139]
   16793873:
     template: Locus_Ghost_Crab
-    at:       [338.347, -19.680, 313.076, 78]
+    region:   ne_271
     level:    [137, 139]
   16793874:
     template: Locus_Ghost_Crab
-    at:       [323.312, -19.915, 307.686, 59]
+    region:   ne_271
     level:    [137, 139]
   16793875:
     template: Locus_Ghost_Crab
-    at:       [327.285, -20.374, 319.920, 41]
+    region:   ne_271
     level:    [137, 139]
   16793876:
     template: Locus_Ghost_Crab
-    at:       [324.104, -21.066, 324.501, 241]
+    region:   ne_271
     level:    [137, 139]
   16793877:
     template: Locus_Ghost_Crab
-    at:       [329.149, -19.130, 255.755, 161]
+    region:   e_277
     level:    [137, 139]
   16793878:
     template: Locus_Ghost_Crab
-    at:       [324.487, -20.321, 277.812, 5]
+    region:   e_277
     level:    [137, 139]
   16793879:
     template: Locus_Ghost_Crab
-    at:       [319.520, -20.160, 250.782, 83]
+    region:   e_277
     level:    [137, 139]
   16793880:
     template: Locus_Ghost_Crab
-    at:       [330.273, -19.197, 251.241, 113]
+    region:   e_277
     level:    [137, 139]
   16793881:
     template: Locus_Ghost_Crab
-    at:       [320.014, -20.204, 249.914, 97]
+    region:   e_277
     level:    [137, 139]
   16793882:
     template: Locus_Ghost_Crab
-    at:       [331.894, -18.635, 251.894, 111]
+    region:   e_277
     level:    [137, 139]
   16793883:
     template: Locus_Ghost_Crab
-    at:       [184.965, -19.915, 238.818, 164]
+    region:   c_283
     level:    [137, 139]
   16793884:
     template: Locus_Ghost_Crab
-    at:       [193.865, -20.474, 241.444, 236]
+    region:   c_283
     level:    [137, 139]
   16793885:
     template: Locus_Ghost_Crab
-    at:       [176.801, -19.928, 241.526, 103]
+    region:   c_283
     level:    [137, 139]
   16793886:
     template: Locus_Ghost_Crab
-    at:       [200.311, -20.503, 247.932, 133]
+    region:   c_283
     level:    [137, 139]
   16793887:
     template: Locus_Ghost_Crab
-    at:       [75.176, -30.771, 208.997, 12]
+    region:   c_287
     level:    [137, 139]
   16793888:
     template: Locus_Ghost_Crab
-    at:       [107.650, -30.376, 219.308, 222]
+    region:   c_287
     level:    [137, 139]
   16793889:
     template: Locus_Ghost_Crab
-    at:       [94.109, -29.756, 208.995, 251]
+    region:   c_287
     level:    [137, 139]
   16793890:
     template: Locus_Ghost_Crab
-    at:       [95.778, -29.818, 209.720, 106]
+    region:   c_287
     level:    [137, 139]
   16793891:
     template: Locus_Ghost_Crab
-    at:       [97.170, -29.909, 210.676, 106]
+    region:   c_287
     level:    [137, 139]
   16793892:
     template: Locus_Ghost_Crab
-    at:       [88.680, -29.626, 208.743, 121]
+    region:   c_287
     level:    [137, 139]
   16793893:
     template: Locus_Fiddler_Crab
-    at:       [76.251, -30.811, 209.441, 129]
+    region:   c_287
     level:    [137, 139]
   16793894:
     template: Locus_Fiddler_Crab
-    at:       [95.304, -29.811, 210.106, 105]
+    region:   c_287
     level:    [137, 139]
   16793895:
     template: Locus_Ghost_Crab
-    at:       [202.571, -21.009, 235.519, 3]
+    region:   e_295
     level:    [137, 139]
   16793896:
     template: Locus_Ghost_Crab
-    at:       [220.156, -22.291, 226.485, 12]
+    region:   e_295
     level:    [137, 139]
   16793897:
     template: Locus_Ghost_Crab
-    at:       [202.080, -21.011, 235.511, 3]
+    region:   e_295
     level:    [137, 139]
   16793898:
     template: Locus_Ghost_Crab
-    at:       [220.198, -22.305, 226.238, 11]
+    region:   e_295
     level:    [137, 139]
   16793899:
     template: Locus_Ghost_Crab
-    at:       [244.070, -20.565, 195.742, 50]
+    region:   e_299
     level:    [137, 139]
   16793900:
     template: Locus_Ghost_Crab
-    at:       [238.979, -20.976, 204.406, 155]
+    region:   e_299
     level:    [137, 139]
   16793901:
     template: Locus_Ghost_Crab
-    at:       [238.411, -21.046, 198.566, 32]
+    region:   e_299
     level:    [137, 139]
   16793902:
     template: Locus_Ghost_Crab
-    at:       [246.629, -21.230, 193.720, 105]
+    region:   e_299
     level:    [137, 139]
   16793903:
     template: Locus_Ghost_Crab
-    at:       [295.324, -17.743, 158.614, 90]
+    region:   e_303
     level:    [137, 139]
   16793904:
     template: Locus_Ghost_Crab
-    at:       [275.835, -20.867, 156.551, 123]
+    region:   e_303
     level:    [137, 139]
   16793905:
     template: Locus_Ghost_Crab
-    at:       [282.703, -20.318, 160.755, 100]
+    region:   e_303
     level:    [137, 139]
   16793906:
     template: Locus_Ghost_Crab
-    at:       [290.024, -19.215, 159.665, 223]
+    region:   e_303
     level:    [137, 139]
   16793907:
     template: Locus_Ghost_Crab
-    at:       [286.813, -19.912, 163.083, 152]
+    region:   e_303
     level:    [137, 139]
   16793908:
     template: Locus_Ghost_Crab
-    at:       [274.573, -21.012, 156.975, 56]
+    region:   e_303
     level:    [137, 139]
   16793909:
     template: Locus_Ghost_Crab
-    at:       [299.812, -10.623, 211.640, 69]
+    region:   e_309
     level:    [137, 139]
   16793910:
     template: Locus_Ghost_Crab
-    at:       [296.058, -12.074, 198.088, 196]
+    region:   e_309
     level:    [137, 139]
   16793911:
     template: Locus_Ghost_Crab
-    at:       [299.646, -11.057, 209.305, 203]
+    region:   e_309
     level:    [137, 139]
   16793912:
     template: Locus_Ghost_Crab
-    at:       [298.852, -11.477, 206.108, 74]
+    region:   e_309
     level:    [137, 139]
   16793913:
     template: Locus_Ghost_Crab
-    at:       [310.048, -3.377, 187.239, 186]
+    region:   e_313
     level:    [137, 139]
   16793914:
     template: Locus_Ghost_Crab
-    at:       [314.886, -2.477, 207.628, 37]
+    region:   e_313
     level:    [137, 139]
   16793915:
     template: Locus_Ghost_Crab
-    at:       [314.508, -2.749, 199.322]
+    region:   e_313
     level:    [137, 139]
   16793916:
     template: Locus_Ghost_Crab
-    at:       [312.707, -2.868, 186.227, 233]
+    region:   e_313
     level:    [137, 139]
   16793917:
     template: Locus_Ghost_Crab
-    at:       [313.016, -2.838, 186.138, 225]
+    region:   e_313
     level:    [137, 139]
   16793918:
     template: Locus_Ghost_Crab
-    at:       [308.235, -3.267, 195.251, 187]
+    region:   e_313
     level:    [137, 139]
   16793919:
     template: Locus_Ghost_Crab
-    at:       [261.134, -1.004, 177.818, 156]
+    region:   e_319
     level:    [137, 139]
   16793920:
     template: Locus_Ghost_Crab
-    at:       [263.942, -0.966, 177.920, 253]
+    region:   e_319
     level:    [137, 139]
   16793921:
     template: Locus_Ghost_Crab
-    at:       [261.982, -1.010, 177.086, 161]
+    region:   e_319
     level:    [137, 139]
   16793922:
     template: Locus_Ghost_Crab
-    at:       [266.471, -1.288, 174.695, 178]
+    region:   e_319
     level:    [137, 139]
   16793923:
     template: Locus_Ghost_Crab
-    at:       [265.139, -1.185, 174.525, 29]
+    region:   e_319
     level:    [137, 139]
   16793924:
     template: Locus_Ghost_Crab
-    at:       [261.881, -1.029, 176.625, 51]
+    region:   e_319
     level:    [137, 139]
   16793925:
     template: Locus_Fiddler_Crab
-    at:       [267.041, -1.413, 173.318, 55]
+    region:   e_319
     level:    [137, 139]
   16793926:
     template: Locus_Fiddler_Crab
-    at:       [272.529, -2.678, 169.613, 120]
+    region:   e_319
     level:    [137, 139]
   16793927:
     template: Rohemolipaud

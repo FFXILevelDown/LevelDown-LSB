@@ -275,7 +275,7 @@ xi.job_utils.beastmaster.checkReward = function(player, target, ability)
     then
         return xi.msg.basic.NO_EFFECT_ON_PET, 0
     else
-        local id = player:getEquipID(xi.slot.AMMO)
+        local id = xi.equipment.getUsableEquipID(player, xi.slot.AMMO)
         if
             id >= xi.item.PET_FOOD_ALPHA_BISCUIT and
             id <= xi.item.PET_FOOD_THETA_BISCUIT
@@ -513,7 +513,7 @@ end
 
 xi.job_utils.beastmaster.useReward = function(player, target, ability)
     -- 1st need to get the pet food is equipped in the range slot.
-    local rangeObj         = player:getEquipID(xi.slot.AMMO)
+    local rangeObj         = xi.equipment.getUsableEquipID(player, xi.slot.AMMO)
     local minimumHealing   = 0
     local totalHealing     = 0
     local playerMnd        = player:getStat(xi.mod.MND)
@@ -536,7 +536,7 @@ xi.job_utils.beastmaster.useReward = function(player, target, ability)
     end
 
     -- Now calculating the bonus based on gear.
-    switch(player:getEquipID(xi.slot.BODY)):caseof
+    switch(xi.equipment.getUsableEquipID(player, xi.slot.BODY)):caseof
     {
         [xi.item.BEAST_JACKCOAT] = function() -- beast jackcoat
             -- This will remove Paralyze, Poison and Blind from the pet.

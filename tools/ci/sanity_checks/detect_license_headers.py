@@ -4,7 +4,6 @@ import os
 import sys
 
 excluded_files = [
-    "./src/common/version.cpp",  # Auto-generated
     "./src/common/WheatyExceptionReport.cpp",  # Not ours
     "./src/common/WheatyExceptionReport.h",  # Not ours
 ]

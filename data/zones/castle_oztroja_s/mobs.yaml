@@ -3863,312 +3863,312 @@ spawns:
   17182722:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-178.082, -0.249, 47.347, 182]
+    region:   w_2
     level:    [76, 79]
   17182723:
     template: Yagudo_Knight_Templar
-    at:       [-179.645, -0.245, 12.605, 42]
+    region:   w_2
     level:    [76, 79]
   17182724:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-175.943, -0.249, 25.443, 252]
+    region:   w_2
     level:    [70, 72]
   17182725:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-182.277, -0.227, 14.719, 205]
+    region:   w_2
     level:    [70, 72]
   17182726:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-174.293, -0.234, 59.904, 37]
+    region:   c_6
     level:    [76, 79]
   17182727:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-170.079, -0.246, 60.841, 248]
+    region:   c_6
     level:    [76, 79]
   17182728:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-182.944, -0.228, -45.138, 206]
+    region:   sw_8
     level:    [76, 79]
   17182729:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-183.208, -0.249, -84.419, 61]
+    region:   sw_8
     level:    [76, 79]
   17182730:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-180.861, -0.143, -36.754, 59]
+    region:   sw_8
     level:    [70, 72]
   17182731:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-181.269, -0.233, -45.989, 161]
+    region:   sw_8
     level:    [70, 72]
   17182732:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-156.957, -0.250, -100.536, 34]
+    region:   s_12
     level:    [76, 79]
   17182733:
     template: Yagudo_Prioress
-    at:       [-159.407, -0.249, -102.740, 244]
+    region:   s_12
     level:    [76, 79]
   17182734:
     template: Yagudos_Elemental
-    at:       [-158.512, -0.249, -102.610, 244]
+    region:   s_12
     level:    [70, 79]
   17182735:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-110.030, -0.250, -52.464, 135]
+    region:   s_15
     level:    [76, 79]
   17182736:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-128.557, -0.255, -56.445, 207]
+    region:   s_15
     level:    [76, 79]
   17182737:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-120.918, -0.250, -46.790, 152]
+    region:   s_15
     level:    [76, 79]
   17182738:
     template: Yagudo_Knight_Templar
-    at:       [-140.283, -0.250, -1.053, 192]
+    region:   c_18
     level:    [76, 79]
   17182739:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-133.256, -0.245, 9.616, 83]
+    region:   c_18
     level:    [76, 79]
   17182740:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-134.574, -0.264, 7.924, 210]
+    region:   c_18
     level:    [76, 79]
   17182741:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-60.663, -0.296, 6.939, 37]
+    region:   s_21
     level:    [76, 79]
   17182742:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-72.618, -0.251, -13.640, 43]
+    region:   s_21
     level:    [76, 79]
   17182743:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-68.365, -0.196, -20.440, 237]
+    region:   s_21
     level:    [76, 79]
   17182744:
     template: Yagudo_Knight_Templar
-    at:       [-84.167, -0.250, -8.829, 87]
+    region:   s_24
     level:    [76, 79]
   17182745:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-73.501, -0.250, -1.495, 51]
+    region:   s_21
     level:    [76, 79]
   17182746:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-105.904, -0.282, -25.376, 204]
+    region:   s_24
     level:    [76, 79]
   17182747:
     template: Yagudo_Prioress
-    at:       [-135.479, -0.224, -48.585, 71]
+    region:   s_15
     level:    [76, 79]
   17182748:
     template: Yagudos_Elemental
-    at:       [-134.547, -0.228, -49.918, 85]
+    region:   s_15
     level:    [70, 79]
   17182749:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-139.558, -0.266, -2.275, 6]
+    region:   s_29
     level:    [70, 72]
   17182750:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-66.635, -0.196, -19.781, 231]
+    region:   s_29
     level:    [70, 72]
   17182751:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-116.476, -0.251, 0.249, 220]
+    region:   s_29
     level:    [70, 72]
   17182752:
     template: Yagudo_Knight_Templar
-    at:       [-55.617, -0.242, 89.300, 200]
+    region:   c_32
     level:    [76, 79]
   17182753:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-77.697, -0.249, 95.858, 91]
+    region:   c_32
     level:    [76, 79]
   17182754:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-62.333, -0.199, 85.522, 149]
+    region:   c_32
     level:    [76, 79]
   17182755:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-55.323, -0.238, 93.598, 62]
+    region:   c_32
     level:    [70, 72]
   17182756:
     template: Yagudo_Knight_Templar
-    at:       [-108.644, -0.216, 96.300, 230]
+    region:   c_36
     level:    [76, 79]
   17182757:
     template: Yagudo_Knight_Templar
-    at:       [-88.666, -0.249, 100.983, 125]
+    region:   c_36
     level:    [76, 79]
   17182758:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-132.905, -0.249, 97.702, 225]
+    region:   c_36
     level:    [76, 79]
   17182759:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-133.646, -0.249, 97.152, 137]
+    region:   c_36
     level:    [76, 79]
   17182760:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-90.184, -0.215, 96.290, 102]
+    region:   c_36
     level:    [70, 72]
   17182761:
     template: Yagudo_Knight_Templar
-    at:       [-182.586, -0.509, 123.834, 94]
+    region:   w_41
     level:    [76, 79]
   17182762:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-191.817, -0.724, 104.285, 240]
+    region:   w_41
     level:    [76, 79]
   17182763:
     template: Blooming_Rafflesia
-    at:       [-179.354, -0.360, 114.984, 34]
+    region:   w_41
     level:    [71, 73]
   17182764:
     template: Blooming_Rafflesia
-    at:       [-179.304, -0.500, 123.354, 117]
+    region:   w_41
     level:    [71, 73]
   17182765:
     template: Yagudo_Knight_Templar
-    at:       [-242.925, -0.501, 101.658, 253]
+    region:   w_45
     level:    [76, 79]
   17182766:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-265.984, -1.526, 95.073, 53]
+    region:   w_45
     level:    [76, 79]
   17182767:
     template: Blooming_Rafflesia
-    at:       [-241.578, -0.502, 102.368, 88]
+    region:   w_45
     level:    [71, 73]
   17182768:
     template: Blooming_Rafflesia
-    at:       [-244.892, -0.552, 94.381, 142]
+    region:   w_45
     level:    [71, 73]
   17182769:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-186.091, -1.027, 178.075, 248]
+    region:   w_49
     level:    [76, 79]
   17182770:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-191.411, -0.561, 157.478, 157]
+    region:   w_49
     level:    [76, 79]
   17182771:
     template: Blooming_Rafflesia
-    at:       [-212.505, -0.502, 178.932, 191]
+    region:   w_49
     level:    [71, 73]
   17182772:
     template: Blooming_Rafflesia
-    at:       [-207.646, -0.558, 179.220, 249]
+    region:   w_49
     level:    [71, 73]
   17182773:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-262.026, -0.669, 152.104, 110]
+    region:   w_53
     level:    [76, 79]
   17182774:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-253.562, -1.086, 166.787, 90]
+    region:   w_53
     level:    [76, 79]
   17182775:
     template: Blooming_Rafflesia
-    at:       [-256.006, -0.849, 146.139, 193]
+    region:   w_53
     level:    [71, 73]
   17182776:
     template: Blooming_Rafflesia
-    at:       [-230.093, -0.701, 172.913, 138]
+    region:   w_53
     level:    [71, 73]
   17182777:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-208.926, -1.160, 142.801, 192]
+    region:   w_57
     level:    [76, 79]
   17182778:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-214.923, -1.188, 149.607, 6]
+    region:   w_57
     level:    [76, 79]
   17182779:
     template: Antlion_Fly
-    at:       [-213.123, 0.492, 161.677, 149]
+    region:   w_59
     level:    [63, 64]
   17182780:
     template: Antlion_Fly
-    at:       [-197.517, 0.499, 156.730, 162]
+    region:   w_59
     level:    [63, 64]
   17182781:
     template: Antlion_Fly
-    at:       [-256.325, 0.499, 106.261, 219]
+    region:   w_61
     level:    [63, 64]
   17182782:
     template: Antlion_Fly
-    at:       [-249.408, 0.499, 100.174, 19]
+    region:   w_61
     level:    [63, 64]
   17182783:
     template: Yagudo_Knight_Templar
-    at:       [-251.309, -0.341, 97.279, 33]
+    region:   w_63
     level:    [76, 79]
   17182784:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-242.006, 0.497, 155.286, 90]
+    region:   w_63
     level:    [76, 79]
   17182785:
     template: Antlion_Fly
-    at:       [-207.064, -0.344, 114.823, 143]
+    region:   w_63
     level:    [63, 64]
   17182786:
     template: Antlion_Fly
-    at:       [-229.163, 0.127, 110.867, 161]
+    region:   w_63
     level:    [63, 64]
   17182787:
     template: Antlion_Fly
-    at:       [-187.444, -0.514, 158.891, 17]
+    region:   w_63
     level:    [63, 64]
   17182788:
     template: Earth_Elemental
-    at:       [-188.500, -0.499, 181.383, 244]
+    region:   w_68
     level:    [80, 80]
   17182789:
     template: Fire_Elemental
-    at:       [-257.991, -0.500, 159.353, 148]
+    region:   w_69
     level:    [80, 80]
   17182790:
     template: Duu_Masa_the_Onecut
@@ -4177,108 +4177,108 @@ spawns:
   17182791:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-19.289, -0.250, -5.075, 181]
+    region:   c_71
     level:    [76, 79]
   17182792:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-21.567, -0.250, 1.352, 73]
+    region:   c_71
     level:    [76, 79]
   17182793:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [19.382, -0.249, -21.146, 29]
+    region:   s_73
     level:    [76, 79]
   17182794:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-14.900, -0.249, -21.720, 145]
+    region:   s_73
     level:    [76, 79]
   17182795:
     template: Yagudo_Prioress
-    at:       [9.782, -0.249, -15.021, 180]
+    region:   s_73
     level:    [76, 79]
   17182796:
     template: Yagudos_Elemental
-    at:       [8.870, -0.249, -15.047, 127]
+    region:   s_73
     level:    [70, 79]
   17182797:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [22.912, -0.249, -19.958, 224]
+    region:   s_73
     level:    [70, 72]
   17182798:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-22.389, -0.250, -39.637, 79]
+    region:   s_78
     level:    [76, 79]
   17182799:
     template: Yagudo_Prioress
-    at:       [-22.415, -0.250, -40.335, 188]
+    region:   s_78
     level:    [76, 79]
   17182800:
     template: Yagudos_Elemental
-    at:       [-22.322, -0.250, -42.731, 189]
+    region:   s_78
     level:    [70, 79]
   17182801:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [-20.894, -0.250, -73.485, 76]
+    region:   s_78
     level:    [70, 72]
   17182802:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-26.074, -0.250, -102.057, 24]
+    region:   s_82
     level:    [76, 79]
   17182803:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-26.622, -0.250, -102.243, 1]
+    region:   s_82
     level:    [76, 79]
   17182804:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-97.466, -0.249, -164.014, 89]
+    region:   s_84
     level:    [76, 79]
   17182805:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-97.746, -0.250, -114.781, 80]
+    region:   s_84
     level:    [76, 79]
   17182806:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-99.825, -0.244, -169.351, 43]
+    region:   s_84
     level:    [76, 79]
   17182807:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-99.314, -0.249, -119.387, 88]
+    region:   s_84
     level:    [76, 79]
   17182808:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-65.701, -0.246, -183.803, 244]
+    region:   s_88
     level:    [76, 79]
   17182809:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-34.915, -0.188, -182.116, 132]
+    region:   s_88
     level:    [76, 79]
   17182810:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-85.419, -0.249, -178.911, 240]
+    region:   s_88
     level:    [76, 79]
   17182811:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-64.794, -0.233, -178.690, 224]
+    region:   s_88
     level:    [76, 79]
   17182812:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-103.220, -0.246, -159.507, 86]
+    region:   s_92
     level:    [76, 79]
   17182813:
     template: Zhuu_Buxu_the_Silent_COS
@@ -4288,128 +4288,128 @@ spawns:
   17182814:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [24.799, -0.739, -172.973, 109]
+    region:   se_94
     level:    [76, 79]
   17182815:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [22.965, -0.461, -164.814, 214]
+    region:   se_94
     level:    [76, 79]
   17182816:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [29.585, -1.077, -171.153, 202]
+    region:   se_94
     level:    [76, 79]
   17182817:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [24.167, -1.460, -178.579, 49]
+    region:   se_94
     level:    [71, 73]
   17182818:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [45.660, -0.594, -170.565, 86]
+    region:   se_94
     level:    [71, 73]
   17182819:
     template: Yagudo_Prioress
-    at:       [82.712, 0.479, -159.270, 194]
+    region:   se_99
     level:    [76, 79]
   17182820:
     template: Yagudos_Elemental
-    at:       [84.760, 0.209, -160.451, 166]
+    region:   se_99
     level:    [70, 79]
   17182821:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [79.584, -0.455, -181.475, 18]
+    region:   se_101
     level:    [71, 73]
   17182822:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [75.107, -0.045, -184.289, 111]
+    region:   se_101
     level:    [71, 73]
   17182823:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [23.666, -0.594, -114.353, 38]
+    region:   se_103
     level:    [76, 79]
   17182824:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [33.066, -0.749, -104.533, 48]
+    region:   se_103
     level:    [76, 79]
   17182825:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [22.330, -0.572, -130.533, 64]
+    region:   se_103
     level:    [71, 73]
   17182826:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [19.499, -0.450, -107.293, 215]
+    region:   se_103
     level:    [71, 73]
   17182827:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [94.553, -1.052, -139.298, 106]
+    region:   se_107
     level:    [76, 79]
   17182828:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [96.764, -1.253, -104.256, 233]
+    region:   se_107
     level:    [76, 79]
   17182829:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [74.708, -0.498, -98.148, 225]
+    region:   se_107
     level:    [71, 73]
   17182830:
     template: War_Lynx_COS
     script:   War_Lynx
-    at:       [100.318, -0.907, -113.496, 233]
+    region:   se_107
     level:    [71, 73]
   17182831:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [58.625, -1.187, -150.909, 9]
+    region:   se_111
     level:    [76, 79]
   17182832:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [69.826, -1.187, -143.834, 208]
+    region:   se_111
     level:    [76, 79]
   17182833:
     template: Immolatory_Pugil
-    at:       [78.302, 0.499, -127.841, 107]
+    region:   se_113
     level:    [64, 64]
   17182834:
     template: Immolatory_Pugil
-    at:       [69.656, 0.500, -113.558, 201]
+    region:   se_113
     level:    [64, 64]
   17182835:
     template: Immolatory_Pugil
-    at:       [59.854, 0.492, -163.970, 129]
+    region:   se_115
     level:    [64, 64]
   17182836:
     template: Immolatory_Pugil
-    at:       [89.224, 0.499, -175.332, 92]
+    region:   se_115
     level:    [64, 64]
   17182837:
     template: Immolatory_Pugil
-    at:       [98.191, 0.438, -173.922]
+    region:   se_115
     level:    [64, 64]
   17182838:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [35.178, -0.644, -102.795, 169]
+    region:   se_99
     level:    [76, 79]
   17182839:
     template: Yagudo_Prioress
-    at:       [55.848, -0.946, -185.791, 236]
+    region:   se_99
     level:    [76, 79]
   17182840:
     template: Yagudos_Elemental
-    at:       [52.570, -0.659, -186.493, 5]
+    region:   se_99
     level:    [70, 79]
   17182841:
     template: Earth_Elemental
@@ -4417,7 +4417,7 @@ spawns:
     level:    [80, 80]
   17182842:
     template: Fire_Elemental
-    at:       [103.107, -0.863, -149.768, 53]
+    region:   se_122
     level:    [80, 80]
   17182843:
     template: Aa_Xalmo_the_Savage
@@ -4426,22 +4426,22 @@ spawns:
   17182844:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [56.470, -3.223, 20.107, 245]
+    region:   e_124
     level:    [76, 79]
   17182845:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [74.952, -7.551, 19.575, 11]
+    region:   e_124
     level:    [76, 79]
   17182846:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [22.367, 19.199, -140.536, 201]
+    region:   se_126
     level:    [70, 72]
   17182847:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [22.318, 16.761, -150.147]
+    region:   se_126
     level:    [70, 72]
   17182848:
     template: Bastion_Bats_Castle_Oztroja_S
@@ -4450,17 +4450,17 @@ spawns:
     level:    [70, 72]
   17182849:
     template: Seneschal_Imp
-    at:       [21.280, 15.841, -154.348, 43]
+    region:   se_126
     level:    [77, 79]
   17182850:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [21.967, 13.669, -208.800, 47]
+    region:   se_130
     level:    [70, 72]
   17182851:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [19.158, 15.751, -159.591, 130]
+    region:   se_130
     level:    [70, 72]
   17182852:
     template: Bastion_Bats_Castle_Oztroja_S
@@ -4469,151 +4469,151 @@ spawns:
     level:    [70, 72]
   17182853:
     template: Seneschal_Imp
-    at:       [18.737, 16.189, -169.096, 73]
+    region:   se_130
     level:    [77, 79]
   17182854:
     template: Bastion_Bats_Castle_Oztroja_S
     script:   Bastion_Bats
-    at:       [49.419, 5.723, -217.929, 239]
+    region:   se_134
     level:    [70, 72]
   17182855:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [100.624, -16.250, -19.068, 120]
+    region:   se_135
     level:    [76, 79]
   17182856:
     template: Yagudo_Knight_Templar
-    at:       [40.069, -16.250, -20.712, 74]
+    region:   se_136
     level:    [76, 79]
   17182857:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [87.724, -15.992, -17.976, 120]
+    region:   se_136
     level:    [76, 79]
   17182858:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [69.731, -16.250, -21.003, 71]
+    region:   se_136
     level:    [76, 79]
   17182859:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [18.852, -16.250, -19.575, 138]
+    region:   se_139
     level:    [76, 79]
   17182860:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [18.820, -16.250, -24.027, 57]
+    region:   se_139
     level:    [76, 79]
   17182861:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [20.929, -16.250, 0.434]
+    region:   se_139
     level:    [76, 79]
   17182862:
     template: Yagudo_Prioress
-    at:       [40.296, -16.250, -18.298, 141]
+    region:   se_142
     level:    [76, 79]
   17182863:
     template: Yagudos_Elemental
-    at:       [39.374, -16.250, -18.051, 238]
+    region:   se_142
     level:    [70, 79]
   17182864:
     template: Yagudo_Knight_Templar
-    at:       [-19.439, -16.250, -40.952, 83]
+    region:   s_144
     level:    [76, 79]
   17182865:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-21.873, -16.250, -87.038, 200]
+    region:   s_144
     level:    [76, 79]
   17182866:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-21.222, -16.250, -43.306, 176]
+    region:   s_144
     level:    [76, 79]
   17182867:
     template: Yagudo_Sentinel_past
     script:   Yagudo_Sentinel
-    at:       [-17.960, -16.250, -19.767, 97]
+    region:   s_147
     level:    [76, 79]
   17182868:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-44.458, -16.250, -100.443, 111]
+    region:   s_148
     level:    [76, 79]
   17182869:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-56.880, -16.250, -105.393, 211]
+    region:   s_148
     level:    [76, 79]
   17182870:
     template: Yagudo_Prioress
-    at:       [-51.126, -16.250, -102.155, 221]
+    region:   s_148
     level:    [76, 79]
   17182871:
     template: Yagudos_Elemental
-    at:       [-49.955, -16.250, -102.111, 250]
+    region:   s_148
     level:    [70, 79]
   17182872:
     template: Yagudo_Yojimbo
-    at:       [11.293, -16.531, -107.856, 182]
+    region:   se_152
     level:    [81, 83]
   17182873:
     template: Yagudo_Nokizaru
-    at:       [21.953, -16.514, -101.660, 46]
+    region:   se_152
     level:    [79, 82]
   17182874:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [16.004, -16.540, -175.674, 34]
+    region:   se_154
     level:    [81, 83]
   17182875:
     template: Yagudo_Yojimbo
-    at:       [31.877, -16.500, -186.935, 137]
+    region:   se_154
     level:    [81, 83]
   17182876:
     template: Yagudo_Nokizaru
-    at:       [110.747, -16.499, -128.351, 40]
+    region:   se_156
     level:    [79, 82]
   17182877:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [110.849, -16.499, -138.450, 64]
+    region:   se_156
     level:    [81, 83]
   17182878:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [8.218, -16.538, -85.519, 33]
+    region:   se_158
     level:    [81, 83]
   17182879:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [12.795, -16.796, -79.480, 167]
+    region:   se_158
     level:    [81, 83]
   17182880:
     template: Yagudo_Yojimbo
-    at:       [7.314, -16.499, -191.353, 125]
+    region:   s_160
     level:    [81, 83]
   17182881:
     template: Yagudo_Yojimbo
-    at:       [12.401, -16.499, -185.853, 118]
+    region:   s_160
     level:    [81, 83]
   17182882:
     template: Yagudo_Nokizaru
-    at:       [114.125, -16.500, -95.230, 249]
+    region:   se_162
     level:    [79, 82]
   17182883:
     template: Yagudo_Nokizaru
-    at:       [115.899, -16.503, -89.748, 49]
+    region:   se_162
     level:    [79, 82]
   17182884:
     template: Yagudo_Yojimbo
-    at:       [59.921, -19.955, -152.076, 9]
+    region:   se_164
     level:    [81, 83]
   17182885:
     template: Yagudo_Nokizaru
-    at:       [72.394, -19.993, -132.978, 31]
+    region:   se_164
     level:    [79, 82]
   17182886:
     template: Seneschal_Imp
@@ -4692,178 +4692,178 @@ spawns:
   17182902:
     template: Yagudo_Eradicator_past
     script:   Yagudo_Eradicator
-    at:       [-4.398, -16.249, 60.980, 145]
+    region:   c_182
     level:    [76, 79]
   17182903:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-6.040, -16.249, 61.044, 241]
+    region:   c_182
     level:    [76, 79]
   17182904:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [6.259, -16.224, 55.512, 2]
+    region:   c_182
     level:    [76, 79]
   17182905:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-44.271, -16.232, 61.154, 146]
+    region:   c_182
     level:    [76, 79]
   17182906:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-50.003, -16.249, 63.950, 143]
+    region:   c_182
     level:    [76, 79]
   17182907:
     template: Yagudo_Prioress
-    at:       [-19.061, -16.579, 85.220, 74]
+    region:   c_187
     level:    [76, 79]
   17182908:
     template: Yagudos_Elemental
-    at:       [-19.930, -16.841, 86.453, 51]
+    region:   c_187
     level:    [70, 79]
   17182909:
     template: Yagudo_Prioress
-    at:       [-19.464, -16.192, 83.169, 205]
+    region:   c_187
     level:    [76, 79]
   17182910:
     template: Yagudos_Elemental
-    at:       [-18.877, -16.092, 81.849, 190]
+    region:   c_187
     level:    [70, 79]
   17182911:
     template: Earth_Elemental
-    at:       [-21.054, -23.804, 119.842, 248]
+    region:   c_191
     level:    [80, 80]
   17182912:
     template: Fire_Elemental
-    at:       [-18.683, -31.806, 155.865, 72]
+    region:   c_191
     level:    [80, 80]
   17182913:
     template: Yagudo_Prioress
-    at:       [-25.383, -36.670, 180.017, 240]
+    region:   c_193
     level:    [76, 79]
   17182914:
     template: Yagudos_Elemental
-    at:       [-25.225, -36.703, 180.305, 13]
+    region:   c_193
     level:    [70, 79]
   17182915:
     template: Yagudo_Prioress
-    at:       [-38.926, -39.704, 181.743, 9]
+    region:   c_193
     level:    [76, 79]
   17182916:
     template: Yagudos_Elemental
-    at:       [-40.061, -39.910, 182.195, 250]
+    region:   c_193
     level:    [70, 79]
   17182917:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-88.817, -16.048, 28.649, 4]
+    region:   c_197
     level:    [81, 83]
   17182918:
     template: Yagudo_Hierogrammat
-    at:       [-132.918, -16.056, 28.633, 132]
+    region:   c_197
     level:    [81, 83]
   17182919:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-103.363, -16.055, 28.759, 134]
+    region:   c_197
     level:    [81, 83]
   17182920:
     template: Gnat
-    at:       [-129.360, -16.055, 28.344, 4]
+    region:   c_197
     level:    [79, 83]
   17182921:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-180.754, -16.216, 21.177, 224]
+    region:   w_201
     level:    [76, 79]
   17182922:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-176.584, -16.243, 47.617, 84]
+    region:   w_201
     level:    [76, 79]
   17182923:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-181.078, -16.215, 18.249, 32]
+    region:   w_201
     level:    [76, 79]
   17182924:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-169.509, -16.249, 57.461, 75]
+    region:   c_204
     level:    [76, 79]
   17182925:
     template: Yagudo_High_Priest_past
     script:   Yagudo_High_Priest
-    at:       [-170.225, -16.249, 64.684, 220]
+    region:   c_204
     level:    [76, 79]
   17182926:
     template: Bulwark_Bat_Castle_Oztroja_S
     script:   Bulwark_Bat
-    at:       [-159.527, -16.246, 60.661, 126]
+    region:   c_204
     level:    [70, 72]
   17182927:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-141.212, -16.249, 79.573, 250]
+    region:   c_207
     level:    [76, 79]
   17182928:
     template: Yagudo_Prelate_past
     script:   Yagudo_Prelate
-    at:       [-138.949, -16.248, 73.463, 203]
+    region:   c_207
     level:    [76, 79]
   17182929:
     template: Yagudo_Chanter_past
     script:   Yagudo_Chanter
-    at:       [-143.487, -16.250, 80.538, 18]
+    region:   c_207
     level:    [76, 79]
   17182930:
     template: Bulwark_Bat_Castle_Oztroja_S
     script:   Bulwark_Bat
-    at:       [-143.519, -16.242, 99.240, 105]
+    region:   c_207
     level:    [70, 72]
   17182931:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-173.490, -16.565, 111.392, 85]
+    region:   w_211
     level:    [81, 83]
   17182932:
     template: Yagudo_Superior
-    at:       [-170.752, -16.498, 137.515, 41]
+    region:   w_211
     level:    [81, 83]
   17182933:
     template: Yagudos_Elemental
-    at:       [-171.618, -16.499, 139.072, 41]
+    region:   w_211
     level:    [70, 79]
   17182934:
     template: Yagudo_Hierogrammat
-    at:       [-179.615, -16.549, 179.490, 18]
+    region:   w_214
     level:    [81, 83]
   17182935:
     template: Yagudo_Superior
-    at:       [-212.992, -16.500, 186.573, 231]
+    region:   w_214
     level:    [81, 83]
   17182936:
     template: Yagudos_Elemental
-    at:       [-215.014, -16.500, 184.699, 110]
+    region:   w_214
     level:    [70, 79]
   17182937:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-266.134, -16.499, 133.965, 211]
+    region:   w_217
     level:    [81, 83]
   17182938:
     template: Yagudo_Superior
-    at:       [-268.579, -16.498, 143.593, 77]
+    region:   w_217
     level:    [81, 83]
   17182939:
     template: Yagudos_Elemental
-    at:       [-267.962, -16.498, 142.267, 101]
+    region:   w_217
     level:    [70, 79]
   17182940:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-168.523, -16.706, 81.726, 73]
+    region:   w_220
     level:    [81, 83]
   17182941:
     template: Yagudo_Abbot_indoor_S
@@ -4917,16 +4917,16 @@ spawns:
   17182952:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-139.088, -15.836, -70.071, 98]
+    region:   s_232
     level:    [81, 83]
   17182953:
     template: Gnat
-    at:       [-125.660, -16.042, -65.610, 122]
+    region:   s_232
     level:    [79, 83]
   17182954:
     template: Bulwark_Bat_Castle_Oztroja_S
     script:   Bulwark_Bat
-    at:       [-56.693, -16.250, -59.938, 172]
+    region:   s_234
     level:    [70, 72]
   17182955:
     template: Bulwark_Bat_Castle_Oztroja_S
@@ -4935,156 +4935,156 @@ spawns:
     level:    [70, 72]
   17182956:
     template: Seneschal_Imp
-    at:       [-61.446, -16.250, -64.773, 126]
+    region:   s_234
     level:    [77, 79]
   17182957:
     template: Yagudo_Yojimbo
-    at:       [-82.272, -16.031, -27.759, 127]
+    region:   s_237
     level:    [81, 83]
   17182958:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-96.668, -16.199, -20.657, 13]
+    region:   s_237
     level:    [81, 83]
   17182959:
     template: Yagudo_Hierogrammat
-    at:       [-102.022, -16.245, -19.398, 253]
+    region:   s_237
     level:    [81, 83]
   17182960:
     template: Gnat
-    at:       [-109.278, -15.978, -19.879, 255]
+    region:   s_237
     level:    [79, 83]
   17182961:
     template: Yagudo_Yojimbo
-    at:       [-53.661, -16.038, 6.285, 181]
+    region:   c_241
     level:    [81, 83]
   17182962:
     template: Yagudo_Superior
-    at:       [-53.463, -16.036, 16.191, 182]
+    region:   c_241
     level:    [81, 83]
   17182963:
     template: Yagudos_Elemental
-    at:       [-53.320, -16.035, 15.929, 182]
+    region:   c_241
     level:    [70, 79]
   17182964:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-148.933, -16.425, -20.523, 8]
+    region:   s_244
     level:    [81, 83]
   17182965:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-149.837, -16.350, -18.183, 127]
+    region:   s_244
     level:    [81, 83]
   17182966:
     template: Yagudo_Nokizaru
-    at:       [-169.047, -15.805, -24.627, 111]
+    region:   s_246
     level:    [79, 82]
   17182967:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-175.218, -15.798, -22.806, 29]
+    region:   s_246
     level:    [81, 83]
   17182968:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-222.953, -15.806, -20.775, 113]
+    region:   sw_248
     level:    [81, 83]
   17182969:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-210.000, -15.806, -19.727, 203]
+    region:   sw_248
     level:    [81, 83]
   17182970:
     template: Yagudo_Hierogrammat
-    at:       [-238.320, -15.806, -19.298, 138]
+    region:   sw_248
     level:    [81, 83]
   17182971:
     template: Yagudo_Yojimbo
-    at:       [-260.015, -16.250, -24.505, 228]
+    region:   sw_251
     level:    [81, 83]
   17182972:
     template: Yagudo_Superior
-    at:       [-254.698, -16.250, -22.389, 24]
+    region:   sw_251
     level:    [81, 83]
   17182973:
     template: Yagudos_Elemental
-    at:       [-256.640, -16.250, -22.583, 1]
+    region:   sw_251
     level:    [70, 79]
   17182974:
     template: Yagudo_Nokizaru
-    at:       [-169.521, -38.767, -59.454, 201]
+    region:   sw_254
     level:    [79, 82]
   17182975:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-249.459, -21.503, -60.958, 56]
+    region:   sw_254
     level:    [81, 83]
   17182976:
     template: Yagudo_Hierogrammat
-    at:       [-243.616, -22.918, -60.200, 13]
+    region:   sw_254
     level:    [81, 83]
   17182977:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-135.815, -40.243, -29.153, 88]
+    region:   s_257
     level:    [81, 83]
   17182978:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-142.135, -40.248, -34.386, 182]
+    region:   s_257
     level:    [81, 83]
   17182979:
     template: Yagudo_Yojimbo
-    at:       [-141.728, -40.247, -55.315, 201]
+    region:   s_257
     level:    [81, 83]
   17182980:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-113.252, -40.248, -21.554, 181]
+    region:   s_260
     level:    [81, 83]
   17182981:
     template: Yagudo_Hierogrammat
-    at:       [-98.667, -40.202, -21.536, 48]
+    region:   s_260
     level:    [81, 83]
   17182982:
     template: Yagudo_Nokizaru
-    at:       [-104.242, -40.249, -20.346, 74]
+    region:   s_260
     level:    [79, 82]
   17182983:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-104.672, -40.250, -94.907, 65]
+    region:   s_263
     level:    [81, 83]
   17182984:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-101.342, -40.207, -67.826, 162]
+    region:   s_263
     level:    [81, 83]
   17182985:
     template: Yagudo_Hierogrammat
-    at:       [-78.351, -40.274, -56.983, 168]
+    region:   s_263
     level:    [81, 83]
   17182986:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-75.294, -40.282, -98.520, 229]
+    region:   s_266
     level:    [81, 83]
   17182987:
     template: Yagudo_Yojimbo
-    at:       [-66.519, -40.281, -73.002, 179]
+    region:   s_266
     level:    [81, 83]
   17182988:
     template: Yagudo_Nokizaru
-    at:       [-83.802, -40.281, -100.660, 236]
+    region:   s_266
     level:    [79, 82]
   17182989:
     template: Yagudo_Superior
-    at:       [-100.189, -40.265, -88.399, 228]
+    region:   s_269
     level:    [81, 83]
   17182990:
     template: Yagudos_Elemental
-    at:       [-102.036, -40.259, -85.131, 252]
+    region:   s_269
     level:    [70, 79]
   17182991:
     template: Yagudo_Parasite
@@ -5135,7 +5135,7 @@ spawns:
     level:    [81, 83]
   17183002:
     template: Yagudo_Hierogrammat
-    at:       [-61.235, -50.739, -210.694, 127]
+    region:   s_282
     level:    [81, 83]
   17183003:
     template: Yagudo_Conductor_past
@@ -5144,153 +5144,153 @@ spawns:
     level:    [81, 83]
   17183004:
     template: Gnat
-    at:       [-58.698, -45.023, -185.525, 70]
+    region:   s_282
     level:    [79, 83]
   17183005:
     template: Yagudo_Nokizaru
-    at:       [-82.393, -57.109, -221.248, 139]
+    region:   s_285
     level:    [79, 82]
   17183006:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-82.095, -57.056, -219.924, 111]
+    region:   s_285
     level:    [81, 83]
   17183007:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-100.744, -62.210, -210.303, 156]
+    region:   s_285
     level:    [81, 83]
   17183008:
     template: Yagudo_Superior
-    at:       [-68.672, -54.122, -218.726, 154]
+    region:   s_285
     level:    [81, 83]
   17183009:
     template: Yagudos_Elemental
-    at:       [-67.581, -53.895, -218.807, 11]
+    region:   s_285
     level:    [70, 79]
   17183010:
     template: Gnat
-    at:       [-97.587, -66.025, -189.622, 54]
+    region:   s_285
     level:    [79, 83]
   17183011:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-98.520, -72.249, -117.169, 63]
+    region:   s_291
     level:    [81, 83]
   17183012:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-101.211, -72.226, -107.524, 154]
+    region:   s_291
     level:    [81, 83]
   17183013:
     template: Yagudo_Nokizaru
-    at:       [-95.882, -72.248, -74.223, 205]
+    region:   s_293
     level:    [79, 82]
   17183014:
     template: Yagudo_Hierogrammat
-    at:       [-95.406, -72.249, -68.835, 38]
+    region:   s_293
     level:    [81, 83]
   17183015:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-92.831, -72.244, -97.513, 194]
+    region:   s_295
     level:    [81, 83]
   17183016:
     template: Yagudo_Yojimbo
-    at:       [-78.202, -72.249, -99.298, 148]
+    region:   s_295
     level:    [81, 83]
   17183017:
     template: Yagudo_Nokizaru
-    at:       [-143.723, -72.244, -95.090, 170]
+    region:   s_297
     level:    [79, 82]
   17183018:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-115.040, -72.249, -97.840, 182]
+    region:   s_297
     level:    [81, 83]
   17183019:
     template: Yagudo_Superior
-    at:       [-58.806, -72.250, -119.381, 255]
+    region:   s_299
     level:    [81, 83]
   17183020:
     template: Yagudos_Elemental
-    at:       [-61.343, -72.249, -116.873, 32]
+    region:   s_299
     level:    [70, 79]
   17183021:
     template: Yagudo_Superior
-    at:       [-141.501, -72.241, -94.126, 194]
+    region:   s_301
     level:    [81, 83]
   17183022:
     template: Yagudos_Elemental
-    at:       [-141.781, -72.243, -93.402, 196]
+    region:   s_301
     level:    [70, 79]
   17183023:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-57.425, -72.368, -132.995, 42]
+    region:   s_303
     level:    [81, 83]
   17183024:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-60.493, -73.974, -136.192, 221]
+    region:   s_303
     level:    [81, 83]
   17183025:
     template: Yagudo_Yojimbo
-    at:       [-58.767, -72.264, -55.009, 131]
+    region:   s_305
     level:    [81, 83]
   17183026:
     template: Yagudo_Yojimbo
-    at:       [-66.214, -72.264, -58.485, 190]
+    region:   s_305
     level:    [81, 83]
   17183027:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-146.300, -72.368, -138.949, 191]
+    region:   s_307
     level:    [81, 83]
   17183028:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-145.493, -72.324, -136.904, 86]
+    region:   s_307
     level:    [81, 83]
   17183029:
     template: Yagudo_Hierogrammat
-    at:       [-145.456, -72.250, -57.796, 100]
+    region:   s_309
     level:    [81, 83]
   17183030:
     template: Yagudo_Hierogrammat
-    at:       [-143.538, -72.252, -66.849, 38]
+    region:   s_309
     level:    [81, 83]
   17183031:
     template: Dee_Zelko_the_Esoteric
-    at:       [-91.983, -40.245, -62.989, 93]
+    region:   s_269
     level:    [83, 83]
   17183032:
     template: Marquis_Forneus
-    at:       [-343.345, -16.984, 141.193, 214]
+    region:   w_312
     level:    [80, 85]
   17183033:
     template: Loo_Kutto_the_Pensive
-    at:       [7.990, -16.500, -187.812, 238]
+    region:   s_160
     level:    [83, 83]
   17183034:
     template: Fleshgnasher
-    at:       [174.370, -16.539, -141.226, 181]
+    region:   se_314
     level:    [80, 85]
   17183035:
     template: Vee_Ladu_the_Titterer
-    at:       [-57.602, -0.823, -58.060, 95]
+    region:   s_315
     level:    [83, 83]
   17183036:
     template: Maa_Illmu_the_Bestower
-    at:       [-17.176, -16.250, -16.468, 188]
+    region:   s_147
     level:    [83, 83]
   17183037:
     template: Asterion
-    at:       [-18.050, -16.926, 18.064, 83]
+    region:   c_317
     level:    [80, 85]
   17183038:
     template: Suu_Xicu_the_Cantabile
-    at:       [-252.700, -0.382, 115.500, 183]
+    region:   w_63
     level:    [83, 83]
   17183039:
     template: Vee_Ladu_the_Titterer_2

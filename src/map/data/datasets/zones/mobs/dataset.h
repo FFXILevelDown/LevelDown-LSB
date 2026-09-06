@@ -92,8 +92,8 @@ struct MobSpawnData
     uint8       MinLevel{};
     uint8       MaxLevel{};
 
-    std::string             Region; // roams this region instead of a fixed point
-    std::vector<position_t> Route;  // a `path` arrives folded back on itself, so every route is a closed loop
+    std::vector<std::string> Regions; // roams one of these instead of a fixed point, picked on every spawn
+    std::vector<position_t>  Route;   // a `path` arrives folded back on itself, so every route is a closed loop
 
     MobAttributesOverrides Attributes{};
 };

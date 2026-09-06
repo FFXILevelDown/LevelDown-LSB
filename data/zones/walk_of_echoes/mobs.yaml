@@ -1786,77 +1786,79 @@ spawns:
     level:    [90, 92]
   17522734:
     template: Myrmeleontide
-    at:       [362.989, 35.500, 603.969, 159]
+    region:   ne_46
     level:    [90, 92]
   17522735:
     template: Myrmeleontide
-    at:       [282.970, 19.235, 580.395, 127]
+    region:   ne_46
     level:    [90, 92]
   17522736:
     template: Myrmeleontide
-    at:       [337.894, 35.505, 659.067, 28]
+    region:   ne_46
     level:    [90, 92]
   17522737:
     template: Anthracite_Antlion
-    at:       [313.820, 33.666, 579.570, 127]
+    region:   ne_46
     level:    [90, 92]
   17522738:
     template: Anthracite_Antlion
-    at:       [294.790, 24.933, 579.137, 211]
+    region:   ne_46
     level:    [90, 92]
   17522739:
     template: Anthracite_Antlion
+    region:   ne_46
     level:    [90, 92]
   17522740:
     template: Anthracite_Antlion
-    at:       [299.601, 43.991, 658.521, 184]
+    region:   ne_46
     level:    [90, 92]
   17522741:
     template: Anthracite_Antlion
-    at:       [263.097, 53.500, 700.447, 14]
+    region:   ne_46
     level:    [90, 92]
   17522742:
     template: Anthracite_Antlion
-    at:       [292.399, 59.328, 697.906]
+    region:   ne_46
     level:    [90, 92]
   17522743:
     template: Anthracite_Antlion
-    at:       [215.066, 53.500, 695.972, 2]
+    region:   ne_46
     level:    [90, 92]
   17522744:
     template: Anthracite_Antlion
-    at:       [272.790, 17.614, 578.304, 127]
+    region:   ne_46
     level:    [90, 92]
   17522745:
     template: Albino_Antlion
-    at:       [280.340, 18.061, 578.218, 130]
+    region:   ne_46
     level:    [90, 92]
   17522746:
     template: Albino_Antlion
-    at:       [228.050, 17.500, 579.669, 165]
+    region:   ne_46
     level:    [90, 92]
   17522747:
     template: Albino_Antlion
+    region:   ne_46
     level:    [90, 92]
   17522748:
     template: Albino_Antlion
-    at:       [326.753, 35.500, 658.774, 125]
+    region:   ne_46
     level:    [90, 92]
   17522749:
     template: Albino_Antlion
-    at:       [358.595, 35.500, 644.799, 152]
+    region:   ne_46
     level:    [90, 92]
   17522750:
     template: Albino_Antlion
-    at:       [322.920, 70.781, 699.187, 127]
+    region:   ne_46
     level:    [90, 92]
   17522751:
     template: Albino_Antlion
-    at:       [356.015, 35.500, 636.000, 72]
+    region:   ne_46
     level:    [90, 92]
   17522752:
     template: Albino_Antlion
-    at:       [319.330, 34.115, 580.007, 127]
+    region:   ne_46
     level:    [90, 92]
   17522753:
     template: Harpimaira
@@ -1884,7 +1886,7 @@ spawns:
     level:    [90, 92]
   17522759:
     template: Saltopus
-    at:       [-675.400, 17.500, 299.864, 191]
+    region:   w_71
     level:    [90, 92]
   17522760:
     template: Saltopus
@@ -1892,7 +1894,7 @@ spawns:
     level:    [90, 92]
   17522761:
     template: Saltopus
-    at:       [-652.400, 17.500, 292.583, 192]
+    region:   w_71
     level:    [90, 92]
   17522762:
     template: Saltopus
@@ -1900,7 +1902,7 @@ spawns:
     level:    [90, 92]
   17522763:
     template: Saltopus
-    at:       [-675.800, 17.500, 299.988, 34]
+    region:   w_71
     level:    [90, 92]
   17522764:
     template: Saltopus
@@ -1908,7 +1910,7 @@ spawns:
     level:    [90, 92]
   17522765:
     template: Saltopus
-    at:       [-689.700, 17.500, 313.230, 224]
+    region:   w_71
     level:    [90, 92]
   17522766:
     template: Saltopus
@@ -2028,7 +2030,7 @@ spawns:
     level:    [90, 92]
   17522795:
     template: Pardus
-    at:       [261.370, 41.500, 163.509, 154]
+    region:   e_107
     level:    [90, 92]
   17522796:
     template: Anguis
@@ -2052,23 +2054,23 @@ spawns:
     level:    [90, 92]
   17522801:
     template: Pteranodon
-    at:       [-172.000, 5.499, -227.990, 179]
+    region:   c_113
     level:    [90, 92]
   17522802:
     template: Pteranodon
-    at:       [-111.500, 5.542, -238.280, 224]
+    region:   c_114
     level:    [90, 92]
   17522803:
     template: Pteranodon
-    at:       [-108.000, 6.486, -220.000, 76]
+    region:   c_115
     level:    [90, 92]
   17522804:
     template: Pteranodon
-    at:       [-75.790, 11.500, -211.980, 22]
+    region:   c_116
     level:    [90, 92]
   17522805:
     template: Pteranodon
-    at:       [-44.000, 17.500, -228.000, 197]
+    region:   c_117
     level:    [90, 92]
   17522806:
     template: Annihilative_Adenium
@@ -2174,113 +2176,115 @@ spawns:
     level:    [90, 92]
   17522834:
     template: Tapanas_Minion
-    at:       [584.880, 34.778, -229.810, 154]
+    region:   e_146
     level:    [90, 92]
   17522835:
     template: Tapanas_Minion
-    at:       [581.080, 35.500, -227.770, 12]
+    region:   e_146
     level:    [90, 92]
   17522836:
     template: Tapanas_Minion
-    at:       [582.840, 35.507, -230.660, 194]
+    region:   e_146
     level:    [90, 92]
   17522837:
     template: Tapanas_Minion
-    at:       [594.880, 35.500, -182.260, 241]
+    region:   e_146
     level:    [90, 92]
   17522838:
     template: Tapanas_Minion
-    at:       [584.210, 34.500, -230.790, 172]
+    region:   e_146
     level:    [90, 92]
   17522839:
     template: Tapanas_Minion
-    at:       [632.580, 34.750, -207.610, 169]
+    region:   e_151
     level:    [90, 92]
   17522840:
     template: Tapanas_Minion
-    at:       [651.920, 35.500, -235.990, 66]
+    region:   e_151
     level:    [90, 92]
   17522841:
     template: Tapanas_Minion
-    at:       [682.030, 35.500, -182.640, 249]
+    region:   e_151
     level:    [90, 92]
   17522842:
     template: Tapanas_Minion
-    at:       [630.080, 35.500, -222.060, 225]
+    region:   e_151
     level:    [90, 92]
   17522843:
     template: Tapanas_Minion
-    at:       [628.030, 35.500, -236.010, 14]
+    region:   e_151
     level:    [90, 92]
   17522844:
     template: Tapanas_Minion
-    at:       [667.290, 35.500, -187.280, 215]
+    region:   e_156
     level:    [90, 92]
   17522845:
     template: Tapanas_Minion
-    at:       [644.050, 35.500, -187.970, 157]
+    region:   e_156
     level:    [90, 92]
   17522846:
     template: Tapanas_Minion
-    at:       [644.050, 35.500, -187.970, 96]
+    region:   e_156
     level:    [90, 92]
   17522847:
     template: Tapanas_Minion
-    at:       [692.000, 35.500, -172.020, 176]
+    region:   e_159
     level:    [90, 92]
   17522848:
     template: Tapanas_Minion
-    at:       [692.070, 35.500, -164.000, 88]
+    region:   e_159
     level:    [90, 92]
   17522849:
     template: Tapanas_Minion
-    at:       [684.000, 35.500, -172.020, 83]
+    region:   e_159
     level:    [90, 92]
   17522850:
     template: Tapanas_Minion
-    at:       [684.070, 35.500, -164.000, 142]
+    region:   e_159
     level:    [90, 92]
   17522851:
     template: Tapanas_Minion
-    at:       [715.990, 35.500, -163.980, 60]
+    region:   e_163
     level:    [90, 92]
   17522852:
     template: Tapanas_Minion
-    at:       [739.520, 35.500, -162.000, 197]
+    region:   e_163
     level:    [90, 92]
   17522853:
     template: Tapanas_Minion
-    at:       [738.080, 35.500, -170.980, 46]
+    region:   e_163
     level:    [90, 92]
   17522854:
     template: Tapanas_Minion
-    at:       [732.020, 35.500, -172.000, 255]
+    region:   e_163
     level:    [90, 92]
   17522855:
     template: Tapanas_Minion
-    at:       [580.360, 35.103, -233.300, 191]
+    region:   se_167
     level:    [90, 92]
   17522856:
     template: Tapanas_Minion
+    region:   se_167
     level:    [90, 92]
   17522857:
     template: Tapanas_Minion
-    at:       [579.610, 30.525, -249.780, 192]
+    region:   se_167
     level:    [90, 92]
   17522858:
     template: Tapanas_Minion
+    region:   se_167
     level:    [90, 92]
   17522859:
     template: Tapanas_Minion
-    at:       [739.980, 43.416, -102.210, 241]
+    region:   e_171
     level:    [90, 92]
   17522860:
     template: Tapanas_Minion
-    at:       [739.940, 53.500, -79.007, 52]
+    region:   e_171
     level:    [90, 92]
   17522861:
     template: Tapanas_Minion
-    at:       [740.040, 57.166, -70.716, 232]
+    region:   e_171
     level:    [90, 92]
   17522862:
     template: Ironclad_Harbinger
@@ -2372,77 +2376,79 @@ spawns:
     level:    [90, 92]
   17522880:
     template: Ligeia
-    at:       [-178.100, -0.500, -529.350, 246]
+    region:   s_192
     level:    [90, 92]
   17522881:
     template: Leucosia
-    at:       [-178.000, -0.500, -525.610, 3]
+    region:   s_192
     level:    [90, 92]
   17522882:
     template: Raidne
-    at:       [-182.000, -0.500, -579.340, 127]
+    region:   s_192
     level:    [90, 92]
   17522883:
     template: Sanguine_Sapsucker
+    region:   sw_195
     level:    [90, 92]
   17522884:
     template: Sanguine_Sapsucker
+    region:   sw_195
     level:    [90, 92]
   17522885:
     template: Sanguine_Sapsucker
-    at:       [-107.100, -0.500, -476.850, 198]
+    region:   s_197
     level:    [90, 92]
   17522886:
     template: Sanguine_Sapsucker
-    at:       [-114.500, -0.500, -484.380, 173]
+    region:   s_197
     level:    [90, 92]
   17522887:
     template: Sanguine_Sapsucker
-    at:       [-118.100, -0.500, -562.570, 244]
+    region:   s_199
     level:    [90, 92]
   17522888:
     template: Sanguine_Sapsucker
-    at:       [-113.900, -0.500, -553.370, 99]
+    region:   s_199
     level:    [90, 92]
   17522889:
     template: Sanguine_Sapsucker
-    at:       [-197.800, -0.500, -634.350, 131]
+    region:   s_201
     level:    [90, 92]
   17522890:
     template: Sanguine_Sapsucker
-    at:       [-193.600, -0.500, -630.980, 172]
+    region:   s_201
     level:    [90, 92]
   17522891:
     template: Malicious_Magpie
-    at:       [-190.000, -0.500, -468.770, 203]
+    region:   s_203
     level:    [90, 92]
   17522892:
     template: Malicious_Magpie
-    at:       [-198.100, -0.500, -481.350, 195]
+    region:   s_203
     level:    [90, 92]
   17522893:
     template: Malicious_Magpie
-    at:       [-179.800, -0.500, -527.150, 98]
+    region:   s_205
     level:    [90, 92]
   17522894:
     template: Malicious_Magpie
-    at:       [-188.000, -0.500, -568.340, 61]
+    region:   s_205
     level:    [90, 92]
   17522895:
     template: Malicious_Magpie
-    at:       [-293.200, -0.499, -638.180, 177]
+    region:   sw_207
     level:    [90, 92]
   17522896:
     template: Malicious_Magpie
-    at:       [-286.700, -0.499, -642.350, 39]
+    region:   sw_207
     level:    [90, 92]
   17522897:
     template: Malicious_Magpie
-    at:       [-131.300, -0.500, -638.650, 154]
+    region:   s_209
     level:    [90, 92]
   17522898:
     template: Malicious_Magpie
-    at:       [-127.600, -0.500, -629.030, 129]
+    region:   s_209
     level:    [90, 92]
   17522899:
     template: Barra_Edinazu
@@ -2454,67 +2460,67 @@ spawns:
     level:    [90, 92]
   17522901:
     template: Coeurl_Mystic
-    at:       [636.013, 17.500, -691.995, 34]
+    region:   se_213
     level:    [90, 92]
   17522902:
     template: Coeurl_Mystic
-    at:       [697.041, 53.500, -686.903, 193]
+    region:   se_214
     level:    [90, 92]
   17522903:
     template: Coeurl_Mystic
-    at:       [643.929, 17.500, -667.986, 42]
+    region:   se_215
     level:    [90, 92]
   17522904:
     template: Coeurl_Mystic
-    at:       [708.033, 53.500, -668.008, 146]
+    region:   se_216
     level:    [90, 92]
   17522905:
     template: Coeurl_Prentice
-    at:       [660.299, 29.186, -746.862, 62]
+    region:   se_217
     level:    [90, 92]
   17522906:
     template: Coeurl_Prentice
-    at:       [659.090, 17.500, -684.008, 204]
+    region:   se_213
     level:    [90, 92]
   17522907:
     template: Coeurl_Prentice
-    at:       [620.011, 17.500, -668.004, 123]
+    region:   se_215
     level:    [90, 92]
   17522908:
     template: Coeurl_Prentice
-    at:       [619.950, -0.500, -600.758, 155]
+    region:   se_220
     level:    [90, 92]
   17522909:
     template: Coeurl_Prentice
-    at:       [621.857, 12.800, -629.799, 63]
+    region:   se_220
     level:    [90, 92]
   17522910:
     template: Coeurl_Prentice
-    at:       [612.057, -0.500, -572.002, 151]
+    region:   se_222
     level:    [90, 92]
   17522911:
     template: Coeurl_Tiro
-    at:       [617.192, 11.377, -626.729, 231]
+    region:   se_223
     level:    [90, 92]
   17522912:
     template: Coeurl_Tiro
-    at:       [712.098, 53.500, -683.973, 128]
+    region:   se_214
     level:    [90, 92]
   17522913:
     template: Coeurl_Tiro
-    at:       [723.985, 53.500, -675.984, 108]
+    region:   se_216
     level:    [90, 92]
   17522914:
     template: Coeurl_Tiro
-    at:       [739.816, 71.500, -577.479, 199]
+    region:   se_226
     level:    [90, 92]
   17522915:
     template: Coeurl_Tiro
-    at:       [740.753, 53.631, -638.894, 69]
+    region:   se_226
     level:    [90, 92]
   17522916:
     template: Coeurl_Tiro
-    at:       [742.239, 71.500, -580.594, 61]
+    region:   se_228
     level:    [90, 92]
   17522917:
     template: Mingyi
@@ -2542,51 +2548,51 @@ spawns:
     level:    [90, 92]
   17522923:
     template: Scorched_Yanthu
-    at:       [268.020, -0.500, -572.000, 75]
+    region:   se_235
     level:    [90, 92]
   17522924:
     template: Scorched_Yanthu
-    at:       [267.140, -0.500, -550.770, 185]
+    region:   se_235
     level:    [90, 92]
   17522925:
     template: Scorched_Yanthu
-    at:       [267.990, -0.500, -556.010, 220]
+    region:   se_235
     level:    [90, 92]
   17522926:
     template: Glaciated_Yanthu
-    at:       [244.060, -0.500, -603.960, 65]
+    region:   s_238
     level:    [90, 92]
   17522927:
     template: Glaciated_Yanthu
-    at:       [233.840, -0.500, -587.900, 129]
+    region:   s_238
     level:    [90, 92]
   17522928:
     template: Glaciated_Yanthu
-    at:       [233.950, -0.500, -587.980]
+    region:   s_238
     level:    [90, 92]
   17522929:
     template: Electrified_Yanthu
-    at:       [272.250, -0.500, -546.720, 242]
+    region:   se_241
     level:    [90, 92]
   17522930:
     template: Electrified_Yanthu
-    at:       [278.310, -0.500, -549.600, 127]
+    region:   se_241
     level:    [90, 92]
   17522931:
     template: Electrified_Yanthu
-    at:       [308.150, -0.499, -611.990, 59]
+    region:   se_241
     level:    [90, 92]
   17522932:
     template: Entombed_Yanthu
-    at:       [284.050, -0.500, -636.030, 186]
+    region:   se_244
     level:    [90, 92]
   17522933:
     template: Entombed_Yanthu
-    at:       [254.890, -0.500, -584.320, 207]
+    region:   se_244
     level:    [90, 92]
   17522934:
     template: Entombed_Yanthu
-    at:       [267.980, -0.500, -628.020, 159]
+    region:   se_244
     level:    [90, 92]
   17522935:
     template: Caldera_Crab
@@ -3024,87 +3030,115 @@ spawns:
     level:    [90, 92]
   17523080:
     template: Tapanas_Minion
+    region:   e_146
     level:    [90, 92]
   17523081:
     template: Tapanas_Minion
+    region:   e_146
     level:    [90, 92]
   17523082:
     template: Tapanas_Minion
+    region:   e_394
     level:    [90, 92]
   17523083:
     template: Tapanas_Minion
+    region:   e_146
     level:    [90, 92]
   17523084:
     template: Tapanas_Minion
+    region:   e_146
     level:    [90, 92]
   17523085:
     template: Tapanas_Minion
+    region:   e_151
     level:    [90, 92]
   17523086:
     template: Tapanas_Minion
+    region:   e_151
     level:    [90, 92]
   17523087:
     template: Tapanas_Minion
+    region:   e_151
     level:    [90, 92]
   17523088:
     template: Tapanas_Minion
+    region:   e_151
     level:    [90, 92]
   17523089:
     template: Tapanas_Minion
+    region:   e_151
     level:    [90, 92]
   17523090:
     template: Tapanas_Minion
+    region:   e_156
     level:    [90, 92]
   17523091:
     template: Tapanas_Minion
+    region:   e_156
     level:    [90, 92]
   17523092:
     template: Tapanas_Minion
+    region:   e_156
     level:    [90, 92]
   17523093:
     template: Tapanas_Minion
+    region:   e_159
     level:    [90, 92]
   17523094:
     template: Tapanas_Minion
+    region:   e_159
     level:    [90, 92]
   17523095:
     template: Tapanas_Minion
+    region:   e_159
     level:    [90, 92]
   17523096:
     template: Tapanas_Minion
+    region:   e_159
     level:    [90, 92]
   17523097:
     template: Tapanas_Minion
+    region:   e_163
     level:    [90, 92]
   17523098:
     template: Tapanas_Minion
+    region:   e_163
     level:    [90, 92]
   17523099:
     template: Tapanas_Minion
+    region:   e_163
     level:    [90, 92]
   17523100:
     template: Tapanas_Minion
+    region:   e_163
     level:    [90, 92]
   17523101:
     template: Tapanas_Minion
+    region:   se_167
     level:    [90, 92]
   17523102:
     template: Tapanas_Minion
+    region:   se_167
     level:    [90, 92]
   17523103:
     template: Tapanas_Minion
+    region:   se_167
     level:    [90, 92]
   17523104:
     template: Tapanas_Minion
+    region:   se_167
     level:    [90, 92]
   17523105:
     template: Tapanas_Minion
+    region:   e_171
     level:    [90, 92]
   17523106:
     template: Tapanas_Minion
+    region:   e_171
     level:    [90, 92]
   17523107:
     template: Tapanas_Minion
+    region:   e_171
     level:    [90, 92]
   17523108:
     template: Ironclad_Harbinger
@@ -3178,57 +3212,75 @@ spawns:
     level:    [90, 92]
   17523126:
     template: Ligeia
+    region:   s_192
     level:    [90, 92]
   17523127:
     template: Leucosia
+    region:   s_192
     level:    [90, 92]
   17523128:
     template: Raidne
+    region:   s_192
     level:    [90, 92]
   17523129:
     template: Sanguine_Sapsucker
+    region:   sw_195
     level:    [90, 92]
   17523130:
     template: Sanguine_Sapsucker
+    region:   sw_195
     level:    [90, 92]
   17523131:
     template: Sanguine_Sapsucker
+    region:   s_197
     level:    [90, 92]
   17523132:
     template: Sanguine_Sapsucker
+    region:   s_197
     level:    [90, 92]
   17523133:
     template: Sanguine_Sapsucker
+    region:   s_445
     level:    [90, 92]
   17523134:
     template: Sanguine_Sapsucker
+    region:   s_445
     level:    [90, 92]
   17523135:
     template: Sanguine_Sapsucker
+    region:   s_201
     level:    [90, 92]
   17523136:
     template: Sanguine_Sapsucker
+    region:   s_201
     level:    [90, 92]
   17523137:
     template: Malicious_Magpie
+    region:   s_203
     level:    [90, 92]
   17523138:
     template: Malicious_Magpie
+    region:   s_203
     level:    [90, 92]
   17523139:
     template: Malicious_Magpie
+    region:   s_205
     level:    [90, 92]
   17523140:
     template: Malicious_Magpie
+    region:   s_205
     level:    [90, 92]
   17523141:
     template: Malicious_Magpie
+    region:   sw_207
     level:    [90, 92]
   17523142:
     template: Malicious_Magpie
+    region:   sw_207
     level:    [90, 92]
   17523143:
     template: Malicious_Magpie
+    region:   s_209
     level:    [90, 92]
   17523144:
     template: Malicious_Magpie
@@ -3247,30 +3299,39 @@ spawns:
     level:    [90, 92]
   17523149:
     template: Coeurl_Mystic
+    region:   se_215
     level:    [90, 92]
   17523150:
     template: Coeurl_Mystic
+    region:   se_216
     level:    [90, 92]
   17523151:
     template: Coeurl_Prentice
+    region:   se_217
     level:    [90, 92]
   17523152:
     template: Coeurl_Prentice
+    region:   se_213
     level:    [90, 92]
   17523153:
     template: Coeurl_Prentice
+    region:   se_215
     level:    [90, 92]
   17523154:
     template: Coeurl_Prentice
+    region:   se_220
     level:    [90, 92]
   17523155:
     template: Coeurl_Prentice
+    region:   se_220
     level:    [90, 92]
   17523156:
     template: Coeurl_Prentice
+    region:   se_222
     level:    [90, 92]
   17523157:
     template: Coeurl_Tiro
+    region:   se_223
     level:    [90, 92]
   17523158:
     template: Coeurl_Tiro
@@ -3286,6 +3347,7 @@ spawns:
     level:    [90, 92]
   17523162:
     template: Coeurl_Tiro
+    region:   se_228
     level:    [90, 92]
   17523163:
     template: Mingyi
@@ -3337,9 +3399,11 @@ spawns:
     level:    [90, 92]
   17523179:
     template: Entombed_Yanthu
+    region:   se_244
     level:    [90, 92]
   17523180:
     template: Entombed_Yanthu
+    region:   se_244
     level:    [90, 92]
   17523181:
     template: Ragelise

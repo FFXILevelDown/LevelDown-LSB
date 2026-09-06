@@ -73,10 +73,10 @@ public:
 
     bool IsFarFromHome(); // check if mob is too far from spawn
 
-    auto DistanceFromHome() const -> float;       // how far it strayed: outside its roam region, or from its spawn point when it has none
-    auto GetRoamAnchor() const -> position_t;     // the point roaming is measured from
-    void setRoamRegion(const RoamRegion* region); // assigning a region drops m_maxRoamDistance to 0: its edge is the limit
-    auto roamRegion() const -> const RoamRegion*;
+    auto DistanceFromHome() const -> float;                      // how far it strayed: outside its roam region, or from its spawn point when it has none
+    auto GetRoamAnchor() const -> position_t;                    // the point roaming is measured from
+    void setRoamRegions(std::vector<const RoamRegion*> regions); // one is picked on every spawn and its edge is the roam limit, so m_maxRoamDistance drops to 0
+    auto roamRegion() const -> const RoamRegion*;                // the region picked for this life, null for a point spawner
     auto dropList() const -> const DropList_t*;
     void setPatrolRoute(std::vector<position_t> route); // walked as a loop from every spawn
 
@@ -250,7 +250,8 @@ private:
     static constexpr float                roam_home_distance{ 60.f };
     SpawnSlot*                            spawnSlot = nullptr;
     Maybe<SpawnWindow>                    spawnWindow_;
-    const RoamRegion*                     roamRegion_{ nullptr }; // area it spawns and roams in, owned by the zone
+    std::vector<const RoamRegion*>        roamRegions_;           // areas it may spawn in, owned by the zone
+    const RoamRegion*                     roamRegion_{ nullptr }; // the one picked for this life
     std::vector<position_t>               patrolRoute_;           // waypoints it loops while roaming, empty for a free roamer
 };
 

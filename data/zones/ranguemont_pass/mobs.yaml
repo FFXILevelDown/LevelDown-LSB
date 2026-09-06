@@ -999,284 +999,284 @@ spawns:
   17457153:
     template: Wind_Bats_RP
     script:   Wind_Bats
-    at:       [-193.830, 3.712, -261.749, 92]
+    region:   sw_1
     level:    [3, 5]
   17457154:
     template: Wind_Bats_RP
     script:   Wind_Bats
-    at:       [-217.222, 3.358, -241.211, 127]
+    region:   sw_1
     level:    [3, 5]
   17457155:
     template: Blade_Bat_Ranguemont_Pass
     script:   Blade_Bat
-    at:       [-180.128, 3.450, -265.574, 44]
+    region:   sw_1
     level:    [4, 7]
   17457156:
     template: Blade_Bat_Ranguemont_Pass
     script:   Blade_Bat
-    at:       [-151.331, 4.137, -256.681, 127]
+    region:   sw_1
     level:    [4, 7]
   17457157:
     template: Oil_Slick_RP
     script:   Oil_Slick
-    at:       [-171.489, 2.843, -261.196, 120]
+    region:   sw_1
     level:    [7, 9]
   17457158:
     template: Oil_Slick_RP
     script:   Oil_Slick
-    at:       [-220.195, 3.568, -232.002, 127]
+    region:   sw_1
     level:    [7, 9]
   17457159:
     template: Goblin_Thug
-    at:       [-169.638, 3.938, -223.796, 127]
+    region:   sw_7
     level:    [4, 6]
   17457160:
     template: Goblin_Weaver
-    at:       [-141.918, 4.101, -221.867, 127]
+    region:   sw_7
     level:    [4, 6]
   17457161:
     template: Wind_Bats_RP
     script:   Wind_Bats
-    at:       [-135.130, 2.597, -220.187, 127]
+    region:   sw_7
     level:    [3, 5]
   17457162:
     template: Wind_Bats_RP
     script:   Wind_Bats
-    at:       [-143.144, 3.863, -235.005, 58]
+    region:   sw_7
     level:    [3, 5]
   17457163:
     template: Wind_Bats_RP
     script:   Wind_Bats
-    at:       [-139.284, 3.868, -222.732, 18]
+    region:   sw_7
     level:    [3, 5]
   17457164:
     template: Blade_Bat_Ranguemont_Pass
     script:   Blade_Bat
-    at:       [-139.166, 4.577, -234.560, 127]
+    region:   sw_7
     level:    [4, 7]
   17457165:
     template: Blade_Bat_Ranguemont_Pass
     script:   Blade_Bat
-    at:       [-149.415, 2.318, -236.875, 65]
+    region:   sw_7
     level:    [4, 7]
   17457166:
     template: Goblin_Thug
-    at:       [-188.000, 5.000, -191.000, 64]
+    region:   sw_14
     level:    [6, 8]
   17457167:
     template: Goblin_Weaver
-    at:       [-171.000, 5.000, -165.000, 101]
+    region:   sw_14
     level:    [6, 8]
   17457168:
     template: Goblin_Weaver
-    at:       [-179.000, 5.000, -182.000, 2]
+    region:   sw_14
     level:    [6, 8]
   17457169:
     template: Blade_Bat_Ranguemont_Pass
     script:   Blade_Bat
-    at:       [-172.000, 5.000, -191.000, 127]
+    region:   sw_14
     level:    [4, 7]
   17457170:
     template: Blade_Bat_Ranguemont_Pass
     script:   Blade_Bat
-    at:       [-186.000, 5.000, -166.000, 66]
+    region:   sw_14
     level:    [4, 7]
   17457171:
     template: Goblin_Mugger
-    at:       [-209.311, 2.998, -149.195, 5]
+    region:   sw_20
     level:    [26, 30]
   17457172:
     template: Goblin_Leecher
-    at:       [-209.388, 4.470, -144.834, 127]
+    region:   sw_20
     level:    [26, 30]
   17457173:
     template: Goblin_Gambler
-    at:       [-207.632, 3.068, -134.052, 9]
+    region:   sw_20
     level:    [26, 30]
   17457174:
     template: Goblin_Mugger
-    at:       [-197.619, 4.469, -143.783, 192]
+    region:   sw_20
     level:    [26, 30]
   17457175:
     template: Goblin_Leecher
-    at:       [-190.599, 4.586, -143.857, 128]
+    region:   sw_20
     level:    [26, 30]
   17457176:
     template: Goblin_Gambler
-    at:       [-187.556, 3.383, -148.428, 127]
+    region:   sw_20
     level:    [26, 30]
   17457177:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-219.000, 4.000, -120.000, 127]
+    region:   sw_20
     level:    [25, 28]
   17457178:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-189.958, 4.596, -144.100, 127]
+    region:   sw_20
     level:    [25, 28]
   17457179:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-277.461, 3.449, -138.721, 127]
+    region:   sw_27
     level:    [25, 28]
   17457180:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-254.480, 4.118, -140.249, 127]
+    region:   sw_27
     level:    [25, 28]
   17457181:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-275.537, 2.603, -143.879, 127]
+    region:   sw_27
     level:    [25, 28]
   17457182:
     template: Ooze
-    at:       [-280.167, 3.502, -140.934, 127]
+    region:   sw_27
     level:    [28, 30]
   17457183:
     template: Goblin_Mugger
-    at:       [-290.751, 2.285, -158.577, 18]
+    region:   sw_32
     level:    [26, 30]
   17457184:
     template: Goblin_Leecher
-    at:       [-298.000, 4.000, -173.000, 127]
+    region:   sw_32
     level:    [26, 30]
   17457185:
     template: Goblin_Gambler
-    at:       [-296.000, 4.000, -153.000, 127]
+    region:   sw_32
     level:    [26, 30]
   17457186:
     template: Goblin_Mugger
-    at:       [-290.390, 3.454, -175.201, 154]
+    region:   sw_32
     level:    [26, 30]
   17457187:
     template: Goblin_Leecher
-    at:       [-301.000, 5.000, -162.000, 127]
+    region:   sw_32
     level:    [26, 30]
   17457188:
     template: Goblin_Gambler
-    at:       [-295.578, 3.369, -151.104, 133]
+    region:   sw_32
     level:    [26, 30]
   17457189:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-296.000, 4.000, -179.000, 67]
+    region:   sw_32
     level:    [25, 28]
   17457190:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-292.000, 3.000, -145.000, 127]
+    region:   sw_32
     level:    [25, 28]
   17457191:
     template: Goblin_Mugger
-    at:       [-249.641, 5.000, -174.069, 67]
+    region:   sw_39
     level:    [26, 30]
   17457192:
     template: Goblin_Mugger
-    at:       [-261.000, 5.000, -188.000, 36]
+    region:   sw_39
     level:    [26, 30]
   17457193:
     template: Goblin_Leecher
-    at:       [-264.000, 5.000, -179.000, 69]
+    region:   sw_39
     level:    [26, 30]
   17457194:
     template: Cave_Scorpion
-    at:       [-224.841, 4.010, -185.155, 57]
+    region:   sw_42
     level:    [30, 33]
   17457195:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-220.595, 4.448, -202.500, 48]
+    region:   sw_42
     level:    [25, 28]
   17457196:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-217.000, 4.000, -189.000, 97]
+    region:   sw_42
     level:    [25, 28]
   17457197:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-219.000, 2.000, -219.000, 127]
+    region:   sw_42
     level:    [25, 28]
   17457198:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-214.290, -0.633, -104.787, 127]
+    region:   sw_46
     level:    [25, 28]
   17457199:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-180.912, -6.664, -95.141, 127]
+    region:   sw_46
     level:    [25, 28]
   17457200:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-152.136, -5.216, -89.814, 112]
+    region:   w_49
     level:    [25, 28]
   17457201:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-163.000, -6.000, -81.000, 127]
+    region:   w_49
     level:    [25, 28]
   17457202:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-114.841, -5.545, -86.773, 2]
+    region:   w_49
     level:    [25, 28]
   17457203:
     template: Stirge
-    at:       [-138.837, -3.900, -75.286, 127]
+    region:   w_49
     level:    [30, 33]
   17457204:
     template: Gloom_Eye
-    at:       [-152.136, -5.216, -89.814, 112]
+    region:   w_49
     level:    [73, 74]
   17457205:
     template: Ooze
-    at:       [-142.919, -3.591, -75.975, 127]
+    region:   w_53
     level:    [28, 30]
   17457206:
     template: Ooze
-    at:       [-146.860, -3.566, -68.779, 127]
+    region:   w_53
     level:    [28, 30]
   17457207:
     template: Cave_Scorpion
-    at:       [-60.224, -6.502, -68.529, 127]
+    region:   c_55
     level:    [30, 33]
   17457208:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-69.793, -6.759, -62.671, 127]
+    region:   c_55
     level:    [25, 28]
   17457209:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-58.367, -6.498, -56.828, 127]
+    region:   c_57
     level:    [25, 28]
   17457210:
     template: Stirge
-    at:       [-52.518, -6.636, -93.312, 127]
+    region:   c_57
     level:    [31, 33]
   17457211:
     template: Stirge
-    at:       [-88.000, -6.000, -60.000, 66]
+    region:   c_57
     level:    [31, 33]
   17457212:
     template: Stirge
-    at:       [-16.311, 3.990, -124.339, 127]
+    region:   s_60
     level:    [30, 32]
   17457213:
     template: Taisai
-    at:       [-18.325, 1.830, -114.932, 127]
+    region:   s_60
     level:    [35, 38]
   17457214:
     template: Taisai
-    at:       [-5.188, 11.730, -141.503, 8]
+    region:   s_60
     level:    [35, 38]
   17457215:
     template: Taisai
-    at:       [59.000, 15.000, -120.000, 50]
+    region:   s_60
     level:    [35, 38]
   17457216:
     template: Taisaijin
@@ -1284,312 +1284,312 @@ spawns:
     level:    [60, 60]
   17457217:
     template: Goblin_Mugger
-    at:       [61.364, 12.520, -108.375, 127]
+    region:   s_65
     level:    [26, 30]
   17457218:
     template: Goblin_Leecher
-    at:       [56.328, 12.498, -110.328, 222]
+    region:   s_65
     level:    [26, 30]
   17457219:
     template: Goblin_Gambler
-    at:       [60.619, 14.360, -129.575, 252]
+    region:   s_65
     level:    [26, 30]
   17457220:
     template: Goblin_Mugger
-    at:       [46.000, 15.000, -139.000, 127]
+    region:   s_65
     level:    [26, 30]
   17457221:
     template: Goblin_Leecher
-    at:       [59.122, 14.343, -131.304, 94]
+    region:   s_65
     level:    [26, 30]
   17457222:
     template: Goblin_Gambler
-    at:       [59.000, 13.000, -151.000, 127]
+    region:   s_65
     level:    [26, 30]
   17457223:
     template: Stirge
-    at:       [27.241, 11.781, -135.749, 127]
+    region:   s_65
     level:    [31, 33]
   17457224:
     template: Stirge
-    at:       [95.365, 9.704, -94.921, 127]
+    region:   s_65
     level:    [31, 33]
   17457225:
     template: Giant_Scorpion
-    at:       [100.539, 4.808, -84.262, 5]
+    region:   s_73
     level:    [38, 40]
   17457226:
     template: Bat_Eye
-    at:       [163.997, 3.603, -54.476, 127]
+    region:   e_77
     level:    [42, 44]
   17457227:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [121.104, 4.308, -54.413, 127]
+    region:   e_75
     level:    [25, 28]
   17457228:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [152.000, 4.000, -59.000, 124]
+    region:   e_75
     level:    [25, 28]
   17457229:
     template: Hecteyes_RP
     script:   Hecteyes
-    at:       [125.987, 3.561, -57.222, 127]
+    region:   e_77
     level:    [31, 34]
   17457230:
     template: Hecteyes_RP
     script:   Hecteyes
-    at:       [144.000, 3.000, -57.000, 127]
+    region:   e_77
     level:    [31, 34]
   17457231:
     template: Hecteyes_RP
     script:   Hecteyes
-    at:       [167.030, 3.665, -57.378, 127]
+    region:   e_77
     level:    [31, 34]
   17457232:
     template: Hecteyes_RP
     script:   Hecteyes
-    at:       [135.251, 2.518, -57.706, 127]
+    region:   e_77
     level:    [31, 34]
   17457233:
     template: Hecteyes_RP
     script:   Hecteyes
-    at:       [166.758, 3.504, -56.162, 146]
+    region:   e_77
     level:    [31, 34]
   17457234:
     template: Stirge
-    at:       [98.000, 24.000, -184.000, 8]
+    region:   e_77
     level:    [32, 32]
   17457235:
     template: Stirge
-    at:       [78.999, 23.490, -182.105, 127]
+    region:   e_77
     level:    [31, 31]
   17457236:
     template: Hyakume
-    at:       [144.098, 2.525, -63.542, 3]
+    region:   e_77
     level:    [43, 43]
   17457237:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [150.930, 24.106, -194.463, 69]
+    region:   s_85
     level:    [25, 28]
   17457238:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [158.639, 23.630, -206.317, 127]
+    region:   s_85
     level:    [25, 28]
   17457239:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [160.597, 23.678, -195.648, 121]
+    region:   se_87
     level:    [25, 28]
   17457240:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [137.757, 26.140, -205.335, 83]
+    region:   se_87
     level:    [25, 28]
   17457241:
     template: Stirge
-    at:       [139.891, 26.256, -201.758, 127]
+    region:   se_87
     level:    [31, 31]
   17457242:
     template: Stirge
-    at:       [142.615, 26.049, -195.887, 199]
+    region:   se_87
     level:    [32, 32]
   17457243:
     template: Ooze
-    at:       [-80.052, -16.495, -18.756, 127]
+    region:   se_91
     level:    [28, 30]
   17457244:
     template: Ooze
-    at:       [-62.992, -10.174, -25.971, 37]
+    region:   se_91
     level:    [28, 30]
   17457245:
     template: Mucoid_Mass
-    at:       [140.000, 20.000, -193.000, 145]
+    region:   se_91
     level:    [45, 48]
   17457246:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-84.887, -16.751, -21.532, 134]
+    region:   c_94
     level:    [25, 28]
   17457247:
     template: Seeker_Bats_KT_RP_Qufim
     script:   Seeker_Bats
-    at:       [-92.705, -16.619, -12.399, 11]
+    region:   c_94
     level:    [25, 28]
   17457248:
     template: Hovering_Oculus
-    at:       [-80.839, -15.192, 18.071, 118]
+    region:   c_96
     level:    [90, 92]
   17457249:
     template: Bilesucker
-    at:       [-84.117, -15.644, 24.575, 127]
+    region:   c_96
     level:    [87, 89]
   17457250:
     template: Bilesucker
-    at:       [-18.000, -26.382, 65.000, 127]
+    region:   c_96
     level:    [87, 89]
   17457251:
     template: Bilesucker
-    at:       [-17.490, -26.342, 82.798, 64]
+    region:   c_99
     level:    [87, 89]
   17457252:
     template: Bilesucker
-    at:       [-26.224, -20.459, 22.437, 127]
+    region:   c_99
     level:    [87, 89]
   17457253:
     template: Bilesucker
-    at:       [49.000, -25.000, 100.000, 22]
+    region:   c_99
     level:    [87, 89]
   17457254:
     template: Goblin_Hoodoo
-    at:       [-4.000, -25.000, 97.000, 118]
+    region:   n_102
     level:    [88, 90]
   17457255:
     template: Goblin_Artificer
-    at:       [7.000, -26.000, 100.000, 127]
+    region:   n_102
     level:    [88, 90]
   17457256:
     template: Goblin_Tanner
-    at:       [19.855, -27.039, 104.258, 28]
+    region:   n_102
     level:    [88, 90]
   17457257:
     template: Goblin_Chaser
-    at:       [44.000, -24.000, 97.000, 127]
+    region:   n_102
     level:    [88, 90]
   17457258:
     template: Goblins_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   n_102
     level:    [83, 84]
   17457259:
     template: Bilesucker
-    at:       [-164.884, -36.507, 61.805, 127]
+    region:   w_107
     level:    [87, 89]
   17457260:
     template: Bilesucker
-    at:       [-114.298, -16.622, 24.229, 127]
+    region:   w_107
     level:    [87, 89]
   17457261:
     template: Bilesucker
-    at:       [-136.449, -22.125, 30.259, 127]
+    region:   w_107
     level:    [87, 89]
   17457262:
     template: Goblin_Hoodoo
-    at:       [-193.000, -35.000, 123.000, 102]
+    region:   nw_110
     level:    [88, 90]
   17457263:
     template: Goblin_Artificer
-    at:       [-203.000, -35.000, 92.000, 127]
+    region:   nw_110
     level:    [88, 90]
   17457264:
     template: Goblin_Tanner
-    at:       [-194.000, -36.000, 80.000, 127]
+    region:   nw_110
     level:    [88, 90]
   17457265:
     template: Goblin_Chaser
-    at:       [-206.000, -35.000, 123.000, 127]
+    region:   nw_110
     level:    [88, 90]
   17457266:
     template: Goblins_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_110
     level:    [83, 84]
   17457267:
     template: Bilesucker
-    at:       [-194.177, -36.222, 114.178, 220]
+    region:   nw_110
     level:    [87, 89]
   17457268:
     template: Bilesucker
-    at:       [-191.959, -33.653, 101.296, 163]
+    region:   nw_110
     level:    [87, 89]
   17457269:
     template: Bilesucker
-    at:       [-191.000, -34.000, 90.000, 127]
+    region:   nw_110
     level:    [87, 89]
   17457270:
     template: Bilesucker
-    at:       [-197.903, -35.717, 80.000, 127]
+    region:   nw_118
     level:    [87, 89]
   17457271:
     template: Bilesucker
-    at:       [-197.000, -35.000, 108.000, 127]
+    region:   nw_118
     level:    [87, 89]
   17457272:
     template: Bilesucker
-    at:       [-199.782, -36.425, 113.459, 127]
+    region:   nw_118
     level:    [87, 89]
   17457273:
     template: Evil_Weapon
-    at:       [-271.000, -46.000, 194.000, 131]
+    region:   nw_121
     level:    [35, 37]
   17457274:
     template: Evil_Weapon
-    at:       [-275.000, -45.000, 207.000, 30]
+    region:   nw_121
     level:    [35, 37]
   17457275:
     template: Evil_Weapon
-    at:       [-269.000, -46.000, 206.000, 100]
+    region:   nw_121
     level:    [35, 37]
   17457276:
     template: Bilesucker
-    at:       [-284.000, -45.000, 203.000, 127]
+    region:   nw_124
     level:    [87, 89]
   17457277:
     template: Bilesucker
-    at:       [-280.000, -46.289, 200.366, 48]
+    region:   nw_124
     level:    [87, 89]
   17457278:
     template: Bilesucker
-    at:       [-277.000, -45.000, 190.000, 127]
+    region:   nw_124
     level:    [87, 89]
   17457279:
     template: Hovering_Oculus
-    at:       [-139.000, -48.000, 171.000, 127]
+    region:   n_127
     level:    [90, 92]
   17457280:
     template: Hovering_Oculus
-    at:       [-140.325, -43.994, 152.523, 86]
+    region:   n_127
     level:    [90, 92]
   17457281:
     template: Bilesucker
-    at:       [-160.000, -36.000, 140.000, 101]
+    region:   n_127
     level:    [87, 89]
   17457282:
     template: Bilesucker
-    at:       [-119.514, -56.514, 219.418, 95]
+    region:   n_127
     level:    [87, 89]
   17457283:
     template: Bilesucker
-    at:       [-127.549, -56.630, 216.994, 124]
+    region:   n_127
     level:    [87, 89]
   17457284:
     template: Hovering_Oculus
-    at:       [-108.000, -56.000, 220.000, 127]
+    region:   n_132
     level:    [90, 92]
   17457285:
     template: Bilesucker
-    at:       [-59.324, -46.319, 198.840, 26]
+    region:   n_132
     level:    [87, 89]
   17457286:
     template: Bilesucker
-    at:       [-63.020, -50.237, 211.641, 121]
+    region:   n_132
     level:    [87, 89]
   17457287:
     template: Goblin_Hoodoo
-    at:       [6.000, -35.000, 160.000, 127]
+    region:   n_135
     level:    [88, 90]
   17457288:
     template: Goblin_Artificer
-    at:       [3.000, -36.000, 152.000, 127]
+    region:   n_135
     level:    [88, 90]
   17457289:
     template: Goblin_Tanner
-    at:       [-5.000, -36.000, 167.000, 12]
+    region:   n_135
     level:    [88, 90]
   17457290:
     template: Goblin_Chaser
-    at:       [-9.390, -36.264, 160.853, 127]
+    region:   n_135
     level:    [88, 90]
   17457291:
     template: Goblins_Bats
@@ -1597,71 +1597,71 @@ spawns:
     level:    [83, 84]
   17457292:
     template: Bilesucker
-    at:       [31.569, -36.485, 140.948, 138]
+    region:   n_140
     level:    [87, 89]
   17457293:
     template: Bilesucker
-    at:       [55.132, -30.253, 131.912, 24]
+    region:   n_140
     level:    [87, 89]
   17457294:
     template: Bilesucker
-    at:       [43.492, -36.080, 136.746, 30]
+    region:   n_140
     level:    [87, 89]
   17457295:
     template: Hovering_Oculus
-    at:       [101.505, -26.586, 119.185, 63]
+    region:   ne_143
     level:    [90, 92]
   17457296:
     template: Hovering_Oculus
-    at:       [106.000, -30.000, 135.000, 70]
+    region:   ne_143
     level:    [90, 92]
   17457297:
     template: Bilesucker
-    at:       [78.000, -26.708, 98.000, 127]
+    region:   ne_143
     level:    [87, 89]
   17457298:
     template: Bilesucker
-    at:       [155.565, -46.135, 176.184, 127]
+    region:   ne_143
     level:    [87, 89]
   17457299:
     template: Bilesucker
-    at:       [141.305, -37.082, 162.909, 127]
+    region:   ne_147
     level:    [87, 89]
   17457300:
     template: Bilesucker
-    at:       [132.074, -36.569, 147.083, 96]
+    region:   ne_147
     level:    [87, 89]
   17457301:
     template: Bilesucker
-    at:       [35.000, -24.000, 100.000, 91]
+    region:   ne_147
     level:    [87, 89]
   17457302:
     template: Hovering_Oculus
-    at:       [214.702, -56.501, 188.312, 127]
+    region:   ne_150
     level:    [90, 92]
   17457303:
     template: Hovering_Oculus
-    at:       [221.848, -57.475, 203.247, 62]
+    region:   ne_150
     level:    [90, 92]
   17457304:
     template: Bilesucker
-    at:       [204.387, -57.225, 182.761, 127]
+    region:   ne_150
     level:    [87, 89]
   17457305:
     template: Bilesucker
-    at:       [254.287, -66.525, 225.457, 127]
+    region:   ne_150
     level:    [87, 89]
   17457306:
     template: Bilesucker
-    at:       [260.000, -66.000, 241.000, 62]
+    region:   ne_150
     level:    [87, 89]
   17457307:
     template: Bilesucker
-    at:       [256.699, -66.583, 228.009, 174]
+    region:   ne_155
     level:    [87, 89]
   17457308:
     template: Bilesucker
-    at:       [255.645, -66.515, 228.359, 223]
+    region:   ne_155
     level:    [87, 89]
   17457309:
     template: Tros

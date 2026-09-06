@@ -3604,267 +3604,267 @@ spawns:
   17334278:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [44.424, -0.366, -324.413, 124]
+    region:   s_6
     level:    [76, 78]
   17334279:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [80.217, -0.180, -348.428, 87]
+    region:   s_6
     level:    [76, 78]
   17334280:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [44.593, -0.638, -364.298, 121]
+    region:   s_6
     level:    [76, 78]
   17334281:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [45.539, -0.342, -311.287, 74]
+    region:   s_6
     level:    [76, 78]
   17334282:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [36.925, -0.527, -360.776, 147]
+    region:   s_6
     level:    [76, 78]
   17334283:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [52.657, -0.083, -303.799, 147]
+    region:   s_6
     level:    [76, 78]
   17334284:
     template: Ekimmu
-    at:       [74.258, -0.439, -312.983, 40]
+    region:   s_6
     level:    [79, 80]
   17334285:
     template: Ekimmu
-    at:       [42.716, -0.600, -363.557, 251]
+    region:   s_6
     level:    [79, 80]
   17334286:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [-42.155, -0.401, -297.722, 218]
+    region:   s_14
     level:    [76, 78]
   17334287:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [-27.942, -0.479, -306.425, 18]
+    region:   s_14
     level:    [76, 78]
   17334288:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [-121.623, -7.486, -356.966, 139]
+    region:   s_16
     level:    [78, 82]
   17334289:
     template: Ruszor
-    at:       [-117.395, 0.274, -383.516, 63]
+    region:   s_16
     level:    [78, 82]
   17334290:
     template: Ruszor
-    at:       [-116.372, -0.281, -366.882, 224]
+    region:   s_16
     level:    [78, 82]
   17334291:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [140.786, -0.356, -276.937, 193]
+    region:   s_19
     level:    [76, 78]
   17334292:
     template: Ekimmu
-    at:       [141.772, -0.396, -282.042, 61]
+    region:   s_19
     level:    [79, 80]
   17334293:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [174.501, -0.140, -208.321, 124]
+    region:   se_21
     level:    [78, 82]
   17334294:
     template: Ruszor
-    at:       [195.451, -0.456, -203.842, 12]
+    region:   se_21
     level:    [78, 82]
   17334295:
     template: Ruszor
-    at:       [164.618, -0.022, -188.344, 167]
+    region:   se_21
     level:    [78, 82]
   17334296:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [166.977, 0.278, -178.408, 72]
+    region:   se_21
     level:    [76, 78]
   17334297:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [347.655, -0.354, -223.101, 163]
+    region:   se_25
     level:    [78, 82]
   17334298:
     template: Ruszor
-    at:       [352.302, -0.299, -234.558, 2]
+    region:   se_25
     level:    [78, 82]
   17334299:
     template: Ruszor
-    at:       [403.666, -0.272, -250.716]
+    region:   se_25
     level:    [78, 82]
   17334300:
     template: Ruszor
-    at:       [337.070, -0.045, -229.715, 102]
+    region:   se_25
     level:    [78, 82]
   17334301:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [334.113, -0.031, -230.861, 249]
+    region:   se_25
     level:    [76, 78]
   17334302:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [300.105, -0.105, -228.485, 220]
+    region:   se_25
     level:    [76, 78]
   17334303:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [414.222, -0.166, -191.596, 167]
+    region:   se_31
     level:    [78, 82]
   17334304:
     template: Ruszor
-    at:       [365.414, -0.323, -189.712, 13]
+    region:   se_31
     level:    [78, 82]
   17334305:
     template: Ruszor
-    at:       [400.614, 0.210, -184.465, 112]
+    region:   se_31
     level:    [78, 82]
   17334306:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [344.508, -0.323, -182.498, 164]
+    region:   se_31
     level:    [76, 78]
   17334307:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [363.530, -0.429, -195.226, 133]
+    region:   se_31
     level:    [76, 78]
   17334308:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [369.965, -0.252, -118.504, 217]
+    region:   e_36
     level:    [78, 82]
   17334309:
     template: Ruszor
-    at:       [381.643, -1.412, -110.456, 181]
+    region:   e_36
     level:    [78, 82]
   17334310:
     template: Ruszor
-    at:       [303.109, 0.203, -76.030, 37]
+    region:   e_36
     level:    [78, 82]
   17334311:
     template: Ruszor
-    at:       [339.638, -0.360, -93.826, 126]
+    region:   e_36
     level:    [78, 82]
   17334312:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [364.334, -0.299, -88.427, 141]
+    region:   e_36
     level:    [76, 78]
   17334313:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [355.392, -0.377, -119.803, 226]
+    region:   e_36
     level:    [76, 78]
   17334314:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [272.444, -0.346, -49.543, 94]
+    region:   e_42
     level:    [78, 82]
   17334315:
     template: Ruszor
-    at:       [315.377, 0.281, -15.011, 44]
+    region:   e_42
     level:    [78, 82]
   17334316:
     template: Ruszor
-    at:       [266.340, -0.024, 4.770, 152]
+    region:   e_42
     level:    [78, 82]
   17334317:
     template: Ruszor
-    at:       [320.731, -0.486, -41.534, 236]
+    region:   e_42
     level:    [78, 82]
   17334318:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [227.796, -0.500, -21.537, 201]
+    region:   e_42
     level:    [76, 78]
   17334319:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [251.134, 0.013, -76.925, 47]
+    region:   e_42
     level:    [76, 78]
   17334320:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [287.609, -0.213, -36.079, 85]
+    region:   e_42
     level:    [76, 78]
   17334321:
     template: Ice_Elemental
-    at:       [241.488, -0.476, -77.592, 17]
+    region:   e_42
     level:    [80, 80]
   17334322:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [327.084, -0.598, 72.590, 51]
+    region:   e_50
     level:    [78, 82]
   17334323:
     template: Ruszor
-    at:       [385.091, 0.110, -1.710, 28]
+    region:   e_50
     level:    [78, 82]
   17334324:
     template: Ruszor
-    at:       [398.657, -0.471, -2.728, 24]
+    region:   e_50
     level:    [78, 82]
   17334325:
     template: Ruszor
-    at:       [366.699, 0.112, -19.564, 100]
+    region:   e_50
     level:    [78, 82]
   17334326:
     template: Thawed_Bones_war
     script:   Thawed_Bones
-    at:       [315.891, -0.183, 9.710, 122]
+    region:   e_50
     level:    [76, 78]
   17334327:
     template: Thawed_Bones_blm
     script:   Thawed_Bones
-    at:       [355.649, -0.286, 6.775, 153]
+    region:   e_50
     level:    [76, 78]
   17334328:
     template: Ice_Elemental
-    at:       [400.560, -0.483, -2.924, 79]
+    region:   e_50
     level:    [80, 80]
   17334329:
     template: Ruszor
-    at:       [223.481, 0.140, 87.320, 98]
+    region:   e_57
     level:    [78, 82]
   17334330:
     template: Ruszor
-    at:       [257.057, -0.190, 84.772, 227]
+    region:   e_57
     level:    [78, 82]
   17334331:
     template: Ruszor
-    at:       [214.735, -0.255, 95.627, 70]
+    region:   e_57
     level:    [78, 82]
   17334332:
     template: Ekimmu
-    at:       [180.247, -0.466, 111.202, 44]
+    region:   e_57
     level:    [79, 80]
   17334333:
     template: Ruszor_Large
     script:   Ruszor
-    at:       [285.004, 0.233, 214.718, 181]
+    region:   ne_61
     level:    [78, 82]
   17334334:
     template: Ruszor
-    at:       [239.666, -0.231, 230.046, 179]
+    region:   ne_61
     level:    [78, 82]
   17334335:
     template: Ruszor
-    at:       [241.542, -0.402, 206.427, 34]
+    region:   ne_61
     level:    [78, 82]
   17334336:
     template: Scylla
-    at:       [281.795, -0.397, 233.704, 229]
+    region:   ne_61
     level:    [85, 85]
   17334337:
     template: Amphiptere
@@ -3872,62 +3872,62 @@ spawns:
     level:    [82, 84]
   17334338:
     template: Gigas_Flesher
-    at:       [63.695, -19.900, -210.356, 190]
+    region:   s_66
     level:    [80, 82]
   17334339:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [65.868, -19.997, -213.597, 178]
+    region:   s_66
     level:    [75, 76]
   17334340:
     template: Gigas_Flesher
-    at:       [57.645, -19.713, -241.567, 86]
+    region:   s_66
     level:    [80, 82]
   17334341:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [61.051, -19.729, -236.175, 88]
+    region:   s_66
     level:    [75, 76]
   17334342:
     template: Gigas_Pelter
-    at:       [149.611, -20.118, -216.627, 196]
+    region:   s_66
     level:    [80, 82]
   17334343:
     template: Icefang_Tiger
-    at:       [105.796, -20.162, -214.474, 20]
+    region:   s_66
     level:    [77, 79]
   17334344:
     template: Icefang_Tiger
-    at:       [129.922, -21.022, -208.961, 73]
+    region:   s_66
     level:    [77, 79]
   17334345:
     template: Icefang_Tiger
-    at:       [142.904, -20.859, -227.646, 204]
+    region:   s_66
     level:    [77, 79]
   17334346:
     template: Gigas_Flesher
-    at:       [-5.591, -20.172, -320.236, 93]
+    region:   s_74
     level:    [80, 82]
   17334347:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [-6.789, -20.008, -313.964, 65]
+    region:   s_74
     level:    [75, 76]
   17334348:
     template: Gigas_Pelter
-    at:       [-7.589, -20.248, -255.938, 230]
+    region:   s_74
     level:    [80, 82]
   17334349:
     template: Icefang_Tiger
-    at:       [-5.134, -20.410, -281.839, 143]
+    region:   s_74
     level:    [77, 79]
   17334350:
     template: Icefang_Tiger
-    at:       [-6.307, -20.114, -322.763, 144]
+    region:   s_74
     level:    [77, 79]
   17334351:
     template: Fulminator
-    at:       [12.525, -20.755, -285.799, 80]
+    region:   s_74
     level:    [77, 79]
   17334352:
     template: Gigas_Pelter
@@ -3935,113 +3935,114 @@ spawns:
     level:    [80, 82]
   17334353:
     template: Gigas_Pelter
-    at:       [-111.960, -19.513, -342.248, 42]
+    region:   s_81
     level:    [80, 82]
   17334354:
     template: Fulminator
-    at:       [-95.424, -19.753, -339.400, 37]
+    region:   s_81
     level:    [77, 79]
   17334355:
     template: Fulminator
-    at:       [-125.228, -20.502, -322.113, 225]
+    region:   s_81
     level:    [77, 79]
   17334356:
     script: Becut
+    region: s_81
   17334357:
     template: Gigas_Flesher
-    at:       [105.307, -20.258, -131.396, 106]
+    region:   c_85
     level:    [80, 82]
   17334358:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [106.456, -20.249, -130.251, 97]
+    region:   c_85
     level:    [75, 76]
   17334359:
     template: Gigas_Pelter
-    at:       [156.502, -20.084, -111.011, 204]
+    region:   c_85
     level:    [80, 82]
   17334360:
     template: Icefang_Tiger
-    at:       [130.817, -20.430, -133.407, 86]
+    region:   c_85
     level:    [77, 79]
   17334361:
     template: Icefang_Tiger
-    at:       [72.535, -20.472, -145.847, 92]
+    region:   c_85
     level:    [77, 79]
   17334362:
     template: Gigas_Flesher
-    at:       [291.479, -20.205, -132.307, 65]
+    region:   e_90
     level:    [80, 82]
   17334363:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [291.536, -20.333, -130.703, 61]
+    region:   e_90
     level:    [75, 76]
   17334364:
     template: Gigas_Pelter
-    at:       [284.282, -20.472, -156.388, 90]
+    region:   e_90
     level:    [80, 82]
   17334365:
     template: Icefang_Tiger
-    at:       [230.078, -20.194, -122.620, 56]
+    region:   e_90
     level:    [77, 79]
   17334366:
     template: Icefang_Tiger
-    at:       [236.930, -19.854, -144.304, 219]
+    region:   e_90
     level:    [77, 79]
   17334367:
     template: Fulminator
-    at:       [215.491, -20.685, -89.598, 113]
+    region:   e_90
     level:    [77, 79]
   17334368:
     template: Gigas_Flesher
-    at:       [170.904, -19.721, 22.736, 105]
+    region:   e_96
     level:    [80, 82]
   17334369:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [174.957, -19.987, 40.205, 2]
+    region:   e_96
     level:    [75, 76]
   17334370:
     template: Gigas_Pelter
-    at:       [199.040, -20.131, 62.941, 149]
+    region:   e_96
     level:    [80, 82]
   17334371:
     template: Icefang_Tiger
-    at:       [201.452, -20.953, 52.187, 94]
+    region:   e_96
     level:    [77, 79]
   17334372:
     template: Icefang_Tiger
-    at:       [180.442, -19.573, -1.945, 12]
+    region:   e_96
     level:    [77, 79]
   17334373:
     template: Fulminator
-    at:       [174.389, -19.906, 31.781, 145]
+    region:   e_96
     level:    [77, 79]
   17334374:
     template: Gigas_Pelter
-    at:       [101.720, -20.484, 110.715, 97]
+    region:   c_102
     level:    [80, 82]
   17334375:
     template: Icefang_Tiger
-    at:       [167.854, -20.543, 77.515, 135]
+    region:   c_102
     level:    [77, 79]
   17334376:
     template: Icefang_Tiger
-    at:       [141.079, -20.683, 95.896, 67]
+    region:   c_102
     level:    [77, 79]
   17334377:
     template: Gigas_Flesher
-    at:       [131.455, -20.515, 167.304, 144]
+    region:   n_105
     level:    [80, 82]
   17334378:
     template: Gigass_Tiger_BGS
     script:   Gigass_Tiger
-    at:       [134.663, -20.311, 166.702, 139]
+    region:   n_105
     level:    [75, 76]
   17334379:
     template: Icefang_Tiger
-    at:       [165.399, -20.127, 187.872, 117]
+    region:   n_105
     level:    [77, 79]
   17334380:
     template: Amphiptere
@@ -4049,407 +4050,407 @@ spawns:
     level:    [82, 84]
   17334381:
     template: Gigas_Cleaver
-    at:       [84.983, -40.715, 71.215, 255]
+    region:   c_109
     level:    [80, 82]
   17334382:
     template: Gigas_Cleaver
-    at:       [77.427, -40.425, 42.229, 1]
+    region:   c_109
     level:    [80, 82]
   17334383:
     template: Gigas_Pounder
-    at:       [115.779, -40.510, 47.242, 160]
+    region:   c_109
     level:    [80, 82]
   17334384:
     template: Gawper
-    at:       [69.651, -40.467, 70.510, 59]
+    region:   c_109
     level:    [80, 82]
   17334385:
     template: Gawper
-    at:       [72.197, -40.417, 69.503, 122]
+    region:   c_109
     level:    [80, 82]
   17334386:
     template: Gigas_Cleaver
-    at:       [99.771, -38.312, 10.113, 244]
+    region:   c_114
     level:    [80, 82]
   17334387:
     template: Gigas_Pounder
-    at:       [118.702, -40.481, 0.971, 234]
+    region:   c_114
     level:    [80, 82]
   17334388:
     template: Gawper
-    at:       [111.241, -40.334, 1.519, 186]
+    region:   c_114
     level:    [80, 82]
   17334389:
     template: Gigas_Pounder
-    at:       [132.866, -41.006, -80.876, 175]
+    region:   c_117
     level:    [80, 82]
   17334390:
     template: Gawper
-    at:       [112.801, -40.657, -79.813, 99]
+    region:   c_117
     level:    [80, 82]
   17334391:
     template: Gawper
-    at:       [120.838, -40.496, -82.465, 146]
+    region:   c_117
     level:    [80, 82]
   17334392:
     template: Gawper
-    at:       [51.334, -40.015, -136.416, 102]
+    region:   c_120
     level:    [80, 82]
   17334393:
     template: Gawper
-    at:       [61.901, -40.535, -112.423, 250]
+    region:   c_120
     level:    [80, 82]
   17334394:
     template: Gawper
-    at:       [67.974, -39.870, -110.455, 72]
+    region:   c_120
     level:    [80, 82]
   17334395:
     template: Gigas_Cleaver
-    at:       [-36.979, -40.282, -208.695, 50]
+    region:   s_123
     level:    [80, 82]
   17334396:
     template: Gigas_Pounder
-    at:       [-67.251, -40.036, -201.173, 38]
+    region:   s_123
     level:    [80, 82]
   17334397:
     template: Gawper
-    at:       [-31.612, -40.303, -204.204, 118]
+    region:   s_123
     level:    [80, 82]
   17334398:
     template: Gigas_Pounder
-    at:       [-36.145, -40.660, -257.637, 175]
+    region:   s_126
     level:    [80, 82]
   17334399:
     template: Gawper
-    at:       [-34.513, -39.674, -261.618, 111]
+    region:   s_126
     level:    [80, 82]
   17334400:
     template: Gigas_Cleaver
-    at:       [-155.077, -40.581, -196.954, 12]
+    region:   sw_128
     level:    [80, 82]
   17334401:
     template: Gigas_Pounder
-    at:       [-158.081, -39.964, -213.897, 196]
+    region:   sw_128
     level:    [80, 82]
   17334402:
     template: Gigas_Pounder
-    at:       [-211.248, -40.872, -213.908, 110]
+    region:   sw_128
     level:    [80, 82]
   17334403:
     template: Fulminator
-    at:       [-203.886, -40.685, -239.042, 46]
+    region:   sw_128
     level:    [77, 79]
   17334404:
     template: Fulminator
-    at:       [-195.363, -40.567, -210.411, 22]
+    region:   sw_128
     level:    [77, 79]
   17334405:
     template: Gigas_Cleaver
-    at:       [-250.175, -40.220, -164.923, 12]
+    region:   sw_133
     level:    [80, 82]
   17334406:
     template: Gigas_Pounder
-    at:       [-252.077, -41.370, -184.781, 29]
+    region:   sw_133
     level:    [80, 82]
   17334407:
     template: Fulminator
-    at:       [-265.216, -40.522, -166.442, 79]
+    region:   sw_133
     level:    [77, 79]
   17334408:
     template: Fulminator
-    at:       [-258.754, -41.311, -178.855, 31]
+    region:   sw_133
     level:    [77, 79]
   17334409:
     template: Fulminator
-    at:       [-354.674, -40.551, -192.677, 253]
+    region:   sw_137
     level:    [77, 79]
   17334410:
     template: Fulminator
-    at:       [-340.441, -40.296, -228.855, 59]
+    region:   sw_138
     level:    [77, 79]
   17334411:
     template: Gigas_Cleaver
-    at:       [-289.811, -40.298, -273.885, 196]
+    region:   sw_139
     level:    [80, 82]
   17334412:
     template: Gigas_Pounder
-    at:       [-282.112, -40.408, -284.662, 107]
+    region:   sw_139
     level:    [80, 82]
   17334413:
     template: Gigas_Cleaver
-    at:       [-280.382, -40.417, -285.378, 5]
+    region:   sw_139
     level:    [80, 82]
   17334414:
     template: Fulminator
-    at:       [-309.233, -40.075, -277.374, 254]
+    region:   sw_139
     level:    [77, 79]
   17334415:
     template: Gigas_Pounder
-    at:       [-276.800, -40.334, -352.594, 188]
+    region:   sw_143
     level:    [80, 82]
   17334416:
     template: Gigas_Cleaver
-    at:       [-244.944, -40.379, -357.174, 109]
+    region:   sw_143
     level:    [80, 82]
   17334417:
     template: Gigas_Pounder
-    at:       [-247.533, -40.334, -358.031, 81]
+    region:   sw_143
     level:    [80, 82]
   17334418:
     template: Fulminator
-    at:       [-278.213, -40.542, -362.955, 208]
+    region:   sw_143
     level:    [77, 79]
   17334419:
     template: Dryptotaur
-    at:       [-121.904, -60.566, -158.682, 178]
+    region:   s_147
     level:    [79, 80]
   17334420:
     template: Dryptotaur
-    at:       [-104.638, -60.486, -195.838, 57]
+    region:   s_147
     level:    [79, 80]
   17334421:
     template: Gawper
-    at:       [-131.901, -60.893, -196.954, 118]
+    region:   s_147
     level:    [80, 82]
   17334422:
     template: Gawper
-    at:       [-115.662, -60.871, -153.988, 252]
+    region:   s_147
     level:    [80, 82]
   17334423:
     template: Dryptotaur
-    at:       [-133.988, -60.668, -189.912, 199]
+    region:   s_147
     level:    [79, 80]
   17334424:
     template: Dryptotaur
-    at:       [-83.900, -60.187, -111.029, 200]
+    region:   c_152
     level:    [79, 80]
   17334425:
     template: Gawper
-    at:       [-65.745, -57.903, -101.560, 76]
+    region:   c_152
     level:    [80, 82]
   17334426:
     template: Gawper
-    at:       [-79.896, -60.068, -110.177, 24]
+    region:   c_152
     level:    [80, 82]
   17334427:
     template: Dryptotaur
-    at:       [7.545, -60.384, -138.248, 16]
+    region:   c_155
     level:    [79, 80]
   17334428:
     template: Dryptotaur
-    at:       [-32.244, -60.035, -151.101, 2]
+    region:   c_155
     level:    [79, 80]
   17334429:
     template: Dryptotaur
-    at:       [13.626, -60.727, -133.307, 255]
+    region:   c_155
     level:    [79, 80]
   17334430:
     template: Gawper
-    at:       [29.684, -60.091, -125.284, 221]
+    region:   c_155
     level:    [80, 82]
   17334431:
     template: Ice_Elemental
-    at:       [-24.681, -60.074, -136.581, 203]
+    region:   c_155
     level:    [80, 80]
   17334432:
     template: Dark_Elemental
-    at:       [-10.495, -60.516, -134.858, 57]
+    region:   c_155
     level:    [80, 80]
   17334433:
     template: Dryptotaur
-    at:       [46.663, -60.101, -93.808, 93]
+    region:   c_161
     level:    [79, 80]
   17334434:
     template: Gawper
-    at:       [45.637, -60.413, -116.111, 108]
+    region:   c_161
     level:    [80, 82]
   17334435:
     template: Gawper
-    at:       [47.636, -60.251, -121.057, 22]
+    region:   c_161
     level:    [80, 82]
   17334436:
     template: Gawper
-    at:       [5.605, -59.654, 16.107, 127]
+    region:   c_164
     level:    [80, 82]
   17334437:
     template: Gawper
-    at:       [15.371, -60.833, 37.763, 172]
+    region:   c_164
     level:    [80, 82]
   17334438:
     template: Gawper
-    at:       [16.755, -60.882, 40.736, 66]
+    region:   c_164
     level:    [80, 82]
   17334439:
     template: Dryptotaur
-    at:       [5.502, -60.112, 91.557, 167]
+    region:   c_164
     level:    [79, 80]
   17334440:
     template: Ice_Elemental
-    at:       [17.719, -60.628, 85.362, 224]
+    region:   c_164
     level:    [80, 80]
   17334441:
     template: Gawper
-    at:       [47.573, -60.798, 158.261, 253]
+    region:   c_169
     level:    [80, 82]
   17334442:
     template: Gawper
-    at:       [34.868, -60.541, 152.572, 175]
+    region:   c_169
     level:    [80, 82]
   17334443:
     template: Gawper
-    at:       [32.304, -60.422, 118.225, 21]
+    region:   c_169
     level:    [80, 82]
   17334444:
     template: Dryptotaur
-    at:       [29.630, -60.140, 124.039, 95]
+    region:   c_169
     level:    [79, 80]
   17334445:
     template: Dark_Elemental
-    at:       [39.305, -59.616, 139.342, 206]
+    region:   c_169
     level:    [80, 80]
   17334446:
     template: Gawper
-    at:       [92.019, -60.018, 203.224, 25]
+    region:   n_174
     level:    [80, 82]
   17334447:
     template: Gawper
-    at:       [126.050, -60.272, 199.901, 66]
+    region:   n_174
     level:    [80, 82]
   17334448:
     template: Gargouille
-    at:       [-143.015, -79.907, 153.598, 119]
+    region:   c_176
     level:    [81, 82]
   17334449:
     template: Gargouille
-    at:       [-118.885, -80.180, 151.796, 235]
+    region:   c_176
     level:    [81, 82]
   17334450:
     template: Gargouille
-    at:       [-144.796, -79.860, 121.524, 183]
+    region:   c_176
     level:    [81, 82]
   17334451:
     template: Gargouille
-    at:       [-155.192, -80.193, 170.774, 80]
+    region:   c_176
     level:    [81, 82]
   17334452:
     template: Gargouille
-    at:       [-97.307, -80.170, 149.787, 16]
+    region:   c_176
     level:    [81, 82]
   17334453:
     template: Gargouille
-    at:       [-144.662, -81.637, 184.439, 88]
+    region:   c_176
     level:    [81, 82]
   17334454:
     template: Glacial_Imp
-    at:       [-136.850, -80.179, 145.016, 7]
+    region:   c_176
     level:    [78, 80]
   17334455:
     template: Glacial_Imp
-    at:       [-165.818, -80.570, 160.193, 167]
+    region:   c_176
     level:    [78, 80]
   17334456:
     template: Gargouille
-    at:       [-83.547, -80.275, 150.761, 146]
+    region:   c_184
     level:    [81, 82]
   17334457:
     template: Gargouille
-    at:       [-28.205, -80.613, 120.451, 123]
+    region:   c_184
     level:    [81, 82]
   17334458:
     template: Gargouille
-    at:       [-29.052, -80.183, 139.980, 30]
+    region:   c_184
     level:    [81, 82]
   17334459:
     template: Gargouille
-    at:       [-73.096, -80.261, 157.882, 53]
+    region:   c_184
     level:    [81, 82]
   17334460:
     template: Glacial_Imp
-    at:       [-18.989, -80.290, 122.624, 239]
+    region:   c_184
     level:    [78, 80]
   17334461:
     template: Glacial_Imp
-    at:       [-41.494, -80.457, 121.537, 8]
+    region:   c_184
     level:    [78, 80]
   17334462:
     template: Gargouille
-    at:       [-25.416, -80.894, 75.603, 90]
+    region:   c_190
     level:    [81, 82]
   17334463:
     template: Gargouille
-    at:       [-17.901, -80.300, 76.349, 38]
+    region:   c_190
     level:    [81, 82]
   17334464:
     template: Gargouille
-    at:       [-63.629, -79.912, 76.422, 228]
+    region:   c_190
     level:    [81, 82]
   17334465:
     template: Gargouille
-    at:       [-14.252, -79.908, 44.989, 226]
+    region:   c_193
     level:    [81, 82]
   17334466:
     template: Gargouille
-    at:       [-16.346, -80.303, 45.423, 196]
+    region:   c_193
     level:    [81, 82]
   17334467:
     template: Gargouille
-    at:       [-96.298, -80.543, -70.473, 131]
+    region:   c_195
     level:    [81, 82]
   17334468:
     template: Gargouille
-    at:       [-60.458, -80.539, -45.093, 63]
+    region:   c_195
     level:    [81, 82]
   17334469:
     template: Ice_Elemental
-    at:       [-64.939, -79.766, -54.120, 150]
+    region:   c_195
     level:    [80, 80]
   17334470:
     template: Dark_Elemental
-    at:       [-89.080, -81.032, -62.261, 133]
+    region:   c_195
     level:    [80, 80]
   17334471:
     template: Gargouille
-    at:       [-190.247, -80.669, -129.882, 146]
+    region:   w_199
     level:    [81, 82]
   17334472:
     template: Gargouille
-    at:       [-188.793, -80.330, -151.293, 203]
+    region:   w_199
     level:    [81, 82]
   17334473:
     template: Gargouille
-    at:       [-166.515, -80.422, -127.894, 146]
+    region:   w_199
     level:    [81, 82]
   17334474:
     template: Glacial_Imp
-    at:       [-179.180, -80.404, -138.540, 157]
+    region:   w_199
     level:    [78, 80]
   17334475:
     template: Gargouille
-    at:       [-228.289, -80.056, -120.037, 10]
+    region:   w_203
     level:    [81, 82]
   17334476:
     template: Gargouille
-    at:       [-223.490, -79.728, -124.205, 246]
+    region:   w_203
     level:    [81, 82]
   17334477:
     template: Gargouille
-    at:       [-249.406, -80.611, -127.266, 144]
+    region:   w_203
     level:    [81, 82]
   17334478:
     template: Glacial_Imp
-    at:       [-258.286, -78.779, -128.301, 77]
+    region:   w_203
     level:    [78, 80]
   17334479:
     template: Glacial_Imp
-    at:       [-246.415, -79.994, -137.096, 88]
+    region:   w_203
     level:    [78, 80]
   17334480:
     template: Ice_Elemental
-    at:       [-223.838, -79.825, -125.681, 226]
+    region:   w_203
     level:    [80, 80]
   17334481:
     template: Dark_Elemental
-    at:       [-288.480, -79.984, -102.367, 97]
+    region:   w_209
     level:    [80, 80]
   17334482:
     template: GrandGoule
@@ -4457,227 +4458,227 @@ spawns:
     level:    [83, 83]
   17334483:
     template: Cyhiraeth
-    at:       [-189.322, -100.285, 7.435, 45]
+    region:   w_211
     level:    [78, 80]
   17334484:
     template: Cyhiraeth
-    at:       [-243.293, -100.541, 36.581, 136]
+    region:   w_211
     level:    [78, 80]
   17334485:
     template: Cyhiraeth
-    at:       [-204.545, -100.310, 33.215, 52]
+    region:   w_211
     level:    [78, 80]
   17334486:
     template: Cyhiraeth
-    at:       [-244.645, -100.522, 0.875, 41]
+    region:   w_211
     level:    [78, 80]
   17334487:
     template: Cyhiraeth
-    at:       [-186.606, -101.214, 17.381, 10]
+    region:   w_211
     level:    [78, 80]
   17334488:
     template: Cyhiraeth
-    at:       [-245.463, -100.123, 26.147, 139]
+    region:   w_211
     level:    [78, 80]
   17334489:
     template: Glacial_Imp
-    at:       [-242.460, -99.723, 15.807, 234]
+    region:   w_211
     level:    [78, 80]
   17334490:
     template: Glacial_Imp
-    at:       [-194.031, -99.868, 17.814, 134]
+    region:   w_211
     level:    [78, 80]
   17334491:
     template: Cyhiraeth
-    at:       [-200.370, -100.446, -100.559, 53]
+    region:   w_219
     level:    [78, 80]
   17334492:
     template: Cyhiraeth
-    at:       [-203.282, -99.926, -54.506, 72]
+    region:   w_219
     level:    [78, 80]
   17334493:
     template: Cyhiraeth
-    at:       [-189.422, -99.536, -70.489, 176]
+    region:   w_219
     level:    [78, 80]
   17334494:
     template: Glacial_Imp
-    at:       [-196.446, -100.251, -48.515, 68]
+    region:   w_219
     level:    [78, 80]
   17334495:
     template: Glacial_Imp
-    at:       [-201.040, -99.727, -57.366, 149]
+    region:   w_219
     level:    [78, 80]
   17334496:
     template: Cyhiraeth
-    at:       [-126.256, -100.700, -105.614, 66]
+    region:   c_224
     level:    [78, 80]
   17334497:
     template: Cyhiraeth
-    at:       [-121.565, -100.388, -75.747, 156]
+    region:   c_224
     level:    [78, 80]
   17334498:
     template: Cyhiraeth
-    at:       [-141.307, -100.891, -99.937, 56]
+    region:   c_224
     level:    [78, 80]
   17334499:
     template: Cyhiraeth
-    at:       [-147.952, -100.839, -103.558, 127]
+    region:   c_224
     level:    [78, 80]
   17334500:
     template: Cyhiraeth
-    at:       [-144.733, -102.026, -88.620, 96]
+    region:   c_224
     level:    [78, 80]
   17334501:
     template: Glacial_Imp
-    at:       [-146.238, -102.072, -91.211, 198]
+    region:   c_224
     level:    [78, 80]
   17334502:
     template: Glacial_Imp
-    at:       [-132.774, -100.941, -97.794, 224]
+    region:   c_224
     level:    [78, 80]
   17334503:
     template: Cyhiraeth
-    at:       [-135.728, -99.971, -42.148, 195]
+    region:   c_231
     level:    [78, 80]
   17334504:
     template: Cyhiraeth
-    at:       [-153.944, -100.323, 0.256, 101]
+    region:   c_231
     level:    [78, 80]
   17334505:
     template: Cyhiraeth
-    at:       [-124.944, -99.912, -12.226, 227]
+    region:   c_231
     level:    [78, 80]
   17334506:
     template: Cyhiraeth
-    at:       [-141.133, -99.792, -31.311, 234]
+    region:   c_231
     level:    [78, 80]
   17334507:
     template: Cyhiraeth
-    at:       [-159.947, -100.453, -35.220, 206]
+    region:   c_231
     level:    [78, 80]
   17334508:
     template: Cyhiraeth
-    at:       [-143.756, -100.191, -53.133, 122]
+    region:   c_231
     level:    [78, 80]
   17334509:
     template: Glacial_Imp
-    at:       [-146.734, -100.041, -35.509, 143]
+    region:   c_231
     level:    [78, 80]
   17334510:
     template: Glacial_Imp
-    at:       [-107.064, -100.064, -42.790, 61]
+    region:   c_231
     level:    [78, 80]
   17334511:
     template: Ice_Elemental
-    at:       [-148.112, -100.055, -34.934, 113]
+    region:   c_231
     level:    [80, 80]
   17334512:
     template: Dark_Elemental
-    at:       [-124.233, -100.356, -33.642, 62]
+    region:   c_231
     level:    [80, 80]
   17334513:
     template: Cyhiraeth
-    at:       [-81.728, -100.116, 28.322, 20]
+    region:   c_241
     level:    [78, 80]
   17334514:
     template: Cyhiraeth
-    at:       [-60.250, -99.834, 51.152, 152]
+    region:   c_241
     level:    [78, 80]
   17334515:
     template: Cyhiraeth
-    at:       [-40.337, -100.192, 30.354, 59]
+    region:   c_241
     level:    [78, 80]
   17334516:
     template: Cyhiraeth
-    at:       [-50.446, -100.250, 38.473, 59]
+    region:   c_241
     level:    [78, 80]
   17334517:
     template: Cyhiraeth
-    at:       [-70.494, -100.114, 29.083, 140]
+    region:   c_241
     level:    [78, 80]
   17334518:
     template: Cyhiraeth
-    at:       [-52.978, -99.254, 59.285, 211]
+    region:   c_241
     level:    [78, 80]
   17334519:
     template: Glacial_Imp
-    at:       [-60.419, -99.378, 52.256, 86]
+    region:   c_241
     level:    [78, 80]
   17334520:
     template: Glacial_Imp
-    at:       [-86.215, -100.403, 26.072, 166]
+    region:   c_241
     level:    [78, 80]
   17334521:
     template: Ice_Elemental
-    at:       [-82.940, -100.309, 7.245, 113]
+    region:   c_241
     level:    [80, 80]
   17334522:
     template: Dark_Elemental
-    at:       [-41.964, -100.452, 35.812, 252]
+    region:   c_241
     level:    [80, 80]
   17334523:
     template: Came-cruse
-    at:       [-48.514, -100.279, -0.269, 15]
+    region:   c_241
     level:    [82, 82]
   17334524:
     template: Cyhiraeth
-    at:       [-316.572, -100.326, 55.970, 140]
+    region:   w_252
     level:    [78, 80]
   17334525:
     template: Cyhiraeth
-    at:       [-309.723, -100.490, 53.188, 158]
+    region:   w_252
     level:    [78, 80]
   17334526:
     template: Cyhiraeth
-    at:       [-302.426, -100.442, 47.086, 178]
+    region:   w_252
     level:    [78, 80]
   17334527:
     template: Cyhiraeth
-    at:       [-362.728, -100.521, 114.765, 151]
+    region:   w_255
     level:    [78, 80]
   17334528:
     template: Cyhiraeth
-    at:       [-340.823, -99.992, 111.523, 185]
+    region:   w_255
     level:    [78, 80]
   17334529:
     template: Cyhiraeth
-    at:       [-347.278, -100.802, 93.092, 96]
+    region:   w_255
     level:    [78, 80]
   17334530:
     template: Cyhiraeth
-    at:       [-360.763, -99.798, 102.665, 50]
+    region:   w_255
     level:    [78, 80]
   17334531:
     template: Cyhiraeth
-    at:       [-363.590, -100.512, 115.190, 190]
+    region:   w_255
     level:    [78, 80]
   17334532:
     template: Cyhiraeth
-    at:       [-357.838, -100.249, 91.756, 122]
+    region:   w_255
     level:    [78, 80]
   17334533:
     template: Cyhiraeth
-    at:       [-351.929, -100.533, 164.763, 171]
+    region:   w_261
     level:    [78, 80]
   17334534:
     template: Cyhiraeth
-    at:       [-319.230, -100.342, 127.797, 18]
+    region:   w_261
     level:    [78, 80]
   17334535:
     template: Cyhiraeth
-    at:       [-323.361, -100.229, 158.635, 23]
+    region:   w_261
     level:    [78, 80]
   17334536:
     template: Cyhiraeth
-    at:       [-362.462, -100.505, 164.131, 206]
+    region:   w_261
     level:    [78, 80]
   17334537:
     template: Cyhiraeth
-    at:       [-345.908, -100.617, 162.945, 248]
+    region:   w_261
     level:    [78, 80]
   17334538:
     template: Cyhiraeth
-    at:       [-352.413, -100.279, 121.623, 146]
+    region:   w_261
     level:    [78, 80]
   17334539:
     template: Amphiptere
@@ -5171,66 +5172,75 @@ spawns:
   17334697:
     template: One-eyed_Gwajboj_S
     script:   One-eyed_Gwajboj
-    at:       [99.678, -59.782, -33.584, 46]
+    region:   c_425
     level:    [70, 70]
   17334698:
     template: Gutrender_Trooper
-    at:       [89.411, -62.177, -54.191, 159]
+    region:   c_425
     level:    [70, 70]
   17334699:
     template: Gutrender_Trooper
-    at:       [83.226, -60.499, -44.014, 255]
+    region:   c_425
     level:    [70, 70]
   17334700:
     template: Gutrender_Trooper
-    at:       [88.993, -60.925, -54.385, 170]
+    region:   c_425
     level:    [70, 70]
   17334701:
     template: Gutrender_Trooper
-    at:       [89.071, -61.507, -54.714, 172]
+    region:   c_425
     level:    [70, 70]
   17334702:
     template: Gutrender_Trooper
-    at:       [88.976, -61.432, -54.896, 176]
+    region:   c_425
     level:    [70, 70]
   17334703:
     template: Gutrender_Trooper
-    at:       [69.880, -60.387, -50.994, 152]
+    region:   c_425
     level:    [70, 70]
   17334704:
     template: Gutrender_Trooper
-    at:       [88.736, -60.992, -55.046, 181]
+    region:   c_425
     level:    [70, 70]
   17334705:
     template: Gutrender_Trooper
-    at:       [102.066, -60.803, -60.755, 181]
+    region:   c_425
     level:    [70, 70]
   17334706:
     template: Gutrender_Trooper
-    at:       [105.920, -59.892, -36.916, 117]
+    region:   c_425
     level:    [70, 70]
   17334707:
     template: DiDha_Adamantfist
-    at:       [89.069, -60.167, -55.720, 121]
+    region:   c_425
     level:    [1, 1]
   17334708:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334709:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334710:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334711:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334712:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334713:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334714:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334715:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334716:
     template: DiDhas_Elite_Guard
+    region:   c_425
   17334717:
     template: BoDho_Hundredfist
     at:       [74.259, -60.080, -42.943, 58]
@@ -5331,27 +5341,35 @@ spawns:
     level:    [1, 1]
   17334751:
     template: Shadowhorn
+    region:   c_425
     level:    [1, 1]
   17334752:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334753:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334754:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334755:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334756:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334757:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334758:
     template: Shadowhorn_Stormer
+    region:   c_425
     level:    [1, 1]
   17334759:
     template: Shadowhorn_Stormer
@@ -5431,77 +5449,83 @@ spawns:
     level:    [70, 70]
   17334781:
     template: Shadoweye
-    at:       [110.402, -60.217, -44.420, 92]
+    region:   c_425
     level:    [1, 1]
   17334782:
     template: Shadoweye_Gnat
-    at:       [123.722, -60.321, -41.092, 6]
+    region:   c_425
     level:    [1, 1]
   17334783:
     template: Shadoweye_Gnat
-    at:       [121.137, -60.565, -48.931, 148]
+    region:   c_425
     level:    [1, 1]
   17334784:
     template: Shadoweye_Gnat
-    at:       [112.853, -60.648, -31.392, 218]
+    region:   c_425
     level:    [1, 1]
   17334785:
     template: Shadoweye_Gnat
-    at:       [85.610, -60.093, -67.351, 139]
+    region:   c_425
     level:    [1, 1]
   17334786:
     template: Shadoweye_Gnat
-    at:       [112.951, -60.614, -31.270, 217]
+    region:   c_425
     level:    [1, 1]
   17334787:
     template: Shadoweye_Gnat
-    at:       [80.571, -60.426, -77.100, 31]
+    region:   c_425
     level:    [1, 1]
   17334788:
     template: Shadoweye_Gnat
+    region:   c_425
     level:    [1, 1]
   17334789:
     template: Shadoweye_Gnat
+    region:   c_425
     level:    [1, 1]
   17334790:
     template: Shadoweye_Gnat
+    region:   c_425
     level:    [1, 1]
   17334791:
     template: Shadowwing
+    region:   c_425
     level:    [1, 1]
   17334792:
     template: Shadowwing_Infuriator
+    region:   c_425
     level:    [70, 70]
   17334793:
     template: Shadowwing_Infuriator
-    at:       [91.607, -61.034, -66.721, 101]
+    region:   c_425
     level:    [70, 70]
   17334794:
     template: Shadowwing_Infuriator
-    at:       [100.687, -59.741, -69.375, 226]
+    region:   c_425
     level:    [70, 70]
   17334795:
     template: Shadowwing_Infuriator
-    at:       [89.086, -60.703, -75.324, 74]
+    region:   c_425
     level:    [70, 70]
   17334796:
     template: Shadowwing_Infuriator
-    at:       [110.934, -61.521, -52.458, 172]
+    region:   c_425
     level:    [70, 70]
   17334797:
     template: Shadowwing_Infuriator
-    at:       [118.241, -60.457, -44.064, 86]
+    region:   c_425
     level:    [70, 70]
   17334798:
     template: Shadowwing_Infuriator
-    at:       [98.268, -59.977, -66.154, 31]
+    region:   c_425
     level:    [70, 70]
   17334799:
     template: Shadowwing_Infuriator
+    region:   c_425
     level:    [70, 70]
   17334800:
     template: Shadowwing_Infuriator
-    at:       [89.942, -60.837, -67.292, 183]
+    region:   c_425
     level:    [70, 70]
   17334801:
     template: Shadowhind_Machinator
@@ -5624,23 +5648,23 @@ spawns:
     level:    [1, 1]
   17334833:
     template: Fiendish_Leechkeeper
-    at:       [96.046, -60.796, -62.378]
+    region:   c_425
     level:    [60, 60]
   17334834:
     template: Fiendish_Leechkeeper
-    at:       [80.420, -60.500, -78.068, 227]
+    region:   c_425
     level:    [60, 60]
   17334835:
     template: Fiendish_Leechkeeper
-    at:       [80.420, -60.500, -78.068]
+    region:   c_425
     level:    [60, 60]
   17334836:
     template: Fiendish_Leechkeeper
-    at:       [118.502, -60.500, -46.671, 227]
+    region:   c_425
     level:    [60, 60]
   17334837:
     template: Fiendish_Leechkeeper
-    at:       [112.450, -60.531, -61.203, 225]
+    region:   c_425
     level:    [60, 60]
   17334838:
     template: Fiendish_Leechkeeper

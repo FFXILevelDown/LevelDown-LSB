@@ -20,6 +20,10 @@ describe('Aggro re-tap on movement', function()
         mob:setMobMod(xi.mobMod.DETECTION, xi.detects.SIGHT)
         mob:setMobMod(xi.mobMod.SIGHT_RANGE, 20)
 
+        mob:setMobMod(xi.mobMod.ROAM_COOL, 3600)
+        mob:setPos(-97.6, 19.7, -14.2)
+        mob:clearPath()
+
         -- Roam past the post-spawn neutral window so the mob can aggro at all.
         for _ = 1, 10 do
             xi.test.world:skipTime(5)

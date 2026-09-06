@@ -1646,55 +1646,55 @@ templates:
 spawns:
   17440769:
     template: Demon_Pawn
-    at:       [-35.504, -0.131, 3.200, 127]
+    region:   e_1
     level:    [52, 55]
   17440770:
     template: Evil_Eye
-    at:       [-35.625, -0.125, -4.780, 83]
+    region:   e_1
     level:    [46, 48]
   17440771:
     template: Evil_Eye
-    at:       [-54.752, -0.117, -4.398, 127]
+    region:   e_3
     level:    [46, 48]
   17440772:
     template: Evil_Eye
-    at:       [-57.415, -0.194, -14.821, 102]
+    region:   e_3
     level:    [46, 48]
   17440773:
     template: Demon_Wizard
-    at:       [-67.979, -0.125, 10.693, 12]
+    region:   e_5
     level:    [52, 55]
   17440774:
     template: Evil_Eye
-    at:       [-78.884, -0.125, 5.306, 105]
+    region:   e_5
     level:    [46, 48]
   17440775:
     template: Demon_Knight
-    at:       [-53.612, -0.125, -54.788, 38]
+    region:   e_7
     level:    [52, 55]
   17440776:
     template: Evil_Eye
-    at:       [-83.817, -0.115, -53.863, 13]
+    region:   e_7
     level:    [46, 48]
   17440777:
     template: Demon_Warlock
-    at:       [-87.114, -0.151, -41.548, 117]
+    region:   e_9
     level:    [52, 55]
   17440778:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   e_9
     level:    [45, 53]
   17440779:
     template: Evil_Eye
-    at:       [-94.874, -0.125, -38.550, 123]
+    region:   e_9
     level:    [46, 48]
   17440780:
     template: Goblin_Poacher
-    at:       [-30.169, 0.474, 53.960, 127]
+    region:   ne_12
     level:    [47, 49]
   17440781:
     template: Goblin_Trader
-    at:       [-9.924, 0.488, 58.942, 94]
+    region:   ne_12
     level:    [47, 49]
   17440782:
     template: Goblins_Bat
@@ -1702,19 +1702,19 @@ spawns:
     level:    [40, 42]
   17440783:
     template: Goblin_Robber
-    at:       [-6.933, 0.474, 69.799, 127]
+    region:   ne_12
     level:    [47, 49]
   17440784:
     template: Goblin_Reaper
-    at:       [-31.000, 0.474, 69.000, 41]
+    region:   ne_12
     level:    [47, 49]
   17440785:
     template: Goblin_Poacher
-    at:       [-68.792, 0.474, 62.125, 127]
+    region:   ne_17
     level:    [47, 49]
   17440786:
     template: Goblin_Trader
-    at:       [-71.228, 0.474, 68.835, 127]
+    region:   ne_17
     level:    [47, 49]
   17440787:
     template: Goblins_Bat
@@ -1722,18 +1722,19 @@ spawns:
     level:    [40, 42]
   17440788:
     template: Goblin_Robber
-    at:       [-58.277, 0.474, 47.871, 127]
+    region:   ne_17
     level:    [47, 49]
   17440789:
     template: Goblin_Reaper
-    at:       [-64.163, 0.474, 53.005, 4]
+    region:   ne_17
     level:    [47, 49]
   17440790:
     template: Goblin_Poacher
+    region:   ne_26
     level:    [47, 49]
   17440791:
     template: Goblin_Trader
-    at:       [-47.733, 0.474, 72.509, 8]
+    region:   ne_26
     level:    [47, 49]
   17440792:
     template: Goblins_Bat
@@ -1741,17 +1742,19 @@ spawns:
     level:    [40, 42]
   17440793:
     template: Goblin_Robber
+    region:   ne_26
     level:    [47, 49]
   17440794:
     template: Goblin_Reaper
+    region:   ne_26
     level:    [47, 49]
   17440795:
     template: Goblin_Poacher
-    at:       [-86.709, 0.474, 69.348, 6]
+    region:   ne_27
     level:    [47, 49]
   17440796:
     template: Goblin_Trader
-    at:       [-99.000, 0.474, 66.000, 127]
+    region:   ne_27
     level:    [47, 49]
   17440797:
     template: Goblins_Bat
@@ -1759,688 +1762,715 @@ spawns:
     level:    [40, 42]
   17440798:
     template: Goblin_Robber
-    at:       [-102.000, 0.474, 53.000, 118]
+    region:   ne_27
     level:    [47, 49]
   17440799:
     template: Goblin_Reaper
-    at:       [-91.000, 0.474, 49.000, 15]
+    region:   ne_27
     level:    [47, 49]
   17440800:
     template: Goblin_Hunter
-    at:       [-109.920, 0.570, 90.512, 26]
+    region:   ne_32
     level:    [50, 52]
   17440801:
     template: Goblin_Bouncer
-    at:       [-105.924, 0.485, 90.955, 46]
+    region:   ne_32
     level:    [50, 52]
   17440802:
     template: Goblin_Enchanter
-    at:       [-101.682, 0.474, 106.915, 126]
+    region:   ne_32
     level:    [50, 52]
   17440803:
     template: Goblin_Hunter
-    at:       [-90.124, 0.100, 90.045, 127]
+    region:   region_68
     level:    [50, 52]
   17440804:
     template: Goblin_Bouncer
-    at:       [-90.468, 0.100, 94.285, 61]
+    region:   region_68
     level:    [50, 52]
   17440805:
     template: Goblin_Enchanter
-    at:       [-88.000, 0.474, 109.000, 127]
+    region:   region_68
     level:    [50, 52]
   17440806:
     template: Goblin_Hunter
+    region:   region_69
     level:    [50, 52]
   17440807:
     template: Goblin_Bouncer
-    at:       [-69.460, 0.474, 93.904, 127]
+    region:   region_69
     level:    [50, 52]
   17440808:
     template: Goblin_Enchanter
-    at:       [-67.152, 0.473, 91.267, 65]
+    region:   region_69
     level:    [50, 52]
   17440809:
     template: Goblin_Hunter
-    at:       [-10.259, 0.474, 96.424, 127]
+    region:   ne_41
     level:    [50, 52]
   17440810:
     template: Goblin_Bouncer
-    at:       [-9.000, 0.474, 110.000, 127]
+    region:   ne_41
     level:    [50, 52]
   17440811:
     template: Goblin_Enchanter
-    at:       [-13.662, 0.474, 103.273, 98]
+    region:   ne_41
     level:    [50, 52]
   17440812:
     template: Goblin_Hunter
-    at:       [-26.389, 0.100, 106.882, 194]
+    region:   ne_45
     level:    [50, 52]
   17440813:
     template: Goblin_Bouncer
-    at:       [-32.000, 0.474, 113.000, 127]
+    region:   ne_45
     level:    [50, 52]
   17440814:
     template: Goblin_Enchanter
-    at:       [-28.281, 0.100, 107.295, 93]
+    region:   ne_45
     level:    [50, 52]
   17440815:
     template: Goblin_Hunter
-    at:       [-30.000, 0.474, 88.000, 51]
+    region:   ne_47
     level:    [50, 52]
   17440816:
     template: Goblin_Bouncer
-    at:       [-29.016, 0.100, 91.763, 237]
+    region:   ne_47
     level:    [50, 52]
   17440817:
     template: Goblin_Enchanter
-    at:       [-34.677, 0.100, 89.658, 2]
+    region:   ne_47
     level:    [50, 52]
   17440818:
     template: Goblin_Hunter
-    at:       [-35.027, 0.100, 91.857, 1]
+    region:   region_70
     level:    [50, 52]
   17440819:
     template: Goblin_Bouncer
-    at:       [-51.613, 0.474, 88.752, 127]
+    region:   region_70
     level:    [50, 52]
   17440820:
     template: Goblin_Enchanter
-    at:       [-46.000, 0.100, 89.000, 127]
+    region:   region_70
     level:    [50, 52]
   17440821:
     template: Goblin_Hunter
-    at:       [-52.323, 0.474, 106.806, 127]
+    region:   region_71
     level:    [50, 52]
   17440822:
     template: Goblin_Bouncer
-    at:       [-46.795, 0.100, 110.653, 173]
+    region:   region_71
     level:    [50, 52]
   17440823:
     template: Goblin_Enchanter
-    at:       [-69.795, -0.499, 121.537, 228]
+    region:   region_71
     level:    [50, 52]
   17440824:
     template: Goblin_Hunter
-    at:       [-71.564, 0.474, 108.222, 127]
+    region:   ne_56
     level:    [50, 52]
   17440825:
     template: Goblin_Bouncer
-    at:       [-69.720, 0.100, 105.394, 160]
+    region:   ne_56
     level:    [50, 52]
   17440826:
     template: Goblin_Enchanter
-    at:       [-70.866, 0.100, 110.375, 127]
+    region:   ne_56
     level:    [50, 52]
   17440827:
     template: Orcish_Bowshooter
-    at:       [-27.192, 0.470, -88.394, 12]
+    region:   se_59
     level:    [47, 49]
   17440828:
     template: Orcish_Footsoldier
-    at:       [-30.374, 0.502, -98.134, 127]
+    region:   se_59
     level:    [47, 49]
   17440829:
     template: Orcish_Gladiator
-    at:       [-13.759, 0.474, -87.052, 127]
+    region:   se_59
     level:    [47, 49]
   17440830:
     template: Orcish_Trooper
-    at:       [-8.000, 0.474, -90.000, 127]
+    region:   se_59
     level:    [47, 49]
   17440831:
     template: Orcish_Bowshooter
-    at:       [-6.000, 0.474, -106.000, 127]
+    region:   region_72
     level:    [47, 49]
   17440832:
     template: Orcish_Footsoldier
-    at:       [-13.000, 0.100, -111.000, 115]
+    region:   region_72
     level:    [47, 49]
   17440833:
     template: Orcish_Gladiator
-    at:       [-8.400, 0.100, -105.970, 127]
+    region:   region_72
     level:    [47, 49]
   17440834:
     template: Orcish_Trooper
-    at:       [-6.000, 0.100, -113.000, 127]
+    region:   region_72
     level:    [47, 49]
   17440835:
     template: Orcish_Bowshooter
-    at:       [-31.000, -0.113, -108.000, 63]
+    region:   se_67
     level:    [47, 49]
   17440836:
     template: Orcish_Footsoldier
-    at:       [-22.000, 0.524, -92.000, 127]
+    region:   se_67
     level:    [47, 49]
   17440837:
     template: Orcish_Gladiator
-    at:       [-22.576, 0.496, -87.023, 127]
+    region:   se_67
     level:    [47, 49]
   17440838:
     template: Orcish_Trooper
-    at:       [-52.607, 0.147, -87.350, 125]
+    region:   se_67
     level:    [47, 49]
   17440839:
     template: Orcish_Bowshooter
-    at:       [-51.000, 0.100, -96.000, 119]
+    region:   region_73
     level:    [47, 49]
   17440840:
     template: Orcish_Footsoldier
-    at:       [-67.166, 0.100, -106.630, 127]
+    region:   region_73
     level:    [47, 49]
   17440841:
     template: Orcish_Gladiator
-    at:       [-49.000, 0.100, -111.000, 59]
+    region:   region_73
     level:    [47, 49]
   17440842:
     template: Orcish_Trooper
-    at:       [-67.189, 0.100, -112.422, 17]
+    region:   region_73
     level:    [47, 49]
   17440843:
     template: Orcish_Bowshooter
-    at:       [-107.221, 0.474, -103.519, 127]
+    region:   se_75
     level:    [47, 49]
   17440844:
     template: Orcish_Footsoldier
-    at:       [-101.000, 0.100, -95.000, 66]
+    region:   se_75
     level:    [47, 49]
   17440845:
     template: Orcish_Gladiator
-    at:       [-96.595, 0.474, -105.768, 127]
+    region:   se_75
     level:    [47, 49]
   17440846:
     template: Orcish_Trooper
-    at:       [-109.000, 0.100, -93.000, 84]
+    region:   se_75
     level:    [47, 49]
   17440847:
     template: Orcish_Veteran
-    at:       [-95.697, 0.512, -130.845, 127]
+    region:   se_79
     level:    [50, 52]
   17440848:
     template: Orcish_Predator
-    at:       [-111.349, 0.474, -133.950, 12]
+    region:   se_79
     level:    [50, 52]
   17440849:
     template: Orcish_Zerker
-    at:       [-87.169, 0.474, -145.272, 55]
+    region:   se_79
     level:    [50, 52]
   17440850:
     template: Orcish_Warchief
-    at:       [-87.361, 0.474, -127.954, 127]
+    region:   se_79
     level:    [50, 52]
   17440851:
     template: Orcish_Veteran
-    at:       [-108.046, 0.474, -150.849, 247]
+    region:   se_85
     level:    [50, 52]
   17440852:
     template: Orcish_Predator
+    region:   se_85
     level:    [50, 52]
   17440853:
     template: Orcish_Zerker
+    region:   se_85
     level:    [50, 52]
   17440854:
     template: Orcish_Warchief
-    at:       [-106.776, 0.474, -153.702, 53]
+    region:   se_85
     level:    [50, 52]
   17440855:
     template: Orcish_Veteran
-    at:       [-9.447, 0.474, -147.659, 95]
+    region:   se_87
     level:    [50, 52]
   17440856:
     template: Orcish_Predator
-    at:       [-13.277, 0.474, -131.837, 63]
+    region:   se_87
     level:    [50, 52]
   17440857:
     template: Orcish_Zerker
-    at:       [-10.907, 0.474, -140.131, 127]
+    region:   se_87
     level:    [50, 52]
   17440858:
     template: Orcish_Warchief
-    at:       [-32.415, 0.474, -126.329, 127]
+    region:   se_87
     level:    [50, 52]
   17440859:
     template: Orcish_Veteran
-    at:       [-30.284, 0.474, -153.364, 255]
+    region:   region_74
     level:    [50, 52]
   17440860:
     template: Orcish_Predator
+    region:   region_74
     level:    [50, 52]
   17440861:
     template: Orcish_Zerker
-    at:       [-33.150, 0.474, -147.396, 127]
+    region:   region_74
     level:    [50, 52]
   17440862:
     template: Orcish_Warchief
+    region:   region_74
     level:    [50, 52]
   17440863:
     template: Orcish_Veteran
-    at:       [-46.166, 0.474, -142.822, 127]
+    region:   se_95
     level:    [50, 52]
   17440864:
     template: Orcish_Predator
-    at:       [-52.705, 0.478, -126.836, 127]
+    region:   se_95
     level:    [50, 52]
   17440865:
     template: Orcish_Zerker
-    at:       [-52.000, 0.475, -129.000, 127]
+    region:   se_95
     level:    [50, 52]
   17440866:
     template: Orcish_Warchief
-    at:       [-51.591, 0.474, -144.068, 127]
+    region:   se_95
     level:    [50, 52]
   17440867:
     template: Orcish_Veteran
+    region:   region_75
     level:    [50, 52]
   17440868:
     template: Orcish_Predator
-    at:       [-70.000, 0.474, -131.000, 127]
+    region:   region_75
     level:    [50, 52]
   17440869:
     template: Orcish_Zerker
+    region:   region_75
     level:    [50, 52]
   17440870:
     template: Orcish_Warchief
+    region:   region_75
     level:    [50, 52]
   17440871:
     template: Orcish_Veteran
+    region:   region_76
     level:    [50, 52]
   17440872:
     template: Orcish_Predator
-    at:       [-70.000, 0.474, -149.000, 127]
+    region:   region_76
     level:    [50, 52]
   17440873:
     template: Orcish_Zerker
+    region:   region_76
     level:    [50, 52]
   17440874:
     template: Orcish_Warchief
-    at:       [-70.022, 0.100, -150.606, 241]
+    region:   region_76
     level:    [50, 52]
   17440875:
     template: Evil_Eye
-    at:       [-69.201, -8.160, 143.251, 25]
+    region:   ne_107
     level:    [46, 48]
   17440876:
     template: Evil_Eye
-    at:       [-50.262, -8.125, 144.389, 127]
+    region:   ne_107
     level:    [46, 48]
   17440877:
     template: Evil_Eye
-    at:       [-51.497, -8.125, -182.772, 127]
+    region:   se_109
     level:    [46, 48]
   17440878:
     template: Evil_Eye
-    at:       [-59.000, -8.125, -184.000, 127]
+    region:   se_109
     level:    [46, 48]
   17440879:
     template: Elder_Quadav
-    at:       [-47.470, -15.899, 107.790, 207]
+    region:   ne_113
     level:    [47, 49]
   17440880:
     template: Iron_Quadav
-    at:       [-49.907, -15.525, 106.402, 108]
+    region:   ne_113
     level:    [47, 49]
   17440881:
     template: Spinel_Quadav
+    region:   ne_113
     level:    [47, 49]
   17440882:
     template: Emerald_Quadav
-    at:       [-54.125, -15.557, 113.852, 119]
+    region:   ne_113
     level:    [47, 49]
   17440883:
     template: Elder_Quadav
-    at:       [-65.000, -15.525, 95.000, 127]
+    region:   ne_115
     level:    [47, 49]
   17440884:
     template: Iron_Quadav
-    at:       [-69.512, -15.525, 102.619, 127]
+    region:   ne_115
     level:    [47, 49]
   17440885:
     template: Spinel_Quadav
-    at:       [-73.291, -15.525, 92.354, 114]
+    region:   ne_115
     level:    [47, 49]
   17440886:
     template: Emerald_Quadav
-    at:       [-73.744, -15.533, 102.129, 127]
+    region:   ne_115
     level:    [47, 49]
   17440887:
     template: Elder_Quadav
+    region:   region_77
     level:    [47, 49]
   17440888:
     template: Iron_Quadav
-    at:       [-47.638, -15.525, 89.850, 32]
+    region:   region_77
     level:    [47, 49]
   17440889:
     template: Spinel_Quadav
+    region:   region_77
     level:    [47, 49]
   17440890:
     template: Emerald_Quadav
-    at:       [-50.125, -15.525, 88.196, 127]
+    region:   region_77
     level:    [47, 49]
   17440891:
     template: Elder_Quadav
-    at:       [-73.045, -15.525, 68.445, 127]
+    region:   ne_123
     level:    [47, 49]
   17440892:
     template: Iron_Quadav
-    at:       [-66.952, -15.547, 52.226, 85]
+    region:   ne_123
     level:    [47, 49]
   17440893:
     template: Spinel_Quadav
-    at:       [-69.823, -15.525, 70.224, 37]
+    region:   ne_123
     level:    [47, 49]
   17440894:
     template: Emerald_Quadav
-    at:       [-52.162, -15.470, 49.088, 127]
+    region:   ne_123
     level:    [47, 49]
   17440895:
     template: Elder_Quadav
+    region:   region_78
     level:    [47, 49]
   17440896:
     template: Iron_Quadav
+    region:   region_78
     level:    [47, 49]
   17440897:
     template: Spinel_Quadav
-    at:       [-50.000, -15.525, 68.000, 127]
+    region:   region_78
     level:    [47, 49]
   17440898:
     template: Emerald_Quadav
-    at:       [-46.196, -15.899, 73.158, 61]
+    region:   region_78
     level:    [47, 49]
   17440899:
     template: Steel_Quadav
-    at:       [-109.897, -15.525, 55.214, 127]
+    region:   ne_131
     level:    [50, 52]
   17440900:
     template: Mythril_Quadav
-    at:       [-99.460, -15.525, 50.067, 127]
+    region:   ne_131
     level:    [50, 52]
   17440901:
     template: Gold_Quadav
-    at:       [-104.818, -15.525, 50.449, 112]
+    region:   ne_131
     level:    [50, 52]
   17440902:
     template: Topaz_Quadav
-    at:       [-85.805, -15.526, 47.613, 23]
+    region:   ne_131
     level:    [50, 52]
   17440903:
     template: Steel_Quadav
-    at:       [-110.534, -15.525, 73.430, 255]
+    region:   region_80
     level:    [50, 52]
   17440904:
     template: Mythril_Quadav
+    region:   region_80
     level:    [50, 52]
   17440905:
     template: Gold_Quadav
+    region:   region_80
     level:    [50, 52]
   17440906:
     template: Topaz_Quadav
-    at:       [-109.000, -15.525, 69.000, 107]
+    region:   region_80
     level:    [50, 52]
   17440907:
     template: Steel_Quadav
+    region:   region_79
     level:    [50, 52]
   17440908:
     template: Mythril_Quadav
+    region:   region_79
     level:    [50, 52]
   17440909:
     template: Gold_Quadav
-    at:       [-91.494, -15.525, 73.478, 213]
+    region:   region_79
     level:    [50, 52]
   17440910:
     template: Topaz_Quadav
-    at:       [-92.124, -15.661, 72.617, 127]
+    region:   region_79
     level:    [50, 52]
   17440911:
     template: Steel_Quadav
-    at:       [-89.973, -15.525, 103.982, 37]
+    region:   ne_143
     level:    [50, 52]
   17440912:
     template: Mythril_Quadav
-    at:       [-91.000, -15.525, 90.000, 101]
+    region:   ne_143
     level:    [50, 52]
   17440913:
     template: Gold_Quadav
-    at:       [-113.586, -15.525, 89.881, 127]
+    region:   ne_143
     level:    [50, 52]
   17440914:
     template: Topaz_Quadav
-    at:       [-107.000, -15.899, 102.000, 3]
+    region:   ne_143
     level:    [50, 52]
   17440915:
     template: Yagudo_Zealot
-    at:       [-48.290, -15.525, -151.794, 69]
+    region:   region_81
     level:    [47, 49]
   17440916:
     template: Yagudo_Conquistador
+    region:   region_81
     level:    [47, 49]
   17440917:
     template: Yagudo_Lutenist
+    region:   region_81
     level:    [47, 49]
   17440918:
     template: Yagudo_Prior
-    at:       [-52.559, -15.525, -148.285, 15]
+    region:   region_81
     level:    [47, 49]
   17440919:
     template: Yagudo_Zealot
-    at:       [-49.000, -15.525, -126.000, 65]
+    region:   se_151
     level:    [47, 49]
   17440920:
     template: Yagudo_Conquistador
-    at:       [-65.787, -15.525, -131.630, 127]
+    region:   se_151
     level:    [47, 49]
   17440921:
     template: Yagudo_Lutenist
-    at:       [-47.548, -15.525, -134.111, 127]
+    region:   se_151
     level:    [47, 49]
   17440922:
     template: Yagudo_Prior
-    at:       [-57.906, -15.525, -129.907, 54]
+    region:   se_151
     level:    [47, 49]
   17440923:
     template: Yagudo_Zealot
+    region:   region_82
     level:    [47, 49]
   17440924:
     template: Yagudo_Conquistador
-    at:       [-68.865, -15.525, -149.875, 95]
+    region:   region_82
     level:    [47, 49]
   17440925:
     template: Yagudo_Lutenist
+    region:   region_82
     level:    [47, 49]
   17440926:
     template: Yagudo_Prior
+    region:   region_82
     level:    [47, 49]
   17440927:
     template: Yagudo_Zealot
-    at:       [-47.059, -15.525, -109.504, 36]
+    region:   se_159
     level:    [47, 49]
   17440928:
     template: Yagudo_Conquistador
-    at:       [-68.911, -15.525, -87.285, 127]
+    region:   se_159
     level:    [47, 49]
   17440929:
     template: Yagudo_Lutenist
-    at:       [-47.684, -15.517, -94.462, 49]
+    region:   se_159
     level:    [47, 49]
   17440930:
     template: Yagudo_Prior
-    at:       [-59.000, -15.525, -91.000, 82]
+    region:   se_159
     level:    [47, 49]
   17440931:
     template: Yagudo_Zealot
-    at:       [-67.272, -15.525, -113.466, 2]
+    region:   region_83
     level:    [47, 49]
   17440932:
     template: Yagudo_Conquistador
+    region:   region_83
     level:    [47, 49]
   17440933:
     template: Yagudo_Lutenist
+    region:   region_83
     level:    [47, 49]
   17440934:
     template: Yagudo_Prior
-    at:       [-66.412, -15.525, -113.307, 7]
+    region:   region_83
     level:    [47, 49]
   17440935:
     template: Yagudo_Sentinel
-    at:       [-109.550, -15.524, -108.123, 62]
+    region:   se_167
     level:    [50, 52]
   17440936:
     template: Yagudo_Chanter
-    at:       [-111.336, -15.523, -86.137, 127]
+    region:   se_167
     level:    [50, 52]
   17440937:
     template: Yagudo_Inquisitor
-    at:       [-96.000, -15.525, -91.000, 127]
+    region:   se_167
     level:    [50, 52]
   17440938:
     template: Yagudo_Abbot
-    at:       [-112.566, -15.596, -99.019, 97]
+    region:   se_167
     level:    [50, 52]
   17440939:
     template: Yagudo_Sentinel
-    at:       [-93.679, -15.525, -113.187, 106]
+    region:   se_172
     level:    [50, 52]
   17440940:
     template: Yagudo_Chanter
-    at:       [-86.769, -15.544, -108.947, 61]
+    region:   se_172
     level:    [50, 52]
   17440941:
     template: Yagudo_Inquisitor
-    at:       [-87.694, -15.525, -112.331, 152]
+    region:   se_172
     level:    [50, 52]
   17440942:
     template: Yagudo_Abbot
+    region:   se_172
     level:    [50, 52]
   17440943:
     template: Yagudo_Sentinel
-    at:       [-97.069, -15.525, -128.862, 55]
+    region:   se_175
     level:    [50, 52]
   17440944:
     template: Yagudo_Chanter
-    at:       [-107.000, -15.566, -134.000, 87]
+    region:   se_175
     level:    [50, 52]
   17440945:
     template: Yagudo_Inquisitor
-    at:       [-93.000, -15.525, -144.000, 127]
+    region:   se_175
     level:    [50, 52]
   17440946:
     template: Yagudo_Abbot
-    at:       [-111.432, -15.899, -148.428, 53]
+    region:   se_175
     level:    [50, 52]
   17440947:
     template: Evil_Eye
-    at:       [-72.411, -16.125, 14.573, 18]
+    region:   e_179
     level:    [46, 48]
   17440948:
     template: Evil_Eye
-    at:       [-95.000, -16.202, -5.000, 116]
+    region:   e_179
     level:    [46, 48]
   17440949:
     template: Evil_Eye
-    at:       [-73.000, -16.140, -54.000, 62]
+    region:   e_181
     level:    [46, 48]
   17440950:
     template: Evil_Eye
-    at:       [-95.228, -16.144, -34.694, 68]
+    region:   e_181
     level:    [46, 48]
   17440951:
     template: Demon_Pawn
-    at:       [-109.000, -16.064, -19.000, 7]
+    region:   e_183
     level:    [52, 55]
   17440952:
     template: Demon_Pawn
-    at:       [-139.327, -22.108, -9.449, 40]
+    region:   e_184
     level:    [52, 55]
   17440953:
     template: Demon_Pawn
-    at:       [-220.000, -48.146, -20.000, 127]
+    region:   c_185
     level:    [52, 55]
   17440954:
     template: Morbid_Eye
-    at:       [-274.000, -48.125, -21.000, 1]
+    region:   c_186
     level:    [52, 53]
   17440955:
     template: Morbid_Eye
-    at:       [-299.000, -48.184, 4.000, 37]
+    region:   c_187
     level:    [52, 53]
   17440956:
     template: Morbid_Eye
-    at:       [-296.896, -48.125, -53.381, 127]
+    region:   c_188
     level:    [52, 53]
   17440957:
     template: Morbid_Eye
-    at:       [-322.000, -48.125, -19.000, 101]
+    region:   c_189
     level:    [52, 53]
   17440958:
     template: Demon_Pawn
-    at:       [-255.454, -52.125, 64.165, 127]
+    region:   n_190
     level:    [52, 55]
   17440959:
     template: Demon_Knight
-    at:       [-217.482, -52.125, 58.877, 36]
+    region:   n_191
     level:    [52, 55]
   17440960:
     template: Demon_Warlock
-    at:       [-227.007, -52.125, 83.768, 127]
+    region:   n_192
     level:    [52, 55]
   17440961:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   n_192
     level:    [45, 53]
   17440962:
     template: Demon_Wizard
-    at:       [-254.000, -52.125, 86.000, 127]
+    region:   n_194
     level:    [52, 55]
   17440963:
     template: Baron_Vapula
-    at:       [-241.000, -52.000, 84.000, 127]
+    region:   region_84
     level:    [68, 68]
   17440964:
     template: Demon_Wizard
-    at:       [-220.870, -52.127, -60.537, 127]
+    region:   s_196
     level:    [52, 55]
   17440965:
     template: Demon_Pawn
-    at:       [-191.470, -52.125, -57.092, 127]
+    region:   c_197
     level:    [52, 55]
   17440966:
     template: Demon_Warlock
-    at:       [-180.342, -52.125, -88.175, 127]
+    region:   se_198
     level:    [52, 55]
   17440967:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   se_198
     level:    [45, 53]
   17440968:
     template: Demon_Knight
-    at:       [-204.000, -52.125, -95.000, 127]
+    region:   s_200
     level:    [52, 55]
   17440969:
     template: Count_Bifrons
-    at:       [-199.000, -52.000, -99.000, 127]
+    region:   region_85
     level:    [68, 68]
   17440970:
     template: Demon_Wizard
-    at:       [-340.499, -52.125, -112.418, 5]
+    region:   s_202
     level:    [52, 55]
   17440971:
     template: Demon_Pawn
-    at:       [-347.523, -52.125, -103.093, 105]
+    region:   s_203
     level:    [52, 55]
   17440972:
     template: Demon_Knight
-    at:       [-345.000, -52.125, -136.000, 37]
+    region:   sw_204
     level:    [52, 55]
   17440973:
     template: Demon_Warlock
-    at:       [-365.684, -52.125, -136.540, 127]
+    region:   s_205
     level:    [52, 55]
   17440974:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   s_205
     level:    [45, 53]
   17440975:
     template: Viscount_Morax
-    at:       [-380.000, -52.000, -121.000, 250]
+    region:   region_86
     level:    [68, 68]
   17440976:
     template: Demons_Elemental
@@ -2452,139 +2482,139 @@ spawns:
     level:    [42, 45]
   17440978:
     template: Demon_Pawn
-    at:       [-273.064, -52.125, 14.150, 92]
+    region:   c_210
     level:    [52, 55]
   17440979:
     template: Demon_Pawn
-    at:       [-260.921, -52.125, -4.598, 3]
+    region:   c_210
     level:    [52, 55]
   17440980:
     template: Demon_Pawn
-    at:       [-267.690, -52.125, -61.368, 48]
+    region:   c_212
     level:    [52, 55]
   17440981:
     template: Demon_Pawn
-    at:       [-262.791, -52.125, -35.704, 79]
+    region:   c_212
     level:    [52, 55]
   17440982:
     template: Demon_Pawn
-    at:       [-336.838, -52.125, -42.154, 127]
+    region:   c_214
     level:    [52, 55]
   17440983:
     template: Demon_Pawn
-    at:       [-317.000, -52.125, -36.000, 110]
+    region:   c_214
     level:    [52, 55]
   17440984:
     template: Demon_Pawn
-    at:       [-317.070, -52.125, 14.052, 127]
+    region:   c_216
     level:    [52, 55]
   17440985:
     template: Demon_Pawn
-    at:       [-335.444, -52.125, 15.148, 89]
+    region:   c_216
     level:    [52, 55]
   17440986:
     template: Baronet_Romwe
-    at:       [-340.000, -52.000, 3.000, 127]
+    region:   region_87
     level:    [68, 68]
   17440987:
     template: Deadly_Iris
-    at:       [-379.086, -61.762, 45.514, 66]
+    region:   nw_219
     level:    [55, 56]
   17440988:
     template: Deadly_Iris
-    at:       [-349.766, -52.153, 18.873, 127]
+    region:   nw_219
     level:    [55, 56]
   17440989:
     template: Demon_Pawn
-    at:       [-450.835, -68.125, 115.535, 5]
+    region:   nw_221
     level:    [55, 56]
   17440990:
     template: Demon_Wizard
-    at:       [-433.192, -68.266, 101.371, 127]
+    region:   nw_221
     level:    [55, 56]
   17440991:
     template: Demon_Knight
-    at:       [-445.920, -68.125, 133.453, 108]
+    region:   nw_221
     level:    [55, 56]
   17440992:
     template: Demon_Warlock
-    at:       [-443.406, -68.125, 123.692, 127]
+    region:   nw_221
     level:    [55, 56]
   17440993:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_221
     level:    [45, 53]
   17440994:
     template: Demon_Pawn
-    at:       [-420.548, -68.125, 22.079, 127]
+    region:   w_226
     level:    [55, 56]
   17440995:
     template: Demon_Wizard
-    at:       [-458.892, -68.126, 6.941, 125]
+    region:   w_226
     level:    [55, 56]
   17440996:
     template: Demon_Knight
-    at:       [-452.513, -68.125, 16.750, 72]
+    region:   w_226
     level:    [55, 56]
   17440997:
     template: Demon_Warlock
-    at:       [-428.000, -68.125, -18.000, 51]
+    region:   w_226
     level:    [55, 56]
   17440998:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   w_226
     level:    [45, 53]
   17440999:
     template: Deadly_Iris
-    at:       [-501.852, -68.341, 101.465, 127]
+    region:   nw_231
     level:    [55, 56]
   17441000:
     template: Deadly_Iris
-    at:       [-499.201, -68.126, 87.785, 127]
+    region:   nw_231
     level:    [55, 56]
   17441001:
     template: Deadly_Iris
-    at:       [-496.489, -68.125, 31.761, 59]
+    region:   nw_233
     level:    [55, 56]
   17441002:
     template: Deadly_Iris
-    at:       [-503.966, -68.226, 27.397, 14]
+    region:   nw_233
     level:    [55, 56]
   17441003:
     template: Demon_Pawn
-    at:       [-519.467, -68.125, 62.050, 105]
+    region:   nw_235
     level:    [55, 56]
   17441004:
     template: Demon_Wizard
-    at:       [-535.460, -68.125, 62.036, 105]
+    region:   nw_235
     level:    [55, 56]
   17441005:
     template: Demon_Warlock
-    at:       [-465.705, -67.375, 68.205, 127]
+    region:   nw_237
     level:    [55, 56]
   17441006:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_237
     level:    [45, 53]
   17441007:
     template: Demon_Knight
-    at:       [-537.000, -72.140, 79.000, 126]
+    region:   nw_239
     level:    [55, 56]
   17441008:
     template: Demon_Warlock
-    at:       [-517.000, -72.129, 98.000, 127]
+    region:   nw_239
     level:    [55, 56]
   17441009:
     template: Demons_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_239
     level:    [45, 53]
   17441010:
     template: Demon_Knight
-    at:       [-520.753, -72.125, 43.378, 127]
+    region:   w_242
     level:    [55, 56]
   17441011:
     template: Demon_Wizard
-    at:       [-534.000, -72.125, 25.000, 127]
+    region:   w_242
     level:    [55, 56]
 
 slots:

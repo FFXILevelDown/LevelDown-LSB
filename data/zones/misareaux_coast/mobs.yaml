@@ -1789,179 +1789,179 @@ spawns:
     level:    [45, 49]
   16879622:
     template: Miner_Bee
-    at:       [555.289, 15.855, -303.354, 52]
+    region:   se_6
     level:    [31, 34]
   16879623:
     template: Miner_Bee
-    at:       [545.749, 15.446, -294.095, 163]
+    region:   se_6
     level:    [31, 34]
   16879624:
     template: Tavnazian_Sheep
-    at:       [526.630, 16.666, -296.716, 7]
+    region:   se_6
     level:    [33, 37]
   16879625:
     template: Tavnazian_Sheep
-    at:       [512.284, 15.659, -317.136, 184]
+    region:   se_6
     level:    [33, 37]
   16879626:
     template: Miner_Bee
-    at:       [544.627, 16.155, -356.243, 65]
+    region:   se_10
     level:    [31, 34]
   16879627:
     template: Miner_Bee
-    at:       [546.922, 16.009, -358.270, 114]
+    region:   se_10
     level:    [31, 34]
   16879628:
     template: Bugard
-    at:       [512.773, 15.527, -386.407, 246]
+    region:   se_10
     level:    [34, 37]
   16879629:
     template: Tavnazian_Sheep
-    at:       [542.587, 16.117, -397.223, 14]
+    region:   se_10
     level:    [33, 37]
   16879630:
     template: Tavnazian_Sheep
-    at:       [531.184, 15.848, -396.126, 180]
+    region:   se_10
     level:    [33, 37]
   16879631:
     template: Miner_Bee
-    at:       [491.336, 15.960, -397.117, 140]
+    region:   se_15
     level:    [31, 34]
   16879632:
     template: Miner_Bee
-    at:       [481.646, 15.962, -430.690, 180]
+    region:   se_15
     level:    [31, 34]
   16879633:
     template: Bugard
-    at:       [469.049, 15.770, -399.112, 104]
+    region:   se_15
     level:    [34, 37]
   16879634:
     template: Tavnazian_Sheep
-    at:       [488.840, 16.072, -425.772, 242]
+    region:   se_15
     level:    [33, 37]
   16879635:
     template: Tavnazian_Sheep
-    at:       [468.589, 16.353, -420.039, 70]
+    region:   se_15
     level:    [33, 37]
   16879636:
     template: Miner_Bee
-    at:       [361.944, 15.589, -437.443, 148]
+    region:   s_20
     level:    [31, 34]
   16879637:
     template: Miner_Bee
-    at:       [364.215, 15.597, -444.919, 113]
+    region:   s_20
     level:    [31, 34]
   16879638:
     template: Bugard
-    at:       [362.566, 15.636, -436.598, 128]
+    region:   s_20
     level:    [34, 37]
   16879639:
     template: Tavnazian_Sheep
-    at:       [371.844, 15.940, -442.614, 78]
+    region:   s_20
     level:    [33, 37]
   16879640:
     template: Miner_Bee
-    at:       [494.378, 22.023, -335.655, 214]
+    region:   se_24
     level:    [31, 34]
   16879641:
     template: Bugard
-    at:       [477.346, 23.481, -320.421, 39]
+    region:   se_24
     level:    [34, 37]
   16879642:
     template: Tavnazian_Sheep
-    at:       [476.157, 23.424, -316.035, 183]
+    region:   se_24
     level:    [33, 37]
   16879643:
     template: Miner_Bee
-    at:       [438.949, 23.481, -365.703, 135]
+    region:   se_27
     level:    [31, 34]
   16879644:
     template: Bugard
-    at:       [461.923, 24.238, -361.892, 118]
+    region:   se_24
     level:    [34, 37]
   16879645:
     template: Tavnazian_Sheep
-    at:       [420.594, 24.389, -360.550, 89]
+    region:   se_27
     level:    [33, 37]
   16879646:
     template: Miner_Bee
-    at:       [402.200, 24.388, -342.534, 158]
+    region:   s_30
     level:    [31, 34]
   16879647:
     template: Bugard
-    at:       [405.358, 24.050, -336.820, 178]
+    region:   s_30
     level:    [34, 37]
   16879648:
     template: Tavnazian_Sheep
-    at:       [405.821, 24.008, -336.316, 165]
+    region:   s_30
     level:    [33, 37]
   16879649:
     template: Miner_Bee
-    at:       [342.353, 24.208, -400.192, 152]
+    region:   s_33
     level:    [31, 34]
   16879650:
     template: Miner_Bee
-    at:       [281.931, 24.248, -378.205, 203]
+    region:   s_34
     level:    [31, 34]
   16879651:
     template: Miner_Bee
-    at:       [276.163, 24.342, -340.824, 196]
+    region:   s_34
     level:    [31, 34]
   16879652:
     template: Miner_Bee
-    at:       [293.862, 23.984, -319.564, 250]
+    region:   s_34
     level:    [31, 34]
   16879653:
     template: Bugard
-    at:       [313.177, 24.479, -340.302, 160]
+    region:   s_34
     level:    [34, 37]
   16879654:
     template: Bugard
-    at:       [294.626, 23.909, -396.235, 203]
+    region:   s_34
     level:    [34, 37]
   16879655:
     template: Tavnazian_Sheep
-    at:       [260.948, 24.025, -330.249, 94]
+    region:   s_34
     level:    [33, 37]
   16879656:
     template: Tavnazian_Sheep
-    at:       [302.557, 24.397, -393.448, 211]
+    region:   s_34
     level:    [33, 37]
   16879657:
     template: Thunder_Elemental
-    at:       [312.366, 23.820, -358.468, 203]
+    region:   s_34
     level:    [42, 44]
   16879658:
     template: Miner_Bee
-    at:       [598.542, 1.326, -458.724, 136]
+    region:   se_42
     level:    [31, 34]
   16879659:
     template: Miner_Bee
-    at:       [589.368, 1.385, -457.194, 135]
+    region:   se_42
     level:    [31, 34]
   16879660:
     template: Bugard
-    at:       [743.660, -0.023, -471.723, 23]
+    region:   se_44
     level:    [34, 37]
   16879661:
     template: Bugard
-    at:       [670.240, -0.236, -454.498, 132]
+    region:   se_44
     level:    [34, 37]
   16879662:
     template: Bugard
-    at:       [711.554, -0.197, -479.981, 210]
+    region:   se_44
     level:    [34, 37]
   16879663:
     template: Tavnazian_Sheep
-    at:       [696.660, 0.247, -456.387, 90]
+    region:   se_44
     level:    [33, 37]
   16879664:
     template: Tavnazian_Sheep
-    at:       [707.837, 0.082, -449.470, 207]
+    region:   se_44
     level:    [33, 37]
   16879665:
     template: Goaftrap
-    at:       [703.942, 0.162, -462.405, 124]
+    region:   se_44
     level:    [50, 51]
   16879666:
     template: Fomor_Monk
@@ -1981,27 +1981,27 @@ spawns:
     level:    [35, 37]
   16879670:
     template: Air_Elemental
-    at:       [711.455, -0.315, -480.521, 1]
+    region:   se_54
     level:    [49, 51]
   16879671:
     template: Crimson_Knight_Crab
-    at:       [689.495, 0.608, -485.665, 23]
+    region:   se_55
     level:    [33, 36]
   16879672:
     template: Crimson_Knight_Crab
-    at:       [709.642, 0.430, -487.265, 78]
+    region:   se_55
     level:    [33, 36]
   16879673:
     template: Crimson_Knight_Crab
-    at:       [642.001, -0.126, -512.614, 106]
+    region:   se_55
     level:    [33, 36]
   16879674:
     template: Crimson_Knight_Crab
-    at:       [654.581, 1.476, -500.970, 206]
+    region:   se_55
     level:    [33, 36]
   16879675:
     template: Dark_Elemental
-    at:       [440.933, 23.318, -327.702, 193]
+    region:   se_59
     level:    [42, 44]
   16879676:
     template: Fomor_Monk
@@ -2013,368 +2013,370 @@ spawns:
     level:    [35, 37]
   16879678:
     template: Fomor_Ranger
-    at:       [453.971, 24.219, -332.000, 252]
+    region:   se_59
     level:    [36, 38]
   16879679:
     template: Fomor_Samurai
-    at:       [452.960, 24.184, -331.875, 252]
+    region:   se_59
     level:    [35, 37]
   16879680:
     template: Fomor_Dark_Knight
-    at:       [447.761, 23.470, -316.982, 128]
+    region:   se_59
     level:    [36, 38]
   16879681:
     template: Fomor_Ninja
-    at:       [446.688, 23.441, -316.858, 1]
+    region:   se_59
     level:    [35, 37]
   16879682:
     template: Fomor_Paladin
-    at:       [429.456, 23.909, -345.242, 126]
+    region:   se_59
     level:    [36, 38]
   16879683:
     template: Fomor_Bard
-    at:       [431.252, 23.940, -345.107, 128]
+    region:   se_59
     level:    [35, 37]
   16879684:
     template: Miner_Bee
-    at:       [319.170, 23.331, -314.743, 157]
+    region:   s_68
     level:    [31, 34]
   16879685:
     template: Miner_Bee
-    at:       [199.376, 8.912, -298.159, 11]
+    region:   s_69
     level:    [31, 34]
   16879686:
     template: Vampire_Bat_Misareaux_Coast
     script:   Vampire_Bat
-    at:       [148.479, -3.755, -253.776, 154]
+    region:   s_70
     level:    [42, 44]
   16879687:
     template: Vampire_Bat_Misareaux_Coast
     script:   Vampire_Bat
-    at:       [140.993, -7.793, -241.604, 177]
+    region:   s_70
     level:    [42, 44]
   16879688:
     template: Wingrats_Misareaux_Coast
     script:   Wingrats
-    at:       [146.764, -4.178, -252.395, 37]
+    region:   s_70
     level:    [41, 44]
   16879689:
     template: Wingrats_Misareaux_Coast
     script:   Wingrats
-    at:       [158.349, -0.972, -258.186, 11]
+    region:   s_70
     level:    [41, 44]
   16879690:
     template: Gigantobugard
-    at:       [96.089, -6.439, -185.357, 61]
+    region:   s_74
     level:    [40, 43]
   16879691:
     template: Seaboard_Vulture
-    at:       [437.307, -8.086, 55.662, 39]
+    region:   e_75
     level:    [83, 84]
   16879692:
     template: Seaboard_Vulture
-    at:       [402.659, -8.035, 52.644, 75]
+    region:   e_75
     level:    [83, 84]
   16879693:
     template: Seaboard_Vulture
-    at:       [433.700, -7.842, 59.038, 126]
+    region:   e_75
     level:    [83, 84]
   16879694:
     template: Seaboard_Vulture
-    at:       [439.814, -8.063, 66.643, 161]
+    region:   e_75
     level:    [83, 84]
   16879695:
     template: Seaboard_Vulture
-    at:       [426.182, -7.809, 58.781, 10]
+    region:   e_75
     level:    [83, 84]
   16879696:
     template: Seaboard_Vulture
-    at:       [450.363, -8.666, 87.345, 130]
+    region:   e_80
     level:    [83, 84]
   16879697:
     template: Seaboard_Vulture
-    at:       [443.965, -8.335, 78.593, 24]
+    region:   e_80
     level:    [83, 84]
   16879698:
     template: Seaboard_Vulture
-    at:       [456.735, -8.785, 86.575, 231]
+    region:   e_80
     level:    [83, 84]
   16879699:
     template: Seaboard_Vulture
-    at:       [466.421, -8.255, 82.185, 24]
+    region:   e_80
     level:    [83, 84]
   16879700:
     template: Seaboard_Vulture
-    at:       [463.229, -8.576, 84.142, 152]
+    region:   e_80
     level:    [83, 84]
   16879701:
     template: Gigantobugard
-    at:       [462.360, -15.869, 168.083, 251]
+    region:   e_85
     level:    [40, 43]
   16879702:
     template: Gigantobugard
-    at:       [458.570, -15.905, 182.542, 26]
+    region:   e_85
     level:    [40, 43]
   16879703:
     template: Gigas_Braver
-    at:       [476.913, -16.040, 145.409, 53]
+    region:   e_85
     level:    [41, 44]
   16879704:
     template: Gigas_Martialist
-    at:       [463.924, -15.898, 149.988, 194]
+    region:   e_85
     level:    [41, 44]
   16879705:
     template: Orcish_Stonelauncher
-    at:       [454.598, -15.733, 128.419, 232]
+    region:   e_85
     level:    [43, 46]
   16879706:
     template: Orcish_Trooper_MC
     script:   Orcish_Trooper
-    at:       [487.379, -16.131, 187.608, 112]
+    region:   e_85
     level:    [41, 44]
   16879707:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [468.995, -15.890, 140.992, 154]
+    region:   e_85
     level:    [41, 44]
   16879708:
     template: Gigantobugard
-    at:       [518.346, -16.492, 246.290, 134]
+    region:   e_92
     level:    [40, 43]
   16879709:
     template: Seaboard_Vulture
-    at:       [469.665, -24.252, 293.757, 233]
+    region:   e_93
     level:    [83, 84]
   16879710:
     template: Seaboard_Vulture
-    at:       [444.759, -23.681, 260.926, 64]
+    region:   e_93
     level:    [83, 84]
   16879711:
     template: Seaboard_Vulture
-    at:       [463.983, -23.968, 285.528, 2]
+    region:   e_93
     level:    [83, 84]
   16879712:
     template: Seaboard_Vulture
-    at:       [455.092, -23.776, 238.863, 48]
+    region:   e_93
     level:    [83, 84]
   16879713:
     template: Seaboard_Vulture
-    at:       [441.938, -24.192, 250.406, 177]
+    region:   e_93
     level:    [83, 84]
   16879714:
     template: Seaboard_Vulture
-    at:       [471.133, -23.642, 254.304, 213]
+    region:   e_93
     level:    [83, 84]
   16879715:
     template: Seaboard_Vulture
-    at:       [496.822, -24.479, 326.948, 249]
+    region:   ne_99
     level:    [83, 84]
   16879716:
     template: Seaboard_Vulture
-    at:       [485.419, -24.564, 330.578, 4]
+    region:   ne_99
     level:    [83, 84]
   16879717:
     template: Seaboard_Vulture
-    at:       [524.137, -24.480, 322.137, 228]
+    region:   ne_99
     level:    [83, 84]
   16879718:
     template: Seaboard_Vulture
-    at:       [479.610, -24.474, 323.473, 179]
+    region:   ne_99
     level:    [83, 84]
   16879719:
     template: Seaboard_Vulture
-    at:       [517.784, -24.472, 319.549, 36]
+    region:   ne_99
     level:    [83, 84]
   16879720:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [361.206, -14.681, 181.979, 117]
+    region:   c_104
     level:    [37, 40]
   16879721:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [333.907, -15.561, 187.547, 10]
+    region:   c_104
     level:    [37, 40]
   16879722:
     template: Atomic_Cluster
-    at:       [240.160, -16.465, 241.124, 121]
+    region:   c_107
     level:    [44, 46]
   16879723:
     template: Gigantobugard
-    at:       [255.096, -15.612, 208.506, 23]
+    region:   c_107
     level:    [40, 43]
   16879724:
     template: Gigantobugard
-    at:       [237.625, -16.212, 150.996, 168]
+    region:   c_107
     level:    [40, 43]
   16879725:
     template: Gigantobugard
-    at:       [235.893, -15.800, 185.658, 232]
+    region:   c_107
     level:    [40, 43]
   16879726:
     template: Gigas_Braver
-    at:       [245.584, -15.839, 142.965, 22]
+    region:   c_107
     level:    [41, 44]
   16879727:
     template: Gigas_Warwolf
-    at:       [239.558, -16.449, 160.777, 92]
+    region:   c_107
     level:    [41, 44]
   16879728:
     template: Gigas_Catapulter
+    region:   c_107
     level:    [41, 44]
   16879729:
     template: Orcish_Stonelauncher
-    at:       [224.374, -15.549, 177.250, 209]
+    region:   c_107
     level:    [43, 46]
   16879730:
     template: Orcish_Footsoldier_MC
     script:   Orcish_Footsoldier
-    at:       [246.344, -16.183, 148.873, 146]
+    region:   c_107
     level:    [41, 44]
   16879731:
     template: Orcish_Trooper_MC
     script:   Orcish_Trooper
-    at:       [245.393, -16.167, 167.350, 62]
+    region:   c_107
     level:    [41, 44]
   16879732:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [245.320, -16.052, 172.078, 74]
+    region:   c_107
     level:    [41, 44]
   16879733:
     template: Gigass_Sheep
-    at:       [241.574, -16.337, 161.877, 97]
+    region:   c_107
     level:    [34, 36]
   16879734:
     template: Gigas_Martialist
-    at:       [259.928, -15.839, 182.999, 34]
+    region:   c_119
     level:    [41, 44]
   16879735:
     template: Orcish_Gladiator_MC
     script:   Orcish_Gladiator
-    at:       [267.715, -15.925, 184.125, 198]
+    region:   c_119
     level:    [41, 44]
   16879736:
     template: Gigantobugard
-    at:       [159.575, -24.554, 238.742, 133]
+    region:   c_120
     level:    [40, 43]
   16879737:
     template: Odqan
-    at:       [204.733, -24.365, 316.403, 127]
+    region:   n_122
     level:    [49, 51]
   16879738:
     template: Gigantobugard
-    at:       [270.458, -24.800, 304.112, 116]
+    region:   n_122
     level:    [40, 43]
   16879739:
     template: Gigas_Braver
-    at:       [201.065, -24.232, 325.722, 177]
+    region:   n_122
     level:    [41, 44]
   16879740:
     template: Gigas_Warwolf
-    at:       [245.171, -24.357, 316.001, 125]
+    region:   n_122
     level:    [41, 44]
   16879741:
     template: Gigas_Catapulter
+    region:   n_122
     level:    [41, 44]
   16879742:
     template: Orcish_Footsoldier_MC
     script:   Orcish_Footsoldier
-    at:       [202.229, -23.891, 304.266, 105]
+    region:   n_122
     level:    [41, 44]
   16879743:
     template: Orcish_Trooper_MC
     script:   Orcish_Trooper
-    at:       [212.795, -23.825, 315.288, 228]
+    region:   n_122
     level:    [41, 44]
   16879744:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [265.679, -23.962, 317.781, 3]
+    region:   n_122
     level:    [41, 44]
   16879745:
     template: Gigass_Sheep
-    at:       [251.492, -23.994, 314.731, 142]
+    region:   n_122
     level:    [34, 36]
   16879746:
     template: Gigantobugard
-    at:       [201.842, -24.140, 350.495, 218]
+    region:   n_130
     level:    [40, 43]
   16879747:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [168.151, -14.578, 142.600, 247]
+    region:   c_131
     level:    [37, 40]
   16879748:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [155.173, -14.589, 139.644, 116]
+    region:   c_131
     level:    [37, 40]
   16879749:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [145.111, -23.308, 346.477, 249]
+    region:   n_133
     level:    [37, 40]
   16879750:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [124.655, -22.573, 342.675, 246]
+    region:   n_133
     level:    [37, 40]
   16879751:
     template: Gigantobugard
-    at:       [62.208, -7.898, -92.711, 82]
+    region:   c_135
     level:    [40, 43]
   16879752:
     template: Gigantobugard
-    at:       [76.102, -8.221, -110.255, 14]
+    region:   c_135
     level:    [40, 43]
   16879753:
     template: Gigas_Braver
-    at:       [52.058, -7.685, -104.514, 175]
+    region:   c_143
     level:    [41, 44]
   16879754:
     template: Gigas_Catapulter
-    at:       [76.075, -8.400, -83.112, 205]
+    region:   c_135
     level:    [41, 44]
   16879755:
     template: Orcish_Footsoldier_MC
     script:   Orcish_Footsoldier
-    at:       [55.847, -7.772, -112.059, 165]
+    region:   c_135
     level:    [41, 44]
   16879756:
     template: Orcish_Gladiator_MC
     script:   Orcish_Gladiator
-    at:       [83.492, -8.232, -86.677, 154]
+    region:   c_135
     level:    [41, 44]
   16879757:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [44.092, -8.033, -108.637, 173]
+    region:   c_135
     level:    [41, 44]
   16879758:
     template: Odqan
-    at:       [83.241, -8.259, -41.968, 36]
+    region:   c_143
     level:    [49, 51]
   16879759:
     template: Gigantobugard
-    at:       [38.889, -7.924, -52.423, 102]
+    region:   c_143
     level:    [40, 43]
   16879760:
     template: Gigantobugard
-    at:       [84.783, -8.099, -47.025, 187]
+    region:   c_135
     level:    [40, 43]
   16879761:
     template: Gigas_Martialist
-    at:       [118.473, -8.114, -51.182, 116]
+    region:   c_143
     level:    [41, 44]
   16879762:
     template: Gigas_Warwolf
-    at:       [90.785, -7.844, -63.689, 123]
+    region:   c_143
     level:    [41, 44]
   16879763:
     template: Orcish_Trooper_MC
     script:   Orcish_Trooper
-    at:       [96.390, -7.743, -75.934, 60]
+    region:   c_143
     level:    [41, 44]
   16879764:
     template: Gigass_Sheep
@@ -2382,107 +2384,107 @@ spawns:
     level:    [34, 36]
   16879765:
     template: Gigantobugard
-    at:       [4.103, -16.653, -10.999, 79]
+    region:   w_149
     level:    [40, 43]
   16879766:
     template: Gigantobugard
-    at:       [-69.594, -16.956, 46.590, 158]
+    region:   w_149
     level:    [40, 43]
   16879767:
     template: Gigantobugard
-    at:       [-14.604, -16.189, -11.382, 201]
+    region:   w_149
     level:    [40, 43]
   16879768:
     template: Gigas_Braver
-    at:       [12.042, -16.191, -1.918, 217]
+    region:   w_149
     level:    [41, 44]
   16879769:
     template: Gigas_Martialist
-    at:       [-5.547, -15.792, -16.304, 31]
+    region:   w_149
     level:    [41, 44]
   16879770:
     template: Gigas_Warwolf
-    at:       [-12.286, -15.870, 5.372, 199]
+    region:   w_149
     level:    [41, 44]
   16879771:
     template: Gigas_Catapulter
-    at:       [-1.418, -16.000, 24.965, 218]
+    region:   w_149
     level:    [41, 44]
   16879772:
     template: Orcish_Footsoldier_MC
     script:   Orcish_Footsoldier
-    at:       [-57.380, -15.825, -2.045]
+    region:   w_149
     level:    [41, 44]
   16879773:
     template: Orcish_Gladiator_MC
     script:   Orcish_Gladiator
-    at:       [6.820, -16.096, 7.434, 60]
+    region:   w_149
     level:    [41, 44]
   16879774:
     template: Orcish_Trooper_MC
     script:   Orcish_Trooper
-    at:       [-57.008, -15.669, 39.833, 135]
+    region:   w_149
     level:    [41, 44]
   16879775:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [-28.549, -16.156, 31.389, 136]
+    region:   w_149
     level:    [41, 44]
   16879776:
     template: Gigass_Sheep
-    at:       [-6.149, -16.175, 4.298, 63]
+    region:   w_149
     level:    [34, 36]
   16879777:
     template: Atomic_Cluster
-    at:       [117.493, -16.061, 94.516, 253]
+    region:   c_162
     level:    [44, 46]
   16879778:
     template: Gigantobugard
-    at:       [67.632, -15.955, 30.679, 232]
+    region:   c_162
     level:    [40, 43]
   16879779:
     template: Gigantobugard
-    at:       [92.365, -15.972, 34.256, 227]
+    region:   c_162
     level:    [40, 43]
   16879780:
     template: Gigantobugard
-    at:       [47.292, -16.023, 59.083, 189]
+    region:   w_149
     level:    [40, 43]
   16879781:
     template: Gigas_Braver
-    at:       [90.746, -16.182, 80.410, 188]
+    region:   c_162
     level:    [41, 44]
   16879782:
     template: Gigas_Martialist
-    at:       [71.853, -15.802, 71.873, 166]
+    region:   c_162
     level:    [41, 44]
   16879783:
     template: Gigas_Warwolf
-    at:       [109.398, -16.019, 79.312, 13]
+    region:   c_162
     level:    [41, 44]
   16879784:
     template: Gigas_Catapulter
-    at:       [68.948, -15.838, 67.675, 202]
+    region:   c_162
     level:    [41, 44]
   16879785:
     template: Orcish_Footsoldier_MC
     script:   Orcish_Footsoldier
-    at:       [102.105, -15.770, 100.596, 45]
+    region:   c_162
     level:    [41, 44]
   16879786:
     template: Orcish_Gladiator_MC
     script:   Orcish_Gladiator
-    at:       [87.010, -16.175, 87.092, 54]
+    region:   c_162
     level:    [41, 44]
   16879787:
     template: Orcish_Trooper_MC
     script:   Orcish_Trooper
-    at:       [110.693, -15.704, 105.819, 138]
+    region:   c_162
     level:    [41, 44]
   16879788:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [53.628, -15.874, 31.147, 96]
+    region:   c_162
     level:    [41, 44]
   16879789:
     template: Gigass_Sheep
@@ -2490,84 +2492,84 @@ spawns:
     level:    [34, 36]
   16879790:
     template: Orcish_Stonelauncher
-    at:       [-22.885, -15.749, 26.951, 25]
+    region:   w_174
     level:    [43, 46]
   16879791:
     template: Death_Jacket_LM_MC
     script:   Death_Jacket
-    at:       [-101.906, -30.673, 82.754, 52]
+    region:   w_175
     level:    [37, 40]
   16879792:
     template: Mantrap
-    at:       [-184.232, -31.506, 113.590, 210]
+    region:   w_176
     level:    [45, 49]
   16879793:
     template: Mantrap
-    at:       [-202.034, -31.899, 105.957, 54]
+    region:   w_176
     level:    [45, 49]
   16879794:
     template: Mantrap
-    at:       [-166.839, -32.217, 89.624, 239]
+    region:   w_176
     level:    [45, 49]
   16879795:
     template: Mantrap
-    at:       [-148.636, -32.073, 100.235, 75]
+    region:   w_176
     level:    [45, 49]
   16879796:
     template: Mantrap
-    at:       [-148.677, -32.121, 118.133, 52]
+    region:   w_176
     level:    [45, 49]
   16879797:
     template: Overgrown_Rose_MC
     script:   Overgrown_Rose
-    at:       [-179.703, -31.630, 123.288, 48]
+    region:   w_176
     level:    [47, 50]
   16879798:
     template: Overgrown_Rose_MC
     script:   Overgrown_Rose
-    at:       [-224.956, -31.911, 117.781, 130]
+    region:   w_176
     level:    [47, 50]
   16879799:
     template: Thunder_Elemental
-    at:       [-159.609, -31.831, 93.526, 231]
+    region:   w_176
     level:    [54, 56]
   16879800:
     template: Mantrap
-    at:       [-285.961, -32.024, 144.263, 1]
+    region:   w_184
     level:    [45, 49]
   16879801:
     template: Mantrap
-    at:       [-273.945, -32.118, 190.159, 161]
+    region:   w_184
     level:    [45, 49]
   16879802:
     template: Mantrap
-    at:       [-246.472, -32.083, 155.900, 21]
+    region:   w_184
     level:    [45, 49]
   16879803:
     template: Mantrap
-    at:       [-283.583, -31.534, 183.328, 53]
+    region:   w_184
     level:    [45, 49]
   16879804:
     template: Mantrap
-    at:       [-264.131, -32.684, 118.141, 36]
+    region:   w_184
     level:    [45, 49]
   16879805:
     template: Mantrap
-    at:       [-261.939, -32.130, 180.003, 131]
+    region:   w_184
     level:    [45, 49]
   16879806:
     template: Overgrown_Rose_MC
     script:   Overgrown_Rose
-    at:       [-282.221, -31.517, 184.183, 92]
+    region:   w_184
     level:    [47, 50]
   16879807:
     template: Overgrown_Rose_MC
     script:   Overgrown_Rose
-    at:       [-238.011, -32.417, 125.226, 78]
+    region:   w_176
     level:    [47, 50]
   16879808:
     template: Thunder_Elemental
-    at:       [-235.987, -31.895, 145.642, 121]
+    region:   w_184
     level:    [54, 55]
   16879809:
     template: Dark_Elemental
@@ -2575,16 +2577,16 @@ spawns:
     level:    [54, 56]
   16879810:
     template: Upyri
-    at:       [-282.944, -32.441, 159.796, 160]
+    region:   w_194
     level:    [45, 45]
   16879811:
     template: Fomor_Red_Mage
-    at:       [-156.070, -31.711, 104.539, 24]
+    region:   w_194
     level:    [49, 51]
   16879812:
     template: Fomor_Ranger_Large
     script:   Fomor_Ranger
-    at:       [-156.993, -31.732, 105.513, 27]
+    region:   w_194
     level:    [48, 50]
   16879813:
     template: Fomor_Paladin
@@ -2628,204 +2630,204 @@ spawns:
     level:    [48, 50]
   16879823:
     template: Seaboard_Vulture
-    at:       [-46.985, -32.317, 311.577, 48]
+    region:   nw_207
     level:    [83, 84]
   16879824:
     template: Seaboard_Vulture
-    at:       [-43.248, -31.958, 307.100, 78]
+    region:   nw_207
     level:    [83, 84]
   16879825:
     template: Seaboard_Vulture
-    at:       [-42.109, -31.962, 306.054, 95]
+    region:   nw_207
     level:    [83, 84]
   16879826:
     template: Seaboard_Vulture
-    at:       [-30.559, -32.215, 304.231, 18]
+    region:   nw_207
     level:    [83, 84]
   16879827:
     template: Seaboard_Vulture
-    at:       [-41.776, -31.992, 305.184, 95]
+    region:   nw_207
     level:    [83, 84]
   16879828:
     template: Seaboard_Vulture
-    at:       [31.453, -32.338, 277.096, 181]
+    region:   w_212
     level:    [83, 84]
   16879829:
     template: Seaboard_Vulture
-    at:       [-2.016, -32.123, 292.281, 220]
+    region:   w_212
     level:    [83, 84]
   16879830:
     template: Seaboard_Vulture
-    at:       [48.437, -32.668, 283.214, 225]
+    region:   w_212
     level:    [83, 84]
   16879831:
     template: Seaboard_Vulture
-    at:       [34.302, -32.731, 269.351, 90]
+    region:   w_212
     level:    [83, 84]
   16879832:
     template: Seaboard_Vulture
-    at:       [22.602, -31.519, 279.686, 46]
+    region:   w_212
     level:    [83, 84]
   16879833:
     template: Atomic_Cluster
-    at:       [26.525, -23.863, 357.311, 154]
+    region:   nw_218
     level:    [44, 46]
   16879834:
     template: Gigantobugard
-    at:       [12.560, -23.966, 328.630, 134]
+    region:   nw_218
     level:    [40, 43]
   16879835:
     template: Gigantobugard
-    at:       [8.077, -23.904, 331.092, 29]
+    region:   nw_218
     level:    [40, 43]
   16879836:
     template: Gigas_Catapulter
-    at:       [43.685, -24.170, 327.826, 143]
+    region:   nw_218
     level:    [41, 44]
   16879837:
     template: Orcish_Stonelauncher
-    at:       [29.130, -23.627, 338.717, 132]
+    region:   nw_218
     level:    [43, 46]
   16879838:
     template: Orcish_Bowshooter_MC
     script:   Orcish_Bowshooter
-    at:       [27.412, -24.321, 365.838, 209]
+    region:   nw_218
     level:    [41, 44]
   16879839:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-8.558, -24.183, 434.286, 220]
+    region:   nw_223
     level:    [47, 51]
   16879840:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-15.648, -23.898, 473.054, 234]
+    region:   nw_223
     level:    [47, 51]
   16879841:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-68.966, -24.058, 517.100, 110]
+    region:   nw_223
     level:    [47, 51]
   16879842:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-22.306, -24.709, 524.580, 217]
+    region:   nw_223
     level:    [47, 51]
   16879843:
     template: Mantrap
-    at:       [-37.725, -23.940, 533.804, 191]
+    region:   nw_223
     level:    [45, 49]
   16879844:
     template: Mantrap
-    at:       [29.037, -23.846, 452.918, 204]
+    region:   nw_223
     level:    [45, 49]
   16879845:
     template: Mantrap
-    at:       [-3.243, -23.963, 500.114, 243]
+    region:   nw_223
     level:    [45, 49]
   16879846:
     template: Mantrap
-    at:       [-106.631, -23.564, 531.971, 29]
+    region:   nw_230
     level:    [45, 49]
   16879847:
     template: Okyupete
-    at:       [-76.467, -24.484, 523.605, 108]
+    region:   nw_223
     level:    [57, 60]
   16879848:
     template: Air_Elemental
-    at:       [-28.355, -24.029, 552.525, 202]
+    region:   nw_232
     level:    [49, 51]
   16879849:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-47.390, -24.751, 553.286, 99]
+    region:   nw_232
     level:    [47, 51]
   16879850:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [252.625, -16.051, 353.096, 19]
+    region:   n_234
     level:    [45, 49]
   16879851:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [253.469, -17.678, 346.162, 9]
+    region:   n_234
     level:    [45, 49]
   16879852:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [245.608, -15.987, 418.557, 1]
+    region:   n_236
     level:    [45, 49]
   16879853:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [304.875, -16.099, 361.797, 117]
+    region:   n_236
     level:    [45, 49]
   16879854:
     template: Makara
-    at:       [303.479, -16.017, 367.087, 209]
+    region:   n_236
     level:    [46, 49]
   16879855:
     template: Makara
-    at:       [298.156, -16.002, 365.980, 120]
+    region:   n_236
     level:    [46, 49]
   16879856:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [239.029, -15.964, 475.716, 194]
+    region:   n_240
     level:    [45, 49]
   16879857:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [225.451, -16.036, 486.614, 141]
+    region:   n_240
     level:    [45, 49]
   16879858:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [213.551, -16.001, 489.052, 155]
+    region:   n_240
     level:    [45, 49]
   16879859:
     template: Makara
-    at:       [241.726, -16.025, 455.714, 53]
+    region:   n_240
     level:    [46, 49]
   16879860:
     template: Makara
-    at:       [211.510, -16.000, 479.050, 41]
+    region:   n_240
     level:    [46, 49]
   16879861:
     template: Makara
-    at:       [219.858, -16.018, 483.828, 160]
+    region:   n_240
     level:    [46, 49]
   16879862:
     template: Makara
-    at:       [202.178, -16.009, 501.166, 14]
+    region:   n_240
     level:    [46, 49]
   16879863:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [53.143, -16.029, 561.307, 248]
+    region:   n_247
     level:    [45, 49]
   16879864:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [34.760, -16.091, 561.626, 229]
+    region:   n_247
     level:    [45, 49]
   16879865:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [45.235, -16.131, 531.452, 86]
+    region:   n_247
     level:    [45, 49]
   16879866:
     template: Makara
-    at:       [75.944, -16.047, 544.970, 62]
+    region:   n_247
     level:    [46, 49]
   16879867:
     template: Makara
-    at:       [33.345, -16.107, 555.705, 9]
+    region:   n_247
     level:    [46, 49]
   16879868:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-1.591, -16.139, 558.139, 66]
+    region:   nw_252
     level:    [47, 51]
   16879869:
     template: Bigclaw_noaggro_MC
@@ -2835,103 +2837,103 @@ spawns:
   16879870:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [-26.960, -16.333, 593.249, 159]
+    region:   nw_252
     level:    [45, 49]
   16879871:
     template: Makara
-    at:       [10.218, -16.042, 577.365, 43]
+    region:   nw_252
     level:    [46, 49]
   16879872:
     template: Mantrap
-    at:       [-16.126, -16.191, 599.084, 218]
+    region:   nw_252
     level:    [45, 49]
   16879873:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-65.284, -18.070, 578.349, 225]
+    region:   nw_257
     level:    [47, 51]
   16879874:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [-77.366, -16.109, 599.230, 38]
+    region:   nw_257
     level:    [45, 49]
   16879875:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [-99.206, -16.026, 577.421, 80]
+    region:   nw_257
     level:    [45, 49]
   16879876:
     template: Makara
-    at:       [-61.365, -16.068, 593.350, 217]
+    region:   nw_257
     level:    [46, 49]
   16879877:
     template: Mantrap
-    at:       [-60.291, -16.241, 610.485, 16]
+    region:   nw_257
     level:    [45, 49]
   16879878:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [-133.927, -16.001, 627.266, 91]
+    region:   nw_262
     level:    [45, 49]
   16879879:
     template: Bigclaw_noaggro_MC
     script:   Bigclaw
-    at:       [-129.205, -16.016, 622.136, 190]
+    region:   nw_262
     level:    [45, 49]
   16879880:
     template: Makara
-    at:       [-131.412, -16.045, 616.336, 243]
+    region:   nw_262
     level:    [46, 49]
   16879881:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-163.918, -16.051, 677.137, 126]
+    region:   nw_265
     level:    [47, 51]
   16879882:
     template: Makara
-    at:       [-148.956, -16.097, 646.104, 209]
+    region:   nw_265
     level:    [46, 49]
   16879883:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [-80.352, -24.327, 637.977, 41]
+    region:   nw_267
     level:    [47, 51]
   16879884:
     template: Mantrap
-    at:       [-47.954, -23.917, 669.296, 200]
+    region:   nw_267
     level:    [45, 49]
   16879885:
     template: Mantrap
-    at:       [-42.028, -24.077, 669.514, 155]
+    region:   nw_267
     level:    [45, 49]
   16879886:
     template: Fomor_Dragoon
-    at:       [-84.597, -24.578, 683.707, 201]
+    region:   nw_267
     level:    [49, 51]
   16879887:
     template: Fomors_Wyvern
-    at:       [-88.335, -24.423, 681.606, 224]
+    region:   nw_267
     level:    [42, 44]
   16879888:
     template: Fomor_Bard
-    at:       [-88.051, -24.446, 680.551, 128]
+    region:   nw_267
     level:    [48, 50]
   16879889:
     template: Fomor_Ranger
-    at:       [-87.941, -24.423, 679.798, 135]
+    region:   nw_267
     level:    [49, 51]
   16879890:
     template: Mantrap
-    at:       [5.640, -24.375, 638.011, 226]
+    region:   nw_274
     level:    [45, 49]
   16879891:
     template: Diatryma_MC
     script:   Diatryma
-    at:       [33.021, -24.060, 615.554, 107]
+    region:   nw_275
     level:    [47, 51]
   16879892:
     template: Mantrap
-    at:       [36.091, -24.506, 597.981, 74]
+    region:   nw_275
     level:    [45, 49]
   16879893:
     template: Warder_Aglaia

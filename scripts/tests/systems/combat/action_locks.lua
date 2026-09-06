@@ -8,6 +8,9 @@ describe('Actions during events', function()
         player = xi.test.world:spawnPlayer({ zone = xi.zone.BEAUCEDINE_GLACIER_S, job = xi.job.BLM, level = 75 })
         mob    = player.entities:moveTo('Ruszor')
         player:addSpell(xi.magic.spell.STONE)
+
+        mob:setLevelRange(60, 60)
+        mob:respawn()
     end)
 
     it('lands a spell when not in an event', function()

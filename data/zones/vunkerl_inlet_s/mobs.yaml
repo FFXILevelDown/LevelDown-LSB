@@ -3774,135 +3774,135 @@ spawns:
     level:    [60, 65]
   17117190:
     template: Duriumshell
-    at:       [-50.152, -31.975, 246.623, 65]
+    region:   n_6
     level:    [92, 94]
   17117191:
     template: Duriumshell
-    at:       [-59.628, -31.595, 242.530, 32]
+    region:   n_6
     level:    [92, 94]
   17117192:
     template: Duriumshell
-    at:       [-56.735, -31.563, 247.918, 236]
+    region:   n_6
     level:    [92, 94]
   17117193:
     template: Duriumshell
-    at:       [-39.529, -32.131, 270.237, 8]
+    region:   n_9
     level:    [92, 94]
   17117194:
     template: Duriumshell
-    at:       [-27.421, -31.807, 261.741, 137]
+    region:   n_9
     level:    [92, 94]
   17117195:
     template: Duriumshell
-    at:       [-27.280, -32.560, 270.397, 9]
+    region:   n_9
     level:    [92, 94]
   17117196:
     template: Duriumshell
-    at:       [-32.615, -31.920, 274.477, 229]
+    region:   n_9
     level:    [92, 94]
   17117197:
     template: Duriumshell
-    at:       [-23.240, -31.487, 243.874, 252]
+    region:   n_13
     level:    [92, 94]
   17117198:
     template: Duriumshell
-    at:       [-38.159, -32.381, 243.540, 38]
+    region:   n_13
     level:    [92, 94]
   17117199:
     template: Duriumshell
-    at:       [-22.753, -31.344, 244.878, 33]
+    region:   n_13
     level:    [92, 94]
   17117200:
     template: Duriumshell
-    at:       [4.147, -31.581, 258.785, 167]
+    region:   n_16
     level:    [92, 94]
   17117201:
     template: Duriumshell
-    at:       [-14.024, -32.022, 238.785, 55]
+    region:   n_16
     level:    [92, 94]
   17117202:
     template: Duriumshell
-    at:       [5.642, -32.108, 248.788, 74]
+    region:   n_16
     level:    [92, 94]
   17117203:
     template: Duriumshell
-    at:       [-11.675, -32.161, 237.234, 109]
+    region:   n_16
     level:    [92, 94]
   17117204:
     template: Duriumshell
-    at:       [3.653, -31.745, 261.127, 247]
+    region:   n_20
     level:    [92, 94]
   17117205:
     template: Duriumshell
-    at:       [11.317, -32.091, 276.632, 46]
+    region:   n_20
     level:    [92, 94]
   17117206:
     template: Duriumshell
-    at:       [4.844, -32.089, 267.366, 107]
+    region:   n_20
     level:    [92, 94]
   17117207:
     template: Duriumshell
-    at:       [11.875, -32.068, 268.015, 204]
+    region:   n_20
     level:    [92, 94]
   17117208:
     template: Duriumshell
-    at:       [36.853, -32.505, 278.418, 237]
+    region:   n_24
     level:    [92, 94]
   17117209:
     template: Duriumshell
-    at:       [21.898, -32.022, 267.237, 110]
+    region:   n_24
     level:    [92, 94]
   17117210:
     template: Fierce_Smilodon
-    at:       [193.697, -32.318, 278.806, 129]
+    region:   ne_26
     level:    [67, 70]
   17117211:
     template: Fierce_Smilodon
-    at:       [192.231, -32.064, 270.397, 228]
+    region:   ne_26
     level:    [67, 70]
   17117212:
     template: Fierce_Smilodon
-    at:       [171.724, -31.923, 240.550, 97]
+    region:   ne_28
     level:    [67, 70]
   17117213:
     template: Carrion_Marabou
-    at:       [155.351, -32.441, 285.546, 243]
+    region:   ne_29
     level:    [36, 38]
   17117214:
     template: Carrion_Marabou
-    at:       [199.565, -31.650, 263.165, 58]
+    region:   ne_26
     level:    [36, 38]
   17117215:
     template: Carrion_Marabou
-    at:       [184.794, -31.613, 248.691, 92]
+    region:   ne_28
     level:    [36, 38]
   17117216:
     template: Carrion_Marabou
-    at:       [238.640, -32.412, 240.660, 25]
+    region:   ne_32
     level:    [36, 38]
   17117217:
     template: Carrion_Marabou
-    at:       [162.679, -31.685, 230.834, 191]
+    region:   ne_33
     level:    [36, 38]
   17117218:
     template: Carrion_Marabou
-    at:       [130.303, -32.112, 201.666, 80]
+    region:   ne_34
     level:    [36, 38]
   17117219:
     template: Air_Elemental
-    at:       [169.432, -32.011, 252.051, 219]
+    region:   ne_28
     level:    [45, 45]
   17117220:
     template: Fierce_Smilodon
-    at:       [41.311, -32.629, 67.464, 127]
+    region:   c_36
     level:    [67, 70]
   17117221:
     template: Fierce_Smilodon
-    at:       [7.661, -32.404, 59.004, 246]
+    region:   c_37
     level:    [67, 70]
   17117222:
     template: Fierce_Smilodon
-    at:       [38.787, -40.505, 43.403, 83]
+    region:   c_38
     level:    [67, 70]
   17117223:
     template: Carrion_Marabou
@@ -3910,107 +3910,107 @@ spawns:
     level:    [36, 38]
   17117224:
     template: Carrion_Marabou
-    at:       [126.634, -31.987, 91.288, 10]
+    region:   e_40
     level:    [36, 38]
   17117225:
     template: Carrion_Marabou
-    at:       [87.251, -32.812, 71.858, 123]
+    region:   c_41
     level:    [36, 38]
   17117226:
     template: Carrion_Marabou
-    at:       [83.112, -39.919, 49.283, 60]
+    region:   c_42
     level:    [36, 38]
   17117227:
     template: Carrion_Marabou
-    at:       [43.999, -39.983, 54.115, 139]
+    region:   c_38
     level:    [36, 38]
   17117228:
     template: Carrion_Marabou
-    at:       [19.197, -40.348, 28.410, 106]
+    region:   c_44
     level:    [36, 38]
   17117229:
     template: Air_Elemental
-    at:       [5.513, -32.452, 279.510, 186]
+    region:   n_20
     level:    [45, 45]
   17117230:
     template: Ignis_Djinn
-    at:       [327.028, -40.616, 434.442, 3]
+    region:   ne_46
     level:    [70, 72]
   17117231:
     template: Ignis_Djinn
-    at:       [322.280, -40.537, 397.992, 9]
+    region:   ne_47
     level:    [70, 72]
   17117232:
     template: Ignis_Djinn
-    at:       [394.452, -31.880, 390.463, 2]
+    region:   ne_48
     level:    [70, 72]
   17117233:
     template: Ignis_Djinn
-    at:       [385.453, -31.434, 390.957, 240]
+    region:   ne_48
     level:    [70, 72]
   17117234:
     template: Ignis_Djinn
-    at:       [367.850, -31.859, 385.341, 71]
+    region:   ne_50
     level:    [70, 72]
   17117235:
     template: Ignis_Djinn
-    at:       [386.354, -31.494, 391.855, 72]
+    region:   ne_51
     level:    [70, 72]
   17117236:
     template: Ignis_Djinn
-    at:       [380.778, -31.862, 416.192, 104]
+    region:   ne_52
     level:    [70, 72]
   17117237:
     template: Ignis_Djinn
-    at:       [352.783, -33.248, 448.062, 216]
+    region:   ne_53
     level:    [70, 72]
   17117238:
     template: Gigas_Marine
-    at:       [326.426, -40.431, 391.726, 119]
+    region:   ne_54
     level:    [78, 82]
   17117239:
     template: Gigas_Deckhand
-    at:       [353.804, -32.565, 424.440, 215]
+    region:   ne_55
     level:    [78, 82]
   17117240:
     template: Gigas_Jack
-    at:       [371.105, -31.747, 415.852, 192]
+    region:   ne_56
     level:    [78, 82]
   17117241:
     template: Gigas_Helmsman
-    at:       [406.266, -31.721, 422.772, 74]
+    region:   ne_57
     level:    [78, 82]
   17117242:
     template: Gigass_Tiger
-    at:       [403.113, -31.915, 426.662, 42]
+    region:   ne_57
     level:    [73, 75]
   17117243:
     template: Gigas_Marine
-    at:       [335.407, -32.472, 369.451, 255]
+    region:   ne_59
     level:    [78, 82]
   17117244:
     template: Gigas_Deckhand
-    at:       [367.854, -32.096, 365.942, 2]
+    region:   ne_60
     level:    [78, 82]
   17117245:
     template: Gigas_Jack
-    at:       [383.947, -31.906, 365.172, 183]
+    region:   ne_61
     level:    [78, 82]
   17117246:
     template: Gigas_Helmsman
-    at:       [300.152, -46.485, 318.593, 181]
+    region:   ne_62
     level:    [78, 82]
   17117247:
     template: Gigass_Tiger
-    at:       [300.016, -46.413, 318.661, 54]
+    region:   ne_62
     level:    [73, 75]
   17117248:
     template: Gigas_Deckhand
-    at:       [314.555, -38.184, 276.644, 168]
+    region:   ne_64
     level:    [78, 82]
   17117249:
     template: Gigas_Jack
-    at:       [324.916, -38.278, 284.818, 189]
+    region:   ne_64
     level:    [78, 82]
   17117250:
     template: Pallas
@@ -4030,32 +4030,32 @@ spawns:
     level:    [78, 78]
   17117254:
     template: Goblin_Flagman
-    at:       [-176.211, -39.102, 9.826, 173]
+    region:   c_70
     level:    [66, 69]
   17117255:
     template: Goblin_Grenadier
-    at:       [-176.197, -39.932, -41.142, 18]
+    region:   c_71
     level:    [66, 69]
   17117256:
     template: Goblin_Guerrilla
-    at:       [-198.627, -40.560, -43.960, 28]
+    region:   c_72
     level:    [66, 69]
   17117257:
     template: Goblins_Bat_Vunkerl_Inlet_S
     script:   Goblins_Bat
-    at:       [-201.561, -40.558, -43.860, 12]
+    region:   c_72
     level:    [61, 64]
   17117258:
     template: Goblin_Flagman
-    at:       [-167.118, -39.965, 36.154, 91]
+    region:   c_74
     level:    [66, 69]
   17117259:
     template: Goblin_Grenadier
-    at:       [-168.028, -31.847, 87.464, 196]
+    region:   c_75
     level:    [66, 69]
   17117260:
     template: Goblin_Toxophilite
-    at:       [-215.142, -33.051, -21.692, 228]
+    region:   c_76
     level:    [66, 69]
   17117261:
     template: Goblin_Mine
@@ -4063,32 +4063,32 @@ spawns:
     level:    [63, 63]
   17117262:
     template: Goblin_Flagman
-    at:       [-166.635, -32.065, 100.039, 116]
+    region:   c_78
     level:    [66, 69]
   17117263:
     template: Goblin_Grenadier
-    at:       [-178.566, -32.896, 56.762, 30]
+    region:   c_79
     level:    [66, 69]
   17117264:
     template: Goblin_Guerrilla
-    at:       [-199.945, -32.285, 70.054, 166]
+    region:   c_79
     level:    [66, 69]
   17117265:
     template: Goblins_Bat_Vunkerl_Inlet_S
     script:   Goblins_Bat
-    at:       [-197.611, -32.205, 67.423, 165]
+    region:   c_79
     level:    [61, 64]
   17117266:
     template: Goblin_Flagman
-    at:       [-182.707, -34.813, 20.418, 78]
+    region:   c_82
     level:    [66, 69]
   17117267:
     template: Goblin_Grenadier
-    at:       [-209.337, -31.898, 17.300, 224]
+    region:   c_83
     level:    [66, 69]
   17117268:
     template: Goblin_Toxophilite
-    at:       [-166.255, -40.051, 8.733, 23]
+    region:   c_84
     level:    [66, 69]
   17117269:
     template: Goblin_Mine
@@ -4096,12 +4096,12 @@ spawns:
     level:    [63, 63]
   17117270:
     template: Goblin_Guerrilla
-    at:       [-237.269, -32.009, -26.179, 32]
+    region:   c_86
     level:    [66, 69]
   17117271:
     template: Goblins_Bat_Vunkerl_Inlet_S
     script:   Goblins_Bat
-    at:       [-255.321, -43.429, -65.311, 76]
+    region:   c_86
     level:    [61, 64]
   17117272:
     template: Doom_Soldier
@@ -4113,11 +4113,11 @@ spawns:
     level:    [69, 71]
   17117274:
     template: Doom_Soldier
-    at:       [-174.953, -31.897, 78.903, 159]
+    region:   c_75
     level:    [69, 71]
   17117275:
     template: Doom_Mage
-    at:       [-186.326, -31.860, 81.601, 7]
+    region:   c_79
     level:    [69, 71]
   17117276:
     template: Doom_Soldier
@@ -4125,11 +4125,11 @@ spawns:
     level:    [69, 71]
   17117277:
     template: Doom_Mage
-    at:       [-209.929, -32.581, -6.882, 191]
+    region:   c_83
     level:    [69, 71]
   17117278:
     template: Doom_Soldier
-    at:       [-240.939, -32.471, 1.255, 183]
+    region:   c_94
     level:    [69, 71]
   17117279:
     template: Doom_Mage
@@ -4137,321 +4137,321 @@ spawns:
     level:    [69, 71]
   17117280:
     template: Ignis_Djinn
-    at:       [34.741, -40.136, -86.661, 76]
+    region:   c_96
     level:    [70, 72]
   17117281:
     template: Ignis_Djinn
-    at:       [35.660, -40.113, -87.786, 37]
+    region:   c_96
     level:    [70, 72]
   17117282:
     template: Ignis_Djinn
-    at:       [48.439, -40.541, -74.901, 100]
+    region:   c_96
     level:    [70, 72]
   17117283:
     template: Ignis_Djinn
-    at:       [62.455, -39.714, -107.523, 66]
+    region:   c_99
     level:    [70, 72]
   17117284:
     template: Ignis_Djinn
-    at:       [32.308, -39.787, -102.594, 212]
+    region:   c_100
     level:    [70, 72]
   17117285:
     template: Gigas_Marine
-    at:       [106.731, -40.429, -39.068, 69]
+    region:   e_101
     level:    [78, 82]
   17117286:
     template: Gigas_Deckhand
-    at:       [80.346, -39.700, -58.372, 11]
+    region:   c_102
     level:    [78, 82]
   17117287:
     template: Gigas_Jack
-    at:       [70.754, -40.297, -86.507, 96]
+    region:   c_103
     level:    [78, 82]
   17117288:
     template: Gigas_Helmsman
-    at:       [25.437, -39.989, -106.261, 134]
+    region:   c_100
     level:    [78, 82]
   17117289:
     template: Gigass_Tiger
-    at:       [26.075, -39.942, -105.549, 109]
+    region:   c_100
     level:    [73, 75]
   17117290:
     template: Gigas_Marine
-    at:       [84.637, -39.643, -66.218, 65]
+    region:   c_102
     level:    [78, 82]
   17117291:
     template: Gigas_Deckhand
-    at:       [92.012, -40.152, -61.626, 65]
+    region:   c_102
     level:    [78, 82]
   17117292:
     template: Gigas_Jack
-    at:       [166.221, -38.244, -159.805, 210]
+    region:   e_108
     level:    [78, 82]
   17117293:
     template: Gigas_Deckhand
-    at:       [166.502, -38.263, -158.711, 54]
+    region:   e_108
     level:    [78, 82]
   17117294:
     template: Bugard
-    at:       [33.849, -40.493, -116.289, 196]
+    region:   c_110
     level:    [66, 68]
   17117295:
     template: Warabouc
-    at:       [75.930, -40.153, -108.196, 196]
+    region:   c_110
     level:    [72, 73]
   17117296:
     template: Bugard
-    at:       [-8.999, -39.988, -128.027, 36]
+    region:   c_112
     level:    [66, 68]
   17117297:
     template: Bugard
-    at:       [-30.141, -40.234, -120.744, 24]
+    region:   c_113
     level:    [66, 68]
   17117298:
     template: Bugard
-    at:       [-12.910, -39.727, -153.811, 98]
+    region:   c_113
     level:    [66, 68]
   17117299:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-248.492, -40.081, -197.838, 97]
+    region:   c_115
     level:    [62, 64]
   17117300:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-210.396, -39.623, -184.394, 199]
+    region:   c_116
     level:    [62, 64]
   17117301:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-246.155, -40.090, -194.565, 49]
+    region:   c_116
     level:    [62, 64]
   17117302:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-188.877, -39.238, -210.814, 78]
+    region:   c_118
     level:    [62, 64]
   17117303:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-180.256, -39.637, -196.467, 254]
+    region:   c_118
     level:    [62, 64]
   17117304:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-125.034, -40.265, -205.421, 201]
+    region:   c_120
     level:    [62, 64]
   17117305:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-137.523, -39.534, -333.626, 96]
+    region:   s_121
     level:    [62, 64]
   17117306:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-149.029, -39.873, -344.287, 247]
+    region:   s_122
     level:    [62, 64]
   17117307:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-149.001, -39.963, -344.855, 229]
+    region:   s_122
     level:    [62, 64]
   17117308:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-264.022, -38.604, -253.777, 35]
+    region:   c_124
     level:    [62, 64]
   17117309:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-317.522, -39.833, -255.660, 10]
+    region:   w_125
     level:    [62, 64]
   17117310:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-323.089, -40.383, -246.333, 201]
+    region:   w_125
     level:    [62, 64]
   17117311:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-270.898, -39.046, -265.106, 217]
+    region:   c_127
     level:    [62, 64]
   17117312:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-269.649, -39.973, -279.724, 172]
+    region:   c_127
     level:    [62, 64]
   17117313:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-310.055, -39.777, -288.291, 9]
+    region:   w_129
     level:    [62, 64]
   17117314:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-307.376, -39.883, -281.554, 135]
+    region:   w_129
     level:    [62, 64]
   17117315:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-322.254, -40.434, -323.157, 157]
+    region:   sw_131
     level:    [62, 64]
   17117316:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-282.692, -39.783, -346.404, 128]
+    region:   s_132
     level:    [62, 64]
   17117317:
     template: Robber_Crab_past
     script:   Robber_Crab
-    at:       [-297.439, -39.903, -356.073, 146]
+    region:   s_132
     level:    [62, 64]
   17117318:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-218.853, -39.557, -199.239, 55]
+    region:   c_116
     level:    [64, 66]
   17117319:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-144.048, -39.901, -203.922, 88]
+    region:   c_120
     level:    [64, 66]
   17117320:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-134.291, -38.867, -265.342, 154]
+    region:   c_136
     level:    [64, 66]
   17117321:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-119.501, -40.313, -332.901, 119]
+    region:   s_121
     level:    [64, 66]
   17117322:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-163.347, -39.877, -346.797, 137]
+    region:   s_122
     level:    [64, 66]
   17117323:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-269.634, -39.875, -243.904, 188]
+    region:   c_124
     level:    [64, 66]
   17117324:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-269.777, -39.119, -293.541, 49]
+    region:   c_127
     level:    [64, 66]
   17117325:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-316.223, -39.574, -339.820, 14]
+    region:   sw_131
     level:    [64, 66]
   17117326:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-315.376, -39.605, -338.916, 36]
+    region:   sw_131
     level:    [64, 66]
   17117327:
     template: Stygian_Pugil_past
     script:   Stygian_Pugil
-    at:       [-295.801, -40.101, -348.203, 120]
+    region:   s_132
     level:    [64, 66]
   17117328:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-264.630, -39.855, -161.031, 173]
+    region:   c_144
     level:    [35, 36]
   17117329:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-221.652, -39.806, -179.787, 38]
+    region:   c_145
     level:    [35, 36]
   17117330:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-219.279, -39.709, -191.289, 26]
+    region:   c_116
     level:    [35, 36]
   17117331:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-118.235, -39.704, -223.365]
+    region:   c_147
     level:    [35, 36]
   17117332:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-114.770, -40.465, -284.926, 118]
+    region:   c_148
     level:    [35, 36]
   17117333:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-116.700, -40.210, -343.064, 249]
+    region:   s_121
     level:    [35, 36]
   17117334:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-284.070, -39.886, -226.337, 213]
+    region:   c_124
     level:    [35, 36]
   17117335:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-310.313, -39.752, -260.541, 35]
+    region:   w_125
     level:    [35, 36]
   17117336:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-320.241, -39.647, -260.221, 66]
+    region:   w_125
     level:    [35, 36]
   17117337:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-314.596, -39.814, -268.920, 185]
+    region:   w_153
     level:    [35, 36]
   17117338:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-308.273, -40.000, -323.043, 91]
+    region:   sw_131
     level:    [35, 36]
   17117339:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-271.141, -39.726, -351.230, 58]
+    region:   s_132
     level:    [35, 36]
   17117340:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-307.554, -39.770, -353.329, 164]
+    region:   sw_156
     level:    [35, 36]
   17117341:
     template: Haunt
-    at:       [-126.209, -39.770, -212.145, 27]
+    region:   c_120
     level:    [65, 69]
   17117342:
     template: Haunt
-    at:       [-292.054, -39.915, -269.683, 74]
+    region:   c_127
     level:    [65, 69]
   17117343:
     template: Thunder_Elemental
-    at:       [-212.357, -39.864, -171.096, 58]
+    region:   c_145
     level:    [60, 60]
   17117344:
     template: Thunder_Elemental
-    at:       [-127.672, -39.955, -336.280, 219]
+    region:   s_121
     level:    [60, 60]
   17117345:
     template: Ignis_Djinn
-    at:       [-413.757, -47.789, -357.833, 213]
+    region:   sw_161
     level:    [70, 72]
   17117346:
     template: Ignis_Djinn
-    at:       [-427.362, -47.977, -356.292, 235]
+    region:   sw_162
     level:    [70, 72]
   17117347:
     template: Ignis_Djinn
-    at:       [-451.304, -48.440, -316.139, 80]
+    region:   sw_163
     level:    [70, 72]
   17117348:
     template: Ignis_Djinn
-    at:       [-439.582, -48.483, -320.277, 185]
+    region:   sw_163
     level:    [70, 72]
   17117349:
     template: Big_Bang
@@ -4459,289 +4459,289 @@ spawns:
     level:    [75, 75]
   17117350:
     template: Ignis_Djinn
-    at:       [-409.901, -48.171, -355.021, 175]
+    region:   sw_161
     level:    [70, 72]
   17117351:
     template: Ignis_Djinn
-    at:       [-431.702, -47.981, -364.278, 56]
+    region:   sw_162
     level:    [70, 72]
   17117352:
     template: Treant
-    at:       [-412.797, -47.867, -356.811, 83]
+    region:   sw_168
     level:    [73, 76]
   17117353:
     template: Treant
-    at:       [-440.813, -47.693, -301.884, 65]
+    region:   w_169
     level:    [73, 76]
   17117354:
     template: Treant
-    at:       [-467.112, -41.166, -351.075, 33]
+    region:   sw_170
     level:    [73, 76]
   17117355:
     template: Treant
-    at:       [-471.138, -40.617, -320.379, 115]
+    region:   sw_171
     level:    [73, 76]
   17117356:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [-416.107, -47.720, -363.042, 123]
+    region:   sw_168
     level:    [71, 74]
   17117357:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [-410.268, -48.288, -365.734, 49]
+    region:   sw_168
     level:    [71, 74]
   17117358:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [-407.994, -48.379, -366.057, 110]
+    region:   sw_168
     level:    [71, 74]
   17117359:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [-437.963, -48.496, -321.230, 185]
+    region:   sw_163
     level:    [71, 74]
   17117360:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [-449.039, -48.791, -313.440, 203]
+    region:   sw_163
     level:    [71, 74]
   17117361:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [-442.619, -47.545, -333.914, 223]
+    region:   sw_163
     level:    [71, 74]
   17117362:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [-466.745, -41.011, -313.611, 184]
+    region:   sw_171
     level:    [71, 74]
   17117363:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [-471.431, -40.527, -313.433, 161]
+    region:   sw_171
     level:    [71, 74]
   17117364:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [-466.274, -41.048, -313.337, 181]
+    region:   sw_171
     level:    [71, 74]
   17117365:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [-475.568, -40.477, -354.597, 105]
+    region:   sw_181
     level:    [71, 74]
   17117366:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [-472.256, -40.473, -358.578, 20]
+    region:   sw_181
     level:    [71, 74]
   17117367:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [-464.377, -40.840, -357.944, 30]
+    region:   sw_181
     level:    [71, 74]
   17117368:
     template: Doom_Soldier
-    at:       [-438.123, -48.453, -356.801, 54]
+    region:   sw_184
     level:    [69, 71]
   17117369:
     template: Doom_Mage
-    at:       [-469.884, -40.762, -344.419, 206]
+    region:   sw_170
     level:    [69, 71]
   17117370:
     template: Treant
-    at:       [-396.738, -48.234, -411.038, 63]
+    region:   sw_186
     level:    [73, 76]
   17117371:
     template: Treant
-    at:       [-405.066, -47.683, -421.013, 230]
+    region:   sw_187
     level:    [73, 76]
   17117372:
     template: Ignis_Djinn
-    at:       [-422.680, -47.815, -448.159, 42]
+    region:   sw_188
     level:    [70, 72]
   17117373:
     template: Ignis_Djinn
-    at:       [-427.357, -47.922, -449.903, 80]
+    region:   sw_188
     level:    [70, 72]
   17117374:
     template: Ignis_Djinn
-    at:       [-621.901, -49.122, -451.880, 58]
+    region:   sw_190
     level:    [70, 72]
   17117375:
     template: Ignis_Djinn
-    at:       [-624.513, -48.423, -443.529, 127]
+    region:   sw_190
     level:    [70, 72]
   17117376:
     template: Ignis_Djinn
-    at:       [-640.198, -47.670, -462.381, 127]
+    region:   sw_190
     level:    [70, 72]
   17117377:
     template: Ignis_Djinn
-    at:       [-632.276, -48.309, -474.281, 132]
+    region:   sw_193
     level:    [70, 72]
   17117378:
     template: Ignis_Djinn
-    at:       [-632.915, -48.358, -474.309, 131]
+    region:   sw_193
     level:    [70, 72]
   17117379:
     template: Ignis_Djinn
-    at:       [-629.102, -47.955, -433.838, 2]
+    region:   sw_195
     level:    [70, 72]
   17117380:
     template: Ignis_Djinn
-    at:       [-637.183, -47.636, -420.981, 182]
+    region:   sw_195
     level:    [70, 72]
   17117381:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [-445.381, -48.629, -471.393, 235]
+    region:   sw_197
     level:    [71, 74]
   17117382:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [-441.417, -48.469, -482.740, 2]
+    region:   sw_197
     level:    [71, 74]
   17117383:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [-453.990, -48.512, -474.328, 140]
+    region:   sw_197
     level:    [71, 74]
   17117384:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [-523.135, -40.460, -478.988, 131]
+    region:   sw_200
     level:    [71, 74]
   17117385:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [-514.695, -40.770, -485.859, 138]
+    region:   sw_200
     level:    [71, 74]
   17117386:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [-514.956, -40.275, -471.689, 137]
+    region:   sw_200
     level:    [71, 74]
   17117387:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [-581.753, -40.294, -476.666, 247]
+    region:   sw_203
     level:    [71, 74]
   17117388:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [-575.509, -39.923, -481.025, 102]
+    region:   sw_203
     level:    [71, 74]
   17117389:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [-570.307, -39.860, -484.577, 117]
+    region:   sw_203
     level:    [71, 74]
   17117390:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [-588.655, -47.201, -453.299, 36]
+    region:   sw_206
     level:    [71, 74]
   17117391:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [-580.467, -45.916, -453.622, 2]
+    region:   sw_206
     level:    [71, 74]
   17117392:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [-586.403, -47.630, -446.366, 164]
+    region:   sw_206
     level:    [71, 74]
   17117393:
     template: Gigas_Marine
-    at:       [-603.906, -40.600, -564.851, 161]
+    region:   sw_209
     level:    [78, 82]
   17117394:
     template: Gigas_Jack
-    at:       [-602.835, -40.870, -541.784, 208]
+    region:   sw_209
     level:    [78, 82]
   17117395:
     template: Gigas_Helmsman
-    at:       [-593.233, -41.625, -533.889, 166]
+    region:   sw_209
     level:    [78, 82]
   17117396:
     template: Gigass_Tiger
-    at:       [-590.414, -41.417, -537.865, 168]
+    region:   sw_209
     level:    [73, 75]
   17117397:
     template: Gigas_Marine
-    at:       [-574.007, -48.135, -569.379, 168]
+    region:   sw_213
     level:    [78, 82]
   17117398:
     template: Gigas_Deckhand
-    at:       [-566.220, -48.424, -568.611, 167]
+    region:   sw_213
     level:    [78, 82]
   17117399:
     template: Gigas_Jack
-    at:       [-573.250, -48.068, -567.084, 121]
+    region:   sw_213
     level:    [78, 82]
   17117400:
     template: Gigas_Helmsman
-    at:       [-515.525, -48.514, -597.940, 195]
+    region:   sw_216
     level:    [78, 82]
   17117401:
     template: Gigass_Tiger
-    at:       [-517.192, -48.588, -598.908, 43]
+    region:   sw_216
     level:    [73, 75]
   17117402:
     template: Gigas_Deckhand
-    at:       [-559.258, -48.502, -598.878, 23]
+    region:   sw_218
     level:    [78, 82]
   17117403:
     template: Gigas_Jack
-    at:       [-552.461, -48.465, -592.062, 192]
+    region:   sw_218
     level:    [78, 82]
   17117404:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-489.298, -40.255, -484.423, 121]
+    region:   sw_220
     level:    [74, 78]
   17117405:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-488.242, -40.241, -436.227, 134]
+    region:   sw_221
     level:    [74, 78]
   17117406:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-506.383, -40.087, -445.004, 154]
+    region:   sw_222
     level:    [74, 78]
   17117407:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-532.387, -39.935, -469.248, 225]
+    region:   sw_223
     level:    [74, 78]
   17117408:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-606.486, -40.564, -475.352, 229]
+    region:   sw_224
     level:    [74, 78]
   17117409:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-568.796, -48.826, -584.379, 154]
+    region:   sw_218
     level:    [74, 78]
   17117410:
     template: Doom_Soldier
-    at:       [-555.655, -40.435, -481.262, 101]
+    region:   sw_223
     level:    [69, 71]
   17117411:
     template: Doom_Mage
-    at:       [-477.424, -40.267, -452.126, 9]
+    region:   sw_221
     level:    [69, 71]
   17117412:
     template: Doom_Soldier
-    at:       [-598.026, -40.557, -570.583, 31]
+    region:   sw_209
     level:    [69, 71]
   17117413:
     template: Doom_Mage
-    at:       [-570.572, -49.003, -574.953, 72]
+    region:   sw_213
     level:    [69, 71]
   17117414:
     template: Gigas_Deckhand
@@ -4757,363 +4757,363 @@ spawns:
     level:    [73, 75]
   17117417:
     template: Gigas_Marine
-    at:       [-675.859, -46.212, -565.384, 131]
+    region:   sw_233
     level:    [78, 82]
   17117418:
     template: Gigas_Deckhand
-    at:       [-674.824, -46.180, -561.360, 201]
+    region:   sw_233
     level:    [78, 82]
   17117419:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-272.077, -40.162, -608.201, 60]
+    region:   s_235
     level:    [74, 78]
   17117420:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-357.684, -40.502, -644.346, 8]
+    region:   sw_236
     level:    [74, 78]
   17117421:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-237.805, -40.189, -713.757, 83]
+    region:   s_237
     level:    [74, 78]
   17117422:
     template: Judgmental_Julika
-    at:       [-241.488, -39.708, -697.695, 55]
+    region:   s_237
     level:    [82, 82]
   17117423:
     template: Demonic_Rose_past
     script:   Demonic_Rose
-    at:       [-236.674, -40.464, -634.600, 139]
+    region:   s_239
     level:    [74, 78]
   17117424:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-312.542, -47.463, -574.477, 241]
+    region:   sw_240
     level:    [35, 37]
   17117425:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-295.363, -48.700, -575.072, 185]
+    region:   s_241
     level:    [35, 37]
   17117426:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-337.380, -39.967, -620.338, 35]
+    region:   sw_242
     level:    [35, 37]
   17117427:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-245.616, -39.964, -608.118, 73]
+    region:   s_243
     level:    [35, 37]
   17117428:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-322.794, -40.479, -687.778, 24]
+    region:   sw_244
     level:    [35, 37]
   17117429:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-262.819, -39.676, -715.430, 232]
+    region:   s_245
     level:    [35, 37]
   17117430:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-246.176, -40.221, -679.913, 35]
+    region:   s_246
     level:    [35, 37]
   17117431:
     template: Treant
-    at:       [-180.002, -47.597, -604.536, 205]
+    region:   s_247
     level:    [73, 76]
   17117432:
     template: Treant
-    at:       [-197.944, -47.613, -618.251, 164]
+    region:   s_248
     level:    [73, 76]
   17117433:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-215.138, -48.400, -589.659, 165]
+    region:   s_249
     level:    [35, 36]
   17117434:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-193.796, -47.706, -617.418, 27]
+    region:   s_248
     level:    [35, 36]
   17117435:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-213.171, -47.993, -640.982, 27]
+    region:   s_251
     level:    [35, 36]
   17117436:
     template: Haunt
-    at:       [-236.795, -40.333, -686.935, 92]
+    region:   s_246
     level:    [65, 69]
   17117437:
     template: Thunder_Elemental
-    at:       [-230.769, -39.899, -186.536, 99]
+    region:   c_116
     level:    [60, 60]
   17117438:
     template: Thunder_Elemental
-    at:       [-128.372, -39.141, -261.112, 182]
+    region:   c_136
     level:    [60, 60]
   17117439:
     template: Treant
-    at:       [-50.260, -40.004, -444.283, 143]
+    region:   s_255
     level:    [73, 76]
   17117440:
     template: Treant
-    at:       [-57.220, -40.175, -478.704, 240]
+    region:   s_256
     level:    [73, 76]
   17117441:
     template: Treant
-    at:       [-82.388, -40.538, -473.677, 89]
+    region:   s_257
     level:    [73, 76]
   17117442:
     template: Treant
-    at:       [-116.693, -40.419, -477.206, 203]
+    region:   s_258
     level:    [73, 76]
   17117443:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-34.518, -41.129, -451.553, 116]
+    region:   s_255
     level:    [35, 36]
   17117444:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-44.156, -40.428, -436.753, 165]
+    region:   s_255
     level:    [35, 36]
   17117445:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-44.808, -39.979, -470.241, 221]
+    region:   s_256
     level:    [35, 36]
   17117446:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-56.178, -39.851, -472.345, 90]
+    region:   s_256
     level:    [35, 36]
   17117447:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-91.927, -40.186, -478.403, 182]
+    region:   s_257
     level:    [35, 36]
   17117448:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-80.604, -40.510, -479.278, 41]
+    region:   s_257
     level:    [35, 36]
   17117449:
     template: Ignis_Djinn
-    at:       [-70.044, -39.823, -448.018, 230]
+    region:   s_265
     level:    [70, 72]
   17117450:
     template: Ignis_Djinn
-    at:       [-89.435, -40.042, -455.523, 126]
+    region:   s_265
     level:    [70, 72]
   17117451:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [81.719, -48.694, -450.380, 249]
+    region:   s_267
     level:    [71, 74]
   17117452:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [71.678, -48.160, -469.352, 37]
+    region:   s_267
     level:    [71, 74]
   17117453:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [75.819, -48.046, -467.925, 68]
+    region:   s_267
     level:    [71, 74]
   17117454:
     template: Orcish_Hexspinner_past
     script:   Orcish_Hexspinner
-    at:       [85.743, -47.954, -428.071, 163]
+    region:   s_270
     level:    [71, 74]
   17117455:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [80.068, -47.891, -427.083, 129]
+    region:   s_270
     level:    [71, 74]
   17117456:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [100.185, -47.799, -409.927, 28]
+    region:   s_272
     level:    [71, 74]
   17117457:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [85.159, -48.087, -412.707, 197]
+    region:   s_272
     level:    [71, 74]
   17117458:
     template: Orcish_Zerker_past
     script:   Orcish_Zerker
-    at:       [112.906, -47.789, -428.747, 92]
+    region:   se_274
     level:    [71, 74]
   17117459:
     template: Orcish_Footsoldier_past
     script:   Orcish_Footsoldier
-    at:       [102.599, -47.548, -433.386, 95]
+    region:   se_274
     level:    [71, 74]
   17117460:
     template: Orcish_Gladiator_past
     script:   Orcish_Gladiator
-    at:       [121.999, -48.256, -431.548, 158]
+    region:   se_274
     level:    [71, 74]
   17117461:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [129.627, -41.078, -466.652, 244]
+    region:   se_277
     level:    [58, 60]
   17117462:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [117.129, -40.467, -486.463, 23]
+    region:   se_278
     level:    [58, 60]
   17117463:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [128.210, -39.824, -505.231, 190]
+    region:   se_279
     level:    [58, 60]
   17117464:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [134.364, -39.976, -530.795, 97]
+    region:   se_280
     level:    [58, 60]
   17117465:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [146.716, -39.911, -520.925, 73]
+    region:   se_281
     level:    [58, 60]
   17117466:
     template: Dragonfly_VIS_RFS
     script:   Dragonfly
-    at:       [150.964, -39.823, -491.601, 196]
+    region:   se_282
     level:    [58, 60]
   17117467:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [121.865, -40.601, -467.953, 173]
+    region:   se_277
     level:    [75, 78]
   17117468:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [131.029, -40.707, -475.421, 79]
+    region:   se_277
     level:    [75, 78]
   17117469:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [131.564, -39.813, -505.305, 205]
+    region:   se_279
     level:    [75, 78]
   17117470:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [127.691, -40.105, -509.255, 184]
+    region:   se_279
     level:    [75, 78]
   17117471:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [119.843, -39.330, -495.947, 193]
+    region:   se_279
     level:    [75, 78]
   17117472:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [120.681, -40.519, -560.878, 168]
+    region:   se_288
     level:    [75, 78]
   17117473:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [118.517, -40.713, -564.351, 3]
+    region:   se_288
     level:    [75, 78]
   17117474:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [140.730, -40.492, -474.959, 225]
+    region:   se_282
     level:    [75, 78]
   17117475:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [146.985, -41.135, -474.443, 251]
+    region:   se_282
     level:    [75, 78]
   17117476:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [105.590, -40.875, -481.535, 141]
+    region:   se_278
     level:    [75, 78]
   17117477:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [132.824, -39.926, -523.902, 88]
+    region:   se_280
     level:    [75, 78]
   17117478:
     template: Chigoe_past_Small
     script:   Chigoe
-    at:       [149.618, -40.136, -511.065, 51]
+    region:   se_281
     level:    [75, 78]
   17117479:
     template: Goliath_Beetle
-    at:       [-365.195, -32.656, -79.459, 59]
+    region:   w_295
     level:    [34, 36]
   17117480:
     template: Goliath_Beetle
-    at:       [-379.094, -31.697, -44.799, 191]
+    region:   w_296
     level:    [34, 36]
   17117481:
     template: Goliath_Beetle
-    at:       [-370.310, -31.917, -54.585, 5]
+    region:   w_296
     level:    [34, 36]
   17117482:
     template: Goliath_Beetle
-    at:       [-385.196, -30.916, -27.453, 244]
+    region:   w_298
     level:    [34, 36]
   17117483:
     template: Goliath_Beetle
-    at:       [-411.658, -29.190, -32.997, 88]
+    region:   w_299
     level:    [34, 36]
   17117484:
     template: Goliath_Beetle
-    at:       [-430.671, -32.175, 41.244, 52]
+    region:   w_300
     level:    [34, 36]
   17117485:
     template: Goliath_Beetle
-    at:       [-445.285, -32.006, 37.259, 34]
+    region:   w_301
     level:    [34, 36]
   17117486:
     template: Goliath_Beetle
-    at:       [-473.860, -31.385, 24.990, 106]
+    region:   w_302
     level:    [34, 36]
   17117487:
     template: Goliath_Beetle
-    at:       [-465.605, -29.799, 23.567, 255]
+    region:   w_302
     level:    [34, 36]
   17117488:
     template: Goliath_Beetle
-    at:       [-481.073, -31.889, 12.872, 202]
+    region:   w_304
     level:    [34, 36]
   17117489:
     template: Goliath_Beetle
-    at:       [-467.958, -30.461, 7.842, 192]
+    region:   w_304
     level:    [34, 36]
   17117490:
     template: Carrion_Marabou
-    at:       [-356.610, -32.460, -43.694, 201]
+    region:   w_296
     level:    [36, 38]
   17117491:
     template: Carrion_Marabou
-    at:       [-378.372, -31.089, -29.371, 17]
+    region:   w_298
     level:    [36, 38]
   17117492:
     template: Carrion_Marabou
-    at:       [-417.721, -31.437, 29.799, 225]
+    region:   w_308
     level:    [36, 38]
   17117493:
     template: Carrion_Marabou
-    at:       [-479.548, -32.474, 36.873, 249]
+    region:   w_302
     level:    [36, 38]
   17117494:
     template: Carrion_Marabou
-    at:       [-477.596, -31.898, 6.485, 19]
+    region:   w_304
     level:    [36, 38]
   17117495:
     template: Goliath_Beetle
@@ -5121,7 +5121,7 @@ spawns:
     level:    [34, 36]
   17117496:
     template: Goliath_Beetle
-    at:       [-341.033, -31.696, 282.909, 126]
+    region:   nw_312
     level:    [34, 36]
   17117497:
     template: Goliath_Beetle
@@ -5129,27 +5129,27 @@ spawns:
     level:    [34, 36]
   17117498:
     template: Goliath_Beetle
-    at:       [-281.680, -32.395, 277.489, 2]
+    region:   n_314
     level:    [34, 36]
   17117499:
     template: Goliath_Beetle
-    at:       [-365.619, -31.076, 342.433, 150]
+    region:   nw_315
     level:    [34, 36]
   17117500:
     template: Goliath_Beetle
-    at:       [-375.274, -32.052, 361.822, 151]
+    region:   nw_316
     level:    [34, 36]
   17117501:
     template: Goliath_Beetle
-    at:       [-389.687, -30.914, 350.881, 98]
+    region:   nw_317
     level:    [34, 36]
   17117502:
     template: Goliath_Beetle
-    at:       [-410.295, -29.942, 365.563, 209]
+    region:   nw_318
     level:    [34, 36]
   17117503:
     template: Goliath_Beetle
-    at:       [-395.382, -31.937, 358.505, 73]
+    region:   nw_318
     level:    [34, 36]
   17117504:
     template: Carrion_Marabou
@@ -5157,79 +5157,79 @@ spawns:
     level:    [36, 38]
   17117505:
     template: Carrion_Marabou
-    at:       [-343.884, -31.693, 283.190, 80]
+    region:   nw_312
     level:    [36, 38]
   17117506:
     template: Carrion_Marabou
-    at:       [-364.534, -31.664, 294.235, 173]
+    region:   nw_322
     level:    [36, 38]
   17117507:
     template: Carrion_Marabou
-    at:       [-373.560, -29.392, 324.408, 60]
+    region:   nw_315
     level:    [36, 38]
   17117508:
     template: Carrion_Marabou
-    at:       [-385.678, -31.341, 353.388, 198]
+    region:   nw_317
     level:    [36, 38]
   17117509:
     template: Goliath_Beetle
-    at:       [-461.043, -31.644, 203.045, 129]
+    region:   nw_325
     level:    [34, 36]
   17117510:
     template: Goliath_Beetle
-    at:       [-445.446, -32.420, 201.351, 133]
+    region:   nw_326
     level:    [34, 36]
   17117511:
     template: Goliath_Beetle
-    at:       [-481.736, -31.620, 217.727, 5]
+    region:   nw_327
     level:    [34, 36]
   17117512:
     template: Goliath_Beetle
-    at:       [-470.562, -31.864, 223.763, 162]
+    region:   nw_328
     level:    [34, 36]
   17117513:
     template: Goliath_Beetle
-    at:       [-442.289, -31.954, 228.658, 244]
+    region:   nw_329
     level:    [34, 36]
   17117514:
     template: Goliath_Beetle
-    at:       [-451.211, -32.259, 244.746, 176]
+    region:   nw_330
     level:    [34, 36]
   17117515:
     template: Goliath_Beetle
-    at:       [-432.022, -31.493, 261.056]
+    region:   nw_331
     level:    [34, 36]
   17117516:
     template: Goliath_Beetle
-    at:       [-435.769, -29.689, 289.748, 124]
+    region:   nw_332
     level:    [34, 36]
   17117517:
     template: Gnole
-    at:       [-520.211, -40.193, 169.788, 155]
+    region:   w_333
     level:    [66, 68]
   17117518:
     template: Gnole
-    at:       [-500.324, -46.764, 128.231, 63]
+    region:   w_334
     level:    [66, 68]
   17117519:
     template: Gnole
-    at:       [-403.772, -32.467, 197.865, 159]
+    region:   nw_335
     level:    [66, 68]
   17117520:
     template: Gnole
-    at:       [-499.778, -46.758, 128.808, 70]
+    region:   nw_327
     level:    [66, 68]
   17117521:
     template: Gnole
-    at:       [-477.938, -32.472, 237.775, 38]
+    region:   nw_337
     level:    [66, 68]
   17117522:
     template: Gnole
-    at:       [-437.568, -31.741, 250.200, 67]
+    region:   nw_331
     level:    [66, 68]
   17117523:
     template: Air_Elemental
-    at:       [-456.564, -31.658, 226.708, 241]
+    region:   nw_328
     level:    [45, 45]
   17117524:
     template: Dire_Bat_Vunkerl Inlet_S
@@ -5239,12 +5239,12 @@ spawns:
   17117525:
     template: Dire_Bat_Vunkerl Inlet_S
     script:   Dire_Bat
-    at:       [-99.211, -49.415, 627.964, 65]
+    region:   n_341
     level:    [61, 63]
   17117526:
     template: Dire_Bat_Vunkerl Inlet_S
     script:   Dire_Bat
-    at:       [254.634, -49.772, 378.882, 249]
+    region:   ne_342
     level:    [61, 63]
   17117527:
     template: Dire_Bat_Vunkerl Inlet_S
@@ -5274,17 +5274,17 @@ spawns:
   17117532:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-383.622, -54.671, -546.223, 174]
+    region:   sw_348
     level:    [35, 37]
   17117533:
     template: Royal_Leech_past
     script:   Royal_Leech
-    at:       [-383.758, -50.897, -695.008, 123]
+    region:   sw_349
     level:    [35, 37]
   17117534:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-335.983, -50.926, -383.005, 66]
+    region:   sw_350
     level:    [35, 36]
   17117535:
     template: Wandering_Sapling_past
@@ -5299,22 +5299,22 @@ spawns:
   17117537:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-138.002, -54.782, -549.751, 205]
+    region:   s_353
     level:    [35, 36]
   17117538:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-143.007, -53.423, -710.409, 56]
+    region:   s_354
     level:    [35, 36]
   17117539:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [19.015, -54.952, -464.727, 51]
+    region:   s_355
     level:    [35, 36]
   17117540:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-383.284, -54.033, -341.277, 79]
+    region:   sw_356
     level:    [35, 36]
   17117541:
     template: Wandering_Sapling_past
@@ -5329,31 +5329,31 @@ spawns:
   17117543:
     template: Wandering_Sapling_past
     script:   Wandering_Sapling
-    at:       [-44.832, -54.746, -260.010, 127]
+    region:   c_359
     level:    [35, 36]
   17117544:
     template: Sprite
-    at:       [-242.235, -24.401, 516.927, 128]
+    region:   n_360
     level:    [66, 68]
   17117545:
     template: Sprite
-    at:       [-27.202, -43.359, 23.083, 118]
+    region:   c_361
     level:    [66, 68]
   17117546:
     template: Sprite
-    at:       [-84.035, -48.437, -284.206, 236]
+    region:   c_362
     level:    [66, 68]
   17117547:
     template: Sprite
-    at:       [-435.162, -32.132, 278.918, 127]
+    region:   nw_363
     level:    [66, 68]
   17117548:
     template: Sprite
-    at:       [-425.942, -47.774, -447.187, 247]
+    region:   sw_364
     level:    [66, 68]
   17117549:
     template: Sprite
-    at:       [-140.326, -54.759, -571.395, 64]
+    region:   s_365
     level:    [66, 68]
   17117550:
     template: Orcish_Transporter
@@ -5411,30 +5411,39 @@ spawns:
     template: Valaineral_R_Davilles
   17117568:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117569:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117570:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117571:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117572:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117573:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117574:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117575:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117576:
     template: Royal_Guard
+    region:   c_384
     level:    [1, 1]
   17117577:
     template: Leonoyne
@@ -5463,61 +5472,70 @@ spawns:
     at:       [-165.440, -41.880, -279.434, 11]
   17117588:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117589:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117590:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117591:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117592:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117593:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117594:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117595:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117596:
     template: Scarlet_Boar_Esquire
+    region:   c_384
   17117597:
     template: Feldrautte_I_Rouhent
-    at:       [-186.187, -40.373, -275.949, 189]
+    region:   c_384
     level:    [70, 70]
   17117598:
     template: Norvallen_Knight
-    at:       [-205.407, -40.096, -293.827, 104]
+    region:   c_384
     level:    [70, 70]
   17117599:
     template: Norvallen_Knight
-    at:       [-209.007, -39.644, -264.296, 161]
+    region:   c_384
     level:    [70, 70]
   17117600:
     template: Norvallen_Knight
-    at:       [-203.078, -40.306, -267.499, 21]
+    region:   c_384
     level:    [70, 70]
   17117601:
     template: Norvallen_Knight
-    at:       [-189.915, -40.471, -278.502, 101]
+    region:   c_384
     level:    [70, 70]
   17117602:
     template: Norvallen_Knight
-    at:       [-176.019, -40.824, -279.265]
+    region:   c_384
     level:    [70, 70]
   17117603:
     template: Norvallen_Knight
-    at:       [-200.819, -40.042, -294.892, 125]
+    region:   c_384
     level:    [70, 70]
   17117604:
     template: Norvallen_Knight
-    at:       [-201.386, -40.105, -293.902, 106]
+    region:   c_384
     level:    [70, 70]
   17117605:
     template: Norvallen_Knight
-    at:       [-210.673, -39.957, -289.872, 18]
+    region:   c_384
     level:    [70, 70]
   17117606:
     template: Norvallen_Knight
-    at:       [-206.126, -40.041, -293.164, 108]
+    region:   c_384
     level:    [70, 70]
   17117607:
     template: Yrvaulair_S_Cousseraux
@@ -5550,26 +5568,35 @@ spawns:
     level:    [1, 1]
   17117617:
     template: Noillurie
-    at:       [-181.913, -40.000, -273.755, 73]
+    region:   c_433
     level:    [1, 1]
   17117618:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117619:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117620:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117621:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117622:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117623:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117624:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117625:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117626:
     template: Red_Rose_Condottiere
+    region:   c_384
   17117627:
     template: Gold_Badger_Esquire
     at:       [-368.820, -31.963, -54.120, 19]
@@ -5678,27 +5705,27 @@ spawns:
     level:    [1, 1]
   17117659:
     template: Royal_Palliator
-    at:       [-132.072, -38.826, -297.567, 42]
+    region:   c_384
     level:    [60, 60]
   17117660:
     template: Royal_Palliator
-    at:       [-119.911, -40.644, -290.418, 234]
+    region:   c_384
     level:    [60, 60]
   17117661:
     template: Royal_Palliator
-    at:       [-130.918, -38.917, -298.615, 165]
+    region:   c_384
     level:    [60, 60]
   17117662:
     template: Royal_Palliator
-    at:       [-134.397, -39.089, -270.524, 197]
+    region:   c_384
     level:    [60, 60]
   17117663:
     template: Royal_Palliator
-    at:       [-145.949, -41.880, -281.328, 229]
+    region:   c_384
     level:    [60, 60]
   17117664:
     template: Royal_Palliator
-    at:       [-185.787, -40.223, -278.103, 6]
+    region:   c_384
     level:    [60, 60]
   17117665:
     template: Royal_Provisioner
@@ -5783,6 +5810,7 @@ spawns:
     level:    [60, 60]
   17117691:
     template: Spinebeak_Neckchopper
+    region:   c_507
     level:    [60, 60]
   17117692:
     template: Spinebeak_Neckchopper
@@ -5829,53 +5857,66 @@ spawns:
     template: Clan_Reaper_Grunt
   17117709:
     template: Alpha_Gnole_Anders
-    at:       [-197.654, -40.000, -262.041, 246]
+    region:   c_525
   17117710:
     template: Anderss_Guard
+    region:   c_525
     level:    [60, 60]
   17117711:
     template: Anderss_Guard
+    region:   c_525
     level:    [60, 60]
   17117712:
     template: Moonfang_Warrior
+    region:   c_525
     level:    [60, 60]
   17117713:
     template: Moonfang_Warrior
+    region:   c_525
     level:    [60, 60]
   17117714:
     template: Moonfang_Warrior
+    region:   c_525
     level:    [60, 60]
   17117715:
     template: Moonfang_Warrior
+    region:   c_525
     level:    [60, 60]
   17117716:
     template: Moonfang_Warrior
+    region:   c_532
     level:    [60, 60]
   17117717:
     template: Moonfang_Warrior
     level:    [60, 60]
   17117718:
     template: Moonfang_Warrior
+    region:   c_532
     level:    [60, 60]
   17117719:
     template: Moonfang_Warrior
+    region:   c_532
     level:    [60, 60]
   17117720:
     template: Moonfang_Warrior
+    region:   c_532
     level:    [60, 60]
   17117721:
     template: Three-eyed_Prozpuz_past
     script:   Three-eyed_Prozpuz
-    at:       [-192.465, -40.364, -285.935, 113]
+    region:   c_507
     level:    [60, 60]
   17117722:
     template: Throatripper_Predator
+    region:   c_507
     level:    [60, 60]
   17117723:
     template: Throatripper_Predator
+    region:   c_507
     level:    [60, 60]
   17117724:
     template: Throatripper_Predator
+    region:   c_507
     level:    [60, 60]
   17117725:
     template: Throatripper_Predator

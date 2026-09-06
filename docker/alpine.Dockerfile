@@ -167,7 +167,6 @@ RUN --mount=type=cache,target=/xiadmin/build,uid=$UID,gid=$GID,id=build-alpine-$
     --mount=type=bind,source=.git,target=/server/.git \
     --mount=type=bind,source=sql,target=/server/sql <<EOF
 set -eo pipefail
-cp -p /xiadmin/build/version.cpp /server/src/common/ 2> /dev/null || true
 cp -p /xiadmin/build/xi_* /server/ 2> /dev/null || true
 
 if [[ $COMPILER == clang* || $ENABLE_CLANG_TIDY == ON ]]; then
@@ -188,7 +187,6 @@ cmake --build /xiadmin/build -j$(nproc) | tee build.log
 ccache -s
 
 cp -p /server/xi_* /xiadmin/build/
-cp -p /server/src/common/version.cpp /xiadmin/build/
 mv xi_map_tracy xi_map 2> /dev/null || true
 EOF
 

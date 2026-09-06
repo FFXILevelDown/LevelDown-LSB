@@ -2159,23 +2159,23 @@ spawns:
     level:    [38, 40]
   17268742:
     template: Hill_Lizard
-    at:       [479.938, 7.667, -286.004, 40]
+    region:   se_6
     level:    [25, 26]
   17268743:
     template: Hill_Lizard
-    at:       [504.549, 7.802, -257.974, 105]
+    region:   se_6
     level:    [25, 26]
   17268744:
     template: Hill_Lizard
-    at:       [469.314, 7.731, -257.691, 46]
+    region:   se_6
     level:    [25, 26]
   17268745:
     template: Hill_Lizard
-    at:       [477.428, 3.872, -335.968, 72]
+    region:   se_6
     level:    [25, 26]
   17268746:
     template: Midnight_Wings
-    at:       [491.904, 7.617, -249.648, 48]
+    region:   se_6
     level:    [23, 24]
     attributes:
       spawn:
@@ -2184,7 +2184,7 @@ spawns:
           end:    6
   17268747:
     template: Midnight_Wings
-    at:       [473.190, 7.902, -188.879, 127]
+    region:   se_6
     level:    [23, 24]
     attributes:
       spawn:
@@ -2193,7 +2193,7 @@ spawns:
           end:    5
   17268748:
     template: Moon_Bat
-    at:       [513.999, 7.641, -192.151, 127]
+    region:   se_6
     level:    [25, 26]
     attributes:
       spawn:
@@ -2202,23 +2202,23 @@ spawns:
           end:    6
   17268749:
     template: Hill_Lizard
-    at:       [409.568, 7.770, -311.143, 37]
+    region:   se_13
     level:    [25, 26]
   17268750:
     template: Hill_Lizard
-    at:       [401.111, 15.304, -225.868, 65]
+    region:   se_13
     level:    [25, 26]
   17268751:
     template: Hill_Lizard
-    at:       [438.800, 7.467, -282.563, 127]
+    region:   se_13
     level:    [25, 26]
   17268752:
     template: Hill_Lizard
-    at:       [418.527, 17.465, -233.294, 127]
+    region:   se_13
     level:    [25, 26]
   17268753:
     template: Midnight_Wings
-    at:       [396.672, 15.969, -191.107, 127]
+    region:   se_13
     level:    [23, 24]
     attributes:
       spawn:
@@ -2227,7 +2227,7 @@ spawns:
           end:    4
   17268754:
     template: Midnight_Wings
-    at:       [404.452, 15.915, -230.109, 28]
+    region:   se_13
     level:    [23, 24]
     attributes:
       spawn:
@@ -2236,7 +2236,7 @@ spawns:
           end:    6
   17268755:
     template: Moon_Bat
-    at:       [418.869, 10.729, -272.487, 127]
+    region:   se_13
     level:    [25, 26]
     attributes:
       spawn:
@@ -2245,19 +2245,19 @@ spawns:
           end:    5
   17268756:
     template: Hill_Lizard
-    at:       [481.958, 14.905, -125.962, 127]
+    region:   e_20
     level:    [25, 26]
   17268757:
     template: Hill_Lizard
-    at:       [438.626, 15.490, -113.084, 127]
+    region:   e_20
     level:    [25, 26]
   17268758:
     template: Hill_Lizard
-    at:       [528.412, 13.524, -135.531, 13]
+    region:   e_20
     level:    [25, 26]
   17268759:
     template: Midnight_Wings
-    at:       [512.908, 15.724, 0.059, 123]
+    region:   e_20
     level:    [23, 24]
     attributes:
       spawn:
@@ -2266,7 +2266,7 @@ spawns:
           end:    5
   17268760:
     template: Midnight_Wings
-    at:       [487.479, 15.645, 9.305, 127]
+    region:   e_20
     level:    [24, 24]
     attributes:
       spawn:
@@ -2275,7 +2275,7 @@ spawns:
           end:    4
   17268761:
     template: Moon_Bat
-    at:       [522.158, 15.632, 10.626, 127]
+    region:   e_20
     level:    [25, 26]
     attributes:
       spawn:
@@ -2284,76 +2284,76 @@ spawns:
           end:    4
   17268762:
     template: Champaign_Coeurl
-    at:       [461.954, 9.810, -250.805, 127]
+    region:   se_26
     level:    [33, 34]
   17268763:
     template: Yagudo_Votary
-    at:       [479.859, 14.993, -130.532, 62]
+    region:   se_26
     level:    [27, 28]
   17268764:
     template: Yagudo_Herald
-    at:       [460.906, 6.867, -281.138, 127]
+    region:   se_26
     level:    [32, 33]
   17268765:
     template: Yagudo_Theologist
-    at:       [442.617, 15.838, -193.486, 127]
+    region:   se_26
     level:    [27, 28]
   17268766:
     template: Yagudo_Drummer
-    at:       [447.873, 15.544, -153.891, 4]
+    region:   se_26
     level:    [32, 33]
   17268767:
     template: Yagudo_Oracle
-    at:       [414.056, 16.081, -203.381, 73]
+    region:   se_26
     level:    [32, 33]
   17268768:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   se_26
     level:    [23, 28]
   17268769:
     template: Yagudo_Priest
-    at:       [451.337, 11.992, -256.392, 50]
+    region:   se_26
     level:    [27, 28]
   17268770:
     template: Yagudo_Interrogator
-    at:       [459.056, 14.489, -89.355, 127]
+    region:   se_26
     level:    [32, 33]
   17268771:
     template: Wight_war
     script:   Wight
-    at:       [500.006, 7.342, -234.534, 48]
+    region:   se_26
     level:    [29, 34]
   17268772:
     template: Wight_blm
     script:   Wight
-    at:       [515.358, 15.716, 3.822, 124]
+    region:   se_26
     level:    [29, 34]
   17268773:
     template: Ignis_Fatuus
     level:    [34, 36]
   17268774:
     template: Hill_Lizard
-    at:       [485.860, 22.082, 31.649, 122]
+    region:   e_38
     level:    [25, 26]
   17268775:
     template: Hill_Lizard
-    at:       [473.944, 23.070, 110.460, 127]
+    region:   e_38
     level:    [25, 26]
   17268776:
     template: Hill_Lizard
-    at:       [463.737, 23.044, 186.920, 75]
+    region:   e_38
     level:    [25, 26]
   17268777:
     template: Tabar_Beak
-    at:       [498.766, 24.029, 171.655, 127]
+    region:   e_38
     level:    [36, 37]
   17268778:
     template: Tabar_Beak
-    at:       [506.511, 23.618, 43.663, 30]
+    region:   e_38
     level:    [36, 37]
   17268779:
     template: Midnight_Wings
-    at:       [478.263, 23.235, 99.748, 52]
+    region:   e_38
     level:    [23, 24]
     attributes:
       spawn:
@@ -2362,7 +2362,7 @@ spawns:
           end:    6
   17268780:
     template: Midnight_Wings
-    at:       [474.963, 22.760, 99.680, 127]
+    region:   e_38
     level:    [23, 24]
     attributes:
       spawn:
@@ -2371,7 +2371,7 @@ spawns:
           end:    5
   17268781:
     template: Moon_Bat
-    at:       [510.212, 24.470, 56.983, 116]
+    region:   e_38
     level:    [25, 26]
     attributes:
       spawn:
@@ -2380,19 +2380,19 @@ spawns:
           end:    6
   17268782:
     template: Hill_Lizard
-    at:       [537.188, 6.167, -11.067, 127]
+    region:   e_46
     level:    [25, 26]
   17268783:
     template: Hill_Lizard
-    at:       [565.305, 11.203, 24.341, 67]
+    region:   e_46
     level:    [25, 26]
   17268784:
     template: Hill_Lizard
-    at:       [511.435, 7.577, -73.777, 121]
+    region:   e_46
     level:    [25, 26]
   17268785:
     template: Midnight_Wings
-    at:       [598.211, 7.714, -6.763, 127]
+    region:   e_46
     level:    [23, 24]
     attributes:
       spawn:
@@ -2401,7 +2401,7 @@ spawns:
           end:    4
   17268786:
     template: Midnight_Wings
-    at:       [544.471, -0.542, -161.729, 127]
+    region:   e_46
     level:    [23, 24]
     attributes:
       spawn:
@@ -2410,7 +2410,7 @@ spawns:
           end:    6
   17268787:
     template: Moon_Bat
-    at:       [594.075, 8.128, -24.515, 127]
+    region:   e_46
     level:    [25, 26]
     attributes:
       spawn:
@@ -2423,11 +2423,11 @@ spawns:
     level:    [54, 55]
   17268789:
     template: Goblin_Mugger
-    at:       [473.743, 23.845, 176.953, 127]
+    region:   e_53
     level:    [26, 27]
   17268790:
     template: Goblin_Pathfinder
-    at:       [592.680, 23.556, 173.781, 164]
+    region:   e_38
     level:    [26, 27]
   17268791:
     template: Goblins_Beetle
@@ -2435,18 +2435,19 @@ spawns:
     level:    [23, 27]
   17268792:
     template: Goblin_Leecher
-    at:       [469.329, 24.064, 169.092, 127]
+    region:   e_53
     level:    [26, 27]
   17268793:
     template: Goblin_Furrier
-    at:       [521.130, 23.538, 196.738, 179]
+    region:   e_38
     level:    [26, 27]
   17268794:
     template: Goblin_Gambler
-    at:       [604.082, 20.877, 66.227, 127]
+    region:   e_53
     level:    [26, 27]
   17268795:
     template: Goblin_Smithy
+    region:   e_53
     level:    [26, 27]
   17268796:
     template: Goblin_Shaman
@@ -2458,14 +2459,15 @@ spawns:
   17268798:
     template: Wight_blm
     script:   Wight
+    region:   e_53
     level:    [26, 28]
   17268799:
     template: Earth_Elemental
-    at:       [531.251, 23.101, 183.838, 127]
+    region:   e_53
     level:    [38, 40]
   17268800:
     template: Goblin_Pathfinder
-    at:       [535.734, 8.059, -61.829, 39]
+    region:   region_64
     level:    [31, 32]
   17268801:
     template: Goblins_Beetle
@@ -2473,30 +2475,30 @@ spawns:
     level:    [23, 27]
   17268802:
     template: Goblin_Furrier
-    at:       [533.068, 8.082, -64.292, 96]
+    region:   region_64
     level:    [31, 32]
   17268803:
     template: Goblin_Smithy
-    at:       [550.000, 7.000, -93.000, 127]
+    region:   e_53
     level:    [31, 32]
   17268804:
     template: Goblin_Shaman
-    at:       [536.934, 7.598, -63.765, 127]
+    region:   region_64
     level:    [31, 32]
   17268805:
     template: Sabertooth_Tiger_SC
     script:   Sabertooth_Tiger
-    at:       [600.326, -0.677, -314.895, 9]
+    region:   se_69
     level:    [31, 32]
   17268806:
     template: Sabertooth_Tiger_SC
     script:   Sabertooth_Tiger
-    at:       [605.422, -1.016, -315.751, 127]
+    region:   se_69
     level:    [31, 32]
   17268807:
     template: Sabertooth_Tiger_SC
     script:   Sabertooth_Tiger
-    at:       [599.802, -0.675, -314.299, 11]
+    region:   se_69
     level:    [31, 32]
   17268808:
     template: Old_Sabertooth
@@ -2504,23 +2506,23 @@ spawns:
     level:    [20, 20]
   17268809:
     template: Sauromugue_Skink
-    at:       [415.662, 24.789, 41.282, 11]
+    region:   e_73
     level:    [31, 32]
   17268810:
     template: Sauromugue_Skink
-    at:       [354.703, 23.893, -45.118, 127]
+    region:   e_73
     level:    [31, 32]
   17268811:
     template: Sauromugue_Skink
-    at:       [382.669, 25.316, -34.913, 109]
+    region:   e_73
     level:    [31, 32]
   17268812:
     template: Tabar_Beak
-    at:       [389.756, 23.445, 24.437, 103]
+    region:   e_73
     level:    [36, 37]
   17268813:
     template: Midnight_Wings
-    at:       [413.392, 24.020, -48.775, 23]
+    region:   e_73
     level:    [23, 24]
     attributes:
       spawn:
@@ -2529,7 +2531,7 @@ spawns:
           end:    5
   17268814:
     template: Midnight_Wings
-    at:       [417.249, 24.314, -36.030, 127]
+    region:   e_73
     level:    [23, 24]
     attributes:
       spawn:
@@ -2538,7 +2540,7 @@ spawns:
           end:    4
   17268815:
     template: Moon_Bat
-    at:       [407.417, 23.499, 38.358, 127]
+    region:   e_73
     level:    [25, 26]
     attributes:
       spawn:
@@ -2547,27 +2549,27 @@ spawns:
           end:    4
   17268816:
     template: Thunderclaw_Thuban
-    at:       [423.313, 16.568, -110.108, 60]
+    region:   e_73
     level:    [47, 48]
   17268817:
     template: Sauromugue_Skink
-    at:       [436.320, 30.351, 162.789, 127]
+    region:   e_81
     level:    [31, 32]
   17268818:
     template: Sauromugue_Skink
-    at:       [353.066, 30.273, 128.254, 12]
+    region:   e_81
     level:    [31, 32]
   17268819:
     template: Sauromugue_Skink
-    at:       [419.694, 33.576, 118.721, 97]
+    region:   e_81
     level:    [31, 32]
   17268820:
     template: Tabar_Beak
-    at:       [385.569, 32.177, 172.795, 127]
+    region:   e_81
     level:    [36, 37]
   17268821:
     template: Midnight_Wings
-    at:       [425.932, 30.876, 164.401, 43]
+    region:   e_81
     level:    [23, 24]
     attributes:
       spawn:
@@ -2576,7 +2578,7 @@ spawns:
           end:    6
   17268822:
     template: Midnight_Wings
-    at:       [406.440, 31.401, 160.304, 127]
+    region:   e_81
     level:    [23, 24]
     attributes:
       spawn:
@@ -2585,7 +2587,7 @@ spawns:
           end:    5
   17268823:
     template: Moon_Bat
-    at:       [421.404, 31.453, 186.891, 127]
+    region:   e_81
     level:    [25, 26]
     attributes:
       spawn:
@@ -2594,23 +2596,23 @@ spawns:
           end:    6
   17268824:
     template: Sauromugue_Skink
-    at:       [362.290, 31.651, 197.334, 127]
+    region:   ne_88
     level:    [31, 32]
   17268825:
     template: Sauromugue_Skink
-    at:       [482.843, 32.227, 297.088, 49]
+    region:   ne_88
     level:    [31, 32]
   17268826:
     template: Sauromugue_Skink
-    at:       [440.445, 39.109, 349.453, 123]
+    region:   ne_88
     level:    [31, 32]
   17268827:
     template: Tabar_Beak
-    at:       [340.319, 31.705, 178.302, 103]
+    region:   ne_88
     level:    [36, 37]
   17268828:
     template: Midnight_Wings
-    at:       [310.754, 31.759, 191.449, 89]
+    region:   ne_88
     level:    [23, 24]
     attributes:
       spawn:
@@ -2619,7 +2621,7 @@ spawns:
           end:    4
   17268829:
     template: Midnight_Wings
-    at:       [443.501, 31.853, 228.656, 29]
+    region:   ne_88
     level:    [23, 24]
     attributes:
       spawn:
@@ -2628,7 +2630,7 @@ spawns:
           end:    6
   17268830:
     template: Moon_Bat
-    at:       [320.235, 31.291, 214.147, 127]
+    region:   ne_88
     level:    [24, 25]
     attributes:
       spawn:
@@ -2637,63 +2639,64 @@ spawns:
           end:    5
   17268831:
     template: Champaign_Coeurl
-    at:       [453.474, 20.591, -54.519, 127]
+    region:   e_95
     level:    [33, 34]
   17268832:
     template: Yagudo_Votary
-    at:       [365.736, 31.681, 126.950, 43]
+    region:   e_95
     level:    [27, 28]
   17268833:
     template: Yagudo_Herald
-    at:       [365.034, 31.828, 131.805, 127]
+    region:   e_95
     level:    [32, 32]
   17268834:
     template: Yagudo_Theologist
-    at:       [392.705, 23.906, 62.283, 66]
+    region:   e_95
     level:    [27, 28]
   17268835:
     template: Yagudo_Drummer
-    at:       [319.134, 32.415, 218.350, 97]
+    region:   e_95
     level:    [32, 33]
   17268836:
     template: Yagudo_Oracle
-    at:       [364.714, 31.620, 277.576, 41]
+    region:   e_95
     level:    [32, 33]
   17268837:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   e_95
     level:    [23, 28]
   17268838:
     template: Yagudo_Priest
-    at:       [400.992, 23.855, 81.396, 58]
+    region:   e_95
     level:    [27, 28]
   17268839:
     template: Yagudo_Interrogator
-    at:       [408.833, 30.957, 157.935, 69]
+    region:   e_95
     level:    [32, 33]
   17268840:
     template: Wight_war
     script:   Wight
-    at:       [367.492, 24.166, -28.067, 173]
+    region:   e_95
     level:    [29, 34]
   17268841:
     template: Wight_blm
     script:   Wight
+    region:   e_95
     level:    [29, 34]
   17268842:
     template: Ignis_Fatuus
     level:    [34, 36]
   17268843:
     template: Yagudo_Herald
-    at:       [373.645, 36.582, 265.008, 127]
+    region:   e_95
     level:    [32, 33]
   17268844:
     template: Yagudo_Drummer
-    at:       [373.360, 36.618, 265.653, 109]
+    region:   e_95
     level:    [32, 33]
   17268845:
     template: Yagudo_Oracle
-    at:       [375.798, 36.362, 262.648, 127]
+    region:   e_95
     level:    [33, 33]
   17268846:
     template: Yagudos_Elemental
@@ -2701,27 +2704,27 @@ spawns:
     level:    [23, 28]
   17268847:
     template: Yagudo_Interrogator
-    at:       [376.901, 36.714, 266.367, 31]
+    region:   e_95
     level:    [32, 33]
   17268848:
     template: Champaign_Coeurl
-    at:       [338.903, 39.638, 350.529, 127]
+    region:   ne_112
     level:    [33, 34]
   17268849:
     template: Tabar_Beak
-    at:       [238.000, 40.000, 332.000, 67]
+    region:   ne_112
     level:    [36, 37]
   17268850:
     template: Tabar_Beak
-    at:       [369.564, 39.658, 345.197, 127]
+    region:   ne_112
     level:    [36, 37]
   17268851:
     template: Deadly_Dodo
-    at:       [329.000, 40.000, 372.000, 16]
+    region:   ne_112
     level:    [39, 40]
   17268852:
     template: Midnight_Wings
-    at:       [249.089, 39.444, 380.981, 127]
+    region:   ne_112
     level:    [23, 24]
     attributes:
       spawn:
@@ -2730,7 +2733,7 @@ spawns:
           end:    4
   17268853:
     template: Midnight_Wings
-    at:       [341.766, 39.414, 334.227, 127]
+    region:   ne_112
     level:    [23, 24]
     attributes:
       spawn:
@@ -2739,7 +2742,7 @@ spawns:
           end:    6
   17268854:
     template: Midnight_Wings
-    at:       [376.302, 39.792, 426.277, 27]
+    region:   ne_112
     level:    [23, 24]
     attributes:
       spawn:
@@ -2748,7 +2751,7 @@ spawns:
           end:    5
   17268855:
     template: Moon_Bat
-    at:       [154.688, 39.365, 320.008, 127]
+    region:   ne_112
     level:    [25, 26]
     attributes:
       spawn:
@@ -2757,73 +2760,73 @@ spawns:
           end:    6
   17268856:
     template: Goblin_Mugger
-    at:       [268.450, 39.992, 360.931, 111]
+    region:   ne_112
     level:    [26, 27]
   17268857:
     template: Goblin_Pathfinder
-    at:       [388.340, 38.901, 359.474, 127]
+    region:   ne_112
     level:    [31, 32]
   17268858:
     template: Goblins_Beetle
-    at:       [1.000, 1.000, 1.000]
+    region:   ne_112
     level:    [23, 27]
   17268859:
     template: Goblin_Leecher
-    at:       [276.724, 39.603, 364.508, 74]
+    region:   ne_112
     level:    [26, 27]
   17268860:
     template: Goblin_Furrier
-    at:       [396.212, 39.236, 358.853, 127]
+    region:   ne_112
     level:    [31, 32]
   17268861:
     template: Goblin_Gambler
-    at:       [388.987, 39.850, 321.980, 11]
+    region:   ne_112
     level:    [26, 27]
   17268862:
     template: Goblin_Smithy
-    at:       [221.956, 40.095, 353.715, 5]
+    region:   ne_112
     level:    [31, 32]
   17268863:
     template: Goblin_Shaman
-    at:       [248.915, 39.491, 425.810, 48]
+    region:   ne_112
     level:    [31, 32]
   17268864:
     template: Wight_war
     script:   Wight
-    at:       [252.797, 39.034, 353.467, 127]
+    region:   ne_112
     level:    [28, 33]
   17268865:
     template: Wight_blm
     script:   Wight
-    at:       [228.611, 39.968, 337.443, 34]
+    region:   ne_112
     level:    [28, 33]
   17268866:
     template: Thunder_Elemental
-    at:       [359.356, 40.081, 423.381, 127]
+    region:   ne_112
     level:    [38, 40]
   17268867:
     template: Hill_Lizard
-    at:       [249.659, 15.958, -145.973, 117]
+    region:   se_131
     level:    [25, 26]
   17268868:
     template: Hill_Lizard
-    at:       [341.346, 19.650, -71.114, 127]
+    region:   se_131
     level:    [25, 26]
   17268869:
     template: Diving_Beetle
-    at:       [347.986, 14.962, -110.743, 127]
+    region:   se_131
     level:    [27, 28]
   17268870:
     template: Diving_Beetle
-    at:       [358.091, 22.857, -86.995, 35]
+    region:   se_131
     level:    [27, 28]
   17268871:
     template: Diving_Beetle
-    at:       [245.891, 15.066, -167.538, 30]
+    region:   se_131
     level:    [27, 28]
   17268872:
     template: Midnight_Wings
-    at:       [302.791, 16.089, -161.373, 25]
+    region:   se_131
     level:    [23, 24]
     attributes:
       spawn:
@@ -2832,7 +2835,7 @@ spawns:
           end:    4
   17268873:
     template: Midnight_Wings
-    at:       [327.018, 15.036, -168.284, 125]
+    region:   se_131
     level:    [23, 24]
     attributes:
       spawn:
@@ -2841,7 +2844,7 @@ spawns:
           end:    6
   17268874:
     template: Midnight_Wings
-    at:       [333.520, 16.190, -90.654, 3]
+    region:   se_131
     level:    [23, 24]
     attributes:
       spawn:
@@ -2850,7 +2853,7 @@ spawns:
           end:    5
   17268875:
     template: Moon_Bat
-    at:       [348.495, 15.264, -108.391, 109]
+    region:   se_131
     level:    [24, 25]
     attributes:
       spawn:
@@ -2859,23 +2862,23 @@ spawns:
           end:    6
   17268876:
     template: Hill_Lizard
-    at:       [344.227, 22.585, 96.527, 127]
+    region:   e_140
     level:    [25, 26]
   17268877:
     template: Hill_Lizard
-    at:       [331.822, 15.673, -38.925, 127]
+    region:   e_140
     level:    [25, 26]
   17268878:
     template: Diving_Beetle
-    at:       [303.343, 23.804, 125.398, 127]
+    region:   e_140
     level:    [27, 28]
   17268879:
     template: Diving_Beetle
-    at:       [369.528, 16.449, 51.623, 127]
+    region:   e_140
     level:    [27, 28]
   17268880:
     template: Midnight_Wings
-    at:       [292.344, 23.579, 152.315, 127]
+    region:   e_140
     level:    [23, 24]
     attributes:
       spawn:
@@ -2884,7 +2887,7 @@ spawns:
           end:    6
   17268881:
     template: Midnight_Wings
-    at:       [374.005, 16.616, 29.729, 63]
+    region:   e_140
     level:    [24, 24]
     attributes:
       spawn:
@@ -2893,7 +2896,7 @@ spawns:
           end:    5
   17268882:
     template: Moon_Bat
-    at:       [313.821, 22.735, 114.297, 127]
+    region:   e_140
     level:    [25, 26]
     attributes:
       spawn:
@@ -2902,23 +2905,23 @@ spawns:
           end:    6
   17268883:
     template: Hill_Lizard
-    at:       [-47.336, 7.779, -108.255, 127]
+    region:   s_147
     level:    [25, 26]
   17268884:
     template: Hill_Lizard
-    at:       [-46.759, 7.830, -67.805, 26]
+    region:   s_147
     level:    [25, 26]
   17268885:
     template: Diving_Beetle
-    at:       [22.638, 7.613, -127.211, 127]
+    region:   s_147
     level:    [27, 28]
   17268886:
     template: Diving_Beetle
-    at:       [20.402, 6.407, -132.641, 127]
+    region:   s_147
     level:    [27, 28]
   17268887:
     template: Midnight_Wings
-    at:       [128.824, 7.698, -172.082, 25]
+    region:   s_147
     level:    [23, 24]
     attributes:
       spawn:
@@ -2927,7 +2930,7 @@ spawns:
           end:    4
   17268888:
     template: Midnight_Wings
-    at:       [34.160, 4.474, -134.162, 89]
+    region:   s_147
     level:    [23, 24]
     attributes:
       spawn:
@@ -2936,7 +2939,7 @@ spawns:
           end:    6
   17268889:
     template: Moon_Bat
-    at:       [-8.715, 6.552, -136.545, 42]
+    region:   s_147
     level:    [25, 26]
     attributes:
       spawn:
@@ -2945,23 +2948,23 @@ spawns:
           end:    5
   17268890:
     template: Hill_Lizard
-    at:       [-90.714, 7.949, 10.969, 60]
+    region:   w_154
     level:    [25, 26]
   17268891:
     template: Hill_Lizard
-    at:       [-141.597, 15.840, 7.213, 104]
+    region:   w_154
     level:    [25, 26]
   17268892:
     template: Diving_Beetle
-    at:       [-134.055, 15.795, 18.740, 45]
+    region:   w_154
     level:    [27, 28]
   17268893:
     template: Diving_Beetle
-    at:       [-83.082, 7.514, 1.427, 127]
+    region:   w_154
     level:    [27, 28]
   17268894:
     template: Midnight_Wings
-    at:       [-126.130, 16.026, -14.902, 65]
+    region:   w_154
     level:    [23, 24]
     attributes:
       spawn:
@@ -2970,7 +2973,7 @@ spawns:
           end:    5
   17268895:
     template: Midnight_Wings
-    at:       [-119.408, 15.576, -30.376, 87]
+    region:   w_154
     level:    [23, 24]
     attributes:
       spawn:
@@ -2979,7 +2982,7 @@ spawns:
           end:    4
   17268896:
     template: Moon_Bat
-    at:       [-37.429, 7.605, 51.621, 127]
+    region:   w_154
     level:    [25, 26]
     attributes:
       spawn:
@@ -2988,61 +2991,61 @@ spawns:
           end:    4
   17268897:
     template: Champaign_Coeurl
-    at:       [240.498, 15.560, -122.987, 127]
+    region:   c_161
     level:    [33, 34]
   17268898:
     template: Goblin_Mugger
-    at:       [167.678, 7.055, -169.883, 118]
+    region:   c_161
     level:    [26, 27]
   17268899:
     template: Goblin_Pathfinder
-    at:       [321.113, 15.467, -91.447, 14]
+    region:   c_161
     level:    [31, 32]
   17268900:
     template: Goblins_Beetle
-    at:       [1.000, 1.000, 1.000]
+    region:   c_161
     level:    [23, 27]
   17268901:
     template: Goblin_Leecher
-    at:       [343.594, 22.772, 90.784, 95]
+    region:   c_161
     level:    [26, 27]
   17268902:
     template: Goblin_Furrier
-    at:       [222.997, 11.359, -150.682, 127]
+    region:   c_161
     level:    [31, 32]
   17268903:
     template: Goblin_Gambler
-    at:       [-143.969, 16.168, 31.894, 127]
+    region:   c_161
     level:    [26, 27]
   17268904:
     template: Goblin_Smithy
-    at:       [330.289, 21.510, 69.673, 93]
+    region:   e_168
     level:    [31, 32]
   17268905:
     template: Goblin_Shaman
-    at:       [363.541, 23.535, 77.996, 109]
+    region:   c_161
     level:    [31, 32]
   17268906:
     template: Wight_war
     script:   Wight
-    at:       [217.657, 10.535, -155.797, 127]
+    region:   c_161
     level:    [28, 33]
   17268907:
     template: Wight_blm
     script:   Wight
-    at:       [323.835, 23.633, 125.851, 93]
+    region:   c_161
     level:    [28, 33]
   17268908:
     template: Earth_Elemental
-    at:       [200.913, 7.436, -165.854, 105]
+    region:   c_161
     level:    [38, 40]
   17268909:
     template: Goblin_Mugger
-    at:       [298.168, 16.023, -96.778, 127]
+    region:   region_65
     level:    [26, 27]
   17268910:
     template: Goblin_Pathfinder
-    at:       [302.279, 16.032, -95.777, 127]
+    region:   region_65
     level:    [31, 32]
   17268911:
     template: Goblins_Beetle
@@ -3050,39 +3053,39 @@ spawns:
     level:    [26, 27]
   17268912:
     template: Goblin_Gambler
-    at:       [296.545, 15.970, -95.483, 127]
+    region:   region_65
     level:    [26, 27]
   17268913:
     template: Goblin_Smithy
-    at:       [299.212, 16.065, -98.340, 100]
+    region:   region_65
     level:    [31, 32]
   17268914:
     template: Evil_Weapon
-    at:       [83.302, 1.885, -176.081, 61]
+    region:   s_178
     level:    [37, 38]
   17268915:
     template: Evil_Weapon
-    at:       [61.283, 2.621, -171.549, 79]
+    region:   s_178
     level:    [37, 38]
   17268916:
     template: Evil_Weapon
-    at:       [74.877, -0.038, -229.372, 127]
+    region:   s_178
     level:    [37, 38]
   17268917:
     template: Sauromugue_Skink
-    at:       [206.835, 33.896, 258.394, 40]
+    region:   n_181
     level:    [31, 32]
   17268918:
     template: Sauromugue_Skink
-    at:       [206.941, 33.746, 256.527, 127]
+    region:   n_181
     level:    [31, 32]
   17268919:
     template: Sauromugue_Skink
-    at:       [196.994, 31.597, 270.623, 127]
+    region:   n_181
     level:    [31, 32]
   17268920:
     template: Midnight_Wings
-    at:       [281.099, 32.438, 224.583, 127]
+    region:   n_181
     level:    [23, 24]
     attributes:
       spawn:
@@ -3091,7 +3094,7 @@ spawns:
           end:    6
   17268921:
     template: Midnight_Wings
-    at:       [178.565, 31.703, 268.386, 127]
+    region:   n_181
     level:    [23, 24]
     attributes:
       spawn:
@@ -3100,7 +3103,7 @@ spawns:
           end:    5
   17268922:
     template: Moon_Bat
-    at:       [199.612, 31.885, 269.811, 127]
+    region:   n_181
     level:    [25, 26]
     attributes:
       spawn:
@@ -3109,19 +3112,19 @@ spawns:
           end:    6
   17268923:
     template: Sauromugue_Skink
-    at:       [120.000, 32.000, 292.000, 46]
+    region:   n_187
     level:    [31, 32]
   17268924:
     template: Sauromugue_Skink
-    at:       [93.962, 30.383, 231.524, 127]
+    region:   n_187
     level:    [31, 32]
   17268925:
     template: Sauromugue_Skink
-    at:       [135.767, 30.058, 231.604, 90]
+    region:   n_187
     level:    [31, 32]
   17268926:
     template: Midnight_Wings
-    at:       [97.177, 31.172, 239.815, 115]
+    region:   n_187
     level:    [23, 24]
     attributes:
       spawn:
@@ -3130,7 +3133,7 @@ spawns:
           end:    4
   17268927:
     template: Midnight_Wings
-    at:       [139.725, 32.446, 237.412, 3]
+    region:   n_187
     level:    [23, 24]
     attributes:
       spawn:
@@ -3139,7 +3142,7 @@ spawns:
           end:    6
   17268928:
     template: Moon_Bat
-    at:       [98.210, 30.995, 261.646, 127]
+    region:   n_187
     level:    [25, 26]
     attributes:
       spawn:
@@ -3148,69 +3151,69 @@ spawns:
           end:    5
   17268929:
     template: Champaign_Coeurl
-    at:       [235.213, 31.823, 260.546, 127]
+    region:   n_193
     level:    [33, 34]
   17268930:
     template: Yagudo_Votary
-    at:       [258.933, 30.014, 201.179, 29]
+    region:   n_193
     level:    [27, 28]
   17268931:
     template: Yagudo_Herald
-    at:       [235.610, 31.539, 242.803, 53]
+    region:   n_193
     level:    [32, 33]
   17268932:
     template: Yagudo_Theologist
-    at:       [221.970, 30.924, 195.263, 127]
+    region:   n_193
     level:    [27, 28]
   17268933:
     template: Yagudo_Drummer
-    at:       [190.658, 30.998, 199.033, 56]
+    region:   n_193
     level:    [32, 33]
   17268934:
     template: Yagudo_Oracle
-    at:       [268.271, 32.410, 226.603, 127]
+    region:   n_193
     level:    [32, 33]
   17268935:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   n_193
     level:    [23, 28]
   17268936:
     template: Yagudo_Priest
-    at:       [244.175, 31.483, 276.963, 127]
+    region:   n_193
     level:    [27, 28]
   17268937:
     template: Yagudo_Interrogator
-    at:       [101.887, 32.979, 233.728, 102]
+    region:   n_193
     level:    [32, 33]
   17268938:
     template: Wight_war
     script:   Wight
-    at:       [207.077, 33.766, 259.038, 127]
+    region:   n_193
     level:    [28, 34]
   17268939:
     template: Wight_blm
     script:   Wight
-    at:       [242.722, 31.516, 244.249, 127]
+    region:   n_193
     level:    [28, 34]
   17268940:
     template: Sauromugue_Skink
-    at:       [42.792, 23.491, 210.916, 127]
+    region:   c_204
     level:    [31, 32]
   17268941:
     template: Sauromugue_Skink
-    at:       [82.964, 20.747, 150.573, 97]
+    region:   c_204
     level:    [31, 32]
   17268942:
     template: Diving_Beetle
-    at:       [116.588, 23.677, 190.115, 127]
+    region:   c_204
     level:    [27, 28]
   17268943:
     template: Diving_Beetle
-    at:       [65.776, 22.925, 166.989, 127]
+    region:   c_204
     level:    [27, 28]
   17268944:
     template: Midnight_Wings
-    at:       [41.986, 23.544, 202.248, 127]
+    region:   c_204
     level:    [23, 24]
     attributes:
       spawn:
@@ -3219,7 +3222,7 @@ spawns:
           end:    5
   17268945:
     template: Midnight_Wings
-    at:       [42.450, 23.453, 163.251, 127]
+    region:   c_204
     level:    [23, 24]
     attributes:
       spawn:
@@ -3228,7 +3231,7 @@ spawns:
           end:    4
   17268946:
     template: Moon_Bat
-    at:       [87.530, 25.425, 184.403, 116]
+    region:   c_204
     level:    [25, 26]
     attributes:
       spawn:
@@ -3237,27 +3240,27 @@ spawns:
           end:    4
   17268947:
     template: Sauromugue_Skink
-    at:       [6.276, 23.251, 273.038, 127]
+    region:   n_211
     level:    [31, 32]
   17268948:
     template: Sauromugue_Skink
-    at:       [-42.062, 24.374, 217.061, 127]
+    region:   n_211
     level:    [31, 32]
   17268949:
     template: Sauromugue_Skink
-    at:       [-68.852, 23.731, 220.330, 127]
+    region:   n_211
     level:    [31, 32]
   17268950:
     template: Tabar_Beak
-    at:       [-203.000, 16.000, 305.000, 88]
+    region:   n_211
     level:    [36, 37]
   17268951:
     template: Tabar_Beak
-    at:       [-68.671, 25.638, 293.336, 127]
+    region:   n_211
     level:    [36, 37]
   17268952:
     template: Midnight_Wings
-    at:       [-11.823, 23.550, 154.856, 64]
+    region:   n_211
     level:    [23, 24]
     attributes:
       spawn:
@@ -3266,7 +3269,7 @@ spawns:
           end:    6
   17268953:
     template: Midnight_Wings
-    at:       [-54.713, 24.121, 309.094, 55]
+    region:   n_211
     level:    [23, 24]
     attributes:
       spawn:
@@ -3275,7 +3278,7 @@ spawns:
           end:    5
   17268954:
     template: Moon_Bat
-    at:       [-54.000, 24.000, 206.000, 37]
+    region:   n_211
     level:    [25, 26]
     attributes:
       spawn:
@@ -3284,27 +3287,27 @@ spawns:
           end:    6
   17268955:
     template: Sauromugue_Skink
-    at:       [-70.000, 15.000, 129.000, 66]
+    region:   w_219
     level:    [31, 32]
   17268956:
     template: Sauromugue_Skink
-    at:       [-96.172, 13.792, 144.798, 127]
+    region:   w_219
     level:    [31, 32]
   17268957:
     template: Sauromugue_Skink
-    at:       [-39.379, 15.055, 70.755, 92]
+    region:   w_219
     level:    [31, 32]
   17268958:
     template: Tabar_Beak
-    at:       [-71.000, 24.000, 242.000, 127]
+    region:   w_219
     level:    [36, 37]
   17268959:
     template: Tabar_Beak
-    at:       [-174.000, 15.000, 339.000, 127]
+    region:   w_219
     level:    [36, 37]
   17268960:
     template: Midnight_Wings
-    at:       [-74.048, 14.815, 69.465, 5]
+    region:   w_219
     level:    [24, 24]
     attributes:
       spawn:
@@ -3313,7 +3316,7 @@ spawns:
           end:    4
   17268961:
     template: Midnight_Wings
-    at:       [-154.000, 15.665, 189.557, 127]
+    region:   w_219
     level:    [23, 24]
     attributes:
       spawn:
@@ -3322,7 +3325,7 @@ spawns:
           end:    6
   17268962:
     template: Moon_Bat
-    at:       [-130.924, 15.858, 129.700, 127]
+    region:   w_219
     level:    [25, 26]
     attributes:
       spawn:
@@ -3331,56 +3334,56 @@ spawns:
           end:    5
   17268963:
     template: Yagudo_Votary
-    at:       [-45.976, 21.281, 150.502, 93]
+    region:   c_227
     level:    [27, 28]
   17268964:
     template: Yagudo_Herald
-    at:       [-26.859, 19.394, 139.006, 19]
+    region:   c_227
     level:    [32, 33]
   17268965:
     template: Yagudo_Theologist
-    at:       [-16.612, 22.035, 140.822, 63]
+    region:   c_227
     level:    [27, 28]
   17268966:
     template: Yagudo_Drummer
-    at:       [81.060, 25.371, 178.632, 75]
+    region:   c_227
     level:    [32, 33]
   17268967:
     template: Yagudo_Oracle
-    at:       [-26.946, 19.514, 139.894, 35]
+    region:   c_227
     level:    [32, 33]
   17268968:
     template: Yagudos_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   c_227
     level:    [23, 28]
   17268969:
     template: Yagudo_Priest
-    at:       [-35.000, 24.000, 237.000, 104]
+    region:   c_227
     level:    [27, 28]
   17268970:
     template: Yagudo_Interrogator
-    at:       [48.762, 23.590, 212.621, 127]
+    region:   c_227
     level:    [32, 33]
   17268971:
     template: Wight_war
     script:   Wight
-    at:       [79.240, 22.363, 169.648, 44]
+    region:   c_227
     level:    [28, 34]
   17268972:
     template: Wight_blm
     script:   Wight
-    at:       [149.057, 23.980, 214.744, 100]
+    region:   c_227
     level:    [28, 34]
   17268973:
     template: Ignis_Fatuus
     level:    [34, 36]
   17268974:
     template: Yagudo_Theologist
-    at:       [-62.696, 23.951, 178.630, 86]
+    region:   c_227
     level:    [27, 28]
   17268975:
     template: Yagudo_Oracle
-    at:       [-85.210, 24.178, 184.528, 126]
+    region:   c_227
     level:    [32, 33]
   17268976:
     template: Yagudos_Elemental
@@ -3388,35 +3391,35 @@ spawns:
     level:    [23, 28]
   17268977:
     template: Yagudo_Priest
-    at:       [-59.000, 23.000, 183.000, 127]
+    region:   c_227
     level:    [27, 28]
   17268978:
     template: Yagudo_Interrogator
-    at:       [-65.633, 23.781, 180.680, 127]
+    region:   c_227
     level:    [32, 33]
   17268979:
     template: Sauromugue_Skink
-    at:       [-238.175, 16.118, 347.391, 127]
+    region:   nw_243
     level:    [31, 32]
   17268980:
     template: Sauromugue_Skink
-    at:       [-125.400, 16.177, 293.940, 127]
+    region:   nw_243
     level:    [31, 32]
   17268981:
     template: Sauromugue_Skink
-    at:       [-170.448, 16.044, 266.977, 7]
+    region:   nw_243
     level:    [31, 32]
   17268982:
     template: Tabar_Beak
-    at:       [-320.623, 7.578, 362.885, 127]
+    region:   nw_243
     level:    [36, 37]
   17268983:
     template: Tabar_Beak
-    at:       [-303.430, 7.607, 364.905, 127]
+    region:   nw_243
     level:    [36, 37]
   17268984:
     template: Midnight_Wings
-    at:       [-329.895, 6.461, 325.138, 127]
+    region:   nw_243
     level:    [23, 24]
     attributes:
       spawn:
@@ -3425,7 +3428,7 @@ spawns:
           end:    4
   17268985:
     template: Midnight_Wings
-    at:       [-157.846, 15.968, 326.009, 127]
+    region:   nw_243
     level:    [23, 24]
     attributes:
       spawn:
@@ -3434,7 +3437,7 @@ spawns:
           end:    6
   17268986:
     template: Midnight_Wings
-    at:       [-355.897, -0.093, 351.068, 127]
+    region:   nw_243
     level:    [23, 24]
     attributes:
       spawn:
@@ -3443,7 +3446,7 @@ spawns:
           end:    5
   17268987:
     template: Moon_Bat
-    at:       [-132.738, 15.927, 281.563, 127]
+    region:   nw_243
     level:    [25, 26]
     attributes:
       spawn:
@@ -3452,19 +3455,19 @@ spawns:
           end:    6
   17268988:
     template: Sauromugue_Skink
-    at:       [-227.071, 8.150, 286.204, 127]
+    region:   nw_252
     level:    [31, 32]
   17268989:
     template: Diving_Beetle
-    at:       [-187.066, 7.152, 213.929, 93]
+    region:   nw_252
     level:    [27, 28]
   17268990:
     template: Diving_Beetle
-    at:       [-209.421, 8.062, 218.649, 127]
+    region:   nw_252
     level:    [27, 28]
   17268991:
     template: Midnight_Wings
-    at:       [-282.054, -2.410, 254.329, 74]
+    region:   nw_252
     level:    [23, 24]
     attributes:
       spawn:
@@ -3473,7 +3476,7 @@ spawns:
           end:    5
   17268992:
     template: Midnight_Wings
-    at:       [-299.337, -0.435, 256.215, 127]
+    region:   nw_252
     level:    [23, 24]
     attributes:
       spawn:
@@ -3482,7 +3485,7 @@ spawns:
           end:    6
   17268993:
     template: Moon_Bat
-    at:       [-297.920, 0.244, 244.323, 127]
+    region:   nw_252
     level:    [25, 26]
     attributes:
       spawn:
@@ -3491,7 +3494,7 @@ spawns:
           end:    4
   17268994:
     template: Midnight_Wings
-    at:       [-407.224, -0.009, 345.725, 102]
+    region:   nw_258
     level:    [23, 24]
     attributes:
       spawn:
@@ -3500,7 +3503,7 @@ spawns:
           end:    5
   17268995:
     template: Midnight_Wings
-    at:       [-359.380, -0.320, 319.724, 127]
+    region:   nw_258
     level:    [23, 24]
     attributes:
       spawn:
@@ -3509,7 +3512,7 @@ spawns:
           end:    4
   17268996:
     template: Midnight_Wings
-    at:       [-364.579, -0.406, 244.896, 127]
+    region:   nw_258
     level:    [23, 24]
     attributes:
       spawn:
@@ -3518,7 +3521,7 @@ spawns:
           end:    6
   17268997:
     template: Midnight_Wings
-    at:       [-434.752, -0.116, 351.635, 127]
+    region:   nw_258
     level:    [23, 24]
     attributes:
       spawn:
@@ -3527,7 +3530,7 @@ spawns:
           end:    5
   17268998:
     template: Moon_Bat
-    at:       [-352.612, -0.382, 512.240, 24]
+    region:   nw_258
     level:    [25, 26]
     attributes:
       spawn:
@@ -3536,7 +3539,7 @@ spawns:
           end:    4
   17268999:
     template: Moon_Bat
-    at:       [-380.276, 0.082, 388.384, 127]
+    region:   nw_258
     level:    [25, 26]
     attributes:
       spawn:
@@ -3545,103 +3548,103 @@ spawns:
           end:    6
   17269000:
     template: Goblin_Mugger
-    at:       [-262.820, 0.029, 236.949, 116]
+    region:   nw_264
     level:    [26, 27]
   17269001:
     template: Goblin_Pathfinder
-    at:       [-177.169, 15.785, 295.458, 72]
+    region:   nw_264
     level:    [31, 32]
   17269002:
     template: Goblins_Beetle
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_264
     level:    [26, 27]
   17269003:
     template: Goblin_Leecher
-    at:       [-286.751, 7.968, 355.990, 127]
+    region:   nw_264
     level:    [26, 27]
   17269004:
     template: Goblin_Furrier
-    at:       [-199.914, 15.579, 400.059, 127]
+    region:   nw_264
     level:    [31, 32]
   17269005:
     template: Goblin_Gambler
-    at:       [-263.946, 1.083, 247.909, 127]
+    region:   nw_264
     level:    [26, 27]
   17269006:
     template: Goblin_Smithy
-    at:       [-357.899, -0.234, 388.514, 92]
+    region:   nw_264
     level:    [31, 32]
   17269007:
     template: Goblin_Shaman
-    at:       [-150.898, 15.624, 290.480, 9]
+    region:   nw_264
     level:    [31, 32]
   17269008:
     template: Earth_Elemental
-    at:       [-145.731, 18.042, 299.259, 124]
+    region:   nw_264
     level:    [38, 40]
   17269009:
     template: Evil_Weapon
-    at:       [-192.000, 8.000, 177.000, 78]
+    region:   w_275
     level:    [37, 38]
   17269010:
     template: Evil_Weapon
-    at:       [-104.126, 15.008, 76.614, 32]
+    region:   w_274
     level:    [37, 38]
   17269011:
     template: Evil_Weapon
-    at:       [-221.581, 8.015, 213.510, 127]
+    region:   w_275
     level:    [37, 38]
   17269012:
     template: Evil_Weapon
-    at:       [-213.807, 7.009, 209.605, 127]
+    region:   w_275
     level:    [37, 38]
   17269013:
     template: Evil_Weapon
-    at:       [-240.725, 1.853, 223.185, 127]
+    region:   w_275
     level:    [37, 38]
   17269014:
     template: Evil_Weapon
-    at:       [-151.677, 14.433, 140.143, 51]
+    region:   w_275
     level:    [37, 38]
   17269015:
     template: Evil_Weapon
-    at:       [-164.179, 10.037, 143.394, 8]
+    region:   w_275
     level:    [37, 38]
   17269016:
     template: Blighting_Brand
-    at:       [-206.692, 8.000, 203.594, 105]
+    region:   w_275
     level:    [54, 55]
   17269017:
     template: Diving_Beetle
-    at:       [-258.104, 7.783, 67.375, 127]
+    region:   w_281
     level:    [27, 28]
   17269018:
     template: Diving_Beetle
-    at:       [-270.230, 7.692, 79.879, 127]
+    region:   w_281
     level:    [27, 28]
   17269019:
     template: Diving_Beetle
-    at:       [-265.657, 7.717, 48.222, 72]
+    region:   w_281
     level:    [27, 28]
   17269020:
     template: Diving_Beetle
-    at:       [-252.070, 7.427, 67.956, 127]
+    region:   w_281
     level:    [27, 28]
   17269021:
     template: Sauromugue_Skink
-    at:       [-65.433, -2.233, -136.587, 14]
+    region:   s_285
     level:    [31, 32]
   17269022:
     template: Hill_Lizard
-    at:       [-104.524, 4.655, -89.333, 7]
+    region:   s_285
     level:    [25, 26]
   17269023:
     template: Hill_Lizard
-    at:       [-88.428, -0.428, -88.830, 127]
+    region:   s_285
     level:    [25, 26]
   17269024:
     template: Midnight_Wings
-    at:       [-54.449, -1.586, -161.493, 2]
+    region:   s_285
     level:    [23, 24]
     attributes:
       spawn:
@@ -3650,7 +3653,7 @@ spawns:
           end:    5
   17269025:
     template: Midnight_Wings
-    at:       [-45.171, -1.110, -138.757]
+    region:   s_285
     level:    [24, 24]
     attributes:
       spawn:
@@ -3659,7 +3662,7 @@ spawns:
           end:    4
   17269026:
     template: Moon_Bat
-    at:       [-76.566, -1.781, -105.042, 127]
+    region:   s_285
     level:    [25, 26]
     attributes:
       spawn:
@@ -3668,27 +3671,27 @@ spawns:
           end:    4
   17269027:
     template: Sauromugue_Skink
-    at:       [48.912, -8.660, -244.866, 17]
+    region:   s_291
     level:    [31, 32]
   17269028:
     template: Sauromugue_Skink
-    at:       [-18.580, -8.223, -227.143, 38]
+    region:   s_291
     level:    [31, 32]
   17269029:
     template: Hill_Lizard
-    at:       [-65.566, -13.938, -267.084, 39]
+    region:   s_291
     level:    [25, 26]
   17269030:
     template: Hill_Lizard
-    at:       [-60.486, -8.389, -229.651, 127]
+    region:   s_291
     level:    [25, 26]
   17269031:
     template: Hill_Lizard
-    at:       [-78.069, -17.768, -294.181, 48]
+    region:   s_291
     level:    [25, 26]
   17269032:
     template: Midnight_Wings
-    at:       [48.169, -8.272, -207.020, 124]
+    region:   s_291
     level:    [23, 24]
     attributes:
       spawn:
@@ -3697,7 +3700,7 @@ spawns:
           end:    6
   17269033:
     template: Midnight_Wings
-    at:       [-72.596, -17.852, -296.509, 55]
+    region:   s_291
     level:    [23, 24]
     attributes:
       spawn:
@@ -3706,7 +3709,7 @@ spawns:
           end:    5
   17269034:
     template: Moon_Bat
-    at:       [55.805, -8.386, -192.452, 5]
+    region:   s_291
     level:    [25, 26]
     attributes:
       spawn:
@@ -3715,27 +3718,27 @@ spawns:
           end:    6
   17269035:
     template: Sauromugue_Skink
-    at:       [7.746, -24.646, -324.122, 125]
+    region:   s_299
     level:    [31, 32]
   17269036:
     template: Sauromugue_Skink
-    at:       [81.016, -8.934, -281.369, 127]
+    region:   s_299
     level:    [31, 32]
   17269037:
     template: Hill_Lizard
-    at:       [20.878, -19.388, -348.102, 31]
+    region:   s_299
     level:    [25, 26]
   17269038:
     template: Hill_Lizard
-    at:       [82.944, -14.951, -308.898, 110]
+    region:   s_299
     level:    [25, 26]
   17269039:
     template: Hill_Lizard
-    at:       [26.352, -8.968, -271.416, 127]
+    region:   s_299
     level:    [25, 26]
   17269040:
     template: Midnight_Wings
-    at:       [-64.515, -23.778, -361.355, 127]
+    region:   s_299
     level:    [23, 24]
     attributes:
       spawn:
@@ -3744,7 +3747,7 @@ spawns:
           end:    4
   17269041:
     template: Midnight_Wings
-    at:       [-67.297, -23.719, -361.243, 127]
+    region:   s_299
     level:    [23, 24]
     attributes:
       spawn:
@@ -3753,7 +3756,7 @@ spawns:
           end:    6
   17269042:
     template: Moon_Bat
-    at:       [-69.095, -24.016, -339.168, 75]
+    region:   s_299
     level:    [25, 26]
     attributes:
       spawn:
@@ -3762,53 +3765,53 @@ spawns:
           end:    5
   17269043:
     template: Goblin_Mugger
-    at:       [62.763, -16.541, -321.759, 127]
+    region:   s_307
     level:    [26, 27]
   17269044:
     template: Goblin_Pathfinder
-    at:       [-26.319, -15.988, -277.275, 127]
+    region:   s_307
     level:    [31, 32]
   17269045:
     template: Goblins_Beetle
-    at:       [1.000, 1.000, 1.000]
+    region:   s_307
     level:    [23, 27]
   17269046:
     template: Goblin_Leecher
-    at:       [-21.776, -0.340, -162.789, 97]
+    region:   s_307
     level:    [26, 27]
   17269047:
     template: Goblin_Furrier
-    at:       [-104.000, -23.000, -361.000, 25]
+    region:   s_299
     level:    [31, 32]
   17269048:
     template: Goblin_Gambler
-    at:       [-53.592, -1.440, -151.978, 69]
+    region:   s_307
     level:    [26, 27]
   17269049:
     template: Goblin_Smithy
-    at:       [26.230, -12.499, -298.801, 55]
+    region:   s_307
     level:    [31, 32]
   17269050:
     template: Goblin_Shaman
-    at:       [-74.598, -11.293, -253.848, 67]
+    region:   s_307
     level:    [31, 32]
   17269051:
     template: Wight_war
     script:   Wight
-    at:       [-45.273, -5.414, -184.721, 97]
+    region:   s_307
     level:    [27, 33]
   17269052:
     template: Wight_blm
     script:   Wight
-    at:       [-26.105, -2.011, -172.822, 127]
+    region:   s_307
     level:    [27, 33]
   17269053:
     template: Thunder_Elemental
-    at:       [92.631, -12.360, -306.195, 61]
+    region:   s_307
     level:    [38, 40]
   17269054:
     template: Goblin_Pathfinder
-    at:       [-65.000, -23.000, -337.000, 56]
+    region:   s_307
     level:    [31, 32]
   17269055:
     template: Goblins_Beetle
@@ -3816,39 +3819,39 @@ spawns:
     level:    [23, 27]
   17269056:
     template: Goblin_Furrier
-    at:       [-100.000, -23.000, -374.000, 89]
+    region:   s_299
     level:    [31, 32]
   17269057:
     template: Goblin_Smithy
-    at:       [-60.389, -24.113, -340.051, 127]
+    region:   s_307
     level:    [31, 32]
   17269058:
     template: Goblin_Shaman
-    at:       [-60.608, -24.269, -336.429, 127]
+    region:   s_307
     level:    [31, 32]
   17269059:
     template: Sauromugue_Skink
-    at:       [268.431, -0.197, -335.464, 127]
+    region:   s_323
     level:    [31, 32]
   17269060:
     template: Sauromugue_Skink
-    at:       [281.247, -0.155, -330.767, 65]
+    region:   s_323
     level:    [31, 32]
   17269061:
     template: Hill_Lizard
-    at:       [221.082, -0.393, -240.272, 38]
+    region:   s_323
     level:    [25, 26]
   17269062:
     template: Hill_Lizard
-    at:       [200.723, -0.425, -234.163, 104]
+    region:   s_323
     level:    [25, 26]
   17269063:
     template: Hill_Lizard
-    at:       [327.438, -0.413, -320.507, 78]
+    region:   s_323
     level:    [25, 26]
   17269064:
     template: Midnight_Wings
-    at:       [299.494, -1.292, -293.739, 127]
+    region:   s_323
     level:    [23, 24]
     attributes:
       spawn:
@@ -3857,7 +3860,7 @@ spawns:
           end:    5
   17269065:
     template: Midnight_Wings
-    at:       [274.561, 0.246, -337.518, 127]
+    region:   s_323
     level:    [23, 24]
     attributes:
       spawn:
@@ -3866,7 +3869,7 @@ spawns:
           end:    4
   17269066:
     template: Moon_Bat
-    at:       [231.401, -1.405, -257.988, 36]
+    region:   s_323
     level:    [25, 26]
     attributes:
       spawn:
@@ -3875,27 +3878,27 @@ spawns:
           end:    4
   17269067:
     template: Sauromugue_Skink
-    at:       [253.532, 7.810, -189.870, 127]
+    region:   s_331
     level:    [31, 32]
   17269068:
     template: Sauromugue_Skink
-    at:       [190.630, -1.172, -199.742, 32]
+    region:   s_331
     level:    [31, 32]
   17269069:
     template: Hill_Lizard
-    at:       [293.507, 7.195, -183.203, 127]
+    region:   s_331
     level:    [25, 26]
   17269070:
     template: Hill_Lizard
-    at:       [264.805, 7.393, -182.637, 111]
+    region:   s_331
     level:    [25, 26]
   17269071:
     template: Hill_Lizard
-    at:       [215.820, 2.210, -197.760, 127]
+    region:   s_331
     level:    [25, 26]
   17269072:
     template: Midnight_Wings
-    at:       [256.404, 7.616, -215.847, 127]
+    region:   s_331
     level:    [23, 24]
     attributes:
       spawn:
@@ -3904,7 +3907,7 @@ spawns:
           end:    6
   17269073:
     template: Midnight_Wings
-    at:       [272.440, 7.682, -242.035, 127]
+    region:   s_331
     level:    [23, 24]
     attributes:
       spawn:
@@ -3913,7 +3916,7 @@ spawns:
           end:    5
   17269074:
     template: Moon_Bat
-    at:       [202.277, -1.077, -199.786, 62]
+    region:   s_331
     level:    [25, 26]
     attributes:
       spawn:
@@ -3922,125 +3925,125 @@ spawns:
           end:    6
   17269075:
     template: Goblin_Mugger
-    at:       [246.311, 7.748, -197.269, 127]
+    region:   s_339
     level:    [26, 27]
   17269076:
     template: Goblin_Pathfinder
-    at:       [256.261, 6.924, -223.050, 72]
+    region:   s_339
     level:    [31, 32]
   17269077:
     template: Goblins_Beetle
-    at:       [1.000, 1.000, 1.000]
+    region:   s_339
     level:    [26, 27]
   17269078:
     template: Goblin_Leecher
-    at:       [234.539, 7.315, -190.176, 127]
+    region:   s_339
     level:    [26, 27]
   17269079:
     template: Goblin_Furrier
-    at:       [244.825, 7.055, -236.421, 127]
+    region:   s_339
     level:    [31, 32]
   17269080:
     template: Goblin_Gambler
-    at:       [256.886, 0.175, -319.333, 122]
+    region:   s_339
     level:    [26, 27]
   17269081:
     template: Goblin_Smithy
-    at:       [287.167, -0.208, -338.450, 127]
+    region:   s_339
     level:    [31, 32]
   17269082:
     template: Goblin_Shaman
-    at:       [300.809, 7.784, -252.689, 123]
+    region:   s_339
     level:    [31, 32]
   17269083:
     template: Wight_war
     script:   Wight
-    at:       [152.402, -0.844, -237.971, 35]
+    region:   s_339
     level:    [27, 33]
   17269084:
     template: Wight_blm
     script:   Wight
-    at:       [198.559, -0.500, -241.012, 68]
+    region:   s_339
     level:    [27, 33]
   17269085:
     template: Thunder_Elemental
-    at:       [259.788, 8.445, -239.895, 127]
+    region:   region_63
     level:    [38, 40]
   17269086:
     template: Evil_Spirit
-    at:       [494.116, 8.056, -188.336, 108]
+    region:   se_350
     level:    [35, 36]
   17269087:
     template: Evil_Spirit
-    at:       [581.916, 8.402, -9.893, 4]
+    region:   e_351
     level:    [35, 36]
   17269088:
     template: Evil_Spirit
-    at:       [492.169, 24.291, 76.011, 127]
+    region:   e_352
     level:    [35, 36]
   17269089:
     template: Evil_Spirit
-    at:       [498.400, 17.975, 141.221, 107]
+    region:   e_353
     level:    [35, 36]
   17269090:
     template: Evil_Spirit
-    at:       [494.020, 24.030, 189.699, 53]
+    region:   e_354
     level:    [35, 36]
   17269091:
     template: Evil_Spirit
-    at:       [374.740, 32.024, 152.435, 36]
+    region:   e_355
     level:    [35, 36]
   17269092:
     template: Evil_Spirit
-    at:       [327.460, 10.613, -112.227, 127]
+    region:   se_356
     level:    [35, 36]
   17269093:
     template: Evil_Spirit
-    at:       [373.773, 16.437, -196.929, 10]
+    region:   se_357
     level:    [35, 36]
   17269094:
     template: Evil_Spirit
-    at:       [145.819, 24.294, 183.554, 121]
+    region:   c_358
     level:    [35, 36]
   17269095:
     template: Evil_Spirit
-    at:       [-78.832, 1.204, 48.468, 127]
+    region:   c_359
     level:    [35, 36]
   17269096:
     template: Evil_Spirit
-    at:       [-136.467, 15.156, 220.232, 126]
+    region:   nw_360
     level:    [35, 36]
   17269097:
     template: Evil_Spirit
-    at:       [-120.432, 9.868, 170.654, 127]
+    region:   w_361
     level:    [35, 36]
   17269098:
     template: Evil_Spirit
-    at:       [2.998, -14.381, -203.639, 127]
+    region:   s_362
     level:    [35, 36]
   17269099:
     template: Evil_Spirit
-    at:       [47.428, -7.902, -275.740, 127]
+    region:   s_363
     level:    [35, 36]
   17269100:
     template: Evil_Spirit
-    at:       [-11.558, -23.906, -332.570, 35]
+    region:   s_364
     level:    [35, 36]
   17269101:
     template: Evil_Spirit
-    at:       [170.665, 0.072, -216.500, 108]
+    region:   s_365
     level:    [35, 36]
   17269102:
     template: Evil_Spirit
-    at:       [230.089, -0.947, -287.665, 127]
+    region:   s_366
     level:    [35, 36]
   17269103:
     template: Evil_Spirit
-    at:       [292.167, 8.070, -208.530, 79]
+    region:   se_367
     level:    [35, 36]
   17269104:
     template: Evil_Spirit
-    at:       [339.736, 0.111, -294.982, 59]
+    region:   se_368
     level:    [35, 36]
   17269105:
     template: Goblin_Digger_far
@@ -4049,7 +4052,7 @@ spawns:
     level:    [29, 30]
   17269106:
     template: Roc
-    at:       [232.000, -0.010, -327.000, 127]
+    region:   s_370
     level:    [55, 55]
   17269107:
     template: Climbpix_Highrise
@@ -4057,18 +4060,23 @@ spawns:
     level:    [55, 55]
   17269108:
     template: Sprite
+    region:   c_372
     level:    [61, 63]
   17269109:
     template: Sprite
+    region:   c_372
     level:    [61, 63]
   17269110:
     template: Sprite
+    region:   c_372
     level:    [61, 63]
   17269111:
     template: Sprite
+    region:   c_372
     level:    [61, 63]
   17269112:
     template: Sprite
+    region:   c_372
     level:    [61, 63]
   17269113:
     template: Balam-Agab

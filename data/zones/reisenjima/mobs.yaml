@@ -2268,323 +2268,323 @@ spawns:
     at:     [1.000, 1.000, 1.000]
   17969159:
     template: Snaggletoothed_Tiger
-    at:       [-481.600, -31.990, -391.610, 241]
+    region:   w_7
     level:    [121, 126]
   17969160:
     template: Snaggletoothed_Tiger
-    at:       [-494.000, -28.900, -397.670, 3]
+    region:   w_7
     level:    [121, 126]
   17969161:
     template: Snaggletoothed_Tiger
-    at:       [-480.800, -28.330, -420.280, 64]
+    region:   w_7
     level:    [121, 126]
   17969162:
     template: Obstreperous_Panopt
-    at:       [-486.500, -30.040, -408.270, 182]
+    region:   w_7
     level:    [121, 126]
   17969163:
     template: Obstreperous_Panopt
-    at:       [-497.800, -27.040, -405.610, 96]
+    region:   w_7
     level:    [121, 126]
   17969164:
     template: Obstreperous_Panopt
-    at:       [-481.200, -32.200, -401.380, 191]
+    region:   w_7
     level:    [121, 126]
   17969165:
     template: Obstreperous_Panopt
-    at:       [-482.100, -30.930, -409.110, 61]
+    region:   w_7
     level:    [121, 126]
   17969166:
     template: Snaggletoothed_Tiger
-    at:       [-481.500, -31.780, -381.950, 62]
+    region:   w_14
     level:    [121, 126]
   17969167:
     template: Snaggletoothed_Tiger
-    at:       [-484.100, -32.200, -367.780, 247]
+    region:   w_14
     level:    [121, 126]
   17969168:
     template: Obstreperous_Panopt
-    at:       [-484.200, -31.760, -373.540]
+    region:   w_14
     level:    [121, 126]
   17969169:
     template: Obstreperous_Panopt
-    at:       [-488.300, -31.190, -378.030, 34]
+    region:   w_14
     level:    [121, 126]
   17969170:
     template: Agitated_Chapuli
-    at:       [-492.600, -25.300, -422.060, 225]
+    region:   w_18
     level:    [121, 126]
   17969171:
     template: Agitated_Chapuli
-    at:       [-493.500, -23.620, -427.010, 87]
+    region:   w_18
     level:    [121, 126]
   17969172:
     template: Agitated_Chapuli
-    at:       [-493.400, -21.670, -434.010, 107]
+    region:   w_18
     level:    [121, 126]
   17969173:
     template: Devouring_Mosquito
-    at:       [-482.300, -24.490, -436.640, 33]
+    region:   w_18
     level:    [121, 126]
   17969174:
     template: Agitated_Chapuli
-    at:       [-505.300, -27.900, -389.360, 163]
+    region:   w_22
     level:    [121, 126]
   17969175:
     template: Agitated_Chapuli
-    at:       [-500.600, -27.900, -390.100, 39]
+    region:   w_22
     level:    [121, 126]
   17969176:
     template: Agitated_Chapuli
-    at:       [-502.600, -29.630, -375.930, 96]
+    region:   w_22
     level:    [121, 126]
   17969177:
     template: Agitated_Chapuli
-    at:       [-494.700, -28.870, -387.650, 163]
+    region:   w_22
     level:    [121, 126]
   17969178:
     template: Devouring_Mosquito
-    at:       [-494.000, -30.460, -375.850, 171]
+    region:   w_22
     level:    [121, 126]
   17969179:
     template: Snaggletoothed_Tiger
-    at:       [-534.800, -30.680, -390.470, 71]
+    region:   w_27
     level:    [121, 126]
   17969180:
     template: Snaggletoothed_Tiger
-    at:       [-535.200, -27.950, -375.550, 48]
+    region:   w_27
     level:    [121, 126]
   17969181:
     template: Snaggletoothed_Tiger
-    at:       [-534.800, -28.260, -378.680, 200]
+    region:   w_27
     level:    [121, 126]
   17969182:
     template: Snaggletoothed_Tiger
-    at:       [-556.800, -32.410, -397.280, 63]
+    region:   w_27
     level:    [121, 126]
   17969183:
     template: Obstreperous_Panopt
-    at:       [-544.000, -29.250, -376.480, 26]
+    region:   w_27
     level:    [121, 126]
   17969184:
     template: Obstreperous_Panopt
-    at:       [-541.600, -28.170, -368.960, 85]
+    region:   w_27
     level:    [121, 126]
   17969185:
     template: Obstreperous_Panopt
-    at:       [-544.000, -29.260, -375.870, 26]
+    region:   w_27
     level:    [121, 126]
   17969186:
     template: Obstreperous_Panopt
-    at:       [-556.500, -32.250, -392.040, 154]
+    region:   w_27
     level:    [121, 126]
   17969187:
     template: Snaggletoothed_Tiger
-    at:       [-559.100, -28.420, -343.160, 202]
+    region:   w_35
     level:    [121, 126]
   17969188:
     template: Snaggletoothed_Tiger
-    at:       [-575.600, -30.900, -351.640, 23]
+    region:   w_35
     level:    [121, 126]
   17969189:
     template: Snaggletoothed_Tiger
-    at:       [-596.600, -32.280, -352.260, 105]
+    region:   w_35
     level:    [121, 126]
   17969190:
     template: Obstreperous_Panopt
-    at:       [-570.400, -27.970, -337.240, 6]
+    region:   w_35
     level:    [121, 126]
   17969191:
     template: Obstreperous_Panopt
-    at:       [-596.700, -31.470, -340.640, 32]
+    region:   w_35
     level:    [121, 126]
   17969192:
     template: Obstreperous_Panopt
-    at:       [-565.800, -31.060, -352.070, 82]
+    region:   w_35
     level:    [121, 126]
   17969193:
     template: Obstreperous_Panopt
-    at:       [-578.100, -28.870, -339.100, 34]
+    region:   w_35
     level:    [121, 126]
   17969194:
     template: Snaggletoothed_Tiger
-    at:       [-605.800, -35.280, -303.610, 190]
+    region:   w_42
     level:    [121, 126]
   17969195:
     template: Snaggletoothed_Tiger
-    at:       [-585.500, -30.780, -305.420, 171]
+    region:   w_42
     level:    [121, 126]
   17969196:
     template: Snaggletoothed_Tiger
-    at:       [-611.800, -35.190, -303.510, 179]
+    region:   w_42
     level:    [121, 126]
   17969197:
     template: Obstreperous_Panopt
-    at:       [-631.900, -34.620, -306.980, 82]
+    region:   w_42
     level:    [121, 126]
   17969198:
     template: Obstreperous_Panopt
-    at:       [-586.400, -30.810, -306.350, 179]
+    region:   w_42
     level:    [121, 126]
   17969199:
     template: Obstreperous_Panopt
-    at:       [-608.400, -33.830, -309.420, 250]
+    region:   w_42
     level:    [121, 126]
   17969200:
     template: Obstreperous_Panopt
-    at:       [-600.700, -34.800, -306.780, 179]
+    region:   w_42
     level:    [121, 126]
   17969201:
     template: Obstreperous_Panopt
-    at:       [-581.500, -34.740, -286.530, 61]
+    region:   w_49
     level:    [121, 126]
   17969202:
     template: Obstreperous_Panopt
-    at:       [-588.700, -36.080, -268.520, 153]
+    region:   w_49
     level:    [121, 126]
   17969203:
     template: Obstreperous_Panopt
-    at:       [-581.100, -33.930, -290.640, 190]
+    region:   w_49
     level:    [121, 126]
   17969204:
     template: Obstreperous_Panopt
-    at:       [-639.500, -39.790, -264.100, 69]
+    region:   w_52
     level:    [121, 126]
   17969205:
     template: Obstreperous_Panopt
-    at:       [-633.400, -39.400, -266.230, 8]
+    region:   w_52
     level:    [121, 126]
   17969206:
     template: Agitated_Chapuli
-    at:       [-582.700, -28.310, -330.010, 92]
+    region:   w_54
     level:    [121, 126]
   17969207:
     template: Agitated_Chapuli
-    at:       [-582.800, -28.300, -329.800, 68]
+    region:   w_54
     level:    [121, 126]
   17969208:
     template: Agitated_Chapuli
-    at:       [-588.200, -29.410, -321.010, 62]
+    region:   w_54
     level:    [121, 126]
   17969209:
     template: Devouring_Mosquito
-    at:       [-583.900, -28.490, -318.600, 29]
+    region:   w_54
     level:    [121, 126]
   17969210:
     template: Agitated_Chapuli
-    at:       [-629.100, -39.020, -290.440, 184]
+    region:   w_58
     level:    [121, 126]
   17969211:
     template: Agitated_Chapuli
-    at:       [-627.400, -38.010, -298.490, 213]
+    region:   w_58
     level:    [121, 126]
   17969212:
     template: Agitated_Chapuli
-    at:       [-633.400, -38.420, -296.360, 240]
+    region:   w_58
     level:    [121, 126]
   17969213:
     template: Devouring_Mosquito
-    at:       [-631.100, -40.000, -273.470, 239]
+    region:   w_58
     level:    [121, 126]
   17969214:
     template: Devouring_Mosquito
-    at:       [-618.400, -52.180, -178.470, 192]
+    region:   w_62
     level:    [121, 126]
   17969215:
     template: Devouring_Mosquito
-    at:       [-618.400, -51.990, -165.920, 192]
+    region:   w_62
     level:    [121, 126]
   17969216:
     template: Agitated_Chapuli
-    at:       [-617.700, -51.520, -202.160, 191]
+    region:   w_64
     level:    [121, 126]
   17969217:
     template: Agitated_Chapuli
-    at:       [-618.200, -52.150, -185.580, 189]
+    region:   w_64
     level:    [121, 126]
   17969218:
     template: Agitated_Chapuli
-    at:       [-618.800, -46.960, -138.360, 62]
+    region:   w_62
     level:    [121, 126]
   17969219:
     template: Agitated_Chapuli
-    at:       [-618.900, -46.730, -137.200, 191]
+    region:   w_62
     level:    [121, 126]
   17969220:
     template: Obstreperous_Panopt
-    at:       [-605.200, -43.900, -61.652, 106]
+    region:   w_68
     level:    [121, 126]
   17969221:
     template: Obstreperous_Panopt
-    at:       [-616.400, -44.380, -62.305, 25]
+    region:   w_68
     level:    [121, 126]
   17969222:
     template: Obstreperous_Panopt
-    at:       [-616.000, -43.980, -65.528, 220]
+    region:   w_68
     level:    [121, 126]
   17969223:
     template: Obstreperous_Panopt
-    at:       [-585.300, -44.560, -35.432, 145]
+    region:   w_71
     level:    [121, 126]
   17969224:
     template: Obstreperous_Panopt
-    at:       [-581.300, -43.990, -33.894, 197]
+    region:   w_71
     level:    [121, 126]
   17969225:
     template: Obstreperous_Panopt
-    at:       [-597.500, -48.030, -10.085, 127]
+    region:   w_73
     level:    [121, 126]
   17969226:
     template: Obstreperous_Panopt
-    at:       [-586.500, -45.360, -20.261, 113]
+    region:   w_73
     level:    [121, 126]
   17969227:
     template: Indomitable_Faaz
-    at:       [-598.200, -48.100, -11.451, 161]
+    region:   w_73
     level:    [121, 126]
   17969228:
     template: Indomitable_Faaz
-    at:       [-598.500, -47.450, -20.423, 109]
+    region:   w_73
     level:    [121, 126]
   17969229:
     template: Obstreperous_Panopt
-    at:       [-587.300, -45.020, 14.757, 87]
+    region:   w_77
     level:    [121, 126]
   17969230:
     template: Obstreperous_Panopt
-    at:       [-582.800, -44.250, 16.308, 199]
+    region:   w_77
     level:    [121, 126]
   17969231:
     template: Indomitable_Faaz
-    at:       [-592.900, -46.630, 12.333, 134]
+    region:   w_77
     level:    [121, 126]
   17969232:
     template: Indomitable_Faaz
-    at:       [-590.900, -46.290, 18.427, 118]
+    region:   w_77
     level:    [121, 126]
   17969233:
     template: Territorial_Mantis
-    at:       [-584.400, -44.270, -30.003, 26]
+    region:   w_81
     level:    [121, 126]
   17969234:
     template: Territorial_Mantis
-    at:       [-587.400, -45.010, -28.055, 242]
+    region:   w_81
     level:    [121, 126]
   17969235:
     template: Rampaging_Beetle
-    at:       [-587.600, -45.400, -23.121, 187]
+    region:   w_81
     level:    [121, 126]
   17969236:
     template: Territorial_Mantis
-    at:       [-593.700, -46.960, 4.508, 174]
+    region:   w_84
     level:    [121, 126]
   17969237:
     template: Rampaging_Beetle
-    at:       [-588.500, -45.480, -5.437, 105]
+    region:   w_84
     level:    [121, 126]
   17969238:
     template: Rampaging_Beetle
-    at:       [-580.500, -43.960, 2.236, 8]
+    region:   w_84
     level:    [121, 126]
   17969239:
     template: Indomitable_Faaz
@@ -2592,181 +2592,181 @@ spawns:
     level:    [121, 126]
   17969240:
     template: Territorial_Mantis
-    at:       [-548.100, -52.160, 100.249, 186]
+    region:   nw_88
     level:    [121, 126]
   17969241:
     template: Territorial_Mantis
-    at:       [-553.000, -52.180, 97.087, 50]
+    region:   nw_88
     level:    [121, 126]
   17969242:
     template: Rampaging_Beetle
-    at:       [-552.800, -52.170, 97.256, 51]
+    region:   nw_88
     level:    [121, 126]
   17969243:
     template: Rampaging_Beetle
-    at:       [-554.100, -53.190, 107.061, 187]
+    region:   nw_88
     level:    [121, 126]
   17969244:
     template: Territorial_Mantis
-    at:       [-518.500, -51.920, 99.359, 9]
+    region:   nw_92
     level:    [121, 126]
   17969245:
     template: Territorial_Mantis
-    at:       [-512.100, -52.000, 99.418, 255]
+    region:   nw_92
     level:    [121, 126]
   17969246:
     template: Rampaging_Beetle
-    at:       [-524.700, -51.940, 99.612]
+    region:   nw_92
     level:    [121, 126]
   17969247:
     template: Rampaging_Beetle
-    at:       [-525.500, -54.760, 112.180, 182]
+    region:   nw_92
     level:    [121, 126]
   17969248:
     template: Indomitable_Faaz
-    at:       [-455.500, -52.260, 98.973, 240]
+    region:   nw_96
     level:    [121, 126]
   17969249:
     template: Indomitable_Faaz
-    at:       [-455.500, -52.250, 99.164, 237]
+    region:   nw_96
     level:    [121, 126]
   17969250:
     template: Indomitable_Faaz
-    at:       [-453.800, -50.340, 74.176, 26]
+    region:   nw_98
     level:    [121, 126]
   17969251:
     template: Indomitable_Faaz
-    at:       [-460.500, -53.000, 75.022, 201]
+    region:   nw_98
     level:    [121, 126]
   17969252:
     template: Devouring_Mosquito
-    at:       [-458.600, -52.190, 72.030, 56]
+    region:   nw_98
     level:    [121, 126]
   17969253:
     template: Devouring_Mosquito
-    at:       [-462.900, -50.080, 66.093, 62]
+    region:   nw_98
     level:    [121, 126]
   17969254:
     template: Devouring_Mosquito
-    at:       [-451.500, -50.360, 79.429, 174]
+    region:   nw_98
     level:    [121, 126]
   17969255:
     template: Devouring_Mosquito
-    at:       [-451.200, -49.850, 77.184, 13]
+    region:   nw_103
     level:    [121, 126]
   17969256:
     template: Devouring_Mosquito
-    at:       [-430.100, -44.150, 72.125, 17]
+    region:   nw_103
     level:    [121, 126]
   17969257:
     template: Water_Elemental_R
     script:   Water_Elemental
-    at:       [-419.800, -41.900, 80.078, 195]
+    region:   w_105
     level:    [121, 126]
   17969258:
     template: Water_Elemental_R
     script:   Water_Elemental
-    at:       [-420.400, -41.900, 105.024, 192]
+    region:   w_105
     level:    [121, 126]
   17969259:
     template: Lentic_Toad
-    at:       [-454.100, -41.900, 26.303, 130]
+    region:   w_105
     level:    [121, 126]
   17969260:
     template: Lentic_Toad
-    at:       [-433.800, -41.900, 31.256, 205]
+    region:   w_105
     level:    [121, 126]
   17969261:
     template: Lentic_Toad
-    at:       [-426.600, -41.900, 56.938, 2]
+    region:   w_105
     level:    [121, 126]
   17969262:
     template: Lentic_Toad
-    at:       [-428.800, -41.900, 60.748, 216]
+    region:   w_105
     level:    [121, 126]
   17969263:
     template: Lentic_Toad
-    at:       [-448.100, -41.900, 52.362, 200]
+    region:   w_105
     level:    [121, 126]
   17969264:
     template: Lentic_Toad
-    at:       [-439.600, -41.900, 47.548, 127]
+    region:   w_105
     level:    [121, 126]
   17969265:
     template: Wretched_Poroggo
-    at:       [-456.300, -41.900, 37.948, 171]
+    region:   w_113
     level:    [121, 126]
   17969266:
     template: Wretched_Poroggo
-    at:       [-448.800, -41.900, 52.155, 226]
+    region:   w_113
     level:    [121, 126]
   17969267:
     template: Devouring_Mosquito
-    at:       [-440.800, -41.900, 48.357, 71]
+    region:   w_105
     level:    [121, 126]
   17969268:
     template: Devouring_Mosquito
-    at:       [-454.400, -41.900, 23.992, 121]
+    region:   w_105
     level:    [121, 126]
   17969269:
     template: Lentic_Toad
-    at:       [-447.100, -41.900, -19.850, 6]
+    region:   w_117
     level:    [121, 126]
   17969270:
     template: Lentic_Toad
-    at:       [-456.300, -41.900, -14.560, 166]
+    region:   w_117
     level:    [121, 126]
   17969271:
     template: Lentic_Toad
-    at:       [-460.300, -41.900, -6.705, 166]
+    region:   w_117
     level:    [121, 126]
   17969272:
     template: Wretched_Poroggo
-    at:       [-456.700, -41.890, -13.222, 51]
+    region:   w_117
     level:    [121, 126]
   17969273:
     template: Lentic_Toad
-    at:       [-419.800, -41.900, 112.491, 64]
+    region:   nw_121
     level:    [121, 126]
   17969274:
     template: Lentic_Toad
-    at:       [-419.600, -41.900, 116.531, 192]
+    region:   nw_121
     level:    [121, 126]
   17969275:
     template: Lentic_Toad
-    at:       [-419.500, -41.900, 110.170, 192]
+    region:   nw_121
     level:    [121, 126]
   17969276:
     template: Lentic_Toad
-    at:       [-419.400, -41.900, 93.698, 193]
+    region:   nw_121
     level:    [121, 126]
   17969277:
     template: Wretched_Poroggo
-    at:       [-419.200, -41.900, 111.156, 192]
+    region:   nw_121
     level:    [121, 126]
   17969278:
     template: Devouring_Mosquito
-    at:       [-419.500, -41.900, 72.726, 65]
+    region:   nw_121
     level:    [121, 126]
   17969279:
     template: Lentic_Toad
-    at:       [-420.600, -57.890, 209.149, 53]
+    region:   nw_127
     level:    [121, 126]
   17969280:
     template: Lentic_Toad
-    at:       [-419.300, -57.890, 202.391, 182]
+    region:   nw_127
     level:    [121, 126]
   17969281:
     template: Lentic_Toad
-    at:       [-420.400, -57.890, 208.384, 185]
+    region:   nw_127
     level:    [121, 126]
   17969282:
     template: Lentic_Toad
-    at:       [-420.200, -54.260, 188.145, 182]
+    region:   nw_127
     level:    [121, 126]
   17969283:
     template: Lentic_Toad
-    at:       [-418.700, -56.500, 193.253, 206]
+    region:   nw_127
     level:    [121, 126]
   17969284:
     template: Wretched_Poroggo
@@ -2774,932 +2774,932 @@ spawns:
     level:    [121, 126]
   17969285:
     template: Devouring_Mosquito
-    at:       [-419.500, -52.990, 184.218, 57]
+    region:   nw_127
     level:    [121, 126]
   17969286:
     template: Indomitable_Faaz
-    at:       [-375.600, -51.920, 131.636, 222]
+    region:   nw_134
     level:    [121, 126]
   17969287:
     template: Indomitable_Faaz
-    at:       [-367.800, -52.630, 132.449, 207]
+    region:   nw_134
     level:    [121, 126]
   17969288:
     template: Indomitable_Faaz
-    at:       [-369.100, -52.360, 133.649, 9]
+    region:   nw_134
     level:    [121, 126]
   17969289:
     template: Indomitable_Faaz
-    at:       [-377.700, -51.920, 116.273, 227]
+    region:   nw_134
     level:    [121, 126]
   17969290:
     template: Indomitable_Faaz
-    at:       [-330.500, -52.060, 141.688, 248]
+    region:   nw_138
     level:    [121, 126]
   17969291:
     template: Indomitable_Faaz
-    at:       [-326.800, -52.000, 141.882, 128]
+    region:   nw_138
     level:    [121, 126]
   17969292:
     template: Indomitable_Faaz
-    at:       [-351.400, -52.040, 141.557, 129]
+    region:   nw_138
     level:    [121, 126]
   17969293:
     template: Territorial_Mantis
-    at:       [-395.400, -55.530, 119.824, 235]
+    region:   nw_141
     level:    [121, 126]
   17969294:
     template: Territorial_Mantis
-    at:       [-398.700, -55.970, 117.845, 174]
+    region:   nw_141
     level:    [121, 126]
   17969295:
     template: Territorial_Mantis
-    at:       [-409.200, -53.420, 124.878, 92]
+    region:   nw_141
     level:    [121, 126]
   17969296:
     template: Territorial_Mantis
-    at:       [-402.500, -56.250, 121.751, 202]
+    region:   nw_141
     level:    [121, 126]
   17969297:
     template: Rampaging_Beetle
-    at:       [-397.400, -56.630, 125.829, 11]
+    region:   nw_141
     level:    [121, 126]
   17969298:
     template: Rampaging_Beetle
-    at:       [-406.900, -53.500, 109.450, 179]
+    region:   nw_141
     level:    [121, 126]
   17969299:
     template: Rampaging_Beetle
-    at:       [-398.900, -53.330, 108.137, 98]
+    region:   nw_141
     level:    [121, 126]
   17969300:
     template: Rampaging_Beetle
-    at:       [-396.200, -56.460, 125.539, 117]
+    region:   nw_141
     level:    [121, 126]
   17969301:
     template: Territorial_Mantis
-    at:       [-370.000, -53.990, 116.834, 118]
+    region:   nw_149
     level:    [121, 126]
   17969302:
     template: Territorial_Mantis
-    at:       [-355.100, -53.290, 132.570, 184]
+    region:   nw_149
     level:    [121, 126]
   17969303:
     template: Territorial_Mantis
-    at:       [-361.700, -54.320, 128.065, 17]
+    region:   nw_149
     level:    [121, 126]
   17969304:
     template: Rampaging_Beetle
-    at:       [-353.900, -54.430, 129.302, 54]
+    region:   nw_149
     level:    [121, 126]
   17969305:
     template: Rampaging_Beetle
-    at:       [-353.700, -54.560, 128.953, 57]
+    region:   nw_149
     level:    [121, 126]
   17969306:
     template: Rampaging_Beetle
-    at:       [-367.200, -54.630, 122.856, 100]
+    region:   nw_149
     level:    [121, 126]
   17969307:
     template: Territorial_Mantis
-    at:       [-305.700, -52.630, 153.983, 178]
+    region:   nw_155
     level:    [121, 126]
   17969308:
     template: Territorial_Mantis
-    at:       [-301.300, -51.980, 155.936, 228]
+    region:   nw_155
     level:    [121, 126]
   17969309:
     template: Territorial_Mantis
-    at:       [-317.600, -51.900, 139.897, 118]
+    region:   nw_155
     level:    [121, 126]
   17969310:
     template: Rampaging_Beetle
-    at:       [-307.400, -51.900, 145.240, 232]
+    region:   nw_155
     level:    [121, 126]
   17969311:
     template: Rampaging_Beetle
-    at:       [-310.600, -52.520, 148.330, 7]
+    region:   nw_155
     level:    [121, 126]
   17969312:
     template: Rampaging_Beetle
-    at:       [-307.100, -51.900, 145.757, 229]
+    region:   nw_155
     level:    [121, 126]
   17969313:
     template: Indomitable_Faaz
-    at:       [-304.800, -55.680, 167.490, 228]
+    region:   nw_161
     level:    [121, 126]
   17969314:
     template: Indomitable_Faaz
-    at:       [-299.100, -62.790, 183.623, 223]
+    region:   nw_161
     level:    [121, 126]
   17969315:
     template: Indomitable_Faaz
-    at:       [-316.900, -72.080, 200.470, 123]
+    region:   nw_163
     level:    [121, 126]
   17969316:
     template: Territorial_Mantis
-    at:       [-301.600, -67.910, 203.932, 160]
+    region:   nw_163
     level:    [121, 126]
   17969317:
     template: Territorial_Mantis
-    at:       [-309.800, -66.340, 185.348, 173]
+    region:   nw_163
     level:    [121, 126]
   17969318:
     template: Rampaging_Beetle
-    at:       [-297.000, -66.840, 195.117, 87]
+    region:   nw_163
     level:    [121, 126]
   17969319:
     template: Rampaging_Beetle
-    at:       [-300.900, -62.670, 184.333, 63]
+    region:   nw_163
     level:    [121, 126]
   17969320:
     template: Snaggletoothed_Tiger
-    at:       [-299.000, -69.640, 268.886, 70]
+    region:   nw_168
     level:    [121, 126]
   17969321:
     template: Snaggletoothed_Tiger
-    at:       [-289.900, -76.860, 251.259, 149]
+    region:   nw_168
     level:    [121, 126]
   17969322:
     template: Snaggletoothed_Tiger
-    at:       [-297.500, -74.330, 251.977, 121]
+    region:   nw_168
     level:    [121, 126]
   17969323:
     template: Officious_Unseelie
-    at:       [-285.700, -79.360, 244.097, 229]
+    region:   nw_168
     level:    [121, 126]
   17969324:
     template: Officious_Unseelie
-    at:       [-294.000, -73.970, 258.617, 250]
+    region:   nw_168
     level:    [121, 126]
   17969325:
     template: Officious_Unseelie
-    at:       [-296.100, -73.200, 296.227, 49]
+    region:   nw_173
     level:    [121, 126]
   17969326:
     template: Officious_Unseelie
-    at:       [-284.500, -71.990, 284.359, 235]
+    region:   nw_173
     level:    [121, 126]
   17969327:
     template: Officious_Unseelie
-    at:       [-284.600, -74.860, 293.923, 222]
+    region:   nw_173
     level:    [121, 126]
   17969328:
     template: Macabre_Skeleton
-    at:       [-303.700, -79.280, 314.692, 5]
+    region:   nw_173
     level:    [121, 126]
   17969329:
     template: Macabre_Skeleton
-    at:       [-284.400, -76.480, 299.720, 244]
+    region:   nw_173
     level:    [121, 126]
   17969330:
     template: Macabre_Skeleton
-    at:       [-295.600, -68.130, 278.971, 12]
+    region:   nw_173
     level:    [121, 126]
   17969331:
     template: Perfervid_Naraka
-    at:       [-284.600, -76.430, 299.450, 241]
+    region:   nw_173
     level:    [121, 126]
   17969332:
     template: Officious_Unseelie
-    at:       [-275.700, -81.280, 319.128, 130]
+    region:   nw_180
     level:    [121, 126]
   17969333:
     template: Officious_Unseelie
-    at:       [-312.500, -80.290, 320.638, 21]
+    region:   nw_180
     level:    [121, 126]
   17969334:
     template: Officious_Unseelie
-    at:       [-314.300, -80.470, 333.410, 252]
+    region:   nw_180
     level:    [121, 126]
   17969335:
     template: Macabre_Skeleton
-    at:       [-293.900, -80.830, 324.527, 123]
+    region:   nw_180
     level:    [121, 126]
   17969336:
     template: Macabre_Skeleton
-    at:       [-303.200, -80.390, 325.605, 85]
+    region:   nw_180
     level:    [121, 126]
   17969337:
     template: Perfervid_Naraka
-    at:       [-314.700, -80.390, 327.787, 115]
+    region:   nw_180
     level:    [121, 126]
   17969338:
     template: Officious_Unseelie
-    at:       [-320.300, -80.160, 354.239, 231]
+    region:   nw_186
     level:    [121, 126]
   17969339:
     template: Macabre_Skeleton
-    at:       [-318.900, -80.470, 354.628, 162]
+    region:   nw_186
     level:    [121, 126]
   17969340:
     template: Macabre_Skeleton
-    at:       [-319.500, -80.400, 354.194, 209]
+    region:   nw_186
     level:    [121, 126]
   17969341:
     template: Indomitable_Faaz
-    at:       [-327.500, -67.900, 299.748, 28]
+    region:   nw_189
     level:    [121, 126]
   17969342:
     template: Indomitable_Faaz
-    at:       [-310.000, -67.900, 295.967, 154]
+    region:   nw_189
     level:    [121, 126]
   17969343:
     template: Indomitable_Faaz
-    at:       [-338.100, -66.710, 365.957, 194]
+    region:   nw_191
     level:    [121, 126]
   17969344:
     template: Indomitable_Faaz
-    at:       [-338.100, -63.900, 377.359, 191]
+    region:   nw_191
     level:    [121, 126]
   17969345:
     template: Porxie
-    at:       [-356.400, -72.390, 284.009, 236]
+    region:   nw_193
     level:    [121, 126]
   17969346:
     template: Porxie
-    at:       [-348.700, -71.290, 292.023, 191]
+    region:   nw_193
     level:    [121, 126]
   17969347:
     template: Asphyxiating_Cyhiraeth
-    at:       [-350.800, -70.400, 318.972, 149]
+    region:   nw_193
     level:    [121, 126]
   17969348:
     template: Arboreal_Chigoe
-    at:       [-359.000, -72.390, 316.634, 77]
+    region:   nw_193
     level:    [121, 126]
   17969349:
     template: Arboreal_Chigoe
-    at:       [-356.600, -71.970, 323.781, 68]
+    region:   nw_193
     level:    [121, 126]
   17969350:
     template: Porxie
-    at:       [-368.400, -72.860, 290.092, 17]
+    region:   nw_198
     level:    [121, 126]
   17969351:
     template: Porxie
-    at:       [-381.900, -71.680, 282.317, 133]
+    region:   nw_198
     level:    [121, 126]
   17969352:
     template: Asphyxiating_Cyhiraeth
-    at:       [-373.200, -72.110, 285.729, 99]
+    region:   nw_198
     level:    [121, 126]
   17969353:
     template: Officious_Unseelie
-    at:       [-398.000, -68.340, 302.722, 194]
+    region:   nw_201
     level:    [121, 126]
   17969354:
     template: Officious_Unseelie
-    at:       [-389.400, -68.060, 304.371, 133]
+    region:   nw_201
     level:    [121, 126]
   17969355:
     template: Macabre_Skeleton
-    at:       [-377.300, -62.830, 354.868, 62]
+    region:   nw_203
     level:    [121, 126]
   17969356:
     template: Macabre_Skeleton
-    at:       [-370.500, -63.590, 359.119, 228]
+    region:   nw_203
     level:    [121, 126]
   17969357:
     template: Porxie
-    at:       [-366.400, -69.650, 335.240, 237]
+    region:   nw_205
     level:    [121, 126]
   17969358:
     template: Porxie
-    at:       [-369.100, -71.060, 327.230, 235]
+    region:   nw_205
     level:    [121, 126]
   17969359:
     template: Porxie
-    at:       [-370.800, -68.000, 339.845, 113]
+    region:   nw_205
     level:    [121, 126]
   17969360:
     template: Asphyxiating_Cyhiraeth
-    at:       [-369.700, -71.040, 326.549, 234]
+    region:   nw_205
     level:    [121, 126]
   17969361:
     template: Asphyxiating_Cyhiraeth
-    at:       [-370.300, -67.850, 340.566, 230]
+    region:   nw_205
     level:    [121, 126]
   17969362:
     template: Arboreal_Chigoe
-    at:       [-391.900, -63.280, 332.433, 238]
+    region:   nw_205
     level:    [121, 126]
   17969363:
     template: Arboreal_Chigoe
-    at:       [-364.600, -71.210, 328.347, 129]
+    region:   nw_205
     level:    [121, 126]
   17969364:
     template: Porxie
-    at:       [-365.000, -64.510, 357.161, 87]
+    region:   nw_203
     level:    [121, 126]
   17969365:
     template: Porxie
-    at:       [-377.800, -62.920, 351.292, 39]
+    region:   nw_203
     level:    [121, 126]
   17969366:
     template: Asphyxiating_Cyhiraeth
-    at:       [-377.900, -61.670, 357.742, 4]
+    region:   nw_203
     level:    [121, 126]
   17969367:
     template: Porxie
-    at:       [-355.900, -65.070, 360.529, 104]
+    region:   nw_215
     level:    [121, 126]
   17969368:
     template: Indomitable_Faaz
-    at:       [-367.400, -58.680, 384.257, 217]
+    region:   nw_216
     level:    [121, 126]
   17969369:
     template: Indomitable_Faaz
-    at:       [-376.900, -59.340, 376.552, 74]
+    region:   nw_216
     level:    [121, 126]
   17969370:
     template: Porxie
-    at:       [-361.700, -60.480, 381.981, 164]
+    region:   nw_216
     level:    [121, 126]
   17969371:
     template: Porxie
-    at:       [-376.700, -59.360, 376.606, 77]
+    region:   nw_216
     level:    [121, 126]
   17969372:
     template: Asphyxiating_Cyhiraeth
-    at:       [-385.700, -53.200, 389.375, 168]
+    region:   nw_216
     level:    [121, 126]
   17969373:
     template: Arboreal_Chigoe
-    at:       [-367.200, -58.540, 384.630, 244]
+    region:   nw_216
     level:    [121, 126]
   17969374:
     template: Arboreal_Chigoe
-    at:       [-381.000, -56.180, 381.212, 88]
+    region:   nw_216
     level:    [121, 126]
   17969375:
     template: Porxie
-    at:       [-374.500, -53.980, 400.351, 130]
+    region:   nw_223
     level:    [121, 126]
   17969376:
     template: Porxie
-    at:       [-370.900, -55.360, 405.424, 1]
+    region:   nw_223
     level:    [121, 126]
   17969377:
     template: Asphyxiating_Cyhiraeth
-    at:       [-363.000, -56.140, 397.851, 10]
+    region:   nw_223
     level:    [121, 126]
   17969378:
     template: Porxie
-    at:       [-410.900, -50.790, 397.675, 50]
+    region:   nw_226
     level:    [121, 126]
   17969379:
     template: Porxie
-    at:       [-408.500, -49.960, 402.842, 41]
+    region:   nw_226
     level:    [121, 126]
   17969380:
     template: Asphyxiating_Cyhiraeth
-    at:       [-400.000, -48.110, 412.761, 167]
+    region:   nw_226
     level:    [121, 126]
   17969381:
     template: Indomitable_Faaz
-    at:       [-397.200, -48.670, 438.795, 154]
+    region:   nw_229
     level:    [121, 126]
   17969382:
     template: Indomitable_Faaz
-    at:       [-392.100, -49.400, 417.092, 7]
+    region:   nw_229
     level:    [121, 126]
   17969383:
     template: Porxie
-    at:       [-393.600, -48.970, 424.727, 247]
+    region:   nw_229
     level:    [121, 126]
   17969384:
     template: Porxie
-    at:       [-384.500, -51.320, 417.541]
+    region:   nw_229
     level:    [121, 126]
   17969385:
     template: Indomitable_Faaz
-    at:       [-348.900, -59.190, 394.993, 115]
+    region:   nw_233
     level:    [121, 126]
   17969386:
     template: Indomitable_Faaz
-    at:       [-349.000, -57.950, 423.002, 219]
+    region:   nw_233
     level:    [121, 126]
   17969387:
     template: Indomitable_Faaz
-    at:       [-340.000, -60.450, 427.811, 196]
+    region:   nw_233
     level:    [121, 126]
   17969388:
     template: Porxie
-    at:       [-355.900, -57.050, 406.973, 184]
+    region:   nw_233
     level:    [121, 126]
   17969389:
     template: Porxie
-    at:       [-347.900, -58.640, 429.348, 192]
+    region:   nw_233
     level:    [121, 126]
   17969390:
     template: Asphyxiating_Cyhiraeth
-    at:       [-346.600, -59.550, 400.075, 245]
+    region:   nw_233
     level:    [121, 126]
   17969391:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [-491.000, -52.700, 424.240, 5]
+    region:   nw_239
     level:    [121, 126]
   17969392:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [-488.500, -48.380, 402.069, 104]
+    region:   nw_240
     level:    [121, 126]
   17969393:
     template: Agitated_Chapuli
-    at:       [-470.200, -52.750, 410.619, 164]
+    region:   nw_241
     level:    [121, 126]
   17969394:
     template: Agitated_Chapuli
-    at:       [-496.700, -48.190, 401.575, 60]
+    region:   nw_241
     level:    [121, 126]
   17969395:
     template: Territorial_Mantis
-    at:       [-505.700, -49.190, 415.463, 1]
+    region:   nw_241
     level:    [121, 126]
   17969396:
     template: Territorial_Mantis
-    at:       [-501.800, -48.430, 404.726, 24]
+    region:   nw_241
     level:    [121, 126]
   17969397:
     template: Glowering_Ladybug
-    at:       [-466.000, -52.100, 401.446, 20]
+    region:   nw_241
     level:    [121, 126]
   17969398:
     template: Glowering_Ladybug
-    at:       [-504.600, -49.120, 413.238, 191]
+    region:   nw_241
     level:    [121, 126]
   17969399:
     template: Lucani
-    at:       [-481.800, -51.550, 414.492, 251]
+    region:   nw_241
     level:    [121, 126]
   17969400:
     template: Lucani
-    at:       [-495.800, -48.570, 405.458, 195]
+    region:   nw_241
     level:    [121, 126]
   17969401:
     template: Agitated_Chapuli
-    at:       [-476.800, -56.270, 455.721, 68]
+    region:   nw_249
     level:    [121, 126]
   17969402:
     template: Agitated_Chapuli
-    at:       [-481.900, -56.170, 449.791, 170]
+    region:   nw_249
     level:    [121, 126]
   17969403:
     template: Glowering_Ladybug
-    at:       [-488.300, -54.420, 429.481, 222]
+    region:   nw_251
     level:    [121, 126]
   17969404:
     template: Lucani
-    at:       [-510.500, -49.620, 439.569, 89]
+    region:   nw_251
     level:    [121, 126]
   17969405:
     template: Lucani
-    at:       [-473.200, -56.130, 430.776, 247]
+    region:   nw_251
     level:    [121, 126]
   17969406:
     template: Agitated_Chapuli
-    at:       [-480.400, -55.820, 456.259, 76]
+    region:   nw_249
     level:    [121, 126]
   17969407:
     template: Agitated_Chapuli
-    at:       [-487.000, -55.980, 451.648, 145]
+    region:   nw_249
     level:    [121, 126]
   17969408:
     template: Territorial_Mantis
-    at:       [-494.400, -55.740, 474.286, 75]
+    region:   nw_256
     level:    [121, 126]
   17969409:
     template: Territorial_Mantis
-    at:       [-506.300, -55.990, 476.372, 36]
+    region:   nw_256
     level:    [121, 126]
   17969410:
     template: Glowering_Ladybug
-    at:       [-515.300, -55.150, 470.903, 160]
+    region:   nw_256
     level:    [121, 126]
   17969411:
     template: Glowering_Ladybug
-    at:       [-511.200, -54.070, 465.941, 42]
+    region:   nw_256
     level:    [121, 126]
   17969412:
     template: Lucani
-    at:       [-503.700, -54.580, 466.542, 94]
+    region:   nw_256
     level:    [121, 126]
   17969413:
     template: Lucani
-    at:       [-494.700, -56.130, 480.501, 255]
+    region:   nw_256
     level:    [121, 126]
   17969414:
     template: Porxie
-    at:       [-401.400, -56.720, 486.558, 211]
+    region:   nw_262
     level:    [121, 126]
   17969415:
     template: Porxie
-    at:       [-403.800, -57.270, 481.308, 139]
+    region:   nw_262
     level:    [121, 126]
   17969416:
     template: Asphyxiating_Cyhiraeth
-    at:       [-405.000, -57.490, 483.092, 81]
+    region:   nw_262
     level:    [121, 126]
   17969417:
     template: Porxie
-    at:       [-397.300, -56.980, 511.523, 186]
+    region:   nw_265
     level:    [121, 126]
   17969418:
     template: Asphyxiating_Cyhiraeth
-    at:       [-400.500, -56.340, 497.395, 111]
+    region:   nw_265
     level:    [121, 126]
   17969419:
     template: Porxie
-    at:       [-407.700, -62.640, 546.591, 191]
+    region:   nw_267
     level:    [121, 126]
   17969420:
     template: Jeering_Pixie
-    at:       [-457.300, -60.250, 570.067, 17]
+    region:   nw_268
     level:    [121, 126]
   17969421:
     template: Jeering_Pixie
-    at:       [-435.400, -63.310, 568.929, 27]
+    region:   nw_268
     level:    [121, 126]
   17969422:
     template: Jeering_Pixie
-    at:       [-456.800, -55.920, 581.010, 184]
+    region:   nw_268
     level:    [121, 126]
   17969423:
     template: Jeering_Pixie
-    at:       [-483.600, -56.080, 563.611, 199]
+    region:   nw_271
     level:    [121, 126]
   17969424:
     template: Jeering_Pixie
-    at:       [-474.100, -53.260, 571.107, 50]
+    region:   nw_271
     level:    [121, 126]
   17969425:
     template: Indomitable_Faaz
-    at:       [-503.400, -58.620, 607.197, 136]
+    region:   nw_273
     level:    [121, 126]
   17969426:
     template: Indomitable_Faaz
-    at:       [-503.500, -57.050, 602.672, 126]
+    region:   nw_273
     level:    [121, 126]
   17969427:
     template: Jeering_Pixie
-    at:       [-478.800, -53.100, 590.096, 55]
+    region:   nw_273
     level:    [121, 126]
   17969428:
     template: Jeering_Pixie
-    at:       [-506.100, -57.290, 602.937, 20]
+    region:   nw_273
     level:    [121, 126]
   17969429:
     template: Jeering_Pixie
-    at:       [-479.700, -55.580, 594.411, 23]
+    region:   nw_273
     level:    [121, 126]
   17969430:
     template: Jeering_Pixie
-    at:       [-482.600, -55.200, 593.976, 157]
+    region:   nw_273
     level:    [121, 126]
   17969431:
     template: Indomitable_Faaz
-    at:       [-531.500, -54.640, 597.588, 103]
+    region:   nw_279
     level:    [121, 126]
   17969432:
     template: Indomitable_Faaz
-    at:       [-516.700, -56.190, 596.982, 188]
+    region:   nw_280
     level:    [121, 126]
   17969433:
     template: Indomitable_Faaz
-    at:       [-487.800, -55.370, 594.234, 132]
+    region:   nw_280
     level:    [121, 126]
   17969434:
     template: Jeering_Pixie
-    at:       [-505.400, -52.660, 590.473, 126]
+    region:   nw_280
     level:    [121, 126]
   17969435:
     template: Jeering_Pixie
-    at:       [-493.700, -52.480, 590.796, 60]
+    region:   nw_280
     level:    [121, 126]
   17969436:
     template: Lentic_Toad
-    at:       [-460.000, -49.890, 593.286, 78]
+    region:   nw_284
     level:    [121, 126]
   17969437:
     template: Lentic_Toad
-    at:       [-459.600, -49.780, 605.382, 206]
+    region:   nw_284
     level:    [121, 126]
   17969438:
     template: Water_Elemental_R
     script:   Water_Elemental
-    at:       [-458.800, -49.890, 596.445, 206]
+    region:   nw_284
     level:    [121, 126]
   17969439:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [-286.900, -54.860, 497.441, 68]
+    region:   nw_287
     level:    [121, 126]
   17969440:
     template: Quarrelsome_Hippogryph
-    at:       [-283.700, -55.560, 504.572, 241]
+    region:   nw_288
     level:    [121, 126]
   17969441:
     template: Quarrelsome_Hippogryph
-    at:       [-315.500, -56.120, 523.224, 104]
+    region:   nw_287
     level:    [121, 126]
   17969442:
     template: Quarrelsome_Hippogryph
-    at:       [-221.200, -67.980, 546.064, 89]
+    region:   n_290
     level:    [121, 126]
   17969443:
     template: Quarrelsome_Hippogryph
-    at:       [-218.100, -67.900, 566.591, 75]
+    region:   n_290
     level:    [121, 126]
   17969444:
     template: Porxie
-    at:       [-215.300, -68.380, 555.590, 34]
+    region:   n_290
     level:    [121, 126]
   17969445:
     template: Porxie
-    at:       [-205.900, -69.640, 567.838, 191]
+    region:   n_290
     level:    [121, 126]
   17969446:
     template: Porxie
-    at:       [-198.800, -80.310, 526.197, 39]
+    region:   n_294
     level:    [121, 126]
   17969447:
     template: Porxie
-    at:       [-198.800, -76.400, 542.840, 201]
+    region:   n_294
     level:    [121, 126]
   17969448:
     template: Asphyxiating_Cyhiraeth
-    at:       [-206.000, -72.250, 553.349, 150]
+    region:   n_294
     level:    [121, 126]
   17969449:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [-155.200, -78.180, 617.236, 43]
+    region:   n_297
     level:    [121, 126]
   17969450:
     template: Quarrelsome_Hippogryph
-    at:       [-154.400, -78.040, 591.682, 230]
+    region:   n_298
     level:    [121, 126]
   17969451:
     template: Quarrelsome_Hippogryph
-    at:       [-121.700, -76.360, 575.913, 220]
+    region:   n_298
     level:    [121, 126]
   17969452:
     template: Quarrelsome_Hippogryph
-    at:       [-143.400, -80.600, 559.312, 150]
+    region:   n_298
     level:    [121, 126]
   17969453:
     template: Porxie
-    at:       [-127.600, -76.130, 583.799, 113]
+    region:   n_298
     level:    [121, 126]
   17969454:
     template: Porxie
-    at:       [-134.800, -79.700, 596.091, 108]
+    region:   n_298
     level:    [121, 126]
   17969455:
     template: Porxie
-    at:       [-153.400, -76.880, 586.706, 70]
+    region:   n_298
     level:    [121, 126]
   17969456:
     template: Asphyxiating_Cyhiraeth
-    at:       [-147.300, -79.840, 596.538, 252]
+    region:   n_298
     level:    [121, 126]
   17969457:
     template: Asphyxiating_Cyhiraeth
-    at:       [-129.500, -76.460, 583.734, 64]
+    region:   n_298
     level:    [121, 126]
   17969458:
     template: Porxie
-    at:       [98.114, -74.280, 602.216]
+    region:   n_306
     level:    [121, 126]
   17969459:
     template: Porxie
-    at:       [-75.640, -84.580, 575.911, 245]
+    region:   n_306
     level:    [121, 126]
   17969460:
     template: Porxie
-    at:       [98.207, -74.260, 601.289, 253]
+    region:   n_306
     level:    [121, 126]
   17969461:
     template: Asphyxiating_Cyhiraeth
-    at:       [-74.790, -87.250, 587.801, 220]
+    region:   n_306
     level:    [121, 126]
   17969462:
     template: Asphyxiating_Cyhiraeth
-    at:       [-84.000, -84.250, 574.843, 133]
+    region:   n_306
     level:    [121, 126]
   17969463:
     template: Officious_Unseelie
-    at:       [71.805, -81.540, 596.062, 226]
+    region:   n_311
     level:    [121, 126]
   17969464:
     template: Officious_Unseelie
-    at:       [65.129, -82.920, 596.070, 227]
+    region:   n_311
     level:    [121, 126]
   17969465:
     template: Officious_Unseelie
-    at:       [47.930, -87.410, 597.500, 93]
+    region:   n_311
     level:    [121, 126]
   17969466:
     template: Officious_Unseelie
-    at:       [51.938, -84.580, 567.471, 196]
+    region:   n_314
     level:    [121, 126]
   17969467:
     template: Officious_Unseelie
-    at:       [51.873, -85.380, 555.840, 128]
+    region:   n_314
     level:    [121, 126]
   17969468:
     template: Ignoble_Skeleton
-    at:       [40.819, -88.300, 558.486, 46]
+    region:   n_314
     level:    [121, 126]
   17969469:
     template: Quarrelsome_Hippogryph
-    at:       [61.376, -83.910, 548.018, 85]
+    region:   n_317
     level:    [121, 126]
   17969470:
     template: Quarrelsome_Hippogryph
-    at:       [55.721, -86.160, 546.385, 189]
+    region:   n_317
     level:    [121, 126]
   17969471:
     template: Quarrelsome_Hippogryph
-    at:       [61.097, -85.480, 542.718, 34]
+    region:   n_317
     level:    [121, 126]
   17969472:
     template: Officious_Unseelie
-    at:       [55.909, -87.960, 541.427, 87]
+    region:   n_317
     level:    [121, 126]
   17969473:
     template: Officious_Unseelie
-    at:       [68.553, -83.070, 558.247, 204]
+    region:   n_317
     level:    [121, 126]
   17969474:
     template: Ignoble_Skeleton
-    at:       [56.560, -85.860, 547.192, 163]
+    region:   n_317
     level:    [121, 126]
   17969475:
     template: Ignoble_Skeleton
-    at:       [50.661, -92.520, 534.129, 179]
+    region:   n_317
     level:    [121, 126]
   17969476:
     template: Officious_Unseelie
-    at:       [93.769, -76.110, 586.809, 232]
+    region:   n_324
     level:    [121, 126]
   17969477:
     template: Officious_Unseelie
-    at:       [105.610, -75.680, 601.434, 28]
+    region:   n_324
     level:    [121, 126]
   17969478:
     template: Ignoble_Skeleton
-    at:       [73.462, -81.160, 593.395, 108]
+    region:   n_324
     level:    [121, 126]
   17969479:
     template: Officious_Unseelie
-    at:       [88.026, -80.490, 552.075, 133]
+    region:   n_327
     level:    [121, 126]
   17969480:
     template: Officious_Unseelie
-    at:       [86.404, -78.970, 557.328, 5]
+    region:   n_327
     level:    [121, 126]
   17969481:
     template: Ignoble_Skeleton
-    at:       [91.888, -77.150, 556.223, 41]
+    region:   n_327
     level:    [121, 126]
   17969482:
     template: Officious_Unseelie
-    at:       [73.027, -86.110, 531.614, 204]
+    region:   n_330
     level:    [121, 126]
   17969483:
     template: Officious_Unseelie
-    at:       [78.746, -88.490, 520.447, 62]
+    region:   n_330
     level:    [121, 126]
   17969484:
     template: Ignoble_Skeleton
-    at:       [76.223, -85.770, 531.101, 4]
+    region:   n_330
     level:    [121, 126]
   17969485:
     template: Rampaging_Beetle
-    at:       [116.340, -85.790, 549.861, 66]
+    region:   n_333
     level:    [121, 126]
   17969486:
     template: Rampaging_Beetle
-    at:       [120.170, -85.280, 548.479, 47]
+    region:   n_333
     level:    [121, 126]
   17969487:
     template: Devouring_Mosquito
-    at:       [113.630, -84.350, 577.723, 64]
+    region:   n_333
     level:    [121, 126]
   17969488:
     template: Devouring_Mosquito
-    at:       [118.190, -87.120, 553.573, 20]
+    region:   n_333
     level:    [121, 126]
   17969489:
     template: Devouring_Mosquito
-    at:       [119.260, -87.190, 554.294, 61]
+    region:   n_333
     level:    [121, 126]
   17969490:
     template: Devouring_Mosquito
-    at:       [114.550, -85.970, 570.635, 155]
+    region:   n_333
     level:    [121, 126]
   17969491:
     template: Rampaging_Beetle
-    at:       [128.210, -87.650, 538.064, 160]
+    region:   n_339
     level:    [121, 126]
   17969492:
     template: Rampaging_Beetle
-    at:       [128.390, -87.680, 537.823, 161]
+    region:   n_339
     level:    [121, 126]
   17969493:
     template: Devouring_Mosquito
-    at:       [134.600, -93.510, 528.278, 25]
+    region:   n_339
     level:    [121, 126]
   17969494:
     template: Devouring_Mosquito
-    at:       [136.760, -93.820, 531.489, 160]
+    region:   n_339
     level:    [121, 126]
   17969495:
     template: Devouring_Mosquito
-    at:       [135.060, -91.040, 536.552, 196]
+    region:   n_339
     level:    [121, 126]
   17969496:
     template: Devouring_Mosquito
-    at:       [119.520, -87.240, 525.773, 70]
+    region:   n_344
     level:    [121, 126]
   17969497:
     template: Devouring_Mosquito
-    at:       [118.650, -88.040, 522.622, 113]
+    region:   n_344
     level:    [121, 126]
   17969498:
     template: Devouring_Mosquito
-    at:       [159.910, -103.500, 524.794, 101]
+    region:   n_346
     level:    [121, 126]
   17969499:
     template: Devouring_Mosquito
-    at:       [160.120, -103.900, 513.096, 128]
+    region:   n_346
     level:    [121, 126]
   17969500:
     template: Devouring_Mosquito
-    at:       [147.590, -101.500, 523.234, 189]
+    region:   n_346
     level:    [121, 126]
   17969501:
     template: Rampaging_Beetle
-    at:       [177.370, -99.920, 528.533, 180]
+    region:   n_349
     level:    [121, 126]
   17969502:
     template: Rampaging_Beetle
-    at:       [181.220, -99.900, 517.007, 57]
+    region:   n_349
     level:    [121, 126]
   17969503:
     template: Rampaging_Beetle
-    at:       [184.060, -92.930, 447.244, 238]
+    region:   n_351
     level:    [121, 126]
   17969504:
     template: Devouring_Mosquito
-    at:       [185.550, -100.600, 488.420, 144]
+    region:   n_351
     level:    [121, 126]
   17969505:
     template: Devouring_Mosquito
-    at:       [185.920, -98.310, 469.446, 180]
+    region:   n_351
     level:    [121, 126]
   17969506:
     template: Devouring_Mosquito
-    at:       [190.370, -94.140, 442.971, 114]
+    region:   n_354
     level:    [121, 126]
   17969507:
     template: Devouring_Mosquito
-    at:       [186.370, -93.870, 448.170, 221]
+    region:   n_354
     level:    [121, 126]
   17969508:
     template: Rampaging_Beetle
-    at:       [182.060, -91.910, 402.222, 63]
+    region:   n_356
     level:    [121, 126]
   17969509:
     template: Devouring_Mosquito
-    at:       [182.030, -92.170, 418.427, 65]
+    region:   n_356
     level:    [121, 126]
   17969510:
     template: Devouring_Mosquito
-    at:       [181.640, -92.100, 414.464, 65]
+    region:   n_356
     level:    [121, 126]
   17969511:
     template: Arboreal_Chigoe
-    at:       [145.680, -82.640, 299.877, 27]
+    region:   n_359
     level:    [121, 126]
   17969512:
     template: Arboreal_Chigoe
-    at:       [123.210, -73.130, 321.177, 145]
+    region:   n_359
     level:    [121, 126]
   17969513:
     template: Arboreal_Chigoe
-    at:       [152.910, -87.820, 338.114, 95]
+    region:   n_359
     level:    [121, 126]
   17969514:
     template: Arboreal_Chigoe
-    at:       [131.380, -81.150, 366.696, 247]
+    region:   n_359
     level:    [121, 126]
   17969515:
     template: Arboreal_Chigoe
-    at:       [122.240, -74.550, 330.957, 155]
+    region:   n_359
     level:    [121, 126]
   17969516:
     template: Thunder_Elemental_R
@@ -3718,265 +3718,265 @@ spawns:
     level:    [121, 126]
   17969519:
     template: Lucani
-    at:       [152.070, -87.540, 349.907, 165]
+    region:   n_367
     level:    [121, 126]
   17969520:
     template: Lucani
-    at:       [158.160, -87.850, 338.117, 65]
+    region:   n_367
     level:    [121, 126]
   17969521:
     template: Lucani
-    at:       [166.610, -89.900, 357.958, 183]
+    region:   n_367
     level:    [121, 126]
   17969522:
     template: Territorial_Mantis
-    at:       [139.700, -82.010, 313.359, 166]
+    region:   n_370
     level:    [121, 126]
   17969523:
     template: Territorial_Mantis
-    at:       [141.810, -85.410, 347.636, 215]
+    region:   n_370
     level:    [121, 126]
   17969524:
     template: Territorial_Mantis
-    at:       [141.700, -82.980, 309.561, 215]
+    region:   n_370
     level:    [121, 126]
   17969525:
     template: Glowering_Ladybug
-    at:       [141.930, -82.930, 312.808, 38]
+    region:   n_370
     level:    [121, 126]
   17969526:
     template: Glowering_Ladybug
-    at:       [145.760, -82.930, 298.376, 53]
+    region:   n_370
     level:    [121, 126]
   17969527:
     template: Lucani
-    at:       [138.930, -82.310, 332.308, 153]
+    region:   n_370
     level:    [121, 126]
   17969528:
     template: Lucani
-    at:       [143.480, -83.230, 308.570, 204]
+    region:   n_370
     level:    [121, 126]
   17969529:
     template: Glowering_Ladybug
-    at:       [145.200, -75.280, 423.134, 141]
+    region:   n_377
     level:    [121, 126]
   17969530:
     template: Glowering_Ladybug
-    at:       [155.960, -79.530, 423.165, 28]
+    region:   n_377
     level:    [121, 126]
   17969531:
     template: Glowering_Ladybug
-    at:       [154.840, -79.150, 411.063, 213]
+    region:   n_377
     level:    [121, 126]
   17969532:
     template: Territorial_Mantis
-    at:       [148.430, -76.080, 413.437, 59]
+    region:   n_377
     level:    [121, 126]
   17969533:
     template: Glowering_Ladybug
-    at:       [159.010, -81.910, 388.934, 47]
+    region:   n_381
     level:    [121, 126]
   17969534:
     template: Glowering_Ladybug
-    at:       [143.000, -77.040, 385.725, 87]
+    region:   n_381
     level:    [121, 126]
   17969535:
     template: Glowering_Ladybug
-    at:       [142.890, -76.940, 385.904, 66]
+    region:   n_381
     level:    [121, 126]
   17969536:
     template: Territorial_Mantis
-    at:       [151.530, -77.490, 406.251, 1]
+    region:   n_381
     level:    [121, 126]
   17969537:
     template: Glowering_Ladybug
-    at:       [126.940, -77.100, 372.035, 112]
+    region:   n_385
     level:    [121, 126]
   17969538:
     template: Glowering_Ladybug
-    at:       [126.260, -77.070, 371.799, 235]
+    region:   n_385
     level:    [121, 126]
   17969539:
     template: Glowering_Ladybug
-    at:       [125.450, -80.430, 362.976, 34]
+    region:   n_385
     level:    [121, 126]
   17969540:
     template: Territorial_Mantis
-    at:       [110.830, -77.240, 361.598, 5]
+    region:   n_385
     level:    [121, 126]
   17969541:
     template: Glowering_Ladybug
-    at:       [121.150, -73.510, 327.826, 135]
+    region:   n_389
     level:    [121, 126]
   17969542:
     template: Glowering_Ladybug
-    at:       [115.170, -73.800, 332.470, 150]
+    region:   n_389
     level:    [121, 126]
   17969543:
     template: Glowering_Ladybug
-    at:       [116.340, -75.740, 336.770, 74]
+    region:   n_389
     level:    [121, 126]
   17969544:
     template: Territorial_Mantis
-    at:       [113.010, -76.830, 347.647, 17]
+    region:   n_389
     level:    [121, 126]
   17969545:
     template: Territorial_Mantis
-    at:       [114.480, -75.030, 337.234, 146]
+    region:   n_389
     level:    [121, 126]
   17969546:
     template: Lucani
-    at:       [110.080, -69.230, 303.579, 66]
+    region:   n_394
     level:    [121, 126]
   17969547:
     template: Lucani
-    at:       [112.390, -70.370, 308.519, 9]
+    region:   n_394
     level:    [121, 126]
   17969548:
     template: Lucani
-    at:       [121.640, -72.330, 297.018, 229]
+    region:   n_394
     level:    [121, 126]
   17969549:
     template: Lucani
-    at:       [110.570, -69.420, 310.084, 240]
+    region:   n_394
     level:    [121, 126]
   17969550:
     template: Lucani
-    at:       [143.300, -78.340, 285.535, 48]
+    region:   n_398
     level:    [121, 126]
   17969551:
     template: Lucani
-    at:       [143.640, -78.300, 284.690, 170]
+    region:   n_398
     level:    [121, 126]
   17969552:
     template: Lucani
-    at:       [142.100, -77.310, 277.996, 188]
+    region:   n_398
     level:    [121, 126]
   17969553:
     template: Lucani
-    at:       [165.210, -86.140, 306.653, 149]
+    region:   n_401
     level:    [121, 126]
   17969554:
     template: Lucani
-    at:       [167.500, -82.450, 292.106, 65]
+    region:   n_401
     level:    [121, 126]
   17969555:
     template: Lucani
-    at:       [177.470, -87.520, 306.627, 57]
+    region:   n_401
     level:    [121, 126]
   17969556:
     template: Lucani
-    at:       [181.430, -85.260, 293.149, 174]
+    region:   n_404
     level:    [121, 126]
   17969557:
     template: Lucani
-    at:       [177.000, -84.980, 297.295, 185]
+    region:   n_404
     level:    [121, 126]
   17969558:
     template: Lucani
-    at:       [180.780, -84.940, 276.579, 168]
+    region:   n_404
     level:    [121, 126]
   17969559:
     template: Lucani
-    at:       [182.190, -86.620, 298.977, 169]
+    region:   n_404
     level:    [121, 126]
   17969560:
     template: Wanton_Danaid
-    at:       [269.200, -93.040, 272.519, 62]
+    region:   ne_408
     level:    [121, 126]
   17969561:
     template: Wanton_Danaid
-    at:       [265.690, -94.860, 292.809, 39]
+    region:   ne_408
     level:    [121, 126]
   17969562:
     template: Wanton_Danaid
-    at:       [257.440, -92.380, 287.606, 105]
+    region:   ne_408
     level:    [121, 126]
   17969563:
     template: Wanton_Danaid
-    at:       [263.240, -91.680, 276.575, 182]
+    region:   ne_408
     level:    [121, 126]
   17969564:
     template: Wanton_Danaid
-    at:       [258.410, -88.340, 262.747, 136]
+    region:   ne_408
     level:    [121, 126]
   17969565:
     template: Wanton_Danaid
-    at:       [267.480, -83.840, 224.009, 26]
+    region:   ne_413
     level:    [121, 126]
   17969566:
     template: Wanton_Danaid
-    at:       [253.270, -82.380, 235.235, 57]
+    region:   ne_413
     level:    [121, 126]
   17969567:
     template: Wanton_Danaid
-    at:       [252.380, -82.510, 237.360, 174]
+    region:   ne_413
     level:    [121, 126]
   17969568:
     template: Wanton_Danaid
-    at:       [268.210, -81.160, 214.184, 207]
+    region:   ne_413
     level:    [121, 126]
   17969569:
     template: Wanton_Danaid
-    at:       [270.520, -85.550, 238.914, 222]
+    region:   ne_413
     level:    [121, 126]
   17969570:
     template: Wanton_Danaid
-    at:       [264.840, -84.160, 128.054, 58]
+    region:   ne_418
     level:    [121, 126]
   17969571:
     template: Wanton_Danaid
-    at:       [262.870, -84.050, 129.716, 95]
+    region:   ne_418
     level:    [121, 126]
   17969572:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [259.550, -76.430, 192.567, 1]
+    region:   ne_418
     level:    [121, 126]
   17969573:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [253.400, -79.180, 179.166, 63]
+    region:   ne_418
     level:    [121, 126]
   17969574:
     template: Perfervid_Naraka
-    at:       [250.750, -74.620, 199.860, 181]
+    region:   ne_422
     level:    [121, 126]
   17969575:
     template: Perfervid_Naraka
-    at:       [260.220, -76.720, 191.998, 187]
+    region:   ne_422
     level:    [121, 126]
   17969576:
     template: Perfervid_Naraka
-    at:       [253.100, -75.130, 199.718, 68]
+    region:   ne_422
     level:    [121, 126]
   17969577:
     template: Perfervid_Naraka
-    at:       [271.210, -85.310, 170.048, 57]
+    region:   ne_425
     level:    [121, 126]
   17969578:
     template: Perfervid_Naraka
-    at:       [267.670, -84.840, 166.046, 89]
+    region:   ne_425
     level:    [121, 126]
   17969579:
     template: Perfervid_Naraka
-    at:       [253.560, -81.200, 171.610, 128]
+    region:   ne_425
     level:    [121, 126]
   17969580:
     template: Perfervid_Naraka
-    at:       [259.560, -80.070, 177.397, 187]
+    region:   ne_425
     level:    [121, 126]
   17969581:
     template: Perfervid_Naraka
-    at:       [258.060, -84.410, 119.161, 244]
+    region:   ne_429
     level:    [121, 126]
   17969582:
     template: Perfervid_Naraka
-    at:       [245.070, -87.380, 126.245, 84]
+    region:   ne_429
     level:    [121, 126]
   17969583:
     template: Perfervid_Naraka
-    at:       [258.380, -85.330, 116.230, 26]
+    region:   ne_429
     level:    [121, 126]
   17969584:
     template: Water_Elemental_R
@@ -3986,7 +3986,7 @@ spawns:
   17969585:
     template: Water_Elemental_R
     script:   Water_Elemental
-    at:       [121.550, -65.900, 260.074, 4]
+    region:   n_433
     level:    [121, 126]
   17969586:
     template: Water_Elemental_R
@@ -3995,87 +3995,87 @@ spawns:
     level:    [121, 126]
   17969587:
     template: Lentic_Toad
-    at:       [100.960, -73.900, 557.523, 193]
+    region:   n_435
     level:    [121, 126]
   17969588:
     template: Lentic_Toad
-    at:       [100.680, -73.900, 570.616, 204]
+    region:   n_435
     level:    [121, 126]
   17969589:
     template: Lentic_Toad
-    at:       [91.485, -76.480, 580.508, 83]
+    region:   n_435
     level:    [121, 126]
   17969590:
     template: Lentic_Toad
-    at:       [94.486, -75.410, 585.940, 115]
+    region:   n_435
     level:    [121, 126]
   17969591:
     template: Lentic_Toad
-    at:       [100.350, -73.900, 513.075, 180]
+    region:   n_439
     level:    [121, 126]
   17969592:
     template: Lentic_Toad
-    at:       [106.790, -73.900, 501.596, 31]
+    region:   n_439
     level:    [121, 126]
   17969593:
     template: Lentic_Toad
-    at:       [104.340, -73.900, 504.143, 159]
+    region:   n_439
     level:    [121, 126]
   17969594:
     template: Lentic_Toad
-    at:       [124.570, -73.900, 499.069, 4]
+    region:   n_439
     level:    [121, 126]
   17969595:
     template: Wretched_Poroggo
-    at:       [100.280, -73.900, 519.000, 188]
+    region:   n_439
     level:    [121, 126]
   17969596:
     template: Lentic_Toad
-    at:       [140.470, -73.900, 461.852, 64]
+    region:   n_444
     level:    [121, 126]
   17969597:
     template: Lentic_Toad
-    at:       [140.270, -73.900, 442.240, 209]
+    region:   n_444
     level:    [121, 126]
   17969598:
     template: Lentic_Toad
-    at:       [140.670, -73.900, 432.778, 42]
+    region:   n_444
     level:    [121, 126]
   17969599:
     template: Lentic_Toad
-    at:       [138.970, -73.900, 439.678, 82]
+    region:   n_444
     level:    [121, 126]
   17969600:
     template: Lentic_Toad
-    at:       [120.130, -73.890, 378.838, 10]
+    region:   n_448
     level:    [121, 126]
   17969601:
     template: Lentic_Toad
-    at:       [118.110, -73.890, 379.523, 139]
+    region:   n_448
     level:    [121, 126]
   17969602:
     template: Lentic_Toad
-    at:       [120.160, -73.900, 379.013, 12]
+    region:   n_448
     level:    [121, 126]
   17969603:
     template: Lentic_Toad
-    at:       [120.210, -73.900, 379.036, 8]
+    region:   n_448
     level:    [121, 126]
   17969604:
     template: Lentic_Toad
-    at:       [99.986, -65.900, 311.696, 176]
+    region:   n_452
     level:    [121, 126]
   17969605:
     template: Lentic_Toad
-    at:       [100.640, -66.040, 326.194, 57]
+    region:   n_452
     level:    [121, 126]
   17969606:
     template: Lentic_Toad
-    at:       [100.740, -65.890, 309.403, 48]
+    region:   n_452
     level:    [121, 126]
   17969607:
     template: Lentic_Toad
-    at:       [99.638, -65.900, 312.040, 177]
+    region:   n_452
     level:    [121, 126]
   17969608:
     template: Wretched_Poroggo
@@ -4083,44 +4083,44 @@ spawns:
     level:    [121, 126]
   17969609:
     template: Lentic_Toad
-    at:       [126.270, -65.900, 260.352, 4]
+    region:   n_457
     level:    [121, 126]
   17969610:
     template: Lentic_Toad
-    at:       [137.610, -65.900, 260.582, 128]
+    region:   n_457
     level:    [121, 126]
   17969611:
     template: Lentic_Toad
-    at:       [132.120, -65.900, 259.845, 121]
+    region:   n_457
     level:    [121, 126]
   17969612:
     template: Lentic_Toad
-    at:       [124.980, -65.900, 260.286, 4]
+    region:   n_457
     level:    [121, 126]
   17969613:
     template: Lentic_Toad
-    at:       [188.890, -65.900, 223.397, 151]
+    region:   n_461
     level:    [121, 126]
   17969614:
     template: Lentic_Toad
-    at:       [211.940, -65.900, 215.384, 26]
+    region:   n_461
     level:    [121, 126]
   17969615:
     template: Lentic_Toad
-    at:       [219.030, -65.900, 203.430, 53]
+    region:   n_461
     level:    [121, 126]
   17969616:
     template: Lentic_Toad
-    at:       [216.130, -65.900, 210.296, 168]
+    region:   n_461
     level:    [121, 126]
   17969617:
     template: Wretched_Poroggo
-    at:       [192.300, -65.900, 220.542, 139]
+    region:   n_461
     level:    [121, 126]
   17969618:
     template: Thunder_Elemental_R
     script:   Thunder_Elemental
-    at:       [196.950, -65.900, 219.220, 128]
+    region:   n_461
     level:    [121, 126]
   17969619:
     template: Ascended_Chapuli
@@ -4128,11 +4128,11 @@ spawns:
     level:    [125, 127]
   17969620:
     template: Ascended_Mosquito
-    at:       [114.540, -83.760, 539.138, 146]
+    region:   w_468
     level:    [125, 127]
   17969621:
     template: Ascended_Mantis
-    at:       [-397.000, -54.430, 88.603, 245]
+    region:   w_469
     level:    [125, 127]
   17969622:
     template: Ascended_Beetle
@@ -4172,7 +4172,7 @@ spawns:
     level:    [125, 127]
   17969631:
     template: Ascended_Chigoe
-    at:       [-368.700, -67.780, 340.665, 238]
+    region:   nw_479
     level:    [125, 127]
   17969632:
     template: Ascended_Hippogryph
@@ -5003,11 +5003,11 @@ spawns:
     level:    [117, 117]
   17969870:
     template: Quetzalcoatls_Sibilus
-    at:       [617.200, -371.900, -945.790, 225]
+    region:   se_718
     level:    [117, 117]
   17969871:
     template: Quetzalcoatls_Sibilus
-    at:       [619.200, -372.000, -945.790, 225]
+    region:   se_718
     level:    [117, 117]
   17969872:
     template: Quetzalcoatls_Sibilus
@@ -5027,15 +5027,15 @@ spawns:
     level:    [117, 117]
   17969876:
     template: Quetzalcoatls_Sibilus
-    at:       [611.200, -371.900, -945.790, 225]
+    region:   se_718
     level:    [117, 117]
   17969877:
     template: Quetzalcoatls_Sibilus
-    at:       [609.200, -371.900, -945.790, 225]
+    region:   se_718
     level:    [117, 117]
   17969878:
     template: Quetzalcoatls_Sibilus
-    at:       [612.080, -371.700, -944.010, 238]
+    region:   se_718
     level:    [117, 117]
   17969879:
     template: Quetzalcoatls_Sibilus

@@ -887,607 +887,607 @@ templates:
 spawns:
   16896001:
     template: Lesser_Roc
-    at:       [618.782, 0.556, -552.226, 185]
+    region:   se_1
     level:    [47, 51]
   16896002:
     template: Lesser_Roc
-    at:       [601.868, -0.208, -433.213, 35]
+    region:   se_1
     level:    [47, 51]
   16896003:
     template: Lesser_Roc
-    at:       [664.369, 0.216, -518.572, 15]
+    region:   se_1
     level:    [47, 51]
   16896004:
     template: Lesser_Roc
-    at:       [623.107, 0.385, -513.535, 73]
+    region:   se_1
     level:    [47, 51]
   16896005:
     template: Lesser_Roc
-    at:       [569.563, -0.258, -559.207, 240]
+    region:   se_1
     level:    [47, 51]
   16896006:
     template: Lesser_Roc
-    at:       [604.266, 0.534, -425.369, 38]
+    region:   se_1
     level:    [47, 51]
   16896007:
     template: Lesser_Roc
-    at:       [569.072, -0.105, -447.310, 246]
+    region:   se_1
     level:    [47, 51]
   16896008:
     template: Lesser_Roc
-    at:       [613.659, 0.120, -475.536, 37]
+    region:   se_1
     level:    [47, 51]
   16896009:
     template: Lesser_Roc
-    at:       [597.225, -0.630, -601.160, 175]
+    region:   se_1
     level:    [47, 51]
   16896010:
     template: Lesser_Roc
-    at:       [630.723, 0.070, -505.659, 121]
+    region:   se_1
     level:    [47, 51]
   16896011:
     template: Pyrodrake
-    at:       [588.951, -0.113, -564.747, 108]
+    region:   se_1
     level:    [50, 53]
   16896012:
     template: Pyrodrake
-    at:       [656.605, -0.665, -507.675, 38]
+    region:   se_1
     level:    [50, 53]
   16896013:
     template: Nimbus_Hippogryph
-    at:       [608.557, -0.174, -472.761, 198]
+    region:   se_1
     level:    [49, 52]
   16896014:
     template: Nimbus_Hippogryph
-    at:       [608.762, -0.640, -575.858, 1]
+    region:   se_1
     level:    [49, 52]
   16896015:
     template: Nimbus_Hippogryph
-    at:       [647.805, -0.474, -499.266, 149]
+    region:   se_1
     level:    [49, 52]
   16896016:
     template: Nimbus_Hippogryph
-    at:       [595.443, -0.213, -445.490, 59]
+    region:   se_1
     level:    [49, 52]
   16896017:
     template: Nimbus_Hippogryph
-    at:       [635.841, -0.114, -558.070, 175]
+    region:   se_1
     level:    [49, 52]
   16896018:
     template: Pyrodrake
-    at:       [524.476, 0.214, -654.849, 74]
+    region:   se_18
     level:    [50, 53]
   16896019:
     template: Nimbus_Hippogryph
-    at:       [478.130, 0.094, -627.015, 189]
+    region:   se_18
     level:    [49, 52]
   16896020:
     template: Nimbus_Hippogryph
-    at:       [480.457, -0.186, -631.589, 104]
+    region:   se_18
     level:    [49, 52]
   16896021:
     template: Thunder_Elemental
-    at:       [537.455, -0.137, -650.513, 11]
+    region:   se_18
     level:    [57, 64]
   16896022:
     template: Lesser_Roc
-    at:       [523.239, 0.173, -704.942, 123]
+    region:   se_22
     level:    [47, 51]
   16896023:
     template: Lesser_Roc
-    at:       [646.015, -0.189, -748.019, 73]
+    region:   se_22
     level:    [47, 51]
   16896024:
     template: Pyrodrake
-    at:       [579.663, 0.143, -746.822, 141]
+    region:   se_22
     level:    [50, 53]
   16896025:
     template: Pyrodrake
-    at:       [650.860, -0.348, -674.650, 87]
+    region:   se_22
     level:    [50, 53]
   16896026:
     template: Pyrodrake
-    at:       [644.581, 0.266, -669.874, 26]
+    region:   se_22
     level:    [50, 53]
   16896027:
     template: Pyrodrake
-    at:       [655.401, -0.377, -734.233, 104]
+    region:   se_22
     level:    [50, 53]
   16896028:
     template: Pyrodrake
-    at:       [576.929, 0.124, -746.003, 251]
+    region:   se_22
     level:    [50, 53]
   16896029:
     template: Nimbus_Hippogryph
-    at:       [654.809, 0.202, -681.336, 191]
+    region:   se_22
     level:    [49, 52]
   16896030:
     template: Nimbus_Hippogryph
-    at:       [683.102, -0.298, -708.909, 56]
+    region:   se_22
     level:    [49, 52]
   16896031:
     template: Pyrodrake
-    at:       [472.589, -2.392, -776.482, 97]
+    region:   se_31
     level:    [50, 53]
   16896032:
     template: Lesser_Roc
-    at:       [451.957, -0.317, -558.093, 222]
+    region:   se_32
     level:    [47, 51]
   16896033:
     template: Lesser_Roc
-    at:       [463.904, 0.445, -553.132, 15]
+    region:   se_32
     level:    [47, 51]
   16896034:
     template: Lesser_Roc
-    at:       [473.840, -0.073, -576.418, 129]
+    region:   se_32
     level:    [47, 51]
   16896035:
     template: Pyrodrake
-    at:       [478.397, -0.266, -555.436, 178]
+    region:   se_32
     level:    [50, 53]
   16896036:
     template: Pyrodrake
-    at:       [438.705, -0.615, -555.584, 199]
+    region:   se_32
     level:    [50, 53]
   16896037:
     template: Nimbus_Hippogryph
-    at:       [464.071, 0.264, -562.398, 208]
+    region:   se_32
     level:    [49, 52]
   16896038:
     template: Nimbus_Hippogryph
-    at:       [443.615, 0.393, -537.771, 159]
+    region:   se_32
     level:    [49, 52]
   16896039:
     template: Nimbus_Hippogryph
-    at:       [457.170, 0.215, -444.924, 185]
+    region:   se_40
     level:    [49, 52]
   16896040:
     template: Lesser_Roc
-    at:       [467.252, 0.001, -441.038, 185]
+    region:   se_40
     level:    [47, 51]
   16896041:
     template: Lesser_Roc
-    at:       [441.683, 0.298, -420.129, 163]
+    region:   se_40
     level:    [47, 51]
   16896042:
     template: Lesser_Roc
-    at:       [484.112, 0.249, -456.122, 20]
+    region:   se_40
     level:    [47, 51]
   16896043:
     template: Strato_Hippogryph
-    at:       [270.620, -0.071, -548.189, 159]
+    region:   se_43
     level:    [55, 57]
   16896044:
     template: Strato_Hippogryph
-    at:       [244.686, -0.050, -512.165, 177]
+    region:   se_43
     level:    [55, 57]
   16896045:
     template: Strato_Hippogryph
-    at:       [315.009, -0.589, -481.239, 89]
+    region:   se_43
     level:    [55, 57]
   16896046:
     template: Strato_Hippogryph
-    at:       [233.923, -0.225, -525.052, 127]
+    region:   se_43
     level:    [55, 57]
   16896047:
     template: Lunantishee
-    at:       [250.374, -0.167, -578.586, 51]
+    region:   se_43
     level:    [55, 58]
   16896048:
     template: Lunantishee
-    at:       [253.475, 0.385, -542.725, 168]
+    region:   se_43
     level:    [55, 58]
   16896049:
     template: Lunantishee
-    at:       [320.578, 0.433, -468.378, 246]
+    region:   se_43
     level:    [55, 58]
   16896050:
     template: Lunantishee
-    at:       [282.548, -0.168, -476.477, 195]
+    region:   se_43
     level:    [55, 58]
   16896051:
     template: Thunder_Elemental
-    at:       [302.667, -0.017, -488.452, 229]
+    region:   se_43
     level:    [57, 64]
   16896052:
     template: Ignidrake
-    at:       [241.727, -0.363, -649.640, 255]
+    region:   se_52
     level:    [57, 59]
   16896053:
     template: Ignidrake
-    at:       [225.270, -0.206, -663.026, 151]
+    region:   se_52
     level:    [57, 59]
   16896054:
     template: Ignidrake
-    at:       [237.403, -0.118, -653.896, 97]
+    region:   se_52
     level:    [57, 59]
   16896055:
     template: Ignidrake
-    at:       [189.087, 0.024, -717.392, 87]
+    region:   se_52
     level:    [57, 59]
   16896056:
     template: Ignidrake
-    at:       [228.136, -0.162, -648.792, 42]
+    region:   se_52
     level:    [57, 59]
   16896057:
     template: Nitro_Cluster
-    at:       [191.367, -0.136, -678.141, 177]
+    region:   se_57
     level:    [55, 57]
   16896058:
     template: Nitro_Cluster
-    at:       [210.442, -0.290, -656.935, 58]
+    region:   se_57
     level:    [55, 57]
   16896059:
     template: Nitro_Cluster
-    at:       [238.015, -0.505, -646.356, 48]
+    region:   se_57
     level:    [55, 57]
   16896060:
     template: Nitro_Cluster
-    at:       [218.499, 0.299, -663.388, 198]
+    region:   se_57
     level:    [55, 57]
   16896061:
     template: Nitro_Cluster
-    at:       [292.856, -2.825, -744.128, 12]
+    region:   se_61
     level:    [55, 57]
   16896062:
     template: Nitro_Cluster
-    at:       [293.546, -2.828, -744.053, 109]
+    region:   se_61
     level:    [55, 57]
   16896063:
     template: Blazedrake
-    at:       [108.569, -0.056, -640.167, 199]
+    region:   s_63
     level:    [85, 86]
   16896064:
     template: Blazedrake
-    at:       [107.711, -0.066, -633.047, 216]
+    region:   s_63
     level:    [85, 86]
   16896065:
     template: Blazedrake
-    at:       [87.499, -0.321, -635.022, 75]
+    region:   s_63
     level:    [85, 86]
   16896066:
     template: Blazedrake
-    at:       [86.181, 0.092, -670.764, 158]
+    region:   s_66
     level:    [85, 86]
   16896067:
     template: Blazedrake
-    at:       [122.594, 0.024, -653.131, 77]
+    region:   s_67
     level:    [85, 86]
   16896068:
     template: Blazedrake
-    at:       [122.019, -0.484, -678.382, 108]
+    region:   s_67
     level:    [85, 86]
   16896069:
     template: Blazedrake
-    at:       [125.550, -0.203, -642.603, 106]
+    region:   s_63
     level:    [85, 86]
   16896070:
     template: Strato_Hippogryph
-    at:       [207.332, 0.428, -514.146, 26]
+    region:   s_70
     level:    [55, 57]
   16896071:
     template: Strato_Hippogryph
-    at:       [192.769, 1.508, -509.765, 253]
+    region:   s_70
     level:    [55, 57]
   16896072:
     template: Lunantishee
-    at:       [147.625, 2.149, -536.975, 45]
+    region:   s_70
     level:    [55, 58]
   16896073:
     template: Lunantishee
-    at:       [181.230, 0.282, -520.359, 236]
+    region:   s_70
     level:    [55, 58]
   16896074:
     template: Strato_Hippogryph
-    at:       [63.114, 0.054, -536.704, 7]
+    region:   s_74
     level:    [55, 57]
   16896075:
     template: Strato_Hippogryph
-    at:       [53.153, 0.051, -525.581, 130]
+    region:   s_74
     level:    [55, 57]
   16896076:
     template: Lunantishee
-    at:       [41.239, 0.358, -540.138, 114]
+    region:   s_74
     level:    [55, 58]
   16896077:
     template: Lunantishee
-    at:       [48.337, 0.212, -548.815, 20]
+    region:   s_74
     level:    [55, 58]
   16896078:
     template: Blazedrake
-    at:       [-128.191, 0.836, -519.462, 180]
+    region:   s_78
     level:    [85, 86]
   16896079:
     template: Blazedrake
-    at:       [-72.528, -0.160, -482.515]
+    region:   s_78
     level:    [85, 86]
   16896080:
     template: Blazedrake
-    at:       [-91.290, -0.044, -519.208, 158]
+    region:   s_78
     level:    [85, 86]
   16896081:
     template: Blazedrake
-    at:       [-85.022, 0.396, -556.239, 249]
+    region:   s_81
     level:    [85, 86]
   16896082:
     template: Blazedrake
-    at:       [-87.503, -0.435, -604.957, 240]
+    region:   s_82
     level:    [85, 86]
   16896083:
     template: Blazedrake
-    at:       [-112.957, 0.353, -621.052, 220]
+    region:   s_82
     level:    [85, 86]
   16896084:
     template: Blazedrake
-    at:       [-77.261, -0.320, -595.166, 169]
+    region:   s_82
     level:    [85, 86]
   16896085:
     template: Blazedrake
-    at:       [-80.603, -0.209, -611.485, 50]
+    region:   s_82
     level:    [85, 86]
   16896086:
     template: Blazedrake
-    at:       [-58.833, 0.299, -671.534, 165]
+    region:   s_86
     level:    [85, 86]
   16896087:
     template: Blazedrake
-    at:       [-47.274, -0.388, -695.457, 249]
+    region:   s_86
     level:    [85, 86]
   16896088:
     template: Blazedrake
-    at:       [-36.567, -0.124, -691.426, 87]
+    region:   s_86
     level:    [85, 86]
   16896089:
     template: Blazedrake
-    at:       [-35.151, -0.010, -628.998, 179]
+    region:   s_89
     level:    [85, 86]
   16896090:
     template: Blazedrake
-    at:       [-32.648, 0.030, -630.365, 157]
+    region:   s_89
     level:    [85, 86]
   16896091:
     template: Blazedrake
-    at:       [-42.961, -0.148, -752.627, 215]
+    region:   s_91
     level:    [85, 86]
   16896092:
     template: Blazedrake
-    at:       [-40.900, -0.099, -747.118, 65]
+    region:   s_91
     level:    [85, 86]
   16896093:
     template: Lesser_Roc
-    at:       [716.873, -24.637, 356.425, 232]
+    region:   ne_93
     level:    [47, 51]
   16896094:
     template: Lesser_Roc
-    at:       [678.360, -24.119, 393.556, 58]
+    region:   ne_93
     level:    [47, 51]
   16896095:
     template: Lesser_Roc
-    at:       [714.281, -24.491, 355.088, 105]
+    region:   ne_93
     level:    [47, 51]
   16896096:
     template: Lesser_Roc
-    at:       [723.062, -23.468, 348.277, 38]
+    region:   ne_93
     level:    [47, 51]
   16896097:
     template: Air_Elemental
-    at:       [705.393, 20.780, 644.721, 104]
+    region:   ne_102
     level:    [57, 60]
   16896098:
     template: Lesser_Roc
-    at:       [642.482, 20.070, 654.605, 80]
+    region:   ne_102
     level:    [47, 51]
   16896099:
     template: Lesser_Roc
-    at:       [711.059, 20.317, 625.244, 107]
+    region:   ne_102
     level:    [47, 51]
   16896100:
     template: Lesser_Roc
-    at:       [706.592, 20.782, 597.548, 125]
+    region:   ne_102
     level:    [47, 51]
   16896101:
     template: Nimbus_Hippogryph
-    at:       [650.770, 20.052, 676.513, 251]
+    region:   ne_102
     level:    [49, 52]
   16896102:
     template: Nimbus_Hippogryph
-    at:       [703.539, 20.846, 598.196, 13]
+    region:   ne_102
     level:    [49, 52]
   16896103:
     template: Nimbus_Hippogryph
-    at:       [674.045, 19.826, 690.504, 163]
+    region:   ne_102
     level:    [49, 52]
   16896104:
     template: Nimbus_Hippogryph
-    at:       [642.049, 20.000, 653.150, 158]
+    region:   ne_102
     level:    [49, 52]
   16896105:
     template: Nimbus_Hippogryph
-    at:       [677.079, 19.668, 647.065, 244]
+    region:   ne_102
     level:    [49, 52]
   16896106:
     template: Nimbus_Hippogryph
-    at:       [685.626, 20.592, 686.651, 27]
+    region:   ne_102
     level:    [49, 52]
   16896107:
     template: Imdugud
-    at:       [655.263, 20.664, 651.320]
+    region:   ne_102
     level:    [60, 60]
   16896108:
     template: Nimbus_Hippogryph
-    at:       [465.956, 39.729, 795.003]
+    region:   ne_108
     level:    [49, 52]
   16896109:
     template: Nimbus_Hippogryph
-    at:       [466.661, 41.263, 808.644, 191]
+    region:   ne_108
     level:    [49, 52]
   16896110:
     template: Nimbus_Hippogryph
-    at:       [473.229, 40.482, 804.938, 231]
+    region:   ne_108
     level:    [49, 52]
   16896111:
     template: Lesser_Roc
-    at:       [391.337, 49.176, 678.110, 169]
+    region:   ne_111
     level:    [47, 51]
   16896112:
     template: Pyrodrake
-    at:       [255.390, 88.066, 843.930, 234]
+    region:   ne_112
     level:    [50, 53]
   16896113:
     template: Pyrodrake
-    at:       [266.573, 88.338, 860.591, 128]
+    region:   ne_112
     level:    [50, 53]
   16896114:
     template: Pyrodrake
-    at:       [276.105, 87.788, 850.710, 52]
+    region:   ne_112
     level:    [50, 53]
   16896115:
     template: Air_Elemental
-    at:       [191.265, 15.734, 692.917, 93]
+    region:   ne_116
     level:    [57, 60]
   16896116:
     template: Lesser_Roc
-    at:       [215.707, 15.953, 692.298, 163]
+    region:   ne_116
     level:    [47, 51]
   16896117:
     template: Nimbus_Hippogryph
-    at:       [215.778, 15.999, 708.160, 37]
+    region:   ne_116
     level:    [49, 52]
   16896118:
     template: Nitro_Cluster
-    at:       [31.256, 28.037, 634.655, 66]
+    region:   n_118
     level:    [55, 57]
   16896119:
     template: Nitro_Cluster
-    at:       [32.780, 27.897, 642.489, 145]
+    region:   n_118
     level:    [55, 57]
   16896120:
     template: Lunantishee
-    at:       [-4.175, 51.820, 715.212, 119]
+    region:   n_120
     level:    [55, 58]
   16896121:
     template: Lunantishee
-    at:       [10.055, 51.769, 749.644, 181]
+    region:   n_120
     level:    [55, 58]
   16896122:
     template: Lunantishee
-    at:       [14.385, 51.817, 765.994, 169]
+    region:   n_120
     level:    [55, 58]
   16896123:
     template: Air_Elemental
-    at:       [-265.311, 32.163, 738.200, 21]
+    region:   n_124
     level:    [58, 61]
   16896124:
     template: Strato_Hippogryph
-    at:       [-248.278, 31.975, 760.307, 40]
+    region:   n_124
     level:    [55, 57]
   16896125:
     template: Strato_Hippogryph
-    at:       [-205.045, 32.378, 698.208, 60]
+    region:   n_124
     level:    [55, 57]
   16896126:
     template: Lunantishee
-    at:       [-242.658, 33.014, 671.419, 126]
+    region:   n_124
     level:    [55, 58]
   16896127:
     template: Lunantishee
-    at:       [-225.084, 34.747, 748.996, 193]
+    region:   n_124
     level:    [55, 58]
   16896128:
     template: Lunantishee
-    at:       [-224.062, 32.349, 690.891, 156]
+    region:   n_124
     level:    [55, 58]
   16896129:
     template: Lunantishee
-    at:       [-252.875, 32.281, 720.177, 135]
+    region:   n_124
     level:    [55, 58]
   16896130:
     template: Lunantishee
-    at:       [-286.212, 32.645, 765.466, 212]
+    region:   n_124
     level:    [55, 58]
   16896131:
     template: Boroka
-    at:       [-365.921, -31.255, 486.367, 161]
+    region:   nw_131
     level:    [58, 60]
   16896132:
     template: Ignidrake
-    at:       [-514.442, -20.293, 549.121, 119]
+    region:   nw_132
     level:    [57, 59]
   16896133:
     template: Lunantishee
-    at:       [-518.859, -19.841, 537.571, 216]
+    region:   nw_132
     level:    [55, 58]
   16896134:
     template: Air_Elemental
-    at:       [-586.808, 1.079, 689.897, 193]
+    region:   nw_135
     level:    [58, 61]
   16896135:
     template: Ignidrake
-    at:       [-540.059, 0.469, 677.800, 245]
+    region:   nw_135
     level:    [57, 59]
   16896136:
     template: Ignidrake
-    at:       [-522.837, 0.877, 698.562, 89]
+    region:   nw_135
     level:    [57, 59]
   16896137:
     template: Ignidrake
-    at:       [-573.918, 1.261, 688.083, 188]
+    region:   nw_135
     level:    [57, 59]
   16896138:
     template: Ignidrake
-    at:       [-525.313, 0.061, 687.027, 233]
+    region:   nw_135
     level:    [57, 59]
   16896139:
     template: Ignidrake
-    at:       [-574.300, 1.251, 687.879, 189]
+    region:   nw_135
     level:    [57, 59]
   16896140:
     template: Nitro_Cluster
-    at:       [-540.147, 0.560, 679.156, 78]
+    region:   nw_140
     level:    [55, 57]
   16896141:
     template: Nitro_Cluster
-    at:       [-542.171, 0.754, 684.231, 241]
+    region:   nw_140
     level:    [55, 57]
   16896142:
     template: Air_Elemental
-    at:       [-721.281, -0.231, 530.199, 35]
+    region:   nw_143
     level:    [58, 61]
   16896143:
     template: Strato_Hippogryph
-    at:       [-712.837, 1.579, 542.232, 58]
+    region:   nw_143
     level:    [55, 57]
   16896144:
     template: Strato_Hippogryph
-    at:       [-721.057, -0.252, 529.731, 199]
+    region:   nw_143
     level:    [55, 57]
   16896145:
     template: Strato_Hippogryph
-    at:       [-715.017, 0.586, 519.889, 215]
+    region:   nw_143
     level:    [55, 57]
   16896146:
     template: Strato_Hippogryph
-    at:       [-734.437, 0.086, 526.615, 243]
+    region:   nw_143
     level:    [55, 57]
   16896147:
     template: Strato_Hippogryph
-    at:       [-831.983, -31.565, 350.683, 1]
+    region:   nw_147
     level:    [55, 57]
   16896148:
     template: Lunantishee
-    at:       [-854.882, -30.148, 307.899, 59]
+    region:   nw_147
     level:    [55, 58]
   16896149:
     template: Ignidrake
-    at:       [-504.307, 0.564, 755.287, 74]
+    region:   nw_135
     level:    [57, 59]
   16896150:
     template: Nitro_Cluster
-    at:       [-809.600, -43.681, 146.629, 105]
+    region:   w_150
     level:    [55, 57]
   16896151:
     template: Nitro_Cluster
-    at:       [-821.305, -44.016, 147.343, 248]
+    region:   w_150
     level:    [55, 57]
   16896152:
     template: Spell_Spitter_Spilospok

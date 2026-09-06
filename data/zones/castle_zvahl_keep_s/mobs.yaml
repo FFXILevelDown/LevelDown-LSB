@@ -4277,59 +4277,59 @@ templates:
 spawns:
   17412097:
     template: Cointeach
-    at:       [-75.883, -0.499, -4.306, 93]
+    region:   s_1
     level:    [79, 82]
   17412098:
     template: Ogler
-    at:       [-32.274, -0.499, -24.041, 12]
+    region:   s_2
     level:    [80, 82]
   17412099:
     template: Ogler
-    at:       [-54.666, -0.453, -27.574, 42]
+    region:   s_3
     level:    [80, 82]
   17412100:
     template: Ogler
-    at:       [-62.730, -0.453, -27.427, 90]
+    region:   s_3
     level:    [80, 82]
   17412101:
     template: Cointeach
-    at:       [-62.342, -0.499, -45.953, 111]
+    region:   s_1
     level:    [79, 82]
   17412102:
     template: Ogler
-    at:       [-53.529, -0.500, 4.924, 86]
+    region:   s_6
     level:    [80, 82]
   17412103:
     template: Cointeach
-    at:       [-63.997, -0.499, -38.430, 110]
+    region:   s_1
     level:    [79, 82]
   17412104:
     template: Ogler
-    at:       [-63.309, -0.500, -52.150, 119]
+    region:   s_8
     level:    [80, 82]
   17412105:
     template: Cointeach
-    at:       [-82.217, -0.500, 7.530, 24]
+    region:   s_1
     level:    [79, 82]
   17412106:
     template: Ogler
-    at:       [-87.855, -0.500, -24.622, 163]
+    region:   s_10
     level:    [80, 82]
   17412107:
     template: Gnarled_Gargouille
-    at:       [-30.640, -0.160, 44.436, 53]
+    region:   c_11
     level:    [80, 82]
   17412108:
     template: Gnarled_Gargouille
-    at:       [-10.193, 0.264, 67.727, 16]
+    region:   c_11
     level:    [80, 82]
   17412109:
     template: Gnarled_Gargouille
-    at:       [-25.497, 0.100, 52.914, 146]
+    region:   c_11
     level:    [80, 82]
   17412110:
     template: Gnarled_Gargouille
-    at:       [-9.178, 0.109, 68.244, 55]
+    region:   c_11
     level:    [80, 82]
   17412111:
     template: Errand_Imp
@@ -4337,19 +4337,19 @@ spawns:
     level:    [79, 80]
   17412112:
     template: Gnarled_Gargouille
-    at:       [-60.695, 0.100, 52.169, 240]
+    region:   c_16
     level:    [80, 82]
   17412113:
     template: Gnarled_Gargouille
-    at:       [-69.077, 0.100, 53.151, 246]
+    region:   c_16
     level:    [80, 82]
   17412114:
     template: Gnarled_Gargouille
-    at:       [-73.517, 0.100, 59.174, 72]
+    region:   c_16
     level:    [80, 82]
   17412115:
     template: Gnarled_Gargouille
-    at:       [-72.706, 0.101, 52.538, 162]
+    region:   c_16
     level:    [80, 82]
   17412116:
     template: Errand_Imp
@@ -4357,31 +4357,31 @@ spawns:
     level:    [79, 80]
   17412117:
     template: Gnarled_Gargouille
-    at:       [-92.705, 0.100, 72.118, 160]
+    region:   c_21
     level:    [80, 82]
   17412118:
     template: Gnarled_Gargouille
-    at:       [-110.469, 0.100, 56.008, 59]
+    region:   c_21
     level:    [80, 82]
   17412119:
     template: Gnarled_Gargouille
-    at:       [-112.252, 0.100, 60.420, 66]
+    region:   c_21
     level:    [80, 82]
   17412120:
     template: Gnarled_Gargouille
-    at:       [-100.888, 0.100, 52.871, 102]
+    region:   c_21
     level:    [80, 82]
   17412121:
     template: Gnarled_Gargouille
-    at:       [-107.194, 0.102, 102.244, 67]
+    region:   c_25
     level:    [80, 82]
   17412122:
     template: Gnarled_Gargouille
-    at:       [-105.270, 0.146, 111.772, 27]
+    region:   c_25
     level:    [80, 82]
   17412123:
     template: Gnarled_Gargouille
-    at:       [-110.787, 0.100, 98.907, 173]
+    region:   c_25
     level:    [80, 82]
   17412124:
     template: Errand_Imp
@@ -4389,15 +4389,15 @@ spawns:
     level:    [79, 80]
   17412125:
     template: Gnarled_Gargouille
-    at:       [-11.205, 0.100, 111.790, 182]
+    region:   c_29
     level:    [80, 82]
   17412126:
     template: Gnarled_Gargouille
-    at:       [-10.575, 0.100, 106.875, 72]
+    region:   c_29
     level:    [80, 82]
   17412127:
     template: Gnarled_Gargouille
-    at:       [-10.118, 0.100, 103.082, 88]
+    region:   c_29
     level:    [80, 82]
   17412128:
     template: Errand_Imp
@@ -4422,12 +4422,12 @@ spawns:
   17412133:
     template: Orcish_Prophetess_CZKS
     script:   Orcish_Prophetess
-    at:       [-25.549, 0.100, -87.906, 195]
+    region:   s_37
     level:    [81, 82]
   17412134:
     template: Orcish_Dreadnought_CZKS
     script:   Orcish_Dreadnought
-    at:       [-26.389, 0.099, -93.315, 5]
+    region:   s_37
     level:    [81, 82]
   17412135:
     template: Orcish_Strategist_CZKS
@@ -4437,7 +4437,7 @@ spawns:
   17412136:
     template: Orcish_Wyrmbrander_CZKS
     script:   Orcish_Wyrmbrander
-    at:       [-29.655, 0.099, -86.173, 180]
+    region:   s_37
     level:    [81, 82]
   17412137:
     template: Errand_Imp
@@ -4446,22 +4446,22 @@ spawns:
   17412138:
     template: Orcish_Prophetess_CZKS
     script:   Orcish_Prophetess
-    at:       [-60.443, 0.100, -86.145, 201]
+    region:   s_42
     level:    [81, 82]
   17412139:
     template: Orcish_Dreadnought_CZKS
     script:   Orcish_Dreadnought
-    at:       [-50.667, 0.099, -111.667, 112]
+    region:   s_42
     level:    [81, 82]
   17412140:
     template: Orcish_Cupholder_CZKS
     script:   Orcish_Cupholder
-    at:       [-46.993, 0.115, -91.915, 235]
+    region:   s_42
     level:    [81, 82]
   17412141:
     template: Orcish_Wyrmbrander_CZKS
     script:   Orcish_Wyrmbrander
-    at:       [-51.751, 0.099, -109.966, 144]
+    region:   s_42
     level:    [81, 82]
   17412142:
     template: Errand_Imp
@@ -4470,82 +4470,82 @@ spawns:
   17412143:
     template: Orcish_Prophetess_CZKS
     script:   Orcish_Prophetess
-    at:       [-94.962, 0.100, -89.446, 180]
+    region:   s_47
     level:    [81, 82]
   17412144:
     template: Orcish_Dreadnought_CZKS
     script:   Orcish_Dreadnought
-    at:       [-101.496, 0.100, -98.558, 49]
+    region:   s_47
     level:    [81, 82]
   17412145:
     template: Orcish_Cupholder_CZKS
     script:   Orcish_Cupholder
-    at:       [-110.052, 0.100, -113.992, 86]
+    region:   s_47
     level:    [81, 82]
   17412146:
     template: Orcish_Wyrmbrander_CZKS
     script:   Orcish_Wyrmbrander
-    at:       [-100.079, 0.100, -98.119, 229]
+    region:   s_47
     level:    [81, 82]
   17412147:
     template: Orcish_Cupholder_CZKS
     script:   Orcish_Cupholder
-    at:       [-95.553, 0.107, -129.290, 206]
+    region:   s_51
     level:    [81, 82]
   17412148:
     template: Orcish_Farkiller_CZKS
     script:   Orcish_Farkiller
-    at:       [-95.823, 0.107, -129.911, 211]
+    region:   s_51
     level:    [81, 82]
   17412149:
     template: Orcish_Strategist_CZKS
     script:   Orcish_Strategist
-    at:       [-101.869, 0.100, -129.249, 159]
+    region:   s_51
     level:    [81, 82]
   17412150:
     template: Orcish_Imperial_Guard_CZ
     script:   Orcish_Imperial_Guard
-    at:       [-109.370, 0.100, -134.076, 113]
+    region:   s_51
     level:    [81, 82]
   17412151:
     template: Orcish_Dreadnought_CZKS
     script:   Orcish_Dreadnought
-    at:       [-12.520, 0.100, -145.948, 81]
+    region:   s_55
     level:    [81, 82]
   17412152:
     template: Orcish_Farkiller_CZKS
     script:   Orcish_Farkiller
-    at:       [-12.049, 0.099, -153.299, 97]
+    region:   s_55
     level:    [81, 82]
   17412153:
     template: Orcish_Strategist_CZKS
     script:   Orcish_Strategist
-    at:       [-12.363, 0.100, -145.874, 72]
+    region:   s_55
     level:    [81, 82]
   17412154:
     template: Orcish_Imperial_Guard_CZ
     script:   Orcish_Imperial_Guard
-    at:       [-11.811, 0.099, -152.729, 188]
+    region:   s_55
     level:    [81, 82]
   17412155:
     template: Orcish_Cupholder_CZKS
     script:   Orcish_Cupholder
-    at:       [-53.200, 0.100, -137.913, 87]
+    region:   s_59
     level:    [81, 82]
   17412156:
     template: Orcish_Farkiller_CZKS
     script:   Orcish_Farkiller
-    at:       [-50.933, 0.100, -128.362, 169]
+    region:   s_59
     level:    [81, 82]
   17412157:
     template: Orcish_Strategist_CZKS
     script:   Orcish_Strategist
-    at:       [-46.913, 0.100, -132.078, 189]
+    region:   s_59
     level:    [81, 82]
   17412158:
     template: Orcish_Imperial_Guard_CZ
     script:   Orcish_Imperial_Guard
-    at:       [-50.670, 0.100, -128.009, 163]
+    region:   s_59
     level:    [81, 82]
   17412159:
     template: Errand_Imp
@@ -4571,11 +4571,11 @@ spawns:
     level:    [80, 82]
   17412164:
     template: Ogler
-    at:       [-59.759, -8.495, -183.207, 127]
+    region:   s_68
     level:    [80, 82]
   17412165:
     template: Ogler
-    at:       [-55.872, -8.480, -183.060, 128]
+    region:   s_68
     level:    [80, 82]
   17412166:
     template: Doyen_Quadav_CZKS
@@ -4590,22 +4590,22 @@ spawns:
   17412168:
     template: Doyen_Quadav_CZKS
     script:   Doyen_Quadav
-    at:       [-69.270, -15.899, 99.450, 9]
+    region:   c_72
     level:    [80, 82]
   17412169:
     template: Steel_Quadav_CZKS
     script:   Steel_Quadav
-    at:       [-73.386, -15.899, 110.131, 175]
+    region:   c_72
     level:    [81, 82]
   17412170:
     template: Baetyl_Quadav_CZKS
     script:   Baetyl_Quadav
-    at:       [-71.458, -15.899, 106.558, 136]
+    region:   c_72
     level:    [81, 82]
   17412171:
     template: Meteor_Quadav_CZKS
     script:   Meteor_Quadav
-    at:       [-71.539, -15.899, 106.162, 34]
+    region:   c_72
     level:    [81, 82]
   17412172:
     template: Errand_Imp
@@ -4614,22 +4614,22 @@ spawns:
   17412173:
     template: Doyen_Quadav_CZKS
     script:   Doyen_Quadav
-    at:       [-59.392, -15.899, 53.096, 250]
+    region:   c_77
     level:    [80, 82]
   17412174:
     template: Platinum_Quadav_CZKS
     script:   Platinum_Quadav
-    at:       [-72.890, -15.899, 56.733, 59]
+    region:   c_77
     level:    [80, 82]
   17412175:
     template: Baetyl_Quadav_CZKS
     script:   Baetyl_Quadav
-    at:       [-69.903, -15.899, 64.911, 219]
+    region:   c_77
     level:    [81, 82]
   17412176:
     template: Meteor_Quadav_CZKS
     script:   Meteor_Quadav
-    at:       [-64.337, -15.899, 51.293, 29]
+    region:   c_77
     level:    [81, 82]
   17412177:
     template: Errand_Imp
@@ -4638,22 +4638,22 @@ spawns:
   17412178:
     template: Chatoyant_Quadav_CZKS
     script:   Chatoyant_Quadav
-    at:       [-102.605, -15.899, 50.262, 181]
+    region:   c_82
     level:    [80, 82]
   17412179:
     template: Ferroalloy_Quadav_CZKS
     script:   Ferroalloy_Quadav
-    at:       [-98.418, -15.900, 50.277, 179]
+    region:   c_82
     level:    [80, 82]
   17412180:
     template: Platinum_Quadav_CZKS
     script:   Platinum_Quadav
-    at:       [-103.939, -15.900, 50.906, 242]
+    region:   c_82
     level:    [80, 82]
   17412181:
     template: Chatoyant_Quadav_CZKS
     script:   Chatoyant_Quadav
-    at:       [-99.845, -15.899, 47.671, 15]
+    region:   c_82
     level:    [80, 82]
   17412182:
     template: Steel_Quadav_CZKS
@@ -4678,22 +4678,22 @@ spawns:
   17412186:
     template: Steel_Quadav_CZKS
     script:   Steel_Quadav
-    at:       [-88.042, -15.900, 91.250, 205]
+    region:   c_90
     level:    [81, 82]
   17412187:
     template: Ferroalloy_Quadav_CZKS
     script:   Ferroalloy_Quadav
-    at:       [-93.523, -15.900, 86.777, 123]
+    region:   c_90
     level:    [80, 82]
   17412188:
     template: Platinum_Quadav_CZKS
     script:   Platinum_Quadav
-    at:       [-102.337, -15.900, 103.591, 89]
+    region:   c_90
     level:    [80, 82]
   17412189:
     template: Chatoyant_Quadav_CZKS
     script:   Chatoyant_Quadav
-    at:       [-90.470, -15.899, 92.775, 170]
+    region:   c_90
     level:    [80, 82]
   17412190:
     template: Yagudo_Nokizaru
@@ -4705,20 +4705,20 @@ spawns:
     level:    [81, 83]
   17412192:
     template: Yagudo_Yojimbo
-    at:       [-58.094, -15.899, -128.846, 226]
+    region:   s_96
     level:    [81, 83]
   17412193:
     template: Yagudo_Nokizaru
-    at:       [-57.446, -15.899, -131.445, 113]
+    region:   s_96
     level:    [81, 83]
   17412194:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-63.527, -15.899, -127.561, 139]
+    region:   s_96
     level:    [81, 83]
   17412195:
     template: Yagudo_Hierogrammat
-    at:       [-50.948, -15.899, -126.624, 246]
+    region:   s_96
     level:    [81, 83]
   17412196:
     template: Errand_Imp
@@ -4726,20 +4726,20 @@ spawns:
     level:    [79, 80]
   17412197:
     template: Yagudo_Yojimbo
-    at:       [-54.376, -15.899, -93.079, 144]
+    region:   s_101
     level:    [81, 83]
   17412198:
     template: Yagudo_Nokizaru
-    at:       [-48.133, -15.899, -102.547, 206]
+    region:   s_101
     level:    [81, 83]
   17412199:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-56.439, -15.899, -90.567, 96]
+    region:   s_101
     level:    [81, 83]
   17412200:
     template: Yagudo_Hierogrammat
-    at:       [-69.456, -15.900, -88.142, 177]
+    region:   s_101
     level:    [81, 83]
   17412201:
     template: Errand_Imp
@@ -4748,21 +4748,21 @@ spawns:
   17412202:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-89.415, -15.899, -86.591, 3]
+    region:   s_106
     level:    [81, 83]
   17412203:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-102.177, -15.899, -87.879, 178]
+    region:   s_106
     level:    [81, 83]
   17412204:
     template: Yagudo_Yojimbo
-    at:       [-110.494, -15.900, -108.712, 170]
+    region:   s_106
     level:    [81, 83]
   17412205:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-109.337, -15.899, -98.772, 224]
+    region:   s_106
     level:    [81, 83]
   17412206:
     template: Yagudo_Flagellant_past
@@ -4777,89 +4777,89 @@ spawns:
   17412208:
     template: Yagudo_Flagellant_past
     script:   Yagudo_Flagellant
-    at:       [-105.520, -15.899, -151.421, 118]
+    region:   s_112
     level:    [81, 83]
   17412209:
     template: Yagudo_Conductor_past
     script:   Yagudo_Conductor
-    at:       [-95.271, -15.899, -150.251, 70]
+    region:   s_112
     level:    [81, 83]
   17412210:
     template: Yagudo_Yojimbo
-    at:       [-94.828, -15.899, -136.396, 179]
+    region:   s_112
     level:    [81, 83]
   17412211:
     template: Yagudo_Abbot_indoor_S
     script:   Yagudo_Abbot
-    at:       [-97.423, -15.899, -150.726, 31]
+    region:   s_112
     level:    [81, 83]
   17412212:
     template: Doom_Lens_CZKS
     script:   Doom_Lens
-    at:       [-95.306, -16.500, 12.453, 192]
+    region:   s_116
     level:    [82, 83]
   17412213:
     template: Doom_Lens_CZKS
     script:   Doom_Lens
-    at:       [-89.106, -16.500, 13.721, 128]
+    region:   s_116
     level:    [82, 83]
   17412214:
     template: Doom_Lens_CZKS
     script:   Doom_Lens
-    at:       [-94.782, -16.500, -53.975, 67]
+    region:   s_118
     level:    [82, 83]
   17412215:
     template: Doom_Lens_CZKS
     script:   Doom_Lens
-    at:       [-84.764, -16.500, -55.564, 128]
+    region:   s_118
     level:    [82, 83]
   17412216:
     template: Demon_Warrior
-    at:       [-135.983, -20.156, -20.806, 9]
+    region:   s_120
     level:    [80, 82]
   17412217:
     template: Demon_Befouler
-    at:       [-179.757, -38.008, 9.454, 65]
+    region:   s_121
     level:    [80, 81]
   17412218:
     template: Demon_Warrior
-    at:       [-224.442, -48.384, -21.015, 128]
+    region:   sw_122
     level:    [80, 82]
   17412219:
     template: Keep_Imp
-    at:       [-270.196, -48.500, -16.729, 136]
+    region:   sw_123
     level:    [81, 83]
   17412220:
     template: Keep_Imp
-    at:       [-302.925, -48.500, 8.175, 92]
+    region:   sw_124
     level:    [81, 83]
   17412221:
     template: Keep_Imp
-    at:       [-295.741, -48.500, -61.717, 10]
+    region:   sw_125
     level:    [81, 83]
   17412222:
     template: Keep_Imp
-    at:       [-318.096, -48.500, -20.037, 10]
+    region:   sw_126
     level:    [81, 83]
   17412223:
     template: Demon_Befouler
-    at:       [-243.080, -52.500, 62.067, 180]
+    region:   w_127
     level:    [80, 81]
   17412224:
     template: Demon_Justiciar
-    at:       [-217.039, -52.500, 65.809, 50]
+    region:   w_128
     level:    [80, 81]
   17412225:
     template: Demons_Elemental
-    at:       [-218.514, -52.500, 67.486, 40]
+    region:   w_128
     level:    [75, 78]
   17412226:
     template: Demon_Magus
-    at:       [-245.129, -52.500, 97.809, 29]
+    region:   w_130
     level:    [80, 81]
   17412227:
     template: Shadowguard_Demon
-    at:       [-243.259, -52.500, 97.699, 7]
+    region:   w_130
     level:    [80, 80]
   17412228:
     template: Desmodus
@@ -4867,39 +4867,39 @@ spawns:
     level:    [80, 82]
   17412229:
     template: Desmodus
-    at:       [-259.300, -43.750, 134.701, 60]
+    region:   w_133
     level:    [80, 82]
   17412230:
     template: Desmodus
-    at:       [-260.600, -43.750, 135.026, 36]
+    region:   w_133
     level:    [80, 82]
   17412231:
     template: Varkolak
-    at:       [-264.200, -43.750, 142.296, 7]
+    region:   w_133
     level:    [89, 89]
   17412232:
     template: Demon_Magus
-    at:       [-220.086, -52.500, -72.889, 116]
+    region:   sw_136
     level:    [80, 81]
   17412233:
     template: Demon_Warrior
-    at:       [-196.889, -52.500, -62.401, 255]
+    region:   sw_137
     level:    [80, 82]
   17412234:
     template: Demon_Justiciar
-    at:       [-183.469, -52.500, -79.971, 165]
+    region:   s_138
     level:    [80, 81]
   17412235:
     template: Demons_Elemental
-    at:       [-186.733, -52.500, -80.858, 220]
+    region:   s_138
     level:    [75, 78]
   17412236:
     template: Demon_Befouler
-    at:       [-205.693, -52.500, -96.469, 185]
+    region:   sw_140
     level:    [80, 81]
   17412237:
     template: Shadowguard_Demon
-    at:       [-215.503, -52.500, -95.579, 141]
+    region:   sw_140
     level:    [80, 80]
   17412238:
     template: Desmodus
@@ -4907,39 +4907,39 @@ spawns:
     level:    [80, 82]
   17412239:
     template: Desmodus
-    at:       [-348.100, -43.750, -185.880, 89]
+    region:   sw_143
     level:    [80, 82]
   17412240:
     template: Desmodus
-    at:       [-341.200, -43.750, -186.030, 72]
+    region:   sw_143
     level:    [80, 82]
   17412241:
     template: Varkolak
-    at:       [-338.700, -43.750, -184.060, 165]
+    region:   sw_143
     level:    [89, 89]
   17412242:
     template: Demon_Magus
-    at:       [-344.463, -52.500, -131.841, 165]
+    region:   sw_146
     level:    [80, 81]
   17412243:
     template: Demon_Warrior
-    at:       [-359.202, -52.500, -99.712, 142]
+    region:   sw_147
     level:    [80, 82]
   17412244:
     template: Demon_Befouler
-    at:       [-382.112, -52.500, -124.202, 79]
+    region:   sw_148
     level:    [80, 81]
   17412245:
     template: Shadowguard_Demon
-    at:       [-380.661, -52.500, -141.644, 59]
+    region:   sw_148
     level:    [80, 80]
   17412246:
     template: Demon_Justiciar
-    at:       [-365.960, -52.500, -141.322, 54]
+    region:   sw_150
     level:    [80, 81]
   17412247:
     template: Demons_Elemental
-    at:       [-366.570, -52.500, -139.556, 49]
+    region:   sw_150
     level:    [75, 78]
   17412248:
     template: Desmodus
@@ -4947,89 +4947,89 @@ spawns:
     level:    [80, 82]
   17412249:
     template: Desmodus
-    at:       [-141.900, -43.750, -62.117, 90]
+    region:   s_153
     level:    [80, 82]
   17412250:
     template: Desmodus
-    at:       [-146.100, -43.750, -67.575, 89]
+    region:   s_153
     level:    [80, 82]
   17412251:
     template: Varkolak
-    at:       [-145.400, -43.750, -60.169, 103]
+    region:   s_153
     level:    [89, 89]
   17412252:
     template: Demon_Warrior
-    at:       [-276.127, -52.500, -7.799, 32]
+    region:   sw_156
     level:    [80, 82]
   17412253:
     template: Demon_Warrior
-    at:       [-270.007, -52.500, 19.965, 225]
+    region:   sw_157
     level:    [80, 82]
   17412254:
     template: Demon_Magus
-    at:       [-261.088, -52.595, -32.887, 134]
+    region:   sw_158
     level:    [80, 81]
   17412255:
     template: Demon_Magus
-    at:       [-257.806, -52.595, -51.521, 224]
+    region:   sw_159
     level:    [80, 81]
   17412256:
     template: Demon_Justiciar
-    at:       [-311.383, -52.500, -48.521, 40]
+    region:   sw_160
     level:    [80, 81]
   17412257:
     template: Demons_Elemental
-    at:       [-310.589, -52.500, -45.819, 193]
+    region:   sw_160
     level:    [75, 78]
   17412258:
     template: Demon_Justiciar
-    at:       [-335.775, -52.500, -43.474, 14]
+    region:   sw_162
     level:    [80, 81]
   17412259:
     template: Demons_Elemental
-    at:       [-334.860, -52.500, -40.472, 60]
+    region:   sw_162
     level:    [75, 78]
   17412260:
     template: Demon_Befouler
-    at:       [-311.372, -52.427, 5.519, 35]
+    region:   sw_164
     level:    [80, 81]
   17412261:
     template: Demon_Befouler
-    at:       [-340.820, -52.427, 13.172, 71]
+    region:   sw_165
     level:    [80, 81]
   17412262:
     template: Doom_Lens_CZKS
     script:   Doom_Lens
-    at:       [-379.391, -59.737, 37.684, 63]
+    region:   w_166
     level:    [82, 83]
   17412263:
     template: Doom_Lens_CZKS
     script:   Doom_Lens
-    at:       [-379.684, -60.939, 43.248, 63]
+    region:   w_166
     level:    [82, 83]
   17412264:
     template: Demon_Suppressor_Large
     script:   Demon_Suppressor
-    at:       [-445.232, -68.500, 116.597, 55]
+    region:   w_168
     level:    [82, 83]
   17412265:
     template: Demon_Entomber_Large
     script:   Demon_Entomber
-    at:       [-444.652, -68.500, 126.184, 98]
+    region:   w_168
     level:    [82, 83]
   17412266:
     template: Demon_Corrupter_Large
     script:   Demon_Corrupter
-    at:       [-427.835, -68.500, 110.521, 62]
+    region:   w_168
     level:    [82, 83]
   17412267:
     template: Demon_Condemner_Large
     script:   Demon_Condemner
-    at:       [-435.946, -68.500, 109.301, 236]
+    region:   w_168
     level:    [82, 83]
   17412268:
     template: Demons_Elemental
-    at:       [-437.179, -68.500, 111.389, 35]
+    region:   w_168
     level:    [75, 78]
   17412269:
     template: Berserker_Demon
@@ -5037,22 +5037,22 @@ spawns:
     level:    [82, 83]
   17412270:
     template: Eclipse_Demon
-    at:       [-462.974, -68.500, 112.157, 73]
+    region:   w_168
     level:    [82, 83]
   17412271:
     template: Demon_Suppressor_Large
     script:   Demon_Suppressor
-    at:       [-421.247, -68.500, 5.058, 245]
+    region:   sw_175
     level:    [82, 83]
   17412272:
     template: Demon_Entomber_Large
     script:   Demon_Entomber
-    at:       [-445.498, -68.500, -20.029, 85]
+    region:   sw_175
     level:    [82, 83]
   17412273:
     template: Demon_Corrupter_Large
     script:   Demon_Corrupter
-    at:       [-425.118, -68.500, -17.944, 182]
+    region:   sw_175
     level:    [82, 83]
   17412274:
     template: Demon_Condemner_Large
@@ -5073,53 +5073,53 @@ spawns:
     level:    [82, 83]
   17412278:
     template: Demons_Elemental
-    at:       [-460.475, -68.500, -13.200, 175]
+    region:   sw_175
     level:    [75, 78]
   17412279:
     template: Titanotaur
-    at:       [-499.396, -68.500, 96.607, 231]
+    region:   w_183
     level:    [83, 83]
   17412280:
     template: Titanotaur
-    at:       [-498.231, -68.500, 26.121, 39]
+    region:   sw_184
     level:    [83, 83]
   17412281:
     template: Demon_Suppressor_Large
     script:   Demon_Suppressor
-    at:       [-517.674, -68.499, 58.341, 255]
+    region:   w_185
     level:    [82, 83]
   17412282:
     template: Demon_Entomber_Large
     script:   Demon_Entomber
-    at:       [-525.939, -68.500, 58.378, 127]
+    region:   w_185
     level:    [82, 83]
   17412283:
     template: Dark_Elemental
-    at:       [-465.384, -67.750, 50.960, 126]
+    region:   w_187
     level:    [81, 81]
   17412284:
     template: Ice_Elemental
-    at:       [-457.618, -67.750, 51.585, 114]
+    region:   w_187
     level:    [81, 83]
   17412285:
     template: Inferno_Demon
-    at:       [-530.071, -72.500, 75.626, 8]
+    region:   w_189
     level:    [82, 83]
   17412286:
     template: Adjudicator_Demon
-    at:       [-540.339, -72.500, 73.275, 66]
+    region:   w_189
     level:    [82, 83]
   17412287:
     template: Demons_Elemental
-    at:       [-537.667, -72.500, 81.073, 91]
+    region:   w_189
     level:    [75, 78]
   17412288:
     template: Berserker_Demon
-    at:       [-517.054, -72.500, 19.467, 46]
+    region:   sw_192
     level:    [82, 83]
   17412289:
     template: Eclipse_Demon
-    at:       [-512.321, -72.501, 35.979, 137]
+    region:   sw_192
     level:    [82, 83]
   17412290:
     template: Zvahl_Fortalice
@@ -5548,44 +5548,54 @@ spawns:
     level:    [70, 70]
   17412478:
     template: Shadowhorn_Stormer
-    at:       [-63.477, -0.499, -35.692, 148]
+    region:   s_1
     level:    [70, 70]
   17412479:
     template: Shadowhorn_Stormer
-    at:       [-81.784, -0.511, -13.840, 33]
+    region:   s_1
     level:    [70, 70]
   17412480:
     template: Shadowhorn_Stormer
-    at:       [-79.452, -0.499, 0.391, 168]
+    region:   s_1
     level:    [70, 70]
   17412481:
     template: Shadowhorn_Stormer
-    at:       [-65.175, -0.494, -25.616, 238]
+    region:   s_1
     level:    [70, 70]
   17412482:
     template: Shadowhorn_Stormer
-    at:       [-58.638, -0.499, -37.654, 194]
+    region:   s_1
     level:    [70, 70]
   17412483:
     template: Shadowhand
+    region:   s_1
   17412484:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412485:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412486:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412487:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412488:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412489:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412490:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412491:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412492:
     template: Shadowhand_Cuirassier
+    region:   s_1
   17412493:
     template: Shadowfang
   17412494:
@@ -5608,63 +5618,73 @@ spawns:
     template: Shadowfang_Void
   17412503:
     template: Shadoweye
+    region:   s_1
   17412504:
     template: Shadoweye_Gnat
+    region:   s_1
   17412505:
     template: Shadoweye_Gnat
+    region:   s_1
   17412506:
     template: Shadoweye_Gnat
+    region:   s_1
   17412507:
     template: Shadoweye_Gnat
+    region:   s_1
   17412508:
     template: Shadoweye_Gnat
+    region:   s_1
   17412509:
     template: Shadoweye_Gnat
+    region:   s_1
   17412510:
     template: Shadoweye_Gnat
+    region:   s_1
   17412511:
     template: Shadoweye_Gnat
+    region:   s_1
   17412512:
     template: Shadoweye_Gnat
+    region:   s_1
   17412513:
     template: Shadowbreath
-    at:       [-63.442, -0.471, -16.425, 191]
+    region:   s_1
     level:    [70, 70]
   17412514:
     template: Shadowbreath_Defiler
-    at:       [-63.018, -0.403, -19.007, 73]
+    region:   s_1
     level:    [70, 70]
   17412515:
     template: Shadowbreath_Defiler
-    at:       [-86.287, -0.500, -37.534, 69]
+    region:   s_1
     level:    [70, 70]
   17412516:
     template: Shadowbreath_Defiler
-    at:       [-63.274, -0.500, 3.070, 69]
+    region:   s_1
     level:    [70, 70]
   17412517:
     template: Shadowbreath_Defiler
-    at:       [-75.555, -0.499, -26.782, 55]
+    region:   s_1
     level:    [70, 70]
   17412518:
     template: Shadowbreath_Defiler
-    at:       [-63.081, -0.405, -19.026, 103]
+    region:   s_1
     level:    [70, 70]
   17412519:
     template: Shadowbreath_Defiler
-    at:       [-75.975, -0.499, -11.599, 57]
+    region:   s_1
     level:    [70, 70]
   17412520:
     template: Shadowbreath_Defiler
-    at:       [-74.206, -0.498, -9.216, 145]
+    region:   s_1
     level:    [70, 70]
   17412521:
     template: Shadowbreath_Defiler
-    at:       [-86.841, -0.500, 9.166, 137]
+    region:   s_1
     level:    [70, 70]
   17412522:
     template: Shadowbreath_Defiler
-    at:       [-81.255, -0.500, -36.503, 28]
+    region:   s_1
     level:    [70, 70]
   17412523:
     template: Shadowhind_Machinator
@@ -5732,27 +5752,27 @@ spawns:
     template: Skeleton_Escort
   17412555:
     template: Fiendish_Leechkeeper
-    at:       [-94.000, -0.500, -43.992, 57]
+    region:   s_1
     level:    [60, 60]
   17412556:
     template: Fiendish_Leechkeeper
-    at:       [-80.541, -0.500, -33.852, 217]
+    region:   s_1
     level:    [60, 60]
   17412557:
     template: Fiendish_Leechkeeper
-    at:       [-94.001, -0.460, -14.004, 83]
+    region:   s_1
     level:    [60, 60]
   17412558:
     template: Fiendish_Leechkeeper
-    at:       [-88.050, -0.500, -25.083, 26]
+    region:   s_1
     level:    [60, 60]
   17412559:
     template: Fiendish_Leechkeeper
-    at:       [-71.123, -0.500, -40.973, 18]
+    region:   s_1
     level:    [60, 60]
   17412560:
     template: Fiendish_Leechkeeper
-    at:       [-82.003, -0.500, -19.962, 237]
+    region:   s_1
     level:    [60, 60]
   17412561:
     template: Fortification_NV80
@@ -5937,11 +5957,11 @@ spawns:
     level:    [66, 66]
   17412633:
     template: Gigas_Mercenary
-    at:       [-82.801, -0.499, -47.756, 40]
+    region:   s_1
     level:    [66, 66]
   17412634:
     template: Gigas_Mercenary
-    at:       [-76.728, -0.500, -14.884, 31]
+    region:   s_1
     level:    [66, 66]
   17412635:
     template: Poroggo_Prince

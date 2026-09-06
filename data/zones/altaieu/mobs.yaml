@@ -1992,106 +1992,106 @@ spawns:
   16912385:
     template: Ulaern_war
     script:   Ulaern
-    at:       [54.833, -0.500, -580.009, 24]
+    region:   s_1
     level:    [70, 73]
   16912386:
     template: Ulaern_war
     script:   Ulaern
-    at:       [-39.680, -0.500, -581.753, 141]
+    region:   s_15
     level:    [70, 73]
   16912387:
     template: Ulaern_whm
     script:   Ulaern
-    at:       [-36.048, -0.500, -553.179, 24]
+    region:   s_1
     level:    [70, 73]
   16912388:
     template: Ulaern_blm
     script:   Ulaern
-    at:       [-45.578, -0.500, -584.298, 174]
+    region:   s_1
     level:    [70, 73]
   16912389:
     template: Ulaern_rdm
     script:   Ulaern
-    at:       [-29.022, -0.500, -553.204, 122]
+    region:   s_1
     level:    [70, 73]
   16912390:
     template: Ulaern_brd
     script:   Ulaern
-    at:       [-50.796, -0.499, -582.007, 234]
+    region:   s_1
     level:    [70, 73]
   16912391:
     template: Ulaern_rng
     script:   Ulaern
-    at:       [22.439, -0.500, -492.038, 145]
+    region:   s_1
     level:    [70, 73]
   16912392:
     template: Ulaern_sam
-    script:   Ulaern
     at:       [-27.956, -0.499, -570.354, 60]
+    script:   Ulaern
     level:    [70, 73]
   16912393:
     template: Ulaern_sam
     script:   Ulaern
-    at:       [22.807, -0.500, -548.529, 193]
+    region:   s_1
     level:    [70, 73]
   16912394:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [-1.608, -0.500, -554.041, 139]
+    region:   s_1
     level:    [68, 71]
   16912395:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [0.860, -0.500, -555.119, 108]
+    region:   s_1
     level:    [68, 71]
   16912396:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-8.315, -0.500, -552.733, 139]
+    region:   s_1
     level:    [70, 71]
   16912397:
     template: Ulhpemde
-    at:       [11.800, -0.500, -579.298, 181]
+    region:   s_13
     level:    [68, 72]
   16912398:
     template: Ulhpemde
-    at:       [44.080, -0.500, -581.038, 110]
+    region:   s_13
     level:    [68, 72]
   16912399:
     template: Ulhpemde
-    at:       [-22.492, -0.500, -514.307, 223]
+    region:   s_15
     level:    [69, 72]
   16912400:
     template: Ulhpemde
-    at:       [-62.027, -0.500, -538.811, 16]
+    region:   s_15
     level:    [68, 72]
   16912401:
     template: Ulphuabo
-    at:       [-58.025, -0.500, -572.647, 44]
+    region:   s_17
     level:    [75, 77]
   16912402:
     template: Ulphuabo
-    at:       [23.438, -0.237, -549.093, 159]
+    region:   s_18
     level:    [75, 77]
   16912403:
     template: Ulaern_mnk
     script:   Ulaern
-    at:       [-87.005, -0.500, -668.973, 94]
+    region:   s_19
     level:    [70, 73]
   16912404:
     template: Ulaern_pld
     script:   Ulaern
-    at:       [-20.498, -0.500, -624.702, 238]
+    region:   s_19
     level:    [70, 73]
   16912405:
     template: Ulaern_bst
     script:   Ulaern
-    at:       [-22.923, -0.500, -740.900, 45]
+    region:   s_19
     level:    [70, 73]
   16912406:
     template: Ulaern_drg
     script:   Ulaern
-    at:       [-40.198, -0.500, -720.885, 6]
+    region:   s_19
     level:    [70, 73]
   16912407:
     template: Aerns_Wynav
@@ -2104,57 +2104,57 @@ spawns:
   16912409:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [-34.735, -0.500, -659.095, 238]
+    region:   s_19
     level:    [68, 71]
   16912410:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-34.067, -0.500, -658.984, 237]
+    region:   s_19
     level:    [68, 71]
   16912411:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-38.326, -0.500, -658.327, 246]
+    region:   s_19
     level:    [70, 71]
   16912412:
     template: Ulhpemde
-    at:       [-32.037, -0.500, -696.974, 165]
+    region:   s_19
     level:    [68, 72]
   16912413:
     template: Ulhpemde
-    at:       [-56.806, -0.499, -637.281, 200]
+    region:   s_19
     level:    [68, 72]
   16912414:
     template: Ulphuabo
-    at:       [-12.123, -0.500, -658.614, 9]
+    region:   s_30
     level:    [75, 77]
   16912415:
     template: Ulaern_thf
     script:   Ulaern
-    at:       [53.087, -0.500, -726.582, 85]
+    region:   s_31
     level:    [70, 73]
   16912416:
     template: Ulaern_drk
     script:   Ulaern
-    at:       [99.068, -0.500, -683.215, 65]
+    region:   s_31
     level:    [70, 73]
   16912417:
     template: Ulaern_nin
     script:   Ulaern
-    at:       [27.853, -0.500, -712.223, 106]
+    region:   s_31
     level:    [70, 73]
   16912418:
     template: Ulaern_smn
     script:   Ulaern
-    at:       [38.617, -0.500, -665.826, 181]
+    region:   s_31
     level:    [70, 73]
   16912419:
     template: Ulhpemde
-    at:       [93.923, -0.500, -674.789, 123]
+    region:   s_31
     level:    [68, 72]
   16912420:
     template: Ulhpemde
-    at:       [53.203, -0.500, -703.200, 66]
+    region:   s_31
     level:    [69, 72]
   16912421:
     template: Aerns_Elemental
@@ -2163,250 +2163,250 @@ spawns:
   16912422:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [31.636, -0.500, -659.626, 142]
+    region:   s_31
     level:    [68, 71]
   16912423:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [33.251, -0.500, -659.380, 140]
+    region:   s_31
     level:    [68, 71]
   16912424:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [25.142, -0.500, -659.670, 154]
+    region:   s_31
     level:    [70, 71]
   16912425:
     template: Ulphuabo
-    at:       [28.091, -0.500, -685.779, 154]
+    region:   s_41
     level:    [75, 77]
   16912426:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [139.714, -0.860, -663.798, 164]
+    region:   s_42
     level:    [68, 71]
   16912427:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [141.232, -1.050, -666.071, 164]
+    region:   s_42
     level:    [68, 71]
   16912428:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [153.839, -0.500, -609.174, 88]
+    region:   s_42
     level:    [68, 71]
   16912429:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [153.643, -0.500, -606.996, 85]
+    region:   s_42
     level:    [68, 71]
   16912430:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [158.189, -0.499, -657.018, 31]
+    region:   s_42
     level:    [68, 71]
   16912431:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [157.581, -0.499, -656.016, 34]
+    region:   s_42
     level:    [68, 71]
   16912432:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [100.029, -0.757, -603.270, 229]
+    region:   s_42
     level:    [68, 71]
   16912433:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [94.734, -0.707, -605.512, 243]
+    region:   s_42
     level:    [68, 71]
   16912434:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [138.119, -0.664, -661.993, 160]
+    region:   s_42
     level:    [70, 71]
   16912435:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [156.973, -0.500, -621.965, 53]
+    region:   s_42
     level:    [70, 71]
   16912436:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [171.315, -0.499, -670.270, 30]
+    region:   s_42
     level:    [70, 71]
   16912437:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [130.299, -0.546, -629.094, 107]
+    region:   s_42
     level:    [70, 71]
   16912438:
     template: Ulhpemde
-    at:       [172.548, -0.499, -635.509, 25]
+    region:   s_42
     level:    [68, 72]
   16912439:
     template: Ulhpemde
-    at:       [206.409, -0.499, -608.949, 126]
+    region:   s_42
     level:    [68, 72]
   16912440:
     template: Ulhpemde
-    at:       [157.499, -0.499, -664.463, 13]
+    region:   s_42
     level:    [68, 72]
   16912441:
     template: Ulphuabo
-    at:       [190.930, -0.499, -640.370, 234]
+    region:   s_57
     level:    [75, 77]
   16912442:
     template: Ulhpemde
-    at:       [234.833, -0.499, -735.856, 151]
+    region:   s_58
     level:    [68, 72]
   16912443:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [235.610, -0.499, -698.517, 94]
+    region:   s_58
     level:    [68, 71]
   16912444:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [236.188, -0.499, -697.019, 92]
+    region:   s_58
     level:    [68, 71]
   16912445:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [230.462, -0.499, -667.986, 62]
+    region:   s_58
     level:    [68, 71]
   16912446:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [230.494, -0.499, -664.068, 62]
+    region:   s_58
     level:    [68, 71]
   16912447:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [228.724, -0.499, -703.536, 84]
+    region:   s_58
     level:    [70, 71]
   16912448:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [255.556, -0.499, -688.614, 49]
+    region:   s_58
     level:    [70, 71]
   16912449:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [281.070, -0.499, -572.823, 106]
+    region:   se_65
     level:    [68, 71]
   16912450:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [279.134, -0.499, -572.686, 118]
+    region:   se_65
     level:    [68, 71]
   16912451:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [308.827, -0.499, -611.402, 116]
+    region:   se_65
     level:    [68, 71]
   16912452:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [306.326, -0.499, -612.428, 77]
+    region:   se_65
     level:    [68, 71]
   16912453:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [320.136, -0.499, -554.129, 42]
+    region:   se_65
     level:    [68, 71]
   16912454:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [319.462, -0.499, -553.309, 43]
+    region:   se_65
     level:    [68, 71]
   16912455:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [274.168, -0.499, -572.618, 217]
+    region:   se_65
     level:    [70, 71]
   16912456:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [303.175, -0.499, -617.959, 84]
+    region:   se_65
     level:    [70, 71]
   16912457:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [321.431, -0.499, -560.639, 42]
+    region:   se_65
     level:    [70, 71]
   16912458:
     template: Ulhpemde
-    at:       [307.136, -0.499, -585.903, 72]
+    region:   se_65
     level:    [68, 72]
   16912459:
     template: Ulhpemde
-    at:       [257.372, -0.499, -616.559, 203]
+    region:   se_65
     level:    [69, 72]
   16912460:
     template: Ulphuabo
-    at:       [271.481, -0.499, -614.603, 125]
+    region:   se_76
     level:    [75, 77]
   16912461:
     template: Ulphuabo
-    at:       [185.878, -0.499, -487.157, 19]
+    region:   s_77
     level:    [75, 77]
   16912462:
     template: Ulhpemde
-    at:       [388.248, -0.499, -375.957, 114]
+    region:   se_78
     level:    [68, 72]
   16912463:
     template: Ulhpemde
-    at:       [374.112, -0.499, -433.206, 251]
+    region:   se_78
     level:    [68, 72]
   16912464:
     template: Ulhpemde
-    at:       [231.123, -0.499, -421.224, 142]
+    region:   se_78
     level:    [68, 72]
   16912465:
     template: Ulhpemde
-    at:       [342.278, -0.499, -354.816, 72]
+    region:   se_78
     level:    [68, 72]
   16912466:
     template: Ulhpemde
-    at:       [257.716, -0.499, -431.252, 8]
+    region:   se_78
     level:    [68, 72]
   16912467:
     template: Ulhpemde
-    at:       [419.838, -0.500, -361.984, 30]
+    region:   se_78
     level:    [68, 72]
   16912468:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [280.324, -0.499, -440.002, 175]
+    region:   se_78
     level:    [68, 71]
   16912469:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [277.908, -0.499, -407.427, 189]
+    region:   se_78
     level:    [68, 71]
   16912470:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [283.345, -0.499, -429.312, 190]
+    region:   se_78
     level:    [70, 71]
   16912471:
     template: Ulphuabo
-    at:       [371.045, -0.499, -365.368, 41]
+    region:   se_87
     level:    [75, 77]
   16912472:
     template: Omaern_whm
     script:   Omaern
-    at:       [584.122, -0.500, -363.099, 225]
+    region:   se_88
     level:    [75, 78]
   16912473:
     template: Omaern_bst
     script:   Omaern_BST
-    at:       [557.388, -0.409, -351.886, 115]
+    region:   se_88
     level:    [75, 78]
   16912474:
     template: Omaern_drg
     script:   Omaern_DRG
-    at:       [478.811, -0.500, -349.119, 13]
+    region:   se_88
     level:    [75, 78]
   16912475:
     template: Omaern_smn
@@ -2415,23 +2415,23 @@ spawns:
     level:    [75, 78]
   16912476:
     template: Omhpemde
-    at:       [549.112, -0.500, -391.860, 129]
+    region:   se_88
     level:    [73, 77]
   16912477:
     template: Omhpemde
-    at:       [530.503, -0.500, -349.260, 105]
+    region:   se_88
     level:    [73, 77]
   16912478:
     template: Omhpemde
-    at:       [513.708, -0.500, -389.999, 227]
+    region:   se_88
     level:    [73, 77]
   16912479:
     template: Omhpemde
-    at:       [541.597, -0.500, -324.671, 46]
+    region:   se_88
     level:    [73, 77]
   16912480:
     template: Omhpemde
-    at:       [486.970, -0.500, -373.175, 44]
+    region:   se_88
     level:    [73, 77]
   16912481:
     template: Aerns_Wynav
@@ -2448,27 +2448,27 @@ spawns:
   16912484:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [514.293, -0.500, -339.126, 88]
+    region:   se_88
     level:    [73, 76]
   16912485:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [509.832, -0.500, -367.248, 186]
+    region:   se_88
     level:    [73, 76]
   16912486:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [482.654, -0.500, -343.645, 132]
+    region:   se_88
     level:    [73, 76]
   16912487:
     template: Omaern_war
     script:   Omaern
-    at:       [552.028, -1.297, -514.484, 27]
+    region:   se_103
     level:    [75, 78]
   16912488:
     template: Omaern_whm
     script:   Omaern
-    at:       [534.536, -0.235, -540.016, 2]
+    region:   se_103
     level:    [75, 78]
   16912489:
     template: Omaern_pld
@@ -2478,27 +2478,27 @@ spawns:
   16912490:
     template: Omaern_drk
     script:   Omaern
-    at:       [504.906, -0.500, -526.107, 198]
+    region:   se_103
     level:    [75, 78]
   16912491:
     template: Omaern_drk
     script:   Omaern
-    at:       [520.481, -0.500, -477.321, 67]
+    region:   se_103
     level:    [75, 78]
   16912492:
     template: Omaern_brd
     script:   Omaern
-    at:       [528.920, -0.500, -487.953, 214]
+    region:   se_103
     level:    [75, 78]
   16912493:
     template: Omaern_brd
     script:   Omaern
-    at:       [486.896, -0.500, -527.579, 247]
+    region:   se_103
     level:    [75, 78]
   16912494:
     template: Omaern_sam
     script:   Omaern
-    at:       [489.885, -0.500, -482.846, 151]
+    region:   se_103
     level:    [75, 78]
   16912495:
     template: Omaern_sam
@@ -2507,15 +2507,15 @@ spawns:
     level:    [75, 78]
   16912496:
     template: Omhpemde
-    at:       [527.093, -0.500, -469.416, 87]
+    region:   se_103
     level:    [73, 77]
   16912497:
     template: Omhpemde
-    at:       [510.851, -0.500, -434.323, 137]
+    region:   se_103
     level:    [73, 77]
   16912498:
     template: Omhpemde
-    at:       [484.563, -0.500, -486.664, 188]
+    region:   se_103
     level:    [73, 77]
   16912499:
     template: Omaern_mnk
@@ -2530,82 +2530,82 @@ spawns:
   16912501:
     template: Omaern_rdm
     script:   Omaern
-    at:       [430.611, -1.386, -606.282, 119]
+    region:   se_117
     level:    [75, 78]
   16912502:
     template: Omaern_thf
     script:   Omaern
-    at:       [574.313, -1.340, -518.119, 251]
+    region:   se_117
     level:    [75, 78]
   16912503:
     template: Omaern_nin
     script:   Omaern
-    at:       [446.590, -1.515, -601.785, 91]
+    region:   se_117
     level:    [75, 78]
   16912504:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [558.810, -0.500, -307.693, 77]
+    region:   se_120
     level:    [73, 76]
   16912505:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [597.811, -0.633, -295.037, 44]
+    region:   se_120
     level:    [73, 75]
   16912506:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [647.028, -0.500, -314.034, 98]
+    region:   se_120
     level:    [73, 76]
   16912507:
     template: Omhpemde
-    at:       [654.164, -0.500, -248.764, 13]
+    region:   se_120
     level:    [73, 77]
   16912508:
     template: Omhpemde
-    at:       [590.385, -0.500, -329.055, 95]
+    region:   se_120
     level:    [73, 77]
   16912509:
     template: Omhpemde
-    at:       [584.589, -0.500, -236.110, 72]
+    region:   se_120
     level:    [73, 77]
   16912510:
     template: Omhpemde
-    at:       [662.464, -0.500, -281.033, 247]
+    region:   se_120
     level:    [73, 77]
   16912511:
     template: Omhpemde
-    at:       [643.544, -0.500, -229.510, 56]
+    region:   se_120
     level:    [73, 77]
   16912512:
     template: Omhpemde
-    at:       [648.985, -0.500, -222.272, 22]
+    region:   se_120
     level:    [73, 77]
   16912513:
     template: Omhpemde
-    at:       [635.936, -0.500, -328.447, 183]
+    region:   se_120
     level:    [73, 77]
   16912514:
     template: Omhpemde
-    at:       [619.156, -0.500, -290.792, 83]
+    region:   se_120
     level:    [73, 77]
   16912515:
     template: Omphuabo
-    at:       [611.415, -0.500, -324.390, 92]
+    region:   se_131
     level:    [79, 81]
   16912516:
     template: Omphuabo
-    at:       [667.167, -0.500, -248.265, 10]
+    region:   e_132
     level:    [79, 81]
   16912517:
     template: Omaern_blm
     script:   Omaern
-    at:       [688.807, -0.500, -202.295, 29]
+    region:   e_133
     level:    [75, 78]
   16912518:
     template: Omaern_nin
     script:   Omaern
-    at:       [661.843, -1.643, -123.400, 240]
+    region:   e_133
     level:    [75, 78]
   16912519:
     template: Omaern_drg
@@ -2619,42 +2619,42 @@ spawns:
   16912521:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [667.203, -0.794, -151.731, 107]
+    region:   e_133
     level:    [73, 76]
   16912522:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [691.255, -0.529, -187.634, 32]
+    region:   e_133
     level:    [73, 76]
   16912523:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [641.313, -0.515, -163.142, 61]
+    region:   e_133
     level:    [73, 76]
   16912524:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [669.907, -1.584, -122.855, 111]
+    region:   e_133
     level:    [73, 76]
   16912525:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [635.329, -0.500, -88.719, 14]
+    region:   e_133
     level:    [73, 76]
   16912526:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [696.887, -0.552, -187.067, 52]
+    region:   e_133
     level:    [73, 76]
   16912527:
     template: Omaern_rdm
     script:   Omaern
-    at:       [667.920, -1.580, -149.632, 40]
+    region:   e_143
     level:    [75, 78]
   16912528:
     template: Omaern_bst
     script:   Omaern_BST
-    at:       [674.080, -1.727, -157.430, 54]
+    region:   e_143
     level:    [75, 78]
   16912529:
     template: Omaern_smn
@@ -2671,117 +2671,117 @@ spawns:
     level:    [65, 69]
   16912532:
     template: Omhpemde
-    at:       [659.916, -0.500, -203.267, 26]
+    region:   e_148
     level:    [73, 77]
   16912533:
     template: Omhpemde
-    at:       [608.260, -0.500, -156.262, 90]
+    region:   e_148
     level:    [73, 77]
   16912534:
     template: Omhpemde
-    at:       [660.275, -0.500, -68.882, 228]
+    region:   e_150
     level:    [73, 77]
   16912535:
     template: Omhpemde
-    at:       [666.883, -0.500, -72.905, 24]
+    region:   e_150
     level:    [73, 77]
   16912536:
     template: Omphuabo
-    at:       [613.269, -0.500, -149.021, 201]
+    region:   e_152
     level:    [79, 81]
   16912537:
     template: Omphuabo
-    at:       [663.199, -0.500, -204.670, 7]
+    region:   e_152
     level:    [79, 81]
   16912538:
     template: Omhpemde
-    at:       [636.248, -0.500, -11.439, 43]
+    region:   e_154
     level:    [73, 77]
   16912539:
     template: Omhpemde
-    at:       [626.623, -0.500, -10.162, 22]
+    region:   e_154
     level:    [73, 77]
   16912540:
     template: Omhpemde
-    at:       [632.519, -0.500, 19.204, 102]
+    region:   e_154
     level:    [73, 77]
   16912541:
     template: Omhpemde
-    at:       [615.192, -0.500, 27.472, 108]
+    region:   e_154
     level:    [73, 77]
   16912542:
     template: Omphuabo
-    at:       [585.911, -0.500, -33.039, 218]
+    region:   e_158
     level:    [79, 81]
   16912543:
     template: Omphuabo
-    at:       [603.255, -0.500, -7.476, 113]
+    region:   e_159
     level:    [79, 81]
   16912544:
     template: Omphuabo
-    at:       [595.922, -0.500, 1.021, 122]
+    region:   e_159
     level:    [79, 81]
   16912545:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [-217.498, -0.500, -665.529, 203]
+    region:   s_161
     level:    [68, 71]
   16912546:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-219.000, -0.500, -666.906, 206]
+    region:   s_161
     level:    [68, 71]
   16912547:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-217.990, -0.500, -659.432, 214]
+    region:   s_161
     level:    [70, 71]
   16912548:
     template: Ulxzomit_4088
     script:   Ulxzomit
-    at:       [-334.022, -0.381, -530.541, 251]
+    region:   sw_164
     level:    [68, 71]
   16912549:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-335.897, -0.395, -529.831, 254]
+    region:   sw_164
     level:    [68, 71]
   16912550:
     template: Ulxzomit_2615
     script:   Ulxzomit
-    at:       [-334.009, -0.500, -537.181, 28]
+    region:   sw_164
     level:    [70, 71]
   16912551:
     template: Ulhpemde
-    at:       [-188.063, -0.500, -528.951, 21]
+    region:   s_167
     level:    [69, 72]
   16912552:
     template: Ulhpemde
-    at:       [-147.425, -0.500, -572.890, 225]
+    region:   s_167
     level:    [68, 72]
   16912553:
     template: Ulhpemde
-    at:       [-156.234, -0.500, -579.625, 27]
+    region:   s_167
     level:    [68, 72]
   16912554:
     template: Ulhpemde
-    at:       [-174.934, -0.500, -534.294, 31]
+    region:   s_167
     level:    [68, 72]
   16912555:
     template: Ulhpemde
-    at:       [-198.153, -0.500, -535.221, 148]
+    region:   s_167
     level:    [68, 72]
   16912556:
     template: Ulhpemde
-    at:       [-362.593, -0.499, -581.003, 41]
+    region:   sw_172
     level:    [69, 72]
   16912557:
     template: Ulhpemde
-    at:       [-329.058, -0.500, -593.865, 227]
+    region:   sw_172
     level:    [68, 72]
   16912558:
     template: Ulhpemde
-    at:       [-364.139, -0.500, -560.755, 51]
+    region:   sw_172
     level:    [68, 72]
   16912559:
     template: Ulhpemde
@@ -2789,16 +2789,16 @@ spawns:
     level:    [68, 72]
   16912560:
     template: Ulphuabo
-    at:       [-168.196, -0.500, -573.727, 249]
+    region:   s_176
     level:    [75, 77]
   16912561:
     template: Ulphuabo
-    at:       [-355.018, -0.500, -556.595, 25]
+    region:   sw_177
     level:    [75, 77]
   16912562:
     template: Omaern_war
     script:   Omaern
-    at:       [-510.296, -0.640, -345.052, 161]
+    region:   sw_178
     level:    [75, 78]
   16912563:
     template: Omaern_war
@@ -2808,32 +2808,32 @@ spawns:
   16912564:
     template: Omaern_mnk
     script:   Omaern
-    at:       [-483.372, -0.499, -418.633, 88]
+    region:   sw_178
     level:    [75, 78]
   16912565:
     template: Omaern_mnk
     script:   Omaern
-    at:       [-526.716, -0.500, -458.874, 120]
+    region:   sw_178
     level:    [75, 78]
   16912566:
     template: Omaern_thf
     script:   Omaern
-    at:       [-617.956, -0.501, -438.834, 90]
+    region:   sw_178
     level:    [75, 78]
   16912567:
     template: Omaern_rng
     script:   Omaern
-    at:       [-527.819, -0.500, -321.648, 53]
+    region:   sw_178
     level:    [75, 78]
   16912568:
     template: Omaern_rng
     script:   Omaern
-    at:       [-598.126, -0.500, -460.280, 91]
+    region:   sw_178
     level:    [75, 78]
   16912569:
     template: Omaern_sam
     script:   Omaern
-    at:       [-503.047, -0.499, -435.520, 177]
+    region:   sw_178
     level:    [75, 78]
   16912570:
     template: Omaern_nin
@@ -2843,12 +2843,12 @@ spawns:
   16912571:
     template: Omaern_drg
     script:   Omaern_DRG
-    at:       [-505.733, -0.518, -371.254, 139]
+    region:   sw_178
     level:    [75, 78]
   16912572:
     template: Omaern_drg
     script:   Omaern_DRG
-    at:       [-528.394, -0.500, -457.921, 243]
+    region:   sw_178
     level:    [75, 78]
   16912573:
     template: Aerns_Wynav
@@ -2861,56 +2861,56 @@ spawns:
   16912575:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-554.438, -0.500, -333.371, 85]
+    region:   sw_178
     level:    [73, 76]
   16912576:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-538.145, -0.436, -355.887, 180]
+    region:   sw_178
     level:    [73, 76]
   16912577:
     template: Omphuabo
-    at:       [-529.222, -0.499, -310.212, 17]
+    region:   sw_193
     level:    [79, 81]
   16912578:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-379.072, -0.500, -338.679, 195]
+    region:   sw_194
     level:    [73, 76]
   16912579:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-378.271, -0.602, -302.401, 45]
+    region:   sw_194
     level:    [73, 76]
   16912580:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-388.754, -0.499, -349.926, 210]
+    region:   sw_194
     level:    [73, 76]
   16912581:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-355.436, -1.601, -410.789, 116]
+    region:   sw_197
     level:    [73, 76]
   16912582:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-293.927, -0.445, -418.631, 44]
+    region:   sw_198
     level:    [73, 76]
   16912583:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-257.996, -0.519, -422.680, 181]
+    region:   sw_198
     level:    [73, 76]
   16912584:
     template: Omaern_whm
     script:   Omaern
-    at:       [-439.910, -0.499, -157.034, 133]
+    region:   w_200
     level:    [75, 78]
   16912585:
     template: Omaern_pld
     script:   Omaern
-    at:       [-503.979, -0.500, -190.005, 40]
+    region:   w_200
     level:    [75, 78]
   16912586:
     template: Omaern_drk
@@ -2925,23 +2925,23 @@ spawns:
   16912588:
     template: Omaern_smn
     script:   Omaern_SMN
-    at:       [-441.440, -0.499, -138.980, 232]
+    region:   w_200
     level:    [75, 78]
   16912589:
     template: Omhpemde
-    at:       [-468.178, -0.500, -133.725, 198]
+    region:   w_200
     level:    [73, 77]
   16912590:
     template: Omhpemde
-    at:       [-461.123, -0.499, -159.454, 241]
+    region:   w_200
     level:    [73, 77]
   16912591:
     template: Omhpemde
-    at:       [-491.605, -0.499, -242.672, 91]
+    region:   w_200
     level:    [73, 77]
   16912592:
     template: Omhpemde
-    at:       [-555.417, -0.502, -148.361, 249]
+    region:   w_200
     level:    [73, 77]
   16912593:
     template: Aerns_Elemental
@@ -2950,48 +2950,48 @@ spawns:
   16912594:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-481.759, -0.500, -237.964, 25]
+    region:   w_200
     level:    [73, 76]
   16912595:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-453.395, -0.500, -181.644, 86]
+    region:   w_200
     level:    [73, 76]
   16912596:
     template: Omphuabo
-    at:       [-527.802, -0.756, -122.724, 13]
+    region:   w_212
     level:    [79, 81]
   16912597:
     template: Omphuabo
-    at:       [-495.049, -0.500, -163.479, 39]
+    region:   w_212
     level:    [79, 81]
   16912598:
     template: Omphuabo
-    at:       [-527.810, -0.749, -123.384]
+    region:   w_212
     level:    [79, 81]
   16912599:
     template: Omhpemde
-    at:       [-658.524, -0.500, -227.959, 143]
+    region:   w_215
     level:    [73, 77]
   16912600:
     template: Omhpemde
-    at:       [-649.020, -0.500, -258.573, 93]
+    region:   w_215
     level:    [73, 77]
   16912601:
     template: Omhpemde
-    at:       [-713.674, -0.499, -259.413, 125]
+    region:   w_217
     level:    [73, 77]
   16912602:
     template: Omhpemde
-    at:       [-731.646, -0.499, -232.586, 179]
+    region:   w_217
     level:    [73, 77]
   16912603:
     template: Omhpemde
-    at:       [-685.254, -0.193, -186.883, 220]
+    region:   w_219
     level:    [73, 77]
   16912604:
     template: Omhpemde
-    at:       [-670.555, -0.499, -210.358, 113]
+    region:   w_219
     level:    [73, 77]
   16912605:
     template: Omaern_mnk
@@ -3006,12 +3006,12 @@ spawns:
   16912607:
     template: Omaern_rdm
     script:   Omaern
-    at:       [-570.958, -0.500, -131.809, 242]
+    region:   w_223
     level:    [75, 78]
   16912608:
     template: Omaern_thf
     script:   Omaern
-    at:       [-634.949, -0.500, -126.719, 186]
+    region:   w_223
     level:    [75, 78]
   16912609:
     template: Omaern_bst
@@ -3020,19 +3020,19 @@ spawns:
     level:    [75, 78]
   16912610:
     template: Omhpemde
-    at:       [-638.469, -0.499, -87.864, 170]
+    region:   w_223
     level:    [73, 77]
   16912611:
     template: Omhpemde
-    at:       [-624.529, -0.500, -76.209, 93]
+    region:   w_223
     level:    [73, 77]
   16912612:
     template: Omhpemde
-    at:       [-633.546, -0.500, -144.166, 80]
+    region:   w_223
     level:    [73, 77]
   16912613:
     template: Omhpemde
-    at:       [-591.075, -0.639, -72.299, 161]
+    region:   w_223
     level:    [73, 77]
   16912614:
     template: Aerns_Xzomit
@@ -3041,246 +3041,246 @@ spawns:
   16912615:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-619.438, -0.500, -76.202, 169]
+    region:   w_223
     level:    [73, 76]
   16912616:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-684.359, -0.499, -69.997, 246]
+    region:   w_223
     level:    [73, 76]
   16912617:
     template: Omphuabo
-    at:       [-558.931, -0.499, -87.441, 35]
+    region:   w_233
     level:    [79, 81]
   16912618:
     template: Omaern_blm
     script:   Omaern
-    at:       [-531.017, -0.500, 17.035, 155]
+    region:   w_234
     level:    [75, 78]
   16912619:
     template: Omaern_rdm
     script:   Omaern
-    at:       [-538.245, -0.500, 0.383, 232]
+    region:   w_234
     level:    [75, 78]
   16912620:
     template: Omyovra
-    at:       [-568.849, -1.342, -393.761, 23]
+    region:   sw_236
     level:    [84, 85]
   16912621:
     template: Omyovra
-    at:       [-501.644, -0.500, -242.736, 97]
+    region:   w_237
     level:    [84, 85]
   16912622:
     template: Omyovra
-    at:       [648.269, -0.500, -171.665, 32]
+    region:   e_238
     level:    [84, 85]
   16912623:
     template: Omyovra
-    at:       [576.067, -0.500, -343.374, 193]
+    region:   se_239
     level:    [84, 85]
   16912624:
     template: Ulyovra
-    at:       [175.465, -0.499, -490.461, 213]
+    region:   s_240
     level:    [79, 80]
   16912625:
     template: Ulyovra
-    at:       [-227.017, -0.500, -623.492, 33]
+    region:   region_133
     level:    [79, 80]
   16912626:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [29.655, -0.500, 512.233, 108]
+    region:   n_242
     level:    [73, 76]
   16912627:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [26.649, -0.500, 510.888, 104]
+    region:   n_242
     level:    [73, 76]
   16912628:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [69.943, -0.500, 442.369, 167]
+    region:   n_242
     level:    [72, 75]
   16912629:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [68.706, -0.500, 444.535, 147]
+    region:   n_242
     level:    [73, 76]
   16912630:
     template: Omphuabo
-    at:       [98.499, -0.500, 491.033, 246]
+    region:   n_246
     level:    [79, 81]
   16912631:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-84.122, -0.519, 452.188, 221]
+    region:   n_247
     level:    [73, 76]
   16912632:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-81.344, -0.513, 456.178, 220]
+    region:   n_247
     level:    [73, 76]
   16912633:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-90.558, -0.699, 446.179, 248]
+    region:   n_247
     level:    [72, 74]
   16912634:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-90.672, -0.648, 450.451, 199]
+    region:   n_247
     level:    [73, 76]
   16912635:
     template: Omphuabo
-    at:       [-121.231, -0.500, 494.926, 84]
+    region:   n_251
     level:    [79, 81]
   16912636:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [169.127, -0.500, 575.573, 119]
+    region:   region_132
     level:    [73, 76]
   16912637:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [201.917, -0.500, 563.212, 161]
+    region:   region_132
     level:    [73, 76]
   16912638:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [165.990, -0.500, 536.493, 9]
+    region:   n_252
     level:    [73, 77]
   16912639:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [247.274, -0.500, 552.601, 90]
+    region:   n_252
     level:    [73, 77]
   16912640:
     template: Omphuabo
-    at:       [159.116, -0.500, 558.932, 161]
+    region:   n_256
     level:    [79, 81]
   16912641:
     template: Omphuabo
-    at:       [166.920, -0.500, 558.446, 239]
+    region:   n_256
     level:    [79, 81]
   16912642:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [260.161, -0.500, 395.108, 202]
+    region:   ne_258
     level:    [74, 76]
   16912643:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [276.634, -0.500, 458.106, 142]
+    region:   ne_258
     level:    [73, 76]
   16912644:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [251.554, -0.500, 455.069, 167]
+    region:   ne_258
     level:    [73, 76]
   16912645:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [265.175, -0.500, 384.937, 128]
+    region:   ne_258
     level:    [73, 77]
   16912646:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [285.281, -0.500, 428.781, 244]
+    region:   ne_258
     level:    [73, 77]
   16912647:
     template: Omphuabo
-    at:       [270.537, -0.500, 443.558, 56]
+    region:   ne_263
     level:    [79, 81]
   16912648:
     template: Omaern_mnk
     script:   Omaern
-    at:       [212.363, -0.423, 716.395, 170]
+    region:   n_264
     level:    [75, 78]
   16912649:
     template: Omaern_blm
     script:   Omaern
-    at:       [195.159, -1.624, 676.767, 213]
+    region:   n_264
     level:    [75, 78]
   16912650:
     template: Omaern_rdm
     script:   Omaern
-    at:       [293.688, -0.746, 627.447, 9]
+    region:   n_264
     level:    [75, 78]
   16912651:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [226.463, -0.500, 734.492, 100]
+    region:   n_264
     level:    [73, 77]
   16912652:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [277.810, -0.498, 645.411, 218]
+    region:   n_264
     level:    [73, 77]
   16912653:
     template: Omphuabo
-    at:       [236.198, -0.500, 714.801, 140]
+    region:   n_269
     level:    [79, 81]
   16912654:
     template: Omphuabo
-    at:       [276.197, -0.500, 617.746, 46]
+    region:   ne_270
     level:    [79, 81]
   16912655:
     template: Omaern_sam
     script:   Omaern
-    at:       [136.343, -0.500, 737.884, 244]
+    region:   n_271
     level:    [75, 78]
   16912656:
     template: Omaern_thf
     script:   Omaern
-    at:       [144.075, -1.440, 656.220, 37]
+    region:   n_271
     level:    [75, 78]
   16912657:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [130.605, -0.500, 733.199, 78]
+    region:   n_271
     level:    [73, 77]
   16912658:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [96.866, -0.527, 660.843, 15]
+    region:   n_271
     level:    [73, 77]
   16912659:
     template: Omphuabo
-    at:       [78.645, -0.500, 688.778, 237]
+    region:   n_275
     level:    [79, 81]
   16912660:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-232.663, -0.500, 487.804, 163]
+    region:   n_276
     level:    [73, 76]
   16912661:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-219.169, -0.500, 513.884, 178]
+    region:   n_276
     level:    [73, 76]
   16912662:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-218.100, -0.500, 470.682, 156]
+    region:   n_276
     level:    [73, 77]
   16912663:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-218.126, -0.500, 452.273, 177]
+    region:   n_276
     level:    [73, 77]
   16912664:
     template: Omphuabo
-    at:       [-202.295, -0.500, 454.983, 203]
+    region:   n_280
     level:    [79, 81]
   16912665:
     template: Omaern_rng
     script:   Omaern
-    at:       [-295.052, -0.646, 532.331, 202]
+    region:   nw_281
     level:    [75, 78]
   16912666:
     template: Omaern_bst
     script:   Omaern_BST
-    at:       [-237.080, -1.573, 560.509, 196]
+    region:   nw_281
     level:    [75, 78]
   16912667:
     template: Aerns_Xzomit
@@ -3289,31 +3289,31 @@ spawns:
   16912668:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-247.069, -1.216, 574.732, 84]
+    region:   nw_281
     level:    [73, 77]
   16912669:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-298.273, -0.992, 523.899, 209]
+    region:   nw_281
     level:    [73, 77]
   16912670:
     template: Omphuabo
-    at:       [-295.655, -0.500, 601.667, 205]
+    region:   nw_286
     level:    [79, 81]
   16912671:
     template: Omaern_pld
     script:   Omaern
-    at:       [-203.593, -0.500, 678.112, 210]
+    region:   n_287
     level:    [75, 78]
   16912672:
     template: Omaern_nin
     script:   Omaern
-    at:       [-214.432, -0.500, 661.436, 104]
+    region:   n_287
     level:    [75, 78]
   16912673:
     template: Omaern_drg
     script:   Omaern_DRG
-    at:       [-230.217, -0.500, 641.781, 13]
+    region:   n_287
     level:    [75, 78]
   16912674:
     template: Aerns_Wynav
@@ -3322,142 +3322,142 @@ spawns:
   16912675:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-190.999, -0.500, 633.837, 225]
+    region:   n_287
     level:    [73, 77]
   16912676:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-217.207, -0.500, 682.520, 194]
+    region:   n_287
     level:    [73, 77]
   16912677:
     template: Omphuabo
-    at:       [-187.065, -0.500, 646.009, 228]
+    region:   n_293
     level:    [79, 81]
   16912678:
     template: Omaern_whm
     script:   Omaern
-    at:       [-64.857, -0.549, 653.249, 43]
+    region:   n_294
     level:    [75, 78]
   16912679:
     template: Omaern_drk
     script:   Omaern
-    at:       [-108.855, -1.507, 599.185, 241]
+    region:   n_294
     level:    [75, 78]
   16912680:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-97.418, -0.500, 662.194, 76]
+    region:   n_294
     level:    [73, 77]
   16912681:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-72.146, -0.504, 676.288, 44]
+    region:   n_294
     level:    [73, 77]
   16912682:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-696.979, -0.640, 58.933, 74]
+    region:   w_298
     level:    [72, 75]
   16912683:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-697.431, -1.472, 38.302, 243]
+    region:   w_298
     level:    [73, 76]
   16912684:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-646.780, -0.500, 59.568, 118]
+    region:   w_298
     level:    [73, 76]
   16912685:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-649.702, -0.500, 58.031, 118]
+    region:   w_298
     level:    [73, 76]
   16912686:
     template: Omphuabo
-    at:       [-650.447, -0.500, 88.500, 131]
+    region:   w_302
     level:    [79, 81]
   16912687:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-563.735, -0.500, 70.601, 3]
+    region:   w_303
     level:    [72, 75]
   16912688:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-557.370, -0.500, 72.451, 19]
+    region:   w_303
     level:    [72, 75]
   16912689:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-508.231, -0.547, 104.414, 148]
+    region:   w_303
     level:    [72, 75]
   16912690:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-505.938, -0.561, 102.980, 147]
+    region:   w_303
     level:    [73, 73]
   16912691:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-500.929, -0.755, 73.326, 243]
+    region:   w_303
     level:    [73, 76]
   16912692:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-492.369, -1.341, 76.107, 250]
+    region:   w_303
     level:    [73, 76]
   16912693:
     template: Omphuabo
-    at:       [-529.749, -0.500, 84.333, 107]
+    region:   w_309
     level:    [79, 81]
   16912694:
     template: Omaern_war
     script:   Omaern
-    at:       [-495.251, -0.500, 164.194, 7]
+    region:   w_310
     level:    [75, 78]
   16912695:
     template: Omaern_pld
     script:   Omaern
-    at:       [-423.102, -0.658, 216.188, 239]
+    region:   w_310
     level:    [75, 78]
   16912696:
     template: Omaern_rdm
     script:   Omaern
-    at:       [-443.654, -0.374, 165.081, 45]
+    region:   w_310
     level:    [75, 78]
   16912697:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-517.354, -0.500, 160.224, 200]
+    region:   w_310
     level:    [73, 74]
   16912698:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-482.993, -0.497, 191.983, 253]
+    region:   w_310
     level:    [73, 76]
   16912699:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-430.988, -1.119, 213.717, 16]
+    region:   w_310
     level:    [73, 76]
   16912700:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-423.068, -0.500, 167.570, 221]
+    region:   w_310
     level:    [73, 76]
   16912701:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-469.357, -0.500, 140.714, 243]
+    region:   w_310
     level:    [73, 76]
   16912702:
     template: Omphuabo
-    at:       [-453.854, -0.494, 134.494, 242]
+    region:   w_318
     level:    [79, 81]
   16912703:
     template: Omphuabo
-    at:       [-478.113, -0.445, 122.513]
+    region:   w_318
     level:    [79, 81]
   16912704:
     template: Omphuabo
@@ -3465,42 +3465,42 @@ spawns:
     level:    [79, 81]
   16912705:
     template: Omphuabo
-    at:       [-405.071, -0.500, 200.139, 18]
+    region:   w_321
     level:    [79, 81]
   16912706:
     template: Omaern_blm
     script:   Omaern
-    at:       [-550.495, -0.500, 212.560, 19]
+    region:   w_322
     level:    [75, 78]
   16912707:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [-592.707, -1.345, 220.858, 255]
+    region:   w_322
     level:    [73, 76]
   16912708:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [-553.296, -0.500, 215.848, 24]
+    region:   w_322
     level:    [74, 75]
   16912709:
     template: Omaern_sam
     script:   Omaern
-    at:       [-362.753, -0.500, 242.756, 41]
+    region:   nw_325
     level:    [75, 78]
   16912710:
     template: Omaern_whm
     script:   Omaern
-    at:       [-383.280, -0.500, 272.449, 213]
+    region:   nw_325
     level:    [75, 78]
   16912711:
     template: Omaern_rng
     script:   Omaern
-    at:       [-400.284, -0.500, 257.420, 36]
+    region:   nw_325
     level:    [75, 78]
   16912712:
     template: Omaern_smn
     script:   Omaern_SMN
-    at:       [-398.919, -0.500, 258.200, 67]
+    region:   nw_325
     level:    [75, 78]
   16912713:
     template: Aerns_Elemental
@@ -3508,55 +3508,55 @@ spawns:
     level:    [65, 69]
   16912714:
     template: Omphuabo
-    at:       [-395.471, -0.500, 289.670, 17]
+    region:   nw_330
     level:    [79, 81]
   16912715:
     template: Omaern_drk
     script:   Omaern
-    at:       [-494.360, -1.264, 393.844, 90]
+    region:   nw_331
     level:    [75, 78]
   16912716:
     template: Omaern_brd
     script:   Omaern
-    at:       [-552.073, -0.500, 332.070, 179]
+    region:   nw_331
     level:    [75, 78]
   16912717:
     template: Omaern_nin
     script:   Omaern
-    at:       [-535.900, -0.504, 309.027, 81]
+    region:   nw_331
     level:    [75, 78]
   16912718:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-514.463, -1.266, 290.303, 51]
+    region:   nw_331
     level:    [73, 77]
   16912719:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-498.895, -1.334, 300.131, 110]
+    region:   nw_331
     level:    [73, 77]
   16912720:
     template: Omphuabo
-    at:       [-526.051, -0.500, 307.038, 92]
+    region:   nw_336
     level:    [79, 81]
   16912721:
     template: Omphuabo
-    at:       [-514.100, -0.500, 320.928, 97]
+    region:   nw_336
     level:    [79, 81]
   16912722:
     template: Omaern_war
     script:   Omaern
-    at:       [-343.779, -0.500, 390.829, 147]
+    region:   nw_338
     level:    [75, 78]
   16912723:
     template: Omaern_drk
     script:   Omaern
-    at:       [-349.882, -0.500, 407.292, 148]
+    region:   nw_338
     level:    [75, 78]
   16912724:
     template: Omaern_bst
     script:   Omaern_BST
-    at:       [-266.187, -0.500, 370.375, 19]
+    region:   nw_338
     level:    [75, 78]
   16912725:
     template: Aerns_Xzomit
@@ -3565,7 +3565,7 @@ spawns:
   16912726:
     template: Omaern_drg
     script:   Omaern_DRG
-    at:       [-369.003, -0.661, 387.122, 191]
+    region:   nw_338
     level:    [75, 78]
   16912727:
     template: Aerns_Wynav
@@ -3574,57 +3574,57 @@ spawns:
   16912728:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-342.049, -0.500, 348.817, 168]
+    region:   nw_338
     level:    [73, 77]
   16912729:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-387.658, -0.500, 430.303, 207]
+    region:   nw_338
     level:    [73, 77]
   16912730:
     template: Omphuabo
-    at:       [-389.861, -0.500, 427.976, 127]
+    region:   nw_346
     level:    [79, 81]
   16912731:
     template: Omphuabo
-    at:       [-285.840, -0.500, 396.132, 111]
+    region:   nw_347
     level:    [79, 81]
   16912732:
     template: Omaern_thf
     script:   Omaern
-    at:       [-471.096, -0.500, 415.580, 223]
+    region:   nw_348
     level:    [75, 78]
   16912733:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-413.258, -0.500, 435.382, 97]
+    region:   nw_348
     level:    [73, 77]
   16912734:
     template: Omphuabo
-    at:       [-512.973, -0.500, 462.456, 11]
+    region:   nw_350
     level:    [79, 81]
   16912735:
     template: Omphuabo
-    at:       [-426.800, -0.500, 434.866, 6]
+    region:   nw_351
     level:    [79, 81]
   16912736:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-395.323, -0.500, 535.139, 164]
+    region:   nw_352
     level:    [73, 77]
   16912737:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-445.392, -0.500, 547.909, 51]
+    region:   nw_352
     level:    [73, 77]
   16912738:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [-394.847, -0.500, 572.990, 228]
+    region:   nw_352
     level:    [73, 77]
   16912739:
     template: Omphuabo
-    at:       [-406.515, -0.500, 524.240, 21]
+    region:   nw_355
     level:    [79, 81]
   16912740:
     template: Omphuabo
@@ -3632,36 +3632,36 @@ spawns:
     level:    [79, 81]
   16912741:
     template: Omphuabo
-    at:       [-416.871, -0.500, 600.716, 149]
+    region:   nw_357
     level:    [79, 81]
   16912742:
     template: Omaern_thf
     script:   Omaern
-    at:       [500.290, -0.499, 141.607, 139]
+    region:   e_358
     level:    [75, 78]
   16912743:
     template: Omaern_rng
     script:   Omaern
-    at:       [517.305, -0.499, 108.494, 183]
+    region:   e_358
     level:    [75, 78]
   16912744:
     template: Omphuabo
-    at:       [524.257, -0.499, 131.856, 148]
+    region:   e_360
     level:    [79, 81]
   16912745:
     template: Omaern_blm
     script:   Omaern
-    at:       [584.736, -0.508, 226.501, 229]
+    region:   e_361
     level:    [75, 78]
   16912746:
     template: Omaern_rdm
     script:   Omaern
-    at:       [555.815, -0.689, 235.573, 160]
+    region:   e_361
     level:    [75, 78]
   16912747:
     template: Omaern_drg
     script:   Omaern_DRG
-    at:       [460.107, -0.522, 221.290, 243]
+    region:   e_361
     level:    [75, 78]
   16912748:
     template: Aerns_Wynav
@@ -3670,67 +3670,67 @@ spawns:
   16912749:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [424.752, -1.487, 209.996, 133]
+    region:   e_361
     level:    [73, 77]
   16912750:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [438.435, -1.332, 185.208, 66]
+    region:   e_361
     level:    [73, 77]
   16912751:
     template: Omphuabo
-    at:       [523.710, -0.499, 186.573, 101]
+    region:   e_367
     level:    [79, 81]
   16912752:
     template: Omphuabo
-    at:       [537.658, -0.499, 178.216, 235]
+    region:   e_367
     level:    [79, 81]
   16912753:
     template: Omaern_sam
     script:   Omaern
-    at:       [477.907, -0.499, -56.199, 20]
+    region:   e_369
     level:    [75, 78]
   16912754:
     template: Omaern_thf
     script:   Omaern
-    at:       [466.700, -1.270, 28.871, 226]
+    region:   e_369
     level:    [75, 78]
   16912755:
     template: Omaern_brd
     script:   Omaern
-    at:       [445.078, -0.499, 24.895, 168]
+    region:   e_369
     level:    [75, 78]
   16912756:
     template: Omaern_nin
     script:   Omaern
-    at:       [437.262, -0.499, -23.764, 12]
+    region:   e_369
     level:    [75, 78]
   16912757:
     template: Omphuabo
-    at:       [489.171, -0.499, 93.929, 217]
+    region:   e_373
     level:    [79, 81]
   16912758:
     template: Omphuabo
-    at:       [436.408, -0.499, -5.134, 114]
+    region:   e_374
     level:    [79, 81]
   16912759:
     template: Omphuabo
-    at:       [484.868, -0.499, -43.088, 27]
+    region:   e_375
     level:    [79, 81]
   16912760:
     template: Omaern_mnk
     script:   Omaern
-    at:       [476.229, -0.499, -147.628, 142]
+    region:   e_376
     level:    [75, 78]
   16912761:
     template: Omaern_whm
     script:   Omaern
-    at:       [494.957, -0.499, -128.209, 207]
+    region:   e_376
     level:    [75, 78]
   16912762:
     template: Omaern_smn
     script:   Omaern_SMN
-    at:       [462.281, -0.499, -140.259, 103]
+    region:   e_376
     level:    [75, 78]
   16912763:
     template: Aerns_Elemental
@@ -3738,99 +3738,99 @@ spawns:
     level:    [65, 69]
   16912764:
     template: Omphuabo
-    at:       [487.365, -0.499, -164.737, 178]
+    region:   e_380
     level:    [79, 81]
   16912765:
     template: Omaern_pld
     script:   Omaern
-    at:       [399.487, -0.499, -229.361, 117]
+    region:   e_381
     level:    [75, 78]
   16912766:
     template: Omaern_rng
     script:   Omaern
-    at:       [428.827, -0.499, -238.025, 153]
+    region:   e_381
     level:    [75, 78]
   16912767:
     template: Omphuabo
-    at:       [421.741, -0.499, -256.876, 227]
+    region:   e_383
     level:    [79, 81]
   16912768:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [426.047, -1.147, 292.489, 92]
+    region:   ne_384
     level:    [73, 77]
   16912769:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [409.422, -0.500, 340.614, 127]
+    region:   ne_384
     level:    [73, 77]
   16912770:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [461.613, -0.499, 337.323, 232]
+    region:   ne_384
     level:    [73, 77]
   16912771:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [420.450, -0.500, 392.122, 26]
+    region:   ne_384
     level:    [73, 77]
   16912772:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [341.439, -1.356, 315.597, 220]
+    region:   ne_384
     level:    [73, 77]
   16912773:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [344.352, -1.356, 319.384, 95]
+    region:   ne_384
     level:    [73, 77]
   16912774:
     template: Omphuabo
-    at:       [398.537, -0.499, 350.755, 202]
+    region:   ne_390
     level:    [79, 81]
   16912775:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [396.858, -0.500, 444.553, 25]
+    region:   ne_391
     level:    [73, 76]
   16912776:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [466.047, -1.493, 479.573, 215]
+    region:   ne_391
     level:    [73, 76]
   16912777:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [406.581, -0.500, 460.916, 246]
+    region:   ne_391
     level:    [73, 77]
   16912778:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [459.773, -0.499, 432.229, 245]
+    region:   ne_391
     level:    [73, 77]
   16912779:
     template: Omphuabo
-    at:       [432.495, -0.249, 438.533, 181]
+    region:   ne_395
     level:    [79, 81]
   16912780:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [510.074, -1.448, 312.868, 190]
+    region:   ne_396
     level:    [72, 75]
   16912781:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [510.011, -1.388, 309.621, 156]
+    region:   ne_396
     level:    [73, 76]
   16912782:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [485.093, -0.499, 368.595, 91]
+    region:   ne_396
     level:    [73, 77]
   16912783:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [512.964, -1.475, 304.569, 43]
+    region:   ne_396
     level:    [73, 77]
   16912784:
     template: Omphuabo
@@ -3839,70 +3839,70 @@ spawns:
   16912785:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [575.002, -0.658, 373.674, 117]
+    region:   ne_401
     level:    [72, 75]
   16912786:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [569.641, -0.906, 375.913, 139]
+    region:   ne_401
     level:    [73, 76]
   16912787:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [558.796, -1.409, 377.646, 248]
+    region:   ne_401
     level:    [73, 76]
   16912788:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [563.587, -1.299, 379.054, 244]
+    region:   ne_401
     level:    [73, 76]
   16912789:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [635.136, -1.373, 381.201, 14]
+    region:   ne_401
     level:    [73, 76]
   16912790:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [647.567, -1.375, 388.922, 127]
+    region:   ne_401
     level:    [73, 76]
   16912791:
     template: Omphuabo
-    at:       [610.443, -0.499, 411.450, 31]
+    region:   ne_407
     level:    [79, 81]
   16912792:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [616.903, -0.569, 465.139, 69]
+    region:   ne_408
     level:    [72, 75]
   16912793:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [613.227, -1.008, 466.451, 59]
+    region:   ne_408
     level:    [73, 76]
   16912794:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [524.916, -0.425, 529.555, 24]
+    region:   ne_408
     level:    [72, 75]
   16912795:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [528.915, -0.434, 528.533, 29]
+    region:   ne_408
     level:    [73, 76]
   16912796:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [593.253, -0.534, 467.709, 137]
+    region:   ne_408
     level:    [72, 75]
   16912797:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [615.271, -0.877, 464.601, 60]
+    region:   ne_408
     level:    [72, 75]
   16912798:
     template: Omphuabo
-    at:       [600.075, -0.499, 421.382, 135]
+    region:   ne_414
     level:    [79, 81]
   16912799:
     template: Omphuabo
@@ -3911,46 +3911,46 @@ spawns:
   16912800:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [382.887, -0.500, 498.094, 95]
+    region:   ne_416
     level:    [72, 75]
   16912801:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [348.822, -0.500, 493.751, 44]
+    region:   ne_416
     level:    [73, 76]
   16912802:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [396.501, -0.500, 532.293, 135]
+    region:   ne_416
     level:    [73, 77]
   16912803:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [386.420, -0.500, 468.337, 230]
+    region:   ne_416
     level:    [73, 77]
   16912804:
     template: Omphuabo
-    at:       [382.042, -0.500, 519.342, 87]
+    region:   ne_420
     level:    [79, 81]
   16912805:
     template: Omxzomit_7094
     script:   Omxzomit
-    at:       [385.099, -0.490, 576.991, 54]
+    region:   ne_421
     level:    [73, 76]
   16912806:
     template: Omxzomit_2978
     script:   Omxzomit
-    at:       [385.046, -0.499, 581.937, 72]
+    region:   ne_421
     level:    [72, 75]
   16912807:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [395.137, -0.489, 576.250, 168]
+    region:   ne_421
     level:    [73, 77]
   16912808:
     template: Omhpemde_nodive
     script:   Omhpemde
-    at:       [454.778, -0.499, 560.785, 112]
+    region:   ne_421
     level:    [73, 77]
   16912809:
     template: Omphuabo
@@ -3958,7 +3958,7 @@ spawns:
     level:    [79, 81]
   16912810:
     template: Omphuabo
-    at:       [414.713, -0.131, 548.497, 107]
+    region:   ne_426
     level:    [79, 81]
   16912811:
     template: Aweuvhi
@@ -3966,7 +3966,7 @@ spawns:
     level:    [78, 80]
   16912812:
     template: Omyovra
-    at:       [221.999, -0.500, 532.245, 223]
+    region:   ne_428
     level:    [84, 85]
   16912813:
     template: Aweuvhi
@@ -3974,7 +3974,7 @@ spawns:
     level:    [78, 80]
   16912814:
     template: Omyovra
-    at:       [-275.745, -0.594, 536.166, 245]
+    region:   n_430
     level:    [84, 85]
   16912815:
     template: Aweuvhi
@@ -3982,7 +3982,7 @@ spawns:
     level:    [78, 80]
   16912816:
     template: Omyovra
-    at:       [52.772, -0.500, 653.554, 133]
+    region:   n_432
     level:    [84, 85]
   16912817:
     template: Aweuvhi
@@ -3990,7 +3990,7 @@ spawns:
     level:    [78, 80]
   16912818:
     template: Omyovra
-    at:       [-342.497, -0.501, 407.630, 30]
+    region:   nw_434
     level:    [84, 85]
   16912819:
     template: Aweuvhi
@@ -3998,7 +3998,7 @@ spawns:
     level:    [78, 80]
   16912820:
     template: Omyovra
-    at:       [-552.364, -0.500, 305.422, 152]
+    region:   nw_436
     level:    [84, 85]
   16912821:
     template: Aweuvhi
@@ -4006,7 +4006,7 @@ spawns:
     level:    [78, 80]
   16912822:
     template: Omyovra
-    at:       [-385.620, -0.500, 252.695, 64]
+    region:   w_438
     level:    [84, 85]
   16912823:
     template: Aweuvhi
@@ -4014,7 +4014,7 @@ spawns:
     level:    [78, 80]
   16912824:
     template: Omyovra
-    at:       [498.035, -0.499, 344.175, 120]
+    region:   ne_440
     level:    [84, 85]
   16912825:
     template: Aweuvhi
@@ -4022,7 +4022,7 @@ spawns:
     level:    [78, 80]
   16912826:
     template: Omyovra
-    at:       [480.635, -0.496, 57.664, 69]
+    region:   e_442
     level:    [84, 85]
   16912827:
     template: Aweuvhi
@@ -4030,7 +4030,7 @@ spawns:
     level:    [78, 80]
   16912828:
     template: Omyovra
-    at:       [471.569, -0.499, -102.718, 131]
+    region:   e_444
     level:    [84, 85]
   16912829:
     template: Ruaern_war

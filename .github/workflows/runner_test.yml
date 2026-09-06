@@ -80,7 +80,7 @@ jobs:
             luajit \
             gnu-sed
           echo "PATH=$(brew --prefix gnu-sed)/libexec/gnubin:$PATH" >> $GITHUB_ENV
-          cat << EOF >> /opt/homebrew/etc/my.cnf
+          cat << EOF >> "$(brew --prefix)/etc/my.cnf"
           [mysqld]
           bind-address = 127.0.0.1
           skip-name-resolve = 1
@@ -113,10 +113,16 @@ jobs:
         uses: ankane/setup-mariadb@v1
 
       - name: Wait for MariaDB to be ready
+        timeout-minutes: 5
         run: |
-          while ! mysqladmin ping --silent; do
-            sleep 1
+          for _ in $(seq 1 150); do
+            if mysqladmin ping --silent; then
+              exit 0
+            fi
+            sleep 2
           done
+          echo "MariaDB did not become ready in time."
+          exit 1
 
       - name: Setup database
         env:

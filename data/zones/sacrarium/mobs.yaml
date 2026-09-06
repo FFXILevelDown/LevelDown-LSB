@@ -1274,25 +1274,25 @@ templates:
 spawns:
   16891905:
     template: Gazer
-    at:       [-140.316, -4.557, 20.278, 255]
+    region:   w_1
     level:    [48, 50]
   16891906:
     template: Gazer
-    at:       [-142.789, -5.098, 20.246, 134]
+    region:   w_1
     level:    [48, 50]
   16891907:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [-138.960, -0.827, -0.098, 63]
+    region:   w_1
     level:    [46, 48]
   16891908:
     template: Stegotaur_S
     script:   Stegotaur
-    at:       [-139.149, -2.966, 11.027, 64]
+    region:   w_1
     level:    [47, 49]
   16891909:
     template: Gazer
-    at:       [-137.595, -8.593, 61.056, 128]
+    region:   nw_5
     level:    [48, 50]
   16891910:
     template: Stegotaur_S
@@ -1307,151 +1307,153 @@ spawns:
   16891912:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [-140.026, -8.614, 77.190, 192]
+    region:   region_40
     level:    [46, 48]
   16891913:
     template: Mummy
-    at:       [-114.735, -0.600, 28.141, 69]
+    region:   w_9
     level:    [54, 56]
   16891914:
     template: Mummy
-    at:       [-115.217, -0.600, 28.080, 65]
+    region:   w_9
     level:    [54, 56]
   16891915:
     template: Lich
-    at:       [-107.424, -0.599, 25.998, 253]
+    region:   w_9
     level:    [54, 56]
   16891916:
     template: Mummy
-    at:       [-101.073, -0.600, 3.464, 15]
+    region:   w_12
     level:    [54, 56]
   16891917:
     template: Lich
-    at:       [-97.803, -0.598, 4.854, 231]
+    region:   w_12
     level:    [54, 56]
   16891918:
     template: Mummy
-    at:       [-115.926, -0.600, -30.757, 195]
+    region:   w_14
     level:    [54, 56]
   16891919:
     template: Lich
-    at:       [-116.150, -0.599, -25.926, 189]
+    region:   w_14
     level:    [54, 56]
   16891920:
     template: Mummy
-    at:       [-86.657, -0.500, -33.218, 195]
+    region:   w_16
     level:    [54, 56]
   16891921:
     template: Lich
-    at:       [-88.555, -0.599, -35.281]
+    region:   w_16
     level:    [54, 56]
   16891922:
     template: Lich
-    at:       [-95.769, -0.599, -31.763, 180]
+    region:   w_16
     level:    [54, 56]
   16891923:
     template: Mummy
-    at:       [-66.121, -0.600, 12.150, 189]
+    region:   w_19
     level:    [54, 56]
   16891924:
     template: Lich
-    at:       [-75.203, -0.599, 7.772, 180]
+    region:   w_19
     level:    [54, 56]
   16891925:
     template: Blubber_Eyes
-    at:       [-73.763, -0.580, 4.092, 125]
+    region:   w_24
     level:    [57, 59]
   16891926:
     template: Mummy
-    at:       [-45.833, -0.600, 12.334, 191]
+    region:   w_22
     level:    [54, 56]
   16891927:
     template: Blubber_Eyes
-    at:       [-47.390, -0.594, 4.037, 3]
+    region:   w_22
     level:    [57, 59]
   16891928:
     template: Mummy
-    at:       [-71.319, -0.600, -6.512, 249]
+    region:   w_24
     level:    [54, 56]
   16891929:
     template: Lich
-    at:       [-75.346, -0.599, -23.966, 45]
+    region:   w_24
     level:    [54, 56]
   16891930:
     template: Blubber_Eyes
-    at:       [-72.385, -0.500, -6.495, 81]
+    region:   w_24
     level:    [57, 59]
   16891931:
     template: Mummy
-    at:       [-50.657, -0.500, -6.315, 133]
+    region:   w_28
     level:    [54, 56]
   16891932:
     template: Lich
-    at:       [-47.806, -0.599, -6.104, 131]
+    region:   w_28
     level:    [54, 56]
   16891933:
     template: Blubber_Eyes
-    at:       [-53.992, -0.564, -22.007, 189]
+    region:   w_28
     level:    [57, 59]
   16891934:
     template: Mummy
-    at:       [-15.736, -0.600, 34.938, 13]
+    region:   c_30
     level:    [54, 56]
   16891935:
     template: Lich
-    at:       [-5.340, -0.599, 34.671, 1]
+    region:   c_30
     level:    [54, 56]
   16891936:
     template: Mummy
-    at:       [-7.401, -0.600, 14.979, 127]
+    region:   c_32
     level:    [54, 56]
   16891937:
     template: Mummy
-    at:       [-7.693, -0.600, 14.770, 141]
+    region:   c_32
     level:    [54, 56]
   16891938:
     template: Lich
-    at:       [-12.115, -0.599, -4.634, 131]
+    region:   c_34
     level:    [54, 56]
   16891939:
     template: Lich
-    at:       [-18.943, -0.599, -3.056, 143]
+    region:   c_34
     level:    [54, 56]
   16891940:
     template: Mummy
-    at:       [-12.080, -0.600, -24.003, 130]
+    region:   c_36
     level:    [54, 56]
   16891941:
     template: Lich
-    at:       [-4.394, -0.569, -27.598, 192]
+    region:   c_36
     level:    [54, 56]
   16891942:
     template: Utukku_S
     script:   Utukku
-    at:       [-96.111, -0.600, 16.924]
+    region:   c_40
     level:    [55, 55]
   16891943:
     template: Utukku_S
     script:   Utukku
-    at:       [-62.752, -0.600, 26.318, 132]
+    region:   c_40
     level:    [55, 55]
   16891944:
     template: Utukku_S
     script:   Utukku
+    region:   c_40
     level:    [55, 55]
   16891945:
     template: Utukku_S
     script:   Utukku
-    at:       [-114.945, -0.500, -10.143, 75]
+    region:   c_43
     level:    [55, 55]
   16891946:
     template: Utukku_S
     script:   Utukku
+    region:   c_43
     level:    [55, 55]
   16891947:
     template: Utukku_S
     script:   Utukku
-    at:       [-7.951, -0.600, -13.817, 254]
+    region:   c_43
     level:    [55, 55]
   16891948:
     template: Elel
@@ -1465,69 +1467,69 @@ spawns:
   16891950:
     template: Stegotaur_S
     script:   Stegotaur
-    at:       [-60.765, -0.347, -53.644, 187]
+    region:   region_41
     level:    [47, 49]
   16891951:
     template: Fomor_Ranger_Large
     script:   Fomor_Ranger
-    at:       [-2.495, -0.604, 60.168, 128]
+    region:   n_47
     level:    [54, 56]
   16891952:
     template: Fomor_Ninja
-    at:       [-2.538, -0.606, 59.919, 128]
+    region:   n_47
     level:    [54, 56]
   16891953:
     template: Fomor_Bard
-    at:       [-8.725, -0.580, 59.655, 127]
+    region:   n_47
     level:    [54, 56]
   16891954:
     template: Fomor_Dragoon
-    at:       [49.031, -0.624, 67.719, 184]
+    region:   n_50
     level:    [54, 56]
   16891955:
     template: Fomors_Wyvern
-    at:       [1.000, 1.000, 1.000, 254]
+    region:   n_50
     level:    [49, 52]
   16891956:
     template: Fomor_Ranger
-    at:       [49.294, -0.608, 65.212, 61]
+    region:   n_50
     level:    [54, 56]
   16891957:
     template: Fomor_Black_Mage
-    at:       [108.161, -0.528, 58.973, 255]
+    region:   n_53
     level:    [54, 56]
   16891958:
     template: Fomor_Bard
-    at:       [97.430, -0.607, 58.699, 4]
+    region:   n_53
     level:    [54, 56]
   16891959:
     template: Fomor_Beastmaster
-    at:       [106.670, -0.504, 58.766, 127]
+    region:   n_53
     level:    [54, 56]
   16891960:
     template: Fomors_Bats_Sacrarium
     script:   Fomors_Bats
-    at:       [1.000, 1.000, 1.000, 117]
+    region:   n_53
     level:    [49, 51]
   16891961:
     template: Fomor_Monk
-    at:       [2.721, -0.618, -61.059, 127]
+    region:   s_57
     level:    [54, 56]
   16891962:
     template: Fomor_Red_Mage
-    at:       [16.055, -0.548, -61.108, 192]
+    region:   s_57
     level:    [54, 56]
   16891963:
     template: Fomor_Samurai
-    at:       [13.419, -0.664, -60.882, 255]
+    region:   s_57
     level:    [54, 56]
   16891964:
     template: Fomor_Dark_Knight
-    at:       [57.013, -0.596, -70.723, 129]
+    region:   s_60
     level:    [54, 56]
   16891965:
     template: Fomor_Summoner
-    at:       [57.116, -0.596, -70.561, 128]
+    region:   s_60
     level:    [54, 56]
   16891966:
     template: Fomors_Elemental
@@ -1535,15 +1537,15 @@ spawns:
     level:    [49, 51]
   16891967:
     template: Fomor_Warrior
-    at:       [89.519, -0.619, -60.246]
+    region:   s_63
     level:    [54, 56]
   16891968:
     template: Fomor_Thief
-    at:       [110.063, -0.537, -59.996, 255]
+    region:   s_63
     level:    [54, 56]
   16891969:
     template: Fomor_Paladin
-    at:       [97.532, -0.635, -59.852, 126]
+    region:   s_63
     level:    [54, 56]
   16891970:
     template: Old_Professor_Mariselle
@@ -1559,176 +1561,176 @@ spawns:
     level:    [47, 48]
   16891973:
     template: Fomor_Ranger
-    at:       [22.907, -2.600, 107.303, 17]
+    region:   n_69
     level:    [55, 56]
   16891974:
     template: Fomor_Samurai
-    at:       [12.159, -2.599, 122.682, 119]
+    region:   n_69
     level:    [55, 56]
   16891975:
     template: Fomor_Dragoon
-    at:       [8.258, -2.600, 117.536, 62]
+    region:   n_69
     level:    [55, 56]
   16891976:
     template: Fomors_Wyvern
-    at:       [1.000, 1.000, 1.000, 10]
+    region:   n_69
     level:    [49, 52]
   16891977:
     template: Fomor_Ranger
-    at:       [28.343, -2.745, 128.672, 251]
+    region:   n_69
     level:    [55, 56]
   16891978:
     template: Fomor_Samurai
-    at:       [19.622, -2.599, 122.387, 193]
+    region:   n_69
     level:    [55, 56]
   16891979:
     template: Fomor_Dragoon
-    at:       [17.054, -2.600, 107.025, 123]
+    region:   n_69
     level:    [55, 56]
   16891980:
     template: Fomors_Wyvern
-    at:       [1.000, 1.000, 1.000, 164]
+    region:   n_69
     level:    [49, 52]
   16891981:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [22.614, -2.600, 103.200, 55]
+    region:   n_69
     level:    [46, 48]
   16891982:
     template: Fomor_Warrior
-    at:       [64.352, -2.600, 122.233, 128]
+    region:   n_78
     level:    [55, 56]
   16891983:
     template: Fomor_Thief
-    at:       [62.604, -2.599, 108.256, 67]
+    region:   n_78
     level:    [55, 56]
   16891984:
     template: Fomor_Ranger_Large
     script:   Fomor_Ranger
-    at:       [56.760, -2.600, 106.355, 125]
+    region:   n_78
     level:    [55, 56]
   16891985:
     template: Fomor_Warrior
-    at:       [54.007, -2.599, 109.609, 132]
+    region:   n_78
     level:    [55, 56]
   16891986:
     template: Fomor_Thief
-    at:       [60.315, -2.600, 115.591, 129]
+    region:   n_78
     level:    [55, 56]
   16891987:
     template: Fomor_Ranger_Large
     script:   Fomor_Ranger
-    at:       [52.061, -2.744, 129.632, 165]
+    region:   n_78
     level:    [55, 56]
   16891988:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [50.337, -2.600, 122.146, 33]
+    region:   n_78
     level:    [46, 48]
   16891989:
     template: Fomor_Monk
-    at:       [90.360, -2.600, 121.406, 251]
+    region:   n_85
     level:    [55, 56]
   16891990:
     template: Fomor_Black_Mage
-    at:       [107.584, -2.778, 129.453, 174]
+    region:   n_85
     level:    [55, 56]
   16891991:
     template: Fomor_Summoner
-    at:       [91.115, -2.621, 127.523, 111]
+    region:   n_85
     level:    [55, 56]
   16891992:
     template: Fomors_Elemental
-    at:       [1.000, 1.000, 1.000, 125]
+    region:   n_85
     level:    [49, 51]
   16891993:
     template: Fomor_Monk
-    at:       [100.007, -2.599, 119.019, 51]
+    region:   n_85
     level:    [55, 56]
   16891994:
     template: Fomor_Black_Mage
-    at:       [91.649, -2.580, 127.334, 124]
+    region:   n_85
     level:    [55, 56]
   16891995:
     template: Fomor_Summoner
-    at:       [108.594, -2.777, 130.028, 130]
+    region:   n_85
     level:    [55, 56]
   16891996:
     template: Fomors_Elemental
-    at:       [1.000, 1.000, 1.000, 203]
+    region:   n_85
     level:    [49, 51]
   16891997:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [103.654, -2.600, 102.529, 68]
+    region:   n_85
     level:    [46, 48]
   16891998:
     template: Fomor_Red_Mage
-    at:       [23.791, -2.582, -103.310, 197]
+    region:   s_94
     level:    [55, 56]
   16891999:
     template: Fomor_Dark_Knight
-    at:       [12.539, -2.778, -130.163, 33]
+    region:   s_94
     level:    [55, 56]
   16892000:
     template: Fomor_Ninja
-    at:       [23.918, -2.600, -106.284, 12]
+    region:   s_94
     level:    [55, 56]
   16892001:
     template: Fomor_Red_Mage
-    at:       [12.699, -2.605, -110.103, 162]
+    region:   s_94
     level:    [55, 56]
   16892002:
     template: Fomor_Dark_Knight
-    at:       [16.143, -2.600, -122.543, 199]
+    region:   s_94
     level:    [55, 56]
   16892003:
     template: Fomor_Ninja
-    at:       [28.841, -2.746, -129.781, 99]
+    region:   s_94
     level:    [55, 56]
   16892004:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [8.566, -2.600, -118.241, 77]
+    region:   s_94
     level:    [46, 48]
   16892005:
     template: Fomor_Paladin
-    at:       [56.011, -2.600, -121.419, 69]
+    region:   s_101
     level:    [55, 56]
   16892006:
     template: Fomor_Beastmaster
-    at:       [65.632, -2.600, -121.411, 128]
+    region:   s_101
     level:    [55, 56]
   16892007:
     template: Fomors_Bats_Sacrarium
     script:   Fomors_Bats
-    at:       [1.000, 1.000, 1.000, 196]
+    region:   s_101
     level:    [49, 51]
   16892008:
     template: Fomor_Bard
-    at:       [60.032, -2.573, -105.289, 190]
+    region:   s_101
     level:    [55, 56]
   16892009:
     template: Fomor_Paladin
-    at:       [67.313, -2.735, -129.524, 34]
+    region:   s_101
     level:    [55, 56]
   16892010:
     template: Fomor_Beastmaster
-    at:       [69.086, -2.598, -127.303, 39]
+    region:   s_101
     level:    [55, 56]
   16892011:
     template: Fomors_Bats_Sacrarium
     script:   Fomors_Bats
-    at:       [1.000, 1.000, 1.000, 32]
+    region:   s_101
     level:    [49, 51]
   16892012:
     template: Fomor_Bard
-    at:       [59.176, -2.578, -108.482, 55]
+    region:   s_101
     level:    [55, 56]
   16892013:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [58.170, -2.600, -115.553, 254]
+    region:   s_101
     level:    [46, 48]
   16892014:
     template: Fomor_Bard
@@ -1762,119 +1764,119 @@ spawns:
   16892021:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [100.452, -2.600, -110.724, 126]
+    region:   s_117
     level:    [46, 48]
   16892022:
     template: Fomor_Thief
-    at:       [99.539, -0.623, 27.603, 192]
+    region:   c_118
     level:    [57, 58]
   16892023:
     template: Fomor_Samurai
-    at:       [99.249, -0.615, 25.737, 191]
+    region:   c_118
     level:    [56, 57]
   16892024:
     template: Blubber_Eyes
-    at:       [99.945, -0.604, 20.217, 64]
+    region:   c_118
     level:    [57, 59]
   16892025:
     template: Fomor_Summoner
-    at:       [100.205, -0.591, 5.474, 63]
+    region:   c_118
     level:    [54, 55]
   16892026:
     template: Fomors_Elemental
-    at:       [1.000, 1.000, 1.000, 193]
+    region:   c_118
     level:    [49, 51]
   16892027:
     template: Fomor_Monk
-    at:       [76.806, -0.562, 19.070, 127]
+    region:   c_123
     level:    [57, 58]
   16892028:
     template: Fomor_Warrior
-    at:       [77.339, -0.585, 18.565, 248]
+    region:   c_123
     level:    [56, 57]
   16892029:
     template: Teratotaur
-    at:       [91.880, -2.600, -38.795, 76]
+    region:   c_125
     level:    [57, 58]
   16892030:
     template: Teratotaur
-    at:       [110.899, -2.600, -35.162, 67]
+    region:   c_125
     level:    [57, 58]
   16892031:
     template: Teratotaur
-    at:       [103.293, -2.600, -31.144, 239]
+    region:   c_125
     level:    [57, 58]
   16892032:
     template: Teratotaur
-    at:       [106.546, -2.599, -30.832, 134]
+    region:   c_125
     level:    [57, 58]
   16892033:
     template: Teratotaur
-    at:       [136.889, -0.600, 60.078]
+    region:   ne_129
     level:    [57, 58]
   16892034:
     template: Fomor_Warrior
-    at:       [141.282, -0.555, -17.806, 63]
+    region:   e_130
     level:    [57, 58]
   16892035:
     template: Fomor_Dragoon
-    at:       [142.480, -0.550, -16.438, 60]
+    region:   e_130
     level:    [56, 57]
   16892036:
     template: Fomors_Wyvern
-    at:       [1.000, 1.000, 1.000, 204]
+    region:   e_130
     level:    [49, 52]
   16892037:
     template: Fomor_Bard
-    at:       [140.747, -0.612, 4.351, 191]
+    region:   e_130
     level:    [56, 57]
   16892038:
     template: Fomor_Dark_Knight
-    at:       [141.320, -0.585, 4.453, 62]
+    region:   e_130
     level:    [56, 57]
   16892039:
     template: Fomor_Black_Mage
-    at:       [140.893, -0.593, 5.548, 59]
+    region:   e_130
     level:    [56, 57]
   16892040:
     template: Blubber_Eyes
-    at:       [139.992, -0.503, -11.919, 64]
+    region:   e_130
     level:    [57, 59]
   16892041:
     template: Blubber_Eyes
-    at:       [139.780, -0.609, -2.051, 63]
+    region:   e_130
     level:    [57, 59]
   16892042:
     template: Teratotaur
-    at:       [138.962, -0.599, -59.506, 252]
+    region:   se_138
     level:    [57, 58]
   16892043:
     template: Teratotaur
-    at:       [224.679, -2.599, 5.618, 210]
+    region:   e_139
     level:    [58, 59]
   16892044:
     template: Teratotaur
-    at:       [226.598, -2.586, 11.396, 199]
+    region:   e_139
     level:    [58, 59]
   16892045:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [230.272, -1.195, -0.094, 231]
+    region:   e_139
     level:    [46, 48]
   16892046:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [226.302, -2.153, 0.203, 138]
+    region:   e_139
     level:    [46, 48]
   16892047:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [245.341, 0.374, 12.216, 133]
+    region:   e_139
     level:    [46, 48]
   16892048:
     template: Greater_Gaylas_Sacrarium
     script:   Greater_Gaylas
-    at:       [248.200, 0.386, 16.514, 227]
+    region:   e_139
     level:    [46, 48]
   16892049:
     template: Keremet
@@ -1930,27 +1932,27 @@ spawns:
     level:    [42, 43]
   16892062:
     template: Air_Elemental
-    at:       [141.164, 2.470, 93.241, 192]
+    region:   ne_158
     level:    [60, 60]
   16892063:
     template: Thunder_Elemental
-    at:       [141.341, 1.739, 90.597, 67]
+    region:   ne_158
     level:    [60, 60]
   16892064:
     template: Dark_Elemental
-    at:       [153.218, 5.472, 100.007, 127]
+    region:   ne_158
     level:    [60, 60]
   16892065:
     template: Air_Elemental
-    at:       [181.121, -5.005, -63.754, 55]
+    region:   se_161
     level:    [60, 60]
   16892066:
     template: Thunder_Elemental
-    at:       [177.191, -4.284, -59.907, 139]
+    region:   se_161
     level:    [60, 60]
   16892067:
     template: Dark_Elemental
-    at:       [181.080, -5.008, -62.147, 192]
+    region:   se_161
     level:    [60, 60]
   16892068:
     template: Balor
@@ -1983,87 +1985,87 @@ spawns:
     level:    [57, 58]
   16892075:
     template: Aqueduct_Spider
-    at:       [-172.143, -7.947, -18.455, 18]
+    region:   w_171
     level:    [84, 86]
   16892076:
     template: Aqueduct_Spider
-    at:       [-176.226, -8.599, -20.349, 218]
+    region:   w_171
     level:    [84, 86]
   16892077:
     template: Aqueduct_Spider
-    at:       [-185.510, -8.599, -20.465, 164]
+    region:   w_171
     level:    [84, 86]
   16892078:
     template: Aqueduct_Spider
-    at:       [-181.463, -8.599, -24.307, 48]
+    region:   w_171
     level:    [84, 86]
   16892079:
     template: Aqueduct_Spider
-    at:       [-180.419, -8.585, -14.921, 171]
+    region:   w_171
     level:    [84, 86]
   16892080:
     template: Aqueduct_Spider
-    at:       [-166.700, -7.600, -19.257, 72]
+    region:   region_42
     level:    [84, 86]
   16892081:
     template: Aqueduct_Spider
-    at:       [-159.137, -7.600, -16.144, 255]
+    region:   region_42
     level:    [84, 86]
   16892082:
     template: Aqueduct_Spider
-    at:       [158.470, -0.837, 59.464, 127]
+    region:   region_43
     level:    [84, 86]
   16892083:
     template: Aqueduct_Spider
-    at:       [158.531, -0.821, 59.227, 127]
+    region:   region_43
     level:    [84, 86]
   16892084:
     template: Aqueduct_Spider
-    at:       [139.119, -0.368, 80.249, 63]
+    region:   region_44
     level:    [84, 86]
   16892085:
     template: Aqueduct_Spider
-    at:       [139.297, 0.879, 86.147, 64]
+    region:   region_44
     level:    [84, 86]
   16892086:
     template: Aqueduct_Spider
-    at:       [159.476, 7.159, 98.874, 255]
+    region:   region_45
     level:    [84, 86]
   16892087:
     template: Aqueduct_Spider
-    at:       [154.272, 6.063, 98.784, 127]
+    region:   region_45
     level:    [84, 86]
   16892088:
     template: Aqueduct_Spider
-    at:       [163.153, 7.401, 98.786, 127]
+    region:   region_45
     level:    [84, 86]
   16892089:
     template: Aqueduct_Spider
-    at:       [140.228, -0.560, -81.596, 64]
+    region:   region_46
     level:    [84, 86]
   16892090:
     template: Aqueduct_Spider
-    at:       [140.477, -0.529, -80.427, 64]
+    region:   region_46
     level:    [84, 86]
   16892091:
     template: Aqueduct_Spider
-    at:       [168.678, -2.474, -61.076, 255]
+    region:   region_47
     level:    [84, 86]
   16892092:
     template: Aqueduct_Spider
-    at:       [172.191, -3.305, -60.903, 255]
+    region:   region_47
     level:    [84, 86]
   16892093:
     template: Aqueduct_Spider
-    at:       [181.084, -8.676, -89.224, 63]
+    region:   se_163
     level:    [84, 86]
   16892094:
     template: Aqueduct_Spider
-    at:       [181.002, -8.605, -92.200, 197]
+    region:   se_163
     level:    [84, 86]
   16892095:
     template: Aqueduct_Spider
-    at:       [181.220, -8.632, -86.828, 193]
+    region:   se_163
     level:    [84, 86]
 
 slots:

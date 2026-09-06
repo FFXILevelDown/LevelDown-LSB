@@ -292,131 +292,131 @@ templates:
 spawns:
   17301505:
     template: Velociraptor
-    at:       [-98.000, -0.050, -39.000, 127]
+    region:   w_1
     level:    [66, 69]
   17301506:
     template: Velociraptor
-    at:       [-121.942, -0.500, 0.131, 127]
+    region:   w_1
     level:    [66, 69]
   17301507:
     template: Peryton
-    at:       [-119.444, -0.270, -26.993, 127]
+    region:   w_1
     level:    [69, 72]
   17301508:
     template: Velociraptor
-    at:       [-72.278, -0.322, -34.654, 79]
+    region:   sw_4
     level:    [66, 69]
   17301509:
     template: Velociraptor
-    at:       [-43.079, -0.632, -43.351, 127]
+    region:   sw_4
     level:    [66, 69]
   17301510:
     template: Peryton
-    at:       [-51.818, -0.382, -27.562, 127]
+    region:   sw_4
     level:    [69, 72]
   17301511:
     template: Velociraptor
-    at:       [-8.000, -0.956, -40.000, 43]
+    region:   s_7
     level:    [66, 69]
   17301512:
     template: Velociraptor
-    at:       [-15.917, -0.563, -24.743, 127]
+    region:   s_7
     level:    [66, 69]
   17301513:
     template: Peryton
-    at:       [-22.182, 0.348, -40.269, 127]
+    region:   s_7
     level:    [69, 72]
   17301514:
     template: Fire_Elemental
-    at:       [-19.868, -0.534, -29.271, 65]
+    region:   s_7
     level:    [66, 68]
   17301515:
     template: Velociraptor
-    at:       [-29.967, -0.207, 3.904, 126]
+    region:   c_11
     level:    [66, 69]
   17301516:
     template: Peryton
-    at:       [-32.410, -0.304, 8.461, 127]
+    region:   c_11
     level:    [69, 72]
   17301517:
     template: Velociraptor
-    at:       [-15.573, 0.004, 46.670, 127]
+    region:   n_13
     level:    [66, 69]
   17301518:
     template: Peryton
-    at:       [-7.207, -0.447, 33.867, 127]
+    region:   n_13
     level:    [69, 72]
   17301519:
     template: Velociraptor
-    at:       [-30.000, -0.297, 27.000, 127]
+    region:   n_15
     level:    [66, 69]
   17301520:
     template: Velociraptor
-    at:       [44.093, -0.720, 33.270, 123]
+    region:   n_15
     level:    [66, 69]
   17301521:
     template: Peryton
-    at:       [46.461, -0.324, 19.126, 127]
+    region:   n_15
     level:    [69, 72]
   17301522:
     template: Air_Elemental
-    at:       [45.504, -0.612, 38.518, 23]
+    region:   n_15
     level:    [66, 68]
   17301523:
     template: Velociraptor
-    at:       [77.066, -0.507, -1.079, 86]
+    region:   e_19
     level:    [66, 69]
   17301524:
     template: Peryton
-    at:       [53.966, -0.079, -8.595, 122]
+    region:   e_19
     level:    [69, 72]
   17301525:
     template: Fire_Elemental
-    at:       [-25.864, -3.904, -64.997, 62]
+    region:   sw_4
     level:    [66, 68]
   17301526:
     template: Air_Elemental
-    at:       [-14.432, -4.043, 63.329, 127]
+    region:   n_13
     level:    [66, 68]
   17301527:
     template: Velociraptor
-    at:       [111.527, -0.128, -9.940, 97]
+    region:   se_23
     level:    [66, 69]
   17301528:
     template: Velociraptor
-    at:       [123.000, -0.050, -2.000, 127]
+    region:   se_23
     level:    [66, 69]
   17301529:
     template: Velociraptor
-    at:       [127.000, -0.010, -21.000, 127]
+    region:   se_23
     level:    [66, 69]
   17301530:
     template: Velociraptor
-    at:       [127.000, -0.010, -41.000]
+    region:   se_23
     level:    [66, 69]
   17301531:
     template: Peryton
-    at:       [117.000, -0.050, -32.000, 127]
+    region:   se_23
     level:    [69, 72]
   17301532:
     template: Valley_Manticore
-    at:       [-5.094, -0.389, -3.962, 127]
+    region:   c_28
     level:    [71, 74]
   17301533:
     template: Valley_Manticore
-    at:       [3.000, -0.133, 24.000, 127]
+    region:   c_28
     level:    [71, 74]
   17301534:
     template: Valley_Manticore
-    at:       [13.965, -0.189, -0.102, 127]
+    region:   c_28
     level:    [71, 74]
   17301535:
     template: Velociraptor
-    at:       [-43.000, -0.357, 40.000, 127]
+    region:   c_31
     level:    [66, 69]
   17301536:
     template: Peryton
-    at:       [8.466, -0.336, -23.544, 127]
+    region:   c_31
     level:    [69, 72]
   17301537:
     template: Adamantoise

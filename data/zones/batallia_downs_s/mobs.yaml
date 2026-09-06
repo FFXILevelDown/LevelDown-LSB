@@ -4080,88 +4080,88 @@ spawns:
     level:    [33, 38]
   17121286:
     template: Djinn
-    at:       [-216.022, -10.581, 96.868, 233]
+    region:   c_6
     level:    [55, 57]
   17121287:
     template: Djinn
-    at:       [-226.297, -8.237, 74.471, 220]
+    region:   c_6
     level:    [55, 57]
   17121288:
     template: Djinn
-    at:       [-186.632, -8.131, 85.165, 120]
+    region:   c_8
     level:    [55, 57]
   17121289:
     template: Earth_Elemental_Small
     script:   Earth_Elemental
-    at:       [-274.572, -8.183, 104.998, 16]
+    region:   c_9
     level:    [75, 75]
   17121290:
     template: Sadfly
-    at:       [130.330, 0.108, 135.858, 44]
+    region:   e_10
     level:    [29, 31]
   17121291:
     template: Sadfly
-    at:       [39.549, -3.755, 104.351, 130]
+    region:   c_11
     level:    [29, 31]
   17121292:
     template: Sadfly
-    at:       [63.016, -9.427, 166.692, 144]
+    region:   n_12
     level:    [29, 31]
   17121293:
     template: Sadfly
-    at:       [30.391, -5.915, 118.269, 55]
+    region:   c_13
     level:    [29, 31]
   17121294:
     template: Sadfly
-    at:       [-191.649, -15.953, 145.039, 78]
+    region:   c_14
     level:    [29, 31]
   17121295:
     template: Sadfly
-    at:       [-239.687, -15.764, 166.395, 72]
+    region:   c_15
     level:    [29, 31]
   17121296:
     template: Sadfly
-    at:       [-250.110, -14.208, 117.899, 207]
+    region:   c_16
     level:    [29, 31]
   17121297:
     template: Sadfly
-    at:       [-177.288, -7.938, 89.403, 56]
+    region:   c_17
     level:    [29, 31]
   17121298:
     template: Sadfly
-    at:       [-184.422, -11.444, 119.199, 208]
+    region:   c_17
     level:    [29, 31]
   17121299:
     template: Sadfly
-    at:       [-278.609, -7.696, 177.324, 129]
+    region:   n_19
     level:    [29, 31]
   17121300:
     template: Goblin_Freesword
-    at:       [123.511, -0.501, 152.240, 252]
+    region:   e_10
     level:    [62, 64]
   17121301:
     template: Goblin_Corpsman
-    at:       [101.277, -1.186, 105.001, 9]
+    region:   e_21
     level:    [62, 64]
   17121302:
     template: Goblin_Blastmaster
-    at:       [101.970, -0.093, 74.594, 25]
+    region:   e_21
     level:    [62, 64]
   17121303:
     template: Goblin_Freesword
-    at:       [59.355, -2.085, 90.290, 27]
+    region:   c_11
     level:    [62, 64]
   17121304:
     template: Goblin_Corpsman
-    at:       [128.252, -0.325, 146.961, 37]
+    region:   e_10
     level:    [62, 64]
   17121305:
     template: Goblin_Blastmaster
-    at:       [21.362, -1.138, 168.051, 208]
+    region:   c_25
     level:    [62, 64]
   17121306:
     template: Goblin_Pioneer
-    at:       [27.425, -1.679, 102.854, 52]
+    region:   c_26
     level:    [62, 64]
   17121307:
     template: Goblin_Mine_Small
@@ -4170,135 +4170,135 @@ spawns:
     level:    [58, 58]
   17121308:
     template: Goblin_Freesword
-    at:       [13.837, -0.343, 94.294, 11]
+    region:   c_28
     level:    [62, 64]
   17121309:
     template: Smilodon
-    at:       [126.691, -0.297, 123.213, 97]
+    region:   e_10
     level:    [46, 48]
   17121310:
     template: Smilodon
-    at:       [-167.627, -8.408, 78.725, 58]
+    region:   c_8
     level:    [46, 48]
   17121311:
     template: Smilodon
-    at:       [-289.511, -8.707, 154.112, 210]
+    region:   n_19
     level:    [46, 48]
   17121312:
     template: Smilodon
-    at:       [-242.733, -8.508, 86.680, 191]
+    region:   c_6
     level:    [46, 48]
   17121313:
     template: Smilodon
-    at:       [-273.497, -8.128, 109.136, 110]
+    region:   c_9
     level:    [46, 48]
   17121314:
     template: Smilodon
-    at:       [-171.973, -8.015, 87.899, 138]
+    region:   c_8
     level:    [46, 48]
   17121315:
     template: Smilodon
-    at:       [-5.033, -0.573, 102.265, 30]
+    region:   c_28
     level:    [46, 48]
   17121316:
     template: Wight_war_past
     script:   Wight
-    at:       [99.856, -0.045, 90.122, 229]
+    region:   e_21
     level:    [38, 40]
   17121317:
     template: Wight_blm
     script:   Wight
-    at:       [-5.397, -0.564, 105.051, 165]
+    region:   c_28
     level:    [38, 40]
   17121318:
     template: Goblin_Corpsman
-    at:       [8.395, -0.577, 152.427, 199]
+    region:   c_38
     level:    [62, 64]
   17121319:
     template: Goblin_Blastmaster
-    at:       [-56.157, -0.773, 77.069, 45]
+    region:   c_39
     level:    [62, 64]
   17121320:
     template: Goblin_Freesword
-    at:       [-105.014, -0.705, 107.871, 139]
+    region:   c_40
     level:    [62, 64]
   17121321:
     template: Goblin_Corpsman
-    at:       [-139.172, -7.567, 79.496, 84]
+    region:   c_41
     level:    [62, 64]
   17121322:
     template: Goblin_Blastmaster
-    at:       [-131.006, -3.143, 140.770, 255]
+    region:   c_42
     level:    [62, 64]
   17121323:
     template: Smilodon
-    at:       [-111.245, -5.291, 93.520, 47]
+    region:   c_40
     level:    [46, 48]
   17121324:
     template: Smilodon
-    at:       [-153.851, -8.897, 98.877, 115]
+    region:   c_41
     level:    [46, 48]
   17121325:
     template: Smilodon
-    at:       [-151.227, -7.305, 150.734, 161]
+    region:   c_42
     level:    [46, 48]
   17121326:
     template: Smilodon
-    at:       [-37.803, 0.171, 218.431, 124]
+    region:   n_46
     level:    [46, 48]
   17121327:
     template: Smilodon
-    at:       [-180.709, -8.318, 192.457, 233]
+    region:   n_47
     level:    [46, 48]
   17121328:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [1.118, -0.424, 167.172, 249]
+    region:   c_38
     level:    [24, 27]
   17121329:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-64.664, -3.105, 53.777, 119]
+    region:   c_39
     level:    [24, 27]
   17121330:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-85.524, -1.224, 78.496, 159]
+    region:   c_40
     level:    [24, 27]
   17121331:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-138.690, -7.981, 65.018, 62]
+    region:   c_41
     level:    [24, 27]
   17121332:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-135.373, -2.456, 159.426, 196]
+    region:   c_42
     level:    [24, 27]
   17121333:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-67.650, 0.135, 158.745, 47]
+    region:   c_53
     level:    [24, 27]
   17121334:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-16.288, -0.008, 200.928, 52]
+    region:   n_46
     level:    [24, 27]
   17121335:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-53.832, -0.245, 220.539, 62]
+    region:   n_55
     level:    [24, 27]
   17121336:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-116.594, -0.502, 196.270, 34]
+    region:   n_56
     level:    [24, 27]
   17121337:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-174.396, -8.117, 177.585, 29]
+    region:   n_47
     level:    [24, 27]
   17121338:
     template: Evil_Spirit
@@ -4306,200 +4306,200 @@ spawns:
     level:    [41, 41]
   17121339:
     template: Lycopodium
-    at:       [387.681, 7.871, -89.163, 119]
+    region:   e_59
     level:    [28, 32]
   17121340:
     template: Lycopodium
-    at:       [291.394, 7.564, -83.972, 183]
+    region:   e_60
     level:    [28, 32]
   17121341:
     template: Lycopodium
-    at:       [198.769, -5.152, -57.500, 150]
+    region:   e_61
     level:    [28, 32]
   17121342:
     template: Lycopodium
-    at:       [152.279, 4.543, 13.679, 70]
+    region:   e_62
     level:    [28, 32]
   17121343:
     template: Lycopodium
-    at:       [175.656, -3.323, -41.130, 213]
+    region:   e_63
     level:    [28, 32]
   17121344:
     template: Lycopodium
-    at:       [151.361, -2.305, -96.443, 126]
+    region:   e_64
     level:    [28, 32]
   17121345:
     template: Lycopodium
-    at:       [294.707, 6.685, 69.845, 3]
+    region:   e_65
     level:    [28, 32]
   17121346:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [222.009, -1.025, -34.675, 251]
+    region:   e_61
     level:    [24, 27]
   17121347:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [147.957, -0.351, 44.036, 231]
+    region:   e_62
     level:    [24, 27]
   17121348:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [168.944, 1.985, -17.886, 169]
+    region:   e_63
     level:    [24, 27]
   17121349:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [128.118, -6.972, -92.388, 6]
+    region:   e_64
     level:    [24, 27]
   17121350:
     template: Ba_past
     script:   Ba
-    at:       [259.355, 10.387, 17.021, 39]
+    region:   e_70
     level:    [33, 37]
   17121351:
     template: Ba_past
     script:   Ba
-    at:       [182.468, 5.272, 27.732, 60]
+    region:   e_71
     level:    [33, 37]
   17121352:
     template: Ba_past
     script:   Ba
-    at:       [114.916, -8.436, -111.115, 161]
+    region:   e_64
     level:    [33, 37]
   17121353:
     template: Ba_past
     script:   Ba
-    at:       [205.785, 7.244, 64.291, 13]
+    region:   e_73
     level:    [33, 37]
   17121354:
     template: Smilodon
-    at:       [-360.239, -31.908, 160.045, 156]
+    region:   w_74
     level:    [46, 48]
   17121355:
     template: Smilodon
-    at:       [-311.860, -16.298, 162.466, 64]
+    region:   nw_75
     level:    [46, 48]
   17121356:
     template: Smilodon
-    at:       [-355.604, -19.790, 190.978, 241]
+    region:   nw_76
     level:    [46, 48]
   17121357:
     template: Smilodon
-    at:       [-401.600, -16.324, 153.841, 212]
+    region:   w_77
     level:    [46, 48]
   17121358:
     template: Smilodon
-    at:       [-375.228, -16.079, 203.034, 205]
+    region:   nw_78
     level:    [46, 48]
   17121359:
     template: Smilodon
-    at:       [-438.219, -16.374, 193.231, 182]
+    region:   nw_79
     level:    [46, 48]
   17121360:
     template: Smilodon
-    at:       [-524.523, -16.937, 199.467, 65]
+    region:   nw_80
     level:    [46, 48]
   17121361:
     template: Smilodon
-    at:       [-425.946, -15.943, 240.436, 218]
+    region:   nw_81
     level:    [46, 48]
   17121362:
     template: Sadfly
-    at:       [-354.081, -18.551, 128.382, 121]
+    region:   w_74
     level:    [29, 31]
   17121363:
     template: Sadfly
-    at:       [-326.376, -17.522, 177.433, 137]
+    region:   nw_75
     level:    [29, 31]
   17121364:
     template: Sadfly
-    at:       [-350.751, -28.335, 170.989, 131]
+    region:   nw_76
     level:    [29, 31]
   17121365:
     template: Sadfly
-    at:       [-410.566, -15.343, 170.701, 37]
+    region:   w_77
     level:    [29, 31]
   17121366:
     template: Sadfly
-    at:       [-375.039, -16.656, 196.470, 181]
+    region:   nw_78
     level:    [29, 31]
   17121367:
     template: Sadfly
-    at:       [-443.852, -16.508, 168.681, 108]
+    region:   nw_79
     level:    [29, 31]
   17121368:
     template: Sadfly
-    at:       [-516.209, -16.899, 192.189, 117]
+    region:   nw_80
     level:    [29, 31]
   17121369:
     template: Sadfly
-    at:       [-445.118, -16.418, 218.660, 129]
+    region:   nw_81
     level:    [29, 31]
   17121370:
     template: Smilodon
-    at:       [-461.555, -15.797, 114.709, 191]
+    region:   w_90
     level:    [46, 48]
   17121371:
     template: Smilodon
-    at:       [-418.772, -16.096, 69.858, 80]
+    region:   w_91
     level:    [46, 48]
   17121372:
     template: Smilodon
-    at:       [-360.880, -16.393, 85.622, 76]
+    region:   w_92
     level:    [46, 48]
   17121373:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-438.777, -14.236, 65.954, 85]
+    region:   w_93
     level:    [24, 27]
   17121374:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-430.104, -16.177, 83.048, 182]
+    region:   w_91
     level:    [24, 27]
   17121375:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-347.947, -16.889, 100.502, 208]
+    region:   w_92
     level:    [24, 27]
   17121376:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-381.992, -15.816, 113.031, 153]
+    region:   w_96
     level:    [24, 27]
   17121377:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-445.422, -16.988, 137.684, 118]
+    region:   w_97
     level:    [24, 27]
   17121378:
     template: Djinn
-    at:       [-49.281, -4.798, 276.903, 191]
+    region:   n_98
     level:    [55, 57]
   17121379:
     template: Sadfly
-    at:       [-43.130, -2.055, 259.824, 106]
+    region:   n_99
     level:    [29, 31]
   17121380:
     template: Sadfly
-    at:       [24.920, -1.318, 275.082, 59]
+    region:   n_100
     level:    [29, 31]
   17121381:
     template: Sadfly
-    at:       [2.699, -8.893, 320.567, 100]
+    region:   n_101
     level:    [29, 31]
   17121382:
     template: Sadfly
-    at:       [-30.511, -8.939, 327.396, 92]
+    region:   n_102
     level:    [29, 31]
   17121383:
     template: Sadfly
-    at:       [-42.139, -8.745, 282.913, 80]
+    region:   n_98
     level:    [29, 31]
   17121384:
     template: Goblin_Pioneer
-    at:       [-152.288, -1.971, 232.718, 128]
+    region:   c_104
     level:    [62, 64]
   17121385:
     template: Goblin_Mine_Small
@@ -4508,31 +4508,31 @@ spawns:
     level:    [58, 58]
   17121386:
     template: Goblin_Freesword
-    at:       [2.162, -10.391, 295.450, 206]
+    region:   n_100
     level:    [62, 64]
   17121387:
     template: Goblin_Corpsman
-    at:       [0.037, -6.187, 330.283, 34]
+    region:   n_101
     level:    [62, 64]
   17121388:
     template: Goblin_Blastmaster
-    at:       [-52.547, -6.710, 313.493, 152]
+    region:   n_102
     level:    [62, 64]
   17121389:
     template: Goblin_Freesword
-    at:       [-46.983, -7.401, 281.117, 38]
+    region:   n_98
     level:    [62, 64]
   17121390:
     template: Goblin_Corpsman
-    at:       [-80.027, -0.081, 300.299, 127]
+    region:   n_110
     level:    [62, 64]
   17121391:
     template: Goblin_Blastmaster
-    at:       [-91.444, -0.087, 281.115, 142]
+    region:   n_111
     level:    [62, 64]
   17121392:
     template: Goblin_Pioneer
-    at:       [-162.302, -8.449, 192.611]
+    region:   c_104
     level:    [62, 64]
   17121393:
     template: Goblin_Mine_Small
@@ -4541,23 +4541,23 @@ spawns:
     level:    [58, 58]
   17121394:
     template: Goblin_Freesword
-    at:       [-82.796, -0.555, 319.034, 21]
+    region:   n_110
     level:    [62, 64]
   17121395:
     template: Smilodon
-    at:       [-7.478, -0.487, 361.468, 3]
+    region:   n_115
     level:    [46, 48]
   17121396:
     template: Smilodon
-    at:       [-16.206, -0.488, 361.772, 143]
+    region:   n_115
     level:    [46, 48]
   17121397:
     template: Goblin_Corpsman
-    at:       [-189.779, -9.759, 447.004, 130]
+    region:   n_117
     level:    [62, 64]
   17121398:
     template: Goblin_Blastmaster
-    at:       [-159.102, -8.486, 466.684, 160]
+    region:   n_118
     level:    [62, 64]
   17121399:
     template: Burlibix_Brawnback
@@ -4565,19 +4565,19 @@ spawns:
     level:    [75, 75]
   17121400:
     template: Goblin_Freesword
-    at:       [-116.229, -0.262, 448.093, 67]
+    region:   n_120
     level:    [62, 64]
   17121401:
     template: Goblin_Corpsman
-    at:       [-125.998, -1.004, 468.140, 106]
+    region:   n_121
     level:    [62, 64]
   17121402:
     template: Goblin_Blastmaster
-    at:       [-163.881, -8.240, 457.411, 116]
+    region:   n_118
     level:    [62, 64]
   17121403:
     template: Goblin_Pioneer
-    at:       [-181.863, -8.686, 426.037, 167]
+    region:   n_123
     level:    [62, 64]
   17121404:
     template: Goblin_Mine_Small
@@ -4586,81 +4586,81 @@ spawns:
     level:    [58, 58]
   17121405:
     template: Goblin_Freesword
-    at:       [-128.258, -0.646, 424.972, 145]
+    region:   n_125
     level:    [62, 64]
   17121406:
     template: Goblin_Corpsman
-    at:       [-205.077, -10.102, 438.497, 26]
+    region:   n_117
     level:    [62, 64]
   17121407:
     template: Goblin_Blastmaster
-    at:       [-194.191, -8.305, 396.898, 255]
+    region:   n_127
     level:    [62, 64]
   17121408:
     template: Goblin_Freesword
-    at:       [-171.011, -2.898, 3998.142, 21]
+    region:   n_128
     level:    [62, 64]
   17121409:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-108.189, -0.378, 443.441, 60]
+    region:   n_120
     level:    [24, 27]
   17121410:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-140.997, -5.468, 477.382, 193]
+    region:   n_121
     level:    [24, 27]
   17121411:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-162.093, -8.209, 464.769, 199]
+    region:   n_118
     level:    [24, 27]
   17121412:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-128.711, -1.582, 445.599, 18]
+    region:   n_132
     level:    [24, 27]
   17121413:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-118.086, -0.152, 423.371, 198]
+    region:   n_125
     level:    [24, 27]
   17121414:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-154.352, -5.867, 429.595, 129]
+    region:   n_125
     level:    [24, 27]
   17121415:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-191.423, -9.622, 448.821, 233]
+    region:   n_117
     level:    [24, 27]
   17121416:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-190.877, -7.639, 401.824, 93]
+    region:   n_127
     level:    [24, 27]
   17121417:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-156.183, -1.194, 380.325, 99]
+    region:   n_128
     level:    [24, 27]
   17121418:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-152.335, -1.749, 415.459, 102]
+    region:   n_128
     level:    [24, 27]
   17121419:
     template: Goblin_Corpsman
-    at:       [-197.511, -0.187, 326.461, 66]
+    region:   n_139
     level:    [62, 64]
   17121420:
     template: Goblin_Blastmaster
-    at:       [-200.100, -0.701, 365.002, 219]
+    region:   n_140
     level:    [62, 64]
   17121421:
     template: Goblin_Pioneer
-    at:       [-121.472, -0.439, 473.897, 23]
+    region:   n_123
     level:    [62, 64]
   17121422:
     template: Goblin_Mine_Small
@@ -4669,121 +4669,121 @@ spawns:
     level:    [58, 58]
   17121423:
     template: Goblin_Freesword
-    at:       [-260.895, -7.900, 328.333, 237]
+    region:   n_143
     level:    [62, 64]
   17121424:
     template: Goblin_Corpsman
-    at:       [-233.935, -8.116, 356.159, 31]
+    region:   n_144
     level:    [62, 64]
   17121425:
     template: Smilodon
-    at:       [-184.616, -0.428, 305.324, 171]
+    region:   n_145
     level:    [46, 48]
   17121426:
     template: Smilodon
-    at:       [-210.296, -1.193, 356.825, 78]
+    region:   n_140
     level:    [46, 48]
   17121427:
     template: Smilodon
-    at:       [-288.646, -8.572, 318.341, 255]
+    region:   n_143
     level:    [46, 48]
   17121428:
     template: Smilodon
-    at:       [-234.266, -7.723, 267.922, 159]
+    region:   n_148
     level:    [46, 48]
   17121429:
     template: Ba_past
     script:   Ba
-    at:       [-170.702, -0.041, 290.883, 220]
+    region:   n_149
     level:    [33, 37]
   17121430:
     template: Ba_past
     script:   Ba
-    at:       [-174.228, -0.567, 305.652, 5]
+    region:   n_145
     level:    [33, 37]
   17121431:
     template: Ba_past
     script:   Ba
-    at:       [-185.255, -0.279, 313.896, 58]
+    region:   n_139
     level:    [33, 37]
   17121432:
     template: Ba_past
     script:   Ba
-    at:       [-188.956, -0.660, 258.173, 233]
+    region:   n_152
     level:    [33, 37]
   17121433:
     template: Ba_past
     script:   Ba
-    at:       [-242.052, -8.324, 285.959, 82]
+    region:   n_148
     level:    [33, 37]
   17121434:
     template: Ba_past
     script:   Ba
-    at:       [-274.885, -8.191, 265.292, 176]
+    region:   n_154
     level:    [33, 37]
   17121435:
     template: Ba_past
     script:   Ba
-    at:       [-285.161, -9.411, 231.662, 109]
+    region:   n_155
     level:    [33, 37]
   17121436:
     template: Clipper_past
     script:   Clipper
-    at:       [285.208, 7.862, 108.905, 111]
+    region:   e_65
     level:    [32, 35]
   17121437:
     template: Clipper_past
     script:   Clipper
-    at:       [268.028, 7.782, 137.136, 80]
+    region:   e_157
     level:    [32, 35]
   17121438:
     template: Clipper_past
     script:   Clipper
-    at:       [225.091, 7.748, 180.246, 217]
+    region:   e_157
     level:    [32, 35]
   17121439:
     template: Clipper_past
     script:   Clipper
-    at:       [273.082, 7.628, 147.910, 118]
+    region:   e_157
     level:    [32, 35]
   17121440:
     template: Clipper_past
     script:   Clipper
-    at:       [272.638, 7.672, 146.788, 143]
+    region:   e_157
     level:    [32, 35]
   17121441:
     template: Clipper_past
     script:   Clipper
-    at:       [194.853, 7.271, 181.855, 74]
+    region:   ne_161
     level:    [32, 35]
   17121442:
     template: Clipper_past
     script:   Clipper
-    at:       [201.621, 7.798, 191.049, 20]
+    region:   ne_161
     level:    [32, 35]
   17121443:
     template: Clipper_past
     script:   Clipper
-    at:       [158.880, 8.144, 225.158, 47]
+    region:   ne_163
     level:    [32, 35]
   17121444:
     template: Clipper_past
     script:   Clipper
-    at:       [171.887, 8.136, 221.189, 105]
+    region:   ne_163
     level:    [32, 35]
   17121445:
     template: Clipper_past
     script:   Clipper
-    at:       [155.886, 7.833, 264.686, 28]
+    region:   ne_165
     level:    [32, 35]
   17121446:
     template: Clipper_past
     script:   Clipper
-    at:       [167.835, 7.974, 317.790, 74]
+    region:   ne_166
     level:    [32, 35]
   17121447:
     template: Evil_Spirit
-    at:       [135.278, 7.491, 324.727, 128]
+    region:   ne_166
     level:    [41, 41]
   17121448:
     template: Ice_Elemental_Small
@@ -4793,525 +4793,525 @@ spawns:
   17121449:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [-176.038, 2.413, 135.456, 93]
+    region:   e_169
     level:    [24, 27]
   17121450:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [179.984, 5.941, 180.106, 100]
+    region:   ne_170
     level:    [24, 27]
   17121451:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [135.495, -0.007, 173.971, 73]
+    region:   ne_171
     level:    [24, 27]
   17121452:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [114.224, -0.049, 223.871, 102]
+    region:   ne_172
     level:    [24, 27]
   17121453:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [84.290, 5.726, 217.346, 47]
+    region:   n_173
     level:    [24, 27]
   17121454:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [44.650, 0.112, 324.604, 193]
+    region:   n_174
     level:    [24, 27]
   17121455:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [83.081, 6.900, 329.808, 252]
+    region:   n_175
     level:    [24, 27]
   17121456:
     template: Ba_past
     script:   Ba
-    at:       [217.831, 7.869, 130.773, 183]
+    region:   e_176
     level:    [33, 37]
   17121457:
     template: Ba_past
     script:   Ba
-    at:       [182.553, 6.631, 182.669, 35]
+    region:   ne_170
     level:    [33, 37]
   17121458:
     template: Ba_past
     script:   Ba
-    at:       [139.743, 6.699, 263.193, 54]
+    region:   ne_178
     level:    [33, 37]
   17121459:
     template: Ba_past
     script:   Ba
-    at:       [79.068, 4.844, 263.939, 131]
+    region:   n_173
     level:    [33, 37]
   17121460:
     template: Djinn
-    at:       [-395.898, -24.028, 390.445, 242]
+    region:   nw_180
     level:    [55, 57]
   17121461:
     template: Djinn
-    at:       [-387.212, -23.930, 368.441, 38]
+    region:   nw_181
     level:    [55, 57]
   17121462:
     template: Djinn
-    at:       [-522.773, -32.507, 430.996]
+    region:   nw_182
     level:    [55, 57]
   17121463:
     template: Djinn
-    at:       [-505.456, -30.528, 423.024, 133]
+    region:   nw_183
     level:    [55, 57]
   17121464:
     template: Djinn
-    at:       [-434.134, -32.446, 430.586, 176]
+    region:   nw_184
     level:    [55, 57]
   17121465:
     template: Djinn
-    at:       [-438.657, -32.085, 426.884, 65]
+    region:   nw_184
     level:    [55, 57]
   17121466:
     template: Djinn
-    at:       [-438.568, -32.061, 465.864, 109]
+    region:   nw_186
     level:    [55, 57]
   17121467:
     template: Sadfly
-    at:       [-473.839, -33.634, 361.059, 248]
+    region:   nw_187
     level:    [29, 31]
   17121468:
     template: Sadfly
-    at:       [-412.416, -24.013, 394.183, 32]
+    region:   nw_180
     level:    [29, 31]
   17121469:
     template: Sadfly
-    at:       [-406.887, -24.486, 438.786, 104]
+    region:   nw_189
     level:    [29, 31]
   17121470:
     template: Smilodon
-    at:       [455.069, -28.631, 377.856, 222]
+    region:   nw_190
     level:    [46, 48]
   17121471:
     template: Smilodon
-    at:       [-472.355, -37.008, 340.594, 65]
+    region:   nw_187
     level:    [46, 48]
   17121472:
     template: Smilodon
-    at:       [-498.342, -23.733, 400.972, 136]
+    region:   nw_192
     level:    [46, 48]
   17121473:
     template: Smilodon
-    at:       [-441.311, -26.818, 381.396, 27]
+    region:   nw_193
     level:    [46, 48]
   17121474:
     template: Smilodon
-    at:       [-397.376, -24.279, 397.852, 17]
+    region:   nw_180
     level:    [46, 48]
   17121475:
     template: Smilodon
-    at:       [-397.618, -23.934, 416.227, 26]
+    region:   nw_189
     level:    [46, 48]
   17121476:
     template: Smilodon
-    at:       [-408.408, -24.103, 382.895, 119]
+    region:   nw_181
     level:    [46, 48]
   17121477:
     template: Wight_war_past
     script:   Wight
-    at:       [-413.284, -24.795, 445.565, 188]
+    region:   nw_189
     level:    [38, 40]
   17121478:
     template: Wight_blm
     script:   Wight
-    at:       [-506.757, -24.858, 410.174, 108]
+    region:   nw_192
     level:    [38, 40]
   17121479:
     template: Tsetse_Fly
-    at:       [-495.733, -23.832, 277.892, 119]
+    region:   nw_199
     level:    [93, 94]
   17121480:
     template: Tsetse_Fly
-    at:       [-514.049, -24.371, 286.207, 130]
+    region:   nw_199
     level:    [93, 94]
   17121481:
     template: Tsetse_Fly
-    at:       [-520.184, -24.156, 272.947, 68]
+    region:   nw_199
     level:    [93, 94]
   17121482:
     template: Tsetse_Fly
-    at:       [-470.854, -26.350, 297.023, 150]
+    region:   nw_202
     level:    [93, 94]
   17121483:
     template: Tsetse_Fly
-    at:       [-460.712, -28.219, 301.489, 71]
+    region:   nw_202
     level:    [93, 94]
   17121484:
     template: Tsetse_Fly
-    at:       [-450.029, -25.783, 294.160, 189]
+    region:   nw_202
     level:    [93, 94]
   17121485:
     template: Tsetse_Fly
-    at:       [-421.441, -27.909, 329.059, 114]
+    region:   nw_205
     level:    [93, 94]
   17121486:
     template: Tsetse_Fly
-    at:       [-515.991, -23.836, 306.940, 66]
+    region:   nw_206
     level:    [93, 94]
   17121487:
     template: Tsetse_Fly
-    at:       [-538.295, -23.904, 308.339, 145]
+    region:   nw_206
     level:    [93, 94]
   17121488:
     template: Tsetse_Fly
-    at:       [-569.377, -24.751, 308.464, 193]
+    region:   nw_208
     level:    [93, 94]
   17121489:
     template: Tsetse_Fly
-    at:       [-565.643, -24.801, 295.549, 112]
+    region:   nw_208
     level:    [93, 94]
   17121490:
     template: Tsetse_Fly
-    at:       [-560.343, -24.357, 285.118, 163]
+    region:   nw_210
     level:    [93, 94]
   17121491:
     template: Tsetse_Fly
-    at:       [-549.303, -24.504, 274.703, 144]
+    region:   nw_210
     level:    [93, 94]
   17121492:
     template: Forester_Beetle
-    at:       [-458.165, -28.846, 376.799, 225]
+    region:   nw_190
     level:    [47, 50]
   17121493:
     template: Forester_Beetle
-    at:       [-472.190, -370.590, 350.742, 124]
+    region:   nw_190
     level:    [47, 50]
   17121494:
     template: Forester_Beetle
-    at:       [-473.507, -34.357, 359.682, 90]
+    region:   nw_187
     level:    [47, 50]
   17121495:
     template: Forester_Beetle
-    at:       [-473.574, -37.029, 348.455, 103]
+    region:   nw_187
     level:    [47, 50]
   17121496:
     template: Forester_Beetle
-    at:       [-511.024, -24.884, 319.343, 121]
+    region:   nw_187
     level:    [47, 50]
   17121497:
     template: Forester_Beetle
-    at:       [-507.343, -24.837, 406.540, 159]
+    region:   nw_192
     level:    [47, 50]
   17121498:
     template: Forester_Beetle
-    at:       [-488.571, -24.728, 408.638, 49]
+    region:   nw_192
     level:    [47, 50]
   17121499:
     template: Forester_Beetle
-    at:       [-441.626, -24.535, 401.420, 99]
+    region:   nw_193
     level:    [47, 50]
   17121500:
     template: Forester_Beetle
-    at:       [-443.311, -25.609, 384.616, 60]
+    region:   nw_193
     level:    [47, 50]
   17121501:
     template: Forester_Beetle
-    at:       [-420.678, -23.878, 404.964, 65]
+    region:   nw_180
     level:    [47, 50]
   17121502:
     template: Forester_Beetle
-    at:       [-402.640, -24.424, 396.936, 134]
+    region:   nw_180
     level:    [47, 50]
   17121503:
     template: Forester_Beetle
-    at:       [-379.572, -24.340, 420.252, 34]
+    region:   nw_189
     level:    [47, 50]
   17121504:
     template: Forester_Beetle
-    at:       [-398.998, -24.437, 434.699, 172]
+    region:   nw_189
     level:    [47, 50]
   17121505:
     template: Tsetse_Fly
-    at:       [-595.374, -24.142, 332.216, 105]
+    region:   nw_225
     level:    [93, 94]
   17121506:
     template: Tsetse_Fly
-    at:       [-587.113, -24.719, 328.005, 113]
+    region:   nw_225
     level:    [93, 94]
   17121507:
     template: Tsetse_Fly
-    at:       [-575.688, -23.759, 305.292, 143]
+    region:   nw_225
     level:    [93, 94]
   17121508:
     template: Tsetse_Fly
-    at:       [-583.294, -18.855, 288.389, 143]
+    region:   nw_228
     level:    [93, 94]
   17121509:
     template: Tsetse_Fly
-    at:       [-586.460, -18.705, 281.051, 239]
+    region:   nw_228
     level:    [93, 94]
   17121510:
     template: Tsetse_Fly
-    at:       [-629.004, -16.156, 282.349, 9]
+    region:   nw_230
     level:    [93, 94]
   17121511:
     template: Tsetse_Fly
-    at:       [-621.690, -17.391, 290.813, 152]
+    region:   nw_230
     level:    [93, 94]
   17121512:
     template: Tsetse_Fly
-    at:       [-618.176, -20.861, 334.776]
+    region:   nw_232
     level:    [93, 94]
   17121513:
     template: Tsetse_Fly
-    at:       [-636.190, -16.741, 318.212, 213]
+    region:   nw_232
     level:    [93, 94]
   17121514:
     template: Tsetse_Fly
-    at:       [-622.385, -20.299, 334.302, 213]
+    region:   nw_232
     level:    [93, 94]
   17121515:
     template: Tsetse_Fly
-    at:       [-620.354, -21.724, 340.557, 120]
+    region:   nw_235
     level:    [93, 94]
   17121516:
     template: Tsetse_Fly
-    at:       [-618.375, -24.896, 345.736, 20]
+    region:   nw_235
     level:    [93, 94]
   17121517:
     template: Tsetse_Fly
-    at:       [-686.881, -18.073, 322.769, 245]
+    region:   nw_237
     level:    [93, 94]
   17121518:
     template: Tsetse_Fly
-    at:       [-647.538, -16.373, 317.744, 20]
+    region:   nw_237
     level:    [93, 94]
   17121519:
     template: Tsetse_Fly
-    at:       [-648.590, -22.403, 345.616, 208]
+    region:   nw_239
     level:    [93, 94]
   17121520:
     template: Tsetse_Fly
-    at:       [-659.922, -23.964, 352.985, 237]
+    region:   nw_239
     level:    [93, 94]
   17121521:
     template: Tsetse_Fly
-    at:       [-637.289, -25.280, 402.835, 121]
+    region:   nw_241
     level:    [93, 94]
   17121522:
     template: Djinn
-    at:       [-433.470, -23.821, 271.280, 63]
+    region:   nw_242
     level:    [55, 57]
   17121523:
     template: Djinn
-    at:       [-392.506, -24.793, 311.239, 226]
+    region:   nw_243
     level:    [55, 57]
   17121524:
     template: Djinn
-    at:       [-349.488, -23.621, 371.114, 216]
+    region:   nw_244
     level:    [55, 57]
   17121525:
     template: Djinn
-    at:       [-350.314, -15.909, 260.559, 174]
+    region:   nw_245
     level:    [55, 57]
   17121526:
     template: Djinn
-    at:       [-336.792, -17.620, 427.046, 164]
+    region:   nw_246
     level:    [55, 57]
   17121527:
     template: Smilodon
-    at:       [-314.130, -16.543, 345.529, 170]
+    region:   nw_247
     level:    [46, 48]
   17121528:
     template: Smilodon
-    at:       [-290.069, -16.220, 345.269, 72]
+    region:   n_248
     level:    [46, 48]
   17121529:
     template: Smilodon
-    at:       [-274.192, -16.395, 397.730, 96]
+    region:   n_249
     level:    [46, 48]
   17121530:
     template: Sadfly
-    at:       [-73.093, -13.558, -147.041, 74]
+    region:   c_250
     level:    [29, 31]
   17121531:
     template: Sadfly
-    at:       [-34.410, -9.025, -91.633, 146]
+    region:   c_251
     level:    [29, 31]
   17121532:
     template: Sadfly
-    at:       [-122.952, -8.564, -69.096, 195]
+    region:   c_252
     level:    [29, 31]
   17121533:
     template: Sadfly
-    at:       [-172.282, -26.972, -52.204, 60]
+    region:   c_253
     level:    [29, 31]
   17121534:
     template: Sadfly
-    at:       [-96.496, -14.038, -14.359, 207]
+    region:   c_254
     level:    [29, 31]
   17121535:
     template: Sadfly
-    at:       [-67.061, -7.832, 28.472, 153]
+    region:   c_255
     level:    [29, 31]
   17121536:
     template: Sadfly
-    at:       [10.027, -7.039, 1.485, 157]
+    region:   c_256
     level:    [29, 31]
   17121537:
     template: Sadfly
-    at:       [-29.104, -16.500, -59.858, 77]
+    region:   c_257
     level:    [29, 31]
   17121538:
     template: Sadfly
-    at:       [-228.673, -37.211, -69.400, 105]
+    region:   c_258
     level:    [29, 31]
   17121539:
     template: Sadfly
-    at:       [-172.848, -13.463, 28.001, 198]
+    region:   c_259
     level:    [29, 31]
   17121540:
     template: Sadfly
-    at:       [-138.109, -10.778, -87.078, 74]
+    region:   c_260
     level:    [29, 31]
   17121541:
     template: Sadfly
-    at:       [-163.370, -24.530, -118.337, 33]
+    region:   c_261
     level:    [29, 31]
   17121542:
     template: Sadfly
-    at:       [-54.279, -19.755, -29.710, 242]
+    region:   c_262
     level:    [29, 31]
   17121543:
     template: Sadfly
-    at:       [-198.150, -30.595, -16.418, 133]
+    region:   c_263
     level:    [29, 31]
   17121544:
     template: Sadfly
-    at:       [-251.798, -17.143, -15.295, 51]
+    region:   c_264
     level:    [29, 31]
   17121545:
     template: Smilodon
-    at:       [-22.180, -10.585, -97.894, 177]
+    region:   c_251
     level:    [46, 48]
   17121546:
     template: Smilodon
-    at:       [-103.254, -16.124, -84.450, 67]
+    region:   c_252
     level:    [46, 48]
   17121547:
     template: Smilodon
-    at:       [-175.588, -30.323, -42.496, 250]
+    region:   c_253
     level:    [46, 48]
   17121548:
     template: Smilodon
-    at:       [-133.306, -21.699, -4.402, 131]
+    region:   c_254
     level:    [46, 48]
   17121549:
     template: Smilodon
-    at:       [-52.812, -4.187, 23.146, 233]
+    region:   c_255
     level:    [46, 48]
   17121550:
     template: Smilodon
-    at:       [-3.210, -8.228, -12.195, 125]
+    region:   c_256
     level:    [46, 48]
   17121551:
     template: Smilodon
-    at:       [-2.454, -8.326, -51.625, 47]
+    region:   c_257
     level:    [46, 48]
   17121552:
     template: Smilodon
-    at:       [-147.185, -14.291, -9.066, 68]
+    region:   c_259
     level:    [46, 48]
   17121553:
     template: Smilodon
-    at:       [-200.205, -30.995, -19.444, 255]
+    region:   c_263
     level:    [46, 48]
   17121554:
     template: Smilodon
-    at:       [-314.365, -18.745, -56.016, 202]
+    region:   c_264
     level:    [46, 48]
   17121555:
     template: Smilodon
-    at:       [-63.327, -10.122, -141.493, 92]
+    region:   c_250
     level:    [46, 48]
   17121556:
     template: Smilodon
-    at:       [-106.374, -16.855, -165.755, 113]
+    region:   c_276
     level:    [46, 48]
   17121557:
     template: Smilodon
-    at:       [-139.023, -17.509, -132.712, 180]
+    region:   c_277
     level:    [46, 48]
   17121558:
     template: Smilodon
-    at:       [-41.588, -8.804, -87.459, 109]
+    region:   c_251
     level:    [46, 48]
   17121559:
     template: Smilodon
-    at:       [-83.537, -19.862, -97.770, 152]
+    region:   c_252
     level:    [46, 48]
   17121560:
     template: Smilodon
-    at:       [-137.219, -15.774, -32.291, 254]
+    region:   c_253
     level:    [46, 48]
   17121561:
     template: Smilodon
-    at:       [-111.054, -21.265, 10.848, 77]
+    region:   c_254
     level:    [46, 48]
   17121562:
     template: Smilodon
-    at:       [-51.274, -12.127, -12.114, 97]
+    region:   c_255
     level:    [46, 48]
   17121563:
     template: Smilodon
-    at:       [24.586, -6.101, -17.609, 119]
+    region:   c_256
     level:    [46, 48]
   17121564:
     template: Smilodon
-    at:       [-19.965, -15.063, -60.273, 211]
+    region:   c_257
     level:    [46, 48]
   17121565:
     template: Smilodon
-    at:       [-210.252, -38.108, -37.230, 190]
+    region:   c_285
     level:    [46, 48]
   17121566:
     template: Smilodon
-    at:       [-235.242, -37.238, -66.162, 16]
+    region:   c_258
     level:    [46, 48]
   17121567:
     template: Smilodon
-    at:       [-159.341, -9.853, -5.981, 141]
+    region:   c_259
     level:    [46, 48]
   17121568:
     template: Smilodon
-    at:       [-153.382, -11.661, -90.978, 131]
+    region:   c_260
     level:    [46, 48]
   17121569:
     template: Smilodon
-    at:       [-160.444, -22.316, -107.872, 46]
+    region:   c_261
     level:    [46, 48]
   17121570:
     template: Smilodon
-    at:       [-48.823, -20.666, -28.311, 99]
+    region:   c_262
     level:    [46, 48]
   17121571:
     template: Smilodon
-    at:       [-208.264, -21.533, 24.603, 99]
+    region:   c_263
     level:    [46, 48]
   17121572:
     template: Smilodon
-    at:       [-264.422, -11.189, 16.905, 206]
+    region:   c_292
     level:    [46, 48]
   17121573:
     template: Smilodon
-    at:       [-271.936, -23.010, -24.244, 185]
+    region:   c_264
     level:    [46, 48]
   17121574:
     template: Wight_war_past
     script:   Wight
-    at:       [-175.298, -23.740, -119.341, 124]
+    region:   c_261
     level:    [38, 40]
   17121575:
     template: Wight_blm
     script:   Wight
-    at:       [-205.141, -39.198, -44.517, 19]
+    region:   c_285
     level:    [38, 40]
   17121576:
     template: La_Velue
@@ -5320,82 +5320,82 @@ spawns:
   17121577:
     template: Clipper_past
     script:   Clipper
-    at:       [183.087, 7.551, -440.750]
+    region:   se_297
     level:    [32, 35]
   17121578:
     template: Clipper_past
     script:   Clipper
-    at:       [164.066, 7.628, -466.921, 157]
+    region:   se_297
     level:    [32, 35]
   17121579:
     template: Clipper_past
     script:   Clipper
-    at:       [131.901, 7.959, -450.729, 205]
+    region:   se_299
     level:    [32, 35]
   17121580:
     template: Clipper_past
     script:   Clipper
-    at:       [124.925, 7.801, -439.143, 32]
+    region:   se_299
     level:    [32, 35]
   17121581:
     template: Clipper_past
     script:   Clipper
-    at:       [129.695, 7.981, -444.899, 33]
+    region:   se_299
     level:    [32, 35]
   17121582:
     template: Clipper_past
     script:   Clipper
-    at:       [78.361, 7.065, -404.609, 254]
+    region:   s_302
     level:    [32, 35]
   17121583:
     template: Clipper_past
     script:   Clipper
-    at:       [49.134, 7.694, -361.277, 105]
+    region:   s_303
     level:    [32, 35]
   17121584:
     template: Clipper_past
     script:   Clipper
-    at:       [75.231, 7.803, -374.628, 215]
+    region:   s_303
     level:    [32, 35]
   17121585:
     template: Lycopodium
-    at:       [158.271, 7.636, -444.974, 121]
+    region:   se_305
     level:    [28, 32]
   17121586:
     template: Lycopodium
-    at:       [154.123, -2.352, -400.313, 19]
+    region:   se_306
     level:    [28, 32]
   17121587:
     template: Lycopodium
-    at:       [102.770, 4.846, -407.626, 71]
+    region:   se_307
     level:    [28, 32]
   17121588:
     template: Lycopodium
-    at:       [58.791, 8.004, -350.876, 20]
+    region:   s_308
     level:    [28, 32]
   17121589:
     template: Lycopodium
-    at:       [139.907, -6.483, -380.044, 43]
+    region:   se_309
     level:    [28, 32]
   17121590:
     template: Lycopodium
-    at:       [166.549, 2.088, -356.808, 233]
+    region:   se_310
     level:    [28, 32]
   17121591:
     template: Lycopodium
-    at:       [152.054, 0.283, -353.000, 24]
+    region:   se_310
     level:    [28, 32]
   17121592:
     template: Lycopodium
-    at:       [180.754, 4.293, -378.362, 193]
+    region:   se_312
     level:    [28, 32]
   17121593:
     template: Lycopodium
-    at:       [241.584, 7.594, -357.503, 213]
+    region:   se_313
     level:    [28, 32]
   17121594:
     template: Lycopodium
-    at:       [271.227, 7.981, -375.439, 185]
+    region:   se_314
     level:    [28, 32]
   17121595:
     template: Ice_Elemental_Small
@@ -5405,37 +5405,37 @@ spawns:
   17121596:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [125.275, 5.365, -338.875, 249]
+    region:   se_310
     level:    [24, 27]
   17121597:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [165.788, -1.597, -370.252, 137]
+    region:   se_312
     level:    [24, 27]
   17121598:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [220.081, 8.091, -366.771, 74]
+    region:   se_313
     level:    [24, 27]
   17121599:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [262.428, 7.203, -358.300, 217]
+    region:   se_314
     level:    [24, 27]
   17121600:
     template: Wight_war_past
     script:   Wight
-    at:       [167.566, 6.323, -486.024, 88]
+    region:   se_297
     level:    [38, 40]
   17121601:
     template: Wight_blm
     script:   Wight
-    at:       [268.304, 7.103, -353.472, 125]
+    region:   se_314
     level:    [38, 40]
   17121602:
     template: Ba_past
     script:   Ba
-    at:       [123.562, 7.497, -431.710, 249]
+    region:   se_299
     level:    [33, 37]
   17121603:
     template: Habergoass
@@ -5444,35 +5444,35 @@ spawns:
   17121604:
     template: Ba_past
     script:   Ba
-    at:       [63.470, 7.267, -366.593, 110]
+    region:   s_303
     level:    [33, 37]
   17121605:
     template: Ba_past
     script:   Ba
-    at:       [200.969, 6.779, -419.784, 162]
+    region:   se_305
     level:    [33, 37]
   17121606:
     template: Ba_past
     script:   Ba
-    at:       [65.890, 7.963, -350.784, 159]
+    region:   s_308
     level:    [33, 37]
   17121607:
     template: Ba_past
     script:   Ba
-    at:       [227.759, 8.282, -383.283, 222]
+    region:   se_313
     level:    [33, 37]
   17121608:
     template: Earth_Elemental_Small
     script:   Earth_Elemental
-    at:       [46.335, -8.917, -155.580, 187]
+    region:   s_328
     level:    [75, 75]
   17121609:
     template: Lycopodium
-    at:       [67.745, -9.929, -220.064, 71]
+    region:   s_329
     level:    [28, 32]
   17121610:
     template: Chaneque
-    at:       [79.000, 0.001, -243.000, 64]
+    region:   s_329
     level:    [56, 57]
   17121611:
     template: Lycopodium
@@ -5480,99 +5480,99 @@ spawns:
     level:    [28, 32]
   17121612:
     template: Lycopodium
-    at:       [59.588, -9.248, -151.304, 216]
+    region:   s_328
     level:    [28, 32]
   17121613:
     template: Lycopodium
-    at:       [122.294, -2.235, -193.978, 248]
+    region:   se_333
     level:    [28, 32]
   17121614:
     template: Lycopodium
-    at:       [80.255, -16.495, -200.355, 41]
+    region:   s_334
     level:    [28, 32]
   17121615:
     template: Lycopodium
-    at:       [78.471, -0.964, -239.386, 39]
+    region:   s_329
     level:    [28, 32]
   17121616:
     template: Lycopodium
-    at:       [72.980, -8.560, -156.479, 180]
+    region:   s_328
     level:    [28, 32]
   17121617:
     template: Lycopodium
-    at:       [104.893, -4.468, -179.883, 236]
+    region:   se_333
     level:    [28, 32]
   17121618:
     template: Sadfly
-    at:       [80.670, 1.036, -255.825, 25]
+    region:   s_329
     level:    [29, 31]
   17121619:
     template: Sadfly
-    at:       [46.251, -9.577, -209.036, 141]
+    region:   s_339
     level:    [29, 31]
   17121620:
     template: Sadfly
-    at:       [66.951, -8.546, -169.173, 209]
+    region:   s_328
     level:    [29, 31]
   17121621:
     template: Sadfly
-    at:       [97.498, -9.887, -206.623, 46]
+    region:   se_333
     level:    [29, 31]
   17121622:
     template: Lycopodium
-    at:       [404.989, 6.844, -237.162, 227]
+    region:   se_342
     level:    [28, 32]
   17121623:
     template: Lycopodium
-    at:       [349.090, 7.838, -282.410, 253]
+    region:   se_343
     level:    [28, 32]
   17121624:
     template: Lycopodium
-    at:       [353.230, 7.066, -243.681, 83]
+    region:   se_344
     level:    [28, 32]
   17121625:
     template: Lycopodium
-    at:       [325.002, 0.609, -245.307, 211]
+    region:   se_345
     level:    [28, 32]
   17121626:
     template: Lycopodium
-    at:       [325.374, 7.366, -279.678, 248]
+    region:   se_346
     level:    [28, 32]
   17121627:
     template: Lycopodium
-    at:       [291.642, 5.755, -217.951, 167]
+    region:   se_347
     level:    [28, 32]
   17121628:
     template: Lycopodium
-    at:       [292.346, 1.523, -292.920, 222]
+    region:   se_348
     level:    [28, 32]
   17121629:
     template: Lycopodium
-    at:       [190.446, -0.309, -257.141, 192]
+    region:   se_349
     level:    [28, 32]
   17121630:
     template: Lycopodium
-    at:       [169.478, 0.351, -274.064, 54]
+    region:   se_350
     level:    [28, 32]
   17121631:
     template: Lycopodium
-    at:       [57.657, 2.579, -287.858, 58]
+    region:   s_351
     level:    [28, 32]
   17121632:
     template: Lycopodium
-    at:       [428.874, 7.883, -125.115, 125]
+    region:   e_352
     level:    [28, 32]
   17121633:
     template: Lycopodium
-    at:       [374.532, 7.996, -137.345, 29]
+    region:   e_353
     level:    [28, 32]
   17121634:
     template: Lycopodium
-    at:       [401.939, 7.429, -158.218, 165]
+    region:   se_354
     level:    [28, 32]
   17121635:
     template: Lycopodium
-    at:       [341.483, 8.036, -155.563, 215]
+    region:   se_355
     level:    [28, 32]
   17121636:
     template: Lycopodium
@@ -5606,114 +5606,114 @@ spawns:
   17121642:
     template: Stalking_Sapling_past
     script:   Stalking_Sapling
-    at:       [375.575, 8.065, -133.506, 108]
+    region:   e_362
     level:    [24, 27]
   17121643:
     template: Ba_past
     script:   Ba
-    at:       [298.103, 3.704, -296.036, 188]
+    region:   se_348
     level:    [33, 37]
   17121644:
     template: Ba_past
     script:   Ba
-    at:       [232.353, 7.076, -267.029, 253]
+    region:   se_349
     level:    [33, 37]
   17121645:
     template: Ba_past
     script:   Ba
-    at:       [142.537, 2.259, -265.839, 191]
+    region:   se_350
     level:    [33, 37]
   17121646:
     template: Ba_past
     script:   Ba
-    at:       [382.084, 8.291, -157.602, 126]
+    region:   se_354
     level:    [33, 37]
   17121647:
     template: Ba_past
     script:   Ba
-    at:       [351.272, 7.856, -189.548, 189]
+    region:   se_355
     level:    [33, 37]
   17121648:
     template: Ba_past
     script:   Ba
-    at:       [351.497, 7.622, -110.793, 55]
+    region:   e_362
     level:    [33, 37]
   17121649:
     template: Earth_Elemental_Small
     script:   Earth_Elemental
-    at:       [-675.911, -30.976, 151.289, 53]
+    region:   w_369
     level:    [75, 75]
   17121650:
     template: Orcish_Impaler
-    at:       [-585.382, -16.249, 93.480, 207]
+    region:   w_370
     level:    [65, 69]
   17121651:
     template: Orcish_Chasseur
-    at:       [-597.555, -16.375, 112.943, 144]
+    region:   w_370
     level:    [65, 69]
   17121652:
     template: Orcish_Brawler_past
     script:   Orcish_Brawler
-    at:       [-575.596, -16.187, 86.648, 165]
+    region:   w_370
     level:    [65, 69]
   17121653:
     template: Orcish_Impaler
-    at:       [-625.251, -15.773, 158.322, 68]
+    region:   w_373
     level:    [65, 69]
   17121654:
     template: Orcish_Chasseur
-    at:       [-613.703, -16.042, 154.430, 211]
+    region:   w_373
     level:    [65, 69]
   17121655:
     template: Orcish_Brawler_past
     script:   Orcish_Brawler
-    at:       [-610.838, -16.209, 162.382, 5]
+    region:   w_373
     level:    [65, 69]
   17121656:
     template: Orcish_Impaler
-    at:       [-658.094, -18.295, 188.166, 70]
+    region:   nw_376
     level:    [65, 69]
   17121657:
     template: Orcish_Trooper_past
     script:   Orcish_Trooper
-    at:       [-639.459, -16.467, 189.964, 197]
+    region:   nw_376
     level:    [65, 69]
   17121658:
     template: Orcish_Impaler
-    at:       [-666.660, -21.512, 185.215, 121]
+    region:   nw_378
     level:    [65, 69]
   17121659:
     template: Orcish_Chasseur
-    at:       [-650.464, -17.628, 204.662, 232]
+    region:   nw_378
     level:    [65, 69]
   17121660:
     template: Orcish_Brawler_past
     script:   Orcish_Brawler
-    at:       [-668.269, -30.537, 157.242, 63]
+    region:   w_369
     level:    [65, 69]
   17121661:
     template: Orcish_Chasseur
-    at:       [-663.148, -26.543, 166.486, 22]
+    region:   w_369
     level:    [65, 69]
   17121662:
     template: Orcish_Trooper_past
     script:   Orcish_Trooper
-    at:       [-683.941, -31.882, 156.547, 254]
+    region:   w_369
     level:    [65, 69]
   17121663:
     template: Orcish_Brawler_past
     script:   Orcish_Brawler
-    at:       [-728.105, -21.948, 138.857, 192]
+    region:   w_383
     level:    [65, 69]
   17121664:
     template: Orcish_Trooper_past
     script:   Orcish_Trooper
-    at:       [-717.882, -21.352, 140.610, 154]
+    region:   w_383
     level:    [65, 69]
   17121665:
     template: Wight_war_past
     script:   Wight
-    at:       [-561.234, -16.281, 73.431, 249]
+    region:   w_385
     level:    [38, 40]
   17121666:
     template: Wight_blm
@@ -5742,55 +5742,55 @@ spawns:
     level:    [65, 67]
   17121672:
     template: Gnole
-    at:       [-601.876, -11.030, 53.762, 250]
+    region:   w_385
     level:    [65, 67]
   17121673:
     template: Smilodon
-    at:       [-380.031, -20.806, -37.405, 192]
+    region:   w_393
     level:    [46, 48]
   17121674:
     template: Smilodon
-    at:       [-458.944, -16.324, -101.952, 41]
+    region:   w_394
     level:    [46, 48]
   17121675:
     template: Smilodon
-    at:       [-537.596, -14.193, -60.206, 191]
+    region:   w_395
     level:    [46, 48]
   17121676:
     template: Smilodon
-    at:       [-275.782, -8.037, 72.071, 3]
+    region:   c_396
     level:    [46, 48]
   17121677:
     template: Smilodon
-    at:       [-340.233, -19.308, -24.224, 240]
+    region:   w_397
     level:    [46, 48]
   17121678:
     template: Gnole
-    at:       [-359.697, -21.570, -25.024, 125]
+    region:   w_397
     level:    [65, 67]
   17121679:
     template: Gnole
-    at:       [-343.945, -19.182, 10.215, 148]
+    region:   w_399
     level:    [65, 67]
   17121680:
     template: Gnole
-    at:       [-394.337, -16.000, -2.788, 17]
+    region:   w_400
     level:    [65, 67]
   17121681:
     template: Gnole
-    at:       [-404.198, -16.598, -85.237, 123]
+    region:   w_393
     level:    [65, 67]
   17121682:
     template: Gnole
-    at:       [-526.350, -23.655, -44.933, 184]
+    region:   w_395
     level:    [65, 67]
   17121683:
     template: Gnole
-    at:       [-524.958, -10.063, 8.051, 133]
+    region:   w_403
     level:    [65, 67]
   17121684:
     template: Gnole
-    at:       [-479.063, -7.941, 16.823, 25]
+    region:   w_404
     level:    [65, 67]
   17121685:
     template: Pixie
@@ -5953,25 +5953,34 @@ spawns:
     level:    [1, 1]
   17121733:
     template: Leonoyne
-    at:       [197.822, 7.597, 5.950, 102]
+    region:   e_453
   17121734:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121735:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121736:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121737:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121738:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121739:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121740:
     template: Savage_Hound_Condottiere
+    region:   e_460
   17121741:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121742:
     template: Savage_Hound_Condottiere
+    region:   e_454
   17121743:
     template: Ashmea_B_Greinner
     at:       [201.451, 7.699, 47.987, 79]
@@ -5995,24 +6004,34 @@ spawns:
     template: Scarlet_Boar_Esquire
   17121753:
     template: Feldrautte_I_Rouhent
+    region:   e_454
   17121754:
     template: Norvallen_Knight
+    region:   e_454
   17121755:
     template: Norvallen_Knight
+    region:   e_454
   17121756:
     template: Norvallen_Knight
+    region:   e_454
   17121757:
     template: Norvallen_Knight
+    region:   e_454
   17121758:
     template: Norvallen_Knight
+    region:   e_454
   17121759:
     template: Norvallen_Knight
+    region:   e_454
   17121760:
     template: Norvallen_Knight
+    region:   e_454
   17121761:
     template: Norvallen_Knight
+    region:   e_454
   17121762:
     template: Norvallen_Knight
+    region:   e_454
   17121763:
     template: Yrvaulair_S_Cousseraux
   17121764:
@@ -6044,24 +6063,34 @@ spawns:
     level:    [1, 1]
   17121773:
     template: Mieuseloir_B_Enchelles
+    region:   e_454
   17121774:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121775:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121776:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121777:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121778:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121779:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121780:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121781:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121782:
     template: Crimson_Wolf_Esquire
+    region:   e_454
   17121783:
     template: Gold_Badger_Esquire
   17121784:
@@ -6159,26 +6188,27 @@ spawns:
     level:    [1, 1]
   17121815:
     template: Royal_Palliator
-    at:       [187.962, 7.476, 29.303, 180]
+    region:   e_454
     level:    [60, 60]
   17121816:
     template: Royal_Palliator
-    at:       [188.739, 7.536, 31.355, 134]
+    region:   e_454
     level:    [60, 60]
   17121817:
     template: Royal_Palliator
-    at:       [188.336, 7.516, 29.683, 152]
+    region:   e_454
     level:    [60, 60]
   17121818:
     template: Royal_Palliator
+    region:   e_454
     level:    [60, 60]
   17121819:
     template: Royal_Palliator
-    at:       [186.997, 5.236, 41.793, 117]
+    region:   e_454
     level:    [60, 60]
   17121820:
     template: Royal_Palliator
-    at:       [191.002, 7.603, 32.113, 137]
+    region:   e_454
     level:    [60, 60]
   17121821:
     template: Royal_Provisioner
@@ -6245,6 +6275,7 @@ spawns:
     level:    [60, 60]
   17121841:
     template: Gutrender_Trooper
+    region:   e_561
     level:    [60, 60]
   17121842:
     template: Gutrender_Trooper
@@ -6679,6 +6710,7 @@ spawns:
     level:    [1, 1]
   17121978:
     template: Rainemard
+    region:   e_454
     level:    [1, 1]
   17121979:
     template: Maat_campaign

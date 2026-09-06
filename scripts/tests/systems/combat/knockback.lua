@@ -6,8 +6,9 @@ describe('Knockback', function()
     local mob
 
     before_each(function()
-        player = xi.test.world:spawnPlayer({ level = 1, zone = xi.zone.BEAUCEDINE_GLACIER_S })
+        player = xi.test.world:spawnPlayer({ level = 99, zone = xi.zone.BEAUCEDINE_GLACIER_S })
         mob    = player.entities:moveTo('Ruszor')
+        mob:respawn()
     end)
 
     it('works', function()

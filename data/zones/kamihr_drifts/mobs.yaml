@@ -699,370 +699,370 @@ spawns:
     at:     [1.000, 1.000, 1.000]
   17870854:
     template: Snowpelt_Rabbit
-    at:       [435.603, 59.817, -440.263, 102]
+    region:   se_6
     level:    [111, 113]
   17870855:
     template: Snowpelt_Rabbit
-    at:       [429.709, 59.696, -447.425, 137]
+    region:   se_6
     level:    [111, 113]
   17870856:
     template: Snowpelt_Rabbit
-    at:       [442.044, 59.818, -438.103, 25]
+    region:   se_6
     level:    [111, 113]
   17870857:
     template: Cyanotic_Raptor
-    at:       [369.994, 60.544, -400.071, 71]
+    region:   se_9
     level:    [111, 113]
   17870858:
     template: Cyanotic_Raptor
-    at:       [360.496, 59.847, -405.583, 227]
+    region:   se_9
     level:    [111, 113]
   17870859:
     template: Cyanotic_Raptor
-    at:       [383.752, 61.419, -394.501, 1]
+    region:   se_9
     level:    [111, 113]
   17870860:
     template: Snowpelt_Rabbit
-    at:       [227.914, 39.549, -286.255, 93]
+    region:   se_12
     level:    [111, 113]
   17870861:
     template: Snowpelt_Rabbit
-    at:       [236.229, 39.656, -277.178, 26]
+    region:   se_12
     level:    [111, 113]
   17870862:
     template: Cicatricose_Raaz
-    at:       [320.282, 42.498, -299.315, 255]
+    region:   se_14
     level:    [111, 113]
   17870863:
     template: Cicatricose_Raaz
-    at:       [324.239, 44.638, -299.031, 248]
+    region:   se_14
     level:    [111, 113]
   17870864:
     template: Snowpelt_Rabbit
-    at:       [225.839, 40.465, -354.429, 172]
+    region:   se_16
     level:    [111, 113]
   17870865:
     template: Snowpelt_Rabbit
-    at:       [216.128, 41.240, -364.683, 11]
+    region:   se_16
     level:    [111, 113]
   17870866:
     template: Snowpelt_Rabbit
-    at:       [246.752, 39.515, -350.376, 226]
+    region:   se_16
     level:    [111, 113]
   17870867:
     template: Cicatricose_Raaz
-    at:       [237.275, 39.902, -407.674, 176]
+    region:   se_19
     level:    [111, 113]
   17870868:
     template: Cicatricose_Raaz
-    at:       [200.266, 39.568, -404.139, 24]
+    region:   se_19
     level:    [111, 113]
   17870869:
     template: Cicatricose_Raaz
-    at:       [245.302, 39.719, -399.291, 222]
+    region:   se_19
     level:    [111, 113]
   17870870:
     template: Snowpelt_Rabbit
-    at:       [161.804, 39.992, -271.770, 174]
+    region:   s_22
     level:    [111, 113]
   17870871:
     template: Snowpelt_Rabbit
-    at:       [142.266, 40.013, -288.548, 86]
+    region:   s_22
     level:    [111, 113]
   17870872:
     template: Cyanotic_Raptor
-    at:       [121.854, 39.659, -318.434, 145]
+    region:   s_24
     level:    [111, 113]
   17870873:
     template: Cyanotic_Raptor
-    at:       [122.351, 40.828, -309.155, 121]
+    region:   s_24
     level:    [111, 113]
   17870874:
     template: Wailing_Umbril
-    at:       [77.887, 39.922, -365.939, 44]
+    region:   s_26
     level:    [111, 113]
   17870875:
     template: Wailing_Umbril
-    at:       [83.045, 39.752, -369.036, 60]
+    region:   s_26
     level:    [111, 113]
   17870876:
     template: Wailing_Umbril
-    at:       [79.117, 36.693, -360.163, 177]
+    region:   s_26
     level:    [111, 113]
   17870877:
     template: Wailing_Umbril
-    at:       [66.188, 38.786, -462.880, 224]
+    region:   s_29
     level:    [111, 113]
   17870878:
     template: Wailing_Umbril
-    at:       [71.320, 39.316, -458.122, 158]
+    region:   s_29
     level:    [111, 113]
   17870879:
     template: Snowpelt_Rabbit
-    at:       [-5.947, 39.813, -351.123, 205]
+    region:   s_31
     level:    [111, 113]
   17870880:
     template: Snowpelt_Rabbit
-    at:       [-0.123, 39.892, -366.685, 152]
+    region:   s_31
     level:    [111, 113]
   17870881:
     template: Snowpelt_Rabbit
-    at:       [8.138, 39.872, -365.143, 43]
+    region:   s_31
     level:    [111, 113]
   17870882:
     template: Bedraggled_Lucerewe
-    at:       [-50.866, 41.275, -398.441, 227]
+    region:   s_34
     level:    [111, 113]
   17870883:
     template: Bedraggled_Lucerewe
-    at:       [-48.722, 40.880, -401.573, 133]
+    region:   s_34
     level:    [111, 113]
   17870884:
     template: Bedraggled_Lucerewe
-    at:       [-68.595, 40.125, -405.674, 128]
+    region:   s_34
     level:    [111, 113]
   17870885:
     template: Shaggy_Ovim
-    at:       [-105.293, 41.002, -392.479, 63]
+    region:   sw_37
     level:    [111, 113]
   17870886:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-114.447, 39.865, -441.975, 219]
+    region:   sw_37
     level:    [111, 113]
   17870887:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-133.598, 40.583, -408.495, 103]
+    region:   sw_37
     level:    [111, 113]
   17870888:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-102.937, 38.865, -388.346, 55]
+    region:   sw_37
     level:    [111, 113]
   17870889:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-112.871, 40.956, -394.678, 178]
+    region:   sw_37
     level:    [111, 113]
   17870890:
     template: Bedraggled_Lucerewe
-    at:       [-158.444, 39.804, -361.235, 116]
+    region:   sw_42
     level:    [111, 113]
   17870891:
     template: Bedraggled_Lucerewe
-    at:       [-146.767, 40.851, -356.447, 141]
+    region:   sw_42
     level:    [111, 113]
   17870892:
     template: Bedraggled_Lucerewe
-    at:       [-117.634, 41.084, -372.554, 45]
+    region:   sw_42
     level:    [111, 113]
   17870893:
     template: Bedraggled_Lucerewe
-    at:       [-160.998, 39.589, -360.209, 77]
+    region:   sw_42
     level:    [111, 113]
   17870894:
     template: Shaggy_Ovim
-    at:       [-188.717, 39.716, -397.171, 94]
+    region:   sw_46
     level:    [111, 113]
   17870895:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-187.421, 40.186, -391.644, 134]
+    region:   sw_46
     level:    [111, 113]
   17870896:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-202.335, 39.561, -357.617, 90]
+    region:   sw_46
     level:    [111, 113]
   17870897:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-190.427, 40.429, -389.790, 53]
+    region:   sw_46
     level:    [111, 113]
   17870898:
     template: Bedraggled_Lucerewe
-    at:       [-166.709, 39.524, -431.065, 174]
+    region:   sw_50
     level:    [111, 113]
   17870899:
     template: Bedraggled_Lucerewe
-    at:       [-159.339, 39.582, -444.348, 120]
+    region:   sw_50
     level:    [111, 113]
   17870900:
     template: Bedraggled_Lucerewe
-    at:       [-159.950, 39.524, -438.683, 165]
+    region:   sw_50
     level:    [111, 113]
   17870901:
     template: Bedraggled_Lucerewe
-    at:       [-167.181, 40.009, -442.557, 235]
+    region:   sw_50
     level:    [111, 113]
   17870902:
     template: Cyanotic_Raptor
-    at:       [-166.713, 59.971, -400.035, 161]
+    region:   sw_54
     level:    [111, 113]
   17870903:
     template: Cyanotic_Raptor
-    at:       [-159.191, 59.756, -403.310, 74]
+    region:   sw_54
     level:    [111, 113]
   17870904:
     template: Cyanotic_Raptor
-    at:       [-161.171, 59.976, -410.159, 127]
+    region:   sw_54
     level:    [111, 113]
   17870905:
     template: Snowpelt_Rabbit
-    at:       [-74.183, 39.933, -309.970, 94]
+    region:   s_57
     level:    [111, 113]
   17870906:
     template: Snowpelt_Rabbit
-    at:       [-89.768, 39.567, -332.242, 109]
+    region:   s_57
     level:    [111, 113]
   17870907:
     template: Snowpelt_Rabbit
-    at:       [-78.048, 39.550, -322.887, 193]
+    region:   s_57
     level:    [111, 113]
   17870908:
     template: Cicatricose_Raaz
-    at:       [-277.358, 39.575, -318.914, 203]
+    region:   sw_60
     level:    [111, 113]
   17870909:
     template: Cicatricose_Raaz
-    at:       [-276.565, 39.528, -322.677, 154]
+    region:   sw_60
     level:    [111, 113]
   17870910:
     template: Cicatricose_Raaz
-    at:       [-273.742, 39.879, -310.850, 87]
+    region:   sw_60
     level:    [111, 113]
   17870911:
     template: Shaggy_Ovim
-    at:       [-316.777, 40.383, -271.516, 166]
+    region:   sw_63
     level:    [111, 113]
   17870912:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-320.568, 40.570, -265.461, 160]
+    region:   sw_63
     level:    [111, 113]
   17870913:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-324.754, 39.935, -284.838, 94]
+    region:   sw_63
     level:    [111, 113]
   17870914:
     template: Bedraggled_Lucerewe
-    at:       [-308.209, 39.406, -231.837, 217]
+    region:   sw_66
     level:    [111, 113]
   17870915:
     template: Bedraggled_Lucerewe
-    at:       [-309.771, 39.892, -238.209, 200]
+    region:   sw_66
     level:    [111, 113]
   17870916:
     template: Bedraggled_Lucerewe
-    at:       [-285.364, 39.916, -192.419, 68]
+    region:   sw_68
     level:    [111, 113]
   17870917:
     template: Bedraggled_Lucerewe
-    at:       [-281.540, 39.972, -208.992, 4]
+    region:   sw_68
     level:    [111, 113]
   17870918:
     template: Snowpelt_Rabbit
-    at:       [-250.819, 40.243, -190.465, 71]
+    region:   sw_70
     level:    [111, 113]
   17870919:
     template: Snowpelt_Rabbit
-    at:       [-242.086, 39.083, -189.335, 124]
+    region:   sw_70
     level:    [111, 113]
   17870920:
     template: Snowpelt_Rabbit
-    at:       [-251.800, 40.691, -193.710, 191]
+    region:   sw_70
     level:    [111, 113]
   17870921:
     template: Wailing_Umbril
-    at:       [139.647, 43.412, -214.189, 73]
+    region:   s_73
     level:    [111, 113]
   17870922:
     template: Wailing_Umbril
-    at:       [138.625, 43.256, -228.549, 18]
+    region:   s_73
     level:    [111, 113]
   17870923:
     template: Wailing_Umbril
-    at:       [144.723, 48.882, -221.578, 228]
+    region:   s_73
     level:    [111, 113]
   17870924:
     template: Snowpelt_Rabbit
-    at:       [-158.527, 41.959, -256.247, 221]
+    region:   sw_76
     level:    [111, 113]
   17870925:
     template: Snowpelt_Rabbit
-    at:       [-157.862, 40.028, -272.835, 61]
+    region:   sw_76
     level:    [111, 113]
   17870926:
     template: Snowpelt_Rabbit
-    at:       [-158.941, 39.618, -276.896, 36]
+    region:   sw_76
     level:    [111, 113]
   17870927:
     template: Shaggy_Ovim
-    at:       [-147.109, 41.126, -233.577, 255]
+    region:   sw_79
     level:    [111, 113]
   17870928:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-118.790, 39.849, -237.439, 51]
+    region:   sw_79
     level:    [111, 113]
   17870929:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-138.377, 40.327, -246.736, 12]
+    region:   sw_79
     level:    [111, 113]
   17870930:
     template: Cicatricose_Raaz
-    at:       [3.720, 39.750, -203.153, 24]
+    region:   s_82
     level:    [111, 113]
   17870931:
     template: Cicatricose_Raaz
-    at:       [-16.970, 41.695, -200.190, 106]
+    region:   s_82
     level:    [111, 113]
   17870932:
     template: Cicatricose_Raaz
-    at:       [-4.547, 39.636, -199.411, 129]
+    region:   s_82
     level:    [111, 113]
   17870933:
     template: Cicatricose_Raaz
-    at:       [-20.813, 42.168, -199.186, 19]
+    region:   s_82
     level:    [111, 113]
   17870934:
     template: Cyanotic_Raptor
-    at:       [81.280, 39.847, -247.582, 122]
+    region:   s_86
     level:    [111, 113]
   17870935:
     template: Cyanotic_Raptor
-    at:       [84.810, 39.791, -239.528, 228]
+    region:   s_86
     level:    [111, 113]
   17870936:
     template: Cyanotic_Raptor
-    at:       [34.829, 39.843, -237.900, 125]
+    region:   s_86
     level:    [111, 113]
   17870937:
     template: Cicatricose_Raaz
-    at:       [61.898, 41.924, -81.636, 67]
+    region:   c_89
     level:    [111, 113]
   17870938:
     template: Cicatricose_Raaz
-    at:       [70.105, 40.233, -73.370, 106]
+    region:   c_89
     level:    [111, 113]
   17870939:
     template: Cicatricose_Raaz
-    at:       [50.563, 40.845, -88.625, 12]
+    region:   c_89
     level:    [111, 113]
   17870940:
     template: Cicatricose_Raaz
-    at:       [159.016, 40.001, -49.441, 98]
+    region:   c_92
     level:    [111, 113]
   17870941:
     template: Snowpelt_Rabbit
-    at:       [185.597, 41.636, -43.181, 221]
+    region:   e_93
     level:    [111, 113]
   17870942:
     template: Snowpelt_Rabbit
-    at:       [191.811, 40.792, -43.404, 20]
+    region:   e_93
     level:    [111, 113]
   17870943:
     template: Graupel_Formation
@@ -1074,23 +1074,23 @@ spawns:
     level:    [1, 1]
   17870945:
     template: Wailing_Umbril
-    at:       [149.384, 42.738, -127.687, 161]
+    region:   c_97
     level:    [111, 113]
   17870946:
     template: Wailing_Umbril
-    at:       [156.590, 43.416, -122.610, 21]
+    region:   c_97
     level:    [111, 113]
   17870947:
     template: Wailing_Umbril
-    at:       [168.789, 42.488, -122.823, 131]
+    region:   c_97
     level:    [111, 113]
   17870948:
     template: Cyanotic_Raptor
-    at:       [206.930, 39.565, -189.623, 194]
+    region:   se_100
     level:    [111, 113]
   17870949:
     template: Cyanotic_Raptor
-    at:       [197.445, 39.805, -205.270, 248]
+    region:   se_100
     level:    [111, 113]
   17870950:
     template: Graupel_Formation
@@ -1114,7 +1114,7 @@ spawns:
     level:    [1, 1]
   17870955:
     template: Snowpelt_Rabbit
-    at:       [313.514, 39.681, -85.694, 115]
+    region:   e_107
     level:    [111, 113]
   17870956:
     template: Graupel_Formation
@@ -1126,19 +1126,19 @@ spawns:
     level:    [1, 1]
   17870958:
     template: Hailstone
-    at:       [-34.472, 19.954, -36.995, 55]
+    region:   c_110
     level:    [111, 113]
   17870959:
     template: Hailstone
-    at:       [-43.075, 20.909, -30.295, 198]
+    region:   c_110
     level:    [111, 113]
   17870960:
     template: Cicatricose_Raaz
-    at:       [7.775, 19.982, 87.803, 227]
+    region:   c_112
     level:    [111, 113]
   17870961:
     template: Cicatricose_Raaz
-    at:       [3.848, 19.902, 86.443, 205]
+    region:   c_112
     level:    [111, 113]
   17870962:
     template: Graupel_Formation
@@ -1158,39 +1158,39 @@ spawns:
     level:    [1, 1]
   17870966:
     template: Cicatricose_Raaz
-    at:       [-23.779, 19.472, 71.768, 95]
+    region:   c_118
     level:    [111, 113]
   17870967:
     template: Bedraggled_Lucerewe
-    at:       [-86.374, 20.122, 116.005, 118]
+    region:   w_119
     level:    [111, 113]
   17870968:
     template: Bedraggled_Lucerewe
-    at:       [-124.987, 19.811, 116.633, 116]
+    region:   w_119
     level:    [111, 113]
   17870969:
     template: Bedraggled_Lucerewe
-    at:       [-102.803, 21.287, 115.446, 165]
+    region:   w_119
     level:    [111, 113]
   17870970:
     template: Cicatricose_Raaz
-    at:       [-88.307, 19.512, 150.521, 194]
+    region:   n_122
     level:    [111, 113]
   17870971:
     template: Cicatricose_Raaz
-    at:       [-89.186, 19.413, 151.126, 193]
+    region:   n_122
     level:    [111, 113]
   17870972:
     template: Bedraggled_Lucerewe
-    at:       [-208.359, 18.882, 82.561, 96]
+    region:   w_124
     level:    [111, 113]
   17870973:
     template: Bedraggled_Lucerewe
-    at:       [-191.218, 20.457, 65.352, 52]
+    region:   w_124
     level:    [111, 113]
   17870974:
     template: Bedraggled_Lucerewe
-    at:       [-183.824, 20.501, 57.247, 37]
+    region:   w_124
     level:    [111, 113]
   17870975:
     template: Graupel_Formation
@@ -1202,17 +1202,17 @@ spawns:
     level:    [1, 1]
   17870977:
     template: Shaggy_Ovim
-    at:       [-236.727, 21.813, 62.823, 118]
+    region:   w_129
     level:    [111, 113]
   17870978:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-245.146, 20.057, 70.666, 67]
+    region:   w_129
     level:    [111, 113]
   17870979:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [-248.632, 19.626, 74.222, 158]
+    region:   w_129
     level:    [111, 113]
   17870980:
     template: Graupel_Formation
@@ -1224,35 +1224,35 @@ spawns:
     level:    [1, 1]
   17870982:
     template: Hailstone
-    at:       [-105.869, 21.433, 42.794, 18]
+    region:   w_134
     level:    [111, 113]
   17870983:
     template: Hailstone
-    at:       [-113.259, 20.179, 36.259, 81]
+    region:   w_134
     level:    [111, 113]
   17870984:
     template: Gnarring_Yztarg
-    at:       [-77.839, 19.562, 41.942, 89]
+    region:   c_136
     level:    [111, 113]
   17870985:
     template: Hailstone
-    at:       [-152.677, 19.847, 7.545, 51]
+    region:   w_137
     level:    [111, 113]
   17870986:
     template: Hailstone
-    at:       [-156.070, 19.760, -2.645, 151]
+    region:   w_137
     level:    [111, 113]
   17870987:
     template: Wailing_Umbril
-    at:       [-232.793, 22.102, -36.983, 201]
+    region:   w_139
     level:    [111, 113]
   17870988:
     template: Wailing_Umbril
-    at:       [-238.916, 22.541, -34.056, 32]
+    region:   w_139
     level:    [111, 113]
   17870989:
     template: Wailing_Umbril
-    at:       [-236.168, 22.336, -36.272, 142]
+    region:   w_139
     level:    [111, 113]
   17870990:
     template: Graupel_Formation
@@ -1260,43 +1260,43 @@ spawns:
     level:    [1, 1]
   17870991:
     template: Hailstone
-    at:       [-358.758, 0.940, 311.166, 79]
+    region:   nw_143
     level:    [111, 113]
   17870992:
     template: Hailstone
-    at:       [-353.455, 0.818, 318.332, 74]
+    region:   nw_143
     level:    [111, 113]
   17870993:
     template: Cicatricose_Raaz
-    at:       [-323.066, 1.718, 336.876, 113]
+    region:   nw_145
     level:    [111, 113]
   17870994:
     template: Cicatricose_Raaz
-    at:       [-311.821, -0.136, 349.644, 254]
+    region:   nw_145
     level:    [111, 113]
   17870995:
     template: Hailstone
-    at:       [-291.825, -0.268, 264.577, 78]
+    region:   nw_147
     level:    [111, 113]
   17870996:
     template: Hailstone
-    at:       [-276.660, -0.215, 277.466, 236]
+    region:   nw_147
     level:    [111, 113]
   17870997:
     template: Ashen_Tiger
-    at:       [-283.436, -0.072, 245.801, 2]
+    region:   nw_149
     level:    [111, 113]
   17870998:
     template: Ashen_Tiger
-    at:       [-273.194, 0.143, 233.019, 67]
+    region:   nw_149
     level:    [111, 113]
   17870999:
     template: Bedraggled_Lucerewe
-    at:       [-150.048, 20.459, 194.239, 55]
+    region:   nw_151
     level:    [111, 113]
   17871000:
     template: Bedraggled_Lucerewe
-    at:       [-142.377, 21.972, 201.271, 131]
+    region:   nw_151
     level:    [111, 113]
   17871001:
     template: Graupel_Formation
@@ -1308,7 +1308,7 @@ spawns:
     level:    [1, 1]
   17871003:
     template: Hailstone
-    at:       [-161.669, 19.555, 197.993, 198]
+    region:   nw_151
     level:    [111, 113]
   17871004:
     template: Graupel_Formation
@@ -1320,67 +1320,67 @@ spawns:
     level:    [1, 1]
   17871006:
     template: Cicatricose_Raaz
-    at:       [39.494, 19.938, 245.291, 225]
+    region:   n_158
     level:    [111, 113]
   17871007:
     template: Cicatricose_Raaz
-    at:       [55.807, 19.895, 244.528, 253]
+    region:   n_158
     level:    [111, 113]
   17871008:
     template: Ashen_Tiger
-    at:       [139.952, 20.980, 243.616, 24]
+    region:   n_160
     level:    [111, 113]
   17871009:
     template: Ashen_Tiger
-    at:       [122.427, 19.508, 241.779, 11]
+    region:   n_160
     level:    [111, 113]
   17871010:
     template: Ashen_Tiger
-    at:       [119.628, 19.508, 241.887, 138]
+    region:   n_160
     level:    [111, 113]
   17871011:
     template: Gnarring_Yztarg
-    at:       [40.574, 0.001, 423.422, 201]
+    region:   n_163
     level:    [111, 113]
   17871012:
     template: Gnarring_Yztarg
-    at:       [16.559, 1.229, 403.821, 60]
+    region:   n_163
     level:    [111, 113]
   17871013:
     template: Ashen_Tiger
-    at:       [16.559, 1.229, 403.821, 60]
+    region:   n_165
     level:    [111, 113]
   17871014:
     template: Ashen_Tiger
-    at:       [2.165, 0.001, 410.413, 142]
+    region:   n_165
     level:    [111, 113]
   17871015:
     template: Slobbering_Ruszor
-    at:       [231.503, 19.685, 158.820, 114]
+    region:   ne_167
     level:    [111, 113]
   17871016:
     template: Slobbering_Ruszor
-    at:       [245.665, 19.761, 151.174, 39]
+    region:   ne_167
     level:    [111, 113]
   17871017:
     template: Slobbering_Ruszor
-    at:       [289.168, 20.677, 166.114, 4]
+    region:   ne_169
     level:    [111, 113]
   17871018:
     template: Slobbering_Ruszor
-    at:       [273.045, 20.213, 158.836, 14]
+    region:   ne_169
     level:    [111, 113]
   17871019:
     template: Ashen_Tiger
-    at:       [196.087, 19.999, 114.064, 25]
+    region:   e_171
     level:    [111, 113]
   17871020:
     template: Ashen_Tiger
-    at:       [202.127, 19.959, 130.154, 123]
+    region:   e_171
     level:    [111, 113]
   17871021:
     template: Ashen_Tiger
-    at:       [196.087, 21.643, 104.234, 245]
+    region:   e_171
     level:    [111, 113]
   17871022:
     template: Graupel_Formation
@@ -1388,25 +1388,25 @@ spawns:
     level:    [1, 1]
   17871023:
     template: Ashen_Tiger
-    at:       [85.970, 19.556, 102.610, 127]
+    region:   c_175
     level:    [111, 113]
   17871024:
     template: Ashen_Tiger
-    at:       [88.525, 19.946, 77.556, 191]
+    region:   c_175
     level:    [111, 113]
   17871025:
     template: Shaggy_Ovim
-    at:       [121.214, 19.678, 118.829, 55]
+    region:   c_177
     level:    [111, 113]
   17871026:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [81.177, 19.659, 115.975, 202]
+    region:   c_177
     level:    [111, 113]
   17871027:
     template: Shaggy_Ovim_Small
     script:   Shaggy_Ovim
-    at:       [76.734, 19.658, 116.239, 197]
+    region:   c_177
     level:    [111, 113]
   17871028:
     template: Graupel_Formation
@@ -1418,23 +1418,23 @@ spawns:
     level:    [1, 1]
   17871030:
     template: Shivering_Heartwing
-    at:       [9.556, 39.500, -211.770, 216]
+    region:   sw_182
     level:    [111, 113]
   17871031:
     template: Sprightly_Leafkin
-    at:       [-136.243, 40.663, -233.192, 82]
+    region:   sw_183
     level:    [111, 113]
   17871032:
     template: Sprightly_Leafkin
-    at:       [-133.530, 39.874, -227.402, 175]
+    region:   sw_183
     level:    [111, 113]
   17871033:
     template: Sprightly_Leafkin
-    at:       [-165.101, 39.984, -269.871, 63]
+    region:   sw_183
     level:    [111, 113]
   17871034:
     template: Sprightly_Leafkin
-    at:       [-153.929, 41.811, -255.976, 96]
+    region:   sw_183
     level:    [111, 113]
   17871035:
     template: Wintry_Cave
@@ -1462,19 +1462,19 @@ spawns:
     level:    [111, 113]
   17871041:
     template: Snowpaw_Rabbit
-    at:       [-42.337, 39.927, -154.242, 176]
+    region:   c_193
     level:    [111, 113]
   17871042:
     template: Snowpaw_Rabbit
-    at:       [-37.884, 39.895, -154.823, 148]
+    region:   c_193
     level:    [111, 113]
   17871043:
     template: Incensed_Lucerewe
-    at:       [-40.767, 39.966, -152.194, 137]
+    region:   c_193
     level:    [111, 113]
   17871044:
     template: Incensed_Lucerewe
-    at:       [-35.187, 39.920, -153.735, 208]
+    region:   c_193
     level:    [111, 113]
   17871045:
     template: Wintry_Cave
@@ -1482,19 +1482,19 @@ spawns:
     level:    [111, 113]
   17871046:
     template: Frostfang_Tiger
-    at:       [129.283, 19.774, 38.428]
+    region:   c_198
     level:    [111, 113]
   17871047:
     template: Frostfang_Tiger
-    at:       [131.252, 19.461, 33.365, 47]
+    region:   c_198
     level:    [111, 113]
   17871048:
     template: Famished_Raaz
-    at:       [122.600, 19.633, 38.693, 137]
+    region:   c_198
     level:    [111, 113]
   17871049:
     template: Famished_Raaz
-    at:       [122.907, 19.812, 36.448, 57]
+    region:   c_198
     level:    [111, 113]
   17871050:
     template: Wintry_Cave
@@ -1502,19 +1502,19 @@ spawns:
     level:    [111, 113]
   17871051:
     template: Incensed_Lucerewe
-    at:       [-34.807, 19.998, 247.802, 252]
+    region:   n_203
     level:    [111, 113]
   17871052:
     template: Incensed_Lucerewe
-    at:       [-39.365, 19.999, 247.024, 151]
+    region:   n_203
     level:    [111, 113]
   17871053:
     template: Contumacious_Ovim
-    at:       [-44.323, 19.706, 241.508, 10]
+    region:   n_203
     level:    [111, 113]
   17871054:
     template: Contumacious_Ovim
-    at:       [-37.427, 19.999, 244.853, 151]
+    region:   n_203
     level:    [111, 113]
   17871055:
     template: Wintry_Cave
@@ -1522,19 +1522,19 @@ spawns:
     level:    [111, 113]
   17871056:
     template: Frostfang_Tiger
-    at:       [36.755, -0.028, 354.118, 28]
+    region:   n_208
     level:    [111, 113]
   17871057:
     template: Frostfang_Tiger
-    at:       [33.488, -0.142, 357.912, 133]
+    region:   n_208
     level:    [111, 113]
   17871058:
     template: Contumacious_Ovim
-    at:       [44.551, -0.172, 357.967, 247]
+    region:   n_208
     level:    [111, 113]
   17871059:
     template: Contumacious_Ovim
-    at:       [31.405, -0.047, 353.680, 84]
+    region:   n_208
     level:    [111, 113]
   17871060:
     template: Icy_Palisade
@@ -1578,11 +1578,11 @@ spawns:
     level:    [111, 113]
   17871070:
     template: Raptor_Nightstalker
-    at:       [251.582, 39.323, -110.323, 63]
+    region:   e_222
     level:    [111, 113]
   17871071:
     template: Raptor_Nightstalker
-    at:       [249.132, 39.351, -107.609, 19]
+    region:   e_222
     level:    [111, 113]
   17871072:
     template: Icy_Palisade
@@ -1634,38 +1634,53 @@ spawns:
     level:    [111, 113]
   17871084:
     template: Kumhau
-    at:       [385.000, 20.000, 248.000, 192]
+    region:   ne_236
     level:    [117, 119]
   17871085:
     script: Kumhaus_Claw
+    region: ne_237
   17871086:
     script: Kumhaus_Claw
+    region: ne_237
   17871087:
     script: Kumhaus_Claw
+    region: ne_237
   17871088:
     script: Kumhaus_Fleshrender
+    region: ne_240
   17871089:
     script: Kumhaus_Fleshrender
+    region: ne_240
   17871090:
     script: Kumhaus_Fleshrender
+    region: ne_240
   17871091:
     script: Kumhaus_Hoof
+    region: ne_240
   17871092:
     script: Kumhaus_Hoof
+    region: ne_240
   17871093:
     script: Kumhaus_Hoof
+    region: ne_240
   17871094:
     script: Kumhaus_Fleshrender
+    region: ne_246
   17871095:
     script: Kumhaus_Fleshrender
+    region: ne_246
   17871096:
     script: Kumhaus_Hoof
+    region: ne_246
   17871097:
     script: Kumhaus_Hoof
+    region: ne_246
   17871098:
     script: Kumhaus_Claw
+    region: ne_246
   17871099:
     script: Kumhaus_Claw
+    region: ne_246
   17871100:
     template: Calydontis
     at:       [232.589, 39.816, -270.530, 42]

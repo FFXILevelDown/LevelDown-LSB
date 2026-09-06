@@ -401,9 +401,9 @@ void CMobEntity::setPatrolRoute(std::vector<position_t> route)
     }
 }
 
-void CMobEntity::setRoamRegion(const RoamRegion* region)
+void CMobEntity::setRoamRegions(std::vector<const RoamRegion*> regions)
 {
-    roamRegion_ = region;
+    roamRegions_ = std::move(regions);
 
     // a region has no leeway: its edge is the limit, so nothing outside counts as home
     m_maxRoamDistance = 0.0f;
@@ -765,9 +765,11 @@ void CMobEntity::Spawn()
     mobutils::CalculateMobStats(this);
     mobutils::GetAvailableSpells(this);
 
-    // region mobs pick a fresh spawn point every life, and m_SpawnPoint keeps it for the point-based checks
-    if (roamRegion_ && loc.zone)
+    // region mobs pick one of their regions and a fresh point in it every life, and m_SpawnPoint keeps it for the point-based checks
+    if (!roamRegions_.empty() && loc.zone)
     {
+        roamRegion_ = xirand::GetRandomElement(roamRegions_);
+
         if (const auto point = roamRegion_->randomPoint(loc.zone->navMesh()))
         {
             m_SpawnPoint.x = point->x;
@@ -831,7 +833,7 @@ void CMobEntity::Spawn()
     }
 
     // Roam immediately on spawn
-    if (CanRoam() && PAI->PathFind->RoamAround(m_SpawnPoint, GetRoamDistance(), static_cast<uint8>(getMobMod(xi::MobMod::RoamTurns)), m_roamFlags))
+    if (CanRoam() && PAI->PathFind->RoamAround(GetRoamAnchor(), GetRoamDistance(), static_cast<uint8>(getMobMod(xi::MobMod::RoamTurns)), m_roamFlags, roamRegion_))
     {
         PAI->PathFind->FollowPath(timer::now());
     }

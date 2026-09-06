@@ -15,6 +15,7 @@
 build/
 build*/
 .cpm-cache/
+.cache/
 lbuild/
 build_mariadb_32/
 build_mariadb_64/
@@ -192,7 +193,6 @@ Makefile
 **/CMakeFiles
 cmake_install.cmake
 /cmake-**/**
-.cpm-cache/
 
 # ignore servers
 *-server
@@ -231,9 +231,6 @@ memcheck.out.*
 
 # Memory dumps
 *.dmp
-
-# Auto-generated files
-/src/common/version.cpp
 
 # Module init file
 modules/init.txt

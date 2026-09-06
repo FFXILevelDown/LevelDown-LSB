@@ -3100,221 +3100,221 @@ spawns:
   16998407:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [453.738, -8.966, 66.754, 94]
+    region:   region_173
     level:    [72, 73]
   16998408:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [478.340, -9.761, 81.387, 62]
+    region:   region_171
     level:    [72, 73]
   16998409:
     template: Merrow_Chantress
-    at:       [464.402, -7.000, 70.480, 221]
+    region:   region_172
     level:    [73, 75]
   16998410:
     template: Arrapago_Apkallu
-    at:       [501.650, -4.689, 63.597, 155]
+    region:   e_10
     level:    [70, 72]
   16998411:
     template: Arrapago_Apkallu
-    at:       [501.842, -4.320, 63.759, 143]
+    region:   e_10
     level:    [70, 72]
   16998412:
     template: Arrapago_Apkallu
-    at:       [498.835, -5.698, 38.346, 248]
+    region:   e_10
     level:    [70, 72]
   16998413:
     template: Arrapago_Apkallu
-    at:       [527.960, -4.381, 65.446, 113]
+    region:   e_13
     level:    [70, 72]
   16998414:
     template: Arrapago_Apkallu
-    at:       [528.548, -4.398, 65.503, 74]
+    region:   e_13
     level:    [70, 72]
   16998415:
     template: Arrapago_Apkallu
-    at:       [535.506, -3.954, 76.329, 220]
+    region:   e_13
     level:    [70, 72]
   16998416:
     template: Arrapago_Apkallu
-    at:       [523.203, -4.225, 63.675, 93]
+    region:   e_16
     level:    [70, 72]
   16998417:
     template: Arrapago_Apkallu
-    at:       [536.240, -6.112, 69.699, 85]
+    region:   e_17
     level:    [70, 72]
   16998418:
     template: Arrapago_Apkallu
-    at:       [522.265, -6.520, 102.385, 45]
+    region:   e_18
     level:    [70, 72]
   16998419:
     template: Arrapago_Apkallu
-    at:       [535.435, -5.065, 86.186, 6]
+    region:   e_18
     level:    [70, 72]
   16998420:
     template: Arrapago_Apkallu
-    at:       [523.873, -5.793, 99.753, 166]
+    region:   e_18
     level:    [70, 72]
   16998421:
     template: Lamia_Graverobber
-    at:       [578.524, -11.681, 92.020, 116]
+    region:   region_174
     level:    [73, 75]
   16998422:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [570.648, -9.900, 95.594, 140]
+    region:   region_174
     level:    [72, 73]
   16998423:
     template: Phasma
-    at:       [548.300, -15.790, 138.810, 17]
+    region:   e_23
     level:    [73, 74]
   16998424:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [580.159, -15.931, 158.282, 192]
+    region:   region_182
     level:    [72, 73]
   16998425:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [578.517, -16.336, 170.692, 44]
+    region:   e_25
     level:    [72, 73]
   16998426:
     template: Lamia_Dartist
-    at:       [576.729, -15.771, 218.744, 116]
+    region:   ne_26
     level:    [73, 75]
   16998427:
     template: Lamia_Dancer
-    at:       [576.209, -15.925, 223.869, 219]
+    region:   ne_26
     level:    [73, 75]
   16998428:
     template: Lamias_Elemental
-    at:       [1.000, 1.000, 1.000, 213]
+    region:   ne_26
     level:    [68, 70]
   16998429:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [489.866, -8.295, 216.724, 193]
+    region:   ne_29
     level:    [72, 73]
   16998430:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [488.244, -8.263, 219.296, 255]
+    region:   region_175
     level:    [72, 73]
   16998431:
     template: Arrapago_Apkallu
-    at:       [431.375, -3.723, 173.280, 23]
+    region:   e_31
     level:    [70, 72]
   16998432:
     template: Arrapago_Apkallu
-    at:       [418.079, -3.919, 179.725, 83]
+    region:   e_31
     level:    [70, 72]
   16998433:
     template: Arrapago_Apkallu
-    at:       [453.380, -4.948, 178.304, 179]
+    region:   e_33
     level:    [70, 72]
   16998434:
     template: Arrapago_Apkallu
-    at:       [445.640, -4.621, 177.627, 146]
+    region:   e_33
     level:    [70, 72]
   16998435:
     template: Arrapago_Apkallu
-    at:       [491.510, -3.652, 173.026, 21]
+    region:   e_35
     level:    [70, 72]
   16998436:
     template: Arrapago_Apkallu
-    at:       [483.552, -6.448, 182.237, 129]
+    region:   region_169
     level:    [70, 72]
   16998437:
     template: Merrow_Chantress
-    at:       [446.761, -7.025, 114.934, 135]
+    region:   e_37
     level:    [73, 75]
   16998438:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [444.331, -7.151, 113.642, 182]
+    region:   e_37
     level:    [72, 73]
   16998439:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [452.400, -7.033, 109.170, 129]
+    region:   e_37
     level:    [72, 73]
   16998440:
     template: Reserve_Draugar_AR_drg
     script:   Reserve_Draugar
-    at:       [449.850, -4.022, 146.264, 9]
+    region:   e_40
     level:    [72, 73]
   16998441:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 2]
+    region:   e_40
     level:    [67, 75]
   16998442:
     template: Jnun_AR
     script:   Jnun
-    at:       [412.283, -2.050, 142.585, 195]
+    region:   e_42
     level:    [77, 78]
   16998443:
     template: Jnun_AR
     script:   Jnun
-    at:       [426.945, -2.164, 151.652, 240]
+    region:   e_42
     level:    [77, 78]
   16998444:
     template: Reserve_Draugar_AR_drg
     script:   Reserve_Draugar
-    at:       [379.898, -3.907, 104.154, 255]
+    region:   e_44
     level:    [72, 73]
   16998445:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 136]
+    region:   e_44
     level:    [67, 75]
   16998446:
     template: Nipper
-    at:       [367.553, -7.752, 94.833, 254]
+    region:   e_46
     level:    [72, 73]
   16998447:
     template: Nipper
-    at:       [416.041, -4.407, 62.900, 245]
+    region:   e_47
     level:    [72, 73]
   16998448:
     template: Nipper
-    at:       [414.431, -6.126, 57.203, 97]
+    region:   e_47
     level:    [72, 73]
   16998449:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [416.026, -4.570, 61.856, 240]
+    region:   e_47
     level:    [72, 73]
   16998450:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [413.303, -4.829, 60.422, 149]
+    region:   e_47
     level:    [72, 73]
   16998451:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [413.749, -7.500, 50.244, 27]
+    region:   e_51
     level:    [72, 73]
   16998452:
     template: Nipper
-    at:       [389.595, -6.874, 58.002, 144]
+    region:   e_51
     level:    [72, 73]
   16998453:
     template: Nipper
-    at:       [414.330, -7.033, 52.090, 185]
+    region:   e_51
     level:    [72, 73]
   16998454:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [335.845, -3.940, 83.942, 31]
+    region:   e_54
     level:    [72, 73]
   16998455:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [337.496, -4.007, 83.863, 67]
+    region:   e_54
     level:    [72, 73]
   16998456:
     template: Reserve_Draugar_AR_drg
     script:   Reserve_Draugar
-    at:       [342.927, -8.469, 72.756, 68]
+    region:   region_176
     level:    [72, 73]
   16998457:
     template: Draugars_Wyvern
@@ -3323,1235 +3323,1236 @@ spawns:
   16998458:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [340.365, -7.802, 59.806, 85]
+    region:   e_58
     level:    [72, 73]
   16998459:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [331.126, -4.645, 68.510, 134]
+    region:   e_58
     level:    [72, 73]
   16998460:
     template: Lamia_Graverobber
-    at:       [333.047, -4.693, 66.705, 72]
+    region:   e_58
     level:    [73, 75]
   16998461:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [309.582, -3.325, 109.187, 229]
+    region:   e_61
     level:    [72, 73]
   16998462:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [303.667, -4.724, 107.417, 71]
+    region:   e_61
     level:    [72, 73]
   16998463:
     template: Lamia_Fatedealer
-    at:       [280.990, -5.714, 100.413, 207]
+    region:   e_61
     level:    [73, 75]
   16998464:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [259.023, -6.857, 80.959, 29]
+    region:   e_64
     level:    [72, 73]
   16998465:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [256.537, -6.655, 71.742, 90]
+    region:   e_64
     level:    [72, 73]
   16998466:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [175.354, -4.453, 194.553, 200]
+    region:   c_66
     level:    [73, 74]
   16998467:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [166.579, -4.275, 183.503, 69]
+    region:   c_66
     level:    [73, 74]
   16998468:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [180.858, -6.612, 206.617, 9]
+    region:   c_68
     level:    [73, 74]
   16998469:
     template: Lamia_Graverobber
-    at:       [179.047, -5.868, 125.533, 228]
+    region:   c_69
     level:    [73, 75]
   16998470:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [177.407, -5.362, 117.696, 183]
+    region:   c_69
     level:    [73, 74]
   16998471:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [176.522, -4.964, 114.927, 101]
+    region:   c_69
     level:    [73, 74]
   16998472:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [158.956, -7.834, 93.741, 53]
+    region:   c_72
     level:    [73, 74]
   16998473:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [143.423, -4.307, 103.696, 52]
+    region:   c_72
     level:    [73, 74]
   16998474:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [166.520, -6.924, 95.377, 147]
+    region:   c_72
     level:    [73, 74]
   16998475:
     template: Lamia_Dartist
-    at:       [103.396, -4.469, 174.964, 154]
+    region:   c_75
     level:    [73, 75]
   16998476:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [103.336, -4.666, 170.270, 88]
+    region:   c_75
     level:    [73, 74]
   16998477:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [102.725, -5.168, 156.753, 67]
+    region:   c_75
     level:    [73, 74]
   16998478:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [101.715, -5.516, 154.859, 226]
+    region:   c_75
     level:    [73, 74]
   16998479:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [96.077, -5.962, 177.590, 231]
+    region:   c_79
     level:    [73, 74]
   16998480:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [97.576, -7.186, 172.472, 217]
+    region:   c_79
     level:    [73, 74]
   16998481:
     template: Lamie_No8
-    at:       [144.706, -2.687, 136.081, 85]
+    region:   region_187
     level:    [80, 82]
   16998482:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [43.717, -6.508, 218.501, 21]
+    region:   n_82
     level:    [73, 74]
   16998483:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [51.589, -4.992, 222.870, 194]
+    region:   n_82
     level:    [73, 74]
   16998484:
     template: Ashakku
-    at:       [21.466, -6.317, 197.733, 231]
+    region:   c_84
     level:    [73, 74]
   16998485:
     template: Ashakku
-    at:       [19.170, -4.503, 215.449, 192]
+    region:   c_84
     level:    [73, 74]
   16998486:
     template: Lahama
-    at:       [28.081, -6.256, 221.555, 170]
+    region:   c_84
     level:    [76, 78]
   16998487:
     template: Ashakku
-    at:       [-2.918, -4.468, 103.204, 167]
+    region:   c_87
     level:    [73, 74]
   16998488:
     template: Ashakku
-    at:       [-0.249, -6.348, 99.796, 207]
+    region:   c_87
     level:    [73, 74]
   16998489:
     template: Ashakku
-    at:       [-16.668, -5.021, 126.240, 118]
+    region:   c_87
     level:    [73, 74]
   16998490:
     template: Lahama
-    at:       [-17.024, -4.786, 126.146, 61]
+    region:   c_87
     level:    [76, 78]
   16998491:
     template: Purgatory_Bat_Arrapago
     script:   Purgatory_Bat
-    at:       [59.817, -8.229, 120.056, 67]
+    region:   region_183
     level:    [72, 73]
   16998492:
     template: Purgatory_Bat_Arrapago
     script:   Purgatory_Bat
-    at:       [59.365, -8.243, 116.521, 191]
+    region:   region_183
     level:    [72, 73]
   16998493:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [-0.567, -13.298, 166.169, 64]
+    region:   region_193
     level:    [73, 74]
   16998494:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [-0.686, -13.313, 166.233, 64]
+    region:   region_193
     level:    [73, 74]
   16998495:
     template: Purgatory_Bat_Arrapago
     script:   Purgatory_Bat
-    at:       [-59.732, -15.900, 150.619, 157]
+    region:   c_95
     level:    [72, 73]
   16998496:
     template: Purgatory_Bat_Arrapago
     script:   Purgatory_Bat
-    at:       [-69.916, -16.064, 150.846, 235]
+    region:   c_95
     level:    [72, 73]
   16998497:
     template: Lamia_Fatedealer
-    at:       [-100.917, -16.018, 29.445, 58]
+    region:   c_97
     level:    [73, 75]
   16998498:
     template: Lamia_Fatedealer
-    at:       [-100.928, -16.016, 28.945, 57]
+    region:   c_97
     level:    [73, 75]
   16998499:
     template: Qiqirn_Treasure_Hunter
-    at:       [-63.241, -18.419, 68.532, 64]
+    region:   c_99
     level:    [77, 77]
   16998500:
     template: Qiqirn_Mine
     level:    [75, 75]
   16998501:
     template: Qiqirn_Trailer
-    at:       [-60.205, -15.389, 59.698, 20]
+    region:   c_99
     level:    [77, 77]
   16998502:
     template: Heraldic_Imp
-    at:       [-20.904, -5.209, 244.174, 45]
+    region:   n_102
     level:    [72, 74]
   16998503:
     template: Heraldic_Imp
-    at:       [-24.759, -7.135, 233.791, 162]
+    region:   n_102
     level:    [72, 74]
   16998504:
     template: Heraldic_Imp
-    at:       [-11.924, -3.873, 227.791, 146]
+    region:   n_102
     level:    [72, 74]
   16998505:
     template: Heraldic_Imp
-    at:       [-23.571, -6.300, 228.986, 101]
+    region:   n_102
     level:    [72, 74]
   16998506:
     template: Ashakku
-    at:       [-53.405, -8.107, 245.580, 73]
+    region:   n_106
     level:    [73, 74]
   16998507:
     template: Ashakku
-    at:       [-47.995, -7.947, 252.143, 6]
+    region:   n_106
     level:    [73, 74]
   16998508:
     template: Ashakku
-    at:       [-63.058, -4.004, 244.557, 55]
+    region:   n_106
     level:    [73, 74]
   16998509:
     template: Ashakku
-    at:       [-81.177, -5.650, 217.825, 160]
+    region:   n_109
     level:    [73, 74]
   16998510:
     template: Ashakku
-    at:       [-96.631, -3.443, 225.858, 138]
+    region:   n_109
     level:    [73, 74]
   16998511:
     template: Ashakku
-    at:       [-90.482, -4.307, 223.649, 210]
+    region:   n_109
     level:    [73, 74]
   16998512:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [-85.393, -4.411, 222.232, 18]
+    region:   n_109
     level:    [73, 74]
   16998513:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [-98.650, -5.649, 203.361, 132]
+    region:   c_113
     level:    [73, 74]
   16998514:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [-100.711, -4.962, 197.865, 194]
+    region:   c_113
     level:    [73, 74]
   16998515:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [-136.164, -4.278, 151.517, 247]
+    region:   c_115
     level:    [73, 74]
   16998516:
     template: Qutrub_drk
     script:   Qutrub
-    at:       [-98.753, -5.782, 160.862, 226]
+    region:   c_115
     level:    [73, 74]
   16998517:
     template: Qutrub_blm
     script:   Qutrub
-    at:       [-113.749, -8.164, 134.420, 30]
+    region:   c_115
     level:    [73, 74]
   16998518:
     template: Lamia_Dancer
-    at:       [-120.267, -4.951, 143.092, 254]
+    region:   c_115
     level:    [73, 75]
   16998519:
     template: Lamias_Elemental
-    at:       [1.000, 1.000, 1.000, 135]
+    region:   c_115
     level:    [68, 70]
   16998520:
     template: Lamie_No7
-    at:       [-146.615, -3.912, 186.245, 125]
+    region:   region_189
     level:    [80, 82]
   16998521:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [-21.870, -7.000, 301.769, 49]
+    region:   n_121
     level:    [72, 73]
   16998522:
     template: Merrow_Chantress
-    at:       [-15.137, -9.758, 315.406, 121]
+    region:   n_122
     level:    [73, 75]
   16998523:
     template: Nipper
-    at:       [376.685, -4.415, 236.571, 225]
+    region:   ne_123
     level:    [72, 73]
   16998524:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [380.910, -6.613, 241.675, 99]
+    region:   ne_124
     level:    [72, 73]
   16998525:
     template: Nipper
-    at:       [408.809, -4.590, 265.793, 192]
+    region:   ne_125
     level:    [72, 73]
   16998526:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [409.909, -6.071, 259.603, 206]
+    region:   ne_125
     level:    [72, 73]
   16998527:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [482.196, -4.575, 262.881, 253]
+    region:   ne_127
     level:    [72, 73]
   16998528:
     template: Merrow_Shadowdancer
-    at:       [483.883, -6.482, 258.280, 57]
+    region:   ne_127
     level:    [73, 75]
   16998529:
     template: Merrow_Icedancer
-    at:       [548.469, -4.559, 308.033, 20]
+    region:   ne_129
     level:    [73, 74]
   16998530:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [531.599, -4.572, 305.537, 120]
+    region:   ne_129
     level:    [72, 73]
   16998531:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [577.710, -5.820, 324.168, 137]
+    region:   ne_131
     level:    [72, 73]
   16998532:
     template: Merrow_Shadowdancer
-    at:       [23.431, -4.753, 303.952, 9]
+    region:   n_132
     level:    [73, 75]
   16998533:
     template: Merrow_Kabukidancer_2621
     script:   Merrow_Kabukidancer
-    at:       [48.413, -3.709, 311.738, 149]
+    region:   n_133
     level:    [73, 75]
   16998534:
     template: Reserve_Draugar_AR_drg
     script:   Reserve_Draugar
-    at:       [54.902, -2.338, 295.513, 154]
+    region:   n_133
     level:    [72, 73]
   16998535:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 139]
+    region:   n_133
     level:    [67, 75]
   16998536:
     template: Merrow_Kabukidancer_2621
     script:   Merrow_Kabukidancer
-    at:       [-14.500, -3.220, 341.368, 210]
+    region:   n_136
     level:    [73, 75]
   16998537:
     template: Merrow_Icedancer
-    at:       [-64.128, -4.176, 333.745, 39]
+    region:   n_137
     level:    [73, 75]
   16998538:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [-92.686, -4.072, 347.132, 43]
+    region:   n_138
     level:    [72, 73]
   16998539:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [-90.080, -2.761, 363.521, 178]
+    region:   n_138
     level:    [72, 73]
   16998540:
     template: Reserve_Draugar_AR_drg
     script:   Reserve_Draugar
-    at:       [-91.336, -3.749, 339.428, 62]
+    region:   n_138
     level:    [72, 73]
   16998541:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 201]
+    region:   n_138
     level:    [67, 75]
   16998542:
     template: Merrow_Icedancer
-    at:       [-90.231, -3.447, 364.203, 135]
+    region:   n_138
     level:    [73, 75]
   16998543:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [-113.091, -7.299, 342.845, 133]
+    region:   n_143
     level:    [72, 73]
   16998544:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [-142.164, -3.234, 341.893, 60]
+    region:   n_143
     level:    [72, 73]
   16998545:
     template: Reserve_Draugar_AR_thf
     script:   Reserve_Draugar
-    at:       [-133.965, -5.502, 342.290, 161]
+    region:   n_143
     level:    [72, 73]
   16998546:
     template: Reserve_Draugar_AR_drk
     script:   Reserve_Draugar
-    at:       [-87.614, -2.603, 364.611, 13]
+    region:   n_146
     level:    [72, 73]
   16998547:
     template: Jnun_AR
     script:   Jnun
-    at:       [-135.643, -5.825, 376.026, 43]
+    region:   n_147
     level:    [77, 78]
   16998548:
     template: Merrow_Chantress
-    at:       [-156.152, -9.749, 409.965, 177]
+    region:   n_148
     level:    [73, 75]
   16998549:
     template: Phasma
-    at:       [-153.688, -9.750, 410.645, 164]
+    region:   n_148
     level:    [73, 74]
   16998550:
     template: Bhoot
-    at:       [-157.674, -5.093, 364.663, 29]
+    region:   n_148
     level:    [80, 82]
   16998551:
     template: Phasma
-    at:       [-130.481, -10.000, 434.866, 167]
+    region:   n_151
     level:    [73, 74]
   16998552:
     template: Merrow_Shadowdancer
-    at:       [-101.676, -4.227, 425.811, 216]
+    region:   n_152
     level:    [73, 75]
   16998553:
     template: Reserve_Draugar_AR_blm
     script:   Reserve_Draugar
-    at:       [-106.043, -3.982, 419.083, 221]
+    region:   n_152
     level:    [72, 73]
   16998554:
     template: Jnun_AR
     script:   Jnun
-    at:       [-69.108, -2.019, 458.504, 146]
+    region:   n_154
     level:    [77, 78]
   16998555:
     template: Ashakku
-    at:       [-33.804, -4.253, 496.581, 24]
+    region:   n_155
     level:    [73, 74]
   16998556:
     template: Ashakku
-    at:       [-67.688, -4.910, 498.917, 166]
+    region:   n_156
     level:    [73, 74]
   16998557:
     template: Ashakku
-    at:       [-102.675, -5.109, 507.220, 64]
+    region:   n_157
     level:    [73, 74]
   16998558:
     template: Ashakku
-    at:       [-102.165, -4.006, 497.080, 133]
+    region:   n_157
     level:    [73, 74]
   16998559:
     template: Phasma
-    at:       [-99.762, -6.488, 511.802, 81]
+    region:   n_157
     level:    [73, 74]
   16998560:
     template: Merrow_No5
-    at:       [-84.380, -4.343, 497.333, 12]
+    region:   n_160
     level:    [80, 82]
   16998561:
     template: Heraldic_Imp
-    at:       [-27.055, -8.312, 544.488, 185]
+    region:   n_161
     level:    [72, 74]
   16998562:
     template: Heraldic_Imp
-    at:       [-36.039, -8.388, 539.103, 3]
+    region:   n_161
     level:    [72, 74]
   16998563:
     template: Heraldic_Imp
-    at:       [-18.348, -8.012, 544.107, 8]
+    region:   n_161
     level:    [72, 74]
   16998564:
     template: Phasma
-    at:       [-225.228, -3.950, 120.541, 37]
+    region:   region_190
     level:    [73, 74]
   16998565:
     template: Jnun_AR
     script:   Jnun
-    at:       [-272.921, -3.784, 153.575, 160]
+    region:   w_165
     level:    [77, 78]
   16998566:
     template: Jnun_AR
     script:   Jnun
-    at:       [-264.514, -2.322, 133.911, 32]
+    region:   w_165
     level:    [77, 78]
   16998567:
     template: Fallen_Volunteer
-    at:       [-299.996, -5.226, 82.993, 6]
+    region:   w_167
     level:    [72, 74]
   16998568:
     template: Fallen_Imperial_Wizard
-    at:       [-298.882, -4.910, 81.100, 199]
+    region:   w_167
     level:    [72, 74]
   16998569:
     template: Fallen_Imperial_Trooper
-    at:       [-303.000, -6.973, 81.438, 70]
+    region:   w_167
     level:    [72, 74]
   16998570:
     template: Merrow_Chantress
-    at:       [-299.718, -5.885, 41.159, 219]
+    region:   w_170
     level:    [73, 75]
   16998571:
     template: Fallen_Imperial_Trooper
-    at:       [-293.815, -4.964, 58.560, 181]
+    region:   w_170
     level:    [72, 74]
   16998572:
     template: Fallen_Volunteer
-    at:       [-297.212, -7.838, 52.944, 88]
+    region:   w_170
     level:    [72, 74]
   16998573:
     template: Fallen_Imperial_Wizard
-    at:       [-298.459, -8.152, 48.920, 200]
+    region:   w_170
     level:    [72, 74]
   16998574:
     template: Merrow_Chantress
-    at:       [-339.724, -15.920, -19.294, 168]
+    region:   w_174
     level:    [73, 75]
   16998575:
     template: Fallen_Imperial_Trooper
-    at:       [-343.657, -15.960, -12.920, 110]
+    region:   w_174
     level:    [72, 74]
   16998576:
     template: Fallen_Imperial_Trooper
-    at:       [-336.092, -15.543, 13.891, 35]
+    region:   w_176
     level:    [72, 74]
   16998577:
     template: Fallen_Volunteer
-    at:       [-338.811, -15.606, 13.444]
+    region:   w_176
     level:    [72, 74]
   16998578:
     template: Jnun_AR
     script:   Jnun
-    at:       [-369.107, -5.278, 88.784, 130]
+    region:   w_178
     level:    [77, 78]
   16998579:
     template: Merrow_Chantress
-    at:       [-415.250, -7.011, 105.964, 206]
+    region:   w_179
     level:    [73, 75]
   16998580:
     template: Fallen_Volunteer
-    at:       [-412.762, -8.312, 111.995, 199]
+    region:   w_179
     level:    [72, 74]
   16998581:
     template: Fallen_Imperial_Wizard
-    at:       [-421.265, -6.882, 103.021, 92]
+    region:   region_194
     level:    [72, 74]
   16998582:
     template: Merrow_Kabukidancer_2621
     script:   Merrow_Kabukidancer
-    at:       [-431.939, -7.597, 16.595, 91]
+    region:   w_182
     level:    [73, 75]
   16998583:
     template: Fallen_Imperial_Wizard
-    at:       [-422.703, -4.545, 36.309, 216]
+    region:   w_182
     level:    [72, 74]
   16998584:
     template: Fallen_Imperial_Trooper
-    at:       [-417.099, -6.852, 39.106, 235]
+    region:   w_182
     level:    [72, 74]
   16998585:
     template: Merrow_Shadowdancer
-    at:       [-430.966, -4.858, 22.117, 16]
+    region:   w_185
     level:    [73, 75]
   16998586:
     template: Fallen_Imperial_Trooper
-    at:       [-455.548, -7.365, 15.447, 207]
+    region:   w_185
     level:    [72, 74]
   16998587:
     template: Fallen_Imperial_Wizard
-    at:       [-435.503, -7.612, 17.074, 31]
+    region:   w_185
     level:    [72, 74]
   16998588:
     template: Fallen_Volunteer
-    at:       [-480.056, -6.943, -20.272, 175]
+    region:   w_188
     level:    [72, 74]
   16998589:
     template: Fallen_Imperial_Wizard
-    at:       [-478.474, -8.294, -24.249, 127]
+    region:   w_188
     level:    [72, 74]
   16998590:
     template: Merrow_Shadowdancer
-    at:       [-568.947, -4.478, 93.906, 66]
+    region:   w_190
     level:    [73, 75]
   16998591:
     template: Fallen_Imperial_Wizard
-    at:       [-565.185, -8.001, 103.779, 170]
+    region:   w_190
     level:    [72, 74]
   16998592:
     template: Fallen_Imperial_Trooper
-    at:       [-583.868, -7.466, 73.816, 78]
+    region:   w_190
     level:    [72, 74]
   16998593:
     template: Fallen_Imperial_Trooper
-    at:       [-577.125, -4.282, 74.963, 244]
+    region:   w_190
     level:    [72, 74]
   16998594:
     template: Jnun_AR
     script:   Jnun
-    at:       [-488.007, -5.158, 85.171, 35]
+    region:   w_194
     level:    [77, 78]
   16998595:
     template: Merrow_Icedancer
-    at:       [-508.004, -4.535, 134.384, 204]
+    region:   w_195
     level:    [73, 75]
   16998596:
     template: Fallen_Volunteer
-    at:       [-505.940, -6.618, 139.016, 195]
+    region:   w_195
     level:    [72, 74]
   16998597:
     template: Fallen_Imperial_Wizard
-    at:       [-508.123, -4.281, 134.828, 128]
+    region:   w_195
     level:    [72, 74]
   16998598:
     template: Fallen_Imperial_Trooper
-    at:       [-507.661, -3.993, 133.939, 151]
+    region:   w_195
     level:    [72, 74]
   16998599:
     template: Merrow_Chantress
-    at:       [-554.195, -15.943, 178.926, 166]
+    region:   w_199
     level:    [73, 75]
   16998600:
     template: Merrow_Chantress
-    at:       [-579.072, -15.855, 205.624, 185]
+    region:   region_186
     level:    [73, 75]
   16998601:
     template: Fallen_Volunteer
-    at:       [-587.679, -15.923, 225.450, 149]
+    region:   w_201
     level:    [72, 74]
   16998602:
     template: Naraka_Bat
-    at:       [259.400, -5.352, 86.570, 27]
+    region:   e_202
     level:    [88, 89]
   16998603:
     template: Naraka_Bat
-    at:       [256.010, -6.893, 81.694, 97]
+    region:   e_202
     level:    [88, 89]
   16998604:
     template: Naraka_Bat
-    at:       [254.670, -7.367, 76.819, 177]
+    region:   e_202
     level:    [88, 89]
   16998605:
     template: Naraka_Bat
-    at:       [253.530, -7.080, 68.178, 251]
+    region:   e_202
     level:    [88, 89]
   16998606:
     template: Naraka_Bat
-    at:       [248.510, -8.173, 135.906, 113]
+    region:   e_206
     level:    [88, 89]
   16998607:
     template: Naraka_Bat
-    at:       [268.820, -7.813, 148.751, 55]
+    region:   e_206
     level:    [88, 89]
   16998608:
     template: Naraka_Bat
-    at:       [258.160, -8.515, 109.649, 182]
+    region:   e_206
     level:    [88, 89]
   16998609:
     template: Naraka_Bat
-    at:       [265.880, -6.796, 180.376, 72]
+    region:   e_209
     level:    [88, 89]
   16998610:
     template: Naraka_Bat
-    at:       [266.520, -4.155, 189.352, 174]
+    region:   e_209
     level:    [88, 89]
   16998611:
     template: Naraka_Bat
-    at:       [260.700, -5.077, 208.233, 246]
+    region:   e_211
     level:    [88, 89]
   16998612:
     template: Naraka_Bat
-    at:       [256.900, -6.953, 210.572, 42]
+    region:   e_211
     level:    [88, 89]
   16998613:
     template: Naraka_Bat
-    at:       [219.320, -7.453, 223.070, 17]
+    region:   ne_213
     level:    [88, 89]
   16998614:
     template: Naraka_Bat
-    at:       [233.740, -7.262, 214.440, 129]
+    region:   ne_213
     level:    [88, 89]
   16998615:
     template: Naraka_Bat
-    at:       [219.400, -3.427, 146.158, 192]
+    region:   e_215
     level:    [88, 89]
   16998616:
     template: Naraka_Bat
-    at:       [221.770, -2.576, 171.675, 75]
+    region:   e_215
     level:    [88, 89]
   16998617:
     template: Naraka_Bat
-    at:       [222.790, -4.193, 173.998, 218]
+    region:   e_215
     level:    [88, 89]
   16998618:
     template: Nirgali
-    at:       [-592.800, -9.690, -73.448, 90]
+    region:   w_218
     level:    [87, 89]
   16998619:
     template: Nirgali
-    at:       [-593.000, -9.689, -72.703, 208]
+    region:   w_218
     level:    [87, 89]
   16998620:
     template: Nirgali
-    at:       [-618.000, -9.850, -69.203, 187]
+    region:   w_218
     level:    [87, 89]
   16998621:
     template: Nirgali
-    at:       [-586.100, -7.965, -20.027, 115]
+    region:   w_221
     level:    [87, 89]
   16998622:
     template: Nirgali
-    at:       [-586.700, -8.008, -20.957, 176]
+    region:   w_221
     level:    [87, 89]
   16998623:
     template: Nirgali
-    at:       [-593.100, -7.754, -21.725, 192]
+    region:   w_221
     level:    [87, 89]
   16998624:
     template: Nirgali
-    at:       [-534.700, -4.765, 5.196, 209]
+    region:   w_224
     level:    [87, 89]
   16998625:
     template: Nirgali
-    at:       [-528.500, -5.287, -14.604, 67]
+    region:   w_224
     level:    [87, 89]
   16998626:
     template: Nirgali
-    at:       [-522.500, -5.317, -18.416, 45]
+    region:   w_224
     level:    [87, 89]
   16998627:
     template: Nirgali
-    at:       [-543.500, -6.708, 34.079, 138]
+    region:   w_227
     level:    [87, 89]
   16998628:
     template: Nirgali
-    at:       [-530.600, -4.320, 20.863, 214]
+    region:   w_227
     level:    [87, 89]
   16998629:
     template: Nirgali
-    at:       [-536.800, -4.366, 55.866, 28]
+    region:   w_227
     level:    [87, 89]
   16998630:
     template: Nirgali
-    at:       [-576.500, -6.699, 66.375, 19]
+    region:   w_230
     level:    [87, 89]
   16998631:
     template: Nirgali
-    at:       [-566.700, -3.727, 67.166, 162]
+    region:   w_230
     level:    [87, 89]
   16998632:
     template: Nirgali
-    at:       [-581.400, -5.907, 73.563, 11]
+    region:   w_230
     level:    [87, 89]
   16998633:
     template: Nirgali
-    at:       [-566.900, -4.080, 96.820, 103]
+    region:   w_233
     level:    [87, 89]
   16998634:
     template: Nirgali
-    at:       [-564.100, -4.468, 98.971, 48]
+    region:   w_233
     level:    [87, 89]
   16998635:
     template: Nirgali
-    at:       [-574.400, -7.111, 104.843, 141]
+    region:   w_233
     level:    [87, 89]
   16998636:
     template: Lamia_Bellydancer
-    at:       [-14.836, -2.132, 426.619, 132]
+    region:   n_236
     level:    [81, 83]
   16998637:
     template: Lamias_Elemental
-    at:       [-10.923, -1.673, 421.162, 6]
+    region:   n_236
     level:    [76, 78]
   16998638:
     template: Draugar_Servant_blm
     script:   Draugar_Servant
-    at:       [-23.721, -2.099, 429.445, 203]
+    region:   n_236
     level:    [79, 81]
   16998639:
     template: Soulflayer
-    at:       [17.253, -6.861, 469.799, 104]
+    region:   n_239
     level:    [82, 83]
   16998640:
     template: Soulflayer
-    at:       [18.424, -6.575, 516.575, 248]
+    region:   n_240
     level:    [82, 83]
   16998641:
     template: Soulflayer
-    at:       [46.629, -4.518, 537.435, 24]
+    region:   n_241
     level:    [82, 83]
   16998642:
     template: Soulflayer
-    at:       [99.388, -7.961, 494.575, 59]
+    region:   n_242
     level:    [82, 83]
   16998643:
     template: Soulflayer
-    at:       [96.645, -7.979, 495.247, 114]
+    region:   n_242
     level:    [82, 83]
   16998644:
     template: Soulflayer
-    at:       [56.308, -5.215, 494.926, 18]
+    region:   n_244
     level:    [82, 83]
   16998645:
     template: Lahama
-    at:       [51.454, -3.692, 416.163, 52]
+    region:   n_245
     level:    [79, 80]
   16998646:
     template: Draugar_Servant_blm
     script:   Draugar_Servant
-    at:       [55.915, -4.598, 428.031, 217]
+    region:   n_245
     level:    [79, 81]
   16998647:
     template: Lahama
-    at:       [65.240, -7.741, 394.962, 196]
+    region:   n_247
     level:    [79, 80]
   16998648:
     template: Draugar_Servant_drg
     script:   Draugar_Servant
-    at:       [54.808, -5.067, 391.589, 80]
+    region:   n_247
     level:    [79, 81]
   16998649:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 79]
+    region:   n_247
     level:    [67, 75]
   16998650:
     template: Lahama
-    at:       [99.805, -4.487, 417.637, 166]
+    region:   n_250
     level:    [79, 80]
   16998651:
     template: Lahama
-    at:       [106.160, -3.832, 427.454, 57]
+    region:   n_250
     level:    [79, 80]
   16998652:
     template: Lamia_Deathdancer
-    at:       [139.117, -5.489, 463.415, 137]
+    region:   n_252
     level:    [81, 83]
   16998653:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [136.234, -6.831, 468.779, 94]
+    region:   n_252
     level:    [79, 81]
   16998654:
     template: Draugar_Servant_thf
     script:   Draugar_Servant
-    at:       [134.976, -7.049, 464.915, 121]
+    region:   n_252
     level:    [79, 81]
   16998655:
     template: Bloody_Bones
-    at:       [136.000, -6.000, 476.000, 29]
+    region:   n_252
     level:    [83, 83]
   16998656:
     template: Bhoot
-    at:       [107.258, -2.060, 258.006, 170]
+    region:   n_256
     level:    [80, 82]
   16998657:
     template: Phasma
-    at:       [109.564, -4.015, 226.246, 255]
+    region:   n_257
     level:    [73, 74]
   16998658:
     template: Phasma
-    at:       [148.004, -7.453, 254.834, 77]
+    region:   n_258
     level:    [73, 74]
   16998659:
     template: Draugar_Servant_drg
     script:   Draugar_Servant
-    at:       [150.777, -6.003, 259.533, 65]
+    region:   n_259
     level:    [79, 81]
   16998660:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 83]
+    region:   n_259
     level:    [67, 75]
   16998661:
     template: Merrow_Songstress
-    at:       [185.787, -7.755, 288.889, 158]
+    region:   n_261
     level:    [81, 83]
   16998662:
     template: Draugar_Servant_thf
     script:   Draugar_Servant
-    at:       [184.278, -7.011, 295.976, 194]
+    region:   n_261
     level:    [79, 81]
   16998663:
     template: Merrow_Bladedancer
-    at:       [203.712, -11.008, 280.946, 25]
+    region:   region_191
     level:    [81, 83]
   16998664:
     template: Ice_Elemental
-    at:       [279.450, -5.931, 341.207, 221]
+    region:   ne_273
     level:    [80, 80]
   16998665:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [228.061, -2.306, 302.545, 59]
+    region:   ne_265
     level:    [79, 81]
   16998666:
     template: Lahama
-    at:       [229.657, -8.053, 350.198, 24]
+    region:   ne_266
     level:    [79, 80]
   16998667:
     template: Nipper
-    at:       [231.114, -7.497, 345.863, 41]
+    region:   ne_266
     level:    [72, 73]
   16998668:
     template: Nipper
-    at:       [224.796, -8.045, 355.511, 45]
+    region:   ne_266
     level:    [72, 73]
   16998669:
     template: Nostokulshedra
-    at:       [260.230, -7.544, 375.356, 253]
+    region:   ne_269
     level:    [88, 89]
   16998670:
     template: Nostokulshedra
-    at:       [259.610, -4.188, 384.230, 239]
+    region:   ne_269
     level:    [88, 89]
   16998671:
     template: Nostokulshedra
-    at:       [251.490, -7.921, 370.986, 9]
+    region:   ne_269
     level:    [88, 89]
   16998672:
     template: Nostokulshedra
-    at:       [282.500, -6.125, 379.774, 232]
+    region:   ne_269
     level:    [88, 89]
   16998673:
     template: Nipper
-    at:       [267.470, -3.796, 387.522, 102]
+    region:   ne_273
     level:    [72, 73]
   16998674:
     template: Nipper
-    at:       [265.520, -3.549, 389.204, 177]
+    region:   ne_273
     level:    [72, 73]
   16998675:
     template: Soulflayer
-    at:       [253.587, -6.575, 377.290, 99]
+    region:   ne_273
     level:    [82, 83]
   16998676:
     template: Nostokulshedra
-    at:       [344.000, -3.831, 302.444, 201]
+    region:   ne_276
     level:    [88, 89]
   16998677:
     template: Nostokulshedra
-    at:       [333.650, -7.841, 316.497, 162]
+    region:   ne_276
     level:    [88, 89]
   16998678:
     template: Nostokulshedra
-    at:       [341.380, -5.285, 323.123, 114]
+    region:   ne_276
     level:    [88, 89]
   16998679:
     template: Nostokulshedra
-    at:       [337.860, -5.250, 298.795, 68]
+    region:   ne_276
     level:    [88, 89]
   16998680:
     template: Nostokulshedra
-    at:       [338.240, -6.326, 354.984, 96]
+    region:   ne_280
     level:    [88, 89]
   16998681:
     template: Nostokulshedra
-    at:       [342.890, -4.599, 364.282, 62]
+    region:   ne_280
     level:    [88, 89]
   16998682:
     template: Nostokulshedra
-    at:       [350.510, -4.455, 339.040, 20]
+    region:   ne_280
     level:    [88, 89]
   16998683:
     template: Nostokulshedra
-    at:       [347.470, -4.271, 348.197, 41]
+    region:   ne_280
     level:    [88, 89]
   16998684:
     template: Merrow_Wavedancer
-    at:       [399.311, -9.675, 409.513, 30]
+    region:   region_177
     level:    [81, 83]
   16998685:
     template: Merrow_Songstress
-    at:       [388.981, -6.999, 412.720, 124]
+    region:   ne_285
     level:    [81, 83]
   16998686:
     template: Draugar_Servant_thf
     script:   Draugar_Servant
-    at:       [390.568, -7.000, 415.169, 190]
+    region:   ne_285
     level:    [79, 81]
   16998687:
     template: Jnun_AR
     script:   Jnun
-    at:       [384.438, -5.386, 483.383, 180]
+    region:   region_178
     level:    [79, 80]
   16998688:
     template: Jnun_AR
     script:   Jnun
-    at:       [457.608, -4.638, 483.610, 124]
+    region:   ne_288
     level:    [79, 80]
   16998689:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [435.828, -6.650, 498.971, 136]
+    region:   ne_288
     level:    [80, 82]
   16998690:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [453.882, -4.398, 488.655, 116]
+    region:   ne_288
     level:    [80, 82]
   16998691:
     template: Lamia_Necromancer_AR
     script:   Lamia_Necromancer
-    at:       [453.156, -4.413, 454.844, 15]
+    region:   ne_291
     level:    [81, 83]
   16998692:
     template: Lamia_Idolater_blm
     script:   Lamia_Idolater
-    at:       [456.929, -4.437, 435.391, 68]
+    region:   ne_291
     level:    [80, 82]
   16998693:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [460.929, -6.256, 436.833, 46]
+    region:   ne_291
     level:    [80, 82]
   16998694:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [471.316, -4.598, 373.679, 38]
+    region:   ne_294
     level:    [80, 82]
   16998695:
     template: Lamia_Idolater_blm
     script:   Lamia_Idolater
-    at:       [461.189, -5.364, 380.427, 79]
+    region:   ne_294
     level:    [80, 82]
   16998696:
     template: Euryale
-    at:       [477.970, -4.256, 378.003, 126]
+    region:   ne_294
     level:    [87, 87]
   16998697:
     template: Lamia_Toxophilite_AR
     script:   Lamia_Toxophilite
-    at:       [478.243, -4.440, 376.926, 106]
+    region:   ne_297
     level:    [81, 83]
   16998698:
     template: Lamia_Idolater_blm
     script:   Lamia_Idolater
-    at:       [478.383, -4.204, 376.524, 131]
+    region:   ne_297
     level:    [80, 82]
   16998699:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [509.667, -4.119, 374.475, 251]
+    region:   ne_297
     level:    [80, 82]
   16998700:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [540.471, -7.718, 419.559, 234]
+    region:   ne_300
     level:    [80, 82]
   16998701:
     template: Lamia_Idolater_blm
     script:   Lamia_Idolater
-    at:       [540.914, -8.192, 414.372, 14]
+    region:   ne_300
     level:    [80, 82]
   16998702:
     template: Lamia_Idolater_blm
     script:   Lamia_Idolater
-    at:       [590.554, -8.332, 419.471, 252]
+    region:   ne_302
     level:    [80, 82]
   16998703:
     template: Lamia_Toxophilite_AR
     script:   Lamia_Toxophilite
-    at:       [612.876, -7.516, 420.208, 132]
+    region:   ne_303
     level:    [81, 83]
   16998704:
     template: Seneschal_Imp_AR
     script:   Seneschal_Imp
-    at:       [500.061, -7.934, 453.926, 21]
+    region:   ne_304
     level:    [77, 78]
   16998705:
     template: Seneschal_Imp_AR
     script:   Seneschal_Imp
-    at:       [500.651, -8.034, 460.968, 166]
+    region:   ne_304
     level:    [77, 78]
   16998706:
     template: Phasma
-    at:       [542.821, -7.383, 500.978, 29]
+    region:   ne_306
     level:    [73, 74]
   16998707:
     template: Phasma
-    at:       [542.961, -7.376, 499.831, 220]
+    region:   ne_306
     level:    [73, 74]
   16998708:
     template: Bhoot
+    region:   ne_306
     level:    [80, 82]
   16998709:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [552.397, -7.933, 461.480, 127]
+    region:   region_179
     level:    [80, 82]
   16998710:
     template: Merrow_Typhoondancer_Large
     script:   Merrow_Typhoondancer
-    at:       [-472.506, -7.281, 203.831, 179]
+    region:   region_195
     level:    [81, 83]
   16998711:
     template: Merrow_Songstress
-    at:       [-471.002, -10.034, 223.183, 52]
+    region:   w_311
     level:    [81, 83]
   16998712:
     template: Draugar_Servant_thf
     script:   Draugar_Servant
-    at:       [-468.697, -7.000, 213.653, 59]
+    region:   w_311
     level:    [79, 81]
   16998713:
     template: Jnun_AR
     script:   Jnun
-    at:       [-430.928, -4.511, 224.673, 172]
+    region:   nw_313
     level:    [79, 80]
   16998714:
     template: Jnun_AR
     script:   Jnun
-    at:       [-388.065, -3.500, 174.204, 30]
+    region:   nw_313
     level:    [79, 80]
   16998715:
     template: Jnun_AR
     script:   Jnun
-    at:       [-395.839, -3.926, 176.414, 7]
+    region:   nw_315
     level:    [79, 80]
   16998716:
     template: Jnun_AR
     script:   Jnun
-    at:       [-362.737, -4.510, 218.437, 91]
+    region:   nw_316
     level:    [79, 80]
   16998717:
     template: Seneschal_Imp_AR
     script:   Seneschal_Imp
-    at:       [-470.420, -8.127, 345.022, 116]
+    region:   nw_317
     level:    [77, 78]
   16998718:
     template: Seneschal_Imp_AR
     script:   Seneschal_Imp
-    at:       [-461.562, -7.781, 338.614, 219]
+    region:   nw_317
     level:    [77, 78]
   16998719:
     template: Emperor_Apkallu
-    at:       [-494.744, -7.879, 277.639, 203]
+    region:   nw_319
     level:    [81, 83]
   16998720:
     template: Emperor_Apkallu
-    at:       [-504.467, -4.355, 287.005, 141]
+    region:   nw_319
     level:    [81, 83]
   16998721:
     template: Emperor_Apkallu
-    at:       [-544.549, -5.514, 283.550, 101]
+    region:   nw_321
     level:    [81, 83]
   16998722:
     template: Emperor_Apkallu
-    at:       [-522.960, -4.773, 296.819, 94]
+    region:   nw_321
     level:    [81, 83]
   16998723:
     template: Emperor_Apkallu
-    at:       [-560.360, -6.503, 300.053, 228]
+    region:   nw_323
     level:    [81, 83]
   16998724:
     template: Emperor_Apkallu
-    at:       [-563.219, -5.425, 298.768, 47]
+    region:   nw_323
     level:    [81, 83]
   16998725:
     template: Emperor_Apkallu
-    at:       [-552.426, -4.974, 295.491, 168]
+    region:   nw_323
     level:    [81, 83]
   16998726:
     template: Emperor_Apkallu
-    at:       [-615.801, -4.150, 282.712, 196]
+    region:   nw_326
     level:    [81, 83]
   16998727:
     template: Emperor_Apkallu
-    at:       [-621.930, -7.316, 274.629, 93]
+    region:   nw_326
     level:    [81, 83]
   16998728:
     template: Emperor_Apkallu
-    at:       [-548.843, -5.359, 279.953, 194]
+    region:   region_196
     level:    [81, 83]
   16998729:
     template: Emperor_Apkallu
-    at:       [-547.344, -5.553, 283.658, 233]
+    region:   region_196
     level:    [81, 83]
   16998730:
     template: Emperor_Apkallu
-    at:       [-535.718, -3.905, 261.840, 174]
+    region:   nw_330
     level:    [81, 83]
   16998731:
     template: Emperor_Apkallu
-    at:       [-538.165, -5.608, 232.292, 35]
+    region:   nw_330
     level:    [81, 83]
   16998732:
     template: Emperor_Apkallu
-    at:       [-530.804, -3.698, 231.523, 164]
+    region:   nw_330
     level:    [81, 83]
   16998733:
     template: Nix_Songstress
-    at:       [-286.216, -10.000, 282.547, 31]
+    region:   nw_333
     level:    [81, 83]
   16998734:
     template: Nix_Songstress
-    at:       [-284.578, -10.000, 283.936, 83]
+    region:   nw_333
     level:    [81, 83]
   16998735:
     template: Merrow_Typhoondancer_Large
     script:   Merrow_Typhoondancer
-    at:       [-295.847, -7.008, 301.477, 167]
+    region:   nw_335
     level:    [81, 83]
   16998736:
     template: Merrow_Bladedancer
-    at:       [-343.062, -2.162, 338.935, 30]
+    region:   nw_336
     level:    [81, 83]
   16998737:
     template: Merrow_Wavedancer
-    at:       [-367.927, -6.069, 379.936, 161]
+    region:   nw_337
     level:    [81, 83]
   16998738:
     template: Merrow_Typhoondancer_Large
     script:   Merrow_Typhoondancer
-    at:       [-367.189, -4.933, 373.970, 137]
+    region:   nw_337
     level:    [81, 83]
   16998739:
     template: Merrow_Wavedancer
-    at:       [-334.357, -4.029, 392.697, 1]
+    region:   nw_339
     level:    [81, 83]
   16998740:
     template: Ice_Elemental
-    at:       [-255.400, -2.105, 383.062, 199]
+    region:   nw_341
     level:    [80, 80]
   16998741:
     template: Dark_Elemental
-    at:       [-264.843, -2.823, 385.519, 29]
+    region:   nw_341
     level:    [80, 80]
   16998742:
     template: Lamie_No9
-    at:       [-228.367, -4.690, 342.671, 55]
+    region:   region_170
     level:    [80, 85]
   16998743:
     template: Lamias_Avatar
@@ -4559,411 +4560,411 @@ spawns:
     level:    [72, 76]
   16998744:
     template: Dweomershell
-    at:       [-421.400, -5.710, 234.921, 68]
+    region:   nw_344
     level:    [88, 89]
   16998745:
     template: Dweomershell
-    at:       [-434.300, -6.197, 259.355, 190]
+    region:   nw_344
     level:    [89, 90]
   16998746:
     template: Dweomershell
-    at:       [-420.600, -6.943, 253.580, 144]
+    region:   nw_344
     level:    [88, 90]
   16998747:
     template: Dweomershell
-    at:       [-429.200, -4.664, 217.369, 88]
+    region:   nw_344
     level:    [88, 90]
   16998748:
     template: Dweomershell
-    at:       [-385.900, -3.502, 171.891, 19]
+    region:   w_348
     level:    [88, 90]
   16998749:
     template: Dweomershell
-    at:       [-396.200, -6.785, 180.169, 150]
+    region:   w_348
     level:    [88, 90]
   16998750:
     template: Dweomershell
-    at:       [-415.100, -4.815, 177.412, 23]
+    region:   w_348
     level:    [89, 90]
   16998751:
     template: Dweomershell
-    at:       [-414.900, -5.030, 179.059, 122]
+    region:   w_348
     level:    [88, 90]
   16998752:
     template: Dweomershell
-    at:       [-327.200, -5.459, 220.746, 134]
+    region:   nw_352
     level:    [88, 90]
   16998753:
     template: Dweomershell
-    at:       [-342.100, -4.210, 214.180, 126]
+    region:   nw_352
     level:    [88, 90]
   16998754:
     template: Dweomershell
-    at:       [-377.200, -6.413, 210.962, 205]
+    region:   nw_352
     level:    [88, 89]
   16998755:
     template: Dweomershell
-    at:       [-379.600, -7.119, 214.753, 33]
+    region:   nw_352
     level:    [88, 90]
   16998756:
     template: Dweomershell
-    at:       [-280.400, -4.974, 162.382, 230]
+    region:   region_197
     level:    [88, 89]
   16998757:
     template: Dweomershell
-    at:       [-303.700, -5.381, 198.623, 229]
+    region:   region_197
     level:    [88, 89]
   16998758:
     template: Dweomershell
-    at:       [-302.800, -3.700, 173.001, 137]
+    region:   region_197
     level:    [88, 89]
   16998759:
     template: Dweomershell
-    at:       [-289.000, -5.242, 166.268, 163]
+    region:   region_197
     level:    [88, 90]
   16998760:
     template: Dweomershell
-    at:       [-314.400, -7.506, 227.464, 248]
+    region:   nw_360
     level:    [88, 90]
   16998761:
     template: Dweomershell
-    at:       [-288.800, -2.832, 239.680, 209]
+    region:   nw_360
     level:    [89, 90]
   16998762:
     template: Dweomershell
-    at:       [-295.200, -3.542, 227.988, 253]
+    region:   nw_360
     level:    [88, 89]
   16998763:
     template: Dweomershell
-    at:       [-293.100, -3.744, 232.490, 238]
+    region:   nw_360
     level:    [88, 90]
   16998764:
     template: Draugar_Servant_blm
     script:   Draugar_Servant
-    at:       [101.646, -8.352, 9.579, 229]
+    region:   c_364
     level:    [79, 81]
   16998765:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [100.980, -10.576, -13.382, 187]
+    region:   region_184
     level:    [79, 81]
   16998766:
     template: Nix_Wavedancer
-    at:       [48.595, -17.999, -38.460, 83]
+    region:   c_366
     level:    [81, 83]
   16998767:
     template: Nix_Bladedancer
-    at:       [-23.315, -17.245, -65.709, 59]
+    region:   region_185
     level:    [81, 83]
   16998768:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-66.210, -10.476, -107.233, 110]
+    region:   c_368
     level:    [79, 81]
   16998769:
     template: Draugar_Servant_drg
     script:   Draugar_Servant
-    at:       [-67.177, -10.645, -106.580, 71]
+    region:   c_368
     level:    [79, 81]
   16998770:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 156]
+    region:   c_368
     level:    [67, 75]
   16998771:
     template: Nix_Typhoondancer
-    at:       [-97.817, -5.425, -136.776, 134]
+    region:   c_371
     level:    [81, 83]
   16998772:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-85.653, -3.807, -145.799, 218]
+    region:   c_371
     level:    [79, 81]
   16998773:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-108.944, -3.078, -133.708, 126]
+    region:   c_371
     level:    [79, 81]
   16998774:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-108.936, -2.915, -134.978, 175]
+    region:   c_371
     level:    [79, 81]
   16998775:
     template: Nix_Typhoondancer
-    at:       [-50.343, -7.333, -174.662, 182]
+    region:   s_375
     level:    [81, 83]
   16998776:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-55.730, -7.035, -173.188, 155]
+    region:   s_375
     level:    [79, 81]
   16998777:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-55.000, -7.161, -173.334, 156]
+    region:   s_375
     level:    [79, 81]
   16998778:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-56.681, -5.865, -178.079, 54]
+    region:   s_375
     level:    [79, 81]
   16998779:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-12.875, -5.043, -183.565, 224]
+    region:   s_379
     level:    [79, 81]
   16998780:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-8.203, -5.554, -180.136, 114]
+    region:   s_379
     level:    [79, 81]
   16998781:
     template: Ice_Elemental
-    at:       [-49.301, -4.160, -205.069, 33]
+    region:   region_181
     level:    [80, 80]
   16998782:
     template: Dark_Elemental
-    at:       [-49.301, -4.160, -205.069, 33]
+    region:   region_181
     level:    [80, 80]
   16998783:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-105.143, -4.337, -286.469, 112]
+    region:   s_383
     level:    [80, 82]
   16998784:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-102.079, -4.372, -277.244, 200]
+    region:   s_383
     level:    [80, 82]
   16998785:
     template: Lamie_Necromancer
-    at:       [-143.731, -4.318, -304.728, 181]
+    region:   s_385
     level:    [81, 83]
   16998786:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-138.159, -6.468, -319.563, 66]
+    region:   s_385
     level:    [80, 82]
   16998787:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-137.978, -6.580, -311.553, 163]
+    region:   s_385
     level:    [80, 82]
   16998788:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-135.169, -6.047, -299.013, 44]
+    region:   s_385
     level:    [80, 82]
   16998789:
     template: Lamie_Bellydancer
-    at:       [-145.956, -4.678, -324.576, 106]
+    region:   s_389
     level:    [81, 83]
   16998790:
     template: Lamias_Elemental
-    at:       [1.000, 1.000, 1.000, 54]
+    region:   s_389
     level:    [68, 77]
   16998791:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-146.510, -4.729, -342.959, 8]
+    region:   s_389
     level:    [80, 82]
   16998792:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-148.872, -5.138, -328.479, 187]
+    region:   s_389
     level:    [80, 82]
   16998793:
     template: Lamie_Deathdancer
-    at:       [-100.001, -6.387, -397.049, 39]
+    region:   s_393
     level:    [81, 83]
   16998794:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-100.259, -6.200, -398.179, 64]
+    region:   s_393
     level:    [80, 82]
   16998795:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-107.298, -7.215, -380.027, 8]
+    region:   s_393
     level:    [80, 82]
   16998796:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-101.720, -6.343, -391.693, 44]
+    region:   s_393
     level:    [80, 82]
   16998797:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-59.434, -4.834, -285.954, 215]
+    region:   s_397
     level:    [79, 81]
   16998798:
     template: Draugar_Servant_drg
     script:   Draugar_Servant
-    at:       [-62.860, -6.284, -288.629, 141]
+    region:   s_397
     level:    [79, 81]
   16998799:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 133]
+    region:   s_397
     level:    [67, 75]
   16998800:
     template: Lamie_Necromancer
-    at:       [-17.540, -4.235, -298.143, 177]
+    region:   s_400
     level:    [81, 83]
   16998801:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-19.003, -4.334, -297.752, 250]
+    region:   s_400
     level:    [79, 81]
   16998802:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-21.954, -6.585, -309.300, 86]
+    region:   s_400
     level:    [79, 81]
   16998803:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-14.346, -3.683, -305.165, 199]
+    region:   s_400
     level:    [79, 81]
   16998804:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [-33.970, -4.306, -297.894, 132]
+    region:   s_400
     level:    [79, 81]
   16998805:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [0.760, -8.075, -347.902, 19]
+    region:   s_405
     level:    [79, 81]
   16998806:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [1.495, -7.701, -346.751, 36]
+    region:   s_405
     level:    [79, 81]
   16998807:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [3.958, -4.915, -338.886, 228]
+    region:   s_405
     level:    [79, 81]
   16998808:
     template: Lamie_Toxophilite
-    at:       [22.856, -5.518, -361.903, 52]
+    region:   s_408
     level:    [81, 83]
   16998809:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [17.995, -7.450, -361.254, 186]
+    region:   s_408
     level:    [79, 81]
   16998810:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [24.362, -5.528, -371.546, 51]
+    region:   s_408
     level:    [79, 81]
   16998811:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [19.123, -6.904, -366.064, 28]
+    region:   s_408
     level:    [79, 81]
   16998812:
     template: Lamie_Toxophilite
-    at:       [23.952, -4.992, -398.956, 63]
+    region:   s_412
     level:    [81, 83]
   16998813:
     template: Draugar_Servant_drk
     script:   Draugar_Servant
-    at:       [17.145, -7.802, -402.501, 86]
+    region:   s_412
     level:    [79, 81]
   16998814:
     template: Draugar_Servant_drg
     script:   Draugar_Servant
-    at:       [22.604, -6.513, -405.572, 76]
+    region:   s_412
     level:    [79, 81]
   16998815:
     template: Draugars_Wyvern
-    at:       [1.000, 1.000, 1.000, 191]
+    region:   s_412
     level:    [67, 75]
   16998816:
     template: Lamie_Bellydancer
-    at:       [-98.405, -5.966, -409.375, 76]
+    region:   s_416
     level:    [81, 83]
   16998817:
     template: Lamias_Elemental
-    at:       [1.000, 1.000, 1.000, 11]
+    region:   s_416
     level:    [77, 77]
   16998818:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-103.234, -4.023, -415.711, 236]
+    region:   s_416
     level:    [80, 82]
   16998819:
     template: Lamia_Idolater_drk
     script:   Lamia_Idolater
-    at:       [-103.561, -4.833, -408.813, 133]
+    region:   s_416
     level:    [80, 82]
   16998820:
     template: Ice_Elemental
-    at:       [-58.725, -5.003, -421.843, 231]
+    region:   s_421
     level:    [80, 80]
   16998821:
     template: Dark_Elemental
-    at:       [-58.725, -5.003, -421.843, 231]
+    region:   s_421
     level:    [80, 80]
   16998822:
     template: Jnun_AR
     script:   Jnun
-    at:       [-78.375, -4.854, -483.804, 96]
+    region:   s_422
     level:    [79, 80]
   16998823:
     template: Jnun_AR
     script:   Jnun
-    at:       [-89.975, -1.096, -496.171, 42]
+    region:   s_423
     level:    [79, 80]
   16998824:
     template: Ice_Elemental
-    at:       [-141.900, -6.363, -518.130, 254]
+    region:   s_425
     level:    [80, 80]
   16998825:
     template: Dark_Elemental
-    at:       [-137.756, -4.280, -507.863, 167]
+    region:   s_425
     level:    [80, 80]
   16998826:
     template: Ephramadian_Shade_mnk
     script:   Ephramadian_Shade
-    at:       [-451.155, -6.424, -460.168, 108]
+    region:   sw_426
     level:    [68, 70]
   16998827:
     template: Ephramadian_Shade_rdm
     script:   Ephramadian_Shade
-    at:       [-443.097, -7.151, -462.784, 205]
+    region:   sw_426
     level:    [68, 70]
   16998828:
     template: Ephramadian_Shade_rng
     script:   Ephramadian_Shade
-    at:       [-446.920, -7.288, -464.979, 45]
+    region:   sw_426
     level:    [68, 70]
   16998829:
     template: Ephramadian_Shade_cor
     script:   Ephramadian_Shade
-    at:       [-418.862, -6.831, -360.970, 67]
+    region:   sw_429
     level:    [68, 70]
   16998830:
     template: Ephramadian_Shade_mnk
     script:   Ephramadian_Shade
-    at:       [-424.810, -4.748, -371.961, 112]
+    region:   sw_429
     level:    [68, 70]
   16998831:
     template: Ephramadian_Shade_rdm
     script:   Ephramadian_Shade
-    at:       [-428.033, -4.640, -379.461, 29]
+    region:   sw_429
     level:    [68, 70]
   16998832:
     template: Ephramadian_Shade_rng
     script:   Ephramadian_Shade
-    at:       [-456.876, -4.398, -350.909, 79]
+    region:   sw_432
     level:    [68, 70]
   16998833:
     template: Ephramadian_Shade_cor
     script:   Ephramadian_Shade
-    at:       [-443.369, -4.463, -343.948, 121]
+    region:   sw_432
     level:    [68, 70]
   16998834:
     template: Bukki
@@ -4980,119 +4981,119 @@ spawns:
     level:    [80, 85]
   16998838:
     template: Archaic_Mirror
-    at:       [624.111, -15.790, 139.620, 164]
+    region:   e_446
     level:    [75, 75]
   16998839:
     template: Archaic_Mirror
-    at:       [436.132, -7.135, 181.723, 251]
+    region:   region_180
     level:    [75, 75]
   16998840:
     template: Archaic_Mirror
-    at:       [133.243, -3.285, 150.255, 27]
+    region:   region_187
     level:    [75, 75]
   16998841:
     template: Archaic_Mirror
-    at:       [-139.504, -4.149, 187.627, 132]
+    region:   region_189
     level:    [75, 75]
   16998842:
     template: Archaic_Mirror
-    at:       [-371.776, -16.516, 51.963, 164]
+    region:   region_198
     level:    [75, 75]
   16998843:
     template: Archaic_Mirror
-    at:       [-502.025, -8.578, -62.024, 232]
+    region:   region_199
     level:    [75, 75]
   16998844:
     template: Archaic_Mirror
-    at:       [-574.105, -15.442, 261.351, 12]
+    region:   region_188
     level:    [75, 75]
   16998845:
     template: Archaic_Mirror
-    at:       [-150.020, -6.549, -501.904, 96]
+    region:   s_461
     level:    [75, 75]
   16998846:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [630.185, -15.481, 139.951, 255]
+    region:   e_446
     level:    [81, 82]
   16998847:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [618.654, -15.317, 137.708, 96]
+    region:   e_446
     level:    [81, 82]
   16998848:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [435.476, -7.153, 184.263, 28]
+    region:   region_180
     level:    [81, 82]
   16998849:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [428.557, -7.860, 191.688, 169]
+    region:   region_180
     level:    [81, 82]
   16998850:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [143.400, -2.372, 144.604, 231]
+    region:   region_187
     level:    [81, 82]
   16998851:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [147.187, -2.576, 138.588, 189]
+    region:   region_187
     level:    [81, 82]
   16998852:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [-146.201, -4.060, 187.705, 253]
+    region:   region_189
     level:    [81, 82]
   16998853:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [-143.338, -4.417, 188.159, 6]
+    region:   region_189
     level:    [81, 82]
   16998854:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [-374.297, -15.995, 54.175, 29]
+    region:   region_198
     level:    [81, 82]
   16998855:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [-381.340, -15.354, 62.192, 5]
+    region:   region_198
     level:    [81, 82]
   16998856:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [-520.475, -7.982, -59.101, 131]
+    region:   region_199
     level:    [81, 82]
   16998857:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [-514.474, -7.662, -59.672, 135]
+    region:   region_199
     level:    [81, 82]
   16998858:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [-590.476, -15.888, 256.825, 112]
+    region:   region_188
     level:    [81, 82]
   16998859:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [-577.597, -15.460, 259.740, 244]
+    region:   region_188
     level:    [81, 82]
   16998860:
     template: Lamia_Palace_Guard_rng
     script:   Lamia_Palace_Guard
-    at:       [-149.378, -5.374, -498.903, 158]
+    region:   s_461
     level:    [81, 82]
   16998861:
     template: Lamia_Palace_Guard_cor
     script:   Lamia_Palace_Guard
-    at:       [-141.828, -4.789, -501.637, 205]
+    region:   s_461
     level:    [81, 82]
   16998862:
     template: Medusa
-    at:       [-460.000, -20.500, 460.000, 32]
+    region:   region_200
     level:    [85, 85]
   16998863:
     template: Lamia_Exon
@@ -5115,7 +5116,7 @@ spawns:
     level:    [75, 80]
   16998868:
     template: Lamia_No19
-    at:       [-138.000, -7.600, 132.000, 161]
+    region:   region_192
     level:    [78, 78]
   16998869:
     template: Lamias_Skeleton

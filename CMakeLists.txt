@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.25)
 
 # https://cmake.org/cmake/help/latest/variable/CMAKE_MSVC_DEBUG_INFORMATION_FORMAT.html
+# /Zi. Embedded (/Z7) repeats every type in every object, which doubled the map libraries.
 cmake_policy(SET CMP0141 NEW)
-set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT Embedded)
+set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "ProgramDatabase" CACHE STRING "MSVC debug info format: ProgramDatabase (/Zi) or Embedded (/Z7)")
 
 # On macOS, pin the deployment target to the host OS version (must happen before
 # project()). Without this, some compilers infer it from the Darwin kernel version
@@ -25,22 +26,17 @@ endif()
 
 project(server C CXX)
 
-# https://cmake.org/cmake/help/latest/policy/CMP0069.html
-cmake_policy(SET CMP0069 NEW)
-set(CMAKE_POLICY_DEFAULT_CMP0069 NEW)
-
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
-set(LINKER_LANGUAGE CXX)
-set(USE_FOLDERS ON)
 
 # Generate compile_commands.json to make it easier to work with clang based tools
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include(Cache)
+include(CPMCache)
 include(CPM)
 include(Platform)
 include(StandardProjectSettings)
@@ -48,43 +44,11 @@ include(CompilerWarnings)
 include(Sanitizers)
 include(Valgrind)
 include(Git)
+include(Modules)
+include(BundledLibrary)
 
-message(STATUS "CMAKE_VERSION: ${CMAKE_VERSION}")
-message(STATUS "CMAKE_C_COMPILER: ${CMAKE_C_COMPILER}")
-message(STATUS "CMAKE_CXX_COMPILER: ${CMAKE_CXX_COMPILER}")
-message(STATUS "CMAKE_CXX_COMPILER_ID: ${CMAKE_CXX_COMPILER_ID}")
-message(STATUS "CMAKE_CXX_COMPILER_VERSION: ${CMAKE_CXX_COMPILER_VERSION}")
-message(STATUS "CMAKE_CXX_STANDARD: ${CMAKE_CXX_STANDARD}")
-message(STATUS "CMAKE_GENERATOR: ${CMAKE_GENERATOR}")
-message(STATUS "CMAKE_GENERATOR_PLATFORM: ${CMAKE_GENERATOR_PLATFORM}")
-message(STATUS "CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
-string(TOUPPER "${CMAKE_BUILD_TYPE}" CMAKE_BUILD_TYPE_UPPER)
-message(STATUS "CMAKE_C_FLAGS: ${CMAKE_C_FLAGS}")
-message(STATUS "CMAKE_CXX_FLAGS: ${CMAKE_CXX_FLAGS}")
-if ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "DEBUG")
-    message(STATUS "CMAKE_CXX_FLAGS_DEBUG: ${CMAKE_CXX_FLAGS_DEBUG}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "MINSIZEREL")
-    message(STATUS "CMAKE_CXX_FLAGS_MINSIZEREL: ${CMAKE_CXX_FLAGS_MINSIZEREL}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "RELEASE")
-    message(STATUS "CMAKE_CXX_FLAGS_RELEASE: ${CMAKE_CXX_FLAGS_RELEASE}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "RELWITHDEBINFO")
-    message(STATUS "CMAKE_CXX_FLAGS_RELWITHDEBINFO: ${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "ASAN")
-    message(STATUS "CMAKE_CXX_FLAGS_ASAN: ${CMAKE_CXX_FLAGS_ASAN}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "UBSAN")
-    message(STATUS "CMAKE_CXX_FLAGS_UBSAN: ${CMAKE_CXX_FLAGS_UBSAN}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "TSAN")
-    message(STATUS "CMAKE_CXX_FLAGS_TSAN: ${CMAKE_CXX_FLAGS_TSAN}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "MSAN")
-    message(STATUS "CMAKE_CXX_FLAGS_MSAN: ${CMAKE_CXX_FLAGS_MSAN}")
-elseif ("${CMAKE_BUILD_TYPE_UPPER}" STREQUAL "LSAN")
-    message(STATUS "CMAKE_CXX_FLAGS_LSAN: ${CMAKE_CXX_FLAGS_LSAN}")
-else()
-    message(FATAL_ERROR "Did not recognise CMAKE_BUILD_TYPE ${CMAKE_BUILD_TYPE} to print out compiler flags.")
-endif()
-message(STATUS "CMAKE_EXE_LINKER_FLAGS: ${CMAKE_EXE_LINKER_FLAGS}")
+include(ConfigureReport)
 
-# set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Find Threads (pthread)
@@ -92,43 +56,15 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 link_libraries(${CMAKE_THREAD_LIBS_INIT})
 
-CPMAddPackage(
-    NAME ZLIB
-    GITHUB_REPOSITORY madler/zlib
-    GIT_TAG v1.3.1
-    OPTIONS "ZLIB_BUILD_EXAMPLES OFF"
-)
-if(ZLIB_ADDED)
-    add_library(ZLIB::ZLIB ALIAS zlibstatic)
-endif()
-
-CPMAddPackage(
-    NAME utfcpp
-    GITHUB_REPOSITORY nemtrif/utfcpp
-    GIT_TAG v4.0.8
-)
-
-# Find Python (defines ${Python_EXECUTABLE})
-find_package(Python REQUIRED)
+find_package(Python 3 REQUIRED)
 message(STATUS "Python_EXECUTABLE: ${Python_EXECUTABLE}")
 message(STATUS "Python_VERSION: ${Python_VERSION}")
-if(NOT ${Python_VERSION_MAJOR} EQUAL 3)
-    message(FATAL_ERROR "Python 3 is required")
-endif()
 
-# Find MariaDB
+# Bundled under ext/ on Windows, from the system elsewhere. Each defines a target, see ext/.
 find_package(MariaDB REQUIRED)
-
-# Find ZMQ
 find_package(ZeroMQ REQUIRED)
-
-# Find LuaJIT
 find_package(LuaJIT REQUIRED)
-
-# Find OpenSSL libcrypto
 find_package(OpenSSLlibcrypto REQUIRED)
-
-# Find OpenSSL libssl
 find_package(OpenSSLlibssl REQUIRED)
 
 if(UNIX AND NOT APPLE)
@@ -137,16 +73,20 @@ if(UNIX AND NOT APPLE)
     find_package(Binutils REQUIRED)
 endif()
 
-# Link this 'library' to set the c++ standard / compile-time options requested
+# Settings for our first-party code only. Never link this from ext/.
+# src/common is deliberately not an include dir: its zlib.h would shadow the real <zlib.h>.
 add_library(project_options INTERFACE)
-target_compile_features(project_options INTERFACE cxx_std_23)
+target_include_directories(project_options INTERFACE
+    ${CMAKE_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_BINARY_DIR}/generated
+)
 
-# Windows-only preprocessor defines for our first-party code ONLY.
 if(WIN32)
     target_compile_definitions(project_options INTERFACE
-        NOMINMAX
-        WIN32_LEAN_AND_MEAN
-        _CRT_SECURE_NO_WARNINGS
+        NOMINMAX                # keep windows.h's min/max macros away from std::min/max
+        WIN32_LEAN_AND_MEAN     # skip the rarely used windows.h sections
+        _CRT_SECURE_NO_WARNINGS # no C4996 for strcpy, sprintf and friends
     )
 endif()
 
@@ -154,17 +94,14 @@ endif()
 add_library(project_warnings INTERFACE)
 set_project_warnings(project_warnings)
 
+# Global, so sol and spdlog see the same settings from every include site.
 add_compile_definitions(
-    # Globally define SOL_ALL_SAFETIES_ON so sol can be included anywhere.
-    SOL_ALL_SAFETIES_ON=1
-    # If SOL_NO_CHECK_NUMBER_PRECISION is defined, turns off number precision and integer
-    # precision fitting when pushing numbers into sol.
-    SOL_NO_CHECK_NUMBER_PRECISION=1
-    SOL_DEFAULT_PASS_ON_ERROR=1
-    SOL_PRINT_ERRORS=0
-    SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_DEBUG
-    XI_CMAKE_BUILD_TYPE="${CMAKE_BUILD_TYPE}"
-    XI_BUILD_TYPE="$<CONFIG>"
+    SOL_ALL_SAFETIES_ON=1                  # type and stack checks on every Lua call
+    SOL_NO_CHECK_NUMBER_PRECISION=1        # no precision fitting when pushing numbers into Lua
+    SOL_DEFAULT_PASS_ON_ERROR=1            # errors return to the caller instead of throwing
+    SOL_PRINT_ERRORS=0                     # we log Lua errors ourselves
+    SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_DEBUG # compile in debug-level log calls; runtime level still applies
+    XI_BUILD_TYPE="$<CONFIG>"              # the configuration actually built, shown at startup
 )
 
 # For external libs
@@ -187,65 +124,6 @@ add_subdirectory(ext)
 include(ClangTidy)
 include(Fuzzing)
 
-message(STATUS "Configuring src/common/version.cpp")
-configure_file(${CMAKE_SOURCE_DIR}/src/common/version.cpp.in
-               ${CMAKE_SOURCE_DIR}/src/common/version.cpp)
-
-# Generate IPC stubs
-set_property(
-    DIRECTORY
-    APPEND
-    PROPERTY CMAKE_CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/tools/generate_ipc_stubs.py
-)
-message(STATUS "Generating IPC stubs")
-message(STATUS "Calling: ${Python_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tools/generate_ipc_stubs.py ${CMAKE_BINARY_DIR}")
-execute_process(
-    COMMAND ${Python_EXECUTABLE} ${CMAKE_SOURCE_DIR}/tools/generate_ipc_stubs.py ${CMAKE_BINARY_DIR}
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    RESULT_VARIABLE IPC_EXIT_CODE
-)
-if (NOT IPC_EXIT_CODE EQUAL 0)
-    message(FATAL_ERROR "Failed to generate IPC stubs")
-endif()
-
-execute_process(
-    COMMAND ${Python_EXECUTABLE} -c "import jinja2, jsonschema; from ruamel.yaml import YAML"
-    RESULT_VARIABLE CODEGEN_DEPS_EXIT_CODE
-    OUTPUT_QUIET
-    ERROR_QUIET
-)
-if(NOT CODEGEN_DEPS_EXIT_CODE EQUAL 0)
-    message(FATAL_ERROR
-        "Codegen requires the Python packages jinja2, jsonschema, and ruamel.yaml, "
-        "but they are not installed for the interpreter CMake selected:\n"
-        "    ${Python_EXECUTABLE}\n"
-        "Install them by running this command exactly as shown (the interpreter path "
-        "matters, so the packages land in the environment this build uses):\n"
-        "    ${Python_EXECUTABLE} -m pip install -r ${CMAKE_SOURCE_DIR}/tools/requirements.txt"
-    )
-endif()
-
-set(ENUM_CODEGEN_STAMP ${CMAKE_BINARY_DIR}/generated/.enum_codegen.stamp)
-if(NOT EXISTS ${ENUM_CODEGEN_STAMP})
-    message(STATUS "Bootstrapping enum codegen")
-    execute_process(
-        COMMAND ${Python_EXECUTABLE} -m tools.codegen ${CMAKE_BINARY_DIR}
-        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-        RESULT_VARIABLE CODEGEN_EXIT_CODE
-    )
-    if(NOT CODEGEN_EXIT_CODE EQUAL 0)
-        message(FATAL_ERROR "Enum codegen failed")
-    endif()
-endif()
-
-add_custom_target(enum_codegen
-    COMMAND ${Python_EXECUTABLE} -m tools.codegen ${CMAKE_BINARY_DIR}
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    BYPRODUCTS ${ENUM_CODEGEN_STAMP}
-    USES_TERMINAL
-    VERBATIM
-)
-
-include_directories(${CMAKE_BINARY_DIR}/generated) # Globally include the build/generated directory
+include(Codegen)
 
 add_subdirectory(src)

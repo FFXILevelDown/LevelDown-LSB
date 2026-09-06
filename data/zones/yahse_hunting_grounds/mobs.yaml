@@ -738,27 +738,27 @@ spawns:
     at:     [1.000, 1.000, 1.000]
   17842182:
     template: Calfcleaving_Chapuli
-    at:       [421.530, 0.090, 350.283, 108]
+    region:   ne_6
     level:    [100, 101]
   17842183:
     template: Calfcleaving_Chapuli
-    at:       [420.510, 0.085, 349.446, 209]
+    region:   ne_6
     level:    [100, 101]
   17842184:
     template: Calfcleaving_Chapuli
-    at:       [425.730, -0.017, 350.268, 88]
+    region:   ne_6
     level:    [100, 101]
   17842185:
     template: Canopycrusher_Beetle
-    at:       [415.070, 0.055, 355.037, 156]
+    region:   ne_6
     level:    [100, 101]
   17842186:
     template: Canopycrusher_Beetle
-    at:       [431.610, -0.165, 349.273, 134]
+    region:   ne_6
     level:    [100, 101]
   17842187:
     template: Umbril
-    at:       [406.900, -0.172, 357.714, 73]
+    region:   ne_6
     level:    [100, 101]
   17842188:
     template: Burning_Mantis
@@ -766,259 +766,259 @@ spawns:
     level:    [100, 102]
   17842189:
     template: Calfcleaving_Chapuli
-    at:       [421.880, 0.049, 326.253, 37]
+    region:   ne_13
     level:    [100, 101]
   17842190:
     template: Calfcleaving_Chapuli
-    at:       [424.050, 0.063, 335.875, 170]
+    region:   ne_13
     level:    [100, 101]
   17842191:
     template: Calfcleaving_Chapuli
-    at:       [433.710, 0.095, 336.174, 228]
+    region:   ne_13
     level:    [100, 101]
   17842192:
     template: Canopycrusher_Beetle
-    at:       [410.600, 0.052, 329.947, 140]
+    region:   ne_13
     level:    [100, 101]
   17842193:
     template: Canopycrusher_Beetle
-    at:       [409.440, 0.051, 332.268, 83]
+    region:   ne_13
     level:    [100, 101]
   17842194:
     template: Umbril
-    at:       [407.610, 0.089, 331.180, 39]
+    region:   ne_13
     level:    [100, 101]
   17842195:
     template: Burning_Mantis
-    at:       [431.500, 0.069, 335.920, 250]
+    region:   ne_13
     level:    [100, 102]
   17842196:
     template: Twitherym_Infestation
-    at:       [355.560, -0.493, 395.937, 13]
+    region:   ne_20
     level:    [100, 101]
   17842197:
     template: Twitherym_Infestation
-    at:       [354.080, -0.448, 404.393, 230]
+    region:   ne_20
     level:    [100, 101]
   17842198:
     template: Twitherym_Infestation
-    at:       [353.800, -0.495, 398.796, 153]
+    region:   ne_20
     level:    [100, 101]
   17842199:
     template: Twitherym_Infestation
-    at:       [363.230, -0.499, 392.212, 226]
+    region:   ne_20
     level:    [100, 101]
   17842200:
     template: Twitherym_Infestation
-    at:       [360.610, -0.499, 399.372, 131]
+    region:   ne_20
     level:    [100, 101]
   17842201:
     template: Umbril
-    at:       [357.200, -0.499, 391.907, 85]
+    region:   ne_20
     level:    [100, 101]
   17842202:
     template: Calfcleaving_Chapuli
-    at:       [237.020, -0.093, 387.976, 190]
+    region:   ne_26
     level:    [100, 101]
   17842203:
     template: Calfcleaving_Chapuli
-    at:       [232.640, -0.499, 395.812, 106]
+    region:   ne_26
     level:    [100, 101]
   17842204:
     template: Canopycrusher_Beetle
-    at:       [245.300, -0.488, 397.757, 169]
+    region:   ne_26
     level:    [100, 101]
   17842205:
     template: Umbril
-    at:       [238.680, -0.460, 398.915, 185]
+    region:   ne_26
     level:    [100, 101]
   17842206:
     template: Calfcleaving_Chapuli
-    at:       [248.100, -0.483, 355.653, 212]
+    region:   ne_30
     level:    [100, 101]
   17842207:
     template: Calfcleaving_Chapuli
-    at:       [247.780, -0.488, 362.394, 194]
+    region:   ne_30
     level:    [100, 101]
   17842208:
     template: Canopycrusher_Beetle
-    at:       [235.410, -0.391, 364.894, 220]
+    region:   ne_30
     level:    [100, 101]
   17842209:
     template: Umbril
-    at:       [242.690, -0.499, 358.459, 113]
+    region:   ne_30
     level:    [100, 101]
   17842210:
     template: Twitherym_Infestation
-    at:       [309.500, -0.006, 227.089, 117]
+    region:   ne_34
     level:    [100, 101]
   17842211:
     template: Twitherym_Infestation
-    at:       [281.770, -0.483, 241.052, 183]
+    region:   ne_34
     level:    [100, 101]
   17842212:
     template: Twitherym_Infestation
-    at:       [280.830, -0.462, 241.067, 195]
+    region:   ne_34
     level:    [100, 101]
   17842213:
     template: Twitherym_Infestation
-    at:       [315.910, 0.093, 221.621, 121]
+    region:   ne_34
     level:    [100, 101]
   17842214:
     template: Umbril
-    at:       [311.320, 0.017, 226.085, 235]
+    region:   ne_34
     level:    [100, 101]
   17842215:
     template: Burning_Mantis
-    at:       [317.400, 0.062, 226.649, 255]
+    region:   ne_34
     level:    [100, 102]
   17842216:
     template: Twitherym_Infestation
-    at:       [283.840, -0.123, 209.755, 25]
+    region:   ne_40
     level:    [100, 101]
   17842217:
     template: Twitherym_Infestation
-    at:       [296.800, -0.043, 216.343, 211]
+    region:   ne_40
     level:    [100, 101]
   17842218:
     template: Twitherym_Infestation
-    at:       [289.930, -0.092, 202.847, 182]
+    region:   ne_40
     level:    [100, 101]
   17842219:
     template: Twitherym_Infestation
-    at:       [297.120, -0.029, 209.490, 180]
+    region:   ne_40
     level:    [100, 101]
   17842220:
     template: Umbril
-    at:       [291.810, -0.054, 217.167, 134]
+    region:   ne_40
     level:    [100, 101]
   17842221:
     template: Burning_Mantis
-    at:       [313.310, -0.405, 199.141, 58]
+    region:   ne_40
     level:    [100, 102]
   17842222:
     template: Calfcleaving_Chapuli
-    at:       [205.530, -0.188, 288.468, 217]
+    region:   ne_46
     level:    [100, 101]
   17842223:
     template: Calfcleaving_Chapuli
-    at:       [192.590, -0.497, 282.877, 128]
+    region:   ne_46
     level:    [100, 101]
   17842224:
     template: Calfcleaving_Chapuli
-    at:       [200.030, -0.499, 287.872, 198]
+    region:   ne_46
     level:    [100, 101]
   17842225:
     template: Calfcleaving_Chapuli
-    at:       [204.820, -0.479, 280.833, 30]
+    region:   ne_46
     level:    [100, 101]
   17842226:
     template: Wooded_Ungeweder
-    at:       [206.800, -0.423, 284.634, 50]
+    region:   ne_46
     level:    [100, 101]
   17842227:
     template: Nettled_Wasp
-    at:       [169.620, -0.075, 199.776, 8]
+    region:   ne_51
     level:    [100, 101]
   17842228:
     template: Nettled_Wasp
-    at:       [198.890, -0.483, 197.042, 240]
+    region:   ne_51
     level:    [100, 101]
   17842229:
     template: Nettled_Wasp
-    at:       [195.000, -0.363, 199.539, 147]
+    region:   ne_51
     level:    [100, 101]
   17842230:
     template: Nettled_Wasp
-    at:       [153.730, -0.499, 198.475, 97]
+    region:   ne_51
     level:    [100, 101]
   17842231:
     template: Nettled_Wasp
-    at:       [200.220, -0.469, 204.473, 245]
+    region:   ne_51
     level:    [100, 101]
   17842232:
     template: Nettled_Wasp
-    at:       [205.410, -0.499, 196.882, 241]
+    region:   ne_51
     level:    [100, 101]
   17842233:
     template: Umbril
-    at:       [192.570, -0.012, 191.263, 80]
+    region:   ne_51
     level:    [100, 101]
   17842234:
     template: Nettled_Wasp
-    at:       [183.050, -0.120, 163.845, 43]
+    region:   ne_58
     level:    [100, 101]
   17842235:
     template: Nettled_Wasp
-    at:       [182.470, -0.165, 155.708, 28]
+    region:   ne_58
     level:    [100, 101]
   17842236:
     template: Nettled_Wasp
-    at:       [177.380, -0.216, 156.796, 10]
+    region:   ne_58
     level:    [100, 101]
   17842237:
     template: Twitherym_Infestation
-    at:       [153.310, -0.416, 82.258, 81]
+    region:   e_61
     level:    [100, 101]
   17842238:
     template: Twitherym_Infestation
-    at:       [154.320, -0.499, 80.732, 133]
+    region:   e_61
     level:    [100, 101]
   17842239:
     template: Twitherym_Infestation
-    at:       [154.270, -0.499, 77.890, 84]
+    region:   e_61
     level:    [100, 101]
   17842240:
     template: Twitherym_Infestation
-    at:       [168.010, -0.441, 83.514, 204]
+    region:   e_61
     level:    [100, 101]
   17842241:
     template: Twitherym_Infestation
-    at:       [154.400, -0.499, 82.550, 109]
+    region:   e_61
     level:    [100, 101]
   17842242:
     template: Umbril
-    at:       [157.670, -0.370, 87.974, 250]
+    region:   e_61
     level:    [100, 101]
   17842243:
     template: Nettled_Wasp
-    at:       [281.860, -0.493, 87.593, 228]
+    region:   e_67
     level:    [100, 101]
   17842244:
     template: Nettled_Wasp
-    at:       [276.040, -0.370, 77.703, 84]
+    region:   e_67
     level:    [100, 101]
   17842245:
     template: Nettled_Wasp
-    at:       [280.410, -0.347, 79.422, 104]
+    region:   e_67
     level:    [100, 101]
   17842246:
     template: Umbril
-    at:       [297.250, 0.036, 81.482, 252]
+    region:   e_67
     level:    [100, 101]
   17842247:
     template: Nettled_Wasp
-    at:       [318.300, -0.499, 79.468, 72]
+    region:   e_71
     level:    [100, 101]
   17842248:
     template: Nettled_Wasp
-    at:       [319.730, -0.497, 78.346, 102]
+    region:   e_71
     level:    [100, 101]
   17842249:
     template: Nettled_Wasp
-    at:       [322.420, -0.486, 80.391, 17]
+    region:   e_71
     level:    [100, 101]
   17842250:
     template: Calfcleaving_Chapuli
-    at:       [50.280, -0.064, 134.539, 205]
+    region:   c_74
     level:    [100, 101]
   17842251:
     template: Calfcleaving_Chapuli
-    at:       [51.469, 0.146, 117.392, 32]
+    region:   c_74
     level:    [100, 101]
   17842252:
     template: Calfcleaving_Chapuli
-    at:       [83.646, -0.657, 125.966, 226]
+    region:   c_74
     level:    [100, 101]
   17842253:
     template: Burning_Mantis
@@ -1026,19 +1026,19 @@ spawns:
     level:    [100, 102]
   17842254:
     template: Jungle_Baelfyr
-    at:       [52.134, 0.049, 123.259, 63]
+    region:   c_74
     level:    [100, 101]
   17842255:
     template: Calfcleaving_Chapuli
-    at:       [31.697, -0.495, 82.692, 93]
+    region:   c_79
     level:    [100, 101]
   17842256:
     template: Calfcleaving_Chapuli
-    at:       [32.341, -0.479, 84.593, 202]
+    region:   c_79
     level:    [100, 101]
   17842257:
     template: Calfcleaving_Chapuli
-    at:       [34.213, -0.446, 85.544, 134]
+    region:   c_79
     level:    [100, 101]
   17842258:
     template: Burning_Mantis
@@ -1046,11 +1046,11 @@ spawns:
     level:    [100, 102]
   17842259:
     template: Calfcleaving_Chapuli
-    at:       [12.883, 0.006, 198.949, 1]
+    region:   n_83
     level:    [100, 101]
   17842260:
     template: Calfcleaving_Chapuli
-    at:       [-0.310, -0.499, 199.266, 188]
+    region:   n_83
     level:    [100, 101]
   17842261:
     template: Burning_Mantis
@@ -1058,15 +1058,15 @@ spawns:
     level:    [100, 102]
   17842262:
     template: Calfcleaving_Chapuli
-    at:       [45.470, -0.236, 205.263, 215]
+    region:   n_86
     level:    [100, 101]
   17842263:
     template: Calfcleaving_Chapuli
-    at:       [46.823, -0.225, 205.070, 196]
+    region:   n_86
     level:    [100, 101]
   17842264:
     template: Calfcleaving_Chapuli
-    at:       [38.563, -0.446, 199.619, 117]
+    region:   n_86
     level:    [100, 101]
   17842265:
     template: Burning_Mantis
@@ -1074,319 +1074,319 @@ spawns:
     level:    [100, 102]
   17842266:
     template: Umbril
-    at:       [46.722, -0.238, 205.130, 216]
+    region:   n_86
     level:    [100, 101]
   17842267:
     template: Ulbukan_Sheep
-    at:       [86.151, -0.666, 274.851, 73]
+    region:   n_91
     level:    [100, 101]
   17842268:
     template: Ulbukan_Sheep
-    at:       [85.206, -0.685, 274.368, 15]
+    region:   n_91
     level:    [100, 101]
   17842269:
     template: Ulbukan_Sheep
-    at:       [74.873, -0.435, 276.634, 181]
+    region:   n_91
     level:    [100, 101]
   17842270:
     template: Umbril
-    at:       [78.486, -0.488, 286.375, 219]
+    region:   n_91
     level:    [100, 101]
   17842271:
     template: Ulbukan_Sheep
-    at:       [84.120, -0.426, 354.317, 102]
+    region:   n_95
     level:    [100, 101]
   17842272:
     template: Ulbukan_Sheep
-    at:       [101.050, 0.087, 352.257, 232]
+    region:   n_95
     level:    [100, 101]
   17842273:
     template: Ulbukan_Sheep
-    at:       [108.540, -0.008, 347.986, 33]
+    region:   n_95
     level:    [100, 101]
   17842274:
     template: Twitherym_Infestation
-    at:       [89.593, -0.391, 366.803, 175]
+    region:   n_95
     level:    [100, 101]
   17842275:
     template: Twitherym_Infestation
-    at:       [93.733, -0.224, 368.315, 211]
+    region:   n_95
     level:    [100, 101]
   17842276:
     template: Twitherym_Infestation
-    at:       [86.077, -0.273, 355.321, 12]
+    region:   n_95
     level:    [100, 101]
   17842277:
     template: Ulbukan_Sheep
-    at:       [118.720, -0.174, 368.363, 235]
+    region:   n_101
     level:    [100, 101]
   17842278:
     template: Ulbukan_Sheep
-    at:       [113.200, -0.166, 364.773, 72]
+    region:   n_101
     level:    [100, 101]
   17842279:
     template: Twitherym_Infestation
-    at:       [113.170, -0.470, 392.638, 97]
+    region:   n_101
     level:    [100, 101]
   17842280:
     template: Twitherym_Infestation
-    at:       [118.730, 0.045, 380.584, 209]
+    region:   n_101
     level:    [100, 101]
   17842281:
     template: Twitherym_Infestation
-    at:       [118.480, -0.125, 390.781, 49]
+    region:   n_101
     level:    [100, 101]
   17842282:
     template: Ulbukan_Sheep
-    at:       [5.182, -0.503, 400.645, 229]
+    region:   n_106
     level:    [100, 101]
   17842283:
     template: Ulbukan_Sheep
-    at:       [-0.828, -0.514, 407.707, 182]
+    region:   n_106
     level:    [100, 101]
   17842284:
     template: Ulbukan_Sheep
-    at:       [-6.293, -0.657, 396.321, 64]
+    region:   n_106
     level:    [100, 101]
   17842285:
     template: Ulbukan_Sheep
-    at:       [-1.090, -0.490, 398.604, 178]
+    region:   n_106
     level:    [100, 101]
   17842286:
     template: Ulbukan_Sheep
-    at:       [-163.200, -0.486, 235.085, 40]
+    region:   n_110
     level:    [100, 101]
   17842287:
     template: Ulbukan_Sheep
-    at:       [-160.600, -0.542, 241.860, 95]
+    region:   n_110
     level:    [100, 101]
   17842288:
     template: Ulbukan_Sheep
-    at:       [-167.500, -0.493, 241.651, 99]
+    region:   n_110
     level:    [100, 101]
   17842289:
     template: Ulbukan_Sheep
-    at:       [-160.500, -0.435, 237.871, 157]
+    region:   n_110
     level:    [100, 101]
   17842290:
     template: Twitherym_Infestation
-    at:       [-234.900, -0.560, 241.863, 48]
+    region:   nw_114
     level:    [100, 101]
   17842291:
     template: Twitherym_Infestation
-    at:       [-239.600, -0.568, 246.033, 143]
+    region:   nw_114
     level:    [100, 101]
   17842292:
     template: Twitherym_Infestation
-    at:       [-245.400, -0.657, 234.660, 105]
+    region:   nw_114
     level:    [100, 101]
   17842293:
     template: Twitherym_Infestation
-    at:       [-243.000, -0.563, 236.438, 221]
+    region:   nw_114
     level:    [100, 101]
   17842294:
     template: Umbril
-    at:       [-243.200, -0.513, 238.746, 11]
+    region:   nw_114
     level:    [100, 101]
   17842295:
     template: Calfcleaving_Chapuli
-    at:       [-192.200, -0.209, 355.794, 168]
+    region:   n_119
     level:    [100, 101]
   17842296:
     template: Calfcleaving_Chapuli
-    at:       [-192.300, -0.216, 355.704, 175]
+    region:   n_119
     level:    [100, 101]
   17842297:
     template: Calfcleaving_Chapuli
-    at:       [-164.600, -0.305, 357.014, 141]
+    region:   n_119
     level:    [100, 101]
   17842298:
     template: Canopycrusher_Beetle
-    at:       [-173.400, -0.078, 342.575, 206]
+    region:   n_119
     level:    [100, 101]
   17842299:
     template: Canopycrusher_Beetle
-    at:       [-182.900, -0.052, 339.190, 117]
+    region:   n_119
     level:    [100, 101]
   17842300:
     template: Wooded_Ungeweder
-    at:       [-163.900, 0.095, 339.118, 118]
+    region:   n_119
     level:    [100, 101]
   17842301:
     template: Calfcleaving_Chapuli
-    at:       [-180.800, 0.087, 325.286, 224]
+    region:   n_125
     level:    [100, 101]
   17842302:
     template: Calfcleaving_Chapuli
-    at:       [-170.600, 0.029, 321.010, 84]
+    region:   n_125
     level:    [100, 101]
   17842303:
     template: Calfcleaving_Chapuli
-    at:       [-171.100, 0.036, 321.552, 71]
+    region:   n_125
     level:    [100, 101]
   17842304:
     template: Canopycrusher_Beetle
-    at:       [-180.000, 0.078, 318.828, 236]
+    region:   n_125
     level:    [100, 101]
   17842305:
     template: Canopycrusher_Beetle
-    at:       [-173.100, 0.049, 320.647, 10]
+    region:   n_125
     level:    [100, 101]
   17842306:
     template: Twitherym_Infestation
-    at:       [17.200, -0.421, -87.277, 15]
+    region:   c_130
     level:    [100, 101]
   17842307:
     template: Twitherym_Infestation
-    at:       [10.526, -0.224, -79.541, 129]
+    region:   c_130
     level:    [100, 101]
   17842308:
     template: Twitherym_Infestation
-    at:       [2.841, -0.503, -72.435, 159]
+    region:   c_130
     level:    [100, 101]
   17842309:
     template: Burning_Mantis
-    at:       [17.920, 0.100, -79.558, 135]
+    region:   c_130
     level:    [100, 102]
   17842310:
     template: Twitherym_Infestation
-    at:       [38.437, -0.407, -80.024, 231]
+    region:   c_134
     level:    [100, 101]
   17842311:
     template: Twitherym_Infestation
-    at:       [25.826, -0.514, -87.669, 82]
+    region:   c_134
     level:    [100, 101]
   17842312:
     template: Twitherym_Infestation
-    at:       [26.464, -0.245, -85.845, 201]
+    region:   c_134
     level:    [100, 101]
   17842313:
     template: Wooded_Ungeweder
-    at:       [25.537, -0.469, -87.773, 89]
+    region:   c_134
     level:    [100, 101]
   17842314:
     template: Twitherym_Infestation
-    at:       [39.384, -0.317, -113.260, 183]
+    region:   c_138
     level:    [100, 101]
   17842315:
     template: Twitherym_Infestation
-    at:       [36.458, 0.085, -99.609, 239]
+    region:   c_138
     level:    [100, 101]
   17842316:
     template: Twitherym_Infestation
-    at:       [31.320, -0.367, -109.310, 66]
+    region:   c_138
     level:    [100, 101]
   17842317:
     template: Burning_Mantis
-    at:       [36.519, -0.500, -117.320, 203]
+    region:   c_138
     level:    [100, 102]
   17842318:
     template: Pinetorum
-    at:       [231.570, -0.389, -76.345, 76]
+    region:   e_142
     level:    [100, 101]
   17842319:
     template: Pinetorum
-    at:       [233.220, -0.499, -80.156, 138]
+    region:   e_142
     level:    [100, 101]
   17842320:
     template: Pinetorum
-    at:       [239.150, -0.497, -74.402, 169]
+    region:   e_142
     level:    [100, 101]
   17842321:
     template: Pinetorum
-    at:       [232.900, -0.503, -78.624, 101]
+    region:   e_142
     level:    [100, 101]
   17842322:
     template: Wooded_Ungeweder
-    at:       [239.700, -0.455, -81.751, 157]
+    region:   e_142
     level:    [100, 101]
   17842323:
     template: Nettled_Wasp
-    at:       [45.056, -0.437, -235.100, 211]
+    region:   s_147
     level:    [100, 101]
   17842324:
     template: Nettled_Wasp
-    at:       [37.869, -0.507, -246.700, 52]
+    region:   s_147
     level:    [100, 101]
   17842325:
     template: Nettled_Wasp
-    at:       [44.599, -0.500, -237.740, 195]
+    region:   s_147
     level:    [100, 101]
   17842326:
     template: Nettled_Wasp
-    at:       [44.084, -0.689, -245.820, 15]
+    region:   s_147
     level:    [100, 101]
   17842327:
     template: Nettled_Wasp
-    at:       [45.505, -0.679, -245.410, 74]
+    region:   s_147
     level:    [100, 101]
   17842328:
     template: Wooded_Ungeweder
-    at:       [45.462, -0.708, -246.230, 77]
+    region:   s_147
     level:    [100, 101]
   17842329:
     template: Pinetorum
-    at:       [274.850, -0.254, -289.210, 119]
+    region:   se_153
     level:    [100, 101]
   17842330:
     template: Pinetorum
-    at:       [279.360, -0.439, -282.270, 214]
+    region:   se_153
     level:    [100, 101]
   17842331:
     template: Pinetorum
-    at:       [286.050, -0.451, -283.690, 237]
+    region:   se_153
     level:    [100, 101]
   17842332:
     template: Pinetorum
-    at:       [278.950, -0.446, -278.070, 17]
+    region:   se_153
     level:    [100, 101]
   17842333:
     template: Pinetorum
-    at:       [277.260, -0.349, -275.370, 155]
+    region:   se_153
     level:    [100, 101]
   17842334:
     template: Umbril
-    at:       [284.120, -0.412, -277.560, 109]
+    region:   se_153
     level:    [100, 101]
   17842335:
     template: Twitherym_Infestation
-    at:       [163.770, -0.493, -282.430, 139]
+    region:   se_159
     level:    [100, 101]
   17842336:
     template: Twitherym_Infestation
-    at:       [157.320, -0.508, -284.780, 55]
+    region:   se_159
     level:    [100, 101]
   17842337:
     template: Twitherym_Infestation
-    at:       [162.220, -0.493, -273.660, 184]
+    region:   se_159
     level:    [100, 101]
   17842338:
     template: Twitherym_Infestation
-    at:       [169.060, -0.515, -279.950, 32]
+    region:   se_159
     level:    [100, 101]
   17842339:
     template: Calfcleaving_Chapuli
-    at:       [215.220, 0.053, -362.320, 79]
+    region:   se_163
     level:    [100, 101]
   17842340:
     template: Calfcleaving_Chapuli
-    at:       [205.560, -0.386, -358.400, 232]
+    region:   se_163
     level:    [100, 101]
   17842341:
     template: Calfcleaving_Chapuli
-    at:       [234.120, -0.254, -361.570, 54]
+    region:   se_165
     level:    [100, 101]
   17842342:
     template: Calfcleaving_Chapuli
-    at:       [232.810, -0.273, -358.400, 233]
+    region:   se_165
     level:    [100, 101]
   17842343:
     template: Calfcleaving_Chapuli
-    at:       [221.580, 0.003, -373.240, 53]
+    region:   se_167
     level:    [100, 101]
   17842344:
     template: Calfcleaving_Chapuli
-    at:       [223.740, -0.086, -370.460, 219]
+    region:   se_167
     level:    [100, 101]
   17842345:
     template: Umbril
@@ -1394,99 +1394,99 @@ spawns:
     level:    [100, 101]
   17842346:
     template: Pinetorum
-    at:       [363.430, 0.045, 150.386, 229]
+    region:   e_170
     level:    [100, 101]
   17842347:
     template: Pinetorum
-    at:       [368.950, 0.245, 153.285, 29]
+    region:   e_170
     level:    [100, 101]
   17842348:
     template: Pinetorum
-    at:       [368.520, 0.300, 150.029, 228]
+    region:   e_170
     level:    [100, 101]
   17842349:
     template: Pinetorum
-    at:       [367.830, 0.113, 127.857, 153]
+    region:   e_173
     level:    [100, 101]
   17842350:
     template: Pinetorum
-    at:       [367.290, -0.164, 122.358, 117]
+    region:   e_173
     level:    [100, 101]
   17842351:
     template: Pinetorum
-    at:       [359.930, 0.103, 134.675, 159]
+    region:   e_173
     level:    [100, 101]
   17842352:
     template: Edacious_Orobon
-    at:       [392.960, 3.360, 151.660, 183]
+    region:   e_176
     level:    [100, 102]
   17842353:
     template: Edacious_Orobon
-    at:       [394.980, 3.390, 139.981, 125]
+    region:   e_176
     level:    [100, 102]
   17842354:
     template: Edacious_Orobon
-    at:       [401.080, 3.499, 121.380, 88]
+    region:   e_178
     level:    [100, 102]
   17842355:
     template: Edacious_Orobon
-    at:       [405.470, 3.499, 127.741, 59]
+    region:   e_178
     level:    [100, 102]
   17842356:
     template: Pinetorum
-    at:       [326.080, -0.034, -9.341, 147]
+    region:   e_180
     level:    [100, 101]
   17842357:
     template: Pinetorum
-    at:       [331.410, 0.201, -11.196, 113]
+    region:   e_180
     level:    [100, 101]
   17842358:
     template: Pinetorum
-    at:       [325.230, -0.261, -3.258, 49]
+    region:   e_180
     level:    [100, 101]
   17842359:
     template: Pinetorum
-    at:       [323.760, -0.059, -32.124, 42]
+    region:   e_183
     level:    [100, 101]
   17842360:
     template: Pinetorum
-    at:       [326.150, 0.016, -32.007, 79]
+    region:   e_183
     level:    [100, 101]
   17842361:
     template: Pinetorum
-    at:       [324.970, 0.040, -29.429, 208]
+    region:   e_183
     level:    [100, 101]
   17842362:
     template: Bight_Uragnite
-    at:       [360.430, 3.428, -8.344, 244]
+    region:   e_186
     level:    [100, 101]
   17842363:
     template: Bight_Uragnite
-    at:       [358.010, 3.481, -16.378, 170]
+    region:   e_186
     level:    [100, 101]
   17842364:
     template: Bight_Uragnite
-    at:       [359.110, 3.470, -39.292, 102]
+    region:   e_188
     level:    [100, 101]
   17842365:
     template: Bight_Uragnite
-    at:       [352.480, 2.904, -33.408, 97]
+    region:   e_188
     level:    [100, 101]
   17842366:
     template: Wooded_Ungeweder
-    at:       [365.130, 3.498, -27.850, 144]
+    region:   e_188
     level:    [100, 101]
   17842367:
     template: Luckybug_Hoarder
-    at:       [-230.600, -0.158, 127.386, 248]
+    region:   w_191
     level:    [100, 101]
   17842368:
     template: Luckybug_Hoarder
-    at:       [-242.300, -0.490, 120.211, 126]
+    region:   w_191
     level:    [100, 101]
   17842369:
     template: Luckybug_Hoarder
-    at:       [-239.700, -0.428, 118.897, 233]
+    region:   w_191
     level:    [100, 101]
   17842370:
     template: Numbing_Blossom
@@ -1528,27 +1528,27 @@ spawns:
     level:    [100, 101]
   17842380:
     template: Monstrosiraptor
-    at:       [-387.500, 0.084, 247.481, 27]
+    region:   nw_204
     level:    [100, 101]
   17842381:
     template: Monstrosiraptor
-    at:       [-396.600, -0.331, 241.800, 14]
+    region:   nw_204
     level:    [100, 101]
   17842382:
     template: Hinterland_Peiste
-    at:       [-388.155, -0.153, 250.625, 238]
+    region:   nw_204
     level:    [101, 103]
   17842383:
     template: Jungle_Baelfyr
-    at:       [-393.700, -0.136, 246.957, 101]
+    region:   nw_204
     level:    [100, 101]
   17842384:
     template: Monstrosiraptor
-    at:       [-366.800, -0.180, 247.240, 138]
+    region:   nw_208
     level:    [100, 101]
   17842385:
     template: Monstrosiraptor
-    at:       [-380.400, 0.089, 244.154, 182]
+    region:   nw_208
     level:    [100, 101]
   17842386:
     template: Hinterland_Peiste
@@ -1560,23 +1560,23 @@ spawns:
     level:    [1, 1]
   17842388:
     template: Monstrosiraptor
-    at:       [-427.300, 0.034, 353.962, 77]
+    region:   nw_212
     level:    [100, 101]
   17842389:
     template: Monstrosiraptor
-    at:       [-419.500, 0.074, 356.963, 149]
+    region:   nw_212
     level:    [100, 101]
   17842390:
     template: Monstrosiraptor
-    at:       [-401.800, 0.053, 340.075, 38]
+    region:   nw_212
     level:    [100, 101]
   17842391:
     template: Monstrosiraptor
-    at:       [-406.100, -0.259, 355.964, 163]
+    region:   nw_212
     level:    [100, 101]
   17842392:
     template: Jungle_Baelfyr
-    at:       [-401.700, -0.435, 357.626]
+    region:   nw_212
     level:    [100, 101]
   17842393:
     template: Hinterland_Peiste
@@ -1588,23 +1588,23 @@ spawns:
     level:    [1, 1]
   17842395:
     template: Monstrosiraptor
-    at:       [-412.600, 0.007, 330.010, 198]
+    region:   nw_219
     level:    [100, 101]
   17842396:
     template: Monstrosiraptor
-    at:       [-399.200, -0.144, 327.794, 51]
+    region:   nw_219
     level:    [100, 101]
   17842397:
     template: Monstrosiraptor
-    at:       [-430.800, -0.090, 324.165, 176]
+    region:   nw_219
     level:    [100, 101]
   17842398:
     template: Monstrosiraptor
-    at:       [-423.300, 0.023, 326.028, 35]
+    region:   nw_219
     level:    [100, 101]
   17842399:
     template: Hinterland_Peiste
-    at:       [-417.489, 0.062, 329.008, 79]
+    region:   nw_219
     level:    [101, 103]
   17842400:
     template: Numbing_Blossom
@@ -1628,15 +1628,15 @@ spawns:
     level:    [1, 1]
   17842405:
     template: Luckybug_Hoarder
-    at:       [-397.700, -0.497, 80.084, 159]
+    region:   w_229
     level:    [100, 101]
   17842406:
     template: Luckybug_Hoarder
-    at:       [-399.900, -0.517, 86.729, 209]
+    region:   w_229
     level:    [100, 101]
   17842407:
     template: Verdant_Treant
-    at:       [-392.900, -0.500, 79.659, 211]
+    region:   w_229
     level:    [100, 102]
   17842408:
     template: Numbing_Blossom
@@ -1644,15 +1644,15 @@ spawns:
     level:    [1, 1]
   17842409:
     template: Luckybug_Hoarder
-    at:       [-404.951, -0.483, 45.908, 159]
+    region:   w_233
     level:    [100, 101]
   17842410:
     template: Luckybug_Hoarder
-    at:       [-400.838, -0.093, 52.030, 159]
+    region:   w_233
     level:    [100, 101]
   17842411:
     template: Verdant_Treant
-    at:       [-405.524, -0.454, 46.528, 96]
+    region:   w_233
     level:    [100, 102]
   17842412:
     template: Numbing_Blossom
@@ -1660,15 +1660,15 @@ spawns:
     level:    [1, 1]
   17842413:
     template: Twitherym_Infestation
-    at:       [-473.325, -0.384, -36.286, 64]
+    region:   w_237
     level:    [100, 101]
   17842414:
     template: Twitherym_Infestation
-    at:       [-475.449, -0.503, -37.827, 23]
+    region:   w_237
     level:    [100, 101]
   17842415:
     template: Twitherym_Infestation
-    at:       [-484.059, -0.523, -40.567, 244]
+    region:   w_237
     level:    [100, 101]
   17842416:
     template: Numbing_Blossom
@@ -1688,7 +1688,7 @@ spawns:
     level:    [100, 101]
   17842420:
     template: Wooded_Ungeweder
-    at:       [-205.932, -0.680, 3.816, 26]
+    region:   c_244
     level:    [100, 101]
   17842421:
     template: Numbing_Blossom
@@ -1696,19 +1696,19 @@ spawns:
     level:    [1, 1]
   17842422:
     template: Luckybug_Hoarder
-    at:       [-235.978, -0.658, -75.604, 230]
+    region:   w_246
     level:    [100, 101]
   17842423:
     template: Luckybug_Hoarder
-    at:       [-247.710, -0.189, -88.153, 97]
+    region:   w_246
     level:    [100, 101]
   17842424:
     template: Luckybug_Hoarder
-    at:       [-235.845, -0.641, -75.180, 252]
+    region:   w_246
     level:    [100, 101]
   17842425:
     template: Jungle_Baelfyr
-    at:       [-245.054, -0.686, -75.471, 123]
+    region:   w_246
     level:    [100, 101]
   17842426:
     template: Numbing_Blossom
@@ -1716,27 +1716,27 @@ spawns:
     level:    [1, 1]
   17842427:
     template: Verdant_Treant
-    at:       [-455.690, -0.014, -168.438, 136]
+    region:   sw_251
     level:    [100, 102]
   17842428:
     template: Verdant_Treant
-    at:       [-436.306, -0.565, -159.869, 93]
+    region:   sw_251
     level:    [100, 102]
   17842429:
     template: Hinterland_Peiste
-    at:       [-448.155, -0.318, -165.197, 218]
+    region:   sw_251
     level:    [101, 103]
   17842430:
     template: Verdant_Treant
-    at:       [-476.000, -0.048, -175.880, 165]
+    region:   sw_254
     level:    [100, 102]
   17842431:
     template: Verdant_Treant
-    at:       [-455.600, -0.014, -168.430, 136]
+    region:   sw_254
     level:    [100, 102]
   17842432:
     template: Hinterland_Peiste
-    at:       [-471.200, -0.416, -192.550, 40]
+    region:   sw_254
     level:    [101, 103]
   17842433:
     template: Verdant_Treant
@@ -1760,35 +1760,35 @@ spawns:
     level:    [100, 101]
   17842438:
     template: Luckybug_Hoarder
-    at:       [-404.600, -0.577, -315.490, 193]
+    region:   sw_262
     level:    [100, 101]
   17842439:
     template: Luckybug_Hoarder
-    at:       [-401.900, -0.046, -336.820, 19]
+    region:   sw_262
     level:    [100, 101]
   17842440:
     template: Nettled_Wasp
-    at:       [-411.400, 0.153, -352.320, 137]
+    region:   sw_264
     level:    [100, 101]
   17842441:
     template: Nettled_Wasp
-    at:       [-408.200, -0.127, -360.130, 56]
+    region:   sw_264
     level:    [100, 101]
   17842442:
     template: Luckybug_Hoarder
-    at:       [-402.000, -0.238, -349.520, 27]
+    region:   sw_264
     level:    [100, 101]
   17842443:
     template: Luckybug_Hoarder
-    at:       [-409.100, -0.160, -360.530, 207]
+    region:   sw_264
     level:    [100, 101]
   17842444:
     template: Nettled_Wasp
-    at:       [-430.200, -0.067, -359.410, 249]
+    region:   sw_268
     level:    [100, 101]
   17842445:
     template: Nettled_Wasp
-    at:       [-426.800, -0.175, -352.640, 171]
+    region:   sw_268
     level:    [100, 101]
   17842446:
     template: Numbing_Blossom
@@ -1796,223 +1796,223 @@ spawns:
     level:    [1, 1]
   17842447:
     template: Broad_Scarlet
-    at:       [-161.500, -0.488, -125.020, 73]
+    region:   s_271
     level:    [100, 101]
   17842448:
     template: Broad_Scarlet
-    at:       [-156.200, -0.490, -115.020, 216]
+    region:   s_271
     level:    [100, 101]
   17842449:
     template: Broad_Scarlet
-    at:       [-131.500, -0.150, -120.160, 1]
+    region:   s_273
     level:    [100, 101]
   17842450:
     template: Broad_Scarlet
-    at:       [-126.100, -0.435, -124.650, 167]
+    region:   s_273
     level:    [100, 101]
   17842451:
     template: Fiery_Wasp
-    at:       [-211.300, -0.252, -205.710, 98]
+    region:   sw_275
     level:    [100, 101]
   17842452:
     template: Fiery_Wasp
-    at:       [-206.800, -0.444, -207.040, 101]
+    region:   sw_275
     level:    [100, 101]
   17842453:
     template: Fiery_Wasp
-    at:       [-206.300, -0.449, -207.970, 114]
+    region:   sw_275
     level:    [100, 101]
   17842454:
     template: Fiery_Wasp
-    at:       [-203.600, -0.423, -195.540, 239]
+    region:   sw_275
     level:    [100, 101]
   17842455:
     template: Fiery_Wasp
-    at:       [-229.800, -0.086, -213.880, 211]
+    region:   sw_279
     level:    [100, 101]
   17842456:
     template: Fiery_Wasp
-    at:       [-239.200, -0.409, -204.190, 181]
+    region:   sw_279
     level:    [100, 101]
   17842457:
     template: Broad_Scarlet
-    at:       [-228.900, 0.049, -209.370, 142]
+    region:   sw_279
     level:    [100, 101]
   17842458:
     template: Broad_Scarlet
-    at:       [-226.400, 0.124, -205.640, 49]
+    region:   sw_279
     level:    [100, 101]
   17842459:
     template: Jungle_Baelfyr
-    at:       [-234.200, -0.181, -207.650, 1]
+    region:   sw_279
     level:    [100, 101]
   17842460:
     template: Broad_Scarlet
-    at:       [-241.100, 0.049, -227.560, 248]
+    region:   sw_284
     level:    [100, 101]
   17842461:
     template: Broad_Scarlet
-    at:       [-231.900, -0.358, -224.220, 233]
+    region:   sw_284
     level:    [100, 101]
   17842462:
     template: Broad_Scarlet
-    at:       [-234.900, -0.243, -231.270, 166]
+    region:   sw_284
     level:    [100, 101]
   17842463:
     template: Broad_Scarlet
-    at:       [-231.500, -0.465, -230.240, 225]
+    region:   sw_284
     level:    [100, 101]
   17842464:
     template: Broad_Scarlet
-    at:       [-83.380, -0.499, -200.860, 144]
+    region:   s_288
     level:    [100, 101]
   17842465:
     template: Broad_Scarlet
-    at:       [-76.320, -0.500, -200.190, 132]
+    region:   s_288
     level:    [100, 101]
   17842466:
     template: Broad_Scarlet
-    at:       [-85.210, -0.433, -201.450, 183]
+    region:   s_288
     level:    [100, 101]
   17842467:
     template: Broad_Scarlet
-    at:       [-85.890, -0.217, -192.500, 190]
+    region:   s_288
     level:    [100, 101]
   17842468:
     template: Wooded_Ungeweder
-    at:       [-72.830, -0.492, -198.810, 248]
+    region:   s_288
     level:    [100, 101]
   17842469:
     template: Fiery_Wasp
-    at:       [-56.110, -0.064, -333.510, 92]
+    region:   s_293
     level:    [100, 101]
   17842470:
     template: Fiery_Wasp
-    at:       [-57.410, 0.081, -319.210, 139]
+    region:   s_293
     level:    [100, 101]
   17842471:
     template: Fiery_Wasp
-    at:       [-54.390, 0.057, -320.870, 203]
+    region:   s_293
     level:    [100, 101]
   17842472:
     template: Fiery_Wasp
-    at:       [-69.160, -0.071, -318.390]
+    region:   s_296
     level:    [100, 101]
   17842473:
     template: Fiery_Wasp
-    at:       [-67.830, 0.022, -320.660, 205]
+    region:   s_296
     level:    [100, 101]
   17842474:
     template: Fiery_Wasp
-    at:       [-85.990, -0.495, -318.890, 141]
+    region:   s_296
     level:    [100, 101]
   17842475:
     template: Jungle_Baelfyr
-    at:       [-81.110, -0.490, -320.330, 183]
+    region:   s_296
     level:    [100, 101]
   17842476:
     template: Fiery_Wasp
-    at:       [-195.800, -0.497, -359.150, 243]
+    region:   sw_300
     level:    [100, 101]
   17842477:
     template: Fiery_Wasp
-    at:       [-198.800, -0.527, -359.940, 137]
+    region:   sw_300
     level:    [100, 101]
   17842478:
     template: Fiery_Wasp
-    at:       [-208.400, -0.282, -356.110, 226]
+    region:   sw_300
     level:    [100, 101]
   17842479:
     template: Wooded_Ungeweder
-    at:       [-200.700, -0.499, -353.780, 167]
+    region:   sw_300
     level:    [100, 101]
   17842480:
     template: Nettled_Wasp
-    at:       [-242.600, -0.526, -363.030, 58]
+    region:   sw_304
     level:    [100, 101]
   17842481:
     template: Nettled_Wasp
-    at:       [-238.800, -0.500, -353.920, 144]
+    region:   sw_304
     level:    [100, 101]
   17842482:
     template: Nettled_Wasp
-    at:       [-246.800, -0.546, -359.050, 15]
+    region:   sw_304
     level:    [100, 101]
   17842483:
     template: Twitherym_Infestation
-    at:       [334.750, 2.382, 300.713, 177]
+    region:   ne_307
     level:    [100, 101]
   17842484:
     template: Twitherym_Infestation
-    at:       [344.110, 1.451, 301.295, 228]
+    region:   ne_307
     level:    [100, 101]
   17842485:
     template: Twitherym_Infestation
-    at:       [342.020, 0.781, 296.351, 99]
+    region:   ne_307
     level:    [100, 101]
   17842486:
     template: Twitherym_Infestation
-    at:       [335.270, 2.306, 298.578, 74]
+    region:   ne_307
     level:    [100, 101]
   17842487:
     template: Luckybug_Hoarder
-    at:       [-457.600, 1.768, 218.789, 160]
+    region:   nw_311
     level:    [100, 101]
   17842488:
     template: Luckybug_Hoarder
-    at:       [-456.700, 0.837, 216.419, 100]
+    region:   nw_311
     level:    [100, 101]
   17842489:
     template: Luckybug_Hoarder
-    at:       [-454.400, 1.725, 222.194, 248]
+    region:   nw_311
     level:    [100, 101]
   17842490:
     template: Twitherym_Infestation
-    at:       [-377.800, 2.002, 138.259, 187]
+    region:   w_314
     level:    [100, 101]
   17842491:
     template: Twitherym_Infestation
-    at:       [-373.600, 1.847, 143.701, 12]
+    region:   w_314
     level:    [100, 101]
   17842492:
     template: Twitherym_Infestation
-    at:       [-379.000, 2.251, 139.240, 221]
+    region:   w_314
     level:    [100, 101]
   17842493:
     template: Calfcleaving_Chapuli
-    at:       [-420.400, 2.810, -27.825, 195]
+    region:   w_317
     level:    [100, 101]
   17842494:
     template: Calfcleaving_Chapuli
-    at:       [-419.700, 1.818, -20.482, 45]
+    region:   w_317
     level:    [100, 101]
   17842495:
     template: Calfcleaving_Chapuli
-    at:       [-421.200, 2.349, -25.826, 36]
+    region:   w_317
     level:    [100, 101]
   17842496:
     template: Luckybug_Hoarder
-    at:       [-260.800, 2.331, -25.142, 49]
+    region:   w_320
     level:    [100, 101]
   17842497:
     template: Luckybug_Hoarder
-    at:       [-259.400, 2.695, -25.163, 85]
+    region:   w_320
     level:    [100, 101]
   17842498:
     template: Luckybug_Hoarder
-    at:       [-261.600, 2.347, -25.200, 29]
+    region:   w_320
     level:    [100, 101]
   17842499:
     template: Twitherym_Infestation
-    at:       [284.070, 0.021, 420.977, 255]
+    region:   ne_323
     level:    [100, 101]
   17842500:
     template: Twitherym_Infestation
-    at:       [281.780, 0.052, 421.225, 128]
+    region:   ne_323
     level:    [100, 101]
   17842501:
     template: Twitherym_Infestation
-    at:       [309.610, 0.948, 419.187, 117]
+    region:   ne_325
     level:    [100, 101]
   17842502:
     template: Twitherym_Infestation
@@ -2080,27 +2080,27 @@ spawns:
     level:    [100, 101]
   17842518:
     template: Nettled_Wasp
-    at:       [139.160, -0.004, -123.350, 190]
+    region:   se_342
     level:    [100, 101]
   17842519:
     template: Twitherym_Infestation
-    at:       [-23.060, 1.706, -17.533, 251]
+    region:   c_343
     level:    [100, 101]
   17842520:
     template: Twitherym_Infestation
-    at:       [-50.130, -0.064, -20.107, 140]
+    region:   c_343
     level:    [100, 101]
   17842521:
     template: Twitherym_Infestation
-    at:       [-19.170, -0.068, -39.401, 193]
+    region:   c_345
     level:    [100, 101]
   17842522:
     template: Calfcleaving_Chapuli
-    at:       [-141.500, 1.220, 51.904, 181]
+    region:   c_346
     level:    [100, 101]
   17842523:
     template: Calfcleaving_Chapuli
-    at:       [-139.100, 0.044, 81.849, 192]
+    region:   c_347
     level:    [100, 101]
   17842524:
     template: Beady_Panopt
@@ -2116,39 +2116,39 @@ spawns:
     level:    [100, 101]
   17842527:
     template: Broad_Scarlet
-    at:       [-133.300, 1.724, -216.280, 53]
+    region:   s_351
     level:    [100, 101]
   17842528:
     template: Broad_Scarlet
-    at:       [-142.200, 2.257, -219.420, 78]
+    region:   s_351
     level:    [100, 101]
   17842529:
     template: Broad_Scarlet
-    at:       [-132.300, 0.840, -219.130, 54]
+    region:   s_351
     level:    [100, 101]
   17842530:
     template: Shy_Heartwing
-    at:       [338.870, -0.024, 270.743, 207]
+    region:   ne_354
     level:    [100, 101]
   17842531:
     template: Frondescent_Leafkin
-    at:       [71.702, -0.068, 268.074, 78]
+    region:   n_355
     level:    [100, 101]
   17842532:
     template: Velkk_Marauder
-    at:       [-345.400, 0.078, 141.557, 130]
+    region:   w_356
     level:    [100, 103]
   17842533:
     template: Velkk_Marauder
-    at:       [-85.260, -0.226, -191.320, 164]
+    region:   s_357
     level:    [100, 103]
   17842534:
     template: Velkk_Marauder
-    at:       [-127.400, -0.337, 166.201, 57]
+    region:   n_358
     level:    [100, 103]
   17842535:
     template: Velkk_Marauder
-    at:       [204.070, -0.433, 201.652, 70]
+    region:   ne_359
     level:    [100, 103]
   17842536:
     script: Alluring_Orobon
@@ -2197,15 +2197,15 @@ spawns:
     level:    [100, 101]
   17842548:
     template: Cerise_Wasp
-    at:       [-441.200, -0.509, 153.391, 69]
+    region:   nw_372
     level:    [100, 101]
   17842549:
     template: Cerise_Wasp
-    at:       [-439.400, -0.513, 164.886, 155]
+    region:   nw_372
     level:    [100, 101]
   17842550:
     template: Shrubshredder_Chapuli
-    at:       [-427.400, -0.074, 149.712, 21]
+    region:   nw_372
     level:    [100, 103]
   17842551:
     template: Wasp_Nest
@@ -2213,15 +2213,15 @@ spawns:
     level:    [100, 101]
   17842552:
     template: Cerise_Wasp
-    at:       [-358.600, -0.418, -83.410, 182]
+    region:   w_376
     level:    [100, 101]
   17842553:
     template: Cerise_Wasp
-    at:       [-361.700, -0.446, -82.519, 226]
+    region:   w_376
     level:    [100, 101]
   17842554:
     template: Quivering_Twitherym
-    at:       [-365.600, -0.675, -85.301, 55]
+    region:   w_376
     level:    [100, 103]
   17842555:
     template: Wasp_Nest
@@ -2229,15 +2229,15 @@ spawns:
     level:    [100, 101]
   17842556:
     template: Cerise_Wasp
-    at:       [-37.590, -0.500, -247.070, 89]
+    region:   s_380
     level:    [100, 101]
   17842557:
     template: Cerise_Wasp
-    at:       [-36.660, -0.481, -247.190, 103]
+    region:   s_380
     level:    [100, 101]
   17842558:
     template: Red_Dropwing
-    at:       [-39.860, -0.513, -234.750, 215]
+    region:   s_380
     level:    [100, 101]
   17842559:
     template: Knotted_Root_YHG_CB
@@ -2256,19 +2256,19 @@ spawns:
     level:    [100, 103]
   17842562:
     template: Shrubshredder_Chapuli
-    at:       [148.990, -0.032, -182.180, 196]
+    region:   se_386
     level:    [100, 103]
   17842563:
     template: Shrubshredder_Chapuli
-    at:       [131.820, -0.112, -182.140, 65]
+    region:   se_386
     level:    [100, 103]
   17842564:
     template: Shrubshredder_Chapuli
-    at:       [104.550, 0.485, -180.340, 30]
+    region:   s_388
     level:    [100, 103]
   17842565:
     template: Shrubshredder_Chapuli
-    at:       [107.490, 0.230, -179.310, 243]
+    region:   s_388
     level:    [100, 103]
   17842566:
     template: Knotted_Root_YHG_CB
@@ -2287,19 +2287,19 @@ spawns:
     level:    [100, 103]
   17842569:
     template: Lancing_Wasp
-    at:       [167.780, -0.601, -10.420, 181]
+    region:   e_393
     level:    [100, 103]
   17842570:
     template: Lancing_Wasp
-    at:       [178.100, -0.064, -21.895, 63]
+    region:   e_393
     level:    [100, 103]
   17842571:
     template: Lancing_Wasp
-    at:       [147.970, -0.014, -16.791, 154]
+    region:   e_395
     level:    [100, 103]
   17842572:
     template: Lancing_Wasp
-    at:       [134.380, 1.487, -15.782, 190]
+    region:   e_395
     level:    [100, 103]
   17842573:
     template: Knotted_Root_YHG_CB
@@ -2318,27 +2318,27 @@ spawns:
     level:    [100, 103]
   17842576:
     template: Temblor_Beetle
-    at:       [-148.600, -0.136, 145.675, 168]
+    region:   c_400
     level:    [100, 103]
   17842577:
     template: Temblor_Beetle
-    at:       [-148.900, -0.138, 135.897, 160]
+    region:   c_400
     level:    [100, 103]
   17842578:
     template: Temblor_Beetle
-    at:       [-137.900, -0.018, 138.908, 154]
+    region:   c_400
     level:    [100, 103]
   17842579:
     template: Temblor_Beetle
-    at:       [-173.900, 0.130, 137.255, 177]
+    region:   c_403
     level:    [100, 103]
   17842580:
     template: Temblor_Beetle
-    at:       [-170.000, -0.526, 146.152, 116]
+    region:   c_403
     level:    [100, 103]
   17842581:
     template: Temblor_Beetle
-    at:       [-181.400, 1.233, 143.766, 228]
+    region:   c_403
     level:    [100, 103]
   17842582:
     template: Knotted_Root_YHG_CB
@@ -2357,23 +2357,23 @@ spawns:
     level:    [100, 103]
   17842585:
     template: Lancing_Wasp
-    at:       [-106.800, -0.185, -28.215, 226]
+    region:   c_409
     level:    [100, 103]
   17842586:
     template: Lancing_Wasp
-    at:       [-99.460, 0.084, -25.087, 198]
+    region:   c_409
     level:    [100, 103]
   17842587:
     template: Lancing_Wasp
-    at:       [-99.460, 0.075, -28.363, 209]
+    region:   c_409
     level:    [100, 103]
   17842588:
     template: Lancing_Wasp
-    at:       [-101.700, 0.333, -54.943, 216]
+    region:   c_412
     level:    [100, 103]
   17842589:
     template: Lancing_Wasp
-    at:       [-104.300, 0.575, -58.199, 190]
+    region:   c_412
     level:    [100, 103]
   17842590:
     template: Lancing_Wasp
@@ -2412,9 +2412,9 @@ spawns:
     level:    [100, 103]
   17842598:
     template: Quivering_Twitherym
-    at:       [-305.300, 0.054, -224.260, 126]
+    region:   sw_422
     level:    [100, 103]
   17842599:
     template: Quivering_Twitherym
-    at:       [-296.200, 1.558, -221.810, 180]
+    region:   sw_422
     level:    [100, 103]

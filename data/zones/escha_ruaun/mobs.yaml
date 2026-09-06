@@ -2787,17 +2787,17 @@ spawns:
   17960998:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [-5.401, -40.700, -335.520, 65]
+    region:   s_38
     level:    [115, 119]
   17960999:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [4.021, -40.640, -337.830, 86]
+    region:   s_38
     level:    [115, 119]
   17961000:
     template: Ilaern_drg
     script:   Eschan_Ilaern
-    at:       [4.817, -41.710, -305.540, 3]
+    region:   s_40
     level:    [115, 119]
   17961001:
     template: Eschan_Ilaerns_Wynav
@@ -2806,27 +2806,27 @@ spawns:
   17961002:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [4.758, -43.510, -264.790, 57]
+    region:   s_42
     level:    [115, 119]
   17961003:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [4.254, -42.890, -274.850, 243]
+    region:   s_42
     level:    [115, 119]
   17961004:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [0.912, -44.090, -223.700, 225]
+    region:   s_44
     level:    [115, 119]
   17961005:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [0.309, -44.090, -222.940, 245]
+    region:   s_44
     level:    [115, 119]
   17961006:
     template: Ilaern_drg
     script:   Eschan_Ilaern
-    at:       [1.268, -44.090, -224.960, 214]
+    region:   s_44
     level:    [115, 119]
   17961007:
     template: Eschan_Ilaerns_Wynav
@@ -2844,7 +2844,7 @@ spawns:
   17961010:
     template: Ilaern_drg
     script:   Eschan_Ilaern
-    at:       [66.380, -40.930, -201.830, 163]
+    region:   s_50
     level:    [115, 119]
   17961011:
     template: Eschan_Ilaerns_Wynav
@@ -2852,48 +2852,48 @@ spawns:
     level:    [116, 116]
   17961012:
     template: Eschan_Phuabo
-    at:       [78.289, -41.040, -194.550, 144]
+    region:   s_50
     level:    [112, 115]
   17961013:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [65.030, -40.700, -173.710, 81]
+    region:   s_53
     level:    [115, 119]
   17961014:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [80.166, -40.700, -150.550, 127]
+    region:   s_53
     level:    [115, 119]
   17961015:
     template: Eschan_Phuabo
-    at:       [77.061, -40.700, -181.500, 45]
+    region:   s_53
     level:    [112, 115]
   17961016:
     template: Eschan_Phuabo
-    at:       [48.414, -40.690, -168.180, 172]
+    region:   s_53
     level:    [112, 115]
   17961017:
     template: Eschan_Phuabo
-    at:       [83.565, -40.700, -168.940, 66]
+    region:   s_53
     level:    [112, 115]
   17961018:
     template: Eschan_Phuabo
-    at:       [77.860, -40.670, -184.020, 219]
+    region:   s_53
     level:    [112, 115]
   17961019:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [140.910, -40.530, -174.320, 40]
+    region:   s_59
     level:    [115, 119]
   17961020:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [129.280, -40.680, -159.010, 229]
+    region:   s_59
     level:    [115, 119]
   17961021:
     template: Ilaern_drg
     script:   Eschan_Ilaern
-    at:       [126.410, -40.690, -162.330, 142]
+    region:   s_59
     level:    [115, 119]
   17961022:
     template: Eschan_Ilaerns_Wynav
@@ -2901,35 +2901,35 @@ spawns:
     level:    [116, 116]
   17961023:
     template: Eschan_Phuabo
-    at:       [117.660, -40.690, -157.450, 168]
+    region:   s_59
     level:    [112, 115]
   17961024:
     template: Eschan_Phuabo
-    at:       [128.250, -40.530, -148.850, 171]
+    region:   s_59
     level:    [112, 115]
   17961025:
     template: Eschan_Phuabo
-    at:       [119.830, -40.690, -161.510, 45]
+    region:   s_59
     level:    [112, 115]
   17961026:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [110.060, -34.520, -178.740, 32]
+    region:   s_66
     level:    [115, 119]
   17961027:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [118.920, -34.500, -187.140, 245]
+    region:   s_66
     level:    [115, 119]
   17961028:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [121.180, -34.880, -189.020, 96]
+    region:   s_66
     level:    [115, 119]
   17961029:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [118.890, -34.500, -182.780, 58]
+    region:   s_66
     level:    [115, 119]
   17961030:
     template: Ilaern_drg
@@ -2943,7 +2943,7 @@ spawns:
   17961032:
     template: Ilaern_drg
     script:   Eschan_Ilaern
-    at:       [-66.740, -40.640, -200.310, 172]
+    region:   s_72
     level:    [115, 119]
   17961033:
     template: Eschan_Ilaerns_Wynav
@@ -2951,48 +2951,48 @@ spawns:
     level:    [116, 116]
   17961034:
     template: Eschan_Phuabo
-    at:       [-64.520, -41.130, -207.670, 41]
+    region:   s_72
     level:    [112, 115]
   17961035:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [-66.940, -40.700, -159.760, 69]
+    region:   s_75
     level:    [115, 119]
   17961036:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [-85.150, -40.700, -162.520, 106]
+    region:   s_75
     level:    [115, 119]
   17961037:
     template: Eschan_Phuabo
-    at:       [-70.130, -40.700, -162.920, 57]
+    region:   s_75
     level:    [112, 115]
   17961038:
     template: Eschan_Phuabo
-    at:       [-85.630, -41.250, -180.470, 84]
+    region:   s_75
     level:    [112, 115]
   17961039:
     template: Eschan_Phuabo
-    at:       [-69.640, -40.700, -165.620, 58]
+    region:   s_75
     level:    [112, 115]
   17961040:
     template: Eschan_Phuabo
-    at:       [-69.890, -40.700, -161.010, 16]
+    region:   s_75
     level:    [112, 115]
   17961041:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [-117.800, -40.690, -157.860, 65]
+    region:   s_81
     level:    [115, 119]
   17961042:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [-141.400, -40.500, -174.260, 73]
+    region:   s_81
     level:    [115, 119]
   17961043:
     template: Ilaern_drg
     script:   Eschan_Ilaern
-    at:       [-117.800, -40.690, -158.480, 58]
+    region:   s_81
     level:    [115, 119]
   17961044:
     template: Eschan_Ilaerns_Wynav
@@ -3000,35 +3000,35 @@ spawns:
     level:    [116, 116]
   17961045:
     template: Eschan_Phuabo
-    at:       [-138.800, -40.530, -167.770, 135]
+    region:   s_81
     level:    [112, 115]
   17961046:
     template: Eschan_Phuabo
-    at:       [-119.500, -40.690, -162.500, 86]
+    region:   s_81
     level:    [112, 115]
   17961047:
     template: Eschan_Phuabo
-    at:       [-111.000, -40.500, -209.850, 42]
+    region:   s_81
     level:    [112, 115]
   17961048:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [-122.300, -34.630, -185.350, 249]
+    region:   s_88
     level:    [115, 119]
   17961049:
     template: Ilaern_war
     script:   Eschan_Ilaern
-    at:       [-111.700, -34.490, -183.100, 191]
+    region:   s_88
     level:    [115, 119]
   17961050:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [-108.600, -34.580, -176.220, 39]
+    region:   s_88
     level:    [115, 119]
   17961051:
     template: Ilaern_blm
     script:   Eschan_Ilaern
-    at:       [-125.700, -34.580, -180.220, 182]
+    region:   s_88
     level:    [115, 119]
   17961052:
     template: Eschan_Yovra
@@ -3037,27 +3037,27 @@ spawns:
   17961053:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [404.960, -8.621, -142.690, 242]
+    region:   se_93
     level:    [115, 119]
   17961054:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [416.880, -8.911, -132.510, 194]
+    region:   se_93
     level:    [115, 119]
   17961055:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [414.100, -8.826, -129.030, 1]
+    region:   se_93
     level:    [115, 119]
   17961056:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [437.950, -4.073, -142.910, 65]
+    region:   se_93
     level:    [115, 119]
   17961057:
     template: Ilaern_bst
     script:   Eschan_Ilaern
-    at:       [429.950, -7.314, -140.350, 69]
+    region:   se_93
     level:    [115, 119]
   17961058:
     template: Eschan_Ilaerns_Euvhi
@@ -3065,7 +3065,7 @@ spawns:
     level:    [116, 116]
   17961059:
     template: Eschan_Euvhi
-    at:       [386.010, -17.320, -125.400, 66]
+    region:   e_99
     level:    [115, 119]
   17961060:
     template: Eschan_Euvhi
@@ -3078,35 +3078,35 @@ spawns:
   17961062:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [389.570, -24.820, -11.364, 81]
+    region:   e_102
     level:    [115, 119]
   17961063:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [392.800, -24.820, -5.543, 23]
+    region:   e_102
     level:    [115, 119]
   17961064:
     template: Eschan_Euvhi
-    at:       [389.510, -24.820, -10.093, 90]
+    region:   e_102
     level:    [115, 119]
   17961065:
     template: Eschan_Euvhi
-    at:       [391.010, -24.820, -26.843, 234]
+    region:   e_102
     level:    [115, 119]
   17961066:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [391.020, -24.820, 51.768, 20]
+    region:   e_106
     level:    [115, 119]
   17961067:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [383.050, -24.820, 56.050, 240]
+    region:   e_106
     level:    [115, 119]
   17961068:
     template: Ilaern_bst
     script:   Eschan_Ilaern
-    at:       [380.200, -30.430, 39.967, 253]
+    region:   e_108
     level:    [115, 119]
   17961069:
     template: Eschan_Ilaerns_Euvhi
@@ -3115,45 +3115,45 @@ spawns:
   17961070:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [360.590, -40.690, -32.479, 96]
+    region:   e_110
     level:    [115, 119]
   17961071:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [368.810, -41.010, -3.973, 67]
+    region:   e_110
     level:    [115, 119]
   17961072:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [427.480, -40.670, -42.622, 212]
+    region:   e_112
     level:    [115, 119]
   17961073:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [427.470, -40.500, -49.804, 2]
+    region:   e_112
     level:    [115, 119]
   17961074:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [447.810, -40.500, 13.445, 207]
+    region:   e_114
     level:    [115, 119]
   17961075:
     template: Ilaern_whm
     script:   Eschan_Ilaern
-    at:       [416.040, -40.720, 1.772, 64]
+    region:   e_114
     level:    [115, 119]
   17961076:
     template: Eschan_Euvhi
-    at:       [451.550, -40.550, 14.401, 144]
+    region:   e_114
     level:    [115, 119]
   17961077:
     template: Eschan_Euvhi
-    at:       [440.040, -40.500, 6.362, 103]
+    region:   e_114
     level:    [115, 119]
   17961078:
     template: Ilaern_bst
     script:   Eschan_Ilaern
-    at:       [433.400, -40.850, 38.362, 58]
+    region:   e_118
     level:    [115, 119]
   17961079:
     template: Eschan_Ilaerns_Euvhi
@@ -3170,7 +3170,7 @@ spawns:
   17961082:
     template: Ilaern_bst
     script:   Eschan_Ilaern
-    at:       [432.230, -36.850, -133.380, 204]
+    region:   se_122
     level:    [115, 119]
   17961083:
     template: Eschan_Ilaerns_Euvhi
@@ -3187,35 +3187,35 @@ spawns:
   17961086:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [341.460, -24.820, -202.270, 71]
+    region:   se_126
     level:    [115, 119]
   17961087:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [319.950, -24.820, -233.450, 249]
+    region:   se_126
     level:    [115, 119]
   17961088:
     template: Eschan_Euvhi
-    at:       [325.530, -24.820, -212.870, 196]
+    region:   se_126
     level:    [115, 119]
   17961089:
     template: Eschan_Euvhi
-    at:       [334.670, -24.820, -206.010, 45]
+    region:   se_126
     level:    [115, 119]
   17961090:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [275.480, -24.820, -259.440, 21]
+    region:   se_130
     level:    [115, 119]
   17961091:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [298.250, -24.820, -240.310, 211]
+    region:   se_130
     level:    [115, 119]
   17961092:
     template: Ilaern_bst
     script:   Eschan_Ilaern
-    at:       [289.460, -38.690, -232.150, 90]
+    region:   se_132
     level:    [115, 119]
   17961093:
     template: Eschan_Ilaerns_Euvhi
@@ -3224,45 +3224,45 @@ spawns:
   17961094:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [304.480, -40.970, -211.670, 133]
+    region:   se_134
     level:    [115, 119]
   17961095:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [319.640, -40.740, -188.070, 27]
+    region:   se_134
     level:    [115, 119]
   17961096:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [376.120, -40.500, -248.770, 37]
+    region:   se_136
     level:    [115, 119]
   17961097:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [375.130, -40.510, -238.520, 88]
+    region:   se_136
     level:    [115, 119]
   17961098:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [381.490, -40.690, -272.020, 5]
+    region:   se_138
     level:    [115, 119]
   17961099:
     template: Ilaern_nin
     script:   Eschan_Ilaern
-    at:       [379.420, -40.670, -262.600, 4]
+    region:   se_138
     level:    [115, 119]
   17961100:
     template: Eschan_Euvhi
-    at:       [362.150, -40.510, -265.150, 103]
+    region:   se_138
     level:    [115, 119]
   17961101:
     template: Eschan_Euvhi
-    at:       [363.880, -40.510, -262.770, 211]
+    region:   se_138
     level:    [115, 119]
   17961102:
     template: Ilaern_bst
     script:   Eschan_Ilaern
-    at:       [320.210, -38.300, -308.380, 17]
+    region:   se_142
     level:    [115, 119]
   17961103:
     template: Eschan_Ilaerns_Euvhi
@@ -3278,152 +3278,152 @@ spawns:
     level:    [115, 119]
   17961106:
     template: Eschan_Clionid
-    at:       [567.020, -71.080, -24.545, 201]
+    region:   e_146
     level:    [115, 119]
   17961107:
     template: Eschan_Clionid
-    at:       [570.340, -70.610, -90.888, 206]
+    region:   e_147
     level:    [115, 119]
   17961108:
     template: Eschan_Clionid
-    at:       [546.790, -70.580, -95.079, 69]
+    region:   e_147
     level:    [115, 119]
   17961109:
     template: Eschan_Clionid
-    at:       [569.550, -70.760, -96.810, 251]
+    region:   e_147
     level:    [115, 119]
   17961110:
     template: Eschan_Clionid
-    at:       [555.400, -70.620, -66.027, 138]
+    region:   e_147
     level:    [115, 119]
   17961111:
     template: Eschan_Clionid
-    at:       [562.020, -68.840, -140.310, 145]
+    region:   se_151
     level:    [115, 119]
   17961112:
     template: Eschan_Clionid
-    at:       [559.410, -69.250, -177.820, 72]
+    region:   se_151
     level:    [115, 119]
   17961113:
     template: Eschan_Clionid
-    at:       [566.190, -68.590, -156.690, 203]
+    region:   se_151
     level:    [115, 119]
   17961114:
     template: Eschan_Yovra
-    at:       [561.600, -71.550, -103.300, 184]
+    region:   e_154
     level:    [120, 121]
   17961115:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [213.780, -8.500, 316.229, 103]
+    region:   ne_155
     level:    [115, 119]
   17961116:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [278.580, -2.956, 375.324, 194]
+    region:   ne_155
     level:    [115, 119]
   17961117:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [215.980, -8.503, 318.121, 159]
+    region:   ne_155
     level:    [115, 119]
   17961118:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [264.090, -9.711, 355.955, 34]
+    region:   ne_155
     level:    [115, 119]
   17961119:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [278.880, -3.207, 372.828, 188]
+    region:   ne_155
     level:    [115, 119]
   17961120:
     template: Eschan_Hpemde
-    at:       [242.080, -17.420, 326.200, 225]
+    region:   ne_160
     level:    [115, 119]
   17961121:
     template: Eschan_Hpemde
-    at:       [241.010, -20.760, 304.819, 155]
+    region:   ne_161
     level:    [115, 119]
   17961122:
     template: Eschan_Hpemde
-    at:       [211.120, -20.810, 326.170, 151]
+    region:   n_162
     level:    [115, 119]
   17961123:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [123.770, -24.500, 378.351, 235]
+    region:   n_163
     level:    [115, 119]
   17961124:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [114.170, -24.500, 377.111, 97]
+    region:   n_163
     level:    [115, 119]
   17961125:
     template: Eschan_Hpemde
-    at:       [135.700, -24.500, 374.204, 208]
+    region:   n_163
     level:    [115, 119]
   17961126:
     template: Eschan_Hpemde
-    at:       [148.930, -24.780, 368.562, 154]
+    region:   n_163
     level:    [115, 119]
   17961127:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [68.013, -24.780, 365.373, 49]
+    region:   n_167
     level:    [115, 119]
   17961128:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [65.997, -24.780, 383.842, 254]
+    region:   n_167
     level:    [115, 119]
   17961129:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [98.338, -39.910, 360.404, 12]
+    region:   n_169
     level:    [115, 119]
   17961130:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [149.710, -40.700, 340.451, 189]
+    region:   n_170
     level:    [115, 119]
   17961131:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [115.700, -40.790, 359.531, 14]
+    region:   n_170
     level:    [115, 119]
   17961132:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [166.860, -40.700, 395.972, 218]
+    region:   n_172
     level:    [115, 119]
   17961133:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [173.950, -40.530, 394.885, 23]
+    region:   n_172
     level:    [115, 119]
   17961134:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [118.390, -40.500, 427.075, 51]
+    region:   n_174
     level:    [115, 119]
   17961135:
     template: Ilaern_mnk
     script:   Eschan_Ilaern
-    at:       [128.060, -40.500, 422.381, 123]
+    region:   n_174
     level:    [115, 119]
   17961136:
     template: Eschan_Hpemde
-    at:       [129.020, -40.500, 425.585, 92]
+    region:   n_174
     level:    [115, 119]
   17961137:
     template: Eschan_Hpemde
-    at:       [129.250, -40.310, 424.394, 108]
+    region:   n_174
     level:    [115, 119]
   17961138:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [99.811, -40.640, 427.350, 248]
+    region:   n_178
     level:    [115, 119]
   17961139:
     template: Eschan_Hpemde
@@ -3436,92 +3436,92 @@ spawns:
   17961141:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [286.230, -36.780, 346.013, 27]
+    region:   ne_181
     level:    [115, 119]
   17961142:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [227.440, -36.500, 386.934, 128]
+    region:   ne_181
     level:    [115, 119]
   17961143:
     template: Eschan_Hpemde
-    at:       [267.150, -36.780, 361.391, 153]
+    region:   ne_181
     level:    [115, 119]
   17961144:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [299.530, -24.780, 249.162, 98]
+    region:   ne_184
     level:    [115, 119]
   17961145:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [325.420, -24.780, 223.158, 250]
+    region:   ne_184
     level:    [115, 119]
   17961146:
     template: Eschan_Hpemde
-    at:       [304.700, -24.780, 242.451, 117]
+    region:   ne_184
     level:    [115, 119]
   17961147:
     template: Eschan_Hpemde
-    at:       [309.590, -24.780, 239.526, 95]
+    region:   ne_184
     level:    [115, 119]
   17961148:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [337.800, -24.780, 182.796, 165]
+    region:   e_188
     level:    [115, 119]
   17961149:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [348.850, -24.780, 188.966, 211]
+    region:   e_188
     level:    [115, 119]
   17961150:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [323.670, -33.810, 191.837, 135]
+    region:   e_190
     level:    [115, 119]
   17961151:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [304.300, -40.710, 215.201, 125]
+    region:   ne_191
     level:    [115, 119]
   17961152:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [297.150, -40.650, 226.824, 81]
+    region:   ne_191
     level:    [115, 119]
   17961153:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [340.410, -40.530, 291.808, 232]
+    region:   ne_193
     level:    [115, 119]
   17961154:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [330.100, -40.700, 277.726, 211]
+    region:   ne_193
     level:    [115, 119]
   17961155:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [366.710, -40.570, 268.805, 75]
+    region:   ne_195
     level:    [115, 119]
   17961156:
     template: Ilaern_rdm
     script:   Eschan_Ilaern
-    at:       [344.680, -40.740, 236.688, 140]
+    region:   ne_195
     level:    [115, 119]
   17961157:
     template: Eschan_Hpemde
-    at:       [382.170, -40.670, 246.472, 28]
+    region:   ne_195
     level:    [115, 119]
   17961158:
     template: Eschan_Hpemde
-    at:       [375.420, -40.690, 269.320, 54]
+    region:   ne_195
     level:    [115, 119]
   17961159:
     template: Ilaern_brd
     script:   Eschan_Ilaern
-    at:       [385.130, -40.420, 216.604, 52]
+    region:   ne_199
     level:    [115, 119]
   17961160:
     template: Eschan_Hpemde
@@ -3533,161 +3533,161 @@ spawns:
     level:    [115, 119]
   17961162:
     template: Eschan_Amoeban
-    at:       [198.370, -71.260, 515.697, 79]
+    region:   n_202
     level:    [115, 119]
   17961163:
     template: Eschan_Amoeban
-    at:       [244.240, -70.550, 497.119, 119]
+    region:   ne_203
     level:    [115, 119]
   17961164:
     template: Eschan_Amoeban
-    at:       [245.040, -70.690, 528.765, 150]
+    region:   ne_203
     level:    [115, 119]
   17961165:
     template: Eschan_Amoeban
-    at:       [234.490, -70.540, 501.140, 136]
+    region:   ne_203
     level:    [115, 119]
   17961166:
     template: Eschan_Amoeban
-    at:       [249.030, -70.510, 505.571, 197]
+    region:   ne_203
     level:    [115, 119]
   17961167:
     template: Eschan_Amoeban
-    at:       [290.440, -69.010, 487.830, 29]
+    region:   ne_207
     level:    [115, 119]
   17961168:
     template: Eschan_Amoeban
-    at:       [290.340, -68.940, 486.886, 23]
+    region:   ne_207
     level:    [115, 119]
   17961169:
     template: Eschan_Amoeban
-    at:       [332.930, -68.870, 483.536, 94]
+    region:   ne_207
     level:    [115, 119]
   17961170:
     template: Eschan_Yovra
-    at:       [307.320, -69.450, 496.411, 233]
+    region:   ne_210
     level:    [120, 121]
   17961171:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-261.200, -8.500, 338.213, 182]
+    region:   nw_211
     level:    [115, 119]
   17961172:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-258.400, -8.505, 331.920, 55]
+    region:   nw_211
     level:    [115, 119]
   17961173:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-216.100, -8.581, 327.703, 157]
+    region:   nw_211
     level:    [115, 119]
   17961174:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-223.600, -8.501, 307.415, 239]
+    region:   nw_211
     level:    [115, 119]
   17961175:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-260.200, -8.500, 337.790, 183]
+    region:   nw_211
     level:    [115, 119]
   17961176:
     template: Eschan_Xzomit
-    at:       [-280.700, -4.060, 379.697, 14]
+    region:   nw_216
     level:    [115, 119]
   17961177:
     template: Eschan_Xzomit
-    at:       [-221.700, -20.640, 316.302, 105]
+    region:   nw_217
     level:    [115, 119]
   17961178:
     template: Eschan_Xzomit
-    at:       [-241.600, -20.620, 300.908, 228]
+    region:   nw_218
     level:    [115, 119]
   17961179:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-109.400, -24.610, 370.626, 105]
+    region:   n_219
     level:    [115, 119]
   17961180:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-119.000, -24.610, 369.605, 16]
+    region:   n_219
     level:    [115, 119]
   17961181:
     template: Eschan_Xzomit
-    at:       [-137.900, -24.610, 367.631, 92]
+    region:   n_219
     level:    [115, 119]
   17961182:
     template: Eschan_Xzomit
-    at:       [-133.800, -24.610, 371.315, 117]
+    region:   n_219
     level:    [115, 119]
   17961183:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-69.360, -24.610, 371.476, 60]
+    region:   n_223
     level:    [115, 119]
   17961184:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-91.620, -24.610, 386.014, 118]
+    region:   n_223
     level:    [115, 119]
   17961185:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-79.800, -30.220, 376.731, 191]
+    region:   n_225
     level:    [115, 119]
   17961186:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-108.000, -40.600, 362.571, 230]
+    region:   n_226
     level:    [115, 119]
   17961187:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-140.700, -40.690, 342.321, 174]
+    region:   n_226
     level:    [115, 119]
   17961188:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-166.900, -40.500, 385.954, 152]
+    region:   n_228
     level:    [115, 119]
   17961189:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-159.900, -40.690, 395.075, 207]
+    region:   n_228
     level:    [115, 119]
   17961190:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-167.800, -40.680, 404.156, 29]
+    region:   n_228
     level:    [115, 119]
   17961191:
     template: Eschan_Xzomit
-    at:       [-179.100, -40.500, 401.339, 89]
+    region:   n_228
     level:    [115, 119]
   17961192:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-120.100, -40.700, 442.300, 17]
+    region:   n_232
     level:    [115, 119]
   17961193:
     template: Ilaern_pld
     script:   Eschan_Ilaern
-    at:       [-127.100, -40.510, 425.110, 18]
+    region:   n_232
     level:    [115, 119]
   17961194:
     template: Eschan_Xzomit
-    at:       [-126.500, -40.500, 420.281, 57]
+    region:   n_232
     level:    [115, 119]
   17961195:
     template: Eschan_Xzomit
-    at:       [-123.300, -40.540, 419.375, 34]
+    region:   n_232
     level:    [115, 119]
   17961196:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-102.100, -40.310, 433.432, 95]
+    region:   n_236
     level:    [115, 119]
   17961197:
     template: Eschan_Xzomit
@@ -3700,87 +3700,87 @@ spawns:
   17961199:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-326.700, -24.610, 226.830, 97]
+    region:   nw_239
     level:    [115, 119]
   17961200:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-294.900, -24.610, 263.359, 198]
+    region:   nw_239
     level:    [115, 119]
   17961201:
     template: Eschan_Xzomit
-    at:       [-310.200, -24.610, 235.643, 211]
+    region:   nw_239
     level:    [115, 119]
   17961202:
     template: Eschan_Xzomit
-    at:       [-314.300, -24.610, 238.919, 214]
+    region:   nw_239
     level:    [115, 119]
   17961203:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-323.200, -24.610, 208.667, 255]
+    region:   w_243
     level:    [115, 119]
   17961204:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-333.100, -24.610, 174.977, 118]
+    region:   w_243
     level:    [115, 119]
   17961205:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-318.000, -34.570, 191.942, 86]
+    region:   w_245
     level:    [115, 119]
   17961206:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-297.300, -40.680, 221.175, 235]
+    region:   nw_246
     level:    [115, 119]
   17961207:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-311.000, -40.610, 214.464, 96]
+    region:   nw_246
     level:    [115, 119]
   17961208:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-335.400, -40.690, 267.285, 192]
+    region:   nw_248
     level:    [115, 119]
   17961209:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-334.800, -40.670, 260.765, 33]
+    region:   nw_248
     level:    [115, 119]
   17961210:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-318.500, -39.580, 311.329, 97]
+    region:   nw_248
     level:    [115, 119]
   17961211:
     template: Eschan_Xzomit
-    at:       [-335.400, -40.670, 272.031, 255]
+    region:   nw_248
     level:    [115, 119]
   17961212:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-357.600, -40.500, 243.966, 179]
+    region:   nw_252
     level:    [115, 119]
   17961213:
     template: Ilaern_drk
     script:   Eschan_Ilaern
-    at:       [-361.600, -40.580, 258.088, 140]
+    region:   nw_252
     level:    [115, 119]
   17961214:
     template: Eschan_Xzomit
-    at:       [-355.500, -40.500, 252.244, 186]
+    region:   nw_252
     level:    [115, 119]
   17961215:
     template: Eschan_Xzomit
-    at:       [-348.700, -40.500, 254.694, 23]
+    region:   nw_252
     level:    [115, 119]
   17961216:
     template: Ilaern_rng
     script:   Eschan_Ilaern
-    at:       [-391.900, -38.570, 213.408, 85]
+    region:   nw_256
     level:    [115, 119]
   17961217:
     template: Eschan_Xzomit
@@ -3792,64 +3792,64 @@ spawns:
     level:    [115, 119]
   17961219:
     template: Eschan_Murex
-    at:       [-438.400, -70.840, 358.057, 24]
+    region:   nw_259
     level:    [115, 119]
   17961220:
     template: Eschan_Murex
-    at:       [-418.800, -71.010, 415.079, 133]
+    region:   nw_260
     level:    [115, 119]
   17961221:
     template: Eschan_Murex
-    at:       [-410.300, -70.920, 414.683, 249]
+    region:   nw_260
     level:    [115, 119]
   17961222:
     template: Eschan_Murex
-    at:       [-395.000, -71.230, 402.170, 123]
+    region:   nw_260
     level:    [115, 119]
   17961223:
     template: Eschan_Murex
-    at:       [-408.300, -71.250, 380.877, 24]
+    region:   nw_260
     level:    [115, 119]
   17961224:
     template: Eschan_Murex
-    at:       [-358.000, -69.350, 475.462, 139]
+    region:   nw_264
     level:    [115, 119]
   17961225:
     template: Eschan_Murex
-    at:       [-349.900, -69.240, 472.854, 221]
+    region:   nw_264
     level:    [115, 119]
   17961226:
     template: Eschan_Murex
-    at:       [-349.700, -68.950, 462.911, 240]
+    region:   nw_264
     level:    [115, 119]
   17961227:
     template: Eschan_Yovra
-    at:       [-388.700, -70.540, 436.690, 48]
+    region:   nw_267
     level:    [120, 121]
   17961228:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-421.600, -9.442, -139.490, 87]
+    region:   w_268
     level:    [115, 119]
   17961229:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-368.400, -8.500, -103.810, 60]
+    region:   w_268
     level:    [115, 119]
   17961230:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-376.700, -8.500, -138.540, 174]
+    region:   w_268
     level:    [115, 119]
   17961231:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-370.000, -8.510, -103.850]
+    region:   w_268
     level:    [115, 119]
   17961232:
     template: Ilaern_smn
     script:   Eschan_Ilaern
-    at:       [-398.900, -8.500, -145.810, 184]
+    region:   w_268
     level:    [115, 119]
   17961233:
     template: Eschan_Ilaerns_Spirit
@@ -3857,48 +3857,48 @@ spawns:
     level:    [116, 116]
   17961234:
     template: Eschan_Ghrah
-    at:       [-389.800, -15.930, -124.690, 220]
+    region:   w_274
     level:    [115, 119]
   17961235:
     template: Eschan_Ghrah
-    at:       [-353.900, -20.500, -160.470, 180]
+    region:   sw_275
     level:    [115, 119]
   17961236:
     template: Eschan_Ghrah
-    at:       [-375.300, -20.490, -98.305, 53]
+    region:   w_276
     level:    [115, 119]
   17961237:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-388.100, -24.500, -33.900, 19]
+    region:   w_277
     level:    [115, 119]
   17961238:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-385.600, -24.500, -41.993, 51]
+    region:   w_277
     level:    [115, 119]
   17961239:
     template: Eschan_Ghrah
-    at:       [-386.400, -24.500, -32.999, 46]
+    region:   w_277
     level:    [115, 119]
   17961240:
     template: Eschan_Ghrah
-    at:       [-386.600, -24.500, -42.592, 113]
+    region:   w_277
     level:    [115, 119]
   17961241:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-401.000, -24.500, 37.326, 106]
+    region:   w_281
     level:    [115, 119]
   17961242:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-395.100, -24.500, 40.965, 39]
+    region:   w_281
     level:    [115, 119]
   17961243:
     template: Ilaern_smn
     script:   Eschan_Ilaern
-    at:       [-372.900, -33.650, 34.485, 171]
+    region:   w_283
     level:    [115, 119]
   17961244:
     template: Eschan_Ilaerns_Spirit
@@ -3907,45 +3907,45 @@ spawns:
   17961245:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-373.400, -40.540, -1.253, 151]
+    region:   w_285
     level:    [115, 119]
   17961246:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-368.400, -40.680, -14.734, 53]
+    region:   w_285
     level:    [115, 119]
   17961247:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-443.400, -40.500, -39.400, 170]
+    region:   w_287
     level:    [115, 119]
   17961248:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-419.200, -42.000, -31.531, 35]
+    region:   w_287
     level:    [115, 119]
   17961249:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-449.500, -40.500, 16.298, 66]
+    region:   w_289
     level:    [115, 119]
   17961250:
     template: Ilaern_thf
     script:   Eschan_Ilaern
-    at:       [-469.200, -40.700, 2.207, 61]
+    region:   w_289
     level:    [115, 119]
   17961251:
     template: Eschan_Ghrah
-    at:       [-458.700, -40.670, 15.688, 103]
+    region:   w_289
     level:    [115, 119]
   17961252:
     template: Eschan_Ghrah
-    at:       [-428.500, -40.500, 20.442, 110]
+    region:   w_289
     level:    [115, 119]
   17961253:
     template: Ilaern_smn
     script:   Eschan_Ilaern
-    at:       [-433.400, -40.470, 26.169, 34]
+    region:   w_293
     level:    [115, 119]
   17961254:
     template: Eschan_Ilaerns_Spirit
@@ -3962,7 +3962,7 @@ spawns:
   17961257:
     template: Ilaern_smn
     script:   Eschan_Ilaern
-    at:       [-423.900, -36.520, -153.940, 177]
+    region:   sw_297
     level:    [115, 119]
   17961258:
     template: Eschan_Ilaerns_Spirit
@@ -3970,44 +3970,44 @@ spawns:
     level:    [116, 116]
   17961259:
     template: Eschan_Ghrah
-    at:       [-429.300, -36.500, -140.650, 178]
+    region:   sw_297
     level:    [115, 119]
   17961260:
     template: Eschan_Ghrah
-    at:       [-427.800, -36.530, -146.030, 50]
+    region:   sw_297
     level:    [115, 119]
   17961261:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-343.000, -24.500, -195.300, 116]
+    region:   sw_301
     level:    [115, 119]
   17961262:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-323.700, -24.500, -231.200, 43]
+    region:   sw_301
     level:    [115, 119]
   17961263:
     template: Eschan_Ghrah
-    at:       [-336.800, -24.500, -209.530, 72]
+    region:   sw_301
     level:    [115, 119]
   17961264:
     template: Eschan_Ghrah
-    at:       [-344.100, -24.500, -198.750, 171]
+    region:   sw_301
     level:    [115, 119]
   17961265:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-289.000, -24.500, -273.600, 156]
+    region:   sw_305
     level:    [115, 119]
   17961266:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-296.400, -24.500, -277.620, 123]
+    region:   sw_305
     level:    [115, 119]
   17961267:
     template: Ilaern_smn
     script:   Eschan_Ilaern
-    at:       [-287.000, -36.750, -240.810, 172]
+    region:   sw_307
     level:    [115, 119]
   17961268:
     template: Eschan_Ilaerns_Spirit
@@ -4031,30 +4031,30 @@ spawns:
   17961272:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-374.400, -40.580, -242.790, 219]
+    region:   sw_312
     level:    [115, 119]
   17961273:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-347.100, -40.510, -275.470, 205]
+    region:   sw_313
     level:    [115, 119]
   17961274:
     template: Ilaern_sam
     script:   Eschan_Ilaern
-    at:       [-337.900, -40.500, -259.480, 232]
+    region:   sw_313
     level:    [115, 119]
   17961275:
     template: Eschan_Ghrah
-    at:       [-347.700, -40.500, -259.630, 124]
+    region:   sw_313
     level:    [115, 119]
   17961276:
     template: Eschan_Ghrah
-    at:       [-336.500, -40.540, -256.780, 56]
+    region:   sw_313
     level:    [115, 119]
   17961277:
     template: Ilaern_smn
     script:   Eschan_Ilaern
-    at:       [-313.700, -37.700, -304.170, 208]
+    region:   sw_317
     level:    [115, 119]
   17961278:
     template: Eschan_Ilaerns_Spirit
@@ -4070,39 +4070,39 @@ spawns:
     level:    [115, 119]
   17961281:
     template: Eschan_Limule
-    at:       [-474.800, -70.620, -308.920, 162]
+    region:   sw_321
     level:    [115, 119]
   17961282:
     template: Eschan_Limule
-    at:       [-500.600, -70.570, -279.120, 16]
+    region:   sw_322
     level:    [115, 119]
   17961283:
     template: Eschan_Limule
-    at:       [-506.900, -70.940, -285.540, 238]
+    region:   sw_322
     level:    [115, 119]
   17961284:
     template: Eschan_Limule
-    at:       [-499.300, -70.570, -277.190, 42]
+    region:   sw_322
     level:    [115, 119]
   17961285:
     template: Eschan_Limule
-    at:       [-494.443, -70.557, -255.255, 228]
+    region:   sw_322
     level:    [115, 119]
   17961286:
     template: Eschan_Limule
-    at:       [-549.825, -68.640, -190.872, 104]
+    region:   sw_326
     level:    [115, 119]
   17961287:
     template: Eschan_Limule
-    at:       [-552.546, -68.879, -189.289, 217]
+    region:   sw_326
     level:    [115, 119]
   17961288:
     template: Eschan_Limule
-    at:       [-533.107, -70.153, -224.042, 82]
+    region:   sw_326
     level:    [115, 119]
   17961289:
     template: Eschan_Yovra
-    at:       [-487.600, -70.760, -269.610, 52]
+    region:   sw_329
     level:    [120, 121]
   17961290:
     template: Eschan_Gargouille
@@ -4323,11 +4323,11 @@ spawns:
     level:    [124, 124]
   17961343:
     template: Warder_of_Prudence
-    at:       [115.300, -40.500, 406.191, 126]
+    region:   ne_383
     level:    [124, 124]
   17961344:
     template: Warder_of_Prudence
-    at:       [120.500, -40.513, 425.807, 70]
+    region:   ne_383
     level:    [124, 124]
   17961345:
     template: Warder_of_Love

@@ -1879,350 +1879,350 @@ spawns:
     level:    [43, 45]
   17285126:
     template: Yhoator_Mandragora
-    at:       [-265.635, 2.611, 186.091, 127]
+    region:   nw_6
     level:    [35, 37]
   17285127:
     template: Yhoator_Mandragora
-    at:       [-261.665, 2.342, 149.288, 127]
+    region:   nw_6
     level:    [35, 37]
   17285128:
     template: White_Lizard
-    at:       [-227.000, 3.000, 140.000, 51]
+    region:   nw_6
     level:    [36, 39]
   17285129:
     template: Yhoator_Mandragora
-    at:       [-273.315, 7.379, 101.545]
+    region:   nw_9
     level:    [35, 37]
   17285130:
     template: White_Lizard
-    at:       [-254.772, 0.403, 110.178, 127]
+    region:   nw_9
     level:    [36, 39]
   17285131:
     template: Yhoator_Mandragora
-    at:       [-294.612, -0.035, 54.204, 36]
+    region:   nw_11
     level:    [35, 37]
   17285132:
     template: Yhoator_Mandragora
-    at:       [-308.369, 2.422, 58.629, 127]
+    region:   nw_11
     level:    [35, 37]
   17285133:
     template: Yhoator_Mandragora
-    at:       [-257.000, 2.000, 186.000, 96]
+    region:   nw_11
     level:    [35, 37]
   17285134:
     template: Goblin_Smithy
-    at:       [-298.991, 0.929, 59.005, 115]
+    region:   nw_11
     level:    [35, 39]
   17285135:
     template: Yhoator_Mandragora
-    at:       [-275.709, 0.128, 59.259, 20]
+    region:   nw_15
     level:    [35, 37]
   17285136:
     template: Yhoator_Mandragora
-    at:       [-265.232, 3.682, 59.501, 100]
+    region:   nw_15
     level:    [35, 37]
   17285137:
     template: Goblin_Smithy
-    at:       [-246.000, 1.000, 61.000, 127]
+    region:   nw_15
     level:    [35, 39]
   17285138:
     template: White_Lizard
-    at:       [-243.790, 7.653, 19.459, 2]
+    region:   nw_18
     level:    [36, 39]
   17285139:
     template: White_Lizard
-    at:       [-261.648, 7.355, 31.986, 127]
+    region:   nw_18
     level:    [36, 39]
   17285140:
     template: Yhoator_Mandragora
-    at:       [-221.471, 0.389, 5.189, 99]
+    region:   nw_20
     level:    [35, 37]
   17285141:
     template: Yhoator_Mandragora
-    at:       [-223.544, 3.777, 24.207, 127]
+    region:   nw_20
     level:    [35, 37]
   17285142:
     template: Goblin_Pathfinder
-    at:       [-219.350, 0.136, 3.727, 127]
+    region:   nw_20
     level:    [35, 39]
   17285143:
     template: Goblins_Bee_jungle
     script:   Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_20
     level:    [28, 30]
   17285144:
     template: Yhoator_Mandragora
-    at:       [-297.000, 0.257, 71.000, 9]
+    region:   nw_24
     level:    [35, 37]
   17285145:
     template: Yhoator_Mandragora
-    at:       [-354.291, 0.067, 18.022, 30]
+    region:   nw_24
     level:    [35, 37]
   17285146:
     template: Goblin_Smithy
-    at:       [-296.230, 0.873, 25.759, 127]
+    region:   nw_24
     level:    [35, 39]
   17285147:
     template: White_Lizard
-    at:       [-340.334, 7.806, -5.710, 65]
+    region:   region_112
     level:    [36, 39]
   17285148:
     template: Yhoator_Mandragora
-    at:       [-380.924, -0.151, 4.477, 81]
+    region:   nw_28
     level:    [35, 37]
   17285149:
     template: Goblin_Smithy
-    at:       [-382.353, 1.792, 27.801, 91]
+    region:   nw_28
     level:    [35, 39]
   17285150:
     template: Goblin_Smithy
-    at:       [-378.965, 0.047, 7.918, 122]
+    region:   nw_28
     level:    [35, 39]
   17285151:
     template: Yhoator_Mandragora
-    at:       [-305.000, 3.000, 101.000, 127]
+    region:   w_31
     level:    [35, 37]
   17285152:
     template: Goblin_Smithy
-    at:       [-387.409, 2.621, -20.706, 111]
+    region:   w_31
     level:    [35, 39]
   17285153:
     template: Yhoator_Mandragora
-    at:       [-205.289, -0.170, 178.258, 8]
+    region:   nw_33
     level:    [35, 37]
   17285154:
     template: Yhoator_Wasp
-    at:       [-223.232, 2.279, 178.977, 83]
+    region:   nw_33
     level:    [37, 40]
   17285155:
     template: Yhoator_Wasp
-    at:       [-207.178, -0.042, 178.363, 115]
+    region:   nw_33
     level:    [37, 40]
   17285156:
     template: Goblin_Pathfinder
-    at:       [-207.893, 0.322, 183.825, 127]
+    region:   nw_33
     level:    [35, 39]
   17285157:
     template: Goblins_Bee_jungle
     script:   Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   nw_33
     level:    [28, 29]
   17285158:
     template: Yhoator_Mandragora
-    at:       [-139.179, 7.639, 123.917, 66]
+    region:   nw_38
     level:    [35, 37]
   17285159:
     template: White_Lizard
-    at:       [-164.440, 7.958, 142.136, 127]
+    region:   nw_38
     level:    [36, 39]
   17285160:
     template: White_Lizard
-    at:       [-162.275, 7.885, 141.966, 3]
+    region:   nw_38
     level:    [36, 39]
   17285161:
     template: Yhoator_Wasp
-    at:       [-182.963, 0.068, 88.284, 35]
+    region:   nw_41
     level:    [37, 40]
   17285162:
     template: Goblin_Shaman
-    at:       [-186.373, 0.914, 94.271, 127]
+    region:   nw_41
     level:    [35, 39]
   17285163:
     template: Yhoator_Wasp
-    at:       [-177.147, -0.334, 23.289, 127]
+    region:   nw_43
     level:    [37, 40]
   17285164:
     template: Goblin_Shaman
-    at:       [-174.016, -0.065, 24.297, 39]
+    region:   nw_43
     level:    [35, 39]
   17285165:
     template: Goblin_Shaman
-    at:       [-180.103, -0.451, 29.562, 127]
+    region:   nw_43
     level:    [35, 39]
   17285166:
     template: Yhoator_Wasp
-    at:       [-131.153, -2.829, 32.782, 65]
+    region:   n_46
     level:    [37, 40]
   17285167:
     template: Goblin_Shaman
-    at:       [-143.874, -0.042, 10.678, 122]
+    region:   n_46
     level:    [35, 39]
   17285168:
     template: Goblin_Shaman
-    at:       [-139.783, -0.088, 14.904, 100]
+    region:   n_46
     level:    [35, 39]
   17285169:
     template: Yhoator_Wasp
-    at:       [-102.887, -1.711, 25.354, 47]
+    region:   n_49
     level:    [37, 40]
   17285170:
     template: Yhoator_Wasp
-    at:       [-104.866, -2.061, 58.116, 127]
+    region:   n_49
     level:    [37, 40]
   17285171:
     template: Goblin_Shaman
-    at:       [-111.651, -0.292, 25.996, 127]
+    region:   n_49
     level:    [35, 39]
   17285172:
     template: Yhoator_Wasp
-    at:       [-141.006, 9.358, 49.449, 71]
+    region:   n_52
     level:    [37, 40]
   17285173:
     template: Yhoator_Wasp
-    at:       [-113.761, 8.924, 32.051, 127]
+    region:   n_52
     level:    [37, 40]
   17285174:
     template: Yhoator_Wasp
-    at:       [-130.144, 9.356, 47.449, 13]
+    region:   n_52
     level:    [37, 40]
   17285175:
     template: Yhoator_Wasp
-    at:       [-158.532, 9.911, 49.502, 127]
+    region:   n_52
     level:    [37, 40]
   17285176:
     template: Yhoator_Wasp
-    at:       [-149.814, 8.561, 37.555, 127]
+    region:   n_52
     level:    [37, 40]
   17285177:
     template: Yhoator_Wasp
-    at:       [-155.226, 9.211, 39.429, 127]
+    region:   n_52
     level:    [37, 40]
   17285178:
     template: Anemone
-    at:       [-120.886, 9.871, 47.967, 127]
+    region:   n_52
     level:    [51, 54]
   17285179:
     template: Yhoator_Mandragora
-    at:       [-62.060, 0.046, 45.970, 33]
+    region:   n_59
     level:    [35, 37]
   17285180:
     template: Yhoator_Wasp
-    at:       [-70.756, 0.356, 22.190, 127]
+    region:   n_59
     level:    [37, 40]
   17285181:
     template: Yhoator_Wasp
-    at:       [-62.216, 0.199, 10.338, 86]
+    region:   n_59
     level:    [37, 40]
   17285182:
     template: Goblin_Shaman
-    at:       [-84.349, -0.015, 21.716, 127]
+    region:   n_59
     level:    [35, 39]
   17285183:
     template: White_Lizard
-    at:       [-132.806, 1.360, -15.410, 127]
+    region:   w_63
     level:    [36, 39]
   17285184:
     template: White_Lizard
-    at:       [-159.840, 7.884, -19.643, 6]
+    region:   w_63
     level:    [36, 39]
   17285185:
     template: Goblin_Shaman
-    at:       [-152.947, 7.573, -19.639, 127]
+    region:   w_63
     level:    [35, 39]
   17285186:
     template: White_Lizard
-    at:       [-95.496, 11.042, 97.084, 127]
+    region:   n_66
     level:    [36, 39]
   17285187:
     template: Goblin_Shaman
-    at:       [-97.900, 11.654, 84.601, 82]
+    region:   n_66
     level:    [35, 39]
   17285188:
     template: Goblin_Bouncer
-    at:       [-82.778, -0.289, 166.744, 76]
+    region:   n_68
     level:    [51, 55]
   17285189:
     template: Goblin_Bouncer
-    at:       [-92.227, 0.572, 149.116, 76]
+    region:   n_68
     level:    [51, 55]
   17285190:
     template: Goblin_Hunter
-    at:       [-84.715, -0.485, 160.044, 94]
+    region:   n_68
     level:    [51, 55]
   17285191:
     template: Goblin_Hunter
-    at:       [-84.730, -0.499, 242.827, 38]
+    region:   n_71
     level:    [51, 55]
   17285192:
     template: Goblin_Hunter
-    at:       [-83.839, -0.499, 244.845, 67]
+    region:   n_71
     level:    [51, 55]
   17285193:
     template: Goblin_Bouncer
-    at:       [-75.278, -0.635, 246.377, 14]
+    region:   n_71
     level:    [51, 55]
   17285194:
     template: White_Lizard
-    at:       [-14.901, 8.951, 63.171, 122]
+    region:   n_74
     level:    [36, 39]
   17285195:
     template: White_Lizard
-    at:       [-32.624, 7.790, 58.979, 16]
+    region:   n_74
     level:    [36, 39]
   17285196:
     template: Goblin_Shaman
-    at:       [-36.280, 7.893, 60.293, 127]
+    region:   n_74
     level:    [35, 39]
   17285197:
     template: Goblin_Bouncer
-    at:       [38.973, -0.487, 128.226, 127]
+    region:   n_77
     level:    [51, 55]
   17285198:
     template: Goblin_Bouncer
-    at:       [43.044, -0.434, 129.065, 127]
+    region:   n_77
     level:    [51, 55]
   17285199:
     template: Goblin_Hunter
-    at:       [81.795, -0.502, 198.061, 127]
+    region:   n_79
     level:    [51, 55]
   17285200:
     template: Goblin_Hunter
-    at:       [76.209, 0.071, 182.888, 37]
+    region:   n_79
     level:    [51, 55]
   17285201:
     template: Goblin_Bouncer
-    at:       [73.379, -0.499, 203.281, 127]
+    region:   n_79
     level:    [51, 55]
   17285202:
     template: Goblin_Hunter
-    at:       [45.371, -0.465, 229.988, 5]
+    region:   n_82
     level:    [51, 55]
   17285203:
     template: Goblin_Hunter
-    at:       [39.444, -0.014, 251.899, 127]
+    region:   n_82
     level:    [51, 55]
   17285204:
     template: Goblin_Bouncer
-    at:       [41.622, 0.029, 253.242, 124]
+    region:   n_82
     level:    [51, 55]
   17285205:
     template: Worker_Crawler
-    at:       [140.085, 7.327, 126.505, 51]
+    region:   n_85
     level:    [43, 46]
   17285206:
     template: Worker_Crawler
-    at:       [139.154, 7.681, 116.640, 127]
+    region:   n_85
     level:    [43, 46]
   17285207:
     template: Worker_Crawler
-    at:       [139.901, 6.968, 129.011, 127]
+    region:   n_85
     level:    [43, 46]
   17285208:
     template: Goblin_Robber
-    at:       [245.231, -0.470, 84.611, 87]
+    region:   ne_88
     level:    [45, 49]
   17285209:
     template: Goblin_Trader
-    at:       [232.770, -0.279, 73.422, 127]
+    region:   ne_88
     level:    [45, 49]
   17285210:
     template: Goblins_Bee_jungle
     script:   Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   ne_88
     level:    [38, 39]
   17285211:
     template: Goblin_Trader
-    at:       [184.005, 3.206, 102.927, 113]
+    region:   ne_94
     level:    [45, 49]
   17285212:
     template: Goblins_Bee_jungle
@@ -2231,958 +2231,964 @@ spawns:
     level:    [38, 40]
   17285213:
     template: Master_Coeurl
-    at:       [215.377, 0.028, 79.638, 127]
+    region:   ne_88
     level:    [47, 50]
   17285214:
     template: Goblin_Robber
-    at:       [217.886, -0.207, 45.751, 127]
+    region:   ne_94
     level:    [45, 49]
   17285215:
     template: Goblin_Trader
-    at:       [204.760, -0.467, 36.447, 127]
+    region:   ne_94
     level:    [45, 49]
   17285216:
     template: Goblins_Bee_jungle
     script:   Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   ne_94
     level:    [38, 40]
   17285217:
     template: Goblin_Trader
-    at:       [202.256, -0.377, 45.771, 112]
+    region:   ne_94
     level:    [45, 49]
   17285218:
     template: Goblins_Bee_jungle
     script:   Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   ne_94
     level:    [38, 40]
   17285219:
     template: Master_Coeurl
-    at:       [197.410, -0.022, 51.679, 127]
+    region:   ne_94
     level:    [47, 50]
   17285220:
     template: Woodland_Sage
-    at:       [190.942, 0.345, 94.828, 127]
+    region:   region_113
     level:    [60, 61]
   17285221:
     template: Big_Jaw
-    at:       [205.676, -0.051, 58.883, 127]
+    region:   ne_101
     level:    [43, 47]
   17285222:
     template: Big_Jaw
-    at:       [222.315, -0.049, 45.455, 98]
+    region:   ne_101
     level:    [43, 47]
   17285223:
     template: Water_Elemental
-    at:       [226.997, -0.234, 47.484, 105]
+    region:   ne_101
     level:    [53, 55]
   17285224:
     template: Yhoator_Wasp
-    at:       [-22.212, -0.283, -46.724, 127]
+    region:   c_104
     level:    [37, 40]
   17285225:
     template: Yhoator_Wasp
-    at:       [-19.361, 4.586, -11.370, 127]
+    region:   c_104
     level:    [37, 40]
   17285226:
     template: Goblin_Reaper
-    at:       [-19.542, -0.057, -38.660, 60]
+    region:   c_108
     level:    [41, 45]
   17285227:
     template: Young_Opo-opo
-    at:       [-30.952, -1.296, -63.010, 127]
+    region:   c_110
     level:    [40, 44]
   17285228:
     template: Yhoator_Wasp
-    at:       [-49.269, -0.321, -66.511, 5]
+    region:   c_108
     level:    [37, 40]
   17285229:
     template: Goblin_Reaper
-    at:       [-53.466, -0.122, -65.836, 127]
+    region:   c_108
     level:    [41, 45]
   17285230:
     template: Young_Opo-opo
-    at:       [-52.390, -2.377, -110.872, 127]
+    region:   c_110
     level:    [40, 44]
   17285231:
     template: Yhoator_Wasp
-    at:       [-48.820, -0.744, -129.886, 127]
+    region:   c_110
     level:    [37, 40]
   17285232:
     template: Yhoator_Wasp
-    at:       [-53.821, -0.881, -121.967, 127]
+    region:   c_110
     level:    [37, 40]
   17285233:
     template: Yhoator_Wasp
-    at:       [-37.132, -3.763, -119.165, 25]
+    region:   c_113
     level:    [37, 40]
   17285234:
     template: Yhoator_Wasp
-    at:       [-30.539, -3.155, -118.037, 127]
+    region:   c_113
     level:    [37, 40]
   17285235:
     template: Yhoator_Wasp
-    at:       [-45.202, -3.718, -123.399, 108]
+    region:   c_113
     level:    [37, 40]
   17285236:
     template: Goblin_Reaper
-    at:       [-39.054, -4.160, -110.649, 127]
+    region:   c_113
     level:    [41, 45]
   17285237:
     template: Young_Opo-opo
-    at:       [8.657, -2.440, -89.466, 62]
+    region:   c_117
     level:    [40, 44]
   17285238:
     template: Yhoator_Wasp
-    at:       [0.759, -1.062, -64.695, 30]
+    region:   c_117
     level:    [37, 40]
   17285239:
     template: Yhoator_Wasp
-    at:       [9.240, -2.164, -89.612, 127]
+    region:   c_117
     level:    [37, 40]
   17285240:
     template: Young_Opo-opo
-    at:       [8.480, -0.352, -133.587, 50]
+    region:   c_117
     level:    [40, 44]
   17285241:
     template: Yhoator_Wasp
-    at:       [12.532, -1.531, -116.491, 127]
+    region:   c_121
     level:    [37, 40]
   17285242:
     template: Goblin_Pathfinder
-    at:       [-5.014, -1.235, -138.685, 102]
+    region:   c_121
     level:    [35, 39]
   17285243:
     template: Goblins_Bee_jungle
     script:   Goblins_Bee
-    at:       [1.000, 1.000, 1.000]
+    region:   c_121
     level:    [28, 30]
   17285244:
     template: Yhoator_Wasp
-    at:       [-6.174, -3.015, -96.012, 127]
+    region:   c_124
     level:    [37, 40]
   17285245:
     template: Yhoator_Wasp
-    at:       [-5.626, -3.377, -74.468, 69]
+    region:   c_124
     level:    [37, 40]
   17285246:
     template: Yhoator_Wasp
-    at:       [-3.043, -3.324, -108.609, 51]
+    region:   c_124
     level:    [37, 40]
   17285247:
     template: Goblin_Reaper
-    at:       [-9.908, -3.051, -73.327, 9]
+    region:   c_124
     level:    [41, 45]
   17285248:
     template: Powderer_Penny
-    at:       [-11.700, -2.531, -123.250, 60]
+    region:   c_124
     level:    [49, 49]
   17285249:
     template: Young_Opo-opo
-    at:       [-23.267, 8.712, -99.830, 13]
+    region:   c_129
     level:    [40, 44]
   17285250:
     template: Yhoator_Wasp
-    at:       [-26.860, 7.297, -91.678, 83]
+    region:   c_129
     level:    [37, 40]
   17285251:
     template: Yhoator_Wasp
-    at:       [-12.858, 8.046, -100.449, 127]
+    region:   c_129
     level:    [37, 40]
   17285252:
     template: Anemone
-    at:       [-12.399, 7.976, -101.049, 127]
+    region:   c_129
     level:    [51, 54]
   17285253:
     template: Young_Opo-opo
-    at:       [-55.460, 8.690, -95.713, 127]
+    region:   c_133
     level:    [40, 44]
   17285254:
     template: Young_Opo-opo
-    at:       [-64.770, 8.987, -101.311, 127]
+    region:   c_133
     level:    [40, 44]
   17285255:
     template: Young_Opo-opo
-    at:       [-104.912, 1.108, -56.207, 127]
+    region:   c_135
     level:    [40, 44]
   17285256:
     template: Young_Opo-opo
-    at:       [-99.207, 2.248, -55.929, 109]
+    region:   c_135
     level:    [40, 44]
   17285257:
     template: Yhoator_Wasp
-    at:       [-20.740, 0.186, -144.909, 127]
+    region:   c_137
     level:    [37, 40]
   17285258:
     template: Yhoator_Wasp
-    at:       [-16.042, -0.844, -148.207, 127]
+    region:   c_137
     level:    [37, 40]
   17285259:
     template: Goblin_Reaper
-    at:       [-22.539, -0.182, -149.411, 127]
+    region:   c_137
     level:    [41, 45]
   17285260:
     template: Young_Opo-opo
-    at:       [-186.693, 8.396, -105.571, 89]
+    region:   w_140
     level:    [40, 44]
   17285261:
     template: Young_Opo-opo
-    at:       [-173.788, 8.841, -96.746, 127]
+    region:   w_140
     level:    [40, 44]
   17285262:
     template: Worker_Crawler
-    at:       [-185.046, 8.627, -103.278, 127]
+    region:   w_140
     level:    [43, 46]
   17285263:
     template: Worker_Crawler
-    at:       [-163.694, 7.915, -98.927, 37]
+    region:   w_140
     level:    [43, 46]
   17285264:
     template: Young_Opo-opo
-    at:       [-98.948, 9.256, -180.880, 65]
+    region:   c_144
     level:    [40, 44]
   17285265:
     template: Young_Opo-opo
-    at:       [-101.483, 9.312, -181.800, 127]
+    region:   c_144
     level:    [40, 44]
   17285266:
     template: Worker_Crawler
-    at:       [-136.872, 8.645, -175.919, 106]
+    region:   c_144
     level:    [43, 46]
   17285267:
     template: Worker_Crawler
-    at:       [-98.905, 9.204, -180.357, 127]
+    region:   c_144
     level:    [43, 46]
   17285268:
     template: Master_Coeurl
-    at:       [-228.308, 1.610, -103.275, 97]
+    region:   w_148
     level:    [47, 50]
   17285269:
     template: Worker_Crawler
-    at:       [-278.464, 0.100, -142.112, 55]
+    region:   w_148
     level:    [43, 46]
   17285270:
     template: Worker_Crawler
-    at:       [-284.669, 0.057, -146.368, 3]
+    region:   w_148
     level:    [43, 46]
   17285271:
     template: Master_Coeurl
-    at:       [-253.496, 0.037, -160.586, 91]
+    region:   w_151
     level:    [47, 50]
   17285272:
     template: Worker_Crawler
-    at:       [-181.551, 3.603, -183.898, 127]
+    region:   w_151
     level:    [43, 46]
   17285273:
     template: Worker_Crawler
-    at:       [-218.490, -0.437, -151.493, 56]
+    region:   w_168
     level:    [43, 46]
   17285274:
     template: Master_Coeurl
-    at:       [-217.503, -0.462, -151.808, 41]
+    region:   w_154
     level:    [47, 50]
   17285275:
     template: Worker_Crawler
-    at:       [-217.345, 8.966, -264.751, 127]
+    region:   w_154
     level:    [43, 46]
   17285276:
     template: Worker_Crawler
-    at:       [-222.386, 8.878, -256.997, 127]
+    region:   w_201
     level:    [43, 46]
   17285277:
     template: Master_Coeurl
-    at:       [-273.297, -0.670, -184.633, 127]
+    region:   w_154
     level:    [47, 50]
   17285278:
     template: Worker_Crawler
-    at:       [-405.793, 7.459, -97.643, 127]
+    region:   w_158
     level:    [43, 46]
   17285279:
     template: Worker_Crawler
-    at:       [-399.022, 7.825, -98.528, 127]
+    region:   w_158
     level:    [43, 46]
   17285280:
     template: Master_Coeurl
-    at:       [-277.869, -0.456, -358.204, 127]
+    region:   w_151
     level:    [47, 50]
   17285281:
     template: Worker_Crawler
-    at:       [-389.230, 7.990, -103.306, 127]
+    region:   w_161
     level:    [43, 46]
   17285282:
     template: Worker_Crawler
-    at:       [-473.243, 0.179, -140.770, 8]
+    region:   w_161
     level:    [43, 46]
   17285283:
     template: Master_Coeurl
-    at:       [-270.218, -0.418, -451.742, 29]
+    region:   w_163
     level:    [47, 50]
   17285284:
     template: Worker_Crawler
-    at:       [-274.844, -0.002, -177.140, 118]
+    region:   w_163
     level:    [43, 46]
   17285285:
     template: Anemone
-    at:       [-231.491, -0.486, -362.584, 53]
+    region:   w_163
     level:    [51, 54]
   17285286:
     template: Worker_Crawler
-    at:       [-506.303, 2.441, -139.962, 127]
+    region:   w_166
     level:    [43, 46]
   17285287:
     template: Worker_Crawler
-    at:       [-497.217, -0.351, -116.024, 127]
+    region:   w_166
     level:    [43, 46]
   17285288:
     template: Worker_Crawler
-    at:       [-461.888, 0.404, -195.221, 127]
+    region:   w_168
     level:    [43, 46]
   17285289:
     template: Worker_Crawler
-    at:       [-457.492, -0.307, -157.121, 127]
+    region:   w_168
     level:    [43, 46]
   17285290:
     template: Worker_Crawler
-    at:       [-382.705, 8.875, -101.914, 96]
+    region:   w_168
     level:    [43, 46]
   17285291:
     template: Young_Opo-opo
-    at:       [-464.742, 0.608, -145.496, 56]
+    region:   w_171
     level:    [40, 44]
   17285292:
     template: Young_Opo-opo
-    at:       [-435.984, -0.044, -140.060, 14]
+    region:   w_171
     level:    [40, 44]
   17285293:
     template: Goblin_Poacher
+    region:   w_176
     level:    [45, 49]
   17285294:
     template: Worker_Crawler
-    at:       [-494.439, 8.435, -183.929, 127]
+    region:   w_171
     level:    [43, 46]
   17285295:
     template: Worker_Crawler
-    at:       [-495.759, 8.412, -183.267, 127]
+    region:   w_176
     level:    [43, 46]
   17285296:
     template: Yhoator_Wasp
-    at:       [-500.443, -0.025, -119.308, 21]
+    region:   w_176
     level:    [37, 40]
   17285297:
     template: Yhoator_Wasp
-    at:       [-504.362, 0.440, -127.460, 127]
+    region:   w_176
     level:    [37, 40]
   17285298:
     template: Goblin_Poacher
-    at:       [-499.902, -0.034, -115.529, 127]
+    region:   w_176
     level:    [45, 49]
   17285299:
     template: Worker_Crawler
-    at:       [-468.152, 1.022, -226.360, 124]
+    region:   w_176
     level:    [43, 46]
   17285300:
     template: Worker_Crawler
-    at:       [-416.384, -0.087, -234.285, 127]
+    region:   w_176
     level:    [43, 46]
   17285301:
     template: Young_Opo-opo
-    at:       [-463.233, 2.423, -190.227, 127]
+    region:   w_181
     level:    [40, 44]
   17285302:
     template: Goblin_Poacher
-    at:       [-461.530, 3.982, -182.784, 127]
+    region:   w_181
     level:    [48, 48]
   17285303:
     template: Worker_Crawler
-    at:       [-418.399, 0.083, -205.477, 127]
+    region:   w_181
     level:    [43, 46]
   17285304:
     template: Worker_Crawler
-    at:       [-461.460, 3.763, -301.840, 127]
+    region:   w_181
     level:    [43, 46]
   17285305:
     template: Worker_Crawler
+    region:   w_186
     level:    [43, 46]
   17285306:
     template: Worker_Crawler
-    at:       [-346.559, 6.614, -217.975, 83]
+    region:   w_186
     level:    [43, 46]
   17285307:
     template: Worker_Crawler
-    at:       [-350.116, 6.953, -219.390, 127]
+    region:   w_186
     level:    [43, 46]
   17285308:
     template: Young_Opo-opo
-    at:       [-457.135, 2.443, -225.992, 127]
+    region:   w_188
     level:    [40, 44]
   17285309:
     template: Goblin_Poacher
-    at:       [-471.870, -0.070, -218.976, 96]
+    region:   w_188
     level:    [45, 45]
   17285310:
     template: Goblin_Poacher
-    at:       [-456.391, 2.274, -223.585, 127]
+    region:   w_181
     level:    [45, 49]
   17285311:
     template: Worker_Crawler
-    at:       [-348.410, 6.308, -214.622, 118]
+    region:   w_188
     level:    [43, 46]
   17285312:
     template: Worker_Crawler
-    at:       [-385.181, 6.350, -304.162, 68]
+    region:   w_193
     level:    [43, 46]
   17285313:
     template: Yhoator_Wasp
-    at:       [-416.608, 1.454, -210.772, 127]
+    region:   w_193
     level:    [37, 40]
   17285314:
     template: Yhoator_Wasp
-    at:       [-418.280, 0.026, -234.524, 127]
+    region:   w_193
     level:    [37, 40]
   17285315:
     template: Goblin_Reaper
-    at:       [-418.165, 0.436, -248.133, 127]
+    region:   w_193
     level:    [41, 45]
   17285316:
     template: Worker_Crawler
-    at:       [-385.048, 6.347, -304.280, 74]
+    region:   w_193
     level:    [43, 46]
   17285317:
     template: Young_Opo-opo
-    at:       [-457.145, 1.718, -309.272, 69]
+    region:   w_197
     level:    [40, 44]
   17285318:
     template: Goblin_Poacher
-    at:       [-457.882, -0.249, -278.698, 17]
+    region:   w_197
     level:    [45, 49]
   17285319:
     template: Worker_Crawler
-    at:       [-385.205, 6.320, -305.034, 76]
+    region:   w_197
     level:    [43, 46]
   17285320:
     template: Worker_Crawler
-    at:       [-284.258, -0.162, -371.337, 127]
+    region:   sw_205
     level:    [43, 46]
   17285321:
     template: Young_Opo-opo
-    at:       [-345.519, 6.308, -213.792, 127]
+    region:   w_201
     level:    [40, 44]
   17285322:
     template: Worker_Crawler
-    at:       [-249.064, -0.169, -363.637, 117]
+    region:   w_201
     level:    [43, 46]
   17285323:
     template: Worker_Crawler
-    at:       [-274.461, -0.383, -363.957, 106]
+    region:   w_201
     level:    [43, 46]
   17285324:
     template: Worker_Crawler
-    at:       [-317.265, -0.434, -436.522, 116]
+    region:   w_201
     level:    [43, 46]
   17285325:
     template: Young_Opo-opo
-    at:       [-388.126, 6.414, -304.433, 127]
+    region:   sw_205
     level:    [40, 44]
   17285326:
     template: Worker_Crawler
-    at:       [-299.335, 0.079, -441.554, 3]
+    region:   sw_205
     level:    [43, 46]
   17285327:
     template: Worker_Crawler
-    at:       [-296.424, -0.036, -432.720, 127]
+    region:   sw_205
     level:    [43, 46]
   17285328:
     template: Worker_Crawler
-    at:       [-191.740, -0.448, -440.003, 127]
+    region:   sw_205
     level:    [43, 46]
   17285329:
     template: Young_Opo-opo
-    at:       [-200.137, -0.499, -313.580, 127]
+    region:   sw_209
     level:    [40, 44]
   17285330:
     template: Young_Opo-opo
-    at:       [-201.749, -0.496, -315.253, 127]
+    region:   sw_209
     level:    [40, 44]
   17285331:
     template: Goblin_Robber
-    at:       [-212.108, 0.110, -311.249, 127]
+    region:   sw_209
     level:    [45, 49]
   17285332:
     template: Young_Opo-opo
-    at:       [-384.137, 2.468, -387.935, 66]
+    region:   sw_212
     level:    [40, 44]
   17285333:
     template: Young_Opo-opo
-    at:       [-368.672, -0.307, -395.562, 65]
+    region:   sw_212
     level:    [40, 44]
   17285334:
     template: Goblin_Robber
-    at:       [-363.247, -0.499, -407.371, 127]
+    region:   sw_209
     level:    [45, 49]
   17285335:
     template: Worker_Crawler
-    at:       [-195.520, -0.499, -432.647, 127]
+    region:   sw_215
     level:    [43, 46]
   17285336:
     template: Worker_Crawler
-    at:       [-281.021, -0.229, -394.676, 231]
+    region:   sw_215
     level:    [43, 46]
   17285337:
     template: Worker_Crawler
-    at:       [375.892, 12.686, -502.998, 34]
+    region:   sw_215
     level:    [43, 46]
   17285338:
     template: Master_Coeurl
-    at:       [-193.157, -0.057, -454.978, 72]
+    region:   sw_215
     level:    [47, 50]
   17285339:
     template: Goblin_Robber
-    at:       [-243.718, -0.412, -364.693, 127]
+    region:   sw_215
     level:    [45, 49]
   17285340:
     template: Anemone
-    at:       [-277.393, 0.099, -380.117, 123]
+    region:   sw_215
     level:    [51, 54]
   17285341:
     template: Acolnahuacatl
-    at:       [-242.500, 0.000, -400.400, 60]
+    region:   sw_215
     level:    [67, 68]
   17285342:
     template: Worker_Crawler
-    at:       [413.703, 12.320, -507.179, 62]
+    region:   sw_222
     level:    [43, 46]
   17285343:
     template: Worker_Crawler
-    at:       [-267.497, -0.080, -438.766, 218]
+    region:   sw_222
     level:    [43, 46]
   17285344:
     template: Worker_Crawler
-    at:       [65.828, 6.522, -262.021, 97]
+    region:   sw_228
     level:    [43, 46]
   17285345:
     template: Master_Coeurl
+    region:   sw_222
     level:    [47, 50]
   17285346:
     template: Goblin_Poacher
-    at:       [-275.399, -0.469, -449.129, 3]
+    region:   sw_222
     level:    [45, 49]
   17285347:
     template: Anemone
-    at:       [-261.937, 0.046, -438.830, 161]
+    region:   sw_222
     level:    [51, 54]
   17285348:
     template: Worker_Crawler
-    at:       [284.997, 7.504, -299.228, 127]
+    region:   sw_228
     level:    [43, 46]
   17285349:
     template: Worker_Crawler
-    at:       [258.024, 7.894, -4.218, 127]
+    region:   sw_228
     level:    [43, 46]
   17285350:
     template: Worker_Crawler
-    at:       [251.998, 8.275, -12.745, 90]
+    region:   sw_228
     level:    [43, 46]
   17285351:
     template: Master_Coeurl
-    at:       [538.635, -0.138, -434.614, 127]
+    region:   sw_228
     level:    [47, 50]
   17285352:
     template: Goblin_Robber
-    at:       [-197.087, -0.350, -474.758, 127]
+    region:   sw_228
     level:    [45, 49]
   17285353:
     template: Goblin_Robber
     level:    [45, 49]
   17285354:
     template: Anemone
-    at:       [-86.521, -0.480, -320.457, 127]
+    region:   sw_228
     level:    [51, 54]
   17285355:
     template: Young_Opo-opo
-    at:       [-172.749, -0.494, -467.085, 127]
+    region:   sw_235
     level:    [40, 44]
   17285356:
     template: Young_Opo-opo
-    at:       [-159.032, -0.499, -477.156, 59]
+    region:   sw_235
     level:    [40, 44]
   17285357:
     template: Young_Opo-opo
-    at:       [-130.968, 6.930, -419.317, 116]
+    region:   s_237
     level:    [40, 44]
   17285358:
     template: Tonberry_Creeper
-    at:       [-137.463, 6.567, -425.404, 127]
+    region:   c_244
     level:    [45, 49]
   17285359:
     template: Young_Opo-opo
-    at:       [-153.655, 7.842, -341.285, 18]
+    region:   s_239
     level:    [40, 44]
   17285360:
     template: Tonberry_Hexer
-    at:       [-148.326, 8.243, -346.058, 50]
+    region:   s_239
     level:    [45, 49]
   17285361:
     template: Goblin_Reaper
-    at:       [16.210, 8.557, -209.999, 75]
+    region:   c_241
     level:    [41, 45]
   17285362:
     template: Goblin_Reaper
-    at:       [17.289, 9.063, -215.528, 127]
+    region:   c_241
     level:    [41, 45]
   17285363:
     template: Goblin_Reaper
-    at:       [19.447, 7.938, -234.127, 80]
+    region:   c_241
     level:    [41, 45]
   17285364:
     template: Young_Opo-opo
-    at:       [-79.010, 7.815, -220.860, 4]
+    region:   c_244
     level:    [40, 44]
   17285365:
     template: Tonberry_Creeper
-    at:       [-64.365, 8.499, -214.667, 226]
+    region:   c_244
     level:    [45, 49]
   17285366:
     template: Young_Opo-opo
-    at:       [-38.075, -0.372, -287.643, 127]
+    region:   s_246
     level:    [40, 44]
   17285367:
     template: Young_Opo-opo
-    at:       [-61.387, 0.070, -286.287, 127]
+    region:   s_246
     level:    [40, 44]
   17285368:
     template: Tonberry_Creeper
-    at:       [-77.685, -0.493, -329.433, 114]
+    region:   s_246
     level:    [45, 49]
   17285369:
     template: Anemone
-    at:       [271.523, 0.124, -493.666, 127]
+    region:   s_246
     level:    [51, 54]
   17285370:
     template: Young_Opo-opo
-    at:       [-17.081, -0.130, -328.765, 44]
+    region:   s_250
     level:    [40, 44]
   17285371:
     template: Young_Opo-opo
-    at:       [-42.881, 0.086, -340.803, 15]
+    region:   s_250
     level:    [40, 44]
   17285372:
     template: Young_Opo-opo
-    at:       [-31.813, -0.076, -348.300, 127]
+    region:   s_250
     level:    [40, 44]
   17285373:
     template: Tonberry_Hexer
-    at:       [-39.433, -0.051, -332.916, 90]
+    region:   s_250
     level:    [45, 49]
   17285374:
     template: Young_Opo-opo
-    at:       [-31.058, 0.003, -370.522, 76]
+    region:   s_254
     level:    [40, 44]
   17285375:
     template: Young_Opo-opo
-    at:       [-57.188, -0.015, -391.577, 83]
+    region:   s_254
     level:    [40, 44]
   17285376:
     template: Young_Opo-opo
-    at:       [-57.024, -0.071, -399.408, 97]
+    region:   s_254
     level:    [40, 44]
   17285377:
     template: Tonberry_Creeper
-    at:       [-26.058, -0.057, -403.778, 115]
+    region:   s_254
     level:    [45, 49]
   17285378:
     template: Young_Opo-opo
-    at:       [37.509, -0.030, -345.689, 49]
+    region:   s_258
     level:    [40, 44]
   17285379:
     template: Young_Opo-opo
-    at:       [36.568, -0.319, -315.060, 6]
+    region:   s_258
     level:    [40, 44]
   17285380:
     template: Young_Opo-opo
-    at:       [31.694, -0.125, -334.372, 127]
+    region:   s_258
     level:    [40, 44]
   17285381:
     template: Tonberry_Creeper
-    at:       [32.904, -0.045, -353.409, 127]
+    region:   s_258
     level:    [45, 49]
   17285382:
     template: Young_Opo-opo
-    at:       [37.835, 0.060, -383.377, 127]
+    region:   s_262
     level:    [40, 44]
   17285383:
     template: Young_Opo-opo
-    at:       [74.235, -0.346, -405.374, 29]
+    region:   s_262
     level:    [40, 44]
   17285384:
     template: Young_Opo-opo
-    at:       [68.781, -0.642, -387.511, 127]
+    region:   s_262
     level:    [40, 44]
   17285385:
     template: Tonberry_Creeper
-    at:       [54.183, -0.217, -379.144, 101]
+    region:   s_262
     level:    [45, 49]
   17285386:
     template: Young_Opo-opo
-    at:       [-20.162, 0.092, -351.445, 127]
+    region:   s_266
     level:    [40, 44]
   17285387:
     template: Young_Opo-opo
-    at:       [-4.795, -0.354, -400.263, 127]
+    region:   s_266
     level:    [40, 44]
   17285388:
     template: Tonberry_Hexer
-    at:       [14.274, -1.670, -414.336, 18]
+    region:   s_266
     level:    [45, 49]
   17285389:
     template: Tonberry_Creeper
-    at:       [-5.443, -0.332, -399.649, 41]
+    region:   s_266
     level:    [45, 49]
   17285390:
     template: Fire_Elemental
-    at:       [17.238, 0.069, -402.464, 211]
+    region:   s_266
     level:    [53, 55]
   17285391:
     template: Young_Opo-opo
-    at:       [117.237, -0.499, -395.620, 54]
+    region:   s_271
     level:    [40, 44]
   17285392:
     template: Tonberry_Creeper
-    at:       [31.930, 0.201, -407.700, 60]
+    region:   s_271
     level:    [45, 49]
   17285393:
     template: Tonberry_Shadower
-    at:       [24.922, -5.023, -423.784, 19]
+    region:   s_266
     level:    [61, 63]
   17285394:
     template: Hoar-knuckled_Rimberry
-    at:       [24.922, -5.023, -423.784, 19]
+    region:   s_280
     level:    [73, 73]
   17285395:
     template: Tonberry_Jinxer
-    at:       [18.064, -4.500, -431.419, 140]
+    region:   region_115
     level:    [61, 63]
   17285396:
     template: Tonberry_Chopper
-    at:       [-1.346, -4.500, -437.402, 223]
+    region:   region_131
     level:    [61, 63]
   17285397:
     template: Tonberry_Chopper
-    at:       [17.325, -10.500, -454.870, 30]
+    region:   region_133
     level:    [61, 63]
   17285398:
     template: Tonberry_Shadower
-    at:       [48.523, -10.500, -466.110, 32]
+    region:   region_117
     level:    [61, 63]
   17285399:
     template: Tonberry_Chopper
-    at:       [-7.266, -10.500, -464.257, 191]
+    region:   s_280
     level:    [61, 63]
   17285400:
     template: Tonberry_Shadower
-    at:       [56.048, -18.500, -425.292, 19]
+    region:   s_280
     level:    [61, 63]
   17285401:
     template: Tonberry_Jinxer
-    at:       [1.976, -18.383, -435.409, 127]
+    region:   region_132
     level:    [61, 63]
   17285402:
     template: Tonberry_Shadower
-    at:       [20.698, -18.457, -436.720, 62]
+    region:   region_114
     level:    [61, 63]
   17285403:
     template: Tonberry_Chopper
-    at:       [33.748, -18.500, -435.407, 183]
+    region:   region_135
     level:    [61, 63]
   17285404:
     template: Tonberry_Creeper
-    at:       [179.353, 6.741, -452.006, 127]
+    region:   s_284
     level:    [45, 49]
   17285405:
     template: Tonberry_Hexer
-    at:       [177.102, 2.617, -467.835, 59]
+    region:   s_284
     level:    [45, 49]
   17285406:
     template: Young_Opo-opo
-    at:       [262.858, -0.216, -505.492, 127]
+    region:   se_286
     level:    [40, 44]
   17285407:
     template: Young_Opo-opo
-    at:       [200.735, 0.033, -494.608, 102]
+    region:   se_286
     level:    [40, 44]
   17285408:
     template: Young_Opo-opo
-    at:       [250.290, 0.061, -489.007, 127]
+    region:   se_286
     level:    [40, 44]
   17285409:
     template: Tonberry_Hexer
-    at:       [222.923, -0.064, -502.395, 7]
+    region:   se_291
     level:    [45, 49]
   17285410:
     template: Tonberry_Creeper
+    region:   s_322
     level:    [45, 49]
   17285411:
     template: Young_Opo-opo
-    at:       [248.853, -0.220, -404.197, 103]
+    region:   se_291
     level:    [40, 44]
   17285412:
     template: Tonberry_Creeper
-    at:       [278.917, -0.637, -394.534, 229]
+    region:   se_291
     level:    [45, 49]
   17285413:
     template: Young_Opo-opo
-    at:       [317.437, -0.104, -390.890, 27]
+    region:   se_293
     level:    [40, 44]
   17285414:
     template: Tonberry_Hexer
-    at:       [325.771, 0.043, -376.655, 127]
+    region:   se_298
     level:    [45, 49]
   17285415:
     template: Young_Opo-opo
-    at:       [364.333, -0.499, -396.278, 112]
+    region:   se_295
     level:    [40, 44]
   17285416:
     template: Tonberry_Harasser
-    at:       [367.422, -0.495, -397.447, 127]
+    region:   se_295
     level:    [45, 49]
   17285417:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   se_295
     level:    [38, 39]
   17285418:
     template: Young_Opo-opo
-    at:       [370.715, -0.570, -460.251, 127]
+    region:   se_298
     level:    [40, 44]
   17285419:
     template: Young_Opo-opo
-    at:       [398.912, -0.061, -467.421, 127]
+    region:   se_298
     level:    [40, 44]
   17285420:
     template: Tonberry_Hexer
-    at:       [370.636, -0.463, -469.881, 64]
+    region:   se_295
     level:    [45, 49]
   17285421:
     template: Tonberry_Hexer
-    at:       [369.392, -0.387, -472.908, 127]
+    region:   se_298
     level:    [45, 49]
   17285422:
     template: Young_Opo-opo
-    at:       [418.724, 8.338, -388.449, 127]
+    region:   se_302
     level:    [40, 44]
   17285423:
     template: Tonberry_Creeper
+    region:   se_302
     level:    [45, 49]
   17285424:
     template: Young_Opo-opo
-    at:       [357.485, -0.490, -521.913, 64]
+    region:   se_304
     level:    [40, 44]
   17285425:
     template: Young_Opo-opo
-    at:       [377.239, -0.984, -481.731, 127]
+    region:   se_304
     level:    [40, 44]
   17285426:
     template: Tonberry_Creeper
-    at:       [393.734, -0.408, -525.033, 76]
+    region:   se_302
     level:    [45, 49]
   17285427:
     template: Tonberry_Harasser
-    at:       [362.316, 0.061, -502.583, 53]
+    region:   se_304
     level:    [45, 49]
   17285428:
     template: Tonberrys_Elemental
-    at:       [361.693, 0.071, -501.147, 19]
+    region:   se_304
     level:    [38, 39]
   17285429:
     template: Young_Opo-opo
-    at:       [322.410, 1.169, -495.517, 10]
+    region:   se_309
     level:    [40, 44]
   17285430:
     template: Tonberry_Creeper
+    region:   se_309
     level:    [45, 49]
   17285431:
     template: Anemone
-    at:       [233.223, 0.096, -256.181, 90]
+    region:   se_309
     level:    [51, 54]
   17285432:
     template: Young_Opo-opo
-    at:       [268.948, -0.074, -460.804, 127]
+    region:   se_312
     level:    [40, 44]
   17285433:
     template: Young_Opo-opo
-    at:       [271.018, -0.369, -441.978, 127]
+    region:   se_312
     level:    [40, 44]
   17285434:
     template: Tonberry_Hexer
-    at:       [268.423, 0.089, -450.274, 127]
+    region:   se_312
     level:    [45, 49]
   17285435:
     template: Tonberry_Creeper
-    at:       [262.244, -0.736, -422.638, 34]
+    region:   se_312
     level:    [45, 49]
   17285436:
     template: Young_Opo-opo
-    at:       [322.714, -0.124, -434.205, 127]
+    region:   region_116
     level:    [40, 44]
   17285437:
     template: Young_Opo-opo
-    at:       [335.244, -1.471, -427.168, 127]
+    region:   region_116
     level:    [40, 44]
   17285438:
     template: Tonberry_Hexer
-    at:       [315.801, -1.714, -406.732, 211]
+    region:   se_312
     level:    [45, 49]
   17285439:
     template: Tonberry_Hexer
-    at:       [339.347, -1.530, -432.343, 127]
+    region:   se_312
     level:    [45, 49]
   17285440:
     template: Young_Opo-opo
-    at:       [298.236, -2.304, -445.288, 24]
+    region:   region_118
     level:    [40, 44]
   17285441:
     template: Tonberry_Hexer
-    at:       [305.287, -2.314, -448.882, 92]
+    region:   se_309
     level:    [45, 49]
   17285442:
     template: Young_Opo-opo
-    at:       [157.874, -0.499, -524.097, 24]
+    region:   s_322
     level:    [40, 44]
   17285443:
     template: Tonberry_Creeper
-    at:       [174.418, -0.023, -519.859]
+    region:   s_322
     level:    [45, 49]
   17285444:
     template: Young_Opo-opo
-    at:       [425.257, -2.226, -513.703, 21]
+    region:   se_324
     level:    [40, 44]
   17285445:
     template: Tonberry_Creeper
-    at:       [440.505, -0.504, -517.405, 127]
+    region:   se_304
     level:    [45, 49]
   17285446:
     template: Big_Jaw
-    at:       [284.801, 2.958, -502.966, 127]
+    region:   region_119
     level:    [43, 47]
   17285447:
     template: Big_Jaw
     level:    [43, 47]
   17285448:
     template: Water_Elemental
-    at:       [251.963, -0.128, -526.662, 127]
+    region:   region_120
     level:    [53, 55]
   17285449:
     template: Big_Jaw
-    at:       [335.104, 3.084, -500.759, 36]
+    region:   se_330
     level:    [43, 47]
   17285450:
     template: Big_Jaw
-    at:       [351.259, -0.342, -521.626, 127]
+    region:   se_330
     level:    [43, 47]
   17285451:
     template: Water_Elemental
-    at:       [350.794, -0.365, -519.497, 64]
+    region:   se_330
     level:    [53, 55]
   17285452:
     template: Big_Jaw
-    at:       [319.465, -2.831, -518.956, 123]
+    region:   region_121
     level:    [43, 47]
   17285453:
     template: Tonberry_Creeper
@@ -3190,301 +3196,303 @@ spawns:
     level:    [45, 49]
   17285454:
     template: Tonberry_Hexer
-    at:       [310.972, -4.500, -574.585, 127]
+    region:   se_334
     level:    [45, 49]
   17285455:
     template: Tonberry_Creeper
-    at:       [348.195, -4.532, -539.337, 127]
+    region:   se_335
     level:    [45, 49]
   17285456:
     template: Tonberry_Hexer
-    at:       [348.056, -11.691, -572.156, 127]
+    region:   region_136
     level:    [45, 49]
   17285457:
     template: Tonberry_Creeper
-    at:       [359.268, -18.649, -541.366, 127]
+    region:   se_337
     level:    [45, 49]
   17285458:
     template: Tonberry_Hexer
     level:    [45, 49]
   17285459:
     template: Tonberry_Creeper
+    region:   se_337
     level:    [45, 49]
   17285460:
     template: Bisque-heeled_Sunberry
-    at:       [296.401, -18.499, -505.720, 91]
+    region:   se_340
     level:    [57, 59]
   17285461:
     template: Tonberry_Hexer
     level:    [45, 49]
   17285462:
     template: Tonberry_Creeper
-    at:       [334.717, -4.500, -556.986, 88]
+    region:   region_122
     level:    [45, 49]
   17285463:
     template: Tonberry_Creeper
-    at:       [347.246, -10.500, -589.040, 4]
+    region:   region_127
     level:    [45, 49]
   17285464:
     template: Tonberry_Hexer
-    at:       [372.810, -10.500, -585.154, 217]
+    region:   region_123
     level:    [45, 49]
   17285465:
     template: Tonberry_Creeper
-    at:       [319.630, -18.499, -557.800, 128]
+    region:   region_124
     level:    [45, 49]
   17285466:
     template: Tonberry_Creeper
-    at:       [337.670, -18.591, -554.230, 56]
+    region:   region_134
     level:    [45, 49]
   17285467:
     template: Worker_Crawler
-    at:       [233.713, -0.457, -121.367, 39]
+    region:   se_348
     level:    [43, 46]
   17285468:
     template: Worker_Crawler
-    at:       [158.346, -0.405, -124.779, 127]
+    region:   se_348
     level:    [43, 46]
   17285469:
     template: Worker_Crawler
-    at:       [187.059, -1.047, -118.583, 127]
+    region:   se_348
     level:    [43, 46]
   17285470:
     template: Goblin_Poacher
-    at:       [500.894, 7.822, -520.350, 67]
+    region:   se_350
     level:    [45, 49]
   17285471:
     template: Master_Coeurl
+    region:   se_350
     level:    [47, 50]
   17285472:
     template: Goblin_Robber
-    at:       [519.725, 0.025, -414.084, 127]
+    region:   se_352
     level:    [45, 49]
   17285473:
     template: Goblin_Poacher
-    at:       [517.083, -0.312, -433.496, 37]
+    region:   se_352
     level:    [45, 49]
   17285474:
     template: Master_Coeurl
-    at:       [540.966, 0.094, -397.771, 127]
+    region:   se_352
     level:    [47, 50]
   17285475:
     template: Master_Coeurl
-    at:       [561.399, -0.499, -397.781, 127]
+    region:   se_357
     level:    [47, 50]
   17285476:
     template: Puroboros
-    at:       [532.223, -0.162, -434.773, 127]
+    region:   se_352
     level:    [51, 54]
   17285477:
     template: Goblin_Poacher
-    at:       [546.000, 0.057, -399.101, 104]
+    region:   se_357
     level:    [45, 49]
   17285478:
     template: Goblin_Robber
-    at:       [563.053, -0.478, -401.753, 127]
+    region:   se_357
     level:    [45, 49]
   17285479:
     template: Master_Coeurl
-    at:       [547.446, 8.499, -344.637, 26]
+    region:   se_357
     level:    [47, 50]
   17285480:
     template: Master_Coeurl
-    at:       [-304.000, 0.000, -128.000, 127]
+    region:   se_357
     level:    [47, 50]
   17285481:
     template: Puroboros
-    at:       [568.885, -0.498, -404.652, 64]
+    region:   se_357
     level:    [51, 54]
   17285482:
     template: Big_Jaw
-    at:       [548.004, -0.172, -433.181, 95]
+    region:   se_362
     level:    [43, 47]
   17285483:
     template: Big_Jaw
-    at:       [556.769, 0.060, -420.766, 35]
+    region:   se_362
     level:    [43, 47]
   17285484:
     template: Goblin_Robber
-    at:       [566.369, 7.415, -338.881, 127]
+    region:   se_364
     level:    [45, 49]
   17285485:
     template: Master_Coeurl
-    at:       [-320.000, 0.000, -118.000, 6]
+    region:   se_350
     level:    [47, 50]
   17285486:
     template: Worker_Crawler
-    at:       [121.170, -0.495, -231.206, 120]
+    region:   c_387
     level:    [43, 46]
   17285487:
     template: Tonberry_Hexer
-    at:       [59.955, 7.044, -269.832, 127]
+    region:   c_387
     level:    [45, 49]
   17285488:
     template: Worker_Crawler
-    at:       [220.049, -0.164, -228.813, 118]
+    region:   region_126
     level:    [43, 46]
   17285489:
     template: Tonberry_Hexer
-    at:       [298.386, 7.243, -327.487, 64]
+    region:   c_387
     level:    [45, 49]
   17285490:
     template: Worker_Crawler
-    at:       [237.975, -0.022, -250.510, 127]
+    region:   region_129
     level:    [43, 46]
   17285491:
     template: Worker_Crawler
-    at:       [187.140, 12.375, -147.779, 21]
+    region:   c_384
     level:    [43, 46]
   17285492:
     template: Worker_Crawler
-    at:       [228.862, -0.355, -106.415, 85]
+    region:   e_372
     level:    [43, 46]
   17285493:
     template: Tonberry_Hexer
-    at:       [236.941, -0.500, -82.527, 127]
+    region:   e_372
     level:    [45, 49]
   17285494:
     template: Tonberry_Creeper
-    at:       [236.445, 0.017, -99.661, 23]
+    region:   e_372
     level:    [45, 49]
   17285495:
     template: Tonberry_Harasser
-    at:       [231.520, -0.125, -101.445, 70]
+    region:   e_372
     level:    [45, 49]
   17285496:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   e_372
     level:    [38, 40]
   17285497:
     template: Worker_Crawler
-    at:       [180.050, 11.834, -122.896, 127]
+    region:   c_377
     level:    [43, 46]
   17285498:
     template: Tonberry_Creeper
-    at:       [162.054, 0.100, -136.331, 127]
+    region:   e_372
     level:    [45, 49]
   17285499:
     template: Tonberry_Harasser
-    at:       [143.595, -0.036, -121.116, 118]
+    region:   c_377
     level:    [45, 49]
   17285500:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   c_377
     level:    [38, 40]
   17285501:
     template: Goblin_Reaper
-    at:       [74.135, 7.456, -101.165, 11]
+    region:   c_381
     level:    [41, 45]
   17285502:
     template: Goblin_Reaper
-    at:       [60.373, 6.923, -91.055, 54]
+    region:   c_381
     level:    [41, 45]
   17285503:
     template: Goblin_Reaper
-    at:       [60.847, 6.963, -70.691, 127]
+    region:   c_381
     level:    [41, 45]
   17285504:
     template: Worker_Crawler
-    at:       [165.436, 11.552, -100.674, 127]
+    region:   c_384
     level:    [43, 46]
   17285505:
     template: Tonberry_Hexer
-    at:       [169.551, -0.134, -155.518, 127]
+    region:   c_384
     level:    [45, 49]
   17285506:
     template: Tonberry_Creeper
-    at:       [209.000, -0.197, -110.000, 82]
+    region:   c_384
     level:    [45, 49]
   17285507:
     template: Worker_Crawler
-    at:       [108.638, 2.384, -262.564, 1]
+    region:   c_387
     level:    [43, 46]
   17285508:
     template: Tonberry_Creeper
-    at:       [104.748, 3.299, -263.945, 64]
+    region:   c_387
     level:    [45, 49]
   17285509:
     template: Tonberry_Hexer
-    at:       [148.473, -0.465, -213.040, 139]
+    region:   c_387
     level:    [45, 49]
   17285510:
     template: Tonberry_Harasser
-    at:       [128.856, -0.499, -237.449, 60]
+    region:   c_387
     level:    [45, 49]
   17285511:
     template: Tonberrys_Elemental
-    at:       [1.000, 1.000, 1.000]
+    region:   c_387
     level:    [38, 40]
   17285512:
     template: Worker_Crawler
-    at:       [200.661, 0.027, -212.479, 225]
+    region:   region_128
     level:    [43, 46]
   17285513:
     template: Tonberry_Creeper
-    at:       [225.724, 0.042, -229.276, 127]
+    region:   region_128
     level:    [45, 49]
   17285514:
     template: Worker_Crawler
-    at:       [241.293, 0.027, -255.895, 95]
+    region:   region_129
     level:    [43, 46]
   17285515:
     template: Tonberry_Creeper
-    at:       [235.692, -0.208, -231.794, 115]
+    region:   e_372
     level:    [45, 49]
   17285516:
     template: Anemone
-    at:       [232.471, -0.499, -279.083, 102]
+    region:   region_129
     level:    [51, 54]
   17285517:
     template: Young_Opo-opo
-    at:       [245.873, -0.486, -156.438, 115]
+    region:   region_130
     level:    [40, 44]
   17285518:
     template: Young_Opo-opo
-    at:       [246.050, -0.137, -183.889, 96]
+    region:   region_130
     level:    [40, 44]
   17285519:
     template: Tonberry_Hexer
-    at:       [245.719, -0.144, -185.635, 127]
+    region:   c_387
     level:    [45, 49]
   17285520:
     template: Tonberry_Hexer
-    at:       [245.963, -0.310, -151.906, 127]
+    region:   c_384
     level:    [45, 49]
   17285521:
     template: Young_Opo-opo
-    at:       [206.785, -1.176, -196.367, 51]
+    region:   c_402
     level:    [40, 44]
   17285522:
     template: Young_Opo-opo
-    at:       [217.325, -0.269, -190.096, 3]
+    region:   c_402
     level:    [40, 44]
   17285523:
     template: Tonberry_Creeper
-    at:       [189.682, -0.364, -181.061, 117]
+    region:   c_384
     level:    [45, 49]
   17285524:
     template: Tonberry_Hexer
-    at:       [220.690, -0.084, -226.994, 127]
+    region:   region_128
     level:    [45, 49]
   17285525:
     template: Fire_Elemental
-    at:       [209.072, -0.150, -168.756, 196]
+    region:   c_402
     level:    [53, 55]
   17285526:
     template: Bright-handed_Kunberry
-    at:       [227.000, -0.500, -169.000, 127]
+    region:   c_402
     level:    [55, 57]
   17285527:
     template: Tonberry_Hexer_3
     script:   Tonberry_Hexer
-    at:       [192.000, -0.349, -162.000, 127]
+    region:   c_384
     level:    [45, 49]
   17285528:
     template: Tonberry_Harasser_2
     script:   Tonberry_Harasser
-    at:       [189.000, -0.390, -136.000, 127]
+    region:   c_384
     level:    [45, 49]
   17285529:
     template: Tonberrys_Elemental
@@ -3492,55 +3500,55 @@ spawns:
     level:    [38, 40]
   17285530:
     template: Worker_Crawler
-    at:       [186.009, 12.362, -150.314, 60]
+    region:   c_410
     level:    [43, 46]
   17285531:
     template: Worker_Crawler
-    at:       [203.025, 11.664, -141.578, 128]
+    region:   c_412
     level:    [43, 46]
   17285532:
     template: Worker_Crawler
-    at:       [175.354, 10.454, -105.649, 26]
+    region:   c_412
     level:    [43, 46]
   17285533:
     template: Worker_Crawler
-    at:       [180.455, 10.832, -109.497, 26]
+    region:   c_412
     level:    [43, 46]
   17285534:
     template: Tonberry_Shadower
-    at:       [263.008, -4.500, -178.496, 127]
+    region:   e_414
     level:    [61, 63]
   17285535:
     template: Tonberry_Chopper
-    at:       [272.358, -4.500, -165.268, 127]
+    region:   e_414
     level:    [61, 63]
   17285536:
     template: Tonberry_Jinxer
-    at:       [274.510, -4.500, -179.045, 127]
+    region:   region_137
     level:    [61, 63]
   17285537:
     template: Tonberry_Jinxer
-    at:       [297.412, -10.500, -207.387, 48]
+    region:   region_138
     level:    [61, 63]
   17285538:
     template: Tonberry_Shadower
-    at:       [309.495, -10.500, -148.369, 127]
+    region:   region_139
     level:    [61, 63]
   17285539:
     template: Tonberry_Chopper
-    at:       [304.197, -10.500, -207.950, 111]
+    region:   region_140
     level:    [61, 63]
   17285540:
     template: Tonberry_Chopper
-    at:       [264.175, -18.504, -189.668, 127]
+    region:   e_420
     level:    [61, 63]
   17285541:
     template: Tonberry_Shadower
-    at:       [276.998, -18.500, -164.270, 127]
+    region:   e_420
     level:    [61, 63]
   17285542:
     template: Tonberry_Shadower
-    at:       [277.436, -18.500, -196.470, 127]
+    region:   region_125
     level:    [61, 63]
   17285543:
     template: Goblin_Digger_jungle

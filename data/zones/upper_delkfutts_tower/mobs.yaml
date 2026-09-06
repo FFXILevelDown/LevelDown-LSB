@@ -815,7 +815,7 @@ templates:
 spawns:
   17424385:
     template: Enkelados
-    at:       [-391.000, -145.000, 25.000, 127]
+    region:   w_3
     level:    [40, 40]
   17424386:
     template: Gigass_Bats
@@ -823,59 +823,59 @@ spawns:
     level:    [27, 29]
   17424387:
     template: Gigas_Torturer
-    at:       [-387.740, -144.100, 16.162, 127]
+    region:   w_3
     level:    [34, 35]
   17424388:
     template: Gigas_Bonecutter
-    at:       [-371.586, -144.367, 28.244, 45]
+    region:   w_3
     level:    [34, 35]
   17424389:
     template: Gigass_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   w_3
     level:    [27, 29]
   17424390:
     template: Gigas_Stonemason
-    at:       [-380.843, -144.099, 11.526, 21]
+    region:   w_3
     level:    [34, 35]
   17424391:
     template: Gigas_Spirekeeper
-    at:       [-312.000, -144.000, 59.000, 127]
+    region:   n_7
     level:    [34, 35]
   17424392:
     template: Gigas_Torturer
-    at:       [-301.000, -144.000, 69.000, 127]
+    region:   n_15
     level:    [34, 35]
   17424393:
     template: Gigas_Bonecutter
-    at:       [-333.951, -144.500, 61.751, 127]
+    region:   n_7
     level:    [34, 35]
   17424394:
     template: Gigass_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   n_7
     level:    [27, 29]
   17424395:
     template: Gigas_Stonemason
-    at:       [-342.136, -144.500, 61.413, 15]
+    region:   n_7
     level:    [34, 35]
   17424396:
     template: Thunder_Elemental
-    at:       [-326.772, -144.500, 61.295, 97]
+    region:   n_7
     level:    [35, 36]
   17424397:
     template: Light_Elemental
-    at:       [-346.861, -144.490, 62.137, 24]
+    region:   n_7
     level:    [35, 36]
   17424398:
     template: Gigas_Spirekeeper
-    at:       [-287.426, -144.500, 100.646, 127]
+    region:   n_15
     level:    [34, 35]
   17424399:
     template: Gigas_Torturer
-    at:       [-268.000, -144.000, 100.000, 79]
+    region:   n_15
     level:    [34, 35]
   17424400:
     template: Gigas_Bonecutter
-    at:       [-255.000, -144.000, 99.000, 127]
+    region:   n_15
     level:    [34, 35]
   17424401:
     template: Gigass_Bats
@@ -883,91 +883,91 @@ spawns:
     level:    [27, 29]
   17424402:
     template: Gigas_Stonemason
-    at:       [-300.847, -144.500, 89.485, 127]
+    region:   n_15
     level:    [34, 35]
   17424403:
     template: Thunder_Elemental
-    at:       [-300.776, -144.500, 89.095, 32]
+    region:   n_15
     level:    [35, 36]
   17424404:
     template: Light_Elemental
-    at:       [-298.147, -144.500, 94.070, 101]
+    region:   n_15
     level:    [35, 36]
   17424405:
     template: Gigas_Spirekeeper
-    at:       [-381.034, -144.499, 43.599, 127]
+    region:   w_22
     level:    [34, 35]
   17424406:
     template: Gigas_Torturer
-    at:       [-377.000, -143.000, 71.000, 68]
+    region:   w_22
     level:    [34, 35]
   17424407:
     template: Gigas_Bonecutter
-    at:       [-379.000, -144.499, 61.000, 127]
+    region:   w_22
     level:    [34, 35]
   17424408:
     template: Gigass_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   w_22
     level:    [27, 29]
   17424409:
     template: Gigas_Stonemason
-    at:       [-379.573, -144.499, 51.809, 127]
+    region:   w_22
     level:    [34, 35]
   17424410:
     template: Thunder_Elemental
-    at:       [-379.430, -144.499, 36.394, 66]
+    region:   w_22
     level:    [35, 36]
   17424411:
     template: Light_Elemental
-    at:       [-378.961, -144.499, 44.564, 127]
+    region:   w_22
     level:    [35, 36]
   17424412:
     template: Gigas_Spirekeeper
-    at:       [-218.606, -144.499, 49.528, 64]
+    region:   ne_30
     level:    [34, 35]
   17424413:
     template: Gigas_Torturer
-    at:       [-210.000, -143.000, 27.000, 44]
+    region:   ne_30
     level:    [34, 35]
   17424414:
     template: Gigas_Bonecutter
-    at:       [-225.982, -144.490, 70.129, 17]
+    region:   ne_30
     level:    [34, 35]
   17424415:
     template: Gigass_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   ne_30
     level:    [27, 29]
   17424416:
     template: Gigas_Stonemason
-    at:       [-219.382, -144.498, 65.117, 69]
+    region:   ne_30
     level:    [34, 35]
   17424417:
     template: Thunder_Elemental
-    at:       [-218.055, -144.500, 58.839, 64]
+    region:   ne_30
     level:    [35, 36]
   17424418:
     template: Light_Elemental
-    at:       [-218.187, -144.500, 54.253, 127]
+    region:   ne_30
     level:    [35, 36]
   17424419:
     template: Mimas
-    at:       [-293.419, -144.070, 53.648, 127]
+    region:   region_32
     level:    [36, 36]
   17424420:
     template: Magic_Urn
-    at:       [-238.899, -144.002, 77.680, 61]
+    region:   ne_36
     level:    [34, 35]
   17424421:
     template: Magic_Urn
-    at:       [-236.313, -144.298, 72.947, 50]
+    region:   ne_36
     level:    [34, 35]
   17424422:
     template: Magic_Urn
-    at:       [-241.098, -144.076, 86.067, 127]
+    region:   ne_36
     level:    [34, 35]
   17424423:
     template: Enkelados
-    at:       [-226.158, -144.099, 28.522, 127]
+    region:   e_41
     level:    [40, 40]
   17424424:
     template: Gigass_Bats
@@ -975,43 +975,43 @@ spawns:
     level:    [27, 29]
   17424425:
     template: Gigas_Spirekeeper
-    at:       [-225.374, -144.100, 19.749, 127]
+    region:   e_41
     level:    [34, 35]
   17424426:
     template: Gigas_Bonecutter
-    at:       [-215.194, -144.099, 19.528, 127]
+    region:   e_41
     level:    [34, 35]
   17424427:
     template: Gigass_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   e_41
     level:    [27, 29]
   17424428:
     template: Gigas_Stonemason
-    at:       [-225.728, -144.103, 30.087, 125]
+    region:   e_41
     level:    [34, 35]
   17424429:
     template: Porphyrion
-    at:       [-298.160, -144.165, 12.439, 58]
+    region:   c_45
     level:    [36, 36]
   17424430:
     template: Thunder_Elemental
-    at:       [-293.561, -144.623, 24.306, 127]
+    region:   c_45
     level:    [35, 36]
   17424431:
     template: Light_Elemental
-    at:       [-284.995, -143.924, 21.827, 114]
+    region:   c_48
     level:    [35, 36]
   17424432:
     template: Gigas_Spirekeeper
-    at:       [-280.026, -144.225, 35.292, 97]
+    region:   c_48
     level:    [34, 35]
   17424433:
     template: Gigas_Torturer
-    at:       [-276.798, -144.266, 15.071, 30]
+    region:   c_48
     level:    [34, 35]
   17424434:
     template: Gigas_Bonecutter
-    at:       [-283.047, -144.250, 33.735, 127]
+    region:   c_48
     level:    [34, 35]
   17424435:
     template: Gigass_Bats
@@ -1019,35 +1019,35 @@ spawns:
     level:    [27, 29]
   17424436:
     template: Gigas_Stonemason
-    at:       [-274.250, -144.283, 27.049, 84]
+    region:   c_48
     level:    [34, 35]
   17424437:
     template: Gigas_Spirekeeper
-    at:       [-313.391, -144.524, -12.468, 116]
+    region:   s_54
     level:    [34, 35]
   17424438:
     template: Gigas_Torturer
-    at:       [-295.429, -144.398, -9.097, 127]
+    region:   s_54
     level:    [34, 35]
   17424439:
     template: Gigas_Bonecutter
-    at:       [-312.331, -144.759, -13.591, 127]
+    region:   s_54
     level:    [34, 35]
   17424440:
     template: Gigass_Bats
-    at:       [1.000, 1.000, 1.000]
+    region:   s_54
     level:    [27, 29]
   17424441:
     template: Gigas_Stonemason
-    at:       [-293.688, -144.120, 1.548, 126]
+    region:   s_54
     level:    [34, 35]
   17424442:
     template: Demonic_Doll
-    at:       [-358.825, -144.159, -38.803, 127]
+    region:   sw_58
     level:    [68, 70]
   17424443:
     template: Demonic_Doll
-    at:       [-226.754, -144.728, -32.811, 106]
+    region:   se_59
     level:    [68, 70]
   17424444:
     template: Pallas
@@ -1061,88 +1061,88 @@ spawns:
   17424446:
     template: Magic_Pot_UDT
     script:   Magic_Pot
-    at:       [-303.825, -159.924, 13.823, 58]
+    region:   c_62
     level:    [68, 70]
   17424447:
     template: Magic_Pot_UDT
     script:   Magic_Pot
-    at:       [-314.460, -159.924, 9.405, 49]
+    region:   c_62
     level:    [68, 70]
   17424448:
     template: Magic_Pot_UDT
     script:   Magic_Pot
-    at:       [-312.528, -159.924, 19.562, 127]
+    region:   c_62
     level:    [68, 70]
   17424449:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [-309.140, -159.924, 13.836, 127]
+    region:   c_62
     level:    [64, 66]
   17424450:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [-307.942, -159.924, 19.354, 127]
+    region:   c_62
     level:    [64, 66]
   17424451:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [-297.221, -159.924, 5.041, 127]
+    region:   c_62
     level:    [64, 66]
   17424452:
     template: Jotunn_Wallkeeper
-    at:       [-315.000, -160.517, 52.000, 127]
+    region:   c_68
     level:    [65, 69]
   17424453:
     template: Jotunn_Gatekeeper
-    at:       [-305.000, -160.397, 51.000, 127]
+    region:   n_69
     level:    [65, 69]
   17424454:
     template: Jotunn_Hallkeeper
-    at:       [-274.364, -160.207, 46.033, 127]
+    region:   c_68
     level:    [65, 69]
   17424455:
     template: Jotunn_Wildkeeper
-    at:       [-280.230, -160.519, 52.984, 127]
+    region:   c_68
     level:    [65, 69]
   17424456:
     template: Gigass_Bat
-    at:       [1.000, 1.000, 1.000]
+    region:   c_68
     level:    [53, 55]
   17424457:
     template: Jotunn_Wallkeeper
-    at:       [-280.327, -159.993, -5.097, 34]
+    region:   w_78
     level:    [65, 69]
   17424458:
     template: Jotunn_Gatekeeper
-    at:       [-320.534, -159.924, -3.678, 57]
+    region:   s_74
     level:    [65, 69]
   17424459:
     template: Jotunn_Hallkeeper
-    at:       [-299.257, -160.347, -9.953, 63]
+    region:   s_74
     level:    [65, 69]
   17424460:
     template: Jotunn_Wildkeeper
-    at:       [-287.423, -160.466, -11.309, 89]
+    region:   s_74
     level:    [65, 69]
   17424461:
     template: Gigass_Bat
-    at:       [1.000, 1.000, 1.000]
+    region:   s_74
     level:    [53, 55]
   17424462:
     template: Jotunn_Wallkeeper
-    at:       [-340.411, -160.499, 20.166, 112]
+    region:   w_78
     level:    [65, 69]
   17424463:
     template: Jotunn_Gatekeeper
-    at:       [-325.646, -160.027, 1.424, 76]
+    region:   w_78
     level:    [65, 69]
   17424464:
     template: Jotunn_Hallkeeper
-    at:       [-332.906, -160.519, 39.799, 88]
+    region:   w_78
     level:    [65, 69]
   17424465:
     template: Jotunn_Wildkeeper
-    at:       [-333.395, -160.515, 1.424, 50]
+    region:   w_78
     level:    [65, 69]
   17424466:
     template: Gigass_Bat
@@ -1150,62 +1150,62 @@ spawns:
     level:    [53, 55]
   17424467:
     template: Jotunn_Wallkeeper
-    at:       [-272.267, -160.159, 27.723, 14]
+    region:   e_83
     level:    [65, 69]
   17424468:
     template: Jotunn_Gatekeeper
-    at:       [-292.995, -160.512, 54.141, 127]
+    region:   c_84
     level:    [65, 69]
   17424469:
     template: Jotunn_Hallkeeper
-    at:       [-274.787, -160.000, 3.201, 127]
+    region:   c_84
     level:    [65, 69]
   17424470:
     template: Jotunn_Wildkeeper
-    at:       [-261.968, -160.501, 25.806, 29]
+    region:   c_84
     level:    [65, 69]
   17424471:
     template: Gigass_Bat
-    at:       [1.000, 1.000, 1.000]
+    region:   c_84
     level:    [53, 55]
   17424472:
     template: Phasma_UDT
     script:   Phasma
-    at:       [-366.908, -160.336, 84.753, 127]
+    region:   nw_88
     level:    [67, 69]
   17424473:
     template: Phasma_UDT
     script:   Phasma
-    at:       [-359.458, -160.002, 76.582, 127]
+    region:   nw_88
     level:    [67, 69]
   17424474:
     template: Phasma_UDT
     script:   Phasma
-    at:       [-358.249, -159.924, 79.765, 68]
+    region:   nw_125
     level:    [67, 69]
   17424475:
     template: Ixtab
-    at:       [-360.000, -159.500, 80.000, 60]
+    region:   nw_88
     level:    [71, 71]
   17424476:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-341.847, -160.482, -29.294, 92]
+    region:   sw_92
     level:    [62, 64]
   17424477:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-338.958, -160.497, -20.548, 127]
+    region:   sw_92
     level:    [62, 64]
   17424478:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-242.986, -160.190, 73.348, 127]
+    region:   ne_94
     level:    [62, 64]
   17424479:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-241.573, -160.163, 72.702, 127]
+    region:   ne_94
     level:    [62, 64]
   17424480:
     template: Alkyoneus
@@ -1213,75 +1213,75 @@ spawns:
     level:    [75, 75]
   17424481:
     template: Demonic_Doll
-    at:       [-296.738, -175.924, 17.698, 70]
+    region:   c_97
     level:    [68, 70]
   17424482:
     template: Demonic_Doll
-    at:       [-285.348, -175.924, 20.145, 127]
+    region:   c_97
     level:    [68, 70]
   17424483:
     template: Demonic_Doll
-    at:       [-299.740, -175.924, 15.733, 127]
+    region:   c_97
     level:    [68, 70]
   17424484:
     template: Magic_Pot_UDT
     script:   Magic_Pot
-    at:       [-262.727, -176.415, 59.132, 127]
+    region:   n_100
     level:    [68, 70]
   17424485:
     template: Magic_Pot_UDT
     script:   Magic_Pot
-    at:       [-264.870, -175.924, 77.028, 4]
+    region:   n_100
     level:    [68, 70]
   17424486:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [-279.608, -175.952, 72.133, 127]
+    region:   n_100
     level:    [64, 66]
   17424487:
     template: Dire_Bat_UDT_TC_SSG
     script:   Dire_Bat
-    at:       [-282.696, -176.017, 82.517, 127]
+    region:   n_100
     level:    [64, 66]
   17424488:
     template: Autarch
-    at:       [-287.000, -175.600, 85.000, 126]
+    region:   n_100
     level:    [83, 85]
   17424489:
     template: Jotunn_Wallkeeper
-    at:       [-296.098, -175.924, 38.476, 52]
+    region:   c_105
     level:    [65, 69]
   17424490:
     template: Jotunn_Gatekeeper
-    at:       [-316.738, -175.924, 35.214, 108]
+    region:   c_105
     level:    [65, 69]
   17424491:
     template: Jotunn_Hallkeeper
-    at:       [-333.000, -176.000, 30.000, 65]
+    region:   c_105
     level:    [65, 69]
   17424492:
     template: Jotunn_Wildkeeper
-    at:       [-300.000, -175.000, 56.000, 58]
+    region:   c_105
     level:    [65, 69]
   17424493:
     template: Gigass_Bat
-    at:       [1.000, 1.000, 1.000]
+    region:   c_105
     level:    [53, 55]
   17424494:
     template: Jotunn_Wallkeeper
-    at:       [-293.086, -175.925, -4.024, 127]
+    region:   s_110
     level:    [65, 69]
   17424495:
     template: Jotunn_Gatekeeper
-    at:       [-292.705, -176.507, -14.928, 55]
+    region:   s_110
     level:    [65, 69]
   17424496:
     template: Jotunn_Hallkeeper
-    at:       [-317.000, -175.000, 50.000, 7]
+    region:   s_110
     level:    [65, 69]
   17424497:
     template: Jotunn_Wildkeeper
-    at:       [-308.514, -175.924, -3.720, 127]
+    region:   s_110
     level:    [65, 69]
   17424498:
     template: Gigass_Bat
@@ -1289,19 +1289,19 @@ spawns:
     level:    [53, 55]
   17424499:
     template: Jotunn_Wallkeeper
-    at:       [-327.804, -176.163, 17.037, 127]
+    region:   c_115
     level:    [65, 69]
   17424500:
     template: Jotunn_Gatekeeper
-    at:       [-335.000, -176.000, 28.000, 105]
+    region:   c_115
     level:    [65, 69]
   17424501:
     template: Jotunn_Hallkeeper
-    at:       [-320.705, -175.924, 0.905, 127]
+    region:   c_115
     level:    [65, 69]
   17424502:
     template: Jotunn_Wildkeeper
-    at:       [-321.807, -175.924, 15.624, 127]
+    region:   c_115
     level:    [65, 69]
   17424503:
     template: Gigass_Bat
@@ -1309,62 +1309,62 @@ spawns:
     level:    [53, 55]
   17424504:
     template: Jotunn_Wallkeeper
-    at:       [-265.683, -176.511, 23.816, 37]
+    region:   c_121
     level:    [65, 69]
   17424505:
     template: Jotunn_Gatekeeper
-    at:       [-268.000, -176.000, 40.000, 127]
+    region:   c_121
     level:    [65, 69]
   17424506:
     template: Jotunn_Hallkeeper
-    at:       [-267.000, -176.000, 3.000, 8]
+    region:   c_121
     level:    [65, 69]
   17424507:
     template: Jotunn_Wildkeeper
-    at:       [-270.097, -176.343, 17.070, 127]
+    region:   c_121
     level:    [65, 69]
   17424508:
     template: Gigass_Bat
-    at:       [1.000, 1.000, 1.000]
+    region:   c_121
     level:    [53, 55]
   17424509:
     template: Phasma_UDT
     script:   Phasma
-    at:       [-348.777, -176.461, 76.460, 127]
+    region:   nw_125
     level:    [67, 69]
   17424510:
     template: Phasma_UDT
     script:   Phasma
-    at:       [-359.671, -176.144, 86.200, 127]
+    region:   nw_125
     level:    [67, 69]
   17424511:
     template: Phasma_UDT
     script:   Phasma
-    at:       [-362.595, -176.133, 85.139, 68]
+    region:   nw_125
     level:    [67, 69]
   17424512:
     template: Ixtab
-    at:       [-360.000, -175.500, 78.000, 60]
+    region:   nw_125
     level:    [71, 71]
   17424513:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-337.960, -176.495, 58.230, 127]
+    region:   nw_129
     level:    [62, 64]
   17424514:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-346.093, -176.494, 71.868, 127]
+    region:   nw_129
     level:    [62, 64]
   17424515:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-346.228, -176.491, -31.345, 104]
+    region:   sw_131
     level:    [62, 64]
   17424516:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    at:       [-341.833, -176.469, -27.273, 86]
+    region:   sw_131
     level:    [62, 64]
 
 slots:

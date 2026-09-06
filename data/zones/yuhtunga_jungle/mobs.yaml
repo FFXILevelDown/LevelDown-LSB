@@ -1687,1746 +1687,1746 @@ spawns:
     level:    [65, 65]
   17281032:
     template: Yuhtunga_Mandragora
-    at:       [-203.000, -0.620, 489.000, 127]
+    region:   n_8
     level:    [30, 33]
   17281033:
     template: Yuhtunga_Mandragora
-    at:       [-192.481, -0.499, 441.013, 127]
+    region:   n_8
     level:    [30, 33]
   17281034:
     template: Goblin_Smithy
-    at:       [-192.131, -0.500, 476.505, 67]
+    region:   n_8
     level:    [32, 37]
   17281035:
     template: Yuhtunga_Mandragora
-    at:       [-242.816, -0.017, 384.294, 35]
+    region:   n_11
     level:    [30, 33]
   17281036:
     template: Yuhtunga_Mandragora
-    at:       [-204.819, -0.178, 389.982, 127]
+    region:   n_11
     level:    [30, 33]
   17281037:
     template: Goblin_Smithy
-    at:       [-193.442, -0.460, 404.513, 28]
+    region:   n_11
     level:    [32, 37]
   17281038:
     template: Yuhtunga_Mandragora
-    at:       [-210.000, -0.587, 418.000, 127]
+    region:   n_14
     level:    [30, 33]
   17281039:
     template: Yuhtunga_Mandragora
-    at:       [-223.307, 0.216, 353.099, 127]
+    region:   n_14
     level:    [30, 33]
   17281040:
     template: Goblin_Smithy
-    at:       [-203.303, -0.686, 361.609, 38]
+    region:   n_14
     level:    [32, 37]
   17281041:
     template: Yuhtunga_Mandragora
-    at:       [-140.000, -0.383, 382.000, 127]
+    region:   n_17
     level:    [30, 33]
   17281042:
     template: Goblin_Smithy
-    at:       [-149.357, 0.288, 348.655, 127]
+    region:   n_17
     level:    [32, 37]
   17281043:
     template: Yuhtunga_Mandragora
-    at:       [-85.990, -0.592, 401.653, 127]
+    region:   n_19
     level:    [30, 33]
   17281044:
     template: Yuhtunga_Mandragora
-    at:       [-90.448, -0.460, 433.374, 127]
+    region:   n_19
     level:    [30, 33]
   17281045:
     template: Yuhtunga_Mandragora
-    at:       [-113.049, 0.025, 413.730, 127]
+    region:   n_19
     level:    [30, 33]
   17281046:
     template: Goblin_Smithy
-    at:       [-108.754, -0.032, 438.109, 22]
+    region:   n_19
     level:    [32, 37]
   17281047:
     template: Goblin_Smithy
-    at:       [-88.590, -0.270, 402.666, 127]
+    region:   n_19
     level:    [32, 37]
   17281048:
     template: Yuhtunga_Mandragora
-    at:       [-234.000, -0.600, 486.000, 64]
+    region:   n_24
     level:    [30, 33]
   17281049:
     template: Yuhtunga_Mandragora
-    at:       [-221.000, -0.700, 467.000, 75]
+    region:   n_24
     level:    [30, 33]
   17281050:
     template: Goblin_Smithy
-    at:       [-262.147, 8.735, 266.429, 127]
+    region:   n_24
     level:    [32, 37]
   17281051:
     template: Ivory_Lizard
-    at:       [-140.438, 11.683, 271.176, 73]
+    region:   n_27
     level:    [32, 35]
   17281052:
     template: Goblin_Smithy
-    at:       [-139.476, 11.771, 274.822, 72]
+    region:   n_27
     level:    [32, 37]
   17281053:
     template: Goblin_Smithy
-    at:       [-137.274, 12.904, 254.508, 47]
+    region:   n_27
     level:    [32, 37]
   17281054:
     template: Ivory_Lizard
-    at:       [-113.630, 11.979, 218.804, 3]
+    region:   n_30
     level:    [32, 35]
   17281055:
     template: Goblin_Smithy
-    at:       [-111.916, 12.070, 219.407, 109]
+    region:   n_30
     level:    [32, 37]
   17281056:
     template: Yuhtunga_Mandragora
-    at:       [-308.667, 0.504, 181.546, 116]
+    region:   nw_32
     level:    [30, 33]
   17281057:
     template: Yuhtunga_Mandragora
-    at:       [-298.429, -0.197, 155.522, 127]
+    region:   nw_32
     level:    [30, 33]
   17281058:
     template: Yuhtunga_Mandragora
-    at:       [-300.111, -0.101, 199.517, 56]
+    region:   nw_32
     level:    [30, 33]
   17281059:
     template: Goblin_Smithy
-    at:       [-293.852, 0.388, 169.211, 61]
+    region:   nw_32
     level:    [32, 37]
   17281060:
     template: Goblin_Smithy
-    at:       [-301.557, 0.058, 207.924, 32]
+    region:   nw_32
     level:    [32, 37]
   17281061:
     template: Koropokkur
-    at:       [-301.557, 0.058, 207.924, 32]
+    region:   nw_32
     level:    [36, 37]
   17281062:
     template: Ivory_Lizard
-    at:       [-261.561, 7.967, 110.407, 108]
+    region:   c_38
     level:    [32, 35]
   17281063:
     template: Ivory_Lizard
-    at:       [-263.085, 8.211, 108.516, 68]
+    region:   c_38
     level:    [32, 35]
   17281064:
     template: Goblin_Smithy
-    at:       [-266.107, 6.539, 137.364, 24]
+    region:   c_38
     level:    [32, 37]
   17281065:
     template: Ivory_Lizard
-    at:       [-378.246, 9.076, 222.973, 96]
+    region:   nw_41
     level:    [32, 35]
   17281066:
     template: Ivory_Lizard
-    at:       [-379.521, 9.222, 222.179, 127]
+    region:   nw_41
     level:    [32, 35]
   17281067:
     template: Ivory_Lizard
-    at:       [-391.688, 7.141, 140.443, 113]
+    region:   w_43
     level:    [32, 35]
   17281068:
     template: Ivory_Lizard
-    at:       [-414.008, 8.359, 147.711, 127]
+    region:   w_43
     level:    [32, 35]
   17281069:
     template: Goblin_Smithy
-    at:       [-410.730, 8.059, 145.688, 127]
+    region:   w_43
     level:    [32, 37]
   17281070:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-508.105, 0.452, 179.305, 127]
+    region:   nw_46
     level:    [34, 37]
   17281071:
     template: Young_Opo-opo
-    at:       [-507.988, 0.455, 179.289, 72]
+    region:   nw_46
     level:    [34, 36]
   17281072:
     template: Young_Opo-opo
-    at:       [-509.793, 0.578, 177.408, 89]
+    region:   nw_46
     level:    [34, 36]
   17281073:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-540.611, -0.096, 201.703, 127]
+    region:   nw_49
     level:    [34, 37]
   17281074:
     template: Young_Opo-opo
-    at:       [-537.817, -0.151, 193.446, 48]
+    region:   nw_49
     level:    [34, 36]
   17281075:
     template: Young_Opo-opo
-    at:       [-540.114, 0.078, 166.307, 126]
+    region:   nw_49
     level:    [34, 36]
   17281076:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-499.858, 2.075, 216.895, 127]
+    region:   nw_52
     level:    [34, 37]
   17281077:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-498.627, 0.189, 209.386, 127]
+    region:   nw_52
     level:    [34, 37]
   17281078:
     template: Young_Opo-opo
-    at:       [-494.813, 0.514, 222.328, 120]
+    region:   nw_52
     level:    [34, 36]
   17281079:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-459.931, 7.496, 273.142, 127]
+    region:   nw_55
     level:    [34, 37]
   17281080:
     template: Soldier_Crawler
-    at:       [-578.676, 6.857, 129.470, 94]
+    region:   w_56
     level:    [37, 41]
   17281081:
     template: Goblin_Robber
-    at:       [-586.948, 8.282, 106.061, 98]
+    region:   w_56
     level:    [42, 47]
   17281082:
     template: Soldier_Crawler
-    at:       [-591.751, -0.741, 0.977, 127]
+    region:   w_58
     level:    [37, 41]
   17281083:
     template: Soldier_Crawler
-    at:       [-599.697, -0.703, 3.712, 127]
+    region:   w_58
     level:    [37, 41]
   17281084:
     template: Goblin_Robber
-    at:       [-634.138, -1.646, 16.920, 127]
+    region:   w_58
     level:    [42, 47]
   17281085:
     template: Goblin_Poacher
-    at:       [-606.537, -0.363, 35.598, 4]
+    region:   w_58
     level:    [42, 47]
   17281086:
     template: Lava_Bomb
-    at:       [-626.739, -0.760, 27.452, 57]
+    region:   w_58
     level:    [47, 50]
   17281087:
     template: Soldier_Crawler
-    at:       [-636.539, -0.217, -30.195, 66]
+    region:   w_63
     level:    [37, 41]
   17281088:
     template: Soldier_Crawler
-    at:       [-631.478, -1.290, -27.035, 127]
+    region:   w_63
     level:    [37, 41]
   17281089:
     template: Goblin_Poacher
-    at:       [-614.363, -1.209, -10.652, 122]
+    region:   w_63
     level:    [42, 47]
   17281090:
     template: Soldier_Crawler
-    at:       [-562.063, -1.314, -58.490, 127]
+    region:   w_66
     level:    [37, 41]
   17281091:
     template: Soldier_Crawler
-    at:       [-586.972, -0.006, -46.975, 20]
+    region:   w_66
     level:    [37, 41]
   17281092:
     template: Goblin_Robber
-    at:       [-566.657, -2.350, -63.637, 115]
+    region:   w_66
     level:    [42, 47]
   17281093:
     template: Goblin_Poacher
-    at:       [-595.661, -0.557, -21.282, 5]
+    region:   w_66
     level:    [42, 47]
   17281094:
     template: Soldier_Crawler
-    at:       [-577.495, 0.001, -82.538, 127]
+    region:   w_70
     level:    [37, 41]
   17281095:
     template: Soldier_Crawler
-    at:       [-558.934, -0.757, -120.993, 127]
+    region:   w_70
     level:    [37, 41]
   17281096:
     template: Goblin_Poacher
-    at:       [-568.890, -0.126, -112.237, 122]
+    region:   w_70
     level:    [42, 47]
   17281097:
     template: Goblin_Poacher
-    at:       [-541.538, -1.124, -128.915, 127]
+    region:   w_70
     level:    [42, 47]
   17281098:
     template: Overgrown_Rose
-    at:       [-578.322, 0.081, -82.185, 127]
+    region:   w_70
     level:    [45, 48]
   17281099:
     template: Soldier_Crawler
-    at:       [-513.522, -0.709, -117.963, 44]
+    region:   w_75
     level:    [37, 41]
   17281100:
     template: Soldier_Crawler
-    at:       [-525.642, -0.473, -125.766, 124]
+    region:   w_75
     level:    [37, 41]
   17281101:
     template: Goblin_Robber
-    at:       [-516.011, -1.363, -108.864, 58]
+    region:   w_75
     level:    [42, 47]
   17281102:
     template: Goblin_Poacher
-    at:       [-511.108, -0.194, -77.839, 41]
+    region:   w_75
     level:    [42, 47]
   17281103:
     template: Soldier_Crawler
-    at:       [-570.010, 8.721, 20.917, 127]
+    region:   w_79
     level:    [37, 41]
   17281104:
     template: Goblin_Robber
-    at:       [-563.989, 7.940, 20.779, 7]
+    region:   w_79
     level:    [42, 47]
   17281105:
     template: Soldier_Crawler
-    at:       [-621.456, 10.801, -28.427, 27]
+    region:   w_81
     level:    [37, 41]
   17281106:
     template: Soldier_Crawler
-    at:       [-625.401, 10.330, -26.189, 127]
+    region:   w_81
     level:    [37, 41]
   17281107:
     template: Soldier_Crawler
-    at:       [-634.840, 11.435, 59.912, 127]
+    region:   w_83
     level:    [37, 41]
   17281108:
     template: Soldier_Crawler
-    at:       [-653.533, 10.636, -23.170, 127]
+    region:   w_84
     level:    [37, 41]
   17281109:
     template: Soldier_Crawler
-    at:       [-587.376, 12.689, -68.886, 35]
+    region:   w_85
     level:    [37, 41]
   17281110:
     template: Soldier_Crawler
-    at:       [-589.437, 12.469, -104.131, 123]
+    region:   w_86
     level:    [37, 41]
   17281111:
     template: Soldier_Crawler
-    at:       [-573.960, 12.709, -92.972, 127]
+    region:   w_86
     level:    [37, 41]
   17281112:
     template: Soldier_Crawler
-    at:       [-423.812, 9.399, -22.237, 86]
+    region:   w_88
     level:    [37, 41]
   17281113:
     template: Goblin_Robber
-    at:       [-399.875, 7.804, -21.688, 3]
+    region:   w_88
     level:    [42, 47]
   17281114:
     template: Soldier_Crawler
-    at:       [-381.913, 6.578, 10.564, 43]
+    region:   w_90
     level:    [37, 41]
   17281115:
     template: Soldier_Crawler
-    at:       [-490.991, 6.832, -219.257, 28]
+    region:   w_91
     level:    [37, 41]
   17281116:
     template: Goblin_Robber
-    at:       [-499.497, 7.799, -202.606, 127]
+    region:   w_91
     level:    [42, 47]
   17281117:
     template: Ivory_Lizard
-    at:       [-177.440, 7.726, 124.759, 127]
+    region:   c_93
     level:    [32, 35]
   17281118:
     template: Ivory_Lizard
-    at:       [-174.714, 7.902, 129.552, 91]
+    region:   c_93
     level:    [32, 35]
   17281119:
     template: Yuhtunga_Mandragora
-    at:       [-122.219, -0.641, 220.809, 127]
+    region:   n_95
     level:    [30, 33]
   17281120:
     template: Yuhtunga_Mandragora
-    at:       [-118.722, -0.317, 206.202, 125]
+    region:   n_95
     level:    [30, 33]
   17281121:
     template: Yuhtunga_Mandragora
-    at:       [-131.696, -0.006, 199.598, 127]
+    region:   n_95
     level:    [30, 33]
   17281122:
     template: Goblin_Smithy
-    at:       [-132.314, 0.023, 239.533, 127]
+    region:   n_95
     level:    [32, 37]
   17281123:
     template: Goblin_Smithy
-    at:       [-138.171, -0.888, 208.303, 111]
+    region:   n_95
     level:    [32, 37]
   17281124:
     template: Goblin_Furrier
-    at:       [-133.082, -1.139, 222.708, 92]
+    region:   n_95
     level:    [32, 37]
   17281125:
     template: Goblin_Furrier
-    at:       [-113.823, -0.354, 194.826, 6]
+    region:   n_95
     level:    [32, 37]
   17281126:
     template: Fire_Elemental
-    at:       [-143.389, 0.024, 205.562, 147]
+    region:   n_95
     level:    [48, 50]
   17281127:
     template: Ivory_Lizard
-    at:       [-75.419, 7.898, 300.851, 12]
+    region:   n_103
     level:    [32, 35]
   17281128:
     template: Ivory_Lizard
-    at:       [-92.748, 6.556, 298.562, 96]
+    region:   n_103
     level:    [32, 35]
   17281129:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-241.788, -0.166, 59.987, 112]
+    region:   c_105
     level:    [34, 37]
   17281130:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-212.639, 2.574, 59.296, 69]
+    region:   c_105
     level:    [34, 37]
   17281131:
     template: Goblin_Smithy
-    at:       [-226.410, -0.198, 52.967, 77]
+    region:   c_105
     level:    [32, 37]
   17281132:
     template: Goblin_Smithy
-    at:       [-224.419, 0.028, 52.813, 22]
+    region:   c_105
     level:    [32, 37]
   17281133:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-263.220, 4.066, 63.281, 127]
+    region:   w_109
     level:    [34, 37]
   17281134:
     template: Young_Opo-opo
-    at:       [-302.665, 2.316, 63.110, 87]
+    region:   w_109
     level:    [34, 36]
   17281135:
     template: Young_Opo-opo
-    at:       [-271.817, 1.637, 58.115, 91]
+    region:   w_109
     level:    [34, 36]
   17281136:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-265.398, -0.429, -11.840, 42]
+    region:   w_112
     level:    [34, 37]
   17281137:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-302.845, -0.533, 24.760, 127]
+    region:   w_112
     level:    [34, 37]
   17281138:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-292.847, -1.787, -16.382, 92]
+    region:   w_112
     level:    [34, 37]
   17281139:
     template: Young_Opo-opo
-    at:       [-309.309, -3.618, -3.733, 30]
+    region:   w_112
     level:    [34, 36]
   17281140:
     template: Young_Opo-opo
-    at:       [-299.834, -0.017, 24.785, 127]
+    region:   w_112
     level:    [34, 36]
   17281141:
     template: Young_Opo-opo
-    at:       [-310.945, -1.083, 14.873, 127]
+    region:   w_112
     level:    [34, 36]
   17281142:
     template: Young_Opo-opo
-    at:       [-310.869, -3.132, 2.482, 127]
+    region:   w_112
     level:    [34, 36]
   17281143:
     template: Young_Opo-opo
-    at:       [-321.444, 9.288, -0.097, 127]
+    region:   w_119
     level:    [34, 36]
   17281144:
     template: Young_Opo-opo
-    at:       [-276.591, 8.450, 0.888, 92]
+    region:   w_119
     level:    [34, 36]
   17281145:
     template: Young_Opo-opo
-    at:       [-330.625, 10.487, -12.492, 76]
+    region:   w_119
     level:    [34, 36]
   17281146:
     template: Young_Opo-opo
-    at:       [-322.800, 8.827, 4.510, 127]
+    region:   w_119
     level:    [34, 36]
   17281147:
     template: Young_Opo-opo
-    at:       [-308.416, 10.389, -17.090, 46]
+    region:   w_119
     level:    [34, 36]
   17281148:
     template: Young_Opo-opo
-    at:       [-265.616, -0.500, -24.389, 127]
+    region:   w_119
     level:    [34, 36]
   17281149:
     template: Mischievous_Micholas
-    at:       [-279.575, 3.317, 16.011, 127]
+    region:   w_119
     level:    [53, 55]
   17281150:
     template: Overgrown_Rose
-    at:       [-322.849, 9.484, -5.985, 127]
+    region:   w_119
     level:    [45, 48]
   17281151:
     template: Young_Opo-opo
-    at:       [-378.417, 11.188, -72.213, 127]
+    region:   w_127
     level:    [34, 36]
   17281152:
     template: Young_Opo-opo
-    at:       [-381.904, 11.732, -81.507, 91]
+    region:   w_127
     level:    [34, 36]
   17281153:
     template: Young_Opo-opo
-    at:       [-371.893, 10.563, -62.732, 86]
+    region:   w_127
     level:    [34, 36]
   17281154:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-290.522, 0.537, -54.191, 127]
+    region:   w_130
     level:    [34, 37]
   17281155:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-255.004, 2.396, -61.480, 127]
+    region:   w_130
     level:    [34, 37]
   17281156:
     template: Young_Opo-opo
-    at:       [-264.012, 1.946, -68.053, 32]
+    region:   w_130
     level:    [34, 36]
   17281157:
     template: Young_Opo-opo
-    at:       [-279.138, -0.054, -59.025, 116]
+    region:   w_130
     level:    [34, 36]
   17281158:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-296.543, 3.680, -98.256, 102]
+    region:   w_134
     level:    [34, 37]
   17281159:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-314.263, 0.599, -100.198, 12]
+    region:   w_134
     level:    [34, 37]
   17281160:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-343.775, 2.632, -105.088, 51]
+    region:   w_134
     level:    [34, 37]
   17281161:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-258.808, 2.465, -96.086, 102]
+    region:   c_137
     level:    [34, 37]
   17281162:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-211.227, 2.180, -102.206, 41]
+    region:   c_137
     level:    [34, 37]
   17281163:
     template: Young_Opo-opo
-    at:       [-214.916, 0.758, -109.486, 127]
+    region:   c_137
     level:    [34, 36]
   17281164:
     template: Young_Opo-opo
-    at:       [-216.202, -0.314, -150.948, 1]
+    region:   c_137
     level:    [34, 36]
   17281165:
     template: Goblin_Furrier
-    at:       [-222.392, -0.062, -124.459, 127]
+    region:   c_137
     level:    [32, 37]
   17281166:
     template: Soldier_Crawler
-    at:       [-292.900, 8.066, -134.395, 32]
+    region:   w_142
     level:    [37, 41]
   17281167:
     template: Goblin_Furrier
-    at:       [-296.525, 8.576, -134.950, 107]
+    region:   w_143
     level:    [32, 37]
   17281168:
     template: Goblin_Furrier
-    at:       [-306.419, 8.887, -142.045, 127]
+    region:   w_143
     level:    [32, 37]
   17281169:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-181.806, 0.136, -159.739, 127]
+    region:   c_145
     level:    [34, 37]
   17281170:
     template: Young_Opo-opo
-    at:       [-184.060, 1.590, -135.270, 117]
+    region:   c_145
     level:    [34, 36]
   17281171:
     template: Goblin_Furrier
-    at:       [-182.907, 0.812, -167.473, 127]
+    region:   c_145
     level:    [32, 37]
   17281172:
     template: Young_Opo-opo
-    at:       [-245.590, 7.769, -179.636, 127]
+    region:   c_148
     level:    [34, 36]
   17281173:
     template: Young_Opo-opo
-    at:       [-251.214, 6.934, -180.662, 120]
+    region:   c_148
     level:    [34, 36]
   17281174:
     template: Goblin_Furrier
-    at:       [-219.384, 3.951, -183.429, 127]
+    region:   c_148
     level:    [32, 37]
   17281175:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-186.037, 0.155, -212.973, 127]
+    region:   s_151
     level:    [34, 37]
   17281176:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-175.775, 2.403, -221.543, 127]
+    region:   s_151
     level:    [34, 37]
   17281177:
     template: Young_Opo-opo
-    at:       [-191.005, -0.035, -218.715, 109]
+    region:   s_151
     level:    [34, 36]
   17281178:
     template: Goblin_Furrier
-    at:       [-177.600, 0.577, -213.767, 127]
+    region:   s_151
     level:    [32, 37]
   17281179:
     template: Young_Opo-opo
-    at:       [-220.784, 7.792, -248.234, 76]
+    region:   s_155
     level:    [34, 36]
   17281180:
     template: Goblin_Furrier
-    at:       [-217.242, 8.915, -266.391, 127]
+    region:   s_155
     level:    [32, 37]
   17281181:
     template: Soldier_Crawler
-    at:       [-435.530, -0.146, -265.990, 90]
+    region:   sw_157
     level:    [37, 41]
   17281182:
     template: Soldier_Crawler
-    at:       [-421.070, -0.303, -287.546, 42]
+    region:   sw_157
     level:    [37, 41]
   17281183:
     template: Goblin_Furrier
-    at:       [-420.578, 0.091, -239.853, 70]
+    region:   sw_157
     level:    [32, 37]
   17281184:
     template: Goblin_Furrier
-    at:       [-415.208, 0.068, -237.697, 127]
+    region:   sw_157
     level:    [32, 37]
   17281185:
     template: Goblin_Furrier
-    at:       [-432.804, -0.436, -235.467, 127]
+    region:   sw_157
     level:    [32, 37]
   17281186:
     template: Water_Elemental
-    at:       [-443.367, -0.238, -247.954, 127]
+    region:   sw_157
     level:    [48, 50]
   17281187:
     template: Soldier_Crawler
-    at:       [-400.797, -0.490, -193.955, 127]
+    region:   w_163
     level:    [37, 41]
   17281188:
     template: Goblin_Furrier
-    at:       [-395.615, -0.500, -191.400, 127]
+    region:   w_163
     level:    [32, 37]
   17281189:
     template: Goblin_Furrier
-    at:       [-410.316, -1.428, -226.583, 88]
+    region:   w_163
     level:    [32, 37]
   17281190:
     template: Water_Elemental
-    at:       [-361.185, -0.467, -191.072, 127]
+    region:   w_163
     level:    [48, 50]
   17281191:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-137.730, 2.439, 27.491, 127]
+    region:   c_167
     level:    [34, 37]
   17281192:
     template: Young_Opo-opo
-    at:       [-131.490, 2.017, 16.683, 127]
+    region:   c_167
     level:    [34, 36]
   17281193:
     template: Young_Opo-opo
-    at:       [-189.167, -0.090, 24.754, 127]
+    region:   c_167
     level:    [34, 36]
   17281194:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-132.393, -0.218, -13.907, 127]
+    region:   c_170
     level:    [34, 37]
   17281195:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-142.359, 0.984, -16.451, 127]
+    region:   c_170
     level:    [34, 37]
   17281196:
     template: Young_Opo-opo
-    at:       [-136.111, 2.165, -18.428, 127]
+    region:   c_170
     level:    [34, 36]
   17281197:
     template: Young_Opo-opo
-    at:       [-118.522, 0.039, -18.213, 5]
+    region:   c_170
     level:    [34, 36]
   17281198:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-122.915, -1.045, -66.648, 109]
+    region:   c_174
     level:    [34, 37]
   17281199:
     template: Young_Opo-opo
-    at:       [-131.086, -0.543, -70.431, 33]
+    region:   c_174
     level:    [34, 36]
   17281200:
     template: Young_Opo-opo
-    at:       [-127.991, -3.798, -86.881, 127]
+    region:   c_174
     level:    [34, 36]
   17281201:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-78.537, -3.816, -103.364, 127]
+    region:   c_177
     level:    [34, 37]
   17281202:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-78.253, -3.832, -101.627, 86]
+    region:   c_177
     level:    [34, 37]
   17281203:
     template: Goblin_Furrier
-    at:       [-88.199, -3.113, -109.860, 88]
+    region:   c_177
     level:    [32, 37]
   17281204:
     template: Goblin_Furrier
-    at:       [-79.580, -3.371, -108.126, 114]
+    region:   c_177
     level:    [32, 37]
   17281205:
     template: Fire_Elemental
-    at:       [-79.731, -3.507, -87.759, 18]
+    region:   c_177
     level:    [48, 50]
   17281206:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-75.126, -0.688, -67.527, 50]
+    region:   c_182
     level:    [34, 37]
   17281207:
     template: Young_Opo-opo
-    at:       [-73.904, -0.672, -60.527, 117]
+    region:   c_182
     level:    [34, 36]
   17281208:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-68.611, -1.053, -122.947, 72]
+    region:   c_184
     level:    [34, 37]
   17281209:
     template: Young_Opo-opo
-    at:       [-67.544, -0.208, -131.213, 67]
+    region:   c_184
     level:    [34, 36]
   17281210:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-109.641, -2.948, -112.366, 127]
+    region:   c_186
     level:    [34, 37]
   17281211:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-113.011, -3.551, -76.280, 127]
+    region:   c_186
     level:    [34, 37]
   17281212:
     template: Goblin_Furrier
-    at:       [-118.228, -3.704, -116.298, 127]
+    region:   c_186
     level:    [32, 37]
   17281213:
     template: Goblin_Furrier
-    at:       [-111.581, -3.413, -121.166, 127]
+    region:   c_186
     level:    [32, 37]
   17281214:
     template: Fire_Elemental
-    at:       [-119.418, -3.868, -82.583, 207]
+    region:   c_186
     level:    [48, 50]
   17281215:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-130.197, -1.012, -121.272, 127]
+    region:   c_191
     level:    [34, 37]
   17281216:
     template: Young_Opo-opo
-    at:       [-120.455, -1.118, -137.045, 39]
+    region:   c_191
     level:    [34, 36]
   17281217:
     template: Young_Opo-opo
-    at:       [-99.100, 4.496, -80.669, 44]
+    region:   c_193
     level:    [34, 36]
   17281218:
     template: Young_Opo-opo
-    at:       [-109.242, 9.048, -101.748, 118]
+    region:   c_193
     level:    [34, 36]
   17281219:
     template: Overgrown_Rose
-    at:       [-104.928, 8.474, -95.188, 127]
+    region:   c_193
     level:    [45, 48]
   17281220:
     template: Young_Opo-opo
-    at:       [-182.805, 8.506, -54.780, 76]
+    region:   c_196
     level:    [34, 36]
   17281221:
     template: Young_Opo-opo
-    at:       [-180.726, 9.243, -59.210, 127]
+    region:   c_196
     level:    [34, 36]
   17281222:
     template: Young_Opo-opo
-    at:       [-178.882, 6.800, -91.047, 127]
+    region:   c_196
     level:    [34, 36]
   17281223:
     template: Young_Opo-opo
-    at:       [-178.333, 8.190, -71.472, 72]
+    region:   c_196
     level:    [34, 36]
   17281224:
     template: Young_Opo-opo
-    at:       [-16.387, 8.121, -106.115, 72]
+    region:   c_200
     level:    [34, 36]
   17281225:
     template: Young_Opo-opo
-    at:       [-15.509, 8.586, -103.444, 127]
+    region:   c_200
     level:    [34, 36]
   17281226:
     template: Young_Opo-opo
-    at:       [-21.796, 8.164, -86.401, 127]
+    region:   c_200
     level:    [34, 36]
   17281227:
     template: Goblin_Furrier
-    at:       [-21.894, 8.141, -86.300, 127]
+    region:   c_200
     level:    [32, 37]
   17281228:
     template: Goblin_Furrier
-    at:       [-16.804, 7.956, -107.663, 101]
+    region:   c_200
     level:    [32, 37]
   17281229:
     template: Young_Opo-opo
-    at:       [-149.077, 6.794, -178.865, 83]
+    region:   c_205
     level:    [34, 36]
   17281230:
     template: Young_Opo-opo
-    at:       [-147.151, 5.066, -147.326, 127]
+    region:   c_205
     level:    [34, 36]
   17281231:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-50.028, 1.574, -179.579, 88]
+    region:   c_207
     level:    [34, 37]
   17281232:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-66.722, 3.669, -183.948, 127]
+    region:   c_207
     level:    [34, 37]
   17281233:
     template: Young_Opo-opo
-    at:       [-63.611, 4.078, -181.443, 127]
+    region:   c_207
     level:    [34, 36]
   17281234:
     template: Young_Opo-opo
-    at:       [-53.608, 2.488, -176.325, 127]
+    region:   c_207
     level:    [34, 36]
   17281235:
     template: Goblin_Furrier
-    at:       [-69.943, 2.144, -183.160, 10]
+    region:   c_207
     level:    [32, 37]
   17281236:
     template: Goblin_Furrier
-    at:       [-87.126, 0.036, -180.217, 127]
+    region:   c_207
     level:    [32, 37]
   17281237:
     template: Young_Opo-opo
-    at:       [-63.869, 8.767, -217.589, 127]
+    region:   s_213
     level:    [34, 36]
   17281238:
     template: Young_Opo-opo
-    at:       [-59.793, 9.399, -223.670, 26]
+    region:   s_213
     level:    [34, 36]
   17281239:
     template: Goblin_Furrier
-    at:       [-63.782, 8.459, -215.950, 84]
+    region:   s_213
     level:    [32, 37]
   17281240:
     template: Goblin_Furrier
-    at:       [-66.655, 8.314, -214.216, 120]
+    region:   s_213
     level:    [32, 37]
   17281241:
     template: Young_Opo-opo
-    at:       [-130.251, -0.062, -319.091, 127]
+    region:   s_217
     level:    [34, 36]
   17281242:
     template: Young_Opo-opo
-    at:       [-220.520, -1.569, -406.892, 107]
+    region:   s_217
     level:    [34, 36]
   17281243:
     template: Goblin_Furrier
-    at:       [-165.093, -0.379, -325.824, 3]
+    region:   s_217
     level:    [32, 37]
   17281244:
     template: Young_Opo-opo
-    at:       [-206.353, -0.500, -326.139, 56]
+    region:   s_220
     level:    [34, 36]
   17281245:
     template: Goblin_Furrier
-    at:       [-224.306, -1.550, -358.469, 127]
+    region:   s_220
     level:    [32, 37]
   17281246:
     template: Young_Opo-opo
-    at:       [-198.621, 0.100, -417.526, 127]
+    region:   s_222
     level:    [34, 36]
   17281247:
     template: Young_Opo-opo
-    at:       [-160.167, 0.100, -421.809, 85]
+    region:   s_222
     level:    [34, 36]
   17281248:
     template: Goblin_Furrier
-    at:       [-201.000, 0.135, -373.000, 127]
+    region:   s_222
     level:    [32, 37]
   17281249:
     template: Young_Opo-opo
-    at:       [-276.550, -0.499, -359.470, 36]
+    region:   s_225
     level:    [34, 36]
   17281250:
     template: Young_Opo-opo
-    at:       [-273.129, -0.341, -355.215, 17]
+    region:   s_225
     level:    [34, 36]
   17281251:
     template: Goblin_Furrier
-    at:       [-238.298, -0.420, -366.293, 127]
+    region:   s_225
     level:    [32, 37]
   17281252:
     template: Overgrown_Rose
-    at:       [-279.000, -0.433, -378.000, 51]
+    region:   s_225
     level:    [45, 48]
   17281253:
     template: Young_Opo-opo
-    at:       [-252.309, -0.071, -405.585, 127]
+    region:   sw_229
     level:    [34, 36]
   17281254:
     template: Goblin_Furrier
-    at:       [-273.333, -1.245, -429.167, 32]
+    region:   sw_229
     level:    [32, 37]
   17281255:
     template: Overgrown_Rose
-    at:       [-295.436, -0.450, -440.160, 73]
+    region:   sw_229
     level:    [45, 48]
   17281256:
     template: Soldier_Crawler
-    at:       [-102.102, 8.892, -502.070, 87]
+    region:   s_232
     level:    [37, 41]
   17281257:
     template: Soldier_Crawler
-    at:       [-139.851, 7.038, -488.996, 127]
+    region:   s_232
     level:    [37, 41]
   17281258:
     template: Goblin_Robber
-    at:       [-108.225, 8.215, -505.077, 30]
+    region:   s_232
     level:    [42, 47]
   17281259:
     template: Soldier_Crawler
-    at:       [-177.207, 11.532, -396.064, 127]
+    region:   s_235
     level:    [37, 41]
   17281260:
     template: Goblin_Robber
-    at:       [-182.393, 12.107, -405.427, 76]
+    region:   s_235
     level:    [42, 47]
   17281261:
     template: Soldier_Crawler
-    at:       [-226.464, 12.655, -378.872, 20]
+    region:   s_237
     level:    [37, 41]
   17281262:
     template: Goblin_Robber
-    at:       [-214.290, 12.386, -384.512, 127]
+    region:   s_237
     level:    [42, 47]
   17281263:
     template: Soldier_Crawler
-    at:       [-82.776, 7.734, -378.742, 127]
+    region:   s_239
     level:    [37, 41]
   17281264:
     template: Soldier_Crawler
-    at:       [-84.272, 7.800, -378.757, 120]
+    region:   s_239
     level:    [37, 41]
   17281265:
     template: Goblin_Robber
-    at:       [-121.343, 7.800, -420.005, 127]
+    region:   s_239
     level:    [42, 47]
   17281266:
     template: Young_Opo-opo
-    at:       [-257.659, 12.434, -415.386, 8]
+    region:   s_242
     level:    [34, 36]
   17281267:
     template: Young_Opo-opo
-    at:       [-308.894, 15.764, -371.744, 120]
+    region:   sw_243
     level:    [34, 36]
   17281268:
     template: Young_Opo-opo
-    at:       [-349.834, 16.371, -373.640, 127]
+    region:   sw_243
     level:    [34, 36]
   17281269:
     template: Creek_Sahagin
-    at:       [-364.000, 17.000, -357.000, 127]
+    region:   sw_243
     level:    [34, 38]
   17281270:
     template: River_Sahagin
-    at:       [-317.000, 16.500, -357.000, 127]
+    region:   sw_243
     level:    [34, 38]
   17281271:
     template: River_Sahagin
-    at:       [-339.000, 17.000, -370.000, 127]
+    region:   sw_243
     level:    [34, 38]
   17281272:
     template: Young_Opo-opo
-    at:       [-334.684, 16.499, -439.656, 127]
+    region:   sw_248
     level:    [34, 36]
   17281273:
     template: Stream_Sahagin
-    at:       [-355.120, 16.375, -408.820, 127]
+    region:   sw_248
     level:    [34, 38]
   17281274:
     template: Creek_Sahagin
-    at:       [-307.620, 16.003, -442.164, 114]
+    region:   sw_248
     level:    [34, 38]
   17281275:
     template: Creek_Sahagin
-    at:       [-318.559, 16.602, -435.765, 127]
+    region:   sw_248
     level:    [34, 38]
   17281276:
     template: Water_Elemental
-    at:       [-336.736, 16.716, -445.514, 123]
+    region:   sw_283
     level:    [48, 49]
   17281277:
     template: Young_Opo-opo
-    at:       [-404.932, 16.328, -398.016, 127]
+    region:   sw_253
     level:    [34, 36]
   17281278:
     template: Creek_Sahagin
-    at:       [-362.199, 16.375, -410.236, 127]
+    region:   sw_253
     level:    [34, 38]
   17281279:
     template: Creek_Sahagin
-    at:       [-407.000, 16.297, -391.000, 127]
+    region:   sw_253
     level:    [34, 38]
   17281280:
     template: Stream_Sahagin
-    at:       [-388.747, 16.727, -380.730, 127]
+    region:   sw_253
     level:    [34, 38]
   17281281:
     template: Meww_the_Turtlerider
-    at:       [-384.000, 17.000, -390.000, 127]
+    region:   sw_253
     level:    [47, 49]
   17281282:
     template: Creek_Sahagin_2
     script:   Creek_Sahagin
-    at:       [-384.000, 17.000, -390.000, 127]
+    region:   sw_253
     level:    [34, 38]
   17281283:
     template: Stream_Sahagin_2
     script:   Stream_Sahagin
-    at:       [-384.000, 17.000, -390.000, 127]
+    region:   sw_253
     level:    [34, 38]
   17281284:
     template: Young_Opo-opo
-    at:       [-426.171, 16.575, -337.016, 68]
+    region:   sw_260
     level:    [34, 36]
   17281285:
     template: Young_Opo-opo
-    at:       [-454.871, 16.243, -338.306, 127]
+    region:   sw_260
     level:    [34, 36]
   17281286:
     template: River_Sahagin
-    at:       [-423.903, 16.796, -325.448, 29]
+    region:   sw_260
     level:    [34, 38]
   17281287:
     template: Stream_Sahagin
-    at:       [-417.305, 16.584, -338.772, 127]
+    region:   sw_260
     level:    [34, 38]
   17281288:
     template: Creek_Sahagin
-    at:       [-444.622, 16.752, -333.357, 127]
+    region:   sw_260
     level:    [34, 38]
   17281289:
     template: Water_Elemental
-    at:       [-388.503, 16.305, -329.763, 127]
+    region:   sw_260
     level:    [48, 50]
   17281290:
     template: Young_Opo-opo
-    at:       [-421.737, 10.758, -291.369, 53]
+    region:   sw_266
     level:    [34, 36]
   17281291:
     template: Young_Opo-opo
-    at:       [-425.998, 10.522, -293.283, 97]
+    region:   sw_266
     level:    [34, 36]
   17281292:
     template: Young_Opo-opo
-    at:       [-382.196, 15.711, -523.952, 75]
+    region:   sw_268
     level:    [34, 36]
   17281293:
     template: Young_Opo-opo
-    at:       [-381.514, 15.643, -515.689, 127]
+    region:   sw_268
     level:    [34, 36]
   17281294:
     template: Creek_Sahagin
-    at:       [-381.726, 17.193, -538.519, 35]
+    region:   sw_268
     level:    [34, 38]
   17281295:
     template: River_Sahagin
-    at:       [-383.713, 15.930, -529.877, 127]
+    region:   sw_268
     level:    [34, 38]
   17281296:
     template: Pyuu_the_Spatemaker
-    at:       [-20.295, 7.923, -113.263, 75]
+    region:   w_272
     level:    [73, 74]
   17281297:
     template: Young_Opo-opo
-    at:       [-544.672, 19.029, -495.441, 62]
+    region:   sw_273
     level:    [34, 36]
   17281298:
     template: Young_Opo-opo
-    at:       [-538.820, 18.159, -504.859, 45]
+    region:   sw_274
     level:    [34, 36]
   17281299:
     template: Creek_Sahagin
-    at:       [-535.692, 14.455, -535.570, 127]
+    region:   sw_274
     level:    [34, 38]
   17281300:
     template: Creek_Sahagin
-    at:       [-514.669, 15.629, -541.595, 116]
+    region:   sw_274
     level:    [34, 38]
   17281301:
     template: Stream_Sahagin
-    at:       [-540.082, 18.943, -502.526, 127]
+    region:   sw_274
     level:    [34, 38]
   17281302:
     template: Makara
-    at:       [-465.539, 15.917, -422.440, 48]
+    region:   sw_278
     level:    [35, 38]
   17281303:
     template: Makara
-    at:       [-452.344, 16.472, -420.411, 127]
+    region:   sw_278
     level:    [35, 38]
   17281304:
     template: Makara
-    at:       [-442.901, 15.716, -456.802, 127]
+    region:   sw_278
     level:    [35, 38]
   17281305:
     template: Makara
-    at:       [-310.002, 16.554, -421.761, 20]
+    region:   sw_281
     level:    [35, 38]
   17281306:
     template: Makara
-    at:       [-346.137, 16.495, -403.723, 127]
+    region:   sw_281
     level:    [35, 38]
   17281307:
     template: Makara
-    at:       [-345.424, 15.116, -469.895, 20]
+    region:   sw_283
     level:    [35, 38]
   17281308:
     template: Makara
-    at:       [-344.771, 16.169, -342.925, 94]
+    region:   region_129
     level:    [35, 38]
   17281309:
     template: Makara
-    at:       [-457.397, 16.687, -345.215, 127]
+    region:   region_130
     level:    [35, 38]
   17281310:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-24.141, 2.224, -419.983, 127]
+    region:   s_286
     level:    [34, 37]
   17281311:
     template: Soldier_Crawler
-    at:       [-29.129, 0.744, -422.892, 127]
+    region:   s_286
     level:    [37, 41]
   17281312:
     template: Soldier_Crawler
-    at:       [-17.095, 0.553, -429.135, 127]
+    region:   s_286
     level:    [37, 41]
   17281313:
     template: Goblin_Poacher
-    at:       [-21.485, 1.899, -423.433, 127]
+    region:   s_286
     level:    [42, 47]
   17281314:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-22.363, -0.034, -471.804, 127]
+    region:   s_290
     level:    [34, 37]
   17281315:
     template: Soldier_Crawler
-    at:       [-20.770, -0.001, -469.018, 127]
+    region:   s_290
     level:    [37, 41]
   17281316:
     template: Soldier_Crawler
-    at:       [-15.272, 2.743, -460.526, 17]
+    region:   s_290
     level:    [37, 41]
   17281317:
     template: Goblin_Poacher
-    at:       [-20.169, 2.375, -458.206, 36]
+    region:   s_290
     level:    [42, 47]
   17281318:
     template: Lava_Bomb
-    at:       [-17.064, -0.301, -478.274, 59]
+    region:   s_290
     level:    [47, 50]
   17281319:
     template: Soldier_Crawler
-    at:       [-63.448, 1.790, -460.450, 65]
+    region:   s_295
     level:    [37, 41]
   17281320:
     template: Soldier_Crawler
-    at:       [-61.468, 2.653, -452.936, 127]
+    region:   s_295
     level:    [37, 41]
   17281321:
     template: Goblin_Poacher
-    at:       [-59.484, 2.344, -452.825, 127]
+    region:   s_295
     level:    [42, 47]
   17281322:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-4.242, 0.010, -499.635, 127]
+    region:   s_298
     level:    [34, 37]
   17281323:
     template: Soldier_Crawler
-    at:       [-0.178, -0.357, -502.893, 127]
+    region:   s_298
     level:    [37, 41]
   17281324:
     template: Soldier_Crawler
-    at:       [3.855, 0.021, -498.109, 127]
+    region:   s_298
     level:    [37, 41]
   17281325:
     template: Goblin_Poacher
-    at:       [9.321, 2.069, -498.709, 127]
+    region:   s_298
     level:    [42, 47]
   17281326:
     template: Ivory_Lizard
-    at:       [-62.415, 8.980, 144.720, 127]
+    region:   c_302
     level:    [32, 35]
   17281327:
     template: Ivory_Lizard
-    at:       [-55.853, 8.602, 136.253, 127]
+    region:   c_302
     level:    [32, 35]
   17281328:
     template: Ivory_Lizard
-    at:       [-58.299, 8.042, 132.332, 84]
+    region:   c_302
     level:    [32, 35]
   17281329:
     template: Goblin_Smithy
-    at:       [-60.000, 8.185, 156.000, 127]
+    region:   c_302
     level:    [32, 37]
   17281330:
     template: Goblin_Smithy
-    at:       [-54.000, 6.000, 105.000, 127]
+    region:   c_302
     level:    [32, 37]
   17281331:
     template: Yuhtunga_Mandragora
-    at:       [-23.311, 3.354, 104.445, 127]
+    region:   c_307
     level:    [30, 33]
   17281332:
     template: Yuhtunga_Mandragora
-    at:       [-19.989, 3.132, 96.453, 88]
+    region:   c_307
     level:    [30, 33]
   17281333:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-22.902, 2.554, 144.301, 127]
+    region:   c_307
     level:    [34, 37]
   17281334:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [-22.539, 2.973, 91.697, 94]
+    region:   c_307
     level:    [34, 37]
   17281335:
     template: Goblin_Smithy
-    at:       [-17.475, 2.708, 94.160, 127]
+    region:   c_307
     level:    [32, 37]
   17281336:
     template: Yuhtunga_Mandragora
-    at:       [35.982, 0.276, 138.306, 4]
+    region:   c_312
     level:    [30, 33]
   17281337:
     template: Yuhtunga_Mandragora
-    at:       [13.438, 3.287, 134.694, 19]
+    region:   c_312
     level:    [30, 33]
   17281338:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [26.426, 2.935, 137.814, 45]
+    region:   c_312
     level:    [34, 37]
   17281339:
     template: Goblin_Smithy
-    at:       [23.728, 3.502, 138.000, 17]
+    region:   c_312
     level:    [32, 37]
   17281340:
     template: Ivory_Lizard
-    at:       [14.688, 0.596, 187.424, 127]
+    region:   n_316
     level:    [32, 35]
   17281341:
     template: Ivory_Lizard
-    at:       [28.151, 6.400, 175.229, 110]
+    region:   n_316
     level:    [32, 35]
   17281342:
     template: Goblin_Smithy
-    at:       [19.933, 4.557, 171.954, 97]
+    region:   n_316
     level:    [32, 37]
   17281343:
     template: Yuhtunga_Mandragora
-    at:       [-170.000, -0.012, 359.000, 24]
+    region:   n_319
     level:    [30, 33]
   17281344:
     template: Yuhtunga_Mandragora
-    at:       [22.480, -0.502, 233.951, 54]
+    region:   n_319
     level:    [30, 33]
   17281345:
     template: Goblin_Smithy
-    at:       [47.286, -0.725, 217.752, 127]
+    region:   n_319
     level:    [32, 37]
   17281346:
     template: Goblin_Smithy
-    at:       [23.592, -0.493, 255.922, 127]
+    region:   n_322
     level:    [32, 37]
   17281347:
     template: Yuhtunga_Mandragora
-    at:       [60.847, -0.498, 284.706, 42]
+    region:   n_323
     level:    [30, 33]
   17281348:
     template: Yuhtunga_Mandragora
-    at:       [55.523, -0.441, 297.166, 127]
+    region:   n_323
     level:    [30, 33]
   17281349:
     template: Goblin_Smithy
-    at:       [18.831, 0.474, 288.385, 73]
+    region:   n_323
     level:    [32, 37]
   17281350:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [36.766, 9.312, 278.544, 44]
+    region:   n_326
     level:    [34, 37]
   17281351:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [37.169, 9.188, 240.194, 24]
+    region:   n_326
     level:    [34, 37]
   17281352:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [36.098, 9.832, 228.619, 127]
+    region:   n_326
     level:    [34, 37]
   17281353:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [42.073, 8.733, 256.439, 53]
+    region:   n_326
     level:    [34, 37]
   17281354:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [30.190, 7.934, 242.123, 127]
+    region:   n_326
     level:    [34, 37]
   17281355:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [39.103, 8.486, 260.430, 127]
+    region:   n_326
     level:    [34, 37]
   17281356:
     template: Overgrown_Rose
-    at:       [46.881, 9.239, 255.273, 127]
+    region:   n_326
     level:    [45, 48]
   17281357:
     template: Rose_Garden
-    at:       [50.000, 10.000, 245.000, 127]
+    region:   n_326
     level:    [50, 50]
   17281358:
     template: Voluptuous_Vilma
-    at:       [42.000, 9.000, 245.000, 127]
+    region:   n_326
     level:    [52, 53]
   17281359:
     template: Ivory_Lizard
-    at:       [-17.000, 9.000, 290.000, 127]
+    region:   n_335
     level:    [32, 35]
   17281360:
     template: Ivory_Lizard
-    at:       [-23.498, 7.730, 314.417, 78]
+    region:   n_335
     level:    [32, 35]
   17281361:
     template: Goblin_Smithy
-    at:       [-21.000, 7.883, 271.000, 127]
+    region:   n_335
     level:    [32, 37]
   17281362:
     template: Goblin_Smithy
-    at:       [-21.942, 9.095, 342.017, 127]
+    region:   n_335
     level:    [32, 37]
   17281363:
     template: Ivory_Lizard
-    at:       [-95.463, 10.422, 423.225, 127]
+    region:   n_339
     level:    [32, 35]
   17281364:
     template: Ivory_Lizard
-    at:       [-92.927, 10.732, 420.554, 19]
+    region:   n_339
     level:    [32, 35]
   17281365:
     template: Goblin_Smithy
-    at:       [-96.440, 10.331, 422.622, 127]
+    region:   n_339
     level:    [32, 37]
   17281366:
     template: Goblin_Smithy
-    at:       [-96.431, 10.658, 415.545, 88]
+    region:   n_339
     level:    [32, 37]
   17281367:
     template: Young_Opo-opo
-    at:       [99.067, 7.596, 313.090, 65]
+    region:   n_343
     level:    [34, 36]
   17281368:
     template: Ivory_Lizard
-    at:       [89.428, 0.271, 294.056, 29]
+    region:   n_343
     level:    [32, 35]
   17281369:
     template: Ivory_Lizard
-    at:       [104.330, 7.993, 329.460, 94]
+    region:   n_343
     level:    [32, 35]
   17281370:
     template: Young_Opo-opo
-    at:       [137.698, 12.718, 215.624, 99]
+    region:   ne_346
     level:    [34, 36]
   17281371:
     template: Ivory_Lizard
-    at:       [102.645, 12.758, 222.075, 127]
+    region:   ne_346
     level:    [32, 35]
   17281372:
     template: Ivory_Lizard
-    at:       [144.532, 12.866, 220.726, 127]
+    region:   ne_346
     level:    [32, 35]
   17281373:
     template: Ivory_Lizard
-    at:       [121.886, 11.600, 218.660, 2]
+    region:   ne_346
     level:    [32, 35]
   17281374:
     template: Young_Opo-opo
-    at:       [76.944, -0.169, 429.862, 63]
+    region:   n_350
     level:    [34, 36]
   17281375:
     template: Young_Opo-opo
-    at:       [114.153, -1.400, 435.011, 127]
+    region:   n_350
     level:    [34, 36]
   17281376:
     template: Young_Opo-opo
-    at:       [92.547, -0.905, 425.802, 16]
+    region:   n_350
     level:    [34, 36]
   17281377:
     template: Goblin_Furrier
-    at:       [72.465, -0.500, 438.145, 56]
+    region:   n_350
     level:    [32, 37]
   17281378:
     template: Goblin_Furrier
-    at:       [93.417, 0.022, 439.740, 127]
+    region:   n_350
     level:    [32, 37]
   17281379:
     template: Goblin_Furrier
-    at:       [148.950, 6.692, 498.764, 91]
+    region:   ne_355
     level:    [32, 37]
   17281380:
     template: Goblin_Furrier
-    at:       [173.606, 8.495, 505.360, 127]
+    region:   ne_355
     level:    [32, 37]
   17281381:
     template: Ivory_Lizard
-    at:       [198.344, 3.501, 247.409, 127]
+    region:   ne_357
     level:    [32, 35]
   17281382:
     template: Ivory_Lizard
-    at:       [199.277, 3.509, 236.187, 127]
+    region:   ne_357
     level:    [32, 35]
   17281383:
     template: Jungle_Coeurl
-    at:       [199.139, 3.499, 245.978, 105]
+    region:   ne_357
     level:    [35, 38]
   17281384:
     template: Ivory_Lizard
-    at:       [252.475, 3.967, 198.328, 25]
+    region:   ne_360
     level:    [32, 35]
   17281385:
     template: Jungle_Coeurl
-    at:       [235.925, 3.500, 195.956, 45]
+    region:   ne_357
     level:    [35, 38]
   17281386:
     template: Ivory_Lizard
-    at:       [293.753, 2.790, 269.284, 40]
+    region:   ne_362
     level:    [32, 35]
   17281387:
     template: Jungle_Coeurl
-    at:       [291.612, 3.596, 244.457, 127]
+    region:   ne_362
     level:    [35, 38]
   17281388:
     template: Bayawak
-    at:       [277.882, 3.476, 289.117, 124]
+    region:   ne_362
     level:    [67, 70]
   17281389:
     template: Ivory_Lizard
-    at:       [313.351, 3.482, 216.306, 127]
+    region:   ne_365
     level:    [32, 35]
   17281390:
     template: Ivory_Lizard
-    at:       [277.132, 3.802, 209.514, 88]
+    region:   ne_365
     level:    [32, 35]
   17281391:
     template: Jungle_Coeurl
-    at:       [289.920, 3.844, 201.126, 127]
+    region:   ne_365
     level:    [35, 38]
   17281392:
     template: Ivory_Lizard
-    at:       [345.776, 3.712, 194.366, 107]
+    region:   ne_368
     level:    [32, 35]
   17281393:
     template: Ivory_Lizard
-    at:       [357.060, 3.499, 153.131, 115]
+    region:   ne_368
     level:    [32, 35]
   17281394:
     template: Jungle_Coeurl
-    at:       [375.673, 3.499, 157.713, 28]
+    region:   ne_368
     level:    [35, 38]
   17281395:
     template: Ivory_Lizard
-    at:       [334.458, 7.823, 175.993, 98]
+    region:   ne_371
     level:    [32, 35]
   17281396:
     template: Soldier_Crawler
-    at:       [380.091, 21.278, 337.207, 127]
+    region:   ne_372
     level:    [37, 41]
   17281397:
     template: Soldier_Crawler
-    at:       [376.154, 19.961, 348.284, 127]
+    region:   ne_372
     level:    [37, 41]
   17281398:
     template: Goblin_Reaper
-    at:       [377.113, 19.687, 352.656, 77]
+    region:   ne_372
     level:    [42, 47]
   17281399:
     template: Soldier_Crawler
-    at:       [385.374, 21.341, 261.640, 127]
+    region:   ne_375
     level:    [37, 41]
   17281400:
     template: Goblin_Poacher
-    at:       [365.150, 20.252, 290.648, 127]
+    region:   ne_375
     level:    [42, 47]
   17281401:
     template: Goblin_Poacher
-    at:       [392.320, 20.053, 286.034, 127]
+    region:   ne_375
     level:    [42, 47]
   17281402:
     template: Goblin_Reaper
-    at:       [396.050, 20.411, 277.045, 33]
+    region:   ne_375
     level:    [42, 47]
   17281403:
     template: Soldier_Crawler
-    at:       [330.524, 20.650, 291.620, 79]
+    region:   ne_379
     level:    [37, 41]
   17281404:
     template: Goblin_Poacher
-    at:       [338.386, 20.493, 297.339, 127]
+    region:   ne_379
     level:    [42, 47]
   17281405:
     template: Goblin_Poacher
-    at:       [341.070, 20.576, 275.163, 26]
+    region:   ne_379
     level:    [42, 47]
   17281406:
     template: Goblin_Reaper
-    at:       [349.024, 20.504, 280.837, 72]
+    region:   ne_379
     level:    [42, 47]
   17281407:
     template: Goblin_Reaper
-    at:       [313.134, 20.329, 276.370, 127]
+    region:   ne_379
     level:    [42, 47]
   17281408:
     template: Fire_Elemental
-    at:       [330.347, 20.346, 285.439, 189]
+    region:   ne_379
     level:    [48, 50]
   17281409:
     template: Soldier_Crawler
-    at:       [321.379, 20.314, 230.371, 127]
+    region:   ne_385
     level:    [37, 41]
   17281410:
     template: Goblin_Poacher
-    at:       [341.461, 21.056, 227.353, 127]
+    region:   ne_385
     level:    [42, 47]
   17281411:
     template: Goblin_Reaper
-    at:       [315.473, 20.742, 231.476, 127]
+    region:   ne_385
     level:    [42, 47]
   17281412:
     template: Overgrown_Rose
-    at:       [325.769, 20.228, 228.559]
+    region:   ne_385
     level:    [45, 48]
   17281413:
     template: Fire_Elemental
-    at:       [327.000, 20.494, 239.898, 142]
+    region:   ne_385
     level:    [48, 50]
   17281414:
     template: Soldier_Crawler
-    at:       [392.747, 20.909, 208.005, 127]
+    region:   ne_390
     level:    [37, 41]
   17281415:
     template: Goblin_Poacher
-    at:       [411.199, 20.373, 231.407, 12]
+    region:   ne_390
     level:    [42, 47]
   17281416:
     template: Goblin_Poacher
-    at:       [399.041, 20.760, 248.609, 113]
+    region:   ne_390
     level:    [42, 47]
   17281417:
     template: Goblin_Reaper
-    at:       [384.004, 20.234, 232.048, 127]
+    region:   ne_390
     level:    [42, 47]
   17281418:
     template: Overgrown_Rose
-    at:       [401.128, 20.498, 240.486, 33]
+    region:   ne_390
     level:    [45, 48]
   17281419:
     template: Young_Opo-opo
-    at:       [414.945, 20.236, 149.270, 124]
+    region:   ne_395
     level:    [34, 36]
   17281420:
     template: Young_Opo-opo
-    at:       [428.514, 19.667, 181.052, 127]
+    region:   ne_395
     level:    [34, 36]
   17281421:
     template: Young_Opo-opo
-    at:       [394.475, 20.415, 158.363, 127]
+    region:   ne_395
     level:    [34, 36]
   17281422:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [413.828, 20.526, 163.409, 111]
+    region:   ne_395
     level:    [34, 37]
   17281423:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [423.893, 20.538, 150.679, 89]
+    region:   ne_395
     level:    [34, 37]
   17281424:
     template: Water_Elemental
-    at:       [413.113, 20.942, 168.948, 15]
+    region:   ne_395
     level:    [48, 50]
   17281425:
     template: Young_Opo-opo
-    at:       [439.897, 20.500, 146.450, 19]
+    region:   ne_401
     level:    [34, 36]
   17281426:
     template: Young_Opo-opo
-    at:       [464.038, 20.728, 168.256, 127]
+    region:   ne_401
     level:    [34, 36]
   17281427:
     template: Young_Opo-opo
-    at:       [439.373, 20.500, 151.933, 58]
+    region:   ne_401
     level:    [34, 36]
   17281428:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [459.575, 20.500, 153.574, 126]
+    region:   ne_401
     level:    [34, 37]
   17281429:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [445.041, 20.425, 129.773, 127]
+    region:   ne_401
     level:    [34, 37]
   17281430:
     template: Water_Elemental
-    at:       [461.707, 20.799, 140.829, 125]
+    region:   e_407
     level:    [48, 50]
   17281431:
     template: Young_Opo-opo
-    at:       [475.661, 20.490, 155.552, 39]
+    region:   e_407
     level:    [34, 36]
   17281432:
     template: Young_Opo-opo
-    at:       [471.362, 20.477, 156.581, 92]
+    region:   e_407
     level:    [34, 36]
   17281433:
     template: Young_Opo-opo
-    at:       [476.842, 19.664, 174.926, 126]
+    region:   e_407
     level:    [34, 36]
   17281434:
     template: Young_Opo-opo
-    at:       [481.110, 20.374, 156.514, 103]
+    region:   e_407
     level:    [34, 36]
   17281435:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [465.877, 19.976, 109.405, 127]
+    region:   e_407
     level:    [34, 37]
   17281436:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [459.689, 20.127, 111.029, 7]
+    region:   e_407
     level:    [34, 37]
   17281437:
     template: Death_Jacket_jungle
     script:   Death_Jacket
-    at:       [491.413, 19.493, 169.415, 127]
+    region:   e_407
     level:    [34, 37]
   17281438:
     template: Young_Opo-opo
-    at:       [368.695, 15.625, 174.797, 53]
+    region:   ne_414
     level:    [34, 36]
   17281439:
     template: Soldier_Crawler
-    at:       [443.158, 19.783, 338.528, 127]
+    region:   ne_415
     level:    [37, 41]
   17281440:
     template: Soldier_Crawler
-    at:       [451.228, 18.952, 339.293, 127]
+    region:   ne_416
     level:    [37, 41]
   17281441:
     template: Goblin_Reaper
-    at:       [461.771, 19.719, 357.940, 127]
+    region:   ne_416
     level:    [42, 47]
   17281442:
     template: Goblin_Reaper
-    at:       [458.591, 21.246, 298.470, 127]
+    region:   ne_418
     level:    [42, 47]
   17281443:
     template: Goblin_Reaper
-    at:       [463.973, 20.790, 303.676, 127]
+    region:   ne_418
     level:    [42, 47]
   17281444:
     template: Lava_Bomb
-    at:       [461.118, 15.796, 78.404, 72]
+    region:   e_421
     level:    [47, 50]
   17281445:
     template: Fire_Elemental
-    at:       [462.612, 14.735, 90.607, 164]
+    region:   e_421
     level:    [48, 50]
   17281446:
     template: Soldier_Crawler
-    at:       [474.114, 19.361, 220.447, 127]
+    region:   ne_422
     level:    [37, 41]
   17281447:
     template: Soldier_Crawler
-    at:       [471.580, 19.026, 221.588, 127]
+    region:   ne_422
     level:    [37, 41]
   17281448:
     template: Goblin_Poacher
-    at:       [460.685, 19.753, 239.610, 127]
+    region:   ne_422
     level:    [42, 47]
   17281449:
     template: Goblin_Poacher
-    at:       [459.878, 19.620, 235.322, 127]
+    region:   ne_422
     level:    [42, 47]
   17281450:
     template: Soldier_Crawler
-    at:       [537.902, 20.898, 186.563, 59]
+    region:   region_131
     level:    [37, 41]
   17281451:
     template: Soldier_Crawler
-    at:       [547.149, 20.356, 174.596, 33]
+    region:   region_131
     level:    [37, 41]
   17281452:
     template: Soldier_Crawler
-    at:       [540.549, 19.817, 165.330, 80]
+    region:   region_131
     level:    [37, 41]
   17281453:
     template: Soldier_Crawler
-    at:       [537.987, 21.162, 184.557, 51]
+    region:   region_131
     level:    [37, 41]
   17281454:
     template: Makara
@@ -3438,47 +3438,47 @@ spawns:
     level:    [35, 38]
   17281456:
     template: Makara
-    at:       [455.856, 20.640, 179.568, 127]
+    region:   region_132
     level:    [35, 38]
   17281457:
     template: Makara
-    at:       [416.435, 20.758, 228.039, 127]
+    region:   region_133
     level:    [35, 38]
   17281458:
     template: Makara
-    at:       [433.964, 19.579, 266.499, 70]
+    region:   ne_434
     level:    [35, 38]
   17281459:
     template: Makara
-    at:       [395.833, 19.617, 297.558, 127]
+    region:   ne_435
     level:    [35, 38]
   17281460:
     template: Makara
-    at:       [403.151, 19.586, 297.174, 101]
+    region:   ne_435
     level:    [35, 38]
   17281461:
     template: Makara
-    at:       [407.993, 19.417, 300.641, 127]
+    region:   ne_435
     level:    [35, 38]
   17281462:
     template: Makara
-    at:       [365.458, 20.543, 247.040, 127]
+    region:   ne_438
     level:    [35, 38]
   17281463:
     template: Makara
-    at:       [349.211, 20.942, 254.262, 15]
+    region:   ne_438
     level:    [35, 38]
   17281464:
     template: Makara
-    at:       [342.011, 20.576, 274.949, 105]
+    region:   ne_440
     level:    [35, 38]
   17281465:
     template: Makara
-    at:       [346.334, 20.508, 277.422, 127]
+    region:   ne_440
     level:    [35, 38]
   17281466:
     template: Makara
-    at:       [335.094, 20.648, 298.502, 99]
+    region:   region_134
     level:    [35, 38]
   17281467:
     template: Goblin_Digger_jungle

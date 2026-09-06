@@ -1,4 +1,4 @@
-#include "version.h"
+#include "common/version.h"
 
 const char* version::GetGitSha()
 {
