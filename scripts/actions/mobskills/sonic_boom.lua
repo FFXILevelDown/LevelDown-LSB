@@ -9,8 +9,6 @@ mobskillObject.onMobSkillCheck = function(target, mob, skill)
     return 0
 end
 
--- Nightmare_Gylas sonic boom is static 90 seconds, 50% attack down, and can overwrite itself.
-
 mobskillObject.onMobWeaponSkill = function(mob, target, skill, action)
     if target:hasStatusEffect(xi.effect.ATTACK_DOWN) then
         skill:setMsg(xi.msg.basic.SKILL_NO_EFFECT)
