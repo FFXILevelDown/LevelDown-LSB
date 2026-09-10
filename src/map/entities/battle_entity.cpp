@@ -2028,15 +2028,18 @@ void CBattleEntity::delEquipModifiers(CItemEquipment* PItem, bool isDelevel /* =
 
 int16 CBattleEntity::getMod(xi::Mod modID)
 {
-    TracyZoneScoped;
-
     if (modID == xi::Mod::NONE)
     {
         return 0;
     }
 
     const auto it = m_modStat.find(modID);
-    return it != m_modStat.end() ? it->second : 0;
+    if (it != m_modStat.end())
+    {
+        return it->second;
+    }
+
+    return 0;
 }
 
 /************************************************************************
@@ -2125,8 +2128,6 @@ void CBattleEntity::delPetModifier(xi::Mod type, PetModType petmod, int16 amount
 
 void CBattleEntity::addPetModifiers(std::vector<CPetModifier>* modList)
 {
-    TracyZoneScoped;
-
     for (auto modifier : *modList)
     {
         addPetModifier(modifier.getModID(), modifier.getPetModType(), modifier.getModAmount());
@@ -2135,8 +2136,6 @@ void CBattleEntity::addPetModifiers(std::vector<CPetModifier>* modList)
 
 void CBattleEntity::delPetModifiers(std::vector<CPetModifier>* modList)
 {
-    TracyZoneScoped;
-
     for (auto modifier : *modList)
     {
         delPetModifier(modifier.getModID(), modifier.getPetModType(), modifier.getModAmount());
@@ -2186,8 +2185,6 @@ void CBattleEntity::removePetModifiers(CPetEntity* PPet)
 
 uint16 CBattleEntity::GetSkill(xi::SkillType SkillID)
 {
-    TracyZoneScoped;
-
     if (static_cast<uint8>(SkillID) < MAX_SKILLTYPE)
     {
         return WorkingSkills.skill[static_cast<uint8>(SkillID)] & 0x7FFF;
@@ -2226,8 +2223,6 @@ bool CBattleEntity::hasTrait(uint16 traitID)
 
 bool CBattleEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags)
 {
-    TracyZoneScoped;
-
     if (targetFlags & TARGET_ENEMY)
     {
         if (!isDead())
@@ -2274,14 +2269,14 @@ bool CBattleEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags)
 
 bool CBattleEntity::CanUseSpell(CSpell* PSpell)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::CanUseSpell");
 
     return spell::CanUseSpell(this, PSpell) && !PRecastContainer->Has(RECAST_MAGIC, static_cast<Recast>(PSpell->getID()));
 }
 
 void CBattleEntity::Spawn()
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::Spawn");
 
     animation = xi::Animation::None;
     HideName(false);
@@ -2292,7 +2287,7 @@ void CBattleEntity::Spawn()
 
 void CBattleEntity::Die()
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::Die");
 
     if (CBaseEntity* PKiller = m_OwnerID.resolve())
     {
@@ -2379,7 +2374,7 @@ void CBattleEntity::OnDeathTimer()
 
 void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::OnCastFinished");
 
     auto*          PSpell          = state.GetSpell();
     auto*          PActionTarget   = state.target().resolve<CBattleEntity>();
@@ -2684,7 +2679,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
 
 void CBattleEntity::OnCastInterrupted(CMagicState& state, action_t& action, MsgBasic msg, bool blockedCast)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::OnCastInterrupted");
 
     if (CSpell* PSpell = state.GetSpell())
     {
@@ -2805,7 +2800,7 @@ void CBattleEntity::OnAbility(CAbilityState& state, action_t& action)
 
 void CBattleEntity::OnWeaponSkillFinished(CWeaponSkillState& state, action_t& action)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::OnWeaponSkillFinished");
 
     auto* PWeaponskill = state.GetSkill();
 
@@ -3127,7 +3122,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
 
 bool CBattleEntity::CanAttack(CBattleEntity* PTarget, std::unique_ptr<CBasicPacket>& errMsg)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::CanAttack");
 
     if (PTarget->PAI->IsUntargetable())
     {
@@ -3573,7 +3568,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
 
 void CBattleEntity::OnDisengage(CAttackState& s)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::OnDisengage");
 
     setBattleTarget(std::nullopt);
     if (animation == xi::Animation::Attack)
@@ -3605,7 +3600,7 @@ auto CBattleEntity::GetBattleTarget() const -> CBattleEntity*
 
 bool CBattleEntity::OnAttack(CAttackState& state, action_t& action)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::OnAttack");
 
     auto* PTarget = state.target().resolve<CBattleEntity>();
 
@@ -3964,7 +3959,7 @@ bool CBattleEntity::OnAttack(CAttackState& state, action_t& action)
 
 auto CBattleEntity::IsValidTarget(uint16 targid, uint16 validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::IsValidTarget");
 
     auto* PTarget = PAI->TargetFind->getValidTarget(targid, validTargetFlags);
     return PTarget;
@@ -3972,14 +3967,14 @@ auto CBattleEntity::IsValidTarget(uint16 targid, uint16 validTargetFlags, std::u
 
 auto CBattleEntity::IsValidTarget(EntityId target, uint16 validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::IsValidTarget");
 
     return PAI->TargetFind->getValidTarget(target.resolve<CBattleEntity>(), validTargetFlags);
 }
 
 void CBattleEntity::OnEngage(CAttackState& state)
 {
-    TracyZoneScoped;
+    TracyZoneScopedN("CBattleEntity::OnEngage");
 
     animation = xi::Animation::Attack;
     updatemask |= UPDATE_HP;
@@ -4025,15 +4020,11 @@ uint16 CBattleEntity::getBattleID()
 
 auto CBattleEntity::Tick(timer::time_point /*unused*/) -> Task<void>
 {
-    TracyZoneScoped;
-
     co_return;
 }
 
 void CBattleEntity::PostTick()
 {
-    TracyZoneScoped;
-
     if (health.hp <= 0 && PAI->IsSpawned() && !PAI->IsCurrentState<CDeathState>() && !PAI->IsCurrentState<CDespawnState>())
     {
         Die();
