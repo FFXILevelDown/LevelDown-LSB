@@ -831,7 +831,7 @@ spawns:
     level:    [34, 35]
   17424389:
     template: Gigass_Bats
-    region:   w_3
+    at:       [1.000, 1.000, 1.000]
     level:    [27, 29]
   17424390:
     template: Gigas_Stonemason
@@ -851,7 +851,7 @@ spawns:
     level:    [34, 35]
   17424394:
     template: Gigass_Bats
-    region:   n_7
+    at:       [1.000, 1.000, 1.000]
     level:    [27, 29]
   17424395:
     template: Gigas_Stonemason
@@ -907,7 +907,7 @@ spawns:
     level:    [34, 35]
   17424408:
     template: Gigass_Bats
-    region:   w_22
+    at:       [1.000, 1.000, 1.000]
     level:    [27, 29]
   17424409:
     template: Gigas_Stonemason
@@ -935,7 +935,7 @@ spawns:
     level:    [34, 35]
   17424415:
     template: Gigass_Bats
-    region:   ne_30
+    at:       [1.000, 1.000, 1.000]
     level:    [27, 29]
   17424416:
     template: Gigas_Stonemason
@@ -983,7 +983,7 @@ spawns:
     level:    [34, 35]
   17424427:
     template: Gigass_Bats
-    region:   e_41
+    at:       [1.000, 1.000, 1.000]
     level:    [27, 29]
   17424428:
     template: Gigas_Stonemason
@@ -1035,7 +1035,7 @@ spawns:
     level:    [34, 35]
   17424440:
     template: Gigass_Bats
-    region:   s_54
+    at:       [1.000, 1.000, 1.000]
     level:    [27, 29]
   17424441:
     template: Gigas_Stonemason
@@ -1094,7 +1094,7 @@ spawns:
     level:    [65, 69]
   17424453:
     template: Jotunn_Gatekeeper
-    region:   n_69
+    region:   c_68
     level:    [65, 69]
   17424454:
     template: Jotunn_Hallkeeper
@@ -1106,11 +1106,11 @@ spawns:
     level:    [65, 69]
   17424456:
     template: Gigass_Bat
-    region:   c_68
+    at:       [1.000, 1.000, 1.000]
     level:    [53, 55]
   17424457:
     template: Jotunn_Wallkeeper
-    region:   w_78
+    region:   s_74
     level:    [65, 69]
   17424458:
     template: Jotunn_Gatekeeper
@@ -1126,7 +1126,7 @@ spawns:
     level:    [65, 69]
   17424461:
     template: Gigass_Bat
-    region:   s_74
+    at:       [1.000, 1.000, 1.000]
     level:    [53, 55]
   17424462:
     template: Jotunn_Wallkeeper
@@ -1150,7 +1150,7 @@ spawns:
     level:    [53, 55]
   17424467:
     template: Jotunn_Wallkeeper
-    region:   e_83
+    region:   c_84
     level:    [65, 69]
   17424468:
     template: Jotunn_Gatekeeper
@@ -1166,7 +1166,7 @@ spawns:
     level:    [65, 69]
   17424471:
     template: Gigass_Bat
-    region:   c_84
+    at:       [1.000, 1.000, 1.000]
     level:    [53, 55]
   17424472:
     template: Phasma_UDT
@@ -1190,12 +1190,12 @@ spawns:
   17424476:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    region:   sw_92
+    region:   region_30
     level:    [62, 64]
   17424477:
     template: Incubus_Bats_UDT
     script:   Incubus_Bats
-    region:   sw_92
+    region:   region_30
     level:    [62, 64]
   17424478:
     template: Incubus_Bats_UDT
@@ -1265,7 +1265,7 @@ spawns:
     level:    [65, 69]
   17424493:
     template: Gigass_Bat
-    region:   c_105
+    at:       [1.000, 1.000, 1.000]
     level:    [53, 55]
   17424494:
     template: Jotunn_Wallkeeper
@@ -1325,7 +1325,7 @@ spawns:
     level:    [65, 69]
   17424508:
     template: Gigass_Bat
-    region:   c_121
+    at:       [1.000, 1.000, 1.000]
     level:    [53, 55]
   17424509:
     template: Phasma_UDT

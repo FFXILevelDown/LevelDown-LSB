@@ -79,7 +79,7 @@ namespace charutils
 void LoadExpTable();
 void SetExpDifficultyCurve(std::vector<std::pair<uint16, EMobDifficulty>>& curve, std::pair<uint16, uint8>& incrediblyEasyPreyData);
 auto LoadChar(uint32 charId) -> std::unique_ptr<CCharEntity>;
-void LoadSpells(CCharEntity* PChar);
+void LoadFromCharSpellsSQL(CCharEntity* PChar);
 void LoadInventory(CCharEntity* PChar);
 void LoadEquip(CCharEntity* PChar);
 
@@ -130,11 +130,11 @@ uint32 getItemCount(CCharEntity* PChar, uint16 ItemID);
 uint8  MoveItem(CCharEntity* PChar, uint8 LocationID, uint8 SlotID, uint8 NewSlotID);
 
 void DropItem(CCharEntity* PChar, uint8 container, uint8 slotID, int32 quantity, uint16 ItemID);
-void CheckValidEquipment(CCharEntity* PChar);
+void CheckValidEquipment(CCharEntity* PChar, bool isDelevel = false);
 void SaveJobChangeGear(CCharEntity* PChar);
 void LoadJobChangeGear(CCharEntity* PChar);
 void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 containerID);
-void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, xi::Flag<struct RecalculateTag> recalculate = Recalculate::Yes);
+void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, xi::Flag<struct RecalculateTag> recalculate = Recalculate::Yes, bool isDelevel = false);
 bool hasSlotEquipped(CCharEntity* PChar, uint8 equipSlotID);
 void RemoveSub(CCharEntity* PChar);
 bool EquipArmor(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 containerID);
@@ -200,7 +200,6 @@ void SaveCharAppearances(const std::vector<CharAppearance>& rows);
 void PersistCharVars(const std::vector<CharVarChange>& rows);
 auto BuildCharEquipSlots(const CCharEntity* PChar) -> std::vector<CharEquipSlot>;
 auto BuildCharAppearance(const CCharEntity* PChar) -> CharAppearance;
-// void SaveCharLinkshells(CCharEntity* PChar);     // TODO: save the character's linkshells
 void SaveMissionsList(CCharEntity* PChar);          // save the missions list
 void SaveEminenceData(CCharEntity* PChar);          // save Eminence Record (RoE) data
 void SaveQuestsList(CCharEntity* PChar);            // save the list of quests
