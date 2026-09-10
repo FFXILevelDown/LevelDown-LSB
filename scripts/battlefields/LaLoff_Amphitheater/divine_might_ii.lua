@@ -23,12 +23,15 @@ local content = Battlefield:new({
     requiredKeyItems = { xi.ki.P_PERPETRATOR_PHANTOM_GEM, keep = false  },
 })
 
--- Safe-guard assignment mapping for all 5 Ark Angels to protect arithmetic operators
-local hmBase = laLoffID.mob.ARK_ANGEL_HM_HTBF or laLoffID.mob.ARK_ANGEL_HM or 0
-local mrBase = laLoffID.mob.ARK_ANGEL_MR_HTBF or laLoffID.mob.ARK_ANGEL_MR or 0
-local evBase = laLoffID.mob.ARK_ANGEL_EV_HTBF or laLoffID.mob.ARK_ANGEL_EV or 0
-local ttBase = laLoffID.mob.ARK_ANGEL_TT_HTBF or laLoffID.mob.ARK_ANGEL_TT or 0
-local gkBase = laLoffID.mob.ARK_ANGEL_GK_HTBF or laLoffID.mob.ARK_ANGEL_GK or 0
+-- These offsets index the base LaLoff Ark Angel spawn block (the combined
+-- Divine Might set at ARK_ANGEL_<X> + 14..40), so they must be anchored to the
+-- base first-id. Using ARK_ANGEL_<X>_HTBF here shifts the anchor to the _ii
+-- solo-fight spawns and every offset misses.
+local hmBase = laLoffID.mob.ARK_ANGEL_HM or 0
+local mrBase = laLoffID.mob.ARK_ANGEL_MR or 0
+local evBase = laLoffID.mob.ARK_ANGEL_EV or 0
+local ttBase = laLoffID.mob.ARK_ANGEL_TT or 0
+local gkBase = laLoffID.mob.ARK_ANGEL_GK or 0
 
 content.groups =
 {

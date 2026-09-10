@@ -11,7 +11,8 @@ entity.onMobInitialize = function(mob)
 end
 
 entity.onMobSpawn = function(mob)
-        mob:addMod(xi.mod.STR, 100) 
+        mob:renameEntity("Ark Angel TT")
+        mob:addMod(xi.mod.STR, 100)
         mob:addMod(xi.mod.VIT, 100) 
         mob:addMod(xi.mod.INT, 100) 
         mob:addMod(xi.mod.MND, 100) 

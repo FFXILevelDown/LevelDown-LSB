@@ -27,8 +27,6 @@ content.groups =
         mobIds =
         {
             { fullMoonFountainID.mob.CARBUNCLE_PRIME_HTBF     },
-            { fullMoonFountainID.mob.CARBUNCLE_PRIME_HTBF + 1 },
-            { fullMoonFountainID.mob.CARBUNCLE_PRIME_HTBF + 2 },
         },
 
         allDeath = function(battlefield, mob)
@@ -52,8 +50,6 @@ content.groups =
         mobIds =
         {
            { fullMoonFountainID.mob.IFRIT_PRIME_HTBF     },
-           { fullMoonFountainID.mob.IFRIT_PRIME_HTBF + 1 },
-           { fullMoonFountainID.mob.IFRIT_PRIME_HTBF + 2 }, 
         },
         spawned  = false,
         allDeath = function(battlefield, mob)
@@ -65,8 +61,6 @@ content.groups =
         mobIds =
         {
            { fullMoonFountainID.mob.SHIVA_PRIME_HTBF     },
-           { fullMoonFountainID.mob.SHIVA_PRIME_HTBF + 1 },
-           { fullMoonFountainID.mob.SHIVA_PRIME_HTBF + 2 }, 
         },
         spawned  = false,
         allDeath = function(battlefield, mob)
@@ -78,8 +72,6 @@ content.groups =
         mobIds =
         {
            { fullMoonFountainID.mob.GARUDA_PRIME_HTBF     },
-           { fullMoonFountainID.mob.GARUDA_PRIME_HTBF + 1 },
-           { fullMoonFountainID.mob.GARUDA_PRIME_HTBF + 2 }, 
         },
         spawned  = false,
         allDeath = function(battlefield, mob)
@@ -91,8 +83,6 @@ content.groups =
         mobIds =
         {
            { fullMoonFountainID.mob.TITAN_PRIME_HTBF     },
-           { fullMoonFountainID.mob.TITAN_PRIME_HTBF + 1 },
-           { fullMoonFountainID.mob.TITAN_PRIME_HTBF + 2 },
         },
         spawned  = false,
         allDeath = function(battlefield, mob)
@@ -104,8 +94,6 @@ content.groups =
         mobIds =
         {
            { fullMoonFountainID.mob.RAMUH_PRIME_HTBF     },
-           { fullMoonFountainID.mob.RAMUH_PRIME_HTBF + 1 },
-           { fullMoonFountainID.mob.RAMUH_PRIME_HTBF + 2 },
         },
         spawned  = false,
         allDeath = function(battlefield, mob)
@@ -117,8 +105,6 @@ content.groups =
         mobIds =
         {
            { fullMoonFountainID.mob.LEVIATHAN_PRIME_HTBF     },
-           { fullMoonFountainID.mob.LEVIATHAN_PRIME_HTBF + 1 },
-           { fullMoonFountainID.mob.LEVIATHAN_PRIME_HTBF + 2 },
         },
         spawned  = false,
     },

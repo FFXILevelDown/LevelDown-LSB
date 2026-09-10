@@ -27,8 +27,6 @@ content.groups =
         mobIds =
         {
             { fullMoonFountainID.mob.FENRIR_PRIME_HTBF     },
-            { fullMoonFountainID.mob.FENRIR_PRIME_HTBF + 1 },
-            { fullMoonFountainID.mob.FENRIR_PRIME_HTBF + 2 },
         },
 
         allDeath = function(battlefield, mob)

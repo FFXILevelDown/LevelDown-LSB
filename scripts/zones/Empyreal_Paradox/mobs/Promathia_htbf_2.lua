@@ -13,6 +13,7 @@ entity.onMobInitialize = function(mob)
 end
 
 entity.onMobSpawn = function(mob)
+    mob:renameEntity("Promathia")
     local battlefield = mob:getBattlefield()
     if not battlefield then
         return
