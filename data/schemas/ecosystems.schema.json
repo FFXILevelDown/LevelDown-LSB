@@ -771,6 +771,11 @@
                            "minimum": -32768,
                            "maximum": 32767
                         },
+                        "roam_turns_min": {
+                           "type": "integer",
+                           "minimum": -32768,
+                           "maximum": 32767
+                        },
                         "run_speed_mult": {
                            "type": "integer",
                            "minimum": -32768,
@@ -4791,11 +4796,6 @@
                            "maximum": 32767
                         },
                         "stunres": {
-                           "type": "integer",
-                           "minimum": -32768,
-                           "maximum": 32767
-                        },
-                        "sub_dmg_rank": {
                            "type": "integer",
                            "minimum": -32768,
                            "maximum": 32767

@@ -20,7 +20,7 @@ local content = Battlefield:new({
     index         = 3,
     entryNpc      = '_0w0',
     exitNpc       = 'Airship_Door',
-    requiredKeyItems = { xi.ki.FEARED_ONE_PHANTOM_GEM, keep = false  },
+    requiredKeyItems = { xi.keyItem.FEARED_ONE_PHANTOM_GEM, keep = false  },
 })
 
 -- NOTE: Mob spawning for phase changes in this battlefield is triggered

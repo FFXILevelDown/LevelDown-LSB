@@ -17,7 +17,7 @@ local content = Battlefield:new({
     index            = 5,
     entryNpc         = 'EP_Entrance',
     exitNpc          = 'Earth_Protocrystal',
-    requiredKeyItems = { xi.ki.AVATAR_PHANTOM_GEM, keep = false  },
+    requiredKeyItems = { xi.keyItem.AVATAR_PHANTOM_GEM, keep = false  },
     allowTrusts      = true,
 })
 

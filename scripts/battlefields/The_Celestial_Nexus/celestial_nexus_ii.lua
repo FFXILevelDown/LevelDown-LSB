@@ -22,7 +22,7 @@ local content = Battlefield:new(
     area             = 1,
     entryNpc         = '_513',
     exitNpcs         = { '_514', '_515' },
-    requiredKeyItems = { xi.ki.CELESTIAL_NEXUS_PHANTOM_GEM, keep = false },
+    requiredKeyItems = { xi.keyItem.CELESTIAL_NEXUS_PHANTOM_GEM, keep = false },
 })
 
 function content:onEventFinishBattlefield(player, csid, option, npc)

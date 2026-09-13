@@ -20,7 +20,7 @@ local content = Battlefield:new({
     index         = 2,
     entryNpc      = '_0w0',
     exitNpc       = 'Airship_Door',
-    requiredKeyItems = { xi.ki.WARRIORS_PATH_PHANTOM_GEM, keep = false  },
+    requiredKeyItems = { xi.keyItem.WARRIORS_PATH_PHANTOM_GEM, keep = false  },
 })
 
 -- Database drift protection fallback chain mapping

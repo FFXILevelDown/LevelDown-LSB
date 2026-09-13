@@ -17,7 +17,7 @@ local content = Battlefield:new({
     index            = 5,
     entryNpc         = 'MS_Entrance',
     exitNpc          = 'Moon_Spiral',
-    requiredKeyItems = { xi.ki.WAKING_THE_BEAST_PHANTOM_GEM, keep = false  },
+    requiredKeyItems = { xi.keyItem.WAKING_THE_BEAST_PHANTOM_GEM, keep = false  },
     allowTrusts      = true,
 })
 

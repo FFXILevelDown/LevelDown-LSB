@@ -17,7 +17,7 @@ local content = Battlefield:new({
     index            = 3,
     entryNpc         = 'MC_Entrance',
     exitNpc          = 'Memento_Circle',
-    requiredKeyItems = { xi.ki.WAKING_DREAMS_PHANTOM_GEM, keep = false  },
+    requiredKeyItems = { xi.keyItem.WAKING_DREAMS_PHANTOM_GEM, keep = false  },
     allowTrusts      = true,
 })
 
