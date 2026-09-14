@@ -23,14 +23,19 @@ local content = Battlefield:new({
     requiredKeyItems = { xi.ki.P_PERPETRATOR_PHANTOM_GEM, keep = false  },
 })
 
--- These offsets index the base LaLoff Ark Angel spawn block (the combined
--- Divine Might set at ARK_ANGEL_<X> + 14..40), so they must be anchored to the
--- base first-id. Using ARK_ANGEL_<X>_HTBF here shifts the anchor to the _ii
--- solo-fight spawns and every offset misses.
-local hmBase = laLoffID.mob.ARK_ANGEL_HM or 0
+-- The 5 bosses are the dedicated _HTBF spawns (arena-A copy of each), the
+-- same entities the solo ark_angels_*_ii battlefields use - not the base
+-- mission's Ark Angel mobs, which are already owned by those battlefields
+-- and never actually spawn for a second, concurrent registration.
+local hmBoss = laLoffID.mob.ARK_ANGEL_HM_HTBF or 0
+local mrBoss = laLoffID.mob.ARK_ANGEL_MR_HTBF or 0
+local evBoss = laLoffID.mob.ARK_ANGEL_EV_HTBF or 0
+local ttBoss = laLoffID.mob.ARK_ANGEL_TT_HTBF or 0
+local gkBoss = laLoffID.mob.ARK_ANGEL_GK_HTBF or 0
+
+-- Pets still come from the base Ark Angel spawn block (unclaimed, and not
+-- part of the _HTBF override), same as the solo gk_ii / mr_ii fights.
 local mrBase = laLoffID.mob.ARK_ANGEL_MR or 0
-local evBase = laLoffID.mob.ARK_ANGEL_EV or 0
-local ttBase = laLoffID.mob.ARK_ANGEL_TT or 0
 local gkBase = laLoffID.mob.ARK_ANGEL_GK or 0
 
 content.groups =
@@ -39,11 +44,11 @@ content.groups =
         mobIds =
         {
             {
-                hmBase + 40,      
-                mrBase + 38,
-                evBase + 80,
-                ttBase + 78,
-                gkBase + 76,
+                hmBoss,
+                mrBoss,
+                evBoss,
+                ttBoss,
+                gkBoss,
             },
         },
 
