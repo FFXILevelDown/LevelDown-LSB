@@ -21,7 +21,7 @@ local content = Battlefield:new({
     area            = 1,
     entryNpc        = 'TR_Entrance',
     exitNpc         = 'Transcendental_Radiance',
-    requiredKeyItems = { xi.ki.DAWN_PHANTOM_GEM, keep = false },
+    requiredKeyItems = { xi.keyItem.DAWN_PHANTOM_GEM, keep = false },
 })
 
 content.groups =

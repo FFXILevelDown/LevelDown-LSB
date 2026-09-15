@@ -625,6 +625,7 @@ player.entities:gotoAndTrigger('Ambrotien', { eventId = 2000, finishOption = 0 }
 
 -- Or drive the current event manually
 player.events:update(nil, 1)   -- send an update to the in-progress event
+player.events:updateWithPosition(nil, 1, { x = 0, y = 0, z = 0 }) -- update with a requested position, returns the reply parameter and whether the client was moved
 player.events:finish()         -- finish the current event
 player.events:expectNotInEvent() -- assert we are no longer in an event
 ```
@@ -737,13 +738,13 @@ describe('xi_test', function()
         assert(not true, 'Expected condition to be false')
 
         -- Custom CLuaBaseEntity assertions
-        player.assert:hasKI(xi.ki.BLUE_ACIDITY_TESTER)
-        player.assert.no:hasKI(xi.ki.RED_ACIDITY_TESTER)
+        player.assert:hasKI(xi.keyItem.BLUE_ACIDITY_TESTER)
+        player.assert.no:hasKI(xi.keyItem.RED_ACIDITY_TESTER)
 
         -- Different syntax to chain assertions
         player.assert
-            :hasKI(xi.ki.BLUE_ACIDITY_TESTER)
-            .no:hasKI(xi.ki.RED_ACIDITY_TESTER)
+            :hasKI(xi.keyItem.BLUE_ACIDITY_TESTER)
+            .no:hasKI(xi.keyItem.RED_ACIDITY_TESTER)
     end)
 end)
 ```

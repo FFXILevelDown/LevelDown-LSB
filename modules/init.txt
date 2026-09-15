@@ -51,6 +51,7 @@ LevelDown Custom Modules/lua/effects/
 LevelDown Custom Modules/lua/commands/
 LevelDown Custom Modules/cpp/
 LevelDown Custom Modules/sql/
+LevelDown Custom Modules/content/LD Trust Upgrade System
 #LevelDown Custom Modules/content/custom_besieged
 LevelDown Custom Modules/content/LD 75 Cap
 LevelDown Custom Modules/content/LD Beach Besieged

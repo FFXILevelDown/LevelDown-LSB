@@ -15,6 +15,7 @@ local content = BattlefieldMission:new({
     isMission             = true,
     allowTrusts           = true,
     maxPlayers            = 6,
+    levelCap              = xi.settings.main.MAX_LEVEL,
     timeLimit             = utils.minutes(15),
     index                 = 0,
     entryNpc              = 'BC_Entrance',
@@ -26,7 +27,7 @@ local content = BattlefieldMission:new({
 
 function content:entryRequirement(player, npc, isRegistrant, trade)
     return player:hasCompletedMission(player:getNation(), self.mission) or
-        player:hasKeyItem(xi.ki.NEW_FEIYIN_SEAL)
+        player:hasKeyItem(xi.keyItem.NEW_FEIYIN_SEAL)
 end
 
 content.groups =

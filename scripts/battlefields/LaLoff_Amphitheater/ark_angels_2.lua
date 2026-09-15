@@ -12,7 +12,7 @@ local content = BattlefieldMission:new({
     isMission             = true,
     allowTrusts           = true,
     maxPlayers            = 6,
-    levelCap              = 75,
+    levelCap              = xi.settings.main.MAX_LEVEL,
     timeLimit             = utils.minutes(30),
     index                 = 1,
     entryNpc              = 'qm1_2',
@@ -24,7 +24,7 @@ local content = BattlefieldMission:new({
 })
 
 function content:entryRequirement(player, npc, isRegistrant, trade)
-    return not player:hasKeyItem(xi.ki.SHARD_OF_COWARDICE)
+    return not player:hasKeyItem(xi.keyItem.SHARD_OF_COWARDICE)
 end
 
 function content:onBattlefieldLoss(player, battlefield)

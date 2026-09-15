@@ -25,69 +25,69 @@ zones[xi.zone.DYNAMIS_BASTOK] =
         OMINOUS_PRESENCE              = 7356, -- You feel an ominous presence, as if something might happen if you possessed <item>.
     },
     mob =
+    {
+        TIME_EXTENSION =
         {
-            TIME_EXTENSION =
+            { minutes = 10, ki = xi.keyItem.CRIMSON_GRANULES_OF_TIME,   mob = 17539142 },
+            { minutes = 10, ki = xi.keyItem.AZURE_GRANULES_OF_TIME,     mob = 17539148 },
+            { minutes = 10, ki = xi.keyItem.AMBER_GRANULES_OF_TIME,     mob = 17539149 },
+            { minutes = 15, ki = xi.keyItem.ALABASTER_GRANULES_OF_TIME, mob = 17539253 },
+            { minutes = 15, ki = xi.keyItem.OBSIDIAN_GRANULES_OF_TIME,  mob = 17539306 },
+        },
+
+        REFILL_STATUE =
+        {
             {
-                { minutes = 10, ki = xi.ki.CRIMSON_GRANULES_OF_TIME,   mob = 17539142 },
-                { minutes = 10, ki = xi.ki.AZURE_GRANULES_OF_TIME,     mob = 17539148 },
-                { minutes = 10, ki = xi.ki.AMBER_GRANULES_OF_TIME,     mob = 17539149 },
-                { minutes = 15, ki = xi.ki.ALABASTER_GRANULES_OF_TIME, mob = 17539253 },
-                { minutes = 15, ki = xi.ki.OBSIDIAN_GRANULES_OF_TIME,  mob = 17539306 },
+                { mob = 17539118, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539119, eye = xi.dynamis.eye.BLUE  },
+                { mob = 17539120, eye = xi.dynamis.eye.GREEN },
             },
 
-            REFILL_STATUE =
             {
-                {
-                    { mob = 17539118, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539119, eye = xi.dynamis.eye.BLUE  },
-                    { mob = 17539120, eye = xi.dynamis.eye.GREEN },
-                },
+                { mob = 17539161, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539162, eye = xi.dynamis.eye.BLUE  },
+                { mob = 17539163, eye = xi.dynamis.eye.GREEN },
+            },
 
-                {
-                    { mob = 17539161, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539162, eye = xi.dynamis.eye.BLUE  },
-                    { mob = 17539163, eye = xi.dynamis.eye.GREEN },
-                },
+            {
+                { mob = 17539171, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539172, eye = xi.dynamis.eye.BLUE  },
+                { mob = 17539173, eye = xi.dynamis.eye.GREEN },
+            },
 
-                {
-                    { mob = 17539171, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539172, eye = xi.dynamis.eye.BLUE  },
-                    { mob = 17539173, eye = xi.dynamis.eye.GREEN },
-                },
+            {
+                { mob = 17539227, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539228, eye = xi.dynamis.eye.BLUE  },
+                { mob = 17539229, eye = xi.dynamis.eye.GREEN },
+            },
 
-                {
-                    { mob = 17539227, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539228, eye = xi.dynamis.eye.BLUE  },
-                    { mob = 17539229, eye = xi.dynamis.eye.GREEN },
-                },
+            {
+                { mob = 17539234, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539235, eye = xi.dynamis.eye.BLUE  },
+                { mob = 17539236, eye = xi.dynamis.eye.GREEN },
+            },
 
-                {
-                    { mob = 17539234, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539235, eye = xi.dynamis.eye.BLUE  },
-                    { mob = 17539236, eye = xi.dynamis.eye.GREEN },
-                },
+            {
+                { mob = 17539266, eye = xi.dynamis.eye.RED  }, -- Adamantking_Effigy
+                { mob = 17539267, eye = xi.dynamis.eye.BLUE },
+            },
 
-                {
-                    { mob = 17539266, eye = xi.dynamis.eye.RED  }, -- Adamantking_Effigy
-                    { mob = 17539267, eye = xi.dynamis.eye.BLUE },
-                },
+            {
+                { mob = 17539274, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539275, eye = xi.dynamis.eye.GREEN },
+            },
 
-                {
-                    { mob = 17539274, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539275, eye = xi.dynamis.eye.GREEN },
-                },
+            {
+                { mob = 17539286, eye = xi.dynamis.eye.RED  }, -- Adamantking_Effigy
+                { mob = 17539287, eye = xi.dynamis.eye.BLUE },
+            },
 
-                {
-                    { mob = 17539286, eye = xi.dynamis.eye.RED  }, -- Adamantking_Effigy
-                    { mob = 17539287, eye = xi.dynamis.eye.BLUE },
-                },
-
-                {
-                    { mob = 17539293, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
-                    { mob = 17539294, eye = xi.dynamis.eye.GREEN },
-                },
+            {
+                { mob = 17539293, eye = xi.dynamis.eye.RED   }, -- Adamantking_Effigy
+                { mob = 17539294, eye = xi.dynamis.eye.GREEN },
             },
         },
+    },
 
     npc =
     {

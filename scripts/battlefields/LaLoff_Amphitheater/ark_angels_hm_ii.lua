@@ -18,7 +18,7 @@ local content = Battlefield:new({
     index                 = 6,
     entryNpc              = 'qm1_1',
     exitNpc               = 'qm2',
-    requiredKeyItems      = { xi.ki.PHANTOM_GEM_OF_APATHY, keep = false  },
+    requiredKeyItems      = { xi.keyItem.PHANTOM_GEM_OF_APATHY, keep = false  },
 })
 
 -- Database drift protection guard

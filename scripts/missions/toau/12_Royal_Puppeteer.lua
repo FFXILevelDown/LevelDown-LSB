@@ -11,7 +11,7 @@ local mission = Mission:new(xi.mission.log_id.TOAU, xi.mission.id.toau.ROYAL_PUP
 
 mission.reward =
 {
-    keyItem     = xi.ki.VIAL_OF_SPECTRAL_SCENT,
+    keyItem     = xi.keyItem.VIAL_OF_SPECTRAL_SCENT,
     nextMission = { xi.mission.log_id.TOAU, xi.mission.id.toau.LOST_KINGDOM },
 }
 
@@ -51,7 +51,7 @@ mission.sections =
                     if missionStatus == 0 then
                         return mission:progressEvent(277)
                     elseif missionStatus == 1 then
-                        return mission:event(278)
+                        return mission:event(278):oncePerZone()
                     end
                 end,
             },

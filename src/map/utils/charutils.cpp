@@ -115,7 +115,7 @@
 #include "synthutils.h"
 #include "zoneutils.h"
 
-#include "enums/key_items.h"
+#include "data/enums/key_item.h"
 #include "enums/quest_log.h"
 #include "items/item_furnishing.h"
 #include "items/item_linkshell.h"
@@ -171,23 +171,23 @@ namespace
 
 // Key items granting an increase to the rate of skillups
 const std::set skillupIncreaseKeyItems = {
-    KeyItem::RHAPSODY_IN_WHITE,
-    KeyItem::RHAPSODY_IN_CRIMSON,
-    KeyItem::RHAPSODY_IN_FUCHSIA
+    xi::KeyItem::RhapsodyInWhite,
+    xi::KeyItem::RhapsodyInCrimson,
+    xi::KeyItem::RhapsodyInFuchsia
 };
 
 // Key items granting an increase to earned capacity points
 const std::set capacityBonusKeyItems = {
-    KeyItem::RHAPSODY_IN_FUCHSIA,
-    KeyItem::RHAPSODY_IN_PUCE,
-    KeyItem::RHAPSODY_IN_OCHRE,
+    xi::KeyItem::RhapsodyInFuchsia,
+    xi::KeyItem::RhapsodyInPuce,
+    xi::KeyItem::RhapsodyInOchre,
 };
 
 // Key items reducing the time for traverser stones
 const std::set traverserStoneReductionKeyItems = {
-    KeyItem::AZURE_ABYSSITE_OF_CELERITY,
-    KeyItem::CRIMSON_ABYSSITE_OF_CELERITY,
-    KeyItem::IVORY_ABYSSITE_OF_CELERITY
+    xi::KeyItem::AzureAbyssiteOfCelerity,
+    xi::KeyItem::CrimsonAbyssiteOfCelerity,
+    xi::KeyItem::IvoryAbyssiteOfCelerity
 };
 
 // Callers reach these from Lua, so validate against the schema before formatting into a query.
@@ -993,9 +993,9 @@ void LoadFromCharSpellsSQL(CCharEntity* PChar)
 
     // Handle trust spells that are enabled via settings.
     bool hasTrustPermit =
-        charutils::hasKeyItem(PChar, KeyItem::WINDURST_TRUST_PERMIT) ||
-        charutils::hasKeyItem(PChar, KeyItem::BASTOK_TRUST_PERMIT) ||
-        charutils::hasKeyItem(PChar, KeyItem::SAN_DORIA_TRUST_PERMIT);
+        charutils::hasKeyItem(PChar, xi::KeyItem::WindurstTrustPermit) ||
+        charutils::hasKeyItem(PChar, xi::KeyItem::BastokTrustPermit) ||
+        charutils::hasKeyItem(PChar, xi::KeyItem::SanDoriaTrustPermit);
 
     if (hasTrustPermit)
     {
@@ -3967,7 +3967,7 @@ void CheckWeaponSkill(CCharEntity* PChar, uint8 skill)
  *                                                                       *
  ************************************************************************/
 
-auto hasKeyItem(const CCharEntity* PChar, const KeyItem keyItemId) -> bool
+auto hasKeyItem(const CCharEntity* PChar, const xi::KeyItem keyItemId) -> bool
 {
     const auto keyItemTable = static_cast<uint16_t>(keyItemId) / 512;
     const auto keyItemIndex = static_cast<uint16_t>(keyItemId) % 512;
@@ -3981,7 +3981,7 @@ auto hasKeyItem(const CCharEntity* PChar, const KeyItem keyItemId) -> bool
     return PChar->keys.tables[keyItemTable].keyList[keyItemIndex];
 }
 
-auto seenKeyItem(CCharEntity* PChar, KeyItem keyItemId) -> bool
+auto seenKeyItem(CCharEntity* PChar, xi::KeyItem keyItemId) -> bool
 {
     const auto keyItemTable = static_cast<uint16_t>(keyItemId) / 512;
     const auto keyItemIndex = static_cast<uint16_t>(keyItemId) % 512;
@@ -3995,7 +3995,7 @@ auto seenKeyItem(CCharEntity* PChar, KeyItem keyItemId) -> bool
     return PChar->keys.tables[keyItemTable].seenList[keyItemIndex];
 }
 
-void markSeenKeyItem(CCharEntity* PChar, KeyItem keyItemId)
+void markSeenKeyItem(CCharEntity* PChar, xi::KeyItem keyItemId)
 {
     const auto keyItemTable = static_cast<uint16_t>(keyItemId) / 512;
     const auto keyItemIndex = static_cast<uint16_t>(keyItemId) % 512;
@@ -4009,7 +4009,7 @@ void markSeenKeyItem(CCharEntity* PChar, KeyItem keyItemId)
     PChar->keys.tables[keyItemTable].seenList[keyItemIndex] = true;
 }
 
-void unseenKeyItem(CCharEntity* PChar, KeyItem keyItemId)
+void unseenKeyItem(CCharEntity* PChar, xi::KeyItem keyItemId)
 {
     const auto keyItemTable = static_cast<uint16_t>(keyItemId) / 512;
     const auto keyItemIndex = static_cast<uint16_t>(keyItemId) % 512;
@@ -4023,7 +4023,7 @@ void unseenKeyItem(CCharEntity* PChar, KeyItem keyItemId)
     PChar->keys.tables[keyItemTable].seenList[keyItemIndex] = false;
 }
 
-void addKeyItem(CCharEntity* PChar, KeyItem keyItemId)
+void addKeyItem(CCharEntity* PChar, xi::KeyItem keyItemId)
 {
     const auto keyItemTable = static_cast<uint16_t>(keyItemId) / 512;
     const auto keyItemIndex = static_cast<uint16_t>(keyItemId) % 512;
@@ -4037,7 +4037,7 @@ void addKeyItem(CCharEntity* PChar, KeyItem keyItemId)
     PChar->keys.tables[keyItemTable].keyList[keyItemIndex] = true;
 }
 
-void delKeyItem(CCharEntity* PChar, KeyItem keyItemId)
+void delKeyItem(CCharEntity* PChar, xi::KeyItem keyItemId)
 {
     const auto keyItemTable = static_cast<uint16_t>(keyItemId) / 512;
     const auto keyItemIndex = static_cast<uint16_t>(keyItemId) % 512;
@@ -4723,7 +4723,7 @@ void DistributeCapacityPoints(CCharEntity* PChar, CMobEntity* PMob)
                 return;
             }
 
-            if (!hasKeyItem(PMember, KeyItem::JOB_BREAKER) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */ /* CUSTOM 75 MASTER LEVEL ELIGIBILITY */
+            if (!hasKeyItem(PMember, xi::KeyItem::JobBreaker) || (PMember->GetMLevel() != 75 && PMember->GetMLevel() < 99)) /* CUSTOM 75 & 99 CP ELIGIBILITY */
             {
                 // Do not grant Capacity points without Job Breaker or Level 99
                 return;
@@ -5021,7 +5021,7 @@ void DelExperiencePoints(CCharEntity* PChar, float retainPercent, uint16 forcedX
  *                                                                       *
  ************************************************************************/
 
-void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScripts, CCharEntity* PChar, CBaseEntity* PMob, uint32 exp, EMobDifficulty mobCheck, bool isexpchain)
+void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScripts, CCharEntity* PChar, CBaseEntity* PMob, uint32 exp, EMobDifficulty mobCheck, bool isexpchain, bool allowLimitPoints)
 {
     TracyZoneScoped;
 
@@ -5051,8 +5051,15 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
         onLimitMode = true;
     }
 
+    // EXP scrolls cannot grant limit points.
+    if (!allowLimitPoints)
+    {
+        onLimitMode = false;
+    }
+
     // exp added from raise shouldn't display a message. Don't need a message for zero exp either
-    if (!expFromRaise && exp > 0)
+    // EXP scrolls send the gain message in the item action.
+    if (!expFromRaise && exp > 0 && allowLimitPoints)
     {
         if (mobCheck >= EMobDifficulty::EvenMatch && isexpchain)
         {
@@ -5114,8 +5121,12 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
         // Should this user be awarded conquest points..
         if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Signet) && (region >= REGION_TYPE::RONFAURE && region <= REGION_TYPE::JEUNO))
         {
-            // Add influence for the players region..
+            // Add CP to the player.
             conquest::AddConquestPoints(PChar, exp);
+
+            // Add influence for the player's region.
+            // TODO: Chain exp should not affect influence.
+            conquest::GainInfluencePoints(PChar, exp / 20);
         }
 
         // Should this user be awarded imperial standing..

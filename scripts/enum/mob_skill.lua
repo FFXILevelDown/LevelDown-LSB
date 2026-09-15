@@ -443,6 +443,7 @@ xi.mobSkill =
     POWER_ATTACK_ARMED_1          =  667,
     KICK_BACK                     =  668,
     IMPLOSION                     =  669,
+    SHADOW_LORD_DEATH             =  670,
 
     UMBRA_SMASH                   =  671,
     GIGA_SLASH                    =  672,
@@ -1142,6 +1143,8 @@ xi.mobSkill =
     POLAR_BULWARK                 = 1831,
     BAROFIELD                     = 1832,
 
+    TREMBLING                     = 1834,
+    SERPENTINE_TAIL               = 1835,
     NERVE_GAS                     = 1836,
 
     SANDBLAST_2                   = 1841,
@@ -1209,6 +1212,7 @@ xi.mobSkill =
     WATER_SHOT                    = 2014,
     LIGHT_SHOT                    = 2015,
     DARK_SHOT                     = 2016,
+    FRAME_CHANGE_AUTOMATON        = 2018,
 
     -- HUNDRED_FISTS                 = 2020,
     ERASER_AUTOMATON              = 2021,

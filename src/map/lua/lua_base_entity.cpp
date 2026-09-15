@@ -9291,11 +9291,11 @@ void CLuaBaseEntity::completeAssault(const uint8 missionID) const
 /************************************************************************
  *  Function: addKeyItem()
  *  Purpose : Adds a key item to the player
- *  Example : player:addKeyItem(xi.ki.MOGHANCEMENT_FIRE)
+ *  Example : player:addKeyItem(xi.keyItem.MOGHANCEMENT_FIRE)
  *  Notes   :
  ************************************************************************/
 
-void CLuaBaseEntity::addKeyItem(const KeyItem keyItemID) const
+void CLuaBaseEntity::addKeyItem(const xi::KeyItem keyItemID) const
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -9326,11 +9326,11 @@ void CLuaBaseEntity::addKeyItem(const KeyItem keyItemID) const
 /************************************************************************
  *  Function: hasKeyItem()
  *  Purpose : Returns true if a player has a specified key item
- *  Example : if (player:hasKeyItem(xi.ki.TORN_PAPER)) then
+ *  Example : if (player:hasKeyItem(xi.keyItem.TORN_PAPER)) then
  *  Notes   :
  ************************************************************************/
 
-auto CLuaBaseEntity::hasKeyItem(const KeyItem keyItemID) const -> bool
+auto CLuaBaseEntity::hasKeyItem(const xi::KeyItem keyItemID) const -> bool
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -9344,11 +9344,11 @@ auto CLuaBaseEntity::hasKeyItem(const KeyItem keyItemID) const -> bool
 /************************************************************************
  *  Function: delKeyItem()
  *  Purpose : Deletes a key item from the player
- *  Example : player:delKeyItem(xi.ki.SUNBEAM_FRAGMENT)
+ *  Example : player:delKeyItem(xi.keyItem.SUNBEAM_FRAGMENT)
  *  Notes   :
  ************************************************************************/
 
-void CLuaBaseEntity::delKeyItem(const KeyItem keyItemID) const
+void CLuaBaseEntity::delKeyItem(const xi::KeyItem keyItemID) const
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -9374,11 +9374,11 @@ void CLuaBaseEntity::delKeyItem(const KeyItem keyItemID) const
 /************************************************************************
  *  Function: seenKeyItem()
  *  Purpose : Returns true if a player has peeked at the key item
- *  Example : if player:seenKeyItem(xi.ki.LETTER_FROM_ROH_LATTEH) then
+ *  Example : if player:seenKeyItem(xi.keyItem.LETTER_FROM_ROH_LATTEH) then
  *  Notes   :
  ************************************************************************/
 
-bool CLuaBaseEntity::seenKeyItem(const KeyItem keyItemID) const
+bool CLuaBaseEntity::seenKeyItem(const xi::KeyItem keyItemID) const
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -9392,11 +9392,11 @@ bool CLuaBaseEntity::seenKeyItem(const KeyItem keyItemID) const
 /************************************************************************
  *  Function: unseenKeyItem()
  *  Purpose : Restores a key item to unseen status
- *  Example : player:unseenKeyItem(xi.ki.MOGHANCEMENT_FIRE)
+ *  Example : player:unseenKeyItem(xi.keyItem.MOGHANCEMENT_FIRE)
  *  Notes   : Some things just can't be unseen... (not implemented though)
  ************************************************************************/
 
-void CLuaBaseEntity::unseenKeyItem(const KeyItem keyItemID) const
+void CLuaBaseEntity::unseenKeyItem(const xi::KeyItem keyItemID) const
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -9422,11 +9422,12 @@ void CLuaBaseEntity::unseenKeyItem(const KeyItem keyItemID) const
 /************************************************************************
  *  Function: addExp()
  *  Purpose : Adds a set amount of XP to the player
- *  Example : player:addExp(math.randomInt(500, 1000))
- *  Notes   : Used in Dynamis Pages, etc
+ *  Example : player:addExp(math.randomInt(500, 1000), false)
+ *  Notes   : allowLimitPoints defaults to true. Set false for EXP only.
+ *            The script must send the gain message when false.
  ************************************************************************/
 
-void CLuaBaseEntity::addExp(uint32 exp)
+void CLuaBaseEntity::addExp(uint32 exp, const sol::object& allowLimitPointsObj)
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
     {
@@ -9434,9 +9435,10 @@ void CLuaBaseEntity::addExp(uint32 exp)
         return;
     }
 
-    auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
+    auto*      PChar            = static_cast<CCharEntity*>(m_PBaseEntity);
+    const bool allowLimitPoints = allowLimitPointsObj.is<bool>() ? allowLimitPointsObj.as<bool>() : true;
 
-    charutils::AddExperiencePoints(false, false, true, PChar, m_PBaseEntity, exp);
+    charutils::AddExperiencePoints(false, false, true, PChar, m_PBaseEntity, exp, EMobDifficulty::TooWeak, false, allowLimitPoints);
 }
 
 /************************************************************************
@@ -12459,6 +12461,23 @@ uint16 CLuaBaseEntity::copyConfrontationEffect(uint16 targetID)
 auto CLuaBaseEntity::getBattlefield() const -> CBattlefield*
 {
     return m_PBaseEntity->PBattlefield;
+}
+
+/************************************************************************
+ *  Function: getRegisteredBattlefield()
+ *  Purpose : Returns the battlefield the player is registered for, whether or not they still hold clearance
+ *  Example : local battlefield = player:getRegisteredBattlefield()
+ *  Notes   : Tells a member whose fight locked apart from someone who never had clearance
+ ************************************************************************/
+
+auto CLuaBaseEntity::getRegisteredBattlefield() const -> CBattlefield*
+{
+    if (m_PBaseEntity->objtype != TYPE_PC || m_PBaseEntity->loc.zone == nullptr || m_PBaseEntity->loc.zone->battlefieldHandler() == nullptr)
+    {
+        return nullptr;
+    }
+
+    return m_PBaseEntity->loc.zone->battlefieldHandler()->GetRegisteredBattlefield(static_cast<CCharEntity*>(m_PBaseEntity));
 }
 
 /************************************************************************
@@ -21048,6 +21067,7 @@ void CLuaBaseEntity::Register()
 
     // Battlefields
     SOL_REGISTER("getBattlefield", CLuaBaseEntity::getBattlefield);
+    SOL_REGISTER("getRegisteredBattlefield", CLuaBaseEntity::getRegisteredBattlefield);
     SOL_REGISTER("getBattlefieldID", CLuaBaseEntity::getBattlefieldID);
     SOL_REGISTER("registerBattlefield", CLuaBaseEntity::registerBattlefield);
     SOL_REGISTER("battlefieldAtCapacity", CLuaBaseEntity::battlefieldAtCapacity);

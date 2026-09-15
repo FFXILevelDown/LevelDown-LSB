@@ -11,7 +11,7 @@ local content = BattlefieldQuest:new({
     canLoseExp    = false,
     allowTrusts   = true,
     maxPlayers    = 6,
-    levelCap      = 99,
+    levelCap      = xi.settings.main.MAX_LEVEL,
     timeLimit     = utils.minutes(10),
     index         = 21,
     entryNpc      = 'BC_Entrance',
@@ -22,14 +22,14 @@ local content = BattlefieldQuest:new({
 
     requiredKeyItems =
     {
-        xi.ki.SOUL_GEM_CLASP,
+        xi.keyItem.SOUL_GEM_CLASP,
         onlyInitiator = true,
         message =
         {
             waughroonID.text.SOUL_GEM_REACTS,
             {
-                xi.ki.SOUL_GEM_CLASP,
-                xi.ki.SOUL_GEM,
+                xi.keyItem.SOUL_GEM_CLASP,
+                xi.keyItem.SOUL_GEM,
             }
         },
         deleteMessage = waughroonID.text.LOST_KEYITEM,

@@ -13,7 +13,7 @@ local mission = Mission:new(xi.mission.log_id.TOAU, xi.mission.id.toau.LOST_KING
 
 mission.reward =
 {
-    keyItem     = xi.ki.EPHRAMADIAN_GOLD_COIN,
+    keyItem     = xi.keyItem.EPHRAMADIAN_GOLD_COIN,
     nextMission = { xi.mission.log_id.TOAU, xi.mission.id.toau.THE_DOLPHIN_CREST },
 }
 
@@ -43,9 +43,9 @@ mission.sections =
 
                     if
                         missionStatus == 0 and
-                        player:hasKeyItem(xi.ki.VIAL_OF_SPECTRAL_SCENT)
+                        player:hasKeyItem(xi.keyItem.VIAL_OF_SPECTRAL_SCENT)
                     then
-                        return mission:progressEvent(8)
+                        return mission:progressCutscene(8)
                     elseif
                         missionStatus == 1 and
                         not GetMobByID(caedarvaID.mob.JAZARAAT):isSpawned()
@@ -54,7 +54,7 @@ mission.sections =
                         -- There is no message returned here in captures
                         return mission:noAction()
                     elseif missionStatus == 2 then
-                        return mission:progressEvent(9)
+                        return mission:progressCutscene(9)
                     end
                 end,
             },
@@ -72,10 +72,10 @@ mission.sections =
             {
                 [8] = function(player, csid, option, npc)
                     player:setMissionStatus(mission.areaId, 1)
-                    player:delKeyItem(xi.ki.VIAL_OF_SPECTRAL_SCENT)
                 end,
 
                 [9] = function(player, csid, option, npc)
+                    player:delKeyItem(xi.keyItem.VIAL_OF_SPECTRAL_SCENT)
                     mission:complete(player)
                 end,
             },
@@ -97,8 +97,8 @@ mission.sections =
             ['Jazaraats_Headstone'] =
             {
                 onTrigger = function(player, npc)
-                    if not player:hasKeyItem(xi.ki.EPHRAMADIAN_GOLD_COIN) then
-                        return mission:keyItem(xi.ki.EPHRAMADIAN_GOLD_COIN)
+                    if not player:hasKeyItem(xi.keyItem.EPHRAMADIAN_GOLD_COIN) then
+                        return mission:keyItem(xi.keyItem.EPHRAMADIAN_GOLD_COIN)
                     else
                         return mission:messageSpecial(caedarvaID.text.JAZARAATS_HEADSTONE)
                     end

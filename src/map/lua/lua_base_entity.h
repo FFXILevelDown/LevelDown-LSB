@@ -462,14 +462,14 @@ public:
     bool  hasCompletedAssault(uint8 missionID);
     void  completeAssault(uint8 missionID) const;
 
-    void addKeyItem(KeyItem keyItemID) const;
-    auto hasKeyItem(KeyItem keyItemID) const -> bool;
-    void delKeyItem(KeyItem keyItemID) const;
-    auto seenKeyItem(KeyItem keyItemID) const -> bool;
-    void unseenKeyItem(KeyItem keyItemID) const; // Attempt to remove the keyitem from the seen key item collection, only works on logout
+    void addKeyItem(xi::KeyItem keyItemID) const;
+    auto hasKeyItem(xi::KeyItem keyItemID) const -> bool;
+    void delKeyItem(xi::KeyItem keyItemID) const;
+    auto seenKeyItem(xi::KeyItem keyItemID) const -> bool;
+    void unseenKeyItem(xi::KeyItem keyItemID) const; // Attempt to remove the keyitem from the seen key item collection, only works on logout
 
     // Player Points
-    void  addExp(uint32 exp);
+    void  addExp(uint32 exp, const sol::object& allowLimitPointsObj);
     void  addCapacityPoints(uint32 capacity);
     void  delExp(uint32 exp);
     int32 getMerit(uint16 merit);
@@ -618,7 +618,8 @@ public:
     uint16 copyConfrontationEffect(uint16 targetID); // copy confrontation effect, param = targetEntity:getTargID()
 
     // Battlefields
-    auto getBattlefield() const -> CBattlefield*;                                                                                                // returns CBattlefield* or nullptr if not available
+    auto getBattlefield() const -> CBattlefield*;
+    auto getRegisteredBattlefield() const -> CBattlefield*;                                                                                      // returns CBattlefield* or nullptr if not available
     auto getBattlefieldID() const -> int32;                                                                                                      // returns entity->PBattlefield->GetID() or -1 if not available
     auto registerBattlefield(const sol::object& arg0, const sol::object& arg1, const sol::object& arg2, const sol::object& arg3) const -> uint8; // attempt to register a battlefield, returns BATTLEFIELD_RETURNCODE
     auto battlefieldAtCapacity(int battlefieldID) const -> bool;                                                                                 // returns 1 if this battlefield is full

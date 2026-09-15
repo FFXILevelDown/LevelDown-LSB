@@ -21,7 +21,7 @@ local content = Battlefield:new({
     area             = 1,
     entryNpc         = '_4z0',
     exitNpcs         = { '_4z1', '_4z2', '_4z3' },
-    requiredKeyItems = { xi.ki.STELLAR_FULCRUM_PHANTOM_GEM, keep = false}, 
+    requiredKeyItems = { xi.keyItem.STELLAR_FULCRUM_PHANTOM_GEM, keep = false}, 
 })
 
 -- Database drift protection guards

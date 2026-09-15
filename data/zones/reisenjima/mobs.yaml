@@ -22,7 +22,7 @@ templates:
 
   Albumen:
     id:            5605
-    species:       mandragora
+    species:       adenium
     skill_list_id: 178
     attributes:
       combat:
@@ -260,7 +260,7 @@ templates:
 
   Ascended_Gefyrst:
     id:            5576
-    species:       ice_elemental
+    species:       gefyrst
     type:          [notorious]
     spell_list_id: 3
     skill_list_id: 103
@@ -308,7 +308,7 @@ templates:
 
   Ascended_Lucani:
     id:            5566
-    species:       ladybug
+    species:       lucani
     type:          [notorious]
     skill_list_id: 170
     attributes:
@@ -397,7 +397,7 @@ templates:
 
   Ascended_Mosquito:
     id:            5562
-    species:       yellow_bee
+    species:       mosquito
     type:          [notorious]
     skill_list_id: 48
     attributes:
@@ -490,7 +490,7 @@ templates:
 
   Ascended_Porxie:
     id:            5567
-    species:       pixie
+    species:       porxie
     type:          [notorious]
     skill_list_id: 195
     attributes:
@@ -537,7 +537,7 @@ templates:
 
   Ascended_Ungeweder:
     id:            5577
-    species:       thunder_elemental
+    species:       ungeweder
     type:          [notorious]
     spell_list_id: 3
     skill_list_id: 105
@@ -744,7 +744,7 @@ templates:
 
   Dazzling_Dolores:
     id:            5582
-    species:       morbol
+    species:       purbol
     type:          [notorious]
     skill_list_id: 186
     attributes:
@@ -766,7 +766,7 @@ templates:
 
   Devouring_Mosquito:
     id:            5369
-    species:       yellow_bee
+    species:       mosquito
     skill_list_id: 48
     attributes:
       combat:
@@ -882,7 +882,7 @@ templates:
 
   Heavenly_Veela:
     id:            5578
-    species:       pixie
+    species:       veela
     type:          [notorious]
     skill_list_id: 195
     attributes:
@@ -1010,7 +1010,7 @@ templates:
 
   Lentic_Toad:
     id:            5373
-    species:       green_poroggo
+    species:       toad
     skill_list_id: 196
     attributes:
       combat:
@@ -1031,7 +1031,7 @@ templates:
   Lentic_Toad_fished:
     id:            6943
     display_name:  Lentic_Toad
-    species:       green_poroggo
+    species:       toad
     type:          [fished]
     skill_list_id: 196
     attributes:
@@ -1052,7 +1052,7 @@ templates:
 
   Lucani:
     id:            5386
-    species:       ladybug
+    species:       lucani
     skill_list_id: 170
     attributes:
       combat:
@@ -1146,7 +1146,7 @@ templates:
 
   Neak:
     id:            6794
-    species:       dragon
+    species:       purple_dragon
     type:          [notorious]
     skill_list_id: 87
     attributes:
@@ -1315,7 +1315,7 @@ templates:
 
   Perfervid_Naraka:
     id:            5378
-    species:       naraka
+    species:       white_naraka
     skill_list_id: 227
     attributes:
       combat:
@@ -1337,7 +1337,7 @@ templates:
 
   Porxie:
     id:            5379
-    species:       pixie
+    species:       porxie
     skill_list_id: 195
     attributes:
       combat:
@@ -1469,7 +1469,7 @@ templates:
 
   Sang_Buaya:
     id:            5587
-    species:       bugard
+    species:       abyssobugard
     type:          [notorious]
     skill_list_id: 58
     attributes:
@@ -1641,7 +1641,7 @@ templates:
 
   Selkit:
     id:            5586
-    species:       scorpion
+    species:       scolopendrid
     type:          [notorious]
     skill_list_id: 217
     attributes:
@@ -1753,7 +1753,7 @@ templates:
 
   Teles:
     id:            5597
-    species:       harpeia
+    species:       siren
     type:          [notorious]
     spell_list_id: 21
     skill_list_id: 471
@@ -1911,7 +1911,7 @@ templates:
 
   Wanton_Danaid:
     id:            5388
-    species:       pixie
+    species:       danaid
     spell_list_id: 20
     skill_list_id: 195
     attributes:

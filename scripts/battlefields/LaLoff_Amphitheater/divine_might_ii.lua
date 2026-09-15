@@ -20,7 +20,7 @@ local content = Battlefield:new({
     index            = 11,
     entryNpcs        = { 'qm1_1', 'qm1_2', 'qm1_3', 'qm1_4', 'qm1_5' },
     exitNpc          = 'qm2',
-    requiredKeyItems = { xi.ki.P_PERPETRATOR_PHANTOM_GEM, keep = false  },
+    requiredKeyItems = { xi.keyItem.P_PERPETRATOR_PHANTOM_GEM, keep = false  },
 })
 
 -- The 5 bosses are the dedicated _HTBF spawns (arena-A copy of each), the

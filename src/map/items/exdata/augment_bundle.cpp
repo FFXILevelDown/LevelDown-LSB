@@ -36,8 +36,13 @@ void Exdata::AugmentBundle::toTable(sol::table& table) const
 
 void Exdata::AugmentBundle::fromTable(const sol::table& data)
 {
+    /* CUSTOM BUNDLED AUGMENT SUBKIND FIX */
     this->AugmentKind    = AugmentKindFlags::Bundled;
-    this->AugmentSubKind = AugmentSubKindFlags::Standard | AugmentSubKindFlags::Evolith;
+    // SubKind format bits only apply to Kind::HasAugments; Bundled is its own
+    // Kind and doesn't use this byte, so leave it unset rather than OR-ing in
+    // unrelated format flags (was Standard|Evolith, which caused inconsistent
+    // client-side decoding of AugmentIndex depending on the viewer).
+    this->AugmentSubKind = AugmentSubKindFlags{};
     this->Type           = Exdata::get_or<uint32_t>(data, "type", this->Type);
     this->Rank           = Exdata::get_or<uint32_t>(data, "rank", this->Rank);
     this->AccumulatedRP  = Exdata::get_or<uint32_t>(data, "accumulatedRP", this->AccumulatedRP);
