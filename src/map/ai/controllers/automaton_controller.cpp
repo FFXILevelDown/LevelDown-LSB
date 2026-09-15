@@ -1464,14 +1464,18 @@ auto CAutomatonController::TryEnhance() -> bool
         // clang-format on
     }
 
-    // No info on how this spell worked
-    if ((members - protectcount) >= 4)
+    /* CUSTOM AUTOMATON PROTECTRA/SHELLRA UNDERFLOW BUGFIX */
+    // members counts party PCs only, while protectcount / shellcount also pick up
+    // the master and any in-range trusts, so they can exceed members and underflow
+    // this unsigned subtraction -> endless Protectra / Shellra V for a trust-backed
+    // solo. Only AoE on a genuine deficit; the single-target PProtectTarget /
+    // PShellTarget path below still tops up whoever is actually missing the buff.
+    if (members > protectcount && (members - protectcount) >= 4)
     {
         Cast(PAutomaton->entityId(), SpellID::Protectra_V);
     }
 
-    // No info on how this spell worked
-    if ((members - shellcount) >= 4)
+    if (members > shellcount && (members - shellcount) >= 4)
     {
         Cast(PAutomaton->entityId(), SpellID::Shellra_V);
     }
