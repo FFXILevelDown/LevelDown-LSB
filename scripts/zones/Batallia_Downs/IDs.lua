@@ -63,49 +63,49 @@ zones[xi.zone.BATALLIA_DOWNS] =
         RAPTOR_SPEEDS_OFF             = 13015, -- The raptor speeds off into the sunset...
     },
     mob =
+    {
+        AHTU                 = GetFirstID('Ahtu'),
+        BADSHAH_OFFSET       = GetFirstID('Badshah'),
+        EYEGOURGER           = GetFirstID('Eyegouger'),
+        GOBLIN_BOUNTY_HUNTER = GetFirstID('Goblin_Bounty_Hunter'),
+        PRANKSTER_MAVERIX    = GetFirstID('Prankster_Maverix'),
+        STURMTIGER           = GetFirstID('Sturmtiger'),
+        SUPARNA              = GetFirstID('Suparna'),
+        SUPARNA_FLEDGLING    = GetFirstID('Suparna_Fledgling'),
+        TOTTERING_TOBY       = GetFirstID('Tottering_Toby'),
+        VEGNIX_GREENTHUMB    = GetFirstID('Vegnix_Greenthumb'),
+
+        VOIDWALKER =
         {
-            AHTU              = GetFirstID('Ahtu'),
-            BADSHAH_OFFSET    = GetFirstID('Badshah'),
-            PRANKSTER_MAVERIX = GetFirstID('Prankster_Maverix'),
-            STURMTIGER        = GetFirstID('Sturmtiger'),
-            SUPARNA           = GetFirstID('Suparna'),
-            SUPARNA_FLEDGLING = GetFirstID('Suparna_Fledgling'),
-            TOTTERING_TOBY    = GetFirstID('Tottering_Toby'),
-            VEGNIX_GREENTHUMB = GetFirstID('Vegnix_Greenthumb'),
-            VOIDWATCH         = GetTableOfIDs('Cherufe'),
-			EYEGOUGER         = GetFirstID('Eyegouger'),
-
-            VOIDWALKER =
+            [xi.keyItem.CLEAR_ABYSSITE] =
             {
-                [xi.keyItem.CLEAR_ABYSSITE] =
-                {
-                    17207722,  -- Lacus
-                    17207721,  -- Thunor
-                    17207720, -- Beorht
-                    17207719, -- Pruina
-                    17207718,  -- Puretos
-                    17207717,  -- Eorthe
-                    17207716, -- Deorc
-                    17207715, -- Aither
-                },
+                17207722,  -- Lacus
+                17207721,  -- Thunor
+                17207720, -- Beorht
+                17207719, -- Pruina
+                17207718,  -- Puretos
+                17207717,  -- Eorthe
+                17207716, -- Deorc
+                17207715, -- Aither
+            },
 
-                [xi.keyItem.COLORFUL_ABYSSITE] =
-                {
-                    17207714, -- Skuld
-                    17207713  -- Urd
-                },
+            [xi.keyItem.COLORFUL_ABYSSITE] =
+            {
+                17207714, -- Skuld
+                17207713  -- Urd
+            },
 
-                [xi.keyItem.YELLOW_ABYSSITE] =
-                {
-                    17207712  -- Verthandi
-                },
+            [xi.keyItem.YELLOW_ABYSSITE] =
+            {
+                17207712  -- Verthandi
+            },
 
-                [xi.keyItem.BLACK_ABYSSITE] =
-                {
-                    17207711  -- Yilbegan
-                }
+            [xi.keyItem.BLACK_ABYSSITE] =
+            {
+                17207711  -- Yilbegan
             }
-        },
+        }
+    },
 
     npc =
     {
