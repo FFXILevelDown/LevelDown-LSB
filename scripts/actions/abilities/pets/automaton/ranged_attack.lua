@@ -15,7 +15,7 @@ abilityObject.onAutomatonAbility = function(target, automaton, skill, master, ac
 
     params.baseDamage       = xi.automaton.getRangedBaseDamage(automaton)
     params.numHits          = 1
-    params.fTP              = { 1.0, 1.0, 1.0 }
+    params.fTP               = { 1.0, 1.0, 1.0 }
     params.str_wSC          = 0.50
     params.dex_wSC          = 0.25
     params.attackType       = xi.attackType.RANGED
@@ -31,9 +31,19 @@ abilityObject.onAutomatonAbility = function(target, automaton, skill, master, ac
         doubleShotRate > 0 and
         math.randomInt(1, 100) <= doubleShotRate
     then
-        -- For players these shots are seperate, like double attack, but for automatons, they are added together.
+        -- For players these shots are separate, like double attack, but for automatons, they are added together.
         params.numHits = 2
         params.shadowBehavior = xi.mobskills.shadowBehavior.NUMSHADOWS_2
+    end
+
+    -- Ensure resolveMissMessage exists in mobskills globally before calling mobRangedMove
+    if xi.mobskills and xi.mobskills.resolveMissMessage == nil then
+        xi.mobskills.resolveMissMessage = function(mob, targetObj, skillObj, actionObj, hitmatrix)
+            if hitmatrix == xi.mobskills.shadowBehavior.SHADOW_ABSORB then
+                return xi.msg.basic.SHADOW_ABSORB
+            end
+            return xi.msg.basic.SKILL_MISS
+        end
     end
 
     local info = xi.mobskills.mobRangedMove(automaton, target, skill, action, params)
