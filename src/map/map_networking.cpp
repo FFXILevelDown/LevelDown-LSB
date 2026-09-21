@@ -268,6 +268,17 @@ int32 MapNetworking::recv_parse(uint8* buff, size_t* buffsize, MapSession* PSess
 
         if (PSession->charID != 0 && PSession->charID != packetCharID)
         {
+            /* CUSTOM PORT SWAP FIX */
+            // Two clients on one machine or router can swap source ports when they zone at the same moment.
+            // If both sessions are waiting to zone in, swap them and let the client retry its 0x00A.
+            auto* otherSession = mapSessions_.getSessionByCharId(packetCharID);
+            if (otherSession != nullptr && otherSession != PSession && otherSession->blowfish.status == BLOWFISH_PENDING_ZONE && PSession->blowfish.status == BLOWFISH_PENDING_ZONE)
+            {
+                ShowWarningFmt("recv_parse: 0x00A from {} carries charid {} but that IPP was bound to charid {}; client source ports swapped while zoning. Swapping sessions, the clients will retry.", ipp.toString(), packetCharID, PSession->charID);
+                mapSessions_.rebindSession(otherSession, ipp);
+                return -1;
+            }
+
             return -1;
         }
 

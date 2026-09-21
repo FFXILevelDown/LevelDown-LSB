@@ -1173,7 +1173,6 @@ templates:
         hitbox:        20
       behaviors:
         aggressive: true
-        links:      true
       spawn:
         respawn: 7200
       stats:

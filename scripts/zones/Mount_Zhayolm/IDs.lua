@@ -49,19 +49,17 @@ zones[xi.zone.MOUNT_ZHAYOLM] =
         UNITY_WANTED_BATTLE_INTERACT  = 8811, -- Those who have accepted % must pay # Unity accolades to participate. The content for this Wanted battle is #. [Ready to begin?/You do not have the appropriate object set, so your rewards will be limited.]
     },
     mob =
-        {
-            APKALLU_NPC           = GetFirstID('Zhayolm_Apkallu'),
-            WAMOURA_OFFSET        = GetTableOfIDs('Wamoura'),
-            ENERGETIC_ERUCA       = GetFirstID('Energetic_Eruca'),
-            IGNAMOTH              = GetFirstID('Ignamoth'),
-            CERBERUS              = GetFirstID('Cerberus'),
-            BRASS_BORER           = GetFirstID('Brass_Borer'),
-            CLARET                = GetFirstID('Claret'),
-            ANANTABOGA            = GetFirstID('Anantaboga'),
-            KHROMASOUL_BHURBORLOR = GetFirstID('Khromasoul_Bhurborlor'),
-            SARAMEYA              = GetFirstID('Sarameya'),
-            VOIDWATCH             = GetTableOfIDs('Vanasarvik'),
-        },
+    {
+        APKALLU_NPC           = GetFirstID('Zhayolm_Apkallu'),
+        ENERGETIC_ERUCA       = GetFirstID('Energetic_Eruca'),
+        IGNAMOTH              = GetFirstID('Ignamoth'),
+        CERBERUS              = GetFirstID('Cerberus'),
+        BRASS_BORER           = GetFirstID('Brass_Borer'),
+        CLARET                = GetFirstID('Claret'),
+        ANANTABOGA            = GetFirstID('Anantaboga'),
+        KHROMASOUL_BHURBORLOR = GetFirstID('Khromasoul_Bhurborlor'),
+        SARAMEYA              = GetFirstID('Sarameya'),
+    },
     npc =
     {
         HOOFPRINT = GetFirstID('Warhorse_Hoofprint'),
