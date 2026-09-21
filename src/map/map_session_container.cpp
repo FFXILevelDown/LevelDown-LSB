@@ -380,6 +380,46 @@ void MapSessionContainer::destroyPendingSession(MapSession* map_session_data)
     pending_sessions_.erase(map_session_data->charID);
 }
 
+/* CUSTOM SESSION REBIND */
+auto MapSessionContainer::rebindSession(MapSession* session, const IPP& newIpp) -> bool
+{
+    TracyZoneScoped;
+
+    if (session == nullptr)
+    {
+        return false;
+    }
+
+    const auto oldIpp = session->client_ipp;
+    if (oldIpp == newIpp)
+    {
+        return true;
+    }
+
+    const auto oldIt = sessions_.find(oldIpp);
+    if (oldIt == sessions_.end() || oldIt->second.get() != session)
+    {
+        return false;
+    }
+
+    auto moving = std::move(oldIt->second);
+    sessions_.erase(oldIt);
+
+    // If another session already sits on the new IPP, it takes over our old IPP (a swap)
+    if (const auto newIt = sessions_.find(newIpp); newIt != sessions_.end())
+    {
+        auto displaced        = std::move(newIt->second);
+        displaced->client_ipp = oldIpp;
+        sessions_.erase(newIt);
+        sessions_[oldIpp] = std::move(displaced);
+    }
+
+    moving->client_ipp = newIpp;
+    sessions_[newIpp]  = std::move(moving);
+
+    return true;
+}
+
 void MapSessionContainer::destroyPendingSession(uint32 charId)
 {
     TracyZoneScoped;

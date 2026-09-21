@@ -52,6 +52,10 @@ public:
     void destroyPendingSession(MapSession* map_session_data);
     void destroyPendingSession(uint32 charId);
 
+    /* CUSTOM SESSION REBIND */
+    // Moves a confirmed session to a new client IPP. If another session already sits on that IPP, the two swap.
+    auto rebindSession(MapSession* session, const IPP& newIpp) -> bool;
+
 private:
     Scheduler&                                    scheduler_;
     std::map<IPP, std::unique_ptr<MapSession>>    sessions_;         // Confirmed sessions mapped by IP
