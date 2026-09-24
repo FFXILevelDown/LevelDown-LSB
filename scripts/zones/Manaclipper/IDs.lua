@@ -24,9 +24,14 @@ zones[xi.zone.MANACLIPPER] =
         KHOTS_CHALAHKO_OFFSET         = 7417, -- Ahhh... Isn't it grrreat out here on the open sea!?
     },
     mob =
-        {
-            ZOREDONITE = GetFirstID('Zoredonite'),
-        },
+    {
+        CUTTER            = GetFirstID('Cutter'),
+        FATTY_PUGIL       = GetFirstID('Fatty_Pugil'),
+        URAGNITE          = GetTableOfIDs('Uragnite'),
+        CLOT              = GetTableOfIDs('Clot'),
+        COLOSSAL_CALAMARI = GetFirstID('Colossal_Calamari'),
+        ZOREDONITE        = GetFirstID('Zoredonite'),
+    },
     npc =
     {
     },
