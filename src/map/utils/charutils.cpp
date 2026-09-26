@@ -69,6 +69,7 @@
 #include "packets/s2c/0x062_clistatus2.h"
 #include "packets/s2c/0x0ac_command_data.h"
 #include "packets/s2c/0x0ad_dungeon.h"
+#include "packets/s2c/0x0b4_config.h"
 #include "packets/s2c/0x0e0_group_comlink.h"
 #include "packets/s2c/0x119_abil_recast.h"
 
@@ -6559,6 +6560,12 @@ void ReloadParty(CCharEntity* PChar)
             }
 
             PParty->PushMember(PChar);
+
+            // Joins accepted on another process land here instead of CParty::AddMember
+            if (PChar->isSeekingParty())
+            {
+                RemoveSeekFlag(PChar);
+            }
         }
 
         CBattleEntity* PSyncTarget = PChar->PParty->GetSyncTarget();
@@ -6636,6 +6643,19 @@ void ReloadParty(CCharEntity* PChar)
             destroy(PChar->PParty);
         }
     }
+}
+
+void RemoveSeekFlag(CCharEntity* PChar)
+{
+    PChar->playerConfig.InviteFlg = false;
+    PChar->updatemask |= UPDATE_HP;
+
+    SaveCharStats(PChar);
+    SavePlayerSettings(PChar);
+
+    PChar->pushPacket<GP_SERV_COMMAND_CONFIG>(PChar);
+    PChar->pushPacket<CCharStatusPacket>(PChar);
+    PChar->pushPacket<CCharSyncPacket>(PChar);
 }
 
 bool IsAidBlocked(CCharEntity* PInitiator, CCharEntity* PTarget)
