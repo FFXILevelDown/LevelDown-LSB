@@ -1455,6 +1455,16 @@ bool CParty::HasTrusts()
     return false;
 }
 
+void CParty::MarkFormedByTrusts()
+{
+    m_FormedByTrusts = true;
+}
+
+bool CParty::IsFormedByTrusts() const
+{
+    return m_FormedByTrusts;
+}
+
 void CParty::RefreshFlags(std::vector<partyInfo_t>& info)
 {
     // Clear pointers in case they no longer exist on this instance

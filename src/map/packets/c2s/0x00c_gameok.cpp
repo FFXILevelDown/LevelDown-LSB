@@ -82,11 +82,15 @@ void GP_CLI_COMMAND_GAMEOK::process(MapSession* PSession, CCharEntity* PChar) co
     PChar->pushPacket<GP_SERV_COMMAND_DUNGEON>(PChar);
     PChar->pushPacket<GP_SERV_COMMAND_COMMAND_DATA>(PChar);
     PChar->pushPacket<CCharSyncPacket>(PChar);
-    PChar->pushPacket<GP_SERV_COMMAND_INSPECT_MESSAGE>(PChar);
+    PChar->pushPacket<GP_SERV_COMMAND_INSPECT_MESSAGE>(PChar, PChar);
     PChar->pushPacket<GP_SERV_COMMAND_MERIT>(PChar);
     charutils::SendInventory(PChar);
     blacklistutils::SendBlacklist(PChar);
     PChar->gmCallContainer().sendPendingResponse(PChar);
+
+    // Retail sends the party list only AFTER GAMEOK
+    // The copy pushed during zone-in can be lost while the client loads
+    PChar->ReloadPartyInc();
 
     // TODO: While in mog house; treasure pool is not created.
     if (PChar->PTreasurePool != nullptr)

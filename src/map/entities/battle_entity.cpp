@@ -58,6 +58,7 @@
 #include "utils/fishingutils.h"
 #include "utils/messageutils.h"
 #include "utils/mobutils.h"
+#include "utils/mountutils.h"
 #include "utils/petutils.h"
 #include "utils/puppetutils.h"
 #include "utils/zoneutils.h"
@@ -351,6 +352,12 @@ uint8 CBattleEntity::UpdateSpeed(bool run)
     if (isMounted())
     {
         outputSpeed = settings::get<uint8>("map.MOUNT_SPEED") / 2;
+
+        if (const auto* PChar = dynamic_cast<const CCharEntity*>(this); PChar && mountutils::isPersonalChocobo(PChar))
+        {
+            outputSpeed = mountutils::personalChocoboSpeed(PChar) / 2;
+        }
+
         outputSpeed *= 1.0f + static_cast<float>(getMod(xi::Mod::MOUNT_MOVE)) / 100.0f;
     }
     else if (baseSpeed == 0 || getMod(xi::Mod::MOVE_SPEED_OVERRIDE) < 0)
@@ -3969,6 +3976,8 @@ bool CBattleEntity::OnAttack(CAttackState& state, action_t& action)
     // End of attack loop
     /////////////////////////////////////////////////////////////////////////////////////////////
 
+    // Boost lasts the entire attack around
+    this->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Boost);
     this->StatusEffectContainer->DelStatusEffectsByFlag(xi::StatusEffectFlag::Detectable);
     this->processActionEffectFlags(action);
 
