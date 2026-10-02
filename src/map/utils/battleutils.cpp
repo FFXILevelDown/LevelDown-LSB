@@ -4932,6 +4932,25 @@ auto GetWeather(CBattleEntity* PEntity, bool ignoreScholar, xi::Weather zoneWeat
         {
             scholarSpell = xi::Weather::Gloom;
         }
+        /* CUSTOM STORM II WEATHER */
+        // Storm II = the double-strength version of the matching Storm I weather.
+        const std::pair<xi::StatusEffect, xi::Weather> stormII[] = {
+            { xi::StatusEffect::FirestormIi, xi::Weather::HotSpell },
+            { xi::StatusEffect::RainstormIi, xi::Weather::Rain },
+            { xi::StatusEffect::SandstormIi, xi::Weather::DustStorm },
+            { xi::StatusEffect::WindstormIi, xi::Weather::Wind },
+            { xi::StatusEffect::HailstormIi, xi::Weather::Snow },
+            { xi::StatusEffect::ThunderstormIi, xi::Weather::Thunder },
+            { xi::StatusEffect::AurorastormIi, xi::Weather::Auroras },
+            { xi::StatusEffect::VoidstormIi, xi::Weather::Gloom },
+        };
+        for (const auto& [effect, weather] : stormII)
+        {
+            if (PEntity->StatusEffectContainer->HasStatusEffect(effect))
+            {
+                scholarSpell = static_cast<xi::Weather>(static_cast<uint16_t>(weather) + 1);
+            }
+        }
     }
 
     if (ignoreScholar || scholarSpell == xi::Weather::None || static_cast<uint16_t>(zoneWeather) == (static_cast<uint16_t>(scholarSpell) + 1))
