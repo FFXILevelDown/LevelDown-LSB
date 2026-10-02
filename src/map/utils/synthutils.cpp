@@ -1054,6 +1054,13 @@ void doSynthSkillUp(CCharEntity* PChar)
             }
         }
 
+        /* CUSTOM CRAFT AMOUNT MULTIPLIER */
+        const int32 craftAmountMultiplier = settings::get<int32>("map.CRAFT_AMOUNT_MULTIPLIER");
+        if (craftAmountMultiplier > 1)
+        {
+            skillUpAmount = static_cast<uint8>(std::min<int32>(9, skillUpAmount + craftAmountMultiplier - 1 + xirand::GetRandomNumber(4)));
+        }
+
         // Cap skill gain amount if character hits the current cap
         skillUpAmount = static_cast<uint8>(std::min<uint16>(skillUpAmount, maxSkill - charSkill));
 

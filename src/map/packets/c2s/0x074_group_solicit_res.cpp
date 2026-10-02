@@ -40,6 +40,15 @@ auto GP_CLI_COMMAND_GROUP_SOLICIT_RES::validate(MapSession* PSession, const CCha
 
 void GP_CLI_COMMAND_GROUP_SOLICIT_RES::process(MapSession* PSession, CCharEntity* PChar) const
 {
+    if (CCharEntity* PInviter = PChar->InvitePending.entity.resolve<CCharEntity>())
+    {
+        if (PChar->getCharVar("[LevelRatio]Restriction") != PInviter->getCharVar("[LevelRatio]Restriction"))
+        {
+            PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);
+            PChar->InvitePending.clean();
+            return;
+        }
+    } /* CUSTOM BRACKET INVITE RESTRICTION */
     if (static_cast<GP_CLI_COMMAND_GROUP_SOLICIT_RES_RES>(this->Res) == GP_CLI_COMMAND_GROUP_SOLICIT_RES_RES::Accept && PChar->InvitePending.kind == PartyKind::Party && PChar->PParty != nullptr)
     {
         PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, 0, 0, MsgStd::CannotBeProcessed);
