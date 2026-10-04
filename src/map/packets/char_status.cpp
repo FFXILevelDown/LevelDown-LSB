@@ -25,11 +25,13 @@
 
 #include <cstring>
 
+#include "data/enums/zone_misc.h"
 #include "entities/char_entity.h"
 #include "job_points.h"
 #include "items/item_linkshell.h"
 #include "status_effect_container.h"
 #include "utils/mountutils.h"
+#include "zone.h"
 
 // https://github.com/atom0s/XiPackets/tree/main/world/server/0x0037
 
