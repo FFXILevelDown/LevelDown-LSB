@@ -40,6 +40,7 @@
 #include "entities/trust_entity.h" /* CUSTOM PASSIVE TRUST IGNORE */
 
 #include "packets/s2c/0x038_schedulor.h"
+#include "zone.h"
 
 #include <algorithm>
 
