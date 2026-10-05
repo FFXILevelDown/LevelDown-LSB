@@ -407,15 +407,23 @@ auto CZoneInstance::ZoneServer(timer::time_point tick) -> Task<void>
 {
     TracyZoneScopedN("CZoneInstance::ZoneServer");
 
+    /* CUSTOM INSTANCE ITER SAFE */
     std::vector<CInstance*> instancesToRemove;
-    for (const auto& PInstance : m_InstanceList)
+    std::vector<CInstance*> instanceSnapshot;
+    instanceSnapshot.reserve(m_InstanceList.size());
+    for (const auto& PInstanceOwned : m_InstanceList)
+    {
+        instanceSnapshot.push_back(PInstanceOwned.get());
+    }
+
+    for (auto* PInstance : instanceSnapshot)
     {
         co_await PInstance->ZoneServer(tick);
         PInstance->CheckTime(tick);
 
         if ((PInstance->Failed() || PInstance->Completed()) && PInstance->CharListEmpty())
         {
-            instancesToRemove.push_back(PInstance.get());
+            instancesToRemove.push_back(PInstance);
         }
     }
 

@@ -47,6 +47,7 @@ LevelDown Custom Modules/lua/items/
 LevelDown Custom Modules/lua/missions/
 LevelDown Custom Modules/lua/zones/
 LevelDown Custom Modules/lua/actions/
+LevelDown Custom Modules/lua/battlefields/
 LevelDown Custom Modules/lua/effects/
 LevelDown Custom Modules/lua/commands/
 LevelDown Custom Modules/cpp/
@@ -65,7 +66,7 @@ LevelDown Custom Modules/content/LD Void Watch NM
 LevelDown Custom Modules/content/LD Custom HTBF
 #LevelDown Custom Modules/content/LD Walk of Augments
 LevelDown Custom Modules/content/LD Legion
-LevelDown Custom Modules/content/LD Vagary
+#LevelDown Custom Modules/content/LD Vagary
 LevelDown Custom Modules/content/LD Instances/
-LevelDown Custom Modules/content/LD Aman Trove/
+#LevelDown Custom Modules/content/LD Aman Trove/
 custom/lua/test_npcs_in_gm_home.lua

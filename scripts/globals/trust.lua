@@ -321,8 +321,11 @@ xi.trust.canCast = function(caster, spell, notAllowedTrustIds)
         return -1
     end
 
-    -- Trusts cannot be summoned if you have hate
-    if caster:hasEnmity() then
+-- Trusts cannot be summoned if you have hate
+    -- Exception: LSB automatically puts all party members on instance/BCNM hate lists upon entry.
+    -- In instances/battlefields (like Ambuscade), require active engagement (isEngaged) instead of passive enmity.
+    local inInstanceOrBCNM = caster:getInstance() ~= nil or caster:getBattlefield() ~= nil
+    if caster:isEngaged() or (caster:hasEnmity() and not inInstanceOrBCNM) then
         caster:messageSystem(xi.msg.system.TRUST_NO_ENMITY)
         return -1
     end

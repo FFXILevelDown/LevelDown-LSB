@@ -18,6 +18,9 @@ local abysseaZones = set{
     xi.zone.ABYSSEA_ULEGUERAND,
     xi.zone.ABYSSEA_GRAUBERG,
     xi.zone.ABYSSEA_EMPYREAL_PARADOX,
+	xi.zone.MAQUETTE_ABDHALJS_LEGION_A,
+	xi.zone.MAQUETTE_ABDHALJS_LEGION_B,
+	
 }
 
 -- NOTE: This file calls the roe global init function at the end to populate default
@@ -9669,15 +9672,17 @@ xi.roe.records =
     { -- 10 RoE Objectives Complete (All for One requirement)
         flags = set { 'hidden' },
     },
-	
+
 	-----------------------------------
     -- Ambuscade & Ambuscade Primers
     -----------------------------------
-
+    [3758] = 3996,
+    [3759] = 3997, 
+	
     [3758] =
     { -- Ambuscade Primer Vol. 1 (Daily)
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 10,
+        goal = 1,
         reqs = { mobXP = true, zoneNot = abysseaZones},
         flags = set{ 'daily' },
         reward = { keyItem = xi.keyItem.AMBUSCADE_PRIMER_VOLUME_ONE, sparks = 100, exp = 100 },
@@ -9686,7 +9691,7 @@ xi.roe.records =
     [3759] =
     { -- Ambuscade Primer Vol. 2 (Daily)
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 10,
+        goal = 1,
         reqs = { mobXP = true, zoneNot = abysseaZones},
         flags = set{ 'daily' },
         reward = { keyItem = xi.keyItem.AMBUSCADE_PRIMER_VOLUME_TWO, sparks = 100, exp = 100 },
@@ -9695,7 +9700,7 @@ xi.roe.records =
     [3998] =
     { -- Ambuscade Primer Vol. 1 (Repeatable)
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 10,
+        goal = 1,
         reqs = { mobXP = true, zoneNot = abysseaZones},
         flags = set{ 'repeat' },
         reward = { keyItem = xi.keyItem.AMBUSCADE_PRIMER_VOLUME_ONE, sparks = 100, exp = 300 },
@@ -9704,14 +9709,22 @@ xi.roe.records =
     [3999] =
     { -- Ambuscade Primer Vol. 2 (Repeatable)
         trigger = xi.roeTrigger.DEFEAT_MOB,
-        goal = 10,
+        goal = 1,
         reqs = { mobXP = true, zoneNot = abysseaZones},
         flags = set{ 'repeat' },
         reward = { keyItem = xi.keyItem.AMBUSCADE_PRIMER_VOLUME_TWO, sparks = 100, exp = 300 },
     },
 
-    [3760] =
+[3760] =
     { -- Ambuscade (Weekly Clear)
+        check = function(self, player, params)
+            if player:getCharVar('Ambuscade_Weekly_Clear') == 1 then
+                player:setCharVar('Ambuscade_Weekly_Clear', 0) -- Consumes and resets the flag immediately
+                return true
+            end
+            return false
+        end,
+
         goal = 1,
         flags = set{ 'weekly' },
         reward = { sparks = 500, exp = 1000 },
@@ -9719,6 +9732,14 @@ xi.roe.records =
 
     [3995] =
     { -- Intense Ambuscade (Monthly Clear)
+        check = function(self, player, params)
+            if player:getCharVar('Ambuscade_Vol1_Cleared') == 1 then
+                player:setCharVar('Ambuscade_Vol1_Cleared', 0) -- Consumes and resets the flag immediately
+                return true
+            end
+            return false
+        end,
+
         goal = 1,
         flags = set{ 'unity' },
         reward = { sparks = 1000, exp = 2000 },
