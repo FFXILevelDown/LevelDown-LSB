@@ -101,21 +101,7 @@ void LoadState()
             }
         });
 
-    std::sort(
-        state.regions.begin(),
-        state.regions.end(),
-        [](const CampaignRegion& a, const CampaignRegion& b) -> bool
-        {
-            if (a.campaignId < b.campaignId)
-            {
-                return true;
-            }
-            if (a.campaignId > b.campaignId)
-            {
-                return false;
-            }
-            return false;
-        });
+    std::ranges::sort(state.regions, {}, &CampaignRegion::campaignId);
 
     CState = state;
 }
@@ -148,7 +134,7 @@ int32 GetAlliedNotes(CCharEntity* chr)
 
 void SetReconnaissance(CampaignArmy army, int8 amount)
 {
-    const auto current = std::min(std::max((int32)amount, 0), 10);
+    const auto current = std::clamp((int32)amount, 0, 10);
 
     const auto rset = db::preparedStmt("UPDATE `campaign_nation` SET `reconnaissance` = ? WHERE `id` = ?", current, (int32)army);
     if (!rset)
@@ -161,7 +147,7 @@ void SetReconnaissance(CampaignArmy army, int8 amount)
 
 void SetMorale(CampaignArmy army, int8 amount)
 {
-    const auto current = std::min(std::max((int32)amount, 0), 100);
+    const auto current = std::clamp((int32)amount, 0, 100);
 
     const auto rset = db::preparedStmt("UPDATE `campaign_nation` SET `morale` = ? WHERE `id` = ?", current, (int32)army);
     if (!rset)
@@ -174,7 +160,7 @@ void SetMorale(CampaignArmy army, int8 amount)
 
 void SetProsperity(CampaignArmy army, int8 amount)
 {
-    const auto current = std::min(std::max((int32)amount, 0), 100);
+    const auto current = std::clamp((int32)amount, 0, 100);
 
     const auto rset = db::preparedStmt("UPDATE `campaign_nation` SET `prosperity` = ? WHERE `id` = ?", current, (int32)army);
     if (!rset)

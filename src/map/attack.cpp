@@ -534,16 +534,6 @@ bool CAttack::CheckCover()
  ************************************************************************/
 void CAttack::ProcessDamage()
 {
-    auto removePostSwingEffects = [&]() -> void
-    {
-        // SA/TA should wear off on the first swing
-        if (m_isFirstSwing)
-        {
-            m_attacker->StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::SneakAttack);
-            m_attacker->StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::TrickAttack);
-        }
-    };
-
     if (settings::get<bool>("map.ENABLE_AUTO_ATTACK_LUA"))
     {
         // Sneak attack.
@@ -603,8 +593,6 @@ void CAttack::ProcessDamage()
             sol::error err = result;
             ShowError("attack.cpp::ProcessDamage(): %s", err.what());
         }
-
-        removePostSwingEffects();
         return;
     }
 
@@ -759,10 +747,7 @@ void CAttack::ProcessDamage()
     // TODO: find out proper fSTR calc for low level mobs when your VIT is ridiculously high. It's likely that this is slightly wrong (possibly you'd get more hits for 0 than you should)
     // However, there are legitimate strategies on retail with 1 dmg weapons and negative fSTR ranks that result in all auto attacks hitting for 0 but using enspells for damage so no TP is fed.
     // Absorption isn't possible at this point in the calculation, so zero it.
-    if (m_damage < 0)
-    {
-        m_damage = 0;
-    }
+    m_damage = std::max(m_damage, 0);
 
     // Try skill up.
     if (m_damage > 0)
@@ -833,5 +818,4 @@ void CAttack::ProcessDamage()
             m_attacker->addModifier(xi::Mod::ALL_WSDMG_FIRST_HIT, boostPerRound);
         }
     }
-    removePostSwingEffects();
 }

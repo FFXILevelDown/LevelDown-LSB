@@ -21,6 +21,8 @@
 
 #include "battle_entity.h"
 
+#include <algorithm>
+
 #include "enums/four_cc.h"
 
 #include "common/database.h"
@@ -2042,7 +2044,7 @@ void CBattleEntity::delEquipModifiers(CItemEquipment* PItem, bool isDelevel /* =
  *                                                                      *
  ************************************************************************/
 
-int16 CBattleEntity::getMod(xi::Mod modID)
+int16 CBattleEntity::getMod(xi::Mod modID) const
 {
     if (modID == xi::Mod::NONE)
     {
@@ -2221,20 +2223,12 @@ void CBattleEntity::delTrait(CTrait* PTrait)
     TracyZoneScoped;
 
     delModifier(PTrait->getMod(), PTrait->getValue());
-    TraitList.erase(std::remove(TraitList.begin(), TraitList.end(), PTrait), TraitList.end());
+    std::erase(TraitList, PTrait);
 }
 
 bool CBattleEntity::hasTrait(uint16 traitID)
 {
-    for (CTrait* Trait : TraitList)
-    {
-        if (Trait->getID() == traitID)
-        {
-            return true;
-        }
-    }
-
-    return false;
+    return std::ranges::contains(TraitList, traitID, &CTrait::getID);
 }
 
 bool CBattleEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags)
@@ -2510,7 +2504,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
         }
         else
         {
-            damage = luautils::OnSpellCast(this, PTarget, PSpell);
+            damage = luautils::OnSpellCast(this, PTarget, PSpell, &action);
 
             // Remove Saboteur
             if (PSpell->getSkillType() == xi::SkillType::EnfeeblingMagic)
@@ -3070,10 +3064,6 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
 
             // Evading negates knockback
             result.knockback = Knockback::None;
-        }
-        else
-        {
-            result.resolution = ActionResolution::Hit;
         }
 
         if (first)
@@ -3961,6 +3951,12 @@ bool CBattleEntity::OnAttack(CAttackState& state, action_t& action)
                     }
                 }
             }
+        }
+
+        if (attack.IsFirstSwing())
+        {
+            StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::SneakAttack);
+            StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::TrickAttack);
         }
 
         attackRound.DeleteAttackSwing();

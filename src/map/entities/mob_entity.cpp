@@ -291,10 +291,7 @@ uint32 CMobEntity::GetRandomGil()
 
     float gil = (float)pow(GetMLevel(), 1.05f);
 
-    if (gil < 1)
-    {
-        gil = 1;
-    }
+    gil = std::max(gil, 1.0f);
 
     uint16 highGil = (uint16)(gil / 3 + 4);
 
@@ -303,10 +300,7 @@ uint32 CMobEntity::GetRandomGil()
         highGil = max;
     }
 
-    if (highGil < 2)
-    {
-        highGil = 2;
-    }
+    highGil = std::max<uint16>(highGil, 2);
 
     // randomize it
     gil += xirand::GetRandomNumber(highGil);
@@ -833,7 +827,8 @@ void CMobEntity::Spawn()
     // Roam immediately on spawn
     const auto minTurns = static_cast<uint8>(getMobMod(xi::MobMod::RoamTurnsMin));
     const auto maxTurns = static_cast<uint8>(getMobMod(xi::MobMod::RoamTurns));
-    if (CanRoam() && PAI->PathFind->RoamAround(GetRoamAnchor(), GetRoamDistance(), minTurns, maxTurns, m_roamFlags, roamRegion_))
+    const bool isWorm   = (m_roamFlags & xi::RoamFlag::Worm) != xi::RoamFlag::None;
+    if (CanRoam() && !isWorm && PAI->PathFind->RoamAround(GetRoamAnchor(), GetRoamDistance(), minTurns, maxTurns, m_roamFlags, roamRegion_))
     {
         PAI->PathFind->FollowPath(timer::now());
     }

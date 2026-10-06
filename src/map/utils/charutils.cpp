@@ -36,6 +36,7 @@
 #include <common/types/hash_map.h>
 
 #include <array>
+#include <bit>
 #include <chrono>
 
 #include "map_constants.h"
@@ -1492,7 +1493,7 @@ void SendInventory(CCharEntity* PChar)
         }
     }
 
-    CItem* PItem = PChar->getEquip(SLOT_LINK1);
+    CItem* PItem = PChar->getLinkshell(SLOT_LINK1);
     if (PItem != nullptr)
     {
         auto eloc1 = PChar->equipLocation(SLOT_LINK1);
@@ -1502,7 +1503,7 @@ void SendInventory(CCharEntity* PChar)
         PChar->pushPacket<GP_SERV_COMMAND_GROUP_COMLINK>(PChar, 1);
     }
 
-    PItem = PChar->getEquip(SLOT_LINK2);
+    PItem = PChar->getLinkshell(SLOT_LINK2);
     if (PItem != nullptr)
     {
         auto eloc2 = PChar->equipLocation(SLOT_LINK2);
@@ -3387,7 +3388,7 @@ void BuildingCharAbilityTable(CCharEntity* PChar)
                     chargeTime = charge->chargeTime - std::chrono::seconds(PChar->PMeritPoints->GetMeritValue(static_cast<xi::Merit>(charge->merit), PChar));
                     maxCharges = charge->maxCharges;
                 }
-                if (!PChar->PRecastContainer->Has(RECAST_ABILITY, PAbility->getRecastId()))
+                if (charge || !PChar->PRecastContainer->Has(RECAST_ABILITY, PAbility->getRecastId()))
                 {
                     PChar->PRecastContainer->Add(RECAST_ABILITY, PAbility->getRecastId(), 0s, chargeTime, maxCharges);
                 }
@@ -3427,7 +3428,7 @@ void BuildingCharAbilityTable(CCharEntity* PChar)
                         chargeTime = charge->chargeTime - std::chrono::seconds(PChar->PMeritPoints->GetMeritValue(static_cast<xi::Merit>(charge->merit), PChar));
                         maxCharges = charge->maxCharges;
                     }
-                    if (!PChar->PRecastContainer->Has(RECAST_ABILITY, PAbility->getRecastId()))
+                    if (charge || !PChar->PRecastContainer->Has(RECAST_ABILITY, PAbility->getRecastId()))
                     {
                         PChar->PRecastContainer->Add(RECAST_ABILITY, PAbility->getRecastId(), 0s, chargeTime, maxCharges);
                     }
@@ -3580,16 +3581,10 @@ void BuildingCharSkillsTable(CCharEntity* PChar)
         // Main Job Skills.
         if (maxMainSkill != 0)
         {
-            if (currentSkill > maxMainSkill)
-            {
-                currentSkill = maxMainSkill;
-            }
+            currentSkill = std::min(currentSkill, maxMainSkill);
 
             int16 newSkillValue = currentSkill + skillBonus;
-            if (newSkillValue < 0)
-            {
-                newSkillValue = 0;
-            }
+            newSkillValue       = std::max<int16>(newSkillValue, 0);
 
             PChar->WorkingSkills.skill[i] = static_cast<uint16>(newSkillValue);
 
@@ -3602,16 +3597,10 @@ void BuildingCharSkillsTable(CCharEntity* PChar)
         // Sub Job Skills.
         else if (maxSubSkill != 0)
         {
-            if (currentSkill > maxSubSkill)
-            {
-                currentSkill = maxSubSkill;
-            }
+            currentSkill = std::min(currentSkill, maxSubSkill);
 
             int16 newSkillValue = currentSkill + skillBonus;
-            if (newSkillValue < 0)
-            {
-                newSkillValue = 0;
-            }
+            newSkillValue       = std::max<int16>(newSkillValue, 0);
 
             PChar->WorkingSkills.skill[i] = static_cast<uint16>(newSkillValue);
 
@@ -3624,10 +3613,7 @@ void BuildingCharSkillsTable(CCharEntity* PChar)
         // Job setup doesn't have this skill.
         else
         {
-            if (skillBonus < 0)
-            {
-                skillBonus = 0;
-            }
+            skillBonus                    = std::max<int16>(skillBonus, 0);
             PChar->WorkingSkills.skill[i] = static_cast<uint16>(skillBonus) | 0x8000; // New value AND Blue text.
         }
 
@@ -3780,10 +3766,7 @@ void TrySkillUP(CCharEntity* PChar, xi::SkillType SkillID, uint8 lvl, bool force
 
         double random = xirand::GetRandomNumber(1.);
 
-        if (SkillUpChance > 0.5)
-        {
-            SkillUpChance = 0.5;
-        }
+        SkillUpChance = std::min(SkillUpChance, 0.5);
 
         // Check for skillup% bonus. https://www.bg-wiki.com/bg/Category:Skill_Up_Food
         // Assuming multiplicative even though rate is already a % because 0.5 + 0.8 would be > 1.
@@ -3840,30 +3823,20 @@ void TrySkillUP(CCharEntity* PChar, xi::SkillType SkillID, uint8 lvl, bool force
             // convert to 10th units
             CapSkill = CapSkill * 10;
 
-            int16 rovBonus = 1;
-
-            for (const auto skillupIncreaseKeyItem : skillupIncreaseKeyItems)
-            {
-                if (hasKeyItem(PChar, skillupIncreaseKeyItem))
-                {
-                    rovBonus += 1;
-                }
-            }
+            const auto rovBonus = static_cast<int16>(1 + std::ranges::count_if(skillupIncreaseKeyItems,
+                                                                               [&](const auto skillupIncreaseKeyItem)
+                                                                               {
+                                                                                   return hasKeyItem(PChar, skillupIncreaseKeyItem);
+                                                                               }));
 
             SkillAmount *= rovBonus;
-            if (SkillAmount > 9)
-            {
-                SkillAmount = 9;
-            }
+            SkillAmount = std::min<uint8>(SkillAmount, 9);
 
             // Do skill amount multiplier (Will only be applied if default setting is changed)
             if (settings::get<uint8>("map.SKILLUP_AMOUNT_MULTIPLIER") > 1)
             {
                 SkillAmount += (uint8)(SkillAmount * settings::get<uint8>("map.SKILLUP_AMOUNT_MULTIPLIER"));
-                if (SkillAmount > 9)
-                {
-                    SkillAmount = 9;
-                }
+                SkillAmount = std::min<uint8>(SkillAmount, 9);
             }
 
             if (SkillAmount + CurSkill >= CapSkill)
@@ -5783,11 +5756,8 @@ void SaveChatFilterFlags(CCharEntity* PChar)
 {
     TracyZoneScoped;
 
-    uint32_t filters1 = {};
-    uint32_t filters2 = {};
-
-    std::memcpy(&filters1, &PChar->playerConfig.MessageFilter, sizeof(uint32_t));
-    std::memcpy(&filters2, &PChar->playerConfig.MessageFilter2, sizeof(uint32_t));
+    const auto filters1 = std::bit_cast<uint32_t>(PChar->playerConfig.MessageFilter);
+    const auto filters2 = std::bit_cast<uint32_t>(PChar->playerConfig.MessageFilter2);
 
     db::preparedStmt("UPDATE chars "
                      "SET "
