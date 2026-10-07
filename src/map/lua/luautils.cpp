@@ -2918,7 +2918,7 @@ int32 additionalEffectAttack(CBattleEntity* PAttacker, CBattleEntity* PDefender,
     TracyZoneScoped;
 
     sol::function additionalEffectAttack;
-    if (PAttacker->objtype == TYPE_PC)
+    if (dynamic_cast<const CCharEntity*>(PAttacker) != nullptr)
     {
         additionalEffectAttack = lua[sol::create_if_nil]["xi"]["additionalEffect"]["attack"];
     }
@@ -3334,7 +3334,7 @@ void OnSpellPrecast(CBattleEntity* PCaster, CSpell* PSpell)
 {
     TracyZoneScoped;
 
-    if (PCaster->objtype == TYPE_PC)
+    if (dynamic_cast<const CCharEntity*>(PCaster) != nullptr)
     {
         return;
     }
@@ -3358,7 +3358,7 @@ void OnSpellCastStart(CBattleEntity* PCaster, CBattleEntity* PTarget, CSpell* PS
 {
     TracyZoneScoped;
 
-    if (PCaster->objtype == TYPE_PC)
+    if (dynamic_cast<const CCharEntity*>(PCaster) != nullptr)
     {
         return;
     }
@@ -3654,7 +3654,7 @@ void OnPath(CBaseEntity* PEntity)
 {
     TracyZoneScoped;
 
-    if (PEntity == nullptr || PEntity->objtype == TYPE_PC)
+    if (PEntity == nullptr || dynamic_cast<const CCharEntity*>(PEntity) != nullptr)
     {
         return;
     }
@@ -3677,7 +3677,7 @@ void OnPathPoint(CBaseEntity* PEntity)
 {
     TracyZoneScoped;
 
-    if (PEntity == nullptr || PEntity->objtype == TYPE_PC)
+    if (PEntity == nullptr || dynamic_cast<const CCharEntity*>(PEntity) != nullptr)
     {
         return;
     }
@@ -3700,7 +3700,7 @@ void OnPathComplete(CBaseEntity* PEntity)
 {
     TracyZoneScoped;
 
-    if (PEntity == nullptr || PEntity->objtype == TYPE_PC)
+    if (PEntity == nullptr || dynamic_cast<const CCharEntity*>(PEntity) != nullptr)
     {
         return;
     }
@@ -3716,6 +3716,24 @@ void OnPathComplete(CBaseEntity* PEntity)
     {
         sol::error err = result;
         ShowError("luautils::OnPathComplete: %s", err.what());
+    }
+}
+
+void OnShopBuy(CCharEntity* PChar, CBaseEntity* PNpc, uint16 itemId, uint32 quantity, uint32 gil)
+{
+    TracyZoneScoped;
+
+    sol::function onShopBuy = getEntityCachedFunction(PNpc, "onShopBuy");
+    if (!onShopBuy.valid())
+    {
+        return;
+    }
+
+    auto result = onShopBuy(PChar, PNpc, itemId, quantity, gil);
+    if (!result.valid())
+    {
+        sol::error err = result;
+        ShowError("luautils::OnShopBuy: %s", err.what());
     }
 }
 
@@ -3811,10 +3829,10 @@ void OnMobEngage(CBaseEntity* PMob, CBaseEntity* PTarget)
         filename = fmt::format("./scripts/zones/{}/mobs/{}.lua", PMob->loc.zone->getName(), PMob->getName());
     }
 
-    if (PTarget->objtype == TYPE_PC)
+    if (auto* PChar = dynamic_cast<CCharEntity*>(PTarget))
     {
-        ((CCharEntity*)PTarget)->eventPreparation->targetEntity = PMob;
-        ((CCharEntity*)PTarget)->eventPreparation->scriptFile   = filename;
+        PChar->eventPreparation->targetEntity = PMob;
+        PChar->eventPreparation->scriptFile   = filename;
     }
 
     sol::function onMobEngage = getEntityCachedFunction(PMob, "onMobEngage");
@@ -4818,9 +4836,8 @@ int32 OnPetAbility(CBaseEntity* PTarget, CBaseEntity* PMob, CMobSkill* PMobSkill
     if (PMob->objtype == TYPE_PET && settings::get<bool>("map.SKILLUP_BLOODPACT"))
     {
         CPetEntity* PPet = (CPetEntity*)PMob;
-        if (PPet->getPetType() == PET_TYPE::AVATAR && PPet->PMaster->objtype == TYPE_PC)
+        if (auto* PMaster = dynamic_cast<CCharEntity*>(PPet->PMaster); PPet->getPetType() == PET_TYPE::AVATAR && PMaster)
         {
-            CCharEntity* PMaster = (CCharEntity*)PPet->PMaster;
             if (PMaster->GetMJob() == xi::Job::SMN)
             {
                 charutils::TrySkillUP(PMaster, xi::SkillType::SummoningMagic, PMaster->GetMLevel());
@@ -4851,9 +4868,8 @@ int32 OnPetAbility(CBaseEntity* PTarget, CPetEntity* PPet, CPetSkill* PPetSkill,
         return 0;
     }
 
-    if (PPet->getPetType() == PET_TYPE::AVATAR && PPet->PMaster->objtype == TYPE_PC)
+    if (auto* PMaster = dynamic_cast<CCharEntity*>(PPet->PMaster); PPet->getPetType() == PET_TYPE::AVATAR && PMaster)
     {
-        CCharEntity* PMaster = (CCharEntity*)PPet->PMaster;
         if (PMaster->GetMJob() == xi::Job::SMN)
         {
             charutils::TrySkillUP(PMaster, xi::SkillType::SummoningMagic, PMaster->GetMLevel());
