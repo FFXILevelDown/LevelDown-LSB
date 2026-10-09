@@ -1452,8 +1452,38 @@ void SendKeyItems(CCharEntity* PChar)
 
 void SendInventory(CCharEntity* PChar)
 {
+    // Visitors get the owner's installed furniture instead of their own safes, compacted to slots 1..N of the same safe
+    CCharEntity* PVisitedOwner = nullptr;
+    if (PChar->inMogHouse(xi::MogHouse::Visiting))
+    {
+        PVisitedOwner = PChar->moghouse().host();
+    }
+
+    auto pushVisitedFurniture = [&](auto LocationID)
+    {
+        uint8 slotID         = 1;
+        auto* PFurnitureSafe = PVisitedOwner->getStorage(LocationID);
+        PFurnitureSafe->ForEachItem(
+            [&](CItem* PItem)
+            {
+                if (PItem->isType(ITEM_FURNISHING) && static_cast<CItemFurnishing*>(PItem)->isInstalled())
+                {
+                    PChar->pushPacket<GP_SERV_COMMAND_ITEM_ATTR>(PItem, LocationID, slotID++);
+                }
+            });
+
+        PChar->inventorySyncState().markSynced(LocationID);
+        PChar->pushPacket<GP_SERV_COMMAND_ITEM_SAME>(LocationID, PChar);
+    };
+
     auto pushContainer = [&](auto LocationID)
     {
+        if (PVisitedOwner && (LocationID == LOC_MOGSAFE || LocationID == LOC_MOGSAFE2))
+        {
+            pushVisitedFurniture(LocationID);
+            return;
+        }
+
         CItemContainer* container = PChar->getStorage(LocationID);
         if (container == nullptr)
         {
@@ -7598,6 +7628,21 @@ void loadDeathTimestamp(CCharEntity* PChar)
     }
 }
 
+auto IsHomeNation(const uint8 nation, const REGION_TYPE region) -> bool
+{
+    switch (region)
+    {
+        case REGION_TYPE::SANDORIA:
+            return nation == NATION_SANDORIA;
+        case REGION_TYPE::BASTOK:
+            return nation == NATION_BASTOK;
+        case REGION_TYPE::WINDURST:
+            return nation == NATION_WINDURST;
+        default:
+            return false;
+    }
+}
+
 bool isOrchestrionPlaced(CCharEntity* PChar)
 {
     for (auto safeContainerId : { LOC_MOGSAFE, LOC_MOGSAFE2 })
@@ -7621,9 +7666,17 @@ bool isOrchestrionPlaced(CCharEntity* PChar)
 
 void updateMannequins(CCharEntity* PChar)
 {
+    auto* POwner = PChar->moghouse().host();
+    if (POwner == nullptr)
+    {
+        return;
+    }
+
     for (auto safeContainerId : { LOC_MOGSAFE, LOC_MOGSAFE2 })
     {
-        auto* PContainer = PChar->getStorage(safeContainerId);
+        // Visitors have the owner's installed furniture at slots 1..N, see SendInventory
+        uint8 visitorSlotID = 1;
+        auto* PContainer    = POwner->getStorage(safeContainerId);
         PContainer->ForEachItem(
             [&](CItem* PItem)
             {
@@ -7633,7 +7686,18 @@ void updateMannequins(CCharEntity* PChar)
                 }
 
                 auto* PFurnishing = static_cast<CItemFurnishing*>(PItem);
-                if (PFurnishing->isInstalled() && PFurnishing->isMannequin())
+                if (!PFurnishing->isInstalled())
+                {
+                    return;
+                }
+
+                uint8 slotID = PItem->getSlotID();
+                if (POwner != PChar)
+                {
+                    slotID = visitorSlotID++;
+                }
+
+                if (PFurnishing->isMannequin())
                 {
                     auto& mannequin = PFurnishing->exdata<Exdata::Mannequin>();
 
@@ -7642,7 +7706,7 @@ void updateMannequins(CCharEntity* PChar)
                         ShowWarning("Invalid Mannequin placed (race of 0 in exdata, when races start at 1). It will be unusable.");
                     }
 
-                    PChar->pushPacket<GP_SERV_COMMAND_ITEM_SUBCONTAINER>(PChar, safeContainerId, PItem->getSlotID(), mannequin);
+                    PChar->pushPacket<GP_SERV_COMMAND_ITEM_SUBCONTAINER>(POwner, safeContainerId, slotID, mannequin);
                 }
             });
     }
