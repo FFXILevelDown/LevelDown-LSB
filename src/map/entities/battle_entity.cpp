@@ -1741,6 +1741,12 @@ void CBattleEntity::SetMJob(uint8 mjob)
         return;
     }
 
+    /* CUSTOM JOB CHANGE DESPAWN PET */
+    if (objtype == TYPE_PC && PPet != nullptr && m_mjob != static_cast<xi::Job>(mjob))
+    {
+        petutils::DespawnPet(this);
+    }
+
     m_mjob = static_cast<xi::Job>(mjob);
 }
 
@@ -1750,6 +1756,12 @@ void CBattleEntity::SetSJob(uint8 sjob)
     {
         ShowWarning("sjob (%d) exceeds MAX_JOBTYPE", sjob);
         return;
+    }
+
+    /* CUSTOM JOB CHANGE DESPAWN PET */
+    if (objtype == TYPE_PC && PPet != nullptr && m_sjob != static_cast<xi::Job>(sjob))
+    {
+        petutils::DespawnPet(this);
     }
 
     m_sjob = static_cast<xi::Job>(sjob);
