@@ -1,24 +1,9 @@
 -----------------------------------
 -- Area: Jugner Forest [S]
---  NM: Voirloup
------------------------------------
-local ID = zones[xi.zone.JUGNER_FOREST_S]
+--   NM: Voirloup
 -----------------------------------
 ---@type TMobEntity
 local entity = {}
-
--- ── 🛡️ DEFENSIVE ID BOUND CHECK ──
-local voirloupId = (ID and ID.mob) and ID.mob.VOIRLOUP or nil
-
-if voirloupId then
-    entity.phList =
-    {
-        [voirloupId - 1] = voirloupId
-    }
-else
-    -- Server will boot up fine and print this clean alarm instead of dropping to desktop
-    print("[NMHunt Warning] Voirloup ID is missing or undefined in Jugner Forest [S] IDs.lua!")
-end
 
 -- TODO: has enstun, but rate is extremely low on testing characters so cannot give a great rate.
 entity.onMobInitialize = function(mob)
