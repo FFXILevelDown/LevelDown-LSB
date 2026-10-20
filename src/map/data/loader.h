@@ -27,57 +27,33 @@
 #include <exception>
 #include <filesystem>
 #include <fmt/format.h>
-#include <fstream>
-#include <iterator>
 #include <optional>
 #include <regex>
 #include <string>
+#include <string_view>
 #include <vector>
 
 namespace xi::data
 {
 
+inline auto zoneDataName(const xi::ZoneId zoneId, const std::string_view name) -> std::string
+{
+    return fmt::format("zones/{}/{}", EnumTraits<xi::ZoneId>::toName(zoneId), name);
+}
+
 inline auto zoneFilePath(const xi::ZoneId zoneId, const std::string_view name) -> std::string
 {
-    return fmt::format("data/zones/{}/{}.yaml", EnumTraits<xi::ZoneId>::toName(zoneId), name);
-}
-
-inline auto readFileToString(const std::string& path) -> std::string
-{
-    std::ifstream input(path, std::ios::binary);
-    return std::string{ std::istreambuf_iterator<char>(input), std::istreambuf_iterator<char>() };
-}
-
-// Scans active modules for matching zone dataset overlays
-inline auto getZoneModulePaths(const std::string& relativePath) -> std::vector<std::string>
-{
-    std::vector<std::string> paths;
-    if (std::filesystem::exists("modules"))
-    {
-        for (const auto& entry : std::filesystem::directory_iterator("modules"))
-        {
-            if (entry.is_directory())
-            {
-                auto modPath = (entry.path() / "data" / relativePath).string();
-                if (std::filesystem::exists(modPath))
-                {
-                    paths.push_back(modPath);
-                }
-            }
-        }
-    }
-    return paths;
+    return fmt::format("data/{}.yaml", zoneDataName(zoneId, name));
 }
 
 // Unquotes numeric spawn keys created by the YAML emitter ('17657857': or "17657857": -> 17657857:)
 inline auto fixNumericKeys(const std::string& text) -> std::string
 {
-    // Updated to catch both single and double quotes, and handle optional spacing
     static const std::regex numericKeyRegex(R"(['"](\d+)['"]\s*:)");
     return std::regex_replace(text, numericKeyRegex, "$1:");
 }
 
-// Per-zone data file loader with native deep YAML module merging.
+// Per-zone data file. No core file means the zone declares none of this kind.
 template <class Dataset>
 auto loadZoneFile(const xi::ZoneId zoneId) -> std::optional<typename Dataset::Records>
 {
@@ -87,24 +63,14 @@ auto loadZoneFile(const xi::ZoneId zoneId) -> std::optional<typename Dataset::Re
         return std::nullopt;
     }
 
+    const auto modules = getDataModulePaths(zoneDataName(zoneId, Dataset::kDataPath), ".yaml");
+
     try
     {
-        const auto relativePath = fmt::format("zones/{}/{}.yaml", EnumTraits<xi::ZoneId>::toName(zoneId), Dataset::kDataPath);
-        const auto modulePaths  = getZoneModulePaths(relativePath);
+        // Deep merge active module overlays and sanitize numeric entity keys
+        const auto mergedText = fixNumericKeys(loadMergedYaml(basePath, modules));
+        auto records = Dataset::decode(mergedText);
 
-        std::string text;
-        if (modulePaths.empty())
-        {
-            // Read raw file directly if no module overrides exist
-            text = readFileToString(basePath);
-        }
-        else
-        {
-            // Deep merge module overlay and unquote numeric keys
-            text = fixNumericKeys(loadMergedYaml(basePath, modulePaths));
-        }
-
-        auto records = Dataset::decode(text);
         if constexpr (requires { Dataset::verifyZone(records, zoneId); })
         {
             Dataset::verifyZone(records, zoneId);
