@@ -32,6 +32,7 @@ void Exdata::AugmentBundle::toTable(sol::table& table) const
     table["accumulatedRP"]  = static_cast<uint32_t>(this->AccumulatedRP);
     table["maxRankTier"]    = static_cast<uint32_t>(this->MaxRankTier);
     table["rpCurve"]        = static_cast<uint32_t>(this->RPCurve);
+    table["flag25"]         = static_cast<uint32_t>(this->padding01);
     table["augmentIndex"]   = this->AugmentIndex;
     table["signature"]      = Exdata::decodeSignature(this->Signature);
 }
@@ -40,11 +41,12 @@ void Exdata::AugmentBundle::fromTable(const sol::table& data)
 {
     /* CUSTOM BUNDLED AUGMENT SUBKIND FIX */
     this->AugmentKind    = AugmentKindFlags::Bundled;
-    // SubKind format bits only apply to Kind::HasAugments; Bundled is its own
-    // Kind and doesn't use this byte, so leave it unset rather than OR-ing in
-    // unrelated format flags (was Standard|Evolith, which caused inconsistent
-    // client-side decoding of AugmentIndex depending on the viewer).
-    this->AugmentSubKind = AugmentSubKindFlags{};
+    /* LD BUNDLED SUBKIND RETAIL */
+    // LD: retail sends 0x83 here on every bundled item (Oboro / Dynamis-D captures, header 0x8303), and the client
+    // only draws the <Type/Rank/RP> line with it. The "inconsistent decoding depending on the viewer" that led
+    // to clearing it was the /check packet rebuilding exdata with subkind 0 (fixed in 0x0c9_equip_inspect_equipment).
+    this->AugmentSubKind = static_cast<AugmentSubKindFlags>(0x83);
+    this->padding01      = Exdata::get_or<uint32_t>(data, "flag25", this->padding01); // LD: set on Dynamis-D gear (captures), meaning unknown
     this->Type           = Exdata::get_or<uint32_t>(data, "type", this->Type);
     this->Rank           = Exdata::get_or<uint32_t>(data, "rank", this->Rank);
     this->AccumulatedRP  = Exdata::get_or<uint32_t>(data, "accumulatedRP", this->AccumulatedRP);

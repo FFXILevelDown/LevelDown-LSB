@@ -21,6 +21,7 @@
 
 #include "common/logging.h"
 #include "data/enums/item_state.h"
+#include "items/exdata/augment_standard.h"
 #include "items/item_access.h"
 #include "items/transactions/item_claim.h"
 #include "items/transactions/npc_trade.h"
@@ -1093,6 +1094,22 @@ void LoadInventory(CCharEntity* PChar)
                 // check if the item is valid and can have an augment applied to it
                 if (PItem != nullptr && ((PItem->isType(ITEM_EQUIPMENT) || PItem->isType(ITEM_WEAPON)) && !PItem->isSubType(ITEM_CHARGED)))
                 {
+                    /* LD AUGMENT LAYOUTS */
+                    // Only standard (and trial) exdata holds Augments[5]. Bundled (Odyssey, Dyna-D) and
+                    // mezzotint (Escha, Delve) items lay out the same bytes differently, and reading them as
+                    // standard augments applied random mods on login.
+                    const auto& augData = PItem->exdata<Exdata::AugmentStandard>();
+                    if (augData.AugmentKind == Exdata::AugmentKindFlags::Bundled)
+                    {
+                        continue;
+                    }
+
+                    if (static_cast<uint8_t>(augData.AugmentSubKind & Exdata::AugmentSubKindFlags::Mezzotint))
+                    {
+                        static_cast<CItemEquipment*>(PItem)->ApplyMezzotint();
+                        continue;
+                    }
+
                     // check if there are any valid augments to be applied to the item
                     for (uint8 j = 0; j < 5; ++j) /* CUSTOM 5 AUGMENT SUPPORT */
                     {

@@ -61,19 +61,15 @@ GP_SERV_COMMAND_EQUIP_INSPECT::EQUIPMENT::EQUIPMENT(CCharEntity* PChar, CCharEnt
                 std::memcpy(&item.Data[8], &vUseDelay, sizeof(uint32));
             }
 
-            if (PItem->isSubType(ITEM_AUGMENTED))
+            /* LD INSPECT REAL EXDATA */
+            // Send the item's own augment exdata (kind, subkind, payload) instead of rebuilding it.
+            // The rebuild left the subkind byte at 0 and dropped the 5th augment, so other players
+            // saw garbage augments on /check; it also could not carry mezzotint or bundled layouts.
+            const uint8 augmentKind = PItem->m_extra[0];
+            if (!PItem->isSubType(ITEM_CHARGED) &&
+                (PItem->isSubType(ITEM_AUGMENTED) || augmentKind == 0x02 || augmentKind == 0x03))
             {
-                item.Data[0] = 0x02; // Type
-
-                uint16 aug0 = static_cast<CItemEquipment*>(PItem)->getAugment(0);
-                uint16 aug1 = static_cast<CItemEquipment*>(PItem)->getAugment(1);
-                uint16 aug2 = static_cast<CItemEquipment*>(PItem)->getAugment(2);
-                uint16 aug3 = static_cast<CItemEquipment*>(PItem)->getAugment(3);
-
-                std::memcpy(&item.Data[2], &aug0, sizeof(uint16));
-                std::memcpy(&item.Data[4], &aug1, sizeof(uint16));
-                std::memcpy(&item.Data[6], &aug2, sizeof(uint16));
-                std::memcpy(&item.Data[8], &aug3, sizeof(uint16));
+                std::memcpy(&item.Data[0], PItem->m_extra, 12);
             }
 
             // All equipment exdata types have Signature at offset 0x0C; struct choice is irrelevant.

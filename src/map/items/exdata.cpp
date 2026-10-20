@@ -403,6 +403,10 @@ auto fromTable(CItem* item, const sol::table& data) -> bool
             else if (static_cast<uint8_t>(subKind & AugmentSubKindFlags::Mezzotint))
             {
                 item->exdata<AugmentMezzotint>().fromTable(data);
+                if (auto* PEquip = dynamic_cast<CItemEquipment*>(item))
+                {
+                    PEquip->ApplyMezzotint(); /* LD MEZZOTINT AUGMENTS */
+                }
             }
             else if (static_cast<uint8_t>(subKind & AugmentSubKindFlags::Trial))
             {

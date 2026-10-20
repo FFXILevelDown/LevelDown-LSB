@@ -92,6 +92,7 @@ public:
     void LoadAugment(uint8 slot, uint16 augment);
     bool PushAugment(uint16 type, uint8 value);
     void ApplyAugment(uint8 slot);
+    void ApplyMezzotint(); /* LD MEZZOTINT AUGMENTS */ // mods for mezzotint exdata (Escha / Nolan / JSE weapons)
 
     void addModifier(CModifier modifier);
 
@@ -134,4 +135,5 @@ private:
     uint8  m_superiorLevel;
 
     void SetAugmentMod(uint16 type, uint8 value);
+    void AddAugmentMods(uint16 type, uint16 value, uint8 prefix); // LD: augments.sql mods without touching exdata
 };
