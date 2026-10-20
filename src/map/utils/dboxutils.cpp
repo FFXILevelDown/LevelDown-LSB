@@ -151,15 +151,19 @@ void dboxutils::AddItemsToBeSent(CCharEntity* PChar, GP_CLI_COMMAND_PBX_BOXNO Bo
         return;
     }
 
-    if (PChar->UContainer->IsSlotEmpty(PostWorkNo))
+if (PChar->UContainer->IsSlotEmpty(PostWorkNo))
     {
         const auto [recvCharid, recvAccid] = charutils::getCharIdAndAccountIdFromName(receiverName);
         if (recvCharid && recvAccid)
         {
-            if (PChar && PChar->getCharVar("[LevelRatio]Restriction") != charutils::FetchCharVar(recvCharid, "[LevelRatio]Restriction").first) { return; } /* CUSTOM BRACKET DBOX RESTRICTION */
-            if (PItem->hasFlag(ItemFlag::NoDelivery))
+            if (PChar && PChar->getCharVar("[LevelRatio]Restriction") != charutils::FetchCharVar(recvCharid, "[LevelRatio]Restriction").first)
             {
-                if (!PItem->hasFlag(ItemFlag::CanSendAccount))
+                return;
+            } /* CUSTOM BRACKET DBOX RESTRICTION */
+
+            if (PItem->hasFlag(xi::ItemFlag::NoDelivery))
+            {
+                if (!PItem->hasFlag(xi::ItemFlag::CanSendAccount))
                 {
                     return;
                 }
@@ -681,7 +685,7 @@ void dboxutils::TakeItemFromCell(CCharEntity* PChar, GP_CLI_COMMAND_PBX_BOXNO Bo
             return;
         }
 
-        if (PItem->hasFlag(ItemFlag::Rare) && charutils::HasItem(PChar, PItem->getID()))
+        if (PItem->hasFlag(xi::ItemFlag::Rare) && charutils::HasItem(PChar, PItem->getID()))
         {
             PChar->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar, PItem->getID(), 0, MsgStd::ItemEx);
             PChar->pushPacket<GP_SERV_COMMAND_PBX_RESULT>(GP_CLI_COMMAND_PBX_COMMAND::Get, BoxNo, PItem, PostWorkNo, PChar->UContainer->GetItemsCount(), 0xBA);
