@@ -1582,6 +1582,17 @@ void CZoneEntities::PushPacket(CBaseEntity* PEntity, GLOBAL_MESSAGE_TYPE message
                                     {
                                         entity = zoneutils::GetEntity(id);
                                     }
+
+                                    /* CUSTOM INSTANCE ACTION ACTOR */
+                                    // Instance entities with retail overlay ids: resolve locally by targid
+                                    if (!entity)
+                                    {
+                                        CBaseEntity* PLocal = GetEntity(static_cast<uint16>(id & 0xFFF));
+                                        if (PLocal && PLocal->id == id)
+                                        {
+                                            entity = PLocal;
+                                        }
+                                    }
                                 }
 
                                 // If everything else failed

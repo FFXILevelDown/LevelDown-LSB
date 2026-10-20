@@ -70,4 +70,5 @@ LevelDown Custom Modules/content/LD Vagary
 LevelDown Custom Modules/content/LD Instances/
 #LevelDown Custom Modules/content/LD Aman Trove/
 LevelDown Custom Modules/content/LD Prime WS Mimic Battle/
+LevelDown Custom Modules/content/LD Odyssey/
 custom/lua/test_npcs_in_gm_home.lua

@@ -318,6 +318,12 @@ bool CStatusEffectContainer::CanGainStatusEffect(CStatusEffect* PStatusEffect)
                 return false;
             }
             break;
+        case xi::StatusEffect::Doom: /* CUSTOM DOOM IMMUNITY */
+            if (m_POwner->hasImmunity(xi::Immunity::Doom))
+            {
+                return false;
+            }
+            break;
         case xi::StatusEffect::Petrification:
             if (m_POwner->hasImmunity(xi::Immunity::Petrify))
             {

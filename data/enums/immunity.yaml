@@ -28,3 +28,4 @@ values:
   petrify:     0x00010000
   plague:      0x00020000
   curse:       0x00040000
+  doom:        0x00080000
