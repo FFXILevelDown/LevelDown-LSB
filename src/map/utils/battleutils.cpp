@@ -3645,7 +3645,21 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
         uint8  SlotID = 0;
         uint16 toolID = PSpell->getMPCost();
 
-        if (ERROR_SLOTID == (SlotID = PChar->getStorage(LOC_INVENTORY)->SearchItem(toolID)))
+        auto*      PInventory       = PChar->getStorage(LOC_INVENTORY);
+        const auto findUnlockedTool = [PInventory](const uint16 itemId) -> uint8
+        {
+            for (const uint8 slot : PInventory->SearchItems(itemId))
+            {
+                if (!PInventory->GetItem(slot)->isBusy())
+                {
+                    return slot;
+                }
+            }
+
+            return ERROR_SLOTID;
+        };
+
+        if (ERROR_SLOTID == (SlotID = findUnlockedTool(toolID)))
         {
             if (PChar->GetMJob() == xi::Job::NIN || PChar->GetSJob() == xi::Job::NIN) /* CUSTOM NIN TOOL UTILITY */
             {
@@ -3684,7 +3698,7 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
                     default:
                         return false;
                 }
-                if (ERROR_SLOTID == (SlotID = PChar->getStorage(LOC_INVENTORY)->SearchItem(toolID)))
+                if (ERROR_SLOTID == (SlotID = findUnlockedTool(toolID)))
                 {
                     return false;
                 }
