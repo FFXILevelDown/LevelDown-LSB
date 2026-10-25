@@ -320,7 +320,7 @@ auto GetMaxSkill(xi::SkillType SkillID, xi::Job JobID, uint8 level) -> uint16
     return skills().Caps[std::min<uint8>(level, 99)][GetSkillRank(SkillID, JobID)];
 }
 
-uint16 GetMaxSkill(uint8 rank, uint8 level)
+auto GetMaxSkill(uint8 rank, uint8 level) -> uint16
 {
     const auto& caps = skills().Caps;
     if (level >= caps.size() || rank >= xi::data::kSkillRanks)
@@ -331,7 +331,7 @@ uint16 GetMaxSkill(uint8 rank, uint8 level)
     return caps[std::min<std::size_t>(level, caps.size() - 1)][std::min<std::size_t>(rank, xi::data::kSkillRanks - 1)];
 }
 
-bool isValidSelfTargetWeaponskill(int wsid)
+auto isValidSelfTargetWeaponskill(int wsid) -> bool
 {
     switch (wsid)
     {
@@ -344,7 +344,7 @@ bool isValidSelfTargetWeaponskill(int wsid)
     return false;
 }
 
-bool CanUseWeaponskill(CCharEntity* PChar, CWeaponSkill* PSkill)
+auto CanUseWeaponskill(CCharEntity* PChar, CWeaponSkill* PSkill) -> bool
 {
     return ((PSkill->getSkillLevel() > 0 && PChar->GetSkill(static_cast<xi::SkillType>(PSkill->getType())) >= PSkill->getSkillLevel() &&
              (PSkill->getUnlockId() == 0 || charutils::hasLearnedWeaponskill(PChar, PSkill->getUnlockId()))) ||
@@ -359,12 +359,12 @@ bool CanUseWeaponskill(CCharEntity* PChar, CWeaponSkill* PSkill)
  *                                                                       *
  ************************************************************************/
 
-int32 GetEnmityModDamage(int16 level)
+auto GetEnmityModDamage(int16 level) -> int32
 {
     return level * 31 / 50 + 6;
 }
 
-int32 GetEnmityModCure(int16 level)
+auto GetEnmityModCure(int16 level) -> int32
 {
     if (level <= 10)
     {
@@ -384,7 +384,7 @@ int32 GetEnmityModCure(int16 level)
  *                                                                       *
  ************************************************************************/
 
-CWeaponSkill* GetWeaponSkill(uint16 WSkillID)
+auto GetWeaponSkill(uint16 WSkillID) -> CWeaponSkill*
 {
     if (WSkillID >= MAX_WEAPONSKILL_ID)
     {
@@ -403,7 +403,7 @@ CWeaponSkill* GetWeaponSkill(uint16 WSkillID)
  *                                                                       *
  ************************************************************************/
 
-const std::list<CWeaponSkill*>& GetWeaponSkills(uint8 skill)
+auto GetWeaponSkills(uint8 skill) -> const std::list<CWeaponSkill*>&
 {
     if (skill >= MAX_SKILLTYPE)
     {
@@ -420,7 +420,7 @@ const std::list<CWeaponSkill*>& GetWeaponSkills(uint8 skill)
  *                                                                       *
  ************************************************************************/
 
-CMobSkill* GetMobSkill(uint16 SkillID)
+auto GetMobSkill(uint16 SkillID) -> CMobSkill*
 {
     if (SkillID < g_PMobSkillList.size())
     {
@@ -440,7 +440,7 @@ CMobSkill* GetMobSkill(uint16 SkillID)
  *                                                                       *
  ************************************************************************/
 
-CPetSkill* GetPetSkill(uint16 SkillID)
+auto GetPetSkill(uint16 SkillID) -> CPetSkill*
 {
     if (g_PPetSkillList.contains(SkillID))
     {
@@ -458,13 +458,13 @@ CPetSkill* GetPetSkill(uint16 SkillID)
  *                                                                       *
  ************************************************************************/
 
-const std::vector<uint16>& GetMobSkillList(uint16 ListID)
+auto GetMobSkillList(uint16 ListID) -> const std::vector<uint16>&
 {
     return g_PMobSkillLists[ListID];
 }
 
 // TODO: Apply fire in generous quantities. Replace with existing lua functions.
-int32 CalculateEnspellDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 Tier, uint8 element, CItemWeapon* pWeaponHit)
+auto CalculateEnspellDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 Tier, uint8 element, CItemWeapon* pWeaponHit) -> int32
 {
     int32 damage = 0;
 
@@ -1676,7 +1676,7 @@ void HandleEnspell(CBattleEntity* PAttacker, CBattleEntity* PDefender, action_re
     }
 }
 
-uint8 GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage, int16 accBonus)
+auto GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage, int16 accBonus) -> uint8
 {
     // Check to see if distance is greater than 25 and force hitrate to be 0
     if (distance(PAttacker->loc.p, PDefender->loc.p) > 25)
@@ -1691,12 +1691,12 @@ uint8 GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool 
     return hitrate;
 }
 
-uint8 GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage)
+auto GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage) -> uint8
 {
     return GetRangedHitRate(PAttacker, PDefender, isBarrage, 0);
 }
 
-float GetRangedDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, int16 bonusRangedAttack)
+auto GetRangedDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, int16 bonusRangedAttack) -> float
 {
     float pDIF = 1.0;
 
@@ -1745,7 +1745,7 @@ float GetRangedDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, b
     return std::max(pDIF, 0.f);
 }
 
-int16 CalculateBaseTP(CBattleEntity* PEntity, int32 delay)
+auto CalculateBaseTP(CBattleEntity* PEntity, int32 delay) -> int16
 {
     int16 baseTPReturn = 0;
 
@@ -1875,7 +1875,7 @@ auto CalculateTPFromDamageTaken(CBattleEntity* PAttacker, CBattleEntity* PDefend
     return tpReturn;
 }
 
-bool TryInterruptSpell(CBattleEntity* PAttacker, CBattleEntity* PDefender, CSpell* PSpell)
+auto TryInterruptSpell(CBattleEntity* PAttacker, CBattleEntity* PDefender, CSpell* PSpell) -> bool
 {
     // Early return: Spell can't be interrupted.
     if (PSpell->getSkillType() == xi::SkillType::Singing)
@@ -2478,8 +2478,8 @@ auto TakeSwipeLungeDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, in
  *                                                                       *
  ************************************************************************/
 
-uint8 GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber,
-                   int16 offsetAccuracy) // subWeaponAttack is for calculating acc of dual wielded sub weapon
+auto GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber,
+                  int16 offsetAccuracy) -> uint8 // subWeaponAttack is for calculating acc of dual wielded sub weapon
 {
     int32 hitrate = 75;
 
@@ -2503,17 +2503,17 @@ uint8 GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 att
     return static_cast<uint8>(hitrate);
 }
 
-uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> uint8
 {
     return GetHitRateEx(PAttacker, PDefender, 0, 0); // assume attack 0(main)
 }
 
-uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber)
+auto GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber) -> uint8
 {
     return GetHitRateEx(PAttacker, PDefender, attackNumber, 0);
 }
 
-uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber, int16 offsetAccuracy)
+auto GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber, int16 offsetAccuracy) -> uint8
 {
     return GetHitRateEx(PAttacker, PDefender, attackNumber, offsetAccuracy);
 }
@@ -2524,7 +2524,7 @@ uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attac
  *                                                                       *
  ************************************************************************/
 
-uint8 GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ignoreSneakTrickAttack, SLOTTYPE weaponSlot)
+auto GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ignoreSneakTrickAttack, SLOTTYPE weaponSlot) -> uint8
 {
     int32 critHitRate = 5;
     if (PAttacker->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::MightyStrikes, 0) ||
@@ -2606,7 +2606,7 @@ uint8 GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ig
     return (uint8)critHitRate;
 }
 
-int8 GetDexCritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetDexCritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> int8
 {
     // https://www.bg-wiki.com/bg/Critical_Hit_Rate
     int32 attackerDex = PAttacker->DEX();
@@ -2652,7 +2652,7 @@ int8 GetDexCritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
  *                                                                       *
  ************************************************************************/
 
-uint8 GetRangedCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetRangedCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> uint8
 {
     int32 critHitRate = 5;
     // apply merit mods and traits
@@ -2687,7 +2687,7 @@ uint8 GetRangedCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
     return (uint8)critHitRate;
 }
 
-int8 GetAGICritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetAGICritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> int8
 {
     // https://www.bg-wiki.com/bg/Critical_Hit_Rate
     int32 attackerAgi = PAttacker->AGI();
@@ -2707,7 +2707,7 @@ int8 GetAGICritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
  *                                                                       *
  ************************************************************************/
 
-float GetDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, float bonusAttPercent, xi::SkillType weaponType, SLOTTYPE weaponSlot, bool isCannonball)
+auto GetDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, float bonusAttPercent, xi::SkillType weaponType, SLOTTYPE weaponSlot, bool isCannonball) -> float
 {
     float pDIF = 1.0f;
 
@@ -2773,7 +2773,7 @@ auto GetFSTR(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 SlotID) -
  *                                                                       *
  ************************************************************************/
 
-uint8 getHitCount(uint8 hits)
+auto getHitCount(uint8 hits) -> uint8
 {
     uint8 distribution = xirand::GetRandomNumber(100);
     uint8 num          = 1;
@@ -2794,7 +2794,6 @@ uint8 getHitCount(uint8 hits)
                 num += 1;
                 break;
             }
-            break;
         case 3: // cdf = 30,80,100
             if (distribution < 30)
             {
@@ -2810,7 +2809,6 @@ uint8 getHitCount(uint8 hits)
                 num += 2;
                 break;
             }
-            break;
         case 4: // cdf = 20,50,80,100
             if (distribution < 20)
             {
@@ -2831,7 +2829,6 @@ uint8 getHitCount(uint8 hits)
                 num += 3;
                 break;
             }
-            break;
         case 5: // cdf = 10,30,60,90,100
             if (distribution < 10)
             {
@@ -2857,7 +2854,6 @@ uint8 getHitCount(uint8 hits)
                 num += 4;
                 break;
             }
-            break;
         case 6: // cdf = 10,30,50,70,90,100
             if (distribution < 10)
             {
@@ -2888,7 +2884,6 @@ uint8 getHitCount(uint8 hits)
                 num += 5;
                 break;
             }
-            break;
         case 7: // cdf = 5,20,45,70,85,95,100
             if (distribution < 5)
             {
@@ -2924,7 +2919,6 @@ uint8 getHitCount(uint8 hits)
                 num += 6;
                 break;
             }
-            break;
         case 8: // cdf = 5,20,45,70,85,95,98,100
             if (distribution < 5)
             {
@@ -2965,7 +2959,6 @@ uint8 getHitCount(uint8 hits)
                 num += 7;
                 break;
             }
-            break;
     }
     return std::min<uint8>(num, 8); // No more than eight hits per attack
 }
@@ -3025,7 +3018,7 @@ auto GetEcosystemStrongAgainst(const xi::Ecosystem ecosystem) -> xi::Ecosystem
  *                                                                       *
  ************************************************************************/
 
-uint8 CheckMultiHits(CBattleEntity* PEntity, CItemWeapon* PWeapon)
+auto CheckMultiHits(CBattleEntity* PEntity, CItemWeapon* PWeapon) -> uint8
 {
     if (!PWeapon)
     {
@@ -3096,7 +3089,7 @@ uint8 CheckMultiHits(CBattleEntity* PEntity, CItemWeapon* PWeapon)
  *                                                                       *
  ************************************************************************/
 
-bool IsParalyzed(CBattleEntity* PAttacker)
+auto IsParalyzed(CBattleEntity* PAttacker) -> bool
 {
     return (xirand::GetRandomNumber(100) < PAttacker->getMod(xi::Mod::PARALYZE));
 }
@@ -3107,7 +3100,7 @@ bool IsParalyzed(CBattleEntity* PAttacker)
  *                                                                       *
  ************************************************************************/
 
-bool IsAbsorbByShadow(CBattleEntity* PDefender, CBattleEntity* PAttacker)
+auto IsAbsorbByShadow(CBattleEntity* PDefender, CBattleEntity* PAttacker) -> bool
 {
     // utsus always overwrites blink, so if utsus>0 then we know theres no blink.
     uint16  Shadow    = PDefender->getMod(xi::Mod::UTSUSEMI);
@@ -3271,121 +3264,120 @@ auto IsIntimidated(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> bool
  *  Get SkillChain Effect                                                *
  *                                                                       *
  ************************************************************************/
-#define PAIR(x, y) (((x) << 8) + (y))
 
-auto GetSkillchainSubeffect(const SKILLCHAIN_ELEMENT skillchain) -> ActionProcSkillChain
+auto GetSkillchainSubeffect(const xi::SkillchainType skillchain) -> ActionProcSkillChain
 {
-    if (skillchain < SC_NONE || skillchain > SC_DARKNESS_II)
+    if (skillchain < xi::SkillchainType::None || skillchain > xi::SkillchainType::DarknessIi)
     {
         ShowWarning("battleutils::GetSkillchainSubeffect() - Invalid Element passed to function.");
         return ActionProcSkillChain::None;
     }
 
     static constexpr ActionProcSkillChain effects[] = {
-        ActionProcSkillChain::None,          // SC_NONE
-        ActionProcSkillChain::Transfixion,   // SC_TRANSFIXION
-        ActionProcSkillChain::Compression,   // SC_COMPRESSION
-        ActionProcSkillChain::Liquefaction,  // SC_LIQUEFACTION
-        ActionProcSkillChain::Scission,      // SC_SCISSION
-        ActionProcSkillChain::Reverberation, // SC_REVERBERATION
-        ActionProcSkillChain::Detonation,    // SC_DETONATION
-        ActionProcSkillChain::Induration,    // SC_INDURATION
-        ActionProcSkillChain::Impaction,     // SC_IMPACTION
-        ActionProcSkillChain::Gravitation,   // SC_GRAVITATION
-        ActionProcSkillChain::Distortion,    // SC_DISTORTION
-        ActionProcSkillChain::Fusion,        // SC_FUSION
-        ActionProcSkillChain::Fragmentation, // SC_FRAGMENTATION
-        ActionProcSkillChain::Light,         // SC_LIGHT
-        ActionProcSkillChain::Darkness,      // SC_DARKNESS
-        ActionProcSkillChain::Light,         // SC_LIGHT_II
-        ActionProcSkillChain::Darkness,      // SC_DARKNESS_II
+        ActionProcSkillChain::None,          // None
+        ActionProcSkillChain::Transfixion,   // Transfixion
+        ActionProcSkillChain::Compression,   // Compression
+        ActionProcSkillChain::Liquefaction,  // Liquefaction
+        ActionProcSkillChain::Scission,      // Scission
+        ActionProcSkillChain::Reverberation, // Reverberation
+        ActionProcSkillChain::Detonation,    // Detonation
+        ActionProcSkillChain::Induration,    // Induration
+        ActionProcSkillChain::Impaction,     // Impaction
+        ActionProcSkillChain::Gravitation,   // Gravitation
+        ActionProcSkillChain::Distortion,    // Distortion
+        ActionProcSkillChain::Fusion,        // Fusion
+        ActionProcSkillChain::Fragmentation, // Fragmentation
+        ActionProcSkillChain::Light,         // Light
+        ActionProcSkillChain::Darkness,      // Darkness
+        ActionProcSkillChain::Light,         // LightIi
+        ActionProcSkillChain::Darkness,      // DarknessIi
     };
 
-    return effects[skillchain];
+    return effects[std::to_underlying(skillchain)];
 }
 
-uint8 GetSkillchainTier(SKILLCHAIN_ELEMENT skillchain)
+auto GetSkillchainTier(xi::SkillchainType skillchain) -> uint8
 {
-    if (skillchain < SC_NONE || skillchain > SC_DARKNESS_II)
+    if (skillchain < xi::SkillchainType::None || skillchain > xi::SkillchainType::DarknessIi)
     {
         ShowWarning("battleutils::GetSkillchainTier() - Invalid Element passed to function.");
         return 0;
     }
 
     static const uint8 tiers[] = {
-        0, // SC_NONE
-        1, // SC_TRANSFIXION
-        1, // SC_COMPRESSION
-        1, // SC_LIQUEFACTION
-        1, // SC_SCISSION
-        1, // SC_REVERBERATION
-        1, // SC_DETONATION
-        1, // SC_INDURATION
-        1, // SC_IMPACTION
-        2, // SC_GRAVITATION
-        2, // SC_DISTORTION
-        2, // SC_FUSION
-        2, // SC_FRAGMENTATION
-        3, // SC_LIGHT
-        3, // SC_DARKNESS
-        4, // SC_LIGHT_II
-        4, // SC_DARKNESS_II
+        0, // None
+        1, // Transfixion
+        1, // Compression
+        1, // Liquefaction
+        1, // Scission
+        1, // Reverberation
+        1, // Detonation
+        1, // Induration
+        1, // Impaction
+        2, // Gravitation
+        2, // Distortion
+        2, // Fusion
+        2, // Fragmentation
+        3, // Light
+        3, // Darkness
+        4, // LightIi
+        4, // DarknessIi
     };
 
-    return tiers[skillchain];
+    return tiers[std::to_underlying(skillchain)];
 }
 
-static const std::map<std::pair<SKILLCHAIN_ELEMENT, SKILLCHAIN_ELEMENT>, SKILLCHAIN_ELEMENT> skillchain_map = {
+static const std::map<std::pair<xi::SkillchainType, xi::SkillchainType>, xi::SkillchainType> skillchain_map = {
     // Level 3 Pairs
-    { { SC_LIGHT, SC_LIGHT }, SC_LIGHT_II },
-    { { SC_DARKNESS, SC_DARKNESS }, SC_DARKNESS_II },
+    { { xi::SkillchainType::Light, xi::SkillchainType::Light }, xi::SkillchainType::LightIi },
+    { { xi::SkillchainType::Darkness, xi::SkillchainType::Darkness }, xi::SkillchainType::DarknessIi },
 
     // Level 2 Pairs
-    { { SC_DISTORTION, SC_GRAVITATION }, SC_DARKNESS },
-    { { SC_FRAGMENTATION, SC_GRAVITATION }, SC_FRAGMENTATION },
+    { { xi::SkillchainType::Distortion, xi::SkillchainType::Gravitation }, xi::SkillchainType::Darkness },
+    { { xi::SkillchainType::Fragmentation, xi::SkillchainType::Gravitation }, xi::SkillchainType::Fragmentation },
 
-    { { SC_GRAVITATION, SC_DISTORTION }, SC_DARKNESS },
-    { { SC_FUSION, SC_DISTORTION }, SC_FUSION },
+    { { xi::SkillchainType::Gravitation, xi::SkillchainType::Distortion }, xi::SkillchainType::Darkness },
+    { { xi::SkillchainType::Fusion, xi::SkillchainType::Distortion }, xi::SkillchainType::Fusion },
 
-    { { SC_GRAVITATION, SC_FUSION }, SC_GRAVITATION },
-    { { SC_FRAGMENTATION, SC_FUSION }, SC_LIGHT },
+    { { xi::SkillchainType::Gravitation, xi::SkillchainType::Fusion }, xi::SkillchainType::Gravitation },
+    { { xi::SkillchainType::Fragmentation, xi::SkillchainType::Fusion }, xi::SkillchainType::Light },
 
-    { { SC_DISTORTION, SC_FRAGMENTATION }, SC_DISTORTION },
-    { { SC_FUSION, SC_FRAGMENTATION }, SC_LIGHT },
+    { { xi::SkillchainType::Distortion, xi::SkillchainType::Fragmentation }, xi::SkillchainType::Distortion },
+    { { xi::SkillchainType::Fusion, xi::SkillchainType::Fragmentation }, xi::SkillchainType::Light },
 
     // Level 1 Pairs > Level 2 Skillchain
 
-    { { SC_SCISSION, SC_TRANSFIXION }, SC_DISTORTION },
-    { { SC_IMPACTION, SC_LIQUEFACTION }, SC_FUSION },
-    { { SC_COMPRESSION, SC_DETONATION }, SC_GRAVITATION },
-    { { SC_REVERBERATION, SC_INDURATION }, SC_FRAGMENTATION },
+    { { xi::SkillchainType::Scission, xi::SkillchainType::Transfixion }, xi::SkillchainType::Distortion },
+    { { xi::SkillchainType::Impaction, xi::SkillchainType::Liquefaction }, xi::SkillchainType::Fusion },
+    { { xi::SkillchainType::Compression, xi::SkillchainType::Detonation }, xi::SkillchainType::Gravitation },
+    { { xi::SkillchainType::Reverberation, xi::SkillchainType::Induration }, xi::SkillchainType::Fragmentation },
 
     // Level 1 Pairs
-    { { SC_COMPRESSION, SC_TRANSFIXION }, SC_COMPRESSION },
-    { { SC_REVERBERATION, SC_TRANSFIXION }, SC_REVERBERATION },
+    { { xi::SkillchainType::Compression, xi::SkillchainType::Transfixion }, xi::SkillchainType::Compression },
+    { { xi::SkillchainType::Reverberation, xi::SkillchainType::Transfixion }, xi::SkillchainType::Reverberation },
 
-    { { SC_TRANSFIXION, SC_COMPRESSION }, SC_TRANSFIXION },
-    { { SC_DETONATION, SC_COMPRESSION }, SC_DETONATION },
+    { { xi::SkillchainType::Transfixion, xi::SkillchainType::Compression }, xi::SkillchainType::Transfixion },
+    { { xi::SkillchainType::Detonation, xi::SkillchainType::Compression }, xi::SkillchainType::Detonation },
 
-    { { SC_SCISSION, SC_LIQUEFACTION }, SC_SCISSION },
+    { { xi::SkillchainType::Scission, xi::SkillchainType::Liquefaction }, xi::SkillchainType::Scission },
 
-    { { SC_LIQUEFACTION, SC_SCISSION }, SC_LIQUEFACTION },
-    { { SC_REVERBERATION, SC_SCISSION }, SC_REVERBERATION },
-    { { SC_DETONATION, SC_SCISSION }, SC_DETONATION },
+    { { xi::SkillchainType::Liquefaction, xi::SkillchainType::Scission }, xi::SkillchainType::Liquefaction },
+    { { xi::SkillchainType::Reverberation, xi::SkillchainType::Scission }, xi::SkillchainType::Reverberation },
+    { { xi::SkillchainType::Detonation, xi::SkillchainType::Scission }, xi::SkillchainType::Detonation },
 
-    { { SC_INDURATION, SC_REVERBERATION }, SC_INDURATION },
-    { { SC_IMPACTION, SC_REVERBERATION }, SC_IMPACTION },
+    { { xi::SkillchainType::Induration, xi::SkillchainType::Reverberation }, xi::SkillchainType::Induration },
+    { { xi::SkillchainType::Impaction, xi::SkillchainType::Reverberation }, xi::SkillchainType::Impaction },
 
-    { { SC_SCISSION, SC_DETONATION }, SC_SCISSION },
+    { { xi::SkillchainType::Scission, xi::SkillchainType::Detonation }, xi::SkillchainType::Scission },
 
-    { { SC_COMPRESSION, SC_INDURATION }, SC_COMPRESSION },
-    { { SC_IMPACTION, SC_INDURATION }, SC_IMPACTION },
+    { { xi::SkillchainType::Compression, xi::SkillchainType::Induration }, xi::SkillchainType::Compression },
+    { { xi::SkillchainType::Impaction, xi::SkillchainType::Induration }, xi::SkillchainType::Impaction },
 
-    { { SC_LIQUEFACTION, SC_IMPACTION }, SC_LIQUEFACTION },
-    { { SC_DETONATION, SC_IMPACTION }, SC_DETONATION }
+    { { xi::SkillchainType::Liquefaction, xi::SkillchainType::Impaction }, xi::SkillchainType::Liquefaction },
+    { { xi::SkillchainType::Detonation, xi::SkillchainType::Impaction }, xi::SkillchainType::Detonation }
 };
 
-SKILLCHAIN_ELEMENT FormSkillchain(const std::list<SKILLCHAIN_ELEMENT>& resonance, const std::list<SKILLCHAIN_ELEMENT>& skill)
+auto FormSkillchain(const std::list<xi::SkillchainType>& resonance, const std::list<xi::SkillchainType>& skill) -> xi::SkillchainType
 {
     for (const auto& resonance_element : resonance)
     {
@@ -3397,14 +3389,14 @@ SKILLCHAIN_ELEMENT FormSkillchain(const std::list<SKILLCHAIN_ELEMENT>& resonance
             }
         }
     }
-    return SC_NONE;
+    return xi::SkillchainType::None;
 }
 
 auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 secondary, uint8 tertiary) -> ActionProcSkillChain
 {
     CStatusEffect*     PSCEffect           = PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Skillchain, 0);
     CStatusEffect*     PCBEffect           = PDefender->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Chainbound, 0);
-    SKILLCHAIN_ELEMENT skillchain          = SC_NONE;
+    xi::SkillchainType skillchain          = xi::SkillchainType::None;
     const auto         combined_properties = primary | (secondary << 4) | (tertiary << 8);
 
     if (PSCEffect == nullptr && PCBEffect == nullptr)
@@ -3414,8 +3406,8 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
         return ActionProcSkillChain::None;
     }
 
-    std::list<SKILLCHAIN_ELEMENT>       resonanceProperties;
-    const std::list<SKILLCHAIN_ELEMENT> skillProperties = { static_cast<SKILLCHAIN_ELEMENT>(primary), static_cast<SKILLCHAIN_ELEMENT>(secondary), static_cast<SKILLCHAIN_ELEMENT>(tertiary) };
+    std::list<xi::SkillchainType>       resonanceProperties;
+    const std::list<xi::SkillchainType> skillProperties = { static_cast<xi::SkillchainType>(primary), static_cast<xi::SkillchainType>(secondary), static_cast<xi::SkillchainType>(tertiary) };
 
     // Chainbound active on target
     if (PCBEffect)
@@ -3425,18 +3417,18 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
             // Konzen-Ittai
             if (PCBEffect->GetPower() > 1)
             {
-                resonanceProperties.emplace_back(SC_LIGHT);
-                resonanceProperties.emplace_back(SC_DARKNESS);
-                resonanceProperties.emplace_back(SC_GRAVITATION);
-                resonanceProperties.emplace_back(SC_FRAGMENTATION);
-                resonanceProperties.emplace_back(SC_DISTORTION);
-                resonanceProperties.emplace_back(SC_FUSION);
+                resonanceProperties.emplace_back(xi::SkillchainType::Light);
+                resonanceProperties.emplace_back(xi::SkillchainType::Darkness);
+                resonanceProperties.emplace_back(xi::SkillchainType::Gravitation);
+                resonanceProperties.emplace_back(xi::SkillchainType::Fragmentation);
+                resonanceProperties.emplace_back(xi::SkillchainType::Distortion);
+                resonanceProperties.emplace_back(xi::SkillchainType::Fusion);
             }
-            resonanceProperties.emplace_back(SC_LIQUEFACTION);
-            resonanceProperties.emplace_back(SC_INDURATION);
-            resonanceProperties.emplace_back(SC_REVERBERATION);
-            resonanceProperties.emplace_back(SC_IMPACTION);
-            resonanceProperties.emplace_back(SC_COMPRESSION);
+            resonanceProperties.emplace_back(xi::SkillchainType::Liquefaction);
+            resonanceProperties.emplace_back(xi::SkillchainType::Induration);
+            resonanceProperties.emplace_back(xi::SkillchainType::Reverberation);
+            resonanceProperties.emplace_back(xi::SkillchainType::Impaction);
+            resonanceProperties.emplace_back(xi::SkillchainType::Compression);
 
             skillchain = FormSkillchain(resonanceProperties, skillProperties);
         }
@@ -3459,16 +3451,16 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
             // actually the ID of the opening weaponskill.  We need all 3
             // of the possible skillchain properties on the initial link.
             const auto properties = PSCEffect->GetPower();
-            resonanceProperties.emplace_back(static_cast<SKILLCHAIN_ELEMENT>(properties & 0b1111));
-            resonanceProperties.emplace_back(static_cast<SKILLCHAIN_ELEMENT>((properties >> 4) & 0b1111));
-            resonanceProperties.emplace_back(static_cast<SKILLCHAIN_ELEMENT>((properties >> 8) & 0b1111));
+            resonanceProperties.emplace_back(static_cast<xi::SkillchainType>(properties & 0b1111));
+            resonanceProperties.emplace_back(static_cast<xi::SkillchainType>((properties >> 4) & 0b1111));
+            resonanceProperties.emplace_back(static_cast<xi::SkillchainType>((properties >> 8) & 0b1111));
             skillchain = FormSkillchain(resonanceProperties, skillProperties);
         }
         else
         {
             // Previous effect is not an opening effect, meaning the power is
             // The skill chain ID resonating.
-            resonanceProperties.emplace_back(static_cast<SKILLCHAIN_ELEMENT>(PSCEffect->GetPower()));
+            resonanceProperties.emplace_back(static_cast<xi::SkillchainType>(PSCEffect->GetPower()));
             skillchain = FormSkillchain(resonanceProperties, skillProperties);
         }
     }
@@ -3478,12 +3470,12 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
         return ActionProcSkillChain::None;
     }
 
-    if (skillchain != SC_NONE)
+    if (skillchain != xi::SkillchainType::None)
     {
         PSCEffect->SetStartTime(timer::now());
         PSCEffect->SetDuration(PSCEffect->GetDuration() - 1s);
         PSCEffect->SetTier(GetSkillchainTier(skillchain));
-        PSCEffect->SetPower(skillchain);
+        PSCEffect->SetPower(std::to_underlying(skillchain));
         PSCEffect->SetSubPower(std::min(PSCEffect->GetSubPower() + 1, 5)); // Linked, limited to 5
 
         return GetSkillchainSubeffect(skillchain);
@@ -3498,28 +3490,28 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
     return ActionProcSkillChain::None;
 }
 
-std::vector<ELEMENT> GetSkillchainMagicElement(SKILLCHAIN_ELEMENT skillchain)
+auto GetSkillchainMagicElement(xi::SkillchainType skillchain) -> std::vector<ELEMENT>
 {
-    static const HashMap<SKILLCHAIN_ELEMENT, std::vector<ELEMENT>> resonanceToElement = {
-        { SC_NONE, {} },
-        { SC_TRANSFIXION, { ELEMENT_LIGHT } },
-        { SC_COMPRESSION, { ELEMENT_DARK } },
-        { SC_LIQUEFACTION, { ELEMENT_FIRE } },
-        { SC_SCISSION, { ELEMENT_EARTH } },
-        { SC_REVERBERATION, { ELEMENT_WATER } },
-        { SC_DETONATION, { ELEMENT_WIND } },
-        { SC_INDURATION, { ELEMENT_ICE } },
-        { SC_IMPACTION, { ELEMENT_THUNDER } },
+    static const HashMap<xi::SkillchainType, std::vector<ELEMENT>> resonanceToElement = {
+        { xi::SkillchainType::None, {} },
+        { xi::SkillchainType::Transfixion, { ELEMENT_LIGHT } },
+        { xi::SkillchainType::Compression, { ELEMENT_DARK } },
+        { xi::SkillchainType::Liquefaction, { ELEMENT_FIRE } },
+        { xi::SkillchainType::Scission, { ELEMENT_EARTH } },
+        { xi::SkillchainType::Reverberation, { ELEMENT_WATER } },
+        { xi::SkillchainType::Detonation, { ELEMENT_WIND } },
+        { xi::SkillchainType::Induration, { ELEMENT_ICE } },
+        { xi::SkillchainType::Impaction, { ELEMENT_THUNDER } },
 
-        { SC_GRAVITATION, { ELEMENT_DARK, ELEMENT_EARTH } },
-        { SC_DISTORTION, { ELEMENT_WATER, ELEMENT_ICE } },
-        { SC_FUSION, { ELEMENT_LIGHT, ELEMENT_FIRE } },
-        { SC_FRAGMENTATION, { ELEMENT_WIND, ELEMENT_THUNDER } },
+        { xi::SkillchainType::Gravitation, { ELEMENT_DARK, ELEMENT_EARTH } },
+        { xi::SkillchainType::Distortion, { ELEMENT_WATER, ELEMENT_ICE } },
+        { xi::SkillchainType::Fusion, { ELEMENT_LIGHT, ELEMENT_FIRE } },
+        { xi::SkillchainType::Fragmentation, { ELEMENT_WIND, ELEMENT_THUNDER } },
 
-        { SC_LIGHT, { ELEMENT_LIGHT, ELEMENT_FIRE, ELEMENT_WIND, ELEMENT_THUNDER } },
-        { SC_DARKNESS, { ELEMENT_DARK, ELEMENT_EARTH, ELEMENT_WATER, ELEMENT_ICE } },
-        { SC_LIGHT_II, { ELEMENT_LIGHT, ELEMENT_FIRE, ELEMENT_WIND, ELEMENT_THUNDER } },
-        { SC_DARKNESS_II, { ELEMENT_DARK, ELEMENT_EARTH, ELEMENT_WATER, ELEMENT_ICE } }
+        { xi::SkillchainType::Light, { ELEMENT_LIGHT, ELEMENT_FIRE, ELEMENT_WIND, ELEMENT_THUNDER } },
+        { xi::SkillchainType::Darkness, { ELEMENT_DARK, ELEMENT_EARTH, ELEMENT_WATER, ELEMENT_ICE } },
+        { xi::SkillchainType::LightIi, { ELEMENT_LIGHT, ELEMENT_FIRE, ELEMENT_WIND, ELEMENT_THUNDER } },
+        { xi::SkillchainType::DarknessIi, { ELEMENT_DARK, ELEMENT_EARTH, ELEMENT_WATER, ELEMENT_ICE } }
     };
 
     return resonanceToElement.at(skillchain);
@@ -3568,7 +3560,7 @@ auto TakeSkillchainDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, in
     return damage;
 }
 
-CItemEquipment* GetEntityArmor(CBattleEntity* PEntity, SLOTTYPE Slot)
+auto GetEntityArmor(CBattleEntity* PEntity, SLOTTYPE Slot) -> CItemEquipment*
 {
     if (Slot < SLOT_HEAD || Slot > SLOT_LINK2)
     {
@@ -3584,7 +3576,7 @@ CItemEquipment* GetEntityArmor(CBattleEntity* PEntity, SLOTTYPE Slot)
     return nullptr;
 }
 
-CItemWeapon* GetEntityWeapon(CBattleEntity* PEntity, SLOTTYPE Slot)
+auto GetEntityWeapon(CBattleEntity* PEntity, SLOTTYPE Slot) -> CItemWeapon*
 {
     if (Slot < SLOT_MAIN || Slot > SLOT_AMMO)
     {
@@ -3632,7 +3624,7 @@ void MakeEntityStandUp(CBattleEntity* PEntity)
  *                                                                       *
  ************************************************************************/
 
-bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
+auto HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool) -> bool
 {
     if (PEntity == nullptr || PSpell == nullptr)
     {
@@ -3645,7 +3637,21 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
         uint8  SlotID = 0;
         uint16 toolID = PSpell->getMPCost();
 
-        if (ERROR_SLOTID == (SlotID = PChar->getStorage(LOC_INVENTORY)->SearchItem(toolID)))
+        auto*      PInventory       = PChar->getStorage(LOC_INVENTORY);
+        const auto findUnlockedTool = [PInventory](const uint16 itemId) -> uint8
+        {
+            for (const uint8 slot : PInventory->SearchItems(itemId))
+            {
+                if (!PInventory->GetItem(slot)->isBusy())
+                {
+                    return slot;
+                }
+            }
+
+            return ERROR_SLOTID;
+        };
+
+        if (ERROR_SLOTID == (SlotID = findUnlockedTool(toolID)))
         {
             if (PChar->GetMJob() == xi::Job::NIN || PChar->GetSJob() == xi::Job::NIN) /* CUSTOM NIN TOOL UTILITY */
             {
@@ -3684,7 +3690,7 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
                     default:
                         return false;
                 }
-                if (ERROR_SLOTID == (SlotID = PChar->getStorage(LOC_INVENTORY)->SearchItem(toolID)))
+                if (ERROR_SLOTID == (SlotID = findUnlockedTool(toolID)))
                 {
                     return false;
                 }
@@ -3757,7 +3763,7 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
     then determines if the difference of those angles is within acceptable range for moves that require the three to be "in a straight line"
     Used for Trick Attack and Cover: separate checks for distance/party membership must be done to confirm eligability
 */
-inline bool areInLine(uint8 firstEntityWorldAngle, CBattleEntity* anchorEntity, CBattleEntity* otherEntity)
+inline auto areInLine(uint8 firstEntityWorldAngle, CBattleEntity* anchorEntity, CBattleEntity* otherEntity) -> bool
 {
     // X-degree angle threshold, centered on the firstPlayer's world angle
     // X = 10 => 10/2 * 255 / 360 ~ 3.5 rotation diff, rounded to 4 which really gives X~11.3
@@ -3777,7 +3783,7 @@ inline bool areInLine(uint8 firstEntityWorldAngle, CBattleEntity* anchorEntity, 
  *   then sort by distance and choose the first that succeeds in meeting the criteria of areInline function
  */
 
-CBattleEntity* getAvailableTrickAttackChar(CBattleEntity* taUser, CBattleEntity* PMob)
+auto getAvailableTrickAttackChar(CBattleEntity* taUser, CBattleEntity* PMob) -> CBattleEntity*
 {
     TracyZoneScoped;
 
@@ -3976,7 +3982,7 @@ void TransferEnmity(CBattleEntity* PHateReceiver, CBattleEntity* PHateGiver, CMo
  *                                                                       *
  ************************************************************************/
 
-uint16 doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage)
+auto doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage) -> uint16
 {
     if (m_PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Souleater))
     {
@@ -4003,7 +4009,7 @@ uint16 doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage)
     return damage;
 }
 
-uint16 doConsumeManaEffect(CCharEntity* m_PChar)
+auto doConsumeManaEffect(CCharEntity* m_PChar) -> uint16
 {
     auto bonusDmg = 0;
     if (m_PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ConsumeMana))
@@ -4021,7 +4027,7 @@ uint16 doConsumeManaEffect(CCharEntity* m_PChar)
  *                                                                       *
  ************************************************************************/
 
-uint8 getStoreTPbonusFromMerit(CBattleEntity* PEntity)
+auto getStoreTPbonusFromMerit(CBattleEntity* PEntity) -> uint8
 {
     if (auto* PChar = dynamic_cast<CCharEntity*>(PEntity))
     {
@@ -4039,7 +4045,7 @@ uint8 getStoreTPbonusFromMerit(CBattleEntity* PEntity)
  *                                                                       *
  ************************************************************************/
 
-int32 getOverWhelmDamageBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender, int32 damage)
+auto getOverWhelmDamageBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender, int32 damage) -> int32
 {
     if (auto PChar = dynamic_cast<CCharEntity*>(PAttacker)) // Some mobskills use TakeWeaponskillDamage function, which calls upon this one.
     {
@@ -4075,7 +4081,7 @@ int32 getOverWhelmDamageBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender
     return damage;
 }
 
-uint8 getBarrageShotCount(CBattleEntity* PBattleEntity)
+auto getBarrageShotCount(CBattleEntity* PBattleEntity) -> uint8
 {
     /*
     Ranger level 30, four shots.
@@ -4389,7 +4395,7 @@ void RelinquishClaim(CCharEntity* PChar)
 
 // Checks to see if the mob has a damage cap value
 // This is used for instances like Suttung, Antaeus, Crustacean Conundrum bcnm, Colonization reives
-int32 CheckAndApplyDamageCap(int32 damage, CBattleEntity* PDefender)
+auto CheckAndApplyDamageCap(int32 damage, CBattleEntity* PDefender) -> int32
 {
     int32 damageCap     = PDefender->getMod(xi::Mod::RECEIVED_DAMAGE_CAP);     // The max damage cap
     int32 damageVariant = PDefender->getMod(xi::Mod::RECEIVED_DAMAGE_VARIANT); // The value you want the damage to have a variance by
@@ -4622,7 +4628,7 @@ void HandleTacticalGuard(CBattleEntity* PEntity)
     }
 }
 
-float HandleTranquilHeart(CBattleEntity* PEntity)
+auto HandleTranquilHeart(CBattleEntity* PEntity) -> float
 {
     float reductionPercent = 0.0f;
 
@@ -4659,7 +4665,7 @@ void BindBreakCheck(CBattleEntity* PAttacker, CBattleEntity* PDefender)
     }
 }
 
-int32 HandleOneForAll(CBattleEntity* PDefender, int32 damage)
+auto HandleOneForAll(CBattleEntity* PDefender, int32 damage) -> int32
 {
     if (damage > 0)
     {
@@ -4672,7 +4678,7 @@ int32 HandleOneForAll(CBattleEntity* PDefender, int32 damage)
     return damage;
 }
 
-int32 HandleStoneskin(CBattleEntity* PDefender, int32 damage, xi::AttackType attackType)
+auto HandleStoneskin(CBattleEntity* PDefender, int32 damage, xi::AttackType attackType) -> int32
 {
     if (damage <= 0)
     {
@@ -4734,7 +4740,7 @@ auto HandleSevereDamage(CBattleEntity* PDefender, int32 damage, bool isPhysical)
     return damage;
 }
 
-int32 HandleFanDance(CBattleEntity* PDefender, int32 damage)
+auto HandleFanDance(CBattleEntity* PDefender, int32 damage) -> int32
 {
     // Handle Fan Dance
     if (PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::FanDance))
@@ -4830,7 +4836,7 @@ void assistTarget(CCharEntity* PChar, uint16 TargID)
     }
 }
 
-ELEMENT GetDayElement()
+auto GetDayElement() -> ELEMENT
 {
     DAYTYPE weekday = static_cast<DAYTYPE>(vanadiel_time::get_weekday());
     switch (weekday)
@@ -4950,14 +4956,12 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
     {
         case ELEMENT_NONE:
             return false; // Can't match with no element...
-            break;
         case ELEMENT_FIRE:
             switch (weather)
             {
                 case xi::Weather::HotSpell:
                 case xi::Weather::HeatWave:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -4968,7 +4972,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Snow:
                 case xi::Weather::Blizzards:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -4979,7 +4982,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Wind:
                 case xi::Weather::Gales:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -4990,7 +4992,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::DustStorm:
                 case xi::Weather::SandStorm:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5001,7 +5002,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Thunder:
                 case xi::Weather::Thunderstorms:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5012,7 +5012,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Rain:
                 case xi::Weather::Squall:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5023,7 +5022,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Auroras:
                 case xi::Weather::StellarGlare:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5034,7 +5032,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Gloom:
                 case xi::Weather::Darkness:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5120,7 +5117,7 @@ void DoWildCardToEntity(CCharEntity* PCaster, CCharEntity* PTarget, const uint8 
             // TODO: COR Job Points allow Wild Card to reset itself 1-20% of the time
             if (PTarget->GetMJob() != xi::Job::COR)
             {
-                PTarget->PRecastContainer->Del(RECAST_ABILITY, Recast::Special);
+                PTarget->PRecastContainer->Del(xi::RecastType::Ability, xi::Recast::Special);
             }
 
             if (PTarget->health.maxmp > 0 && (PTarget->health.mp < (PTarget->health.maxmp / 2)))
@@ -5130,12 +5127,12 @@ void DoWildCardToEntity(CCharEntity* PCaster, CCharEntity* PTarget, const uint8 
             break;
 
         case 6: // Resets Lv1/Lv96 1HRs and restores 100% MP
-            PTarget->PRecastContainer->Del(RECAST_ABILITY, Recast::Special2);
+            PTarget->PRecastContainer->Del(xi::RecastType::Ability, xi::Recast::Special2);
             // Wild Card is excluded.
             // TODO: COR Job Points allow Wild Card to reset itself 1-20% of the time
             if (PTarget->GetMJob() != xi::Job::COR)
             {
-                PTarget->PRecastContainer->Del(RECAST_ABILITY, Recast::Special);
+                PTarget->PRecastContainer->Del(xi::RecastType::Ability, xi::Recast::Special);
             }
 
             PTarget->addMP(PTarget->health.maxmp);
@@ -5164,7 +5161,7 @@ void DoWildCardToEntity(CCharEntity* PCaster, CCharEntity* PTarget, const uint8 
  *   Does the random deal effect to a specific character (reset ability) *
  *                                                                       *
  ************************************************************************/
-bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
+auto DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget) -> bool
 {
     std::vector<uint16> resetCandidateList;
     std::vector<uint16> activeCooldownList;
@@ -5175,7 +5172,7 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         return false;
     }
 
-    RecastList_t* recastList = PTarget->PRecastContainer->GetRecastList(RECAST_ABILITY);
+    RecastList_t* recastList = PTarget->PRecastContainer->GetRecastList(xi::RecastType::Ability);
 
     // Get position of abilites and add to the 2 lists
     for (uint8 i = 0; i < recastList->size(); ++i)
@@ -5183,7 +5180,7 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         Recast_t* recast = &recastList->at(i);
 
         // Do not reset 1hrs or Random Deal
-        if (recast->ID != Recast::Special && recast->ID != Recast::Special2 && recast->ID != Recast::RandomDeal)
+        if (recast->ID != xi::Recast::Special && recast->ID != xi::Recast::Special2 && recast->ID != xi::Recast::RandomDeal)
         {
             resetCandidateList.push_back(i);
             if (recast->RecastTime > 0s)
@@ -5193,7 +5190,7 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         }
     }
 
-    if (resetCandidateList.size() == 0 || activeCooldownList.size() == 0)
+    if (resetCandidateList.empty() || activeCooldownList.empty())
     {
         // Evade because we have no abilities that can be reset
         return false;
@@ -5214,12 +5211,12 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
 
         if (loadedDeckChance >= xirand::GetRandomNumber(100))
         {
-            PTarget->PRecastContainer->DeleteByIndex(RECAST_ABILITY, activeCooldownList.at(0));
+            PTarget->PRecastContainer->DeleteByIndex(xi::RecastType::Ability, activeCooldownList.at(0));
 
             // Reset 2 abilities by chance
             if (activeCooldownList.size() > 1 && resetTwoChance >= xirand::GetRandomNumber(100))
             {
-                PTarget->PRecastContainer->DeleteByIndex(RECAST_ABILITY, activeCooldownList.at(1));
+                PTarget->PRecastContainer->DeleteByIndex(xi::RecastType::Ability, activeCooldownList.at(1));
             }
             if (PChar != PTarget)
             {
@@ -5244,12 +5241,12 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         }
 
         // Reset first ability (shuffled or only)
-        PTarget->PRecastContainer->DeleteByIndex(RECAST_ABILITY, resetCandidateList.at(0));
+        PTarget->PRecastContainer->DeleteByIndex(xi::RecastType::Ability, resetCandidateList.at(0));
 
         // Reset 2 abilities by chance (could be 2 abilities that don't need resets)
         if (resetCandidateList.size() > 1 && activeCooldownList.size() > 1 && resetTwoChance >= xirand::GetRandomNumber(1, 100))
         {
-            PTarget->PRecastContainer->DeleteByIndex(RECAST_ABILITY, resetCandidateList.at(1));
+            PTarget->PRecastContainer->DeleteByIndex(xi::RecastType::Ability, resetCandidateList.at(1));
         }
 
         if (PChar != PTarget)
@@ -5294,7 +5291,7 @@ void turnTowardsTarget(CBaseEntity* PEntity, CBaseEntity* PTarget, bool force)
  *                                                                       *
  ************************************************************************/
 
-int16 GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay)
+auto GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay) -> int16
 {
     auto SnapShotReductionPercent{ battleEntity->getMod(xi::Mod::SNAPSHOT) };
 
@@ -5324,7 +5321,7 @@ int16 GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay)
  *                                                                       *
  ************************************************************************/
 
-int32 GetRangedAttackBonuses(CBattleEntity* battleEntity)
+auto GetRangedAttackBonuses(CBattleEntity* battleEntity) -> int32
 {
     if (dynamic_cast<const CCharEntity*>(battleEntity) == nullptr)
     {
@@ -5348,7 +5345,7 @@ int32 GetRangedAttackBonuses(CBattleEntity* battleEntity)
  *                                                                       *
  ************************************************************************/
 
-int32 GetRangedAccuracyBonuses(CBattleEntity* battleEntity)
+auto GetRangedAccuracyBonuses(CBattleEntity* battleEntity) -> int32
 {
     if (dynamic_cast<const CCharEntity*>(battleEntity) == nullptr)
     {
@@ -5441,7 +5438,7 @@ void AddTraits(CBattleEntity* PEntity, TraitList_t* traitList, uint8 level)
     }
 }
 
-bool HasClaim(CBattleEntity* PEntity, CBattleEntity* PTarget)
+auto HasClaim(CBattleEntity* PEntity, CBattleEntity* PTarget) -> bool
 {
     if (PEntity == nullptr)
     {
@@ -5482,7 +5479,7 @@ bool HasClaim(CBattleEntity* PEntity, CBattleEntity* PTarget)
     return found;
 }
 
-timer::duration CalculateSpellCastTime(CBattleEntity* PEntity, CMagicState* PMagicState)
+auto CalculateSpellCastTime(CBattleEntity* PEntity, CMagicState* PMagicState) -> timer::duration
 {
     CSpell* PSpell = PMagicState->GetSpell();
     if (PSpell == nullptr)
@@ -5666,7 +5663,7 @@ timer::duration CalculateSpellCastTime(CBattleEntity* PEntity, CMagicState* PMag
     return std::chrono::floor<std::chrono::milliseconds>(cast * ((100.0f - sumFastCast) / 100.0f));
 }
 
-uint16 CalculateSpellCost(CBattleEntity* PEntity, CSpell* PSpell)
+auto CalculateSpellCost(CBattleEntity* PEntity, CSpell* PSpell) -> uint16
 {
     if (PSpell == nullptr)
     {
@@ -5737,7 +5734,7 @@ uint16 CalculateSpellCost(CBattleEntity* PEntity, CSpell* PSpell)
     return std::clamp<int16>(cost, 0, 9999);
 }
 
-bool CanAffordSpell(CBattleEntity* PEntity, CSpell* PSpell, uint8 flags)
+auto CanAffordSpell(CBattleEntity* PEntity, CSpell* PSpell, uint8 flags) -> bool
 {
     if (PEntity == nullptr)
     {
@@ -5770,7 +5767,7 @@ bool CanAffordSpell(CBattleEntity* PEntity, CSpell* PSpell, uint8 flags)
     return true; // No MP cost required
 }
 
-timer::duration CalculateSpellRecastTime(CBattleEntity* PEntity, CSpell* PSpell)
+auto CalculateSpellRecastTime(CBattleEntity* PEntity, CSpell* PSpell) -> timer::duration
 {
     if (PSpell == nullptr)
     {
@@ -5962,7 +5959,7 @@ timer::duration CalculateSpellRecastTime(CBattleEntity* PEntity, CSpell* PSpell)
     return recast;
 }
 
-int16 CalculateWeaponSkillTP(CBattleEntity* PEntity, CWeaponSkill* PWeaponSkill, int16 spentTP)
+auto CalculateWeaponSkillTP(CBattleEntity* PEntity, CWeaponSkill* PWeaponSkill, int16 spentTP) -> int16
 {
     // apply TP Bonus
     int16 tp = spentTP + PEntity->getMod(xi::Mod::TP_BONUS);
@@ -6015,7 +6012,7 @@ int16 CalculateWeaponSkillTP(CBattleEntity* PEntity, CWeaponSkill* PWeaponSkill,
     return std::min(tp, (int16)3000);
 }
 
-bool RemoveAmmo(CCharEntity* PChar, int quantity)
+auto RemoveAmmo(CCharEntity* PChar, int quantity) -> bool
 {
     CItemWeapon* PItem = (CItemWeapon*)PChar->getEquip(SLOT_AMMO);
 
@@ -6056,7 +6053,7 @@ bool RemoveAmmo(CCharEntity* PChar, int quantity)
     return false;
 }
 
-int32 GetMeritValue(CBattleEntity* PEntity, xi::Merit merit)
+auto GetMeritValue(CBattleEntity* PEntity, xi::Merit merit) -> int32
 {
     if (auto* PChar = dynamic_cast<CCharEntity*>(PEntity))
     {
@@ -6065,7 +6062,7 @@ int32 GetMeritValue(CBattleEntity* PEntity, xi::Merit merit)
     return 0;
 }
 
-int32 GetScaledItemModifier(CBattleEntity* PEntity, CItemEquipment* PItem, xi::Mod mod, bool isDelevel /* = false */)
+auto GetScaledItemModifier(CBattleEntity* PEntity, CItemEquipment* PItem, xi::Mod mod, bool isDelevel /* = false */) -> int32
 {
     if (!PEntity || !PItem)
     {
@@ -6233,7 +6230,7 @@ auto GetRuneEnhancementElement(xi::StatusEffect runeEffect) -> ELEMENT
     }
 }
 
-CBattleEntity* GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEntity* PMob)
+auto GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEntity* PMob) -> CBattleEntity*
 {
     CBattleEntity* PCoverAbilityUser    = nullptr;
     uint32         coverAbilityTargetID = PCoverAbilityTarget->id;
@@ -6271,7 +6268,7 @@ CBattleEntity* GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEn
     return nullptr;
 }
 
-bool IsMagicCovered(CCharEntity* PCoverAbilityUser)
+auto IsMagicCovered(CCharEntity* PCoverAbilityUser) -> bool
 {
     return PCoverAbilityUser != nullptr && PCoverAbilityUser->getMod(xi::Mod::COVER_MAGIC_AND_RANGED) == 1;
 }

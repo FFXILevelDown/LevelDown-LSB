@@ -37,7 +37,7 @@
 namespace
 {
 
-std::vector<CPPModule*>& cppModules()
+auto cppModules() -> std::vector<CPPModule*>&
 {
     static std::vector<CPPModule*> cppModules{};
     return cppModules;
@@ -381,7 +381,7 @@ void LoadLuaModules(IPP mapIPP)
         const sol::table moduleRegistry  = lua["xi"]["module"]["registry"];
         const sol::table commandRegistry = lua["xi"]["module"]["commandRegistry"];
 
-        if (moduleRegistry.size() == 0 && commandRegistry.size() == 0)
+        if (moduleRegistry.empty() && commandRegistry.empty())
         {
             // The old interface returned the command table instead of
             // registering it, and would otherwise vanish silently.

@@ -62,7 +62,7 @@ auto CAutomatonEntity::head() const -> xi::AutomatonHead
     return equip_.head;
 }
 
-uint8 CAutomatonEntity::attachment(const uint8 slotid) const
+auto CAutomatonEntity::attachment(const uint8 slotid) const -> uint8
 {
     return equip_.attachments[slotid];
 }
@@ -159,7 +159,7 @@ void CAutomatonEntity::Die()
     CPetEntity::Die();
 }
 
-bool CAutomatonEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags)
+auto CAutomatonEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags) -> bool
 {
     if (targetFlags & TARGET_PLAYER && this == PInitiator)
     {
@@ -175,7 +175,7 @@ void CAutomatonEntity::OnCastFinished(CMagicState& state, action_t& action)
     auto* PSpell  = state.GetSpell();
     auto* PTarget = state.target().resolve<CBattleEntity>();
 
-    PRecastContainer->Add(RECAST_MAGIC, static_cast<Recast>(PSpell->getID()), action.recast);
+    PRecastContainer->Add(xi::RecastType::Magic, static_cast<xi::Recast>(PSpell->getID()), action.recast);
 
     if (PSpell->tookEffect())
     {
