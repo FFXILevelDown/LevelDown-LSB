@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../../schemas/zone.schema.json
+#
+# TVR 10-5 / 11-2 instances - STAGED. Copy to data/zones/gwora_corridor/zone.yaml (core) when TVR is enabled:
+# upstream ships no zone.yaml for this zone, and module overlays are ignored without a base file.
+
+type: [instanced]
+misc: [trust]
