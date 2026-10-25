@@ -320,7 +320,7 @@ auto GetMaxSkill(xi::SkillType SkillID, xi::Job JobID, uint8 level) -> uint16
     return skills().Caps[std::min<uint8>(level, 99)][GetSkillRank(SkillID, JobID)];
 }
 
-uint16 GetMaxSkill(uint8 rank, uint8 level)
+auto GetMaxSkill(uint8 rank, uint8 level) -> uint16
 {
     const auto& caps = skills().Caps;
     if (level >= caps.size() || rank >= xi::data::kSkillRanks)
@@ -331,7 +331,7 @@ uint16 GetMaxSkill(uint8 rank, uint8 level)
     return caps[std::min<std::size_t>(level, caps.size() - 1)][std::min<std::size_t>(rank, xi::data::kSkillRanks - 1)];
 }
 
-bool isValidSelfTargetWeaponskill(int wsid)
+auto isValidSelfTargetWeaponskill(int wsid) -> bool
 {
     switch (wsid)
     {
@@ -344,7 +344,7 @@ bool isValidSelfTargetWeaponskill(int wsid)
     return false;
 }
 
-bool CanUseWeaponskill(CCharEntity* PChar, CWeaponSkill* PSkill)
+auto CanUseWeaponskill(CCharEntity* PChar, CWeaponSkill* PSkill) -> bool
 {
     return ((PSkill->getSkillLevel() > 0 && PChar->GetSkill(static_cast<xi::SkillType>(PSkill->getType())) >= PSkill->getSkillLevel() &&
              (PSkill->getUnlockId() == 0 || charutils::hasLearnedWeaponskill(PChar, PSkill->getUnlockId()))) ||
@@ -359,12 +359,12 @@ bool CanUseWeaponskill(CCharEntity* PChar, CWeaponSkill* PSkill)
  *                                                                       *
  ************************************************************************/
 
-int32 GetEnmityModDamage(int16 level)
+auto GetEnmityModDamage(int16 level) -> int32
 {
     return level * 31 / 50 + 6;
 }
 
-int32 GetEnmityModCure(int16 level)
+auto GetEnmityModCure(int16 level) -> int32
 {
     if (level <= 10)
     {
@@ -384,7 +384,7 @@ int32 GetEnmityModCure(int16 level)
  *                                                                       *
  ************************************************************************/
 
-CWeaponSkill* GetWeaponSkill(uint16 WSkillID)
+auto GetWeaponSkill(uint16 WSkillID) -> CWeaponSkill*
 {
     if (WSkillID >= MAX_WEAPONSKILL_ID)
     {
@@ -403,7 +403,7 @@ CWeaponSkill* GetWeaponSkill(uint16 WSkillID)
  *                                                                       *
  ************************************************************************/
 
-const std::list<CWeaponSkill*>& GetWeaponSkills(uint8 skill)
+auto GetWeaponSkills(uint8 skill) -> const std::list<CWeaponSkill*>&
 {
     if (skill >= MAX_SKILLTYPE)
     {
@@ -420,7 +420,7 @@ const std::list<CWeaponSkill*>& GetWeaponSkills(uint8 skill)
  *                                                                       *
  ************************************************************************/
 
-CMobSkill* GetMobSkill(uint16 SkillID)
+auto GetMobSkill(uint16 SkillID) -> CMobSkill*
 {
     if (SkillID < g_PMobSkillList.size())
     {
@@ -440,7 +440,7 @@ CMobSkill* GetMobSkill(uint16 SkillID)
  *                                                                       *
  ************************************************************************/
 
-CPetSkill* GetPetSkill(uint16 SkillID)
+auto GetPetSkill(uint16 SkillID) -> CPetSkill*
 {
     if (g_PPetSkillList.contains(SkillID))
     {
@@ -458,13 +458,13 @@ CPetSkill* GetPetSkill(uint16 SkillID)
  *                                                                       *
  ************************************************************************/
 
-const std::vector<uint16>& GetMobSkillList(uint16 ListID)
+auto GetMobSkillList(uint16 ListID) -> const std::vector<uint16>&
 {
     return g_PMobSkillLists[ListID];
 }
 
 // TODO: Apply fire in generous quantities. Replace with existing lua functions.
-int32 CalculateEnspellDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 Tier, uint8 element, CItemWeapon* pWeaponHit)
+auto CalculateEnspellDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 Tier, uint8 element, CItemWeapon* pWeaponHit) -> int32
 {
     int32 damage = 0;
 
@@ -1676,7 +1676,7 @@ void HandleEnspell(CBattleEntity* PAttacker, CBattleEntity* PDefender, action_re
     }
 }
 
-uint8 GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage, int16 accBonus)
+auto GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage, int16 accBonus) -> uint8
 {
     // Check to see if distance is greater than 25 and force hitrate to be 0
     if (distance(PAttacker->loc.p, PDefender->loc.p) > 25)
@@ -1691,12 +1691,12 @@ uint8 GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool 
     return hitrate;
 }
 
-uint8 GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage)
+auto GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage) -> uint8
 {
     return GetRangedHitRate(PAttacker, PDefender, isBarrage, 0);
 }
 
-float GetRangedDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, int16 bonusRangedAttack)
+auto GetRangedDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, int16 bonusRangedAttack) -> float
 {
     float pDIF = 1.0;
 
@@ -1745,7 +1745,7 @@ float GetRangedDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, b
     return std::max(pDIF, 0.f);
 }
 
-int16 CalculateBaseTP(CBattleEntity* PEntity, int32 delay)
+auto CalculateBaseTP(CBattleEntity* PEntity, int32 delay) -> int16
 {
     int16 baseTPReturn = 0;
 
@@ -1875,7 +1875,7 @@ auto CalculateTPFromDamageTaken(CBattleEntity* PAttacker, CBattleEntity* PDefend
     return tpReturn;
 }
 
-bool TryInterruptSpell(CBattleEntity* PAttacker, CBattleEntity* PDefender, CSpell* PSpell)
+auto TryInterruptSpell(CBattleEntity* PAttacker, CBattleEntity* PDefender, CSpell* PSpell) -> bool
 {
     // Early return: Spell can't be interrupted.
     if (PSpell->getSkillType() == xi::SkillType::Singing)
@@ -2478,8 +2478,8 @@ auto TakeSwipeLungeDamage(CBattleEntity* PDefender, CBattleEntity* PAttacker, in
  *                                                                       *
  ************************************************************************/
 
-uint8 GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber,
-                   int16 offsetAccuracy) // subWeaponAttack is for calculating acc of dual wielded sub weapon
+auto GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber,
+                  int16 offsetAccuracy) -> uint8 // subWeaponAttack is for calculating acc of dual wielded sub weapon
 {
     int32 hitrate = 75;
 
@@ -2503,17 +2503,17 @@ uint8 GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 att
     return static_cast<uint8>(hitrate);
 }
 
-uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> uint8
 {
     return GetHitRateEx(PAttacker, PDefender, 0, 0); // assume attack 0(main)
 }
 
-uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber)
+auto GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber) -> uint8
 {
     return GetHitRateEx(PAttacker, PDefender, attackNumber, 0);
 }
 
-uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber, int16 offsetAccuracy)
+auto GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attackNumber, int16 offsetAccuracy) -> uint8
 {
     return GetHitRateEx(PAttacker, PDefender, attackNumber, offsetAccuracy);
 }
@@ -2524,7 +2524,7 @@ uint8 GetHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 attac
  *                                                                       *
  ************************************************************************/
 
-uint8 GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ignoreSneakTrickAttack, SLOTTYPE weaponSlot)
+auto GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ignoreSneakTrickAttack, SLOTTYPE weaponSlot) -> uint8
 {
     int32 critHitRate = 5;
     if (PAttacker->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::MightyStrikes, 0) ||
@@ -2606,7 +2606,7 @@ uint8 GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ig
     return (uint8)critHitRate;
 }
 
-int8 GetDexCritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetDexCritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> int8
 {
     // https://www.bg-wiki.com/bg/Critical_Hit_Rate
     int32 attackerDex = PAttacker->DEX();
@@ -2652,7 +2652,7 @@ int8 GetDexCritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
  *                                                                       *
  ************************************************************************/
 
-uint8 GetRangedCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetRangedCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> uint8
 {
     int32 critHitRate = 5;
     // apply merit mods and traits
@@ -2687,7 +2687,7 @@ uint8 GetRangedCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender)
     return (uint8)critHitRate;
 }
 
-int8 GetAGICritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
+auto GetAGICritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> int8
 {
     // https://www.bg-wiki.com/bg/Critical_Hit_Rate
     int32 attackerAgi = PAttacker->AGI();
@@ -2707,7 +2707,7 @@ int8 GetAGICritBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender)
  *                                                                       *
  ************************************************************************/
 
-float GetDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, float bonusAttPercent, xi::SkillType weaponType, SLOTTYPE weaponSlot, bool isCannonball)
+auto GetDamageRatio(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isCritical, float bonusAttPercent, xi::SkillType weaponType, SLOTTYPE weaponSlot, bool isCannonball) -> float
 {
     float pDIF = 1.0f;
 
@@ -2773,7 +2773,7 @@ auto GetFSTR(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 SlotID) -
  *                                                                       *
  ************************************************************************/
 
-uint8 getHitCount(uint8 hits)
+auto getHitCount(uint8 hits) -> uint8
 {
     uint8 distribution = xirand::GetRandomNumber(100);
     uint8 num          = 1;
@@ -2794,7 +2794,6 @@ uint8 getHitCount(uint8 hits)
                 num += 1;
                 break;
             }
-            break;
         case 3: // cdf = 30,80,100
             if (distribution < 30)
             {
@@ -2810,7 +2809,6 @@ uint8 getHitCount(uint8 hits)
                 num += 2;
                 break;
             }
-            break;
         case 4: // cdf = 20,50,80,100
             if (distribution < 20)
             {
@@ -2831,7 +2829,6 @@ uint8 getHitCount(uint8 hits)
                 num += 3;
                 break;
             }
-            break;
         case 5: // cdf = 10,30,60,90,100
             if (distribution < 10)
             {
@@ -2857,7 +2854,6 @@ uint8 getHitCount(uint8 hits)
                 num += 4;
                 break;
             }
-            break;
         case 6: // cdf = 10,30,50,70,90,100
             if (distribution < 10)
             {
@@ -2888,7 +2884,6 @@ uint8 getHitCount(uint8 hits)
                 num += 5;
                 break;
             }
-            break;
         case 7: // cdf = 5,20,45,70,85,95,100
             if (distribution < 5)
             {
@@ -2924,7 +2919,6 @@ uint8 getHitCount(uint8 hits)
                 num += 6;
                 break;
             }
-            break;
         case 8: // cdf = 5,20,45,70,85,95,98,100
             if (distribution < 5)
             {
@@ -2965,7 +2959,6 @@ uint8 getHitCount(uint8 hits)
                 num += 7;
                 break;
             }
-            break;
     }
     return std::min<uint8>(num, 8); // No more than eight hits per attack
 }
@@ -3025,7 +3018,7 @@ auto GetEcosystemStrongAgainst(const xi::Ecosystem ecosystem) -> xi::Ecosystem
  *                                                                       *
  ************************************************************************/
 
-uint8 CheckMultiHits(CBattleEntity* PEntity, CItemWeapon* PWeapon)
+auto CheckMultiHits(CBattleEntity* PEntity, CItemWeapon* PWeapon) -> uint8
 {
     if (!PWeapon)
     {
@@ -3096,7 +3089,7 @@ uint8 CheckMultiHits(CBattleEntity* PEntity, CItemWeapon* PWeapon)
  *                                                                       *
  ************************************************************************/
 
-bool IsParalyzed(CBattleEntity* PAttacker)
+auto IsParalyzed(CBattleEntity* PAttacker) -> bool
 {
     return (xirand::GetRandomNumber(100) < PAttacker->getMod(xi::Mod::PARALYZE));
 }
@@ -3107,7 +3100,7 @@ bool IsParalyzed(CBattleEntity* PAttacker)
  *                                                                       *
  ************************************************************************/
 
-bool IsAbsorbByShadow(CBattleEntity* PDefender, CBattleEntity* PAttacker)
+auto IsAbsorbByShadow(CBattleEntity* PDefender, CBattleEntity* PAttacker) -> bool
 {
     // utsus always overwrites blink, so if utsus>0 then we know theres no blink.
     uint16  Shadow    = PDefender->getMod(xi::Mod::UTSUSEMI);
@@ -3271,7 +3264,6 @@ auto IsIntimidated(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> bool
  *  Get SkillChain Effect                                                *
  *                                                                       *
  ************************************************************************/
-#define PAIR(x, y) (((x) << 8) + (y))
 
 auto GetSkillchainSubeffect(const xi::SkillchainType skillchain) -> ActionProcSkillChain
 {
@@ -3304,7 +3296,7 @@ auto GetSkillchainSubeffect(const xi::SkillchainType skillchain) -> ActionProcSk
     return effects[std::to_underlying(skillchain)];
 }
 
-uint8 GetSkillchainTier(xi::SkillchainType skillchain)
+auto GetSkillchainTier(xi::SkillchainType skillchain) -> uint8
 {
     if (skillchain < xi::SkillchainType::None || skillchain > xi::SkillchainType::DarknessIi)
     {
@@ -3385,7 +3377,7 @@ static const std::map<std::pair<xi::SkillchainType, xi::SkillchainType>, xi::Ski
     { { xi::SkillchainType::Detonation, xi::SkillchainType::Impaction }, xi::SkillchainType::Detonation }
 };
 
-xi::SkillchainType FormSkillchain(const std::list<xi::SkillchainType>& resonance, const std::list<xi::SkillchainType>& skill)
+auto FormSkillchain(const std::list<xi::SkillchainType>& resonance, const std::list<xi::SkillchainType>& skill) -> xi::SkillchainType
 {
     for (const auto& resonance_element : resonance)
     {
@@ -3498,7 +3490,7 @@ auto GetSkillChainEffect(const CBattleEntity* PDefender, uint8 primary, uint8 se
     return ActionProcSkillChain::None;
 }
 
-std::vector<ELEMENT> GetSkillchainMagicElement(xi::SkillchainType skillchain)
+auto GetSkillchainMagicElement(xi::SkillchainType skillchain) -> std::vector<ELEMENT>
 {
     static const HashMap<xi::SkillchainType, std::vector<ELEMENT>> resonanceToElement = {
         { xi::SkillchainType::None, {} },
@@ -3568,7 +3560,7 @@ auto TakeSkillchainDamage(CBattleEntity* PAttacker, CBattleEntity* PDefender, in
     return damage;
 }
 
-CItemEquipment* GetEntityArmor(CBattleEntity* PEntity, SLOTTYPE Slot)
+auto GetEntityArmor(CBattleEntity* PEntity, SLOTTYPE Slot) -> CItemEquipment*
 {
     if (Slot < SLOT_HEAD || Slot > SLOT_LINK2)
     {
@@ -3584,7 +3576,7 @@ CItemEquipment* GetEntityArmor(CBattleEntity* PEntity, SLOTTYPE Slot)
     return nullptr;
 }
 
-CItemWeapon* GetEntityWeapon(CBattleEntity* PEntity, SLOTTYPE Slot)
+auto GetEntityWeapon(CBattleEntity* PEntity, SLOTTYPE Slot) -> CItemWeapon*
 {
     if (Slot < SLOT_MAIN || Slot > SLOT_AMMO)
     {
@@ -3632,7 +3624,7 @@ void MakeEntityStandUp(CBattleEntity* PEntity)
  *                                                                       *
  ************************************************************************/
 
-bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
+auto HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool) -> bool
 {
     if (PEntity == nullptr || PSpell == nullptr)
     {
@@ -3771,7 +3763,7 @@ bool HasNinjaTool(CBattleEntity* PEntity, CSpell* PSpell, bool ConsumeTool)
     then determines if the difference of those angles is within acceptable range for moves that require the three to be "in a straight line"
     Used for Trick Attack and Cover: separate checks for distance/party membership must be done to confirm eligability
 */
-inline bool areInLine(uint8 firstEntityWorldAngle, CBattleEntity* anchorEntity, CBattleEntity* otherEntity)
+inline auto areInLine(uint8 firstEntityWorldAngle, CBattleEntity* anchorEntity, CBattleEntity* otherEntity) -> bool
 {
     // X-degree angle threshold, centered on the firstPlayer's world angle
     // X = 10 => 10/2 * 255 / 360 ~ 3.5 rotation diff, rounded to 4 which really gives X~11.3
@@ -3791,7 +3783,7 @@ inline bool areInLine(uint8 firstEntityWorldAngle, CBattleEntity* anchorEntity, 
  *   then sort by distance and choose the first that succeeds in meeting the criteria of areInline function
  */
 
-CBattleEntity* getAvailableTrickAttackChar(CBattleEntity* taUser, CBattleEntity* PMob)
+auto getAvailableTrickAttackChar(CBattleEntity* taUser, CBattleEntity* PMob) -> CBattleEntity*
 {
     TracyZoneScoped;
 
@@ -3990,7 +3982,7 @@ void TransferEnmity(CBattleEntity* PHateReceiver, CBattleEntity* PHateGiver, CMo
  *                                                                       *
  ************************************************************************/
 
-uint16 doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage)
+auto doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage) -> uint16
 {
     if (m_PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Souleater))
     {
@@ -4017,7 +4009,7 @@ uint16 doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage)
     return damage;
 }
 
-uint16 doConsumeManaEffect(CCharEntity* m_PChar)
+auto doConsumeManaEffect(CCharEntity* m_PChar) -> uint16
 {
     auto bonusDmg = 0;
     if (m_PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ConsumeMana))
@@ -4035,7 +4027,7 @@ uint16 doConsumeManaEffect(CCharEntity* m_PChar)
  *                                                                       *
  ************************************************************************/
 
-uint8 getStoreTPbonusFromMerit(CBattleEntity* PEntity)
+auto getStoreTPbonusFromMerit(CBattleEntity* PEntity) -> uint8
 {
     if (auto* PChar = dynamic_cast<CCharEntity*>(PEntity))
     {
@@ -4053,7 +4045,7 @@ uint8 getStoreTPbonusFromMerit(CBattleEntity* PEntity)
  *                                                                       *
  ************************************************************************/
 
-int32 getOverWhelmDamageBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender, int32 damage)
+auto getOverWhelmDamageBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender, int32 damage) -> int32
 {
     if (auto PChar = dynamic_cast<CCharEntity*>(PAttacker)) // Some mobskills use TakeWeaponskillDamage function, which calls upon this one.
     {
@@ -4089,7 +4081,7 @@ int32 getOverWhelmDamageBonus(CBattleEntity* PAttacker, CBattleEntity* PDefender
     return damage;
 }
 
-uint8 getBarrageShotCount(CBattleEntity* PBattleEntity)
+auto getBarrageShotCount(CBattleEntity* PBattleEntity) -> uint8
 {
     /*
     Ranger level 30, four shots.
@@ -4403,7 +4395,7 @@ void RelinquishClaim(CCharEntity* PChar)
 
 // Checks to see if the mob has a damage cap value
 // This is used for instances like Suttung, Antaeus, Crustacean Conundrum bcnm, Colonization reives
-int32 CheckAndApplyDamageCap(int32 damage, CBattleEntity* PDefender)
+auto CheckAndApplyDamageCap(int32 damage, CBattleEntity* PDefender) -> int32
 {
     int32 damageCap     = PDefender->getMod(xi::Mod::RECEIVED_DAMAGE_CAP);     // The max damage cap
     int32 damageVariant = PDefender->getMod(xi::Mod::RECEIVED_DAMAGE_VARIANT); // The value you want the damage to have a variance by
@@ -4636,7 +4628,7 @@ void HandleTacticalGuard(CBattleEntity* PEntity)
     }
 }
 
-float HandleTranquilHeart(CBattleEntity* PEntity)
+auto HandleTranquilHeart(CBattleEntity* PEntity) -> float
 {
     float reductionPercent = 0.0f;
 
@@ -4673,7 +4665,7 @@ void BindBreakCheck(CBattleEntity* PAttacker, CBattleEntity* PDefender)
     }
 }
 
-int32 HandleOneForAll(CBattleEntity* PDefender, int32 damage)
+auto HandleOneForAll(CBattleEntity* PDefender, int32 damage) -> int32
 {
     if (damage > 0)
     {
@@ -4686,7 +4678,7 @@ int32 HandleOneForAll(CBattleEntity* PDefender, int32 damage)
     return damage;
 }
 
-int32 HandleStoneskin(CBattleEntity* PDefender, int32 damage, xi::AttackType attackType)
+auto HandleStoneskin(CBattleEntity* PDefender, int32 damage, xi::AttackType attackType) -> int32
 {
     if (damage <= 0)
     {
@@ -4748,7 +4740,7 @@ auto HandleSevereDamage(CBattleEntity* PDefender, int32 damage, bool isPhysical)
     return damage;
 }
 
-int32 HandleFanDance(CBattleEntity* PDefender, int32 damage)
+auto HandleFanDance(CBattleEntity* PDefender, int32 damage) -> int32
 {
     // Handle Fan Dance
     if (PDefender->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::FanDance))
@@ -4844,7 +4836,7 @@ void assistTarget(CCharEntity* PChar, uint16 TargID)
     }
 }
 
-ELEMENT GetDayElement()
+auto GetDayElement() -> ELEMENT
 {
     DAYTYPE weekday = static_cast<DAYTYPE>(vanadiel_time::get_weekday());
     switch (weekday)
@@ -4964,14 +4956,12 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
     {
         case ELEMENT_NONE:
             return false; // Can't match with no element...
-            break;
         case ELEMENT_FIRE:
             switch (weather)
             {
                 case xi::Weather::HotSpell:
                 case xi::Weather::HeatWave:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -4982,7 +4972,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Snow:
                 case xi::Weather::Blizzards:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -4993,7 +4982,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Wind:
                 case xi::Weather::Gales:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5004,7 +4992,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::DustStorm:
                 case xi::Weather::SandStorm:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5015,7 +5002,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Thunder:
                 case xi::Weather::Thunderstorms:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5026,7 +5012,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Rain:
                 case xi::Weather::Squall:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5037,7 +5022,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Auroras:
                 case xi::Weather::StellarGlare:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5048,7 +5032,6 @@ auto WeatherMatchesElement(const xi::Weather weather, const uint8 element) -> bo
                 case xi::Weather::Gloom:
                 case xi::Weather::Darkness:
                     return true;
-                    break;
                 default:
                     return false;
             }
@@ -5178,7 +5161,7 @@ void DoWildCardToEntity(CCharEntity* PCaster, CCharEntity* PTarget, const uint8 
  *   Does the random deal effect to a specific character (reset ability) *
  *                                                                       *
  ************************************************************************/
-bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
+auto DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget) -> bool
 {
     std::vector<uint16> resetCandidateList;
     std::vector<uint16> activeCooldownList;
@@ -5207,7 +5190,7 @@ bool DoRandomDealToEntity(CCharEntity* PChar, CBattleEntity* PTarget)
         }
     }
 
-    if (resetCandidateList.size() == 0 || activeCooldownList.size() == 0)
+    if (resetCandidateList.empty() || activeCooldownList.empty())
     {
         // Evade because we have no abilities that can be reset
         return false;
@@ -5308,7 +5291,7 @@ void turnTowardsTarget(CBaseEntity* PEntity, CBaseEntity* PTarget, bool force)
  *                                                                       *
  ************************************************************************/
 
-int16 GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay)
+auto GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay) -> int16
 {
     auto SnapShotReductionPercent{ battleEntity->getMod(xi::Mod::SNAPSHOT) };
 
@@ -5338,7 +5321,7 @@ int16 GetRangedDelayReduction(CBattleEntity* battleEntity, int16 delay)
  *                                                                       *
  ************************************************************************/
 
-int32 GetRangedAttackBonuses(CBattleEntity* battleEntity)
+auto GetRangedAttackBonuses(CBattleEntity* battleEntity) -> int32
 {
     if (dynamic_cast<const CCharEntity*>(battleEntity) == nullptr)
     {
@@ -5362,7 +5345,7 @@ int32 GetRangedAttackBonuses(CBattleEntity* battleEntity)
  *                                                                       *
  ************************************************************************/
 
-int32 GetRangedAccuracyBonuses(CBattleEntity* battleEntity)
+auto GetRangedAccuracyBonuses(CBattleEntity* battleEntity) -> int32
 {
     if (dynamic_cast<const CCharEntity*>(battleEntity) == nullptr)
     {
@@ -5455,7 +5438,7 @@ void AddTraits(CBattleEntity* PEntity, TraitList_t* traitList, uint8 level)
     }
 }
 
-bool HasClaim(CBattleEntity* PEntity, CBattleEntity* PTarget)
+auto HasClaim(CBattleEntity* PEntity, CBattleEntity* PTarget) -> bool
 {
     if (PEntity == nullptr)
     {
@@ -5496,7 +5479,7 @@ bool HasClaim(CBattleEntity* PEntity, CBattleEntity* PTarget)
     return found;
 }
 
-timer::duration CalculateSpellCastTime(CBattleEntity* PEntity, CMagicState* PMagicState)
+auto CalculateSpellCastTime(CBattleEntity* PEntity, CMagicState* PMagicState) -> timer::duration
 {
     CSpell* PSpell = PMagicState->GetSpell();
     if (PSpell == nullptr)
@@ -5680,7 +5663,7 @@ timer::duration CalculateSpellCastTime(CBattleEntity* PEntity, CMagicState* PMag
     return std::chrono::floor<std::chrono::milliseconds>(cast * ((100.0f - sumFastCast) / 100.0f));
 }
 
-uint16 CalculateSpellCost(CBattleEntity* PEntity, CSpell* PSpell)
+auto CalculateSpellCost(CBattleEntity* PEntity, CSpell* PSpell) -> uint16
 {
     if (PSpell == nullptr)
     {
@@ -5751,7 +5734,7 @@ uint16 CalculateSpellCost(CBattleEntity* PEntity, CSpell* PSpell)
     return std::clamp<int16>(cost, 0, 9999);
 }
 
-bool CanAffordSpell(CBattleEntity* PEntity, CSpell* PSpell, uint8 flags)
+auto CanAffordSpell(CBattleEntity* PEntity, CSpell* PSpell, uint8 flags) -> bool
 {
     if (PEntity == nullptr)
     {
@@ -5784,7 +5767,7 @@ bool CanAffordSpell(CBattleEntity* PEntity, CSpell* PSpell, uint8 flags)
     return true; // No MP cost required
 }
 
-timer::duration CalculateSpellRecastTime(CBattleEntity* PEntity, CSpell* PSpell)
+auto CalculateSpellRecastTime(CBattleEntity* PEntity, CSpell* PSpell) -> timer::duration
 {
     if (PSpell == nullptr)
     {
@@ -5976,7 +5959,7 @@ timer::duration CalculateSpellRecastTime(CBattleEntity* PEntity, CSpell* PSpell)
     return recast;
 }
 
-int16 CalculateWeaponSkillTP(CBattleEntity* PEntity, CWeaponSkill* PWeaponSkill, int16 spentTP)
+auto CalculateWeaponSkillTP(CBattleEntity* PEntity, CWeaponSkill* PWeaponSkill, int16 spentTP) -> int16
 {
     // apply TP Bonus
     int16 tp = spentTP + PEntity->getMod(xi::Mod::TP_BONUS);
@@ -6029,7 +6012,7 @@ int16 CalculateWeaponSkillTP(CBattleEntity* PEntity, CWeaponSkill* PWeaponSkill,
     return std::min(tp, (int16)3000);
 }
 
-bool RemoveAmmo(CCharEntity* PChar, int quantity)
+auto RemoveAmmo(CCharEntity* PChar, int quantity) -> bool
 {
     CItemWeapon* PItem = (CItemWeapon*)PChar->getEquip(SLOT_AMMO);
 
@@ -6070,7 +6053,7 @@ bool RemoveAmmo(CCharEntity* PChar, int quantity)
     return false;
 }
 
-int32 GetMeritValue(CBattleEntity* PEntity, xi::Merit merit)
+auto GetMeritValue(CBattleEntity* PEntity, xi::Merit merit) -> int32
 {
     if (auto* PChar = dynamic_cast<CCharEntity*>(PEntity))
     {
@@ -6079,7 +6062,7 @@ int32 GetMeritValue(CBattleEntity* PEntity, xi::Merit merit)
     return 0;
 }
 
-int32 GetScaledItemModifier(CBattleEntity* PEntity, CItemEquipment* PItem, xi::Mod mod, bool isDelevel /* = false */)
+auto GetScaledItemModifier(CBattleEntity* PEntity, CItemEquipment* PItem, xi::Mod mod, bool isDelevel /* = false */) -> int32
 {
     if (!PEntity || !PItem)
     {
@@ -6247,7 +6230,7 @@ auto GetRuneEnhancementElement(xi::StatusEffect runeEffect) -> ELEMENT
     }
 }
 
-CBattleEntity* GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEntity* PMob)
+auto GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEntity* PMob) -> CBattleEntity*
 {
     CBattleEntity* PCoverAbilityUser    = nullptr;
     uint32         coverAbilityTargetID = PCoverAbilityTarget->id;
@@ -6285,7 +6268,7 @@ CBattleEntity* GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEn
     return nullptr;
 }
 
-bool IsMagicCovered(CCharEntity* PCoverAbilityUser)
+auto IsMagicCovered(CCharEntity* PCoverAbilityUser) -> bool
 {
     return PCoverAbilityUser != nullptr && PCoverAbilityUser->getMod(xi::Mod::COVER_MAGIC_AND_RANGED) == 1;
 }

@@ -37,7 +37,7 @@ using json = nlohmann::json;
 namespace
 {
 
-constexpr bool isBcryptHash(const std::string& passHash)
+constexpr auto isBcryptHash(const std::string& passHash) -> bool
 {
     return std::size(passHash) == 60 &&
            passHash[0] == '$' &&
@@ -435,7 +435,6 @@ void auth_session::read_func()
                 sendLoginResult(login_result::LOGIN_ERROR_CREATE_TAKEN);
                 return;
             }
-            break;
         }
         case login_cmd::LOGIN_CHANGE_PASSWORD:
         {
@@ -468,7 +467,7 @@ void auth_session::read_func()
             if (status & ACCOUNT_STATUS_CODE::NORMAL)
             {
                 // Account info verified, update password
-                if (updated_password == "")
+                if (updated_password.empty())
                 {
                     ShowWarningFmt("login_parse: Empty password: Could not update password for user <{}>.", username);
                     sendLoginResult(login_result::LOGIN_ERROR_CHANGE_PASSWORD);
@@ -653,7 +652,7 @@ void auth_session::do_write(std::size_t length)
         });
 }
 
-Maybe<std::pair<uint32, uint32>> auth_session::validatePassword(std::string username, std::string password)
+auto auth_session::validatePassword(std::string username, std::string password) -> Maybe<std::pair<uint32, uint32>>
 {
     uint32 accountID = 0;
     uint32 status    = 0;
