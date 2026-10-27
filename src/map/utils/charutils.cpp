@@ -3387,6 +3387,10 @@ void BuildingCharPetAbilityTable(CCharEntity* PChar, CPetEntity* PPet, uint32 Pe
                     {
                         addPetAbility(PChar, PAbility->getID() - ABILITY_HEALING_RUBY);
                     }
+                    else if (PAbility->getID() == ABILITY_REGAL_GASH) /* LD REGAL GASH MENU */
+                    {
+                        addPetAbility(PChar, ABILITY_REGAL_GASH - ABILITY_HEALING_RUBY);
+                    }
                 }
                 else if (PetID == PETID_SIREN)
                 {

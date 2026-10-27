@@ -1696,6 +1696,41 @@ void HandleEnspell(CBattleEntity* PAttacker, CBattleEntity* PDefender, action_re
             }
         }
     }
+
+    // Heavenward Howl /* LD AVATAR WARD EFFECTS */
+    if (!Action->hasAdditionalEffect() && finaldamage > 0 && PDefender->m_EcoSystem != xi::Ecosystem::Undead)
+    {
+        if (CStatusEffect* PEndrain = PAttacker->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Endrain))
+        {
+            int32 drained = finaldamage * PEndrain->GetPower() / 100;
+            if (drained > 0)
+            {
+                Action->additionalEffect = ActionProcAddEffect::HPDrain;
+                Action->addEffectMessage = MsgBasic::AddEffectHPDrained;
+                PDefender->takeDamage(drained, PAttacker, xi::AttackType::Magical, xi::DamageType::Dark);
+                Action->addEffectParam = PAttacker->addHP(drained);
+                if (PChar != nullptr)
+                {
+                    PChar->updatemask |= UPDATE_HP;
+                }
+            }
+        }
+        else if (CStatusEffect* PEnaspir = PAttacker->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Enaspir))
+        {
+            int32 drained = std::min<int32>(finaldamage * PEnaspir->GetPower() / 100, PDefender->health.mp);
+            if (drained > 0)
+            {
+                Action->additionalEffect = ActionProcAddEffect::MPDrain;
+                Action->addEffectMessage = MsgBasic::AddEffectMPDrained;
+                PDefender->addMP(-drained);
+                Action->addEffectParam = PAttacker->addMP(drained);
+                if (PChar != nullptr)
+                {
+                    PChar->updatemask |= UPDATE_HP;
+                }
+            }
+        }
+    }
 }
 
 auto GetRangedHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool isBarrage, int16 accBonus) -> uint8
@@ -4749,7 +4784,7 @@ auto HandleStoneskin(CBattleEntity* PDefender, int32 damage, xi::AttackType atta
 auto HandleSevereDamage(CBattleEntity* PDefender, int32 damage, bool isPhysical) -> int32
 {
     damage = HandleSevereDamageEffect(PDefender, xi::StatusEffect::Migawari, damage, true);
-    // TODO: Earthen Armor effect
+    damage = HandleSevereDamageEffect(PDefender, xi::StatusEffect::EarthenArmor, damage, false); /* LD AVATAR WARD EFFECTS */
     // TODO: Sentinel's Scherzo effect
 
     if (isPhysical && PDefender->objtype == TYPE_PET && PDefender->getMod(xi::Mod::AUTO_SCHURZEN) != 0 && damage >= PDefender->health.hp &&
@@ -4815,8 +4850,7 @@ auto HandleSevereDamageEffect(CBattleEntity* PDefender, xi::StatusEffect effect,
         if (damage > damageThreshold)
         {
             uint16 severeReduction = PDefender->StatusEffectContainer->GetStatusEffect(effect)->GetSubPower();
-            severeReduction        = std::clamp((100 - severeReduction), 0, 100) / 100;
-            damage                 = damage * severeReduction;
+            damage = static_cast<int32>(damage * (std::clamp(100 - static_cast<int32>(severeReduction), 0, 100) / 100.0f)); /* LD AVATAR WARD EFFECTS */
 
             if (removeEffect)
             {
