@@ -1661,6 +1661,40 @@ void CCharEntity::OnCastFinished(CMagicState& state, action_t& action)
             }
         }
     }
+    // LD: the first Blue Magic cast spends these, hit or miss
+    if (PSpell->getSpellGroup() == SPELLGROUP_BLUE)
+    {
+        if (StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ChainAffinity))
+        {
+            // Physical spells are the ones with a skillchain property
+            if (static_cast<CBlueSpell*>(PSpell)->getPrimarySkillchain() != 0)
+            {
+                health.tp = StatusEffectContainer->HasStatusEffect({ xi::StatusEffect::Sekkanoki, xi::StatusEffect::MeikyoShisui }) ? std::max(health.tp - 1000, 0) : 0;
+            }
+
+            StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::ChainAffinity);
+        }
+
+        StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::BurstAffinity);
+        StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::Efflux);
+
+        if (PSpell->getAOE() == SPELLAOE_DIFFUSION)
+        {
+            StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Diffusion);
+        }
+
+        if (PSpell->getRequirements() & SPELLREQ_UNBRIDLED_LEARNING)
+        {
+            StatusEffectContainer->DelStatusEffect(xi::StatusEffect::UnbridledLearning);
+        }
+
+        // Fantod Boost keeps its cast count in subPower, Monk Boost has none
+        if (auto* PBoost = StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Boost); PBoost && PBoost->GetSubPower() > 0 && PSpell->dealsDamage())
+        {
+            StatusEffectContainer->DelStatusEffectSilent(xi::StatusEffect::Boost);
+        }
+    }
+
     charutils::RemoveStratagems(this, PSpell);
     if (PSpell->tookEffect())
     {

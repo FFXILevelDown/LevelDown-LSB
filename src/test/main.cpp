@@ -28,6 +28,8 @@
 
 #include <iostream>
 #include <memory>
+#include <algorithm>
+#include <string_view>
 
 auto main(int argc, char** argv) -> int
 {
@@ -39,13 +41,22 @@ auto main(int argc, char** argv) -> int
         std::cout << "[----------] Running C++ unit tests with Catch2\n";
 
         const char* catchArgv[] = { argv[0] };
+        /* LD XI_TEST KEEP GOING */
+        const bool keepGoing = std::any_of(argv + 1, argv + argc, [](const char* arg) { return std::string_view(arg) == "--keep-going"; });
         if (Catch::Session().run(1, catchArgv) != 0)
         {
-            std::cerr << "C++ unit tests failed; skipping the Lua test suite.\n";
+            if (keepGoing)
+            {
+                std::cerr << "C++ unit tests failed; continuing with the Lua test suite (--keep-going).\n";
+            }
+            else
+            {
+                std::cerr << "C++ unit tests failed; skipping the Lua test suite.\n";
 
-            testApp.reset();
-            lua_cleanup();
-            return EXIT_FAILURE;
+                testApp.reset();
+                lua_cleanup();
+                return EXIT_FAILURE;
+            }
         }
     }
 

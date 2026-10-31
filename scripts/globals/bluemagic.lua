@@ -29,6 +29,20 @@ xi.spells.blue.tpMod =
 -- Local functions
 -----------------------------------
 
+-- Unbridled Learning Effect job points: Unbridled spells deal +1% damage per rank.
+local function calculateUnbridledBonus(caster, spellId)
+    if spellId >= xi.magic.spell.THUNDERBOLT and spellId <= xi.magic.spell.TEARING_GUST then
+        return 1 + caster:getJobPointLevel(xi.jp.UNBRIDLED_LRN_EFFECT) / 100
+    end
+
+    return 1
+end
+
+-- Convergence damage percent: 5 per merit level (merit value 5), gear adds its mod per merit level.
+local function calculateConvergenceBonus(caster, meritCount)
+    return 1 + 0.01 * (meritCount + meritCount / 5 * caster:getMod(xi.mod.ENHANCES_CONVERGENCE))
+end
+
 -- Get alpha (level-dependent multiplier on WSC)
 local function calculateAlpha(level)
     if level <= 60 then
@@ -197,20 +211,19 @@ end
 ---@param params blueSkillParams
 ---@return number
 local getTPBonus = function(caster, params)
-    local tp = 0
+    local bonus = 0
 
-    -- Efflux acts like a 1k tp Chain Affinity
-    -- With Chain Affinity, this is effectively TP bonus +1000.
+    -- Efflux acts like a 1k tp Chain Affinity.
     if params.hasEfflux then
-        tp = 1000 -- TOOD: add Efflux bonus gear as mod
+        bonus = 1000 + caster:getJobPointLevel(xi.jp.EFFLUX_EFFECT) * 10 + caster:getMod(xi.mod.ENHANCES_EFFLUX)
     end
 
+    -- With Chain Affinity, the higher of Efflux and Enchainment is added to current TP.
     if params.hasChainAffinity then
-        tp = tp + caster:getTP() + caster:getMerit(xi.merit.ENCHAINMENT)
-        tp = utils.clamp(tp, 0, 3000)
+        bonus = math.max(bonus, caster:getMerit(xi.merit.ENCHAINMENT)) + caster:getTP()
     end
 
-    return tp
+    return utils.clamp(bonus, 0, 3000)
 end
 
 ---@param caster CBaseEntity
@@ -252,9 +265,11 @@ local function getPhysicalBlueMagicBaseDamage(caster, target, spell, params, isC
 
     -- TODO: verify the chain affinity bonus is supposed to be multiplied here.
     -- There's no documentation on it doing that and ilvl gear plainly states +X
-    local baseDamage = (math.floor(skill * 0.11) * 2 + 3) * multiplier + extraDmg
+    if params.hasAzureLore then
+        extraDmg = extraDmg + caster:getJobPointLevel(xi.jp.AZURE_LORE_EFFECT)
+    end
 
-    baseDamage = utils.clamp(baseDamage, 0, params.baseDamageCap)
+    local baseDamage = utils.clamp((math.floor(skill * 0.11) * 2 + 3) * multiplier, 0, params.baseDamageCap) + extraDmg
 
      -- fSTR
     local dSTR = caster:getStat(xi.mod.STR) - target:getStat(xi.mod.VIT)
@@ -278,7 +293,7 @@ local function getPhysicalBlueMagicBaseDamage(caster, target, spell, params, isC
     wsc = wsc + wsc * bonusWSC -- Bonus WSC from AF3/CA
 
     -- Final D
-    return math.floor(baseDamage + fStr + wsc)
+    return math.floor((baseDamage + fStr + wsc) * calculateUnbridledBonus(caster, spell:getID()))
 end
 
 ---@class blueReturnInfo
@@ -835,13 +850,17 @@ xi.spells.blue.useMagicalSpell = function(caster, target, spell, params, action)
     -- Initial values
     local initialD   = utils.clamp(caster:getMainLvl() + 2, 0, params.baseDamageCap)
 
+    if params.hasBurstAffinity then
+        initialD = initialD + caster:getJobPointLevel(xi.jp.BURST_AFFINITY_BONUS) * 2
+    end
+
     -- WSC
     local wsc           = calculateWSC(caster, params)
     local wscMultiplier = 1
 
     -- BLU AF3 bonus (triples the base WSC when it procs)
     if math.randomInt(1, 100) <= caster:getMod(xi.mod.AUGMENT_BLU_MAGIC) then
-        wscMultiplier = wscMultiplier + 1
+        wscMultiplier = wscMultiplier + 2
     end
 
     if params.hasBurstAffinity then
@@ -881,12 +900,12 @@ xi.spells.blue.useMagicalSpell = function(caster, target, spell, params, action)
     local canMB            = params.hasBurstAffinity or params.hasAzureLore
     local skillchainCount  = canMB and xi.combat.magicBurst.getMagicBurstTier(target, spellElement) or 0
     local convergenceBonus = 1
-    local bonusMacc        = 0
+    local bonusMacc        = caster:getJobPointLevel(xi.jp.BLU_MAGIC_ACC_BONUS)
 
     if params.hasConvergence then
         local meritCount = caster:getMerit(xi.merit.CONVERGENCE) -- 5/5 merits = 25
 
-        convergenceBonus = 1 + 0.01 * meritCount
+        convergenceBonus = calculateConvergenceBonus(caster, meritCount)
         bonusMacc        = bonusMacc + meritCount
     end
 
@@ -920,7 +939,12 @@ xi.spells.blue.useMagicalSpell = function(caster, target, spell, params, action)
     end
 
     finalDamage = math.floor(finalDamage * xi.spells.damage.calculateEbullienceMultiplier(caster, spellGroup))
-    finalDamage = math.floor(finalDamage * xi.settings.main.BLUE_POWER)
+    finalDamage = math.floor(finalDamage * calculateUnbridledBonus(caster, spellId))
+
+    -- LD: magical path takes MDT, severe damage and nuke wall
+    finalDamage = math.floor(finalDamage * xi.combat.damage.calculateDamageAdjustment(target, false, true, false, false))
+    finalDamage = math.floor(target:handleSevereDamage(finalDamage, false))
+    finalDamage = math.floor(finalDamage * calculateNukeWallFactor(target, spellElement, finalDamage))
 
     return xi.spells.blue.applySpellDamage(caster, target, spell, finalDamage, params, nil)
 end
@@ -954,13 +978,13 @@ xi.spells.blue.useDrainSpell = function(caster, target, spell, params, damageCap
     local skillType       = xi.skill.BLUE_MAGIC
     local canMB           = caster:hasStatusEffect(xi.effect.AZURE_LORE) or caster:hasStatusEffect(xi.effect.BURST_AFFINITY)
     local skillchainCount = canMB and xi.combat.magicBurst.getMagicBurstTier(target, spellElement) or 0
-    local bonusMacc       = 0
+    local bonusMacc       = caster:getJobPointLevel(xi.jp.BLU_MAGIC_ACC_BONUS)
 
     if params.hasConvergence then
         local meritCount = caster:getMerit(xi.merit.CONVERGENCE) -- 5/5 merits = 25
 
         bonusMacc   = bonusMacc + meritCount
-        finalDamage = math.floor(finalDamage * (1 + 0.01 * meritCount))
+        finalDamage = math.floor(finalDamage * calculateConvergenceBonus(caster, meritCount))
     end
 
     local maccParams =
@@ -1000,6 +1024,7 @@ xi.spells.blue.useDrainSpell = function(caster, target, spell, params, damageCap
 
         target:delMP(finalDamage)
         caster:addMP(finalDamage)
+        caster:delStatusEffectSilent(xi.effect.CONVERGENCE)
 
         return finalDamage
     end
@@ -1051,13 +1076,13 @@ xi.spells.blue.useBreathSpell = function(caster, target, spell, params, action)
     local damageType       = params.damageType or xi.damageType.NONE
     local canMB            = caster:hasStatusEffect(xi.effect.AZURE_LORE) or caster:hasStatusEffect(xi.effect.BURST_AFFINITY)
     local skillchainCount  = canMB and xi.combat.magicBurst.getMagicBurstTier(target, spellElement) or 0
-    local bonusMacc        = 0
+    local bonusMacc        = caster:getJobPointLevel(xi.jp.BLU_MAGIC_ACC_BONUS)
 
     if params.hasConvergence then
         local meritCount = caster:getMerit(xi.merit.CONVERGENCE) -- 5/5 merits = 25
 
         bonusMacc = bonusMacc + meritCount
-        dmg       = dmg * (1 + 0.01 * meritCount)
+        dmg       = dmg * calculateConvergenceBonus(caster, meritCount)
     end
 
     local maccParams =
@@ -1213,10 +1238,8 @@ xi.spells.blue.calculateDurationWithDiffusion = function(caster, duration)
         local merits = caster:getMerit(xi.merit.DIFFUSION)
 
         if merits > 0 then -- each merit after the first increases duration by 5%
-            duration = duration + (merits - 5) * duration / 100
+            duration = duration + (merits - 5 + merits / 5 * caster:getMod(xi.mod.ENHANCES_DIFFUSION)) * duration / 100
         end
-
-        caster:delStatusEffect(xi.effect.DIFFUSION)
     end
 
     return duration
@@ -1270,6 +1293,7 @@ xi.spells.blue.useEnfeeblingSpell = function(caster, target, spell, params)
         magicBurstTier = skillchainCount,
         actorStat      = xi.mod.INT,
         skillType      = xi.skill.BLUE_MAGIC,
+        bonusMacc      = caster:getJobPointLevel(xi.jp.BLU_MAGIC_ACC_BONUS),
     }
 
     local resist = xi.combat.magicHitRate.calculateResistRate(caster, target, maccParams)
@@ -1339,6 +1363,7 @@ xi.spells.blue.applyBlueAdditionalEffect = function(caster, target, params, effe
         magicalElement = element,
         actorStat      = stat,
         skillType      = xi.skill.BLUE_MAGIC,
+        bonusMacc      = caster:getJobPointLevel(xi.jp.BLU_MAGIC_ACC_BONUS) + caster:getJobPointLevel(xi.jp.BLUE_PHYS_AE_ACC_BONUS),
     }
 
     local resist = xi.combat.magicHitRate.calculateResistRate(caster, target, maccParams)

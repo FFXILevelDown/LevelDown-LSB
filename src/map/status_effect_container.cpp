@@ -2029,6 +2029,11 @@ void CStatusEffectContainer::TickRegen(timer::time_point tick)
         int16 poison  = m_POwner->getMod(xi::Mod::REGEN_DOWN);
         int16 refresh = std::max<int16>(m_POwner->getMod(xi::Mod::REFRESH), 0) - m_POwner->getMod(xi::Mod::REFRESH_DOWN);
         int16 regain  = m_POwner->getMod(xi::Mod::REGAIN) - m_POwner->getMod(xi::Mod::REGAIN_DOWN);
+        // Gokotai: Regain +1 per Dual Wield, cap 100, main hand only /* LD GOKOTAI REGAIN */
+        if (PChar && PChar->m_Weapons[SLOT_MAIN] && PChar->m_Weapons[SLOT_MAIN]->getID() == 21922)
+        {
+            regain += std::clamp<int16>(PChar->getMod(xi::Mod::DUAL_WIELD), 0, 100);
+        }
         m_POwner->addHP(regen);
 
         if (PChar != nullptr && PChar->m_PMonstrosity != nullptr)

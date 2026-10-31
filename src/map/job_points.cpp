@@ -17,6 +17,7 @@
 #include "job_points.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
+#include "status_effect_container.h" /* LD PARAGON RETAIL RATES */
 
 #include "packets/s2c/0x0aa_magic_data.h"
 #include "spell.h"
@@ -220,7 +221,8 @@ auto CJobPoints::GetAllJobPoints() -> JobPoints_t*
 
 auto CJobPoints::AddCapacityPoints(uint16 amount) -> bool
 {
-    uint32 adjustedCapacity = m_jobPoints[static_cast<uint8>(m_PChar->GetMJob())].capacityPoints + amount * settings::get<float>("map.CAPACITY_RATE");
+    const float cpRate = m_PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial) ? 1.0f : settings::get<float>("map.CAPACITY_RATE"); /* LD PARAGON RETAIL RATES */
+    uint32 adjustedCapacity = m_jobPoints[static_cast<uint8>(m_PChar->GetMJob())].capacityPoints + amount * cpRate;
     uint16 currentJobPoints = this->GetJobPoints();
 
     if (adjustedCapacity >= 30000)
@@ -272,7 +274,7 @@ void CJobPoints::SetCapacityPoints(uint16 amount)
 
 auto CJobPoints::GetJobPointValue(JOBPOINT_TYPE jpType) -> uint8
 {
-    if (IsJobPointExist(jpType) && (m_PChar->GetMLevel() == 75 || m_PChar->GetMLevel() >= 99) && static_cast<uint8>(m_PChar->GetMJob()) == JobPointsCategoryIndexByJpType(jpType))
+    if (IsJobPointExist(jpType) && ((m_PChar->GetMLevel() == 75 && !m_PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial) /* LD PARAGON JP LEVEL */) || m_PChar->GetMLevel() >= 99) && static_cast<uint8>(m_PChar->GetMJob()) == JobPointsCategoryIndexByJpType(jpType))
     {
         return GetJobPointType(jpType)->value;
     }
@@ -329,7 +331,7 @@ void RefreshGiftMods(CCharEntity* PChar)
     for (auto&& gift : jpGifts[jobId])
     {
         // === DUAL-ERA MULTI-TIER GIFT SYSTEM ===
-        if (gift.jpRequired > totalJpSpent || (PChar->GetMLevel() != 75 && PChar->GetMLevel() < 99))
+        if (gift.jpRequired > totalJpSpent || ((PChar->GetMLevel() != 75 || PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial) /* LD PARAGON JP LEVEL */) && PChar->GetMLevel() < 99))
         {
             break;
         }

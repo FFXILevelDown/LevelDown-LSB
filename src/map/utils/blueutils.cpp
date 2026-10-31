@@ -548,6 +548,13 @@ void CalculateTraits(CCharEntity* PChar)
         for (auto it = traitsToAdd.begin(); it != traitsToAdd.end();)
         {
             auto        currentTrait = (CBlueTrait*)*it;
+            // LD: gifts skip Double Attack and Gilfinder
+            if (currentTrait->getMod() == xi::Mod::DOUBLE_ATTACK || currentTrait->getMod() == xi::Mod::GILFINDER)
+            {
+                ++it;
+                continue;
+            }
+
             auto        newRank      = currentTrait->getRank() + traitTierBonus;
             CBlueTrait* newTrait     = nullptr;
 
