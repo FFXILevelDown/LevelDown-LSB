@@ -390,6 +390,118 @@ auto GetBaseToRank(uint8 rank, uint16 lvl) -> uint16
     return 0;
 }
 
+/* LD MOB STATS 100+ */
+namespace
+{
+constexpr uint16 kRetailRankValues[7][51] = {
+    { 60, 62, 64, 67, 69, 72, 74, 76, 79, 81, 84, 86, 88, 91, 93, 96, 98, 100, 103, 105, 109, 113, 117, 122, 126, 130, 135, 139, 143, 148, 152, 156, 161, 165, 170, 174, 179, 183, 188, 193, 198, 203, 209, 215, 221, 227, 233, 239, 247, 255, 263 }, // A
+    { 55, 57, 59, 61, 63, 65, 67, 70, 72, 74, 76, 78, 80, 83, 85, 88, 90, 92, 94, 96, 99, 102, 106, 110, 114, 118, 122, 126, 130, 134, 138, 142, 146, 150, 154, 158, 162, 166, 171, 175, 180, 185, 190, 196, 201, 207, 212, 217, 223, 228, 234 }, // B
+    { 49, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 89, 92, 96, 99, 103, 106, 110, 113, 117, 121, 124, 127, 131, 135, 138, 142, 146, 150, 153, 157, 161, 165, 170, 175, 180, 185, 189, 194, 201, 208, 215 }, // C
+    { 44, 45, 47, 49, 51, 52, 54, 56, 58, 59, 61, 63, 65, 66, 68, 70, 72, 73, 75, 77, 80, 83, 86, 89, 92, 96, 99, 102, 105, 108, 111, 114, 117, 120, 124, 127, 130, 134, 137, 140, 144, 148, 152, 156, 161, 165, 169, 174, 178, 182, 187 }, // D
+    { 39, 40, 42, 43, 45, 46, 48, 49, 51, 53, 54, 56, 57, 59, 60, 62, 63, 65, 67, 68, 70, 72, 75, 78, 81, 84, 86, 89, 92, 95, 97, 99, 102, 105, 108, 111, 114, 117, 120, 123, 126, 129, 133, 137, 141, 144, 148, 152, 156, 160, 164 }, // E
+    { 35, 36, 37, 39, 40, 42, 43, 44, 46, 47, 49, 50, 51, 53, 54, 56, 57, 58, 60, 61, 63, 65, 68, 70, 73, 75, 78, 80, 83, 85, 87, 89, 92, 94, 97, 100, 102, 105, 107, 110, 113, 116, 119, 122, 125, 129, 131, 134, 136, 139, 142 }, // F
+    { 31, 32, 33, 34, 35, 37, 38, 39, 40, 42, 43, 44, 45, 47, 48, 49, 50, 52, 53, 54, 56, 58, 60, 62, 64, 67, 69, 71, 73, 76, 78, 80, 82, 85, 87, 89, 92, 94, 96, 99, 101, 104, 107, 110, 113, 116, 119, 122, 125, 128, 131 }, // G
+};
+
+struct CurvePoint
+{
+    float level;
+    float value;
+};
+
+template <std::size_t N>
+auto curveValue(const CurvePoint (&curve)[N], uint8 level) -> float
+{
+    for (std::size_t i = 1; i < N; ++i)
+    {
+        if (level <= curve[i].level || i == N - 1) // the last segment continues past its end
+        {
+            const auto& a = curve[i - 1];
+            const auto& b = curve[i];
+            return a.value + (level - a.level) * (b.value - a.value) / (b.level - a.level);
+        }
+    }
+
+    return curve[N - 1].value;
+}
+
+constexpr CurvePoint kDefCurve[] = { { 99, 377 }, { 107, 590 }, { 114, 620 }, { 125, 899 }, { 130, 1036 }, { 139, 1306 }, { 150, 1735 } };
+constexpr CurvePoint kEvaCurve[] = { { 99, 430 }, { 107, 676 }, { 114, 700 }, { 125, 935 }, { 130, 1073 }, { 139, 1344 }, { 142, 1462 }, { 150, 1774 } };
+constexpr CurvePoint kAttCurve[] = { { 99, 690 }, { 114, 1125 }, { 134, 1710 }, { 150, 2174 } };
+constexpr CurvePoint kAccCurve[] = { { 99, 506 }, { 107, 617 }, { 114, 728 }, { 125, 935 }, { 135, 1213 }, { 150, 1774 } };
+
+// DEF/EVA rank spread at level 99 from Studio Gobli's formulas, relative to rank C, which the curves describe
+auto defEvaRankScale(uint8 rank) -> float
+{
+    constexpr float kLevel99[5] = { 398.0f, 387.0f, 377.0f, 366.0f, 346.0f };
+    return (rank >= 1 && rank <= 5) ? kLevel99[rank - 1] / 377.0f : 1.0f;
+}
+
+auto ldRankValue(uint8 rank, uint8 level) -> uint16
+{
+    if (level < 100 || rank < 1 || rank > 7)
+    {
+        return GetBaseToRank(rank, level);
+    }
+
+    const auto& row = kRetailRankValues[rank - 1];
+    if (level <= 150)
+    {
+        return row[level - 100];
+    }
+
+    return static_cast<uint16>(row[50] + (level - 150) * (row[50] - row[49]));
+}
+
+auto ldBaseDef(CMobEntity* PMob, uint8 rank) -> uint16
+{
+    if (PMob->GetMLevel() < 100)
+    {
+        return GetBaseDefEva(PMob, rank);
+    }
+
+    return static_cast<uint16>(curveValue(kDefCurve, PMob->GetMLevel()) * defEvaRankScale(rank));
+}
+
+// The curves are totals, so the part EVA(), ATT() and ACC() add from stats is taken back out
+auto ldBaseEva(CMobEntity* PMob, uint8 rank) -> uint16
+{
+    if (PMob->GetMLevel() < 100)
+    {
+        return GetBaseDefEva(PMob, rank);
+    }
+
+    // Retail EVA barely moves with job rank, so only half of the spread applies
+    const float scale = 1.0f + (defEvaRankScale(rank) - 1.0f) * 0.5f;
+    return static_cast<uint16>(std::max(0.0f, curveValue(kEvaCurve, PMob->GetMLevel()) * scale - PMob->stats.AGI / 2.0f));
+}
+
+auto ldSkillScale(CMobEntity* PMob, uint8 rank) -> float
+{
+    return static_cast<float>(GetBaseSkill(PMob, rank)) / std::max<float>(1.0f, GetBaseSkill(PMob, 1));
+}
+
+auto ldBaseAtt(CMobEntity* PMob, uint8 rank) -> uint16
+{
+    if (PMob->GetMLevel() < 100)
+    {
+        return GetBaseSkill(PMob, rank);
+    }
+
+    return static_cast<uint16>(std::max(0.0f, curveValue(kAttCurve, PMob->GetMLevel()) * ldSkillScale(PMob, rank) - 8.0f - PMob->stats.STR / 2.0f));
+}
+
+auto ldBaseAcc(CMobEntity* PMob, uint8 rank) -> uint16
+{
+    if (PMob->GetMLevel() < 100)
+    {
+        return GetBaseSkill(PMob, rank);
+    }
+
+    return static_cast<uint16>(std::max(0.0f, curveValue(kAccCurve, PMob->GetMLevel()) * ldSkillScale(PMob, rank) - PMob->stats.DEX / 2.0f));
+}
+} // namespace
+
 /************************************************************************
  *                                                                       *
  *  Calculation for subjob stats                                         *
@@ -943,29 +1055,29 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
         ((CItemWeapon*)PMob->m_Weapons[SLOT_MAIN])->resetDelay();
     }
 
-    uint16 fSTR = GetBaseToRank(PMob->strRank, mLvl);
-    uint16 fDEX = GetBaseToRank(PMob->dexRank, mLvl);
-    uint16 fVIT = GetBaseToRank(PMob->vitRank, mLvl);
-    uint16 fAGI = GetBaseToRank(PMob->agiRank, mLvl);
-    uint16 fINT = GetBaseToRank(PMob->intRank, mLvl);
-    uint16 fMND = GetBaseToRank(PMob->mndRank, mLvl);
-    uint16 fCHR = GetBaseToRank(PMob->chrRank, mLvl);
+    uint16 fSTR = ldRankValue(PMob->strRank, mLvl);
+    uint16 fDEX = ldRankValue(PMob->dexRank, mLvl);
+    uint16 fVIT = ldRankValue(PMob->vitRank, mLvl);
+    uint16 fAGI = ldRankValue(PMob->agiRank, mLvl);
+    uint16 fINT = ldRankValue(PMob->intRank, mLvl);
+    uint16 fMND = ldRankValue(PMob->mndRank, mLvl);
+    uint16 fCHR = ldRankValue(PMob->chrRank, mLvl);
 
-    uint16 mSTR = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 2), mLvl);
-    uint16 mDEX = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 3), mLvl);
-    uint16 mVIT = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 4), mLvl);
-    uint16 mAGI = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 5), mLvl);
-    uint16 mINT = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 6), mLvl);
-    uint16 mMND = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 7), mLvl);
-    uint16 mCHR = GetBaseToRank(grade::GetJobGrade(PMob->GetMJob(), 8), mLvl);
+    uint16 mSTR = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 2), mLvl);
+    uint16 mDEX = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 3), mLvl);
+    uint16 mVIT = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 4), mLvl);
+    uint16 mAGI = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 5), mLvl);
+    uint16 mINT = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 6), mLvl);
+    uint16 mMND = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 7), mLvl);
+    uint16 mCHR = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 8), mLvl);
 
-    uint16 sSTR = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 2), sLvl);
-    uint16 sDEX = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 3), sLvl);
-    uint16 sVIT = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 4), sLvl);
-    uint16 sAGI = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 5), sLvl);
-    uint16 sINT = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 6), sLvl);
-    uint16 sMND = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 7), sLvl);
-    uint16 sCHR = GetBaseToRank(grade::GetJobGrade(PMob->GetSJob(), 8), sLvl);
+    uint16 sSTR = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 2), std::min<uint8>(sLvl, 127));
+    uint16 sDEX = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 3), std::min<uint8>(sLvl, 127));
+    uint16 sVIT = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 4), std::min<uint8>(sLvl, 127));
+    uint16 sAGI = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 5), std::min<uint8>(sLvl, 127));
+    uint16 sINT = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 6), std::min<uint8>(sLvl, 127));
+    uint16 sMND = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 7), std::min<uint8>(sLvl, 127));
+    uint16 sCHR = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 8), std::min<uint8>(sLvl, 127));
 
     // Each subjob stat is determined by where the mob is located and what level the mob is.
     // Each rank has their own formula as shown in GetSubJobStats
@@ -1054,12 +1166,12 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
         }
     }
 
-    PMob->addModifier(xi::Mod::DEF, GetBaseDefEva(PMob, PMob->defRank));                         // Base Defense for all mobs
-    PMob->addModifier(xi::Mod::EVA, GetBaseDefEva(PMob, JobSkillRankToBaseEvaRank(mJob, sJob))); // Evasion is based off the highest job rank. // TODO: add family bonuses (colibri has static evasion+ porrogos have % boost.)
-    PMob->addModifier(xi::Mod::ATT, GetBaseSkill(PMob, PMob->attRank));                          // Base Attack for all mobs is Rank A+ but pull from DB for specific cases
-    PMob->addModifier(xi::Mod::ACC, GetBaseSkill(PMob, PMob->accRank));                          // Base Accuracy for all mobs is Rank A+ but pull from DB for specific cases
-    PMob->addModifier(xi::Mod::RATT, GetBaseSkill(PMob, PMob->attRank));                         // Base Ranged Attack for all mobs is Rank A+ but pull from DB for specific cases
-    PMob->addModifier(xi::Mod::RACC, GetBaseSkill(PMob, PMob->accRank));                         // Base Ranged Accuracy for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::DEF, ldBaseDef(PMob, PMob->defRank));                         // Base Defense for all mobs
+    PMob->addModifier(xi::Mod::EVA, ldBaseEva(PMob, JobSkillRankToBaseEvaRank(mJob, sJob))); // Evasion is based off the highest job rank. // TODO: add family bonuses (colibri has static evasion+ porrogos have % boost.)
+    PMob->addModifier(xi::Mod::ATT, ldBaseAtt(PMob, PMob->attRank));                          // Base Attack for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::ACC, ldBaseAcc(PMob, PMob->accRank));                          // Base Accuracy for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::RATT, ldBaseAtt(PMob, PMob->attRank));                         // Base Ranged Attack for all mobs is Rank A+ but pull from DB for specific cases
+    PMob->addModifier(xi::Mod::RACC, ldBaseAcc(PMob, PMob->accRank));                         // Base Ranged Accuracy for all mobs is Rank A+ but pull from DB for specific cases
 
     // Known Base Parry for all mobs is Rank C
     // xi::MobMod::CanParry uses the mod value as the rank, unknown if mobs in current retail or somewhere else have a different parry rank
