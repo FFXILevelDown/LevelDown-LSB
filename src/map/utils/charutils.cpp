@@ -4833,6 +4833,11 @@ auto AddCapacityBonus(CCharEntity* PChar, uint16 capacityPoints) -> uint16
 {
     TracyZoneScoped;
 
+    if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial)) /* LD PARAGON RETAIL RATES */
+    {
+        return capacityPoints; // Paragon trials: no CP bonuses
+    }
+
     float rawBonus = 0;
 
     // COMMITMENT from Capacity Bands
@@ -4899,7 +4904,17 @@ void AddCapacityPoints(CCharEntity* PChar, CBaseEntity* PMob, uint32 capacityPoi
         return;
     }
 
-    capacityPoints = (uint32)(capacityPoints * settings::get<float>("map.EXP_RATE"));
+    if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial)) /* LD PARAGON RETAIL RATES */
+    {
+        if (PMob == PChar)
+        {
+            return; // Paragon trials: no CP outside kills
+        }
+    }
+    else
+    {
+        capacityPoints = (uint32)(capacityPoints * settings::get<float>("map.EXP_RATE"));
+    }
 
     // Custom 75 Only CP Per Kill Cap
     if (PChar->GetMLevel() == 75)
@@ -5083,8 +5098,15 @@ void AddExperiencePoints(bool expFromRaise, bool awardRegionPoints, bool fromScr
         return;
     }
 
+    /* LD PARAGON RETAIL RATES */
+    const bool paragonTrial = PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial);
+    if (paragonTrial && fromScripts && !expFromRaise)
+    {
+        return; // Paragon trials: no EXP outside kills
+    }
+
     // Scripts have their own settings in main.lua settings. This is for exp from combat.
-    if (!expFromRaise && !fromScripts)
+    if (!expFromRaise && !fromScripts && !paragonTrial)
     {
         exp = (uint32)(exp * settings::get<float>("map.EXP_RATE"));
     }

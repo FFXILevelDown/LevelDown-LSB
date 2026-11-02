@@ -84,6 +84,11 @@ target_link_libraries(xi_test_lib
 )
 
 target_link_libraries(xi_test PRIVATE xi_test_lib Catch2::Catch2)
+
+# LD XI_TEST MODULES: the same C++ modules xi_map gets, so module code can be tested
+xi_collect_modules(xi_test_module_sources xi_test_module_include_dirs xi_test_module_cmakelists)
+target_sources(xi_test PRIVATE ${xi_test_module_sources})
+target_include_directories(xi_test PRIVATE ${xi_test_module_include_dirs})
 xi_precompile_headers(xi_test)
 
 if(TRACY_ENABLE)

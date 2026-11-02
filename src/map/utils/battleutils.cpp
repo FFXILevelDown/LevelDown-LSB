@@ -2644,6 +2644,12 @@ auto GetCritHitRate(CBattleEntity* PAttacker, CBattleEntity* PDefender, bool ign
             {
                 critHitRate += weapon->getModifier(xi::Mod::CRITHITRATE_ONLY_WEP);
             }
+
+            // Tauret: +50% at 0 TP down to +0% at 3000 TP, main hand only /* LD TAURET CRIT */
+            if (weaponSlot == SLOT_MAIN && weapon && weapon->getID() == 21565)
+            {
+                critHitRate += 50 * (3000 - std::clamp<int32>(player->health.tp, 0, 3000)) / 3000;
+            }
         }
 
         critHitRate = std::clamp(critHitRate, 0, 100);
