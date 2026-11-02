@@ -193,12 +193,6 @@ auto CMobSpellContainer::GetBestIndiSpell(CBattleEntity* PTarget) -> Maybe<Spell
 {
     auto mJob          = PTarget->GetMJob();
     auto mTarget       = PTarget->GetBattleTarget();
-    /* CUSTOM INDI NULL TARGET GUARD */
-    if (mTarget == nullptr)
-    {
-        return std::nullopt; // Master has no battle target, nothing to base an indi choice on
-    }
-
     auto hitrate       = battleutils::GetHitRate(PTarget, mTarget);
     bool accBuffNeeded = hitrate < 65 ? true : false;
     auto mInt          = PTarget->getMod(xi::Mod::INT);

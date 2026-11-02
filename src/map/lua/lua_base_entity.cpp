@@ -13552,8 +13552,6 @@ void CLuaBaseEntity::recalculateStats()
     {
         auto* PChar{ static_cast<CCharEntity*>(m_PBaseEntity) };
 
-        PChar->SetSLevel(PChar->jobs.job[static_cast<uint8>(PChar->GetSJob())]); /* LD RECALC SUBJOB LEVEL */
-
         jobpointutils::RefreshGiftMods(PChar);
         charutils::BuildingCharSkillsTable(PChar);
         charutils::CalculateStats(PChar);

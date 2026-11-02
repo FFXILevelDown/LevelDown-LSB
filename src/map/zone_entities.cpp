@@ -995,20 +995,6 @@ void CZoneEntities::SpawnPETs(CCharEntity* PChar)
         });
 }
 
-// LD: true when the NPC carries LD_VisKey and the player holds none of it /* LD NPC VISKEY */
-static auto ldHiddenFor(const CCharEntity* PChar, const CBaseEntity* PEntity) -> bool
-{
-    static const std::string npcKey   = "LD_VisKey";
-    static const std::string charKey1 = "LD_VisKey1";
-    static const std::string charKey2 = "LD_VisKey2";
-    static const std::string charKey3 = "LD_VisKey3";
-    static const std::string seeAll   = "LD_VisAll";
-
-    const auto key = PEntity->GetLocalVar(npcKey);
-    return key != 0 && PChar->GetLocalVar(charKey1) != key && PChar->GetLocalVar(charKey2) != key &&
-           PChar->GetLocalVar(charKey3) != key && PChar->GetLocalVar(seeAll) == 0;
-}
-
 void CZoneEntities::SpawnNPCs(CCharEntity* PChar)
 {
     TracyZoneScoped;
@@ -1034,11 +1020,6 @@ void CZoneEntities::SpawnNPCs(CCharEntity* PChar)
             {
                 return !static_cast<CNpcEntity*>(PEntity)->alwaysRelevant() &&
                        isWithinDistance(PChar->loc.p, PEntity->loc.p, ENTITY_RENDER_DISTANCE);
-            }
-
-            if (ldHiddenFor(PChar, PEntity)) /* LD NPC VISKEY */
-            {
-                return false;
             }
 
             const bool visibleStatus = PEntity->status == xi::Status::Normal || PEntity->status == xi::Status::Update;
@@ -1712,7 +1693,7 @@ void CZoneEntities::WideScan(CCharEntity* PChar, uint16 radius)
     {
         for (const auto& [_, PEntity] : *entityList)
         {
-            if (PEntity->isWideScannable() && !ldHiddenFor(PChar, PEntity) /* LD NPC VISKEY */ && isWithinDistance(PChar->loc.p, PEntity->loc.p, radius) && isSameFloor(PEntity))
+            if (PEntity->isWideScannable() && isWithinDistance(PChar->loc.p, PEntity->loc.p, radius) && isSameFloor(PEntity))
             {
                 PChar->pushPacket<GP_SERV_COMMAND_TRACKING_LIST>(PChar, PEntity);
             }

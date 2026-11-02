@@ -1883,12 +1883,6 @@ void CBattleEntity::SetSLevel(uint8 slvl)
             {
                 tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]GLOBAL_SUBJOB_BONUS"));
             }
-
-            if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial)) /* LD PARAGON RETAIL SUBJOB */
-            {
-                ratio     = 1; // retail: half the main level
-                tierBonus = 0;
-            }
         }
 
         switch (ratio)
@@ -1985,19 +1979,9 @@ void CBattleEntity::addEquipModifiers(CItemEquipment* PItem)
 {
     TracyZoneScoped;
 
-    /* LD DEDUP EQUIP MODS */
-    // getModifier(mod) returns the item's full total for that mod, summed across every modList
-    // entry. Looping per-entry and adding that pre-summed total on every matching entry double (or
-    // N-times) counts any mod that appears more than once in modList - most visibly when an
-    // augment targets the same mod as the item's own base stat, doubling that stat on equip.
-    std::vector<xi::Mod> seenMods;
     for (auto& i : PItem->modList)
     {
-        if (std::ranges::find(seenMods, i.getModID()) == seenMods.end())
-        {
-            seenMods.push_back(i.getModID());
-            m_modStat[i.getModID()] += battleutils::GetScaledItemModifier(this, PItem, i.getModID());
-        }
+        m_modStat[i.getModID()] += battleutils::GetScaledItemModifier(this, PItem, i.getModID());
     }
 }
 
@@ -2121,15 +2105,9 @@ void CBattleEntity::delEquipModifiers(CItemEquipment* PItem, bool isDelevel /* =
 {
     TracyZoneScoped;
 
-    // LD: same dedup as addEquipModifiers - keep them symmetric or equip/unequip will drift m_modStat.
-    std::vector<xi::Mod> seenMods;
     for (auto& i : PItem->modList)
     {
-        if (std::ranges::find(seenMods, i.getModID()) == seenMods.end())
-        {
-            seenMods.push_back(i.getModID());
-            m_modStat[i.getModID()] -= battleutils::GetScaledItemModifier(this, PItem, i.getModID(), isDelevel);
-        }
+        m_modStat[i.getModID()] -= battleutils::GetScaledItemModifier(this, PItem, i.getModID(), isDelevel);
     }
 }
 
@@ -3937,20 +3915,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                     actionResult.resolution = ActionResolution::Block;
                 }
 
-                /* LD AMBUSCADE SWING FLAGS */
-                if (objtype == TYPE_PC)
-                {
-                    const auto swingType = attack.GetAttackType();
-                    SetLocalVar("LD_SWING_CRIT", attack.IsCritical() ? 1 : 0);
-                    SetLocalVar("LD_SWING_MULTI", (swingType == PHYSICAL_ATTACK_TYPE::DOUBLE || swingType == PHYSICAL_ATTACK_TYPE::TRIPLE || swingType == PHYSICAL_ATTACK_TYPE::QUAD) ? 1 : 0);
-                }
-
                 const auto damage = battleutils::TakePhysicalDamage(this, PTarget, attack.GetAttackType(), attack.GetDamage(), attack.IsBlocked(), attack.GetWeaponSlot(), 1, attackRound.GetTAEntity(), true, true, attack.IsCountered(), attack.IsCovered(), POriginalTarget);
-                if (objtype == TYPE_PC)
-                {
-                    SetLocalVar("LD_SWING_CRIT", 0);
-                    SetLocalVar("LD_SWING_MULTI", 0);
-                }
                 if (damage < 0)
                 {
                     actionResult.param     = -damage;

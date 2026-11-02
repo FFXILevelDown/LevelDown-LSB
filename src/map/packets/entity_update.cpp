@@ -567,11 +567,8 @@ void CEntityUpdatePacket::updateWith(CBaseEntity* PEntity, ENTITYUPDATE type, ui
     }
 
     // Slightly bigger packet to encompass both name and model on first spawn, and only for dynamic entities.
-    const bool ldEquippedDynamic = PEntity->isRenamed && PEntity->look.size == MODEL_EQUIPPED && PEntity->targid >= 0x700; /* LD EQUIPPED SPAWN MERGE */
-    if ((type == ENTITY_SPAWN || m_equippedSpawn) && ldEquippedDynamic)
+    if (type == ENTITY_SPAWN && PEntity->isRenamed && PEntity->look.size == MODEL_EQUIPPED && PEntity->targid >= 0x700)
     {
-        m_equippedSpawn = true;
-
         this->setSize(0x56);
 
         // Temporarily override UpdateFlags (0x0A) to perform black magic:
@@ -591,11 +588,6 @@ void CEntityUpdatePacket::updateWith(CBaseEntity* PEntity, ENTITYUPDATE type, ui
 
         // Copy in name
         std::memcpy(start, name.c_str(), maxLength);
-    }
-    else if (ldEquippedDynamic && type != ENTITY_DESPAWN) /* LD EQUIPPED SPAWN MERGE */
-    {
-        // keep the look block intact; the name came with the spawn packet (no client default to revert to)
-        ref<uint8>(0x0A) &= ~UPDATE_NAME;
     }
     // If the entity has been renamed, we have to re-send the name during every update.
     // Otherwise it will revert to it's default name (if applicable).

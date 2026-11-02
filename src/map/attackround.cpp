@@ -309,15 +309,6 @@ void CAttackRound::CreateAttacks(CItemWeapon* PWeapon, PHYSICAL_ATTACK_DIRECTION
         }
     }
 
-    // Hachimonji: Store TP converts to Double/Triple/Quad Attack /* LD HACHIMONJI */
-    if (isPC && PChar->m_Weapons[SLOT_MAIN] && PChar->m_Weapons[SLOT_MAIN]->getID() == 21975)
-    {
-        const int16 storeTP = std::max<int16>(PChar->getMod(xi::Mod::STORETP), 0);
-        doubleAttack += std::min<int16>(storeTP, 100);
-        tripleAttack += std::clamp<int16>(storeTP - 100, 0, 100);
-        quadAttack += std::max<int16>(storeTP - 200, 0);
-    }
-
     quadAttack   = std::clamp<int16>(quadAttack, 0, 100);
     doubleAttack = std::clamp<int16>(doubleAttack, 0, 100);
     tripleAttack = std::clamp<int16>(tripleAttack, 0, 100);

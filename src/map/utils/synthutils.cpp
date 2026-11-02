@@ -176,7 +176,7 @@ struct SynthRecipe
     static auto ingredientKey(uint16 crystal, const std::array<uint16, 8>& ingredients) -> std::string
     {
         return fmt::format("{}-{}-{}-{}-{}-{}-{}-{}-{}",
-                           crystalString(crystal) + ((crystal >= 6506 && crystal <= 6513) ? "-T3" : ""), /* CUSTOM TIER3 CRYSTAL KEY */
+                           crystalString(crystal),
                            ingredients[0],
                            ingredients[1],
                            ingredients[2],

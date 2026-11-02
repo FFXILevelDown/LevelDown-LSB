@@ -696,14 +696,6 @@ auto CMobEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags) -> b
         return false;
     }
 
-    if ((targetFlags & TARGET_PLAYER_PARTY) && !isDead() && PParty != nullptr && PParty == PInitiator->PParty) /* LD MIRROR PARTY TARGETS */
-    {
-        if (auto* PMobInitiator = dynamic_cast<CMobEntity*>(PInitiator); PMobInitiator && PMobInitiator->getMobMod(xi::MobMod::SkipAllegianceCheck) == 1)
-        {
-            return true;
-        }
-    }
-
     if (CBattleEntity::ValidTarget(PInitiator, targetFlags))
     {
         return true;
