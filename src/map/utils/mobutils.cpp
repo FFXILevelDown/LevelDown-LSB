@@ -393,6 +393,35 @@ auto GetBaseToRank(uint8 rank, uint16 lvl) -> uint16
 /* LD MOB STATS 100+ */
 namespace
 {
+/* LD LEGACY MOB STATS */
+// Set by CalculateMobStats for the mob it's working on
+bool ldLegacyStats   = false;
+int  ldLegacyPercent = 0;
+
+auto ldLegacyPercentFor(CMobEntity* PMob) -> int
+{
+    auto multiplierFor = lua["xi"]["ld"]["legacyStats"]["multiplierFor"];
+    if (!multiplierFor.valid())
+    {
+        return 0;
+    }
+
+    auto result = multiplierFor(PMob->getName());
+    if (!result.valid())
+    {
+        sol::error err = result;
+        ShowError("ldLegacyPercentFor: %s", err.what());
+        return 0;
+    }
+
+    return result.get_type() == sol::type::number ? result.get<int>() : 0;
+}
+
+auto ldSubLevel(uint8 sLvl) -> uint8
+{
+    return ldLegacyStats ? sLvl : std::min<uint8>(sLvl, 127);
+}
+
 constexpr uint16 kRetailRankValues[7][51] = {
     { 60, 62, 64, 67, 69, 72, 74, 76, 79, 81, 84, 86, 88, 91, 93, 96, 98, 100, 103, 105, 109, 113, 117, 122, 126, 130, 135, 139, 143, 148, 152, 156, 161, 165, 170, 174, 179, 183, 188, 193, 198, 203, 209, 215, 221, 227, 233, 239, 247, 255, 263 }, // A
     { 55, 57, 59, 61, 63, 65, 67, 70, 72, 74, 76, 78, 80, 83, 85, 88, 90, 92, 94, 96, 99, 102, 106, 110, 114, 118, 122, 126, 130, 134, 138, 142, 146, 150, 154, 158, 162, 166, 171, 175, 180, 185, 190, 196, 201, 207, 212, 217, 223, 228, 234 }, // B
@@ -439,7 +468,7 @@ auto defEvaRankScale(uint8 rank) -> float
 
 auto ldRankValue(uint8 rank, uint8 level) -> uint16
 {
-    if (level < 100 || rank < 1 || rank > 7)
+    if (level < 100 || ldLegacyStats || rank < 1 || rank > 7)
     {
         return GetBaseToRank(rank, level);
     }
@@ -455,7 +484,7 @@ auto ldRankValue(uint8 rank, uint8 level) -> uint16
 
 auto ldBaseDef(CMobEntity* PMob, uint8 rank) -> uint16
 {
-    if (PMob->GetMLevel() < 100)
+    if (PMob->GetMLevel() < 100 || ldLegacyStats)
     {
         return GetBaseDefEva(PMob, rank);
     }
@@ -466,7 +495,7 @@ auto ldBaseDef(CMobEntity* PMob, uint8 rank) -> uint16
 // The curves are totals, so the part EVA(), ATT() and ACC() add from stats is taken back out
 auto ldBaseEva(CMobEntity* PMob, uint8 rank) -> uint16
 {
-    if (PMob->GetMLevel() < 100)
+    if (PMob->GetMLevel() < 100 || ldLegacyStats)
     {
         return GetBaseDefEva(PMob, rank);
     }
@@ -483,7 +512,7 @@ auto ldSkillScale(CMobEntity* PMob, uint8 rank) -> float
 
 auto ldBaseAtt(CMobEntity* PMob, uint8 rank) -> uint16
 {
-    if (PMob->GetMLevel() < 100)
+    if (PMob->GetMLevel() < 100 || ldLegacyStats)
     {
         return GetBaseSkill(PMob, rank);
     }
@@ -493,7 +522,7 @@ auto ldBaseAtt(CMobEntity* PMob, uint8 rank) -> uint16
 
 auto ldBaseAcc(CMobEntity* PMob, uint8 rank) -> uint16
 {
-    if (PMob->GetMLevel() < 100)
+    if (PMob->GetMLevel() < 100 || ldLegacyStats)
     {
         return GetBaseSkill(PMob, rank);
     }
@@ -909,6 +938,9 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
     PMob->restoreModifiers();
     PMob->restoreMobModifiers();
 
+    ldLegacyPercent = ldLegacyPercentFor(PMob);
+    ldLegacyStats   = ldLegacyPercent > 0;
+
     bool         isNM     = (PMob->m_Type & xi::MobType::Notorious) != xi::MobType::Normal;
     xi::Job      mJob     = PMob->GetMJob();
     xi::Job      sJob     = PMob->GetSJob();
@@ -1071,13 +1103,13 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
     uint16 mMND = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 7), mLvl);
     uint16 mCHR = ldRankValue(grade::GetJobGrade(PMob->GetMJob(), 8), mLvl);
 
-    uint16 sSTR = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 2), std::min<uint8>(sLvl, 127));
-    uint16 sDEX = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 3), std::min<uint8>(sLvl, 127));
-    uint16 sVIT = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 4), std::min<uint8>(sLvl, 127));
-    uint16 sAGI = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 5), std::min<uint8>(sLvl, 127));
-    uint16 sINT = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 6), std::min<uint8>(sLvl, 127));
-    uint16 sMND = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 7), std::min<uint8>(sLvl, 127));
-    uint16 sCHR = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 8), std::min<uint8>(sLvl, 127));
+    uint16 sSTR = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 2), ldSubLevel(sLvl));
+    uint16 sDEX = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 3), ldSubLevel(sLvl));
+    uint16 sVIT = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 4), ldSubLevel(sLvl));
+    uint16 sAGI = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 5), ldSubLevel(sLvl));
+    uint16 sINT = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 6), ldSubLevel(sLvl));
+    uint16 sMND = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 7), ldSubLevel(sLvl));
+    uint16 sCHR = ldRankValue(grade::GetJobGrade(PMob->GetSJob(), 8), ldSubLevel(sLvl));
 
     // Each subjob stat is determined by where the mob is located and what level the mob is.
     // Each rank has their own formula as shown in GetSubJobStats
@@ -1115,6 +1147,10 @@ void CalculateMobStats(CMobEntity* PMob, bool recover)
 
     auto statMultiplier = isNM ? settings::get<float>("map.NM_STAT_MULTIPLIER") : settings::get<float>("map.MOB_STAT_MULTIPLIER");
     statMultiplier      = (statMultiplier >= 0.1f && statMultiplier <= 2.0f) ? statMultiplier : 1.0f;
+    if (ldLegacyStats)
+    {
+        statMultiplier = std::min(2.0f, std::max(0.1f, ldLegacyPercent / 100.0f));
+    }
     PMob->stats.STR     = (uint16)(PMob->stats.STR * statMultiplier);
     PMob->stats.DEX     = (uint16)(PMob->stats.DEX * statMultiplier);
     PMob->stats.VIT     = (uint16)(PMob->stats.VIT * statMultiplier);
