@@ -58,6 +58,7 @@
 #include "battle_entity.h"
 #include "linkshell.h"
 #include "maze.h"
+#include "packets/c2s/rate_limiter.h"
 
 #include <map/entities/types/automaton_info.h>
 
@@ -521,7 +522,6 @@ public:
     auto GetGender() -> uint8;
 
     auto getPacketList() const -> const std::deque<std::unique_ptr<CBasicPacket>>&;
-    auto getPacketListCopy() -> std::deque<std::unique_ptr<CBasicPacket>>; // Return a COPY of packet list
     void clearPacketList();
 
     template <typename T, typename... Args>
@@ -730,8 +730,8 @@ public:
     std::vector<GearSetMod_t>     m_GearSetMods; // The list of gear set mods currently applied to the character.
     std::vector<AuctionHistory_t> m_ah_history;  // AH history list (in the future consider using UContainer)
 
-    HashMap<uint16, timer::time_point> m_PacketRecievedTimestamps;
-    uint16                             m_LastPacketType{};
+    HashMap<uint16, PacketRateLimitState> m_PacketRateLimits;
+    uint16                                m_LastPacketType{};
 
     void SetPlayTime(timer::duration playTime);                  // Set playtime
     auto GetPlayTime(bool needUpdate = true) -> timer::duration; // Get playtime

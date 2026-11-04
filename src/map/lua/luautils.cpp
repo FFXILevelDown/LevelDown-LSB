@@ -5116,6 +5116,52 @@ auto OnSteal(CBattleEntity* PChar, CBattleEntity* PMob, CAbility* PAbility, acti
     return 0;
 }
 
+auto OnFishingCheck(CCharEntity* PChar, const uint8 areaId) -> std::vector<uint32>
+{
+    TracyZoneScoped;
+
+    std::vector<uint32> catchIds;
+
+    if (PChar == nullptr)
+    {
+        return catchIds;
+    }
+
+    auto onFishingCheckFramework = lua["InteractionGlobal"]["onFishingCheck"];
+
+    auto result = onFishingCheckFramework(PChar, areaId);
+    if (!result.valid())
+    {
+        sol::error err = result;
+        ShowError("luautils::onFishingCheck: %s", err.what());
+        return catchIds;
+    }
+
+    if (result.get_type(0) != sol::type::table)
+    {
+        return catchIds;
+    }
+
+    // Each handler returns a list of catch ids, which may be empty
+    for (const auto& [key, answer] : result.get<sol::table>(0))
+    {
+        if (answer.get_type() != sol::type::table)
+        {
+            continue;
+        }
+
+        for (const auto& [index, catchId] : answer.as<sol::table>())
+        {
+            if (catchId.get_type() == sol::type::number)
+            {
+                catchIds.emplace_back(catchId.as<uint32>());
+            }
+        }
+    }
+
+    return catchIds;
+}
+
 auto OnCanUseSpell(CBattleEntity* PChar, CSpell* PSpell) -> bool // triggers when CanUseSpell is invoked on spell.cpp for PCs only
 {
     TracyZoneScoped;
@@ -5750,19 +5796,20 @@ auto GetRecentFishers(uint16 minutes) -> sol::table
     // limit the lookback time to prevent huge queries
     uint16 lookbackTime = std::clamp<uint32>(minutes, 1, 60);
 
-    sol::table  fishers = lua.create_table();
-    const char* Query   = "SELECT cv.charid, c.charname, stats.mlvl, z.name, COALESCE(cs.value, 0) / 10 as skill "
-                          "FROM char_vars cv "
-                          "LEFT JOIN chars c ON c.charid  = cv.charid "
-                          "LEFT JOIN char_skills cs ON cs.charid = cv.charid AND cs.skillid = 48 "
-                          "INNER JOIN char_stats stats ON stats.charid = c.charid "
-                          "INNER JOIN zone_settings z ON z.zoneid = c.pos_zone "
-                          "WHERE "
-                          "varname = '[Fish]LastCastTime' AND "
-                          "FROM_UNIXTIME(cv.value) > NOW() - INTERVAL ? MINUTE "
-                          "ORDER BY z.name, z.name, stats.mlvl, skill";
+    sol::table     fishers = lua.create_table();
+    constexpr auto query   = db::Query(
+        "SELECT cv.charid, c.charname, stats.mlvl, z.name, COALESCE(cs.value, 0) / 10 as skill "
+        "FROM char_vars cv "
+        "LEFT JOIN chars c ON c.charid  = cv.charid "
+        "LEFT JOIN char_skills cs ON cs.charid = cv.charid AND cs.skillid = 48 "
+        "INNER JOIN char_stats stats ON stats.charid = c.charid "
+        "INNER JOIN zone_settings z ON z.zoneid = c.pos_zone "
+        "WHERE "
+        "varname = '[Fish]LastCastTime' AND "
+        "FROM_UNIXTIME(cv.value) > NOW() - INTERVAL ? MINUTE "
+        "ORDER BY z.name, z.name, stats.mlvl, skill");
 
-    const auto rset = db::preparedStmt(Query, lookbackTime);
+    const auto rset = db::preparedStmt(query, lookbackTime);
     if (rset && rset->rowsCount())
     {
         while (rset->next())
@@ -6256,7 +6303,7 @@ auto SendItemToDeliveryBox(const std::string& playerName, uint16 itemId, uint32 
                 itemId,
                 quantity,
                 playerID,
-                senderText);
+                senderText.substr(0, 15));
 
             if (!rset)
             {
