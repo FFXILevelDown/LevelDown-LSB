@@ -76,6 +76,9 @@ namespace effects
 
 using StatusEffectsDataset = xi::data::datasets::status_effects::Dataset;
 
+namespace
+{
+
 // Default effect of statuses are overwrite if equal or higher
 struct EffectParams_t
 {
@@ -93,6 +96,8 @@ struct EffectParams_t
 };
 
 std::array<EffectParams_t, MAX_EFFECTID> EffectsParams;
+
+} // namespace
 
 void LoadEffectsParameters()
 {
@@ -138,6 +143,9 @@ auto GetEffectName(uint16 effect) -> std::string
 
 } // namespace effects
 
+namespace
+{
+
 auto isSortedByStartTime(uint16 effectId) -> bool
 {
     return static_cast<uint16>(effectId) >= static_cast<uint16>(xi::StatusEffect::FireManeuver) && static_cast<uint16>(effectId) <= static_cast<uint16>(xi::StatusEffect::DarkManeuver);
@@ -173,11 +181,12 @@ auto statusOrdering(const std::unique_ptr<CStatusEffect>& AStatus, const std::un
     return AStatus->GetStatusID() < BStatus->GetStatusID();
 }
 
-CStatusEffectContainer::CStatusEffectContainer(CBattleEntity* PEntity)
-: m_StatusEffectSet(statusOrdering)
-{
-    m_POwner = PEntity;
+} // namespace
 
+CStatusEffectContainer::CStatusEffectContainer(CBattleEntity* PEntity)
+: m_POwner(PEntity)
+, m_StatusEffectSet(statusOrdering)
+{
     if (m_POwner == nullptr)
     {
         ShowWarning("m_POwner was null.");
@@ -2069,7 +2078,7 @@ void CStatusEffectContainer::TickRegen(timer::time_point tick)
 
             if (m_POwner->PPet != nullptr && PChar != nullptr)
             {
-                CPetEntity* PPet          = (CPetEntity*)m_POwner->PPet;
+                CPetEntity* PPet          = static_cast<CPetEntity*>(m_POwner->PPet);
                 ELEMENT     petElement    = static_cast<ELEMENT>(PPet->m_Element);
                 bool        elementValid  = petElement >= ELEMENT_FIRE && petElement <= ELEMENT_DARK; // Check if the element is not 0 (None) or out of bounds
                 uint8       petElementIdx = 0;
@@ -2148,7 +2157,7 @@ void CStatusEffectContainer::TickRegen(timer::time_point tick)
 
             if (m_POwner->health.mp == 0 && m_POwner->PPet != nullptr && m_POwner->PPet->objtype == TYPE_PET)
             {
-                CPetEntity* PPet = (CPetEntity*)m_POwner->PPet;
+                CPetEntity* PPet = static_cast<CPetEntity*>(m_POwner->PPet);
                 if (PPet->getPetType() == PET_TYPE::AVATAR)
                 {
                     petutils::DespawnPet(m_POwner);

@@ -25,8 +25,8 @@
 #include "lua/luautils.h"
 
 CJobPoints::CJobPoints(CCharEntity* PChar)
+: m_PChar(PChar)
 {
-    m_PChar = PChar;
     this->LoadJobPoints();
 }
 
