@@ -54,9 +54,8 @@ public:
     void destroyPendingSession(MapSession* map_session_data);
     void destroyPendingSession(uint32 charId);
 
-    /* CUSTOM SESSION REBIND */
-    // Moves a confirmed session to a new client IPP. If another session already sits on that IPP, the two swap.
-    auto rebindSession(MapSession* session, const IPP& newIpp) -> bool;
+    // Another process took the char, so drop what this one still holds for it
+    void releaseCharacter(uint32 charId);
 
 private:
     Scheduler&                                    scheduler_;

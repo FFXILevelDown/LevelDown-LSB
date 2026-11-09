@@ -27,6 +27,7 @@
 #include "enmity_container.h"
 #include "instance.h"
 #include "latent_effect_container.h"
+#include "map_session.h"
 #include "party.h"
 #include "recast_container.h"
 #include "spawn_handler.h"
@@ -242,6 +243,12 @@ void CZoneEntities::InsertPC(CCharEntity* PChar)
     PChar->loc.zone = m_zone;
     m_charTargIds.insert(PChar->targid);
     m_charList[PChar->targid] = PChar;
+
+    // Mobs keep a returning char's enmity, but it still points at the char object that zoned out.
+    FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PMob, m_mobList)
+    {
+        PMob->PEnmityContainer->ZoneInRebind(PChar);
+    }
 
     TryAddToNearbySpawnLists(PChar);
 
@@ -560,6 +567,13 @@ void CZoneEntities::DecreaseZoneCounter(CCharEntity* PChar)
         if (PChar->PPet != nullptr)
         {
             PChar->PPet->PAI->Disengage();
+
+            // The master is freed before the pet's next tick, which is where the pet would let go of it.
+            PChar->PPet->PMaster = nullptr;
+            FOR_EACH_PAIR_CAST_SECOND(CMobEntity*, PCurrentMob, m_mobList)
+            {
+                PCurrentMob->PEnmityContainer->Clear(PChar->PPet->id);
+            }
 
             FOR_EACH_PAIR_CAST_SECOND(CCharEntity*, PCurrentChar, m_charList)
             {
@@ -2087,6 +2101,14 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
             {
                 PChar->eventPreparation->targetEntity = nullptr;
             }
+
+            for (auto* PEvent : PChar->eventQueue)
+            {
+                if (PEvent->targetEntity == PEntity)
+                {
+                    PEvent->targetEntity = nullptr;
+                }
+            }
         }
     };
 
@@ -2152,6 +2174,13 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
     {
         auto* PChar       = *it;
         bool  shouldErase = false;
+
+        // charTick adds the char back each tick, so it moves once canZoneOut(). A logout goes now.
+        if (PChar->status != xi::Status::Shutdown && !PChar->PSession->canZoneOut())
+        {
+            it = m_charsToChangeZone.erase(it);
+            continue;
+        }
 
         auto ipp = zoneutils::GetZoneIPP(PChar->loc.destination);
         if (ipp == 0 && PChar->status != xi::Status::Shutdown)

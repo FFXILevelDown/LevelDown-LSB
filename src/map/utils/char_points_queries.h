@@ -294,11 +294,8 @@ struct ColumnQueryText
     static constexpr auto name        = charPointsColumns[I].name;
     static constexpr auto selectParts = std::array<std::string_view, 3>{ "SELECT ", name, " FROM char_points WHERE charid = ? LIMIT 1" };
     static constexpr auto updateParts = std::array<std::string_view, 3>{ "UPDATE char_points SET ", name, " = ? WHERE charid = ?" };
-    static constexpr auto selectText  = joinText<textSize(selectParts)>(selectParts);
-    static constexpr auto updateText  = joinText<textSize(updateParts)>(updateParts);
-
-    static constexpr auto select = db::Query(selectText.text);
-    static constexpr auto update = db::Query(updateText.text);
+    static constexpr auto select      = joinText<textSize(selectParts)>(selectParts);
+    static constexpr auto update      = joinText<textSize(updateParts)>(updateParts);
 };
 
 } // namespace detail
@@ -310,19 +307,16 @@ struct CharPointsQueries
     db::Query        update;
 };
 
-template <std::size_t... I>
-consteval auto buildCharPointsQueries(std::index_sequence<I...>)
+inline constexpr auto charPointsQueries = []<std::size_t... I>(std::index_sequence<I...>) consteval
 {
     return std::array{
         CharPointsQueries{
             charPointsColumns[I],
-            detail::ColumnQueryText<I>::select,
-            detail::ColumnQueryText<I>::update,
+            db::Query(detail::ColumnQueryText<I>::select.text),
+            db::Query(detail::ColumnQueryText<I>::update.text),
         }...,
     };
-}
-
-inline constexpr auto charPointsQueries = buildCharPointsQueries(std::make_index_sequence<charPointsColumns.size()>{});
+}(std::make_index_sequence<charPointsColumns.size()>{});
 
 static_assert(std::ranges::all_of(
     charPointsQueries,
