@@ -350,7 +350,9 @@ auto MapNetworking::recv_parse(uint8* buff, size_t* buffsize, MapSession*& PSess
             if (otherSession != nullptr && otherSession != PSession && otherSession->blowfish.status == BLOWFISH_PENDING_ZONE && PSession->blowfish.status == BLOWFISH_PENDING_ZONE)
             {
                 ShowWarningFmt("recv_parse: 0x00A from {} carries charid {} but that IPP was bound to charid {}; client source ports swapped while zoning. Swapping sessions, the clients will retry.", ipp.toString(), packetCharID, PSession->charID);
-                mapSessions_.rebindSession(otherSession, ipp);
+                const auto otherOldIpp = otherSession->client_ipp;
+                mapSessions_.moveSession(PSession, otherOldIpp);
+                mapSessions_.moveSession(otherSession, ipp);
                 return -1;
             }
 
