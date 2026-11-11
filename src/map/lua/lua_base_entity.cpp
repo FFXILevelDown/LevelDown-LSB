@@ -17988,6 +17988,24 @@ auto CLuaBaseEntity::isMobType(const xi::MobType mobType) const -> bool
 }
 
 /************************************************************************
+ *  Function: setMobType()
+ *  Purpose : Adds a MobType flag (e.g. xi.mobType.NOTORIOUS) to a Mob
+ *  Example : mob:setMobType(xi.mobType.NOTORIOUS)
+ *  Notes   : CUSTOM SET MOB TYPE IMPL
+ ************************************************************************/
+
+void CLuaBaseEntity::setMobType(const xi::MobType mobType)
+{
+    if (m_PBaseEntity->objtype != TYPE_MOB)
+    {
+        return;
+    }
+
+    auto* PMob = static_cast<CMobEntity*>(m_PBaseEntity);
+    PMob->m_Type = PMob->m_Type | mobType;
+}
+
+/************************************************************************
  *  Function: isUndead()
  *  Purpose : Returns true if Entity is Undead
  *  Example : if target:isUndead() then
@@ -21499,6 +21517,8 @@ void CLuaBaseEntity::Register()
     SOL_REGISTER("getFamily", CLuaBaseEntity::getFamily);
     SOL_REGISTER("getSpecies", CLuaBaseEntity::getSpecies);
     SOL_REGISTER("isMobType", CLuaBaseEntity::isMobType);
+
+    SOL_REGISTER("setMobType", CLuaBaseEntity::setMobType); // /* CUSTOM SET MOB TYPE IMPL */
     SOL_REGISTER("isUndead", CLuaBaseEntity::isUndead);
     SOL_REGISTER("isNM", CLuaBaseEntity::isNM);
 

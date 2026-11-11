@@ -52,6 +52,7 @@ LevelDown Custom Modules/lua/effects/
 LevelDown Custom Modules/lua/commands/
 LevelDown Custom Modules/cpp/
 LevelDown Custom Modules/sql/
+LevelDown Custom Modules/job_adjustments/
 LevelDown Custom Modules/content/LD Trust Upgrade System
 #LevelDown Custom Modules/content/custom_besieged
 LevelDown Custom Modules/content/LD 75 Cap
@@ -69,6 +70,19 @@ LevelDown Custom Modules/content/LD Legion
 LevelDown Custom Modules/content/LD Vagary
 LevelDown Custom Modules/content/LD Instances/
 #LevelDown Custom Modules/content/LD Aman Trove/
-LevelDown Custom Modules/content/LD Prime WS Mimic Battle/
+#LevelDown Custom Modules/content/LD Prime WS Mimic Battle/
+#LevelDown Custom Modules/content/LD Dev Zones/
+LevelDown Custom Modules/content/LD Crafting Shields/
 LevelDown Custom Modules/content/LD Odyssey/
+LevelDown Custom Modules/content/LD Halloween/
+LevelDown Custom Modules/content/LD Halloween Event/cpp/
+LevelDown Custom Modules/content/LD Halloween Event/lua/
+LevelDown Custom Modules/content/LD Halloween Event/data/
+LevelDown Custom Modules/content/LD Augment NPCs/
+LevelDown Custom Modules/content/LD VoidWalker/
+#LevelDown Custom Modules/content/LD Sinister Reign/
+LevelDown Custom Modules/content/LD Web Vault/
 custom/lua/test_npcs_in_gm_home.lua
+# Mob name rules for skipping the level 100+ stat scaling (needs core patches 66 and 67)
+LevelDown Custom Modules/content/LD Legacy Mob Stats/
+LevelDown Custom Modules/content/LD Adventurer Bonus/

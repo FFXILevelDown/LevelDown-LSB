@@ -881,6 +881,8 @@ public:
     auto getFamily() -> uint16;
     auto getSpecies() -> uint16;
     auto isMobType(xi::MobType mobType) const -> bool; // True if mob is of type passed to function
+
+    void setMobType(xi::MobType mobType); // /* CUSTOM SET MOB TYPE DECLARE */ - Adds a MobType flag (e.g. Notorious) to the mob
     auto isUndead() -> bool;
     auto isNM() -> bool;
 
