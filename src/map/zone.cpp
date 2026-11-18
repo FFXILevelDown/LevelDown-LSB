@@ -1379,7 +1379,11 @@ auto CZone::CheckTriggerAreas() -> Task<void>
 {
     TracyZoneScoped;
 
-    ForEachChar(
+    /* CUSTOM TRIGGER AREAS ITER SAFE */
+    std::vector<CCharEntity*> charSnapshot;
+    ForEachChar([&](CCharEntity* PChar) { charSnapshot.push_back(PChar); });
+
+    auto checkChar =
         [&](CCharEntity* PChar)
         {
             // TODO: When we start to use octrees or spatial hashing to split up zones,
@@ -1410,7 +1414,12 @@ auto CZone::CheckTriggerAreas() -> Task<void>
                     luautils::OnTriggerAreaLeave(PChar, triggerArea);
                 }
             }
-        });
+        };
+
+    for (auto* PChar : charSnapshot)
+    {
+        checkChar(PChar);
+    }
 
     co_return;
 }

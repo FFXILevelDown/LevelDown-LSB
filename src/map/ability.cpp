@@ -545,6 +545,16 @@ auto GetCharge(CBattleEntity* PUser, uint16 chargeID) -> Charge_t*
             }
         }
     }
+    if (charge != nullptr && chargeID == 231 && PUser->objtype == TYPE_PC && PUser->GetMJob() == xi::Job::SCH) /* LD PARAGON STRATAGEMS */
+    {
+        if (const uint32 extra = PUser->GetLocalVar("[PG]stratagems"); extra > 0)
+        {
+            thread_local Charge_t ldParagonCharge;
+            ldParagonCharge            = *charge;
+            ldParagonCharge.maxCharges = static_cast<uint8>(charge->maxCharges + extra);
+            return &ldParagonCharge;
+        }
+    }
     return charge;
 }
 

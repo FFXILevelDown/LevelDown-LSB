@@ -2266,7 +2266,9 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
 
         for (std::size_t i = 0; i < maxIterations; i++)
         {
-            CCharEntity* PChar = static_cast<CCharEntity*>(m_charList[*charTargIdIter]);
+            /* CUSTOM CHARLIST SAFE LOOKUP */
+            const auto charListIter = m_charList.find(*charTargIdIter);
+            CCharEntity* PChar      = charListIter != m_charList.end() ? static_cast<CCharEntity*>(charListIter->second) : nullptr;
             ++charTargIdIter;
 
             if (charTargIdIter == m_charTargIds.end())

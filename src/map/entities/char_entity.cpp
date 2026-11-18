@@ -2347,6 +2347,8 @@ void CCharEntity::OnRaise()
             charutils::SetCharVar(this, "expLost", 0);
         }
 
+        /* LD MASTER LEVELS */ luautils::callGlobal<void>("xi.ld.masterLevels.onRaise", this, m_hasRaise);
+
         // If Arise was used then apply a reraise 3 effect on the target
         if (m_hasArise)
         {
@@ -2564,6 +2566,14 @@ void CCharEntity::Die()
     {
         float retainPercent = std::clamp(settings::get<uint8>("map.EXP_RETAIN") + getMod(xi::Mod::EXPERIENCE_RETAINED) / 100.0f, 0.0f, 1.0f);
         charutils::DelExperiencePoints(this, retainPercent, 0);
+    }
+
+    /* LD MASTER LEVELS */
+    {
+        const bool losesExp = params.losesExp &&
+                              (PBattlefield == nullptr || (PBattlefield->GetRuleMask() & RULES_LOSE_EXP) == RULES_LOSE_EXP) &&
+                              GetMLevel() >= settings::get<uint8>("map.EXP_LOSS_LEVEL");
+        luautils::callGlobal<void>("xi.ld.masterLevels.onDeath", this, losesExp);
     }
 
     luautils::OnPlayerDeath(this);

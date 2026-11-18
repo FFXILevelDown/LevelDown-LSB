@@ -2542,7 +2542,7 @@ auto GetHitRateEx(CBattleEntity* PAttacker, CBattleEntity* PDefender, uint8 atta
 
     bool hasSneakAttack      = PAttacker->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::SneakAttack);
     bool hasTrickAttack      = PAttacker->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::TrickAttack);
-    bool isBehind            = behind(PAttacker->loc.p, PDefender->loc.p, 64);
+    bool isBehind            = behind(PAttacker->loc.p, PDefender->loc.p, 64) || (PAttacker->objtype == TYPE_PC && PAttacker->GetLocalVar("[PG]saAnyAngle") > 0) /* LD PARAGON PERKS */;
     bool hasAssassin         = PAttacker->hasTrait(TRAIT_ASSASSIN);
     bool hasValidSneakAttack = hasSneakAttack && isBehind;
     bool hasValidTrickAttack = hasTrickAttack && hasAssassin;
@@ -3308,6 +3308,10 @@ auto IsIntimidated(CBattleEntity* PAttacker, CBattleEntity* PDefender) -> bool
     if (CStatusEffect* PDoubtEffect = PAttacker->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::Doubt))
     {
         KillerEffect += PDoubtEffect->GetPower();
+        if (PDefender->objtype == TYPE_PC)
+        {
+            KillerEffect += 10 * PDefender->GetLocalVar("[PG]bully"); /* LD PARAGON PERKS */
+        }
     }
 
     // Add intimidation rate from Intimidate status effect

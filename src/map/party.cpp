@@ -681,11 +681,23 @@ void CParty::AddMember(CBattleEntity* PEntity)
         {
             if (PChar->getZone() == m_PSyncTarget->getZone())
             {
-                PChar->pushPacket<GP_SERV_COMMAND_BATTLE_MESSAGE>(PChar, PChar, 0, m_PSyncTarget->GetMLevel(), MsgStd::LevelSyncActivated);
+                if (charutils::GetCharVar(PChar, "[ML]ShowFlags") == 0) /* LD MASTER LEVELS: they get 814 instead */ { PChar->pushPacket<GP_SERV_COMMAND_BATTLE_MESSAGE>(PChar, PChar, 0, m_PSyncTarget->GetMLevel(), MsgStd::LevelSyncActivated); }
                 PChar->StatusEffectContainer->DelStatusEffectsByFlag(xi::StatusEffectFlag::Dispelable | xi::StatusEffectFlag::OnZone);
                 PChar->health.tp = 0;
                 PChar->updatemask |= UPDATE_HP;
                 PChar->StatusEffectContainer->AddStatusEffectSilent(xi::StatusEffect::LevelSync, static_cast<uint16>(xi::StatusEffect::LevelSync), m_PSyncTarget->GetMLevel(), 0s, 0s);
+                /* LD MASTER LEVELS */
+                if (auto* PSyncChar = dynamic_cast<CCharEntity*>(m_PSyncTarget))
+                {
+                    if (CStatusEffect* sync = PChar->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::LevelSync))
+                    {
+                        sync->SetSubPower(static_cast<uint16>(charutils::GetCharVar(PSyncChar, "[ML]ShowLv")));
+                    }
+                    if (charutils::GetCharVar(PChar, "[ML]ShowFlags") > 0)
+                    {
+                        PChar->pushPacket<GP_SERV_COMMAND_BATTLE_MESSAGE>(PChar, PChar, charutils::GetCharVar(PSyncChar, "[ML]ShowLv"), 0, static_cast<MsgBasic>(814));
+                    }
+                }
                 PChar->loc.zone->PushPacket(PChar, CHAR_INRANGE, std::make_unique<CCharSyncPacket>(PChar, CharSyncRecipient::Others));
             }
         }
@@ -1159,11 +1171,23 @@ void CParty::SetSyncTarget(const std::string& MemberName, MsgStd message)
 
                     if (member->status != xi::Status::Disappear && member->getZone() == PChar->getZone())
                     {
-                        member->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar->GetMLevel(), 0, 0, 0, message);
+                        if (charutils::GetCharVar(member, "[ML]ShowFlags") == 0) /* LD MASTER LEVELS: they get 814 instead */ { member->pushPacket<GP_SERV_COMMAND_MESSAGE>(PChar->GetMLevel(), 0, 0, 0, message); }
                         member->StatusEffectContainer->DelStatusEffectsByFlag(xi::StatusEffectFlag::Dispelable | xi::StatusEffectFlag::OnZone);
                         member->health.tp = 0;
                         member->updatemask |= UPDATE_HP;
                         member->StatusEffectContainer->AddStatusEffectSilent(xi::StatusEffect::LevelSync, static_cast<uint16>(xi::StatusEffect::LevelSync), PChar->GetMLevel(), 0s, 0s);
+                        /* LD MASTER LEVELS */
+                        if (auto* PSyncChar = dynamic_cast<CCharEntity*>(PChar))
+                        {
+                            if (CStatusEffect* sync = member->StatusEffectContainer->GetStatusEffect(xi::StatusEffect::LevelSync))
+                            {
+                                sync->SetSubPower(static_cast<uint16>(charutils::GetCharVar(PSyncChar, "[ML]ShowLv")));
+                            }
+                            if (charutils::GetCharVar(member, "[ML]ShowFlags") > 0)
+                            {
+                                member->pushPacket<GP_SERV_COMMAND_BATTLE_MESSAGE>(member, member, charutils::GetCharVar(PSyncChar, "[ML]ShowLv"), 0, static_cast<MsgBasic>(814));
+                            }
+                        }
                         member->loc.zone->PushPacket(member, CHAR_INRANGE, std::make_unique<CCharSyncPacket>(member, CharSyncRecipient::Others));
                     }
                 }

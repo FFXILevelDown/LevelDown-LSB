@@ -166,6 +166,7 @@ void dboxutils::AddItemsToBeSent(CCharEntity* PChar, GP_CLI_COMMAND_PBX_BOXNO Bo
             // The name as saved, not as typed.
             const auto recvName = receiver->get<std::string>("charname");
 
+            if (PChar && PChar->getCharVar("[LevelRatio]Restriction") != charutils::FetchCharVar(recvCharid, "[LevelRatio]Restriction").first) { return; } /* CUSTOM BRACKET DBOX RESTRICTION */
             if (PItem->hasFlag(xi::ItemFlag::NoDelivery))
             {
                 if (!PItem->hasFlag(xi::ItemFlag::CanSendAccount))

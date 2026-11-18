@@ -1178,7 +1178,14 @@ void LoadEquip(CCharEntity* PChar)
             }
             else
             {
-                CItem* PItem = PChar->getStorage(inventoryLoc.second)->GetItem(inventoryLoc.first);
+                /* CUSTOM LOADEQUIP NULL STORAGE GUARD */
+                auto* PContainer = PChar->getStorage(inventoryLoc.second);
+                if (PContainer == nullptr)
+                {
+                    continue; // Stale/invalid containerid in char_equip row; skip instead of crashing
+                }
+
+                CItem* PItem = PContainer->GetItem(inventoryLoc.first);
 
                 if ((PItem != nullptr) && PItem->isType(ITEM_LINKSHELL))
                 {

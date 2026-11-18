@@ -25,6 +25,9 @@
 
 #include "aman.h"
 #include "entities/char_entity.h"
+#include "data/enums/key_item.h"
+#include "job_points.h"
+#include "utils/charutils.h"
 
 GP_SERV_COMMAND_JOB_INFO::GP_SERV_COMMAND_JOB_INFO(CCharEntity* PChar)
 {
@@ -47,6 +50,26 @@ GP_SERV_COMMAND_JOB_INFO::GP_SERV_COMMAND_JOB_INFO(CCharEntity* PChar)
     packet.can_thumbs_up_mentor = PChar->aman().canThumbsUp();
     packet.mentor_rank          = PChar->aman().getMentorRank();
     packet.mastery_rank         = PChar->aman().getMasteryRank();
+
+    /* LD MASTER LEVELS */
+    if (charutils::GetCharVar(PChar, "LevelCap") == 99)
+    {
+        const JobPoints_t* PJobPoints   = PChar->PJobPoints->GetAllJobPoints();
+        const bool         hasBreaker   = charutils::hasKeyItem(PChar, xi::KeyItem::MasterBreaker);
+        constexpr uint8    jobsInPacket = sizeof(packet.job_mastery_levels);
+
+        for (uint8 job = 1; job < MAX_JOBTYPE && job < jobsInPacket; ++job)
+        {
+            if (PJobPoints[job].totalJpSpent >= 2100)
+            {
+                packet.job_mastery_flags |= (1u << job);
+                if (hasBreaker)
+                {
+                    packet.job_mastery_levels[job] = static_cast<uint8>(charutils::GetCharVar(PChar, "[ML]Lv" + std::to_string(job)));
+                }
+            }
+        }
+    }
 
     if (PChar->m_PMonstrosity != nullptr)
     {
