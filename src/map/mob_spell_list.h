@@ -28,7 +28,7 @@
 
 #include "spell.h"
 
-#define MAX_MOBSPELLLIST_ID 5000
+#define MAX_MOBSPELLLIST_ID 30000 /* LD MOBSPELLLIST MAX */
 
 struct MobSpell_t
 {
