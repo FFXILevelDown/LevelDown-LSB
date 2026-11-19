@@ -380,6 +380,7 @@ auto CDataLoader::GetPlayersList(SearchRequest sr, int* count) const -> std::vec
         "SELECT charid, partyid, charname, pos_zone, pos_prevzone, nation, rank_sandoria, rank_bastok, unity_leader, "
         "rank_windurst, race, mjob, sjob, mlvl, slvl, languages, settings, seacom_type, disconnecting, gmHiddenEnabled, muted, "
         "linkshellid1, linkshellid2 "
+        "/* LD MASTER LEVELS SEARCH */ , COALESCE((SELECT value FROM char_vars ldml WHERE ldml.charid = accounts_sessions.charid AND ldml.varname = '[ML]ShowLv'), 0) AS ld_ml_lv, COALESCE((SELECT value FROM char_vars ldmf WHERE ldmf.charid = accounts_sessions.charid AND ldmf.varname = '[ML]ShowFlags'), 0) AS ld_ml_flags "
         "FROM accounts_sessions "
         "LEFT JOIN accounts_parties USING (charid) "
         "LEFT JOIN chars USING (charid) "
@@ -395,6 +396,7 @@ auto CDataLoader::GetPlayersList(SearchRequest sr, int* count) const -> std::vec
         "SELECT charid, partyid, charname, pos_zone, pos_prevzone, nation, rank_sandoria, rank_bastok, unity_leader, "
         "rank_windurst, race, mjob, sjob, mlvl, slvl, languages, settings, seacom_type, disconnecting, gmHiddenEnabled, muted, "
         "linkshellid1, linkshellid2 "
+        "/* LD MASTER LEVELS SEARCH */ , COALESCE((SELECT value FROM char_vars ldml WHERE ldml.charid = accounts_sessions.charid AND ldml.varname = '[ML]ShowLv'), 0) AS ld_ml_lv, COALESCE((SELECT value FROM char_vars ldmf WHERE ldmf.charid = accounts_sessions.charid AND ldmf.varname = '[ML]ShowFlags'), 0) AS ld_ml_flags "
         "FROM JSON_TABLE(?, '$[*]' COLUMNS (charid INT UNSIGNED PATH '$')) AS ids "
         "JOIN accounts_sessions USING (charid) "
         "LEFT JOIN accounts_parties USING (charid) "
@@ -433,6 +435,8 @@ auto CDataLoader::GetPlayersList(SearchRequest sr, int* count) const -> std::vec
             player.sjob     = rset->get<uint8>("sjob");
             player.mlvl     = rset->get<uint8>("mlvl");
             player.slvl     = rset->get<uint8>("slvl");
+            player.masterLvl   = static_cast<uint8>(rset->get<int32>("ld_ml_lv"));
+            player.masterFlags = static_cast<uint8>(rset->get<int32>("ld_ml_flags"));
             player.race     = rset->get<uint8>("race");
 
             // TODO: Use a nation enum?
@@ -732,6 +736,7 @@ auto CDataLoader::GetPartyList(uint32 PartyID, uint32 AllianceID) const -> std::
     std::vector<SearchEntity> PartyList;
 
     auto rset = db::preparedStmt("SELECT charid, partyid, charname, pos_zone, nation, rank_sandoria, rank_bastok, rank_windurst, race, settings, mjob, sjob, mlvl, slvl, languages, seacom_type, disconnecting "
+                                 "/* LD MASTER LEVELS SEARCH */ , COALESCE((SELECT value FROM char_vars ldml WHERE ldml.charid = accounts_sessions.charid AND ldml.varname = '[ML]ShowLv'), 0) AS ld_ml_lv, COALESCE((SELECT value FROM char_vars ldmf WHERE ldmf.charid = accounts_sessions.charid AND ldmf.varname = '[ML]ShowFlags'), 0) AS ld_ml_flags "
                                  "FROM accounts_sessions "
                                  "LEFT JOIN accounts_parties USING(charid) "
                                  "LEFT JOIN chars USING(charid) "
@@ -756,6 +761,8 @@ auto CDataLoader::GetPartyList(uint32 PartyID, uint32 AllianceID) const -> std::
         player.sjob   = rset->get<uint8>("sjob");
         player.mlvl   = rset->get<uint8>("mlvl");
         player.slvl   = rset->get<uint8>("slvl");
+        player.masterLvl   = static_cast<uint8>(rset->get<int32>("ld_ml_lv"));
+        player.masterFlags = static_cast<uint8>(rset->get<int32>("ld_ml_flags"));
         player.race   = rset->get<uint8>("race");
 
         // TODO: Use a nation enum?
@@ -838,6 +845,7 @@ auto CDataLoader::GetLinkshellList(uint32 LinkshellID) const -> std::vector<Sear
     auto rset = db::preparedStmt("SELECT charid, partyid, charname, pos_zone, nation, rank_sandoria, rank_bastok, rank_windurst, race, settings, mjob, sjob, "
                                  "mlvl, slvl, linkshellid1, linkshellid2, "
                                  "linkshellrank1, linkshellrank2, disconnecting "
+                                 "/* LD MASTER LEVELS SEARCH */ , COALESCE((SELECT value FROM char_vars ldml WHERE ldml.charid = accounts_sessions.charid AND ldml.varname = '[ML]ShowLv'), 0) AS ld_ml_lv, COALESCE((SELECT value FROM char_vars ldmf WHERE ldmf.charid = accounts_sessions.charid AND ldmf.varname = '[ML]ShowFlags'), 0) AS ld_ml_flags "
                                  "FROM accounts_sessions "
                                  "LEFT JOIN accounts_parties USING (charid) "
                                  "LEFT JOIN chars USING (charid) "
@@ -862,6 +870,8 @@ auto CDataLoader::GetLinkshellList(uint32 LinkshellID) const -> std::vector<Sear
         player.sjob   = rset->get<uint8>("sjob");
         player.mlvl   = rset->get<uint8>("mlvl");
         player.slvl   = rset->get<uint8>("slvl");
+        player.masterLvl   = static_cast<uint8>(rset->get<int32>("ld_ml_lv"));
+        player.masterFlags = static_cast<uint8>(rset->get<int32>("ld_ml_flags"));
         player.race   = rset->get<uint8>("race");
 
         // TODO: Use a nation enum?

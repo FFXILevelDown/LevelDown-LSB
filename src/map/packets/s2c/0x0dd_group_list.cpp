@@ -67,6 +67,9 @@ GP_SERV_COMMAND_GROUP_LIST::GP_SERV_COMMAND_GROUP_LIST(const CCharEntity* PChar,
             packet.mjob_lv = PChar->GetMLevel();
             packet.sjob_no = static_cast<uint8_t>(PChar->GetSJob());
             packet.sjob_lv = PChar->GetSLevel();
+            /* LD MASTER LEVELS PARTY LIST */
+            packet.masterjob_lv    = static_cast<uint8_t>(PChar->getCharVar("[ML]ShowLv"));
+            packet.masterjob_flags = static_cast<uint8_t>(PChar->getCharVar("[ML]ShowFlags"));
         }
     }
 

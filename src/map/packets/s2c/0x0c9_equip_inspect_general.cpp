@@ -49,8 +49,9 @@ GP_SERV_COMMAND_EQUIP_INSPECT::GENERAL::GENERAL(const CCharEntity* PChar, const 
 
         // TODO: Master levels
         packet.mjob   = static_cast<uint8_t>(PTarget->GetMJob()); // This is sent even if the job isnt mastered
-        packet.mlvl   = 0;                                        // The checked entities master job level.
-        packet.mflags = 0;                                        // 0x01: Leveling, 0x02: Capped
+        /* LD MASTER LEVELS CHECK */
+        packet.mlvl   = static_cast<uint8_t>(PTarget->getCharVar("[ML]ShowLv"));
+        packet.mflags = static_cast<uint8_t>(PTarget->getCharVar("[ML]ShowFlags")); // 0x01: Leveling, 0x02: Capped
     }
 
     // TODO: Ballista info

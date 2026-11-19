@@ -35,7 +35,7 @@
 inline constexpr uint32 searchPacketTrailerSize = 0x10 + 0x04;
 
 // Worst case packed entity entry; largest real entry is linkshell at 64 bytes
-inline constexpr uint32 searchEntryMaxSize = 67;
+inline constexpr uint32 searchEntryMaxSize = 70; /* LD MASTER LEVELS SEARCH */ // +3 for the Master Level field
 
 struct SearchRequest
 {

@@ -76,6 +76,10 @@ auto CSearchListPacket::AddPlayer(const SearchEntity& player) -> bool
         m_offset = packBitsLE(m_data, player.mlvl, m_offset, 8);
         m_offset = packBitsLE(m_data, player.slvl, m_offset, 8);
 
+        /* LD MASTER LEVELS SEARCH */
+        m_offset = packBitsLE(m_data, static_cast<uint64>(SearchType::MasterLevel), m_offset, 5);
+        m_offset = packBitsLE(m_data, (player.masterFlags & 0x01) ? player.masterLvl : 0, m_offset, 8);
+
         m_offset = packBitsLE(m_data, static_cast<uint64>(SearchType::Race), m_offset, 5);
         m_offset = packBitsLE(m_data, player.race, m_offset, 4);
 
@@ -101,7 +105,7 @@ auto CSearchListPacket::AddPlayer(const SearchEntity& player) -> bool
     }
 
     m_offset = packBitsLE(m_data, static_cast<uint64>(SearchType::Flags2), m_offset, 5);
-    m_offset = packBitsLE(m_data, player.flags2, m_offset, 32);
+    m_offset = packBitsLE(m_data, player.flags2 | (((player.masterFlags & 0x01) && player.masterLvl > 0) ? 0x40000000u : 0u), m_offset, 32); // LD MASTER LEVELS SEARCH: has Master Levels
 
     m_offset = packBitsLE(m_data, static_cast<uint64>(SearchType::Language), m_offset, 5);
     m_offset = packBitsLE(m_data, player.languages, m_offset, 16);

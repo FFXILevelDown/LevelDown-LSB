@@ -74,6 +74,7 @@ struct SearchEntity
     uint8       sjob           = 0;
     uint8       slvl           = 0;
     uint8       masterLvl      = 0;
+    uint8       masterFlags    = 0; /* LD MASTER LEVELS SEARCH */ // 0x01 shown, 0x02 capped
     uint8       nation         = 0;
     uint8       rank           = 0;
     uint8       race           = 0;

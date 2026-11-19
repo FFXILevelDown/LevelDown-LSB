@@ -49,8 +49,9 @@ GP_SERV_COMMAND_GROUP_ATTR::GP_SERV_COMMAND_GROUP_ATTR(CCharEntity* PChar)
         packet.mjob_lv         = PChar->GetMLevel();
         packet.sjob_no         = static_cast<uint8_t>(PChar->GetSJob());
         packet.sjob_lv         = PChar->GetSLevel();
-        packet.masterjob_lv    = 0;
-        packet.masterjob_flags = 0;
+        /* LD MASTER LEVELS PARTY ATTR */
+        packet.masterjob_lv    = static_cast<uint8_t>(PChar->getCharVar("[ML]ShowLv"));
+        packet.masterjob_flags = static_cast<uint8_t>(PChar->getCharVar("[ML]ShowFlags"));
     }
 }
 
