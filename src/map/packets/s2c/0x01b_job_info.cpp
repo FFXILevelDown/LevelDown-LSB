@@ -52,7 +52,7 @@ GP_SERV_COMMAND_JOB_INFO::GP_SERV_COMMAND_JOB_INFO(CCharEntity* PChar)
     packet.mastery_rank         = PChar->aman().getMasteryRank();
 
     /* LD MASTER LEVELS */
-    if (charutils::GetCharVar(PChar, "LevelCap") == 99)
+    if (charutils::GetCharVar(PChar, "LevelCap") != 75) // 99 path = not the 75 path (LevelCap is unset for most players)
     {
         const JobPoints_t* PJobPoints   = PChar->PJobPoints->GetAllJobPoints();
         const bool         hasBreaker   = charutils::hasKeyItem(PChar, xi::KeyItem::MasterBreaker);
