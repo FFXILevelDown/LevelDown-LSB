@@ -276,6 +276,13 @@ void CAttackRound::CreateAttacks(CItemWeapon* PWeapon, PHYSICAL_ATTACK_DIRECTION
     int16 occAttThriceRate = std::clamp<int16>(m_attacker->getMod(xi::Mod::MYTHIC_OCC_ATT_THRICE), 0, 100);
     int16 occAttTwiceRate  = std::clamp<int16>(m_attacker->getMod(xi::Mod::MYTHIC_OCC_ATT_TWICE), 0, 100);
 
+    /* LD TENKOMARU */ // main hand swings only, attacker in front of the target
+    if (isPC && isMainHand && PChar->m_Weapons[SLOT_MAIN] && PChar->m_Weapons[SLOT_MAIN]->getID() == 18466 &&
+        infront(m_attacker->loc.p, m_defender->loc.p, 64))
+    {
+        occAttTwiceRate = std::clamp<int16>(occAttTwiceRate + 20, 0, 100);
+    }
+
     // Checking for merit upgrades
     if (isPC)
     {

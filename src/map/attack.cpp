@@ -20,6 +20,7 @@
 */
 
 #include "attack.h"
+#include "lua/luautils.h" // LD BONANZA WEAPONS
 #include "ai/ai_container.h"
 #include "attackround.h"
 #include "common/lua.h"
@@ -674,6 +675,11 @@ void CAttack::ProcessDamage()
             kickDamage = m_naturalH2hDamage + m_attacker->getMod(xi::Mod::KICK_DMG); // KICK_DMG includes weapon dmg if footwork is active
             m_damage   = std::max(kickDamage + m_bonusBasePhysicalDamage + battleutils::GetFSTR(m_attacker, m_victim, slot), 0);
             m_damage   = std::floor<uint32>(m_damage * m_damageRatio);
+            /* LD BONANZA WEAPONS */ // kick damage hook
+            if (m_attacker->objtype == TYPE_PC)
+            {
+                m_damage = luautils::callGlobal<int32>("xi.ld.bonanzaWeapons.onKickDamage", m_attacker, m_victim, static_cast<int32>(m_damage));
+            }
         }
         else // Players use this calculation.
         {

@@ -136,6 +136,10 @@ void CLatentEffectContainer::CheckLatentsHP()
                 case xi::Latent::HpOverVisibleGear:
                     return ProcessLatentEffect(latentEffect);
                 default:
+                    if (static_cast<uint16>(latentEffect.GetConditionsID()) == 201) // LD LATENTS: HP above N
+                    {
+                        return ProcessLatentEffect(latentEffect);
+                    }
                     break;
             }
             return false;
@@ -227,7 +231,7 @@ void CLatentEffectContainer::CheckLatentsEquip(uint8 slot)
     ProcessLatentEffects(
         [this, slot](CLatentEffect& latentEffect)
         {
-            if (latentEffect.GetSlot() == slot)
+            if (latentEffect.GetSlot() == slot || static_cast<uint16>(latentEffect.GetConditionsID()) == 200 /* LD LATENTS */)
             {
                 return ProcessLatentEffect(latentEffect);
             }
@@ -1312,6 +1316,16 @@ auto CLatentEffectContainer::ProcessLatentEffect(CLatentEffect& latentEffect, bo
             expression = isDuringWs;
             break;
         default:
+            if (static_cast<uint16>(latentEffect.GetConditionsID()) == 200) // LD LATENTS: no main weapon
+            {
+                expression = m_POwner->getEquip(SLOT_MAIN) == nullptr;
+                break;
+            }
+            if (static_cast<uint16>(latentEffect.GetConditionsID()) == 201) // LD LATENTS: HP above N
+            {
+                expression = m_POwner->health.hp > latentEffect.GetConditionsValue();
+                break;
+            }
             latentFound = false;
             ShowWarning("Latent ID %d unhandled in ProcessLatentEffect", static_cast<uint16>(latentEffect.GetConditionsID()));
             break;

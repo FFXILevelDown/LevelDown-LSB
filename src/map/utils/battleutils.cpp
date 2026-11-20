@@ -4060,7 +4060,12 @@ auto doSoulEaterEffect(CCharEntity* m_PChar, uint32 damage) -> uint16
 
         if (bonusDamage >= 1)
         {
-            m_PChar->addHP(-HandleStoneskin(m_PChar, (int32)(bonusDamage * stalwartSoulBonus)));
+            /* LD BONANZA WEAPONS */ // Final Sickle: no HP cost on regular attacks
+            const bool ldFreeSouleater = m_PChar->m_Weapons[SLOT_MAIN] && m_PChar->m_Weapons[SLOT_MAIN]->getID() == 21814;
+            if (!ldFreeSouleater)
+            {
+                m_PChar->addHP(-HandleStoneskin(m_PChar, (int32)(bonusDamage * stalwartSoulBonus)));
+            }
 
             if (m_PChar->GetMJob() == xi::Job::DRK)
             {
@@ -6362,6 +6367,7 @@ auto GetCoverAbilityUser(CBattleEntity* PCoverAbilityTarget, CBattleEntity* PMob
                 distTAmob < distance(PCoverAbilityTarget->loc.p, PMob->loc.p) && // make sure cover user is closer to the mob than cover target
                 areInLine(angleTAmob, PMob, PCoverAbilityTarget))
             {
+                luautils::callGlobal<void>("xi.ld.bonanzaWeapons.onCover", PCoverAbilityUser); // LD BONANZA WEAPONS
                 return PCoverAbilityUser;
             }
         }

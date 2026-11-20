@@ -3387,6 +3387,12 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
 
             recycleChance += PChar->PJobPoints->GetJobPointValue(JP_AMMO_CONSUMPTION);
 
+            // Exeter: stackable ammunition is never used up // LD BONANZA WEAPONS
+            if (PChar->m_Weapons[SLOT_RANGED] && PChar->m_Weapons[SLOT_RANGED]->getID() == 22152 && PAmmo != nullptr && PAmmo->getStackSize() > 1)
+            {
+                recycleChance = 100;
+            }
+
             if (StatusEffectContainer->HasStatusEffect(xi::StatusEffect::UnlimitedShot))
             {
                 recycleChance = 100;
@@ -3846,6 +3852,12 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                         int32 extraCounterDMG = PTarget->getMod(xi::Mod::COUNTER_DAMAGE);
                         int32 damage          = std::max(PTarget->GetMainWeaponDmg() + naturalh2hDMG + extraCounterDMG + battleutils::GetFSTR(PTarget, this, SLOT_MAIN), 0);
                         damage                = std::floor(damage * mobH2HPenalty * DamageRatio);
+
+                        /* LD BONANZA WEAPONS */ // counter damage hook
+                        if (PTarget->objtype == TYPE_PC)
+                        {
+                            damage = luautils::callGlobal<int32>("xi.ld.bonanzaWeapons.onCounterDamage", PTarget, this, damage);
+                        }
 
                         actionResult.spikesParam =
                             battleutils::TakePhysicalDamage(PTarget, this, attack.GetAttackType(), damage, false, SLOT_MAIN, 1, nullptr, true, false, true);
