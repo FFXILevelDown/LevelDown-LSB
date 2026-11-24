@@ -93,3 +93,5 @@ LevelDown Custom Modules/content/LD Master Levels/
 #LevelDown Custom Modules/content/LD AI Players/
 #LevelDown Custom Modules/content/LD Xur/
 LevelDown Custom Modules/content/LD Gratitude Campaign/
+LevelDown Custom Modules/content/LD Sortie/
+
