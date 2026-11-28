@@ -134,6 +134,7 @@ void data_session::read_func()
                                                     "INNER JOIN char_jobs  USING(charid) "
                                                     "LEFT JOIN  char_flags USING(charid) "
                                                     "WHERE accid = ? "
+                                                    "ORDER BY charid "  // stable slot order (the Level Down launcher's autologin picks by slot)
                                                     "LIMIT ?",
                                                     session.accountID,
                                                     numContentIds);
