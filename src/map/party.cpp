@@ -591,33 +591,12 @@ void CParty::AddMember(CBattleEntity* PEntity)
     if (dynamic_cast<const CCharEntity*>(PEntity) != nullptr && m_PartyType == PARTY_PCS && IsFull())
     {
         ShowWarning("CParty::AddMember() - Party was full when trying to add a member.");
+/* LD AI PLAYERS PARTY WITH TRUSTS */
         return;
     }
 
-    if (dynamic_cast<const CCharEntity*>(PEntity) != nullptr && m_PartyType == PARTY_PCS && HasTrusts())
-    {
-        ShowWarning("CParty::AddMember() - Party had summoned trusts when trying to add a member.");
-        return;
-    }
-
-    /* CUSTOM RATIO PARTY RESTRICTION */
-    if (PEntity->objtype == TYPE_PC && m_PartyType == PARTY_PCS)
-    {
-        auto* PChar = static_cast<CCharEntity*>(PEntity);
-        for (auto* PMember : members)
-        {
-            if (PMember->objtype == TYPE_PC)
-            {
-                auto* PCharMember = static_cast<CCharEntity*>(PMember);
-                if (PChar->getCharVar("Ratio") != PCharMember->getCharVar("Ratio"))
-                {
-                    ShowWarning("CParty::AddMember() - Ratio mismatch between %s and %s.", PChar->getName(), PCharMember->getName());
-                    return;
-                }
-                break;
-            }
-        }
-    }
+    // FFXI Offline: a player may join while trusts (squad mates) are out. IsFull() counts the trusts, so the
+    // party never goes over six. (Stock: refused whenever HasTrusts().)
 
     PEntity->PParty = this;
     members.emplace_back(PEntity);
@@ -719,28 +698,7 @@ void CParty::AddMember(uint32 id)
             return;
         }
 
-        if (HasTrusts())
-        {
-            ShowWarning("CParty::AddMember() - Party had summoned trusts when trying to add a member.");
-            return;
-        }
-
-        /* CUSTOM RATIO PARTY RESTRICTION */
-        for (auto* PMember : members)
-        {
-            if (PMember->objtype == TYPE_PC)
-            {
-                auto* PCharMember = static_cast<CCharEntity*>(PMember);
-                int32 existingRatio = PCharMember->getCharVar("Ratio");
-                int32 incomingRatio = charutils::FetchCharVar(id, "Ratio").first;
-                if (existingRatio != incomingRatio)
-                {
-                    ShowWarning("CParty::AddMember(id) - Ratio mismatch for charid %u.", id);
-                    return;
-                }
-                break;
-            }
-        }
+        // FFXI Offline: allowed with trusts out (see AddMember above); IsFull() counts them
 
         uint32 allianceid = 0;
         uint16 Flags      = 0;
@@ -1393,13 +1351,26 @@ auto CParty::HasOnlyOneMember() const -> bool
 
 auto CParty::IsFull() const -> bool
 {
-    if (members.size() > 5)
+    // FFXI Offline: trusts (squad mates) take party places too, now that players can join while they are out
+    std::size_t trusts = 0;
+    if (m_PartyType == PARTY_PCS)
+    {
+        for (auto* PMember : members)
+        {
+            if (auto* PCharMember = dynamic_cast<CCharEntity*>(PMember))
+            {
+                trusts += PCharMember->PTrusts.size();
+            }
+        }
+    }
+
+    if (members.size() + trusts > 5)
     {
         return true;
     }
 
     // Load party size to make sure that that all members are accounted for across all servers
-    return LoadPartySize() > 5;
+    return LoadPartySize() + trusts > 5;
 }
 
 auto CParty::LoadPartySize() const -> uint32

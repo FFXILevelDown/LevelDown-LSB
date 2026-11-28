@@ -102,10 +102,11 @@ GP_SERV_COMMAND_GROUP_LIST::GP_SERV_COMMAND_GROUP_LIST(const CTrustEntity* PTrus
     packet.Mpp          = PTrust->GetMPP();
     packet.mjob_no      = static_cast<uint8_t>(PTrust->GetMJob());
     packet.mjob_lv      = PTrust->GetMLevel();
+/* LD AI PLAYERS SQUAD PACKET NAME */
     packet.sjob_no      = static_cast<uint8_t>(PTrust->GetSJob());
     packet.sjob_lv      = PTrust->GetSLevel();
 
-    const auto nameSize       = std::min<size_t>(PTrust->getName().size(), sizeof(packet.Name));
+    const auto nameSize       = std::min<size_t>(PTrust->packetName.size(), sizeof(packet.Name)); // length of the name actually sent (squad mates are renamed)
     const auto packetNameSize = roundUpToNearestFour(static_cast<uint32_t>(nameSize)) + 4; // Always 4 bytes of padding after name
     std::memcpy(packet.Name, PTrust->packetName.c_str(), nameSize);
 

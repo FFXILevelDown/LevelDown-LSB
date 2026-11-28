@@ -344,7 +344,7 @@ void auth_session::read_func()
                 // creating new account_id
                 uint32 accid = 0;
 
-                const auto rset1 = db::preparedStmt("SELECT COALESCE(MAX(accounts.id), 0) AS max_id FROM accounts");
+                const auto rset1 = db::preparedStmt("SELECT COALESCE(MAX(accounts.id), 0) AS max_id FROM accounts WHERE accounts.id < 21000000") /* LD SKIP BOT ACCID RANGE */;
                 if (rset1 && rset1->rowsCount() != 0 && rset1->next())
                 {
                     accid = rset1->get<uint32>("max_id") + 1;

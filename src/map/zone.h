@@ -270,6 +270,8 @@ public:
     auto campaignHandler() const -> CCampaignHandler*;
     auto battlefieldHandler() const -> CBattlefieldHandler*;
 
+    /* LD AI PLAYERS ZONE SCHEDULER */
+    auto scheduler() -> Scheduler& { return scheduler_; }
     auto navMesh() const -> NavMesh*;
     auto xiMesh() const -> XiMesh*;
 

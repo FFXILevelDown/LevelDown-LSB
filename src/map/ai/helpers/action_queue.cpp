@@ -23,9 +23,11 @@
 
 #include "ai/ai_container.h"
 #include "entities/base_entity.h"
+/* LD AI PLAYERS ACTION QUEUE LIVENESS */
 
 CAIActionQueue::CAIActionQueue(CBaseEntity* entity)
 : PEntity(entity)
+, m_OwnerSerial(entity != nullptr ? entity->serial() : 0)
 {
 }
 
@@ -58,10 +60,19 @@ void CAIActionQueue::checkAction(timer::time_point tick)
 
 void CAIActionQueue::handleAction(queueAction_t& action)
 {
-    if (action.func)
+    if (!action.func)
     {
-        action.func(PEntity);
+        return;
     }
+
+    // The entity owning this queue can be gone while a Lua timer is still pending (a zone change frees the
+    // old character object). Running the callback would hand Lua a dead handle, so let the timer lapse.
+    if (!CBaseEntity::isLive(PEntity, m_OwnerSerial))
+    {
+        return;
+    }
+
+    action.func(PEntity);
 }
 
 auto CAIActionQueue::isEmpty() const -> bool

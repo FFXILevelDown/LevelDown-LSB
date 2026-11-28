@@ -1389,6 +1389,14 @@ auto CZone::CheckTriggerAreas() -> Task<void>
             // TODO: When we start to use octrees or spatial hashing to split up zones,
             //     : use them here to make the search domain smaller.
 
+            /* CUSTOM TRIGGER AREAS REVALIDATE ENTRY */
+            const uint32 charId = PChar->id;
+            PChar                = GetZoneEntities()->GetCharByID(charId);
+            if (!PChar)
+            {
+                return;
+            }
+
             // Do not enter trigger areas while loading in. Set in xi.player.onGameIn
             if (PChar->GetLocalVar("ZoningIn") > 0)
             {
@@ -1397,6 +1405,16 @@ auto CZone::CheckTriggerAreas() -> Task<void>
 
             for (const auto& triggerArea : m_triggerAreaList)
             {
+                // A previous trigger area's Lua callback this pass (this character's own, or an earlier
+                // character's in the snapshot) may have zoned or logged this character out. Re-fetch it by
+                // id instead of trusting the pointer handed into this lambda: if it's gone, stop here rather
+                // than dereferencing freed memory.
+                PChar = GetZoneEntities()->GetCharByID(charId);
+                if (!PChar)
+                {
+                    return;
+                }
+
                 const auto triggerAreaID = triggerArea->getTriggerAreaID();
                 if (triggerArea->isPointInside(PChar->loc.p))
                 {

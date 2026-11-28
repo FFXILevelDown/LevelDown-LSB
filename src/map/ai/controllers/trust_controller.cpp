@@ -29,9 +29,15 @@
 #include "entities/char_entity.h"
 #include "entities/trust_entity.h"
 #include "items/item_weapon.h"
+/* LD AI PLAYERS TRUST CONTROLLER */
 #include "player_controller.h"
 #include "recast_container.h"
 #include "utils/charutils.h"
+#include "entities/mob_entity.h"
+#include "mob_spell_container.h"
+
+#include <algorithm>
+#include <cmath>
 
 namespace
 {
@@ -51,6 +57,35 @@ enum TRUST_MOVEMENT_TYPE : int8
     MID_RANGE  = 6,  // Will path at the start of battle to 6' away from the target, and try to stay at that distance
     LONG_RANGE = 12, // Will path at the start of battle to 12' away from the target, and try to stay at that distance
 };
+
+// FFXI Offline squad camp (squad.lua: !squad camp / !squad pull). Squad mates (local var SQUAD_ID) with SQUAD_CAMP
+// set hold a spot around the camp instead of following you, fight what comes within CampFightRadius of it (even when
+// you are not engaged: a mate pulled it, or you are resting), and let go of anything farther than CampLeash.
+// A mate with SQUAD_PULL_PHASE 1 runs out to SQUAD_PULL_TARGET (a mob's targid) and engages it; once the mob is
+// engaged (2) it runs back to camp, and at camp the phase goes back to 0 and the fight is on.
+// The camp position is in SQUAD_CAMP_X / _Y / _Z, as yalms * 100 + 10000000 (local vars are unsigned).
+constexpr float CampHoldRadius  = 2.5f;
+constexpr float CampFightRadius = 20.0f;
+constexpr float CampLeash       = 30.0f;
+
+auto campDecode(const uint32 value) -> float
+{
+    return static_cast<float>(static_cast<int64>(value) - 10000000) / 100.0f;
+}
+
+auto campOf(const CBaseEntity* PTrust, position_t& camp) -> bool
+{
+    if (PTrust == nullptr || PTrust->GetLocalVar("SQUAD_ID") == 0 || PTrust->GetLocalVar("SQUAD_CAMP") == 0)
+    {
+        return false;
+    }
+
+    camp   = PTrust->loc.p;
+    camp.x = campDecode(PTrust->GetLocalVar("SQUAD_CAMP_X"));
+    camp.y = campDecode(PTrust->GetLocalVar("SQUAD_CAMP_Y"));
+    camp.z = campDecode(PTrust->GetLocalVar("SQUAD_CAMP_Z"));
+    return true;
+}
 
 } // namespace
 
@@ -106,7 +141,13 @@ auto CTrustController::Tick(timer::time_point tick) -> Task<void>
 
     const bool nonCombatFollowTrust = PTrust->getMobMod(xi::MobMod::TrustDistance) == TRUST_MOVEMENT_TYPE::NON_COMBAT;
 
-    if (PTrust->PMaster->PAI->IsEngaged() && nonCombatFollowTrust)
+    position_t camp{};
+    const bool inCamp = campOf(PTrust, camp);
+    if (inCamp && PTrust->GetLocalVar("SQUAD_PULL_PHASE") != 0 && !POwner->isDead())
+    {
+        co_await DoCampPullTick(tick, camp);
+    }
+    else if (PTrust->PMaster->PAI->IsEngaged() && nonCombatFollowTrust && !inCamp)
     {
         co_await DoNonCombatTick(tick);
     }
@@ -132,10 +173,26 @@ auto CTrustController::DoCombatTick(timer::time_point tick) -> Task<void>
     setTarget(POwner->GetBattleTarget());
     auto* PTarget = target().resolve<CBattleEntity>();
 
-    if (!PMaster->PAI->IsEngaged())
+    position_t camp{};
+    const bool inCamp = campOf(PTrust, camp);
+    if (inCamp)
+    {
+        // camp: the fight at camp goes on without you; anything that wanders off is let go
+        if (PTarget == nullptr || PTarget->isDead() || distance(PTarget->loc.p, camp) > CampLeash)
+        {
+            PTrust->PAI->Internal_Disengage();
+            m_CombatEndTime = m_Tick;
+        }
+    }
+    else if (!PMaster->PAI->IsEngaged())
     {
         PTrust->PAI->Internal_Disengage();
         m_CombatEndTime = m_Tick;
+    }
+
+    if (inCamp && PMob && distance(PMob->loc.p, camp) > CampFightRadius)
+    {
+        PMob = nullptr; // (what you are fighting out there is not the camp's fight)
     }
 
     if (PMaster && PMob && PTrust->battleTarget() != PMaster->battleTarget())
@@ -176,7 +233,7 @@ auto CTrustController::DoCombatTick(timer::time_point tick) -> Task<void>
             float currentDistanceToTarget = distance(PTrust->loc.p, PTarget->loc.p);
             float currentDistanceToMaster = distance(PTrust->loc.p, PMaster->loc.p);
 
-            if (!PMaster->PAI->IsEngaged() && currentDistanceToTarget > WarpDistance)
+            if (!inCamp && !PMaster->PAI->IsEngaged() && currentDistanceToTarget > WarpDistance)
             {
                 PTrust->PAI->PathFind->WarpTo(PTarget->loc.p);
             }
@@ -200,20 +257,21 @@ auto CTrustController::DoCombatTick(timer::time_point tick) -> Task<void>
                 }
                 case TRUST_MOVEMENT_TYPE::MELEE:
                 {
-                    std::unique_ptr<CBasicPacket> err;
-                    if (!PTrust->CanAttack(PTarget, err) && PTrust->GetSpeed() > 0)
+                    // CanAttack answers "would a swing land", not "am I standing next to
+                    // it": the hitbox sizes are part of GetMeleeRange, so it reads true
+                    // from 3+ yalms away and the mate stopped there, looking like it was
+                    // swinging from the next camp. Keep closing until it is actually
+                    // inside RoamDistance of the mob, whatever CanAttack says.
+                    if (PTrust->GetSpeed() > 0 && currentDistanceToTarget > RoamDistance)
                     {
-                        if (currentDistanceToTarget > RoamDistance)
+                        if (currentDistanceToTarget < RoamDistance * 3.0f &&
+                            PTrust->PAI->PathFind->PathAround(PTarget->loc.p, RoamDistance, PATHFLAG_RUN))
                         {
-                            if (currentDistanceToTarget < RoamDistance * 3.0f &&
-                                PTrust->PAI->PathFind->PathAround(PTarget->loc.p, RoamDistance, PATHFLAG_RUN))
-                            {
-                                PTrust->PAI->PathFind->FollowPath(m_Tick);
-                            }
-                            else if (PTrust->GetSpeed() > 0)
-                            {
-                                PTrust->PAI->PathFind->StepTo(PTarget->loc.p, true);
-                            }
+                            PTrust->PAI->PathFind->FollowPath(m_Tick);
+                        }
+                        else if (PTrust->GetSpeed() > 0)
+                        {
+                            PTrust->PAI->PathFind->StepTo(PTarget->loc.p, true);
                         }
                     }
                     break;
@@ -341,6 +399,50 @@ auto CTrustController::DoRoamTick(timer::time_point tick) -> Task<void>
     TracyZoneScoped;
 
     auto*      PMaster              = static_cast<CCharEntity*>(POwner->PMaster);
+
+    position_t camp{};
+    if (campOf(POwner, camp))
+    {
+        // camp: fight what reaches the camp (yours, or what another mate is fighting there), else hold the spot
+        CBattleEntity* PFight = nullptr;
+        if (PMaster->PAI->IsEngaged())
+        {
+            auto* PTarget = PMaster->GetBattleTarget();
+            if (PTarget && !PTarget->isDead() && distance(PTarget->loc.p, camp) <= CampFightRadius)
+            {
+                PFight = PTarget;
+            }
+        }
+
+        for (auto* POther : PMaster->PTrusts)
+        {
+            if (PFight != nullptr)
+            {
+                break;
+            }
+
+            if (POther != nullptr && POther != POwner && POther->PAI->IsEngaged())
+            {
+                auto* PTarget = POther->GetBattleTarget();
+                if (PTarget && !PTarget->isDead() && distance(PTarget->loc.p, camp) <= CampFightRadius)
+                {
+                    PFight = PTarget;
+                }
+            }
+        }
+
+        if (PFight != nullptr)
+        {
+            POwner->PAI->Internal_Engage(EntityId(PFight));
+        }
+        else
+        {
+            CampHold(camp);
+        }
+
+        co_return;
+    }
+
     const auto masterLastAttackTime = static_cast<CPlayerController*>(PMaster->PAI->GetController())->getLastAttackTime();
     const bool masterMeleeSwing     = masterLastAttackTime > timer::now() - 1s;
 
@@ -426,7 +528,8 @@ auto CTrustController::DoRoamTick(timer::time_point tick) -> Task<void>
         }
     }
 
-    if (POwner->CanRest() && m_Tick - POwner->LastAttacked > m_tickDelays.at(0) && m_Tick - m_CombatEndTime > m_tickDelays.at(0) &&
+    // Squad mates (FFXI Offline squad module) only recover while their player rests (/heal): no automatic regen.
+    if (POwner->GetLocalVar("SQUAD_ID") == 0 && POwner->CanRest() && m_Tick - POwner->LastAttacked > m_tickDelays.at(0) && m_Tick - m_CombatEndTime > m_tickDelays.at(0) &&
         m_Tick - m_LastHealTickTime > m_tickDelays.at(m_NumHealingTicks))
     {
         if (POwner->health.hp != POwner->health.maxhp || POwner->health.mp != POwner->health.maxmp)
@@ -442,6 +545,187 @@ auto CTrustController::DoRoamTick(timer::time_point tick) -> Task<void>
         }
     }
 
+    co_return;
+}
+
+// camp: stand on its own spot around the camp (one per party slot)
+void CTrustController::CampHold(const position_t& camp)
+{
+    const float angle = static_cast<float>(GetPartyPosition()) * 2.0f * 3.14159265f / 5.0f;
+    position_t  spot  = camp;
+    spot.x            = camp.x + CampHoldRadius * std::cos(angle);
+    spot.z            = camp.z + CampHoldRadius * std::sin(angle);
+    if (!POwner->PAI->PathFind->ValidPosition(spot))
+    {
+        spot = camp;
+    }
+
+    const float away = distance(POwner->loc.p, spot);
+    if (away > 60.0f)
+    {
+        POwner->PAI->PathFind->WarpTo(spot);
+    }
+    else if (away > 1.0f)
+    {
+        if (!POwner->PAI->PathFind->IsFollowingPath() || m_Tick - m_CampRepath > 2s)
+        {
+            m_CampRepath = m_Tick;
+            POwner->PAI->PathFind->PathTo(spot, PATHFLAG_RUN);
+        }
+
+        POwner->PAI->PathFind->FollowPath(m_Tick);
+    }
+    else if (POwner->PAI->PathFind->IsFollowingPath())
+    {
+        POwner->PAI->PathFind->Clear();
+    }
+}
+
+// camp: the puller's run - out to the monster, engage it, and back to camp once it comes
+// FFXI Offline squad camp: how a puller opens on its target from range, as players did. A caster uses a pull spell it
+// knows (Dia, Bio, Poison, then a tier one nuke); a melee job with a ranged weapon (bow, gun, throwing) shoots it.
+namespace
+{
+constexpr float CampPullCastRange  = 18.0f;
+constexpr float CampPullShootRange = 20.0f;
+
+auto knows(const std::vector<SpellID>& list, SpellID id) -> bool
+{
+    return std::find(list.begin(), list.end(), id) != list.end();
+}
+
+auto campPullSpell(CTrustEntity* PTrust) -> Maybe<SpellID>
+{
+    if (PTrust->SpellContainer == nullptr || !PTrust->SpellContainer->HasSpells())
+    {
+        return std::nullopt;
+    }
+
+    // Dia, Dia II, Bio, Poison, Stone, Water, Aero, Fire, Blizzard, Thunder, Banish
+    for (const uint16 n : { 23, 24, 230, 220, 159, 169, 154, 144, 149, 164, 28 })
+    {
+        const auto id = static_cast<SpellID>(n);
+        auto*      sc = PTrust->SpellContainer;
+        if ((knows(sc->m_debuffList, id) || knows(sc->m_damageList, id)) && sc->GetAvailable(id))
+        {
+            return id;
+        }
+    }
+
+    return std::nullopt;
+}
+
+auto hasRangedWeapon(const CTrustEntity* PTrust) -> bool
+{
+    const auto* ranged = dynamic_cast<CItemWeapon*>(PTrust->m_Weapons[SLOT_RANGED]);
+    if (ranged && ranged->getID() != 0 && (ranged->getSkillType() == xi::SkillType::Archery || ranged->getSkillType() == xi::SkillType::Marksmanship ||
+                                           ranged->getSkillType() == xi::SkillType::Throwing))
+    {
+        return true;
+    }
+
+    const auto* ammo = dynamic_cast<CItemWeapon*>(PTrust->m_Weapons[SLOT_AMMO]);
+    return ammo && ammo->getID() != 0 && ammo->isThrowing();
+}
+} // namespace
+
+auto CTrustController::DoCampPullTick(timer::time_point tick, const position_t& camp) -> Task<void>
+{
+    auto* PTrust = static_cast<CTrustEntity*>(POwner);
+    auto* PMob   = dynamic_cast<CMobEntity*>(PTrust->GetEntity(static_cast<uint16>(PTrust->GetLocalVar("SQUAD_PULL_TARGET")), TYPE_MOB));
+    if (PMob == nullptr || PMob->isDead() || PMob->status == xi::Status::Disappear)
+    {
+        PTrust->SetLocalVar("SQUAD_PULL_PHASE", 0);
+        PTrust->SetLocalVar("SQUAD_PULL_TARGET", 0);
+        co_return;
+    }
+
+    if (!PTrust->PAI->CanFollowPath() || PTrust->GetSpeed() == 0)
+    {
+        co_return;
+    }
+
+    if (PTrust->GetLocalVar("SQUAD_PULL_PHASE") == 1)
+    {
+        if (PMob->PAI->IsEngaged())
+        {
+            PTrust->SetLocalVar("SQUAD_PULL_PHASE", 2); // it is coming: back to camp
+            PTrust->PAI->PathFind->Clear();
+            co_return;
+        }
+
+        if (!PTrust->PAI->IsEngaged() || PTrust->GetBattleTarget() != PMob)
+        {
+            PTrust->PAI->Internal_Engage(EntityId(PMob));
+        }
+
+        const float away = distance(PTrust->loc.p, PMob->loc.p);
+
+        // from range: a pull spell (casters) or a shot (a ranged weapon); it waits for it to land before running again
+        if (PTrust->PAI->IsCurrentState<CMagicState>() || PTrust->PAI->IsCurrentState<CRangeState>())
+        {
+            co_return;
+        }
+
+        if (away <= CampPullShootRange && tick - m_CampPullTry > 4s)
+        {
+            if (const auto spell = campPullSpell(PTrust); spell && away <= CampPullCastRange)
+            {
+                PTrust->PAI->PathFind->Clear();
+                m_CampPullTry = tick;
+                Cast(EntityId(PMob), *spell);
+                co_return;
+            }
+
+            if (hasRangedWeapon(PTrust))
+            {
+                PTrust->PAI->PathFind->Clear();
+                m_CampPullTry = tick;
+                RangedAttack(EntityId(PMob));
+                co_return;
+            }
+        }
+
+        if (away > 2.5f)
+        {
+            if (!PTrust->PAI->PathFind->IsFollowingPath() || tick - m_CampRepath > 1s)
+            {
+                m_CampRepath = tick;
+                PTrust->PAI->PathFind->PathAround(PMob->loc.p, 2.0f, PATHFLAG_NONE); // (a player's pace: PATHFLAG_RUN is the mobs' x2.5 run)
+            }
+
+            PTrust->PAI->PathFind->FollowPath(tick);
+        }
+
+        // casters open from range with their own rules (Dia, Stone, Provoke, Flash...)
+        if (away < CastingDistance && !PTrust->PAI->IsCurrentState<CMagicState>())
+        {
+            co_await m_GambitsContainer->Tick(tick);
+        }
+
+        co_return;
+    }
+
+    if (!PMob->PAI->IsEngaged())
+    {
+        PTrust->SetLocalVar("SQUAD_PULL_PHASE", 1); // (it lost interest: go get it again)
+        co_return;
+    }
+
+    if (distance(PTrust->loc.p, camp) <= 3.0f)
+    {
+        PTrust->SetLocalVar("SQUAD_PULL_PHASE", 0); // back at camp with it: the fight is on
+        PTrust->PAI->PathFind->Clear();
+        co_return;
+    }
+
+    if (!PTrust->PAI->PathFind->IsFollowingPath() || tick - m_CampRepath > 2s)
+    {
+        m_CampRepath = tick;
+        PTrust->PAI->PathFind->PathTo(camp, PATHFLAG_NONE); // (back at a player's pace, the monster on its heels)
+    }
+
+    PTrust->PAI->PathFind->FollowPath(tick);
     co_return;
 }
 

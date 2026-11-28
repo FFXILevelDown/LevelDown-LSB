@@ -1998,6 +1998,18 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
 
     luautils::OnZoneTick(this->m_zone);
 
+    /* CUSTOM ZONESERVER PHASE TIMING */
+    auto       phaseStart       = timer::now();
+    const auto logPhaseIfSlow   = [&](const char* phase)
+    {
+        const auto elapsedMs = std::chrono::duration_cast<std::chrono::milliseconds>(timer::now() - phaseStart).count();
+        if (elapsedMs >= 250)
+        {
+            ShowWarningFmt("CZoneEntities::ZoneServer: zone {} phase '{}' took {}ms", m_zone->getName(), phase, elapsedMs);
+        }
+        phaseStart = timer::now();
+    };
+
     rebuildSpatialGrid();
 
     // Snapshot each list, then tick inline.
@@ -2017,12 +2029,16 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
         co_await mobTick(static_cast<CMobEntity*>(PEntity), tick);
     }
 
+    logPhaseIfSlow("mobTick");
+
     // Check to see if any aggroable mobs should be aggroed by other mobs (snapshot then run inline).
     tickEntityScratch_.assign(m_aggroableMobs.begin(), m_aggroableMobs.end());
     for (auto* PEntity : tickEntityScratch_)
     {
         co_await mobAggroCheck(static_cast<CMobEntity*>(PEntity), tick);
     }
+
+    logPhaseIfSlow("mobAggroCheck");
 
     //
     // NPC tick logic
@@ -2039,6 +2055,8 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
         co_await npcTick(static_cast<CNpcEntity*>(PEntity), tick);
     }
 
+    logPhaseIfSlow("npcTick");
+
     //
     // Pet tick logic
     //
@@ -2053,6 +2071,8 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
     {
         co_await petTick(static_cast<CPetEntity*>(PEntity), tick);
     }
+
+    logPhaseIfSlow("petTick");
 
     //
     // Trust tick logic
@@ -2069,6 +2089,8 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
         co_await trustTick(static_cast<CTrustEntity*>(PEntity), tick);
     }
 
+    logPhaseIfSlow("trustTick");
+
     //
     // Char tick logic
     //
@@ -2083,6 +2105,8 @@ auto CZoneEntities::ZoneServer(timer::time_point tick) -> Task<void>
     {
         co_await charTick(static_cast<CCharEntity*>(PEntity), tick);
     }
+
+    logPhaseIfSlow("charTick");
 
     //
     // Cleanup logic

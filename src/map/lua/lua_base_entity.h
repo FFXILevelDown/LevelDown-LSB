@@ -58,9 +58,11 @@ class CLuaTradeContainer;
 class CLuaZone;
 
 class CLuaBaseEntity
+/* LD AI PLAYERS LUA ENTITY SERIAL */
 {
 protected:
     CBaseEntity* m_PBaseEntity;
+    uint64       m_Serial;
 
 public:
     CLuaBaseEntity(CBaseEntity*);
@@ -291,6 +293,13 @@ public:
     auto getCurrentGPItem(uint8 guildId) const -> std::tuple<uint16, uint16>;
     auto breakLinkshell(const std::string& lsname) -> bool;
     auto addLinkpearl(const std::string& lsname, bool equip) -> bool;
+    /* LD WARP COMMAND */
+    auto warpSave(uint8 slot, const std::string& nickname) -> bool;
+    auto warpList() -> sol::table;
+    auto warpGet(uint8 slot) -> sol::table;
+    auto warpDelete(uint8 slot) -> bool;
+    auto warpRename(uint8 slot, const std::string& nickname) -> bool;
+    auto warpGetLock(uint8 slot) -> sol::table;
 
     // Trading
     auto getContainerSize(uint8 locationID) -> uint8;
@@ -591,6 +600,9 @@ public:
     auto canLearnSpell(uint16 spellID) -> uint32;
     void delSpell(uint16 spellID, const sol::optional<sol::table>& paramTable);
     auto getSetBlueSpells() -> sol::table;
+    /* LD AI PLAYERS BLUE SPELL SETTER */
+    void setBlueSpell(uint16 spellID, uint8 slotIndex, bool adding);
+    auto getBlueTotalSlots() -> uint8;
 
     void recalculateSkillsTable();
     void recalculateAbilitiesTable();

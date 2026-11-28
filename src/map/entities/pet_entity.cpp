@@ -246,8 +246,16 @@ void CPetEntity::Die()
     // NOLINTNEXTLINE(bugprone-parent-virtual-call): Grandparent call, skips CMobEntity's impl on purpose.
     CBattleEntity::Die();
     if (PMaster && PMaster->PPet == this && dynamic_cast<const CCharEntity*>(PMaster) != nullptr)
+/* LD AI PLAYERS SQUAD PETS */
     {
         petutils::DetachPet(PMaster);
+    }
+    else if (PMaster && PMaster->PPet == this)
+    {
+        // The master is not a character (a squad mate), and DetachPet only handles characters. Without this,
+        // the master would keep a pointer to a pet that is about to be removed.
+        PMaster->PPet = nullptr;
+        PMaster       = nullptr;
     }
 }
 

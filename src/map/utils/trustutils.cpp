@@ -23,9 +23,11 @@
 
 #include "common/utils.h"
 
+/* LD AI PLAYERS SQUAD TRUSTUTILS */
 #include <common/types/hash_map.h>
 
 #include <algorithm>
+#include <set>
 
 #include "battleutils.h"
 #include "data/loader.h"
@@ -52,7 +54,7 @@ namespace
 //
 
 void BuildTrustData(uint32 TrustID);
-auto LoadTrust(CCharEntity* PMaster, uint32 TrustID) -> CTrustEntity*;
+auto LoadTrust(CCharEntity* PMaster, uint32 TrustID, const trustutils::SquadSpec* spec) -> CTrustEntity*;
 void LoadTrustStatsAndSkills(CTrustEntity* PTrust);
 
 // List of trusts that are essentially walking GEO bubbles that should not be targetable
@@ -169,9 +171,9 @@ void trustutils::LoadTrustList()
     }
 }
 
-auto trustutils::SpawnTrust(CCharEntity* PMaster, uint32 TrustID) -> CTrustEntity*
+auto trustutils::SpawnTrust(CCharEntity* PMaster, uint32 TrustID, const SquadSpec* spec) -> CTrustEntity*
 {
-    CTrustEntity* PTrust = LoadTrust(PMaster, TrustID);
+    CTrustEntity* PTrust = LoadTrust(PMaster, TrustID, spec);
     if (PTrust == nullptr)
     {
         return nullptr;
@@ -334,7 +336,24 @@ void BuildTrustData(uint32 TrustID)
     }
 }
 
-auto LoadTrust(CCharEntity* PMaster, uint32 TrustID) -> CTrustEntity*
+// Squad mates: the spell list of the first (lowest id) non-passive trust whose main job is `job`.
+// A squad mate's sub job spells come from that list, at the sub level.
+auto SquadSubJobSpellList(uint8 job) -> uint16
+{
+    const TrustData* best = nullptr;
+    for (const auto& entry : g_PTrustData)
+    {
+        const TrustData* data = entry.second.get();
+        if (data != nullptr && data->mJob == job && !data->isPassiveTrust && (best == nullptr || data->trustID < best->trustID))
+        {
+            best = data;
+        }
+    }
+
+    return best != nullptr ? best->spellList : 0;
+}
+
+auto LoadTrust(CCharEntity* PMaster, uint32 TrustID, const trustutils::SquadSpec* spec) -> CTrustEntity*
 {
     const auto itr = g_PTrustData.find(TrustID);
     if (itr == g_PTrustData.end())
@@ -372,12 +391,48 @@ auto LoadTrust(CCharEntity* PMaster, uint32 TrustID) -> CTrustEntity*
     PTrust->modelHitboxSize = trustData->modelHitboxSize;
     PTrust->m_EcoSystem     = trustData->EcoSystem;
 
-    PTrust->SetMJob(trustData->mJob);
-    PTrust->SetSJob(trustData->sJob);
+    if (spec != nullptr)
+    {
+        // Squad mate: job, subjob and level come from the squad record, not from the trust or the master
+        PTrust->SetMJob(spec->mJob);
+        PTrust->SetSJob(spec->sJob);
+        PTrust->SetMLevel(spec->mLevel);
 
-    // assume level matches master
-    PTrust->SetMLevel(PMaster->GetMLevel());
-    PTrust->SetSLevel(std::floor(PMaster->GetMLevel() / 2));
+        uint8 squadSubLevel = 0;
+        if (spec->sJob != 0)
+        {
+            squadSubLevel = spec->sLevel != 0 ? spec->sLevel : static_cast<uint8>(spec->mLevel / 2);
+        }
+        PTrust->SetSLevel(squadSubLevel);
+        PTrust->setSquadId(spec->squadId);
+        PTrust->setSquadRace(spec->race);
+
+        // Player-style appearance (race, face and armor), set now so it is part of the first spawn message
+        if (spec->hasLook)
+        {
+            PTrust->look.size   = 1; // MODEL_EQUIPPED
+            PTrust->look.race   = spec->race;
+            PTrust->look.face   = spec->face;
+            PTrust->look.head   = spec->lookHead;
+            PTrust->look.body   = spec->lookBody;
+            PTrust->look.hands  = spec->lookHands;
+            PTrust->look.legs   = spec->lookLegs;
+            PTrust->look.feet   = spec->lookFeet;
+            PTrust->look.main   = spec->lookMain;
+            PTrust->look.sub    = spec->lookSub;
+            PTrust->look.ranged = spec->lookRanged;
+        }
+        PTrust->SetLocalVar("SQUAD_ID", spec->squadId);
+    }
+    else
+    {
+        PTrust->SetMJob(trustData->mJob);
+        PTrust->SetSJob(trustData->sJob);
+
+        // assume level matches master
+        PTrust->SetMLevel(PMaster->GetMLevel());
+        PTrust->SetSLevel(std::floor(PMaster->GetMLevel() / 2));
+    }
 
     LoadTrustStatsAndSkills(PTrust);
 
@@ -456,9 +511,124 @@ auto LoadTrust(CCharEntity* PMaster, uint32 TrustID) -> CTrustEntity*
         PTrust->m_dualWield = true;
     }
 
-    if (auto* spellList = mobSpellList::GetMobSpellList(trustData->spellList); spellList != nullptr)
+    auto* spellList = trustData->spellList != 0 ? mobSpellList::GetMobSpellList(trustData->spellList) : nullptr;
+    if (spellList != nullptr)
     {
         mobutils::SetSpellList(PTrust, trustData->spellList);
+    }
+
+    // Squad mates also get their sub job's spells: every spell on the sub job's list that fits the sub level.
+    // This runs even when the main job's template has no spell list of its own (WAR, MNK, THF, SAM, RNG and
+    // COR templates are like that), so a WAR/WHM still gets Cure and Protect from the sub job.
+    if (spec != nullptr && spec->sJob != 0 && PTrust->SpellContainer != nullptr)
+    {
+        const uint16 subListId = SquadSubJobSpellList(spec->sJob);
+        auto*        subList   = subListId != 0 ? mobSpellList::GetMobSpellList(subListId) : nullptr;
+        if (subList != nullptr)
+        {
+            const uint8 subLevel  = PTrust->GetSLevel();
+            const uint8 mainLevel = PTrust->GetMLevel();
+            const auto* mainList  = PTrust->m_SpellListContainer;
+
+            for (const auto& subSpell : subList->m_spellList)
+            {
+                if (subLevel < subSpell.min_level || subLevel > subSpell.max_level)
+                {
+                    continue;
+                }
+
+                // Skip spells the main job's list already gives at the main level
+                const bool alreadyHave = mainList != nullptr && std::ranges::any_of(mainList->m_spellList, [&](const MobSpell_t& mainSpell)
+                                                                                    { return mainSpell.spellId == subSpell.spellId && mainLevel >= mainSpell.min_level && mainLevel <= mainSpell.max_level; });
+                if (!alreadyHave)
+                {
+                    PTrust->SpellContainer->AddSpell(subSpell.spellId);
+                }
+            }
+        }
+    }
+
+    // Squad mates know every spell their jobs can learn at their levels, with no scrolls: the main job at the main
+    // level and the sub job at the sub level. This list is what the game checks when a spell is cast on request.
+    if (spec != nullptr)
+    {
+        auto*       known     = new CMobSpellList(Maybe<uint16>{});
+        const uint8 mainLevel = PTrust->GetMLevel();
+        const uint8 subLevel  = PTrust->GetSLevel();
+        const auto  mainJob   = PTrust->GetMJob();
+        const auto  subJob    = PTrust->GetSJob();
+
+        if (PTrust->m_SpellListContainer != nullptr)
+        {
+            for (const auto& entry : PTrust->m_SpellListContainer->m_spellList)
+            {
+                known->AddSpell(entry.spellId, entry.min_level, entry.max_level);
+            }
+        }
+
+        for (uint16 id = 1; id < MAX_SPELL_ID; ++id)
+        {
+            CSpell* PSpell = spell::GetSpell(static_cast<SpellID>(id));
+            if (PSpell == nullptr)
+            {
+                continue;
+            }
+
+            const auto group = PSpell->getSpellGroup();
+            if (group == SPELLGROUP_TRUST || group == SPELLGROUP_SUMMONING)
+            {
+                continue;
+            }
+
+            if (group == SPELLGROUP_GEOMANCY && mainJob != xi::Job::GEO && subJob != xi::Job::GEO)
+            {
+                continue;
+            }
+
+            // FFXI Offline: blue magic only for a squad Blue Mage (main or sub job)
+            if (group == SPELLGROUP_BLUE && mainJob != xi::Job::BLU && subJob != xi::Job::BLU)
+            {
+                continue;
+            }
+
+            const bool learnedByMain = PSpell->getJob(mainJob) <= mainLevel;
+            const bool learnedBySub  = spec->sJob != 0 && PSpell->getJob(subJob) <= subLevel;
+            if (!learnedByMain && !learnedBySub)
+            {
+                continue;
+            }
+
+            const bool alreadyListed = std::ranges::any_of(known->m_spellList, [&](const MobSpell_t& listed)
+                                                           { return listed.spellId == static_cast<SpellID>(id) && mainLevel >= listed.min_level && mainLevel <= listed.max_level; });
+            if (!alreadyListed)
+            {
+                known->AddSpell(static_cast<SpellID>(id), 0, 255);
+            }
+        }
+
+        PTrust->setSquadSpellList(known);
+        PTrust->m_SpellListContainer = known;
+
+        // Rebuild the castable container from the full known list. The template's own list is
+        // often only one slice of the job (Rainemard, the RDM template, has nukes but no Dia,
+        // Cure, Slow, Haste, Protect or Shell), so without this the gambits had nothing to cast.
+        if (PTrust->SpellContainer != nullptr)
+        {
+            PTrust->SpellContainer->ClearSpells();
+            std::set<SpellID> castable;
+            for (const auto& entry : known->m_spellList)
+            {
+                if (mainLevel < entry.min_level || mainLevel > entry.max_level)
+                {
+                    continue;
+                }
+
+                if (castable.insert(entry.spellId).second)
+                {
+                    PTrust->SpellContainer->AddSpell(entry.spellId);
+                }
+            }
+        }
     }
 
     return PTrust;
@@ -600,6 +770,36 @@ void LoadTrustStatsAndSkills(CTrustEntity* PTrust)
     mpMultiplierTrust      = (mpMultiplierTrust >= 0.1f && mpMultiplierTrust <= 2.0f) ? mpMultiplierTrust : 1.0f;
     PTrust->health.maxmp   = (int16)((raceStat + jobStat + sJobStat) * mpMultiplierTrust);
 
+    // Squad mates grow like a real player of their race, job and level (the same tables the game uses for characters)
+    uint8      squadRaceGroup = 0;
+    const bool useRaceTables  = PTrust->squadRace() != 0;
+    if (useRaceTables)
+    {
+        switch (PTrust->squadRace())
+        {
+            case 3:
+            case 4:
+                squadRaceGroup = 1; // Elvaan
+                break;
+            case 5:
+            case 6:
+                squadRaceGroup = 2; // Tarutaru
+                break;
+            case 7:
+                squadRaceGroup = 3; // Mithra
+                break;
+            case 8:
+                squadRaceGroup = 4; // Galka
+                break;
+            default:
+                squadRaceGroup = 0; // Hume
+                break;
+        }
+
+        PTrust->health.maxhp = static_cast<int16>(grade::GetBaseHP(squadRaceGroup, grade::GetJobGrade(mJob, 0), mLvl, grade::GetJobGrade(sJob, 0), sLvl));
+        PTrust->health.maxmp = static_cast<int16>(grade::GetBaseMP(squadRaceGroup, grade::GetJobGrade(mJob, 1), mLvl, grade::GetJobGrade(sJob, 1), sLvl));
+    }
+
     PTrust->health.tp = 0;
     PTrust->UpdateHealth();
     PTrust->health.hp = PTrust->GetMaxHP();
@@ -660,6 +860,23 @@ void LoadTrustStatsAndSkills(CTrustEntity* PTrust)
     PTrust->stats.INT   = static_cast<uint16>((fINT + mINT + sINT) * statMultiplier);
     PTrust->stats.MND   = static_cast<uint16>((fMND + mMND + sMND) * statMultiplier);
     PTrust->stats.CHR   = static_cast<uint16>((fCHR + mCHR + sCHR) * statMultiplier);
+
+    if (useRaceTables)
+    {
+        // Player stat formula: race grade + job grade at main level + sub job grade at sub level (StatIndex 2-8 = STR..CHR)
+        const auto playerStat = [&](uint8 statIndex) -> uint16
+        {
+            return static_cast<uint16>(grade::GetBaseStat(grade::GetRaceGrades(squadRaceGroup, statIndex), grade::GetJobGrade(mJob, statIndex), mLvl, grade::GetJobGrade(sJob, statIndex), sLvl));
+        };
+
+        PTrust->stats.STR = playerStat(2);
+        PTrust->stats.DEX = playerStat(3);
+        PTrust->stats.VIT = playerStat(4);
+        PTrust->stats.AGI = playerStat(5);
+        PTrust->stats.INT = playerStat(6);
+        PTrust->stats.MND = playerStat(7);
+        PTrust->stats.CHR = playerStat(8);
+    }
 
     // Skills =======================
     for (int i = static_cast<int>(xi::SkillType::DivineMagic); i <= static_cast<int>(xi::SkillType::BlueMagic); i++)

@@ -949,10 +949,16 @@ void CalculateWyvernStats(CBattleEntity* PMaster, CPetEntity* PPet)
     auto* PPetData = *maybePetData;
 
     // Wyvern Pets are DRG/DRG with a subjob level of 1
+/* LD AI PLAYERS SQUAD PETS */
     // https://www.bg-wiki.com/ffxi/Wyvern_(Dragoon_Pet)#About_the_Wyvern
     uint8 mLvl = PMaster->GetMLevel();
     uint8 sLvl = 1;
-    uint8 iLvl = std::clamp(charutils::getMainhandItemLevel(static_cast<CCharEntity*>(PMaster)) - 99, 0, 20);
+    // A squad mate (a trust) is not a character and has no main hand item level
+    uint8 iLvl = 0;
+    if (auto* PCharMaster = dynamic_cast<CCharEntity*>(PMaster))
+    {
+        iLvl = std::clamp(charutils::getMainhandItemLevel(PCharMaster) - 99, 0, 20);
+    }
 
     PPet->SetMLevel(mLvl + iLvl + PMaster->getMod(xi::Mod::WYVERN_LVL_BONUS));
     PPet->SetSLevel(sLvl);
@@ -1063,16 +1069,28 @@ void CalculateJugPetStats(CBattleEntity* PMaster, CPetEntity* PPet)
     // Get the Jug pet cap level
     uint8 highestLvl = PPetData->maxLevel;
 
-    // Increase the pet's level cal by the bonus given by BEAST AFFINITY merits.
-    CCharEntity* PChar = static_cast<CCharEntity*>(PMaster);
-    highestLvl += PChar->PMeritPoints->GetMeritValue(xi::Merit::BeastAffinity, PChar);
+    // A squad mate is not a character, so it has no merits or equipment item level.
+    auto* PChar = dynamic_cast<CCharEntity*>(PMaster);
+    if (PChar != nullptr)
+    {
+        // Increase the pet's level cap by the bonus given by BEAST AFFINITY merits.
+        highestLvl += PChar->PMeritPoints->GetMeritValue(xi::Merit::BeastAffinity, PChar);
+    }
 
     // And cap it to the master's level or weapon ilvl, whichever is greater
-    auto capLevel = std::max(PMaster->GetMLevel(), PMaster->m_Weapons[SLOT_MAIN]->getILvl());
-    highestLvl    = std::min(highestLvl, capLevel);
+    auto capLevel = PMaster->GetMLevel();
+    if (PChar != nullptr)
+    {
+        capLevel = std::max(capLevel, PChar->m_Weapons[SLOT_MAIN]->getILvl());
+    }
 
-    // Randomize: 0-2 lvls lower, less Monster Gloves(+1/+2) bonus
-    highestLvl -= xirand::GetRandomNumber(3 - std::clamp<int16>(PChar->getMod(xi::Mod::JUG_LEVEL_RANGE), 0, 2));
+    highestLvl = std::min<uint8>(highestLvl, capLevel);
+
+    // Randomize: 0-2 lvls lower, less Monster Gloves(+1/+2) bonus.
+    // A trust always uses the full 0-2 range; clamp so a level-1 pet can never wrap around.
+    const auto jugLevelRange = PChar != nullptr ? std::clamp<int16>(PChar->getMod(xi::Mod::JUG_LEVEL_RANGE), 0, 2) : 0;
+    const auto levelDrop     = static_cast<uint8>(xirand::GetRandomNumber(3 - jugLevelRange));
+    highestLvl               = highestLvl > levelDrop ? highestLvl - levelDrop : 1;
 
     PPet->SetMLevel(std::min(PPet->getSpawnLevel(), highestLvl));
     LoadJugStats(PPet, PPetData); // follow monster calcs (w/o SJ)
@@ -1269,6 +1287,17 @@ void SpawnPet(CBattleEntity* PMaster, uint32 PetID, bool spawningFromZone)
         PPet->PMaster = PMaster;
         PPet->setBattleID(PMaster->getBattleID());
 
+        // Squad pets use the normal pet data, but their master is a trust. Let them use their own skill list
+        // (wyvern breaths, jug pet moves, avatar skills); player pets keep the normal command-driven behavior.
+        if (PMaster->objtype == TYPE_TRUST)
+        {
+            if (auto* petController = dynamic_cast<CPetController*>(PPet->PAI->GetController());
+                petController != nullptr && (PPet->getPetType() == PET_TYPE::WYVERN || PPet->getPetType() == PET_TYPE::JUG_PET || PPet->getPetType() == PET_TYPE::AVATAR))
+            {
+                petController->SetWeaponSkillEnabled(true);
+            }
+        }
+
         if (PMaster->PBattlefield)
         {
             PPet->PBattlefield = PMaster->PBattlefield;
@@ -1398,9 +1427,23 @@ void DetachPet(CBattleEntity* PMaster)
     }
 
     auto* PChar = dynamic_cast<CCharEntity*>(PMaster);
-    if (!PChar)
+    if (PChar == nullptr)
     {
-        ShowWarning("Non-PC passed into function (%s)", PMaster->getName());
+        // A squad mate can own a pet too. There is no client pet command table or pet zoning info
+        // to update for a trust, so just remove the pet and clear both pointers.
+        CBattleEntity* PPet = PMaster->PPet;
+        PMaster->PPet       = nullptr;
+
+        if (!PPet->isDead())
+        {
+            PPet->Die();
+        }
+
+        if (PPet->PMaster == PMaster)
+        {
+            PPet->PMaster = nullptr;
+        }
+
         return;
     }
 
@@ -1927,6 +1970,11 @@ void LoadPet(CBattleEntity* PMaster, uint32 PetID, bool spawningFromZone)
     PPet->m_name_prefix  = PPetData->name_prefix;
     PPet->m_Species      = PPetData->m_Species;
     PPet->m_MobSkillList = PPetData->m_MobSkillList;
+    if (PPetData->m_MobSkillList != 0)
+    {
+        // shouldUseTPMove() reads the mob mod, not the member. Without this a pet has no skill list at all.
+        PPet->setMobMod(xi::MobMod::SkillList, static_cast<int16>(PPetData->m_MobSkillList));
+    }
     PPet->SetMJob(PPetData->mJob);
     PPet->SetSJob(PPetData->sJob);
     PPet->m_Element = PPetData->m_Element;
@@ -1977,7 +2025,13 @@ void LoadPet(CBattleEntity* PMaster, uint32 PetID, bool spawningFromZone)
     }
     else if (PPet->getPetType() == PET_TYPE::JUG_PET)
     {
-        uint8 spawnLevel = static_cast<CCharEntity*>(PMaster)->petZoningInfo.petLevel;
+        // A squad mate is not a character and has no pet zoning information.
+        uint8 spawnLevel = 0;
+        if (auto* PCharMaster = dynamic_cast<CCharEntity*>(PMaster))
+        {
+            spawnLevel = PCharMaster->petZoningInfo.petLevel;
+        }
+
         PPet->setSpawnLevel(spawnLevel > 0 ? spawnLevel : UINT8_MAX);
         PPet->setJugDuration(PPetData->time);
         CalculateJugPetStats(PMaster, PPet);

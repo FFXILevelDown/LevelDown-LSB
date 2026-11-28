@@ -28,6 +28,7 @@
 #include "data/enums/msg_basic.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
+#include "items/item_equipment.h" // LD BONANZA WEAPONS
 #include "packets/s2c/0x028_battle2.h"
 #include "packets/s2c/0x029_battle_message.h"
 #include "roe.h"
@@ -106,8 +107,17 @@ void CWeaponSkillState::SpendCost()
     else if (m_PEntity->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Sekkanoki))
     {
         // Sekkanoki counts as a 1000 TP weaponskill.
-        tp = 1000;
-        m_PEntity->addTP(-1000);
+        /* LD BONANZA WEAPONS */ // Zanmato +2: Sekkanoki keeps all TP and uses it as the TP bonus
+        auto* PZanmatoChar = dynamic_cast<CCharEntity*>(m_PEntity);
+        if (PZanmatoChar && PZanmatoChar->m_Weapons[SLOT_MAIN] && PZanmatoChar->m_Weapons[SLOT_MAIN]->getID() == 21980)
+        {
+            tp = std::max<int>(m_PEntity->health.tp, 1000);
+        }
+        else
+        {
+            tp = 1000;
+            m_PEntity->addTP(-1000);
+        }
         m_PEntity->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Sekkanoki);
     }
     else

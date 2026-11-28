@@ -70,9 +70,11 @@ public:
 private:
     void handleAction(queueAction_t& action);
 
+/* LD AI PLAYERS ACTION QUEUE LIVENESS */
     using ActionHeap_t = Heap<queueAction_t, QueueActionDeadlineGreater>;
 
     CBaseEntity* PEntity;
+    uint64       m_OwnerSerial;
     ActionHeap_t actionQueue;
     ActionHeap_t timerQueue;
 };

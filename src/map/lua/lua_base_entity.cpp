@@ -178,9 +178,11 @@
 #include <magic_enum/magic_enum.hpp>
 
 //======================================================//
+/* LD AI PLAYERS LUA ENTITY LIVENESS */
 
 CLuaBaseEntity::CLuaBaseEntity(CBaseEntity* PEntity)
 : m_PBaseEntity(PEntity)
+, m_Serial(PEntity != nullptr ? PEntity->serial() : 0)
 {
     if (PEntity == nullptr)
     {
@@ -5248,6 +5250,227 @@ auto CLuaBaseEntity::breakLinkshell(const std::string& lsname) -> bool
  *  Example : player:addLinkpearl("NewPlayers", true)
  ************************************************************************/
 
+/* LD WARP COMMAND */
+namespace
+{
+    constexpr uint32 WARP_LOCKOUT_SECONDS = 2 * 60 * 60;
+
+    // Returns the seconds remaining on the cross-zone lockout for a slot, or 0 if it's not locked
+    // (no existing row, same zone as last save, or the 2-hour window has already elapsed).
+    auto warpLockSecondsLeft(CCharEntity* PChar, uint8 slot, uint16 currentZone) -> uint32
+    {
+        const auto rset = db::preparedStmt("SELECT zoneid, updated FROM char_warps WHERE charid = ? AND slot = ?", PChar->id, slot);
+        if (rset && rset->rowsCount() && rset->next())
+        {
+            const auto savedZone = rset->get<uint16>("zoneid");
+            const auto updated   = rset->get<uint32>("updated");
+
+            if (savedZone != currentZone)
+            {
+                const auto now     = earth_time::timestamp();
+                const auto elapsed = now > updated ? now - updated : 0;
+                if (elapsed < WARP_LOCKOUT_SECONDS)
+                {
+                    return WARP_LOCKOUT_SECONDS - elapsed;
+                }
+            }
+        }
+
+        return 0;
+    }
+} // namespace
+
+/************************************************************************
+ *  Function: warpSave(slot, nickname)
+ *  Purpose : Saves the player's current position/zone into one of their 10 nicknamed warp slots.
+ *            Refuses (returns false, no write) if that slot was saved from a different zone less than
+ *            2 hours ago.
+ *  Example : player:warpSave(1, "Jeuno Port")
+ ************************************************************************/
+
+auto CLuaBaseEntity::warpSave(uint8 slot, const std::string& nickname) -> bool
+{
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return false;
+    }
+
+    if (slot < 1 || slot > 10)
+    {
+        return false;
+    }
+
+    auto*      PChar       = static_cast<CCharEntity*>(m_PBaseEntity);
+    const auto currentZone = static_cast<uint16>(PChar->getZone());
+
+    if (warpLockSecondsLeft(PChar, slot, currentZone) > 0)
+    {
+        return false;
+    }
+
+    auto name = nickname.substr(0, 10);
+
+    constexpr auto query = db::Query(
+        "REPLACE INTO char_warps (charid, slot, nickname, pos_x, pos_y, pos_z, pos_rot, zoneid, updated) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    return static_cast<bool>(db::preparedStmt(query, PChar->id, slot, name,
+                                               PChar->loc.p.x, PChar->loc.p.y, PChar->loc.p.z,
+                                               PChar->loc.p.rotation, currentZone, earth_time::timestamp()));
+}
+
+/************************************************************************
+ *  Function: warpList()
+ *  Purpose : Returns the player's saved warp slots as a table of {slot, nickname} entries, ordered by slot.
+ *  Example : local warps = player:warpList()
+ ************************************************************************/
+
+auto CLuaBaseEntity::warpList() -> sol::table
+{
+    auto list = lua.create_table();
+
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return list;
+    }
+
+    auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
+
+    const auto rset = db::preparedStmt("SELECT slot, nickname FROM char_warps WHERE charid = ? ORDER BY slot", PChar->id);
+    if (rset)
+    {
+        while (rset->next())
+        {
+            auto entry       = lua.create_table();
+            entry["slot"]     = rset->get<uint8>("slot");
+            entry["nickname"] = rset->get<std::string>("nickname");
+            list.add(entry);
+        }
+    }
+
+    return list;
+}
+
+/************************************************************************
+ *  Function: warpGet(slot)
+ *  Purpose : Returns the saved position for one of the player's warp slots, or an empty table if that
+ *            slot has not been saved.
+ *  Example : local dest = player:warpGet(1)
+ ************************************************************************/
+
+auto CLuaBaseEntity::warpGet(uint8 slot) -> sol::table
+{
+    auto dest = lua.create_table();
+
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return dest;
+    }
+
+    auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
+
+    const auto rset = db::preparedStmt(
+        "SELECT nickname, pos_x, pos_y, pos_z, pos_rot, zoneid FROM char_warps WHERE charid = ? AND slot = ?",
+        PChar->id, slot);
+    if (rset && rset->rowsCount() && rset->next())
+    {
+        dest["nickname"] = rset->get<std::string>("nickname");
+        dest["x"]        = rset->get<float>("pos_x");
+        dest["y"]        = rset->get<float>("pos_y");
+        dest["z"]        = rset->get<float>("pos_z");
+        dest["rot"]      = rset->get<uint8>("pos_rot");
+        dest["zoneid"]   = rset->get<uint16>("zoneid");
+    }
+
+    return dest;
+}
+
+/************************************************************************
+ *  Function: warpDelete(slot)
+ *  Purpose : Deletes one of the player's saved warp slots. Refuses (returns false, no delete) if that
+ *            slot was saved from a different zone less than 2 hours ago.
+ *  Example : player:warpDelete(1)
+ ************************************************************************/
+
+auto CLuaBaseEntity::warpDelete(uint8 slot) -> bool
+{
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return false;
+    }
+
+    auto*      PChar       = static_cast<CCharEntity*>(m_PBaseEntity);
+    const auto currentZone = static_cast<uint16>(PChar->getZone());
+
+    if (warpLockSecondsLeft(PChar, slot, currentZone) > 0)
+    {
+        return false;
+    }
+
+    return static_cast<bool>(db::preparedStmt("DELETE FROM char_warps WHERE charid = ? AND slot = ?", PChar->id, slot));
+}
+
+/************************************************************************
+ *  Function: warpRename(slot, nickname)
+ *  Purpose : Renames one of the player's saved warp slots without changing its saved position. Not
+ *            subject to the save/delete lockout.
+ *  Example : player:warpRename(1, "New Name")
+ ************************************************************************/
+
+auto CLuaBaseEntity::warpRename(uint8 slot, const std::string& nickname) -> bool
+{
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return false;
+    }
+
+    auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
+    auto  name  = nickname.substr(0, 10);
+
+    constexpr auto query = db::Query("UPDATE char_warps SET nickname = ? WHERE charid = ? AND slot = ?");
+
+    return static_cast<bool>(db::preparedStmt(query, name, PChar->id, slot));
+}
+
+/************************************************************************
+ *  Function: warpGetLock(slot)
+ *  Purpose : Read-only check for the save/delete cross-zone lockout on a slot. Returns
+ *            { locked = bool, secondsLeft = number }. Lets the Lua command warn the player before
+ *            attempting a write that warpSave/warpDelete would refuse anyway.
+ *  Example : local lock = player:warpGetLock(1)
+ ************************************************************************/
+
+auto CLuaBaseEntity::warpGetLock(uint8 slot) -> sol::table
+{
+    auto result = lua.create_table();
+
+    result["locked"]      = false;
+    result["secondsLeft"] = 0;
+
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        ShowWarning("Invalid entity type calling function (%s).", m_PBaseEntity->getName());
+        return result;
+    }
+
+    auto*      PChar       = static_cast<CCharEntity*>(m_PBaseEntity);
+    const auto currentZone = static_cast<uint16>(PChar->getZone());
+    const auto secondsLeft = warpLockSecondsLeft(PChar, slot, currentZone);
+
+    if (secondsLeft > 0)
+    {
+        result["locked"]      = true;
+        result["secondsLeft"] = secondsLeft;
+    }
+
+    return result;
+}
+
 auto CLuaBaseEntity::addLinkpearl(const std::string& lsname, bool equip) -> bool
 {
     if (m_PBaseEntity->objtype != TYPE_PC)
@@ -6223,6 +6446,13 @@ void CLuaBaseEntity::setModelId(uint16 modelId, const sol::object& slotObj)
     }
     else
     {
+        // A full model swap replaces the equipped look. Without this the client keeps drawing the
+        // NPC's normal equipment and the new model never shows (Harvest Festival skins rely on this).
+        if (m_PBaseEntity->objtype == TYPE_NPC)
+        {
+            m_PBaseEntity->look.size = MODEL_STANDARD;
+        }
+
         m_PBaseEntity->SetModelId(modelId);
     }
     m_PBaseEntity->updatemask |= UPDATE_LOOK;
@@ -11691,6 +11921,49 @@ auto CLuaBaseEntity::getSetBlueSpells() -> sol::table
     return spellList;
 }
 
+/* LD AI PLAYERS BLUE SPELL SETTER */
+/************************************************************************
+ *  Function: setBlueSpell(spellID, slotIndex, adding)
+ *  Purpose : Sets (or clears) a learned blue magic spell into a set-spell slot, the same thing the real
+ *            client menu does when you set your blue magic. Silently does nothing if the entity is not a
+ *            player, the spell is not a blue spell, the slot is out of range, or the spell's set-point
+ *            cost does not fit the budget left in that slot -- blueutils::SetBlueSpell already checks all
+ *            of that the same way it does for a real menu set.
+ *  Example : player:setBlueSpell(xi.magic.spell.COCOON, 0, true)
+ ************************************************************************/
+
+void CLuaBaseEntity::setBlueSpell(uint16 spellID, uint8 slotIndex, bool adding)
+{
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        return;
+    }
+
+    auto* PChar  = static_cast<CCharEntity*>(m_PBaseEntity);
+    auto* PSpell = static_cast<CBlueSpell*>(spell::GetSpell(static_cast<SpellID>(spellID)));
+    if (PSpell)
+    {
+        blueutils::SetBlueSpell(PChar, PSpell, slotIndex, adding);
+    }
+}
+
+/************************************************************************
+ *  Function: getBlueTotalSlots()
+ *  Purpose : How many blue magic set-spell slots this player currently has unlocked (job level, AF gear,
+ *            merits...), same count setBlueSpell's own slotIndex bound-check uses.
+ *  Example : local slots = player:getBlueTotalSlots()
+ ************************************************************************/
+
+auto CLuaBaseEntity::getBlueTotalSlots() -> uint8
+{
+    if (m_PBaseEntity->objtype != TYPE_PC)
+    {
+        return 0;
+    }
+
+    return blueutils::GetTotalSlots(static_cast<CCharEntity*>(m_PBaseEntity));
+}
+
 /************************************************************************
  *  Function: recalculateSkillsTable()
  *  Purpose : Recalculates skill tables to get new values and calculations
@@ -13226,6 +13499,14 @@ void CLuaBaseEntity::engage(uint16 requestedTarget)
 
 auto CLuaBaseEntity::isEngaged() -> bool
 {
+    // A Lua closure can outlive the entity it captured: characters are replaced as they zone, and a bot's
+    // timer still holds the old handle. Reading that dead pointer is what crashed the map server, so a
+    // handle that is no longer live reads as "not engaged" instead.
+    if (!CBaseEntity::isLive(m_PBaseEntity, m_Serial))
+    {
+        return false;
+    }
+
     return m_PBaseEntity->PAI->IsEngaged();
 }
 
@@ -20928,6 +21209,12 @@ void CLuaBaseEntity::Register()
     SOL_REGISTER("getCurrentGPItem", CLuaBaseEntity::getCurrentGPItem);
     SOL_REGISTER("breakLinkshell", CLuaBaseEntity::breakLinkshell);
     SOL_REGISTER("addLinkpearl", CLuaBaseEntity::addLinkpearl);
+    SOL_REGISTER("warpSave", CLuaBaseEntity::warpSave);
+    SOL_REGISTER("warpList", CLuaBaseEntity::warpList);
+    SOL_REGISTER("warpGet", CLuaBaseEntity::warpGet);
+    SOL_REGISTER("warpDelete", CLuaBaseEntity::warpDelete);
+    SOL_REGISTER("warpRename", CLuaBaseEntity::warpRename);
+    SOL_REGISTER("warpGetLock", CLuaBaseEntity::warpGetLock);
 
     // Trading
     SOL_REGISTER("getContainerSize", CLuaBaseEntity::getContainerSize);
@@ -21224,6 +21511,8 @@ void CLuaBaseEntity::Register()
     SOL_REGISTER("canLearnSpell", CLuaBaseEntity::canLearnSpell);
     SOL_REGISTER("delSpell", CLuaBaseEntity::delSpell);
     SOL_REGISTER("getSetBlueSpells", CLuaBaseEntity::getSetBlueSpells);
+    SOL_REGISTER("setBlueSpell", CLuaBaseEntity::setBlueSpell);
+    SOL_REGISTER("getBlueTotalSlots", CLuaBaseEntity::getBlueTotalSlots);
 
     SOL_REGISTER("recalculateSkillsTable", CLuaBaseEntity::recalculateSkillsTable);
     SOL_REGISTER("recalculateAbilitiesTable", CLuaBaseEntity::recalculateAbilitiesTable);

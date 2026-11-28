@@ -150,9 +150,14 @@ public:
     virtual void HandleErrorMessage(std::unique_ptr<CBasicPacket>&) {};
 
     auto IsDynamicEntity() const -> bool;
+/* LD AI PLAYERS ENTITY LIVENESS */
 
     auto           serial() const -> uint64;
     auto           entityId() const -> EntityId;
+
+    // Liveness check for raw handles (Lua userdata, queued callbacks). A pointer is only live while the
+    // entity that registered it still exists; serials are never reused, so a recycled address is not live.
+    static auto isLive(const CBaseEntity* PEntity, uint64 serial) -> bool;
     uint32         id;             // global identifier unique on the server
     uint16         targid;         // local identifier unique to the zone
     ENTITYTYPE     objtype;        // Type of entity

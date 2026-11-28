@@ -24,9 +24,11 @@
 #include <common/macros.h>
 #include <map/entities/mob_entity.h>
 
+/* LD AI PLAYERS SQUAD TRUST ENTITY */
 #include <common/types/flag.h>
 
 class CCharEntity;
+class CMobSpellList;
 
 using IsPassiveTrust = xi::Flag<struct IsPassiveTrustTag>;
 
@@ -46,6 +48,29 @@ public:
     void setReleased(bool released);
 
     auto passiveTrust() -> IsPassiveTrust;
+
+    // Squad mates (modules/custom/cpp/squad.cpp): the id of the squad record, 0 for a normal trust
+    void setSquadId(uint32 squadId)
+    {
+        squadId_ = squadId;
+    }
+
+    // Squad mates: player race 1-8 so stats follow that race's player growth tables, 0 for a normal trust
+    void setSquadRace(uint8 race)
+    {
+        squadRace_ = race;
+    }
+
+    auto squadRace() const -> uint8
+    {
+        return squadRace_;
+    }
+
+    // Squad mates: the list of every spell this mate knows. The trust owns it and frees it when it goes.
+    void setSquadSpellList(CMobSpellList* list)
+    {
+        squadSpellList_ = list;
+    }
 
     //
     // CMobEntity, CBattleEntity, etc.
@@ -68,4 +93,7 @@ private:
     uint32         trustID_{};
     bool           released_{};
     IsPassiveTrust passiveTrust_ = IsPassiveTrust::No;
+    uint32         squadId_{};
+    uint8          squadRace_{};
+    CMobSpellList* squadSpellList_{};
 };

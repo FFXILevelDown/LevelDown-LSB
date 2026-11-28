@@ -21,9 +21,12 @@
 
 #include "base_entity.h"
 
+/* LD AI PLAYERS ENTITY LIVENESS */
 #include "common/tracy.h"
 
 #include <atomic>
+#include <mutex>
+#include <unordered_map>
 
 #include "ai/ai_container.h"
 
@@ -34,6 +37,23 @@
 #include "ximesh/ximesh.h"
 #include "zone.h"
 #include "zone_instance.h"
+
+namespace
+{
+// Deliberately leaked: entities can be destroyed during static teardown, after this map would have been
+// destroyed. Guards the table below, which zone loading fills from more than one thread while zones boot.
+auto liveEntitiesMutex() -> std::mutex&
+{
+    static auto* mutex = new std::mutex();
+    return *mutex;
+}
+
+auto liveEntities() -> std::unordered_map<const CBaseEntity*, uint64>&
+{
+    static auto* entities = new std::unordered_map<const CBaseEntity*, uint64>();
+    return *entities;
+}
+} // namespace
 
 CBaseEntity::CBaseEntity()
 : id(0)
@@ -63,12 +83,22 @@ CBaseEntity::CBaseEntity()
 
     serial_ = nextSerial.fetch_add(1, std::memory_order_relaxed);
 
+    {
+        std::scoped_lock lock(liveEntitiesMutex());
+        liveEntities()[this] = serial_;
+    }
+
     animationSpeed = static_cast<uint8>(std::clamp<float>((baseSpeed / settings::get<float>("map.ANIMATION_SPEED_DIVISOR")), std::numeric_limits<uint8>::min(), std::numeric_limits<uint8>::max()));
 }
 
 CBaseEntity::~CBaseEntity()
 {
     TracyZoneScoped;
+
+    {
+        std::scoped_lock lock(liveEntitiesMutex());
+        liveEntities().erase(this);
+    }
 
     if (PBattlefield)
     {
@@ -78,6 +108,20 @@ CBaseEntity::~CBaseEntity()
     // Serials are never reused, so nothing can read this table again. Dropping it is what stops
     // xi.entityData growing with every entity the process ever made.
     luautils::resetEntityData(this);
+}
+
+auto CBaseEntity::isLive(const CBaseEntity* PEntity, uint64 serial) -> bool
+{
+    if (PEntity == nullptr || serial == 0)
+    {
+        return false;
+    }
+
+    std::scoped_lock lock(liveEntitiesMutex());
+
+    const auto& entities = liveEntities();
+    const auto  itr      = entities.find(PEntity);
+    return itr != entities.end() && itr->second == serial;
 }
 
 void CBaseEntity::Spawn()

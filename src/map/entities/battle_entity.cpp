@@ -1790,6 +1790,12 @@ void CBattleEntity::SetMJob(uint8 mjob)
         return;
     }
 
+    /* CUSTOM JOB CHANGE DESPAWN PET */
+    if (objtype == TYPE_PC && PPet != nullptr && m_mjob != static_cast<xi::Job>(mjob))
+    {
+        petutils::DespawnPet(this);
+    }
+
     m_mjob = static_cast<xi::Job>(mjob);
 }
 
@@ -1799,6 +1805,12 @@ void CBattleEntity::SetSJob(uint8 sjob)
     {
         ShowWarning("sjob (%d) exceeds MAX_JOBTYPE", sjob);
         return;
+    }
+
+    /* CUSTOM JOB CHANGE DESPAWN PET */
+    if (objtype == TYPE_PC && PPet != nullptr && m_sjob != static_cast<xi::Job>(sjob))
+    {
+        petutils::DespawnPet(this);
     }
 
     m_sjob = static_cast<xi::Job>(sjob);
@@ -1816,51 +1828,101 @@ void CBattleEntity::SetMLevel(uint8 mlvl)
     }
 }
 
+/* CUSTOM SUBJOB RATIO AND UNCAP */
 void CBattleEntity::SetSLevel(uint8 slvl)
 {
     TracyZoneScoped;
 
-    // All mobs have a 1:1 ratio of MainJob/Subjob. A Monipulator's sub job is MON at its main level.
-    const bool mobWithoutSubJob = !settings::get<bool>("map.INCLUDE_MOB_SJ") && this->objtype == TYPE_MOB && this->objtype != TYPE_PET;
-    const bool isMonipulator    = monstrosity::AsMonipulator(this) != nullptr;
-    if (mobWithoutSubJob || isMonipulator)
+    if (!settings::get<bool>("map.INCLUDE_MOB_SJ") && this->objtype == TYPE_MOB && this->objtype != TYPE_PET)
     {
-        m_slvl = m_mlvl;
-    }
-    else if (this->objtype == TYPE_PET)
-    {
-        // Player pets have varying sub job ratios depending on pet type
-        // Sub level will be what is defined in petutils.cpp for the corresponding pet
-        m_slvl = std::min(slvl, m_mlvl);
+        m_slvl = m_mlvl; // All mobs have a 1:1 ratio of MainJob/Subjob
     }
     else
     {
         auto ratio = settings::get<uint8>("map.SUBJOB_RATIO");
+        uint8 tierBonus = 0;
+
+        if (this->objtype == TYPE_PC)
+        {
+            auto* PChar = static_cast<CCharEntity*>(this);
+
+            uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");
+            if (customRatio == 0)
+            {
+                customRatio = charutils::GetCharVar(PChar, "Ratio");
+            }
+
+            if (customRatio > 0)
+            {
+                ratio = static_cast<uint8>(customRatio);
+            }
+
+            // Check Ghee Kyo's var, with fallback to global var
+            tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]SUBJOB_CAP_BONUS"));
+            if (tierBonus == 0)
+            {
+                tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]GLOBAL_SUBJOB_BONUS"));
+            }
+
+            if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial)) /* LD PARAGON RETAIL SUBJOB */
+            {
+                ratio     = 1; // retail: half the main level
+                tierBonus = 0;
+            }
+        }
+
         switch (ratio)
         {
-            case 0: // no SJ
+            case 0: // No subjob
                 m_slvl = 0;
                 break;
-            case 1: // 1/2 (75/37, 99/49)
-                m_slvl = (slvl > (m_mlvl >> 1) ? (m_mlvl == 1 ? 1 : (m_mlvl >> 1)) : slvl);
+
+            case 1: // Traditional Ratio (75/37 or 99/49) + Ghee Kyo Cap Bonus
+            {
+                uint8 baseCap = static_cast<uint8>(m_mlvl >> 1);
+                if (m_mlvl == 1)
+                {
+                    baseCap = 1;
+                }
+
+                uint8 calculatedCap = baseCap;
+                if (m_mlvl >= 75)
+                {
+                    uint8 baseLevelCap = (m_mlvl >= 99) ? 49 : 37;
+                    uint8 maxAllowed   = baseLevelCap + 5; // Max +5 bonus levels
+                    calculatedCap      = std::min<uint8>(static_cast<uint8>(baseLevelCap + tierBonus), maxAllowed);
+                }
+
+                m_slvl = std::min(slvl, calculatedCap);
                 break;
-            case 2: // 2/3 (75/50, 99/66)
-                m_slvl = (slvl > (m_mlvl * 2) / 3 ? (m_mlvl == 1 ? 1 : (m_mlvl * 2) / 3) : slvl);
+            }
+
+            case 2: // 2/3 Ratio
+            {
+                uint8 calculatedCap = (m_mlvl == 1) ? 1 : static_cast<uint8>((m_mlvl * 2) / 3);
+                m_slvl = std::min(slvl, calculatedCap);
                 break;
-            case 3: // equal (75/75, 99/99)
-                m_slvl = (slvl > m_mlvl ? (m_mlvl == 1 ? 1 : m_mlvl) : slvl);
+            }
+
+            case 3: // 1:1 Equal Ratio (75/75 or 99/99)
+            {
+                uint8 calculatedCap = (m_mlvl == 1) ? 1 : m_mlvl;
+                m_slvl = std::min(slvl, calculatedCap);
                 break;
+            }
+
             default: // Error
-                ShowError("Error setting subjob level: Invalid ratio '%s' check your settings file!", ratio);
+                ShowError("Error setting subjob level: Invalid ratio '%d' check your settings file!", ratio);
                 break;
         }
     }
 
-    if (dynamic_cast<const CCharEntity*>(this) != nullptr)
+    if (this->objtype & TYPE_PC)
     {
         db::preparedStmt("UPDATE char_stats SET slvl = ? WHERE charid = ? LIMIT 1", m_slvl, this->id);
     }
 }
+
 
 void CBattleEntity::SetDeathType(uint8 type)
 {
@@ -2996,16 +3058,24 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
         result.messageID  = PSkill->getMsg();
         result.knockback  = luautils::callGlobal<Knockback>("xi.combat.knockback.calculate", PTargetFound, this, PSkill, &action);
 
+/* LD AI PLAYERS WYVERN SKILL */
         // reset the skill's message back to default
         PSkill->setMsg(defaultMessage);
         int32 damage = 0;
-        if (objtype == TYPE_PET && static_cast<CPetEntity*>(this)->getPetType() != PET_TYPE::JUG_PET)
+        if (objtype == TYPE_PET)
         {
-            PET_TYPE petType = static_cast<CPetEntity*>(this)->getPetType();
+            const auto petType = static_cast<CPetEntity*>(this)->getPetType();
 
             if (petType == PET_TYPE::AUTOMATON)
             {
                 damage = luautils::OnAutomatonAbility(PTargetFound, this, PSkill, PMaster, &action);
+            }
+            else if (petType == PET_TYPE::JUG_PET || petType == PET_TYPE::WYVERN)
+            {
+                // Jug pets and wyverns use the mob-skill scripts for their TP moves. Wyvern
+                // breaths are stored under mobskills (pet_flame_breath, healing_breath_iii,
+                // remove_poison, ...), not under the player pet-command ability scripts.
+                damage = luautils::OnMobWeaponSkill(this, PTargetFound, PSkill, &action);
             }
             else
             {
@@ -3308,6 +3378,12 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
             }
 
             recycleChance += PChar->PJobPoints->GetJobPointValue(JP_AMMO_CONSUMPTION);
+
+            // Exeter: stackable ammunition is never used up // LD BONANZA WEAPONS
+            if (PChar->m_Weapons[SLOT_RANGED] && PChar->m_Weapons[SLOT_RANGED]->getID() == 22152 && PAmmo != nullptr && PAmmo->getStackSize() > 1)
+            {
+                recycleChance = 100;
+            }
 
             if (StatusEffectContainer->HasStatusEffect(xi::StatusEffect::UnlimitedShot))
             {
@@ -3767,6 +3843,12 @@ auto CBattleEntity::OnAttack(CBattleEntity* PTarget, action_t& action) -> bool
                         int32 damage          = std::max(PTarget->GetMainWeaponDmg() + naturalh2hDMG + extraCounterDMG + battleutils::GetFSTR(PTarget, this, SLOT_MAIN), 0);
                         damage                = std::floor(damage * mobH2HPenalty * DamageRatio);
 
+                        /* LD BONANZA WEAPONS */ // counter damage hook
+                        if (PTarget->objtype == TYPE_PC)
+                        {
+                            damage = luautils::callGlobal<int32>("xi.ld.bonanzaWeapons.onCounterDamage", PTarget, this, damage);
+                        }
+
                         actionResult.spikesParam =
                             battleutils::TakePhysicalDamage(PTarget, this, attack.GetAttackType(), damage, false, SLOT_MAIN, 1, nullptr, true, false, true);
                         actionResult.spikesMessage = xi::MsgBasic::AttackCounteredDamage;
@@ -3845,7 +3927,20 @@ auto CBattleEntity::OnAttack(CBattleEntity* PTarget, action_t& action) -> bool
                     actionResult.resolution = ActionResolution::Block;
                 }
 
+                /* LD AMBUSCADE SWING FLAGS */
+                if (objtype == TYPE_PC)
+                {
+                    const auto swingType = attack.GetAttackType();
+                    SetLocalVar("LD_SWING_CRIT", attack.IsCritical() ? 1 : 0);
+                    SetLocalVar("LD_SWING_MULTI", (swingType == PHYSICAL_ATTACK_TYPE::DOUBLE || swingType == PHYSICAL_ATTACK_TYPE::TRIPLE || swingType == PHYSICAL_ATTACK_TYPE::QUAD) ? 1 : 0);
+                }
+
                 const auto damage = battleutils::TakePhysicalDamage(this, PTarget, attack.GetAttackType(), attack.GetDamage(), attack.IsBlocked(), attack.GetWeaponSlot(), 1, attackRound.GetTAEntity(), true, true, attack.IsCountered(), attack.IsCovered(), POriginalTarget);
+                if (objtype == TYPE_PC)
+                {
+                    SetLocalVar("LD_SWING_CRIT", 0);
+                    SetLocalVar("LD_SWING_MULTI", 0);
+                }
                 if (damage < 0)
                 {
                     actionResult.param     = -damage;

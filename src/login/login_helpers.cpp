@@ -772,7 +772,7 @@ auto createCharacter(session_t& session, uint8* buf, lpkt_chr_info_sub2& charInf
         }
     }
 
-    const auto rset = db::preparedStmt("SELECT COALESCE(MAX(charid), 0) AS max_id FROM chars");
+    const auto rset = db::preparedStmt("SELECT COALESCE(MAX(charid), 0) AS max_id FROM chars WHERE charid < 16000000") /* LD SKIP BOT CHARID RANGE */;
     if (!rset)
     {
         return -1;

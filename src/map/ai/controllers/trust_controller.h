@@ -47,10 +47,14 @@ public:
     auto Tick(timer::time_point) -> Task<void> override;
     void Despawn() override;
     auto Ability(EntityId target, uint16 abilityid) -> bool override;
+/* LD AI PLAYERS TRUST CONTROLLER */
     auto Cast(EntityId target, SpellID spellid) -> bool override;
     auto RangedAttack(EntityId target) -> bool override;
 
-    static constexpr float RoamDistance    = { 3.0f };
+    // 1.5: melee trusts used to path around at 3.0 yalms from the mob's centre and
+    // then stop there, which is outside real hit range on anything larger than a
+    // small mob - the swings simply missed. 1.5 keeps them inside attack range.
+    static constexpr float RoamDistance    = { 1.5f };
     static constexpr float SpawnDistance   = { 3.0f };
     static constexpr float CastingDistance = { 15.0f };
     static constexpr float WarpDistance    = { 30.0f };
@@ -66,6 +70,8 @@ protected:
 
 private:
     auto DoNonCombatTick(timer::time_point tick) -> Task<void>;
+    auto DoCampPullTick(timer::time_point tick, const position_t& camp) -> Task<void>; // FFXI Offline squad camp
+    void CampHold(const position_t& camp);
     void Declump(const CCharEntity* PMaster, const CBattleEntity* PTarget) const;
     void PathOutToDistance(const CBattleEntity* PTarget, float amount);
 
@@ -79,4 +85,6 @@ private:
     std::size_t                       m_NumHealingTicks = { 0 };
 
     timer::time_point m_LastRangedAttackTime;
+    timer::time_point m_CampRepath; // FFXI Offline squad camp: last re-path towards the camp spot or the pull target
+    timer::time_point m_CampPullTry; // FFXI Offline squad camp: the puller's last pull spell or ranged shot
 };
