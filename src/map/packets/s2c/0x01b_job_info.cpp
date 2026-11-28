@@ -60,7 +60,7 @@ GP_SERV_COMMAND_JOB_INFO::GP_SERV_COMMAND_JOB_INFO(CCharEntity* PChar)
 
         for (uint8 job = 1; job < MAX_JOBTYPE && job < jobsInPacket; ++job)
         {
-            if (PJobPoints[job].totalJpSpent >= 2100)
+            if (PJobPoints[job].totalJpSpent >= 2100 && PChar->jobs.job[job] >= 99) // a Master below 99 (Paragon T1 relevel) shows as a normal levelling job
             {
                 packet.job_mastery_flags |= (1u << job);
                 if (hasBreaker)

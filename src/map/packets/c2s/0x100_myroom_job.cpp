@@ -72,6 +72,27 @@ auto GP_CLI_COMMAND_MYROOM_JOB::validate(MapSession* PSession, const CCharEntity
 
 void GP_CLI_COMMAND_MYROOM_JOB::process(MapSession* PSession, CCharEntity* PChar) const
 {
+    { /* LD JOB CHANGE LUA LOCK */
+        sol::protected_function canChangeJob = lua["xi"]["ldCanChangeJob"];
+        if (canChangeJob.valid())
+        {
+            auto result = canChangeJob(PChar, this->MainJobIndex, this->SupportJobIndex);
+            if (!result.valid())
+            {
+                sol::error err = result;
+                ShowError("xi.ldCanChangeJob: %s", err.what());
+            }
+            else if (result.get_type() == sol::type::boolean && !result.get<bool>())
+            {
+                PChar->pushPacket<GP_SERV_COMMAND_JOB_INFO>(PChar);
+                PChar->pushPacket<GP_SERV_COMMAND_CLISTATUS>(PChar);
+                PChar->pushPacket<GP_SERV_COMMAND_CLISTATUS2>(PChar);
+                PChar->pushPacket<CCharStatusPacket>(PChar);
+                return;
+            }
+        }
+    }
+
     const xi::Job prevMainJob = PChar->GetMJob();
     const xi::Job prevSubJob  = PChar->GetSJob();
     const bool    hadBlueMage = prevMainJob == xi::Job::BLU || prevSubJob == xi::Job::BLU;
