@@ -263,7 +263,7 @@ auto PlayerTradeTransaction::setSlot(CCharEntity* who, const uint8 transactionSl
         return nullptr;
     }
 
-    auto* item = who->getStorage(LOC_INVENTORY)->GetItem(inventorySlot);
+    auto* item = who->getStorage(xi::Container::Inventory)->GetItem(inventorySlot);
 
     const bool wrongItem     = !item || item->getID() != expectedItemId;
     const bool exclusiveItem = item && item->hasFlag(xi::ItemFlag::Exclusive);
@@ -397,7 +397,7 @@ auto PlayerTradeTransaction::canReceive(const Side& sender, CCharEntity* receive
         return true;
     }
 
-    if (receiver->getStorage(LOC_INVENTORY)->GetFreeSlotsCount() < slotsNeeded)
+    if (receiver->getStorage(xi::Container::Inventory)->GetFreeSlotsCount() < slotsNeeded)
     {
         return false;
     }
@@ -405,7 +405,7 @@ auto PlayerTradeTransaction::canReceive(const Side& sender, CCharEntity* receive
     // Existing gil plus the offer has to fit in one stack
     if (gilOffered > 0)
     {
-        const auto* receiverGil   = receiver->getStorage(LOC_INVENTORY)->GetItem(0);
+        const auto* receiverGil   = receiver->getStorage(xi::Container::Inventory)->GetItem(0);
         const bool  noReceiverGil = !receiverGil;
         const bool  wouldOverflow = !noReceiverGil &&
                                     static_cast<uint64>(receiverGil->getQuantity()) + gilOffered > receiverGil->getStackSize();
@@ -465,7 +465,7 @@ auto PlayerTradeTransaction::doCommit() -> bool
 
             clone->setQuantity(slot.qty);
 
-            if (!this->give(receiver, LOC_INVENTORY, std::move(clone)))
+            if (!this->give(receiver, xi::Container::Inventory, std::move(clone)))
             {
                 return false;
             }
@@ -484,7 +484,7 @@ auto PlayerTradeTransaction::doCommit() -> bool
             }
 
             auto* PSender = charOf(sender);
-            if (!PSender || !slot.staged.resolve() || !this->take(PSender, LOC_INVENTORY, slot.staged.slot, slot.qty))
+            if (!PSender || !slot.staged.resolve() || !this->take(PSender, xi::Container::Inventory, slot.staged.slot, slot.qty))
             {
                 ShowErrorFmt("PlayerTradeTransaction::doCommit: {} kept item {} after it was handed over", PSender ? PSender->getName() : "?", slot.staged.itemId);
                 return false;

@@ -33,12 +33,12 @@
 #include "conquest_system.h"
 #include "data/enums/detects.h"
 #include "data/enums/mob_mod.h"
+#include "data/enums/msg_basic.h"
 #include "data/enums/weather.h"
 #include "enmity_container.h"
 #include "entities/char_entity.h"
 #include "entities/pet_entity.h"
 #include "enums/loot_recast.h"
-#include "enums/msg_basic.h"
 #include "items.h"
 #include "lua/lua_base_entity.h"
 #include "lua/luautils.h"
@@ -686,7 +686,7 @@ auto CMobEntity::GetRangedAttackRange() -> float
     return rangedAttackRange > 0 ? static_cast<float>(rangedAttackRange) : 14.0f;
 }
 
-auto CMobEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags) -> bool
+auto CMobEntity::ValidTarget(CBattleEntity* PInitiator, xi::TargetType targetFlags) -> bool
 {
     TracyZoneScopedN("CMobEntity::ValidTarget");
 
@@ -708,17 +708,17 @@ auto CMobEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags) -> b
         return true;
     }
 
-    if (targetFlags & TARGET_PLAYER_DEAD && ((m_Behavior & xi::Behavior::Raisable) != xi::Behavior::None) && isDead())
+    if ((targetFlags & xi::TargetType::PlayerDead) != xi::TargetType::None && ((m_Behavior & xi::Behavior::Raisable) != xi::Behavior::None) && isDead())
     {
         return true;
     }
 
-    if ((targetFlags & TARGET_PLAYER) && allegiance == PInitiator->allegiance && !((m_Behavior & xi::Behavior::NoAssist) != xi::Behavior::None) && !isCharmed)
+    if ((targetFlags & xi::TargetType::Player) != xi::TargetType::None && allegiance == PInitiator->allegiance && !((m_Behavior & xi::Behavior::NoAssist) != xi::Behavior::None) && !isCharmed)
     {
         return true;
     }
 
-    if (targetFlags & TARGET_NPC)
+    if ((targetFlags & xi::TargetType::Npc) != xi::TargetType::None)
     {
         if (allegiance == PInitiator->allegiance && !((m_Behavior & xi::Behavior::NoAssist) != xi::Behavior::None) && !isCharmed)
         {
@@ -741,6 +741,8 @@ void CMobEntity::Spawn()
     }
 
     CBattleEntity::Spawn();
+
+    m_FishingRespawnDuration = timer::duration::zero();
 
     m_giveExp        = true;
     m_HiPCLvl        = 0;
@@ -1324,7 +1326,7 @@ auto CMobEntity::CanAttack(CBattleEntity* PTarget, std::unique_ptr<CBasicPacket>
         auto* PChar = dynamic_cast<CCharEntity*>(this->PMaster);
         if (PChar && !PChar->IsMobOwner(PTarget))
         {
-            errMsg = std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(this, PTarget, 0, 0, MsgBasic::AlreadyClaimed);
+            errMsg = std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(this, PTarget, 0, 0, xi::MsgBasic::AlreadyClaimed);
             PAI->Disengage();
             return false;
         }
@@ -1431,6 +1433,15 @@ void CMobEntity::OnDeathTimer()
     }
 }
 
+void CMobEntity::StartFishingRespawnCooldown()
+{
+    if (m_FishingRespawnDuration > timer::duration::zero())
+    {
+        m_FishingRespawnAt       = timer::now() + m_FishingRespawnDuration;
+        m_FishingRespawnDuration = timer::duration::zero();
+    }
+}
+
 void CMobEntity::OnDespawn(CDespawnState& /*unused*/)
 {
     TracyZoneScoped;
@@ -1443,6 +1454,7 @@ void CMobEntity::OnDespawn(CDespawnState& /*unused*/)
         PMobPet->SetDespawnTime(1ms);
     }
 
+    StartFishingRespawnCooldown();
     luautils::OnMobDespawn(this);
     PAI->EventHandler.triggerListener("DESPAWN", this);
 }
@@ -1450,6 +1462,8 @@ void CMobEntity::OnDespawn(CDespawnState& /*unused*/)
 void CMobEntity::Die()
 {
     TracyZoneScopedN("CMobEntity::Die");
+
+    StartFishingRespawnCooldown();
 
     if (PBattlefield != nullptr)
     {
@@ -1477,11 +1491,11 @@ void CMobEntity::Die()
         {
             if (auto* PLastAttacker = lastAttackerId_.resolve())
             {
-                loc.zone->PushPacket(this, CHAR_INRANGE, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(PLastAttacker, this, 0, 0, MsgBasic::DefeatsTarget));
+                loc.zone->PushPacket(this, CHAR_INRANGE, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(PLastAttacker, this, 0, 0, xi::MsgBasic::DefeatsTarget));
             }
             else
             {
-                loc.zone->PushPacket(this, CHAR_INRANGE, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(this, this, 0, 0, MsgBasic::FallsToGround));
+                loc.zone->PushPacket(this, CHAR_INRANGE, std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(this, this, 0, 0, xi::MsgBasic::FallToGround));
             }
 
             DistributeRewards();
@@ -1535,7 +1549,7 @@ void CMobEntity::OnCastFinished(CMagicState& state, action_t& action)
     TapDeaggroTime();
 }
 
-void CMobEntity::OnCastInterrupted(CMagicState& state, action_t& action, MsgBasic msg, bool blockedCast)
+void CMobEntity::OnCastInterrupted(CMagicState& state, action_t& action, xi::MsgBasic msg, bool blockedCast)
 {
     TracyZoneScopedN("CMobEntity::OnCastInterrupted");
 
@@ -1548,7 +1562,7 @@ void CMobEntity::OnCastInterrupted(CMagicState& state, action_t& action, MsgBasi
     }
 }
 
-auto CMobEntity::OnAttack(CAttackState& state, action_t& action) -> bool
+auto CMobEntity::OnAttack(CBattleEntity* PTarget, action_t& action) -> bool
 {
     TracyZoneScopedN("CMobEntity::OnAttack");
 
@@ -1560,7 +1574,7 @@ auto CMobEntity::OnAttack(CAttackState& state, action_t& action) -> bool
     }
     else
     {
-        return CBattleEntity::OnAttack(state, action);
+        return CBattleEntity::OnAttack(PTarget, action);
     }
 }
 

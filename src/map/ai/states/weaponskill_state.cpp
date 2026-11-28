@@ -25,10 +25,9 @@
 
 #include "action/action.h"
 #include "ai/ai_container.h"
+#include "data/enums/msg_basic.h"
 #include "entities/battle_entity.h"
 #include "entities/char_entity.h"
-#include "items/item_equipment.h" // LD BONANZA WEAPONS
-#include "enums/msg_basic.h"
 #include "packets/s2c/0x028_battle2.h"
 #include "packets/s2c/0x029_battle_message.h"
 #include "roe.h"
@@ -50,10 +49,10 @@ auto CWeaponSkillState::init() -> StateErrorOr<void>
     auto* skill = battleutils::GetWeaponSkill(m_wsid);
     if (!skill)
     {
-        return Error{ std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, m_PEntity, 0, 0, MsgBasic::CannotUseWeaponskill) };
+        return Error{ std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, m_PEntity, 0, 0, xi::MsgBasic::CannotUseWeaponskill) };
     }
 
-    const auto targetFlags = battleutils::isValidSelfTargetWeaponskill(m_wsid) ? TARGET_SELF : TARGET_ENEMY;
+    const auto targetFlags = battleutils::isValidSelfTargetWeaponskill(m_wsid) ? xi::TargetType::Self : xi::TargetType::Enemy;
     auto*      PTarget     = m_PEntity->IsValidTarget(target(), targetFlags, m_errorMsg);
 
     if (!PTarget || this->HasErrorMsg())
@@ -63,7 +62,7 @@ auto CWeaponSkillState::init() -> StateErrorOr<void>
 
     if (!m_PEntity->CanSeeTarget(PTarget))
     {
-        return Error{ std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, PTarget, 0, 0, MsgBasic::CannotPerformAction) };
+        return Error{ std::make_unique<GP_SERV_COMMAND_BATTLE_MESSAGE>(m_PEntity, PTarget, 0, 0, xi::MsgBasic::CannotPerform) };
     }
 
     m_PSkill = std::make_unique<CWeaponSkill>(*skill);
@@ -78,7 +77,7 @@ auto CWeaponSkillState::init() -> StateErrorOr<void>
                 .results = {
                     {
                         .param     = m_PSkill->getID(),
-                        .messageID = MsgBasic::ReadiesWeaponskill,
+                        .messageID = xi::MsgBasic::ReadiesWs,
                     },
                 },
             },
@@ -107,17 +106,8 @@ void CWeaponSkillState::SpendCost()
     else if (m_PEntity->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::Sekkanoki))
     {
         // Sekkanoki counts as a 1000 TP weaponskill.
-        /* LD BONANZA WEAPONS */ // Zanmato +2: Sekkanoki keeps all TP and uses it as the TP bonus
-        auto* PZanmatoChar = dynamic_cast<CCharEntity*>(m_PEntity);
-        if (PZanmatoChar && PZanmatoChar->m_Weapons[SLOT_MAIN] && PZanmatoChar->m_Weapons[SLOT_MAIN]->getID() == 21980)
-        {
-            tp = std::max<int>(m_PEntity->health.tp, 1000);
-        }
-        else
-        {
-            tp = 1000;
-            m_PEntity->addTP(-1000);
-        }
+        tp = 1000;
+        m_PEntity->addTP(-1000);
         m_PEntity->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Sekkanoki);
     }
     else
