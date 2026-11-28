@@ -74,10 +74,10 @@ LevelDown Custom Modules/content/LD Instances/
 #LevelDown Custom Modules/content/LD Dev Zones/
 LevelDown Custom Modules/content/LD Crafting Shields/
 LevelDown Custom Modules/content/LD Odyssey/
-LevelDown Custom Modules/content/LD Halloween/
-LevelDown Custom Modules/content/LD Halloween Event/cpp/
-LevelDown Custom Modules/content/LD Halloween Event/lua/
-LevelDown Custom Modules/content/LD Halloween Event/data/
+#LevelDown Custom Modules/content/LD Halloween/
+#LevelDown Custom Modules/content/LD Halloween Event/cpp/
+#LevelDown Custom Modules/content/LD Halloween Event/lua/
+#LevelDown Custom Modules/content/LD Halloween Event/data/
 LevelDown Custom Modules/content/LD Augment NPCs/
 LevelDown Custom Modules/content/LD VoidWalker/
 #LevelDown Custom Modules/content/LD Sinister Reign/
@@ -90,7 +90,7 @@ LevelDown Custom Modules/content/LD Adventurer Bonus/
 LevelDown Custom Modules/content/LD World Boss/
 LevelDown Custom Modules/content/LD Paragon/
 LevelDown Custom Modules/content/LD Master Levels/
-#LevelDown Custom Modules/content/LD AI Players/
+LevelDown Custom Modules/content/LD AI Players/
 #LevelDown Custom Modules/content/LD Xur/
 LevelDown Custom Modules/content/LD Gratitude Campaign/
 LevelDown Custom Modules/content/LD Sortie/
