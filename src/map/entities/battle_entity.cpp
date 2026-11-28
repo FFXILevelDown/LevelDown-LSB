@@ -22,6 +22,7 @@
 #include "battle_entity.h"
 
 #include <algorithm>
+#include <set>
 
 #include "enums/four_cc.h"
 
@@ -1789,12 +1790,6 @@ void CBattleEntity::SetMJob(uint8 mjob)
         return;
     }
 
-    /* CUSTOM JOB CHANGE DESPAWN PET */
-    if (objtype == TYPE_PC && PPet != nullptr && m_mjob != static_cast<xi::Job>(mjob))
-    {
-        petutils::DespawnPet(this);
-    }
-
     m_mjob = static_cast<xi::Job>(mjob);
 }
 
@@ -1804,12 +1799,6 @@ void CBattleEntity::SetSJob(uint8 sjob)
     {
         ShowWarning("sjob (%d) exceeds MAX_JOBTYPE", sjob);
         return;
-    }
-
-    /* CUSTOM JOB CHANGE DESPAWN PET */
-    if (objtype == TYPE_PC && PPet != nullptr && m_sjob != static_cast<xi::Job>(sjob))
-    {
-        petutils::DespawnPet(this);
     }
 
     m_sjob = static_cast<xi::Job>(sjob);
@@ -1827,7 +1816,6 @@ void CBattleEntity::SetMLevel(uint8 mlvl)
     }
 }
 
-/* CUSTOM SUBJOB RATIO AND UNCAP */
 void CBattleEntity::SetSLevel(uint8 slvl)
 {
     TracyZoneScoped;
@@ -1848,79 +1836,22 @@ void CBattleEntity::SetSLevel(uint8 slvl)
     else
     {
         auto ratio = settings::get<uint8>("map.SUBJOB_RATIO");
-        uint8 tierBonus = 0;
-
-        if (this->objtype == TYPE_PC)
-        {
-            auto* PChar = static_cast<CCharEntity*>(this);
-
-            uint32 customRatio = charutils::GetCharVar(PChar, "[LevelRatio]Restriction");
-            if (customRatio == 0)
-            {
-                customRatio = charutils::GetCharVar(PChar, "Ratio");
-            }
-
-            if (customRatio > 0)
-            {
-                ratio = static_cast<uint8>(customRatio);
-            }
-
-            // Check Ghee Kyo's var, with fallback to global var
-            tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]SUBJOB_CAP_BONUS"));
-            if (tierBonus == 0)
-            {
-                tierBonus = static_cast<uint8>(charutils::GetCharVar(PChar, "[CQ]GLOBAL_SUBJOB_BONUS"));
-            }
-
-            if (PChar->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::ParagonTrial)) /* LD PARAGON RETAIL SUBJOB */
-            {
-                ratio     = 1; // retail: half the main level
-                tierBonus = 0;
-            }
-        }
-
         switch (ratio)
         {
-            case 0: // No subjob
+            case 0: // no SJ
                 m_slvl = 0;
                 break;
-
-            case 1: // Traditional Ratio (75/37 or 99/49) + Ghee Kyo Cap Bonus
-            {
-                uint8 baseCap = static_cast<uint8>(m_mlvl >> 1);
-                if (m_mlvl == 1)
-                {
-                    baseCap = 1;
-                }
-
-                uint8 calculatedCap = baseCap;
-                if (m_mlvl >= 75)
-                {
-                    uint8 baseLevelCap = (m_mlvl >= 99) ? 49 : 37;
-                    uint8 maxAllowed   = baseLevelCap + 5; // Max +5 bonus levels
-                    calculatedCap      = std::min<uint8>(static_cast<uint8>(baseLevelCap + tierBonus), maxAllowed);
-                }
-
-                m_slvl = std::min(slvl, calculatedCap);
+            case 1: // 1/2 (75/37, 99/49)
+                m_slvl = (slvl > (m_mlvl >> 1) ? (m_mlvl == 1 ? 1 : (m_mlvl >> 1)) : slvl);
                 break;
-            }
-
-            case 2: // 2/3 Ratio
-            {
-                uint8 calculatedCap = (m_mlvl == 1) ? 1 : static_cast<uint8>((m_mlvl * 2) / 3);
-                m_slvl = std::min(slvl, calculatedCap);
+            case 2: // 2/3 (75/50, 99/66)
+                m_slvl = (slvl > (m_mlvl * 2) / 3 ? (m_mlvl == 1 ? 1 : (m_mlvl * 2) / 3) : slvl);
                 break;
-            }
-
-            case 3: // 1:1 Equal Ratio (75/75 or 99/99)
-            {
-                uint8 calculatedCap = (m_mlvl == 1) ? 1 : m_mlvl;
-                m_slvl = std::min(slvl, calculatedCap);
+            case 3: // equal (75/75, 99/99)
+                m_slvl = (slvl > m_mlvl ? (m_mlvl == 1 ? 1 : m_mlvl) : slvl);
                 break;
-            }
-
             default: // Error
-                ShowError("Error setting subjob level: Invalid ratio '%d' check your settings file!", ratio);
+                ShowError("Error setting subjob level: Invalid ratio '%s' check your settings file!", ratio);
                 break;
         }
     }
@@ -1930,7 +1861,6 @@ void CBattleEntity::SetSLevel(uint8 slvl)
         db::preparedStmt("UPDATE char_stats SET slvl = ? WHERE charid = ? LIMIT 1", m_slvl, this->id);
     }
 }
-
 
 void CBattleEntity::SetDeathType(uint8 type)
 {
@@ -1973,18 +1903,12 @@ void CBattleEntity::addEquipModifiers(CItemEquipment* PItem)
 {
     TracyZoneScoped;
 
-    /* LD DEDUP EQUIP MODS */
-    // getModifier(mod) returns the item's full total for that mod, summed across every modList
-    // entry. Looping per-entry and adding that pre-summed total on every matching entry double (or
-    // N-times) counts any mod that appears more than once in modList - most visibly when an
-    // augment targets the same mod as the item's own base stat, doubling that stat on equip.
-    std::vector<xi::Mod> seenMods;
-    for (auto& i : PItem->modList)
+    std::set<xi::Mod> appliedMods;
+    for (const auto& modifier : PItem->modList)
     {
-        if (std::ranges::find(seenMods, i.getModID()) == seenMods.end())
+        if (appliedMods.insert(modifier.getModID()).second)
         {
-            seenMods.push_back(i.getModID());
-            m_modStat[i.getModID()] += battleutils::GetScaledItemModifier(this, PItem, i.getModID());
+            m_modStat[modifier.getModID()] += battleutils::GetScaledItemModifier(this, PItem, modifier.getModID());
         }
     }
 }
@@ -2109,14 +2033,12 @@ void CBattleEntity::delEquipModifiers(CItemEquipment* PItem, bool isDelevel /* =
 {
     TracyZoneScoped;
 
-    // LD: same dedup as addEquipModifiers - keep them symmetric or equip/unequip will drift m_modStat.
-    std::vector<xi::Mod> seenMods;
-    for (auto& i : PItem->modList)
+    std::set<xi::Mod> removedMods;
+    for (const auto& modifier : PItem->modList)
     {
-        if (std::ranges::find(seenMods, i.getModID()) == seenMods.end())
+        if (removedMods.insert(modifier.getModID()).second)
         {
-            seenMods.push_back(i.getModID());
-            m_modStat[i.getModID()] -= battleutils::GetScaledItemModifier(this, PItem, i.getModID(), isDelevel);
+            m_modStat[modifier.getModID()] -= battleutils::GetScaledItemModifier(this, PItem, modifier.getModID(), isDelevel);
         }
     }
 }
@@ -2314,9 +2236,9 @@ auto CBattleEntity::hasTrait(uint16 traitID) -> bool
     return std::ranges::contains(TraitList, traitID, &CTrait::getID);
 }
 
-auto CBattleEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags) -> bool
+auto CBattleEntity::ValidTarget(CBattleEntity* PInitiator, xi::TargetType targetFlags) -> bool
 {
-    if (targetFlags & TARGET_ENEMY)
+    if ((targetFlags & xi::TargetType::Enemy) != xi::TargetType::None)
     {
         if (!isDead())
         {
@@ -2355,7 +2277,7 @@ auto CBattleEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags) -
         }
     }
 
-    return (targetFlags & TARGET_SELF) &&
+    return ((targetFlags & xi::TargetType::Self) != xi::TargetType::None) &&
            (this == PInitiator ||
             (PInitiator->objtype == TYPE_PET && static_cast<CPetEntity*>(PInitiator)->getPetType() == PET_TYPE::AUTOMATON && this == PInitiator->PMaster));
 }
@@ -2495,7 +2417,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
     // can this spell target the dead?
 
     uint8 flags = FINDFLAGS_NONE;
-    if (PSpell->getValidTarget() & TARGET_PLAYER_DEAD)
+    if ((PSpell->getValidTarget() & xi::TargetType::PlayerDead) != xi::TargetType::None)
     {
         flags |= FINDFLAGS_DEAD;
     }
@@ -2549,8 +2471,8 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
     action.recast     = state.GetRecast();
     action.spellgroup = PSpell->getSpellGroup();
 
-    MsgBasic msg                 = MsgBasic::None;
-    MsgBasic initialSpellMessage = PSpell->getMessage();
+    xi::MsgBasic msg                 = xi::MsgBasic::None;
+    xi::MsgBasic initialSpellMessage = PSpell->getMessage();
 
     for (auto* PTarget : PAI->TargetFind->m_targets)
     {
@@ -2580,7 +2502,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
         if (PSpell->getSpellGroup() != SPELLGROUP_BLUE && PSpell->canHitShadow() && aoeType == SPELLAOE_NONE && !(PSpell->getFlag() & SPELLFLAG_IGNORE_SHADOWS) && battleutils::IsAbsorbByShadow(PTarget, this))
         {
             // take shadow
-            msg                = MsgBasic::ShadowAbsorb;
+            msg                = xi::MsgBasic::ShadowAbsorb;
             actionResult.param = 1;
             ve                 = 0;
             ce                 = 0;
@@ -2595,7 +2517,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
                 StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Saboteur);
             }
 
-            if (msg == MsgBasic::None)
+            if (msg == xi::MsgBasic::None)
             {
                 msg = PSpell->getMessage();
             }
@@ -2608,7 +2530,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
             PSpell->setModifier(ActionModifier::None); // Reset modifier on use
 
             // BLU physical spells do set certain bits in the action packet
-            if (PSpell->getSpellGroup() == SPELLGROUP_BLUE && PSpell->getElement() == ELEMENT_NONE && msg == MsgBasic::MagicDamage)
+            if (PSpell->getSpellGroup() == SPELLGROUP_BLUE && PSpell->getElement() == ELEMENT_NONE && msg == xi::MsgBasic::MagicDmg)
             {
                 actionResult.recordDamage(attack_outcome_t{
                     .atkType    = xi::AttackType::Physical,
@@ -2638,7 +2560,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
 
         if (actionResult.animation == ActionAnimation::Teleport)
         { // Teleport spells don't target unqualified members
-            if (PSpell->getMessage() == MsgBasic::None)
+            if (PSpell->getMessage() == xi::MsgBasic::None)
             {
                 actionResult.animation = ActionAnimation::None; // stop target from going invisible
                 if (PTarget != PActionTarget)
@@ -2647,13 +2569,13 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
                 }
                 else
                 { // set this message in anticipation of nobody having the gate crystal
-                    actionResult.messageID = MsgBasic::MagicNoEffect;
+                    actionResult.messageID = xi::MsgBasic::MagicNoEffect;
                 }
                 continue;
             }
-            if (msg == MsgBasic::MagicTeleport && PTarget != PActionTarget)
+            if (msg == xi::MsgBasic::MagicTeleport && PTarget != PActionTarget)
             { // reset the no effect message above if somebody has gate crystal
-                action.targets[0].results[0].messageID = MsgBasic::None;
+                action.targets[0].results[0].messageID = xi::MsgBasic::None;
             }
         }
 
@@ -2669,7 +2591,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
         }
 
         if (PTarget->objtype == TYPE_MOB &&
-            msg != MsgBasic::ShadowAbsorb) // If message isn't the shadow loss message, because I had to move this outside of the above check for it.
+            msg != xi::MsgBasic::ShadowAbsorb) // If message isn't the shadow loss message, because I had to move this outside of the above check for it.
         {
             luautils::OnMagicHit(this, PTarget, PSpell);
         }
@@ -2780,7 +2702,7 @@ void CBattleEntity::OnCastFinished(CMagicState& state, action_t& action)
     PRecastContainer->Add(xi::RecastType::Magic, static_cast<xi::Recast>(PSpell->getID()), action.recast);
 }
 
-void CBattleEntity::OnCastInterrupted(CMagicState& state, action_t& action, MsgBasic msg, bool blockedCast)
+void CBattleEntity::OnCastInterrupted(CMagicState& state, action_t& action, xi::MsgBasic msg, bool blockedCast)
 {
     TracyZoneScopedN("CBattleEntity::OnCastInterrupted");
 
@@ -2832,7 +2754,7 @@ void CBattleEntity::OnAbility(CAbilityState& state, action_t& action)
             PAI->TargetFind->reset();
             PAI->TargetFind->findWithinArea(this, AOE_RADIUS::ATTACKER, PAbility->getRadius(), FINDFLAGS_NONE, PAbility->getValidTarget());
 
-            auto prevMsg = MsgBasic::None;
+            auto prevMsg = xi::MsgBasic::None;
             for (auto&& PTargetFound : PAI->TargetFind->m_targets)
             {
                 action_target_t& actionTarget = action.addTarget(PTargetFound->id);
@@ -2844,7 +2766,7 @@ void CBattleEntity::OnAbility(CAbilityState& state, action_t& action)
 
                 int32 value = luautils::OnUseAbility(this, PTargetFound, PAbility, &action);
 
-                if (prevMsg == MsgBasic::None)
+                if (prevMsg == xi::MsgBasic::None)
                 {
                     actionResult.messageID = PAbility->getMessage();
                 }
@@ -2880,9 +2802,9 @@ void CBattleEntity::OnAbility(CAbilityState& state, action_t& action)
                 actionResult.messageID = PAbility->getMessage();
             }
 
-            if (actionResult.messageID == MsgBasic::None)
+            if (actionResult.messageID == xi::MsgBasic::None)
             {
-                actionResult.messageID = MsgBasic::UsesJobAbility;
+                actionResult.messageID = xi::MsgBasic::UsesJa;
             }
 
             actionResult.param = value;
@@ -2942,12 +2864,12 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
     uint8 findFlags = 0;
 
     // Mob buff abilities also hit monster's pets
-    if (PSkill->getValidTargets() == TARGET_SELF)
+    if (PSkill->getValidTargets() == xi::TargetType::Self)
     {
         findFlags |= FINDFLAGS_PET;
     }
 
-    if ((PSkill->getValidTargets() & TARGET_IGNORE_BATTLEID) == TARGET_IGNORE_BATTLEID)
+    if ((PSkill->getValidTargets() & xi::TargetType::IgnoreBattleid) == xi::TargetType::IgnoreBattleid)
     {
         findFlags |= FINDFLAGS_IGNORE_BATTLEID;
     }
@@ -2984,7 +2906,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
         // For self-centered AoE damaging moves (TARGET_ENEMY), use battle target for allegiance
         // For self-centered AoE buffs (TARGET_SELF), use self/state target
         CBattleEntity* PFindTarget = PTarget;
-        if (isSelfCenteredAoE && (PSkill->getValidTargets() & TARGET_ENEMY))
+        if (isSelfCenteredAoE && (PSkill->getValidTargets() & xi::TargetType::Enemy) != xi::TargetType::None)
         {
             PFindTarget = GetBattleTarget();
             if (!PFindTarget)
@@ -3023,7 +2945,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
             // Animation completes even if no targets in range
             action_target_t& actionTarget = action.addTarget(id);
             action_result_t& actionResult = actionTarget.addResult();
-            actionResult.messageID        = MsgBasic::None;
+            actionResult.messageID        = xi::MsgBasic::None;
             actionResult.animation        = PSkill->getAnimationID();
             actionResult.resolution       = ActionResolution::Miss;
             actionResult.info             = ActionInfo::UnknownAoE;
@@ -3045,7 +2967,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
     PSkill->setHP(health.hp);
     PSkill->setHPP(GetHPP());
 
-    auto msg            = MsgBasic::None;
+    auto msg            = xi::MsgBasic::None;
     auto defaultMessage = PSkill->getMsg();
 
     bool first{ true };
@@ -3099,7 +3021,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
         this->PAI->EventHandler.triggerListener("WEAPONSKILL_USE", this, PTargetFound, PSkill, state.GetSpentTP(), &action, damage);
         PTargetFound->PAI->EventHandler.triggerListener("WEAPONSKILL_TAKE", this, PTargetFound, PSkill, state.GetSpentTP(), &action);
 
-        if (msg == MsgBasic::None)
+        if (msg == xi::MsgBasic::None)
         {
             msg = PSkill->getMsg();
         }
@@ -3110,7 +3032,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
 
         if (damage < 0)
         {
-            msg          = MsgBasic::SkillRecoversHP; // TODO: verify this message does/does not vary depending on mob/avatar/automaton use
+            msg          = xi::MsgBasic::SkillRecoversHp; // TODO: verify this message does/does not vary depending on mob/avatar/automaton use
             result.param = std::clamp(-damage, 0, PTargetFound->GetMaxHP() - PTargetFound->health.hp);
         }
         else
@@ -3130,7 +3052,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
 
         result.messageID = msg;
 
-        if (PSkill->getMsg() == MsgBasic::ShadowAbsorb) // Setting of shadow message is handled in mobskills.lua
+        if (PSkill->getMsg() == xi::MsgBasic::ShadowAbsorb) // Setting of shadow message is handled in mobskills.lua
         {
             result.resolution = ActionResolution::Miss;
             result.param      = damage;          // damage is the number of shadows consumed to display in chat log
@@ -3142,7 +3064,7 @@ void CBattleEntity::OnMobSkillFinished(CMobSkillState& state, action_t& action)
             result.param      = 0;
             if (msg == messageutils::GetAoEVariant(PSkill->getMsg()))
             {
-                msg = MsgBasic::TargetEvades;
+                msg = xi::MsgBasic::TargetEvades;
             }
 
             // Evading negates knockback
@@ -3263,7 +3185,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
     action.actionid               = static_cast<uint32_t>(FourCC::RangedFinish);
     action_target_t& actionTarget = action.addTarget(PTarget->id);
     action_result_t& actionResult = actionTarget.addResult();
-    actionResult.messageID        = MsgBasic::RangedAttackHit;
+    actionResult.messageID        = xi::MsgBasic::RangedAttackHit;
 
     CItemWeapon* PItem = nullptr;
     CItemWeapon* PAmmo = nullptr;
@@ -3347,7 +3269,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
                 if (isCritical)
                 {
                     wasCritical            = true;
-                    actionResult.messageID = MsgBasic::RangedAttackCrit;
+                    actionResult.messageID = xi::MsgBasic::RangedAttackCrit;
                 }
 
                 // We hit the target
@@ -3373,7 +3295,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
         else // Miss
         {
             actionResult.resolution = ActionResolution::Miss;
-            actionResult.messageID  = MsgBasic::RangedAttackMiss;
+            actionResult.messageID  = xi::MsgBasic::RangedAttackMiss;
             hitCount                = i;
         }
 
@@ -3386,12 +3308,6 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
             }
 
             recycleChance += PChar->PJobPoints->GetJobPointValue(JP_AMMO_CONSUMPTION);
-
-            // Exeter: stackable ammunition is never used up // LD BONANZA WEAPONS
-            if (PChar->m_Weapons[SLOT_RANGED] && PChar->m_Weapons[SLOT_RANGED]->getID() == 22152 && PAmmo != nullptr && PAmmo->getStackSize() > 1)
-            {
-                recycleChance = 100;
-            }
 
             if (StatusEffectContainer->HasStatusEffect(xi::StatusEffect::UnlimitedShot))
             {
@@ -3426,7 +3342,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
     if (hitOccured)
     {
         // TODO: Check if mobs and trusts have penalties and messages
-        if (isChar && actionResult.messageID != MsgBasic::RangedAttackCrit)
+        if (isChar && actionResult.messageID != xi::MsgBasic::RangedAttackCrit)
         {
             auto rangedPenaltyFunction = lua["xi"]["combat"]["ranged"]["attackDistancePenalty"];
             auto distancePenaltyResult = rangedPenaltyFunction(this, PTarget);
@@ -3444,15 +3360,15 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
 
             if (distancePenalty == 0)
             {
-                actionResult.messageID = MsgBasic::RangedAttackPummels;
+                actionResult.messageID = xi::MsgBasic::RangedAttackPummels;
             }
             else if (distancePenalty <= 15)
             {
-                actionResult.messageID = MsgBasic::RangedAttackSquarely;
+                actionResult.messageID = xi::MsgBasic::RangedAttackSquarely;
             }
             else
             {
-                actionResult.messageID = MsgBasic::RangedAttackHit;
+                actionResult.messageID = xi::MsgBasic::RangedAttackHit;
             }
         }
 
@@ -3488,7 +3404,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
         if (actionResult.param < 0)
         {
             actionResult.param     = -(actionResult.param);
-            actionResult.messageID = MsgBasic::RangedAttackAbsorbs;
+            actionResult.messageID = xi::MsgBasic::RangedAttackAbsorbs;
         }
 
         if (isChar)
@@ -3539,17 +3455,17 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
                 checkAddEffect(PItem);
             }
 
-            if (actionResult.addEffectMessage == MsgBasic::AddEffectDamage && actionResult.addEffectParam < 0)
+            if (actionResult.addEffectMessage == xi::MsgBasic::AddEffectDamage && actionResult.addEffectParam < 0)
             {
                 actionResult.addEffectParam   = -actionResult.addEffectParam;
-                actionResult.addEffectMessage = MsgBasic::AddEffectRecoversHP;
+                actionResult.addEffectMessage = xi::MsgBasic::AddEffectRecoversHp;
             }
         }
     }
     else if (shadowsTaken > 0)
     {
         // shadows took damage
-        actionResult.messageID  = MsgBasic::ShadowAbsorb;
+        actionResult.messageID  = xi::MsgBasic::ShadowAbsorb;
         actionResult.resolution = ActionResolution::Miss;
         actionResult.param      = shadowsTaken;
     }
@@ -3560,7 +3476,7 @@ void CBattleEntity::OnRangedAttack(CRangeState& state, action_t& action)
     {
         if (hitOccured)
         {
-            actionResult.messageID = isSange ? MsgBasic::UsesSangeTakesDamage : MsgBasic::UsesBarrageTakesDamage;
+            actionResult.messageID = isSange ? xi::MsgBasic::UsesSangeTakesDamage : xi::MsgBasic::UsesBarrageTakesDamage;
         }
     }
 
@@ -3699,11 +3615,9 @@ auto CBattleEntity::GetBattleTarget() const -> CBattleEntity*
     return battleTarget_.resolve<CBattleEntity>();
 }
 
-auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
+auto CBattleEntity::OnAttack(CBattleEntity* PTarget, action_t& action) -> bool
 {
     TracyZoneScopedN("CBattleEntity::OnAttack");
-
-    auto* PTarget = state.target().resolve<CBattleEntity>();
 
     battleutils::ClaimMob(PTarget, this); // Mobs get claimed whether or not your attack actually is intimidated/paralyzed
     PTarget->LastAttacked = timer::now();
@@ -3750,12 +3664,12 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
 
         if (PTarget->StatusEffectContainer->HasStatusEffect(xi::StatusEffect::PerfectDodge, 0))
         {
-            actionResult.messageID  = MsgBasic::TargetDodges;
+            actionResult.messageID  = xi::MsgBasic::TargetDodges;
             actionResult.resolution = ActionResolution::Miss;
         }
         else if (attack.IsDeflected())
         {
-            actionResult.messageID  = MsgBasic::AttackHits;
+            actionResult.messageID  = xi::MsgBasic::HitDmg;
             actionResult.resolution = ActionResolution::Parry;
         }
         else if ((xirand::GetRandomNumber(100) < attack.GetHitRate() || attackRound.GetSATAOccured()) &&
@@ -3764,7 +3678,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
             // Check parry.
             if (attack.CheckParried())
             {
-                actionResult.messageID  = MsgBasic::TargetParries;
+                actionResult.messageID  = xi::MsgBasic::TargetParries;
                 actionResult.resolution = ActionResolution::Parry;
                 battleutils::HandleTacticalParry(PTarget);
                 battleutils::HandleIssekiganEnmityBonus(PTarget, this);
@@ -3772,7 +3686,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
             // attack hit, try to be absorbed by shadow unless it is a SATA attack round
             else if (!(attackRound.GetSATAOccured()) && battleutils::IsAbsorbByShadow(PTarget, this))
             {
-                actionResult.messageID  = MsgBasic::ShadowAbsorb;
+                actionResult.messageID  = xi::MsgBasic::ShadowAbsorb;
                 actionResult.param      = 1;
                 actionResult.resolution = ActionResolution::Miss;
                 attack.SetEvaded(true);
@@ -3781,7 +3695,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
             {
                 if (attack.IsAnticipated())
                 {
-                    actionResult.messageID  = MsgBasic::TargetAnticipates;
+                    actionResult.messageID  = xi::MsgBasic::TargetAnticipates;
                     actionResult.resolution = ActionResolution::Miss;
                 }
 
@@ -3792,8 +3706,8 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                     if (battleutils::IsAbsorbByShadow(this, PTarget))
                     {
                         actionResult.spikesParam   = 1;
-                        actionResult.spikesMessage = MsgBasic::CounterAbsByShadow;
-                        actionResult.messageID     = MsgBasic::None;
+                        actionResult.spikesMessage = xi::MsgBasic::CounterAbsByShadow;
+                        actionResult.messageID     = xi::MsgBasic::None;
                         actionResult.param         = 0;
                     }
                     else
@@ -3853,15 +3767,9 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                         int32 damage          = std::max(PTarget->GetMainWeaponDmg() + naturalh2hDMG + extraCounterDMG + battleutils::GetFSTR(PTarget, this, SLOT_MAIN), 0);
                         damage                = std::floor(damage * mobH2HPenalty * DamageRatio);
 
-                        /* LD BONANZA WEAPONS */ // counter damage hook
-                        if (PTarget->objtype == TYPE_PC)
-                        {
-                            damage = luautils::callGlobal<int32>("xi.ld.bonanzaWeapons.onCounterDamage", PTarget, this, damage);
-                        }
-
                         actionResult.spikesParam =
                             battleutils::TakePhysicalDamage(PTarget, this, attack.GetAttackType(), damage, false, SLOT_MAIN, 1, nullptr, true, false, true);
-                        actionResult.spikesMessage = MsgBasic::AttackCounteredDamage;
+                        actionResult.spikesMessage = xi::MsgBasic::AttackCounteredDamage;
                         if (auto* PChar = dynamic_cast<CCharEntity*>(PTarget))
                         {
                             charutils::TrySkillUP(PChar, skilltype, GetMLevel());
@@ -3891,7 +3799,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                 {
                     // TODO: Use withPhysicalDamage
                     actionResult.info |= ActionInfo::CriticalHit;
-                    actionResult.messageID = attack.GetAttackType() == PHYSICAL_ATTACK_TYPE::DAKEN ? MsgBasic::RangedAttackCrit : MsgBasic::AttackCrit;
+                    actionResult.messageID = attack.GetAttackType() == PHYSICAL_ATTACK_TYPE::DAKEN ? xi::MsgBasic::RangedAttackCrit : xi::MsgBasic::AttackCrit;
 
                     if (PTarget->objtype == TYPE_MOB)
                     {
@@ -3905,7 +3813,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                 // Not critical hit.
                 else
                 {
-                    actionResult.messageID = attack.GetAttackType() == PHYSICAL_ATTACK_TYPE::DAKEN ? MsgBasic::RangedAttackHit : MsgBasic::AttackHits;
+                    actionResult.messageID = attack.GetAttackType() == PHYSICAL_ATTACK_TYPE::DAKEN ? xi::MsgBasic::RangedAttackHit : xi::MsgBasic::HitDmg;
                 }
 
                 // Guarded. TODO: Stuff guards that shouldn't.
@@ -3937,24 +3845,11 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
                     actionResult.resolution = ActionResolution::Block;
                 }
 
-                /* LD AMBUSCADE SWING FLAGS */
-                if (objtype == TYPE_PC)
-                {
-                    const auto swingType = attack.GetAttackType();
-                    SetLocalVar("LD_SWING_CRIT", attack.IsCritical() ? 1 : 0);
-                    SetLocalVar("LD_SWING_MULTI", (swingType == PHYSICAL_ATTACK_TYPE::DOUBLE || swingType == PHYSICAL_ATTACK_TYPE::TRIPLE || swingType == PHYSICAL_ATTACK_TYPE::QUAD) ? 1 : 0);
-                }
-
                 const auto damage = battleutils::TakePhysicalDamage(this, PTarget, attack.GetAttackType(), attack.GetDamage(), attack.IsBlocked(), attack.GetWeaponSlot(), 1, attackRound.GetTAEntity(), true, true, attack.IsCountered(), attack.IsCovered(), POriginalTarget);
-                if (objtype == TYPE_PC)
-                {
-                    SetLocalVar("LD_SWING_CRIT", 0);
-                    SetLocalVar("LD_SWING_MULTI", 0);
-                }
                 if (damage < 0)
                 {
                     actionResult.param     = -damage;
-                    actionResult.messageID = MsgBasic::SpikesEffectRecover;
+                    actionResult.messageID = xi::MsgBasic::SpikesEffectRecover;
                 }
                 else
                 {
@@ -3980,7 +3875,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
         {
             // misses the target
             actionResult.resolution = ActionResolution::Miss;
-            actionResult.messageID  = MsgBasic::AttackMisses;
+            actionResult.messageID  = xi::MsgBasic::AttackMisses;
             attack.SetEvaded(true);
 
             // Check & Handle Afflatus Misery Accuracy Bonus
@@ -3996,7 +3891,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
         }
 
         // If we didn't hit at all, set param to 0 if we didn't blink any shadows.
-        if (actionResult.resolution == ActionResolution::Miss && actionResult.messageID != MsgBasic::ShadowAbsorb)
+        if (actionResult.resolution == ActionResolution::Miss && actionResult.messageID != xi::MsgBasic::ShadowAbsorb)
         {
             actionResult.param = 0;
         }
@@ -4084,7 +3979,7 @@ auto CBattleEntity::OnAttack(CAttackState& state, action_t& action) -> bool
     return true;
 }
 
-auto CBattleEntity::IsValidTarget(uint16 targid, uint16 validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
+auto CBattleEntity::IsValidTarget(uint16 targid, xi::TargetType validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
 {
     TracyZoneScopedN("CBattleEntity::IsValidTarget");
 
@@ -4092,7 +3987,7 @@ auto CBattleEntity::IsValidTarget(uint16 targid, uint16 validTargetFlags, std::u
     return PTarget;
 }
 
-auto CBattleEntity::IsValidTarget(EntityId target, uint16 validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
+auto CBattleEntity::IsValidTarget(EntityId target, xi::TargetType validTargetFlags, std::unique_ptr<CBasicPacket>& errMsg) -> CBattleEntity*
 {
     TracyZoneScopedN("CBattleEntity::IsValidTarget");
 
